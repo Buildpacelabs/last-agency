@@ -27,3 +27,7 @@ website/.vercel/
 
 # next-env types (generated)
 next-env.d.ts
+
+# typescript incremental build cache
+*.tsbuildinfo
+website/tsconfig.tsbuildinfo
