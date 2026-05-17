@@ -1,5 +1,3 @@
-import fs from 'node:fs';
-import path from 'node:path';
 import type {
   AssetManifest,
   BrandStyling,
@@ -9,52 +7,32 @@ import type {
   Testimonial,
 } from './content.types';
 
-/**
- * Resolves the output/ directory at the workspace root. The output JSON files
- * live as siblings of website/, so we walk one level up from process.cwd().
- */
-const OUTPUT_DIR = path.resolve(process.cwd(), '..', 'output');
+import caseStudiesJson from '../content/case-studies.json';
+import testimonialsJson from '../content/testimonials.json';
+import seoJson from '../content/seo.json';
+import assetManifestJson from '../content/asset-manifest.json';
+import brandStylingJson from '../content/brand-styling.json';
 
-function readJson<T>(filename: string): T {
-  const filePath = path.join(OUTPUT_DIR, filename);
-  const raw = fs.readFileSync(filePath, 'utf8');
-  return JSON.parse(raw) as T;
-}
-
-let caseStudiesCache: CaseStudy[] | null = null;
-let testimonialsCache: Testimonial[] | null = null;
-let seoCache: SeoFile | null = null;
-let assetManifestCache: AssetManifest | null = null;
-let brandStylingCache: BrandStyling | null = null;
+const caseStudies = caseStudiesJson as unknown as CaseStudy[];
+const testimonials = testimonialsJson as unknown as Testimonial[];
+const seo = seoJson as unknown as SeoFile;
+const assetManifest = assetManifestJson as unknown as AssetManifest;
+const brandStyling = brandStylingJson as unknown as BrandStyling;
 
 export function getAllCaseStudies(): CaseStudy[] {
-  if (!caseStudiesCache) {
-    caseStudiesCache = readJson<CaseStudy[]>('case-studies.json');
-  }
-  return caseStudiesCache;
+  return caseStudies;
 }
 
 export function getCaseStudyBySlug(slug: string): CaseStudy | undefined {
-  return getAllCaseStudies().find((c) => c.slug === slug);
+  return caseStudies.find((c) => c.slug === slug);
 }
 
 export function getMarqueeTestimonials(): Testimonial[] {
-  if (!testimonialsCache) {
-    testimonialsCache = readJson<Testimonial[]>('testimonials.json');
-  }
-  return testimonialsCache;
-}
-
-function getSeoFile(): SeoFile {
-  if (!seoCache) {
-    seoCache = readJson<SeoFile>('seo.json');
-  }
-  return seoCache;
+  return testimonials;
 }
 
 export function getSeoForRoute(route: string): SeoEntry | undefined {
-  const file = getSeoFile();
-  const entry = file[route];
+  const entry = seo[route];
   if (entry && typeof entry === 'object' && 'title' in entry && 'description' in entry) {
     return entry as SeoEntry;
   }
@@ -62,15 +40,9 @@ export function getSeoForRoute(route: string): SeoEntry | undefined {
 }
 
 export function getAssetManifest(): AssetManifest {
-  if (!assetManifestCache) {
-    assetManifestCache = readJson<AssetManifest>('asset-manifest.json');
-  }
-  return assetManifestCache;
+  return assetManifest;
 }
 
 export function getBrandStyling(): BrandStyling {
-  if (!brandStylingCache) {
-    brandStylingCache = readJson<BrandStyling>('brand-styling.json');
-  }
-  return brandStylingCache;
+  return brandStyling;
 }

@@ -1,0 +1,178 @@
+{
+  "brand": {
+    "logo": "./assets/brand/logo.svg",
+    "logoMark": "./assets/brand/logo-mark.svg",
+    "heroVideo": "./assets/brand/hero-reel.mp4",
+    "ogImage": "./assets/brand/og-image.png"
+  },
+  "pages": {
+    "about": [
+      "./assets/brand/about-1.jpg",
+      "./assets/brand/about-2.jpg"
+    ],
+    "services": "./assets/brand/services-hero.jpg",
+    "contact": "./assets/brand/contact-bg.jpg"
+  },
+  "caseStudies": [
+    {
+      "slug": "helio-coffee",
+      "hero": "./assets/case-studies/01-helio-coffee/hero.jpg",
+      "alt": "Helio Coffee — D2C brand hero",
+      "clientLogoProps": {
+        "name": "helio.",
+        "variant": "lowercase-dot",
+        "accentColor": "#C2410C"
+      },
+      "founderAvatarProps": {
+        "initials": "AM",
+        "gradient": { "from": "#C2410C", "to": "#7A2906" }
+      },
+      "resultChartData": {
+        "metric": "roas-curve",
+        "data": [1.6, 1.9, 2.2, 2.7, 3.1, 3.6, 4.0, 4.3],
+        "accentColor": "#C2410C",
+        "label": "ROAS climbed from 1.6x to 4.3x across eight months"
+      }
+    },
+    {
+      "slug": "mailweave",
+      "hero": "./assets/case-studies/02-mailweave/hero.jpg",
+      "alt": "Mailweave — SaaS brand hero",
+      "clientLogoProps": {
+        "name": "Mailweave",
+        "variant": "custom-ligature",
+        "accentColor": "#B45309"
+      },
+      "founderAvatarProps": {
+        "initials": "DR",
+        "gradient": { "from": "#B45309", "to": "#6F3306" }
+      },
+      "resultChartData": {
+        "metric": "cac-bars",
+        "data": [612, 588, 540, 492, 450, 408, 372, 348, 332, 324],
+        "accentColor": "#B45309",
+        "label": "Blended CAC fell from $612 to $324 over ten months"
+      }
+    },
+    {
+      "slug": "kachra-capital",
+      "hero": "./assets/case-studies/03-kachra-capital/hero.jpg",
+      "alt": "Kachra Capital — fintech brand hero",
+      "clientLogoProps": {
+        "name": "KACHRA CAPITAL",
+        "variant": "all-caps",
+        "accentColor": "#7C2D12"
+      },
+      "founderAvatarProps": {
+        "initials": "VS",
+        "gradient": { "from": "#7C2D12", "to": "#4D1B0B" }
+      },
+      "resultChartData": {
+        "metric": "revenue-line",
+        "data": [1400, 2100, 3800, 6200, 9800, 14500, 19800, 25600, 31200, 38000],
+        "accentColor": "#7C2D12",
+        "label": "Monthly funded merchants grew from 1,400 to 38,000"
+      }
+    },
+    {
+      "slug": "verdant-ritual",
+      "hero": "./assets/case-studies/04-verdant-ritual/hero.jpg",
+      "alt": "Verdant Ritual — wellness brand hero",
+      "clientLogoProps": {
+        "name": "Verdant·Ritual",
+        "variant": "accent-dot",
+        "accentColor": "#4D7C0F"
+      },
+      "founderAvatarProps": {
+        "initials": "SH",
+        "gradient": { "from": "#4D7C0F", "to": "#2F4D09" }
+      },
+      "resultChartData": {
+        "metric": "revenue-line",
+        "data": [18, 21, 25, 29, 34, 38, 42, 47, 51],
+        "accentColor": "#4D7C0F",
+        "label": "Repeat rate climbed from 18% to 51% in nine months"
+      }
+    },
+    {
+      "slug": "counterhouse",
+      "hero": "./assets/case-studies/05-counterhouse/hero.jpg",
+      "alt": "Counterhouse — fashion brand hero",
+      "clientLogoProps": {
+        "name": "Counterhouse",
+        "variant": "italic-stroke",
+        "accentColor": "#831843"
+      },
+      "founderAvatarProps": {
+        "initials": "RK",
+        "gradient": { "from": "#831843", "to": "#520F2A" }
+      },
+      "resultChartData": {
+        "metric": "revenue-line",
+        "data": [0, 8, 22, 38, 56, 82, 118],
+        "accentColor": "#831843",
+        "label": "GMV scaled from launch to ₹1.2cr in seven months"
+      }
+    },
+    {
+      "slug": "mishti-co",
+      "hero": "./assets/case-studies/06-mishti-co/hero.jpg",
+      "alt": "Mishti Co — food brand hero",
+      "clientLogoProps": {
+        "name": "mishti & co",
+        "variant": "condensed",
+        "accentColor": "#A16207"
+      },
+      "founderAvatarProps": {
+        "initials": "PI",
+        "gradient": { "from": "#A16207", "to": "#653D04" }
+      },
+      "resultChartData": {
+        "metric": "cac-bars",
+        "data": [1240, 1180, 1050, 920, 820, 720, 620, 540, 490, 460],
+        "accentColor": "#A16207",
+        "label": "CAC fell from ₹1,240 to ₹460 in nine months"
+      }
+    },
+    {
+      "slug": "tilden-learn",
+      "hero": "./assets/case-studies/07-tilden-learn/hero.jpg",
+      "alt": "Tilden Learn — edtech brand hero",
+      "clientLogoProps": {
+        "name": "tilden/learn",
+        "variant": "monospace",
+        "accentColor": "#1E3A8A"
+      },
+      "founderAvatarProps": {
+        "initials": "MT",
+        "gradient": { "from": "#1E3A8A", "to": "#122355" }
+      },
+      "resultChartData": {
+        "metric": "cac-bars",
+        "data": [94, 88, 80, 72, 64, 58, 52, 46, 42, 39, 37],
+        "accentColor": "#1E3A8A",
+        "label": "Cost per enrolled student dropped from $94 to $37"
+      }
+    },
+    {
+      "slug": "ostara-market",
+      "hero": "./assets/case-studies/08-ostara-market/hero.jpg",
+      "alt": "Ostara Market — marketplace brand hero",
+      "clientLogoProps": {
+        "name": "OSTARA",
+        "variant": "outlined",
+        "accentColor": "#475569"
+      },
+      "founderAvatarProps": {
+        "initials": "EC",
+        "gradient": { "from": "#475569", "to": "#2C3540" }
+      },
+      "resultChartData": {
+        "metric": "roas-curve",
+        "data": [1.8, 2.1, 2.4, 2.8, 3.2, 3.5, 3.8, 4.0, 4.2, 4.4],
+        "accentColor": "#475569",
+        "label": "Blended ROAS climbed from 1.8x to 4.4x over the engagement"
+      }
+    }
+  ]
+}
