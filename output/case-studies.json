@@ -1,0 +1,234 @@
+[
+  {
+    "slug": "helio-coffee",
+    "brandName": "Helio Coffee",
+    "industry": "D2C",
+    "headline": "Scaling Helio from ₹4.2cr to ₹18.6cr ARR while cutting CAC from ₹890 to ₹410",
+    "services": ["The Build", "The Run", "The Handoff"],
+    "narrative": {
+      "preEngagement": "Helio had three SKUs, a meta account that hadn't been restructured in eighteen months, and a founder running ads between investor calls. Repeat-purchase was 12%. The board wanted a Series A story by Q2 and nobody owned growth.",
+      "build": "Months 0-3 we rebuilt the account from scratch — one creative brief template, three audience tiers, a real LTV model in a spreadsheet anyone could read. We hired a junior performance lead inside Helio in week six so the seat existed before the playbook needed it.",
+      "run": "Months 3-12 we ran paid and lifecycle. ROAS climbed from 1.6 to 4.3 by month seven. We added Klaviyo flows for first-sip, second-bag, and a winback for the 90-day silence. CAC stopped being a single number and became four — cold, warm, repeat, referral.",
+      "handoff": "Months 12-15 Riya — the junior we'd hired in month two — ran the Friday review without us in the room. We sat in the back, said nothing, then wrote her the playbook. Forty-one pages. One Loom per chapter. A Notion doc for the account structure.",
+      "exit": "Month 15 we ran our last campaign. Month 16 Riya promoted herself to Head of Growth and hired her own junior. We're still on a Slack channel for emergencies. Nobody's used it."
+    },
+    "metrics": {
+      "roas": "4.3x blended (from 1.6x)",
+      "cacReduction": "54% (₹890 → ₹410)",
+      "revenueScale": "₹4.2cr → ₹18.6cr ARR",
+      "timeToInHouse": "15 months"
+    },
+    "founder": {
+      "name": "Aanya Mehrotra",
+      "role": "Founder & CEO",
+      "city": "Bangalore"
+    },
+    "testimonial": "I hired Last Agency because my CAC had tripled and my board deck was three days late. What I didn't expect is that by month twelve they were already writing themselves out of the org chart. Riya — the kid they put on the account in week six — runs paid now. They literally trained her to fire them. Most agencies I'd worked with before would've stretched the engagement into year three. These ones handed me the keys, did a forty-page walkthrough, and stopped invoicing in November. It's the strangest, most useful thing I've bought.",
+    "accentColor": "#C2410C",
+    "handoffDate": "2025-04-12",
+    "_isSample": true
+  },
+  {
+    "slug": "mailweave",
+    "brandName": "Mailweave",
+    "industry": "SaaS",
+    "headline": "Cutting Mailweave's blended CAC by 47% while doubling paid spend over twelve months",
+    "services": ["The Build", "The Run", "The Handoff", "The Exit"],
+    "narrative": {
+      "preEngagement": "Mailweave had $1.8M ARR, a self-serve product, and a CAC payback north of fourteen months. The PLG motion worked. The paid motion was a mess of broad-match Google and one Twitter campaign that had been running since 2024.",
+      "build": "We pulled apart the funnel between sign-up and first-API-call. Half the paid traffic was landing on a marketing page that didn't show the docs. We rebuilt three landing pages around the developer's first ten minutes, then layered LinkedIn against the right ICP titles.",
+      "run": "Through month ten CAC fell from $612 to $324 while we doubled monthly spend. We added a content-led inbound layer once paid efficiency stabilized — fifteen technical posts that ranked, owned by an in-house writer we recruited in month four.",
+      "handoff": "Months 12-15 Daniel — the in-house writer who'd absorbed the SEO playbook — took over the content engine. The paid seat was filled by an internal hire we'd interviewed alongside the founders. We sat through her first three weekly reviews and then stopped.",
+      "exit": "Last invoice went out in February. We left the GA4 doc, the Looker board, the keyword tracker, and a Notion page that says \"if X breaks, do Y.\" Six months later they shipped a product launch we had nothing to do with. CAC stayed flat."
+    },
+    "metrics": {
+      "roas": "n/a (SaaS — CAC payback 14mo → 6.2mo)",
+      "cacReduction": "47% ($612 → $324)",
+      "revenueScale": "$1.8M → $5.4M ARR",
+      "timeToInHouse": "14 months"
+    },
+    "founder": {
+      "name": "Daniel Reinhardt",
+      "role": "Co-founder & CEO",
+      "city": "Berlin"
+    },
+    "testimonial": "Honestly, I went in skeptical. An agency that pitches its own ending sounds like a marketing trick. By month nine I understood it wasn't a trick — they kept handing me things. Loom walkthroughs. The keyword tracker. The reason the LinkedIn bid cap was set the way it was. By month fourteen they'd taught my team enough that we were the ones telling them how the new pricing test was going. They built the function, then taught us out of needing them. I've never written that sentence about an agency before.",
+    "accentColor": "#B45309",
+    "handoffDate": "2025-09-08",
+    "_isSample": true
+  },
+  {
+    "slug": "kachra-capital",
+    "brandName": "Kachra Capital",
+    "industry": "fintech",
+    "headline": "Taking Kachra Capital from 1,400 to 38,000 monthly funded users without raising blended CAC",
+    "services": ["The Build", "The Run", "The Handoff"],
+    "narrative": {
+      "preEngagement": "Kachra is a working-capital lender for kirana stores. They had 1,400 monthly funded merchants, a thin onboarding funnel, and a paid spend split across three vendors who didn't talk to each other. Nobody owned the number.",
+      "build": "Months 0-3 we collapsed the three vendors into one account structure we ran. We rebuilt the application flow with their product team — four screens became two, drop-off fell from 71% to 38%. We hired a growth analyst inside Kachra in month two.",
+      "run": "Months 3-12 we scaled monthly funded merchants past 38,000 while keeping blended CAC flat at ₹740. We added vernacular creative — nine languages, tested in cohorts of three — and built a referral mechanic inside the merchant app that now drives 22% of new applications.",
+      "handoff": "Vikram, the growth analyst, was running the weekly numbers review by month ten. Months 12-15 we transitioned creative briefs to an in-house designer and the media buying to Vikram's now two-person team. We watched. We didn't touch.",
+      "exit": "We stopped invoicing in October. The referral mechanic shipped a v2 in January without us. Vikram is now Director of Growth. The Slack channel we kept open has eleven messages in five months, mostly memes."
+    },
+    "metrics": {
+      "roas": "3.1x on app-install spend (from 1.4x)",
+      "cacReduction": "Flat CAC at 27x merchant volume",
+      "revenueScale": "1,400 → 38,000 monthly funded merchants",
+      "timeToInHouse": "13 months"
+    },
+    "founder": {
+      "name": "Vikram Subramanian",
+      "role": "Co-founder",
+      "city": "Bengaluru"
+    },
+    "testimonial": "The pitch they made me was the one I didn't want to hear: hire us for fourteen months, we'll build the function, train your hire, and disappear. I'd just paid an agency for two years to do thirty percent of that. We started in March. By month ten my growth analyst was running the show and they were just nodding from the back of the room. They literally trained us to fire them — wrote the playbook, ran the dry runs, and then left. The weirdest part is how much I respect them for it.",
+    "accentColor": "#7C2D12",
+    "handoffDate": "2025-07-22",
+    "_isSample": true
+  },
+  {
+    "slug": "verdant-ritual",
+    "brandName": "Verdant Ritual",
+    "industry": "wellness",
+    "headline": "Rebuilding Verdant Ritual's repeat rate from 18% to 51% and cutting paid dependency in half",
+    "services": ["The Build", "The Run", "The Handoff"],
+    "narrative": {
+      "preEngagement": "Verdant Ritual had a beautiful product, a press hit at launch, and an 18% repeat rate that had been flat for nine months. Paid was carrying 78% of revenue. The founder was running lifecycle out of a Google Sheet and a spare evening.",
+      "build": "We didn't add paid. We rebuilt lifecycle first. Twelve Klaviyo flows replaced three. A second-purchase nudge at day 22. A refill prompt tied to product half-life. A win-back at day 90 with a one-question survey instead of a discount.",
+      "run": "Repeat rate climbed from 18% to 51% over months four through eleven. Paid's share of revenue fell to 39%. We added a sampling program for first-time buyers — the cost looked terrible in month one and excellent by month six.",
+      "handoff": "Months 12-15 we trained Tara, who'd been promoted from coordinator to Lifecycle Lead. She ran the November launch end to start, including the segmentation tree. We reviewed flows once a week, then once a month, then not at all.",
+      "exit": "We're standalone observers now. Verdant added a subscription tier in March we had nothing to do with. They told us about it the day it launched, which was the right amount of warning for an ex-agency."
+    },
+    "metrics": {
+      "roas": "5.1x lifecycle-attributed revenue per email",
+      "cacReduction": "Paid dependency 78% → 39%",
+      "revenueScale": "Repeat rate 18% → 51%",
+      "timeToInHouse": "15 months"
+    },
+    "founder": {
+      "name": "Sienna Holloway",
+      "role": "Founder",
+      "city": "Brooklyn"
+    },
+    "testimonial": "I'd been told by three other agencies that my repeat-rate problem was a product problem. Last Agency looked at the same data and said it was a flow problem. They were right — we went from 18 to 51 percent without changing a single SKU. What still gets me is how they ended it. Tara, who started as my coordinator, was running lifecycle by month thirteen because they'd been quietly teaching her the whole time. They trained her into a job that fired them. I send Aman a Diwali card now. That's the relationship.",
+    "accentColor": "#4D7C0F",
+    "handoffDate": "2025-11-30",
+    "_isSample": true
+  },
+  {
+    "slug": "counterhouse",
+    "brandName": "Counterhouse",
+    "industry": "fashion",
+    "headline": "Launching Counterhouse to 1.2cr GMV in seven months, then handing the brand to a two-person in-house team",
+    "services": ["The Build", "The Run", "The Handoff", "The Exit"],
+    "narrative": {
+      "preEngagement": "Counterhouse was pre-launch. A founder, a tailor in Tirupur, a deck, and a 60-day runway to first revenue. No brand voice, no site, no paid account, no email list. They'd hired two other agencies and fired both before month two.",
+      "build": "Months 0-3 was the whole launch. Brand book, Shopify build, twelve creative concepts shot in two days, the meta account from scratch, the first three Klaviyo flows. We launched in week ten with eight SKUs and a waiting list of 1,900.",
+      "run": "Months 3-10 we ran paid, lifecycle, and the founder's brand voice on every PDP. GMV hit ₹1.2cr by month seven. Repeat rate stabilized at 34%. We added a UGC pipeline that replaced the studio shoots by month nine.",
+      "handoff": "We'd hired Ishani as a brand coordinator in month four. By month nine she was writing PDP copy that read like the founder. Months 10-13 we transitioned paid to a freelance buyer we'd vetted, and lifecycle to Ishani. The brand voice was already hers.",
+      "exit": "Month 13 we sent the goodbye email and a USB stick with every creative asset organized by quarter. Counterhouse shipped a menswear line in March that we saw on Instagram like everyone else. The voice was unmistakably theirs."
+    },
+    "metrics": {
+      "roas": "3.8x blended (paid + lifecycle attributed)",
+      "cacReduction": "n/a — launch engagement",
+      "revenueScale": "0 → ₹1.2cr GMV in 7 months",
+      "timeToInHouse": "13 months"
+    },
+    "founder": {
+      "name": "Reyansh Khurana",
+      "role": "Founder",
+      "city": "Mumbai"
+    },
+    "testimonial": "Two other agencies took my deposit and disappeared. Last Agency said upfront: thirteen months, fixed fee, and we leave. They launched the brand in ten weeks. By month nine my coordinator was writing the PDP copy and I couldn't tell the difference. They taught her the brand voice better than I'd ever written it down. Then they actually left. They trained the team that replaced them and walked out the door on a Friday. I keep waiting for the renewal email. It's not coming.",
+    "accentColor": "#831843",
+    "handoffDate": "2025-12-15",
+    "_isSample": true
+  },
+  {
+    "slug": "mishti-co",
+    "brandName": "Mishti Co",
+    "industry": "food",
+    "headline": "Pulling Mishti Co's CAC out of a tailspin: ₹1,240 to ₹460 in nine months",
+    "services": ["The Build", "The Run", "The Handoff"],
+    "narrative": {
+      "preEngagement": "Mishti Co was a frozen-Indian-desserts brand bleeding on paid. CAC had climbed from ₹410 to ₹1,240 in seven months. The founder thought it was iOS 17. It wasn't — the funnel hadn't been rebuilt since launch and 60% of cold traffic was hitting a homepage that hadn't been updated since pre-product-market-fit.",
+      "build": "Months 0-2 we tore the funnel apart. New cold landing pages per audience. A reframed first-purchase offer (sample box, not 15% off). A creative-testing cadence: four new ads a week, sunset rules at 0.6 ROAS, no exceptions.",
+      "run": "CAC dropped to ₹460 by month nine while we scaled spend 2.3x. We added a route-to-market shift mid-engagement — a quick-commerce listing on Zepto and Blinkit that became 31% of revenue by month twelve.",
+      "handoff": "Months 12-15 Karthik, the founder's brother-in-law and former product manager, was the in-house growth hire we'd been training. He took over media buying and the weekly review. We migrated the GA4 doc and the creative library to their drive.",
+      "exit": "We left in February. Mishti hit their best month ever in April. Karthik sent us a video of his first board update. We watched it once and stopped checking the dashboard."
+    },
+    "metrics": {
+      "roas": "3.6x (from 1.2x)",
+      "cacReduction": "63% (₹1,240 → ₹460)",
+      "revenueScale": "₹2.8cr → ₹8.1cr ARR",
+      "timeToInHouse": "14 months"
+    },
+    "founder": {
+      "name": "Priya Iyer",
+      "role": "Co-founder & CEO",
+      "city": "Chennai"
+    },
+    "testimonial": "My CAC had tripled and my last agency told me to spend more to fix it. Last Agency looked at the same numbers and told me to stop — the funnel was broken, not the spend. They were right and it cost me less to hear them say it than the last quarter of bad ads. What surprised me wasn't the recovery. It was that by month twelve Karthik was running the meeting and they were quiet in the corner. They taught him out of needing them. The exit was the whole point. Most agencies pretend that's a sad thing. These ones threw a small dinner for it.",
+    "accentColor": "#A16207",
+    "handoffDate": "2026-02-10",
+    "_isSample": true
+  },
+  {
+    "slug": "tilden-learn",
+    "brandName": "Tilden Learn",
+    "industry": "edtech",
+    "headline": "Cutting Tilden's lead-to-enroll cost from $94 to $37 across two product lines in eleven months",
+    "services": ["The Build", "The Run", "The Handoff"],
+    "narrative": {
+      "preEngagement": "Tilden ran two products: a K-12 supplemental program and an adult-upskill track. They shared a paid account, two creatives, and a $94 cost per enrolled student. The founder couldn't tell which product was profitable on a marginal dollar.",
+      "build": "Months 0-3 we split the accounts, rebuilt landing pages per product, and introduced a real attribution model that didn't credit Google for the brand-search clicks the parent had already decided on. Lead-to-enroll started moving in week six.",
+      "run": "By month eleven, cost per enrolled student fell from $94 to $37 on the K-12 line and $156 to $61 on adult. Conversion windows shortened. We added a parent-referral mechanic that drove 18% of K-12 enrollments by month ten.",
+      "handoff": "Maya, hired in month five as a growth coordinator, was running both accounts by month twelve. We sat in on enrollment-week reviews through month fourteen and then stopped. The playbook was 38 pages with a separate appendix on attribution.",
+      "exit": "We left in January. Tilden launched a third product line in April that Maya scoped, briefed, and shipped. We heard about it from the alumni newsletter."
+    },
+    "metrics": {
+      "roas": "n/a — measured on cost per enrolled student",
+      "cacReduction": "61% K-12, 61% adult line",
+      "revenueScale": "$3.1M → $7.9M ARR",
+      "timeToInHouse": "14 months"
+    },
+    "founder": {
+      "name": "Marcus Tilden",
+      "role": "Founder & CEO",
+      "city": "Toronto"
+    },
+    "testimonial": "We'd been with two agencies before. Both wanted to keep adding scope. Last Agency wanted to keep removing it. By month ten they'd built the function, hired Maya in alongside us, and were already planning their last invoice. The day they left, I asked Maya if she felt ready. She said the playbook was so detailed she was annoyed they'd left anything for her to do. They trained her into a job that fired them — and they were proud of it. I've been in tech for fifteen years and never seen that.",
+    "accentColor": "#1E3A8A",
+    "handoffDate": "2025-01-18",
+    "_isSample": true
+  },
+  {
+    "slug": "ostara-market",
+    "brandName": "Ostara Market",
+    "industry": "marketplace",
+    "headline": "Doubling Ostara's two-sided GMV in fourteen months while shifting acquisition from paid to organic-driven",
+    "services": ["The Build", "The Run", "The Handoff", "The Exit"],
+    "narrative": {
+      "preEngagement": "Ostara is a marketplace for independent ceramicists. Two-sided. Supply growth had outpaced demand for nine months. Paid was the only demand engine. The founders had stopped opening the weekly dashboard because it depressed them.",
+      "build": "Months 0-3 we rebuilt the demand side. Programmatic SEO across artist + city + craft-style — 4,800 pages, indexed in waves. A reworked discovery feed on the site itself. A weekly editorial drop that gave the homepage a reason to be revisited.",
+      "run": "Months 3-12 GMV doubled. Organic share of new buyers climbed from 11% to 47%. We added a buyer-side referral that paid out in store credit and broke even by month nine. Paid spend stayed flat in absolute terms while becoming 31% of acquisition instead of 89%.",
+      "handoff": "Months 12-15 Esme, who'd joined as an editorial assistant in month four, took over the weekly drop and the SEO calendar. We trained a freelance buyer to handle the residual paid. The founders themselves took back the supply side, which had quietly stabilized.",
+      "exit": "Last invoice in February. The first programmatic page we built ranks #2 for its phrase eighteen months later. Ostara shipped a print magazine in April we knew nothing about. We bought a copy."
+    },
+    "metrics": {
+      "roas": "4.4x blended (paid + organic-attributed)",
+      "cacReduction": "Paid share 89% → 31% of acquisition",
+      "revenueScale": "2x GMV in 14 months ($4.2M → $8.7M)",
+      "timeToInHouse": "15 months"
+    },
+    "founder": {
+      "name": "Esme Cavendish",
+      "role": "Co-founder",
+      "city": "London"
+    },
+    "testimonial": "I'd been on the supply side of the marketplace for so long I'd forgotten there was a demand problem. Last Agency built the demand engine in eleven months and then — this is the part I still can't get over — left. They wrote a 42-page document, made me sit through a Friday where I ran the meeting and they didn't speak, and then sent a goodbye email. They trained the team that replaced them and walked out. I keep recommending them to other founders and watching the same look of confusion cross their faces. Yes. They actually leave.",
+    "accentColor": "#475569",
+    "handoffDate": "2024-11-04",
+    "_isSample": true
+  }
+]

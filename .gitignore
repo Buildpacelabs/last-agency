@@ -1,0 +1,29 @@
+# dependencies
+node_modules/
+website/node_modules/
+
+# build artifacts
+.next/
+website/.next/
+out/
+website/out/
+
+# vercel
+.vercel/
+website/.vercel/
+
+# env files
+.env
+.env.local
+.env*.local
+
+# system
+.DS_Store
+*.log
+
+# editor
+.vscode/
+.idea/
+
+# next-env types (generated)
+next-env.d.ts

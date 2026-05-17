@@ -1,0 +1,501 @@
+{
+  "_meta": {
+    "owner": "seo-manager",
+    "version": "1.0",
+    "lastUpdated": "2026-05-17",
+    "domain": "https://lastagency.com",
+    "notes": [
+      "All titles 50–63 chars, all descriptions 140–160 chars.",
+      "Voice-checked against banned-phrases.json v1.0.",
+      "Case-study entries use the 8 real slugs from case-studies.json.",
+      "Social URLs in Organization.sameAs are placeholders for MANUAL-WORK substitution."
+    ]
+  },
+
+  "_keywords": [
+    "performance marketing agency for startups",
+    "Meta ads agency India",
+    "agency exit playbook",
+    "in-house performance marketing handoff",
+    "fixed-term growth agency",
+    "ROAS optimization agency",
+    "creative pipeline scaling",
+    "paid media agency Bangalore",
+    "lifecycle marketing agency",
+    "brand and performance agency India",
+    "Series A growth agency",
+    "growth function setup",
+    "marketing playbook handover",
+    "contrarian marketing agency",
+    "fire-yourself agency model"
+  ],
+
+  "/": {
+    "title": "Last Agency — your last agency. we make ourselves redundant.",
+    "description": "An agency built to fire itself. We set up paid, lifecycle, brand. Run it twelve to eighteen months. Train your hire. Hand over the playbook. Then we leave.",
+    "ogImage": "/og/home.png",
+    "ogImageStrategy": "vercel-og-generated",
+    "keywords": [
+      "performance marketing agency for startups",
+      "agency exit playbook",
+      "fixed-term growth agency",
+      "in-house performance marketing handoff",
+      "Meta ads agency India",
+      "fire-yourself agency model"
+    ],
+    "canonical": "https://lastagency.com/",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Last Agency",
+      "alternateName": "Last Agency Pvt Ltd",
+      "url": "https://lastagency.com",
+      "logo": "https://lastagency.com/logo.png",
+      "description": "A fixed-term growth agency. We build a brand's paid, lifecycle, or brand function, run it for twelve to eighteen months, train the in-house hire, hand over the playbook, and exit.",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Bangalore, India"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bangalore",
+        "addressRegion": "Karnataka",
+        "addressCountry": "IN"
+      },
+      "email": "hello@lastagency.com",
+      "sameAs": [
+        "https://lastagency.com/_/social/instagram",
+        "https://lastagency.com/_/social/linkedin",
+        "https://lastagency.com/_/social/twitter"
+      ]
+    }
+  },
+
+  "/work": {
+    "title": "Work — fourteen exits. still running standalone. | Last Agency",
+    "description": "Case studies of companies we built, ran, then walked away from. Each card shows the months they've been running standalone since the handoff date.",
+    "ogImage": "/og/work.png",
+    "ogImageStrategy": "vercel-og-generated",
+    "keywords": [
+      "performance marketing case studies",
+      "agency handoff case study",
+      "ROAS case study India",
+      "growth function case study",
+      "Meta ads case study"
+    ],
+    "canonical": "https://lastagency.com/work",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Work — Last Agency",
+      "description": "Case studies of companies we built, ran, and exited. Each one is still running standalone.",
+      "url": "https://lastagency.com/work",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Last Agency",
+        "url": "https://lastagency.com"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lastagency.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://lastagency.com/work" }
+        ]
+      }
+    }
+  },
+
+  "/services": {
+    "title": "Services — Build, Run, Handoff, Exit | Last Agency",
+    "description": "Four things, in order. Build the function. Run it for twelve months. Train your in-house hire. Hand over the playbook. Fixed term. No auto-renew.",
+    "ogImage": "/og/services.png",
+    "ogImageStrategy": "vercel-og-generated",
+    "keywords": [
+      "performance marketing services",
+      "growth function setup",
+      "marketing playbook handover",
+      "fixed-term marketing engagement",
+      "agency exit playbook",
+      "in-house performance marketing handoff",
+      "ROAS optimization",
+      "creative pipeline scaling"
+    ],
+    "canonical": "https://lastagency.com/services",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Build",
+        "serviceType": "Growth function setup",
+        "provider": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "description": "Six months. Fixed scope. We set up the paid, lifecycle, brand, or creative function — whichever was bleeding. Weekly numbers, monthly board doc.",
+        "areaServed": "Worldwide",
+        "url": "https://lastagency.com/services#build"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Run",
+        "serviceType": "Growth function operation",
+        "provider": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "description": "Six to twelve months. We operate the function we built. Hit the numbers. Document every decision so the playbook writes itself.",
+        "areaServed": "Worldwide",
+        "url": "https://lastagency.com/services#run"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Handoff",
+        "serviceType": "In-house team training and knowledge transfer",
+        "provider": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "description": "Two to three months. We hire-train your in-house lead, sit shoulder-to-shoulder, transfer accounts, dashboards, vendor relationships, and the written playbook.",
+        "areaServed": "Worldwide",
+        "url": "https://lastagency.com/services#handoff"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Exit",
+        "serviceType": "Engagement closeout",
+        "provider": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "description": "One month. We close out. You own the accounts, the data, the playbook. We stay reachable for thirty days post-exit. Then we're gone.",
+        "areaServed": "Worldwide",
+        "url": "https://lastagency.com/services#exit"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lastagency.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://lastagency.com/services" }
+        ]
+      }
+    ]
+  },
+
+  "/about": {
+    "title": "About — we built an agency to fire ourselves | Last Agency",
+    "description": "Aman ran growth at three Series B companies and watched each one stay stuck with an agency two years past usefulness. So we built a different model.",
+    "ogImage": "/og/about.png",
+    "ogImageStrategy": "vercel-og-generated",
+    "keywords": [
+      "contrarian marketing agency",
+      "fire-yourself agency model",
+      "agency exit playbook",
+      "Aman Last Agency founder",
+      "anti-retainer agency"
+    ],
+    "canonical": "https://lastagency.com/about",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About — Last Agency",
+        "description": "Why we built an agency to fire itself. The thesis, the founders, the model.",
+        "url": "https://lastagency.com/about",
+        "mainEntity": {
+          "@type": "Organization",
+          "name": "Last Agency",
+          "url": "https://lastagency.com",
+          "founder": [
+            { "@type": "Person", "name": "Aman" },
+            { "@type": "Person", "name": "Priya" }
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lastagency.com/" },
+          { "@type": "ListItem", "position": 2, "name": "About", "item": "https://lastagency.com/about" }
+        ]
+      }
+    ]
+  },
+
+  "/get-in-touch": {
+    "title": "Talk to us — tell us what's bleeding | Last Agency",
+    "description": "Send a note. Aman or Priya replies within one business day. If we're not the right fit, we'll tell you within forty-eight hours. No chatbot.",
+    "ogImage": "/og/get-in-touch.png",
+    "ogImageStrategy": "vercel-og-generated",
+    "keywords": [
+      "hire performance marketing agency",
+      "Bangalore growth agency contact",
+      "talk to a growth agency",
+      "performance marketing consultation"
+    ],
+    "canonical": "https://lastagency.com/get-in-touch",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Talk to us — Last Agency",
+        "description": "How to reach Last Agency. One-business-day reply from a founder.",
+        "url": "https://lastagency.com/get-in-touch",
+        "mainEntity": {
+          "@type": "Organization",
+          "name": "Last Agency",
+          "email": "hello@lastagency.com",
+          "url": "https://lastagency.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lastagency.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Talk to us", "item": "https://lastagency.com/get-in-touch" }
+        ]
+      }
+    ]
+  },
+
+  "/work/helio-coffee": {
+    "title": "Helio Coffee. 15 months. 4.3x ROAS. Then we left. | Last Agency",
+    "description": "How we took Helio Coffee from ₹4.2cr to ₹18.6cr ARR and cut CAC from ₹890 to ₹410. Built the function. Trained Riya. Handed over the playbook. Then we left.",
+    "ogImage": "/og/helio-coffee.png",
+    "ogImageStrategy": "vercel-og-generated",
+    "keywords": ["D2C performance marketing case study", "coffee brand growth", "Meta ads ROAS case study", "CAC reduction India", "agency handoff D2C"],
+    "canonical": "https://lastagency.com/work/helio-coffee",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Helio Coffee — 15 months, 4.3x ROAS, then we left.",
+        "description": "How Last Agency took Helio Coffee from ₹4.2cr to ₹18.6cr ARR while cutting CAC from ₹890 to ₹410, then trained Riya in-house and exited.",
+        "author": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "publisher": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "datePublished": "2025-04-12",
+        "url": "https://lastagency.com/work/helio-coffee",
+        "about": { "@type": "Organization", "name": "Helio Coffee" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lastagency.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://lastagency.com/work" },
+          { "@type": "ListItem", "position": 3, "name": "Helio Coffee", "item": "https://lastagency.com/work/helio-coffee" }
+        ]
+      }
+    ]
+  },
+
+  "/work/mailweave": {
+    "title": "Mailweave. 14 months. CAC cut 47%. Then we left. | Last Agency",
+    "description": "How we cut Mailweave's CAC from $612 to $324 while doubling paid spend. Built the funnel. Trained Daniel. Handed over the playbook. Then we left.",
+    "ogImage": "/og/mailweave.png",
+    "ogImageStrategy": "vercel-og-generated",
+    "keywords": ["SaaS performance marketing case study", "CAC reduction SaaS", "developer marketing", "LinkedIn paid SaaS", "PLG paid layer"],
+    "canonical": "https://lastagency.com/work/mailweave",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Mailweave — 14 months, CAC cut 47%, then we left.",
+        "description": "How Last Agency cut Mailweave's CAC from $612 to $324 while doubling paid spend, then handed the function to an in-house team and exited.",
+        "author": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "publisher": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "datePublished": "2025-09-08",
+        "url": "https://lastagency.com/work/mailweave",
+        "about": { "@type": "Organization", "name": "Mailweave" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lastagency.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://lastagency.com/work" },
+          { "@type": "ListItem", "position": 3, "name": "Mailweave", "item": "https://lastagency.com/work/mailweave" }
+        ]
+      }
+    ]
+  },
+
+  "/work/kachra-capital": {
+    "title": "Kachra Capital. 13 months. 27x merchant volume. | Last Agency",
+    "description": "How we grew Kachra Capital from 1,400 to 38,000 monthly funded merchants at flat CAC. Built the funnel. Trained Vikram. Handed over the playbook. Then we left.",
+    "ogImage": "/og/kachra-capital.png",
+    "ogImageStrategy": "vercel-og-generated",
+    "keywords": ["fintech performance marketing case study", "kirana lending growth", "vernacular creative", "merchant acquisition India", "fintech CAC"],
+    "canonical": "https://lastagency.com/work/kachra-capital",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Kachra Capital — 13 months, 27x merchant volume, then we left.",
+        "description": "How Last Agency scaled Kachra Capital from 1,400 to 38,000 monthly funded merchants at flat blended CAC, then handed the function to Vikram and exited.",
+        "author": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "publisher": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "datePublished": "2025-07-22",
+        "url": "https://lastagency.com/work/kachra-capital",
+        "about": { "@type": "Organization", "name": "Kachra Capital" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lastagency.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://lastagency.com/work" },
+          { "@type": "ListItem", "position": 3, "name": "Kachra Capital", "item": "https://lastagency.com/work/kachra-capital" }
+        ]
+      }
+    ]
+  },
+
+  "/work/verdant-ritual": {
+    "title": "Verdant Ritual. Repeat 18% to 51%. Then we left. | Last Agency",
+    "description": "How we lifted Verdant Ritual's repeat rate from 18% to 51% and cut paid dependency in half. Built lifecycle. Trained Tara. Wrote the playbook. Then we left.",
+    "ogImage": "/og/verdant-ritual.png",
+    "ogImageStrategy": "vercel-og-generated",
+    "keywords": ["lifecycle marketing case study", "Klaviyo flows case study", "wellness D2C", "repeat rate", "lifecycle agency handoff"],
+    "canonical": "https://lastagency.com/work/verdant-ritual",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Verdant Ritual — repeat rate 18% to 51%, then we left.",
+        "description": "How Last Agency rebuilt Verdant Ritual's lifecycle flows, lifted repeat rate from 18% to 51%, and trained an in-house Lifecycle Lead.",
+        "author": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "publisher": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "datePublished": "2025-11-30",
+        "url": "https://lastagency.com/work/verdant-ritual",
+        "about": { "@type": "Organization", "name": "Verdant Ritual" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lastagency.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://lastagency.com/work" },
+          { "@type": "ListItem", "position": 3, "name": "Verdant Ritual", "item": "https://lastagency.com/work/verdant-ritual" }
+        ]
+      }
+    ]
+  },
+
+  "/work/counterhouse": {
+    "title": "Counterhouse. 0 to 1.2cr GMV. Then we left. | Last Agency",
+    "description": "How we launched Counterhouse from zero to ₹1.2cr GMV in seven months. Built the brand. Trained Ishani. Handed over the playbook. Then we left in month 13.",
+    "ogImage": "/og/counterhouse.png",
+    "ogImageStrategy": "vercel-og-generated",
+    "keywords": ["fashion D2C launch case study", "Shopify launch agency", "brand voice handoff", "UGC pipeline", "fashion brand agency"],
+    "canonical": "https://lastagency.com/work/counterhouse",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Counterhouse — 0 to ₹1.2cr GMV in 7 months, then we left.",
+        "description": "How Last Agency launched Counterhouse from a deck to ₹1.2cr GMV in seven months, handed the brand voice to an in-house coordinator, and exited.",
+        "author": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "publisher": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "datePublished": "2025-12-15",
+        "url": "https://lastagency.com/work/counterhouse",
+        "about": { "@type": "Organization", "name": "Counterhouse" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lastagency.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://lastagency.com/work" },
+          { "@type": "ListItem", "position": 3, "name": "Counterhouse", "item": "https://lastagency.com/work/counterhouse" }
+        ]
+      }
+    ]
+  },
+
+  "/work/mishti-co": {
+    "title": "Mishti Co. CAC ₹1,240 to ₹460. Then we left. | Last Agency",
+    "description": "How we pulled Mishti Co's CAC from ₹1,240 to ₹460 in nine months. Rebuilt the funnel. Trained Karthik. Handed over the playbook. Then we left in February.",
+    "ogImage": "/og/mishti-co.png",
+    "ogImageStrategy": "vercel-og-generated",
+    "keywords": ["food D2C case study", "quick commerce growth", "creative testing cadence", "frozen food brand", "Zepto Blinkit case study"],
+    "canonical": "https://lastagency.com/work/mishti-co",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Mishti Co — CAC ₹1,240 to ₹460 in 9 months, then we left.",
+        "description": "How Last Agency rebuilt Mishti Co's funnel, cut CAC 63%, added a quick-commerce route, and handed the function to an in-house lead.",
+        "author": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "publisher": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "datePublished": "2026-02-10",
+        "url": "https://lastagency.com/work/mishti-co",
+        "about": { "@type": "Organization", "name": "Mishti Co" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lastagency.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://lastagency.com/work" },
+          { "@type": "ListItem", "position": 3, "name": "Mishti Co", "item": "https://lastagency.com/work/mishti-co" }
+        ]
+      }
+    ]
+  },
+
+  "/work/tilden-learn": {
+    "title": "Tilden Learn. Enroll cost cut 61%. Then we left. | Last Agency",
+    "description": "How we cut Tilden's cost per enrolled student from $94 to $37 across two product lines. Built attribution. Trained Maya. Wrote the playbook. Then we left.",
+    "ogImage": "/og/tilden-learn.png",
+    "ogImageStrategy": "vercel-og-generated",
+    "keywords": ["edtech performance marketing case study", "cost per enrolled student", "K-12 paid", "adult learning paid", "attribution model edtech"],
+    "canonical": "https://lastagency.com/work/tilden-learn",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Tilden Learn — enroll cost cut 61%, then we left.",
+        "description": "How Last Agency split Tilden's K-12 and adult product accounts, fixed attribution, and cut cost per enrolled student by 61% before handing off.",
+        "author": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "publisher": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "datePublished": "2025-01-18",
+        "url": "https://lastagency.com/work/tilden-learn",
+        "about": { "@type": "Organization", "name": "Tilden Learn" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lastagency.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://lastagency.com/work" },
+          { "@type": "ListItem", "position": 3, "name": "Tilden Learn", "item": "https://lastagency.com/work/tilden-learn" }
+        ]
+      }
+    ]
+  },
+
+  "/work/ostara-market": {
+    "title": "Ostara Market. GMV doubled in 14 months. | Last Agency",
+    "description": "How we doubled Ostara's two-sided GMV and shifted acquisition from paid to organic. Built demand. Trained Esme. Handed over the playbook. Then we left.",
+    "ogImage": "/og/ostara-market.png",
+    "ogImageStrategy": "vercel-og-generated",
+    "keywords": ["marketplace performance marketing case study", "programmatic SEO marketplace", "two-sided GMV growth", "organic shift", "ceramics marketplace"],
+    "canonical": "https://lastagency.com/work/ostara-market",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Ostara Market — GMV doubled in 14 months, then we left.",
+        "description": "How Last Agency rebuilt Ostara Market's demand side with programmatic SEO and editorial, doubled GMV, and shifted acquisition from paid to organic.",
+        "author": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "publisher": { "@type": "Organization", "name": "Last Agency", "url": "https://lastagency.com" },
+        "datePublished": "2024-11-04",
+        "url": "https://lastagency.com/work/ostara-market",
+        "about": { "@type": "Organization", "name": "Ostara Market" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lastagency.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://lastagency.com/work" },
+          { "@type": "ListItem", "position": 3, "name": "Ostara Market", "item": "https://lastagency.com/work/ostara-market" }
+        ]
+      }
+    ]
+  }
+}
