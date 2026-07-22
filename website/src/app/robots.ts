@@ -1,14 +1,8 @@
 import type { MetadataRoute } from 'next';
 
 /**
- * Robots metadata — see output/robots-and-sitemap.md for the canonical spec.
- *
- * Production base: https://lastagency.com
- *
- * - `/api/`, `/_next/` blocked from indexers (server-only / build chunks).
- * - `/thanks` and `/404` blocked (transient / soft-404 surfaces, not landing
- *   pages).
- * - Sitemap pointer keeps crawl-budget cheap.
+ * Robots — production base https://lastagency.com. Single-page site: allow the
+ * root, block build chunks. Sitemap pointer keeps crawl cheap.
  */
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -16,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/_next/', '/thanks', '/404'],
+        disallow: ['/_next/'],
       },
     ],
     sitemap: 'https://lastagency.com/sitemap.xml',
