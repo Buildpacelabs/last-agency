@@ -190,6 +190,194 @@ const STATS: { big: string; lab: string }[] = [
   { big: '0', lab: 'Clients on lock-in contracts' },
 ];
 
+type Tier = {
+  badge: string;
+  badgeClass?: string;
+  featured?: boolean;
+  name: string;
+  tagline: string;
+  price: string;
+  bracket?: string;
+  get: string[];
+  how: string[];
+};
+
+const SOCIAL_TIERS: Tier[] = [
+  {
+    badge: 'Starter',
+    name: 'Content Starter',
+    tagline: 'Show up consistently on the channels that matter — without ever touching a camera.',
+    price: '₹30,000',
+    get: [
+      'A consistent, on-brand presence on your 2 most important channels',
+      'Every reel shot-scripted and edited by us — you never supply footage',
+      'Captions and topics mapped to real keyword demand, so social feeds search',
+      'A real human answering comments and DMs in business hours',
+      'One monthly strategy call + a plain-English performance report',
+    ],
+    how: [
+      '2 platforms (Instagram + Facebook or LinkedIn)',
+      '16 posts + 4 fully-produced reels / month',
+      'Branded templates + original copywriting',
+      'Keyword-informed hashtag & topic research',
+      '1 SEO blog / month, repurposed from your best social',
+      'Named account lead + monthly report',
+    ],
+  },
+  {
+    badge: 'Most popular',
+    badgeClass: 'pop',
+    featured: true,
+    name: 'Growth Engine',
+    tagline: 'One production line that grows followers AND organic search at the same time.',
+    price: '₹50,000',
+    get: [
+      'A content engine that compounds followers and Google traffic together',
+      'Art-directed, trend-led creative — not recycled templates',
+      'Proactive community management that turns comments into leads',
+      'Two ranking blogs a month, sliced into carousels, threads and reel scripts',
+      "Bi-weekly reporting + strategy calls so you always know what's next",
+    ],
+    how: [
+      '3 platforms (Instagram + 2 of Facebook / LinkedIn / YouTube Shorts)',
+      '20 posts + 8 fully-produced reels / month',
+      'Custom creative direction + trend research + concepting',
+      '2 SEO long-form blogs / month — write once, distribute twice',
+      'Competitor content analysis + monthly strategy',
+      'Named lead, 1-business-day response',
+    ],
+  },
+  {
+    badge: 'Full service',
+    badgeClass: 'full',
+    name: 'Brand Studio',
+    tagline: 'A dedicated creative pod that runs your brand like an in-house studio.',
+    price: '₹70,000',
+    get: [
+      "A dedicated pod that runs your brand like in-house — for a fraction of a boutique agency's cost",
+      'High-velocity produced video: concept, shoot direction and edit handled',
+      'A compounding SEO asset base — pillar-and-cluster, not one-off posts',
+      'Influencer and UGC collaborations coordinated for you',
+      'Weekly reporting, a live dashboard and a manager who owns the outcome',
+    ],
+    how: [
+      '3–4 platforms with per-platform content plans',
+      '30 posts + 12 fully-produced reels / month',
+      'Dedicated pod: strategist + designer + video editor',
+      '4 SEO blogs / month in a pillar/cluster structure, repurposed across social',
+      'Influencer / UGC collaboration coordination',
+      'Dedicated manager, same-day response',
+    ],
+  },
+];
+
+const PERF_TIERS: Tier[] = [
+  {
+    badge: 'Entry',
+    name: 'Ignite',
+    tagline: 'Both Meta and Google, run by a senior buyer — not a set-and-forget script.',
+    price: '₹40,000',
+    bracket: 'Manages up to ₹2L / mo ad spend',
+    get: [
+      'Your ads live on both Meta and Google from day one — not just one channel',
+      'A senior buyer actually structuring and optimising the account',
+      'Conversion tracking installed correctly, so every rupee is measured',
+      'Fresh creative produced and tested monthly, never left to fatigue',
+      "Guarantee: beat your agreed baseline (CPA or ROAS — your call) in 90 days, or next month's management fee is free",
+    ],
+    how: [
+      'Dual channel: Meta (FB + IG) + Google Ads',
+      'Full account setup, structuring and audience research',
+      '8–12 ad-creative variants / month, tested in a framework',
+      'Conversion tracking + pixel/tag setup and QA',
+      'Weekly optimisation, monthly review call',
+    ],
+  },
+  {
+    badge: 'Most popular',
+    badgeClass: 'pop',
+    featured: true,
+    name: 'Scale',
+    tagline: 'Full-funnel Meta + Google, a real creative pipeline, and tracking you can trust.',
+    price: '₹75,000',
+    bracket: 'Manages ₹2L–₹8L / mo ad spend',
+    get: [
+      'Full-funnel Meta + Google run by a dedicated buyer who owns your numbers',
+      '20–30 tested creative variants a month, so winners are found fast',
+      'Server-side tracking (Meta CAPI + GA4) recovers conversions that iOS and cookie loss would otherwise hide',
+      'We own the landing page and conversion rate, not just the click',
+      "Guarantee: beat your agreed baseline (CPA or ROAS — your call) in 90 days, or next month's management fee is free",
+    ],
+    how: [
+      'Full-funnel Meta + Google: prospecting, retargeting, retention',
+      '20–30 creative variants / month from a dedicated pipeline',
+      'Server-side tracking (Conversions API + GA4 server-side)',
+      'Landing-page / CRO ownership and A/B testing',
+      'Dedicated senior buyer + analyst, weekly reviews, live dashboard',
+    ],
+  },
+  {
+    badge: 'Full service',
+    badgeClass: 'full',
+    name: 'Dominate',
+    tagline: 'A cross-functional pod run like your in-house growth team, with attribution you can trust.',
+    price: '₹1,50,000',
+    bracket: 'Manages ₹8L–₹25L / mo ad spend',
+    get: [
+      'A cross-functional pod: senior buyer + creative team + analyst',
+      '40–60 tested variants a month across every format',
+      'Attribution you can trust: server-side tracking + incrementality testing',
+      'Programmatic, YouTube and marketplace channels layered on as you scale',
+      'Skin in the game: we only earn a performance bonus once you clear your target ROAS — on top of the same fee-free guarantee',
+    ],
+    how: [
+      'Full-funnel across Meta, Google, YouTube + programmatic as needed',
+      '40–60 creative variants / month from a dedicated creative team',
+      'Advanced attribution: server-side tracking, incrementality + media-mix testing',
+      'Flat ₹1.5L floor OR floor + 8–10% of spend (whichever is higher)',
+      'Real-time dashboards, weekly reviews + monthly strategy sessions',
+    ],
+  },
+];
+
+type Bundle = {
+  combines: string[];
+  name: string;
+  price: string;
+  was: string;
+  save: string;
+  body: string;
+  best?: boolean;
+};
+
+const BUNDLES: Bundle[] = [
+  {
+    combines: ['SEO', 'Social'],
+    name: 'Organic Growth Engine',
+    price: '₹99,000',
+    was: '₹1,25,000 à la carte',
+    save: 'Save ₹26,000 / mo · ~21% off',
+    body: 'Own organic: rank on Google and build a branded feed from one shared content pipeline. The blogs and social are produced once and distributed across both — so it costs less to run, and we pass the saving on.',
+  },
+  {
+    combines: ['Social', 'Performance'],
+    name: 'Full-Funnel Starter',
+    price: '₹75,000',
+    was: '₹90,000 à la carte',
+    save: 'Save ₹15,000 / mo · ~17% off',
+    body: "Demand now. Produced organic content plus dual-channel paid ads for D2C and lead-gen brands that aren't ready for full SEO yet. Your organic creative doubles as ad creative, cutting production cost.",
+  },
+  {
+    combines: ['SEO', 'Social', 'Performance'],
+    name: 'Own Everything Stack',
+    price: '₹1,75,000',
+    was: '₹2,20,000 à la carte',
+    save: 'Save ₹45,000 / mo · ~20% off',
+    best: true,
+    body: 'One team owns search, social and paid end-to-end: a single content pipeline feeds all three, and attribution is unified across organic and paid. Every service keeps its own guarantee — SEO works free until it beats your baseline, paid waives a month’s fee if it misses — and one partner is accountable for the whole number, instead of three vendors pointing fingers.',
+  },
+];
+
 const FAQ: { q: string; a: React.ReactNode; plain: string }[] = [
   {
     q: 'You said no ranking guarantees — but "rank or it\'s free"?',
@@ -335,6 +523,42 @@ const JSON_LD = {
       },
     },
     {
+      '@type': 'Service',
+      '@id': `${SITE_URL}/#social`,
+      name: 'Organic Social & Content',
+      serviceType: 'Social media marketing',
+      provider: { '@id': `${SITE_URL}/#org` },
+      areaServed: 'IN',
+      description:
+        'End-to-end produced social content — reels, carousels and SEO blogs from one pipeline — that grows followers and organic search together.',
+      offers: {
+        '@type': 'AggregateOffer',
+        priceCurrency: 'INR',
+        lowPrice: '30000',
+        highPrice: '70000',
+        offerCount: 3,
+        url: `${SITE_URL}/#services`,
+      },
+    },
+    {
+      '@type': 'Service',
+      '@id': `${SITE_URL}/#performance`,
+      name: 'Performance Marketing',
+      serviceType: 'Pay-per-click advertising management',
+      provider: { '@id': `${SITE_URL}/#org` },
+      areaServed: 'IN',
+      description:
+        "Full-funnel Meta and Google paid media — creative, server-side tracking, CRO and a beat-your-baseline-or-it's-free guarantee. Flat fee, no media markup.",
+      offers: {
+        '@type': 'AggregateOffer',
+        priceCurrency: 'INR',
+        lowPrice: '40000',
+        highPrice: '150000',
+        offerCount: 3,
+        url: `${SITE_URL}/#performance`,
+      },
+    },
+    {
       '@type': 'FAQPage',
       '@id': `${SITE_URL}/#faq`,
       mainEntity: FAQ.map((f) => ({
@@ -347,6 +571,38 @@ const JSON_LD = {
 };
 
 /* --- Page ---------------------------------------------------------------- */
+function TierCard({ t, cta }: { t: Tier; cta: string }): JSX.Element {
+  return (
+    <div className={`tier${t.featured ? ' pop' : ''}`}>
+      <span className={`badge${t.badgeClass ? ` ${t.badgeClass}` : ''}`}>{t.badge}</span>
+      <h3>{t.name}</h3>
+      <p className="tagline">{t.tagline}</p>
+      <div className="price">
+        <span className="amt num">{t.price}</span>
+        <span className="per">/ month</span>
+      </div>
+      {t.bracket ? <div className="bracket">{t.bracket}</div> : null}
+      <div className="lbl">What you get</div>
+      <ul className="get">
+        {t.get.map((g, i) => (
+          <li key={i}>{g}</li>
+        ))}
+      </ul>
+      <div className="lbl">How we do it</div>
+      <ul className="how">
+        {t.how.map((h, i) => (
+          <li key={i}>{h}</li>
+        ))}
+      </ul>
+      <div className="tier-cta">
+        <a className="btn btn-red" href="#book">
+          {cta}
+        </a>
+      </div>
+    </div>
+  );
+}
+
 export default function HomePage(): JSX.Element {
   return (
     <>
@@ -372,9 +628,14 @@ export default function HomePage(): JSX.Element {
             <span className="blip" aria-hidden="true" />
             LAST&nbsp;<b>AGENCY</b>
           </a>
-          <a className="btn btn-red" href="#book">
-            Book a call →
-          </a>
+          <div className="nav-right">
+            <a className="nav-link" href="#services">
+              Services &amp; pricing
+            </a>
+            <a className="btn btn-red" href="#book">
+              Book a call →
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -550,6 +811,100 @@ export default function HomePage(): JSX.Element {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* NEW — Organic Social & Content */}
+        <section className="band-ink pad" id="services" aria-labelledby="social-h">
+          <div className="wrap">
+            <p className="eyebrow eyebrow-red">SEO is the core — here's the rest of the system</p>
+            <h2 className="sec-h" id="social-h">
+              Rank on Google. Own the feed too.
+            </h2>
+            <p className="lede">
+              Your organic content shouldn't just sit on Instagram. We produce it end-to-end — reels,
+              carousels, blogs — and wire every piece to double as a search asset. Write once,
+              distribute twice: one production line grows your following <em>and</em> your rankings.
+            </p>
+            <div className="tiers">
+              {SOCIAL_TIERS.map((t, i) => (
+                <TierCard key={i} t={t} cta="Start with this" />
+              ))}
+            </div>
+            <p className="svc-note">
+              All prices per month, ex-GST. Month-to-month after the first quarter. Reels produced by
+              us — you never supply footage.
+            </p>
+          </div>
+        </section>
+
+        {/* NEW — Performance Marketing */}
+        <section className="band-red pad" id="performance" aria-labelledby="perf-h">
+          <div className="wrap">
+            <p className="eyebrow eyebrow-ink">When you're ready to pour fuel on it</p>
+            <h2 className="sec-h" id="perf-h">
+              Paid media, run like it's our own money.
+            </h2>
+            <p className="lede">
+              We don't just push buttons. We architect the funnel, produce the creative, own the
+              tracking and the landing page, and make the call on where every rupee goes. Flat
+              management fee — ad spend is billed separately and paid straight to Meta and Google.
+              No media markup, ever.
+            </p>
+            <div className="tiers">
+              {PERF_TIERS.map((t, i) => (
+                <TierCard key={i} t={t} cta="Book a paid audit" />
+              ))}
+            </div>
+            <p className="svc-note">
+              Fees ex-GST; ad spend separate. Skin in the game: beat your agreed baseline (CPA or
+              ROAS — your call) in 90 days, or next month's management fee is free.
+            </p>
+          </div>
+        </section>
+
+        {/* NEW — Bundles */}
+        <section className="band-ink pad" id="bundles" aria-labelledby="bundles-h">
+          <div className="wrap">
+            <p className="eyebrow eyebrow-red">Stack them and save</p>
+            <h2 className="sec-h" id="bundles-h">
+              Bundle it. One team, one pipeline, one bill.
+            </h2>
+            <p className="lede">
+              Every service shares the same content pipeline and the same data. Run them together and
+              it costs us less to deliver — so it costs you less. Each service keeps its own
+              guarantee; one team owns the whole number.
+            </p>
+            <div className="bundles-grid">
+              {BUNDLES.map((b, i) => (
+                <div className={`bundle${b.best ? ' best' : ''}`} key={i}>
+                  <div className="combine">
+                    {b.combines.map((c, j) => (
+                      <span className="chip" key={j}>
+                        {c}
+                      </span>
+                    ))}
+                  </div>
+                  <h3>{b.name}</h3>
+                  <div className="price">
+                    <span className="amt num">{b.price}</span>
+                    <span className="per">/ month</span>
+                  </div>
+                  <div className="strike num">{b.was}</div>
+                  <span className="save">{b.save}</span>
+                  <p>{b.body}</p>
+                  <div className="bundle-cta">
+                    <a className="btn btn-cream" href="#book">
+                      Get this bundle
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="svc-note">
+              Bundle prices per month, ex-GST. Ad spend billed separately. Cancel any single service
+              with 30 days' notice.
+            </p>
           </div>
         </section>
 
