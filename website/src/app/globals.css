@@ -193,6 +193,24 @@ nav.site {
 .nav-right { display: flex; align-items: center; gap: 20px; }
 .nav-link { font-family: var(--mono); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--cream-dim); }
 .nav-link:hover { color: var(--cream); }
+.nav-link.active { color: var(--yellow); }
+
+/* Mobile hamburger — hidden on desktop, shown < 760px */
+.nav-toggle {
+  display: none;
+  width: 44px; height: 40px;
+  align-items: center; justify-content: center;
+  border: 2px solid rgba(247,239,224,.3);
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+}
+.nav-toggle .bars { position: relative; display: block; width: 20px; height: 2px; background: var(--cream); }
+.nav-toggle .bars::before,
+.nav-toggle .bars::after { content: ""; position: absolute; left: 0; width: 20px; height: 2px; background: var(--cream); }
+.nav-toggle .bars::before { top: -6px; }
+.nav-toggle .bars::after { top: 6px; }
+.nav-menu { display: none; }
 
 /* ---- Hero --------------------------------------------------------------- */
 .hero { position: relative; padding: 66px 0 80px; overflow: hidden; }
@@ -486,6 +504,32 @@ nav.site {
 .bundle-cta { margin-top: auto; padding-top: 24px; }
 .bundle-cta .btn { width: 100%; justify-content: center; }
 
+/* ---- Service overview cards (home + pricing recap) --------------------- */
+.svc-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 40px; align-items: stretch; }
+.svc-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--cream);
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: 18px;
+  padding: 28px 24px 24px;
+  box-shadow: 6px 6px 0 var(--red);
+  text-decoration: none;
+}
+.band-red .svc-card { box-shadow: 6px 6px 0 var(--ink); }
+.svc-card .k { font-family: var(--mono); font-size: 11.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--red-deep); }
+.svc-card h3 { font-size: clamp(22px, 2.6vw, 28px); text-transform: uppercase; margin-top: 12px; letter-spacing: -.02em; }
+.svc-card .one { font-family: var(--sans); font-size: 15px; line-height: 1.4; color: rgba(20,16,12,.72); margin-top: 10px; }
+.svc-card .from { font-family: var(--mono); font-size: 13px; font-weight: 700; color: var(--ink); margin-top: 14px; text-transform: uppercase; letter-spacing: .04em; }
+.svc-card ul { display: grid; gap: 9px; margin: 18px 0 0; padding-top: 18px; border-top: 1px dashed rgba(20,16,12,.24); }
+.svc-card li { font-family: var(--sans); font-size: 14px; line-height: 1.4; padding-left: 22px; position: relative; }
+.svc-card li::before { content: "\2713"; position: absolute; left: 0; top: 0; color: var(--red-deep); font-weight: 700; }
+.svc-card .go { font-family: var(--disp); text-transform: uppercase; font-size: 14px; letter-spacing: -.01em; color: var(--red-deep); margin-top: auto; padding-top: 22px; }
+.svc-card:hover .go { text-decoration: underline; text-underline-offset: 3px; }
+
+.svc-note a { color: inherit; text-decoration: underline; text-underline-offset: 3px; font-weight: 700; }
+
 /* ---- Scarcity ----------------------------------------------------------- */
 .scarcity .big {
   font-family: var(--disp);
@@ -564,6 +608,8 @@ footer.site { background: var(--ink); border-top: 2px solid rgba(247,239,224,.12
   text-transform: uppercase;
 }
 .foot-in .brand { font-size: 18px; }
+.foot-nav { display: flex; gap: 18px; flex-wrap: wrap; }
+.foot-nav a:hover { color: var(--cream); }
 
 /* ---- Accessibility skip link ------------------------------------------- */
 .skip-link {
@@ -609,13 +655,23 @@ a:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
   .run,
   .qual,
   .tiers,
-  .bundles-grid { grid-template-columns: 1fr; }
+  .bundles-grid,
+  .svc-cards { grid-template-columns: 1fr; }
   .veq  { grid-template-columns: 1fr 1fr; }
   .offer-card { box-shadow: 7px 7px 0 var(--ink); }
-  /* keep the primary CTA reachable on mobile; hide only the secondary text link and compact the bar */
-  nav.site .nav-link { display: none; }
+  /* collapse the inline links into a hamburger menu so every page stays reachable */
   nav.site .nav-in { padding: 12px 16px; }
   nav.site .brand { font-size: 18px; }
-  nav.site .btn { font-size: 13px; padding: 9px 15px; }
+  nav.site .nav-right { display: none; }
+  nav.site .nav-toggle { display: inline-flex; }
+  nav.site .nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 6px 16px 16px;
+    border-top: 2px solid rgba(247,239,224,.12);
+  }
+  nav.site .nav-menu .nav-link { font-size: 15px; padding: 13px 2px; }
+  nav.site .nav-menu .btn { margin-top: 10px; width: 100%; justify-content: center; font-size: 15px; }
   .foot-in { justify-content: center; text-align: center; }
 }

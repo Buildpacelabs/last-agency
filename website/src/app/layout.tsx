@@ -1,27 +1,20 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { Marquee } from '@/components/Marquee';
+import { Nav } from '@/components/Nav';
+import { Footer } from '@/components/Footer';
+import { JsonLd } from '@/components/JsonLd';
+import { ORG_NODE, WEBSITE_NODE, SITE_URL } from '@/lib/site';
 
-const SITE_URL = 'https://lastagency.com';
-const TITLE = "Last Agency — The Last SEO Agency You'll Ever Hire";
+const TITLE = "Last Agency — The Last SEO, Social & Performance Agency You'll Hire";
 const DESCRIPTION =
-  "Fire your SEO agency. Hire the last one you'll ever need. We build a growth system that pays for itself — and if it doesn't beat your numbers in 90 days, you don't pay. Rank or it's free. Only 3 clients a month.";
+  "One team for SEO, organic social and performance marketing — run as a single growth system with a beat-your-numbers-in-90-days-or-you-don't-pay guarantee. No lock-in. Only 3 clients a month.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: TITLE,
+  title: { default: TITLE, template: '%s — Last Agency' },
   description: DESCRIPTION,
   applicationName: 'Last Agency',
-  keywords: [
-    'SEO agency',
-    'performance SEO',
-    'rank or it\'s free',
-    'organic growth',
-    'digital PR',
-    'programmatic SEO',
-    'AEO',
-    'GEO',
-    'SEO India',
-  ],
   authors: [{ name: 'Last Agency' }],
   alternates: { canonical: '/' },
   icons: {
@@ -29,19 +22,14 @@ export const metadata: Metadata = {
     shortcut: '/logo.svg',
     apple: '/logo.svg',
   },
+  // title/description intentionally omitted here so Next fills og:/twitter:
+  // title+description per route from each page's own metadata.
   openGraph: {
     type: 'website',
-    url: `${SITE_URL}/`,
     siteName: 'Last Agency',
-    title: TITLE,
-    description: DESCRIPTION,
     locale: 'en_IN',
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: TITLE,
-    description: DESCRIPTION,
-  },
+  twitter: { card: 'summary_large_image' },
   robots: {
     index: true,
     follow: true,
@@ -56,7 +44,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }):
         <a href="#main" className="skip-link">
           Skip to content
         </a>
-        {children}
+        <JsonLd graph={[ORG_NODE, WEBSITE_NODE]} />
+        <Marquee />
+        <Nav />
+        <main id="main">
+          <span id="top" aria-hidden="true" />
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

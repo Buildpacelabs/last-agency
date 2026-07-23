@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og';
 
-export const alt = "Last Agency — The Last SEO Agency You'll Ever Hire";
+export const alt = "Last Agency — SEO, social & performance, guaranteed or it's free";
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -39,7 +39,7 @@ export default function OpengraphImage(): ImageResponse {
               maxWidth: '1000px',
             }}
           >
-            Fire your SEO agency. Hire the last one you&apos;ll ever need.
+            Fire your agencies. Hire the last one you&apos;ll ever need.
           </div>
         </div>
 
@@ -56,10 +56,10 @@ export default function OpengraphImage(): ImageResponse {
               letterSpacing: '-1px',
             }}
           >
-            RANK OR IT&apos;S FREE
+            GUARANTEED OR IT&apos;S FREE
           </div>
           <div style={{ display: 'flex', color: '#e7dcc7', fontSize: '26px' }}>
-            No lock-in · Only 3 clients / month
+            SEO · Social · Paid · No lock-in
           </div>
         </div>
       </div>

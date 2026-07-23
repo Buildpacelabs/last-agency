@@ -1,26 +1,18 @@
 import type { Metadata } from 'next';
-
-/* --- Constants ----------------------------------------------------------- */
-const SITE_URL = 'https://lastagency.com';
-const WA_NUMBER = '919315776817';
-const WA_HERO =
-  'https://wa.me/919315776817?text=Hi%20Last%20Agency%20%E2%80%94%20I%20want%20to%20rank.%20Send%20me%20the%20details.';
-const WA_FINAL =
-  'https://wa.me/919315776817?text=Hi%20Last%20Agency%20%E2%80%94%20I%20want%20the%2090-Day%20Blueprint.';
-const CAL_LINK = 'https://cal.com/priyanshu-semwal-8qcxab/lastagency-last-seo-call';
+import Link from 'next/link';
+import {
+  WA_HERO,
+  SERVICE_CARDS,
+  SEO_SERVICE,
+  SOCIAL_SERVICE,
+  PERF_SERVICE,
+} from '@/lib/site';
+import { JsonLd } from '@/components/JsonLd';
+import { FinalCta } from '@/components/FinalCta';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/' },
 };
-
-/* --- Data ---------------------------------------------------------------- */
-const MARQUEE_ITEMS = [
-  "Rank or it's free",
-  "The last SEO agency you'll ever hire",
-  'No lock-in',
-  'Beat your baseline in 90 days',
-  'Only 3 clients / month',
-];
 
 const LIES: { q: string; a: React.ReactNode }[] = [
   {
@@ -46,988 +38,173 @@ const LIES: { q: string; a: React.ReactNode }[] = [
     q: '"Here\'s your monthly report."',
     a: (
       <>
-        40 tabs of rankings nobody reads. We report one thing:{' '}
-        <b>leads and revenue from search.</b> The number that pays your bills.
+        40 tabs of vanity metrics nobody reads. We report one thing:{' '}
+        <b>leads and revenue.</b> The number that pays your bills.
       </>
     ),
   },
   {
-    q: '"SEO takes 12–18 months."',
+    q: '"That channel isn\'t our department."',
     a: (
       <>
-        Sometimes. But you should see the needle move in <b>90 days</b> — or we work free until it
-        does. Skin in the game.
+        So you hire three agencies who blame each other. We run <b>search, social and paid</b> as
+        one team — one throat to choke, one number to move.
       </>
     ),
-  },
-];
-
-const ENGINES: { name: string; desc: string; val: string }[] = [
-  {
-    name: 'Technical + Performance Overhaul',
-    desc: 'Crawl, schema, Core Web Vitals, speed — a foundation that ranks.',
-    val: '₹80,000',
-  },
-  {
-    name: 'Content & Topic-Cluster Engine',
-    desc: 'Pillar pages, clusters, refreshes, blogs on a fixed cadence.',
-    val: '₹1,20,000',
-  },
-  {
-    name: 'Digital PR + Backlink Machine',
-    desc: 'Linkable assets & authority links that actually move DR.',
-    val: '₹1,50,000',
-  },
-  {
-    name: 'pSEO + Internal Link Architecture',
-    desc: 'Programmatic pages that scale, wired together to compound.',
-    val: '₹90,000',
-  },
-  {
-    name: 'AEO / GEO Future-Proofing',
-    desc: 'Get cited by AI answers & generative search, not just Google.',
-    val: '₹60,000',
-  },
-  {
-    name: 'Live Dashboard + Strategy Calls',
-    desc: 'One screen: leads from search. Real humans on call.',
-    val: '₹40,000',
-  },
-];
-
-const VEQ: { dir: 'up' | 'down'; arrow: string; label: string; body: string }[] = [
-  {
-    dir: 'up',
-    arrow: '↑',
-    label: 'Dream outcome',
-    body: 'More qualified leads from search. Not rankings — revenue.',
-  },
-  {
-    dir: 'up',
-    arrow: '↑',
-    label: 'Likelihood',
-    body: 'Proven system + a guarantee that puts our money on it.',
-  },
-  {
-    dir: 'down',
-    arrow: '↓',
-    label: 'Time delay',
-    body: 'Movement in 90 days, not 18 months of "trust us."',
-  },
-  {
-    dir: 'down',
-    arrow: '↓',
-    label: 'Effort & sacrifice',
-    body: 'We run all 6 engines. You approve and watch it grow.',
-  },
-];
-
-const RUN: { k: string; n: string; h: string; p: string }[] = [
-  {
-    k: 'Week 1',
-    n: '01',
-    h: 'Teardown & Blueprint',
-    p: "We crawl everything, find what's quietly bleeding traffic, and hand you a keyword-to-revenue plan — yours to keep whether you hire us or not.",
-  },
-  {
-    k: 'Weeks 2–4',
-    n: '02',
-    h: 'Fix the foundation',
-    p: 'Technical and performance overhaul. Schema, speed, Core Web Vitals — the plumbing that silently caps every other effort.',
-  },
-  {
-    k: 'Weeks 5–12',
-    n: '03',
-    h: 'Compound the machine',
-    p: 'Content clusters ship on cadence, digital PR earns real links, programmatic pages scale. Authority starts to stack.',
-  },
-  {
-    k: 'Day 90',
-    n: '04',
-    h: 'We prove it — or work free',
-    p: 'You see the needle move on leads from search, or every engine keeps running at zero cost until it does.',
-  },
-];
-
-const QUAL_YES = [
-  'You have a real product and real revenue — SEO is a growth lever, not a science project.',
-  "You're done paying for rankings and want leads and pipeline instead.",
-  'You can move fast on approvals and let a senior team actually run the play.',
-  'You want one partner who owns search end-to-end, not five vendors pointing fingers.',
-];
-
-const QUAL_NO = [
-  'You want a #1 ranking guaranteed by Friday. Nobody honest sells that.',
-  "You're shopping purely on price for the cheapest freelancer you can find.",
-  "You need paid ads, not organic — that's a different engagement (we'll say so).",
-  'You want a 40-tab report to forward, not revenue you can bank.',
-];
-
-const BONUSES: { bn: string; title: string; body: string; worth: string }[] = [
-  {
-    bn: 'BONUS 01',
-    title: '90-Day Growth Blueprint',
-    body: "A full audit + keyword-to-revenue roadmap, built before we're even hired. Yours to keep either way.",
-    worth: 'Worth ₹25,000',
-  },
-  {
-    bn: 'BONUS 02',
-    title: 'Competitor Kill-List',
-    body: 'Every keyword your rivals rank for and you don\'t — prioritised by how fast we can steal it.',
-    worth: 'Worth ₹20,000',
-  },
-  {
-    bn: 'BONUS 03',
-    title: 'CRO Quick-Wins Pass',
-    body: 'We tune your top pages so the traffic we send actually converts. More leads from the same visits.',
-    worth: 'Worth ₹30,000',
   },
 ];
 
 const STATS: { big: string; lab: string }[] = [
   { big: '+312%', lab: 'Avg organic leads / 6 mo' },
-  { big: '90', lab: 'Days to first needle-move' },
+  { big: '3.4×', lab: 'Blended ROAS on paid media' },
   { big: '0', lab: 'Clients on lock-in contracts' },
 ];
-
-type Tier = {
-  badge: string;
-  badgeClass?: string;
-  featured?: boolean;
-  name: string;
-  tagline: string;
-  price: string;
-  bracket?: string;
-  get: string[];
-  how: string[];
-};
-
-const SOCIAL_TIERS: Tier[] = [
-  {
-    badge: 'Starter',
-    name: 'Content Starter',
-    tagline: 'Show up consistently on the channels that matter — without ever touching a camera.',
-    price: '₹30,000',
-    get: [
-      'A consistent, on-brand presence on your 2 most important channels',
-      'Every reel shot-scripted and edited by us — you never supply footage',
-      'Captions and topics mapped to real keyword demand, so social feeds search',
-      'A real human answering comments and DMs in business hours',
-      'One monthly strategy call + a plain-English performance report',
-    ],
-    how: [
-      '2 platforms (Instagram + Facebook or LinkedIn)',
-      '16 posts + 4 fully-produced reels / month',
-      'Branded templates + original copywriting',
-      'Keyword-informed hashtag & topic research',
-      '1 SEO blog / month, repurposed from your best social',
-      'Named account lead + monthly report',
-    ],
-  },
-  {
-    badge: 'Most popular',
-    badgeClass: 'pop',
-    featured: true,
-    name: 'Growth Engine',
-    tagline: 'One production line that grows followers AND organic search at the same time.',
-    price: '₹50,000',
-    get: [
-      'A content engine that compounds followers and Google traffic together',
-      'Art-directed, trend-led creative — not recycled templates',
-      'Proactive community management that turns comments into leads',
-      'Two ranking blogs a month, sliced into carousels, threads and reel scripts',
-      "Bi-weekly reporting + strategy calls so you always know what's next",
-    ],
-    how: [
-      '3 platforms (Instagram + 2 of Facebook / LinkedIn / YouTube Shorts)',
-      '20 posts + 8 fully-produced reels / month',
-      'Custom creative direction + trend research + concepting',
-      '2 SEO long-form blogs / month — write once, distribute twice',
-      'Competitor content analysis + monthly strategy',
-      'Named lead, 1-business-day response',
-    ],
-  },
-  {
-    badge: 'Full service',
-    badgeClass: 'full',
-    name: 'Brand Studio',
-    tagline: 'A dedicated creative pod that runs your brand like an in-house studio.',
-    price: '₹70,000',
-    get: [
-      "A dedicated pod that runs your brand like in-house — for a fraction of a boutique agency's cost",
-      'High-velocity produced video: concept, shoot direction and edit handled',
-      'A compounding SEO asset base — pillar-and-cluster, not one-off posts',
-      'Influencer and UGC collaborations coordinated for you',
-      'Weekly reporting, a live dashboard and a manager who owns the outcome',
-    ],
-    how: [
-      '3–4 platforms with per-platform content plans',
-      '30 posts + 12 fully-produced reels / month',
-      'Dedicated pod: strategist + designer + video editor',
-      '4 SEO blogs / month in a pillar/cluster structure, repurposed across social',
-      'Influencer / UGC collaboration coordination',
-      'Dedicated manager, same-day response',
-    ],
-  },
-];
-
-const PERF_TIERS: Tier[] = [
-  {
-    badge: 'Entry',
-    name: 'Ignite',
-    tagline: 'Both Meta and Google, run by a senior buyer — not a set-and-forget script.',
-    price: '₹40,000',
-    bracket: 'Manages up to ₹2L / mo ad spend',
-    get: [
-      'Your ads live on both Meta and Google from day one — not just one channel',
-      'A senior buyer actually structuring and optimising the account',
-      'Conversion tracking installed correctly, so every rupee is measured',
-      'Fresh creative produced and tested monthly, never left to fatigue',
-      "Guarantee: beat your agreed baseline (CPA or ROAS — your call) in 90 days, or next month's management fee is free",
-    ],
-    how: [
-      'Dual channel: Meta (FB + IG) + Google Ads',
-      'Full account setup, structuring and audience research',
-      '8–12 ad-creative variants / month, tested in a framework',
-      'Conversion tracking + pixel/tag setup and QA',
-      'Weekly optimisation, monthly review call',
-    ],
-  },
-  {
-    badge: 'Most popular',
-    badgeClass: 'pop',
-    featured: true,
-    name: 'Scale',
-    tagline: 'Full-funnel Meta + Google, a real creative pipeline, and tracking you can trust.',
-    price: '₹75,000',
-    bracket: 'Manages ₹2L–₹8L / mo ad spend',
-    get: [
-      'Full-funnel Meta + Google run by a dedicated buyer who owns your numbers',
-      '20–30 tested creative variants a month, so winners are found fast',
-      'Server-side tracking (Meta CAPI + GA4) recovers conversions that iOS and cookie loss would otherwise hide',
-      'We own the landing page and conversion rate, not just the click',
-      "Guarantee: beat your agreed baseline (CPA or ROAS — your call) in 90 days, or next month's management fee is free",
-    ],
-    how: [
-      'Full-funnel Meta + Google: prospecting, retargeting, retention',
-      '20–30 creative variants / month from a dedicated pipeline',
-      'Server-side tracking (Conversions API + GA4 server-side)',
-      'Landing-page / CRO ownership and A/B testing',
-      'Dedicated senior buyer + analyst, weekly reviews, live dashboard',
-    ],
-  },
-  {
-    badge: 'Full service',
-    badgeClass: 'full',
-    name: 'Dominate',
-    tagline: 'A cross-functional pod run like your in-house growth team, with attribution you can trust.',
-    price: '₹1,50,000',
-    bracket: 'Manages ₹8L–₹25L / mo ad spend',
-    get: [
-      'A cross-functional pod: senior buyer + creative team + analyst',
-      '40–60 tested variants a month across every format',
-      'Attribution you can trust: server-side tracking + incrementality testing',
-      'Programmatic, YouTube and marketplace channels layered on as you scale',
-      'Skin in the game: we only earn a performance bonus once you clear your target ROAS — on top of the same fee-free guarantee',
-    ],
-    how: [
-      'Full-funnel across Meta, Google, YouTube + programmatic as needed',
-      '40–60 creative variants / month from a dedicated creative team',
-      'Advanced attribution: server-side tracking, incrementality + media-mix testing',
-      'Flat ₹1.5L floor OR floor + 8–10% of spend (whichever is higher)',
-      'Real-time dashboards, weekly reviews + monthly strategy sessions',
-    ],
-  },
-];
-
-type Bundle = {
-  combines: string[];
-  name: string;
-  price: string;
-  was: string;
-  save: string;
-  body: string;
-  best?: boolean;
-};
-
-const BUNDLES: Bundle[] = [
-  {
-    combines: ['SEO', 'Social'],
-    name: 'Organic Growth Engine',
-    price: '₹99,000',
-    was: '₹1,25,000 à la carte',
-    save: 'Save ₹26,000 / mo · ~21% off',
-    body: 'Own organic: rank on Google and build a branded feed from one shared content pipeline. The blogs and social are produced once and distributed across both — so it costs less to run, and we pass the saving on.',
-  },
-  {
-    combines: ['Social', 'Performance'],
-    name: 'Full-Funnel Starter',
-    price: '₹75,000',
-    was: '₹90,000 à la carte',
-    save: 'Save ₹15,000 / mo · ~17% off',
-    body: "Demand now. Produced organic content plus dual-channel paid ads for D2C and lead-gen brands that aren't ready for full SEO yet. Your organic creative doubles as ad creative, cutting production cost.",
-  },
-  {
-    combines: ['SEO', 'Social', 'Performance'],
-    name: 'Own Everything Stack',
-    price: '₹1,75,000',
-    was: '₹2,20,000 à la carte',
-    save: 'Save ₹45,000 / mo · ~20% off',
-    best: true,
-    body: 'One team owns search, social and paid end-to-end: a single content pipeline feeds all three, and attribution is unified across organic and paid. Every service keeps its own guarantee — SEO works free until it beats your baseline, paid waives a month’s fee if it misses — and one partner is accountable for the whole number, instead of three vendors pointing fingers.',
-  },
-];
-
-const FAQ: { q: string; a: React.ReactNode; plain: string }[] = [
-  {
-    q: 'You said no ranking guarantees — but "rank or it\'s free"?',
-    a: (
-      <>
-        We don't promise a specific position for a specific keyword (impossible, and against
-        Google's rules). We guarantee <em>growth against your own baseline</em>. Miss it in 90 days
-        and we work free until we beat it. Honest and still bold.
-      </>
-    ),
-    plain:
-      "We don't promise a specific position for a specific keyword (impossible, and against Google's rules). We guarantee growth against your own baseline. Miss it in 90 days and we work free until we beat it. Honest and still bold.",
-  },
-  {
-    q: 'Why only 3 clients a month?',
-    a: (
-      <>
-        Because the guarantee is real. We can only carry that risk if every client gets deep, senior
-        attention. Volume agencies can't offer this — that's the point.
-      </>
-    ),
-    plain:
-      "Because the guarantee is real. We can only carry that risk if every client gets deep, senior attention. Volume agencies can't offer this — that's the point.",
-  },
-  {
-    q: "What's actually included vs. an add-on?",
-    a: (
-      <>
-        The six engines above are the core system. Different channels — paid ads, email/CRM, ASO,
-        YouTube — are separate engagements. We'll tell you straight in the strategy call.
-      </>
-    ),
-    plain:
-      "The six engines above are the core system. Different channels — paid ads, email/CRM, ASO, YouTube — are separate engagements. We'll tell you straight in the strategy call.",
-  },
-  {
-    q: 'Is there a contract?',
-    a: (
-      <>
-        Month-to-month after the first quarter. 30-day notice. You keep every asset, page and report.
-        Lock-in is a red flag; we don't do it.
-      </>
-    ),
-    plain:
-      "Month-to-month after the first quarter. 30-day notice. You keep every asset, page and report. Lock-in is a red flag; we don't do it.",
-  },
-  {
-    q: 'What determines my price?',
-    a: (
-      <>
-        Site size, competition, and how aggressive you want to go. Smaller sites start around
-        ₹40k/mo; the full six-engine system is from ₹75k/mo, GST extra. We quote you straight on the
-        call — no "packages" you have to decode.
-      </>
-    ),
-    plain:
-      'Site size, competition, and how aggressive you want to go. Smaller sites start around ₹40k/mo; the full six-engine system is from ₹75k/mo, GST extra. We quote you straight on the call — no "packages" you have to decode.',
-  },
-  {
-    q: 'How do you measure my "baseline"?',
-    a: (
-      <>
-        On day one we freeze one number: qualified leads from organic search over your trailing 90
-        days. That single figure is the bar. "Beat your baseline in 90 days" means beat{' '}
-        <em>that</em> — not a vanity metric we cherry-pick later. We track traffic and rankings too,
-        but leads are what the guarantee is settled on.
-      </>
-    ),
-    plain:
-      'On day one we freeze one number: qualified leads from organic search over your trailing 90 days. That single figure is the bar. "Beat your baseline in 90 days" means beat that — not a vanity metric we cherry-pick later. We track traffic and rankings too, but leads are what the guarantee is settled on.',
-  },
-  {
-    q: 'I already have an in-house SEO or another agency. Now what?',
-    a: (
-      <>
-        Great — we audit what's working and only replace what isn't. Sometimes we run alongside your
-        team as the senior brain. The Blueprint alone is usually worth the call — and it's yours free
-        either way.
-      </>
-    ),
-    plain:
-      "Great — we audit what's working and only replace what isn't. Sometimes we run alongside your team as the senior brain. The Blueprint alone is usually worth the call — and it's yours free either way.",
-  },
-  {
-    q: 'Who actually does the work?',
-    a: (
-      <>
-        Senior operators, not interns behind a dashboard. Three clients a month exists precisely so
-        the people who win the strategy call are the people running your account.
-      </>
-    ),
-    plain:
-      'Senior operators, not interns behind a dashboard. Three clients a month exists precisely so the people who win the strategy call are the people running your account.',
-  },
-];
-
-/* --- Structured data ----------------------------------------------------- */
-const JSON_LD = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'Organization',
-      '@id': `${SITE_URL}/#org`,
-      name: 'Last Agency',
-      url: SITE_URL,
-      logo: `${SITE_URL}/logo.svg`,
-      description:
-        "The last SEO agency you'll ever hire. A six-engine organic growth system with a rank-or-it's-free guarantee.",
-      slogan: "Rank or it's free.",
-      contactPoint: [
-        {
-          '@type': 'ContactPoint',
-          contactType: 'sales',
-          telephone: `+${WA_NUMBER}`,
-          areaServed: 'IN',
-          availableLanguage: ['en', 'hi'],
-        },
-      ],
-    },
-    {
-      '@type': 'WebSite',
-      '@id': `${SITE_URL}/#website`,
-      url: SITE_URL,
-      name: 'Last Agency',
-      publisher: { '@id': `${SITE_URL}/#org` },
-      inLanguage: 'en-IN',
-    },
-    {
-      '@type': 'Service',
-      '@id': `${SITE_URL}/#service`,
-      name: 'The Last Agency Growth System',
-      serviceType: 'Search engine optimization',
-      provider: { '@id': `${SITE_URL}/#org` },
-      areaServed: 'IN',
-      description:
-        'Six SEO engines — technical, content, digital PR, programmatic SEO, AEO/GEO and live reporting — stacked into one performance-guaranteed system.',
-      offers: {
-        '@type': 'Offer',
-        price: '75000',
-        priceCurrency: 'INR',
-        description: 'From ₹75,000/mo. Smaller sites from ₹40k/mo. GST extra. Month-to-month, no lock-in.',
-        url: `${SITE_URL}/#book`,
-      },
-    },
-    {
-      '@type': 'Service',
-      '@id': `${SITE_URL}/#social`,
-      name: 'Organic Social & Content',
-      serviceType: 'Social media marketing',
-      provider: { '@id': `${SITE_URL}/#org` },
-      areaServed: 'IN',
-      description:
-        'End-to-end produced social content — reels, carousels and SEO blogs from one pipeline — that grows followers and organic search together.',
-      offers: {
-        '@type': 'AggregateOffer',
-        priceCurrency: 'INR',
-        lowPrice: '30000',
-        highPrice: '70000',
-        offerCount: 3,
-        url: `${SITE_URL}/#services`,
-      },
-    },
-    {
-      '@type': 'Service',
-      '@id': `${SITE_URL}/#performance`,
-      name: 'Performance Marketing',
-      serviceType: 'Pay-per-click advertising management',
-      provider: { '@id': `${SITE_URL}/#org` },
-      areaServed: 'IN',
-      description:
-        "Full-funnel Meta and Google paid media — creative, server-side tracking, CRO and a beat-your-baseline-or-it's-free guarantee. Flat fee, no media markup.",
-      offers: {
-        '@type': 'AggregateOffer',
-        priceCurrency: 'INR',
-        lowPrice: '40000',
-        highPrice: '150000',
-        offerCount: 3,
-        url: `${SITE_URL}/#performance`,
-      },
-    },
-    {
-      '@type': 'FAQPage',
-      '@id': `${SITE_URL}/#faq`,
-      mainEntity: FAQ.map((f) => ({
-        '@type': 'Question',
-        name: f.q,
-        acceptedAnswer: { '@type': 'Answer', text: f.plain },
-      })),
-    },
-  ],
-};
-
-/* --- Page ---------------------------------------------------------------- */
-function TierCard({ t, cta }: { t: Tier; cta: string }): JSX.Element {
-  return (
-    <div className={`tier${t.featured ? ' pop' : ''}`}>
-      <span className={`badge${t.badgeClass ? ` ${t.badgeClass}` : ''}`}>{t.badge}</span>
-      <h3>{t.name}</h3>
-      <p className="tagline">{t.tagline}</p>
-      <div className="price">
-        <span className="amt num">{t.price}</span>
-        <span className="per">/ month</span>
-      </div>
-      {t.bracket ? <div className="bracket">{t.bracket}</div> : null}
-      <div className="lbl">What you get</div>
-      <ul className="get">
-        {t.get.map((g, i) => (
-          <li key={i}>{g}</li>
-        ))}
-      </ul>
-      <div className="lbl">How we do it</div>
-      <ul className="how">
-        {t.how.map((h, i) => (
-          <li key={i}>{h}</li>
-        ))}
-      </ul>
-      <div className="tier-cta">
-        <a className="btn btn-red" href="#book">
-          {cta}
-        </a>
-      </div>
-    </div>
-  );
-}
 
 export default function HomePage(): JSX.Element {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
-      />
+      <JsonLd graph={[SEO_SERVICE, SOCIAL_SERVICE, PERF_SERVICE]} />
 
-      {/* 2.1 Marquee — items repeated 6× so half the track (the -50% loop distance)
-          always exceeds the widest realistic viewport and never leaves a gap. */}
-      <div className="marquee" aria-hidden="true">
-        <div>
-          {Array.from({ length: 6 }).flatMap((_, r) =>
-            MARQUEE_ITEMS.map((item, i) => <span key={`${r}-${i}`}>{item}</span>),
-          )}
-        </div>
-      </div>
-
-      {/* 2.2 Nav */}
-      <nav className="site" aria-label="Primary">
-        <div className="nav-in">
-          <a className="brand" href="#top" aria-label="Last Agency — home">
-            <span className="blip" aria-hidden="true" />
-            LAST&nbsp;<b>AGENCY</b>
-          </a>
-          <div className="nav-right">
-            <a className="nav-link" href="#services">
-              Services &amp; pricing
+      {/* Hero */}
+      <header className="hero band-ink">
+        <div className="wrap">
+          <span className="sticker">⚡ Search · Social · Paid — but the last time</span>
+          <h1>
+            Fire your agencies. <span className="r">Hire the</span>{' '}
+            <span className="u">last one</span> you'll ever need.
+          </h1>
+          <p className="sub">
+            Search, social, paid — most brands bolt three vendors together and hope. We run all three
+            as one growth system, off one shared pipeline, and every engine is on the line:{' '}
+            <span className="y">miss your number and you stop paying for it.</span>
+          </p>
+          <div className="cta-row">
+            <a className="btn btn-lg btn-red" href="#book">
+              Book a free strategy call
             </a>
-            <a className="btn btn-red" href="#book">
-              Book a call →
+            <a className="btn btn-lg btn-wa" href={WA_HERO} target="_blank" rel="noopener noreferrer">
+              WhatsApp us instead
             </a>
           </div>
+          <p className="trust">
+            <span className="stars" role="img" aria-label="5 out of 5 stars">
+              ★★★★★
+            </span>{' '}
+            · Trusted by founders who got burned before · No contracts · No jargon
+          </p>
         </div>
-      </nav>
+      </header>
 
-      <main id="main">
-        <span id="top" aria-hidden="true" />
-
-        {/* 2.3 Hero */}
-        <header className="hero band-ink">
-          <div className="wrap">
-            <span className="sticker">⚡ SEO — but the last time</span>
-            <h1>
-              Fire your SEO agency. <span className="r">Hire the</span>{' '}
-              <span className="u">last one</span> you'll ever need.
-            </h1>
-            <p className="sub">
-              Every agency sold you rankings and delivered spreadsheets. We build a growth system
-              that pays for itself — and if it doesn't beat your numbers in 90 days,{' '}
-              <span className="y">you don't pay.</span> That's the whole pitch.
-            </p>
-            <div className="cta-row">
-              <a className="btn btn-lg btn-red" href="#book">
-                Book a free strategy call
-              </a>
-              <a className="btn btn-lg btn-wa" href={WA_HERO} target="_blank" rel="noopener noreferrer">
-                WhatsApp us instead
-              </a>
-            </div>
-            <p className="trust">
-              <span className="stars" role="img" aria-label="5 out of 5 stars">
-                ★★★★★
-              </span>{' '}
-              · Trusted by founders who got burned before · No contracts · No jargon
-            </p>
-          </div>
-        </header>
-
-        {/* 2.4 The Enemy — Four Lies */}
-        <section className="band-ink pad" aria-labelledby="lies-h">
-          <div className="wrap">
-            <p className="eyebrow eyebrow-red">You've heard this before</p>
-            <h2 className="sec-h" id="lies-h">
-              Every SEO agency told you the same four lies.
-            </h2>
-            <div className="lies">
-              {LIES.map((lie, i) => (
-                <div className="lie" key={i}>
-                  <p className="q">{lie.q}</p>
-                  <p className="a">{lie.a}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 2.5 Grand Slam Offer */}
-        <section className="band-red pad" aria-labelledby="offer-h">
-          <div className="wrap">
-            <p className="eyebrow eyebrow-ink">The Grand Slam Offer</p>
-            <h2 className="sec-h" id="offer-h">
-              Everything you need to own search. Stacked into one system.
-            </h2>
-
-            <div className="offer-card">
-              <div className="offer-top">
-                <div className="t">The Last Agency Growth System™</div>
-                <div className="s">6 engines · one price · zero fluff</div>
+      {/* The four lies */}
+      <section className="band-ink pad" aria-labelledby="lies-h">
+        <div className="wrap">
+          <p className="eyebrow eyebrow-red">You've heard this before</p>
+          <h2 className="sec-h" id="lies-h">
+            Every agency told you the same four lies.
+          </h2>
+          <div className="lies">
+            {LIES.map((lie, i) => (
+              <div className="lie" key={i}>
+                <p className="q">{lie.q}</p>
+                <p className="a">{lie.a}</p>
               </div>
-              <div className="stack">
-                {ENGINES.map((e, i) => (
-                  <div className="row" key={i}>
-                    <div className="name">
-                      <b>{e.name}</b>
-                      <span>{e.desc}</span>
-                    </div>
-                    <div className="val num">{e.val}</div>
-                  </div>
-                ))}
-              </div>
-              <div className="offer-total">
-                <div className="total-line">
-                  <span>Total real value</span>
-                  <span className="strike num">₹5,40,000 / mo</span>
-                </div>
-                <div className="price-big">
-                  <span>You pay from</span>
-                  <span>
-                    <span className="p num">₹75,000</span> /mo
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <p className="offer-foot">
-              + performance bonus only when the leads land. GST extra · plans from ₹40k for smaller
-              sites.
-            </p>
-          </div>
-        </section>
-
-        {/* 2.6 Value Equation */}
-        <section className="band-ink pad" aria-labelledby="veq-h">
-          <div className="wrap">
-            <p className="eyebrow eyebrow-red">Why this offer is un-turn-down-able</p>
-            <h2 className="sec-h" id="veq-h">
-              We maxed the value equation.
-            </h2>
-            <div className="veq">
-              {VEQ.map((c, i) => (
-                <div className={`veq-cell ${c.dir}`} key={i}>
-                  <div className="arrow" aria-hidden="true">
-                    {c.arrow}
-                  </div>
-                  <strong>{c.label}</strong>
-                  <p>{c.body}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 2.7 Guarantee */}
-        <section className="band-cream pad" aria-labelledby="guar-h">
-          <div className="wrap guar">
-            <h2 className="stamp" id="guar-h">
-              Rank or it's free
-            </h2>
-            <p>
-              If we don't beat your organic baseline within <b>90 days</b>, we keep working{' '}
-              <b>completely free</b> until we do. We carry the risk, not you. That's only possible
-              because we don't take clients we can't win for — which is exactly why there are only{' '}
-              <b>three slots a month</b>.
-            </p>
-          </div>
-        </section>
-
-        {/* NEW — The 90-Day Run (process) */}
-        <section className="band-ink pad" aria-labelledby="run-h">
-          <div className="wrap">
-            <p className="eyebrow eyebrow-red">Here's the 90 days, start to proof</p>
-            <h2 className="sec-h" id="run-h">
-              No "trust us." Here's exactly how the run goes.
-            </h2>
-            <div className="run">
-              {RUN.map((s, i) => (
-                <div className="run-step" key={i}>
-                  <div className="k">{s.k}</div>
-                  <div className="n num" aria-hidden="true">
-                    {s.n}
-                  </div>
-                  <h3>{s.h}</h3>
-                  <p>{s.p}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 2.8 Bonuses */}
-        <section className="band-ink pad" aria-labelledby="bonus-h">
-          <div className="wrap">
-            <p className="eyebrow eyebrow-red">Sign this month and also get</p>
-            <h2 className="sec-h" id="bonus-h">
-              Three bonuses. On the house.
-            </h2>
-            <div className="bonuses">
-              {BONUSES.map((b, i) => (
-                <div className="bonus" key={i}>
-                  <span className="free">Free</span>
-                  <div className="bn">{b.bn}</div>
-                  <h3>{b.title}</h3>
-                  <p>{b.body}</p>
-                  <span className="worth num">{b.worth}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* NEW — Organic Social & Content */}
-        <section className="band-ink pad" id="services" aria-labelledby="social-h">
-          <div className="wrap">
-            <p className="eyebrow eyebrow-red">SEO is the core — here's the rest of the system</p>
-            <h2 className="sec-h" id="social-h">
-              Rank on Google. Own the feed too.
-            </h2>
-            <p className="lede">
-              Your organic content shouldn't just sit on Instagram. We produce it end-to-end — reels,
-              carousels, blogs — and wire every piece to double as a search asset. Write once,
-              distribute twice: one production line grows your following <em>and</em> your rankings.
-            </p>
-            <div className="tiers">
-              {SOCIAL_TIERS.map((t, i) => (
-                <TierCard key={i} t={t} cta="Start with this" />
-              ))}
-            </div>
-            <p className="svc-note">
-              All prices per month, ex-GST. Month-to-month after the first quarter. Reels produced by
-              us — you never supply footage.
-            </p>
-          </div>
-        </section>
-
-        {/* NEW — Performance Marketing */}
-        <section className="band-red pad" id="performance" aria-labelledby="perf-h">
-          <div className="wrap">
-            <p className="eyebrow eyebrow-ink">When you're ready to pour fuel on it</p>
-            <h2 className="sec-h" id="perf-h">
-              Paid media, run like it's our own money.
-            </h2>
-            <p className="lede">
-              We don't just push buttons. We architect the funnel, produce the creative, own the
-              tracking and the landing page, and make the call on where every rupee goes. Flat
-              management fee — ad spend is billed separately and paid straight to Meta and Google.
-              No media markup, ever.
-            </p>
-            <div className="tiers">
-              {PERF_TIERS.map((t, i) => (
-                <TierCard key={i} t={t} cta="Book a paid audit" />
-              ))}
-            </div>
-            <p className="svc-note">
-              Fees ex-GST; ad spend separate. Skin in the game: beat your agreed baseline (CPA or
-              ROAS — your call) in 90 days, or next month's management fee is free.
-            </p>
-          </div>
-        </section>
-
-        {/* NEW — Bundles */}
-        <section className="band-ink pad" id="bundles" aria-labelledby="bundles-h">
-          <div className="wrap">
-            <p className="eyebrow eyebrow-red">Stack them and save</p>
-            <h2 className="sec-h" id="bundles-h">
-              Bundle it. One team, one pipeline, one bill.
-            </h2>
-            <p className="lede">
-              Every service shares the same content pipeline and the same data. Run them together and
-              it costs us less to deliver — so it costs you less. Each service keeps its own
-              guarantee; one team owns the whole number.
-            </p>
-            <div className="bundles-grid">
-              {BUNDLES.map((b, i) => (
-                <div className={`bundle${b.best ? ' best' : ''}`} key={i}>
-                  <div className="combine">
-                    {b.combines.map((c, j) => (
-                      <span className="chip" key={j}>
-                        {c}
-                      </span>
-                    ))}
-                  </div>
-                  <h3>{b.name}</h3>
-                  <div className="price">
-                    <span className="amt num">{b.price}</span>
-                    <span className="per">/ month</span>
-                  </div>
-                  <div className="strike num">{b.was}</div>
-                  <span className="save">{b.save}</span>
-                  <p>{b.body}</p>
-                  <div className="bundle-cta">
-                    <a className="btn btn-cream" href="#book">
-                      Get this bundle
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <p className="svc-note">
-              Bundle prices per month, ex-GST. Ad spend billed separately. Cancel any single service
-              with 30 days' notice.
-            </p>
-          </div>
-        </section>
-
-        {/* NEW — Who it's for */}
-        <section className="band-cream pad" aria-labelledby="qual-h">
-          <div className="wrap">
-            <p className="eyebrow eyebrow-red">Straight talk before you book</p>
-            <h2 className="sec-h" id="qual-h">
-              This isn't for everyone. On purpose.
-            </h2>
-            <div className="qual">
-              <div className="qual-col yes">
-                <h3>Book the call if…</h3>
-                <ul>
-                  {QUAL_YES.map((t, i) => (
-                    <li key={i}>{t}</li>
-                  ))}
-                </ul>
-              </div>
-              <div className="qual-col no">
-                <h3>Skip us if…</h3>
-                <ul>
-                  {QUAL_NO.map((t, i) => (
-                    <li key={i}>{t}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 2.9 Scarcity */}
-        <section className="band-red pad scarcity" aria-labelledby="scarcity-h">
-          <div className="wrap">
-            <p className="eyebrow eyebrow-ink">This isn't false urgency</p>
-            <h2 className="big" id="scarcity-h">
-              <span className="r">3</span> Clients. That's the month.
-            </h2>
-            <p className="lede">
-              A "rank or it's free" guarantee only works if we go deep on a few. We take three new
-              clients a month — then the doors close.
-            </p>
-            <div className="slots">
-              <span className="slot gone">Slot 1 — Taken</span>
-              <span className="slot gone">Slot 2 — Taken</span>
-              <span className="slot open">Slot 3 — Open ●</span>
-            </div>
-          </div>
-        </section>
-
-        {/* 2.10 Proof */}
-        <section className="band-ink pad" aria-labelledby="proof-h">
-          <div className="wrap">
-            <p className="eyebrow eyebrow-red">Receipts, not promises</p>
-            <h2 className="sec-h" id="proof-h">
-              What the system does.
-            </h2>
-            <div className="proof">
-              {STATS.map((s, i) => (
-                <div className="stat-card" key={i}>
-                  <div className="big num">{s.big}</div>
-                  <div className="lab">{s.lab}</div>
-                </div>
-              ))}
-            </div>
-            <p className="foot-note">
-              * Illustrative aggregate — swap for your real case-study numbers before going live.
-            </p>
-          </div>
-        </section>
-
-        {/* 2.11 FAQ */}
-        <section className="band-ink pad" aria-labelledby="faq-h">
-          <div className="wrap" style={{ textAlign: 'center' }}>
-            <h2 className="sec-h" id="faq-h">
-              Fair questions.
-            </h2>
-          </div>
-          <div className="wrap faq" style={{ textAlign: 'left' }}>
-            {FAQ.map((f, i) => (
-              <details key={i} open={i === 0}>
-                <summary>{f.q}</summary>
-                <p>{f.a}</p>
-              </details>
             ))}
           </div>
-        </section>
-
-        {/* 2.12 Final CTA */}
-        <section className="band-red pad" id="book" aria-labelledby="book-h">
-          <div className="wrap">
-            <p className="eyebrow eyebrow-ink">Last slot's open</p>
-            <h2 className="sec-h" id="book-h">
-              Make this the <span className="u">last</span> SEO call you book.
-            </h2>
-            <p className="lede">
-              Grab the free strategy call and walk away with your 90-Day Growth Blueprint — hired or
-              not. Or just text us. Either way, you'll know exactly how we'd win.
-            </p>
-            <div className="cta-row">
-              <a className="btn btn-lg btn-cream" href={CAL_LINK} target="_blank" rel="noopener noreferrer">
-                📅 Book on Cal.com
-              </a>
-              <a className="btn btn-lg btn-wa" href={WA_FINAL} target="_blank" rel="noopener noreferrer">
-                💬 WhatsApp us now
-              </a>
-            </div>
-            <p className="micro">
-              Rank or it's free · No lock-in · Blueprint is yours to keep
-            </p>
-          </div>
-        </section>
-      </main>
-
-      {/* 2.13 Footer */}
-      <footer className="site">
-        <div className="wrap foot-in">
-          <span className="brand">
-            LAST&nbsp;<b>AGENCY</b>
-          </span>
-          <span>© 2026 LAST AGENCY · SEO, THE LAST TIME · PRICES IN INR, GST EXTRA</span>
         </div>
-      </footer>
+      </section>
+
+      {/* Services overview — derives clicks to detail pages */}
+      <section className="band-red pad" id="services" aria-labelledby="services-h">
+        <div className="wrap">
+          <p className="eyebrow eyebrow-ink">Three engines. One team. Each on the line.</p>
+          <h2 className="sec-h" id="services-h">
+            Pick your growth engine. Or run all three.
+          </h2>
+          <p className="lede">
+            Most brands duct-tape an SEO freelancer, a social intern and a media buyer together — then
+            wonder why nothing compounds. We run search, social and paid as one system, off one shared
+            content pipeline, on one promise.
+          </p>
+
+          <div className="svc-cards">
+            {SERVICE_CARDS.map((s) => (
+              <Link className="svc-card" href={s.href} key={s.href}>
+                <span className="k">{s.k} · Service</span>
+                <h3>{s.name}</h3>
+                <p className="one">{s.one}</p>
+                <div className="from num">{s.from}</div>
+                <ul>
+                  {s.points.map((p, i) => (
+                    <li key={i}>{p}</li>
+                  ))}
+                </ul>
+                <span className="go">{s.go} →</span>
+              </Link>
+            ))}
+          </div>
+
+          <p className="svc-note">
+            Running more than one? <Link href="/pricing">Bundles save up to ~21% →</Link>
+          </p>
+        </div>
+      </section>
+
+      {/* Umbrella guarantee — honest, per service */}
+      <section className="band-cream pad" aria-labelledby="guar-h">
+        <div className="wrap guar">
+          <h2 className="stamp" id="guar-h">
+            Beat it or it's free
+          </h2>
+          <p>
+            Every engine we run is on the line. <b>SEO</b> works completely free until it beats your
+            organic baseline. <b>Paid media</b> waives next month's fee if it misses your target.{' '}
+            <b>Social</b> is month-to-month with produced assets you keep. And we take only{' '}
+            <b>three clients a month</b> — so we sign only what we can win.
+          </p>
+        </div>
+      </section>
+
+      {/* Proof */}
+      <section className="band-ink pad" aria-labelledby="proof-h">
+        <div className="wrap">
+          <p className="eyebrow eyebrow-red">Receipts, not promises</p>
+          <h2 className="sec-h" id="proof-h">
+            What the system does.
+          </h2>
+          <div className="proof">
+            {STATS.map((s, i) => (
+              <div className="stat-card" key={i}>
+                <div className="big num">{s.big}</div>
+                <div className="lab">{s.lab}</div>
+              </div>
+            ))}
+          </div>
+          <p className="foot-note">
+            * Illustrative aggregate — swap for your real case-study numbers before going live.
+          </p>
+        </div>
+      </section>
+
+      {/* Scarcity */}
+      <section className="band-red pad scarcity" aria-labelledby="scarcity-h">
+        <div className="wrap">
+          <p className="eyebrow eyebrow-ink">This isn't false urgency</p>
+          <h2 className="big" id="scarcity-h">
+            <span className="r">3</span> Clients. That's the month.
+          </h2>
+          <p className="lede">
+            A "beat it or it's free" guarantee only works if we go deep on a few. We take three new
+            clients a month — then the doors close.
+          </p>
+          <div className="slots">
+            <span className="slot gone">Slot 1 — Taken</span>
+            <span className="slot gone">Slot 2 — Taken</span>
+            <span className="slot open">Slot 3 — Open ●</span>
+          </div>
+        </div>
+      </section>
+
+      <FinalCta />
     </>
   );
 }
