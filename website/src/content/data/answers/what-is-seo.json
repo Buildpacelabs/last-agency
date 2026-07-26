@@ -1,0 +1,221 @@
+{
+  "slug": "what-is-seo",
+  "type": "answers",
+  "primaryKeyword": "what is seo",
+  "secondaryKeywords": [
+    "what is search engine optimization",
+    "seo meaning",
+    "what does seo stand for",
+    "seo full form"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "What SEO is, in one page",
+  "metaTitle": "What Is SEO? A Plain, Complete Explanation",
+  "metaDescription": "What is SEO? Making pages a search engine can fetch, understand and choose to show. The full picture in plain English, with nothing padded out.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "SEO stands for search engine optimisation: the work of making pages a search engine can fetch, understand, and choose to show. Search engines crawl the web, store what they understand in an index, then rank that index against each query. SEO improves all three steps. Most sites take three to six months to see real movement.",
+  "takeaways": [
+    "Every page faces three questions: **can I fetch it**, **do I understand it**, **should I show it over the alternatives**. Almost every SEO task answers one of them.",
+    "Search engines rank a stored index, not the live web. If you're not in the index, nothing else you do matters.",
+    "Organic results can't be bought. Ads sit above them, are labelled, and stop the moment you stop paying.",
+    "AI answers run on the same pipeline — crawl, index, retrieve. The pages that get cited are overwhelmingly pages that already rank."
+  ],
+  "sections": [
+    {
+      "h2": "Crawl, index, rank — what actually happens",
+      "body": [
+        "Three separate machines, and people collapse them into one, which is why so much SEO advice sounds like superstition.",
+        "**Crawling.** Googlebot fetches web pages, follows the links on them, and fetches those too. It finds your site through links from other sites, your XML sitemap, and links between your own pages. It doesn't discover anything that nothing points to.",
+        "**Indexing.** Fetching isn't storing. Google renders the page, works out what it's about, and decides whether it's worth keeping. Plenty of fetched pages are never indexed — duplicates, near-empty pages, pages that say what a hundred others said better. An unindexed page cannot appear for any query, full stop.",
+        "**Ranking.** When someone searches, Google doesn't go and read the web. It queries its stored index and orders the results in a fraction of a second. This is why change is slow: your edit has to be crawled, re-indexed and re-evaluated before anyone sees it.",
+        "So SEO is three jobs, not one: get fetched, get stored, get chosen. Most sites that \"don't rank\" are actually failing at step two and nobody checked. [Search Console's Pages report](/glossary/google-search-console) tells you in ninety seconds."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The full form, since people ask",
+        "body": "SEO = Search Engine Optimisation. Sometimes written \"optimization\". Occasionally people mean the person doing it — \"our SEO\" — which is confusing and we'd rather they didn't."
+      }
+    },
+    {
+      "h2": "The three questions a search engine asks about your page",
+      "body": [
+        "Tactic lists are how SEO gets taught and why it gets misunderstood. Here's the frame that actually holds: every ranking decision reduces to three questions asked in order, and every real SEO task is an answer to one of them. Fail question one and questions two and three never get asked."
+      ],
+      "subs": [
+        {
+          "h3": "1. Can I fetch this page?",
+          "body": [
+            "The plumbing question. It sounds trivial until you learn how many sites fail it silently."
+          ],
+          "bullets": [
+            "`robots.txt` blocking a directory somebody forgot about, often the one holding your CSS or your product pages.",
+            "A `noindex` tag left behind after a staging site went live. This one is common enough to be a genre.",
+            "Content that only appears after JavaScript runs. Google renders JavaScript, but rendering is queued and imperfect — server-rendered content is fetched more reliably.",
+            "Redirect chains, 404s and pages no internal link points to. If nothing links to it, nothing finds it.",
+            "A server that takes six seconds to respond. Crawlers have budgets and they spend them elsewhere."
+          ]
+        },
+        {
+          "h3": "2. Do I understand what this page is for?",
+          "body": [
+            "Understanding means matching your page to a query someone actually types. Not a topic — a query, phrased the way a human phrases it.",
+            "That's what titles, headings, body copy, internal links and structured data are all doing. Not tricking anything. Removing ambiguity."
+          ],
+          "bullets": [
+            "One clear primary query per page. Two pages competing for the same one is keyword cannibalisation, and it costs you both.",
+            "Match the intent, not just the words. Somebody searching \"seo cost\" wants numbers. A page of philosophy about value will lose to a page with a price table.",
+            "Internal links with descriptive anchor text tell Google what a page is about and how important you consider it. This is the most underrated free signal on any site.",
+            "Schema markup states facts explicitly — this is a product, this is its price, this is an FAQ — rather than making the machine infer them."
+          ]
+        },
+        {
+          "h3": "3. Should I show this instead of the alternatives?",
+          "body": [
+            "Now it's a competition. Ten pages can all be fetchable and relevant. Only one is first.",
+            "Links from other sites remain the clearest external signal, because they're the one thing you can't award yourself. A link from a site with its own audience is an editorial vote; a link from a directory that lists anyone is not, and Google has spent two decades learning the difference.",
+            "The other differentiator is first-hand substance. Real prices, real screenshots, real numbers from work you actually did — the things a generic writer can't produce because they've never done the thing. That's what E-E-A-T is pointing at, clumsily."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Organic results versus paid results",
+      "body": [
+        "Both appear on the same page. They're bought completely differently, and mixing them up is the source of a great deal of confused spending."
+      ],
+      "table": {
+        "caption": "The two ways to appear on a search results page.",
+        "head": [
+          "Dimension",
+          "Paid (ads)",
+          "Organic (SEO)"
+        ],
+        "rows": [
+          [
+            "How you get there",
+            "Bid in an auction",
+            "Earn it — no payment channel exists"
+          ],
+          [
+            "Time to appear",
+            "Same day",
+            "Weeks to months"
+          ],
+          [
+            "Cost per click",
+            "Every single click, forever",
+            "Zero, once you're there"
+          ],
+          [
+            "What happens if you stop",
+            "Gone that afternoon",
+            "Decays over 6–18 months"
+          ],
+          [
+            "Labelled?",
+            "Yes — \"Sponsored\"",
+            "No"
+          ],
+          [
+            "Controllable?",
+            "Almost entirely",
+            "Influenced, never controlled"
+          ]
+        ]
+      },
+      "bullets": [
+        "You cannot pay Google for an organic position. Not through Ads spend, not through Workspace, not through anyone claiming an \"inside contact\". Anyone selling that is selling nothing.",
+        "Ads and SEO are complements, not rivals — see [PPC vs SEO](/compare/ppc-vs-seo). Paid tells you which keywords convert in three weeks. SEO then wins those keywords without the per-click bill."
+      ]
+    },
+    {
+      "h2": "What SEO is not",
+      "body": [
+        "The misconceptions are durable, expensive, and worth naming individually."
+      ],
+      "bullets": [
+        "**Not keyword stuffing.** Repeating a phrase forty times stopped working around 2005 and now actively hurts. Write for the person; the phrasing follows.",
+        "**Not a one-time fix.** Competitors publish, Google updates, content ages. A site left alone for two years loses ground it once held — see what happens when you stop doing SEO.",
+        "**Not tricking Google.** The tricks that work are temporary and the ones that stop working take your site with them. There's a bar; you either clear it or you don't.",
+        "**Not the same as content marketing.** Content is one of four disciplines, alongside technical, links and reporting. Buying only content and calling it SEO is why so many blogs get published and so little changes.",
+        "**Not guaranteed rankings.** Nobody controls the index, and Google's own guidelines warn against agencies promising positions. A guarantee against **your own baseline** is honest. A guaranteed #1 is not.",
+        "**Not free.** It's unpaid clicks bought with paid work — the bill goes to salaries instead of an ad auction."
+      ]
+    },
+    {
+      "h2": "Where AI answers fit in",
+      "body": [
+        "Google's AI Overviews, ChatGPT's browsing, Perplexity — all of them changed the shape of the results page and none of them replaced the pipeline underneath. They still need content that has been crawled, stored and retrieved. The three questions are unchanged; the competition is simply harsher, because an AI answer summarises the field and cites two or three sources instead of showing ten blue links.",
+        "Practically: pages that already rank are overwhelmingly the pages that get cited, so classic SEO remains the price of entry. Beyond that, write so a machine can lift a clean answer — say it in the first two sentences, put real numbers in it, don't bury the point. That's also how humans prefer to read.",
+        "The uncomfortable part: some queries now get answered on the results page and never produce a click, and low-commercial-intent informational queries lose the most. Queries where someone is choosing a supplier still send clicks, because nobody hires a vendor a chatbot mentioned without looking first. Weight your content plan accordingly — see [what AI Overviews did to organic traffic](/journal/what-ai-overviews-did-to-your-organic-traffic)."
+      ]
+    },
+    {
+      "h2": "What it takes, honestly",
+      "body": [
+        "SEO splits four ways: technical fixes, content, links, and measurement. A programme missing any one of the four will stall — and most stall on the one nobody enjoys, which is technical.",
+        "On timing: three to six months to real movement on a competitive keyword set, six to twelve to compounding returns. Leading indicators — impressions and average position for your target queries — should move inside four to eight weeks. Flat impressions at month three is a genuine warning sign, not a patience problem.",
+        "On money: the Indian market runs roughly ₹25,000–₹3,00,000 a month depending on site size and competition. We run [SEO from ₹75,000/mo, smaller sites from ₹40,000](/pricing). We never promise a position; we freeze your trailing-90-day qualified organic leads on day one and if we haven't beaten that in 90 days we keep working free until we do.",
+        "And the honest note: a small local business can do most of this itself. Fill in the Google Business Profile, fix site speed, write plainly about what you sell, ask happy customers for reviews. Agencies earn their fee in competitive markets — not where the whole job fits on one page."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What does SEO stand for?",
+      "a": "Search Engine Optimisation — the practice of improving a site so search engines can find, understand and rank its pages for relevant queries. The same abbreviation gets used for the role (\"she's our SEO\") and the discipline, which is why job ads for it read so strangely."
+    },
+    {
+      "q": "How does SEO actually work in simple terms?",
+      "a": "Search engines send a program to fetch your pages, store what they understand in an index, then order that index whenever someone searches. SEO makes each step easier: fetchable pages, clear subject matter, and enough evidence of quality — mainly links and first-hand detail — to be chosen over competing pages."
+    },
+    {
+      "q": "How long does SEO take to work?",
+      "a": "Three to six months for meaningful movement on a competitive keyword set; six to twelve for compounding returns. New domains take longer because they have no history or links. Technical fixes on an established site can show inside weeks, which is why the boring work usually goes first."
+    },
+    {
+      "q": "Is SEO free?",
+      "a": "The clicks are free; the work isn't. There's no fee to appear in organic results, but getting there costs time, content, technical work and usually money. Calling SEO free is like calling a house free because you built it yourself."
+    },
+    {
+      "q": "Can I do SEO myself?",
+      "a": "For a small local business, genuinely yes. Claim and complete your Google Business Profile, fix page speed, give each service its own clear page, collect reviews, and write honestly about what you sell. That covers most of the available return. Competitive national markets are where specialists start to matter."
+    },
+    {
+      "q": "Is SEO dead now that AI answers questions directly?",
+      "a": "No, but the mix has shifted. AI answers run on the same crawl-index-retrieve pipeline, and the sources they cite are largely pages that already rank. What has genuinely shrunk is traffic from simple informational queries. Commercial queries — where somebody is choosing who to buy from — still send clicks to websites."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "how-does-seo-work"
+    },
+    {
+      "type": "answers",
+      "slug": "what-are-the-4-types-of-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "indexing"
+    },
+    {
+      "type": "glossary",
+      "slug": "search-intent"
+    },
+    {
+      "type": "compare",
+      "slug": "ppc-vs-seo"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-cost-in-india"
+    },
+    {
+      "type": "answers",
+      "slug": "how-does-seo-work-in-digital-marketing"
+    }
+  ]
+}

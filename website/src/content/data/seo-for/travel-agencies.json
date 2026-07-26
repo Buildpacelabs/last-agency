@@ -1,0 +1,254 @@
+{
+  "slug": "travel-agencies",
+  "type": "seo-for",
+  "primaryKeyword": "seo for travel agencies",
+  "secondaryKeywords": [
+    "travel agency seo india",
+    "tour operator seo",
+    "seo for tour packages",
+    "destination page seo",
+    "seo for dmc india"
+  ],
+  "cluster": "travel-and-hospitality",
+  "intent": "commercial",
+  "industry": "Travel agencies and tour operators",
+  "h1": "SEO for travel agencies, against OTAs and a thousand blogs",
+  "metaTitle": "SEO for Travel Agencies: Itinerary-Led Ranking",
+  "metaDescription": "SEO for travel agencies in India. We build itinerary, cost and best-time-to-visit pages that beat travel blogs and turn readers into package enquiries.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Travel agencies win search by publishing what OTAs won't: a day-wise itinerary with a rupee-level cost break-up. Queries like `ladakh trip cost from delhi` outrank generic destination pages because the searcher wants a number. Publish the number, show what's excluded, and the enquiry follows.",
+  "takeaways": [
+    "Inspiration queries belong to the big blogs and aggregators. **Cost queries belong to whoever publishes the actual break-up** — and that's you, because you know what the hotel, the Innova and the permit cost.",
+    "Seasonality is fixed by weather, permits and road openings. A page that goes live in season went live too late; ship it eight to twelve weeks early.",
+    "Visa and permit pages pull traffic and decay fast. Date-stamp every one of them or take them down.",
+    "Not every destination is winnable. Open the SERP before you commission twenty pages, and count how many results are aggregators.",
+    "In Indian travel the enquiry finishes on WhatsApp. Instrument it or you'll never know which page paid for itself."
+  ],
+  "sections": [
+    {
+      "h2": "The money query is a price, not a place",
+      "body": [
+        "Travel search splits cleanly into two shapes. There's inspiration — `best places to visit in september`, `things to do in coorg` — and there's transaction: `kerala trip cost for 5 days`, `manali package price for a couple`, `ladakh bike trip cost from delhi`.",
+        "Inspiration is a losing fight for most operators. Those results are held by aggregators and affiliate blogs with a decade of links behind them, and you are not out-writing them on a budget. Transaction is different, and it's the gap nobody defends properly. An OTA assembles a price at runtime and shows a stripped rate. A content blog publishes 'starting from ₹9,999' because it has no supplier contracts and no idea what the real number is. You do. That asymmetry is the entire opportunity."
+      ],
+      "bullets": [
+        "`<destination> tour package price` — the head cost query, usually contested but rarely answered well.",
+        "`<destination> trip cost for 4 days 3 nights` — the night count changes the answer, so it's a separate page.",
+        "`<destination> trip cost from <origin city>` — origin matters, because flights or trains are most of the bill.",
+        "`honeymoon package cost <destination>` and `family trip cost <destination>` — different inclusions, different pages.",
+        "`is <destination> expensive` and `budget for <destination>` — informational on the surface, commercial underneath."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "'Starting from ₹9,999' is a price that loses money",
+        "body": "If the headline is ₹9,999 and the real cost with flights, permits and a decent hotel is ₹31,000, you don't win an enquiry — you win an awkward call, a wasted hour and a bad review of your sales team. Publish an honest band with the party size and season stated. Fewer enquiries, far better ones."
+      }
+    },
+    {
+      "h2": "How to build a cost page Google can actually lift",
+      "body": [
+        "Cost pages earn [featured snippets](/glossary/featured-snippet) and AI answers because they contain a specific, extractable number. Most operator pages contain a brochure instead. Here's the difference, item by item."
+      ],
+      "table": {
+        "caption": "What a cost page needs, and what most operator sites publish instead.",
+        "head": [
+          "Element",
+          "What wins",
+          "What most sites publish"
+        ],
+        "rows": [
+          [
+            "Headline price",
+            "A band with the party size, night count and season stated: ₹X–₹Y per person, 4N/5D, twin sharing, shoulder season",
+            "'Starting from ₹9,999' with no dates attached"
+          ],
+          [
+            "Break-up",
+            "Line items with rupee figures: stay, transport, permits, monument and park fees, guide, meals",
+            "'All inclusive'"
+          ],
+          [
+            "Exclusions",
+            "Flights, camera fees, tips, personal expenses, GST, and TCS on overseas tour packages where it applies",
+            "A footnote in six-point grey"
+          ],
+          [
+            "Itinerary",
+            "Day 1 to Day N with drive times, distances and altitude where it matters",
+            "A downloadable PDF brochure"
+          ],
+          [
+            "Freshness",
+            "A visible 'prices checked on <date>' line and an owner who checks it",
+            "Nothing, so the page silently ages into being wrong"
+          ]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "Structured data that genuinely applies here",
+          "body": [
+            "Schema.org has `TouristTrip`, `TouristDestination` and `Offer`, and they're the right vocabulary for a package page. Mark up the trip, its itinerary and its price. Add `FAQPage` for the questions you get on every call.",
+            "Be realistic about what that buys you. Google does not guarantee a rich result for `TouristTrip`, so treat structured data as clarity for the crawler rather than a visual upgrade you can promise a client. Anyone selling schema as a ranking guarantee is guessing."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The calendar is the content plan",
+      "body": [
+        "Travel is one of the few industries where the sellable window is set by things nobody can negotiate with — snowfall, monsoon, permit seasons and the Border Roads Organisation clearing a pass. Your publishing calendar has to sit in front of that window, because a new page needs weeks to be crawled, indexed and to climb. Publishing your Char Dham page in May is publishing it for next year."
+      ],
+      "table": {
+        "caption": "Fixed seasons, and when the page needs to already be live.",
+        "head": [
+          "Destination or product",
+          "Sellable window",
+          "Page live by"
+        ],
+        "rows": [
+          [
+            "Char Dham Yatra",
+            "Opens around Akshaya Tritiya in late April or May, closes around Diwali and Bhai Dooj",
+            "January–February"
+          ],
+          [
+            "Ladakh by road, via Manali or Srinagar",
+            "Roughly May to September, subject to the passes being cleared",
+            "January–February"
+          ],
+          [
+            "Valley of Flowers, Uttarakhand",
+            "The monsoon bloom, roughly July to early September",
+            "March–April"
+          ],
+          [
+            "Rajasthan circuits and Kerala backwaters",
+            "Peak from October to March; Kerala's monsoon sells separately, as Ayurveda",
+            "June–July"
+          ],
+          [
+            "Andaman and Nicobar",
+            "Roughly October to May, sea conditions permitting",
+            "June–July"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Booking windows are not the same as seasons",
+        "body": "Domestic leisure is often decided weeks out. An outbound package that needs a Schengen appointment is decided months out, because appointment availability, not desire, sets the floor. Your visa content therefore has to be live a full season before the package page it supports."
+      }
+    },
+    {
+      "h2": "Visa, permit and documentation pages: big traffic, fast decay",
+      "body": [
+        "These are the highest-traffic non-brand pages most operators can build, and the most dangerous. Permit rules are relatively stable. Visa rules, fees and e-visa eligibility change without notice, and a wrong page that ranks well is worse than no page at all, because someone books on the strength of it and the complaint lands on your desk rather than Google's."
+      ],
+      "bullets": [
+        "**Inner Line Permit** for Arunachal Pradesh, Nagaland, Mizoram and Manipur — required for Indian citizens, with online issue in some states and district-office issue in others.",
+        "**Ladakh permits** for Nubra, Pangong, Tso Moriri and Hanle, with a separate protected-area regime and different rules for foreign nationals.",
+        "**Sikkim permits** for Tsomgo, Nathu La and the north district, several of which are only issued through registered operators — which is a genuine reason for a traveller to call you rather than book alone.",
+        "**Restricted Area Permits** for parts of the Andaman and Nicobar islands for foreign nationals.",
+        "**Vehicle and pass permits** in the hill states, with daily caps and booking windows that open on fixed dates. Rohtang is the standard example.",
+        "**Outbound visa pages** — fees, documents, appointment availability and processing times. Useful, and the fastest-decaying content on your site."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Date-stamp it or delete it",
+        "body": "Put a visible 'verified on <date>' line on every visa and permit page and give one person the job of checking them monthly. If nobody owns it, take the page down. An outdated visa page that ranks is a liability, not an asset."
+      }
+    },
+    {
+      "h2": "Sizing the fight, destination by destination",
+      "body": [
+        "Before you commission twenty destination pages, open the SERP for the exact query you're targeting and count what's on it. Ten minutes of this saves a quarter of wasted content budget."
+      ],
+      "numbered": [
+        "**Count the aggregators.** If the first eight results are OTAs and marketplaces, the head term is a domain-strength fight you'll lose. Go one level narrower — `ladakh bike trip cost from manali 7 days` rather than `ladakh trip cost`.",
+        "**Count the blogs.** Affiliate blogs rank on depth and photos, not on commercial detail. That's your gap, and it's the same gap on every destination they cover.",
+        "**Look for cost questions in the People-Also-Ask block.** If they're there, the page format above answers the whole cluster in one URL.",
+        "**Check for a travel or things-to-do module.** When Google occupies the top of the page with its own product, the organic click is worth less than the search volume implies. Price the query accordingly.",
+        "**Prioritise where you actually operate.** A DMC with its own ground handling in Ladakh knows drive times, altitude sickness patterns and which homestay has a generator. A Delhi reseller doesn't. That difference is the experience half of E-E-A-T, and it's the only thing on this page a competitor can't copy in a week."
+      ]
+    },
+    {
+      "h2": "From enquiry to WhatsApp, and what we actually guarantee",
+      "body": [
+        "Indian travel enquiries do not close on a form. They close in a chat window, usually within a few hours, usually after four or five messages about dates and hotel category. If your site treats WhatsApp as an afterthought icon, you're measuring the wrong half of the funnel."
+      ],
+      "bullets": [
+        "Pre-fill the WhatsApp message with the package name and travel month, so the first reply can be useful instead of 'which trip?'.",
+        "Tag every `wa.me` link with the source page. Untagged, you'll never know whether it was the Ladakh cost page or the visa page that earned the sale.",
+        "Ask for travel dates and party size on the form. Nothing else. Every extra field costs you enquiries you'd have converted.",
+        "Publish a real response time and hit it. Travel enquiries go to three operators at once and the first useful reply usually wins.",
+        "Track enquiries in a CRM against the destination page that produced them, not in analytics. Analytics counts sessions; a CRM counts money."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The honest timeline",
+        "body": "Cost and itinerary pages for a destination you genuinely operate usually take three to six months to hold position. Seasonal pages are judged on the season they were built for, not the month they shipped. Anyone promising you peak-season rankings from a July start is quoting a different problem."
+      }
+    },
+    {
+      "h2": "What this costs, and the promise attached to it",
+      "body": [
+        "A single-destination operator sits at the ₹40,000 a month end of our [SEO pricing](/pricing). A multi-destination DMC with outbound packages, visa content and separate origin-city pages is ₹75,000 and up, because it's genuinely more surface to maintain. [What SEO costs in India](/cost/seo-cost-in-india) sets out the wider market range so you can sanity-check any quote, including ours.",
+        "What we guarantee is not a ranking position. Nobody controls Google's index, and you wouldn't trust a tour operator who promised clear weather at Pangong either. We freeze your trailing-90-day count of qualified enquiries from organic search — form, call and WhatsApp — on day one. If we haven't beaten it in 90 days, we keep working free until we do. We take three clients a month, which is what makes that a commitment rather than a slogan."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can a small travel agency outrank MakeMyTrip or a big travel blog?",
+      "a": "Not on `best places to visit in india`, no. On `ladakh trip cost from delhi for 7 days with permits`, absolutely — because you can publish a real break-up and they publish a template. Pick the queries where your supplier knowledge is the differentiator and ignore the ones where domain strength decides it."
+    },
+    {
+      "q": "Should I publish my tour package prices on the website?",
+      "a": "Yes, as a band with the night count, party size and season stated. Cost is the query. An operator who hides pricing gets compared on nothing but brand recognition, which is the one variable a small agency can't win. A published band also filters out the enquiries you'd never have converted."
+    },
+    {
+      "q": "How far in advance should travel content go live?",
+      "a": "Eight to twelve weeks before the booking window opens, not before the travel season. A new page needs time to be crawled, indexed and to climb. For fixed-season products like Char Dham or the Ladakh road season, that means publishing in January and February for a May start."
+    },
+    {
+      "q": "Are visa and permit pages worth writing?",
+      "a": "They pull real traffic and they establish that you know the operational detail. They also go out of date faster than anything else on your site. Only publish them if someone owns a monthly check and every page carries a visible verified-on date. Otherwise the page becomes a complaint."
+    },
+    {
+      "q": "How long does SEO take to produce travel enquiries?",
+      "a": "Three to six months for cost and itinerary pages on destinations you actually operate, longer for competitive international ones. You should see impressions moving for your target queries inside four to eight weeks. Flat impressions at month three means the plan, not the timeline, is the problem."
+    },
+    {
+      "q": "Is SEO better than listing on an OTA or a marketplace?",
+      "a": "They do different jobs. Marketplaces bring volume you didn't have to earn, at a commission and without the customer's contact details. SEO is slower, compounds, and gives you the enquiry directly. Most operators need both — the mistake is running the marketplace for years and never building the direct channel."
+    }
+  ],
+  "related": [
+    {
+      "type": "seo-for",
+      "slug": "hotels"
+    },
+    {
+      "type": "services",
+      "slug": "content-marketing-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "featured-snippet"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-rank-on-google-in-india"
+    },
+    {
+      "type": "compare",
+      "slug": "seo-vs-marketplace-selling"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-cost-in-india"
+    }
+  ]
+}

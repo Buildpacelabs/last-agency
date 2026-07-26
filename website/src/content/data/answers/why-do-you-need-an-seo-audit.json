@@ -1,0 +1,179 @@
+{
+  "slug": "why-do-you-need-an-seo-audit",
+  "type": "answers",
+  "primaryKeyword": "why seo audit",
+  "secondaryKeywords": [
+    "why do you need an seo audit",
+    "importance of seo audit",
+    "when should you do an seo audit",
+    "benefits of an seo audit"
+  ],
+  "cluster": "agency-mechanics",
+  "intent": "commercial",
+  "h1": "When an SEO audit is worth paying for",
+  "metaTitle": "Why Do You Need an SEO Audit? When It Pays",
+  "metaDescription": "An SEO audit earns its fee on a trigger, not a schedule. Here are the five events that justify one, and three where it just delays the real work.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "You don't always need one. An SEO audit earns its fee when something has changed or is about to: a replatform, a URL migration, a sudden organic drop, a change of agency, or a slide in AI Overview citations. Without a trigger, an audit usually just delays work you already know needs doing.",
+  "takeaways": [
+    "Audits are diagnostic. Buying one when you already know the diagnosis is expensive procrastination.",
+    "The two migration audits — **before** and **two to four weeks after** — are the highest-return ones anybody sells.",
+    "Never buy the audit from the agency pitching you the retainer. Independence is the entire point of the deliverable.",
+    "A traffic drop needs 30 minutes of triage before it needs a ₹60,000 audit. Check the tracking first."
+  ],
+  "sections": [
+    {
+      "h2": "An audit is a diagnosis, not a treatment",
+      "body": [
+        "An SEO audit tells you what's wrong and in what order to fix it. It does not fix anything. That distinction sounds obvious right up to the moment you're four weeks in with a 60-page PDF, no engineering time booked, and the same traffic you started with.",
+        "So the useful question isn't \"should I get an audit?\" It's \"what decision will this audit let me make that I can't make today?\" If you can name the decision, buy the audit. If you can't, you're buying reassurance, and reassurance is cheaper elsewhere.",
+        "What goes inside a good one — the four sections, the prioritised fix list, the price bands — is covered in [what an SEO audit is](/answers/what-is-an-seo-audit). This page is only about timing."
+      ]
+    },
+    {
+      "h2": "Trigger one: you're replatforming or migrating",
+      "body": [
+        "This is the trigger where an audit most reliably pays for itself, because migrations are the single most common way a healthy site loses half its organic traffic in a fortnight. WordPress to Shopify, a domain change after a rebrand, a subfolder restructure, a headless rebuild — the risk is identical and it's mostly clerical."
+      ],
+      "subs": [
+        {
+          "h3": "Before you move",
+          "bullets": [
+            "A full crawl and URL inventory of the current site, with traffic and links attached to each URL, so you know which pages actually matter.",
+            "A one-to-one redirect map. Not a bulk redirect to the homepage, which Google will largely treat as a soft 404.",
+            "A template inventory: which page types carry the internal links, the schema and the copy that earned the rankings.",
+            "A frozen baseline of rankings, impressions and organic leads, dated, so you can prove afterwards whether the move cost you anything."
+          ]
+        },
+        {
+          "h3": "Two to four weeks after you move",
+          "bullets": [
+            "Verify every redirect resolves in one hop, with no chains and no loops.",
+            "Check indexation of the new URLs in Search Console against the old set, page type by page type.",
+            "Confirm canonicals, hreflang and schema survived the rebuild — they routinely don't.",
+            "Compare internal link counts per template. Losing a footer or a related-posts block quietly strips thousands of internal links."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The expensive version of this mistake",
+        "body": "Nobody notices a bad migration in week one, because Google takes a few weeks to reprocess the site. By the time traffic visibly falls, the dev team has moved on and the old site is gone. Book the post-migration check before the launch, not after the panic."
+      }
+    },
+    {
+      "h2": "Trigger two: organic traffic dropped and nobody can say why",
+      "body": [
+        "A drop is a legitimate trigger — but do the free triage first, in this order. Most drops resolve inside half an hour and don't need anyone's invoice."
+      ],
+      "numbered": [
+        "**Check the tracking before the site.** A broken GA4 tag or a consent-banner change looks exactly like a traffic collapse. Cross-check against Search Console clicks, which are measured on Google's side.",
+        "**Look at the exact date the line breaks.** A cliff on one day is technical or a manual action. A slope over two weeks is usually an algorithm update or seasonal demand.",
+        "**Check Search Console for manual actions and indexing.** A `noindex` shipped by mistake, a robots.txt block, or a server that started returning 5xx to Googlebot are all findable in minutes.",
+        "**Segment by page type and query.** A drop concentrated in one template is technical. A drop spread evenly across the site is usually a core update or lost demand.",
+        "**Check whether demand fell.** If the query itself is being searched less, or now resolves without a click, your ranking may be fine and your traffic still gone."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The point where the audit becomes worth buying",
+        "body": "When that triage ends in \"it's broad, it's structural, and I can't isolate it.\" That's a genuine diagnostic problem and worth paying to solve. [Why rankings drop](/answers/why-did-my-rankings-drop) walks through each individual cause in more detail."
+      }
+    },
+    {
+      "h2": "Trigger three: you're hiring an agency, or firing one",
+      "body": [
+        "An independent audit before you sign a retainer does two things. It gives you a scope that isn't written by the party being paid to deliver it, and it gives you a dated baseline — which is the only thing that makes any future claim of improvement checkable.",
+        "On the way out it does something different: it tells you what you actually own. Whether the content is thin or solid, whether the links are earned or bought, whether there's a penalty risk sitting in the backlink profile that becomes your problem the day the agency leaves.",
+        "One rule, and it isn't negotiable: don't buy the audit from the agency pitching you the retainer. A free audit is a sales document, and it will find precisely the problems that agency sells the fix for. Pay a third party a few tens of thousands of rupees, or pay an agency you've already ruled out for the retainer."
+      ]
+    },
+    {
+      "h2": "Trigger four: you stopped getting cited in AI answers",
+      "body": [
+        "This one is newer and needs stating carefully. There's no public API for AI Overview or assistant citations, no rank tracker with authoritative coverage, and the selection mechanics aren't documented by anyone who actually knows them. Any consultant quoting you a precise \"AI visibility score\" is quoting a proprietary sample, not a fact.",
+        "What is checkable is whether you've made yourself citable, and that's a real audit scope:"
+      ],
+      "bullets": [
+        "**Crawler access.** Whether your robots.txt and CDN rules allow the AI crawlers you want to be read by, and block the ones you don't. Plenty of sites blocked them by accident during a bot-mitigation config.",
+        "**Extractability.** Whether your pages answer the question in a self-contained paragraph near the top, or bury it under 400 words of preamble.",
+        "**Entity footprint.** Whether your brand, people and products are described consistently across your own site and the places that describe you elsewhere.",
+        "**Query reality.** Whether your money queries now resolve with an AI answer at all, and whether they used to send clicks. Sometimes the traffic didn't move to a competitor — it stopped existing."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Don't pay twice for the same crawl",
+        "body": "This is a content-and-technical audit with an AI lens, not a separate product with a separate invoice. Anyone selling \"AI visibility auditing\" as a wholly new discipline is charging you again for work a competent SEO audit already covers."
+      }
+    },
+    {
+      "h2": "Three times an audit is just procrastination",
+      "body": [
+        "We turn down audit requests for all three of these, because taking the money would be the easier and worse decision."
+      ],
+      "bullets": [
+        "**You already have last quarter's fix list and haven't done it.** A second opinion on a list you're ignoring costs money and buys three more weeks of not starting. Ship the first list.",
+        "**The site is four months old with 12 pages.** There's nothing to diagnose. You need pages people search for, and the answer is already obvious from a keyword list.",
+        "**Nobody has the engineering time to act on it.** An audit with no dev capacity behind it is a document. Book the sprint first; buy the audit to fill it.",
+        "**Bonus, and the most common of all: it's an annual habit.** Nothing structural changed and the calendar said July. Audit against events, not against the financial year."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What we'd tell you on the call",
+        "body": "If you've got a trigger, we run paid audits as a standalone piece — see [SEO audit services](/services/seo-audit-services). If you don't, we'll say so and point you at the three fixes you already know about. That conversation costs nothing and saves you a quarter."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How often should you do an SEO audit?",
+      "a": "On events, not on a schedule. A stable site that hasn't been rebuilt, hasn't dropped and hasn't changed agencies rarely needs a full audit more than once every 18–24 months. What it does need is monthly monitoring — indexation, Core Web Vitals, broken links, new 404s — which is maintenance, not an audit."
+    },
+    {
+      "q": "Are free SEO audits worth anything?",
+      "a": "As a sales document, occasionally. A free audit is generated to create urgency, so it over-weights whatever the agency sells and under-weights everything else. The automated ones are a tool export with a logo. Useful as a rough temperature check; never useful as a scope for spending money."
+    },
+    {
+      "q": "How long does an SEO audit take?",
+      "a": "One to three weeks for a normal site, depending on size and how much access you can give. A same-week turnaround usually means a crawl was run and lightly annotated. The slow part isn't the crawling — it's working out which of the 300 findings are actually costing you money."
+    },
+    {
+      "q": "Should I audit before or after a website redesign?",
+      "a": "Both, and the before one matters more. Before, you need a URL inventory, a redirect map and a frozen baseline. After, at two to four weeks, you verify redirects, indexation, schema and internal links survived. Skipping the first one is how redesigns quietly cost a year of traffic."
+    },
+    {
+      "q": "Can I do an SEO audit myself?",
+      "a": "The technical layer, largely yes — Search Console plus a free crawl of a small site will surface indexing problems, broken links, redirect chains and missing tags. What's hard to do alone is prioritisation: knowing which of 40 findings will actually move revenue, and which are tidy-up nobody will notice."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-is-an-seo-audit"
+    },
+    {
+      "type": "answers",
+      "slug": "why-did-my-rankings-drop"
+    },
+    {
+      "type": "services",
+      "slug": "seo-audit-services"
+    },
+    {
+      "type": "journal",
+      "slug": "what-an-seo-audit-should-actually-find"
+    },
+    {
+      "type": "journal",
+      "slug": "the-replatform-that-killed-your-traffic"
+    },
+    {
+      "type": "glossary",
+      "slug": "ai-overviews"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-an-seo-agent"
+    }
+  ]
+}

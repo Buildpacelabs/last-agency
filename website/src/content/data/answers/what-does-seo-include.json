@@ -1,0 +1,424 @@
+{
+  "slug": "what-does-seo-include",
+  "type": "answers",
+  "primaryKeyword": "what does seo include",
+  "secondaryKeywords": [
+    "what is included in seo",
+    "what does seo cover",
+    "seo activities list",
+    "what work is involved in seo"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "Everything that counts as SEO work",
+  "metaTitle": "What Does SEO Include? The Full Work List",
+  "metaDescription": "What does SEO include? More than forty distinct activities across five areas. Here's the full list, grouped, with how often each one needs doing.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "SEO includes about forty-five recurring activities across five areas: technical fixes, content and on-page work, links and digital PR, local signals, and measurement. Roughly a quarter are one-time setup, the rest repeat weekly, monthly or quarterly. A scope that lists fewer than twenty of them is missing a whole discipline.",
+  "takeaways": [
+    "Five areas, roughly forty-five activities. Most retainers cover three areas well and two badly.",
+    "**Cadence is the thing to check, not the list.** Everyone can list 'technical SEO'. Ask how often each item actually gets done.",
+    "About twelve activities are genuinely one-time. Paying a monthly fee for them forever is how retainers quietly go stale.",
+    "Use this page as a scope template or a job description. Delete the rows that don't apply to you and make the agency price what's left."
+  ],
+  "sections": [
+    {
+      "h2": "Five areas, and why the cadence column matters more than the list",
+      "body": [
+        "Every agency can recite the categories. Technical, content, off-page, local, reporting. The list is not the useful part — it's on every pitch deck in India and it tells you nothing about whether the work happens.",
+        "What separates a real scope from a nice deck is frequency. \"We do technical SEO\" can mean a full crawl every quarter with a fix queue, or one audit in month one that nobody opens again. Same words, wildly different invoice.",
+        "So each table below carries a cadence label. **Once** means setup work that shouldn't recur unless something changes. **Weekly** and **monthly** mean it belongs in a standing calendar. **Quarterly** means it's cheap to skip and expensive to have skipped."
+      ]
+    },
+    {
+      "h2": "Technical SEO: twelve activities",
+      "body": [
+        "This is the plumbing. It rarely wins you a ranking on its own, and it caps everything else when it's broken. On a site older than three years it's usually where the first genuine gains hide."
+      ],
+      "table": {
+        "caption": "Technical SEO activities and how often each needs doing.",
+        "head": [
+          "Activity",
+          "What it means in practice",
+          "Cadence"
+        ],
+        "rows": [
+          [
+            "Full site crawl",
+            "Screaming Frog or Sitebulb across every URL, producing a prioritised fix list",
+            "Once, then quarterly"
+          ],
+          [
+            "Indexation review",
+            "Search Console Pages report — what's indexed, what's excluded and why",
+            "Monthly"
+          ],
+          [
+            "robots.txt and XML sitemap",
+            "Correct directives, clean sitemap with only canonical, indexable URLs",
+            "Once, then after any site change"
+          ],
+          [
+            "Redirect audit",
+            "Finding chains, loops and 301s pointing at 404s",
+            "Once, then per migration"
+          ],
+          [
+            "Core Web Vitals",
+            "LCP, INP and CLS measured on field data, not just lab scores",
+            "Monthly monitoring"
+          ],
+          [
+            "Schema markup",
+            "Organisation, Product, FAQ, LocalBusiness, Article — per template, not per page",
+            "Once per template"
+          ],
+          [
+            "Canonical and duplicate handling",
+            "Parameters, pagination, filtered URLs, http/https and www variants",
+            "Once, then monthly spot-check"
+          ],
+          [
+            "JavaScript rendering check",
+            "Confirming Googlebot sees the content your users see",
+            "Once, then per framework change"
+          ],
+          [
+            "Server response time",
+            "Time to first byte from your host, under real load",
+            "Quarterly"
+          ],
+          [
+            "Log file analysis",
+            "Which URLs Googlebot actually fetches and how often. Large sites only",
+            "Quarterly"
+          ],
+          [
+            "Hreflang and international setup",
+            "Only if you serve multiple countries or languages",
+            "Once, if applicable"
+          ],
+          [
+            "Mobile rendering check",
+            "Layout, tap targets and content parity on a real device",
+            "Quarterly"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Scope this properly",
+        "body": "Technical work eats 20–30% of hours in month one and drops to around 10% after. If a proposal keeps billing month-one technical hours in month eight, ask what's being crawled that changed."
+      }
+    },
+    {
+      "h2": "Content and on-page: eleven activities",
+      "body": [
+        "The largest line in almost every retainer, and the one most often reduced to \"four blogs a month\". Writing is one of eleven things here. The other ten are what decide whether the writing earns anything."
+      ],
+      "table": {
+        "caption": "Content and on-page activities with their natural cadence.",
+        "head": [
+          "Activity",
+          "What it means in practice",
+          "Cadence"
+        ],
+        "rows": [
+          [
+            "Keyword research and mapping",
+            "Query set built, deduplicated and assigned to specific URLs",
+            "Once, refreshed quarterly"
+          ],
+          [
+            "Intent audit of existing pages",
+            "Checking each page answers the query it targets, not an adjacent one",
+            "Once, then quarterly"
+          ],
+          [
+            "Title tags and meta descriptions",
+            "Written per page, revisited when CTR slips",
+            "Per page, then on decay"
+          ],
+          [
+            "Heading structure and body copy",
+            "One H1, logical H2s, the answer near the top",
+            "Per page"
+          ],
+          [
+            "New page production",
+            "Pillars first, then clusters. Volume matters less than consistency",
+            "Weekly or monthly cadence"
+          ],
+          [
+            "Content refresh",
+            "Updating pages that used to rank and are sliding",
+            "Monthly"
+          ],
+          [
+            "Internal linking",
+            "Wiring new pages into the cluster and back to money pages",
+            "Weekly, as pages ship"
+          ],
+          [
+            "Cannibalisation audit",
+            "Finding two pages competing for one query and merging or differentiating them",
+            "Quarterly"
+          ],
+          [
+            "Content pruning",
+            "Removing or consolidating pages that have never earned an impression",
+            "Twice a year"
+          ],
+          [
+            "Image alt text and compression",
+            "Accessibility, image search, and page weight",
+            "Per page"
+          ],
+          [
+            "Snippet and FAQ formatting",
+            "Structuring answers so they can be lifted into a featured snippet or AI answer",
+            "Per page"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Links and digital PR: eight activities",
+      "body": [
+        "The area with the widest quality gap between agencies, because the cheap version and the expensive version look identical on a report. Both produce a number of new referring domains. Only one of them survives a spam update."
+      ],
+      "table": {
+        "caption": "Off-page activities and how often they recur.",
+        "head": [
+          "Activity",
+          "What it means in practice",
+          "Cadence"
+        ],
+        "rows": [
+          [
+            "Backlink profile audit",
+            "What you already have, what's toxic, what's been lost",
+            "Once, then quarterly"
+          ],
+          [
+            "Competitor link gap analysis",
+            "Domains linking to three competitors but not to you",
+            "Quarterly"
+          ],
+          [
+            "Digital PR asset production",
+            "Original data, surveys, tools or commentary worth citing",
+            "Quarterly"
+          ],
+          [
+            "Outreach and placement",
+            "Pitching journalists and site owners, tracking replies",
+            "Weekly"
+          ],
+          [
+            "Lost and broken link reclamation",
+            "Fixing links that used to point at you and now 404",
+            "Monthly"
+          ],
+          [
+            "Unlinked mention outreach",
+            "Finding places your brand is named without a link, and asking",
+            "Monthly"
+          ],
+          [
+            "Partner and supplier links",
+            "Distributors, associations, sponsorships, customer case pages",
+            "Twice a year"
+          ],
+          [
+            "Disavow review",
+            "Only on real evidence of a manual action or a paid-link legacy",
+            "Rare, on evidence only"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The question that separates the field",
+        "body": "\"Where do the links come from?\" A real answer names sites and methods. \"Our network\" or \"high-DA blogs\" means bought placements on a private network, and Google's link spam policies have been eating those for years. See [what a link building programme should cost](/cost/link-building-cost)."
+      }
+    },
+    {
+      "h2": "Local SEO: seven activities, if you have an address",
+      "body": [
+        "Skip this section entirely if you're a pure-play SaaS or a national e-commerce brand with no physical presence. If you have clinics, stores, branches or a service area, this is often the fastest-returning work on the whole list — and it barely touches your website."
+      ],
+      "table": {
+        "caption": "Local SEO activities for businesses with a physical or service-area presence.",
+        "head": [
+          "Activity",
+          "What it means in practice",
+          "Cadence"
+        ],
+        "rows": [
+          [
+            "Business Profile setup",
+            "Correct primary category, services, hours, attributes, photos",
+            "Once, review quarterly"
+          ],
+          [
+            "Profile posts and photos",
+            "Fresh images and updates — the profile is a live surface, not a listing",
+            "Weekly"
+          ],
+          [
+            "Review generation and response",
+            "A repeatable ask built into your delivery, plus replies to every review",
+            "Weekly"
+          ],
+          [
+            "NAP and citation cleanup",
+            "Consistent name, address and phone across directories and aggregators",
+            "Once, then twice a year"
+          ],
+          [
+            "Location landing pages",
+            "One real page per branch with unique content, not a list of eleven addresses",
+            "Once per location"
+          ],
+          [
+            "Local link building",
+            "Sponsorships, associations, local press, community listings",
+            "Monthly"
+          ],
+          [
+            "Grid-based rank tracking",
+            "Map pack position measured across a geographic grid, not one point",
+            "Monthly"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Measurement and reporting: eight activities",
+      "body": [
+        "The area clients cut first and regret last. Without the first row on this table, nothing else on this page can be proved to have worked."
+      ],
+      "table": {
+        "caption": "Measurement activities — the ones that decide whether any of the rest counted.",
+        "head": [
+          "Activity",
+          "What it means in practice",
+          "Cadence"
+        ],
+        "rows": [
+          [
+            "Baseline capture",
+            "Freezing the trailing-90-day number you'll be judged against, on day one",
+            "Once, before work starts"
+          ],
+          [
+            "Analytics and conversion setup",
+            "GA4 events, forms, calls and CRM lead source actually firing",
+            "Once, verify quarterly"
+          ],
+          [
+            "Search Console monitoring",
+            "Impressions, position and coverage for the query set in the plan",
+            "Weekly"
+          ],
+          [
+            "Rank tracking",
+            "The keywords in your plan, not a vanity average across everything",
+            "Weekly"
+          ],
+          [
+            "Reporting",
+            "What moved, why, and what happens next month. Two pages, not twenty",
+            "Monthly"
+          ],
+          [
+            "CRM reconciliation",
+            "Matching organic leads in analytics to real deals in the CRM",
+            "Monthly"
+          ],
+          [
+            "Algorithm update watch",
+            "Checking whether a drop was you, Google, or seasonality",
+            "As updates land"
+          ],
+          [
+            "Strategy review",
+            "Reallocating hours based on what the last quarter proved",
+            "Quarterly"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "What's genuinely one-time — and how to turn this into a scope",
+      "body": [
+        "Twelve of the activities above are setup: the first crawl, robots and sitemap, the redirect audit, schema per template, the JS rendering check, hreflang, keyword mapping, the intent audit, the backlink audit, Business Profile setup, location pages, and analytics and baseline setup. They should be finished inside the first quarter and never billed as recurring work again.",
+        "Everything else repeats. That's the honest reason SEO is sold as a retainer rather than a project — not because agencies like recurring revenue, though they do, but because roughly thirty-three of these forty-five items have no finish line. The [retainer versus project comparison](/compare/retainer-vs-project) goes deeper on where that line should sit.",
+        "To use this as a scope: delete the rows that don't apply, put a name against every remaining row, and ask what happens to the cadence if hours run short in a busy month. The answer to that last question is where most retainers quietly fail."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "What a ₹75,000 retainer covers",
+        "body": "Roughly speaking, a mid-size Indian retainer funds all of technical, all of measurement, most of content, and a deliberately narrow slice of link work. Something has to be narrow at that price. The mistake is not knowing which. Our numbers are on [the pricing page](/pricing)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What are the main types of SEO work?",
+      "a": "Five: technical (crawling, indexing, speed, schema), content and on-page (research, writing, internal links, refreshes), off-page (links and digital PR), local (Business Profile, reviews, citations) and measurement. Most people compress this to three — on-page, off-page, technical — which hides local and measurement entirely."
+    },
+    {
+      "q": "Does SEO include content writing?",
+      "a": "Usually, but check. Some agencies scope strategy and briefs and expect you to write. Others include a fixed number of pieces. Others charge writing separately per word. All three are legitimate; only one of them is what you assumed you were buying. Get the number of pieces and the word count in writing."
+    },
+    {
+      "q": "Is link building included in SEO?",
+      "a": "In a full scope, yes — eight of the roughly forty-five activities are off-page. In practice it's the first thing dropped from a cheap retainer, because real links cost real time. If a ₹25,000 monthly plan lists link building, ask how many hours it gets. The answer is usually under three."
+    },
+    {
+      "q": "How much SEO work is one-time versus ongoing?",
+      "a": "About twelve activities are genuinely one-time setup: the initial crawl, redirect map, schema templates, keyword mapping, backlink audit, analytics and baseline. The remaining thirty-odd repeat on a weekly, monthly or quarterly cycle. That ratio is why SEO is priced as a retainer rather than a one-off project."
+    },
+    {
+      "q": "What should an SEO scope document actually list?",
+      "a": "Activities with a cadence and an owner, not categories. \"Technical SEO\" is not a scope line. \"Full crawl quarterly, indexation review monthly, Core Web Vitals monitored monthly, owned by the technical lead\" is. If you can't tell from the document what happens in week three, it isn't a scope."
+    },
+    {
+      "q": "Does SEO include paid ads?",
+      "a": "No. SEO covers organic search only. Paid search is a separate discipline with separate budgets, separate people and a completely different feedback loop. Plenty of agencies sell both — we do — but they should appear as separate line items with separate metrics, never blended into one traffic number."
+    }
+  ],
+  "related": [
+    {
+      "type": "services",
+      "slug": "seo-retainer-plans"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "answers",
+      "slug": "what-does-an-seo-retainer-include"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-agency-fees-breakdown"
+    },
+    {
+      "type": "compare",
+      "slug": "onpage-vs-offpage-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "on-page-seo-meaning"
+    },
+    {
+      "type": "answers",
+      "slug": "what-are-keywords-in-seo"
+    }
+  ]
+}

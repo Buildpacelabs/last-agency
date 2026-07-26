@@ -1,0 +1,233 @@
+{
+  "slug": "seo-vs-sem",
+  "type": "compare",
+  "primaryKeyword": "seo vs sem",
+  "secondaryKeywords": [
+    "difference between seo and sem",
+    "is seo part of sem",
+    "sem meaning in digital marketing",
+    "seo sem ppc difference",
+    "what is search engine marketing"
+  ],
+  "cluster": "paid-vs-organic",
+  "intent": "informational",
+  "h1": "SEO vs SEM: one of these used to contain the other",
+  "metaTitle": "SEO vs SEM: What Indian Agencies Actually Mean",
+  "metaDescription": "SEO vs SEM confuses buyers because SEM once included SEO. Here is what Indian agencies mean by SEM today, and how to read a proposal that uses it.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "SEM originally meant everything you do to appear in search results — paid and organic, with SEO inside it. In practice today, almost every Indian agency proposal uses SEM to mean paid search only. So before you compare quotes, make the agency list the line items under each heading.",
+  "takeaways": [
+    "SEM is not a technique. It's a **container word**, and two vendors can put completely different things inside it.",
+    "If a proposal says SEM and quotes a monthly fee with no media split, ask which part is fee and which part is ad spend before anything else.",
+    "A combined SEO + SEM retainer with one blended cost per lead is the easiest place in the industry to hide a failing organic programme.",
+    "The fix is boring and it works: separate line items, separate reporting, separate baselines, one invoice."
+  ],
+  "versus": {
+    "a": "SEO",
+    "b": "SEM",
+    "verdict": "Treat SEM as paid search unless the proposal proves otherwise — and if you're comparing two quotes where only one uses the word, make both list their line items before you compare a single rupee."
+  },
+  "sections": [
+    {
+      "h2": "The original definition, where SEM contained SEO",
+      "body": [
+        "When the term was popularised in the early 2000s — Danny Sullivan, then of Search Engine Watch, is generally credited with pushing it into common use — search engine marketing meant the whole discipline. Anything you did to make your business appear when someone searched. Paid listings, organic listings, directory submissions, the lot.",
+        "Under that definition the relationship is simple: SEM is the parent, SEO and PPC are the children. Plenty of textbooks and most Indian digital marketing courses still teach it that way, which is precisely why buyers get confused when they hit the market.",
+        "Nothing is wrong with that definition. It's just no longer the one the person quoting you is using."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Why the old definition still matters",
+        "body": "If your marketing hire learned SEM as the umbrella term and your agency uses it to mean Google Ads, you will spend three meetings agreeing on something you already agreed on, and one meeting discovering that nobody owns organic."
+      }
+    },
+    {
+      "h2": "How the word drifted to mean paid-only",
+      "body": [
+        "The drift happened for an unglamorous reason: the industry needed a word for the paid half, and PPC was taken by a billing model rather than a channel. Tool vendors, ad platforms and agency websites all started using SEM as shorthand for search advertising. Job listings followed. By now, an 'SEM Specialist' in India is nearly always a Google Ads person who has never touched a canonical tag.",
+        "You can see the drift in how the words get paired. Nobody writes 'SEO and SEM' if SEM includes SEO — that would be like advertising 'wheels and cars'. The moment the two appear side by side in a proposal, the author means organic and paid. Which is fine, as long as you read it that way."
+      ],
+      "table": {
+        "caption": "The same three letters, two working definitions. Assume the second in any commercial document.",
+        "head": [
+          "",
+          "Classic definition",
+          "Working definition in 2026"
+        ],
+        "rows": [
+          [
+            "SEM covers",
+            "Paid search + organic search + search-adjacent visibility",
+            "Google Ads and Microsoft Ads. Paid only."
+          ],
+          [
+            "SEO's relationship",
+            "A subset of SEM",
+            "A separate, parallel discipline"
+          ],
+          [
+            "Who still uses it",
+            "Textbooks, courses, older agencies",
+            "Ad platforms, tool vendors, job listings, most proposals"
+          ],
+          [
+            "Give-away phrasing",
+            "\"SEM includes SEO and PPC\"",
+            "\"SEO and SEM services\" listed side by side"
+          ],
+          [
+            "Risk to you",
+            "You assume paid is included and it isn't",
+            "You assume organic is included and it isn't"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "What has to be on the line items under each heading",
+      "body": [
+        "Here's the practical part. A proposal is only comparable if you know what's inside each heading. Print this, put it next to your quote, and tick what's actually named. Anything missing is either not being done or is about to become a change request."
+      ],
+      "table": {
+        "caption": "Line items that must appear under each heading, and what their absence usually means.",
+        "head": [
+          "Heading",
+          "Must be named explicitly",
+          "Absence usually means"
+        ],
+        "rows": [
+          [
+            "SEO — technical",
+            "Crawl audit, indexation review, Core Web Vitals, schema, redirect map, log or crawl-stat review",
+            "Nobody has looked at whether your pages can even be indexed"
+          ],
+          [
+            "SEO — content",
+            "Keyword-to-URL map, number of new pages per month, refresh cadence for existing pages, who writes and who edits",
+            "Content is outsourced by the word and nobody owns quality"
+          ],
+          [
+            "SEO — off-page",
+            "Named tactic (digital PR, expert commentary, data assets), target referring domains per month, where the links come from",
+            "\"Our network\" — which is a link scheme wearing a suit"
+          ],
+          [
+            "SEM — account",
+            "Campaign structure, match type strategy, negative keyword process, brand vs non-brand split",
+            "You'll be sold broad match and blamed for the CPL"
+          ],
+          [
+            "SEM — creative & landing",
+            "Ad variants per ad group, landing page ownership, testing cadence",
+            "Ads point at your homepage, Quality Score sinks, CPC rises"
+          ],
+          [
+            "SEM — money",
+            "Management fee stated separately from media, markup disclosed, who owns the ad account",
+            "The fee is a percentage of spend and your agency profits from waste"
+          ],
+          [
+            "Both",
+            "Named baseline metric, its value today, reporting date each month",
+            "There's no way to prove anything moved"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The single most important line",
+        "body": "\"Who owns the Google Ads account and the historical data?\" If the answer is the agency, you cannot leave without abandoning years of conversion history, which is exactly why some agencies structure it that way. The account should be yours, with them granted access."
+      }
+    },
+    {
+      "h2": "Why a combined SEO + SEM retainer hides underperformance",
+      "body": [
+        "Put ₹1,50,000 a month into one bucket labelled 'search marketing' and you've created the perfect place to hide a failing organic programme. Paid delivers leads from week one. Those leads land in a blended report. The blended cost per lead looks acceptable. Nobody notices that organic contributed nothing for eight months, because organic was never measured on its own.",
+        "This isn't usually fraud. It's drift. The paid work is urgent and measurable, the organic work is slow and awkward, so the account team quietly reallocates attention towards whatever produces a good slide next Tuesday. Six months later you're paying an organic retainer for a paid programme.",
+        "The fix costs nothing. Demand two numbers every month — leads from paid, leads from organic — each against its own starting point, each with its own cost per lead. If your agency resists on the grounds that the channels 'work together', they're right about the marketing and wrong about the accounting. Attribution is imperfect; that's an argument for reporting both models, not for reporting neither. Our [SEO service](/seo) is priced and reported separately from [performance marketing](/performance) for exactly this reason."
+      ],
+      "bullets": [
+        "**Blended CPL is a comfort metric.** Split it by channel or it will flatter whichever channel is failing.",
+        "**Freeze both baselines on day one.** Trailing-90-day organic leads and trailing-90-day paid leads. Written down, agreed, dated.",
+        "**Watch the hours, not just the outputs.** If the same three people run both, ask how the week splits. The honest answer takes ten seconds.",
+        "**Beware the shared dashboard.** One chart labelled 'Search' with a rising line usually means paid is rising and organic is flat."
+      ]
+    },
+    {
+      "h2": "Questions to ask before you sign an SEM scope",
+      "body": [
+        "Six questions. Ask them in this order, in one email, and keep the reply. The replies are more revealing than any pitch deck, and they take an honest agency about ten minutes to write."
+      ],
+      "numbered": [
+        "**When you say SEM, do you mean paid search only, or paid plus organic?** Everything else depends on this answer.",
+        "**What is your fee, and what is media spend?** Separate numbers. If the fee is a percentage of spend, ask what happens to their revenue when they cut your budget for being unprofitable.",
+        "**Do you mark up media?** We don't — ad spend is billed at cost. Plenty of agencies do, and some don't disclose it. Get it in writing either way.",
+        "**Which account and property will everything live in — mine or yours?** Ads account, Analytics, Search Console, Tag Manager, the domain itself.",
+        "**What are the two baseline numbers and what are they today?** Organic qualified leads and paid qualified leads, trailing 90 days.",
+        "**What happens if it doesn't work?** Ours is specific: we freeze your trailing-90-day qualified organic leads on day one, and if we haven't beaten that in 90 days we keep working free until we do. We never promise a specific ranking position, because nobody controls Google's index."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "What we charge, plainly",
+        "body": "SEO from ₹75,000/mo, smaller sites from ₹40,000/mo. Performance marketing at ₹40,000 / ₹75,000 / ₹1,50,000 per month by tier, ad spend billed separately with zero markup. Both together with organic social is ₹1,75,000/mo. Ex-GST, month-to-month after the first quarter, and you keep every asset. See [pricing](/pricing)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is SEO part of SEM?",
+      "a": "Under the original definition, yes — SEM was the umbrella covering both paid and organic search. In practice today, almost nobody uses it that way. When an Indian agency proposal lists SEO and SEM as separate services, SEM means Google Ads. Confirm in writing rather than assuming either definition."
+    },
+    {
+      "q": "What is the difference between SEM and PPC?",
+      "a": "PPC is a billing model — you pay per click — and it exists on Google, Meta, LinkedIn and elsewhere. SEM, in current usage, means paid activity specifically on search engines. Most search PPC is SEM; not all PPC is. In everyday agency conversation the two words are used interchangeably."
+    },
+    {
+      "q": "Which is better for a business, SEO or SEM?",
+      "a": "They answer different problems. SEM buys you demand this week at a price the auction sets. SEO buys you compounding volume at a flat monthly cost, starting around month six. If you have under nine months of runway, fund paid first — you won't be there to collect the organic return otherwise."
+    },
+    {
+      "q": "How much does SEM cost in India?",
+      "a": "Two numbers, always: a management fee and the media spend. Fees commonly run ₹25,000 to ₹1,50,000 a month depending on account complexity, and media is whatever you choose to spend on top. Ours are ₹40,000, ₹75,000 or ₹1,50,000 a month by tier, with media billed at cost and no markup."
+    },
+    {
+      "q": "Can one agency do both SEO and SEM well?",
+      "a": "Yes, and there's real overlap — landing page speed and relevance lift Quality Score as well as rankings. The risk isn't capability, it's accounting. Insist on separate line items, separate baselines and separate monthly numbers, or the faster channel will quietly cover for the slower one."
+    },
+    {
+      "q": "Does SEM include social media ads?",
+      "a": "No. Search engine marketing means search engines — Google and Microsoft Ads, primarily. Meta, Instagram and LinkedIn ads are paid social, a different auction with different intent. If a proposal folds them under SEM, that's a wording problem worth correcting before it becomes a reporting problem."
+    }
+  ],
+  "related": [
+    {
+      "type": "compare",
+      "slug": "ppc-vs-seo"
+    },
+    {
+      "type": "compare",
+      "slug": "google-ads-vs-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "ppc"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-pricing-models"
+    },
+    {
+      "type": "services",
+      "slug": "seo-reporting-services"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-read-an-seo-report"
+    },
+    {
+      "type": "compare",
+      "slug": "organic-vs-inorganic-seo"
+    }
+  ]
+}

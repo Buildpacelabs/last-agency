@@ -1,0 +1,195 @@
+{
+  "slug": "the-best-seo-advice-we-give-every-client",
+  "type": "journal",
+  "primaryKeyword": "best seo advice",
+  "secondaryKeywords": [
+    "most valuable seo tip",
+    "seo advice for business owners",
+    "simple seo advice that works",
+    "seo tips that matter",
+    "what seo advice to ignore"
+  ],
+  "cluster": "opinion",
+  "intent": "informational",
+  "h1": "The Best SEO Advice We Give Every Client Fits in One Sentence",
+  "metaTitle": "The Best SEO Advice We Give Every Client",
+  "metaDescription": "The best SEO advice we give isn't a tactic: publish the page only you could write. Here's why it beats every checklist, and the failures it prevents.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "The best SEO advice we give every client is one sentence: publish the page only you could write. Not the best page — the one nobody else has the inputs to produce. It survives algorithm updates because every update since Panda in 2011 has narrowed the reward for content that adds nothing new.",
+  "takeaways": [
+    "One rule: **publish the page only you could write.** Everything else is a tactic with a half-life.",
+    "It survives updates because it isn't a signal — it's the thing the signals have been trying to detect since 2011.",
+    "It kills three page types on sight: the me-too listicle, the vendor-copied product page, the AI-summarised guide.",
+    "The input is 60–90 minutes a month of the person who actually knows. That's the whole cost, and it's why most companies skip it."
+  ],
+  "sections": [
+    {
+      "h2": "The sentence",
+      "body": [
+        "Every client asks for the tip. Usually near the end of the first call, usually phrased as \"if you could only tell us one thing\". They're expecting a tactic — schema markup, internal links, a tool nobody's heard of, something with a setting in it.",
+        "What we actually say is one sentence, and it lands badly about half the time because it's more work than a tactic: **publish the page only you could write.**",
+        "\"Only you\" is doing all the work in that sentence. It means the page depends on something you have and a competitor doesn't: your own data, your customers' actual phrasing, your failure rates, your prices, the operational detail nobody outside your building knows. Things that can't be copied in an afternoon, and — this is the part that matters more each year — can't be synthesised from the existing top ten results, because they aren't in the existing top ten.",
+        "Operationally it reduces to one question per brief: **what do we know that the current top ten don't?** If nobody can answer that in a sentence, the page doesn't get commissioned. Not delayed, not assigned to a junior — not written."
+      ]
+    },
+    {
+      "h2": "Why it survives updates when tactics don't",
+      "body": [
+        "Tactics have a half-life. Exact-match anchor text, guest-post networks at volume, keyword density targets, paraphrased content produced at scale — every one of them worked, every one stopped working, and all in the same shape. Google finds a cheap proxy signal, the industry mass-produces the proxy, the proxy stops correlating with quality, Google removes the reward. The cycle has run often enough that you can set your calendar by it.",
+        "The direction of travel hasn't changed since Panda in February 2011: reduce the ranking value of pages that restate what's already indexed. The helpful-content work from 2022 onwards and the core updates since are the same instruction in newer language. Google's own guidance for creators asks, in plain words, whether a page provides original information, reporting, research or analysis — or whether it mainly summarises what other people said.",
+        "That's the whole rule, published by the people running the index, sitting there for fifteen years while the industry chased proxies for it.",
+        "A rule aimed at the direction rather than the signal can't be deprecated. You cannot be penalised for having published the only page on the internet containing a particular useful fact. Worst case, the algorithm fails to notice for a while. Best case — and this is the common case — it becomes the page everyone else cites, which produces the links you were otherwise going to buy."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The test, restated for cynics",
+        "body": "If a competitor could publish your page tomorrow by reading the same ten sources you read, you haven't written a page. You've written a summary, and there are already ten of those ranking ahead of you with more age and more links."
+      }
+    },
+    {
+      "h2": "Three pages the rule kills on sight",
+      "body": [
+        "Applying one sentence should have consequences, and this one has three immediate ones. Each of these page types is common, each one is defended internally with \"but everyone does it\", and each one fails for the same reason."
+      ],
+      "subs": [
+        {
+          "h3": "The me-too listicle",
+          "body": [
+            "\"10 best CRM tools in 2026\", written by a company that sells one of the ten, assembled by reading the nine listicles already ranking. Nothing in it was observed. The pricing is copied from pricing pages, the pros and cons are paraphrased from G2, and the ranking is decided by which competitor the author finds least threatening.",
+            "It sometimes ranks for a few months. Then a core update takes the whole folder, and the post-mortem concludes that Google \"hates affiliate content\", which isn't it at all.",
+            "The version that works: you used all ten, in production, for a quarter. Publish what broke, what the migration actually cost, which one your support team hated. Nobody can copy that without doing the same work."
+          ]
+        },
+        {
+          "h3": "The vendor-copied product page",
+          "body": [
+            "The manufacturer's spec sheet, pasted onto four hundred dealer and reseller sites with a different phone number at the bottom. Endemic in automotive, electronics, industrial supply, building materials and pharma distribution — the categories where the manufacturer helpfully provides copy and everyone accepts it.",
+            "Every one of those pages is a near-duplicate competing with 399 identical siblings and the original. Google picks one, usually the manufacturer's, and the rest become a canonical problem in someone's audit two years later.",
+            "The fix is unglamorous and takes an afternoon per product: photograph the actual unit on your floor, write the three failure modes your service desk sees most, list what it's genuinely incompatible with, and publish the price you actually charge. Now there are 399 spec sheets and one page written by someone who has held the thing."
+          ]
+        },
+        {
+          "h3": "The AI-summarised guide",
+          "body": [
+            "A model reads the top ten results and produces a smooth, grammatical, complete eleventh. It reads well. It is also, by construction, a page with zero information gain — everything in it was already indexed, which is precisely where it came from.",
+            "Google's guidance doesn't ban AI writing, and we don't either; we use models daily for research, outlining and editing. What gets ignored is content with nothing new in it, and an unsupervised summary of the existing consensus is the purest possible example. The full picture is in [does AI content hurt SEO](/answers/does-ai-content-hurt-seo).",
+            "The distinction is simple. A model that helps you write up your own data is a tool. A model asked to produce knowledge it doesn't have is a photocopier pointed at the internet."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Where to find what only you know",
+      "body": [
+        "The objection arrives within thirty seconds, every time: \"we don't have anything unique to say\". Everyone does. It's just never written down, it lives with people who don't work in marketing, and nobody has ever asked them for it.",
+        "Six places it's hiding, in rough order of how quickly they pay off."
+      ],
+      "numbered": [
+        "**The support inbox.** The five questions that arrive every week, in the customer's own words. That phrasing is better keyword research than any tool will give you, because it's what people actually type when they're confused rather than what a database says has volume.",
+        "**Sales call recordings.** The objection that surfaces around minute twenty, after the polite phase. Every recurring objection is a page — the honest version, including the part where you explain why you cost more.",
+        "**The refund and churn log.** Why people left. Almost nobody publishes this, which is exactly why the page that does gets the whole query and gets cited by everyone writing about the category afterwards.",
+        "**The operations floor.** The person doing installations, audits, dispatch, fabrication. They know the failure modes, the seasonal patterns and the numbers, and they've never been asked. Forty-five minutes with them beats a month of keyword tools.",
+        "**Your own pricing.** Publishing real numbers is the most under-used content play in India. It makes everyone nervous, so almost nobody does it, so the one company that publishes an honest price range takes the entire query — and pre-qualifies every lead that arrives afterwards.",
+        "**What you got wrong.** A post-mortem outranks a guide, because there are two hundred guides and exactly one of your post-mortems. It's also the fastest way to earn links from people who like being right about the same thing."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The real unit cost",
+        "body": "Each of those six is thirty to ninety minutes of somebody's time — and not marketing's time. The person who actually knows. That's the whole reason this rule is hard to follow: it needs the founder or the operator in the room, not a brief emailed to a writer."
+      }
+    },
+    {
+      "h2": "It matters more now that a machine writes the answer",
+      "body": [
+        "AI Overviews, ChatGPT, Perplexity and the rest all do the same fundamental thing: read what's indexed and synthesise a consensus answer. That mechanic has a consequence people are still absorbing.",
+        "If your page *is* the consensus, you get summarised. The system doesn't need to send anyone to you, because it already contains everything you said — you contributed nothing that required attribution.",
+        "If your page contains something the consensus doesn't — a number, a method, a first-hand observation, a stated price, a named failure — the synthesiser has to attribute it, because it couldn't have derived that from anything else it read. That's the practical mechanic behind every \"how do I get cited\" question, and it's why the tactics-first answers to that question tend to disappoint. There's more on the specifics in [how to get cited by AI assistants](/journal/how-to-get-cited-by-ai-assistants).",
+        "The second effect is about which pages lose clicks. Zero-click behaviour falls hardest on informational pages that were interchangeable to begin with — the definitions, the basic how-tos, the summaries. Pages carrying proprietary detail are what people click through to verify, because a summary of a specific claim makes you want to see the source. The generic guide is the thing these systems replace. The specific one is the thing they cite."
+      ]
+    },
+    {
+      "h2": "How we run it inside a content calendar",
+      "body": [
+        "A rule that stays a slogan is a slogan. Here's the operational version, because \"be original\" is worthless without a process that refuses to publish when you aren't."
+      ],
+      "numbered": [
+        "**Every brief opens with one line:** *what do we know that the top ten don't?* Blank line, no commission. This kills briefs. That's the entire point — fewer, heavier pages, and a writer who isn't being asked to manufacture insight they don't have.",
+        "**One recorded interview per pillar page**, forty-five minutes, with the person who actually knows: founder, head of operations, senior engineer, the technician who's done it two thousand times. The transcript is the writer's primary source. The existing top ten are secondary reading, used to check what's already covered so we don't repeat it.",
+        "**A standing monthly extraction** from support tickets and sales notes, tagged by question. This is where next quarter's topics come from, and it means the calendar is built from demand rather than from a keyword tool's suggested list.",
+        "**Volume set by input, not by calendar.** Three or four pages a month that pass the test beat twelve that don't, and cost less to produce. Most mid-market Indian sites have been sold far more pages than they will ever need.",
+        "**A diary date on every original page.** Proprietary detail decays more slowly than generic content, but it does decay: the price changes, the failure mode gets engineered out, the regulation moves. An out-of-date specific is worse than a vague generality, because people notice."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The mistake that costs the most",
+        "body": "Handing the whole calendar to an outsourced writer with no access to your operators. You'll get twelve competent, well-structured, entirely interchangeable pages a month, no rankings, and a strong urge to blame the writer. The writer was never given anything only you could know — that was the input you didn't supply."
+      }
+    },
+    {
+      "h2": "The objection, and what it actually costs",
+      "body": [
+        "\"We don't have time to sit in interviews.\" It's the honest objection, it comes up in most kickoffs, and it's the real constraint — not budget, not tools, not the agency's skill.",
+        "Here's the trade, stated plainly. Sixty to ninety minutes a month of the right person's time buys the only input that can't be bought anywhere else. Everything else in SEO is purchasable: the crawl, the schema, the writing, the editing, the outreach, the reporting. Original knowledge isn't, and the market for it has exactly one supplier, which is you.",
+        "If you genuinely can't spare it — some businesses can't, and pretending otherwise wastes a year — then spend the money on paid instead and be honest about why. Paid media doesn't need your expertise, it needs your budget, and it starts working in a week. [SEO vs PPC](/compare/ppc-vs-seo) covers the trade properly.",
+        "This is also why our commitment is shaped the way it is. We freeze your trailing-ninety-day count of qualified organic leads on day one and guarantee movement against that number — never a ranking position, because nobody controls Google's index. Carrying that risk means we can only take three clients a month, and it means we care unreasonably about one sentence: if we can't find the page only you could write, we shouldn't have taken your money. [How the guarantee works](/seo)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the single best piece of SEO advice for a business owner?",
+      "a": "Publish the page only you could write. Not the best page — the one nobody else has the inputs to produce, built on your data, your customers' phrasing, your prices, your failure rates. It's the only advice that hasn't needed rewriting after an algorithm update, because it targets what the updates have been detecting since 2011."
+    },
+    {
+      "q": "Does this mean I should stop writing standard guides and definitions?",
+      "a": "Not entirely, but stop expecting them to earn anything. Definitions and basic how-tos are the pages AI answers replace most completely. Write them if your site needs them for coverage and internal linking, keep them short, and put your budget into pages carrying something proprietary."
+    },
+    {
+      "q": "How do I find something unique to say if my industry is boring?",
+      "a": "Boring industries are the easiest, because nobody has published the specifics. Start with the support inbox, sales call objections, your refund log, and forty-five minutes with whoever does the actual work. Publishing your real price range is usually the single fastest win, and almost nobody does it."
+    },
+    {
+      "q": "Is AI-written content bad for SEO?",
+      "a": "AI writing isn't the problem; AI summarising is. A model asked to produce a smooth version of the existing top ten creates a page with nothing new in it by construction, which is precisely what Google's guidance describes ignoring. A model helping you write up your own data is just a tool, and a good one."
+    },
+    {
+      "q": "How much of my time does this actually take?",
+      "a": "Sixty to ninety minutes a month of the person who genuinely knows — founder, head of operations, senior technician — usually as one recorded interview per pillar page plus a short monthly review of support themes. Everything else is outsourceable. That interview time is the part that isn't."
+    },
+    {
+      "q": "How many pages a month should I publish under this rule?",
+      "a": "Fewer than you've been sold. Three or four pages a month that clear the test outperform twelve that don't, and cost less to produce. Volume should be set by how much original input you can gather, not by a calendar that needs filling."
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "what-content-actually-does-for-seo"
+    },
+    {
+      "type": "answers",
+      "slug": "does-ai-content-hurt-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "e-e-a-t"
+    },
+    {
+      "type": "glossary",
+      "slug": "thin-content"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-get-cited-by-ai-assistants"
+    },
+    {
+      "type": "services",
+      "slug": "content-marketing-services"
+    },
+    {
+      "type": "journal",
+      "slug": "the-most-innovative-seo-tactic-is-usually-old"
+    }
+  ]
+}

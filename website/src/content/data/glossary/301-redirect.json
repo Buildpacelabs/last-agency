@@ -1,0 +1,146 @@
+{
+  "slug": "301-redirect",
+  "type": "glossary",
+  "primaryKeyword": "301 redirect",
+  "secondaryKeywords": [
+    "301 vs 302 redirect",
+    "permanent redirect seo",
+    "redirect chain",
+    "how to set up 301 redirect",
+    "does 301 pass link juice"
+  ],
+  "cluster": "technical-seo",
+  "intent": "informational",
+  "h1": "301 redirect",
+  "metaTitle": "301 Redirect: When to Use It and When Not To",
+  "metaDescription": "A 301 redirect permanently sends one URL to another and passes its ranking signals. Here's the migration map, the chain trap, and how long to keep them.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "301 redirect",
+  "definition": "A 301 redirect is an HTTP status code that permanently sends a request for one URL to a different URL and passes the original URL's ranking signals to the destination.",
+  "answer": "A 301 redirect is an HTTP response that permanently sends one URL to another and carries its ranking signals across. It's the correct tool for a renamed page, a merged page or a site migration. Google has said no PageRank is lost through a 3xx redirect — but every extra hop still costs crawl and load time.",
+  "takeaways": [
+    "301 and 308 are permanent. 302 and 307 are temporary. Use the one that matches what you actually mean.",
+    "During a migration, every old URL goes to its **closest equivalent** — not to the homepage. Homepage dumps get treated as soft 404s.",
+    "Chains are the silent tax. Every hop is another fetch, another round trip, another chance for someone to break the middle link.",
+    "Keep migration redirects live for **at least a year**. Cheaper still: keep them forever."
+  ],
+  "sections": [
+    {
+      "h2": "Four status codes, and when each is honest",
+      "body": [
+        "Google reads permanence as a signal about which URL to keep. A 301 says: this moved, consolidate onto the new URL. A 302 says: this is a detour, keep the original indexed. Get it backwards on a migration and Google keeps trying to rank URLs that no longer serve content."
+      ],
+      "table": {
+        "caption": "The redirect codes you'll actually use.",
+        "head": ["Code", "Meaning", "Use it for"],
+        "rows": [
+          [
+            "**301** Moved Permanently",
+            "Permanent. Signals consolidate onto the destination.",
+            "Renames, merges, migrations, http→https, www consolidation."
+          ],
+          [
+            "**302** Found",
+            "Temporary. The original stays indexed.",
+            "A genuine short-term diversion — a sale page, maintenance, an A/B test."
+          ],
+          [
+            "**307** Temporary Redirect",
+            "Temporary, preserves the HTTP method.",
+            "The modern 302 for anything involving a POST."
+          ],
+          [
+            "**308** Permanent Redirect",
+            "Permanent, preserves the HTTP method.",
+            "Same as 301 for search. Fine to use; 301 is the better-understood default."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "About link equity",
+        "body": "Google has said no PageRank is lost through 3xx redirects, so the old \"you lose 15% per hop\" folklore is out of date. What you do lose is time and crawl efficiency — and relevance, if the destination has nothing to do with the source."
+      }
+    },
+    {
+      "h2": "A migration is a spreadsheet before it's a deploy",
+      "body": [
+        "Every replatform that loses traffic loses it in the same place: nobody built the map. The redirect map is the deliverable; everything else is execution.",
+        "Export every URL that ever mattered — from your crawler, Search Console's Pages report, analytics, and your backlink tool. Those four sources disagree, and the URLs in only one of them are exactly the ones a sitemap-based export misses."
+      ],
+      "numbered": [
+        "**Old URL.** Every one returning 200 today, plus every one with a backlink or organic traffic in the last 12 months.",
+        "**Organic sessions, trailing 12 months.** Your priority column. Sort by it.",
+        "**Referring domains.** A URL with 40 links and no traffic still matters — the links are the asset.",
+        "**New URL.** The closest equivalent. Not the homepage, unless it genuinely is.",
+        "**Redirect type.** 301 for almost everything here.",
+        "**Tested.** Filled in after launch, by requesting the old URL and checking the response."
+      ],
+      "subs": [
+        {
+          "h3": "The closest-equivalent rule",
+          "body": [
+            "A discontinued product goes to its replacement, or the category selling the nearest thing. An old post goes to the article that superseded it.",
+            "When there's genuinely no equivalent, let the URL 404. That's a legitimate answer and better than a lie — the argument in full is in [404 error](/glossary/404-error)."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Chains, loops, and the homepage trap",
+      "body": [
+        "**Chains** accumulate without anyone deciding to create them. You move to https, then to a new URL structure, then rename a category — three years later one old URL takes four hops. Google follows up to around ten, so it usually still works, but each hop is a separate fetch, a separate round trip on a phone, and a separate chance for someone to delete the middle rule. Point old URLs straight at their final destination.",
+        "**Loops** are simpler and worse: A points to B, B back to A, nothing resolves. Usually two rules written by two people — a CDN rule and an application rule. Test the whole set after any redirect change.",
+        "**The homepage trap** is the expensive one. Faced with 800 old URLs and a deadline, someone writes a catch-all sending everything to `/`. It feels tidy and it deletes the value. Google treats a redirect to an irrelevant page as a **soft 404** — the destination doesn't answer the request, so nothing transfers. You've done the work of a migration and got the outcome of a mass deletion. That's the pattern behind most of [the replatform that killed your traffic](/journal/the-replatform-that-killed-your-traffic)."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Check it the day you launch, not the week after",
+        "body": "Crawl your full list of old URLs the hour the new site goes live. Look for three things: anything returning 200 that should redirect, anything with more than one hop, anything landing on the homepage. Every hour unfixed is an hour Googlebot spends learning the wrong thing."
+      }
+    },
+    {
+      "h2": "How long to keep them",
+      "body": [
+        "Google's guidance on site moves is to keep redirects live for **at least a year**. That's the floor — long enough for Google to re-map the index and for most external links to be re-crawled.",
+        "The better answer is never to remove them. A redirect rule costs nothing to keep, and links from six-year-old articles still send people. Teams delete them when a bloated rules file slows the server — flatten the chains and move the mapping to a lookup table instead.",
+        "Do it at the server or CDN. Meta-refresh and JavaScript redirects work eventually, but they're slower, weaker and depend on rendering — so every crawler that doesn't execute JavaScript sees a page that doesn't redirect. If a migration is coming, [migration SEO work](/services/site-migration-seo) is far cheaper before the deploy than after."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does a 301 redirect pass link equity?",
+      "a": "Yes. Google has said no PageRank is lost through 3xx redirects, so the destination inherits what the old URL earned. The condition is relevance — if the destination doesn't answer the same need, Google may treat the redirect as a soft 404 and pass nothing."
+    },
+    {
+      "q": "How long does a 301 take to take effect in Google?",
+      "a": "The redirect works instantly for users. Google needs to re-crawl the old URL to notice, which takes days for frequently-crawled pages and weeks for deep ones. Full consolidation across a large migration typically runs several weeks to a few months."
+    },
+    {
+      "q": "Should I use 301 or 302 for a temporary page change?",
+      "a": "302 or 307 if it's genuinely temporary and you want the original to stay indexed. If you leave a 302 in place for months, Google will eventually treat it as permanent anyway — so the honest choice is to use the code that matches your actual intention."
+    },
+    {
+      "q": "Can I redirect an old page to my homepage?",
+      "a": "You can, and it usually wastes the page. Google treats redirects to irrelevant destinations as soft 404s, so the signals don't transfer. If there's no closest equivalent, a clean 404 is more honest and no worse for rankings."
+    },
+    {
+      "q": "How many redirects in a chain is too many?",
+      "a": "More than one is worth fixing. Google follows chains up to roughly ten hops, so two or three won't break indexing — but each hop costs crawl capacity and page load time, and chains are fragile. Point every old URL directly at its final destination."
+    },
+    {
+      "q": "How do I set up a 301 redirect?",
+      "a": "At the server or CDN, ideally. Apache uses `.htaccess`, nginx uses a `return 301` rule, Next.js has a `redirects()` block in `next.config.js`, and WordPress has redirect plugins with a UI. Avoid meta-refresh and JavaScript redirects — they're slower and invisible to crawlers that don't render."
+    }
+  ],
+  "related": [
+    { "type": "compare", "slug": "301-vs-302-redirect" },
+    { "type": "glossary", "slug": "404-error" },
+    { "type": "glossary", "slug": "canonicalization" },
+    { "type": "glossary", "slug": "link-equity" },
+    { "type": "services", "slug": "site-migration-seo" },
+    { "type": "journal", "slug": "the-replatform-that-killed-your-traffic" }
+  ]
+}

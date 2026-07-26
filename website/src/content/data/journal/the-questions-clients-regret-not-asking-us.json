@@ -1,0 +1,258 @@
+{
+  "slug": "the-questions-clients-regret-not-asking-us",
+  "type": "journal",
+  "primaryKeyword": "questions clients regret not asking their seo agency",
+  "secondaryKeywords": [
+    "what to ask before hiring seo agency",
+    "seo contract questions",
+    "who owns seo work",
+    "seo agency exit questions",
+    "seo offboarding"
+  ],
+  "cluster": "client-education",
+  "intent": "commercial",
+  "h1": "The Questions Clients Wish They'd Asked Before They Signed",
+  "metaTitle": "Questions Clients Regret Not Asking Their Agency",
+  "metaDescription": "The questions clients regret not asking their SEO agency are all about the exit: who owns the content, the accounts, the data and the links when you go.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "The questions clients regret skipping are never about competence — they're about custody. Who owns copyright in the content, whose Google account verified Search Console, which links survive the final invoice, and what actually ships during the notice period. Ask those four before you sign. After you've left, none of them have good answers.",
+  "takeaways": [
+    "Bad work costs you a year. Bad custody costs you the asset permanently. Only one of those is recoverable.",
+    "Under India's **Copyright Act, 1957** the author is the first owner of a work unless there's a written assignment or a contract of service. Paying an invoice is not, by itself, an assignment.",
+    "Search Console keeps **16 months** of performance data and no more. If you lose account access, that history is gone — there's no archive to request.",
+    "The sharpest single question you can ask an agency: *which of my links would still exist if I stopped paying you tomorrow?*"
+  ],
+  "sections": [
+    {
+      "h2": "Regret has a shape, and it isn't \"did they rank us\"",
+      "body": [
+        "We've now had a fair number of first calls that begin with someone describing an agency they've just left. The complaints about the work vary enormously. The regrets don't.",
+        "Nobody has ever said to us \"I wish I'd asked more about their technical audit process\". What they say is that the previous agency owns the Analytics property. That the writer who produced eighty articles was a freelancer and nobody knows who holds the copyright. That the links stopped working two months after the last invoice cleared, which is how they found out the links were rented.",
+        "There's a structural reason those are the regrets. If the work was mediocre, you lose a year and you start again with your assets intact. If the custody was wrong, you lose the assets, and no amount of money buys back sixteen months of query data or a Business Profile someone else claimed.",
+        "So this page skips the pitch-day questions — [twenty-one of those live here](/answers/what-questions-should-i-ask-an-seo-agency) — and covers only the exit-day ones. Ask them on day one, when they're cheap and slightly awkward, rather than on the day you leave, when they're expensive and you've got nothing left to trade with."
+      ]
+    },
+    {
+      "h2": "Who owns the words you paid for",
+      "body": [
+        "This is the question almost nobody asks, and the answer surprises founders every time: paying an invoice does not automatically transfer copyright.",
+        "India's Copyright Act, 1957 makes the **author** the first owner of a work, with exceptions — chief among them work made in the course of employment under a contract of service. A freelance writer engaged by your agency is not your employee, and generally not the agency's employee either. And an assignment of copyright has to be in writing and signed to be effective; a paid invoice with \"content services\" in the line item is not that.",
+        "In practice this almost never becomes a lawsuit. It becomes a problem in three quieter ways: the agency claims the content as portfolio work and republishes it elsewhere, a departing freelancer syndicates their draft to another client in your category, or your new agency asks for source files and the old one says the deliverable was the published page.",
+        "We're not lawyers and this isn't legal advice — get yours to draft the clause. But you can ask the question in one sentence, and the quality of the answer tells you a great deal about how the agency thinks."
+      ],
+      "bullets": [
+        "**Ask:** \"Do you assign copyright in all deliverables to us in writing on payment, including work produced by your subcontractors?\" The second half is the part that matters.",
+        "**Ask:** \"Does 'deliverables' include source files — drafts, briefs, image originals, spreadsheets, keyword research — or only what's published?\" Briefs are worth more than the drafts; they show what the strategy was actually aiming at.",
+        "**Ask:** \"Will any of this content appear in your portfolio, case studies or on other clients' sites?\" A no is easy to give if it's true.",
+        "**Ask:** \"Who wrote it?\" Not to be difficult. If eighty articles came from a subcontracted desk, the assignment chain has an extra link in it and you should know that before you need to test it."
+      ]
+    },
+    {
+      "h2": "The two accounts that decide whether you keep your history",
+      "body": [
+        "Search Console and GA4 are where custody gets lost most often, because in both cases the agency is genuinely trying to be helpful when they set things up wrong. They create the property on their account so they can start work on day one without waiting for your IT person. Two years later that convenience is your problem."
+      ],
+      "subs": [
+        {
+          "h3": "Search Console",
+          "body": [
+            "The distinction that matters is **owner** versus **user**. If the agency verified the property on their Google account and added you as a user, they can remove you, and the property's history goes with them.",
+            "The fix is free and takes ten minutes: verify a **domain property** yourself using a DNS TXT record on your own domain. Verification through your own DNS makes you an owner independently of anybody else's account, and it can't be revoked by a third party.",
+            "Then export. Search Console keeps 16 months of performance data and no more — there's no archive, no support ticket, no way to get month 17 back. Before you leave any agency, pull the full window at query, page and country level. It's the only honest before-and-after record you'll ever have."
+          ]
+        },
+        {
+          "h3": "Google Analytics 4",
+          "body": [
+            "A GA4 property lives inside an Analytics account, which may sit inside an organisation. If that account belongs to the agency, moving your property out is not a button you can press unilaterally — it depends on account structure and admin rights that you don't hold.",
+            "The practical failure looks like this: you leave, you create a fresh property, and your historical data starts at zero on the day of the handover. Every year-on-year comparison for the next twelve months is impossible.",
+            "Two fixes, both cheap on day one and impossible on day 700. Create the property under an Analytics account owned by your company and grant the agency Administrator on the property. And if the data genuinely matters to you, link BigQuery early so the raw event export lands somewhere you control."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Ask this before the kickoff call",
+        "body": "\"Will every Google property be created under our accounts, with you as an administrator, rather than the other way round?\" There is no legitimate reason to answer no. An agency that pushes back on this is telling you what their offboarding process looks like."
+      }
+    },
+    {
+      "h2": "Everything else with a login",
+      "body": [
+        "The two Google properties get the attention. The list below is where the genuinely unrecoverable losses happen, and the domain registrar row at the top has ended companies, not just campaigns."
+      ],
+      "table": {
+        "caption": "Digital assets, who typically holds them, and what it costs to get it wrong.",
+        "head": [
+          "Asset",
+          "Who usually holds it",
+          "What you lose without it",
+          "Fix it today by"
+        ],
+        "rows": [
+          [
+            "Domain registrar and DNS",
+            "Whoever built the first site — sometimes an agency, sometimes a developer who left",
+            "Everything. Your email, your site, your ability to prove ownership.",
+            "Moving the domain to a registrar account in the company's name, with billing on a company card"
+          ],
+          [
+            "Search Console",
+            "The agency's Google account, with you added as a user",
+            "16 months of query data and the current disavow file",
+            "Verifying a domain property with a DNS TXT record you control"
+          ],
+          [
+            "Google Analytics 4",
+            "The agency's Analytics account",
+            "All historical data — a new property starts at zero",
+            "Creating the property under your own account and granting them Administrator"
+          ],
+          [
+            "Google Business Profile",
+            "An employee or agency staffer who claimed it, frequently one who has left",
+            "Reviews, photos, hours, and your position in the map pack",
+            "Claiming primary ownership with a company email address"
+          ],
+          [
+            "Google Tag Manager",
+            "The agency's container",
+            "Every tag, trigger and conversion definition on the site",
+            "Owning the GTM account; the agency gets publish rights inside it"
+          ],
+          [
+            "CMS and hosting",
+            "The agency or their development partner",
+            "The site itself, and your ability to change a single word of it",
+            "Admin accounts in your name, agency as editor, and a copy of the deploy process"
+          ],
+          [
+            "Rank tracking and backlink tools",
+            "The agency's tool seat",
+            "All historical position data, which dies when the seat is cancelled",
+            "Making a monthly CSV export a contract deliverable, not a favour"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Which of your links survive the last invoice",
+      "body": [
+        "This is our favourite question on the page, because a good agency answers it in half a second and a bad one needs a paragraph.",
+        "**Ask: which of my links would still exist if I stopped paying you tomorrow?**",
+        "Here's why the answer is so diagnostic. Links behave completely differently depending on how they were acquired, and the differences only become visible at the exit."
+      ],
+      "bullets": [
+        "**Earned editorial links stay.** They're on somebody else's site because that person decided your page was worth referencing. Nobody recalls them when your retainer ends. This is the entire economic case for earning links rather than buying them.",
+        "**Rented placements disappear.** Monthly-fee link placements come down when the fee stops, usually within a billing cycle or two. If your referring domain count falls in the two months after you leave, you now know what you were buying.",
+        "**Private network links vanish unpredictably.** They go when the network gets deindexed, when the operator stops paying for the domains, or when your invoice stops. And they can take rankings down with them — see [what a bad SEO agency actually costs you](/journal/what-a-bad-seo-agency-actually-costs-you) for the cleanup bill.",
+        "**Paid guest posts usually stay live and were mostly discounted anyway.** Cold comfort: the URLs persist, the value was always marginal.",
+        "**Citations and directory listings persist but need logins.** Local citations are only an asset if you can edit them. Collect the credentials — an outdated address on forty directories is worse than no listing.",
+        "**Brand mentions without links are yours by definition.** Nobody can take a mention away from you, which is one reason they're worth building deliberately."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Two exit deliverables to write into the contract",
+        "body": "A link placement list — URL, date, contact, and whether money changed hands — and a copy of the current disavow file, both delivered monthly rather than on request. The disavow especially: it lives in whichever Search Console account submitted it, and rebuilding one from scratch is roughly twenty-five hours of classifying domains you no longer have a record of."
+      }
+    },
+    {
+      "h2": "Notice periods, work in flight, and the final invoice",
+      "body": [
+        "The notice period is the last month you pay for, and it is very frequently the month where nothing arrives. Not out of spite — the account is already reassigned internally, and nobody's bonus depends on your last deliverable.",
+        "Four questions settle it, all of which are easier to ask before you sign than while you're giving notice."
+      ],
+      "numbered": [
+        "**\"If we give notice today, what specifically ships during the notice period, and in what format?\"** Get the answer as a list, not a principle. \"We'll complete work in progress\" means nothing when the work in progress is four half-written briefs.",
+        "**\"What happens to half-finished work?\"** Drafts, outlines, keyword research in flight, a technical fix that's been specced but not shipped. The default answer should be that it comes to you in source format, finished or not, since you paid for the hours.",
+        "**\"How is prepaid retainer handled?\"** If you pay in advance or on a quarterly cycle, a written pro-rata refund clause takes one line and saves an argument you'll be having while simultaneously trying to hire a replacement.",
+        "**\"What is the offboarding process, and how long does it take?\"** A good answer is a defined handover pack within a defined window — we'd argue for 15 days — covering exports, source files, redirect map, credentials, and mutual removal of access afterwards. A vague answer here is the single best predictor of a painful exit."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The order matters",
+        "body": "Reclaim access, then export your data, then give notice. Not the other way round. It reads cynical written down and we'd still do it every time, because the cost of being wrong in one direction is a slightly awkward week and the cost of being wrong in the other is permanent."
+      }
+    },
+    {
+      "h2": "Five lines to add to any Indian SEO contract",
+      "body": [
+        "None of these are unusual and none of them should cause a negotiation. If any of them does, you've learned something useful for the price of asking. Have a lawyer wordsmith them — the substance is what matters, not our phrasing."
+      ],
+      "numbered": [
+        "**IP assignment on payment.** All deliverables — copy, images, briefs, research, code, source files — assigned in writing to the client on payment of the invoice covering them, including work produced by subcontractors.",
+        "**Client-owned accounts.** All Google and third-party properties created under client-owned accounts. Search Console verified by a DNS record on the client's domain. Agency receives delegated administrator access, never ownership.",
+        "**Monthly deliverable of record.** Link placement list with URLs, dates and contacts; keyword tracking export; a copy of the current disavow file. Delivered monthly as a matter of course, not on request.",
+        "**Offboarding pack within 15 days.** On termination for any reason: exports, source files, redirect map, credential handover, and mutual removal of access after transfer is confirmed.",
+        "**Notice and renewal.** 30 days' notice either way after the first quarter, no automatic renewal, no exit penalty, and pro-rata refund of anything prepaid and undelivered."
+      ]
+    },
+    {
+      "h2": "Our answers to all of it",
+      "body": [
+        "It would be a strange page to publish without answering our own questions, so here they are, in the same order.",
+        "You own everything on payment — copy, images, briefs, research, source files — including anything produced by a subcontractor. Every account is created under yours, with us as administrators, and we'd rather spend the extra day at kickoff waiting for your IT team than own something of yours. Search Console gets verified on your DNS. GA4 sits in your Analytics account.",
+        "Links: we don't rent them, so the honest answer to the survival question is all of them. That's not generosity, it's the only version of link building whose economics work — a rented link is a subscription that stops delivering the day you cancel.",
+        "Contract: month-to-month after the first quarter, 30 days' notice either way, no automatic renewal, and you keep every asset. The guarantee is stated the same way everywhere on this site, because it's the only way it's honest — we freeze your trailing-90-day qualified organic lead count on day one, and if we haven't beaten it in 90 days we keep working free until we do. Not a ranking position for a keyword. Nobody can promise that, and the people who do are selling something else.",
+        "None of this is generous. It's the minimum, and it's cheap for us to offer because we don't treat your exit as a bargaining chip. It's also why we cap at three new clients a month — the guarantee is uninsurable at volume. Pricing sits on [our pricing page](/pricing): SEO from ₹75,000/mo, smaller sites from ₹40,000/mo, ex-GST."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Who owns the SEO content I paid an agency to write?",
+      "a": "Not automatically you. Under India's Copyright Act, 1957 the author is the first owner unless there's a written assignment or the work was made under a contract of service, and a paid invoice isn't an assignment. Get a written IP assignment clause that explicitly covers subcontractors and source files."
+    },
+    {
+      "q": "How do I make sure I keep Search Console access after leaving an agency?",
+      "a": "Verify a domain property yourself with a DNS TXT record on your own domain. That makes you an owner independently of anyone else's Google account, and it can't be revoked. Also export the full 16 months of performance data before you leave — that window is all Search Console keeps."
+    },
+    {
+      "q": "Can my agency take my Google Analytics data when I leave?",
+      "a": "They can keep the property if it lives in their Analytics account, and moving it out isn't something you can do unilaterally. Practically, you end up creating a new property and starting your history at zero. Fix it on day one by owning the account and granting the agency admin rights."
+    },
+    {
+      "q": "Do backlinks disappear when you stop paying an SEO agency?",
+      "a": "Earned editorial links don't — they're on someone else's site and nobody recalls them. Rented placements come down within a billing cycle or two, and private network links vanish unpredictably. Watching your referring domain count in the two months after you leave tells you exactly what you were buying."
+    },
+    {
+      "q": "What should be in an SEO offboarding process?",
+      "a": "A defined handover pack inside a defined window — we'd argue 15 days. Search Console and Analytics ownership transfer, 16 months of exported query data, the disavow file, link placement list with contacts, content source files and briefs, redirect map, credentials, and rank tracking history exported to CSV."
+    },
+    {
+      "q": "What's the single best question to ask an SEO agency?",
+      "a": "\"Which of my links would still exist if I stopped paying you tomorrow?\" It's cheap to answer honestly and expensive to answer dishonestly, and the length of the pause before the answer tells you most of what you need to know about how the links were acquired."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "answers",
+      "slug": "what-questions-should-i-ask-an-seo-agency"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "compare",
+      "slug": "agency-vs-in-house"
+    },
+    {
+      "type": "services",
+      "slug": "analytics-setup-services"
+    },
+    {
+      "type": "journal",
+      "slug": "the-real-cost-of-switching-seo-agencies"
+    },
+    {
+      "type": "journal",
+      "slug": "the-one-question-worth-asking-an-seo-agency"
+    }
+  ]
+}

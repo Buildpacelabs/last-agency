@@ -1,0 +1,199 @@
+{
+  "slug": "what-is-a-canonical-tag-in-seo",
+  "type": "answers",
+  "primaryKeyword": "canonical tag in seo",
+  "secondaryKeywords": [
+    "what is a canonical tag",
+    "canonicalization in seo",
+    "rel canonical explained",
+    "when to use a canonical tag"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "Canonical tags: what they do and when Google ignores them",
+  "metaTitle": "Canonical Tag in SEO: Use It Correctly",
+  "metaDescription": "A canonical tag in SEO tells Google which URL to index when several show the same content. Here's correct usage, and why Google overrides it so often.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "A canonical tag is a line in a page's head telling Google which URL to treat as the original when several URLs show the same content. It consolidates ranking signals onto one address. Crucially, Google treats it as a hint rather than an order, and overrules it whenever your other signals disagree.",
+  "takeaways": [
+    "The tag is a **hint, not a directive**. Google weighs it alongside redirects, internal links, sitemaps and URL consistency, then picks.",
+    "When Google overrules you, it's almost always because another signal on your site contradicts the tag.",
+    "**Canonical, redirect and noindex are not interchangeable.** One consolidates, one moves, one deletes without consolidating.",
+    "Self-referencing canonicals on every indexable page are cheap insurance against tracking-parameter duplicates.",
+    "URL Inspection shows \"user-declared\" and \"Google-selected\" canonicals side by side. That comparison is the whole diagnosis."
+  ],
+  "sections": [
+    {
+      "h2": "What the tag is and where it goes",
+      "body": [
+        "One line, in the `head` of the HTML, before anything else has a chance to break it:",
+        "`link rel=\"canonical\" href=\"https://example.com/the-real-page\"`",
+        "It says: several addresses may serve this content, and this is the one I want indexed. Google then attributes the links, the content signals and the ranking to that address rather than splitting them across duplicates.",
+        "Two rules about placement that account for a large share of failures. It must be in the `head`, not the `body` — a canonical injected into the body by a script or a page builder is ignored, and a stray unclosed tag earlier in the head can push it into the body without you noticing. And the URL should be absolute, including the protocol and host, not `/the-real-page`.",
+        "For non-HTML files — PDFs, images, downloads — there's no head to put it in, so it goes in the HTTP response as a `Link` header instead. Same effect, different plumbing."
+      ]
+    },
+    {
+      "h2": "When you actually need one",
+      "body": [
+        "Canonicals earn their place when the same or near-identical content genuinely has to live at more than one address. Most sites generate these accidentally, at scale, without anyone deciding to."
+      ],
+      "bullets": [
+        "**Tracking and campaign parameters.** `?utm_source=newsletter` creates a distinct URL serving identical content. Every email you send makes more.",
+        "**Faceted navigation and filters.** `?colour=blue&size=m` on an ecommerce category, where the underlying product set barely changes.",
+        "**Sort orders and views.** `?sort=price-asc`, print stylesheets, AMP variants, `/page/2` archives that repeat their intro.",
+        "**HTTP vs HTTPS and www vs non-www.** Four possible addresses for a homepage if the server doesn't redirect properly.",
+        "**Trailing slashes and case.** `/services/` and `/services` and `/Services` are three URLs to a crawler.",
+        "**Syndicated content.** You publish an article, a partner republishes it. A cross-domain canonical on their copy points back at yours."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Near-duplicate is a spectrum",
+        "body": "Canonicals work best when the pages are genuinely the same content at different addresses. Two pages that cover the same topic in different words aren't duplicates — they're a content problem, and a canonical is the wrong tool. See [keyword cannibalisation](/answers/what-is-keyword-cannibalization) for that case."
+      }
+    },
+    {
+      "h2": "Why Google treats it as a hint",
+      "body": [
+        "This is the part that trips up everyone who has read the documentation once. Google's own guidance describes rel=canonical as a signal it considers, not an instruction it obeys. There's a defensible reason: canonical tags are wrong constantly.",
+        "Templates emit them in bulk. Plugins guess. Migrations leave the old domain in the href. A single bad rule can point ten thousand URLs at a homepage. If Google obeyed every canonical without checking, one bad deploy would remove entire sites from the index — and a fair number of people would deliberately canonicalise a competitor's content to themselves.",
+        "So Google collects the evidence. Your canonical tag is one piece. Redirects are a stronger piece. Internal links, sitemap inclusion, hreflang annotations, HTTPS preference and which URL is shorter and cleaner are all pieces. Then it selects a canonical and tells you what it chose. When your tag and your behaviour disagree, behaviour wins."
+      ]
+    },
+    {
+      "h2": "Five signal conflicts that make Google overrule you",
+      "body": [
+        "If URL Inspection shows a Google-selected canonical different from your declared one, it's nearly always one of these five. Work down the list."
+      ],
+      "numbered": [
+        "**Your internal links point at the other URL.** You canonicalise A to B, then link to A from your navigation, your breadcrumbs and forty blog posts. Google counts the votes. Fix the links, not the tag.",
+        "**Your sitemap lists the non-canonical URL.** Sitemap inclusion is itself a canonicalisation signal. Listing both versions, or listing only the duplicate, contradicts the tag directly. Sitemaps should contain canonical URLs and nothing else.",
+        "**The pages aren't actually duplicates.** If A and B differ substantially, consolidating loses content, so Google declines. This is the most common cause on content sites and the one people misdiagnose as a bug.",
+        "**The canonical target has a problem.** It 301s somewhere else, it 404s, it carries a noindex, or it canonicalises onward to a third URL. A canonical chain is broken by definition and Google resolves it however it likes.",
+        "**Protocol, host or slash mismatch.** Your canonical says `http://`, your site serves `https://`. Or it says `www` and every link says non-`www`. Or the trailing slash differs from what the server returns. Google prefers the version it consistently observes."
+      ],
+      "bullets": [
+        "Not conflicts — plain bugs that break the tag entirely: **multiple canonical tags** on one page (Google ignores all of them), the tag rendered in the `body`, a **relative URL**, and a canonical injected by client-side JavaScript that contradicts one already in the raw HTML."
+      ]
+    },
+    {
+      "h2": "Canonical vs redirect vs noindex",
+      "body": [
+        "Three tools that all remove a URL from competition, in three different ways, with three different consequences for your existing rankings. Picking the wrong one is how people lose traffic while tidying up."
+      ],
+      "table": {
+        "caption": "Choosing between the three ways to stop a URL competing.",
+        "head": [
+          "Tool",
+          "What happens to the user",
+          "What happens to signals",
+          "Use it when"
+        ],
+        "rows": [
+          [
+            "301 redirect",
+            "Sent to the other URL. The old one is unreachable.",
+            "Consolidated onto the target. Strongest and least ambiguous.",
+            "The old URL should not exist any more."
+          ],
+          [
+            "rel=canonical",
+            "Nothing. Both URLs still load normally.",
+            "Consolidated onto the target — if Google agrees.",
+            "Both URLs must stay usable: parameters, filters, print views, syndication."
+          ],
+          [
+            "noindex",
+            "Nothing. The page loads and works.",
+            "Dropped. Nothing is passed anywhere.",
+            "Users need the page, search never should: thank-you pages, internal search results, thin filter views."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The expensive mistake",
+        "body": "Never noindex a page that has links and rankings you want to keep. Noindex removes it and consolidates nothing — the equity evaporates. If the page should stop competing but its history is worth something, canonicalise or redirect it. There's a fuller comparison in [canonical vs noindex](/compare/canonical-vs-noindex)."
+      }
+    },
+    {
+      "h2": "Self-referencing canonicals, and why they're worth the trouble",
+      "body": [
+        "A self-referencing canonical is a page pointing at itself. Google has said it isn't strictly required, and technically that's true. It's still the cheapest insurance in technical SEO.",
+        "The reason is parameters. The moment someone shares your page with `?fbclid=` or `?utm_campaign=` attached, that address exists and gets crawled. With a self-referencing canonical in the template, every one of those variants resolves back to the clean URL automatically, without you maintaining a parameter list forever.",
+        "Three implementation rules. Absolute URLs. Matching exactly what the server serves — same protocol, same host, same trailing-slash convention. And generated dynamically from the canonical route, not from the requested URL, or the tag will helpfully canonicalise the parameter version to itself and defeat the whole point.",
+        "One exception worth knowing: paginated series. Pages 2 and beyond of an archive should self-canonicalise, not point at page 1. Google retired `rel=next`/`rel=prev` support, and canonicalising deep pages to the first one hides the products or articles that only appear there."
+      ]
+    },
+    {
+      "h2": "How to check what Google actually chose",
+      "body": [
+        "Never assume the tag worked. Verify it, per URL, in Search Console.",
+        "Paste the URL into URL Inspection and read two fields: **User-declared canonical** — what your tag says — and **Google-selected canonical** — what Google decided. If they match, you're done. If they don't, you have one of the five conflicts above, and the selected URL usually tells you which.",
+        "At scale, the Pages report groups the same information. \"Alternate page with proper canonical tag\" means everything is working as designed. \"Duplicate, Google chose different canonical than user\" means you've been overruled. \"Duplicate without user-selected canonical\" means there's no tag at all and Google picked for you. If a whole content type shows the second or third status, it's a template problem, not a page problem — and it's often the reason [a page isn't indexed](/answers/why-is-my-page-not-indexed-on-google) at all."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The two-minute audit",
+        "body": "Open Search Console → Pages → and read the exclusion reasons. Count how many URLs sit under the two duplicate statuses. On most sites we audit, that number is larger than the owner expected, and a single template fix clears the majority of it."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does a canonical tag guarantee Google indexes the URL I choose?",
+      "a": "No. Google treats rel=canonical as a strong signal, not a directive, and weighs it against redirects, internal links, sitemap contents and URL consistency. If those contradict your tag, Google picks something else and tells you so in URL Inspection."
+    },
+    {
+      "q": "Should every page have a self-referencing canonical?",
+      "a": "It isn't mandatory, but it's cheap and it prevents an entire class of problem. Any page shared with a tracking parameter creates a new crawlable URL, and a self-referencing canonical resolves all of them back to the clean address without you maintaining a parameter list."
+    },
+    {
+      "q": "Canonical or 301 redirect — which should I use?",
+      "a": "Redirect when the old URL should stop existing for users too. Canonical when both addresses must keep working — filters, sort orders, print views, tracking parameters, syndicated copies. A redirect is the stronger and less ambiguous signal, so prefer it whenever the URL is genuinely retired."
+    },
+    {
+      "q": "What does 'Duplicate, Google chose different canonical than user' mean?",
+      "a": "Google read your canonical tag and overruled it. Check five things in order: where your internal links point, what's in your sitemap, whether the pages are genuinely duplicates, whether the canonical target itself redirects or is noindexed, and whether protocol or trailing slashes mismatch."
+    },
+    {
+      "q": "Can I canonicalise to a page on another domain?",
+      "a": "Yes, and it's the correct pattern for syndicated content — the republishing site canonicalises back to the original. Google supports cross-domain canonicals but treats them with the same scepticism as any other, so the copies need to genuinely match for it to be honoured."
+    },
+    {
+      "q": "Do canonical tags help with keyword cannibalisation?",
+      "a": "Only when the pages are near-duplicates. If two pages cover the same topic in genuinely different words, a canonical throws one away rather than fixing anything. Differentiating the pages or merging them properly is usually the better answer."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "canonical-tag"
+    },
+    {
+      "type": "glossary",
+      "slug": "canonicalization"
+    },
+    {
+      "type": "compare",
+      "slug": "canonical-vs-noindex"
+    },
+    {
+      "type": "compare",
+      "slug": "301-vs-302-redirect"
+    },
+    {
+      "type": "answers",
+      "slug": "why-is-my-page-not-indexed-on-google"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-seo-marketing"
+    }
+  ]
+}

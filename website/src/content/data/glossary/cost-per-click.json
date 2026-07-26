@@ -1,0 +1,126 @@
+{
+  "slug": "cost-per-click",
+  "type": "glossary",
+  "primaryKeyword": "cost per click",
+  "secondaryKeywords": [
+    "cpc meaning",
+    "average cpc india",
+    "how to reduce cpc",
+    "max cpc vs average cpc",
+    "cpc calculation"
+  ],
+  "cluster": "paid",
+  "intent": "informational",
+  "h1": "Cost per click (CPC)",
+  "metaTitle": "Cost Per Click (CPC): What Drives Your Price",
+  "metaDescription": "Cost per click is what you actually pay, not what you bid. The formula, Indian CPC bands by category in rupees, and the levers that lower yours.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Cost per click (CPC)",
+  "definition": "Cost per click is the amount an advertiser actually pays for one click on an ad, which on Google Search is set by the advertiser ranked below you rather than by your own bid.",
+  "answer": "Cost per click is what you actually pay for one ad click. On Google Search it's calculated from the Ad Rank of the advertiser below you, divided by your Quality Score, plus one paisa — so you almost never pay your maximum bid. Indian search CPCs range from about ₹8 to ₹500 by category.",
+  "takeaways": [
+    "**Max CPC is a ceiling, not a price.** Average CPC is what actually left your account, and it's usually well below the bid.",
+    "The person below you sets your price. Improve your own quality and the same position gets cheaper.",
+    "A category's CPC tracks the value of a conversion in that category, not how competitive it feels. Insurance costs more than kurtas because one lead is worth more.",
+    "Lowering CPC is easy and often pointless. Lowering **cost per acquisition** is the job."
+  ],
+  "sections": [
+    {
+      "h2": "Max CPC versus average CPC: why you rarely pay your bid",
+      "body": [
+        "Your **maximum CPC** is the most you've told Google you'll pay. Your **average CPC** is total spend divided by total clicks — the number that matters.",
+        "On Google Search, the actual price of a click is roughly the Ad Rank of the advertiser immediately below you, divided by your Quality Score, plus one paisa. The minimum needed to beat them, and nothing more.",
+        "Work it through. You bid ₹80 with a Quality Score of 8, giving Ad Rank 640. The advertiser below you has Ad Rank 400. You pay (400 ÷ 8) + ₹0.01 = **₹50.01**, not ₹80. At a Quality Score of 4, that same ₹80 bid gives Ad Rank 320 and you drop below them entirely.",
+        "Two consequences founders miss. Raising your bid doesn't raise your price directly — it raises your eligibility. And a competitor dropping out lowers your CPC without you touching anything, which is why the chart moves for reasons outside your account."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "This is a Search mechanic",
+        "body": "The formula above describes Google Search. Display and programmatic inventory largely moved to first-price auctions in 2019, and Meta runs its own auction on estimated action rates. Don't apply Search logic to a Meta report and conclude something went wrong."
+      }
+    },
+    {
+      "h2": "What a click costs in India",
+      "body": [
+        "Rough bands, not a rate card. Real CPCs swing with city, match type, device, season and whichever aggregator decided to spend this month. Use them to sanity-check a forecast, then verify in Keyword Planner with your real geography. If an agency's projection sits far outside the band, ask why before you sign."
+      ],
+      "table": {
+        "caption": "Rough Google Search CPC bands in India. Directional only — verify in Keyword Planner.",
+        "head": ["Category", "Typical band", "Why it sits there"],
+        "rows": [
+          ["Ecommerce and D2C retail", "₹8–₹40", "Cheap clicks, but Amazon and Flipkart bid on your product terms too"],
+          ["Local services — salons, plumbers, tuition", "₹10–₹60", "Few advertisers per pincode, high intent, small geography"],
+          ["Travel and hospitality", "₹15–₹70", "High volume, aggregator-dominated, thin margin per click"],
+          ["Healthcare and clinics", "₹30–₹150", "Restricted category rules and tight geography push it up"],
+          ["Real estate", "₹40–₹200", "One closed deal is worth lakhs, so bids escalate fast"],
+          ["B2B SaaS targeting India", "₹60–₹300", "Low volume, high intent. Target the US instead and multiply several times over"],
+          ["Education and study abroad", "₹80–₹400", "Among India's most expensive. National competition, high lead value"],
+          ["BFSI — loans, insurance, cards", "₹100–₹500+", "The top of the market. Aggregators bid to the limit of their payout"]
+        ]
+      }
+    },
+    {
+      "h2": "The levers that actually lower CPC",
+      "body": [
+        "In rough order of how much they move the number for how little effort."
+      ],
+      "numbered": [
+        "**Fix the landing page.** A third of [Quality Score](/glossary/quality-score), and the part most advertisers never touch. Match the ad's promise, load fast on a mid-range Android on 4G, next step above the fold.",
+        "**Tighten match types and add negatives.** Broad match with no [negative keywords](/glossary/negative-keywords) buys irrelevant clicks that also drag your CTR down, which raises the price of the relevant ones.",
+        "**Write ads that earn the click.** Expected CTR feeds Quality Score directly. Specific beats clever: a price, a city, a timeframe.",
+        "**Go longer-tail.** \"seo agency\" is contested by everyone with a budget. \"seo agency for b2b saas bangalore\" costs less and converts better. Volume is the trade.",
+        "**Cut hours and geographies that never convert.** Most accounts quietly fund 2am clicks from cities they don't serve.",
+        "**Check the bid strategy isn't the cause.** Target CPA will happily pay ₹300 for a click it thinks converts. That may be correct — just don't then complain that CPC went up."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The trap in this whole section",
+        "body": "You can cut CPC in half tomorrow by bidding only on your own brand name. Volume collapses, conversions collapse, and the dashboard looks fantastic. CPC is a diagnostic. Cost per acquisition and [ROAS](/glossary/return-on-ad-spend) are the scoreboard."
+      }
+    },
+    {
+      "h2": "CPC, CPM and CPA are the same number in different clothes",
+      "body": [
+        "Three metrics, one chain. The arithmetic between them ends most reporting arguments early.",
+        "**CPM** is cost per thousand impressions. Divide by 1,000, then by your click-through rate, for effective CPC. A ₹200 CPM at 1% CTR is a ₹20 CPC. At 0.5% it's ₹40 — same media cost, double the click price, worse creative.",
+        "**CPA** is your CPC divided by your landing page conversion rate. A ₹50 CPC at 2% is a ₹2,500 CPA. Lift conversion to 4% and CPA halves without touching the ads. That's usually the cheapest improvement available in a paid account, and it lives on your site rather than in the ad platform.",
+        "Which is the honest summary: CPC is set by an auction you partly control, and the fastest route to a lower one runs through your landing page. Our [performance marketing](/performance) starts at ₹40,000/mo with media billed separately and no markup on spend."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a good cost per click in India?",
+      "a": "There isn't one in the abstract — a ₹300 click is cheap for a home loan lead and ruinous for a ₹500 t-shirt. The useful test is whether CPC divided by your conversion rate produces a cost per acquisition your margin can carry. If it does, the CPC is good."
+    },
+    {
+      "q": "Why is my average CPC lower than my max CPC?",
+      "a": "Because on Google Search you pay only what was needed to beat the advertiser below you, not your full bid. Your max CPC is a ceiling. If your average CPC sits far below it consistently, you have room to compete for better positions without changing your economics much."
+    },
+    {
+      "q": "How do I reduce cost per click?",
+      "a": "Raise Quality Score by fixing the landing page and ad relevance, tighten match types, add negative keywords weekly, move toward longer-tail terms, and cut hours and locations that never convert. Check your automated bid strategy too — it may be raising CPC deliberately and correctly."
+    },
+    {
+      "q": "Does a higher bid mean a higher cost per click?",
+      "a": "Not directly. Your bid sets eligibility; the ad below you sets your price. Raising a bid can win you a higher position where competition is denser, which does often raise the realised CPC — but the bid itself isn't what you're charged."
+    },
+    {
+      "q": "Is CPC the same on Google and Meta?",
+      "a": "The metric is, the mechanics aren't. Google Search sells clicks against typed intent. Meta usually sells impressions against interest signals and reports an effective CPC afterwards. Meta clicks are typically far cheaper in India and typically convert at a much lower rate, so comparing the two numbers alone is meaningless."
+    },
+    {
+      "q": "Why did my CPC jump with no changes to my account?",
+      "a": "Almost always someone else's account changed. A new competitor entering the auction, an existing one raising budgets, a seasonal spike, or an aggregator switching on a campaign will move your CPC while you did nothing. Check the auction insights report before you go hunting inside your own campaigns."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "quality-score" },
+    { "type": "glossary", "slug": "negative-keywords" },
+    { "type": "glossary", "slug": "return-on-ad-spend" },
+    { "type": "compare", "slug": "ppc-vs-seo" },
+    { "type": "journal", "slug": "why-indian-d2c-brands-overspend-on-ads" },
+    { "type": "cost", "slug": "digital-marketing-agency-cost-india" }
+  ]
+}

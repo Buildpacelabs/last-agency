@@ -1,0 +1,126 @@
+{
+  "slug": "topical-authority",
+  "type": "glossary",
+  "primaryKeyword": "topical authority",
+  "secondaryKeywords": [
+    "topical authority seo",
+    "how to build topical authority",
+    "topical map seo",
+    "subject matter depth seo",
+    "topical authority vs domain authority"
+  ],
+  "cluster": "content",
+  "intent": "informational",
+  "h1": "Topical authority",
+  "metaTitle": "Topical Authority: What It Is, How to Build It",
+  "metaDescription": "Topical authority is how completely your site covers a subject. Here's how to turn it into a countable map, a coverage score and a publishing order.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Topical authority",
+  "definition": "Topical authority is how completely and credibly a site covers a single subject, relative to the other sites competing for it.",
+  "answer": "Topical authority is how completely a site covers one subject. It isn't a Google metric and there's no score to check. What's observable: sites that answer every question in a topic rank for its long tail faster than bigger sites answering three. Measure it as coverage — questions answered over questions asked.",
+  "takeaways": [
+    "Nobody calculates this. There's no topical authority score, no dashboard, and any tool selling you one has invented it.",
+    "The useful version is countable: list every question a buyer asks across the topic, assign each to a page, and track the percentage answered.",
+    "Coverage without quality is scaled content abuse. Google named it explicitly in its March 2024 spam policies, and it applies whether a model or a person on a quota wrote the pages.",
+    "Internal links are what turn a pile of related articles into something a search engine reads as one body of work."
+  ],
+  "sections": [
+    {
+      "h2": "Topical authority is not domain authority",
+      "body": [
+        "These get used interchangeably in pitches and they describe opposite things. [Domain authority](/glossary/domain-authority) is a third-party estimate of your link strength across the whole site. Topical authority is a description of how thoroughly you cover one subject — and it's the reason a 40-page site about one narrow thing routinely outranks a 4,000-page brand that mentioned it twice.",
+        "The mechanism isn't mystical. A site that answers forty questions about dental implants has more chances to match a query, more relevant internal links pointing at each page, more repeat visits from people researching the same decision, and a clearer subject signal than a general health portal with one implants article. None of that requires a hidden authority score to explain."
+      ],
+      "table": {
+        "caption": "Two things people call the same thing.",
+        "head": ["", "Topical authority", "Domain authority"],
+        "rows": [
+          ["What it describes", "How completely you cover one subject", "A third-party guess at overall link strength"],
+          ["Who calculates it", "Nobody — it's a description, not a score", "Moz, Ahrefs and others, from their own link indexes"],
+          ["How you move it", "Publish and interlink across the whole topic", "Earn links from more unique domains"],
+          ["What it explains", "Why small niche sites beat big general ones", "Roughly how hard a site is to outrank in general"],
+          ["How it fails you", "Confused with page count", "Treated as a target instead of a filter"]
+        ]
+      }
+    },
+    {
+      "h2": "Turning it into a countable plan",
+      "body": [
+        "\"Build topical authority\" is not a brief. \"We cover 34 of the 71 questions a buyer asks about this, here are the 37 we don't\" is. The conversion takes a day."
+      ],
+      "subs": [
+        {
+          "h3": "Build the question map",
+          "body": [
+            "Collect every real question in the topic from sources that contain actual humans, not from a keyword tool alone."
+          ],
+          "bullets": [
+            "Search Console queries you already get impressions for — including the embarrassing ones you don't have a page for.",
+            "People Also Ask boxes, expanded two levels deep, for your five head terms.",
+            "Your sales calls. The objection someone raised on Tuesday is a page.",
+            "Reddit, Quora and the WhatsApp groups your buyers are in.",
+            "Your competitors' navigation — not their blog list, their menu. That's their considered view of the topic."
+          ]
+        },
+        {
+          "h3": "Score your coverage",
+          "body": [
+            "Dedupe the list into distinct questions — sixty to eighty is typical for a serious commercial topic. Assign each one to a page, allowing that a good page can genuinely answer three or four related questions. Then divide: questions with a page that actually answers them, over total questions.",
+            "That percentage is your coverage. Track it monthly. It's the only honest way to answer \"how much content do we still need\", and it stops the argument about whether to publish four posts or twelve — the map tells you when you're done."
+          ]
+        },
+        {
+          "h3": "Wire it together",
+          "body": [
+            "A map with no links is a folder, not a body of work. Every page links up to its hub, the hub links down to every page, and pages link sideways only where a reader would genuinely want the other one. See [topic cluster](/glossary/topic-cluster) for the pattern in detail.",
+            "Use the destination page's own subject as the anchor text, not the head term. Forty internal links all reading \"dental implants\" tell Google nothing about which page owns which question."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Coverage is not a licence to publish filler",
+        "body": "Google's March 2024 spam policies named scaled content abuse directly: pages produced at volume primarily to rank, with no real value added. Hitting 100% coverage with 70 thin pages is a faster route to suppression than 40% coverage with pages people finish. Fill the gaps that matter, and leave the ones you can't answer well."
+      }
+    },
+    {
+      "h2": "How long it takes, and the honest caveat",
+      "body": [
+        "Individual long-tail pages can pick up impressions within weeks — they're competing against thin, ageing content in most Indian categories. The compounding effect, where new pages in the same topic start ranking faster than your first ones did, shows up across quarters rather than months. On a competitive subject, expect six to twelve months before a topic feels like yours, and longer if your site has no link profile to speak of.",
+        "The caveat worth stating plainly: Google has never confirmed a topical authority score, and some experienced SEOs argue the whole concept is a folk explanation for ordinary relevance and internal linking effects. That argument is worth reading — we've written our own view in [does topical authority actually exist](/journal/does-topical-authority-actually-exist).",
+        "It doesn't much matter who's right. The plan the theory produces — map the real questions, answer them properly, link them together, measure coverage — is the correct plan under either explanation. That's the test of a useful model: it survives being wrong about the mechanism."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is topical authority a real Google ranking factor?",
+      "a": "Google has never confirmed a topical authority score, and there's no dashboard for it. What's observable is that sites covering a subject completely tend to rank across its long tail faster than broader sites that cover it thinly. Treat it as a planning model, not a metric."
+    },
+    {
+      "q": "How many pages do I need to build topical authority?",
+      "a": "As many as there are distinct questions worth answering — usually sixty to eighty for a serious commercial topic, sometimes fifteen for a narrow one. The number falls out of the question map. Starting from a target page count is how sites end up publishing filler to hit a quota."
+    },
+    {
+      "q": "What's the difference between topical authority and domain authority?",
+      "a": "Domain authority is a third-party estimate of your link strength sitewide. Topical authority describes how completely you cover one subject. A site can have low domain authority and win a topic outright, which is the entire reason small niche sites beat large brands on specific queries."
+    },
+    {
+      "q": "Can AI-written content build topical authority?",
+      "a": "Volume alone doesn't. Google's scaled content abuse policy targets pages mass-produced to rank without adding value, regardless of how they were written. Drafts assembled by a model and then genuinely edited by someone who knows the subject are a different proposition from 200 unread pages."
+    },
+    {
+      "q": "How do I measure topical authority?",
+      "a": "Coverage percentage — distinct buyer questions with a page that genuinely answers them, divided by the total on your map — tracked monthly. Support it with impressions across the topic's whole query set rather than a handful of head terms, since breadth is exactly what you're trying to build."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "topic-cluster" },
+    { "type": "glossary", "slug": "pillar-page" },
+    { "type": "glossary", "slug": "content-gap-analysis" },
+    { "type": "journal", "slug": "does-topical-authority-actually-exist" },
+    { "type": "services", "slug": "content-marketing-services" },
+    { "type": "compare", "slug": "technical-seo-vs-content-seo" }
+  ]
+}

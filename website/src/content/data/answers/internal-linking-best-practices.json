@@ -1,0 +1,244 @@
+{
+  "slug": "internal-linking-best-practices",
+  "type": "answers",
+  "primaryKeyword": "internal linking best practices",
+  "secondaryKeywords": [
+    "internal link audit",
+    "how to fix internal linking",
+    "orphan pages seo",
+    "internal linking mistakes"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "Internal linking best practices, run as an audit",
+  "metaTitle": "Internal Linking Best Practices: Run It as an Audit",
+  "metaDescription": "Internal linking best practices, ordered as a one-afternoon audit: eight checks on a live site, each with the signal that tells you it's a problem.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Good internal linking means every important page is reachable in three clicks, has more inbound links than your blog archive, and is linked with anchor text that describes it. Audit it with a crawler in one afternoon: eight checks, in order, from navigation bloat to orphaned URLs.",
+  "takeaways": [
+    "Internal linking is the only authority signal you control completely. No outreach, no budget, no waiting on someone else to publish.",
+    "Run it as an **audit on a site that already exists**, not as a theory. Eight checks, one afternoon, a crawler and Search Console.",
+    "The most common finding on real sites: **the money pages have fewer internal links than a blog post from 2021**.",
+    "Fix in ascending order of risk. Broken links first, navigation last, because navigation changes hit every page at once.",
+    "Measure impressions and average position for the newly linked pages at 4–8 weeks. Not traffic in week one."
+  ],
+  "sections": [
+    {
+      "h2": "What you need before you start",
+      "body": [
+        "This is a fix pass on a site that already exists, not a plan for one you're about to build. Twenty minutes of setup, then eight checks you can run in an afternoon on a site under a few thousand URLs.",
+        "Three inputs. A crawler — Screaming Frog's free tier handles 500 URLs, which covers most business sites. Search Console, for the Links report and for the query data you'll use to judge which pages deserve links. And your own list of money pages: the service, product, pricing and contact URLs that actually produce revenue. Write that list down first. Every check below is judged against it."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Why this is worth doing before link building",
+        "body": "External links are slow, expensive and partly out of your hands. [Internal links](/glossary/internal-linking) cost an afternoon and you decide where the authority goes. On most sites we look at, the internal structure is wasting more than the external profile is earning."
+      }
+    },
+    {
+      "h2": "Checks one to four: the structural problems",
+      "body": [
+        "These four are about shape — how link value flows through the site and whether Google can tell what matters."
+      ],
+      "subs": [
+        {
+          "h3": "Check 1 — navigation bloat",
+          "body": [
+            "A mega-menu that links 140 URLs from every page sounds helpful and behaves like a tax. Link value divides across the links on a page, so a template that fires 140 links from every URL gives each one a slice of nothing. It also flattens your hierarchy: if everything is in the nav, nothing is prioritised.",
+            "**The signal:** crawl the site and sort by outlinks per page. If your average page has more than roughly 100 internal links and most of them are identical across every page, your navigation is doing the linking and your content isn't."
+          ]
+        },
+        {
+          "h3": "Check 2 — one anchor, several destinations",
+          "body": [
+            "Anchor text tells Google what the target page is about. If \"SEO services\" points at four different URLs across the site, you've told Google that four pages compete for the same idea — and Google will pick one, probably not the one you wanted.",
+            "**The signal:** export the crawler's anchor text report, group by anchor, count distinct target URLs. Anything with three or more targets goes on the fix list. This check doubles as a [cannibalisation](/answers/what-is-keyword-cannibalization) detector — the same anchor pointing at several pages usually means several pages chasing one query."
+          ]
+        },
+        {
+          "h3": "Check 3 — orphaned URLs",
+          "body": [
+            "An orphan is a page with no internal links pointing at it. It may be in the sitemap, it may even be indexed, but nothing on the site says it matters, so Google crawls it rarely and ranks it worse.",
+            "**The signal:** a list comparison. Crawl the site to get every URL reachable by following links. Separately, pull every URL from your XML sitemap, plus every URL that received an impression in the last 12 months from Search Console. Anything in the second list and not the first is orphaned. Screaming Frog does this automatically once you connect the Search Console API, but a spreadsheet and a `VLOOKUP` works fine."
+          ]
+        },
+        {
+          "h3": "Check 4 — click depth past three",
+          "body": [
+            "Click depth is the number of clicks from the homepage to a page. Depth isn't a ranking factor in itself, but it correlates hard with crawl frequency and it's a decent proxy for how important your own site says a page is.",
+            "**The signal:** the crawl depth column in your crawler. Sort descending, then cross-reference against your money-page list. A pricing page at depth 5 is a structural error. A 2019 blog post at depth 5 is fine and should probably stay there."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Checks five to eight: the ones costing you money",
+      "body": [
+        "These four are about waste — links that leak value, links that don't exist as far as a crawler is concerned, and pages that earn nothing from their own site."
+      ],
+      "subs": [
+        {
+          "h3": "Check 5 — money pages with fewer links than blog posts",
+          "body": [
+            "This is the finding that shows up on almost every site, and it's the one worth fixing first for return. Blog posts accumulate internal links naturally because they get linked from other posts, category pages, related-post widgets and archives. Service and pricing pages get linked from the nav and nowhere else.",
+            "**The signal:** sort every URL by unique inlinks, descending. If a four-year-old blog post has 90 inbound internal links and your highest-value service page has 6, your own site is voting for the wrong page. Fix it by adding contextual links from your best-performing content — the posts already getting traffic — with anchor text that describes the destination."
+          ]
+        },
+        {
+          "h3": "Check 6 — broken and redirected internal links",
+          "body": [
+            "Internal 404s waste crawl and dead-end users. Internal 301s are subtler: they still work, but every hop is an unnecessary request and a link pointing at a URL you already decided to retire.",
+            "**The signal:** the crawler's internal response-code report. Filter for 3xx and 4xx, then use the \"inlinks\" panel to see which pages contain the offending link. Update the source link to the final destination. This is the cheapest fix in the whole audit and usually the largest single count."
+          ]
+        },
+        {
+          "h3": "Check 7 — links a crawler cannot follow",
+          "body": [
+            "A link is a link when it's an anchor tag with an href. A clickable div with a JavaScript handler is not, and neither is a link that only appears after a client-side route change. If your \"related products\" carousel is rendered entirely in the browser, those links may not be counted.",
+            "**The signal:** crawl once with JavaScript rendering off and once with it on, then compare internal link counts per page. A large gap tells you how much of your linking depends on rendering. Also filter for internal links marked `nofollow` — usually a plugin default nobody chose deliberately."
+          ]
+        },
+        {
+          "h3": "Check 8 — everything living in the footer",
+          "body": [
+            "Google distinguishes between links in the main content and links in boilerplate. A footer link repeated on every page carries less weight than a link in a sentence that explains why you should click it, and it tells Google nothing about context.",
+            "**The signal:** your crawler's link position classification — content, navigation, footer, sidebar. If your money pages' inbound links are 90% footer, they have volume and no meaning. Fix by earning them contextual links from relevant body copy instead."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The one to not do",
+        "body": "Do not add a hundred internal links in one week with exact-match anchor text pointing at your commercial pages. It looks manufactured because it is, and it flattens the informational value of the anchors. Twenty genuinely relevant contextual links beat two hundred forced ones, every time."
+      }
+    },
+    {
+      "h2": "The order to fix them in",
+      "body": [
+        "Ascending risk. Start with the changes that can't break anything and end with the ones that touch every page on the site."
+      ],
+      "table": {
+        "caption": "Fix order for an internal linking audit, lowest risk first.",
+        "head": [
+          "Order",
+          "Fix",
+          "Risk",
+          "Rough effort"
+        ],
+        "rows": [
+          [
+            "1",
+            "Repoint broken and redirected internal links",
+            "None",
+            "An hour or two, mostly find-and-replace"
+          ],
+          [
+            "2",
+            "Link every orphaned page that deserves to exist",
+            "None",
+            "Half a day, plus deletions for the ones that don't"
+          ],
+          [
+            "3",
+            "Add contextual links from top-traffic content to money pages",
+            "Low",
+            "A day, done properly"
+          ],
+          [
+            "4",
+            "Pull money pages up to depth 3 or less",
+            "Medium — changes templates",
+            "A day, needs a developer"
+          ],
+          [
+            "5",
+            "Deduplicate anchor text across competing pages",
+            "Medium — often reveals a content merge",
+            "Varies with how bad it is"
+          ],
+          [
+            "6",
+            "Trim navigation bloat",
+            "High — affects every URL",
+            "Do last, ship alone, measure"
+          ]
+        ]
+      },
+      "bullets": [
+        "Ship steps 1 to 3 together. They're additive and nothing can regress.",
+        "Ship step 6 on its own, on a quiet week, with nothing else changing. If traffic moves, you want to know it was the nav."
+      ]
+    },
+    {
+      "h2": "What to measure afterwards, and when",
+      "body": [
+        "Internal linking rarely produces a step change in traffic. It produces a slow, unglamorous improvement in which of your pages Google considers important, and that shows up in leading indicators long before it shows up in revenue.",
+        "Four things to check, and the honest timeline for each:"
+      ],
+      "numbered": [
+        "**Impressions and average position** in Search Console, filtered to the specific pages you added links to. Expect movement at 4–8 weeks, not 4–8 days.",
+        "**Crawl stats** — pages crawled per day, in Settings → Crawl stats. Fixing orphans and redirect chains usually shows up here first, sometimes within two weeks.",
+        "**Indexed page count** for the section you fixed. If orphans were the problem, previously excluded URLs should start moving into the indexed bucket.",
+        "**Re-crawl the site** at the 30-day mark and compare the two exports: average click depth, inlinks to money pages, count of 3xx and 4xx internal links. This is the only number that proves you actually did the work."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "A realistic expectation",
+        "body": "On a site with genuine structural problems — orphans, depth 5 money pages, hundreds of internal redirects — an internal linking pass is one of the better returns in SEO because it costs a day and no media spend. On a site that's already tidy, it's maintenance. Audit first so you know which one you have."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many internal links should a page have?",
+      "a": "There's no fixed number, and the old \"100 links per page\" guideline was retired years ago. Judge by ratio instead: if most of a page's links come from a repeated template rather than its own content, the template is doing the linking. Three to ten contextual links in a long article is normal and useful."
+    },
+    {
+      "q": "What anchor text should I use for internal links?",
+      "a": "Descriptive text that names the destination — \"internal linking best practices\", not \"click here\" and not the bare URL. Vary the phrasing naturally across pages, and make sure one anchor phrase consistently points at one URL. The same anchor pointing at several pages confuses which one owns the topic."
+    },
+    {
+      "q": "How do I find orphan pages on my site?",
+      "a": "Compare two lists. Crawl the site to get every URL reachable by following links, then pull every URL from your sitemap and from Search Console's 12-month performance export. Anything in the second list but not the first has no internal links pointing at it."
+    },
+    {
+      "q": "Do internal links pass link equity like external ones?",
+      "a": "They distribute the authority a site already has rather than adding new authority. That's the important difference: internal links decide which of your pages benefits from your existing links, external links decide how much there is to distribute. Both matter, and only one of them is free."
+    },
+    {
+      "q": "Is click depth actually a ranking factor?",
+      "a": "Not directly. It correlates with how often Google crawls a page and acts as a proxy for how important your own site treats it. A revenue page five clicks from the homepage is a signalling problem more than a ranking penalty, but the effect on discovery and crawl frequency is real."
+    },
+    {
+      "q": "How often should I re-run an internal linking audit?",
+      "a": "Twice a year on a stable site, and immediately after any migration, redesign or CMS change. Those three events break internal linking more reliably than anything else, and the damage is usually invisible until traffic drops a month later."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "internal-linking"
+    },
+    {
+      "type": "glossary",
+      "slug": "orphan-page"
+    },
+    {
+      "type": "journal",
+      "slug": "internal-linking-beats-link-building"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-keyword-cannibalization"
+    },
+    {
+      "type": "glossary",
+      "slug": "anchor-text"
+    },
+    {
+      "type": "services",
+      "slug": "seo-audit-services"
+    }
+  ]
+}

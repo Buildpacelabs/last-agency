@@ -1,0 +1,119 @@
+{
+  "slug": "domain-authority",
+  "type": "glossary",
+  "primaryKeyword": "domain authority",
+  "secondaryKeywords": [
+    "what is domain authority",
+    "da score meaning",
+    "how to increase domain authority",
+    "is domain authority a ranking factor",
+    "good da score"
+  ],
+  "cluster": "off-page",
+  "intent": "informational",
+  "h1": "Domain Authority (DA)",
+  "metaTitle": "Domain Authority (DA): What It Is and Isn't",
+  "metaDescription": "Domain Authority is Moz's 1-100 prediction of ranking strength, and Google does not use it. Here is the one legitimate use and where founders misread it.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Domain Authority (DA)",
+  "definition": "Domain Authority is a 1-100 score created by the SEO tool company Moz that predicts how likely a domain is to rank in search results, based mainly on its link profile.",
+  "answer": "Domain Authority is a 1–100 score invented by Moz to predict how likely a domain is to rank. Google does not use it, has never used it, and has said so repeatedly. It is a third-party estimate built from link data, useful for comparing two sites on one scale and useless as a target to chase.",
+  "takeaways": [
+    "**Google does not use DA.** It's Moz's model, trained on Moz's own index. Any vendor implying otherwise is either confused or counting on you being.",
+    "The scale is logarithmic. Moving from 20 to 30 is ordinary work; 50 to 60 is a different sport.",
+    "The one legitimate use is comparative — two sites, same scale, same day.",
+    "\"DA 40+ guest post, ₹8,000\" is priced on a number Google ignores. That's the entire business model of the marketplace pitching you."
+  ],
+  "sections": [
+    {
+      "h2": "What DA actually is",
+      "body": [
+        "Domain Authority is a product feature. Moz — an SEO software company — built a machine-learning model that reads a domain's link data from Moz's own web index and outputs a 1–100 guess at how likely that domain is to rank. It is, precisely, one vendor's prediction of Google's behaviour.",
+        "That's not a criticism; a calibrated prediction is useful. The problem is what happened next. The number escaped the tool, got printed on pitch decks, and became a currency. An entire link-selling market in India now prices inventory in DA, and a founder who's never opened Moz will still be quoted \"DA 45 site, ₹12,000\".",
+        "Google has stated repeatedly that it does not use Domain Authority. Google plainly runs site-level signals of its own — its leaked internal documentation has been read as referencing site authority attributes — but that's Google's plumbing, invisible from outside and unrelated to Moz's arithmetic."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The sentence most vendors skip",
+        "body": "Google does not use Domain Authority. If a proposal treats raising your DA as a deliverable, you're paying for movement in a third-party tool's dashboard, which nobody at Google can see and no customer will ever notice."
+      }
+    },
+    {
+      "h2": "The logarithmic scale, and what it means for you",
+      "body": [
+        "DA runs 1 to 100 and it's logarithmic, which resolves most of the confusion about it. Twenty to thirty is an ordinary year of decent link earning. Sixty to seventy is what a national newspaper does. Two consequences follow: DA growth naturally decelerates, so a flat score in year two doesn't mean the work stopped; and reading DA 25 as \"half of DA 50\" is arithmetic nonsense."
+      ],
+      "bullets": [
+        "**A new domain starts near 1** and stays in single digits until it has links at all. Normal, and not a problem to solve.",
+        "**A new Indian site after a real year of work** typically sits in the teens to low thirties. The range is wide because it depends entirely on whether anyone had a reason to link to you.",
+        "**Established Indian D2C and SaaS brands** commonly land in the 30s and 40s. National publishers sit far higher, which is why placements on them are priced the way they are."
+      ]
+    },
+    {
+      "h2": "The one thing DA is genuinely good for",
+      "body": [
+        "Comparison, on the same scale, on the same day. If you're choosing between two outreach targets and one is DA 12 and the other DA 48, the second is probably better linked and probably the better placement. As a way to sort a hundred prospects quickly, DA saves you hours.",
+        "It fails the moment it becomes a goal. \"Get us to DA 40\" isn't a business outcome, and a determined vendor can hit it while your organic leads stay exactly where they were — because the number responds to link volume, and link volume is purchasable. That's the argument in [domain authority is a vanity metric](/journal/domain-authority-is-a-vanity-metric). Our rule: DA is a filter, never a KPI. The KPI is what shows up in your CRM."
+      ]
+    },
+    {
+      "h2": "Why DA-priced links are a red flag",
+      "body": [
+        "Follow the incentive. A marketplace needs a price list, a price list needs a number, and the number has to be cheap to verify (Moz gives it away), cheap to move (buy links and DA climbs), and impressive to a buyer who doesn't know it isn't a Google metric. DA satisfies all three. That's why it, and not traffic, became the unit of account.",
+        "So a \"DA 45\" placement tells you almost nothing. The site may have no organic traffic, no editorial process, and a write-for-us page quoting rates in dollars. Check traffic and topical fit before any authority score — both are harder to fake. [Domain Rating](/glossary/domain-rating) has the same weakness in a different shape; the two are compared in [DA vs DR](/compare/da-vs-dr)."
+      ]
+    },
+    {
+      "h2": "DA versus topical authority",
+      "body": [
+        "DA is domain-wide and link-derived: how well connected is this site to the rest of the web. [Topical authority](/glossary/topical-authority) is subject-specific: how thoroughly does it cover one field.",
+        "Topical authority wins the fights you care about. A DA 22 site with forty genuinely useful pages on GST filing for freelancers beats a DA 65 general business portal on those queries, because the portal's authority isn't about that subject. Good news if you're the smaller site: depth is buyable with effort, domain-wide authority mostly isn't."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Domain Authority a Google ranking factor?",
+      "a": "No. Domain Authority is Moz's metric, calculated from Moz's own index, and Google has said repeatedly that it doesn't use it. Google has internal site-level signals of its own, but they aren't Moz's number and you can't see or optimise them directly."
+    },
+    {
+      "q": "What is a good DA score?",
+      "a": "There's no universal threshold, because the only meaningful reading is comparative. Look at the DA of the sites ranking for your target query. If they're in the 30s and you're at 12, that's a gap. If they're in the 30s and so are you, DA isn't what's holding you back."
+    },
+    {
+      "q": "How do I increase my Domain Authority?",
+      "a": "The same way you'd increase anything else worth having: earn links from relevant sites that have their own links, and keep earning them. There's no shortcut that doesn't involve buying links, which moves the score without moving your rankings. Chasing DA directly is chasing the reflection."
+    },
+    {
+      "q": "Should I buy links from DA 40+ sites?",
+      "a": "No, and not because of the number. Paid links that pass ranking credit breach Google's link spam policy, and the sites selling them are usually chosen for a score rather than an audience. Check organic traffic and topical fit first; if the site fails those, its DA is irrelevant."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "domain-rating"
+    },
+    {
+      "type": "glossary",
+      "slug": "topical-authority"
+    },
+    {
+      "type": "glossary",
+      "slug": "backlink-profile"
+    },
+    {
+      "type": "compare",
+      "slug": "da-vs-dr"
+    },
+    {
+      "type": "cost",
+      "slug": "link-building-cost"
+    },
+    {
+      "type": "journal",
+      "slug": "domain-authority-is-a-vanity-metric"
+    }
+  ]
+}

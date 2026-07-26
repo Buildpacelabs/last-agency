@@ -1,0 +1,253 @@
+{
+  "slug": "what-working-with-an-seo-agency-actually-feels-like",
+  "type": "journal",
+  "primaryKeyword": "what it's like working with an seo agency",
+  "secondaryKeywords": [
+    "seo agency client experience",
+    "what to expect from an seo agency",
+    "seo agency communication",
+    "monthly seo call agenda",
+    "seo agency onboarding experience"
+  ],
+  "cluster": "client-education",
+  "intent": "informational",
+  "h1": "What It's Actually Like to Work With an SEO Agency, Month by Month",
+  "metaTitle": "What Working With an SEO Agency Really Feels Like",
+  "metaDescription": "What it's like working with an SEO agency, told month by month: the boring first four weeks, the month-three doubt and the calls that decide the outcome.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Month one feels like admin — logins, baselines, interviews, nothing visible. Month three is the hard part: impressions climb, revenue doesn't, and most people quit here. Months four to six bring the first organic leads. By month nine the pages published in month three are compounding. Expect to spend four to six hours a month yourself.",
+  "takeaways": [
+    "The first four weeks are access requests and a frozen baseline. If they feel boring, the agency is doing it right.",
+    "**Month three is the trough.** Impressions rise because pages moved from position 60 to position 20, and page-two rankings produce almost no clicks. It looks like failure. It's the normal shape.",
+    "A good monthly call spends 10 minutes on what happened and 40 on what it means and what's next. A status recital is 50 minutes of what happened.",
+    "Budget **4–6 hours of your own time a month**. Under two hours and the content will be generic, because nobody but you knows what your customers object to.",
+    "Month nine feels different in a specific way: new pages start ranking in weeks instead of months, because the site has earned the right to be crawled and trusted."
+  ],
+  "sections": [
+    {
+      "h2": "Weeks 1–4: you will spend more time on logins than on SEO",
+      "body": [
+        "The first month of an SEO engagement is administrative, and it disappoints almost everyone. You've just committed real money and the visible output is a shared folder, a spreadsheet and three requests for access you have to chase your developer for.",
+        "That's the correct shape. Everything after this depends on two things being right: complete data access, and a written starting number. Get either wrong and you'll spend the next eleven months arguing about whether anything worked.",
+        "Here's what a good agency asks for in the first fortnight, and why each one matters more than it looks."
+      ],
+      "table": {
+        "caption": "The week-one access list, and what happens if you skip an item.",
+        "head": ["What they ask for", "Why", "Cost of not giving it"],
+        "rows": [
+          [
+            "Google Search Console (owner access)",
+            "The only first-party record of what Google shows you for and where you rank",
+            "No query data. Everything after this is guesswork bought from a tool"
+          ],
+          [
+            "GA4 and your CRM",
+            "To separate traffic from leads, and leads from good leads",
+            "You end up measuring sessions, which is how agencies hide"
+          ],
+          [
+            "CMS and staging access",
+            "So fixes ship without a two-week ticket queue",
+            "The single biggest cause of a stalled engagement"
+          ],
+          [
+            "Google Business Profile",
+            "Local pack visibility, reviews, and the map result that often outperforms your homepage",
+            "You leave your highest-intent local traffic unmanaged"
+          ],
+          [
+            "60–90 minutes with you or your sales lead",
+            "The objections, the pricing, the words customers actually use",
+            "Content that is grammatical, correct and completely generic"
+          ],
+          [
+            "Sign-off on the baseline number",
+            "It's what performance gets judged against for the next year",
+            "Nobody can prove anything moved, in either direction"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The interview is not a formality",
+        "body": "The 90-minute session where someone asks why customers say no is the most valuable hour of the whole first month. Everything distinctive in your content comes from it. If nobody books that call, you're buying content assembled from your competitors' websites."
+      }
+    },
+    {
+      "h2": "Month 2: things ship, and they're all invisible",
+      "body": [
+        "Month two is when work starts landing and none of it looks like anything. Redirect chains collapsed. Twelve pages de-indexed because they were thin duplicates. Canonical tags fixed. Forty title tags rewritten. A pillar page published that nobody has read yet.",
+        "This is the stage where founders start forwarding the report to their co-founder with a question mark. The honest framing: you're paying for plumbing, and plumbing is only noticeable when it's broken. On an older site — anything that's been through a redesign or a platform move — this month often recovers traffic that was quietly lost years ago, with no new content at all.",
+        "What you should actually feel in month two is a small, specific relief: someone finally knows why that section of your site never got indexed."
+      ],
+      "bullets": [
+        "**What you'll see:** a fix log, a crawl before-and-after, the first published pages, an internal-link plan.",
+        "**What you won't see:** traffic. Google has to re-crawl, and re-crawl frequency on a small site is measured in weeks, not hours.",
+        "**What to check:** indexed page count in Search Console versus what you published. If you shipped eight pages and two got indexed, say something now, not in month five."
+      ]
+    },
+    {
+      "h2": "Month 3: the trough, and why almost everyone quits here",
+      "body": [
+        "This is the month the whole engagement turns on, so we'll be precise about it.",
+        "By month three, if the work is good, your Search Console impressions are climbing — sometimes steeply. Your average position is improving. Your traffic has barely moved and your leads haven't moved at all. The report looks like progress and the bank account looks like nothing happened.",
+        "The mechanic behind that is not mysterious. A page that moves from position 58 to position 19 has improved enormously, and it earns you almost no clicks, because click-through rate collapses below the first page. Impressions count every time Google shows you; clicks only happen when someone chooses you. You've gone from invisible to visible-if-you-scroll. That's real progress that pays nothing yet.",
+        "So month three feels like being sold to. The agency is genuinely pleased, you're genuinely not, and both of you are looking at the same chart. It's the single most common point at which a working engagement gets cancelled — and cancelling here means paying for the entire cost of SEO while collecting none of the return.",
+        "The correct response is not faith. It's two specific checks."
+      ],
+      "numbered": [
+        "**Are impressions rising for the queries in the plan, or for junk?** Filter Search Console to your target queries. Rising impressions on \"free\", \"salary\" and \"meaning\" variants of your keywords is not progress, it's drift.",
+        "**Is the position band moving in the right direction?** Count pages sitting in positions 11–30 for commercial queries. That band is the waiting room. If it's filling up, month four to six pays you. If it's empty and impressions are up, you're gaining visibility on queries nobody buys from."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Where the money is lost",
+        "body": "Firing an agency in month three or four is the most expensive decision in SEO. You've paid for the audit, the fixes and the content, and you leave before the compounding. Then you start again elsewhere and pay for the audit a second time. If you're going to quit, quit in month one."
+      }
+    },
+    {
+      "h2": "What a good monthly call sounds like",
+      "body": [
+        "You will have roughly twelve of these calls a year and they are where the engagement is actually steered. Most of them are wasted on a recital of completed tasks, which is comfortable for everyone and useless.",
+        "The difference between the two versions is not tone or seniority. It's what fraction of the hour is spent on the past."
+      ],
+      "table": {
+        "caption": "The same 50 minutes, spent two ways.",
+        "head": ["A status recital", "A call worth having"],
+        "rows": [
+          [
+            "\"We published four blogs and built six backlinks.\"",
+            "\"We published four pages. Two are indexed and ranking 14–22. The other two aren't indexed and here's why.\""
+          ],
+          [
+            "Traffic is up 18% month on month.",
+            "Traffic is up 18%, of which 14 points came from one page about pricing. That tells us buyers are searching cost first, so next month we build the cost cluster."
+          ],
+          [
+            "A slide of keyword positions, all green.",
+            "\"These three keywords went backwards. Here's what we think happened and what we're changing.\""
+          ],
+          [
+            "\"Next month we'll continue with content and link building.\"",
+            "\"Next month we need two things from you: a 30-minute call with your sales lead, and the pricing page approved by the 12th.\""
+          ],
+          [
+            "Baseline never mentioned.",
+            "Baseline stated every single month, unprompted, with the current number next to it."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "One question that fixes most calls",
+        "body": "\"What went badly this month?\" Ask it every time. An agency with nothing to report either isn't looking or isn't telling, and both get expensive by month six."
+      }
+    },
+    {
+      "h2": "How much of your time this actually costs",
+      "body": [
+        "Nobody quotes this in the proposal, so here it is: budget **four to six hours a month** of your own time, and slightly more in month one.",
+        "That's not the agency being needy. Everything that makes your content different from your competitors' — the objection your buyers raise, the reason your price is what it is, the customer who churned and why — exists only in your head or your sales team's. An agency can research your market. It cannot research your knowledge.",
+        "The engagements that go wrong on the client side almost always go wrong here. Not through malice — through a founder who's genuinely busy, so approvals sit for three weeks, the subject-matter call gets rescheduled twice, and the agency ships safe generic content because the alternative was shipping nothing."
+      ],
+      "bullets": [
+        "**60–90 minutes** — the monthly call. Non-negotiable, camera on, both sides prepared.",
+        "**2–3 hours** — reviewing and approving content, and answering the awkward factual questions in the drafts. This is the part that pays.",
+        "**30–60 minutes** — unblocking your developer, or being the person who tells them a redirect map takes priority over the new landing page.",
+        "**Occasional** — an intro to a customer for a case study, a quote for a PR pitch, a look at a competitor you know something about."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The dev bottleneck",
+        "body": "If your site changes require a developer who has other priorities, say so in week one. It's the most common reason a good plan produces a bad quarter, and it's fixable — with staging access, a fortnightly slot, or the agency doing the implementation. It is not fixable in month five."
+      }
+    },
+    {
+      "h2": "Months 4–6: the first leads, and a change in the conversation",
+      "body": [
+        "Somewhere in this window the first organic lead arrives that clearly came from the work — usually from a page nobody expected, answering a question you thought was too basic to write about.",
+        "The texture of the engagement changes here. Month one to three you're asking \"is this working?\". From month four you start asking \"why did *that* work?\", which is a much more productive question and the one that shapes the second half of the year.",
+        "You'll also notice the reporting getting easier to read, because there's finally something to report. And you'll notice your own behaviour changing: you start noticing search results, sending the agency queries you typed yourself, forwarding a competitor's page you found annoying. That's the engagement working, incidentally — the client who pays attention gets better output, every time.",
+        "For a fuller version of this stretch, we've written up [what actually happens in the first 90 days](/journal/what-actually-happens-in-the-first-90-days)."
+      ]
+    },
+    {
+      "h2": "Month 9, when it works",
+      "body": [
+        "The difference at month nine is not that the numbers are bigger. It's that the site behaves differently.",
+        "Pages you publish now get indexed in days rather than weeks, and reach a decent position in weeks rather than months, because the site has accumulated crawl attention and topical coverage. The pillar page from month two, which sat at position 30 for a quarter, is now on page one and pulling the cluster around it up. Queries you never targeted start showing up, because a site that covers a subject properly earns results for questions nobody wrote a page for.",
+        "The commercial version of that is straightforward: the leads are no longer occasional. They arrive weekly, they mention the article by name, and your sales team stops asking whether SEO is doing anything.",
+        "It doesn't always look like this. Some sectors are slower, a core update can flatten a quarter, and a brand-new domain competing with fifteen-year-old incumbents takes longer than nine months. But when it works, this is what it feels like — and it's why we measure against your own frozen baseline rather than promising a position. Positions are Google's to give. The baseline is yours, and it's the number your accountant cares about. That's the whole basis of [how our SEO work is structured](/seo)."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The honest range",
+        "body": "Three to six months to meaningful movement on a competitive keyword set. Six to twelve to compounding. Anyone quoting less is either quoting a smaller problem than yours, or buying links."
+      }
+    },
+    {
+      "h2": "The three ways it goes wrong, and what each one feels like",
+      "body": [
+        "Not every engagement works. These are the three failure modes we see most, and each has a distinct feel — which means you can catch it early if you know the smell."
+      ],
+      "subs": [
+        {
+          "h3": "The agency is coasting",
+          "body": [
+            "Feels like: reports arrive on time, everything is green, nothing is ever a problem, and the recommendations could have been written before they met you. The tell is the absence of bad news, not the presence of good news.",
+            "Fix: ask for the last three months of Search Console query data yourself and read it. Ten minutes tells you whether the story matches the data."
+          ]
+        },
+        {
+          "h3": "You're the bottleneck",
+          "body": [
+            "Feels like: guilt. Approvals in your inbox, a rescheduled call, content that reads like a competitor wrote it because effectively one did.",
+            "Fix: give one person on your side authority to approve content without you, and give the agency direct access to your sales team. Both are uncomfortable and both work."
+          ]
+        },
+        {
+          "h3": "The strategy was wrong from the start",
+          "body": [
+            "Feels like: everything is being executed well and none of it converts. Rankings improve, traffic improves, leads don't. Usually it means the keyword set was chosen for volume rather than intent.",
+            "Fix: this one needs saying out loud in month four, not month ten. Take the ten queries producing the most impressions and ask whether a person typing them is anywhere near buying. If the answer is no for eight of them, the plan needs redoing — and a good agency will say so first."
+          ]
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long before I see results from an SEO agency?",
+      "a": "Leading indicators — impressions and average position for your target queries — usually move within four to eight weeks. Traffic follows in month three to four, and leads in month four to six on shorter sales cycles. Six to twelve months is where compounding shows up."
+    },
+    {
+      "q": "Why did my traffic not increase even though impressions went up?",
+      "a": "Because impressions count every time Google shows you, and clicks only happen when someone picks you. A page moving from position 58 to 19 gains a lot of impressions and almost no clicks, since click-through rate collapses below page one. It's genuine progress that hasn't paid yet."
+    },
+    {
+      "q": "How much time do I need to give my SEO agency each month?",
+      "a": "Four to six hours: a 60–90 minute monthly call, two to three hours reviewing and approving content and answering factual questions in drafts, and 30–60 minutes unblocking your developer. Below about two hours a month, the content ends up generic."
+    },
+    {
+      "q": "What should happen on a monthly SEO call?",
+      "a": "Ten minutes on what shipped, then forty on what it means, what went badly, and what's next — including what the agency needs from you, with dates. Your baseline number should be stated every month, unprompted, with the current figure beside it."
+    },
+    {
+      "q": "When is it reasonable to fire an SEO agency?",
+      "a": "Month three or four is the most expensive time to leave — you've paid for the audit, the fixes and the content and you exit before the compounding. Leave in month one if the fundamentals are wrong. After that, leave when leading indicators are flat and the agency can't explain why."
+    },
+    {
+      "q": "Do I need to write the content myself?",
+      "a": "No, but you have to feed it. The objections, pricing logic, and the words your customers actually use exist only in your head and your sales team's. An agency can research your market; it can't research your knowledge. Thirty focused minutes a month covers most of it."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "what-happens-in-the-first-90-days-with-an-seo-agency" },
+    { "type": "journal", "slug": "why-clients-fire-their-seo-agency-in-month-four" },
+    { "type": "journal", "slug": "what-clients-have-to-do-for-seo-to-work" },
+    { "type": "journal", "slug": "how-to-read-an-seo-report" },
+    { "type": "glossary", "slug": "impressions" },
+    { "type": "services", "slug": "seo-reporting-services" }
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "slug": "when-to-bring-seo-in-house",
+  "type": "journal",
+  "primaryKeyword": "when to hire an in-house seo",
+  "secondaryKeywords": [
+    "in house seo vs agency",
+    "should i hire an seo manager",
+    "building an internal seo team",
+    "first seo hire",
+    "agency to in house transition"
+  ],
+  "cluster": "client-education",
+  "intent": "commercial",
+  "h1": "When to Bring SEO In-House (And Why It's Later Than You Think)",
+  "metaTitle": "When to Bring SEO In-House Instead of Hiring Out",
+  "metaDescription": "Bring SEO in-house when you publish 8+ pages a month and control dev time. Here's the trigger, the loaded cost, and why the first hire should own.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Bring SEO in-house when two things are true at once: you've sustained roughly eight or more substantial pages a month for two consecutive quarters, and you control real developer capacity rather than filing tickets into someone else's queue. Below that, an internal hire spends most of their week waiting. Hire an owner first, never an executor.",
+  "takeaways": [
+    "Two gates, both required: **sustained publishing above ~8 pages a month for two quarters**, and **dev capacity you actually control**. One without the other means it's too early.",
+    "The first hire should **own** the function — strategy, priority, briefs, the number — not execute it. Execution is the cheapest thing to buy outside and the most expensive thing to under-use inside.",
+    "A ₹75,000/mo retainer and a single in-house hire cost roughly the same once you load salary, statutory contributions, tools, recruitment and ramp. The comparison isn't price, it's what each one buys.",
+    "A team of one has a bus factor of one. A three-month vacancy plus a three-month ramp is half a year of nothing, and it happens more often than anyone plans for."
+  ],
+  "sections": [
+    {
+      "h2": "The trigger isn't revenue. It's throughput.",
+      "body": [
+        "Founders usually ask this question in revenue terms — at what size should we stop paying an agency and hire someone? It's the wrong axis. A ₹50-crore business publishing two pages a quarter has nothing for an in-house SEO to do; a ₹6-crore content business shipping twelve pages a month is already past the line.",
+        "The honest trigger is throughput, and it has two gates. Both have to be open.",
+        "**Gate one: sustained publishing volume.** Roughly eight or more substantial pages a month, held for two consecutive quarters. Not eight in a burst. Not eight planned. Eight live, twice over. Below that, the coordination work an in-house SEO does — briefing, reviewing, wiring internal links, keeping the map coherent — doesn't fill a week, and you've hired somebody who will spend three days of five looking for something useful to do. That's how good SEO hires quit inside a year.",
+        "**Gate two: developer capacity you control.** A named developer with recurring hours, or a release path you can put an SEO change into without begging. If a title-tag fix needs a ticket, a sprint slot, QA and a fortnightly release window, then your in-house SEO inherits exactly the bottleneck your agency had — except now you're paying salary for someone to sit inside your queue rather than a retainer for someone to shout at it from outside.",
+        "The reason both gates matter is that they're the two things an agency genuinely cannot fix from the outside. Everything else — technical depth, writing capacity, link acquisition — is buyable. Priority inside your company and access to your build pipeline are not."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The premature hire",
+        "body": "The most common version of this mistake: a founder frustrated with an agency hires a mid-level SEO to \"bring it in-house\", the new hire has no dev capacity and no content budget, and nine months later the conclusion is that SEO doesn't work. It wasn't the agency and it wasn't the hire. Neither had the two things that make the work possible."
+      }
+    },
+    {
+      "h2": "Hire an owner, not an executor",
+      "body": [
+        "Here's the part that gets the first hire wrong more often than the timing does. Companies hire an SEO executive or a mid-level specialist — someone to do keyword research, write meta titles, run the audit tool, publish. An executor. It feels like the safe, affordable start.",
+        "It's the wrong shape, for a structural reason. Execution is the part of SEO with the deepest, cheapest external market. There are excellent freelance technical SEOs, excellent writers, and agencies with link teams that took years to build relationships you cannot replicate with one salary. Buying execution outside is easy. What you can't buy outside is somebody who sits in your Monday standup, knows the product roadmap, can tell the CTO why the redirect map matters, and decides what gets built next.",
+        "So the first hire is an owner: someone senior enough to hold the plan, arbitrate priority against other teams, write or commission briefs that carry real subject knowledge, manage external capacity, and be accountable for one number. They multiply whatever you buy outside. An executor only adds their own two hands, and their hands are the cheapest ones on the market."
+      ],
+      "subs": [
+        {
+          "h3": "What an owner actually does in week one",
+          "bullets": [
+            "Takes the keyword map and the baseline off the agency and makes them internal documents.",
+            "Gets a standing slot in the engineering planning meeting — recurring, not ad hoc.",
+            "Builds the brief pipeline: who gets interviewed, when, and who signs off on claims.",
+            "Sets the reporting shape and stops the monthly slide deck that nobody reads.",
+            "Names the one number the function is judged on, and where it lives."
+          ]
+        },
+        {
+          "h3": "The signals you're looking at an owner, not an executor",
+          "bullets": [
+            "They ask about your dev release cadence before they ask about your tool stack.",
+            "They ask what the sales team says loses deals, not what your top keywords are.",
+            "They can explain what they'd stop doing, not just what they'd start.",
+            "They've managed external agencies or freelancers before, and can describe a brief they wrote that produced something good.",
+            "They're comfortable telling you an idea of yours is a waste of a quarter."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The fully loaded cost, honestly",
+      "body": [
+        "Salary is the number people compare, and it's the smallest part of the comparison. Here's the full shape of both sides.",
+        "A caveat on the salary figures: we can't cite a survey, and Indian SEO pay varies enormously by city, by whether you're hiring from an agency or a product company, and by how much of the role is strategy. What follows are ranges we see in the market, presented as ranges precisely because a single number here would be invented. Metro salaries — Bangalore, Delhi NCR, Mumbai, Pune, Hyderabad — sit meaningfully above tier-2 for the same seniority. [What it costs to hire SEO talent in India](/journal/what-it-costs-to-hire-seo-talent-in-india) goes into the bands in more detail."
+      ],
+      "table": {
+        "caption": "Loaded annual cost: one senior in-house SEO owner versus a ₹75,000/mo agency retainer.",
+        "head": ["Line item", "In-house owner (metro)", "Agency retainer"],
+        "rows": [
+          [
+            "Base compensation",
+            "The dominant cost, and it buys one person's forty hours — most of which goes on coordination, not production.",
+            "₹9,00,000 a year at ₹75,000/mo, ex-GST. Buys a team's part-time attention across four disciplines."
+          ],
+          [
+            "Statutory and benefits",
+            "Employer PF, gratuity accrual, insurance, bonus. Adds materially on top of base — budget for it rather than discovering it.",
+            "None. It's a service invoice."
+          ],
+          [
+            "Tools",
+            "Backlink and rank tooling, a crawler, a content tool. Roughly ₹1.5–4 lakh a year for a single-seat setup, more with multiple seats.",
+            "Included. Agencies amortise enterprise seats across accounts, which is one of the few real economies of scale in this business."
+          ],
+          [
+            "Recruitment",
+            "Agency fees commonly run a meaningful percentage of first-year CTC, plus your own hiring time. A senior SEO search regularly takes 8–14 weeks.",
+            "A month of sales calls, and you can start in a fortnight."
+          ],
+          [
+            "Ramp",
+            "60–90 days before output is trustworthy, even for a strong hire. That period is paid and mostly unproductive.",
+            "Two to four weeks of audit and setup, which is billable but is also the work."
+          ],
+          [
+            "Production capacity",
+            "Zero, beyond what one person can write and build themselves. Content and links still have to be bought.",
+            "Writers, technical time and outreach are inside the fee."
+          ],
+          [
+            "Risk if it goes wrong",
+            "Notice period, replacement search, a second ramp. Six months is common.",
+            "30 days' notice on our terms. Whatever your contract says on somebody else's."
+          ]
+        ]
+      },
+      "bullets": [
+        "The two columns land close enough that price shouldn't decide it. What differs is what the money buys — one senior brain with full context, or a spread of specialisms with none.",
+        "The trap is assuming in-house is cheaper because the salary line looks smaller than the retainer. Add statutory costs, tools, recruitment and ramp, then remember you still have no content or link production. That's the same money for a fraction of the output.",
+        "The genuine saving arrives later, at scale. Once you're publishing twenty-plus pages a month across multiple markets, an internal pod is cheaper per unit than any agency. Most companies asking this question are five to seven years from that point."
+      ]
+    },
+    {
+      "h2": "What each side is actually good at",
+      "body": [
+        "This isn't a close-run thing on either axis. Each model has a category of work it does obviously better, and pretending otherwise is how companies pick wrong."
+      ],
+      "subs": [
+        {
+          "h3": "In-house wins on",
+          "bullets": [
+            "**Context.** They know why the product is priced that way and which customer segment sales actually wants. No agency gets there in a quarter.",
+            "**Internal priority.** An employee can argue for engineering time in a room an agency is never invited to.",
+            "**Speed of small decisions.** No scoping call for a fifteen-minute change.",
+            "**Subject depth.** They can sit with the head of product for an hour on a Tuesday, which is where genuinely differentiated content comes from.",
+            "**Institutional memory.** They remember why the /pricing URL changed in 2024, which prevents somebody breaking it again."
+          ]
+        },
+        {
+          "h3": "An agency wins on",
+          "bullets": [
+            "**Range.** Technical, content, links and analytics are four different specialisms. A single hire is strong in one and adequate in two.",
+            "**Pattern recognition.** Having watched a Shopify migration go wrong four times is worth more than reading about it once.",
+            "**Elasticity.** Six writers for a quarter, then two. You cannot do that with employees, and shouldn't try.",
+            "**Link and PR relationships.** These take years to build and don't attach to a single salary.",
+            "**No single point of failure.** If somebody quits mid-quarter, that's the agency's problem to absorb, not yours."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The comparison most people actually need",
+        "body": "If you're weighing this as a straight either/or, the underlying question is usually a budget one. [Agency versus in-house](/compare/agency-vs-in-house) lays out the trade-off directly, and it's worth reading alongside this before you write a job description."
+      }
+    },
+    {
+      "h2": "The hybrid, and how to split the scope",
+      "body": [
+        "Almost every company that gets this right ends up hybrid for years, not because it's a compromise but because it's the shape that matches how the work divides. One internal owner, external capacity underneath. The split isn't arbitrary — it follows the line between what requires being inside your company and what requires having done it a hundred times.",
+        "Where the split usually goes wrong is scope drift: the agency slowly becomes a content vendor with no strategic input, or the internal owner slowly becomes a project manager forwarding emails. Write the split down and review it every quarter."
+      ],
+      "table": {
+        "caption": "A workable scope split between an internal SEO owner and an external team.",
+        "head": ["The work", "Who owns it", "Why"],
+        "rows": [
+          [
+            "Strategy and priority",
+            "Internal",
+            "It's a business decision about where to spend a year. That needs someone who'll still be there when it pays off."
+          ],
+          [
+            "The number and the reporting",
+            "Internal",
+            "The person reporting on the work shouldn't be the person selling the next quarter of it."
+          ],
+          [
+            "Subject-matter briefs and expert access",
+            "Internal",
+            "Only an employee gets forty-five minutes of your best engineer's time without a calendar war."
+          ],
+          [
+            "Dev queue and release negotiation",
+            "Internal",
+            "Requires standing in the organisation. This is the single biggest reason to hire at all."
+          ],
+          [
+            "Technical audits and migrations",
+            "External",
+            "Deep, occasional, expensive to keep in-house. You need it twice a year and you need it excellent."
+          ],
+          [
+            "Content production at volume",
+            "External",
+            "Elastic by nature. Six writers this quarter, two the next, without a headcount conversation."
+          ],
+          [
+            "Links and digital PR",
+            "External",
+            "Relationship-driven and slow to build. One salary cannot replicate a team's contact list."
+          ],
+          [
+            "The second opinion",
+            "External",
+            "Someone whose job is to say the internal plan is wrong. That role is impossible to fill from inside."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Hiring risk: what happens when your one SEO leaves",
+      "body": [
+        "Nobody plans for this and it happens constantly, because SEO people are portable, in demand, and frequently underpaid relative to the value they hold. When your team of one leaves, the arithmetic is brutal: notice period, a senior search that regularly takes eight to fourteen weeks, then sixty to ninety days of ramp for whoever replaces them. Round it up and you have most of a year where the function exists on the org chart and nowhere else.",
+        "Worse than the gap is the loss of tribal knowledge. The reason those 400 URLs redirect the way they do. The half-finished migration plan. The relationship with the one developer who actually ships things. All of it walks out with them unless somebody insisted on documentation while there was no crisis.",
+        "This isn't an argument against hiring. It's an argument for a specific set of habits from day one, and for keeping some external capacity even after the hire lands — the hybrid earns its keep the week the resignation arrives."
+      ],
+      "numbered": [
+        "**Everything lives in company accounts.** Search Console, GA4, the rank tracker, the tool subscriptions, the CMS. Never a personal Gmail, never a personal tool licence expensed monthly.",
+        "**The keyword map and the baseline are shared documents**, not files on a laptop. Someone else should be able to open both tomorrow and understand them.",
+        "**A running decision log.** One page. What we changed, when, and why. Ten minutes a month, and it is the single most valuable artefact when the person leaves.",
+        "**A second person who can publish.** Not an SEO — a marketer or a developer with CMS rights and the basics documented. Enough to keep the site from decaying for eight weeks.",
+        "**Keep a small external retainer even after the hire.** Not the full scope — technical and links is usually enough. It costs less than the gap it insures against, and it means the function doesn't stop while you recruit."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Watch the compensation gap",
+        "body": "A good in-house SEO builds a track record you can point at, which makes them more valuable outside your company than the salary you set eighteen months ago. If you don't revisit their pay before they revisit it for you, you'll pay the search fee and the ramp instead. That's a worse deal than the raise, and it's a completely avoidable one."
+      }
+    },
+    {
+      "h2": "The sequence that works, by stage",
+      "body": [
+        "Four stages, and most companies move through them in this order. Skipping one usually means paying for it later."
+      ],
+      "numbered": [
+        "**Under 4 pages a month, no dev capacity.** A freelancer or a small retainer. Hiring anybody internally at this stage buys you an expensive person waiting for work. Fix the site, publish consistently, prove there's a market before you build a function.",
+        "**4–8 pages a month, some dev access.** An agency retainer, with someone internal owning approvals and access — usually a marketing lead doing this as a third of their job. This is where most Indian companies between ₹5 crore and ₹50 crore genuinely belong, and there's no shame in staying here for years.",
+        "**8+ pages a month sustained for two quarters, plus dev capacity.** Hire the owner. Keep the agency at reduced scope: technical, links, and overflow content production. The owner's first quarter is spent taking ownership of the map, the baseline and the dev relationship — not writing.",
+        "**20+ pages a month, multiple markets or languages.** Build the pod: owner, technical SEO, content lead, and production capacity that's part internal, part bought. External spend shifts to specialist work only — migrations, digital PR, penalty recovery. This is the only stage where in-house is genuinely cheaper per unit of output."
+      ]
+    },
+    {
+      "h2": "What we do when a client tells us they're hiring",
+      "body": [
+        "We help, and it costs us money, and we'd rather do it than argue. When a client is genuinely at the two gates, an internal owner is the right call and pretending otherwise would be selling them a worse outcome to protect a retainer.",
+        "Practically that means: we brief the hire, hand over the keyword map, the baseline document, the decision log and every account, and we scope down rather than fight for the full retainer. Everything is yours anyway — no lock-in, 30 days' notice, and you keep every asset when you leave, which is a contract term rather than a favour.",
+        "There's a version of this we say on first calls too, which loses us deals. If you've already got a strong internal SEO and a developer who ships, you may not need us at all — or you may need six weeks of technical work rather than a retainer. We only take three clients a month because our guarantee puts a quarter's fee at risk against your own frozen baseline, so signing someone who doesn't need us is a bad trade in both directions.",
+        "For the record, our SEO work runs from ₹75,000 a month, and from ₹40,000 for smaller sites, ex-GST. [The guarantee and how it's measured](/seo), and [what a ₹75,000 retainer actually buys](/journal/what-a-75000-rupee-seo-retainer-actually-buys) if you want the like-for-like against a salary."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "When should I hire an in-house SEO instead of using an agency?",
+      "a": "When two things are true together: you've sustained roughly eight or more substantial pages a month for two consecutive quarters, and you control real developer capacity rather than filing tickets into a queue you don't own. One gate without the other means it's too early — the hire will spend most of their week waiting on someone else."
+    },
+    {
+      "q": "Should my first SEO hire be a specialist or a manager?",
+      "a": "An owner, not an executor. Execution — technical work, writing, outreach — has a deep and cheap external market. What you can't buy outside is someone who sits in your planning meetings, holds priority against other teams, and is accountable for the number. An owner multiplies external capacity; a specialist only adds their own two hands."
+    },
+    {
+      "q": "Is in-house SEO cheaper than an agency?",
+      "a": "Rarely at first. Once you load salary, employer statutory contributions, tools at roughly ₹1.5–4 lakh a year, recruitment and a 60–90 day ramp, a single senior hire lands close to a ₹75,000/mo retainer — and you still have no content or link production. In-house gets cheaper per unit only above roughly twenty pages a month."
+    },
+    {
+      "q": "Can I run SEO with an in-house person and an agency together?",
+      "a": "Yes, and it's the shape most companies settle into. Internal owns strategy, priority, subject-matter briefs, the dev queue and the reporting. External owns technical depth, content production at volume, links and digital PR, plus the second opinion. Write the split down and review it quarterly, or scope quietly drifts."
+    },
+    {
+      "q": "What happens if my only SEO person leaves?",
+      "a": "Realistically, most of a year: notice period, an eight-to-fourteen-week senior search, then sixty to ninety days of ramp. The bigger loss is tribal knowledge. Keep every account in company ownership, keep a shared decision log, train a second person to publish, and hold a small external retainer as insurance against exactly this."
+    },
+    {
+      "q": "How much dev capacity does an in-house SEO actually need?",
+      "a": "Enough to ship a change without negotiating for it. In practice that's a named developer with recurring hours, or a release path SEO changes can enter directly. If a title-tag fix needs a ticket, a sprint slot, QA and a fortnightly window, hiring won't fix it — you'll just be paying salary for someone stuck in the same queue."
+    }
+  ],
+  "related": [
+    { "type": "compare", "slug": "agency-vs-in-house" },
+    { "type": "answers", "slug": "should-i-hire-an-seo-agency-or-do-it-in-house" },
+    { "type": "journal", "slug": "what-it-costs-to-hire-seo-talent-in-india" },
+    { "type": "answers", "slug": "what-does-an-seo-manager-do" },
+    { "type": "cost", "slug": "seo-agency-cost" },
+    { "type": "services", "slug": "seo-consulting" }
+  ]
+}

@@ -8,7 +8,7 @@ import { FinalCta } from '@/components/FinalCta';
 export const metadata: Metadata = {
   title: 'Performance Marketing, Run Like Our Own Money',
   description:
-    'Full-funnel Meta + Google paid media — creative, server-side tracking, CRO and reporting — on a flat fee with zero media markup. Beat your agreed baseline in 90 days or the fee is free. From ₹40,000/mo.',
+    'Full-funnel Meta and Google ads on a flat fee with zero media markup. Beat your agreed baseline in 90 days or the fee is free. From ₹40,000/mo.',
   alternates: { canonical: '/performance' },
 };
 

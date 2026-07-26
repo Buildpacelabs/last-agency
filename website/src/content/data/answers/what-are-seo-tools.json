@@ -1,0 +1,238 @@
+{
+  "slug": "what-are-seo-tools",
+  "type": "answers",
+  "primaryKeyword": "what are the seo tools",
+  "secondaryKeywords": [
+    "which tools are used for seo",
+    "what are seo tools",
+    "seo tools list",
+    "tools used in seo"
+  ],
+  "cluster": "seo-howto",
+  "intent": "informational",
+  "h1": "The SEO tool stack, by job to be done",
+  "metaTitle": "What Are SEO Tools? Grouped by the Job",
+  "metaDescription": "What are the SEO tools worth having? Grouped by job, from crawling to rank tracking, with a free option for each and the INR cost of a working stack.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "SEO tools are software that collects data you can't gather by hand: how a crawler reads your site, which queries you appear for, who links to whom, and where you rank. They split into six jobs. Google's own free tools cover most of those jobs for your own site; paid tools mainly exist to show you everyone else's.",
+  "takeaways": [
+    "Six jobs, not fifty products: crawling, keyword research, rank tracking, link analysis, performance, and reporting.",
+    "Every search volume number you have ever seen is **an estimate**. No two tools agree, because they're modelling the same thing from different panels.",
+    "A free stack — Search Console, GA4, Screaming Frog's free tier, Keyword Planner, Trends, Bing Webmaster Tools — genuinely covers a small site's first six months at ₹0.",
+    "The first thing worth paying for is a crawler licence, not a keyword suite. It answers questions nothing free can."
+  ],
+  "sections": [
+    {
+      "h2": "What a tool does, and the two things it can't",
+      "body": [
+        "An SEO tool is a data collector with a dashboard bolted on. It crawls pages the way a search engine would, samples search results from various locations, maintains an index of links between sites, or reads an API that Google exposes. That's the whole category.",
+        "Two limits are worth stating before the shopping list, because most people discover them after the invoice.",
+        "**No tool ranks anything.** Software can tell you that fourteen product pages share one title and that three of them have no internal links. Somebody still has to write the titles and add the links. The gap between the report and the fix is where SEO budgets go to die.",
+        "**Volume numbers are estimates, always.** Search volumes come from clickstream panels, Google Ads data and modelling. That's why two tools will show 2,400 and 8,100 for the same phrase without either being lying. Use volume for rough sizing and rank your decisions on intent instead."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The one number that isn't modelled",
+        "body": "Search Console impressions come from Google itself — they're a count of times your page appeared, not an estimate of anything. If a tool says a keyword has zero volume and Search Console shows you 400 impressions for it last month, the tool is wrong and you are not."
+      }
+    },
+    {
+      "h2": "The six jobs, and a free option for each",
+      "body": [
+        "Group tools by the question they answer and the shelf gets much shorter. Every category below has a free option that's genuinely usable, not a demo."
+      ],
+      "table": {
+        "caption": "SEO tool categories, the question each answers, and what free covers.",
+        "head": [
+          "Job",
+          "The question it answers",
+          "Free option",
+          "Paid, if you need it"
+        ],
+        "rows": [
+          [
+            "Crawling and technical audit",
+            "What does a bot see when it walks my site?",
+            "Screaming Frog free tier (500 URLs), Search Console's Pages report",
+            "Screaming Frog licence, Sitebulb"
+          ],
+          [
+            "Keyword and SERP research",
+            "What do people search, and who currently answers it?",
+            "Search Console, Keyword Planner, Trends, Bing Webmaster Tools, autocomplete",
+            "Ahrefs, Semrush, Mangools, Ubersuggest"
+          ],
+          [
+            "Rank tracking",
+            "Where do I sit for the queries I chose?",
+            "Search Console average position, filtered by query",
+            "A dedicated tracker with daily, location-specific data"
+          ],
+          [
+            "Link analysis",
+            "Who links to me, and to the people beating me?",
+            "Search Console Links report, Ahrefs Webmaster Tools for verified sites",
+            "Ahrefs, Semrush, Majestic"
+          ],
+          [
+            "Performance and rendering",
+            "Is the page fast, and can Google see the content?",
+            "PageSpeed Insights, Lighthouse, Chrome UX Report, URL Inspection",
+            "Rarely needed for a small site"
+          ],
+          [
+            "Analytics and reporting",
+            "Did any of this produce a lead?",
+            "GA4, Looker Studio, your CRM",
+            "Nothing, until reporting to clients becomes the job"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Google's own stack, which almost everyone under-uses",
+      "body": [
+        "Before you spend anything: Google gives away tools that are more authoritative than anything you can buy, because the data comes from the source rather than a model of it.",
+        "The catch is that all of them are limited to your own property. They'll tell you the truth about you and nothing at all about your competitors, which is exactly why paid tools exist."
+      ],
+      "bullets": [
+        "**Search Console** — 16 months of real queries, clicks, impressions and average position, plus indexing status per URL and the live URL Inspection test. The single most valuable free tool in SEO and the least opened.",
+        "**Google Analytics 4** — what visitors did after they arrived, and whether they converted. Pair it with Search Console rather than replacing one with the other; we've written up [how GA4 and Search Console differ](/compare/ga4-vs-search-console).",
+        "**Keyword Planner** — free with a Google Ads account, though volumes appear as wide buckets unless the account is spending.",
+        "**Google Trends** — relative interest, seasonality and regional splits. The best free way to compare two phrasings across Indian states.",
+        "**PageSpeed Insights and Lighthouse** — Core Web Vitals with real-user data where Google has enough of it.",
+        "**Rich Results Test and the Schema Markup Validator** — check your structured data actually parses before you wonder why it isn't showing.",
+        "**Looker Studio** — free dashboards connected straight to Search Console and GA4. Enough reporting for most teams, forever."
+      ]
+    },
+    {
+      "h2": "Buy a crawler before you buy a keyword suite",
+      "body": [
+        "This is the recommendation that surprises people, and it holds for almost every site under a few thousand pages.",
+        "A crawler walks every URL on your site and returns what a bot sees: status codes, redirect chains, titles, meta descriptions, canonical tags, headings, word counts, internal link counts, images without alt text, pages nobody links to. It's the only way to answer questions like \"how many of my 900 product pages have a duplicate title?\" without opening 900 tabs.",
+        "Nothing free replaces it above 500 URLs. Keyword ideas, by contrast, are freely available from Search Console, autocomplete and your own support inbox — we've listed [nine free places to find keywords](/answers/where-to-find-keywords-for-seo), and the good ones don't come from tools at all.",
+        "So the order is: crawler first, keyword suite later, everything else only when a specific question forces it."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Crawl your own site before your first agency call",
+        "body": "Run the free crawler tier over your site and note the number of 4xx URLs, duplicate titles and pages with no internal links. Then ask any agency pitching you what they found. It's a five-minute exercise that tells you whether they actually looked."
+      }
+    },
+    {
+      "h2": "Keyword, rank and link tools: you're buying a database",
+      "body": [
+        "The three paid categories all sell the same thing in different shapes — access to a dataset too expensive for you to build. Interfaces differ, marketing differs, and the underlying question is always which database you're renting."
+      ],
+      "subs": [
+        {
+          "h3": "Keyword and SERP databases",
+          "body": [
+            "A keyword tool stores billions of queries with modelled volume, difficulty scores and the pages currently ranking. Its real value isn't the volume column — it's seeing every query a competitor ranks for, which no free tool will ever show you. Difficulty scores are proprietary inventions, useful for sorting a list and meaningless as absolute numbers."
+          ]
+        },
+        {
+          "h3": "Rank trackers",
+          "body": [
+            "These check positions daily from a chosen location and device, which matters if you're a local business where results change between Andheri and Powai. Search Console's average position covers the same ground free but smooths across locations and devices, and it lags. The paid version buys precision and history, not truth."
+          ]
+        },
+        {
+          "h3": "Link indexes",
+          "body": [
+            "A crawler of its own, running continuously across the web, recording which page links to which. Size and freshness of that index is the whole product. Domain authority scores from these tools are their own metric, not Google's — we're blunt about that in [what domain authority actually is](/answers/what-is-domain-authority)."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "What a working stack costs in rupees",
+      "body": [
+        "Most of these products are priced in dollars or pounds, so the rupee figure moves with the exchange rate, and vendors reshuffle their tiers every year or so. Treat the bands below as planning numbers to check before you commit, not quotes."
+      ],
+      "table": {
+        "caption": "Three realistic tool budgets. Ex-GST, converted at roughly ₹85–₹90 to the dollar.",
+        "head": [
+          "Stack",
+          "What's in it",
+          "Monthly INR"
+        ],
+        "rows": [
+          [
+            "Free (months 1–6)",
+            "Search Console, GA4, Screaming Frog free tier, Keyword Planner, Trends, Bing Webmaster Tools, PageSpeed Insights, Looker Studio",
+            "₹0"
+          ],
+          [
+            "Minimum paid, one site publishing weekly",
+            "The above plus a crawler licence (annual, roughly ₹1,500–₹2,500 a month when spread) and one budget keyword suite",
+            "₹4,000–₹7,000"
+          ],
+          [
+            "Working stack, in-house team or small agency",
+            "Crawler licence plus one major suite at its entry tier, plus a dedicated rank tracker",
+            "₹12,000–₹20,000"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The cost that isn't the subscription",
+        "body": "A ₹14,000/month suite generates far more findings than one person can act on. The real spend is the hours someone must have free to fix what it reports. If nobody has those hours, the subscription buys a nicer description of the problem — which is why [choosing the right tool for the job](/answers/which-seo-tool-is-best) usually starts with what you can act on, not what you can see."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What are the most commonly used SEO tools?",
+      "a": "Google Search Console and Google Analytics 4 are near-universal and free. Beyond those, Screaming Frog for crawling, Ahrefs or Semrush for keywords and links, and Google's PageSpeed Insights for performance cover the great majority of professional work. Everything else is a specialisation on top of those five."
+    },
+    {
+      "q": "Which SEO tools are actually free?",
+      "a": "Search Console, GA4, Google Trends, Keyword Planner, PageSpeed Insights, Lighthouse, the Rich Results Test, Looker Studio, Bing Webmaster Tools, Ahrefs Webmaster Tools for sites you verify, and Screaming Frog up to 500 URLs. That list covers a small site's needs completely for the first six months."
+    },
+    {
+      "q": "Do I need paid SEO tools to rank?",
+      "a": "No. Paid tools buy speed and competitor visibility, neither of which is the constraint on a site publishing two pages a month. They start earning their fee when you're managing several sites, competing in a crowded market, or need to see keyword data for domains you don't own."
+    },
+    {
+      "q": "Why do SEO tools show different search volumes for the same keyword?",
+      "a": "Because every one of them is estimating. Volumes are modelled from clickstream panels, Google Ads ranges and proprietary maths, and the panels differ. Treat any volume figure as an order of magnitude rather than a number, and check Search Console impressions for the queries you already appear for."
+    },
+    {
+      "q": "What's the difference between an SEO tool and an AI SEO tool?",
+      "a": "Most AI SEO tools are the same data with a generation layer on top — they'll write the title or the brief rather than just flagging that it's missing. Useful for speed. They still can't decide what's worth writing, and the output needs the same editing any first draft does."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "which-seo-tool-is-best"
+    },
+    {
+      "type": "compare",
+      "slug": "ahrefs-vs-semrush"
+    },
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "answers",
+      "slug": "what-are-digital-marketing-tools"
+    },
+    {
+      "type": "services",
+      "slug": "seo-audit-services"
+    },
+    {
+      "type": "answers",
+      "slug": "where-to-do-seo"
+    }
+  ]
+}

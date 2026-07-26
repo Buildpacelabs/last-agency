@@ -1,0 +1,288 @@
+{
+  "slug": "what-an-seo-audit-should-actually-find",
+  "type": "journal",
+  "primaryKeyword": "what an seo audit should find",
+  "secondaryKeywords": [
+    "seo audit checklist",
+    "is my seo audit any good",
+    "technical seo audit deliverable",
+    "seo audit report review",
+    "what makes a good seo audit"
+  ],
+  "cluster": "seo-strategy",
+  "intent": "informational",
+  "h1": "A Good SEO Audit Finds Five Things. Most Find 300.",
+  "metaTitle": "What an SEO Audit Should Actually Find",
+  "metaDescription": "A good SEO audit ends with five ranked, owned, effort-estimated fixes, not a 300-row crawler export. Here's how to score the one you paid for.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "A good SEO audit ends with five findings, each carrying an owner, an effort estimate and a plausible revenue mechanism — not a 300-row crawler export sorted by severity colour. If your audit doesn't tell you what to do first and who does it on Monday, you bought a file, not an audit.",
+  "takeaways": [
+    "A crawler export is **evidence**, not an audit. The audit is the judgement you apply to it, and that judgement is the only part worth paying for.",
+    "Rank findings by revenue mechanism, not by the tool's red-amber-green. Severity colour is generic; your revenue isn't.",
+    "Five findings, each with an owner, an effort estimate in hours or sprint points, and a stated expected time-to-effect.",
+    "The checks that matter most on a real site are indexation gap, template-level errors and click depth — not 41 missing alt tags.",
+    "Score the audit on your desk out of five. Free ones score zero by design, and plenty of paid ones don't do much better."
+  ],
+  "sections": [
+    {
+      "h2": "The 300-row export is evidence. It is not an audit.",
+      "body": [
+        "Somebody sent you a spreadsheet. It has 312 rows. Column A says \"Issue\", column B says \"URL\", column C is colour-coded red, amber and green, and somewhere around row 180 there are 41 images missing alt text on a blog post from 2021.",
+        "That file took about eleven minutes to produce. You start a crawl, you go and make tea, you export. The tool did the work, and the tool has no idea what your business sells, which pages make money, or whether the 90 \"issues\" it flagged on your paginated archive matter at all.",
+        "This isn't a complaint about crawlers. Screaming Frog, Sitebulb, Ahrefs and Search Console are excellent and we run all of them. The complaint is about what gets sold. Evidence collection is the cheap half of an audit. The expensive half — the half you're actually paying a senior person for — is the judgement that turns 312 rows into a short answer to one question: **what do we do first?**",
+        "An audit that doesn't answer that question hasn't failed at being a good audit. It has failed at being an audit."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The eleven-minute tell",
+        "body": "If the deliverable's issue names match your crawler's default issue names word for word — \"Meta Description Too Long\", \"H1 Missing\", \"Non-Indexable Canonical\" — nobody rewrote anything. You were sent an export with a cover page. Ask what they changed about the tool's own prioritisation, and why."
+      }
+    },
+    {
+      "h2": "Severity colour is not revenue impact",
+      "body": [
+        "Every crawler ships a severity model. It has to be generic, because the tool doesn't know whether you're a 40-page law firm or a 400,000-SKU marketplace. Generic severity and your revenue are only loosely related, and on most sites they actively point in opposite directions.",
+        "Here's the mismatch we find most often when we re-audit a site that already has an audit sitting in a shared drive."
+      ],
+      "table": {
+        "caption": "What the tool flags loudly versus what actually costs money.",
+        "head": [
+          "Flagged red by the crawler",
+          "Actual revenue mechanism",
+          "Where it belongs"
+        ],
+        "rows": [
+          [
+            "41 images missing alt text on old blog posts",
+            "Marginal accessibility and image-search benefit. No commercial page affected.",
+            "Backlog, batched, one afternoon"
+          ],
+          [
+            "Meta descriptions over 160 characters",
+            "Google rewrites most of them anyway. Only matters where CTR is measurably below the position's norm.",
+            "Backlog, unless CTR data says otherwise"
+          ],
+          [
+            "H1 missing on 12 archive pages",
+            "Real but tiny, and none of the twelve are pages anyone buys from.",
+            "Backlog"
+          ],
+          [
+            "Not flagged at all: 3 of your 5 highest-margin service pages sit 4 clicks deep",
+            "Crawl priority and internal link equity both fall with depth. These are the pages that convert.",
+            "Finding #1. This week."
+          ],
+          [
+            "Not flagged at all: two pages competing for the same buying query",
+            "Google alternates between them, neither consolidates authority, both underperform.",
+            "Finding #2"
+          ],
+          [
+            "Not flagged usefully: 220 published pages, 130 indexed",
+            "Forty per cent of your content investment is invisible. Nothing else you do outranks that.",
+            "Finding #3"
+          ]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "The question that reorders everything",
+          "body": [
+            "For every finding, ask: **if this were fixed perfectly tomorrow, which specific page ranks better for which specific query, and does anybody buy anything on that page?** If you can't answer it in one sentence, the finding is maintenance, not strategy. Maintenance goes in a backlog. Strategy goes in the audit."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The five-finding format",
+      "body": [
+        "We cap our audit deliverable at five findings. Not because five is magic — because six is where a client's attention breaks and eleven is where it dies. Every founder who has been handed an eleven-item priority list has done the same thing: filed it, meant to get to it, and never got to it.",
+        "Each finding is one page and carries six fields. Miss any of the six and the finding won't get done, which makes it indistinguishable from a finding you never made."
+      ],
+      "numbered": [
+        "**The claim, in one sentence.** \"Three of your five commercial service pages are four clicks from the homepage.\" Not \"suboptimal site architecture\".",
+        "**The evidence.** The crawl depth report, the Search Console screenshot, the two competing URLs. A finding without evidence is an opinion and your developer will treat it like one.",
+        "**The revenue mechanism.** How this becomes money. \"These three pages account for the queries with buying intent; depth suppresses crawl frequency and internal link equity, so they rank below thinner competitor pages.\"",
+        "**The owner, by name or role.** \"Your Next.js developer\" or \"our content lead\". An unowned finding is a wish.",
+        "**Effort, in hours or sprint points.** A number, even a rough one. Half a day. Two sprint points. Three weeks of writing. This is what lets you sequence the list against everything else your team is doing.",
+        "**Expected time-to-effect, with a range.** \"Recrawl within 1–3 weeks, position movement 4–10 weeks after that, if the fix is the binding constraint.\" Ranges, and the conditional. Anyone giving you a single confident date is guessing at Google's crawl schedule."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where the other 295 rows go",
+        "body": "They don't get deleted — they go in an appendix marked \"maintenance backlog\", grouped by template and batched. Alt text on 41 images is one ticket, not 41. That's the correct home for tool output: attached, batched, and not competing for your attention with the three things that matter."
+      }
+    },
+    {
+      "h2": "The checks that actually matter, and how few of them there are",
+      "body": [
+        "This is the shortlist we run first on any site, before the crawler finishes. Each one is capable of capping every other thing you do, which is why they come first."
+      ],
+      "subs": [
+        {
+          "h3": "The indexation gap",
+          "body": [
+            "Count published pages. Count indexed pages in Search Console. If you've published 220 and 130 are indexed, you have a 40% content write-off and no amount of new publishing fixes it. This single check reorders more audits than everything else combined.",
+            "Then look at the reasons in the Pages report — `Crawled, currently not indexed` usually means quality or duplication; `Discovered, currently not indexed` usually means crawl priority or internal linking; `Alternate page with proper canonical tag` might be correct or might mean you've canonicalised your own money pages away. That last one costs real money and reads as green in most tools."
+          ]
+        },
+        {
+          "h3": "Template-level errors, not page-level ones",
+          "body": [
+            "One broken canonical on one page is a ticket. One broken canonical in a template is 4,000 pages. Always ask a crawler export the same question: **is this 300 problems or is it three problems, 100 times each?** It is almost always the second, and the audit that reports it as 300 has made your site sound unfixable when it needs an afternoon."
+          ]
+        },
+        {
+          "h3": "Click depth on the pages that make money",
+          "body": [
+            "List your five highest-margin pages. Count the minimum clicks from the homepage. Anything past three, on a site under a few thousand pages, is a self-inflicted wound — and it's fixed with internal links, which cost nothing. We've written the full method in [internal linking beats link building](/journal/internal-linking-beats-link-building)."
+          ]
+        },
+        {
+          "h3": "Crawl budget — but only if you've earned the problem",
+          "body": [
+            "[Crawl budget](/glossary/crawl-budget) is the most over-diagnosed issue in SEO audits and one of the least common in reality. Google has been clear that most sites don't need to think about it. It becomes real above roughly the tens of thousands of URLs, or wherever faceted navigation is generating near-infinite parameter combinations.",
+            "So: check `Settings → Crawl stats` for response times and crawl volume, and check whether your filters are spawning URLs. On a 200-page site, an audit that leads with crawl budget is padding."
+          ]
+        },
+        {
+          "h3": "Query cannibalisation on commercial terms",
+          "body": [
+            "Search Console, filter to a buying query, look at the Pages tab. If two URLs trade places month to month, you're splitting authority between them and losing to a competitor who consolidated. It's mundane, it's common, and crawlers essentially never catch it because it isn't visible in HTML."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Score the audit you already paid for",
+      "body": [
+        "Take the document off your desk. One point each, five available, no partial credit. This takes about four minutes and it is a more honest review than the one you'd get from asking the agency."
+      ],
+      "table": {
+        "caption": "Five-point audit scoring rubric.",
+        "head": [
+          "Point",
+          "The test",
+          "Fail looks like"
+        ],
+        "rows": [
+          [
+            "1",
+            "Is there a ranked shortlist of five or fewer things, in order?",
+            "A list of 40 \"recommendations\", or three tiers of 15"
+          ],
+          [
+            "2",
+            "Does every finding name an owner?",
+            "Passive voice throughout: \"should be implemented\""
+          ],
+          [
+            "3",
+            "Does every finding carry an effort estimate?",
+            "No hours, no points, no sizing anywhere in the document"
+          ],
+          [
+            "4",
+            "Does each finding explain how it becomes revenue?",
+            "\"Improves SEO health score\" or a made-up traffic projection"
+          ],
+          [
+            "5",
+            "Does it name something specific to your business — a page, a product, a competitor, a query?",
+            "The document would read identically if you swapped the logo"
+          ]
+        ]
+      },
+      "bullets": [
+        "**4–5:** you got what you paid for. Go and do finding one.",
+        "**2–3:** the analysis is probably fine and the packaging failed. Ask for it re-cut into the five-finding format. A competent auditor can do that in an hour, because the thinking already exists.",
+        "**0–1:** you bought a crawler export. If it was free, that was the intended outcome — see below. If you paid five figures for it, that's a conversation worth having, politely and in writing."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The swap test",
+        "body": "Point five is the one that catches the most audits. Replace the client name and the domain throughout the document. If it still reads as a perfectly sensible audit for a completely different company, nobody looked at your business — they looked at your HTML."
+      }
+    },
+    {
+      "h2": "Why the free audit scores zero on purpose",
+      "body": [
+        "Free audits aren't badly made. They're precisely made, for a different job than the one you think you've commissioned.",
+        "A free audit has one commercial function: generate enough alarm to book a call. That means it optimises for volume of problems, not for priority. Three hundred red rows is a better sales asset than five findings, because five findings look like something you could fix yourself — and one of them probably is.",
+        "You can spot the sales version by what it omits. It will not tell you which finding to do first. It will not size anything. It will not say \"three of these five you can fix internally in a day\". And it will end with a call booking rather than a next step.",
+        "None of this makes free audits worthless — a free crawl genuinely can surface a broken canonical or a noindex someone left in a template, and that's a real gift. Just read it as a lead magnet with useful side effects, and budget separately for the judgement. We've gone further into the mechanics in [why free SEO audits are sales pitches](/journal/why-free-seo-audits-are-sales-pitches)."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The projected-traffic slide",
+        "body": "If a free audit contains a chart projecting your traffic if you fix everything, that chart was generated by multiplying keyword volumes by a made-up click-through rate. No one can forecast that honestly for your site without knowing your conversion rate, your competitors' link profiles and Google's next twelve months. Treat it as decoration."
+      }
+    },
+    {
+      "h2": "What we hand over, and what it costs",
+      "body": [
+        "Our audit deliverable is five findings, one page each, plus an appendix that contains the entire crawl and everything we chose not to prioritise — because you should be able to check our judgement, not just accept it.",
+        "It also contains something most audits don't: a list of what we looked at and found to be **fine**. Your schema is correct. Your redirects are clean. Your Core Web Vitals pass on mobile. That section is unglamorous and it's the part clients tell us they found most reassuring, because it's the only evidence that the auditor looked rather than pattern-matched.",
+        "Audit work runs inside our SEO retainer, which starts at ₹75,000/mo, with smaller sites from ₹40,000/mo — the front of month one is mostly this. If you want the audit as a standalone piece, [our SEO audit service](/services/seo-audit-services) covers scope and turnaround, and [what SEO costs in India](/cost/seo-cost-in-india) sets the wider market context.",
+        "One thing we won't do is send you a document with a projected traffic curve on it. We guarantee movement against your own baseline — your trailing-90-day qualified leads from organic search, frozen on day one — not a number we invented in a spreadsheet the week before you signed."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many issues should an SEO audit find?",
+      "a": "The number of issues is the wrong metric. A good audit finds however many issues exist and then reports five prioritised findings, with the rest batched into a maintenance appendix. Three hundred flagged rows usually means three template problems repeated a hundred times each, which is a much smaller and much more fixable story."
+    },
+    {
+      "q": "How much should an SEO audit cost in India?",
+      "a": "Standalone technical audits commonly run from about ₹25,000 for a small site to several lakh for a large ecommerce catalogue, and the spread is mostly seniority and site size. At our end audit work sits inside the retainer, which starts at ₹75,000/mo with smaller sites from ₹40,000/mo."
+    },
+    {
+      "q": "Is a free SEO audit worth anything?",
+      "a": "As a lead magnet with useful side effects, yes — a free crawl can genuinely surface a stray noindex or a broken canonical. As a plan, no. Free audits optimise for the number of problems found, because alarm books calls, whereas a real audit optimises for which single problem to fix first."
+    },
+    {
+      "q": "What should be in an SEO audit report?",
+      "a": "Five ranked findings, each with a one-sentence claim, evidence, a revenue mechanism, a named owner, an effort estimate and a time-to-effect range. Plus a maintenance appendix with the full crawl, and a short list of what was checked and found to be fine. That last part is how you tell somebody actually looked."
+    },
+    {
+      "q": "How long does an SEO audit take?",
+      "a": "Crawling is hours. The judgement is the slow part: one to two weeks for a typical site, longer for a large catalogue or a site with a messy migration history. If an agency turns around a bespoke audit in 24 hours, they ran a tool and formatted the output."
+    },
+    {
+      "q": "Should I fix everything in the audit?",
+      "a": "No, and an audit that expects you to hasn't done its job. Do the five findings in order, batch the maintenance appendix into one or two tickets when your team has capacity, and ignore anything that can't be traced to a page someone buys from. Perfect technical hygiene has never sold anything."
+    }
+  ],
+  "related": [
+    {
+      "type": "services",
+      "slug": "seo-audit-services"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-an-seo-audit"
+    },
+    {
+      "type": "journal",
+      "slug": "why-free-seo-audits-are-sales-pitches"
+    },
+    {
+      "type": "glossary",
+      "slug": "crawl-budget"
+    },
+    {
+      "type": "glossary",
+      "slug": "orphan-page"
+    },
+    {
+      "type": "compare",
+      "slug": "technical-seo-vs-content-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "our-favourite-seo-play-and-why-it-works"
+    }
+  ]
+}

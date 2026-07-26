@@ -1,0 +1,265 @@
+{
+  "slug": "international-seo-services",
+  "type": "services",
+  "primaryKeyword": "international seo services",
+  "secondaryKeywords": [
+    "international seo agency india",
+    "hreflang implementation service",
+    "multi country seo services",
+    "seo for us market from india",
+    "global seo agency india"
+  ],
+  "cluster": "vertical-seo",
+  "intent": "commercial",
+  "h1": "Selling abroad from India without splitting your rankings",
+  "metaTitle": "International SEO Services — India to US, UK and GCC",
+  "metaDescription": "International SEO for Indian companies selling into the US, UK and GCC. We settle the subfolder versus ccTLD question and get hreflang right first time.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "priceFrom": "From ₹75,000 / mo",
+  "answer": "International SEO decides three things: which domain structure carries your markets, whether hreflang is implemented correctly, and how you prove local relevance without a local office. For an Indian company on a .in domain chasing US traffic, the domain decision comes first and is close to irreversible. From ₹75,000 a month.",
+  "takeaways": [
+    "A `.in` domain is a **hard geographic signal** to Google. It's an asset in India and a handicap in Chicago, and no amount of content fixes that.",
+    "Subfolders on one gTLD keep every link compounding into one domain. ccTLDs split your authority into as many pools as you have markets — and as many link budgets.",
+    "Most hreflang rollouts fail on missing return tags or annotations pointing at URLs that canonical somewhere else. Both make Google ignore the whole set silently.",
+    "You pay in INR from ₹75,000/mo. The guarantee is scoped to one named market, with the baseline frozen on day one."
+  ],
+  "sections": [
+    {
+      "h2": "The domain decision comes first, and it's close to irreversible",
+      "body": [
+        "If your `.in` already ranks at home and you now want US buyers, the awkward truth is that your domain is working against you. Google treats country-code domains as a strong signal of who the site is for. `.in` says India, clearly and permanently. That's exactly what you wanted three years ago.",
+        "There are three ways out and they cost different things. Nobody should pick based on what a blog post recommends — pick based on how many markets you'll genuinely operate in, and how much link budget you have."
+      ],
+      "table": {
+        "caption": "Domain structures for an Indian company going international.",
+        "head": [
+          "Structure",
+          "Example",
+          "What it costs you",
+          "When it's the right call"
+        ],
+        "rows": [
+          [
+            "ccTLD per market",
+            "brand.in, brand.co.uk, brand.ae",
+            "Every domain starts from zero authority. You're funding one link programme per market, forever.",
+            "Four or more markets, local legal entities, local payment and support, and a budget that can feed each domain."
+          ],
+          [
+            "Subfolders on one gTLD",
+            "brand.com/in/, brand.com/us/",
+            "A migration off the `.in`, with the usual three-to-six-month wobble while equity settles.",
+            "The default for one to three markets. Every link earned anywhere lifts every market."
+          ],
+          [
+            "Subdomains",
+            "in.brand.com, us.brand.com",
+            "Google treats them more independently than folders in practice. You get some of the ccTLD downside without the geo signal.",
+            "Only when the tech stack forces it — separate platforms or separate teams per region."
+          ],
+          [
+            "Keep `.in`, add a second gTLD",
+            "brand.in for India, brand.com for the rest",
+            "Two authority pools and two content operations, permanently.",
+            "When the `.com` is unavailable at a sane price, or India is a genuinely separate business."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The rule we actually apply",
+        "body": "Under four markets and the `.com` is buyable? Migrate to the gTLD with subfolders and take the short-term hit. Four-plus markets with real local entities and a seven-figure annual link budget? ccTLDs earn their keep. Everything in between: subfolders. And check the registry rules before you commit — some ccTLDs require a local entity to register at all."
+      }
+    },
+    {
+      "h2": "hreflang: five errors that break most rollouts",
+      "body": [
+        "[hreflang](/glossary/hreflang) tells Google which version of a page belongs to which language and country. It doesn't improve rankings. It stops the wrong version outranking the right one and stops your two English pages fighting each other. When it's wrong, Google usually ignores the entire annotation set rather than half of it — which is why broken hreflang looks exactly like no hreflang."
+      ],
+      "numbered": [
+        "**Missing return tags.** If your `/us/` page points at `/uk/`, the `/uk/` page must point back. One-way annotations are discarded. This is the single most common failure we find.",
+        "**Invalid codes.** Language is ISO 639-1, region is ISO 3166-1 Alpha-2. `en-uk` is not a thing — the United Kingdom is `gb`. `en-eu` and `en-uae` aren't valid either.",
+        "**Annotations pointing at non-canonical or noindexed URLs.** If the hreflang target canonicals elsewhere, you've given Google two contradictory instructions and it will follow neither.",
+        "**No self-referencing tag.** Every page in the set must include itself. Sets without it are frequently dropped.",
+        "**No `x-default`.** Without it, a visitor from Singapore who matches none of your listed markets gets whichever version Google guesses. Usually the wrong one."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "How we implement it",
+        "body": "One method only — either the page head or the XML sitemap, never both done halfway. Full-set validation after every deploy, then ongoing monitoring, because a CMS release will break it eventually. That isn't pessimism; it's what happens on every rollout we've inherited."
+      }
+    },
+    {
+      "h2": "Ranking in a market where you have no office",
+      "body": [
+        "This is the part Indian companies underestimate. Getting the technical setup right makes you eligible. It doesn't make you credible. A US buyer comparing four vendors is reading trust signals whether they know it or not, and so is Google.",
+        "You don't need a Chicago address. You do need enough real, verifiable local presence that a search engine can resolve you as a legitimate option in that market."
+      ],
+      "bullets": [
+        "**Links from in-market publications.** A link from a UK trade title is worth more for UK rankings than five from Indian directories. This is slow and it's the largest line in the budget.",
+        "**Reviews on the platforms that market uses** — G2 and Capterra for US software buyers, Trustpilot for UK consumers, Clutch for services. Nobody can farm these for you and we won't try.",
+        "**Currency, spelling and vocabulary that match.** Prices in USD or GBP, not converted rupees. American spelling for the US. 'Holiday let' in the UK, 'vacation rental' in the US. It sounds trivial; it's the fastest tell that a page was written for somewhere else.",
+        "**A local phone number and stated support hours** in that timezone. A page that says 'IST 10–7' quietly disqualifies itself from an American shortlist.",
+        "**Entity consistency** — the same legal name, the same `Organization` schema, the same `sameAs` links to LinkedIn and Crunchbase across every market version.",
+        "**Case studies from that market**, if you have them. If you don't, say what you do have. Inventing a US client is the fastest way to lose the deal you were trying to win."
+      ],
+      "subs": [
+        {
+          "h3": "What in-market links actually cost, and why budgets rise per market",
+          "body": [
+            "This is the line that surprises founders. Earning coverage in a US or UK publication takes the same hours as earning it in India, but the pitch has to be relevant to that market's readers, which usually means a data story, a survey you actually ran, or a genuinely useful tool. Recycled Indian PR doesn't land abroad.",
+            "We won't quote you a per-link price, because we don't buy links and anyone quoting a fixed rate for editorial coverage is describing a paid placement with a nicer name. What we will do is tell you, before you commit to a market, roughly how much of the monthly retainer that market's link work will consume — and if the answer is 'more than the market is worth this year', we'll say to wait."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "GCC is two markets, not one",
+        "body": "English gets you a long way in the UAE and Saudi commercially, but Arabic-language search is where a large share of the consumer volume sits — and it's right-to-left, which most Indian-built themes handle badly. Budget for translation and for the layout work, or target the English-speaking segment honestly and say so."
+      }
+    },
+    {
+      "h2": "How long a US or UK rollout actually takes",
+      "body": [
+        "Faster than domestic SEO in one respect and slower in another. Faster because your product, your content and your technical foundations already exist. Slower because you're starting a link profile in a market where nobody has heard of you."
+      ],
+      "table": {
+        "caption": "Rough shape of a first-market international rollout.",
+        "head": [
+          "Phase",
+          "Timing",
+          "What happens"
+        ],
+        "rows": [
+          [
+            "Decision and audit",
+            "Weeks 1–3",
+            "Domain structure settled, market and keyword research in-market, baseline frozen, measurement split by country in GA4 and Search Console."
+          ],
+          [
+            "Structure and hreflang",
+            "Weeks 3–8",
+            "Migration or folder build, hreflang deployed and validated, geo-specific templates, currency and localisation work."
+          ],
+          [
+            "Content and relevance",
+            "Weeks 6–20",
+            "In-market pages written for in-market vocabulary, plus review-platform presence and the first PR placements."
+          ],
+          [
+            "Links and compounding",
+            "Month 3 onwards",
+            "Digital PR aimed at publications in the target market. This is the slow line and the one that decides the ceiling."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Budget for the migration dip",
+        "body": "Moving from `.in` to `.com` usually costs you four to twelve weeks of turbulence in Indian rankings, even with a complete redirect map. It recovers. Anyone telling you a migration carries no risk hasn't run one. We plan for it explicitly — see [site migration SEO](/services/site-migration-seo)."
+      }
+    },
+    {
+      "h2": "What's included, what isn't, and what you pay",
+      "body": [
+        "International SEO starts at **₹75,000 a month** for one target market alongside India, ex-GST. Additional markets are scoped separately, because a second market is not a second full retainer — the technical and strategic work is shared, the content and link work isn't. You pay in INR. We rank you in USD and GBP markets. Full pricing is on [pricing](/pricing)."
+      ],
+      "table": {
+        "caption": "What the international retainer covers, and what it doesn't.",
+        "head": [
+          "Included",
+          "Not included"
+        ],
+        "rows": [
+          [
+            "Domain structure recommendation with the reasoning written down, so you can disagree with it",
+            "Domain registration, hosting and CDN costs"
+          ],
+          [
+            "hreflang specification, validation after deploy, and ongoing monitoring",
+            "Developer implementation hours — we spec it, your team builds it, or we quote separately at cost"
+          ],
+          [
+            "In-market keyword and SERP research using the target country's results, not India's",
+            "Professional translation into non-English languages (we manage it, you pay the translator)"
+          ],
+          [
+            "Localised page copy and templates for the target market",
+            "Legal, tax or entity registration advice for the market you're entering"
+          ],
+          [
+            "Digital PR and link earning aimed at publications in that market",
+            "Paid search and paid social in the target market — that's [performance marketing](/performance)"
+          ],
+          [
+            "Country-segmented reporting in GA4 and Search Console",
+            "Sales enablement, local hiring, or fulfilment and logistics"
+          ]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "What the guarantee covers when you're entering a market cold",
+          "body": [
+            "The standard terms: we freeze your trailing-90-day qualified leads from organic search on day one, and if we haven't beaten that number in 90 days we keep working free until we do. No refund — unpaid work until the number clears.",
+            "Here's the honest complication nobody else will raise. If your US organic baseline is zero, beating it is trivial and the guarantee is theatre. So for a cold market we do one of two things, agreed in writing before we start: either the baseline stays on your **total** qualified organic leads across all markets, which is a real number and a real risk for us, or we run the first 90 days on your existing market while the new one is being built, then set a fresh in-market baseline at day 90. We'll recommend one. You choose.",
+            "What isn't on the table is a promised position in a foreign SERP. See how we compare against the alternative in [an Indian SEO agency against an international one](/compare/indian-seo-agency-vs-international-agency)."
+          ]
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can a .in domain rank in the United States?",
+      "a": "It can, but it's carrying weight. Google reads country-code domains as a strong signal of intended audience, so a `.in` competing for US commercial queries needs materially more authority than a `.com` to reach the same position. If the US is going to be a serious revenue line, move to a gTLD."
+    },
+    {
+      "q": "Do we need a US address or entity to rank in the US?",
+      "a": "Not for organic rankings on non-local queries. You do need in-market links, reviews on the platforms US buyers use, pricing in dollars and support hours that make sense. An entity matters for payments, tax and trust on the sales call — which is a different problem from the one we solve."
+    },
+    {
+      "q": "Should we use hreflang if all our pages are in English?",
+      "a": "Yes, if you have separate pages per country. `en-in`, `en-us` and `en-gb` versions of the same page compete unless you annotate them, and Google will often show the wrong one — usually the one with the wrong currency on it. If there's one English page for everyone, you don't need hreflang."
+    },
+    {
+      "q": "How much does international SEO cost from India?",
+      "a": "Ours starts at ₹75,000/mo ex-GST for one target market alongside India, with extra markets scoped on top. Content and link costs in USD and GBP markets run higher than Indian equivalents — a placement in a US trade publication costs multiples of an Indian one, and that's the honest reason budgets rise per market."
+    },
+    {
+      "q": "Will migrating from .in to .com hurt our Indian rankings?",
+      "a": "Temporarily, almost always. Expect four to twelve weeks of turbulence even on a clean migration with a complete redirect map. It recovers, and it recovers faster with a proper plan, but anyone promising a zero-impact migration is either inexperienced or selling. We plan for the dip rather than denying it."
+    },
+    {
+      "q": "Can you handle Arabic or European language versions?",
+      "a": "We manage the rollout — structure, hreflang, templates, in-market research and links — and we work with professional translators rather than machine output, which you pay for directly. What we won't do is claim in-house fluency we don't have and quietly run your Arabic pages through a model."
+    }
+  ],
+  "related": [
+    {
+      "type": "compare",
+      "slug": "subdomain-vs-subfolder"
+    },
+    {
+      "type": "glossary",
+      "slug": "hreflang"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-an-international-seo-agency"
+    },
+    {
+      "type": "compare",
+      "slug": "indian-seo-agency-vs-international-agency"
+    },
+    {
+      "type": "journal",
+      "slug": "indian-agencies-serving-global-clients"
+    },
+    {
+      "type": "services",
+      "slug": "site-migration-seo"
+    }
+  ]
+}

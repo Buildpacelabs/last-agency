@@ -1,0 +1,159 @@
+{
+  "slug": "seo-tips-for-beginners",
+  "type": "answers",
+  "primaryKeyword": "tips for seo",
+  "secondaryKeywords": [
+    "seo tips for beginners",
+    "best seo tips",
+    "simple seo tips",
+    "seo advice for new websites"
+  ],
+  "cluster": "seo-howto",
+  "intent": "informational",
+  "h1": "SEO tips that survive contact with a real site",
+  "metaTitle": "SEO Tips That Actually Hold Up in Practice",
+  "metaDescription": "Practical tips for seo that survive a real site: fifteen rules, each written as the specific mistake it prevents, plus five popular tips that are wrong.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "The SEO tips that hold up on a real site are mostly about restraint: one page per intent, titles written for the results page rather than the CMS, indexing fixed before more publishing, and fewer pages done properly. Every rule below exists because a specific mistake costs traffic, and each one names that mistake.",
+  "takeaways": [
+    "A tip you can't attach a mistake to is decoration. Every rule here names what goes wrong without it.",
+    "The most expensive beginner error isn't a bad title — it's **publishing more while half your site isn't indexed**.",
+    "Search volume without matching intent is the most reliably wasted money in SEO.",
+    "Five things you'll hear constantly — 2,000-word minimums, keyword density, directory submissions — are wrong, and section six says why."
+  ],
+  "sections": [
+    {
+      "h2": "Why every tip here is written as a mistake",
+      "body": [
+        "Generic advice is unfalsifiable. 'Create quality content' is true and useless, because nobody sets out to create bad content. It gives you nothing to check, nothing to fix, and no way of knowing whether you followed it.",
+        "So each rule below is written the other way round: as the specific mistake it stops you making, and what that mistake costs you in practice. If you can't name the failure a tip prevents, the tip is filler.",
+        "Fifteen rules, four groups. Then five popular tips that don't survive scrutiny, because unlearning is usually cheaper than learning."
+      ]
+    },
+    {
+      "h2": "Tips 1–4: get indexed before you get clever",
+      "body": [
+        "Nothing else on this page matters if Google can't see the pages. This is boring, it takes an afternoon, and skipping it is the reason plenty of new sites publish for a year and get nothing."
+      ],
+      "numbered": [
+        "**Verify Google Search Console the week you launch, not the week you get worried.** Prevents: having no idea what happened. Costs you: Search Console only shows data from the day you verify. Six months of history you never collected is six months of diagnosis you can't do.",
+        "**Check you're not blocking Google.** The staging `noindex` and the `Disallow: /` in `robots.txt` are meant to be removed at launch. Prevents: the single most catastrophic technical error there is. Costs you: literally all of your organic traffic, silently, until somebody happens to notice.",
+        "**Fix indexing before you publish more.** If Search Console shows 40 of your 100 pages indexed, adding 30 more pages just adds them at the same failure rate. Prevents: paying for content that can't appear in search. See [why pages don't get indexed](/answers/why-is-my-page-not-indexed-on-google) for the usual causes.",
+        "**Make sure every page is reachable by clicking, not just by sitemap.** Prevents: orphan pages. Costs you: slower discovery, and a page that receives no internal weight from the rest of the site, so it competes with one hand behind its back."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Do this before anything else on the list",
+        "body": "Open Search Console → Pages → 'Why pages aren't indexed'. If the not-indexed count is larger than the indexed count, close this page and go fix that. Titles and keywords are irrelevant on a URL Google has decided not to keep."
+      }
+    },
+    {
+      "h2": "Tips 5–8: one page, one intent",
+      "body": [
+        "Most content problems on small sites are really allocation problems. The writing is fine. It's just spread across pages that are quietly competing with each other, or aimed at a question the searcher wasn't asking."
+      ],
+      "numbered": [
+        "**One page per intent, permanently.** If two URLs both want to rank for 'seo pricing', you haven't doubled your chances — you've split them. Prevents: [keyword cannibalization](/glossary/keyword-cannibalization). Costs you: Google picks one of the two, usually not the one you'd have chosen, and it ranks lower than a single merged page would have.",
+        "**Match the format the results page is already showing.** Search your query and look at the top five. If they're all comparison tables and you wrote an essay, you've answered a different question. Prevents: a well-written page that can reach position 15 and never move. Read [search intent](/glossary/search-intent) if that distinction is new.",
+        "**Don't chase queries you'd never sell against.** 'What is marketing' has enormous volume and no buyers. Prevents: traffic that converts at zero. Costs you: content budget, plus a topical signal that tells Google you're about something other than what you sell.",
+        "**Answer the question before you tell the story.** Put the direct answer in the first sixty words, then explain. Prevents: losing the snippet and the AI citation to whoever answered faster. Costs you: the readers who skim, which is most of them."
+      ]
+    },
+    {
+      "h2": "Tips 9–11: write the title for the results page, not the CMS",
+      "body": [
+        "Your title tag competes with nine others in a list. It's read in about a second, next to rivals who have also had a go at it. Most titles lose that fight before the content is ever seen."
+      ],
+      "numbered": [
+        "**Write it for the searcher, not the admin panel.** 'Services | Company Name' is how a CMS labels a page, not how a person decides. Prevents: ranking well and getting clicked badly. Costs you: clicks on positions you already earned, which is the most annoying way to lose traffic.",
+        "**Unique title and description on every URL.** Prevents: template-generated duplicates across 200 pages. Costs you: control — when your titles are unhelpful, Google rewrites them from your page content, and you no longer choose the one line searchers read.",
+        "**Use the words people actually type, in the title and the H1.** A clever headline that shares no vocabulary with the query makes Google work out the match. Sometimes it does. Prevents: throwing away relevance you'd already earned for the sake of a pun."
+      ]
+    },
+    {
+      "h2": "Tips 12–15: fewer pages, better, and stop counting volume",
+      "body": [
+        "The instinct to publish weekly comes from social media, where the feed forgets you. Search doesn't forget you. A page from two years ago can still be your best-performing URL, which changes the maths completely."
+      ],
+      "numbered": [
+        "**Publish fewer, better pages.** Four pages a month you'd happily send to a customer beat twelve you'd be embarrassed by. Prevents: a growing pile of [thin content](/glossary/thin-content) that dilutes what your site appears to be about. Costs you: the content budget, and then the cleanup budget later.",
+        "**Update before you publish.** Before writing a new post, check whether you already covered the topic. Prevents: a second page competing with a page that was starting to work. Costs you: the ranking the original page had.",
+        "**Check intent before you check volume.** A 20,000-a-month keyword whose results page is entirely Wikipedia, news and government sites is not an opportunity — it's a wall with a number painted on it. Prevents: the most reliably wasted money in beginner SEO.",
+        "**Give every new page at least one internal link from an existing page** on the day you publish it, from body copy, with anchor text that describes it. Prevents: publishing into a void. Costs you: weeks of discovery time and whatever authority the linking page could have passed."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The cost side of publishing more",
+        "body": "Decent written content in India runs anywhere from a few thousand rupees a page to five figures for genuine expertise. That range is wide because 'a page' means very different things. Whatever your number is, multiply it by the pages you publish that never get indexed. That's the real cost of skipping tips 1 to 4."
+      }
+    },
+    {
+      "h2": "Five tips you'll hear everywhere that don't hold up",
+      "body": [
+        "These aren't fringe opinions. They're in most beginner guides, most YouTube explainers, and quite a few agency decks. They're still wrong, or at least badly out of date."
+      ],
+      "table": {
+        "caption": "Popular SEO advice that doesn't survive contact with how ranking actually works.",
+        "head": ["The tip you'll hear", "Why it doesn't hold up"],
+        "rows": [
+          [
+            "\"Aim for 2,000+ words\"",
+            "Length has never been a ranking factor. Longer pages correlate with covering a topic properly, and somebody sold the correlation as a rule. The right length is however long it takes to answer the query and stop."
+          ],
+          [
+            "\"Keep keyword density at 1–2%\"",
+            "Search engines stopped scoring raw term frequency a very long time ago. Writing to a percentage produces stilted prose and, ironically, narrower topic coverage than writing naturally."
+          ],
+          [
+            "\"Post on social media to help your SEO\"",
+            "Links from social platforms are almost all nofollowed, and Google has repeatedly said social signals aren't a direct ranking factor. Social helps distribution, distribution can earn links, links help. That's a three-step indirect chain, not a lever."
+          ],
+          [
+            "\"Submit your site to 100 directories\"",
+            "Bulk directory submission is a 2009 tactic aimed at directories nobody reads. Local business listings people genuinely use are a different thing entirely and are worth the effort — see [how to do local SEO](/answers/how-to-do-local-seo)."
+          ],
+          [
+            "\"Buy a few cheap backlinks to get started\"",
+            "Paid links that pass ranking signals are against Google's spam policies. Cheap ones come from the same handful of networks everyone else buys from, which is exactly what makes them detectable."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "How to test any SEO tip you're given",
+        "body": "Ask two questions. What specific mistake does this prevent, and how would I know if I'd got it wrong? Advice that survives both is worth following. Advice that survives neither is somebody filling a slide."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the single most important SEO tip for a beginner?",
+      "a": "Confirm Google can index your pages before you do anything else. Every other tip on this page assumes your content is eligible to appear in search results. On new sites, a leftover staging `noindex` or a blocking `robots.txt` rule is common enough that checking should be reflex, not an afterthought."
+    },
+    {
+      "q": "How many blog posts should a new site publish per month?",
+      "a": "Four genuinely useful pages a month, sustained for a year, outperforms twenty thin ones in a quarter followed by silence. The constraint is rarely writing capacity — it's whether you have four things worth saying that your buyers actually search for. If you don't, publish fewer and research more."
+    },
+    {
+      "q": "Do meta keywords still matter?",
+      "a": "No. Google confirmed years ago that it ignores the meta keywords tag, and it has been ignored for so long that any tool still prompting you to fill it in is telling you something about the tool. Spend the time on the title tag instead, which is read by both search engines and humans."
+    },
+    {
+      "q": "How long should I wait before deciding my SEO isn't working?",
+      "a": "Three months before judging anything, and only if you set a baseline on day one. Before that you're reading noise. What you can check earlier is whether impressions for your target queries are rising in Search Console — flat impressions at week eight usually means an indexing or intent problem, not a patience problem."
+    },
+    {
+      "q": "Can I do SEO without any paid tools?",
+      "a": "Yes, for a small site. Search Console, GA4 and Google's autocomplete cover keyword discovery, performance data and most diagnostics for free. Paid tools mainly buy you competitor visibility and backlink data, which start mattering once you're competing with someone who has both."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "search-intent" },
+    { "type": "glossary", "slug": "thin-content" },
+    { "type": "answers", "slug": "how-to-do-keyword-research" },
+    { "type": "journal", "slug": "how-many-blog-posts-you-actually-need" },
+    { "type": "compare", "slug": "technical-seo-vs-content-seo" },
+    { "type": "cost", "slug": "content-writing-cost-india" }
+  ]
+}

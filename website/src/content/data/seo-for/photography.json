@@ -1,0 +1,190 @@
+{
+  "slug": "photography",
+  "type": "seo-for",
+  "primaryKeyword": "seo for photographers",
+  "secondaryKeywords": [
+    "photography seo india",
+    "wedding photographer seo",
+    "seo for photography studios",
+    "image seo for portfolios",
+    "product photography leads seo"
+  ],
+  "cluster": "local-services",
+  "intent": "commercial",
+  "industry": "Photography",
+  "h1": "SEO for photographers whose best work is trapped in a slider",
+  "metaTitle": "SEO for Photographers: Images Google Can Read",
+  "metaDescription": "SEO for photographers in India. We make heavy portfolios fast and indexable, then rank city and genre pages so couples and brands find you first.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Photography sites lose search twice over: eight-megabyte galleries that fail Core Web Vitals on a mid-range Android, and a portfolio carrying almost no text for Google to read. Export the web copies at 2,048px in WebP, give every genre and city its own page, and write each shoot up in words beside the images.",
+  "takeaways": [
+    "Your full-resolution Lightroom export is a print file. Putting it on the web is the single most common reason a photography site is slow.",
+    "A gallery with no captions, no headings and no body copy ranks for your studio name and nothing else.",
+    "Genre plus city is the page structure. A wedding client, a maternity client and an ecommerce brand are three different businesses.",
+    "Vendor credits are the most natural links in any industry we work in — planners, venues, decorators and makeup artists all publish credit pages.",
+    "Client delivery galleries should be blocked from the index. They waste crawl and they're somebody's private wedding."
+  ],
+  "sections": [
+    {
+      "h2": "The gallery is the slowest page your client will ever open",
+      "body": [
+        "The pattern is almost universal. Files come out of Lightroom at 4,000 pixels and five megabytes because that's the print export, get uploaded straight to the portfolio, and sixty of them land on one page behind a fade-in animation. On a MacBook on office WiFi it's gorgeous. On a mid-range Android on 4G — which is where most Indian enquiries begin — the first photograph takes several seconds to paint, and [Core Web Vitals](/glossary/core-web-vitals) records exactly that.",
+        "None of this requires a redesign. It's export settings, template configuration and one afternoon of somebody's attention."
+      ],
+      "table": {
+        "caption": "What most photography sites do, what it costs, and the fix.",
+        "head": ["What the site does", "What it costs", "What to change"],
+        "rows": [
+          [
+            "Full-resolution exports uploaded straight from the catalogue — 3,000–5,000px, 4–8 MB each",
+            "A failed [Largest Contentful Paint](/glossary/largest-contentful-paint) before anyone has seen a single frame",
+            "Export web copies at 2,048px on the long edge, quality around 70–80, in WebP or AVIF. Keep the full-res masters for print and delivery."
+          ],
+          [
+            "Sixty images on one gallery page",
+            "Enormous total page weight, and a crawler that stops long before the good work",
+            "Twelve to twenty per page, paginated with real linked URLs. Not infinite scroll — that's a discovery dead end."
+          ],
+          [
+            "Lazy-loading everything, including the hero",
+            "The first image is deliberately delayed, which is precisely backwards",
+            "Eager-load what's above the fold, lazy-load the rest, and set explicit width and height so nothing jumps as it loads."
+          ],
+          [
+            "An autoplaying showreel on the homepage",
+            "Megabytes downloaded before a photograph appears",
+            "A poster frame that links to the video. Almost nobody watches the loop anyway."
+          ],
+          [
+            "Client delivery galleries sitting on the main domain",
+            "Crawl budget spent on private albums, plus a consent problem waiting to happen",
+            "Noindex them, or leave them on the delivery platform where they belong."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Test on the phone your client actually holds",
+        "body": "Not your studio Mac on fibre. Run the URL through PageSpeed Insights, read the mobile field data rather than the lab score, then open it yourself on a mid-range Android on mobile data. A gallery that feels instant on a 5K display can be unusable on the device where the enquiry starts."
+      }
+    },
+    {
+      "h2": "A portfolio with no words ranks for your name and nothing else",
+      "body": [
+        "Photographers resist body copy harder than any other category we work with, and the instinct is sound — nobody wants nine hundred words of prose under a photograph. You don't need nine hundred. You need enough language on the page for a search engine to know what it's looking at.",
+        "Google cannot see that the third frame is a Christian wedding at a Bandra church shot at golden hour. It can read a caption that says so. The difference between those two facts is most of the traffic you're missing.",
+        "The minimum that works, per gallery, without spoiling the design: a sixty to a hundred and twenty word intro naming the venue, city, event type and month; a caption under the images that carry a specific fact; a short story block below the fold about what the day involved; and two or three questions people actually ask you, answered in your own words."
+      ],
+      "bullets": [
+        "**Name the venue.** `The Leela, Udaipur` and `ITC Grand Chola, Chennai` are searched by couples who have already booked. If you've shot there and the page says so, you are the obvious hire.",
+        "**Name the city and locality** in the running text, not only in the footer.",
+        "**Put an H1 on every gallery** that describes the shoot rather than saying `Portfolio`.",
+        "**Never bury text in an image.** A price list saved as a JPEG is a price list Google cannot read."
+      ]
+    },
+    {
+      "h2": "Genre plus city is the structure. 'Portfolio' is not.",
+      "body": [
+        "Most photography sites have four navigation items: Home, Portfolio, About, Contact. That structure has exactly one page capable of ranking for anything commercial, and it isn't a good one.",
+        "Split by genre first, because a couple booking a wedding, a mother booking a newborn session and a D2C brand booking catalogue shots are three separate businesses with different budgets, different sales cycles and no shared vocabulary. Then split by city, but only where you've genuinely shot."
+      ],
+      "numbered": [
+        "**One page per genre you actively sell** — wedding, pre-wedding, maternity, newborn, product and ecommerce, corporate headshots, event coverage. Each with its own pricing note, deliverables and gallery.",
+        "**Genre plus city for the places you work**: `wedding photographer in Jaipur`, `product photography studio in Bengaluru`. These are the commercial money pages.",
+        "**Sub-pages for the questions inside a genre**: `pre-wedding shoot locations in Jaipur`, `what to wear for a maternity shoot`, `white background product photography for marketplaces`. Cheap to write, and they feed the money pages internal links.",
+        "**No page for a city you've never shot in.** A destination page with no work behind it is the exact thin page Google is filtering, and the first enquiry call exposes it.",
+        "**Travel pages work when the travel is real.** `Destination wedding photographer in Udaipur` is winnable with three Udaipur weddings to show and unwinnable with none."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The best top-of-funnel content in this category",
+        "body": "Pre-wedding location guides. Someone searching for shoot locations in their city is booking a photographer within weeks, not months. Write it with the permission requirements, the shoot fee each location charges, the best hour of day and where the light actually is — and it will outrank listicles assembled by people who have never stood there at 6am."
+      }
+    },
+    {
+      "h2": "Alt text, image sitemaps and the licensable badge",
+      "body": [
+        "Image SEO is where photographers assume the whole opportunity lies. It's worth doing, and it's worth being realistic about: Google Images sends people who want the picture, not always people who want the photographer. It becomes commercially useful when the page behind the image names a venue, a city and a way to hire you."
+      ],
+      "numbered": [
+        "**Rename files before upload.** `haldi-ceremony-lake-palace-udaipur.jpg`, not `_MG_7841.jpg`. Nobody else will do this for you.",
+        "**Write [alt text](/glossary/alt-text) that describes the photograph** to someone who can't see it — subject, venue, event. Accessibility requirement first, ranking signal second. Stuffing it with keywords fails at both.",
+        "**Submit an image sitemap** if galleries load through a script. It's the cheapest way to get several hundred photographs discovered.",
+        "**Keep IPTC metadata on the file and add image markup with a licence URL and an acquire-licence page.** That's what produces the Licensable badge in Google Images. It's worth real money to commercial, product and stock shooters and nothing at all if your images aren't licensable.",
+        "**Be careful with watermarks.** A discreet credit in the corner is fine. A bar across the middle costs you the click and protects almost nothing."
+      ]
+    },
+    {
+      "h2": "Publish a starting price, or keep answering the same email",
+      "body": [
+        "`Wedding photographer price in [city]` is among the largest commercial queries in this industry and most photographers refuse to answer it in public. The objection is real: a rate card anchors you and invites comparison with someone shooting the same day for a third of the money.",
+        "Publishing a floor handles most of that. \"Wedding coverage starts at ₹X for a single day; most three-day weddings we shoot land between ₹Y and ₹Z\" answers the query, sets the anchor where you want it, and ends the twenty emails a month that were never going to become bookings.",
+        "Whatever you publish, publish what surrounds it — that's where the disputes live and where the trust is won."
+      ],
+      "bullets": [
+        "**What a day actually covers**: hours, number of shooters, whether a second camera or cinematographer is included.",
+        "**Deliverables as numbers**: edited image count, delivery timeline in weeks, album specification, teaser and film if you offer them, raw file policy.",
+        "**Travel and stay**, stated as a rule rather than negotiated each time.",
+        "**Advance, cancellation and date-hold terms**, plus GST treatment.",
+        "**An as-of date on the page.** Rates move; an undated price page ages badly and reads as careless."
+      ]
+    },
+    {
+      "h2": "Real shoots become case studies, credits become links",
+      "body": [
+        "Photography sits in the middle of a vendor network that publishes credits as a matter of routine — planners, venues, decorators, makeup artists, and the wedding platforms that run real weddings with a full vendor list. Almost nowhere else does an entire industry hand out relevant links as a professional courtesy.",
+        "Most photographers never ask, and their work goes out uncredited or credited to an Instagram handle that passes nothing to their site."
+      ],
+      "bullets": [
+        "**Submit real weddings and shoots to publications that credit vendors properly.** The referral traffic is the point; the link is the by-product.",
+        "**Trade credit pages with the vendors on the job.** Link to the planner and the decorator from your write-up, ask for the same back. Earned links from genuinely relevant sites — which is what [link building](/services/link-building-services) is supposed to be, and rarely is.",
+        "**Ask venues to list you.** Hotels and banquet properties keep recommended-vendor pages and they update them when someone asks.",
+        "**Get consent in the contract.** A usage clause covering website, social and submission to publications, with an opt-out, saves the awkward call two years later. For commercial clients, assume you cannot show the work until they say you can.",
+        "**Corporate and product clients often won't be named.** Describe the brief, show the frames they cleared, skip the logo. The write-up still ranks."
+      ]
+    },
+    {
+      "h2": "What this costs, and what we promise",
+      "body": [
+        "Our SEO runs from ₹75,000 a month, with smaller sites from ₹40,000, ex-GST, month-to-month after the first quarter. Full numbers sit on [pricing](/pricing). Independent photographers and small studios usually belong in the lower band, because the first quarter here is mostly technical — image weight, gallery pagination, indexable text, page structure — rather than volume publishing.",
+        "The honest timeline: fixing a portfolio that was effectively invisible often produces indexing gains within weeks, since pages that Google could barely read start being read. Genre-plus-city pages typically move in three to six months. `Wedding photographer in Mumbai` against studios with a decade of links takes longer, and for some photographers it isn't the fight worth picking — venue-specific and locality queries convert better and cost less.",
+        "We freeze your trailing-90-day count of qualified enquiries from organic search on day one, defined against your own minimum booking value rather than raw form volume. Miss it in 90 days and we keep working free until we beat it. We never promise a specific ranking position, because nobody controls Google's index."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does my photography website get no Google traffic?",
+      "a": "Two reasons, usually at once. The pages are heavy enough to fail Core Web Vitals on mobile data, and they contain almost no text — no headings, no captions, no venue or city named — so Google has nothing to match a search against. Neither needs a redesign to fix."
+    },
+    {
+      "q": "What size should I export images for my website?",
+      "a": "Around 2,048px on the long edge at quality 70–80, served as WebP or AVIF with a responsive srcset, is enough for any screen a client will use. Keep full-resolution masters for print and client delivery. A 5,000px JPEG scaled down in CSS is the most common speed failure on photography sites."
+    },
+    {
+      "q": "Do watermarks hurt my SEO?",
+      "a": "Not directly — Google doesn't penalise them. They hurt commercially. A heavy watermark across the frame reduces clicks from image search and does little to prevent theft. A small corner credit is a reasonable compromise; proper licensing metadata protects you better than pixels do."
+    },
+    {
+      "q": "Should I put my photography prices on my website?",
+      "a": "Publish a starting figure and a range rather than a full rate card, with deliverables, travel terms and an as-of date. Price queries carry the most commercial intent in this category, and answering them stops the enquiries that were never going to book while anchoring the ones that will."
+    },
+    {
+      "q": "Does a photographer need a blog?",
+      "a": "Not a blog — a library of shoot write-ups and location guides. Each real wedding or session written up with venue, city, month and vendor credits is a page that ranks and a page that earns links. Generic photography tips articles do neither."
+    },
+    {
+      "q": "How long does SEO take for a photographer?",
+      "a": "Technical fixes to a heavy, textless portfolio can show indexing and impression gains within four to eight weeks. Genre-plus-city pages usually take three to six months to settle. Competitive metro terms against long-established studios take a year or more, which is why venue and locality queries come first."
+    }
+  ],
+  "related": [
+    { "type": "seo-for", "slug": "event-management" },
+    { "type": "seo-for", "slug": "interior-designers" },
+    { "type": "glossary", "slug": "core-web-vitals" },
+    { "type": "glossary", "slug": "alt-text" },
+    { "type": "services", "slug": "core-web-vitals-optimisation" },
+    { "type": "cost", "slug": "local-seo-cost" }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "slug": "broken-links",
+  "type": "glossary",
+  "primaryKeyword": "broken links",
+  "secondaryKeywords": [
+    "how to fix broken links in seo",
+    "broken link checker",
+    "internal broken links",
+    "dead links seo",
+    "broken backlinks"
+  ],
+  "cluster": "technical-seo",
+  "intent": "informational",
+  "h1": "Broken links",
+  "metaTitle": "Broken Links: How to Find and Fix Them",
+  "metaDescription": "Broken links point at URLs that return an error. Here's how to find them, which ones to fix first, and how to reclaim value from dead backlinks.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Broken link",
+  "definition": "A broken link is a hyperlink pointing at a URL that no longer resolves — typically returning a 404 or a 5xx error instead of a page.",
+  "answer": "A broken link points at a URL that returns an error instead of a page. There are three kinds, and they're three different jobs: internal broken links you fix by editing the link, outbound ones by updating or removing them, and inbound broken backlinks by redirecting the dead URL to recover authority you already earned.",
+  "takeaways": [
+    "**Internal** broken links waste crawl and dead-end users. Fix them at the source — edit the link.",
+    "**Inbound** broken backlinks are different work: someone linked to a URL you deleted, and a 301 recovers signals you already paid for.",
+    "Prioritise by value, not by count. One dead URL with fifteen referring domains beats ninety broken links in a 2019 blog archive.",
+    "Redirect to the closest real equivalent. A bulk redirect to the homepage is treated as a soft 404 and passes close to nothing."
+  ],
+  "sections": [
+    {
+      "h2": "Three kinds of broken link, three different jobs",
+      "body": [
+        "Almost every article on this topic mashes the three together and recommends one fix. They aren't the same problem, they don't carry the same value, and only one is worth dropping other work for."
+      ],
+      "table": {
+        "caption": "The three types of broken link and what each one actually costs you.",
+        "head": [
+          "Type",
+          "What it is",
+          "What it costs",
+          "The fix"
+        ],
+        "rows": [
+          [
+            "Internal",
+            "Your page links to your own URL that now 404s.",
+            "Dead ends for users, wasted crawl, signals sent nowhere.",
+            "Edit the link to point at the live URL."
+          ],
+          [
+            "Outbound",
+            "Your page links to someone else's URL that has died.",
+            "A poor reading experience. Minor.",
+            "Update it, or unlink the text."
+          ],
+          [
+            "Inbound (broken backlinks)",
+            "Another site links to a URL of yours that no longer exists.",
+            "Authority you already earned, landing on a 404.",
+            "301 the dead URL to the closest live equivalent."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The one worth chasing",
+        "body": "Inbound is where the money is. Someone published a link to you, it's still live, and it currently points at nothing. You don't have to earn anything — you add a redirect. The cheapest link work in SEO, and routinely skipped."
+      }
+    },
+    {
+      "h2": "Finding them without paying for a tool",
+      "body": [
+        "You can cover all three types free, and it takes an afternoon."
+      ],
+      "bullets": [
+        "**Internal:** Screaming Frog's free tier crawls 500 URLs — filter by Client Error (4xx), then use the Inlinks panel to see which pages contain each broken link. That panel turns a list of 404s into a to-do list.",
+        "**Internal, larger sites:** Ahrefs Webmaster Tools gives free Site Audit access on a verified domain. Bing Webmaster Tools also runs a free scan.",
+        "**Inbound:** cross-reference Search Console → Indexing → Pages → \"Not found (404)\" against the Links report's top linked pages. Anything on both lists is a dead page with backlinks.",
+        "**Outbound:** a crawler flags external 4xx and 5xx. Recheck after a week before acting — outages and bot-blocking produce plenty of false positives."
+      ]
+    },
+    {
+      "h2": "Fix in order of value, not in order of the report",
+      "body": [
+        "A broken-link report sorts by URL. That's the wrong order to work in, and it's how people spend a day fixing links in posts nobody reads. Work down this list instead, and stop when the value runs out."
+      ],
+      "numbered": [
+        "**Dead URLs with backlinks.** Sort by referring domains and redirect each to its closest live equivalent. The only step that recovers something you can't get any other way.",
+        "**Broken links on pages that get traffic.** A 404 in the navigation or on a top landing page is a conversion problem before it's an SEO problem.",
+        "**Broken links inside your money pages.** Product, service and pricing pages are where you want [internal link equity](/glossary/internal-linking) flowing, and a dead link is a leak.",
+        "**Everything else, in bulk.** Old posts, archives, footer links to a page you retired. Batch it, do it once, move on.",
+        "**Outbound links, last.** Fix the ones on pages that still get read; the rest can wait for a content refresh."
+      ]
+    },
+    {
+      "h2": "Reclaiming dead backlinks properly",
+      "body": [
+        "This is the part worth doing carefully, because the wrong redirect gets you nothing.",
+        "Google's stated behaviour is that a redirect to an irrelevant page is treated as a soft 404 — the signals don't transfer. A bulk rule sending every dead URL to `/` looks tidy in the config file and achieves roughly what a 404 would have. Map each URL to its closest genuine equivalent: a discontinued product to its replacement, a retired post to the article that supersedes it.",
+        "Where nothing equivalent exists, two honest options. Recreate the page if the link is valuable enough — an old resource with twenty referring domains often is. Otherwise return a 410, which tells Google the removal was deliberate and drops the URL faster than a 404.",
+        "One that gets forgotten: the redirect has to stay. Deleting it two years later during a server move re-breaks every backlink pointing at it, which is how sites lose authority in a [replatform](/journal/the-replatform-that-killed-your-traffic) without touching the content."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Redirect chains and loops",
+        "body": "Old URL → newer URL → newest URL still works, but each hop costs and Google gives up after a handful. Always point at the final destination, and re-check after any migration. A loop returns nothing and drops the page from the index."
+      }
+    },
+    {
+      "h2": "How often to re-check",
+      "body": [
+        "Broken links are entropy, not an event. They accumulate every time someone deletes a product, renames a page or retires a campaign.",
+        "Monthly for ecommerce with a moving catalogue, quarterly for a content site, annually for a brochure site — and always in the fortnight after a migration.",
+        "Two habits cut the workload more than any tool: never delete a URL without deciding its redirect in the same commit, and keep the redirect map in version control, not in a plugin's database."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do broken links hurt SEO?",
+      "a": "Internal ones do modest, real damage — wasted crawl, dead ends, signals routed to nowhere. Outbound ones are mostly a user experience issue. The genuinely expensive case is inbound: backlinks pointing at deleted URLs, where earned authority is landing on a 404 and doing nothing."
+    },
+    {
+      "q": "How do I find broken backlinks to my site?",
+      "a": "In Search Console, cross-reference Indexing → Pages → Not found (404) with the Links report's top linked pages. Anything on both lists is a dead URL with backlinks. Ahrefs Webmaster Tools shows the same thing directly via Best by links, filtered to 404."
+    },
+    {
+      "q": "Should I redirect broken URLs to my homepage?",
+      "a": "No. Google treats redirects to irrelevant pages as soft 404s, so the signals mostly don't carry. Redirect to the closest genuine equivalent instead. If nothing equivalent exists, return a 410 and take the loss cleanly rather than pretending."
+    },
+    {
+      "q": "What's the difference between a 404 and a 410?",
+      "a": "A 404 says \"not found\", which could be temporary. A 410 says \"deliberately gone\". Google generally drops 410 URLs from the index faster. Use 410 when you're certain the page isn't coming back, and 404 when you might restore it."
+    },
+    {
+      "q": "Does a free broken link checker work well enough?",
+      "a": "For internal links on a small site, yes — the free Screaming Frog tier covers 500 URLs and shows exactly which pages contain each broken link. For inbound broken backlinks you need Search Console or a backlink index, because that data doesn't exist on your own server."
+    },
+    {
+      "q": "How many broken links is too many?",
+      "a": "There's no threshold that triggers anything. A handful on an old blog is normal for any site with history. What matters is where they are: broken links in navigation, on money pages, or pointing at URLs with backlinks are worth fixing this week regardless of the total."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "404-error"
+    },
+    {
+      "type": "glossary",
+      "slug": "301-redirect"
+    },
+    {
+      "type": "glossary",
+      "slug": "link-equity"
+    },
+    {
+      "type": "compare",
+      "slug": "301-vs-302-redirect"
+    },
+    {
+      "type": "services",
+      "slug": "seo-audit-services"
+    },
+    {
+      "type": "journal",
+      "slug": "the-replatform-that-killed-your-traffic"
+    }
+  ]
+}

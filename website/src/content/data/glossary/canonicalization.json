@@ -1,0 +1,140 @@
+{
+  "slug": "canonicalization",
+  "type": "glossary",
+  "primaryKeyword": "canonicalization in seo",
+  "secondaryKeywords": [
+    "canonicalization meaning",
+    "url canonicalization",
+    "www vs non-www seo",
+    "trailing slash duplicate urls",
+    "canonical keywords"
+  ],
+  "cluster": "technical-seo",
+  "intent": "informational",
+  "h1": "Canonicalization",
+  "metaTitle": "Canonicalization in SEO, Explained Simply",
+  "metaDescription": "Canonicalization is how Google picks one URL when several serve the same page. Here are the four duplicate patterns that split rankings, and the fix order.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Canonicalization",
+  "definition": "Canonicalization is the process of choosing a single representative URL when several different URLs serve the same or near-identical content.",
+  "answer": "Canonicalization is how a search engine picks one URL to index when several serve the same page. Your homepage alone can be reachable at eight different addresses — http and https, www and bare, with and without a trailing slash. Google has to pick one. Canonicalization is you making that choice instead of leaving it to a guess.",
+  "takeaways": [
+    "The tag is one tool. Canonicalization is the whole problem — most of which is solved at the server, not in the HTML.",
+    "Four patterns cause almost all of it: **protocol**, **host**, **trailing slash**, and **query parameters**.",
+    "Fix in order: server redirects first, then internal links, then canonical tags. Doing it backwards leaves the duplicates live.",
+    "Split signals show up in Search Console as duplicates and as two URLs trading places for the same query."
+  ],
+  "sections": [
+    {
+      "h2": "Your homepage probably has eight addresses",
+      "body": [
+        "Take three binary choices — http or https, www or bare, trailing slash or not — and you get eight distinct URLs that a browser will happily load and a crawler will happily treat as eight different pages. Add `index.php` or `index.html`, add a `?utm_source=` from a newsletter, and the count keeps climbing.",
+        "Nobody built it on purpose. It's what a default server config does when nobody says otherwise. The damage is that links, crawl attention and ranking signals spread across copies instead of stacking on one page."
+      ],
+      "table": {
+        "caption": "The four duplicate patterns, where they come from, and what fixes them.",
+        "head": ["Pattern", "Typical cause", "The fix"],
+        "rows": [
+          [
+            "http and https both respond",
+            "SSL added, old protocol left listening",
+            "301 every http request to https at the server or CDN"
+          ],
+          [
+            "www and non-www both respond",
+            "DNS points both, no host rule",
+            "Pick one, 301 the other. Neither is better for SEO — just commit"
+          ],
+          [
+            "Trailing slash and no slash both respond",
+            "Framework default, or two routes for one page",
+            "Pick one convention, 301 the other, use it in every internal link"
+          ],
+          [
+            "Tracking and filter parameters",
+            "UTMs, `gclid`, `fbclid`, session IDs, sort and filter states",
+            "Self-referencing canonical on the clean URL; robots.txt for infinite filter combinations"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The uppercase one nobody checks",
+        "body": "Most web servers treat `/Brass-Lamp` and `/brass-lamp` as different URLs. If your CMS accepts both, you have a fifth pattern. Force lowercase at the server and 301 the rest."
+      }
+    },
+    {
+      "h2": "Redirects are rules. Canonicals are opinions.",
+      "body": [
+        "This is the distinction that decides your fix order. A 301 removes the duplicate from existence — the server never serves it again, so nothing can link to it, crawl it or index it. A canonical tag leaves the duplicate fully live and politely asks Google to prefer another URL.",
+        "For protocol, host and trailing slash you want the rule, not the opinion. There is no legitimate reason for `http://www.example.com/page/` to keep resolving. Kill it at the server, and read [301 redirect](/glossary/301-redirect) for how to avoid stacking these into chains — redirecting http→https→www→slash in four hops is a common and lazy result.",
+        "For parameters you're stuck with the opinion. You can't stop someone pasting your URL with a UTM attached, and you don't want to break the link when they do. So the parameterised URL keeps working, and a self-referencing [canonical tag](/glossary/canonical-tag) on the clean version tells Google which one to index."
+      ],
+      "numbered": [
+        "**Server first.** One protocol, one host, one slash convention. Test each variant with `curl -I` and confirm a single 301 to the survivor.",
+        "**Internal links second.** Every link in your nav, footer, sitemap and body copy points at the final URL. Linking to a URL that redirects works, but it wastes crawl and it's how chains get born.",
+        "**Canonical tags third.** Self-referencing everywhere, pointed at the clean version, matching the URLs in your sitemap exactly."
+      ]
+    },
+    {
+      "h2": "Parameters, session IDs, and the ones that actually change the page",
+      "body": [
+        "Not every parameter is noise. `?colour=black` might genuinely change what's on the page; `?utm_campaign=diwali` never does. The test is whether the content differs in a way a searcher would want separately.",
+        "Google retired the URL Parameters tool in Search Console in 2022, so you no longer get to tell Google to ignore a parameter — it works it out from what it sees. That puts the burden back on your configuration: canonical the noise parameters to the clean URL, and if a filter system can generate tens of thousands of combinations, block the pattern in [robots.txt](/glossary/robots-txt) before it eats your [crawl budget](/glossary/crawl-budget).",
+        "Session IDs in URLs are the worst version — every visitor generates a unique URL for the same page. That's a platform fix, not an SEO fix."
+      ]
+    },
+    {
+      "h2": "How split signals look in Search Console",
+      "body": [
+        "You rarely see canonicalization problems as an error message. You see them as things quietly not working."
+      ],
+      "bullets": [
+        "**Duplicate without user-selected canonical** in the Page Indexing report — Google found copies and you didn't declare a preference.",
+        "**Duplicate, Google chose different canonical than user** — you declared one and Google disagreed. Your other signals are contradicting your tag.",
+        "**Two of your own URLs appearing for the same query** in the Performance report, each with a fraction of the impressions. That's one page's authority cut in half.",
+        "**Indexed page count higher than your published page count.** If you have 180 pages and Google reports 420 indexed URLs, the extra 240 are variants."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "This is the cheapest technical SEO there is",
+        "body": "Canonicalization is a few server rules and an afternoon of link-checking. It's often the highest-return work on an older site because it recovers authority you already paid for. If an agency's first-month plan skips it and jumps straight to publishing articles, ask why — this is what [a real technical audit](/services/seo-audit-services) finds in week one."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is www or non-www better for SEO?",
+      "a": "Neither. Google treats them as separate sites but ranks them identically once you pick one. What hurts is serving both. Choose whichever your brand already uses, 301 the other, and update your internal links and sitemap to match."
+    },
+    {
+      "q": "Does a trailing slash matter?",
+      "a": "Only in that both versions shouldn't work. `/blog/post` and `/blog/post/` are different URLs to a crawler. Pick one convention, redirect the other, and stay consistent — most frameworks have a single setting for this."
+    },
+    {
+      "q": "What are canonical keywords?",
+      "a": "It's a phrase people search for, but it isn't a real technique. Canonicalization is about URLs, not keywords. What people usually mean is keyword cannibalization — two pages targeting the same query — and that's a content problem you solve by merging pages, not by tagging them."
+    },
+    {
+      "q": "Do UTM parameters hurt SEO?",
+      "a": "Not if you have self-referencing canonicals on the clean URLs. Google generally consolidates parameterised versions onto the canonical. Without a canonical, a heavily shared campaign URL can end up indexed instead of the real one."
+    },
+    {
+      "q": "How do I check my site's canonicalization in five minutes?",
+      "a": "Run `curl -I` against eight variants of your homepage — http, https, www, bare, with and without a slash. Every one except your chosen URL should return a single 301 to it. Anything returning 200 is a live duplicate."
+    },
+    {
+      "q": "Should I redirect or canonical near-duplicate product pages?",
+      "a": "If both need to stay reachable for shoppers, canonical. If one is genuinely redundant, redirect and remove it. The test is whether a user would ever need to land on the duplicate — if not, it shouldn't exist."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "canonical-tag" },
+    { "type": "glossary", "slug": "301-redirect" },
+    { "type": "glossary", "slug": "keyword-cannibalization" },
+    { "type": "services", "slug": "seo-audit-services" },
+    { "type": "compare", "slug": "subdomain-vs-subfolder" },
+    { "type": "journal", "slug": "what-an-seo-audit-should-actually-find" }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "slug": "search-intent",
+  "type": "glossary",
+  "primaryKeyword": "search intent",
+  "secondaryKeywords": [
+    "types of search intent",
+    "user intent seo",
+    "informational vs transactional keywords",
+    "how to identify search intent",
+    "keyword intent"
+  ],
+  "cluster": "content",
+  "intent": "informational",
+  "h1": "Search intent",
+  "metaTitle": "Search Intent: The Four Types, Explained",
+  "metaDescription": "Search intent is what someone actually wants when they type a query. The four types, how to read intent straight off the SERP, and why it beats volume.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Search intent",
+  "definition": "Search intent is the goal behind a query — what the person typing it is actually trying to do, as opposed to what the words literally say.",
+  "answer": "Search intent is what someone actually wants when they type a query, sorted into four types: informational, navigational, commercial and transactional. You don't have to guess it. Open the results, count how many are guides versus product pages, and Google will tell you which format it already rewards for that query.",
+  "takeaways": [
+    "Four types: **informational**, **navigational**, **commercial investigation**, **transactional**.",
+    "The SERP is the answer key. Google has already tested formats on this query against millions of users.",
+    "Intent mismatch is a hard cap. A brilliant blog post cannot outrank product pages on a query Google reads as transactional.",
+    "Check intent **before** you write, not after the page fails to rank. It costs ninety seconds and saves a month."
+  ],
+  "sections": [
+    {
+      "h2": "The four types, and what each one is really asking",
+      "body": [
+        "The four-type model has been standard since Andrei Broder proposed a version of it in 2002, and it holds up because it maps to how people behave. What changed is that the format Google rewards for each type has become far more rigid."
+      ],
+      "table": {
+        "caption": "The four search intents, and the page format each one expects.",
+        "head": ["Intent", "What they want", "Example query", "Page that wins"],
+        "rows": [
+          [
+            "Informational",
+            "To understand something",
+            "what is a canonical tag",
+            "Guide, definition, explainer"
+          ],
+          [
+            "Navigational",
+            "To reach a specific place",
+            "search console login",
+            "The destination itself. Don't compete."
+          ],
+          [
+            "Commercial investigation",
+            "To decide between options before buying",
+            "best seo agency in bangalore",
+            "Comparison, review, buyer's guide"
+          ],
+          [
+            "Transactional",
+            "To do the thing now",
+            "seo services pricing",
+            "Service or product page with prices"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Stop guessing. Read the SERP",
+      "body": [
+        "Every article on this topic tells you to \"identify user intent\" and then leaves you to intuit it. You don't need to. Google runs the largest ongoing experiment in the world on this exact question and publishes the result on page one, free, on every query.",
+        "The method takes about ninety seconds per query and it's the single highest-return habit a founder can build before commissioning content."
+      ],
+      "numbered": [
+        "Search the query in an incognito window, with location set to the market you're targeting. Bangalore and Bhopal return different pages for the same commercial query.",
+        "Count the top ten by **format**, not by brand. How many are blog posts? How many are service or product pages? How many are listicles or comparisons?",
+        "The majority format is the answer. Eight guides and two product pages means Google reads this as informational, whatever you'd prefer it to be.",
+        "Look at the [SERP features](/glossary/serp). A featured snippet or People Also Ask box signals informational. A shopping row or a bank of ads with prices signals transactional. A local pack signals a near-me intent even when the query doesn't say \"near me\".",
+        "Read the top three titles. Not for keywords — for the promise. If all three promise a comparison and yours promises a definition, you've found your mismatch before writing a word."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Do it again in six months",
+        "body": "Intent moves. Google re-evaluates queries constantly, and a query that wanted a guide in 2024 may want a comparison table now. When a page's position slides while its content stays accurate, a shifted SERP is the first thing to check — that's the usual mechanism behind [content decay](/glossary/content-decay)."
+      }
+    },
+    {
+      "h2": "Mixed-intent queries, and what to do about them",
+      "body": [
+        "Plenty of queries don't resolve cleanly. Search \"seo audit\" and you'll typically see a mix: explainers on what an audit is, tools offering to run one, agencies selling one. Google is hedging because the people typing it want different things and it can't tell which one you are.",
+        "A mixed SERP is useful information: there's room for more than one format, and you'll have to be excellent to hold a spot, because you're competing across categories rather than within one.",
+        "Two workable responses. Build one page that serves the dominant intent and handles the secondary one in a clearly-marked section, or split into two pages with different formats and link them. What doesn't work is a page half-committed to both, which ranks for neither."
+      ],
+      "bullets": [
+        "**Dominant format wins the main page.** Whatever holds 6+ of the top 10 sets your primary format.",
+        "**Serve the secondary intent in-page.** A service page can carry a short \"what an audit actually covers\" block without becoming a blog post.",
+        "**Split only when the formats genuinely conflict** — a pricing page and a definition page can't be the same URL without one of them losing."
+      ]
+    },
+    {
+      "h2": "Why an intent mismatch caps you regardless of quality",
+      "body": [
+        "This explains most of the frustrating cases in SEO. If Google has decided a query wants product pages and you publish the best explainer ever written on the subject, you won't win it. The page isn't being judged as bad — it's being judged as the wrong thing.",
+        "The failure looks specific in Search Console: solid [impressions](/glossary/impressions), an average position stuck somewhere in the teens or twenties, and a click-through rate below what that position should return. Google is showing your page, users are choosing a different format, and the behavioural signal reinforces the original read.",
+        "Which is why intent beats volume as a planning input. A query with 3,000 searches you can't match the format for is worth less than a [long-tail query](/glossary/long-tail-keywords) with 90 where your page is exactly what the SERP rewards. Volume says how many people are looking; intent says whether you're allowed to be found."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The most expensive mistake in content planning",
+        "body": "Commissioning forty articles off a keyword export without opening a single SERP. It's the fastest way to spend ₹4,00,000 on content that ranks for nothing, and it happens because a spreadsheet of volumes looks like a plan."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I find the search intent of a keyword?",
+      "a": "Search it in incognito with the right location and count the top ten results by format. Whatever format the majority takes is what Google has decided the query wants. That single check beats any tool's intent label, because it reflects what Google is doing today rather than a static classification."
+    },
+    {
+      "q": "What's the difference between commercial and transactional intent?",
+      "a": "Commercial investigation is still deciding — \"best\", \"vs\", \"reviews\", \"which\". Transactional is ready to act — \"pricing\", \"buy\", \"hire\", \"near me\". Comparisons win the first; service and product pages with real prices win the second. Putting a comparison on a transactional query is a common and costly miss."
+    },
+    {
+      "q": "Can one page rank for multiple intents?",
+      "a": "For adjacent intents, sometimes — a well-built comparison page often picks up informational queries around it. For opposed intents, rarely. A page cannot be both a definition and a pricing page without doing one of them badly, and Google will rank it for whichever it does better."
+    },
+    {
+      "q": "Does search intent matter for AI Overviews and chat answers?",
+      "a": "More, if anything. Answer engines are selecting a passage to cite, and they pull from pages structured to match what the question is asking. A page that opens by directly answering the query in a couple of sentences is far more citable than one that warms up for six paragraphs."
+    },
+    {
+      "q": "Should I ignore high-volume keywords with the wrong intent?",
+      "a": "Usually yes, at least as page targets. If Google wants product pages and you sell a service, that query isn't available to you in that format. Either build the format the SERP rewards or spend the effort on a query where you can genuinely compete."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "serp" },
+    { "type": "glossary", "slug": "keyword-research-meaning" },
+    { "type": "glossary", "slug": "long-tail-keywords" },
+    { "type": "glossary", "slug": "featured-snippet" },
+    { "type": "compare", "slug": "keyword-rankings-vs-organic-traffic" },
+    { "type": "services", "slug": "keyword-research-services" }
+  ]
+}

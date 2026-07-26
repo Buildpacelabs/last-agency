@@ -1,0 +1,132 @@
+{
+  "slug": "utm-parameters",
+  "type": "glossary",
+  "primaryKeyword": "utm parameters",
+  "secondaryKeywords": [
+    "utm tracking",
+    "utm source medium campaign",
+    "how to build utm links",
+    "utm naming convention",
+    "utm builder"
+  ],
+  "cluster": "paid",
+  "intent": "informational",
+  "h1": "UTM parameters",
+  "metaTitle": "UTM Parameters: What They Are and How to Use",
+  "metaDescription": "UTM parameters are tags added to a link so analytics knows where a visit came from. The five fields, a naming convention, and the classic mistakes.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "UTM parameters",
+  "definition": "UTM parameters are tags added to the end of a link so an analytics tool can record which campaign, channel and creative sent each visit.",
+  "answer": "UTM parameters are tags appended to a URL — `utm_source`, `utm_medium`, `utm_campaign`, `utm_term` and `utm_content` — that tell analytics where a visit came from. They only work if everyone writes them the same way. Instagram, instagram and IG become three separate sources, and GA4 will not merge them for you.",
+  "takeaways": [
+    "Five fields. Only `utm_source` and `utm_medium` are genuinely mandatory; `utm_campaign` is mandatory in practice.",
+    "**Values are case-sensitive.** Lowercase everything, forever, no exceptions.",
+    "GA4's channel grouping reads `utm_medium` against a fixed vocabulary. Invent a value and your traffic lands in Unassigned.",
+    "Never tag an internal link. You'll overwrite the real source with your own homepage banner."
+  ],
+  "sections": [
+    {
+      "h2": "The five fields and what belongs in each",
+      "body": [
+        "A tagged link is just your URL with a `?` and some key-value pairs stapled on. Nothing about it is clever. The discipline is in agreeing what goes where, and then never deviating."
+      ],
+      "table": {
+        "caption": "The five UTM fields, with values that won't cause an argument in three months.",
+        "head": ["Parameter", "What it holds", "Example"],
+        "rows": [
+          ["`utm_source`", "The specific property that sent the click.", "`instagram`, `whatsapp`, `google`, `newsletter`"],
+          ["`utm_medium`", "The channel class. GA4 buckets on this field, so it takes a fixed vocabulary.", "`cpc`, `paid_social`, `organic_social`, `email`, `referral`"],
+          ["`utm_campaign`", "The campaign, dated so you can find it later.", "`diwali-2026-jewellery`"],
+          ["`utm_term`", "The paid keyword. Search campaigns only; usually auto-tagged.", "`seo-agency-bangalore`"],
+          ["`utm_content`", "Which creative or which link on the page.", "`carousel-a`, `footer-cta`"]
+        ]
+      }
+    },
+    {
+      "h2": "The naming convention is the entire job",
+      "body": [
+        "This is where UTM tracking actually fails, and it fails silently. `Instagram`, `instagram` and `IG` are three rows in your report. `paid-social`, `paid_social` and `paidsocial` are three channels. Nobody notices for a quarter, and then the quarterly review turns into a data reconciliation exercise.",
+        "The fix is boring and it works: one shared sheet, one owner, and four rules everyone follows without thinking."
+      ],
+      "bullets": [
+        "**Lowercase everything.** Values are case-sensitive; field names are not. Assume both are.",
+        "**Hyphens between words, never spaces.** A space becomes `%20` and looks like a different value.",
+        "**Fix the `utm_medium` vocabulary** to a closed list — `cpc`, `paid_social`, `organic_social`, `email`, `referral`, `affiliate`, `qr`, `messaging` — and don't let anyone add to it without asking.",
+        "**Date the campaign name.** `diwali-2026` beats `diwali`, because there will be another Diwali.",
+        "**One person owns the sheet.** Everyone else requests a link from it. Free-form link building is how you get eleven spellings of one channel."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Why `utm_medium` matters more than the rest",
+        "body": "GA4's default channel grouping keys off `utm_medium` against a set list of expected values. Write `paidsocial` instead of `paid_social` and the session doesn't become Paid Social — it becomes Unassigned, and Unassigned is where reporting goes to die."
+      }
+    },
+    {
+      "h2": "Where UTMs break: internal links, WhatsApp and QR codes",
+      "body": [
+        "Three failure modes account for most broken UTM data, and one of them will already be in your account."
+      ],
+      "subs": [
+        {
+          "h3": "Never tag internal links",
+          "body": [
+            "Tagging a link from your own homepage to your own pricing page tells GA4 that a new campaign just delivered a visit. It starts a fresh session and overwrites the real source. The person came from Google; your report now says they came from your own banner.",
+            "If you want to measure internal link performance, use events, not UTMs."
+          ]
+        },
+        {
+          "h3": "WhatsApp needs tagging, and inherits it",
+          "body": [
+            "Untagged WhatsApp traffic usually lands as direct or referral, which in India means a serious chunk of real demand is invisible. Tag every link you send from a broadcast list, a catalogue or a sales rep's chat with `utm_source=whatsapp&utm_medium=messaging`.",
+            "Then remember the second half: a forwarded message carries your UTMs with it. A link that gets forwarded through four groups keeps reporting as your original campaign. That's a feature if you're measuring word of mouth and a distortion if you're measuring one broadcast — so give sales-rep links a distinct `utm_content` and expect the number to run hot."
+          ]
+        },
+        {
+          "h3": "Offline QR codes",
+          "body": [
+            "Bake the UTMs into the URL before you generate the QR, and give every physical placement its own `utm_source` — `packaging-insert`, `menu-card`, `event-standee`. You only get one shot at this; the code is printed and you can't re-tag it later."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Reading the data in GA4 without misleading yourself",
+      "body": [
+        "In [GA4](/glossary/google-analytics-4), tagged traffic appears in the Traffic acquisition report under session source / medium, and in the campaign dimensions. Two things are worth understanding before you present it to anyone.",
+        "First, GA4 uses last non-direct attribution for sessions. If someone clicks your tagged email, leaves, and returns by typing your URL, that second session is still credited to the email. That's usually what you want, and it's not what most people assume the number means.",
+        "Second, UTMs measure the click, not the cause. A tagged link tells you which touch preceded the visit. It doesn't tell you which touch created the demand. Someone who saw six Instagram posts and then searched your brand name shows up as organic search, and no amount of tagging will fix that. Read the [conversion rate](/glossary/conversion-rate) alongside the source, keep expectations honest, and see [how to read a marketing report](/journal/how-to-read-an-seo-report) for the rest."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are UTM parameters case-sensitive?",
+      "a": "The values are. `Instagram` and `instagram` become two separate rows in your reports and GA4 will not merge them. The parameter names themselves must be lowercase to be recognised at all. Simplest rule: lowercase everything, every time."
+    },
+    {
+      "q": "Do UTM parameters hurt SEO?",
+      "a": "Not if you only use them on inbound links from other properties. The risk is duplicate URLs getting indexed, which a self-referencing canonical tag handles. The real reason to keep them off internal links is analytics accuracy, not rankings."
+    },
+    {
+      "q": "Which UTM parameters are actually required?",
+      "a": "`utm_source` and `utm_medium` are the ones GA4 needs to classify a session. `utm_campaign` isn't technically required but you'll want it the first time someone asks how Diwali performed. `utm_term` and `utm_content` are optional and mostly useful in paid."
+    },
+    {
+      "q": "Should I use a URL shortener with UTMs?",
+      "a": "For anything printed or pasted into WhatsApp, yes — a tagged URL is ugly and long. The UTMs still register because the shortener redirects to the full URL. Just make sure the shortener you pick doesn't strip query strings, and test one link before printing 5,000 of them."
+    },
+    {
+      "q": "Do I need UTMs on Google Ads links?",
+      "a": "No. Auto-tagging with the GCLID handles Google Ads and gives richer data than manual UTMs, including cost. Manually tagging on top can overwrite it. Use UTMs for everything Google Ads doesn't auto-tag: email, social, WhatsApp, partners, offline."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "google-analytics-4" },
+    { "type": "glossary", "slug": "conversion-rate" },
+    { "type": "glossary", "slug": "retargeting" },
+    { "type": "compare", "slug": "ga4-vs-search-console" },
+    { "type": "services", "slug": "analytics-setup-services" },
+    { "type": "journal", "slug": "how-to-read-an-seo-report" }
+  ]
+}

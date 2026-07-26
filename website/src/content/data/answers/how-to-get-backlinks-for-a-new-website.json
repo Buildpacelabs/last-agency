@@ -1,0 +1,238 @@
+{
+  "slug": "how-to-get-backlinks-for-a-new-website",
+  "type": "answers",
+  "primaryKeyword": "how to get backlinks for a new website",
+  "secondaryKeywords": [
+    "backlinks for new site",
+    "first backlinks for a website",
+    "how to build links from zero",
+    "link building for startups"
+  ],
+  "cluster": "seo-howto",
+  "intent": "informational",
+  "h1": "Getting your first fifty backlinks from zero",
+  "metaTitle": "How to Get Backlinks for a New Website",
+  "metaDescription": "How to get backlinks for a new website with no traffic and no budget: seven routes that work from zero, ranked by effort, with realistic timelines.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Get your first backlinks from relationships and assets you already own: customers, suppliers, partners, founder profiles, industry directories, podcast interviews and original data. Cold outreach barely works from a domain with no traffic. Expect 20–50 referring domains in six months of honest effort, not 500.",
+  "takeaways": [
+    "Cold outreach fails from zero because there's nothing on your site worth an editor's link yet. Start with people who already have a reason to mention you.",
+    "Directory and profile links are worth one afternoon, then stop. They make your business legible to Google; they don't rank you.",
+    "**Original data is the only cold-start route that keeps earning links after you stop working on it.** It's also the one nobody does.",
+    "A ₹1,500 bought link is not a shortcut. It's your domain carrying the risk so a vendor can carry the margin."
+  ],
+  "sections": [
+    {
+      "h2": "Why the standard link playbook fails on a new domain",
+      "body": [
+        "Every link building guide assumes something that isn't true for you yet: that when an editor clicks through to your site, they find a page worth citing. On a four-month-old domain with 30 pages, no traffic and no reputation, they don't. They close the tab.",
+        "So the standard tactics — broken-link outreach, resource-page pitching, the skyscraper thing — convert at close to nothing until you have something to point at. Sending 400 cold emails from a domain nobody has heard of is a way to spend a month learning that.",
+        "The first fifty links come from two places instead. People who already have a reason to mention you, and something you publish that nobody else has. Everything else is a volume game you will lose to companies with a PR budget."
+      ]
+    },
+    {
+      "h2": "Seven routes, ranked by effort",
+      "body": [
+        "Ordered from cheapest to most expensive in your time. The counts assume a founder or a marketer spending three to five hours a week, not an agency running outreach at scale."
+      ],
+      "table": {
+        "caption": "Cold-start link routes for a domain with no authority, ordered by effort.",
+        "head": [
+          "Route",
+          "Effort",
+          "Links in 6 months",
+          "What it's actually worth"
+        ],
+        "rows": [
+          [
+            "Profiles and directories",
+            "One afternoon, total",
+            "15–30",
+            "Mostly nofollow. Entity consistency and crawl discovery, not ranking power."
+          ],
+          [
+            "Customers, suppliers, partners",
+            "~1 hour per ask",
+            "5–15",
+            "Topically relevant, often followed, and a competitor can't copy your supplier list."
+          ],
+          [
+            "Founder communities and startup lists",
+            "4–6 hours",
+            "3–10",
+            "Real referral traffic. Link value ranges from decent to zero."
+          ],
+          [
+            "Podcasts and interviews",
+            "2–4 hours per appearance",
+            "5–15",
+            "Followed links from real sites, plus a quotable position that compounds."
+          ],
+          [
+            "Original data you already hold",
+            "15–40 hours per piece",
+            "5–40",
+            "The only route that keeps earning links months after you stop."
+          ],
+          [
+            "Expert commentary and journalist requests",
+            "30 min per pitch, low hit rate",
+            "2–10",
+            "Occasionally a national title. Usually silence."
+          ],
+          [
+            "A free tool or template",
+            "20–60 hours to build",
+            "0–30",
+            "Widest spread of any route. Excellent when it lands, dead weight when it doesn't."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Routes 1–2: the links you can have by Friday",
+      "body": [
+        "These are administrative, not strategic. Do them once, properly, then never think about them again."
+      ],
+      "bullets": [
+        "**The obvious profiles** — Google Business Profile if you have a real address, LinkedIn company page, Crunchbase, your GitHub organisation, the About tab of your YouTube channel, and the bio fields on your founders' own social accounts.",
+        "**Associations you already pay for** — chambers of commerce, industry bodies, export councils. Most publish a member directory. Most members never claim their listing.",
+        "**Indian local directories** — Justdial, Sulekha and IndiaMART earn their keep if you sell locally or sell offline B2B. If you're a SaaS billing customers in dollars, skip them.",
+        "**Category listing sites** — G2, Capterra, Product Hunt and the equivalents in your niche. These bring buyers as well as links, which is rare.",
+        "**Vendor pages** — your hosting provider, payment gateway, or platform often runs a customer showcase. Ask to be in it."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The ₹2,999 directory package",
+        "body": "Somebody will offer you 500 directory submissions for the price of a dinner. At best those links sit on pages nobody reads and nothing happens. At worst you've bought a footprint that ties your domain to every other site in the same package. Free directories worth listing on take one afternoon and cost nothing."
+      }
+    },
+    {
+      "h2": "Routes 3–4: people who already have a reason to mention you",
+      "body": [
+        "Founders skip this because asking feels like begging. It isn't. You're offering somebody a page they already wanted to publish, with the writing done for them.",
+        "The ask converts far better when you bring the draft. \"Here's a 200-word case study about working with you, edit anything, here's the image\" gets a yes. \"Would you link to us?\" gets a maybe and then nothing."
+      ],
+      "bullets": [
+        "**Customers** — a case study on their site, a testimonial page, a \"tools we run on\" post. Offer the first draft.",
+        "**Suppliers, manufacturers and distributors** — \"where to buy\" and \"our partners\" pages exist on nearly every B2B site in the country.",
+        "**Integration partners** — the app directory of every platform you plug into. These are usually followed and permanently relevant.",
+        "**Investors, accelerators and incubators** — portfolio pages, cohort announcements, Startup India recognition profiles.",
+        "**Alumni and education pages** — many colleges and B-schools publish founder alumni features. They rarely say no to one of their own.",
+        "**Indian startup press** — YourStory, Inc42 and similar cover launches, funding and founder stories. A launch or a funding round is a reason to pitch. A rebrand isn't."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Check the rel attribute before you celebrate",
+        "body": "Plenty of portfolio and directory pages mark every outbound link nofollow. A nofollow link from a site your buyers actually read is still worth having — for traffic, for brand, for the fact that Google treats nofollow as a hint rather than a hard rule. Just don't put it in the ranking column of your spreadsheet."
+      }
+    },
+    {
+      "h2": "Route 5: publish a number nobody else has",
+      "body": [
+        "This is the only cold-start route that scales, and it's the one almost nobody attempts, because it means committing to a specific claim in public.",
+        "You don't need a survey budget. Most businesses are sitting on data they've never aggregated: median delivery time by pincode, the price spread across your own transactions, the most common reason support tickets get opened, the salary bands you genuinely pay. Publish the method, publish the sample size, and don't round in your own favour — the first person to check will be a competitor."
+      ],
+      "bullets": [
+        "A number a journalist can put in a headline without adding context.",
+        "A comparison across a dimension people already argue about — cities, price tiers, categories, years.",
+        "Recency, with a stated refresh date. Annual updates keep the same URL accumulating links.",
+        "One chart that survives being screenshotted out of context.",
+        "A methodology paragraph that holds up when somebody hostile reads it."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The honest hit rate",
+        "body": "A data piece takes 15–40 hours end to finish, and roughly half of them earn nothing at all. Treat it as a portfolio: three a year, and expect one to carry the other two. That's still cheaper per referring domain than buying links, and it doesn't put your domain at risk."
+      }
+    },
+    {
+      "h2": "Routes 6–7: your founder is the link asset",
+      "body": [
+        "A new company has no reputation. A person can borrow one faster than a domain can build one.",
+        "Niche podcasts in India will happily book a founder with a specific, arguable opinion — the booking bottleneck is interesting guests, not slots. Check the show notes of a recent episode before you commit two hours; some strip links entirely."
+      ],
+      "bullets": [
+        "**Podcasts and webinars** — one recording, a followed link in the show notes, and a clip you can reuse for months.",
+        "**Journalist request services and the LinkedIn equivalent** — low hit rate, near-zero cost. Pitch a number or a dissenting view. Nobody has ever quoted a source for agreeing.",
+        "**One substantial guest column** beats ten thin guest posts. If a site publishes anything you send, the link is worth what the editorial standard is worth: nothing. The mechanics are the same ones [agencies use to earn links](/answers/how-do-seo-agencies-get-backlinks), minus the outreach headcount."
+      ]
+    },
+    {
+      "h2": "What not to do in the first six months",
+      "body": [
+        "The tempting shortcuts all share a shape: somebody else does the work, you carry the risk, and the invoice arrives either way."
+      ],
+      "bullets": [
+        "**Buying links.** A ₹1,500 placement on a \"DA 50+\" site is a link scheme under Google's spam policies. The vendor's domain is fine. Yours is the one in the transaction. Read [paid links versus earned links](/compare/paid-links-vs-earned-links) before you spend anything.",
+        "**Guest post packages and private blog networks.** If the pitch says \"our network\", the network is the problem.",
+        "**Comment, forum and profile blasts.** These stopped working over a decade ago and still get sold weekly.",
+        "**Reciprocal link rings.** Two new sites linking to each other adds two links and zero credibility.",
+        "**Chasing Domain Authority as a target.** It's a third-party score, not a Google metric. [What domain authority actually is](/answers/what-is-domain-authority) is worth ten minutes before you set it as a KPI.",
+        "**Spending your whole budget in month one.** Links compound. Ten domains a quarter for four quarters beats forty in January and silence after."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "\"Google just ignores bad links now\"",
+        "body": "Google has said it ignores most spammy links rather than penalising for them, and people read that as permission. The usual failure isn't a manual action — it's having spent your entire link budget on links engineered to be ignored. For what real link work costs, see [link building pricing in India](/cost/link-building-cost)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many backlinks does a new website need to rank?",
+      "a": "There's no threshold — it's relative to whoever is already ranking. Open the top three results for your target query in any link tool and count their referring domains. For a low-competition local query, 10–30 relevant domains is often enough. For a competitive national commercial term, the honest answer is hundreds, and it takes years."
+    },
+    {
+      "q": "How long before a new backlink affects rankings?",
+      "a": "Google has to crawl the linking page first, which takes days on a busy site and weeks on a quiet one. After that the effect builds gradually. Expect four to twelve weeks before links show up as movement, and resist attributing a single ranking change to a single link — you'll draw the wrong lesson."
+    },
+    {
+      "q": "Are nofollow links worth getting?",
+      "a": "Yes, for reasons that aren't ranking. They bring referral traffic, they make your business name and URL consistent across the web, and since 2019 Google treats nofollow as a hint rather than a directive. Get them where they sit on pages real buyers read. Don't pay for them."
+    },
+    {
+      "q": "Should I buy backlinks to speed things up for a new site?",
+      "a": "No. Bought links are a link scheme under Google's spam policies, and the risk sits on your domain rather than the seller's. The bigger practical problem is that most bought links are on sites with no readers, so even when nothing goes wrong, nothing happens either."
+    },
+    {
+      "q": "Can I get backlinks without publishing any content?",
+      "a": "Partly. Profiles, directories, partner pages, podcasts and customer case studies all work without a blog. What you can't do without content is the route that scales — nobody links to a homepage twice. At some point you need one page worth citing."
+    },
+    {
+      "q": "What's a realistic number of backlinks in the first six months?",
+      "a": "For a founder spending three to five hours a week on this, 20–50 referring domains is a good six months, most of them from routes one to four. Anyone showing you 500 in that window is showing you a directory dump, not a link profile."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "backlink"
+    },
+    {
+      "type": "glossary",
+      "slug": "referring-domain"
+    },
+    {
+      "type": "cost",
+      "slug": "link-building-cost"
+    },
+    {
+      "type": "compare",
+      "slug": "paid-links-vs-earned-links"
+    },
+    {
+      "type": "journal",
+      "slug": "how-much-do-backlinks-actually-matter"
+    },
+    {
+      "type": "services",
+      "slug": "link-building-services"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-fix-broken-links-in-seo"
+    }
+  ]
+}

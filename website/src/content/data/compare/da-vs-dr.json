@@ -1,0 +1,255 @@
+{
+  "slug": "da-vs-dr",
+  "type": "compare",
+  "primaryKeyword": "difference between da and dr in seo",
+  "secondaryKeywords": [
+    "da vs dr",
+    "domain authority vs domain rating",
+    "what is a good domain rating",
+    "is domain authority a ranking factor",
+    "how to increase domain authority"
+  ],
+  "cluster": "metrics-and-tools",
+  "intent": "informational",
+  "h1": "DA vs DR: which number is lying to you?",
+  "metaTitle": "DA vs DR: Which Number Is Lying to You?",
+  "metaDescription": "The difference between DA and DR in SEO is the tool behind it. Neither is a Google metric. Here's which number lies, and why link sellers quote one.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "DA is Moz's score and DR is Ahrefs' — two vendors' estimates of the same idea, on the same 0–100 logarithmic scale, built from two different link indexes. DR reads only your backlink profile. DA runs a broader model tuned to predict ranking. Google uses neither, which is why link sellers quote whichever flatters them.",
+  "takeaways": [
+    "**DR is a link-graph score. DA is a ranking prediction.** That's the whole difference, and it's why the two numbers can sit forty points apart on the same site.",
+    "Both are logarithmic. Getting from 20 to 30 is ordinary work; getting from 60 to 70 is a different sport.",
+    "Google has repeatedly said it doesn't use Moz's Domain Authority. Neither score is an input to anything Google does.",
+    "DR is the easier of the two to inflate deliberately — which is exactly why every link seller's pitch deck leads with it."
+  ],
+  "sections": [
+    {
+      "h2": "What each score is actually measuring",
+      "body": [
+        "Both numbers try to answer \"how strong is this domain?\", which isn't a question with a real-world unit attached. Each vendor answers it differently, from a link index only they can see.",
+        "**Domain Rating (Ahrefs)** is a pure link-graph calculation: count the unique domains linking to you, weight each by its own DR, divide that weight across how many domains it links out to. It knows nothing about your content, traffic or rankings. It describes a graph.",
+        "**Domain Authority (Moz)** is a machine-learning model trained to predict how often a domain appears in search results, built on Moz's own index. It takes more inputs than raw links and it's a *relative* score, calibrated against the rest of the web — so your DA can fall while your links grow, simply because bigger sites grew faster."
+      ],
+      "table": {
+        "caption": "Domain Authority and Domain Rating, line by line.",
+        "head": [
+          "",
+          "DA (Moz)",
+          "DR (Ahrefs)"
+        ],
+        "rows": [
+          [
+            "Owner",
+            "Moz",
+            "Ahrefs"
+          ],
+          [
+            "Scale",
+            "1–100, logarithmic",
+            "0–100, logarithmic"
+          ],
+          [
+            "What it models",
+            "Predicted likelihood of ranking",
+            "Backlink profile strength only"
+          ],
+          [
+            "Inputs",
+            "Link index plus model features, calibrated against the web",
+            "Referring domains, weighted by their DR and outbound domain count"
+          ],
+          [
+            "What it ignores",
+            "It's a prediction, not a measurement",
+            "Content, traffic, rankings, relevance, spam"
+          ],
+          [
+            "Recalibrated",
+            "Yes — as the web grows",
+            "No"
+          ],
+          [
+            "Moves when",
+            "Moz recrawls or retrains",
+            "Ahrefs finds or drops referring domains"
+          ],
+          [
+            "Ease of manipulation",
+            "Harder — spam-shaped profiles predict badly",
+            "Easier — redirect or buy enough weighted domains"
+          ],
+          [
+            "Used by Google",
+            "No",
+            "No"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "A worked example: DA 21, DR 61, same site",
+      "body": [
+        "This is a constructed illustration, not a client — but it's the exact shape we see when a founder forwards us a link-selling deck and asks whether it's a good buy.",
+        "A five-year-old site in a commercial category. 340 referring domains. DR 61. DA 21. Forty points of disagreement about the same domain."
+      ],
+      "table": {
+        "caption": "Where 340 referring domains came from, and what each pile does to each score.",
+        "head": [
+          "Source of links",
+          "Domains",
+          "Effect on DR",
+          "Effect on DA"
+        ],
+        "rows": [
+          [
+            "Three link-network footprints — generic names, no named authors, hundreds of outbound links each, three repeated anchors",
+            "120",
+            "Large. They carry inherited DR and DR doesn't judge quality.",
+            "Small or negative. A model tuned on ranking has learned this shape doesn't."
+          ],
+          [
+            "Profile and directory pages on high-DR platforms",
+            "60",
+            "Real — the host domain does the work.",
+            "Near zero. These pages rank for nothing."
+          ],
+          [
+            "One expired domain, 301-redirected into the homepage in 2023, carrying its own old profile",
+            "45",
+            "Immediate and large — a redirect folds another domain's graph into yours.",
+            "Minimal. Moz's model isn't crediting the graft."
+          ],
+          [
+            "Genuine editorial links from small, real, relevant sites",
+            "115",
+            "Modest. Small sites have little DR to pass.",
+            "This is the pile DA rewards — and 115 of them is a DA 21 site."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "The tell that settles it",
+        "body": "This site ranks for its own brand name and almost nothing else. Whatever the two scores say, the traffic answers the question — and that's the number nobody in the pitch deck wanted to show you."
+      }
+    },
+    {
+      "h2": "So which one is lying?",
+      "body": [
+        "Both, a little, in different directions.",
+        "DR describes a link graph faithfully. The lie is one of implication: a high DR reads as \"strong site\" when it may only mean \"a lot of weighted domains point here, by whatever means\". DR has no opinion about how they arrived.",
+        "DA is trying to predict something real, which makes it more useful and less literal. But it's a model, it runs on a smaller index, and it's relative — so a DA drop can mean the web grew, not that you shrank. Founders panic about that every quarter and there's usually nothing to fix.",
+        "The deeper problem: both answer a question you don't have. You don't need a domain's abstract strength. You need to know whether a link from that page will help *your* page rank for *your* query, and neither score is built for that. Longer case in [domain authority is a vanity metric](/journal/domain-authority-is-a-vanity-metric)."
+      ]
+    },
+    {
+      "h2": "Neither number is Google's",
+      "body": [
+        "This part isn't ambiguous. DA is a Moz product, DR is an Ahrefs product, both built by third parties reverse-engineering an index they can't see. Google has said repeatedly that it doesn't use Moz's Domain Authority.",
+        "One nuance, stated honestly rather than pretended away: internal Google documentation that surfaced publicly in 2024 referenced site-level quality signals, and SEOs have argued about it since. It doesn't imply Google reads DA or DR — those are vendor scores from vendor indexes.",
+        "The practical consequence: any contract that sets a DA or DR *target* has made a third party's opinion your deliverable. If Moz retrains its model in March, the KPI moves without anybody doing any work. That's a weather report, not a metric."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Never put a DA or DR target in a contract",
+        "body": "\"We'll take you from DA 25 to DA 40\" is a promise about a vendor's model, not about your business. The only target worth signing is one measured on your own numbers — for us that's your trailing-90-day qualified organic leads, frozen on day one, with the work continuing free past 90 days if we haven't beaten it."
+      }
+    },
+    {
+      "h2": "How link vendors move these numbers on purpose",
+      "body": [
+        "None of what follows is secret. It's the standard toolkit of the Indian and global link marketplaces, and knowing it is enough to disqualify most of what lands in your inbox."
+      ],
+      "bullets": [
+        "**301 stacking.** Buy an expired domain with an old link profile, redirect it at the money site. DR jumps within weeks because the redirect folds an entire graph in. Nothing about the site got better.",
+        "**Expired-domain rebuilds.** Same trick without the redirect: resurrect a dead domain on its old URL structure, publish thin content, sell placements on the residual authority. The tell is a traffic curve that's flat for years, dies, then restarts.",
+        "**Sitewide footer and blogroll links.** Fifty links, one referring domain. Sold as \"50 backlinks\", worth roughly one.",
+        "**Link exchange rings.** Three- and four-way swaps to dodge the obvious reciprocal footprint. Whole marketplaces run on it.",
+        "**Platform profile spam.** Mass profile pages on genuinely strong platforms. Strong host, page nobody has ever crawled with interest.",
+        "**Quoting whichever score wins.** The same inventory gets pitched as \"DA 45\" in one deck and \"DR 72\" in another. If a seller only shows one of the two, ask for the other and watch the pause."
+      ]
+    },
+    {
+      "h2": "What to check instead, before you pay for a link",
+      "body": [
+        "Eight checks, about two minutes a site once you've done a few. They'll disqualify most paid inventory, which is the point — see [paid links versus earned links](/compare/paid-links-vs-earned-links) for what the alternative costs."
+      ],
+      "numbered": [
+        "**Organic traffic to the linking page**, not the domain. You want \"some\" versus \"zero\"; estimator precision doesn't matter.",
+        "**The traffic curve over three years.** Flat, cliff, restart means a rebuilt expired domain.",
+        "**Does the site rank for its own brand name?** If not, Google isn't confident it exists.",
+        "**The outbound-link pattern on the page.** Forty links to unrelated commercial sites is a farm, whatever the score says.",
+        "**Topical relevance to your page**, not your industry generally.",
+        "**Is the exact page indexed?** Paste a unique sentence into Google in quotes. Unindexed page, worthless link.",
+        "**Is there a named human?** Author page, real LinkedIn profile, masthead, address. Networks skip this because it costs money.",
+        "**Would you send a paying customer to this page?** The most reliable filter in link buying, and it takes a second."
+      ]
+    },
+    {
+      "h2": "The verdict",
+      "body": [
+        "Use DR for triage. It's fast, directionally useful for sorting 200 prospects down to 40, and everyone in outreach already speaks it. Never use it as the decision.",
+        "Use DA for almost nothing you're paying for. It's a more thoughtful number, but it's slower to update, built on a smaller index, and relative in a way that produces quarterly false alarms.",
+        "Use traffic and relevance as the actual test. A page with 200 real monthly visits, a named author and a topic adjacent to yours beats a DR 70 host with no traffic every time — and costs less, because the marketplaces haven't priced it."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the difference between DA and DR in SEO?",
+      "a": "DA is Moz's Domain Authority, a model trained to predict how likely a domain is to rank. DR is Ahrefs' Domain Rating, a calculation of backlink profile strength alone. Different owners, different indexes, different maths — which is why the same site can read DA 21 and DR 61 without either being wrong."
+    },
+    {
+      "q": "Is domain authority a Google ranking factor?",
+      "a": "No. Domain Authority is a Moz product, computed from Moz's index, and Google has said repeatedly that it doesn't use it. The same applies to Ahrefs' DR. Both are third-party estimates of a concept, not inputs to anything Google runs."
+    },
+    {
+      "q": "What is a good domain rating?",
+      "a": "There's no absolute answer, because both scales are logarithmic and category-dependent. The useful comparison is against the sites currently ranking for your target queries — if they sit at DR 40 and you're at 25, that's a gap you can close. Chasing a round number like 50 is a target with no business attached to it."
+    },
+    {
+      "q": "Why did my DA drop when I didn't lose any links?",
+      "a": "Because DA is relative. Moz recalibrates it against the rest of the web, so if larger sites gained faster than you did, your score falls without anything happening to your backlinks. It's also affected by index refreshes and model retraining. This causes more unnecessary panic than any other number in SEO."
+    },
+    {
+      "q": "How do I increase domain authority?",
+      "a": "By earning links from sites that are themselves earning traffic, on topics adjacent to yours, at a steady pace. There is no faster honest route, and the fast dishonest ones — 301 stacking, expired-domain rebuilds, link rings — move DR far more than DA, which is exactly why they're marketed on DR."
+    },
+    {
+      "q": "Should I put a DA or DR target in my SEO contract?",
+      "a": "No. You'd be committing your agency to a third party's model, which can move on its own when Moz or Ahrefs updates. Set the target on something you own — qualified leads from organic search, measured against a frozen baseline from before the work started."
+    }
+  ],
+  "versus": {
+    "a": "DA (Moz Domain Authority)",
+    "b": "DR (Ahrefs Domain Rating)",
+    "verdict": "For sorting a link prospect list quickly, use DR — it updates faster and everyone in outreach speaks it; but for deciding whether to actually pay for a placement, ignore both and check the linking page's organic traffic and topical relevance instead."
+  },
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "domain-authority"
+    },
+    {
+      "type": "glossary",
+      "slug": "domain-rating"
+    },
+    {
+      "type": "journal",
+      "slug": "domain-authority-is-a-vanity-metric"
+    },
+    {
+      "type": "compare",
+      "slug": "paid-links-vs-earned-links"
+    },
+    {
+      "type": "compare",
+      "slug": "ahrefs-vs-semrush"
+    },
+    {
+      "type": "cost",
+      "slug": "link-building-cost"
+    }
+  ]
+}

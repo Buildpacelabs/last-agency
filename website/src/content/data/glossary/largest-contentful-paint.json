@@ -1,0 +1,164 @@
+{
+  "slug": "largest-contentful-paint",
+  "type": "glossary",
+  "primaryKeyword": "largest contentful paint",
+  "secondaryKeywords": [
+    "lcp meaning",
+    "how to improve lcp",
+    "lcp under 2.5 seconds",
+    "what causes slow lcp",
+    "lcp element"
+  ],
+  "cluster": "technical-seo",
+  "intent": "informational",
+  "h1": "Largest Contentful Paint (LCP)",
+  "metaTitle": "Largest Contentful Paint (LCP), Explained",
+  "metaDescription": "Largest Contentful Paint measures how fast your main content appears. Google wants under 2.5 seconds. Here's what breaks it, and the order to fix it in.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Largest Contentful Paint (LCP)",
+  "definition": "Largest Contentful Paint is the Core Web Vital that measures how long it takes for the biggest visible element on a page — usually a hero image or a headline — to finish rendering.",
+  "answer": "Largest Contentful Paint measures how long your page's biggest visible element takes to render. Google calls under 2.5 seconds good, 2.5–4 seconds poor, over 4 seconds bad, measured at the 75th percentile of real visits. On most Indian sites the culprit is one uncompressed hero image.",
+  "takeaways": [
+    "**Under 2.5 seconds** at the 75th percentile of real visits is the bar. Lab scores are a debugging tool, not the grade.",
+    "Split it into TTFB, load delay, load duration and render delay before touching anything. Fixing the wrong part is the default failure.",
+    "An oversized hero image is the most common single cause on Indian sites — and `loading=\"lazy\"` on that hero makes it worse, not better.",
+    "TTFB over 1.5 seconds is a hosting problem. Image compression won't rescue it."
+  ],
+  "sections": [
+    {
+      "h2": "Which element on your page is the LCP element",
+      "body": [
+        "LCP doesn't measure your whole page. It measures one element: the largest thing visible inside the viewport when the page paints. Everything below the fold is irrelevant to the score, which surprises people who've spent a week compressing footer images.",
+        "Chrome picks it from a short list: an `<img>`, an SVG `<image>`, a video poster frame, a block of text, or anything carrying a CSS `background-image`. On a D2C homepage that's the hero banner. On a blog post it's the H1 or the featured image."
+      ],
+      "bullets": [
+        "**PageSpeed Insights** names the element outright under the LCP diagnostic.",
+        "**Chrome DevTools → Performance** — record a load; the LCP marker points straight at the node in the DOM.",
+        "**Search Console → Core Web Vitals** groups failing URLs, so you learn it's every product page, not the one you tested."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Lab numbers lie politely",
+        "body": "Your PageSpeed score is a simulated load on a throttled phone. Google uses field data — real Chrome users, 28-day rolling window, 75th percentile. Green lab and red field means your visitors are on worse phones than the simulation assumed. Believe the field."
+      }
+    },
+    {
+      "h2": "LCP is four numbers wearing one coat",
+      "body": [
+        "This is the part most people skip, and it's why so much speed work fails. A 4.8-second LCP tells you nothing about what to fix. Break it into its four parts — Google's own breakdown — and the culprit usually announces itself in ten minutes."
+      ],
+      "table": {
+        "caption": "The four sub-parts of an LCP score and what actually fixes each one.",
+        "head": [
+          "Sub-part",
+          "What's happening",
+          "The usual fix"
+        ],
+        "rows": [
+          [
+            "Time to First Byte",
+            "Your server thinking, plus the round trip to wherever it physically lives.",
+            "Full-page caching, a CDN with Indian edge nodes, a better host."
+          ],
+          [
+            "Resource load delay",
+            "The gap between the HTML arriving and the browser deciding to fetch the hero image.",
+            "Preload it, add `fetchpriority=\"high\"`, stop lazy-loading it."
+          ],
+          [
+            "Resource load duration",
+            "The image actually downloading over the visitor's connection.",
+            "AVIF or WebP, correct dimensions, honest compression."
+          ],
+          [
+            "Element render delay",
+            "The image has arrived and nothing is painted yet.",
+            "Cut render-blocking CSS and JS. Fix font loading."
+          ]
+        ]
+      },
+      "bullets": [
+        "Google's guidance: TTFB should eat no more than roughly 40% of your LCP budget, and load delay should be near zero. If TTFB alone is 1.8 seconds you have 0.7 left for everything else, and compression won't get you there."
+      ]
+    },
+    {
+      "h2": "The hero banner tax",
+      "body": [
+        "Here's the failure we find most often in Indian audits: a hero exported at 2,400px wide, saved as a 1.4MB JPEG at quality 95, and served identically to a ₹9,000 Android phone on 4G in Indore. The design review went beautifully. The metric is on fire."
+      ],
+      "numbered": [
+        "**Serve the right size.** `srcset` and `sizes`, so a 390px phone downloads a 390px image instead of scaling the desktop original.",
+        "**Use a modern format.** AVIF and WebP are meaningfully smaller than JPEG at the same perceived quality. How much depends on the image, so test rather than assume.",
+        "**Never lazy-load the LCP image.** `loading=\"lazy\"` on a hero tells the browser to deprioritise the exact thing being measured.",
+        "**Add `fetchpriority=\"high\"`** to the hero `<img>`, and preload it if it's discovered late — CSS background images and slider scripts both do that.",
+        "**Kill the carousel.** A rotating hero downloads four full-size images to show one, and it's usually your biggest [layout shift](/glossary/cumulative-layout-shift) source as well."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The slider is usually the problem",
+        "body": "Removing a homepage carousel is the fastest [Core Web Vitals](/glossary/core-web-vitals) win available to most sites. It costs one design conversation rather than a developer sprint, which is why it keeps not happening."
+      }
+    },
+    {
+      "h2": "TTFB, hosting and where your server actually sits",
+      "body": [
+        "The speed of light isn't negotiable. If your site runs on a shared host in Arizona and your buyers are in Ahmedabad, every request pays a round trip across the planet before your server has thought about anything.",
+        "Two fixes, in order. Cache aggressively so most requests never reach the origin, then put a CDN in front so cached responses come from an edge node in Mumbai or Chennai. Managed platforms like Vercel do this by default; a ₹300-a-month cPanel plan does not.",
+        "Treat 800ms as your TTFB ceiling — that's Google's own \"good\" threshold — and anything past 1.5 seconds as a hosting decision rather than an SEO task. Pages that hit a database on every request skip most caching by design, and those need real cache rules or server rendering, not a fourth speed plugin. That's [Core Web Vitals work](/services/core-web-vitals-optimisation), not content work."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a good LCP score?",
+      "a": "Under 2.5 seconds is good, 2.5 to 4 seconds needs work, and over 4 seconds is poor. The measurement that counts is the 75th percentile of real visits over a 28-day window, split between mobile and desktop. Passing on desktop and failing on mobile is the standard Indian result."
+    },
+    {
+      "q": "How do I find out which element is my LCP element?",
+      "a": "Run the URL through PageSpeed Insights and read the LCP diagnostic — it names the element. For a live look, record a page load in Chrome DevTools' Performance panel and click the LCP marker on the timeline. It highlights the exact node."
+    },
+    {
+      "q": "Does LCP actually affect rankings?",
+      "a": "It's a tiebreaker, not a lever. Core Web Vitals are part of Google's page experience signals, and Google has been consistent that relevant content outranks a fast irrelevant page. A slow site loses close fights and loses conversions on every visit, which is the better reason to fix it."
+    },
+    {
+      "q": "Why is my PageSpeed score green but Search Console still shows LCP failing?",
+      "a": "Because they measure different things. PageSpeed's lab score is one simulated load on a throttled device. Search Console reports field data from real Chrome users on real phones and real networks. When they disagree, the field data is the one Google acts on."
+    },
+    {
+      "q": "Does lazy loading images improve LCP?",
+      "a": "Below the fold, yes — it stops offscreen images competing for bandwidth. On the LCP element itself it's actively harmful, because the browser waits before fetching the exact resource being timed. Lazy-load everything except the hero."
+    },
+    {
+      "q": "How long before an LCP fix shows up in Search Console?",
+      "a": "Roughly a month. Field data in Search Console and PageSpeed Insights runs on a 28-day rolling window, so a fix deployed today only fully replaces the old data four weeks later. Watch your lab numbers and real-user monitoring in the meantime."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "core-web-vitals"
+    },
+    {
+      "type": "glossary",
+      "slug": "interaction-to-next-paint"
+    },
+    {
+      "type": "glossary",
+      "slug": "cumulative-layout-shift"
+    },
+    {
+      "type": "services",
+      "slug": "core-web-vitals-optimisation"
+    },
+    {
+      "type": "compare",
+      "slug": "nextjs-vs-wordpress-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "what-an-seo-audit-should-actually-find"
+    }
+  ]
+}

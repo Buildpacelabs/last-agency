@@ -1,0 +1,133 @@
+{
+  "slug": "keyword-match-types",
+  "type": "glossary",
+  "primaryKeyword": "keyword match types",
+  "secondaryKeywords": [
+    "broad match vs phrase match",
+    "exact match keywords",
+    "match types google ads",
+    "broad match modifier",
+    "which match type to use"
+  ],
+  "cluster": "paid",
+  "intent": "informational",
+  "h1": "Keyword match types",
+  "metaTitle": "Keyword Match Types in Google Ads, Explained",
+  "metaDescription": "Keyword match types decide how loosely Google matches your ad to a search. Broad, phrase and exact in 2026 — and exactly where each one wastes budget.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Keyword match types",
+  "definition": "Keyword match types are the Google Ads settings that decide how closely a search has to resemble your keyword before your ad is allowed into the auction.",
+  "answer": "Keyword match types control how closely a search must match your keyword before your ad can show. Google Ads offers three: broad, phrase and exact. None of them are literal any more — all three match close variants, so exact match will happily serve on a query you never typed.",
+  "takeaways": [
+    "**Exact match is not exact.** It matches same-meaning queries, reordered words and implied words.",
+    "Broad match modifier is gone. Google folded it into phrase match in February 2021 and retired the `+keyword` syntax.",
+    "Broad match only behaves itself under Smart Bidding with conversion data. On manual CPC it's a donation.",
+    "Under ₹1 lakh a month, start exact, earn your way to phrase, and treat broad as an experiment with a budget cap."
+  ],
+  "sections": [
+    {
+      "h2": "The three match types, in their current form",
+      "body": [
+        "There used to be four. Broad match modifier — the `+running +shoes` syntax — was folded into phrase match in February 2021 and no longer exists. What's left is three settings, written as punctuation around the keyword."
+      ],
+      "table": {
+        "caption": "Google Ads match types and what each one is allowed to match.",
+        "head": ["Match type", "How you write it", "What it can match"],
+        "rows": [
+          [
+            "Broad",
+            "`running shoes`",
+            "Anything Google judges related — synonyms, related searches, and intent inferred from your landing page, your other keywords and the user's recent activity."
+          ],
+          [
+            "Phrase",
+            "`\"running shoes\"`",
+            "Searches that include the meaning of your keyword, with words before or after. Absorbed everything broad match modifier used to do."
+          ],
+          [
+            "Exact",
+            "`[running shoes]`",
+            "Searches with the same meaning or same intent. Includes reordering, misspellings, plurals, abbreviations and implied words."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Why exact match stopped being exact",
+      "body": [
+        "Close variant matching started small — misspellings and plurals, which nobody objected to. It then widened to stemming, abbreviations and accents, and finally to same-meaning queries. Today `[running shoes]` can serve on \"shoes for running\", \"jogging shoes\" and \"buy running footwear\", because Google reads those as the same intent.",
+        "That's usually fine and occasionally expensive. The classic failure is a brand term: `[acme accounting software]` can pull in \"accounting software like acme\", which is a competitor-shopping query you're now paying to lose. You only find these in the search terms report, which is why the audit below is not optional."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The bit that costs money",
+        "body": "Match type no longer stops Google serving your ad. It only changes how far Google is willing to stretch. The thing that actually stops a query is a negative keyword — see [what negative keywords do](/glossary/negative-keywords)."
+      }
+    },
+    {
+      "h2": "Match type and Smart Bidding are now one decision",
+      "body": [
+        "Broad match is designed to be paired with Smart Bidding. The logic is honest enough: broad casts wide, and the algorithm bids down or not at all on queries it expects to convert badly. Take away the algorithm and you've kept the casting and lost the correction.",
+        "So: broad plus Target CPA or Target ROAS with real conversion history is a legitimate discovery tool. Broad plus manual CPC, or broad plus a conversion action that fires on every page view, is a wider net over the same small pond.",
+        "Smart Bidding also needs volume to learn from. If the account sees a handful of conversions a month, there's nothing for it to correct with, and broad match behaves exactly as badly as its reputation suggests."
+      ]
+    },
+    {
+      "h2": "A match type plan for budgets under ₹1 lakh a month",
+      "body": [
+        "Small budgets can't fund exploration. At ₹40,000–₹1,00,000 a month, every wasted click is a real percentage of the account. Run it in this order."
+      ],
+      "numbered": [
+        "**Ship a negative keyword list before day one.** Jobs, salary, free, download, course, PDF, \"kaise\", and any competitor whose customers you don't want to pay to entertain.",
+        "**Start exact** on the ten to twenty queries you already know convert — from Search Console, from your sales calls, from your CRM.",
+        "**Add phrase** for the same themes once exact has four to six weeks of data and you know your real [cost per click](/glossary/cost-per-click).",
+        "**Only then test broad**, in its own campaign, with its own budget cap and Smart Bidding attached. Never inside the campaign that's already working.",
+        "**Read the search terms report weekly** for the first month, then fortnightly. Add negatives every single time."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "One more lever",
+        "body": "Match type is not the only thing deciding what you pay. [Quality Score](/glossary/quality-score) discounts your cost per click when the ad and landing page genuinely answer the query — which is the cheapest optimisation in the account and the one most people skip."
+      }
+    },
+    {
+      "h2": "Auditing match types with the search terms report",
+      "body": [
+        "The search terms report shows the queries that actually triggered your ads, next to the keyword that caught them. Sort by cost, descending. Anything expensive and irrelevant becomes a negative today; anything cheap and converting gets promoted to its own exact-match keyword.",
+        "One caveat: the report doesn't show every query. Google withholds terms too few people searched, so a slice of your spend sits in an unattributable bucket — and that slice is usually larger on broad than on exact. Another quiet argument for keeping broad in its own campaign.",
+        "It's also the best keyword research file you'll ever get, which is why we read it alongside organic. See [how we run performance marketing](/performance)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Which keyword match type should I start with?",
+      "a": "Exact, on a small list of queries you already know convert. It gives you clean data fastest and it protects a small budget. Broaden once you have four to six weeks of search terms data and a negative keyword list built from it."
+    },
+    {
+      "q": "Does broad match modifier still exist?",
+      "a": "No. Google folded broad match modifier into phrase match in February 2021 and retired the `+keyword` syntax. Phrase match now covers everything BMM used to do, which is why phrase match reaches further than it did before 2021."
+    },
+    {
+      "q": "Why is my exact match keyword showing for a different search?",
+      "a": "Close variants. Exact match covers same-meaning queries, reordered words, misspellings, plurals, abbreviations and implied words. It's working as designed. If a specific variant is wasting money, add it as a negative — that's the only control that actually blocks it."
+    },
+    {
+      "q": "Can I use all three match types for the same keyword?",
+      "a": "You can, and Google will pick the most relevant eligible keyword rather than the most specific one. It's rarely worth the complexity in a small account. Cleaner: exact in the proven campaign, broad in a separate capped campaign, phrase where you need middle ground."
+    },
+    {
+      "q": "Do match types exist on Meta ads?",
+      "a": "No. Match types are a search-advertising concept, because search starts with a typed query. Meta targets people and behaviour rather than queries, which is why the two platforms need completely different keyword and audience thinking."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "negative-keywords" },
+    { "type": "glossary", "slug": "quality-score" },
+    { "type": "glossary", "slug": "cost-per-click" },
+    { "type": "compare", "slug": "ppc-vs-seo" },
+    { "type": "journal", "slug": "why-indian-d2c-brands-overspend-on-ads" },
+    { "type": "cost", "slug": "digital-marketing-agency-cost-india" }
+  ]
+}

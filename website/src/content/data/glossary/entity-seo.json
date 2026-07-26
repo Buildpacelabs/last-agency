@@ -1,0 +1,101 @@
+{
+  "slug": "entity-seo",
+  "type": "glossary",
+  "primaryKeyword": "entity seo",
+  "secondaryKeywords": [
+    "what is an entity in seo",
+    "entities vs keywords",
+    "entity based search",
+    "google entity recognition",
+    "entity optimization"
+  ],
+  "cluster": "content",
+  "intent": "informational",
+  "h1": "Entity",
+  "metaTitle": "Entity in SEO: What It Is and Why It Matters",
+  "metaDescription": "An entity is a thing Google recognises: a person, brand, product or place. Here's how entities differ from keywords, and the four signals you control.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Entity",
+  "definition": "An entity is a distinct thing a search engine recognises and stores facts about — a person, organisation, product, place or concept — as opposed to a keyword, which is only a string of characters.",
+  "answer": "An entity is a thing Google recognises and stores facts about — a person, company, product or place — as opposed to a keyword, which is just a string of characters. Google described the shift in 2012 as \"things, not strings\". Getting recognised as an entity is what makes AI answers name you.",
+  "takeaways": [
+    "\"SEO agency\" is a string. \"Last Agency\" is meant to be a thing. The difference decides whether Google can answer questions about you that no page on your site states outright.",
+    "Recognition comes from corroboration. One page claiming a fact is a claim; six independent sources agreeing is a fact.",
+    "Four signals you actually control: Organization schema with `sameAs`, one consistent public name, third-party mentions repeating the same facts, and an About page that states them plainly.",
+    "Contradictions are worse than silence. A model asked about you will pick one version and say it with total confidence."
+  ],
+  "sections": [
+    {
+      "h2": "Strings versus things",
+      "body": [
+        "Type \"SEO agency\" and a search engine matches documents containing that string and its variants. Type \"Last Agency\" and it should be doing something different: retrieving a record about an organisation — founders, city, category, services, prices, the other sites that mention it — and answering from that record.",
+        "Google announced this shift in 2012 when it launched the Knowledge Graph, under the phrase \"things, not strings\". Everything since — Knowledge Panels, entity-based retrieval, and now the AI systems answering above the results — runs on the same idea. A query gets resolved to entities first, and documents get judged on how well they relate to those entities.",
+        "The practical consequence: optimising for a string means writing pages that match phrases. Optimising as an entity means making yourself a coherent, corroborated record that a machine can be confident about."
+      ]
+    },
+    {
+      "h2": "How Google decides you exist",
+      "body": [
+        "Confidence comes from repetition across sources that don't control each other. Your own website is a single, self-interested source. It states that you're an SEO agency in Bangalore founded in a given year. That's a claim. When a trade publication, a directory, a podcast page, a conference speaker bio and a customer review all describe the same organisation the same way, it stops being a claim.",
+        "This is why a well-funded startup with a beautiful website and no press has no Knowledge Panel, and a dull thirty-year-old manufacturer with a Wikipedia stub and forty trade mentions has one. Wikipedia and Wikidata are heavily used sources — not because they're magic, but because they're structured, edited and cited.",
+        "It's also why the answer to \"how do we get a Knowledge Panel\" is never a schema tweak. See [knowledge graph](/glossary/knowledge-graph) for what the record actually holds."
+      ]
+    },
+    {
+      "h2": "The four signals you control",
+      "body": [
+        "You can't grant yourself entity status. You can make it much easier to grant."
+      ],
+      "bullets": [
+        "**Organization schema with `sameAs`.** Mark up your organisation once, sitewide, with the legal name, logo, address, contact points, founding date and founders. Then list every profile you control in `sameAs` — LinkedIn, Crunchbase, YouTube, Instagram, X, your GitHub if you have one. `sameAs` is how you say \"these accounts and this company are the same thing\". More on the implementation in [schema markup](/glossary/schema-markup).",
+        "**One name, spelled one way, everywhere.** \"Last Agency\", \"LastAgency\", \"Last Agency Pvt Ltd\" and \"lastagencyhere\" are four strings competing to be you. Pick the public-facing name and make every profile, invoice footer, directory listing and email signature match it, capitalisation included.",
+        "**Third-party mentions that repeat the same facts.** Founder name, city, category, what you sell. Directory profiles, podcast bios, speaker pages, press coverage, partner pages. The facts matter more than the links here — an unlinked mention still corroborates.",
+        "**A page that states the facts plainly.** An About page with legal name, registered address, founding year, named founders and a clear description of what you sell. It's boring to write and it's the page most often quoted when an assistant summarises a company, because it's the only one that answers directly."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The cheapest thing on this list",
+        "body": "Go and read the About page of the last three agencies who pitched you. Count how many name a founder, a registered address and a price. The bar is on the floor, and stepping over it costs an afternoon."
+      }
+    },
+    {
+      "h2": "Why this matters more when a model answers the question",
+      "body": [
+        "Ten-blue-links search let a strong page carry a weak brand. If your article matched the query best, you ranked, whether or not anyone knew who wrote it. Generative answers work differently: the system resolves the question to entities, retrieves from sources it has some confidence in, and names the ones it can attribute.",
+        "If your company isn't a resolvable thing, you're only quotable when a specific page happens to match — never when the question is \"who should I hire in Pune\" or \"which vendors do this\". Being nameable is now a distribution channel, which is a strange sentence and an accurate one.",
+        "The failure mode to worry about is contradiction, not absence. If three sources give your company three founding years and two different cities, a model won't hedge — it'll pick one and state it flatly. Fixing conflicting facts across your own profiles is cheaper than any content programme, and it's the first thing we check when a client asks why AI assistants describe them wrongly. [Getting cited by AI assistants](/journal/how-to-get-cited-by-ai-assistants) starts here."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the difference between an entity and a keyword?",
+      "a": "A keyword is a string of characters someone typed. An entity is a distinct thing with attributes and relationships — a company, person, product or place — that a search engine holds a record about. Two different keywords can point at the same entity, and one keyword can point at several."
+    },
+    {
+      "q": "How do I make my brand an entity in Google's eyes?",
+      "a": "Publish Organization schema with a complete `sameAs` list, use one consistent public name everywhere, get mentioned by independent sources repeating the same facts, and keep an About page that states legal name, address, founders and services plainly. It's corroboration work, not a technical trick."
+    },
+    {
+      "q": "Do I need a Wikipedia page to be an entity?",
+      "a": "No. Wikipedia and Wikidata are heavily used because they're structured and cited, but plenty of recognised entities have neither. What you need is multiple independent sources agreeing about you. Creating a Wikipedia page for a company that fails notability guidelines wastes a week and gets deleted."
+    },
+    {
+      "q": "Is entity SEO different from normal SEO?",
+      "a": "It's a layer on top, not a replacement. You still need pages that answer queries, a crawlable site and links. Entity work makes sure the search engine knows who published those pages and why that publisher should be trusted, which increasingly decides whether you get named in an answer."
+    },
+    {
+      "q": "Does `sameAs` actually do anything?",
+      "a": "It doesn't grant you a Knowledge Panel. It resolves ambiguity — telling Google that a LinkedIn company page, a YouTube channel and a Crunchbase profile all describe the same organisation as the site it's crawling. That's cheap to add and one of the few entity signals entirely under your control."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "knowledge-graph" },
+    { "type": "glossary", "slug": "schema-markup" },
+    { "type": "glossary", "slug": "brand-mentions" },
+    { "type": "services", "slug": "schema-markup-services" },
+    { "type": "journal", "slug": "how-to-get-cited-by-ai-assistants" },
+    { "type": "compare", "slug": "geo-vs-seo" }
+  ]
+}

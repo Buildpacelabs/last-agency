@@ -1,0 +1,174 @@
+{
+  "slug": "is-seo-an-it-job",
+  "type": "answers",
+  "primaryKeyword": "is seo an it job",
+  "secondaryKeywords": [
+    "is seo a technology job",
+    "which department does seo belong to",
+    "is seo it or marketing",
+    "seo job classification"
+  ],
+  "cluster": "seo-career",
+  "intent": "informational",
+  "h1": "Is SEO an IT job or a marketing job?",
+  "metaTitle": "Is SEO an IT Job or a Marketing Job?",
+  "metaDescription": "Is SEO an IT job? Indian companies file it under marketing, yet a third of the work is engineering. What that does to hiring, pay bands and reporting.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "No. In almost every Indian company SEO is filed under marketing, not IT. Job portals list it as a marketing function, the budget sits with the marketing head, and the pay band follows marketing. That's why an SEO doing genuinely technical work is often paid less than the developer shipping their fixes.",
+  "takeaways": [
+    "The classification is decided by a dropdown on a job portal, and it then decides who sees the ad, which salary benchmark HR uses and which team you sit in.",
+    "Marketing pays for SEO. Engineering does a third of the work. Two budgets, one outcome, no shared owner.",
+    "\"SEO job at an IT company\" and \"SEO as an IT job\" are different questions. The first is common; the second is rare.",
+    "If you want the technical band, change the artefacts on your CV before you change the title on it."
+  ],
+  "sections": [
+    {
+      "h2": "The classification is decided by a dropdown",
+      "body": [
+        "There's no committee and no standard. When somebody posts an SEO role on an Indian job portal, they pick a functional area from a list, and that list offers things like Marketing, Advertising and Digital Marketing. IT and Software sits on a different branch entirely, and almost nobody files SEO there.",
+        "That single dropdown decides more than it should. It decides who sees the listing, which salary benchmark HR pulls, which team you sit with, whose budget pays you, and whether the recruiter screening your CV understands a word of it.",
+        "The exceptions are real but narrow. Some product companies post SEO under Growth or Product. A handful of technical SEO roles at large ecommerce, travel and marketplace companies genuinely sit inside engineering, because at that scale crawling and rendering are engineering problems. Both remain a minority of listings."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Two questions hiding behind one",
+        "body": "\"An SEO job at an IT company\" and \"SEO as an IT job\" are not the same thing. Every IT services and SaaS firm in Bengaluru, Pune and Hyderabad employs marketers, including SEOs, to sell its own services. That's a marketing job inside a technology company — not a technology job."
+      }
+    },
+    {
+      "h2": "Who holds the budget, and why it decides everything else",
+      "body": [
+        "Follow the money. SEO is paid for from the marketing budget in effectively every company. The fixes SEO needs — rendering changes, redirect maps, Core Web Vitals work, schema, faceted navigation rules — are done by engineers, paid for from the engineering budget, and prioritised against the product roadmap.",
+        "Two budgets, one outcome, and nobody owning both. The predictable result is that the marketing side is held accountable for a number that the engineering side controls about a third of, and the ticket sits in a backlog behind three features and a payments bug.",
+        "This is also why SEO roles read as marketing and feel like engineering: you're measured on pipeline and you spend Tuesdays writing tickets. [Who owns SEO inside a company](/answers/who-is-responsible-for-seo-in-a-company) goes through the ownership split properly."
+      ]
+    },
+    {
+      "h2": "What the classification does to your pay",
+      "body": [
+        "Being filed as marketing has a price, and it isn't subtle. In Indian product companies, engineering bands generally start higher than marketing bands at the same years of experience — and HR benchmarks against the band, not against the work you actually do.",
+        "So the same person, running the same log file analysis and the same rendering diagnosis, gets compared to a social media executive if the requisition said \"Digital Marketing Executive\", and to an analyst if it said \"Technical SEO\" at a product company. Same skills, different anchor, different offer.",
+        "Three things move you up the band without changing employers."
+      ],
+      "bullets": [
+        "**Title language.** \"Technical SEO\" and \"Organic Growth\" benchmark differently from \"SEO Executive\". This is unfair and it is also true, and arguing with it costs you more than editing your title does.",
+        "**Demonstrable engineering adjacency.** Scripts you wrote, log analyses you ran, schema you specified, a migration you shipped without losing traffic. Artefacts, not adjectives.",
+        "**Revenue attribution.** The fastest exit from a marketing-support band is being the person who can show organic pipeline in the CRM rather than sessions in GA4. Nobody argues with the person holding the pipeline number."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The numbers themselves",
+        "body": "Bands by level and city are a longer conversation — [SEO salaries in India](/answers/what-is-the-salary-of-seo-in-india) has the full ladder from executive to head of SEO, including the metro multipliers."
+      }
+    },
+    {
+      "h2": "Three places SEO sits, and how different they feel",
+      "body": [
+        "The classification question matters less than which of these three buildings you walk into. The job has a different centre of gravity in each."
+      ],
+      "subs": [
+        {
+          "h3": "Inside an IT services or SaaS company",
+          "body": [
+            "You're in marketing, marketing your employer's own product or services. Technical resources are theoretically abundant and practically busy, because engineers are either billable or roadmap-committed.",
+            "Upside: colleagues who understand rendering and don't need the concept of a redirect explained. Downside: your request is never the priority, and you'll learn to write business cases for a 20-minute fix."
+          ]
+        },
+        {
+          "h3": "At an agency",
+          "body": [
+            "SEO is the product, not a support function, which changes the whole texture of the job. You're in a delivery organisation with utilisation targets and several clients at once.",
+            "You learn fastest here because you see many sites and many failure modes. You're also furthest from the codebase — you write recommendations that somebody else's developer may never implement, which is its own specific frustration."
+          ]
+        },
+        {
+          "h3": "In-house at a brand or D2C company",
+          "body": [
+            "One site, one dev backlog, one P&L. You'll know the business deeply and spend a surprising share of the week on internal persuasion rather than SEO.",
+            "Whether this job is good depends almost entirely on whether you can get engineering time, which depends on who your manager reports to. Ask that in the interview, not about the tools."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "How to position yourself in either category",
+      "body": [
+        "Decide which band you want to be benchmarked against, then make the paperwork match the work. Nobody will do this for you and recruiters certainly won't."
+      ],
+      "numbered": [
+        "**For the technical route, target scale.** Product companies, large ecommerce, travel, marketplaces and classifieds — sites big enough that crawling, rendering and index bloat are genuine problems rather than theory.",
+        "**Ask who owns the fixes.** In the interview: who implements SEO changes, and what's the typical time from ticket to deploy? The answer tells you whether the role is real or decorative.",
+        "**Put artefacts on the CV, not adjectives.** \"Removed crawl waste across a 1,20,000-URL faceted catalogue\" means something. \"Proficient in technical SEO\" means nothing, and every CV says it.",
+        "**For the marketing route, own a number in the board deck.** Organic-sourced pipeline, not sessions. That's what gets you to head of channel, and it's the same number that protects your budget in a bad quarter.",
+        "**Either way, learn to write a good dev ticket.** It's the most portable skill in SEO, it's the reason engineers will take your work seriously, and almost nobody teaches it.",
+        "**Watch the reporting line, not the title.** An SEO reporting to a marketing head who understands search will out-earn and out-perform one reporting to a content manager, whatever the job ad said."
+      ]
+    },
+    {
+      "h2": "If you're hiring, this matters more than you think",
+      "body": [
+        "Post the role as IT and you'll get people who can read a stack trace and can't write a brief. Post it as marketing and you'll get people who write beautifully and can't tell you why the page isn't indexed. Both hires fail slowly, and you find out in month six when nothing has moved.",
+        "The fix is a job spec written around the four disciplines the work genuinely needs — technical, content, links and measurement — with an honest statement of which one this hire owns and who covers the other three. If nobody covers the other three, you're not hiring a person, you're hiring a department and paying for one seat.",
+        "It's also the straightforward case for outsourcing at small scale: an agency gives you all four at once for less than one senior salary. Ours starts at ₹75,000/mo, with smaller sites from ₹40,000, and we guarantee movement against your own trailing-90-day organic lead baseline rather than any specific ranking position — miss it in 90 days and we keep working free until we beat it. Here's [how our SEO work is structured](/seo)."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The requisition that never gets filled",
+        "body": "A job spec demanding technical SEO, content strategy, link building and analytics, at a marketing salary, describes four people. Indian hiring managers post it constantly and then conclude there's no talent in the market. There's plenty of talent. There's one budget."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is SEO an IT job or a marketing job?",
+      "a": "Marketing, in how it's classified, budgeted and paid almost everywhere in India. Technically it's a hybrid — about a third of the work is diagnosis you'd recognise as engineering. The classification is administrative rather than descriptive, and it rarely gets revisited once set."
+    },
+    {
+      "q": "Which department does SEO come under?",
+      "a": "Marketing in the overwhelming majority of companies, usually digital marketing and occasionally growth. Engineering owns implementation of most technical fixes, which is why SEO without a standing agreement on developer time stalls somewhere around month three."
+    },
+    {
+      "q": "Can I get an SEO job in an IT company?",
+      "a": "Yes, easily — every IT services and SaaS firm markets itself, and most employ SEOs. Just be clear which job you're taking. It's a marketing role inside a technology company, benchmarked against marketing salaries rather than engineering ones."
+    },
+    {
+      "q": "Do SEO jobs pay like tech jobs in India?",
+      "a": "Generally not. Marketing bands sit below engineering bands at equivalent experience in most Indian product companies, and SEO is benchmarked against marketing. Technical SEO roles at large product and ecommerce companies close part of the gap, rarely all of it."
+    },
+    {
+      "q": "Is SEO a good career move from an IT background?",
+      "a": "It's a common and effective switch. You already have the third of the job most marketers find hardest, and you'll need to build the research, writing and persuasion half. Developers who move into technical SEO tend to reach senior level unusually fast."
+    },
+    {
+      "q": "Does SEO require a computer science degree?",
+      "a": "No, and no Indian SEO job listing requires one. What gets tested is whether you can read HTML, diagnose an indexing problem and explain it to a developer without annoying them. All of that is learnable in weeks and demonstrable without a degree."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "is-seo-an-it-skill"
+    },
+    {
+      "type": "answers",
+      "slug": "who-is-responsible-for-seo-in-a-company"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-the-salary-of-seo-in-india"
+    },
+    {
+      "type": "compare",
+      "slug": "agency-vs-in-house"
+    },
+    {
+      "type": "journal",
+      "slug": "future-of-seo-jobs-in-india"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "slug": "how-to-do-seo-for-an-ecommerce-website",
+  "type": "answers",
+  "primaryKeyword": "how to do seo for ecommerce website",
+  "secondaryKeywords": [
+    "ecommerce seo",
+    "seo for online store",
+    "product page seo",
+    "category page seo"
+  ],
+  "cluster": "seo-howto",
+  "intent": "informational",
+  "h1": "Ecommerce SEO where the money actually is",
+  "metaTitle": "How to Do SEO for an Ecommerce Website",
+  "metaDescription": "How to do SEO for an ecommerce website: category pages carry the revenue, faceted navigation eats crawl budget, and out-of-stock URLs need a real plan.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Ecommerce SEO is won on category pages, not product pages. Category URLs match how people actually search, while product URLs compete with Amazon and Flipkart on exact model names you'll rarely win. After that, two problems decide everything: faceted navigation eating your crawl budget, and out-of-stock URLs handled badly.",
+  "takeaways": [
+    "**Category pages carry organic revenue.** Product pages carry brand and model queries, which marketplaces usually own.",
+    "Faceted navigation is the single most common way a store buries its own catalogue. Five filters with six options each can generate over sixteen thousand URLs from one category.",
+    "Never 404 a product that's coming back in stock. You'll rebuild those rankings from scratch.",
+    "Structured data has to match what's on the page. Marking up a price you don't display is a violation, not a hack."
+  ],
+  "sections": [
+    {
+      "h2": "Why category pages beat product pages for organic revenue",
+      "body": [
+        "Look at how people search before they know what they want. \"Running shoes for men\", \"cotton kurta set\", \"5 star inverter AC\", \"office chair under 15000\". Those are category queries. They carry the volume, they carry commercial intent, and they land on a page that shows fifty options rather than one.",
+        "Product queries look different: \"Nike Pegasus 41 size 9\", a model number, an SKU. That query already names the product, which means the searcher is comparing sellers on price and delivery — and on that battlefield Amazon, Flipkart and the brand's own site outrank you on authority and review volume before you've written a word.",
+        "There's a structural reason too. One good category page can rank for hundreds of related phrasings, stays relevant for years, and improves every time you add stock. A product page dies when the product does. If you have 4,000 SKUs and 60 categories, the 60 pages are where the effort belongs."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The exception worth knowing",
+        "body": "Product pages earn their keep when you make the product. If you're a D2C brand and the SKU is yours, nobody else can outrank you on your own model name — and those queries convert at several times the category rate. Own them completely, then go spend the rest of the month on categories."
+      }
+    },
+    {
+      "h2": "What actually makes a category page rank",
+      "body": [
+        "Most Indian store category pages are a grid, a title tag and nothing else. That's a page with no text for Google to understand and no reason for a buyer to stay."
+      ],
+      "numbered": [
+        "**Copy above the grid, short.** Two or three sentences that say what the category is and who it's for. Not 400 words of keyword mush that pushes the products below the fold.",
+        "**Copy below the grid, useful.** Buying guidance, sizing, materials, care, price bands, a real FAQ. This is where the depth goes, and it's the part that wins the informational half of the query.",
+        "**A clean, permanent URL.** `/men/running-shoes/` outlives `/collections/summer-drop-24-mens-run/`.",
+        "**Breadcrumbs, with markup.** They give Google the hierarchy and they show up in the result.",
+        "**Internal links from your blog and guides** into the category, using the phrase people search — not \"click here\".",
+        "**Pagination Google can crawl** — real anchor links to page two and three, not a JavaScript-only load-more button that hides 90% of your catalogue."
+      ]
+    },
+    {
+      "h2": "Faceted navigation: the crawl budget bonfire",
+      "body": [
+        "Filters are good for shoppers and catastrophic for crawling if you let every combination generate a URL. Five filters with six options each, all combinable, produce more than sixteen thousand addresses out of one category — nearly all of them near-identical, thin, and competing with the page you actually want ranked.",
+        "Google will crawl a portion of that, get bored, and spend the [crawl budget](/glossary/crawl-budget) it allocated you on filter permutations instead of your new products. The fix is to decide, per facet, whether it's a category or a convenience."
+      ],
+      "table": {
+        "caption": "How to treat each type of filter on a large catalogue.",
+        "head": ["Facet type", "Example", "Treatment", "Why"],
+        "rows": [
+          [
+            "Real search demand, few values",
+            "Gender, fabric, room type",
+            "Give it a static indexable URL, its own copy and internal links",
+            "People search it directly. It's a category wearing a filter's clothes."
+          ],
+          [
+            "Some demand, many values",
+            "Brand within a category",
+            "Index the top handful, canonicalise the long tail to the parent",
+            "You cannot write honest unique copy for 400 brand-category pairs."
+          ],
+          [
+            "No search demand",
+            "Sort order, results per page, grid vs list",
+            "Keep the parameters out of internal links; canonical to the clean URL",
+            "Nobody has ever searched \"sorted by price ascending\"."
+          ],
+          [
+            "Multi-select combinations",
+            "Colour plus size plus price plus brand at once",
+            "Stop them becoming crawlable URLs at all",
+            "This is where the sixteen thousand pages come from."
+          ],
+          [
+            "Tracking and session parameters",
+            "utm, sid, ref, affiliate tags",
+            "Self-referencing canonical to the clean URL, never link internally with them",
+            "Same page, different string, duplicated across your index."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Blocking in robots.txt is not the same as removing",
+        "body": "If a filter URL is already indexed, blocking it in robots.txt stops Google recrawling it — which means it can't see the noindex you just added, and the URL can sit in the index for months. Noindex first, wait for it to drop out, then block. Getting this order wrong is the most common ecommerce SEO mistake we see on audits."
+      }
+    },
+    {
+      "h2": "Out-of-stock and discontinued products",
+      "body": [
+        "Retail catalogues churn. Every store eventually faces the same question — what happens to the URL when the product goes — and most answer it by deleting the page, which throws away every link and ranking it earned.",
+        "There's no single right answer. There are five situations and five different answers."
+      ],
+      "table": {
+        "caption": "Decision table for product URLs when stock changes.",
+        "head": ["Situation", "What to do with the URL", "What not to do"],
+        "rows": [
+          [
+            "Temporarily out of stock, restocking",
+            "Keep it live and indexed. Show a restock date, a notify-me form, and three alternatives. Keep availability in your schema accurate.",
+            "404 it. You lose the rankings and start from zero when it returns."
+          ],
+          [
+            "Discontinued, direct replacement exists",
+            "301 to the replacement product",
+            "Redirect everything to the homepage — Google reads that as a soft 404 and drops it anyway."
+          ],
+          [
+            "Discontinued, no replacement, but has links or traffic",
+            "Keep the page, label it discontinued, link to the closest category and the nearest alternatives",
+            "Delete it and lose the links it spent years collecting."
+          ],
+          [
+            "Discontinued, no links, no traffic, no demand",
+            "410 Gone, remove from the sitemap, remove internal links",
+            "Leave it in the sitemap forever, then complain about noisy coverage reports."
+          ],
+          [
+            "Seasonal, returns every year",
+            "One permanent URL you update annually",
+            "A fresh sale URL each year, each one starting from nothing."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Variants, and the duplicate content you didn't write",
+      "body": [
+        "Two duplicate problems bite every store. The first is your own doing: one product in eight colours and five sizes, generating forty URLs with identical copy. The second is the manufacturer's: you pasted their description, and so did every other retailer selling the same box.",
+        "For variants, the test is whether anyone searches the variant. \"iPhone 128GB\" gets searched; \"black\" doesn't. So give storage, capacity or model-year variants their own indexable URL, and collapse colour and size into one page with a [canonical tag](/answers/what-is-a-canonical-tag-in-seo) pointing at the parent."
+      ],
+      "bullets": [
+        "Pick one canonical URL per genuinely distinct product and make every internal link point at it.",
+        "Rewrite the manufacturer blurb. Two paragraphs of your own — fit, use case, what it doesn't do — beats 600 words of copy-paste that 40 sites already published.",
+        "Let customer reviews and Q&A accumulate on the canonical URL. That's unique text you don't have to write.",
+        "Watch for the same product living in three categories with three URLs. Pick one path and redirect the rest."
+      ]
+    },
+    {
+      "h2": "Product schema, and what it actually earns you",
+      "body": [
+        "Structured data doesn't rank you. It changes how your result looks, and on a price-driven SERP that changes the click-through rate — which is the whole return.",
+        "Mark up Product with a nested Offer: price, currency, availability, condition. For merchant listing treatments you'll also need shipping and return details expressed properly. Review snippets from reviews collected on your own product pages remain eligible; reviews about your business as an entity have not been eligible since 2019, so a five-star badge on your homepage isn't coming back."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The markup has to match the page",
+        "body": "If the structured data says ₹2,499 and the page says ₹3,199, or it claims InStock on a sold-out product, that's a structured data violation and Google can drop your rich results sitewide. Generate schema from the same data the template renders from, never from a separate hand-maintained field."
+      }
+    },
+    {
+      "h2": "Competing with Amazon, Flipkart and the aggregators",
+      "body": [
+        "On a large share of Indian commercial queries, page one is marketplaces, price comparison sites and a couple of big-brand stores. Pretending otherwise wastes a quarter. Pick the queries where their structure works against them.",
+        "Marketplaces are strong on product and brand queries, and structurally weak wherever the answer needs an opinion, a comparison or local specificity. That's your ground."
+      ],
+      "bullets": [
+        "**Comparison and \"which is better\" queries.** A marketplace cannot tell you which of the two products it sells is worse.",
+        "**Buying guides tied to Indian constraints** — voltage, warranty and service network, monsoon durability, sizing that matches Indian fits.",
+        "**Long-tail category pages** the marketplaces don't bother templating: material plus use case plus budget.",
+        "**Your own brand terms.** If you sell on Amazon too, your brand query should land on your site, not their listing. Losing that one is unforced.",
+        "**Post-purchase content** — care, servicing, spare parts, compatibility. Low volume, high intent, near-zero competition.",
+        "**Merchant Center free listings and the shopping surfaces**, which is a separate feed problem from your website's SEO, and often the faster win."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The honest strategic answer",
+        "body": "For some catalogues, marketplaces are the volume channel and your own site is the margin channel, and organic search is how you move buyers from the first to the second. We work through that trade-off in [SEO versus selling on marketplaces](/compare/seo-vs-marketplace-selling), and what the work costs in [ecommerce SEO pricing](/cost/ecommerce-seo-cost)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I optimise product pages or category pages first?",
+      "a": "Categories, unless you manufacture what you sell. Category pages match how people search before they've chosen a product, they rank for hundreds of phrasings each, and they don't expire. Product pages only justify the effort at scale when the SKU is exclusively yours."
+    },
+    {
+      "q": "How do I stop filters creating thousands of duplicate pages?",
+      "a": "Decide per filter. Filters people genuinely search — gender, fabric, room — become real indexable pages. Everything else should either not create a URL at all, or carry a canonical to the clean category. If the URLs are already indexed, noindex them first and only block crawling once they've dropped out."
+    },
+    {
+      "q": "What should I do with out-of-stock products?",
+      "a": "If it's coming back, keep the page live and indexed with a restock note and alternatives. If it's gone and there's a direct successor, 301 to it. If it's gone with no successor but has links, keep the page and label it. Only 410 pages with no links, no traffic and no demand."
+    },
+    {
+      "q": "Does product schema improve rankings?",
+      "a": "No. It changes how the result is displayed — price, availability, ratings — which lifts click-through on price-comparison queries. That's worth having, but it's a presentation gain, not a ranking one, and the markup must match what's visible on the page."
+    },
+    {
+      "q": "Can a small store outrank Amazon and Flipkart?",
+      "a": "Not on generic product and brand queries, usually. You can beat them on comparisons, buying guides, specific long-tail category combinations, post-purchase content and your own brand terms — all places where a marketplace's templated pages have nothing useful to say."
+    },
+    {
+      "q": "How long does ecommerce SEO take to show results?",
+      "a": "Technical fixes on a large catalogue can show up in six to ten weeks because you're releasing pages Google already knew about. New category rankings take three to six months. Anything that depends on links takes longer. Large sites move slower simply because recrawling a big catalogue takes time."
+    }
+  ],
+  "related": [
+    { "type": "cost", "slug": "ecommerce-seo-cost" },
+    { "type": "services", "slug": "ecommerce-seo-services" },
+    { "type": "seo-for", "slug": "ecommerce" },
+    { "type": "glossary", "slug": "crawl-budget" },
+    { "type": "compare", "slug": "seo-vs-marketplace-selling" },
+    { "type": "glossary", "slug": "schema-markup" }
+  ]
+}

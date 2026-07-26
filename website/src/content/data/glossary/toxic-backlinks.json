@@ -1,0 +1,156 @@
+{
+  "slug": "toxic-backlinks",
+  "type": "glossary",
+  "primaryKeyword": "toxic backlinks",
+  "secondaryKeywords": [
+    "spammy backlinks",
+    "disavow backlinks",
+    "negative seo",
+    "toxic link checker",
+    "how to remove bad backlinks"
+  ],
+  "cluster": "off-page",
+  "intent": "informational",
+  "h1": "Toxic backlinks",
+  "metaTitle": "Toxic Backlinks: What They Are, What to Do",
+  "metaDescription": "Toxic backlinks are spammy links said to drag a site down. Most are harmless and Google ignores them. Here is when a disavow is genuinely warranted.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Toxic backlinks",
+  "definition": "Toxic backlinks is a tool-vendor term for low-quality or spammy links pointing at a site, which are assumed to risk harming its rankings.",
+  "answer": "Toxic backlinks are spammy links pointing at your site that tools claim will damage your rankings. Google ignores the overwhelming majority automatically and says most sites should never use the disavow tool. Toxicity scores come from vendors, not Google. Disavow after a manual action or a known history of bought links — otherwise leave them alone.",
+  "takeaways": [
+    "\"Toxicity score\" is a metric a software company invented. Google has no such number and never asked for one.",
+    "Google's own disavow documentation calls it an advanced feature most sites don't need. Take that literally.",
+    "Two situations justify a disavow: a **manual action** for unnatural links, or a vendor who bought links at scale.",
+    "A careless disavow removes links that were helping, and there's no quick undo. The default action is nothing."
+  ],
+  "sections": [
+    {
+      "h2": "Toxicity scores are vendor opinions",
+      "body": [
+        "Open any link auditing tool and you're shown a percentage: 43% toxic, 156 harmful links, a red gauge, a button marked clean up. Persuasive interface design, and it's selling something.",
+        "The vendor calculates that score from signals they chose — the linking site's metrics, its outbound link count, its country, whether it looks like a network. Reasonable heuristics, none from Google, none validated against Google's actual treatment of those links.",
+        "Google's position has been consistent for years: its systems ignore the vast majority of low-quality links automatically, because the alternative — letting anyone damage a competitor with junk links — would make the index trivially manipulable. Spam links are a normal condition of having a website, and \"toxic link cleanup\" is a retainer line item that requires no measurable outcome."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Before you buy a disavow service",
+        "body": "Ask one question: do I have a manual action in Search Console? If the answer is no and the agency still wants to disavow, they're billing you to solve a problem no evidence says you have."
+      }
+    },
+    {
+      "h2": "Manual actions versus algorithmic suppression",
+      "body": [
+        "These are different things with different symptoms, and confusing them is what sends people disavowing at random."
+      ],
+      "table": {
+        "caption": "Two ways link problems show up, and how to tell them apart.",
+        "head": [
+          "",
+          "Manual action",
+          "Algorithmic treatment"
+        ],
+        "rows": [
+          [
+            "Who decided",
+            "A human reviewer at Google",
+            "Automated spam systems"
+          ],
+          [
+            "How you find out",
+            "A message in Search Console under Manual Actions",
+            "You don't. There's no notification of any kind."
+          ],
+          [
+            "What it looks like",
+            "A sharp, dateable drop, often on one section or the whole site",
+            "Links quietly stop counting. Usually nothing visibly happens at all."
+          ],
+          [
+            "The fix",
+            "Clean up, disavow if needed, file a reconsideration request",
+            "Nothing to fix on the links. Improve the site and earn better ones."
+          ]
+        ]
+      },
+      "bullets": [
+        "Check for a manual action in Search Console under Security & Manual Actions. It takes ten seconds and settles the entire question.",
+        "No manual action plus a traffic drop usually means a [core update](/glossary/google-core-update), a technical fault, or a competitor improving — not your links."
+      ]
+    },
+    {
+      "h2": "When a disavow is genuinely warranted",
+      "body": [
+        "Two situations, and a third that's arguable.",
+        "**You have a manual action for unnatural links.** Then yes. Google expects visible effort — removal requests where possible, a disavow file for the rest, and a reconsideration request explaining what happened and what changed. Half-measures get rejected and the queue is slow.",
+        "**You know links were bought at scale**, by a previous agency or a previous owner of the domain. If you can point at the pattern — same-week placements from traffic-free sites with commercial anchors — disavowing pre-emptively is defensible, particularly before an acquisition.",
+        "Otherwise, close the tab. Audit the profile properly first — the method is in [backlink profile](/glossary/backlink-profile) — and if there's a genuine penalty, [penalty recovery](/services/penalty-recovery-services) is a defined piece of work rather than a standing retainer."
+      ]
+    },
+    {
+      "h2": "The disavow file, exactly",
+      "body": [
+        "A plain text file, and the format is unforgiving. Save it as `.txt` in UTF-8 or 7-bit ASCII, one entry per line. Prefix a domain with `domain:` to disavow every link from it — what you want in nearly every case, since picking off individual URLs is whack-a-mole. Lines starting with `#` are comments. Limits are 100,000 lines and 2MB.",
+        "So a file reads: `# Links bought by previous vendor, Q1 2025`; then `domain:example-linkfarm.com`; then `domain:another-network.net`; then a single URL like `https://mostly-fine-site.com/paid-post-page/` where only one page is a problem.",
+        "Upload it at Google's disavow tool against the exact property. Each upload replaces the previous file, so always submit the complete list. There's no confirmation it worked and no report on its effect."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Disavow is not reversible on any useful timescale",
+        "body": "Removing a domain from the file means waiting for Google to recrawl and reassess those links. Disavow a site that was actually helping and you've thrown away a real link with no quick way back. When in doubt, leave it out of the file."
+      }
+    },
+    {
+      "h2": "Negative SEO in practice",
+      "body": [
+        "It exists as a category and it's far rarer than the industry's marketing implies. Pointing spam links at a competitor is cheap, which is exactly why Google had to build systems that ignore them — a signal anyone can manipulate against anyone is worthless.",
+        "What actually damages Indian businesses is more mundane: scraped copies of your content outranking the original, hijacked Google Business Profile listings, review brigading. A disavow file solves none of them. If you see a flood of junk links and no manual action, document it, watch Search Console, and carry on."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do toxic backlinks actually hurt my rankings?",
+      "a": "Usually not. Google ignores the large majority of spam links automatically, because a system that let anyone harm a competitor with junk links would be unusable. Real link-based damage generally comes with a manual action in Search Console — and if you don't have one, your links probably aren't the problem."
+    },
+    {
+      "q": "Should I disavow spammy backlinks?",
+      "a": "Only after a manual action for unnatural links, or when you know a vendor bought links at scale. Google's own documentation calls disavow an advanced feature that most sites never need. A careless file removes links that were helping you, and reversing it takes months."
+    },
+    {
+      "q": "How do I know if I have a Google penalty?",
+      "a": "Open Search Console and check Security & Manual Actions. A manual action appears there with a description and an affected scope. If that page is clean, you don't have a penalty — you have an algorithmic result, and disavowing links won't change it."
+    },
+    {
+      "q": "Are Semrush or Ahrefs toxicity scores accurate?",
+      "a": "They're internally consistent estimates from heuristics each vendor chose. They're not measurements of how Google treats a link, because no third party can see that. Use them to spot patterns worth investigating, never as a list to action."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "backlink-profile"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "glossary",
+      "slug": "link-building-meaning"
+    },
+    {
+      "type": "compare",
+      "slug": "white-hat-vs-black-hat-seo"
+    },
+    {
+      "type": "services",
+      "slug": "penalty-recovery-services"
+    },
+    {
+      "type": "journal",
+      "slug": "how-much-do-backlinks-actually-matter"
+    }
+  ]
+}

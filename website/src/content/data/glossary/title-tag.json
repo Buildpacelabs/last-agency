@@ -1,0 +1,137 @@
+{
+  "slug": "title-tag",
+  "type": "glossary",
+  "primaryKeyword": "title tag",
+  "secondaryKeywords": [
+    "seo title",
+    "title tag length",
+    "how to write a title tag",
+    "does google rewrite titles",
+    "title tag vs h1"
+  ],
+  "cluster": "on-page",
+  "intent": "informational",
+  "h1": "Title tag",
+  "metaTitle": "Title Tag: What It Is and How to Write One",
+  "metaDescription": "The title tag is the clickable headline Google shows in results. Learn the pixel width that matters more than character count, and how to earn more clicks.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Title tag",
+  "definition": "A title tag is the HTML element that names a page in the browser tab and supplies the clickable headline search engines show in results.",
+  "answer": "A title tag is the HTML `<title>` element that gives Google the clickable headline in search results. It gets cut by rendered pixel width, not character count — roughly 580–600 pixels on desktop, which lands near 55–60 characters in most fonts. Google rewrites it whenever it judges your version a poor match for the query.",
+  "takeaways": [
+    "**Pixel width, not character count.** Two 58-character titles can behave differently depending on how wide the letters are.",
+    "Google has generated its own title links since 2021 when it thinks yours is a bad fit. You reduce that by matching your title to the page's real subject, not by shouting louder.",
+    "Google now shows your site name separately in results, so a `| Brand` suffix often buys nothing but eats pixels.",
+    "The title's job is the click. The [H1](/glossary/h1-tag) and the body do the ranking work once the reader arrives."
+  ],
+  "sections": [
+    {
+      "h2": "Pixel width is the real limit, not 60 characters",
+      "body": [
+        "The 60-character rule you've read everywhere is a rough proxy for something Google has never published: results pages truncate titles on rendered width, in the font the results page happens to use that month. Capitals, Ws and Ms are wide. Lowercase i, l and t are narrow.",
+        "In practice, desktop truncation lands somewhere around 580–600 pixels. That range is a range because Google restyles its results page regularly and nobody outside Google has the exact figure. A title of 58 characters set in capitals can overflow; the same 58 characters in a narrow-lettered phrase can survive with room left over.",
+        "Mobile is different again — Google wraps titles across two lines there, so more of a long title survives on a phone than on a laptop. If most of your traffic is Indian mobile, writing to a strict desktop cut is leaving space unused."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The practical rule we use",
+        "body": "Write to roughly 50–55 characters, front-load the words a searcher would actually type, and check the page in any SERP preview tool before publishing. If the important half of the title survives truncation, the length is fine."
+      }
+    },
+    {
+      "h2": "Why Google rewrites your title, and how to reduce it",
+      "body": [
+        "Since 2021 Google has openly generated its own title link when it judges the `<title>` a poor match — pulling instead from your H1, from on-page text, or from anchor text pointing at the page. You cannot switch this off. You can make it less likely.",
+        "The rewrites cluster around a few causes, and all of them are fixable in an afternoon."
+      ],
+      "bullets": [
+        "**Boilerplate repeated site-wide.** Forty pages titled `Services | Brand` gives Google nothing to distinguish them with, so it invents something.",
+        "**Keyword chains.** `SEO Agency | SEO Company | SEO Services India` reads as stuffing and gets replaced with something plainer.",
+        "**A title that doesn't match the page.** If the H1 and the body say one thing and the title says another, Google usually sides with the body.",
+        "**Missing or empty titles.** The CMS default wins, and the CMS default is rarely good.",
+        "**Titles that are too short to be useful.** A one-word title gets padded with the site name and whatever else is lying around."
+      ]
+    },
+    {
+      "h2": "Five title formulas, and the click logic behind each",
+      "body": [
+        "A title earns a click when it looks more like the answer than the nine results around it. That usually means matching the searcher's phrasing and adding one concrete thing nobody else has bothered to include."
+      ],
+      "table": {
+        "caption": "Title patterns by page type, with the reason each one earns the click.",
+        "head": ["Page type", "Formula", "Why it earns the click"],
+        "rows": [
+          [
+            "Service",
+            "`{Service} for {Audience} — {Concrete deliverable}`",
+            "The audience filter tells the wrong reader to skip it, which lifts the click rate of the right one."
+          ],
+          [
+            "Location",
+            "`{Service} in {City} | {Brand}`",
+            "Local searchers scan for the city name. If it isn't in the first few words they assume you're elsewhere."
+          ],
+          [
+            "Glossary",
+            "`{Term}: What It Is and How to {Verb}`",
+            "Definition queries are impatient. Promising the definition plus one practical step beats a bare definition."
+          ],
+          [
+            "Comparison",
+            "`{A} vs {B}: {The Deciding Factor}`",
+            "Comparison searchers are stuck between two options. Naming the deciding factor is the whole promise."
+          ],
+          [
+            "Cost",
+            "`{Thing} Cost in India: Real Numbers`",
+            "Most cost pages hide behind \"it depends\". Signalling that yours publishes figures is a genuine differentiator."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Keyword placement, brand suffixes and the stuffing line",
+      "body": [
+        "Put the primary phrase near the front — not because early words rank better in some mechanical sense, but because truncation eats the end and human eyes scan the start. One primary phrase per title is enough. A second one is usually a sign you've merged two pages that should have stayed separate, which is how [keyword cannibalization](/glossary/keyword-cannibalization) starts.",
+        "On brand suffixes: Google began showing site names as a separate line in results in late 2022, which means `| Your Brand` frequently duplicates something already on screen. Keep it on the homepage, service pages and location pages where brand recall genuinely helps a returning searcher. Drop it on competitive informational pages where you need every pixel for the answer.",
+        "Stuffing starts the moment the title stops reading like a sentence a human wrote. If you wouldn't say it out loud to a client, it's stuffed. See [on-page SEO](/glossary/on-page-seo-meaning) for where the title sits in the wider checklist."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The mistake that costs the most",
+        "body": "Rewriting titles across the whole site in one week, then having no idea which change did what. Change titles in batches of ten to twenty, wait three to four weeks, and read [click-through rate](/glossary/click-through-rate) per query in Search Console before the next batch."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long should a title tag be?",
+      "a": "Aim for roughly 50–55 characters. The real limit is rendered pixel width — around 580–600 pixels on desktop, though Google has never published the figure and restyles its results regularly. Mobile wraps to two lines, so longer titles survive better there than on a laptop."
+    },
+    {
+      "q": "Why is Google showing a different title than the one I wrote?",
+      "a": "Google has generated its own title links since 2021 when it judges yours a poor match, pulling from your H1, page text or inbound anchor text. The usual triggers are site-wide boilerplate, keyword chains, or a title that contradicts the page content. Fix the mismatch and the rewrite rate drops."
+    },
+    {
+      "q": "Should the title tag and the H1 be identical?",
+      "a": "No. They serve different readers. The title serves someone scanning ten blue links and should carry the query wording. The H1 serves someone who has already clicked and should read like a heading, not a search phrase. Overlap on the core noun, differ on everything else."
+    },
+    {
+      "q": "Is the title tag still a ranking factor?",
+      "a": "Yes, though a modest one. Google has confirmed it uses the title as a relevance signal, but it is nowhere near the strongest. Its bigger job is the click: a page ranking fourth with a title that answers the query outperforms a page ranking third with a vague one."
+    },
+    {
+      "q": "Do I need the brand name in every title tag?",
+      "a": "No. Google shows your site name separately in results, so the suffix often repeats information already on screen while consuming pixels. Keep it where brand recall helps — homepage, service and location pages — and drop it on competitive informational pages."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "meta-description" },
+    { "type": "glossary", "slug": "h1-tag" },
+    { "type": "glossary", "slug": "click-through-rate" },
+    { "type": "glossary", "slug": "on-page-seo-meaning" },
+    { "type": "services", "slug": "on-page-seo-services" },
+    { "type": "compare", "slug": "onpage-vs-offpage-seo" }
+  ]
+}

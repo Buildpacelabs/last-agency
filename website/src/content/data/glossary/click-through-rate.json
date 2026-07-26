@@ -1,0 +1,132 @@
+{
+  "slug": "click-through-rate",
+  "type": "glossary",
+  "primaryKeyword": "click through rate",
+  "secondaryKeywords": [
+    "ctr in seo",
+    "organic ctr by position",
+    "what is a good ctr",
+    "how to improve ctr",
+    "ctr meaning"
+  ],
+  "cluster": "analytics",
+  "intent": "informational",
+  "h1": "Click-through rate (CTR)",
+  "metaTitle": "Click-Through Rate (CTR) in SEO, Explained",
+  "metaDescription": "Click-through rate is clicks divided by impressions. What a normal organic CTR looks like by position, and why AI Overviews have pushed the old curve down.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Click-through rate (CTR)",
+  "definition": "Click-through rate is the share of impressions that turn into clicks — clicks divided by impressions, expressed as a percentage.",
+  "answer": "Click-through rate is clicks divided by impressions. In Search Console it tells you how often people who saw your result chose it. The CTR curve everyone quotes — around 31% for position one — comes from a 2019 study of a pre-AI-Overview web. On queries with an AI Overview, expect materially less.",
+  "takeaways": [
+    "CTR = clicks ÷ impressions. Simple arithmetic, routinely misread because of how it aggregates.",
+    "The famous ~31.7% for position one is **Backlinko's 2019 analysis**. It describes a SERP that no longer exists.",
+    "AI Overviews measurably reduce clicking. Pew and Ahrefs both found it in 2025; they disagree on how much.",
+    "Branded queries inflate your sitewide CTR. Always split branded from non-branded before drawing a conclusion."
+  ],
+  "sections": [
+    {
+      "h2": "How Search Console calculates it",
+      "body": [
+        "A link to your site appearing in results someone sees is an [impression](/glossary/impressions). Them clicking it is a click. CTR is one divided by the other.",
+        "The complication is aggregation. Sitewide CTR averages across every query, page, country and device, so it moves without anything changing. Pick up impressions on a broad query you rank 40th for and it falls, even though every page performs exactly as before.",
+        "So the number is only useful filtered: one query, one page, India versus everywhere else, mobile versus desktop. Unfiltered CTR is a mood indicator, not a metric."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The comparison that actually works",
+        "body": "Filter to a single query, then compare its CTR against what that position typically returns. Below par at position 3 means your title and snippet are losing a contest you'd already won — one of the few SEO problems you can fix in an afternoon."
+      }
+    },
+    {
+      "h2": "The curve everyone quotes is from 2019",
+      "body": [
+        "Ask anyone what CTR position one gets and you'll hear about 31%. That comes from Backlinko's 2019 analysis of five million Google searches. Good study — of a SERP with no AI Overview, a smaller ad block and fewer features. That page has changed shape considerably since.",
+        "Published curves are useful as priors. They are not measurements of your SERP. Here's how we use them when forecasting, stated as assumptions rather than facts."
+      ],
+      "table": {
+        "caption": "Planning assumptions, not measured data. Your own Search Console beats every row here.",
+        "head": ["Organic position", "Rough planning CTR, no AI Overview", "What we assume with one"],
+        "rows": [
+          ["1", "Roughly 25–32%", "Meaningfully lower — plan nearer 20%"],
+          ["2–3", "Roughly 10–18%", "Cut by around a third"],
+          ["4–6", "Roughly 5–9%", "Cut by around a third"],
+          ["7–10", "Roughly 2–4%", "Often close to noise"],
+          ["11+", "Under 1%", "Effectively zero either way"]
+        ]
+      },
+      "bullets": [
+        "**The ranges are wide on purpose.** Anyone quoting CTR to one decimal place for your query is quoting someone else's dataset, and query type moves this more than position does."
+      ]
+    },
+    {
+      "h2": "What AI Overviews did to it",
+      "body": [
+        "Two 2025 analyses are worth knowing together, because they measured different things and got different answers.",
+        "Pew Research Center studied real browsing behaviour and found users clicked through to a result on roughly half as many visits when an AI-generated summary was present. Ahrefs, studying a large keyword set, reported top-ranking pages seeing around a third lower CTR on queries carrying an AI Overview.",
+        "Neither is India-specific and neither is your site. They agree on direction and rough magnitude: the drop is real, big enough to matter to a forecast, and hardest on informational queries.",
+        "The practical version is arithmetic. Take the 2019 figure of roughly 31%, take a third off, and you land near 20% — which is why we forecast nearer 20% than 30% wherever an AI Overview appears. A derived assumption, not a measured 2026 statistic, and we'd rather label it than dress it up."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Falling CTR with flat position isn't a failure",
+        "body": "It's the signature of a SERP that grew a feature. Before anyone rewrites the page, check whether an AI Overview or a local pack appeared above it. Rewriting a page to fix a layout change wastes a month and fixes nothing."
+      }
+    },
+    {
+      "h2": "Branded versus non-branded, and why the split matters",
+      "body": [
+        "Someone searching your company name has already decided; they're using Google as a navigation bar. Branded CTR runs many times higher than non-branded, so a healthy sitewide number is often brand demand in disguise.",
+        "Split it: filter queries containing your brand name, note that CTR, then invert the filter with \"Queries not containing\". The second number reflects how well your pages compete against strangers.",
+        "It also explains the pattern that panics founders in month four: sitewide CTR drops while everything improves. New non-branded impressions arrive at low positions and dilute the branded average. The business is growing; the blended metric is falling. Both are true."
+      ]
+    },
+    {
+      "h2": "Improving CTR, and when not to bother",
+      "body": [
+        "CTR is one of the few SEO fixes with a same-week payoff: you're editing what appears in the result rather than moving the result. Work the queries where you rank 3–10 and underperform."
+      ],
+      "numbered": [
+        "**Rewrite the [title tag](/glossary/title-tag) around the promise, not the keyword.** Google rewrites titles it finds unhelpful, so a stuffed one often isn't what's shown.",
+        "**Write the meta description as ad copy.** It isn't a ranking factor; it's the only sentence you fully control in the result.",
+        "**Add a number, price or date** where it's genuinely true. Specificity separates your result from four near-identical ones.",
+        "**Ship schema that changes the result's appearance** — FAQ, breadcrumb, review where legitimately applicable.",
+        "**Match the query's language.** If people search in Hinglish and your title is formal English, the result reads as something else."
+      ],
+      "bullets": [
+        "**When not to bother:** position 11+, or low CTR on queries you shouldn't rank for. Nothing you write changes a result nobody scrolls to, and irrelevant impressions cost you nothing real."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a good CTR in SEO?",
+      "a": "There's no universal figure — it depends almost entirely on position, query type and which features sit above you. The useful benchmark is your own: compare a query's CTR to what your other queries return at the same position. Consistently below that, the title and snippet are the problem."
+    },
+    {
+      "q": "Is CTR a Google ranking factor?",
+      "a": "Google has repeatedly said it doesn't use CTR directly as a ranking signal, while acknowledging that user interaction data feeds into its systems. The practical answer is to stop arguing about it: a better click-through rate brings more visitors regardless, which is the point."
+    },
+    {
+      "q": "Why did my CTR drop while my rankings stayed the same?",
+      "a": "Almost always a SERP layout change — an AI Overview, an expanded ad block or a local pack appearing above you. Your position didn't move; the page grew. Check the live SERP before assuming the page needs rewriting."
+    },
+    {
+      "q": "How do I see CTR for a single keyword?",
+      "a": "In Search Console's Performance report, add a query filter for the exact term, then read the CTR for that filtered view. Compare it against the same query in a previous period rather than against a published curve, which was measured on somebody else's SERPs."
+    },
+    {
+      "q": "Does a high CTR with no conversions mean anything?",
+      "a": "Yes, and it's usually an intent mismatch. You've written a result compelling enough to click and a page that doesn't do what the click promised. That combination burns budget quietly, because the traffic chart looks healthy while the pipeline doesn't move."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "impressions" },
+    { "type": "glossary", "slug": "average-position" },
+    { "type": "glossary", "slug": "ai-overviews" },
+    { "type": "glossary", "slug": "title-tag" },
+    { "type": "compare", "slug": "keyword-rankings-vs-organic-traffic" },
+    { "type": "journal", "slug": "what-ai-overviews-did-to-your-organic-traffic" }
+  ]
+}

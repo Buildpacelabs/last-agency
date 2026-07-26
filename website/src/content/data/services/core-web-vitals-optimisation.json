@@ -1,0 +1,188 @@
+{
+  "slug": "core-web-vitals-optimisation",
+  "type": "services",
+  "primaryKeyword": "core web vitals optimisation service",
+  "secondaryKeywords": [
+    "core web vitals agency india",
+    "inp optimisation service",
+    "lcp fix service",
+    "page speed optimisation india",
+    "website speed optimisation service"
+  ],
+  "cluster": "technical-seo",
+  "intent": "commercial",
+  "h1": "Speed work judged by real users, not lab scores",
+  "metaTitle": "Core Web Vitals Optimisation Service — Field Data",
+  "metaDescription": "A core web vitals optimisation service judged on field data. We target p75 INP under 200ms and LCP under 2.5s on mobile, not a lab score of 100.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "priceFrom": "From ₹75,000 / mo",
+  "answer": "Core Web Vitals optimisation fixes what real users experience, not what a lab test reports. We work against your field data at the 75th percentile: LCP under 2.5 seconds, INP under 200 milliseconds, CLS under 0.1, measured on mobile. From ₹75,000 a month inside an SEO retainer.",
+  "takeaways": [
+    "Google assesses Core Web Vitals on **field data at the 75th percentile over a rolling 28 days** — not on the Lighthouse score in your browser.",
+    "A lab score of 100 and a failing field assessment happen together constantly. The lab runs on a fast machine with a clean cache and no third-party consent scripts.",
+    "**INP is where most Indian sites fail**, and the cause is almost always third-party JavaScript or a heavy hydration step, not images.",
+    "Speed removes friction. It does not create demand. A fast page nobody searches for is still a page nobody visits."
+  ],
+  "sections": [
+    {
+      "h2": "The score in your browser is not the number Google uses",
+      "body": [
+        "Run Lighthouse on your laptop, on office wifi, with a warm cache and an ad blocker quietly killing three tracking scripts, and you get a comforting green circle. Google is not looking at that circle. It reads the Chrome User Experience Report — anonymised measurements from real Chrome users on real devices and real connections, aggregated over a rolling 28 days.",
+        "The two disagree more often than agencies admit. Lab tools simulate; field data records. A lab run also can't reproduce your consent banner, your live chat widget loading on scroll, or the customer on a four-year-old handset in a lift in Andheri with one bar of signal.",
+        "So we don't sell you a score. We take your field numbers on day one, write them down, and get paid against where they land."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The question to ask any speed vendor",
+        "body": "\"Are you optimising the lab score or the field assessment?\" If the proposal quotes a PageSpeed number and never mentions the 75th percentile or the 28-day window, you're buying a screenshot."
+      }
+    },
+    {
+      "h2": "The three metrics, and the thresholds we commit to",
+      "body": [
+        "Three metrics, one threshold each, all assessed at the 75th percentile of your mobile visitors. Passing means three out of three — a site with excellent LCP and broken INP does not pass.",
+        "INP replaced First Input Delay as the responsiveness metric in March 2024, and that swap quietly broke a lot of sites that had been comfortably green for years. FID measured only the delay before the first interaction started. INP measures the full latency of the worst interactions across the visit, which is a far harder test and a much fairer one."
+      ],
+      "table": {
+        "caption": "Core Web Vitals thresholds we work against, and what usually breaks each one.",
+        "head": ["Metric", "Good at p75", "What usually breaks it"],
+        "rows": [
+          [
+            "**LCP** — Largest Contentful Paint",
+            "Under 2.5s",
+            "Hero images served uncompressed at desktop dimensions, render-blocking fonts and CSS, slow server response on shared hosting, sliders that load before the text does."
+          ],
+          [
+            "**INP** — Interaction to Next Paint",
+            "Under 200ms",
+            "Long JavaScript tasks on the main thread: tag managers, chat widgets, heatmap recorders, review widgets, and hydration on React or Next.js builds."
+          ],
+          [
+            "**CLS** — Cumulative Layout Shift",
+            "Under 0.1",
+            "Images and iframes without width and height, ads and embeds injected above content, web fonts swapping in late, sticky banners that appear after paint."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "If your site has no field data",
+        "body": "Low-traffic origins don't get page-level field data — there aren't enough samples. We install a small real-user monitoring script instead and collect your own field numbers for two to three weeks before committing to a target. We'd rather delay the commitment than invent a baseline."
+      }
+    },
+    {
+      "h2": "INP is where the money is, and it's rarely your images",
+      "body": [
+        "Most speed proposals we see are image compression with extra steps. Images matter for LCP. They have almost nothing to do with INP, and INP is the metric failing on the majority of Indian sites we assess.",
+        "Responsiveness breaks when the browser's main thread is busy. Every long task — parsing a script, running an analytics handler, hydrating a component tree — blocks the browser from painting a response to the tap that just happened. The user taps again. The page feels broken. That's INP, and here's the usual cast."
+      ],
+      "bullets": [
+        "**Tag manager sprawl.** A container that accumulated eleven tags across three agencies, four of which fire on every page and two of which nobody can name. We audit the container and delete, defer or server-side what survives.",
+        "**Chat widgets.** The single most common INP offender. Loading one on interaction rather than on page load costs nothing in leads and frequently fixes the metric on its own.",
+        "**Session recording and heatmap scripts.** Useful for a fortnight of research, expensive forever. Most sites are paying an INP tax on a tool nobody has opened since the last redesign.",
+        "**Hydration.** On React, Vue and Next.js builds, a large client component tree can block interaction for hundreds of milliseconds after the page looks ready. The fix is architectural — smaller client boundaries, streaming, deferred islands — and it belongs in a sprint with your engineers, not in a plugin."
+      ]
+    },
+    {
+      "h2": "We test on a mid-range Android on 4G, because that's your traffic",
+      "body": [
+        "India browses on Android. Not on the flagship in the founder's pocket — on a mid-range handset two or three years old, on a mobile network that fluctuates through the day, often with several apps competing for memory.",
+        "So that's the test rig. Throttled CPU, throttled network, a real handset for the interaction checks. It produces uglier numbers than a desktop lab run, and those uglier numbers are the ones your field data is going to agree with.",
+        "It also changes what we recommend. A fix that saves 200ms on a laptop can save well over a second on a mid-range phone, because CPU-bound work scales with how slow the CPU is. Prioritising by desktop impact gets the order wrong."
+      ]
+    },
+    {
+      "h2": "What's included, and what isn't",
+      "body": [
+        "Scope arguments happen in month three, so here's the boundary in month zero."
+      ],
+      "table": {
+        "caption": "Core Web Vitals scope on a Last Agency engagement.",
+        "head": ["Area", "In scope", "Not in scope"],
+        "rows": [
+          [
+            "Measurement",
+            "Field baseline at p75, RUM install where field data is thin, per-template breakdown, weekly tracking through the engagement",
+            "Reporting a single sitewide PageSpeed number as though it means anything. Templates fail differently."
+          ],
+          [
+            "LCP",
+            "Image format, sizing and priority hints, font loading strategy, critical CSS, server response diagnosis, template-level markup fixes",
+            "Buying your hosting or CDN. We'll write the spec and the config; the contract is yours."
+          ],
+          [
+            "INP",
+            "Third-party script audit, tag manager cleanup, deferral and on-interaction loading, long-task profiling, hydration recommendations",
+            "Rebuilding your front-end framework. We advise and prototype; your engineers own the architecture."
+          ],
+          [
+            "CLS",
+            "Dimension attributes, font-display strategy, reserved space for ads, embeds and banners, layout audit per template",
+            "Removing the ad units that pay for the site. We'll tell you what they cost you and let you decide."
+          ],
+          [
+            "Shipping",
+            "Pull requests against your repo, CMS and tag-manager edits made directly, before-and-after verification",
+            "Merge rights on your production branch. Your team always approves what goes live."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "What it costs",
+      "body": [
+        "Speed work sits inside an SEO retainer by default, because on its own it runs out of genuine work in about two months and then keeps invoicing."
+      ],
+      "bullets": [
+        "**From ₹75,000/mo, ex-GST**, as part of an SEO retainer. Core Web Vitals work is one strand of the [technical SEO](/services/technical-seo-services) discipline, running alongside content and links.",
+        "**From ₹40,000/mo for smaller sites.** Same measurement standard, less throughput — sensible for a single-template site on a mainstream CMS.",
+        "**As a standalone project**, we scope after a fixed-fee diagnosis, because the effort scales with template count and framework, not with page count. A five-template Shopify store and a five-template custom Next.js app are different jobs at the same size.",
+        "Month-to-month after the first quarter, 30 days' notice, and every artefact stays yours. Full rate card on [our pricing page](/pricing)."
+      ]
+    },
+    {
+      "h2": "What the guarantee covers on speed work",
+      "body": [
+        "The company-wide guarantee applies as it always does. On day one we freeze your trailing-90-day count of qualified leads from organic search. Miss it in 90 days and we keep working free until we beat it. We never promise a specific ranking position, for this or anything else.",
+        "For speed work we freeze a second baseline alongside it: your p75 field values for LCP, INP and CLS on mobile, per template, on the day we start. We commit to movement against those numbers inside 90 days. We do not commit to a fixed score, and here's why that distinction is honest rather than evasive — field data is a rolling 28-day aggregate of your actual traffic. A seasonal shift towards older devices or slower networks can move your p75 without a single line of your code changing.",
+        "What we control is the code and the third parties. What we don't control is who shows up. So we're paid on the direction of the numbers we can influence, measured the same way Google measures them."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The uncomfortable part",
+        "body": "Google has consistently described page experience as one signal among many, and a modest one. Fixing Core Web Vitals rarely outranks a competitor with better content. It reduces bounce, improves conversion, and stops speed being the reason you lose a close call. If someone is selling speed work as a ranking strategy on its own, they're selling you the wrong month."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much does Core Web Vitals optimisation cost in India?",
+      "a": "Inside our SEO retainer it starts at ₹75,000 a month ex-GST, with smaller sites from ₹40,000. Standalone projects are quoted after a fixed-fee diagnosis because effort tracks template count and framework rather than page count. Anyone quoting a flat price before seeing your stack is guessing."
+    },
+    {
+      "q": "Will fixing Core Web Vitals improve my Google rankings?",
+      "a": "Sometimes, modestly. Google treats page experience as one signal among many and it rarely beats relevance or authority. What speed reliably does is reduce abandonment and improve conversion on the traffic you already have — which is often worth more than the ranking change."
+    },
+    {
+      "q": "Why does my site score 95 in Lighthouse but fail Core Web Vitals?",
+      "a": "Because they measure different things. Lighthouse is a simulated lab run on your machine with a clean cache. Google assesses field data from real Chrome users at the 75th percentile over 28 days — including slow handsets, poor networks, consent banners and every third-party script that your ad blocker hides."
+    },
+    {
+      "q": "How long does it take to fix INP?",
+      "a": "The code changes often take one to two sprints. The field data takes longer to agree, because it's a rolling 28-day window — expect four to six weeks after a fix ships before the assessment fully reflects it. Anyone promising a corrected field score in a fortnight doesn't understand the window."
+    },
+    {
+      "q": "Do you fix the site yourselves or just send a report?",
+      "a": "We ship. Pull requests against your repo for developer-owned changes, and direct edits in your CMS or tag manager for the rest. We never hold merge rights on production — your team approves everything that goes live, and we verify afterwards with dates attached."
+    }
+  ],
+  "related": [
+    { "type": "services", "slug": "technical-seo-services" },
+    { "type": "glossary", "slug": "interaction-to-next-paint" },
+    { "type": "glossary", "slug": "largest-contentful-paint" },
+    { "type": "glossary", "slug": "cumulative-layout-shift" },
+    { "type": "compare", "slug": "nextjs-vs-wordpress-seo" },
+    { "type": "answers", "slug": "why-did-my-rankings-drop" }
+  ]
+}

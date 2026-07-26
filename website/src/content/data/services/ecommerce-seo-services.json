@@ -1,0 +1,266 @@
+{
+  "slug": "ecommerce-seo-services",
+  "type": "services",
+  "primaryKeyword": "ecommerce seo services",
+  "secondaryKeywords": [
+    "ecommerce seo agency india",
+    "shopify seo services india",
+    "product page seo service",
+    "category page seo service",
+    "ecommerce seo cost india"
+  ],
+  "cluster": "vertical-seo",
+  "intent": "commercial",
+  "h1": "SEO for catalogues too big to fix by hand",
+  "metaTitle": "Ecommerce SEO Services for 10,000+ SKU Catalogues",
+  "metaDescription": "Ecommerce SEO for catalogues above 10,000 SKUs. We fix faceted URLs, dead out-of-stock pages and category copy, then report revenue per organic session.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "priceFrom": "From ₹75,000 / mo",
+  "answer": "Ecommerce SEO on a large catalogue is mostly URL control and merchandising, not blogging. We fix faceted navigation, out-of-stock handling and category copy first, then build demand. Engagements start at ₹75,000 a month and are judged on revenue per organic session against your own frozen 90-day baseline.",
+  "takeaways": [
+    "The scoreboard is **revenue per organic session**, not sessions. A 40% traffic lift on filter URLs nobody buys from is a rounding error with a nice chart attached.",
+    "Month one goes on two problems: filter URLs multiplying your crawlable surface, and out-of-stock pages quietly rotting into soft 404s.",
+    "On most Indian stores, category pages out-earn product pages from organic — and nobody has edited them since the theme was installed.",
+    "From ₹75,000/mo. Smaller catalogues from ₹40,000. If revenue per organic session hasn't beaten your frozen 90-day baseline by day 90, we keep working free until it does."
+  ],
+  "sections": [
+    {
+      "h2": "Why we report revenue per organic session",
+      "body": [
+        "Most ecommerce SEO reports lead with sessions. Sessions are the easiest number in this business to inflate — index a few thousand filter combinations, pick up long-tail junk, and the chart goes up while your bank balance doesn't.",
+        "Revenue per organic session is harder to fake. It rises when the right people land on the right page and the page does its job. It falls when you win traffic that was never going to buy. That makes it an honest scoreboard for both sides, because we can't win it by shipping volume.",
+        "We report three numbers every month: organic revenue, organic sessions, and revenue per organic session. The third is the one we're judged on. The other two are there so you can see which lever actually moved."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What we need on day one",
+        "body": "Read access to GA4 and Search Console, admin on your platform, and server logs if you can get them. If purchase tracking doesn't fire reliably, there is no baseline and therefore no guarantee. Fixing that measurement is week one, inside the retainer, not an extra."
+      }
+    },
+    {
+      "h2": "Month one, problem one: your filters generate URLs faster than Google will crawl them",
+      "body": [
+        "A 12,000-SKU store with colour, size, brand, price and sort filters — combinable in any order — can expose more crawlable URLs than it has products, by two orders of magnitude. Googlebot doesn't refuse to crawl that. It just spends your crawl budget there instead of on the 400 pages that make money.",
+        "There's no universal rule for which filter pages deserve to exist. There is a decision per facet, and we write it down as a policy your developers can implement once and stop arguing about."
+      ],
+      "table": {
+        "caption": "How we treat each kind of filter URL on a large catalogue.",
+        "head": ["URL type", "Example", "What we do", "Why"],
+        "rows": [
+          [
+            "Facet with real search demand",
+            "/shoes/running/nike",
+            "Index it. Static path, unique H1, unique copy, linked from the parent category.",
+            "People search this. It earns a page — and a page has to be more than a filtered grid."
+          ],
+          [
+            "Facet with no search demand",
+            "/shoes?colour=beige&size=9",
+            "Canonical to the parent category, keep it out of sitemaps and out of internal links.",
+            "Nobody searches it. It exists to help someone already browsing, and that's fine."
+          ],
+          [
+            "Sort and view parameters",
+            "?sort=price_asc, ?view=48",
+            "Disallow in robots.txt.",
+            "Infinite reorderings of the same product set. Pure crawl waste, zero upside."
+          ],
+          [
+            "Three or more facets combined",
+            "?colour=red&size=9&brand=puma",
+            "Disallow the pattern and remove the internal links pointing at it.",
+            "Combinatorial explosion. This is where crawl budget goes to die on big catalogues."
+          ],
+          [
+            "Pagination",
+            "/shoes?page=4",
+            "Crawlable, self-canonical, indexable.",
+            "Google needs a path to deep products. Canonicalising page 4 to page 1 orphans everything past the first grid."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The tidy mistake that costs the most",
+        "body": "Blanket-`noindex` on every filter URL. It feels clean and it does nothing for crawl budget, because Google has to crawl a page to read the tag telling it not to index the page. On several stores it also strips out the handful of filter pages that were quietly earning. Facet handling is a per-facet decision, not a switch."
+      }
+    },
+    {
+      "h2": "Month one, problem two: the products that aren't there any more",
+      "body": [
+        "Every catalogue has a graveyard. Sold out in March. Seasonal lines that return in October. Discontinued SKUs still holding links and rankings from two years ago. Most stores treat all three identically, and usually pick the worst of the three available answers.",
+        "The rule is simple: what you do depends entirely on whether the product is coming back."
+      ],
+      "table": {
+        "caption": "Out-of-stock and discontinued SKU policy.",
+        "head": ["Situation", "What we do", "What stores usually do instead"],
+        "rows": [
+          [
+            "Out of stock, restocking in weeks",
+            "Keep the URL live, return 200, set `availability: OutOfStock` in product schema, show alternatives and a notify-me form.",
+            "Redirect to the category, then redirect back on restock. Two migrations for one delivery delay."
+          ],
+          [
+            "Seasonal, returns next year",
+            "Keep the URL live all year, keep it in the sitemap, change the copy rather than the URL.",
+            "404 it in February, rebuild it in October with none of its link history or ranking memory."
+          ],
+          [
+            "Discontinued, close replacement exists",
+            "301 to the replacement **product**, not the category, and update the internal links so the redirect is a safety net rather than the route.",
+            "301 everything to the homepage, which Google generally treats as a soft 404 and drops."
+          ],
+          [
+            "Discontinued, nothing comparable",
+            "410, remove from the sitemap, and fold any earned links into the parent category.",
+            "Leave a live page with an empty grid. That's the most common soft-404 pattern we find, and it drags the whole category down."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Category pages carry the money, and nobody has touched them since launch",
+      "body": [
+        "On most Indian stores we open, category and sub-category pages out-earn product pages from organic. They match how people search — 'running shoes for men under 3000', not a SKU code — and they give a shopper a choice instead of a single yes-or-no.",
+        "They are also, usually, a grid, an H1 repeating the category name, and forty words written by whoever installed the theme. That isn't a page. That's a filter with a title tag."
+      ],
+      "bullets": [
+        "**Copy that helps someone choose** — sizing, materials, price bands, what to buy for what use. A short intro above the grid, the longer block below it, so nothing pushes the products off the first screen.",
+        "**Internal linking that mirrors how people shop**, not how your ERP is structured: sibling categories, top brands, and the handful of facet pages we decided to index.",
+        "**Breadcrumbs with `BreadcrumbList` schema**, so hierarchy is machine-readable and the listing shows the path.",
+        "**Titles that scale sensibly.** Templates are fine for 4,000 tail pages. Templates are not fine for your top 50 — those get written by a person who has seen the products."
+      ],
+      "subs": [
+        {
+          "h3": "How we handle 4,000 categories without spending a year on it",
+          "body": [
+            "We work top-down by revenue. The 50 categories that earn get hand-written. The next 500 get a strong template with variable inputs that a human reviews before publish. The tail gets left alone until the data says otherwise — see [programmatic SEO](/services/programmatic-seo-services) for how that machinery is built and where it becomes scaled-content risk.",
+            "Hand-writing every category page is how agencies burn twelve months and hand you a spreadsheet."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Platform notes: Shopify, Magento and WooCommerce",
+      "body": [
+        "The platform doesn't decide whether you rank. It does decide which fights you'll be having, and roughly how expensive each one is."
+      ],
+      "subs": [
+        {
+          "h3": "Shopify",
+          "bullets": [
+            "Products are reachable at both `/products/handle` and `/collections/x/products/handle`. Shopify canonicals to the first by default — verify it, because themes and apps break it.",
+            "`robots.txt.liquid` is editable, so filter and sort parameters can be handled properly. Most stores have never opened it.",
+            "Collection filters use `?filter.` parameters, they're crawlable by default, and they multiply fast.",
+            "App bloat is the usual speed problem. Every review widget, popup and upsell ships JavaScript. Removing four apps often beats six weeks of image compression."
+          ]
+        },
+        {
+          "h3": "Magento 2",
+          "bullets": [
+            "Layered navigation is the worst URL-explosion offender of the three. It needs deliberate robots and canonical configuration, never the defaults.",
+            "Multi-store setups routinely serve the same product across store views with no canonical and no hreflang — a duplication problem and an [international SEO](/services/international-seo-services) problem at the same time.",
+            "Full-page cache, indexer config and hosting decide whether Core Web Vitals are fixable at all. Sometimes the honest answer is 'move hosts', not 'hire an SEO'."
+          ]
+        },
+        {
+          "h3": "WooCommerce",
+          "bullets": [
+            "Product tag and attribute archives are indexable by default and almost always thin. Decide which earn a page; `noindex` the rest.",
+            "Shared hosting plus a page builder plus thirty plugins is the standard small-store stack in India, and it caps [Core Web Vitals](/services/core-web-vitals-optimisation) before anyone writes a word.",
+            "Internal search result URLs (`?s=`) get crawled far more often than you'd expect. Disallow them."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "What's included, what isn't, and what it costs",
+      "body": [
+        "Ecommerce SEO starts at **₹75,000 a month** for catalogues above roughly 5,000 SKUs. Smaller stores — a few hundred products, one market — start at **₹40,000 a month**. Both ex-GST, month-to-month after the first quarter, thirty days' notice, and every asset stays yours when you leave. Full numbers are on [pricing](/pricing)."
+      ],
+      "table": {
+        "caption": "What a ₹75,000/mo ecommerce SEO retainer covers, and what it doesn't.",
+        "head": ["Included", "Not included"],
+        "rows": [
+          [
+            "Facet, pagination and parameter policy, written as a spec your developers can build from",
+            "Developer hours to implement it — we spec, your team ships, or we quote implementation separately"
+          ],
+          [
+            "Out-of-stock and discontinued SKU rules plus the full redirect map",
+            "Replatforming — that's [site migration SEO](/services/site-migration-seo), scoped on its own"
+          ],
+          [
+            "Category copy: top 50 hand-written, the next tier templated and human-reviewed",
+            "Product description rewriting across the whole catalogue"
+          ],
+          [
+            "Product, category, breadcrumb and review schema",
+            "Photography, video and creative production"
+          ],
+          [
+            "Technical audit, crawl monitoring and monthly log-file review",
+            "Hosting, CDN, platform licences and tool subscriptions"
+          ],
+          [
+            "Digital PR and link earning aimed at the categories that carry margin",
+            "Google Shopping, Meta and marketplace ads — that's [performance marketing](/performance)"
+          ],
+          [
+            "Monthly reporting on revenue per organic session against the day-one baseline",
+            "Amazon and Flipkart listing optimisation"
+          ]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "The guarantee, stated plainly",
+          "body": [
+            "On day one we freeze your trailing-90-day organic revenue and your revenue per organic session. If we haven't beaten that baseline in 90 days, we keep working free until we do. It isn't a refund and we won't dress it up as one — it's unpaid work until the number clears. That's also why we take three clients a month; you can't carry that risk at volume.",
+            "What we will never do is promise position one for 'buy running shoes online'. Nobody controls Google's index, and an agency that promises a position is either buying links or betting you won't check."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "When this isn't the right service",
+        "body": "If your catalogue is under 500 SKUs and you sell in one city, [local SEO](/services/local-seo-services) will probably out-earn everything here. If your site is mid-replatform, do the migration first. We'd rather say that on the call than after the first invoice."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long before ecommerce SEO shows up in revenue?",
+      "a": "Technical recovery on a large catalogue often lands in 4–8 weeks, because you're reclaiming pages Google already knows. New and rewritten category pages take 3–6 months. Competitive national keyword sets take 6–12. Anyone quoting faster is quoting a smaller problem than the one you have."
+    },
+    {
+      "q": "Is Shopify bad for SEO?",
+      "a": "It's constrained, not bad. You can't change the `/collections/` and `/products/` URL structure, and filter parameters need handling in `robots.txt.liquid`. Neither costs you rankings if everything else is right. We've seen far more revenue lost to app bloat and slow themes than to Shopify's URL rules."
+    },
+    {
+      "q": "Do you rewrite product descriptions for the whole catalogue?",
+      "a": "Not inside the retainer. On a 10,000-SKU store that's a production project with its own budget, and it rarely earns as much as fixing 200 category pages first. We scope it separately when the revenue data says it's worth doing."
+    },
+    {
+      "q": "What about manufacturer copy that's identical on every retailer's site?",
+      "a": "Real problem, survivable one. Google doesn't penalise it — it just picks one page to show, usually the strongest domain. So rewrite where the SKU has genuine search volume and margin, and let the tail stay duplicated. Rewriting 8,000 descriptions to fix 40 rankings is bad arithmetic."
+    },
+    {
+      "q": "Can you work with our existing developers?",
+      "a": "Yes, and that's the normal setup. We write the specs, join sprint planning if you run it, and test what ships before it goes live. Where you have no developer capacity we quote implementation separately, at cost, with no markup."
+    },
+    {
+      "q": "Does the guarantee still work if we run Google Shopping too?",
+      "a": "Yes, but we separate the channels before freezing anything, because paid and organic cannibalise each other under GA4's default attribution. If we can't split them cleanly, we say so and set the baseline on Search Console organic sessions plus your platform's own order data."
+    }
+  ],
+  "related": [
+    { "type": "cost", "slug": "ecommerce-seo-cost" },
+    { "type": "compare", "slug": "wordpress-vs-shopify-seo" },
+    { "type": "answers", "slug": "how-to-do-seo-for-an-ecommerce-website" },
+    { "type": "seo-for", "slug": "ecommerce" },
+    { "type": "glossary", "slug": "crawl-budget" },
+    { "type": "services", "slug": "technical-seo-services" }
+  ]
+}

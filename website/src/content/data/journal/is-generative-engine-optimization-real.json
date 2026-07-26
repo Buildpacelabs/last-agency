@@ -1,0 +1,272 @@
+{
+  "slug": "is-generative-engine-optimization-real",
+  "type": "journal",
+  "primaryKeyword": "is generative engine optimization real",
+  "secondaryKeywords": [
+    "geo vs seo",
+    "what is geo marketing",
+    "aeo answer engine optimization",
+    "should i pay for geo services",
+    "ai search optimization"
+  ],
+  "cluster": "ai-search",
+  "intent": "informational",
+  "h1": "GEO, AEO, AIO: Which of These Is a Real Discipline?",
+  "metaTitle": "Is Generative Engine Optimization Real?",
+  "metaDescription": "Generative engine optimisation is real as a practice and mostly fake as a product line. Here's the fifth that genuinely differs, and the rest that doesn't.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Generative engine optimisation is real as a practice and mostly fake as a separate product line. Roughly a fifth of the work genuinely differs from classic SEO — citation-shaped writing, entity consistency, and corroboration on third-party sites. The other four-fifths is on-page and authority work with a new acronym and a new invoice line attached.",
+  "takeaways": [
+    "GEO has an actual research paper behind it — a **2024 KDD paper** that coined the term and tested tactics on a benchmark. That's more than most marketing acronyms can say.",
+    "The genuinely new part is small: passage-level extractability, entity consistency, source diversification and crawler-access decisions.",
+    "The renamed part is large: keyword research, content quality, internal links, schema, digital PR. All of it already sat in your retainer.",
+    "Before paying for a GEO add-on, ask for **one deliverable that would not exist without it**. If nobody can name one in ten seconds, you're buying an invoice line."
+  ],
+  "sections": [
+    {
+      "h2": "Four acronyms, one underlying question",
+      "body": [
+        "The acronym boom is a symptom of a genuine change, which is why it's worth taking seriously rather than mocking. Search stopped being ten blue links for a growing share of queries, and an industry that sells optimisation naturally reached for a new word.",
+        "The problem is that the words don't have agreed definitions, and when a term has no agreed definition it can't be priced, scoped or held to account. Here's what each one is usually asked to mean, and how much of it is new."
+      ],
+      "table": {
+        "caption": "The acronyms in circulation and how much genuinely new work sits behind each.",
+        "head": [
+          "Acronym",
+          "What it's used to mean",
+          "How new is it, really"
+        ],
+        "rows": [
+          [
+            "GEO — generative engine optimisation",
+            "Being cited inside a generated answer: ChatGPT, Perplexity, AI Overviews, Gemini",
+            "Has a real academic origin and a genuinely distinct measurement problem. The most defensible of the four"
+          ],
+          [
+            "AEO — answer engine optimisation",
+            "Being the answer: featured snippets, voice assistants, People Also Ask, now AI answers",
+            "Predates the current wave by years. It was called snippet optimisation and it was part of on-page SEO"
+          ],
+          [
+            "AIO — AI optimisation, or AI Overview optimisation",
+            "Depends entirely on who's using it. Sometimes the surface, sometimes the practice",
+            "Ambiguous enough that we'd ask any vendor using it to define it in one sentence before continuing"
+          ],
+          [
+            "LLMO / LLM SEO",
+            "Ranking inside a language model's answers",
+            "The same idea as GEO with a different prefix. No distinct methodology has been published under this name"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The tell isn't the acronym",
+        "body": "Every one of these could be a legitimate name for real work. The question is never what it's called — it's whether the person selling it can name a deliverable that wouldn't be produced anyway. That test cuts through all four labels in about ten seconds."
+      }
+    },
+    {
+      "h2": "The term has an actual paper behind it, which matters",
+      "body": [
+        "\"Generative engine optimization\" wasn't invented by an agency looking for an upsell. It was coined in a 2024 KDD paper by researchers from Princeton, Georgia Tech, the Allen Institute for AI and IIT Delhi, who built a benchmark of thousands of queries and tested which changes to a source document made a generative engine more likely to cite and quote it.",
+        "Their headline finding is the useful bit: content edits that added **quotations, statistics and citations to authoritative sources** improved a document's visibility in generated answers meaningfully — up to around 40% in their benchmark — while keyword stuffing did essentially nothing. In other words, the thing that makes a passage quotable is that it contains something concrete worth quoting.",
+        "Two caveats before anyone puts that 40% in a pitch deck. It was measured on a research setup the authors built, not on Google's live AI Overviews or a production ChatGPT. And \"up to\" is doing real work in that sentence — it's a best case across a benchmark, not a forecast for your blog.",
+        "But the direction is sound and it's consistent with what the mechanics predict. If a system retrieves passages and stitches an answer from them, passages carrying verifiable specifics are more useful to it than passages carrying adjectives. That's a real finding about a real behaviour, and it's why we say the practice is genuine even when the product isn't."
+      ]
+    },
+    {
+      "h2": "The fifth that genuinely differs from classic SEO",
+      "body": [
+        "Here's our honest accounting. Four things in this discipline are not simply SEO under a new name, and all four are worth doing."
+      ],
+      "subs": [
+        {
+          "h3": "1. The unit of optimisation changes from page to passage",
+          "body": [
+            "Classic SEO optimises a document to rank. Retrieval-augmented systems pull chunks — paragraphs, list items, table rows — and assemble an answer from several sources. So a paragraph that only makes sense in the context of the two paragraphs above it is worth less than one that stands alone.",
+            "That has concrete writing consequences: restate the subject rather than relying on \"it\", put the claim in the first sentence, attach a number or a date, and keep the unit small enough to lift cleanly. It's a real editorial discipline and most SEO content is not written this way."
+          ]
+        },
+        {
+          "h3": "2. Entity consistency stops being cosmetic",
+          "body": [
+            "Ranking a page tolerates messiness. Being described accurately does not. If your company name, founding year, location, service list and pricing differ across your site, LinkedIn, Crunchbase, directories and old press coverage, an assistant asked \"what does this company do\" will pick one version, and it may not be yours.",
+            "Cleaning that up is a specific, finishable project. It has almost nothing to do with rankings and everything to do with whether the machine gets you right."
+          ]
+        },
+        {
+          "h3": "3. Source diversification, not just link acquisition",
+          "body": [
+            "A backlink is a vote. A mention on a source the model retrieves from is a different thing — you want to appear in the places these systems reach for on your topic, which in practice means industry publications, forums with real discussion, review sites, and documentation. Sometimes a placement with no link at all is worth more here than a followed link from a site nobody cites."
+          ]
+        },
+        {
+          "h3": "4. Crawler access becomes a strategic decision",
+          "body": [
+            "This one is genuinely new and genuinely gets fumbled. Training crawlers, search crawlers and live-fetch crawlers are separate bots with separate names, and blocking the wrong one removes you from citations while doing nothing about training. Getting this right requires a decision, in writing, per bot."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "Notice what isn't on that list",
+        "body": "No new tooling requirement. No new content type. No separate content calendar. Three of the four are editorial or operational disciplines, and the fourth is four lines in a robots file."
+      }
+    },
+    {
+      "h2": "The four-fifths that's your existing retainer with a new label",
+      "body": [
+        "Now the part that gets sold hardest. Almost every item on a typical GEO scope sheet is work an SEO retainer has done for a decade.",
+        "This isn't an accusation of fraud. These things genuinely do help you get cited, because the systems doing the citing are largely reading the same web, using the same signals of quality, and in Google's case sitting on the same index. That's exactly the point: they help because they were already the work."
+      ],
+      "bullets": [
+        "**Keyword and query research**, now called \"prompt research\". Useful, and 90% the same exercise with conversational phrasing added.",
+        "**Writing genuinely useful content.** Yes. Always. This has been the advice since Panda in 2011.",
+        "**Schema markup.** Helps machines understand a page, which is good — but Google has been explicit that there's no special markup that gets you into AI Overviews. [Schema](/glossary/schema-markup) is table stakes, not a lever.",
+        "**Internal linking and site structure.** Old, boring, effective, already billed.",
+        "**Digital PR and brand mentions.** The single strongest input to being cited, and also the single strongest input to ranking. Same work, same team, one invoice.",
+        "**Technical health, speed, crawlability.** If a crawler can't fetch it, nothing else matters. Also not new.",
+        "**FAQ blocks and question-shaped headings.** Marginally helpful, wildly over-sold, and frequently the entire substance of a ₹20,000-a-month add-on."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The scope sheet test",
+        "body": "Print the GEO scope sheet next to your existing SEO scope sheet and strike out every line that appears on both. What's left is what you're actually buying. In most of the quotes we've seen forwarded to us, what's left fits on two lines."
+      }
+    },
+    {
+      "h2": "How the add-on gets priced, and the arithmetic to run on it",
+      "body": [
+        "We're describing the *shapes* of quotes here rather than survey data, because nobody has published reliable pricing figures for a service line this young and we're not going to manufacture some. The shapes are consistent enough to be useful on their own.",
+        "Four patterns turn up in the Indian market, and the arithmetic matters more than the label."
+      ],
+      "table": {
+        "caption": "How GEO and AEO add-ons are typically packaged, and what to check in each case.",
+        "head": [
+          "Packaging",
+          "How it looks on the quote",
+          "The question to ask"
+        ],
+        "rows": [
+          [
+            "Percentage uplift",
+            "\"AI visibility layer\" at 20–30% on top of the existing retainer",
+            "On a ₹75,000/mo retainer, a 25% uplift is ₹18,750/mo — ₹2,25,000 a year. What ships for that which wasn't shipping before?"
+          ],
+          [
+            "Fixed monthly line item",
+            "A flat add-on sitting below the SEO line",
+            "Ask for the hours behind it. If it's a monitoring dashboard and a monthly mention report, that's a few hours, not a retainer"
+          ],
+          [
+            "One-off AI visibility audit",
+            "Priced like a technical audit, delivered as a deck",
+            "Fair enough if it's genuinely diagnostic. Ask whether the prompt set and the raw responses come with it, or just the summary"
+          ],
+          [
+            "Renamed premium tier",
+            "The existing top package with GEO added to the name and the price",
+            "Compare the deliverable list to last year's. Sometimes it's identical, which is at least easy to check"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Where we stand on this",
+        "body": "We don't run a separate GEO line. The genuinely-new fifth sits inside the SEO retainer, which starts at ₹75,000/mo — ₹40,000/mo for smaller sites, ex-GST. We publish an [AEO and GEO services page](/services/aeo-geo-services) because people search for the term by name, and what's on it is that same fifth, priced inside rather than bolted on top."
+      }
+    },
+    {
+      "h2": "Six questions that test a GEO claim before you pay for it",
+      "body": [
+        "Ask these in the pitch. They're not gotchas — a vendor doing real work answers all six comfortably, and the ones who can't will tell you so in about ninety seconds of hedging."
+      ],
+      "numbered": [
+        "**Name one deliverable that wouldn't exist without this line item.** The whole thing rests on this. If the answer is \"we'd optimise your content\", that was already the retainer.",
+        "**Which engines, and how is each measured?** ChatGPT with browsing on and off give different answers. Perplexity, Gemini and AI Overviews retrieve differently. \"AI search\" is not a measurable surface.",
+        "**What's the baseline, and can I see the prompt set?** There should be a fixed list of prompts, run before work starts, with the raw responses saved. No frozen prompt set means no honest before-and-after — the same trap as [starting SEO without a baseline](/journal/how-to-set-an-seo-baseline).",
+        "**How do you handle non-determinism?** Ask the same model the same question twice and you can get two different answers, with different sources. Any measurement that doesn't run each prompt several times and report a rate rather than a yes/no is theatre with a screenshot.",
+        "**Does the guarantee attach to citations or to leads?** A citation count is not revenue. We've seen the logic used to justify a retainer on the grounds that mentions went up while enquiries didn't move at all.",
+        "**What happens to this work if Google changes the box next quarter?** Good answer: nothing much, because it's editorial quality and entity accuracy. Bad answer: a specific formatting trick, which is a tactic with an expiry date you're paying a retainer for."
+      ]
+    },
+    {
+      "h2": "The three cases where a separate budget genuinely earns its place",
+      "body": [
+        "We'd rather not leave this as pure scepticism, because there are real situations where this deserves its own line and its own money."
+      ],
+      "bullets": [
+        "**Assistants describe you wrongly.** Wrong founding year, wrong services, confused with a similarly-named company, or repeating a claim from a five-year-old article. This is a bounded, finishable project — fix the source material, fix the profiles, get corroborated correctly — and it's worth paying to finish quickly, because a wrong description compounds across every system that reads the web.",
+        "**You sell into a research-heavy B2B process where assistants are genuinely in the workflow.** If your buyers demonstrably shortlist using these tools, being absent from the shortlist is a revenue problem and deserves a revenue-sized response.",
+        "**You're a new entity with no corroboration anywhere.** Nothing about you exists outside your own domain, so there's nothing to retrieve. The fix is real: press, profiles, directories, commentary. Note that it's a PR budget with a GEO label, and you should buy it from someone who does PR."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "And the case where it's a waste",
+        "body": "If you haven't yet segmented your own Search Console data to find out how much traffic you've actually lost, you're buying a fix without a diagnosis. [Do the segmentation first](/journal/what-ai-overviews-did-to-your-organic-traffic) — it takes an afternoon and it frequently ends the conversation."
+      }
+    },
+    {
+      "h2": "Our position, stated plainly enough to be held against us",
+      "body": [
+        "Generative engine optimisation is a real practice, a poor product category, and an excellent invoice line. The mechanics behind it — passage-level extractability, entity consistency, source diversification, crawler access — are genuine, learnable and worth doing. They amount to roughly a fifth of what gets scoped under the name, and they belong inside a competent SEO engagement rather than beside one.",
+        "So we don't charge separately for it, and that's a commercial choice with a cost attached: it's harder to sell a discipline you refuse to itemise. SEO runs from ₹75,000/mo, ₹40,000/mo for smaller sites, ex-GST, month-to-month after the first quarter, and you keep every asset if you leave.",
+        "The guarantee doesn't change either, because we don't think citations are the right unit of accountability. We freeze your trailing-90-day qualified organic leads on day one and guarantee movement against that number. Miss it in 90 days and we keep working free until we beat it. We never promise a specific ranking position for a specific keyword — and we'd be even more reluctant to promise a specific citation, given the same prompt can return a different set of sources twice in a row.",
+        "If you want the page-level mechanics without the acronym argument, [we've written up exactly what makes a page quotable](/journal/how-to-get-cited-by-ai-assistants). It's the part of this that will still be true when the labels have moved on."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is generative engine optimisation a real thing or just marketing?",
+      "a": "Both. The practice is real — it was named in a 2024 academic paper that tested which content changes make a source more likely to be cited. The product category mostly isn't, because roughly four-fifths of a typical GEO scope is work your SEO retainer already covers under different headings."
+    },
+    {
+      "q": "What's the difference between GEO, AEO and SEO?",
+      "a": "SEO optimises for ranked links. AEO optimises to be the answer — snippets, People Also Ask, voice — and predates the current wave by years. GEO optimises to be cited inside a generated answer, where the unit is a passage rather than a page. In practice the three overlap heavily."
+    },
+    {
+      "q": "Should I pay extra for GEO services?",
+      "a": "Only if the vendor can name a deliverable that wouldn't exist without the line item, show you a frozen prompt-set baseline, and explain how they handle the fact that the same question returns different answers on different runs. If all three answers are solid, it's real work. If not, you're paying twice."
+    },
+    {
+      "q": "Does schema markup help you appear in AI Overviews?",
+      "a": "It helps machines parse your page, which is worth having. But Google has said explicitly that there's no special structured data that gets content into AI Overviews, and no assistant has published a markup requirement. Treat schema as hygiene, not as a lever with a price tag on it."
+    },
+    {
+      "q": "How do you measure whether GEO work is working?",
+      "a": "Freeze a prompt set before starting — 30 to 50 real buyer questions. Run each several times per engine, because answers vary between runs. Record citation rate rather than a yes/no. Then check whether enquiries moved, because a rising citation rate with flat leads is a report, not a result."
+    },
+    {
+      "q": "Will GEO replace SEO?",
+      "a": "No, for a boring reason: the systems generating answers are mostly reading the same web, and in Google's case sitting on the same index. Being findable, credible and correctly described is the underlying work, and it has survived every previous rename — from snippet optimisation to voice search to this."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "generative-engine-optimization"
+    },
+    {
+      "type": "glossary",
+      "slug": "answer-engine-optimization"
+    },
+    {
+      "type": "compare",
+      "slug": "geo-vs-seo"
+    },
+    {
+      "type": "compare",
+      "slug": "aeo-vs-geo"
+    },
+    {
+      "type": "services",
+      "slug": "aeo-geo-services"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-get-cited-by-ai-assistants"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "slug": "edtech",
+  "type": "seo-for",
+  "primaryKeyword": "seo for edtech companies",
+  "secondaryKeywords": [
+    "edtech seo india",
+    "seo for online course platforms",
+    "course page seo",
+    "edtech content marketing",
+    "seo for online learning platforms"
+  ],
+  "cluster": "saas-and-tech",
+  "intent": "commercial",
+  "industry": "Edtech",
+  "h1": "SEO for edtech when the exam calendar is the demand curve",
+  "metaTitle": "SEO for Edtech: Syllabus Pages That Enrol",
+  "metaDescription": "SEO for edtech companies in India. We turn syllabus, eligibility and result queries into course pages that enrol students instead of stray traffic.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Edtech search demand isn't smooth — it spikes on dates. Notification, application, admit card, answer key, result and counselling queries for one exam arrive in a fixed sequence, and a page published the week after the spike earns almost nothing. Build the publishing calendar off the exam calendar, then wire the free pages to the course page.",
+  "takeaways": [
+    "Your content calendar should be built backwards from the NTA, UPSC, CAT and board schedules, not from a keyword tool's monthly volume average — which smooths away the only thing that matters.",
+    "Result-day traffic barely enrols anyone. It's a capture play. The queries that enrol are fees, comparison, and 'how to prepare in X months'.",
+    "**One commercial query, one commercial URL.** The blog post competing with your own course page for `best NEET online coaching` is costing you enrolments every single day.",
+    "Gating a mock test behind a login is fine. Gating it from Googlebot is not, and most edtech platforms do both without noticing.",
+    "FAQ rich results are effectively gone for commercial sites. The markup still helps machines parse you — just don't budget for a SERP feature you won't get."
+  ],
+  "sections": [
+    {
+      "h2": "The demand curve is a calendar, not a keyword list",
+      "body": [
+        "Pull `jee main syllabus` into any keyword tool and you get a tidy monthly average. That number is a lie of arithmetic. The real shape is near-zero for months, then a wall of demand for about ten days after the notification drops, then a second wall when the exam pattern changes.",
+        "Every major Indian exam runs the same lifecycle, and the sequence never varies even when the dates do. Notification, application, syllabus and pattern, admit card, exam day, answer key, result, cut-off, counselling. That's nine distinct query clusters per exam per year, and each one has a publishing window measured in hours rather than weeks."
+      ],
+      "table": {
+        "caption": "The exam query lifecycle, and when a page has to be live.",
+        "head": [
+          "Stage",
+          "When to publish",
+          "What the page has to carry"
+        ],
+        "rows": [
+          [
+            "Eligibility and notification",
+            "Four to eight weeks before the notification is expected, using last cycle's rules as the reference",
+            "Age limits, attempt limits, qualification criteria, category relaxations, and a visible 'expected' label with a review date."
+          ],
+          [
+            "Application and fees",
+            "The hour the window opens",
+            "Step-by-step with the official portal link, fee table by category, document and photo specifications, correction-window dates."
+          ],
+          [
+            "Syllabus and exam pattern",
+            "Standing page, updated the day the official syllabus lands",
+            "Topic-wise weightage, marking scheme including negative marking, changes from last year called out at the top."
+          ],
+          [
+            "Admit card",
+            "Release day, within the hour",
+            "Direct download link, login steps, what to do when details are wrong, ID rules for the centre."
+          ],
+          [
+            "Answer key and response sheet",
+            "Within 24 hours of the paper",
+            "Subject-wise key, how to raise an objection, the objection fee and deadline."
+          ],
+          [
+            "Result, cut-off, counselling",
+            "Result day, then rolling for weeks",
+            "Previous years' cut-offs by category, seat matrix, counselling rounds, choice-filling guidance."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Staff it or skip it",
+        "body": "This is a newsroom operation, not a content marketing programme. If nobody on your team can publish at 6pm on a Sunday when the NTA drops a result, you will lose this segment to the sites that can. That's a legitimate reason to compete on evergreen concept and preparation queries instead — just decide it deliberately rather than discovering it in June."
+      }
+    },
+    {
+      "h2": "What actually enrols a student (it isn't the result page)",
+      "body": [
+        "Result-day traffic is enormous and converts terribly. The visitor is checking a number, not choosing a coaching platform. Treat it as reach and capture — a WhatsApp opt-in, a counselling predictor, a free session booking — and stop reporting it as though it were pipeline.",
+        "The queries with an enrolment attached are less exciting and far more valuable:"
+      ],
+      "bullets": [
+        "**`best <exam> online coaching`** and its variants. Highest intent on the map, hardest to win, and the one your own blog is probably cannibalising.",
+        "**`<exam> course fees`** and `<platform> fees`. People search the price whether or not you publish it. Hiding it just means a third-party listicle guesses your number wrong.",
+        "**`<platform> vs <platform>`**. Uncomfortable, unavoidable, and if you don't write it a comparison-affiliate site will write it about you.",
+        "**`how to prepare for <exam> in 6 months`** and `<exam> study plan`. Long-form planning content that converts to a free trial far better than a result page does.",
+        "**`<subject> free classes for <exam>`** — top of funnel, but the funnel is short in edtech because the buying decision happens in a two-week window each cycle."
+      ]
+    },
+    {
+      "h2": "The cannibalisation that costs you the money query",
+      "body": [
+        "Here's the pattern we find on nearly every edtech site we audit. There's a course page at `/courses/neet-online-coaching` with pricing, batches and an enrol button. There's also a blog post at `/blog/best-neet-online-coaching-in-india` written eighteen months ago for traffic. Both target the same query. Google picks the blog post — it has more words and more links — and the visitor lands on an article with no price, no batch dates and no way to enrol.",
+        "You didn't lose that ranking to a competitor. You lost the enrolment to yourself. The mechanics are covered properly in our page on [keyword cannibalisation](/glossary/keyword-cannibalization), but the edtech-specific fix is simple and slightly painful."
+      ],
+      "numbered": [
+        "**Map every commercial query to exactly one URL**, and make it the one with an enrol button.",
+        "**Rewrite the competing blog post to a genuinely different intent** — 'how to choose a NEET coaching platform' rather than 'best NEET coaching' — or merge it into the course page and 301 the old URL.",
+        "**Point internal links downward**: free resources and exam-info pages link to the course page, not the other way round in bulk. The [topic cluster](/glossary/topic-cluster) should drain into the thing you sell.",
+        "**Keep exam-info pages out of the commercial query set entirely.** `neet syllabus` should never link-compete with `neet coaching`. Different pages, different jobs, one link between them."
+      ]
+    },
+    {
+      "h2": "Free resources without accidentally hiding them from Google",
+      "body": [
+        "Mock tests, previous year papers, formula sheets, NCERT solutions and sample papers are the strongest top-of-funnel assets in Indian edtech. They also break more frequently than anything else on the site, because the growth team's login wall and the SEO team's crawl requirements are in direct conflict.",
+        "Googlebot doesn't log in. If your solutions render only after authentication, the page is empty to a crawler and the ranking never arrives no matter how good the content is."
+      ],
+      "bullets": [
+        "**Keep the content crawlable, gate the action.** The question and the worked solution render server-side; the timed attempt, the score report and the download require a login.",
+        "**Put an HTML page around every PDF.** PDFs do rank, but they carry no navigation, no internal links, no CTA and no analytics. The PDF should be an asset on a page, not the page.",
+        "**Server-render the shell.** Most edtech front-ends are heavy JavaScript apps that ship a blank div and hydrate. That's a slow, fragile way to be indexed — see our note on [JavaScript SEO](/glossary/javascript-seo).",
+        "**Don't generate a page per question.** Ten thousand thin URLs each holding one MCQ is the scaled-content pattern Google demotes. Group by chapter, by paper, by topic — units a student would actually want.",
+        "**Give solution pages a canonical home.** The same previous-year paper published under three exam sections is three duplicates fighting each other."
+      ]
+    },
+    {
+      "h2": "Schema, and the honest state of Course, FAQ and Video",
+      "body": [
+        "Structured data in edtech is worth doing and routinely oversold. Here's where it actually stands, and you should re-check Google's documentation before building, because this surface changes more than most."
+      ],
+      "bullets": [
+        "**`Course` markup** is the one that matters. Note that Google's course rich results are served from a course list page rather than a single course URL, so you need a properly marked-up hub listing your courses, not just markup on each detail page.",
+        "**`FAQPage` markup** stopped producing rich results for most sites when Google restricted the feature to well-known government and health sources in 2023. Keep the markup — it helps parsers and answer engines pull a clean question-answer pair — but don't sell it internally as a SERP feature.",
+        "**`VideoObject`** still earns real visibility, and edtech has more video than almost any other industry. Mark up lesson previews and free classes properly: thumbnail, duration, upload date, and a transcript on the page.",
+        "**Don't mark a blog post up as a `Course`.** It's a structured data policy violation, and the manual action removes rich results across the whole site rather than just that URL."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where schema genuinely pays now",
+        "body": "AI answer surfaces lift structured, clearly attributed facts far more readily than prose. Eligibility criteria, fee tables, exam dates and course durations marked up cleanly get quoted. That's the argument for schema in 2026 — not the blue-star rich result everyone was chasing in 2019."
+      }
+    },
+    {
+      "h2": "The claims that get edtech pages pulled",
+      "body": [
+        "Your highest-converting pages are usually the ones making the riskiest claims, which is an awkward thing for an SEO agency to point out and a worse thing to discover from a regulator.",
+        "ASCI has specific guidelines for advertising education programmes, and the CCPA has issued guidelines aimed at misleading advertisements in the coaching sector. The broad shape: don't claim credit for a selection you didn't materially coach, disclose the course a featured topper actually took and for how long, drop the '100% selection' and 'guaranteed rank' language, and be accurate about recognition and accreditation for any degree-linked programme.",
+        "For SEO this matters more than it looks. Success-story and result pages attract links and rank well, and they're exactly the pages that get rewritten or taken down. Build them compliant the first time — named student, actual course enrolled, actual duration, consent on file — and you never have to unpick a page that's finally ranking."
+      ]
+    },
+    {
+      "h2": "What we charge, and what we guarantee",
+      "body": [
+        "Our SEO starts at ₹75,000 a month, smaller sites from ₹40,000, ex-GST. Edtech tends to sit above the entry point because the calendar work is genuinely operational — someone has to hold the exam schedule, brief ahead of each window, and ship on release day. Full numbers are on [pricing](/pricing).",
+        "The baseline we freeze on day one is your trailing-90-day count of qualified organic enrolment actions — free trials started, demo classes booked, or paid enrolments, whichever your funnel treats as the real step. Not sessions, and not result-day pageviews, which would let us take credit for a spike the calendar produced without us.",
+        "Miss that baseline in 90 days and we keep working free until we beat it. We never promise a specific ranking position for a keyword, because nobody controls Google's index and any agency saying otherwise is guessing on your money. Three clients a month is the reason we can carry that risk."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "Ninety days against a seasonal curve",
+        "body": "For seasonal businesses the baseline has to be handled carefully. If your 90 days start in the run-up to an exam and end in a dead month, a naive comparison punishes us for the calendar. We agree the comparison window and the seasonality adjustment in writing before we start — it's the single most argued clause in an edtech contract, and settling it up front is why it never becomes a fight."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do you plan SEO content around the exam calendar?",
+      "a": "Work backwards. Map every exam you serve across notification, application, syllabus, admit card, answer key, result and counselling. Assign an owner and a publish trigger to each. Standing pages (syllabus, eligibility) go live months ahead and get updated on the day; event pages (admit card, result) are drafted in advance and published within the hour."
+    },
+    {
+      "q": "Why is my blog outranking my own course page?",
+      "a": "Because it usually has more words, more internal links and more age, so Google reads it as the better answer for the query. That's cannibalisation. Fix it by giving each commercial query exactly one commercial URL, retargeting or merging the blog post, and pointing internal links from informational pages down to the course page."
+    },
+    {
+      "q": "Does gating free mock tests behind a login hurt SEO?",
+      "a": "It does if the content itself is behind the gate, because Googlebot never logs in and sees an empty page. The workable split is to render the questions and worked solutions server-side for anyone, and require a login only for the timed attempt, the score report and the downloads."
+    },
+    {
+      "q": "Is FAQ schema still worth adding to edtech pages?",
+      "a": "Yes for machine readability, no for rich results. Google restricted FAQ rich results to well-known government and health sites in 2023, so a commercial edtech page won't get the expandable SERP treatment. The markup still gives answer engines a clean question-answer structure to lift, which is where the value has moved."
+    },
+    {
+      "q": "How long does edtech SEO take to show enrolments?",
+      "a": "Exam-information pages can rank within weeks because the demand window is short and the competition is often thin. Commercial queries like 'best <exam> online coaching' take six to twelve months against established platforms. Plan the first cycle as capture and the second as conversion — one exam season is rarely enough to judge the work."
+    },
+    {
+      "q": "Should we publish course fees on the website?",
+      "a": "Yes. People search your fees whether you publish them or not, and if you don't, an affiliate listicle answers the query with a number it guessed. A clear fee table with what's included pre-qualifies the enquiry and takes a query off a competitor's page and onto yours."
+    }
+  ],
+  "related": [
+    {
+      "type": "seo-for",
+      "slug": "coaching-institutes"
+    },
+    {
+      "type": "seo-for",
+      "slug": "universities"
+    },
+    {
+      "type": "services",
+      "slug": "programmatic-seo-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "keyword-cannibalization"
+    },
+    {
+      "type": "journal",
+      "slug": "when-to-update-old-content-instead-of-writing-new"
+    },
+    {
+      "type": "compare",
+      "slug": "keyword-rankings-vs-organic-traffic"
+    }
+  ]
+}

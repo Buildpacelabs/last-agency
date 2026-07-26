@@ -1,0 +1,198 @@
+{
+  "slug": "keyword-research-services",
+  "type": "services",
+  "primaryKeyword": "keyword research services",
+  "secondaryKeywords": [
+    "keyword research service india",
+    "seo keyword research agency",
+    "keyword mapping service",
+    "hinglish keyword research",
+    "commercial keyword research service"
+  ],
+  "cluster": "content-seo",
+  "intent": "commercial",
+  "h1": "Keyword research that ends in a URL map, not a word cloud",
+  "metaTitle": "Keyword Research Services That End in a URL Map",
+  "metaDescription": "Keyword research services that map every query to a URL and a rupee value, Hinglish searches included. Delivered in ten days, free inside our SEO retainer.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "priceFrom": "Free inside the ₹75,000 / mo retainer · ₹40,000 as a standalone project",
+  "answer": "Keyword research services find the queries your buyers actually type, then assign each one to a specific URL you already have or need to build. Ours scores queries by margin per conversion rather than volume, and covers the Hinglish and transliterated searches Indian tools under-report. Ten working days, and it's included free inside our ₹75,000/mo SEO retainer.",
+  "takeaways": [
+    "A keyword with no URL next to it is a wish. Every row we hand over is already assigned to an existing page, a page to be built, or a page to be retired.",
+    "We check cannibalisation across your existing URLs **before** proposing a single new page. Most sites need fewer pages, not more.",
+    "Queries get scored by margin per conversion, so a 90-search-a-month query that sells a ₹4,00,000 service outranks a 9,000-search query that sells nothing.",
+    "Hinglish and transliterated queries split volume across spellings, which makes each variant look too small to bother with. That's a tooling artefact, not a demand signal."
+  ],
+  "sections": [
+    {
+      "h2": "A keyword list is worthless until it has a URL next to it",
+      "body": [
+        "The standard keyword research deliverable is a spreadsheet with four thousand rows, a volume column, a difficulty column, and no instruction of any kind. It's technically research. It's also unusable, because the only decision it enables is \"write something about these words\", which is how sites end up with eleven pages competing for the same query.",
+        "Every row we hand over carries three extra columns that turn it into a plan: the **URL it belongs to**, whether that URL **already exists or needs building**, and what happens to any **existing page that overlaps it**. Nothing enters the map without an owner.",
+        "The second constraint is commercial. If we can't work out how you'd profitably serve a query, it doesn't go on the sheet at all — no matter how good the volume looks. Ranking for traffic you can't convert is an expensive form of vanity, and it costs the same as ranking for traffic you can."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The tell in a keyword deliverable",
+        "body": "Sort the sheet by volume. If the top ten rows are queries you'd never build a page for, and there's no URL column, you've been handed a tool export rather than research. That export takes about twenty minutes to produce."
+      }
+    },
+    {
+      "h2": "Hinglish, transliteration, and the queries Indian tools under-report",
+      "body": [
+        "Most keyword tools price and rank by exact string. That works reasonably well in English. It breaks in India, for reasons that are mechanical rather than mysterious.",
+        "Indians overwhelmingly type Hindi and other Indian languages in Latin script rather than Devanagari, and there's no agreed spelling. The same intent arrives as *sasta*, *sastha* and *cheap*; as *kaise kare*, *kaise karein* and *how to*; as *kurti*, *kurthi* and *kurta*. Each spelling is counted as its own keyword with its own small volume, so every variant looks too minor to build for. Add them up and the picture changes completely.",
+        "Code-switching makes it worse. Real Indian queries mix scripts and languages inside a single string — \"best CA near me price kya hai\" is a normal thing for a person to type and an abnormal thing for a keyword tool to have a volume estimate for."
+      ],
+      "bullets": [
+        "**Search Console is the only honest source.** It shows the actual strings people used to reach your site, including every misspelling and transliteration a tool never listed. We mine it first, before touching any paid tool.",
+        "**Autocomplete and \"people also search for\" are free and real.** They reflect strings Google has genuinely seen, which is more than can be said for an interpolated volume estimate on a long-tail Hinglish phrase.",
+        "**We cluster variants by intent, not by string.** Twelve spellings of the same need become one row with one target URL and a combined estimate we mark clearly as an estimate.",
+        "**A vernacular query doesn't always need a vernacular page.** Google frequently returns English results for Hinglish searches. We check the live SERP before recommending a Hindi page, because building one is a real cost and it isn't always the right one."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where the range is genuinely uncertain",
+        "body": "We won't give you a precise volume for a transliterated query, because nobody credibly can — the tools interpolate and the variants fragment. We give a band and label it a band. An agency that quotes you 2,400 searches a month for a Hinglish phrase is quoting confidence it doesn't have."
+      }
+    },
+    {
+      "h2": "The cannibalisation check that comes before any new page",
+      "body": [
+        "Before we propose building anything, we map every indexable URL you already have to the query it currently ranks for. This step routinely deletes half the content plan.",
+        "The usual finding on a site that's been publishing for three or four years: four or five pages half-ranking for the same query, none winning, each splitting the internal and external links that should all point at one page. Google picks a winner more or less arbitrarily, and it's rarely the one you'd have chosen.",
+        "Merging those into one strong URL and redirecting the rest is often the highest-return move on the whole map, and it involves writing nothing new. It's also the recommendation clients like least, because deleting pages feels like going backwards."
+      ],
+      "numbered": [
+        "**Pull every URL that receives an impression** in Search Console over the last 90 days, with its top queries.",
+        "**Flag any query where two or more URLs rank**, and any URL whose top query is already owned by a stronger page.",
+        "**Decide keep, merge or retire** for each overlap, with the redirect target written down before anything is touched.",
+        "**Only then** does the map propose new URLs — for queries with genuine demand that no existing page has any claim to."
+      ]
+    },
+    {
+      "h2": "Scoring by rupees, not by volume",
+      "body": [
+        "Volume is the least useful column on a keyword sheet and the one every deliverable sorts by. We score on margin per conversion instead, which needs two numbers from you: what a customer is worth, and roughly what share of each query type converts.",
+        "A query with 90 searches a month that brings people looking for a ₹4,00,000 annual service beats a 9,000-search query that brings students, competitors and people hunting a free template. Volume flatters the second one and puts it at the top of the sheet."
+      ],
+      "table": {
+        "caption": "How the same three queries rank under volume versus margin. Illustrative figures, not client data.",
+        "head": ["Query type", "Monthly searches", "What it's actually worth", "Priority tier"],
+        "rows": [
+          [
+            "\"what is [your category]\"",
+            "High",
+            "Near zero directly. Students, researchers, and people six months from buying anything.",
+            "Tier 3 — build once, cheaply, for topical coverage"
+          ],
+          [
+            "\"[your service] price india\"",
+            "Low to medium",
+            "High. Someone comparing quotes is close to a decision and rarely searching for fun.",
+            "Tier 1 — build first, update quarterly"
+          ],
+          [
+            "\"[competitor] alternative\"",
+            "Low",
+            "Highest per visit. The buyer has a budget and an existing supplier they're unhappy with.",
+            "Tier 1 — build first, defend permanently"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "What you get, and what isn't included",
+      "body": [
+        "The deliverable is one spreadsheet and one decision list. Both are yours to keep in raw form."
+      ],
+      "table": {
+        "caption": "Keyword research and mapping — scope.",
+        "head": ["Item", "Included", "Not included"],
+        "rows": [
+          [
+            "Keyword-to-URL map",
+            "Every retained query assigned to an existing or planned URL, clustered by intent, tiered by commercial value",
+            "An unfiltered dump of every query in your category. We delete more rows than we add"
+          ],
+          [
+            "Cannibalisation audit",
+            "Overlap analysis across all indexable URLs, with keep / merge / retire calls and redirect targets",
+            "Executing the merges and redirects — that's on-page or technical work"
+          ],
+          [
+            "Hinglish and vernacular",
+            "Transliteration variant clustering, Search Console mining, live SERP language checks",
+            "Translation or vernacular copywriting. We tell you which pages need a Hindi version; writing it is a separate line"
+          ],
+          [
+            "Content briefs",
+            "One-line intent note and target URL per row, plus the pages to retire",
+            "Full article briefs with outlines and internal link plans — those come with the content workstream"
+          ],
+          [
+            "Refresh",
+            "One revision round inside 30 days as you challenge the priorities, which you should",
+            "Ongoing monthly re-research, unless you're on a retainer, where it's continuous anyway"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "What it costs, alone and inside a retainer",
+      "body": [
+        "Inside an [SEO retainer](/seo) from ₹75,000/mo, keyword research is not a line item. It's the first three weeks of work, it's redone continuously as Search Console data accumulates, and charging separately for it would be charging you twice for the same thinking.",
+        "Bought alone, it's a fixed-scope project on the same terms as our audit: **₹40,000, ex-GST, ten working days**, credited in full against your first retainer month if you start within 60 days. One domain, one primary language, no hourly overruns.",
+        "What it isn't is a cheap add-on. Thirty-odd hours of mostly senior time is what doing it properly costs, and a ₹5,000 keyword report is a tool export with a covering email. Full rate card on [our pricing page](/pricing)."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "Ten days, and why not three",
+        "body": "Search Console exports, transliteration clustering and a cannibalisation pass across a few thousand URLs take real hours. Anyone promising a full keyword map in 48 hours is running a tool and skipping the part where somebody reads the output."
+      }
+    },
+    {
+      "h2": "What the guarantee covers once the map is signed off",
+      "body": [
+        "Our standard promise applies from the moment the map is agreed and we start executing it: your **trailing-90-day count of qualified leads from organic search** is frozen in writing on day one, and if we haven't beaten it in 90 days we keep working free until we do. We never promise a specific ranking position for a specific keyword — nobody controls Google's index.",
+        "For the mapped set we also freeze impressions and average position across the Tier 1 queries, then report against that frozen list rather than a blended site average — which improves every time you start ranking badly for something new.",
+        "A map bought as a standalone project carries no such guarantee, for the same reason an audit doesn't. We stand behind the research and revise it if we've misread your market. We can't guarantee movement on pages we aren't building. Once we are building them — through [on-page work](/services/on-page-seo-services) and [content](/services/content-marketing-services) — the baseline applies in full."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much do keyword research services cost in India?",
+      "a": "Standalone keyword research in India runs from about ₹5,000 for a tool export to ₹1,00,000-plus for a large ecommerce catalogue. Ours is ₹40,000 ex-GST for one domain in one primary language, delivered in ten working days, and it's included at no extra cost inside our ₹75,000/mo SEO retainer."
+    },
+    {
+      "q": "How do you research Hinglish and regional-language keywords?",
+      "a": "We start with your Search Console query export, which shows the real transliterated strings people already use, then cluster spelling variants by intent rather than by exact match. Autocomplete and live SERP checks confirm whether Google is actually serving vernacular results for that query or defaulting to English."
+    },
+    {
+      "q": "How many keywords should a keyword map contain?",
+      "a": "Far fewer than most deliverables. A 60-page services site rarely needs more than 150 to 250 mapped queries clustered into 40 to 70 target URLs. Anything much larger usually means intent duplicates haven't been clustered, and you'll feel that later as cannibalisation."
+    },
+    {
+      "q": "Can't I just use Ahrefs or Semrush myself?",
+      "a": "For a shortlist, yes, and you should. What the tools don't do is check which of your existing URLs already half-rank for a query, cluster transliteration variants, or tell you which pages to delete. That judgement is most of the value, and it's the part that stops you publishing competing pages."
+    },
+    {
+      "q": "How often should keyword research be redone?",
+      "a": "Fully, about once a year, or whenever you launch a product line or enter a new market. In between, it should be a continuous drip from Search Console — the queries your existing pages pick up accidentally are the cheapest source of new targets you have."
+    },
+    {
+      "q": "Do you include search volume figures for every keyword?",
+      "a": "For English queries, yes, with the tool named. For transliterated and Hinglish queries we give a band and label it as an estimate, because tool volumes for those strings are interpolated and fragmented across spellings. A precise-looking number there would be false confidence."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "keyword-cannibalization" },
+    { "type": "glossary", "slug": "search-intent" },
+    { "type": "answers", "slug": "how-to-do-keyword-research" },
+    { "type": "services", "slug": "content-marketing-services" },
+    { "type": "journal", "slug": "seo-in-hindi-and-indian-languages" },
+    { "type": "compare", "slug": "english-vs-regional-language-seo" }
+  ]
+}

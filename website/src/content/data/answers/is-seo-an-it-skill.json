@@ -1,0 +1,212 @@
+{
+  "slug": "is-seo-an-it-skill",
+  "type": "answers",
+  "primaryKeyword": "is seo an it skill",
+  "secondaryKeywords": [
+    "is seo technical",
+    "do you need coding for seo",
+    "is seo a technical skill",
+    "how much coding does seo need"
+  ],
+  "cluster": "seo-career",
+  "intent": "informational",
+  "h1": "Is SEO a technical skill? How much code you actually need",
+  "metaTitle": "Is SEO an IT Skill? How Much Code You Need",
+  "metaDescription": "Is SEO an IT skill? Parts of it are. Exactly which technical knowledge you need, which you hand to a developer, and what you must read yourself.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Partly. SEO sits between marketing and IT: you never need to write production code, but you do need to read HTML, understand HTTP status codes, and spot when JavaScript is hiding your content from a crawler. Roughly a third of the discipline is technical; the rest is research, writing and judgement.",
+  "takeaways": [
+    "The governing rule is **read, don't write**. You diagnose the building; someone else lays the bricks.",
+    "The floor: HTML source, nine status codes, robots directives and their precedence, sitemaps, redirects.",
+    "JavaScript is where the debate ends. Raw HTML versus rendered DOM is a check every SEO should be able to run in five minutes.",
+    "Log files and CDN behaviour are what separate a senior technical SEO from a competent mid-level one."
+  ],
+  "sections": [
+    {
+      "h2": "The rule: you read the code, you don't write it",
+      "body": [
+        "SEO is filed under marketing and diagnosed like engineering. That's the whole tension, and it resolves into one practical rule: you need to read a site well enough to say precisely what's broken, why it matters, and what it's costing. You almost never need to write the fix.",
+        "The job is closer to a building surveyor than an architect. You walk the structure, find the damp, and write a report a builder can act on without guessing. You don't lay bricks and nobody expects you to.",
+        "Roughly a third of the discipline is technical, and that third caps everything else. A brilliant content plan on a site that returns 500s under crawl load produces exactly nothing, and no amount of writing fixes it."
+      ]
+    },
+    {
+      "h2": "The non-negotiable list",
+      "body": [
+        "This is the floor. Below it you'll misdiagnose things, and misdiagnosis in SEO is expensive — you spend three months solving the wrong problem and only find out in month four."
+      ],
+      "table": {
+        "caption": "Technical knowledge every SEO needs, and how deep to take it.",
+        "head": [
+          "What",
+          "Why it decides whether you rank",
+          "How deep to go"
+        ],
+        "rows": [
+          [
+            "HTML source",
+            "Titles, canonicals, meta robots, headings, `<a href>` links and alt text all live here. If you can't read view-source, you're guessing.",
+            "Read it fluently. Write it almost never."
+          ],
+          [
+            "HTTP status codes",
+            "200, 301, 302, 304, 404, 410, 429, 500 and 503 each tell a crawler something different. A 302 where a 301 belongs makes a migration slower and much harder to debug.",
+            "Know those nine cold, and where to see them live."
+          ],
+          [
+            "robots.txt and meta robots",
+            "Blocking a URL in `robots.txt` stops Google reading the `noindex` on that page — so it can stay indexed indefinitely. This exact mistake is everywhere.",
+            "Understand precedence, not syntax trivia."
+          ],
+          [
+            "XML sitemaps",
+            "Submitted versus indexed is one of the fastest diagnostics available to you, and it's free.",
+            "Be able to generate one and audit what's in it."
+          ],
+          [
+            "Redirects",
+            "Chains, loops and redirects to irrelevant pages wreck more migrations than any other single cause.",
+            "Map them before anyone touches a replatform."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The most common misdiagnosis in SEO",
+        "body": "A page isn't indexed, so someone adds it to the sitemap and hits Request Indexing again. If the URL is blocked in `robots.txt`, carries a canonical pointing elsewhere, or is thin enough that Google chose not to index it, none of that helps. Diagnose first, resubmit second."
+      }
+    },
+    {
+      "h2": "JavaScript: the line between reading and writing",
+      "body": [
+        "This is where \"is SEO an IT skill\" stops being an argument. Modern sites build much of their content in the browser, and Google renders JavaScript in a second pass that is neither instant nor guaranteed for every page on every site. If your content only exists after that pass, you're carrying a risk a plain HTML site simply doesn't have."
+      ],
+      "subs": [
+        {
+          "h3": "What you must be able to do yourself",
+          "bullets": [
+            "Compare raw HTML (view-source) with the rendered DOM (DevTools Elements) and say what's missing from the first.",
+            "Use Search Console's URL Inspection to see the HTML Google actually rendered, not the one you hoped for.",
+            "Recognise links that aren't links — a `<div onclick>` or a router-only navigation is invisible as a link, however it behaves for humans.",
+            "Spot content that only appears after a click, a scroll, a tab switch or a login."
+          ]
+        },
+        {
+          "h3": "What you hand to a developer",
+          "body": [
+            "A specific ask in their language, not a lecture about crawl budget. Server-render or pre-render these route templates. Make navigation use real `<a href>` elements. Put the canonical, title and meta robots in the initial HTML response. Stop lazy-loading the primary content.",
+            "You don't need to write React. You need to know what to ask for, why, and how to verify it shipped. [JavaScript SEO](/glossary/javascript-seo) covers the mechanics."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Servers, CDNs and log files — where mid becomes senior",
+      "body": [
+        "The next tier up is infrastructure, and it's the cleanest dividing line between an SEO who executes a checklist and one who diagnoses a site nobody else can figure out."
+      ],
+      "bullets": [
+        "**Time to first byte and caching.** A slow server response caps every downstream speed metric. Knowing whether the fix is caching, hosting or application code is worth far more than knowing the metric names.",
+        "**CDN and bot-protection rules.** Security rules blocking Googlebot are a real and recurring cause of sudden deindexing. Somebody tightened a firewall rule on a Friday; the rankings went on Monday.",
+        "**Log files.** Server logs are the only place you can see what Googlebot actually requested, how often, and what it got back. On large sites this is how you find crawl waste that no crawler tool will show you.",
+        "**Staging and environments.** A staging site indexed by accident, or a `noindex` shipped from staging into production, is a career-defining afternoon. Ask how the two environments differ before you need to know."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "You don't administer the server",
+        "body": "None of this requires you to run infrastructure. It requires you to read output and ask the right person a precise question. For anyone working on sites above roughly ten thousand URLs, [log file analysis](/glossary/log-file-analysis) is the highest-return skill on this list."
+      }
+    },
+    {
+      "h2": "What a non-technical SEO can still do extremely well",
+      "body": [
+        "Plenty, and it's worth saying clearly because the technical crowd is loud. Some of the most commercially valuable SEO work involves no code at all."
+      ],
+      "bullets": [
+        "Keyword and intent research — deciding what to build is worth more than building it well.",
+        "Content strategy, briefs and editing, which is still the largest block of hours on most retainers.",
+        "Internal link architecture, which is a structural skill rather than a coding one.",
+        "Digital PR and link earning, which is closer to journalism than to engineering.",
+        "Local SEO and Google Business Profile work, where the technical ceiling is low and the commercial return is fast.",
+        "Measurement, reporting, and the conversation where you explain to a founder what actually happened."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where you'll cap out, honestly",
+        "body": "Site migrations, large ecommerce, JavaScript frameworks, penalty and indexing diagnosis, and any role with \"technical\" in the title. The practical move is to pair with someone who has the other half rather than bluff — which is exactly how agency teams are built. We run [technical SEO](/services/technical-seo-services) as its own discipline for that reason."
+      }
+    },
+    {
+      "h2": "How to learn the technical half, in order",
+      "body": [
+        "All of this is free apart from your time, and none of it needs a course. It's also the fastest-moving part of the wider timeline in [how hard SEO is to learn](/answers/is-seo-difficult-to-learn) — the technical half rewards deliberate practice more than any other part of the job."
+      ],
+      "numbered": [
+        "**Read a page's source and say what's wrong with it.** Ten sites, ten minutes each. Title, canonical, meta robots, H1, and whether the navigation links are real links.",
+        "**Learn nine status codes and where to watch them.** Chrome DevTools' Network tab shows you every request. Follow a redirect chain live and it stops being abstract.",
+        "**Crawl a small site.** Screaming Frog's free tier covers 500 URLs, which is enough to find your first orphan page and your first redirect loop.",
+        "**Break things deliberately on a test site.** Add a `noindex`, block a folder in `robots.txt`, then watch Search Console react over the next fortnight. Fear of the technical side dies here.",
+        "**Read one real log file, even a single day of it.** Watching Googlebot spend its requests on faceted URLs nobody wants explains crawl budget better than any article, including this one.",
+        "**Learn to write the ticket, not the code.** URL pattern, expected behaviour, current behaviour, priority, and how you'll verify it. Being easy for developers to work with is a technical skill in its own right, and it's the one nobody teaches."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The honest self-test",
+        "body": "Open a page that isn't ranking. Can you give three plausible technical causes, ranked, each with a way to check it? If yes, you're technical enough for the large majority of SEO jobs. If not, that's your gap — and it's a few weeks of deliberate practice, not a degree."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do you need coding for SEO?",
+      "a": "No. You need to read HTML and recognise HTTP status codes, which is reading rather than writing. A little Python or JavaScript helps for automating data work and is the difference between a good SEO and a fast one, but it's rarely a hiring requirement outside dedicated technical roles."
+    },
+    {
+      "q": "Is SEO an IT skill or a marketing skill?",
+      "a": "Employers classify it as marketing almost everywhere, while roughly a third of the work is technical diagnosis. That mismatch is why SEO requests end up stuck in a developer's backlog — and why the pay band often doesn't match the work. [Is SEO an IT job](/answers/is-seo-an-it-job) covers the classification side."
+    },
+    {
+      "q": "What technical skills does an SEO actually need?",
+      "a": "Reading HTML source, nine HTTP status codes, robots directives and their precedence, XML sitemaps, redirects, the difference between raw and rendered HTML, page speed fundamentals, and enough Search Console to diagnose indexing. Log files and CDN behaviour separate senior from mid-level."
+    },
+    {
+      "q": "Can a non-technical person become an SEO?",
+      "a": "Yes, and writers, editors and journalists often make excellent ones. Budget a fortnight of discomfort learning to read source code and status codes. You'll cap out below technical SEO roles unless you close that gap, but content, local and strategic SEO are full careers on their own."
+    },
+    {
+      "q": "Is technical SEO worth learning?",
+      "a": "It's the fastest route to being the person a team can't replace, because far fewer people do it well. It's also the part current AI tools handle worst — diagnosing one messy site with a specific history isn't a summarisation problem, it's an investigation."
+    },
+    {
+      "q": "Does SEO count as an IT job on a CV?",
+      "a": "Recruiters read it as marketing unless your title says otherwise. If you want to be benchmarked technically, put artefacts on the CV rather than adjectives: the migration you shipped without traffic loss, the crawl waste you removed, the schema you specified, the log analysis you ran."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "is-seo-an-it-job"
+    },
+    {
+      "type": "answers",
+      "slug": "is-seo-difficult-to-learn"
+    },
+    {
+      "type": "glossary",
+      "slug": "javascript-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "log-file-analysis"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "compare",
+      "slug": "technical-seo-vs-content-seo"
+    }
+  ]
+}

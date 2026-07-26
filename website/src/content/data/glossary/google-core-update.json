@@ -1,0 +1,195 @@
+{
+  "slug": "google-core-update",
+  "type": "glossary",
+  "primaryKeyword": "google core update",
+  "secondaryKeywords": [
+    "core algorithm update",
+    "google algorithm update history",
+    "how to recover from core update",
+    "helpful content update",
+    "google ranking drop"
+  ],
+  "cluster": "analytics",
+  "intent": "informational",
+  "h1": "Google core update",
+  "metaTitle": "Google Core Update: What It Is and What to Do",
+  "metaDescription": "A Google core update is a broad ranking change, not a penalty. Here's how to confirm one hit you, and the two-week protocol before you change a thing.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Google core update",
+  "definition": "A Google core update is a broad, announced change to Google's main ranking systems that re-assesses which pages best answer a query, rolled out over one to three weeks.",
+  "answer": "A Google core update is a broad change to Google's core ranking systems, announced on the Search Status Dashboard and rolled out over roughly one to three weeks. It isn't a penalty and there's no single fix. If you drop, wait for the rollout to finish, then compare losses by page type and query intent.",
+  "takeaways": [
+    "A core update is a **re-assessment**, not a punishment. Nothing was done to you; the comparison set changed.",
+    "Rollouts take **one to three weeks**. Judging a drop on day three means diagnosing a half-finished result.",
+    "Most damage comes from the panic, not the update. Redesigns and mass deletions in week one are how a 20% drop becomes a 60% one.",
+    "Recovery usually arrives with a **later core update**, which is why the honest timeline is months, not weeks."
+  ],
+  "sections": [
+    {
+      "h2": "What a core update actually changes",
+      "body": [
+        "Google runs several broad core updates a year, announces each one on the Search Status Dashboard, and gives a start and end date. During the rollout, its ranking systems re-evaluate which pages best satisfy each query.",
+        "The framing that helps: think of a list of the 100 best restaurants in your city. When the 2026 list comes out, a restaurant that fell from 30 to 60 didn't get worse. Other restaurants got better, or the criteria shifted. Google uses almost exactly this analogy in its own guidance, and it's the most useful thing they've published on the subject.",
+        "One structural change is worth knowing: the separate helpful content system was folded into the core ranking systems in the March 2024 core update. There's no standalone content classifier to escape any more — content quality assessment is inside the core algorithm, which is why core updates now hit content-heavy sites harder than they used to."
+      ]
+    },
+    {
+      "h2": "Confirming it was the update and not you",
+      "body": [
+        "Half the traffic drops blamed on core updates were caused by the site itself. Rule those out first, in this order, using dated data rather than memory."
+      ],
+      "numbered": [
+        "**Check the dates line up.** Open Search Console's Performance report, switch to a daily view, and mark the announced rollout start. A decline that began four days early is your deploy, not Google's.",
+        "**Check Manual Actions.** A human penalty appears there and nowhere else. It's a different problem with a different fix — see [Google Search Console](/glossary/google-search-console) for where to look.",
+        "**Check indexing.** A drop in clicks with a matching drop in impressions and indexed pages is usually a `noindex` shipped by accident or a robots.txt change, not an algorithm.",
+        "**Check your own calendar.** Migrations, template changes, plugin updates, expired SSL, a CDN change — anything shipped within a fortnight either side is a suspect.",
+        "**Check seasonality.** Compare the same weeks last year. Indian B2B traffic collapses in late December every year and it has nothing to do with Google."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Rankings tools will panic before you should",
+        "body": "Third-party volatility trackers spike during every rollout, including ones that never touch your vertical. They tell you an update is happening. They tell you nothing about whether it happened to you."
+      }
+    },
+    {
+      "h2": "The two-week protocol",
+      "body": [
+        "The instinct is to do something immediately. Resist it. Rankings genuinely fluctuate mid-rollout, and a page that recovers on day twelve will be deleted on day four by a panicking team.",
+        "**Week one — do nothing but measure.** Export daily Search Console data. Freeze a before-and-after snapshot of your top 200 URLs. Ship no content changes you can't undo.",
+        "**Week two, once the rollout closes — segment the loss.** This is the part most people skip, and it's where the answer lives. Split the drop by page type, by query intent and by whether the query now triggers an [AI Overview](/glossary/ai-overviews). The pattern usually names the cause on its own.",
+        "Only then do you change anything, and only where the pattern points."
+      ],
+      "table": {
+        "caption": "What the pattern of loss usually indicates.",
+        "head": [
+          "What dropped",
+          "Likely cause"
+        ],
+        "rows": [
+          [
+            "Only informational articles",
+            "Content quality, or answers absorbed by AI Overviews"
+          ],
+          [
+            "Everything, roughly evenly",
+            "A site-level quality or authority re-assessment"
+          ],
+          [
+            "One template or one folder",
+            "A technical or content issue local to that section"
+          ],
+          [
+            "Pages that ranked above stronger sites",
+            "Google corrected an over-ranking; those were borrowed positions"
+          ],
+          [
+            "Nothing dropped, but nothing grew",
+            "Competitors improved. Same result, different fix"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Core update, spam update, or manual action?",
+      "body": [
+        "Three different events get called the same thing in client emails. They have different causes, different evidence and different recovery paths."
+      ],
+      "table": {
+        "caption": "Telling the three apart before you spend money on the wrong fix.",
+        "head": [
+          "Event",
+          "How you know",
+          "Typical recovery"
+        ],
+        "rows": [
+          [
+            "Core update",
+            "Announced dates, broad movement, nothing in Manual Actions",
+            "Improve the content; recovery often lands with a later core update"
+          ],
+          [
+            "Spam update",
+            "Announced separately, targets specific tactics like bought links or scaled content",
+            "Remove or disavow the tactic, then wait for re-processing"
+          ],
+          [
+            "Manual action",
+            "A notice in Search Console. Unambiguous",
+            "Fix the violation, file a reconsideration request"
+          ],
+          [
+            "Site issue",
+            "No announcement, drop starts on your deploy date",
+            "Fix the deploy. Usually the fastest recovery of the four"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Bought links surface here",
+        "body": "Spam updates and manual actions are where a private blog network eventually gets billed back to you. If a previous agency was vague about link sources, this is the moment it becomes your problem — [penalty recovery](/services/penalty-recovery-services) work almost always starts with an audit of somebody else's shortcuts."
+      }
+    },
+    {
+      "h2": "Recovery timelines, without the comfort",
+      "body": [
+        "Google has said that recovery from a core update can happen between updates, but in practice most substantial recoveries land when a later core update re-assesses the site. Since there are only a few a year, that puts realistic recovery at **months, not weeks** — and that's assuming you actually fixed the underlying problem rather than reshuffling headings.",
+        "Some sites never recover fully, and it's dishonest to pretend otherwise. Sites that ranked on thin content, aggregated affiliate pages or bought authority were often holding positions the algorithm never intended to give them. The update didn't take something away; it stopped an error.",
+        "The uncomfortable version: if your traffic came from publishing large volumes of adequate content around keywords you had no genuine claim to, recovery means building a real claim. That's a rebuild, not a fix, and it costs what a rebuild costs."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long does a Google core update take to roll out?",
+      "a": "Typically one to three weeks from the announced start date, with Google confirming completion on the Search Status Dashboard. Rankings genuinely swing mid-rollout, so any conclusion drawn before the end date is drawn from incomplete data."
+    },
+    {
+      "q": "Is a core update a penalty?",
+      "a": "No. A penalty is a manual action taken by a human reviewer and it appears in Search Console. A core update is an algorithmic re-assessment of which pages best answer a query. Nothing was done to your site — the comparison changed around it."
+    },
+    {
+      "q": "How do I recover from a Google core update?",
+      "a": "Wait for the rollout to finish, segment the loss by page type and query intent, then fix the actual pattern rather than applying generic advice. Most recoveries land with a subsequent core update, so plan in months. If your rankings were built on thin or bought signals, recovery means rebuilding rather than repairing."
+    },
+    {
+      "q": "How many core updates does Google run each year?",
+      "a": "A handful — usually three to five broad core updates, plus separately announced spam updates and various unannounced adjustments. Google publishes each broad core update with start and end dates on the Search Status Dashboard, which is the only source worth watching."
+    },
+    {
+      "q": "Should I delete pages that lost traffic after a core update?",
+      "a": "Rarely, and never in the first fortnight. Deleting pages removes internal links, historical signals and any chance of recovery. Consolidating several thin pages into one strong one is a defensible move; mass deletion as a panic response usually makes the second month worse than the first."
+    },
+    {
+      "q": "Can an SEO agency guarantee recovery from a core update?",
+      "a": "No, and be wary of anyone who does. Nobody controls Google's index. What an agency can commit to is a specific number against your own baseline — ours is your trailing-90-day qualified organic leads, frozen on day one, with free work until we beat it. That's a commitment; a promised position isn't."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "glossary",
+      "slug": "thin-content"
+    },
+    {
+      "type": "glossary",
+      "slug": "e-e-a-t"
+    },
+    {
+      "type": "services",
+      "slug": "penalty-recovery-services"
+    },
+    {
+      "type": "journal",
+      "slug": "what-ai-overviews-did-to-your-organic-traffic"
+    },
+    {
+      "type": "compare",
+      "slug": "white-hat-vs-black-hat-seo"
+    }
+  ]
+}

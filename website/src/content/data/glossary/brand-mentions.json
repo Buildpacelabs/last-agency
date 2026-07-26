@@ -1,0 +1,120 @@
+{
+  "slug": "brand-mentions",
+  "type": "glossary",
+  "primaryKeyword": "brand mentions seo",
+  "secondaryKeywords": [
+    "unlinked brand mentions",
+    "do brand mentions help seo",
+    "link reclamation",
+    "brand mentions ai search",
+    "implied links"
+  ],
+  "cluster": "ai-search",
+  "intent": "informational",
+  "h1": "Brand mentions",
+  "metaTitle": "Brand Mentions in SEO and AI Search, Explained",
+  "metaDescription": "A brand mention is your name appearing without a link. Why unlinked mentions now matter more, and where Indian brands earn them without PR spend.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Brand mention",
+  "definition": "A brand mention is any reference to your company name in someone else's content, whether or not it carries a hyperlink back to your site.",
+  "answer": "A brand mention is your company name appearing in someone else's content. Linked mentions pass link equity; unlinked ones don't. That distinction mattered enormously for classic ranking and matters much less for AI answers, because language models read text, not anchor tags. The mention is now the unit that gets you retrieved.",
+  "takeaways": [
+    "A link is a mention with a URL attached. For AI retrieval, the URL is the optional part.",
+    "**Link reclamation** — asking for a link on a mention that already exists — is the highest-conversion outreach in SEO, because the writer already decided you were worth naming.",
+    "Google's own patent language has referenced **implied links** since 2012. That's a patent, not confirmation of live behaviour, and anyone quoting it as proof is overreaching.",
+    "Most mentions an Indian SME can earn cost time, not money: podcasts, forums, association directories, founder commentary."
+  ],
+  "sections": [
+    {
+      "h2": "Linked, unlinked, and why the gap is shrinking",
+      "body": [
+        "A **linked mention** is your name wrapped in an anchor pointing at your site. It passes [link equity](/glossary/link-equity), it's countable in any backlink tool, and it's what link building has always chased.",
+        "An **unlinked mention** is your name in plain text. For twenty years that counted as a near-miss: nice for the ego, worthless for rankings.",
+        "Google's 2012 patent on ranking search results, widely called the Panda patent, does explicitly discuss **implied links** — references to a resource that aren't express hyperlinks. Google has never confirmed it uses them in live ranking, and a granted patent describes an idea, not the algorithm. Suggestive, not settled.",
+        "What actually changed the argument isn't the patent. It's what happens after the search results."
+      ]
+    },
+    {
+      "h2": "Why mentions beat links for AI retrieval",
+      "body": [
+        "Language models are trained on text. A model absorbing a decade of the web doesn't store an anchor-tag graph — it stores which words appear near which other words. If your name keeps appearing near \"SEO agency India\", \"guarantee\" and \"retainer\", the association forms. Whether those sentences contained an `<a href>` isn't the mechanism.",
+        "Retrieval works the same way. Asked who to hire, an assistant matches the question against text naming candidates. An article listing eight agencies by name and linking to none is a perfectly good source.",
+        "So the hierarchy inverts for one specific job. For classic rankings a link still beats a mention. For being named in an AI answer, a mention in something people read beats a link from a page nobody reads. Want both — just stop filing the unlinked one as a failure. It's why [AI visibility](/glossary/ai-visibility) tracking separates mention share from citation share."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The uncomfortable version",
+        "body": "A lot of link building buys links on pages with no readers, precisely because those are the pages that sell links. Those pages contribute nothing to AI retrieval, because nothing reads them either. The tactic that was already weak is now weak in two directions."
+      }
+    },
+    {
+      "h2": "Link reclamation: the cheapest link you'll ever get",
+      "body": [
+        "Someone already wrote your name and decided you were worth naming. Asking them to link it converts far better than cold outreach, because you aren't asking them to care — they already did. Twenty minutes, once a month:"
+      ],
+      "numbered": [
+        "Search `\"your brand name\" -site:yourdomain.com`, plus your founder's name and product names. Set Google Alerts for the same terms — free, noisy, still the fastest catch.",
+        "Log each unlinked mention in a sheet: URL, writer, context.",
+        "Email the writer. Two sentences. Thanks for the mention, readers can't click through, here's the exact URL. No template flourish, no pitch attached.",
+        "Track the response rate. Under 20% means the email is too long, or you're mailing a writer who left — go to the editor for older pieces."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Don't reclaim a mention that isn't flattering",
+        "body": "If the mention sits in a negative comparison or a complaint thread, a link makes the page more visible for your brand name, not less. Fix the underlying issue or leave it alone. Reclamation is for coverage you'd happily send a prospect."
+      }
+    },
+    {
+      "h2": "Where Indian brands get mentioned without a PR budget",
+      "body": [
+        "Paid PR in India runs from tens of thousands per placement into lakhs for outlets people have heard of — and much of it buys a mention on a page nobody visits. These channels cost time instead."
+      ],
+      "bullets": [
+        "**Podcasts.** India has a huge long tail of category shows permanently short of guests. Show notes get indexed, and one interview names you a dozen times.",
+        "**Industry associations.** NASSCOM, FICCI, CII, state IT bodies, your category's trade association. Member directories are trusted sources carrying your name.",
+        "**Roundups written by other people.** Be findable, hold a specific position. Never pay for a \"top 10\" spot — the ones you can buy are the ones nobody trusts.",
+        "**Forums where your buyers argue.** Reddit, Quora, public community archives. Answer as yourself, disclose who you are, be useful.",
+        "**Founder commentary.** LinkedIn and X posts get quoted by writers hunting for a line. Being quotable is a mention strategy.",
+        "**Journalist request platforms** — with a caveat, they come and go. HARO's successor Connectively shut down at the end of 2024. Use whichever exists this quarter."
+      ]
+    },
+    {
+      "h2": "Tracking mentions without paying for a tool",
+      "body": [
+        "Media monitoring software starts around ₹10,000 a month and climbs. Run the free version first and find out whether you have the volume to justify a dashboard.",
+        "Google Alerts for brand, founder and product names. A monthly `\"brand\" -site:yourdomain.com` search. Reddit search. And Search Console filtered to branded queries — the best free proxy for whether any of it is landing. That's the whole stack, and it costs nothing. If you'd rather it ran continuously, it sits inside [our SEO work](/seo)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do unlinked brand mentions help SEO?",
+      "a": "There's no confirmation from Google that they carry direct ranking weight, and honest practitioners say so. What they demonstrably do is build branded search demand, feed entity understanding, and give AI systems text to retrieve you from. That's a real return even if it never shows up in a backlink tool."
+    },
+    {
+      "q": "What are implied links?",
+      "a": "The term comes from a 2012 Google patent on ranking search results, which describes references to a resource that aren't express hyperlinks — in practice, mentions. It's a patent, not a confirmed ranking factor, and it gets over-quoted in SEO content. Useful framing, weak evidence."
+    },
+    {
+      "q": "How do I find unlinked mentions of my brand?",
+      "a": "Search Google for your brand name with your own domain excluded, set Google Alerts for the brand and founder names, and check Reddit search separately. Backlink tools with mention-tracking features do it faster, but the manual version catches most of it in twenty minutes a month."
+    },
+    {
+      "q": "Is it worth asking for a link on an old mention?",
+      "a": "Yes, up to roughly a year old. Response rates fall as the piece ages and the writer moves on, so prioritise anything published in the last quarter. For older pieces, contact the site's editor rather than the original writer, who has probably changed jobs twice."
+    },
+    {
+      "q": "Do brand mentions matter more than backlinks now?",
+      "a": "For getting named in AI answers, generally yes. For ranking a page in classic organic results, links still carry more weight. The right conclusion isn't to abandon link building — it's to stop counting a mention without a link as a wasted placement."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "backlink" },
+    { "type": "glossary", "slug": "ai-visibility" },
+    { "type": "glossary", "slug": "link-building-meaning" },
+    { "type": "compare", "slug": "guest-posting-vs-digital-pr" },
+    { "type": "services", "slug": "digital-pr-services" },
+    { "type": "journal", "slug": "how-much-do-backlinks-actually-matter" }
+  ]
+}

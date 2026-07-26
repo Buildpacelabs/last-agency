@@ -1,0 +1,127 @@
+{
+  "slug": "breadcrumb-navigation",
+  "type": "glossary",
+  "primaryKeyword": "breadcrumb navigation",
+  "secondaryKeywords": [
+    "breadcrumbs seo",
+    "breadcrumb schema",
+    "breadcrumblist structured data",
+    "types of breadcrumbs",
+    "breadcrumb best practices"
+  ],
+  "cluster": "on-page",
+  "intent": "informational",
+  "h1": "Breadcrumb navigation",
+  "metaTitle": "Breadcrumb Navigation: What It Is and Why It Helps",
+  "metaDescription": "Breadcrumb navigation shows where a page sits inside your site. It helps users, internal linking and search results. Here is the markup and common errors.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Breadcrumb navigation",
+  "definition": "Breadcrumb navigation is a row of links showing where the current page sits in a site's hierarchy, usually running from the homepage down to the page itself.",
+  "answer": "Breadcrumb navigation is the trail of links showing where a page sits in your site — Home › Glossary › Title tag. Users read it as orientation. Search engines read it as hierarchy, and with `BreadcrumbList` markup Google can show it in place of the URL. On a large site it also generates hundreds of internal links for free.",
+  "takeaways": [
+    "Treat breadcrumbs as an internal linking system, not a UI ornament. That reframing is the whole point.",
+    "On a 500-page site they add roughly 500 hierarchy-aware links with topic-appropriate anchor text, automatically.",
+    "Only hierarchy-based breadcrumbs are worth marking up. History-based ones just duplicate the back button.",
+    "The markup must match what's visible on the page. Mismatched `BreadcrumbList` data is the most common reason it stops being displayed."
+  ],
+  "sections": [
+    {
+      "h2": "Three kinds of breadcrumb, and only one is worth marking up",
+      "body": [
+        "The word covers three different patterns that people casually treat as one thing. They have almost nothing in common beyond the arrow separators."
+      ],
+      "table": {
+        "caption": "Breadcrumb types and what each is actually for.",
+        "head": ["Type", "Example", "Verdict"],
+        "rows": [
+          [
+            "Hierarchy-based",
+            "Home › Glossary › Breadcrumb navigation",
+            "The one that matters. Reflects site structure, stable per page, mark it up."
+          ],
+          [
+            "Attribute-based",
+            "Home › Shoes › Running › Men's › Size 9",
+            "Useful on faceted ecommerce. Mark up only the canonical path, not every filter combination."
+          ],
+          [
+            "History-based",
+            "Home › Previous page › This page",
+            "Skip it. It duplicates the browser's back button, changes per visitor, and can't be marked up meaningfully."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The internal-link arithmetic nobody runs",
+      "body": [
+        "Here's why breadcrumbs are underrated. Take a site with eight content sections and 500 URLs. Every page carries a breadcrumb linking up to its section hub and back to the homepage. That's around 500 extra links, distributed by topic, generated automatically, with descriptive anchor text — the section name — and impossible for an editor to forget.",
+        "Compare that to hand-placed contextual links, which need a human to notice the opportunity, write the sentence and pick the anchor. Contextual links are worth more each. Breadcrumbs are worth more in aggregate, because they scale without anyone doing anything.",
+        "The honest caveat: these are template links, and Google discounts repeated boilerplate. But breadcrumbs aren't site-wide boilerplate the way a footer is — the anchor text changes by section, and the link target changes by section. A footer says the same thing on every page. A breadcrumb says something different on every page, which is precisely the signal boilerplate navigation lacks. They complement [internal linking](/glossary/internal-linking); they don't replace it."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where this earns its keep",
+        "body": "Hub pages. Section hubs are usually the pages an editor forgets to link to, because linking to a category feels less natural inside a sentence than linking to a specific article. Breadcrumbs solve that automatically, on every page, forever."
+      }
+    },
+    {
+      "h2": "BreadcrumbList markup, and the errors that break it",
+      "body": [
+        "Google supports `BreadcrumbList` structured data, and when it's valid the search result shows the breadcrumb path in place of the raw URL. That matters more than it sounds for deep pages: `lastagencyhere.com › Glossary › Breadcrumb navigation` reads as a well-organised site, while a four-level URL string reads as a page buried somewhere.",
+        "JSON-LD is the format to use. The structure is a `BreadcrumbList` with an `itemListElement` array of `ListItem` entries, each carrying `position`, `name` and `item` — and the final item's `item` may be omitted, since it's the page you're already on. If a page genuinely sits in more than one place, Google accepts multiple breadcrumb trails on the same page. It's a small piece of [schema markup](/glossary/schema-markup) and one of the few that's worth adding to every template."
+      ],
+      "bullets": [
+        "**Markup that doesn't match the visible trail.** The most common failure. Structured data must describe what's actually on the page; inventing a keyword-rich path that users never see is a guidelines violation.",
+        "**Positions out of order or not starting at 1.** Silently invalidates the whole trail.",
+        "**Marking up every faceted URL.** On ecommerce, mark the canonical hierarchy. Filter combinations shouldn't each declare their own path.",
+        "**Breadcrumbs that skip levels** to look shallower than the site is. If the page really is four levels deep, either say so or restructure the site.",
+        "**Trails that start somewhere other than the homepage**, then confuse both the reader and the markup validator."
+      ]
+    },
+    {
+      "h2": "Mobile patterns, and where the trail goes on the page",
+      "body": [
+        "A full four-level trail on a 360-pixel screen wraps onto three lines and pushes your H1 below the fold. That's a worse trade than not having breadcrumbs at all, and it's why so many mobile sites drop them entirely.",
+        "Two patterns work. The first is a horizontally scrollable single-line trail — the full path is there, it just doesn't wrap. The second is truncation to one level up: a single back-link reading `‹ Glossary`, with the complete path still present in the `BreadcrumbList` markup. The second is cleaner for most content sites; the first suits deep ecommerce catalogues where the middle levels are genuinely useful.",
+        "Wherever you put it, put it above the [H1](/glossary/h1-tag) and don't hide it inside a collapsed menu. A breadcrumb the reader has to open is a breadcrumb that failed at its one job."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Breadcrumbs are not a site structure",
+        "body": "Adding a breadcrumb trail to a flat, disorganised site doesn't organise it — it just displays the disorganisation more clearly. If the trail reads Home › Blog › a-post-about-everything, the fix is the [URL and section structure](/glossary/url-slug), not the widget."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do breadcrumbs help SEO?",
+      "a": "Yes, in two concrete ways. They generate hierarchy-aware internal links across every page automatically, and with valid BreadcrumbList markup Google can show the path in place of the URL in search results, which makes deep pages look better organised."
+    },
+    {
+      "q": "What is BreadcrumbList structured data?",
+      "a": "It's the schema.org type Google reads to understand a breadcrumb trail. In JSON-LD it's a BreadcrumbList containing an itemListElement array of ListItem entries, each with position, name and item. The last item's URL can be omitted since it's the current page."
+    },
+    {
+      "q": "Do breadcrumbs need to match the URL structure?",
+      "a": "Not exactly, but they should reflect the same real hierarchy. Where the URL path and the breadcrumb tell different stories, pick one and fix the other — inconsistency between them confuses readers more than either structure alone would."
+    },
+    {
+      "q": "Should breadcrumbs be in the header or above the content?",
+      "a": "Directly above the H1, inside the main content area. That's where readers look for orientation and where screen reader users expect a navigation landmark. Don't hide it in a collapsed mobile menu — a breadcrumb you have to open has already failed."
+    },
+    {
+      "q": "Can a page have more than one breadcrumb trail?",
+      "a": "Yes. Google accepts multiple trails on a page that genuinely belongs in more than one place — a running shoe that sits under both Footwear and Sale, for instance. Mark up each path separately rather than merging them into one confused trail."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "internal-linking" },
+    { "type": "glossary", "slug": "schema-markup" },
+    { "type": "glossary", "slug": "url-slug" },
+    { "type": "glossary", "slug": "orphan-page" },
+    { "type": "services", "slug": "schema-markup-services" },
+    { "type": "seo-for", "slug": "ecommerce" }
+  ]
+}

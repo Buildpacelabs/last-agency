@@ -354,20 +354,62 @@ export const PRICING_FAQ: Faq[] = [
 ];
 
 /* --- JSON-LD nodes ------------------------------------------------------- */
+/**
+ * TODO (needs the founders): add `sameAs` with the real LinkedIn / Instagram /
+ * X / YouTube / Google Business Profile URLs. `sameAs` is the single strongest
+ * entity signal an Organization node can carry — it's how Google reconciles
+ * "Last Agency" the website with "Last Agency" the business it already knows
+ * from elsewhere. Left out rather than guessed: a sameAs pointing at a profile
+ * we don't control is worse than no sameAs at all.
+ */
 export const ORG_NODE = {
   '@type': 'Organization',
   '@id': `${SITE_URL}/#org`,
   name: 'Last Agency',
+  alternateName: 'Last Agency India',
   url: SITE_URL,
-  logo: `${SITE_URL}/logo.svg`,
+  logo: {
+    '@type': 'ImageObject',
+    '@id': `${SITE_URL}/#logo`,
+    url: `${SITE_URL}/icon-512.png`,
+    contentUrl: `${SITE_URL}/icon-512.png`,
+    width: 512,
+    height: 512,
+    caption: 'Last Agency',
+  },
+  image: { '@id': `${SITE_URL}/#logo` },
   description:
     'A guarantee-led growth agency — SEO, organic social and performance marketing run as one system, each service on its own performance guarantee.',
   slogan: "Beat your number, or it's free.",
+  areaServed: [
+    { '@type': 'Country', name: 'India' },
+    { '@type': 'AdministrativeArea', name: 'Worldwide (remote)' },
+  ],
+  // Topical scope. Helps search and answer engines place the entity in the
+  // right neighbourhood before it has enough links to infer it on its own.
+  knowsAbout: [
+    'Search engine optimization',
+    'Technical SEO',
+    'Local SEO',
+    'Ecommerce SEO',
+    'Programmatic SEO',
+    'Answer engine optimization',
+    'Generative engine optimization',
+    'Link building and digital PR',
+    'Content marketing',
+    'Organic social media marketing',
+    'Performance marketing',
+    'Google Ads',
+    'Meta Ads',
+    'Conversion rate optimization',
+    'Web analytics',
+  ],
   contactPoint: [
     {
       '@type': 'ContactPoint',
       contactType: 'sales',
       telephone: `+${WA_NUMBER}`,
+      url: CAL_LINK,
       areaServed: 'IN',
       availableLanguage: ['en', 'hi'],
     },

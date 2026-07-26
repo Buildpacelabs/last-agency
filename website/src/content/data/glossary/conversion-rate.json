@@ -1,0 +1,174 @@
+{
+  "slug": "conversion-rate",
+  "type": "glossary",
+  "primaryKeyword": "conversion rate",
+  "secondaryKeywords": [
+    "what is a good conversion rate",
+    "conversion rate formula",
+    "lead conversion rate",
+    "website conversion rate india",
+    "how to improve conversion rate"
+  ],
+  "cluster": "analytics",
+  "intent": "informational",
+  "h1": "Conversion rate",
+  "metaTitle": "Conversion Rate: The Formula and the Indian Gap",
+  "metaDescription": "Conversion rate is conversions divided by sessions. Most Indian sites under-report it badly, because calls and WhatsApp chats never get tracked at all.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Conversion rate",
+  "definition": "Conversion rate is the percentage of visitors or sessions that complete the action you decided counts — a form, a call, a WhatsApp chat or a purchase.",
+  "answer": "Conversion rate is conversions divided by sessions, users or clicks — pick one denominator and stay with it. On Indian service sites the reported figure is almost always too low, because most enquiries arrive by phone or WhatsApp and only form fills get counted. Fix the tracking before you judge the rate.",
+  "takeaways": [
+    "State the denominator every time. **2% of sessions** and **2% of users** are different numbers, and agencies quietly pick whichever flatters them.",
+    "If your site has a WhatsApp button and a phone number, an untracked site is under-reporting conversions by a wide margin — often the majority of enquiries.",
+    "Track **micro conversions** so you can diagnose. Report **macro conversions** so you can decide.",
+    "Traffic without conversion tracking isn't a growth channel. It's a hobby with an invoice attached."
+  ],
+  "sections": [
+    {
+      "h2": "The formula, and the denominator nobody agrees on",
+      "body": [
+        "Conversion rate = conversions ÷ some population, times 100. The arithmetic is trivial. The argument is about the population.",
+        "All three denominators below are legitimate. Mixing them inside one report is not, and it's the single most common way a monthly deck flatters itself."
+      ],
+      "bullets": [
+        "**Sessions** — the GA4 default. Best for comparing landing pages and channels. A visitor who returns three times before enquiring drags this down.",
+        "**Users** — best for long consideration cycles, which is most B2B and most high-ticket services in India. Always higher than the session figure.",
+        "**Clicks or ad impressions** — used in paid reporting, where the denominator is what you paid for."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The reporting trick to watch for",
+        "body": "An agency reporting conversion rate on users this month and sessions last month can show improvement without anything improving. Ask which denominator is in the sheet, and ask once — the hesitation tells you more than the answer."
+      }
+    },
+    {
+      "h2": "The Indian measurement gap: calls and WhatsApp",
+      "body": [
+        "Here's the thing nobody documents properly. On a typical Indian service or D2C site, the contact form is the third-choice channel. People tap the WhatsApp button. People tap the phone number. Both leave your website instantly and neither shows up in a default analytics setup.",
+        "The result is a founder looking at a 0.4% conversion rate, concluding SEO doesn't work, while the sales team is drowning in WhatsApp enquiries nobody attributed to anything.",
+        "Three fixes, in order of effort."
+      ],
+      "numbered": [
+        "**Track the outbound clicks.** Every `wa.me` or `api.whatsapp.com` link click and every `tel:` link click should fire a GA4 event. This is a tag manager trigger and half an hour of work. It won't tell you what the conversation produced, but it tells you which pages start conversations.",
+        "**Put the page in the message.** Pre-fill the WhatsApp text with the page or product name — `wa.me/91XXXXXXXXXX?text=Hi, I'm enquiring about the Bangalore audit`. Now sales can see the source in the chat itself, no attribution model required.",
+        "**Use a call tracking number** if calls are the main channel. A separate number for organic visitors closes the loop properly. It costs money and it's worth it above roughly 50 calls a month."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The honest limit",
+        "body": "A WhatsApp click is not a lead. Treat it as a strong micro conversion, and reconcile monthly against what the sales team actually logged. Anyone reporting WhatsApp clicks as leads is inflating your numbers with your own permission."
+      }
+    },
+    {
+      "h2": "Micro versus macro conversions",
+      "body": [
+        "A macro conversion is the thing that pays salaries: a purchase, a qualified enquiry, a booked call. A micro conversion is the step before it.",
+        "You need both. Macro conversions are too rare on a young site to steer by — at 20 leads a month, one good week looks like a 40% improvement and means nothing. Micro conversions give you enough volume to see whether a page is working before the revenue arrives."
+      ],
+      "bullets": [
+        "**Macro** — order placed, form submitted, call connected, demo booked, quote requested.",
+        "**Micro** — pricing page viewed, WhatsApp click, phone number tapped, PDF downloaded, size guide opened, 75% scroll on a service page.",
+        "**Neither** — newsletter pop-up dismissed, 10-second timer, any event you invented to make a dashboard look busy."
+      ]
+    },
+    {
+      "h2": "What good looks like, and why benchmarks lie",
+      "body": [
+        "Every published benchmark averages across countries, industries, traffic mixes and definitions you can't see. Use the bands below as planning ranges to sanity-check a model, never as a target to be held to.",
+        "The ranges are wide for a real reason: conversion rate is mostly a function of intent, and intent is a function of which queries you rank for. A page ranking for **buy X in Bangalore** and a page ranking for **what is X** convert an order of magnitude apart while sitting on the same site."
+      ],
+      "table": {
+        "caption": "Rough planning bands for Indian sites. Verify against your own trailing 90 days.",
+        "head": [
+          "Site type",
+          "Denominator",
+          "Common band"
+        ],
+        "rows": [
+          [
+            "D2C ecommerce, all traffic",
+            "Sessions to order",
+            "0.5–2%"
+          ],
+          [
+            "Lead-gen service site, non-branded organic",
+            "Sessions to enquiry",
+            "1–5%"
+          ],
+          [
+            "Branded search (someone searched your name)",
+            "Sessions to enquiry",
+            "Much higher — often several times the non-branded rate"
+          ],
+          [
+            "B2B SaaS trial or demo",
+            "Users to demo request",
+            "1–3%"
+          ],
+          [
+            "Local service, mobile, map pack traffic",
+            "Sessions to call",
+            "Highest of the lot — often double-digit"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Why untracked traffic is unmanageable",
+      "body": [
+        "Without conversion tracking, every decision becomes an opinion. You can't tell whether the article that brought 4,000 visits brought a single customer, so you optimise for the visits — and [organic traffic](/glossary/organic-traffic) is the easiest metric on earth to inflate with queries nobody buys from.",
+        "It also makes an agency unaccountable, which is why so few insist on it. We won't start work without it: the guarantee runs against your trailing-90-day qualified leads from organic, frozen on day one, so if that number doesn't exist there is nothing to guarantee. Miss the baseline in 90 days and we keep working free until we beat it. That contract only functions if the counting is honest — which is why [conversion tracking setup](/services/conversion-rate-optimisation-services) happens in week one, not month four."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a good conversion rate for an Indian website?",
+      "a": "For D2C ecommerce, 0.5–2% of sessions to order is a common band. For lead-gen service sites, 1–5% of non-branded organic sessions to enquiry. Local mobile traffic converts far higher. Treat these as planning ranges — your own trailing 90 days beats any published benchmark."
+    },
+    {
+      "q": "How do I track WhatsApp enquiries as conversions?",
+      "a": "Fire a GA4 event on every click of a link starting `wa.me` or `api.whatsapp.com`, set up in Google Tag Manager. Pre-fill the message text with the page name so the sales team can see the source inside the chat. Mark the event as a key event, but treat it as a strong micro conversion rather than a confirmed lead."
+    },
+    {
+      "q": "Should I measure conversion rate on users or sessions?",
+      "a": "Sessions for comparing landing pages and channels; users for long consideration cycles where people return several times before enquiring. What matters more than the choice is consistency — pick one, label it in every report, and never switch mid-year."
+    },
+    {
+      "q": "Why did my conversion rate drop when traffic went up?",
+      "a": "Almost always because the new traffic has weaker intent. Ranking for broader informational queries adds sessions with no buying intent, so the percentage falls even while the absolute number of leads rises. Check whether leads went up before you call it a problem."
+    },
+    {
+      "q": "How many conversions do I need before the rate means anything?",
+      "a": "Somewhere north of 30 conversions per variant before a difference is worth acting on, and more if the difference is small. Below that you're reading noise. This is exactly why micro conversions exist — they give you volume to steer by while the macro number is still thin."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "bounce-rate"
+    },
+    {
+      "type": "services",
+      "slug": "conversion-rate-optimisation-services"
+    },
+    {
+      "type": "compare",
+      "slug": "cro-vs-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "organic-traffic"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "cost",
+      "slug": "is-seo-worth-the-money"
+    }
+  ]
+}

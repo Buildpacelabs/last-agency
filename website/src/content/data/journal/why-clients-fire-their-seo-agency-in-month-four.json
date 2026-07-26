@@ -1,0 +1,329 @@
+{
+  "slug": "why-clients-fire-their-seo-agency-in-month-four",
+  "type": "journal",
+  "primaryKeyword": "why clients fire their seo agency",
+  "secondaryKeywords": [
+    "seo agency churn reasons",
+    "when to fire seo agency",
+    "seo client retention",
+    "why seo relationships fail",
+    "seo agency month 4"
+  ],
+  "cluster": "agency-economics",
+  "intent": "informational",
+  "h1": "A Post-Mortem on Month Four, When Most SEO Retainers Die",
+  "metaTitle": "Why Clients Fire Their SEO Agency in Month Four",
+  "metaDescription": "SEO retainers die in month four because the work compounds before the report does. A post-mortem of the break, the reporting gap and the real fix.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Most SEO retainers die in month four because that's when the setup quarter's invoices have all cleared and the business number still hasn't moved. The work is compounding; the report isn't showing it. Fix the gap by agreeing one lagging business metric and one leading work metric before month one starts.",
+  "takeaways": [
+    "Month four isn't random. Three clocks converge there: the minimum term ends, the third invoice has cleared, and the founder is past the optimistic end of the timeline they were quoted.",
+    "The break is almost always a **reporting gap**, not a work gap. Leading indicators moved. The lagging one nobody agreed to measure didn't.",
+    "The failure happened in week one, when nobody wrote down the baseline, the judgement date, or what a bad month would look like.",
+    "Clients own half of it. Approval latency and a blocked dev queue can cost a quarter of the engagement without anyone noticing.",
+    "Two separate reports fix most of this — a monthly work report and a quarterly business report that includes **stop** as a permitted recommendation."
+  ],
+  "sections": [
+    {
+      "h2": "Month four isn't random. It's the arithmetic of a first quarter.",
+      "body": [
+        "Agencies talk about month-four churn like it's weather. It isn't. Three clocks converge in the same 30 days, and once you see them lined up the cancellation stops looking like a surprise and starts looking scheduled.",
+        "The first clock is the contract. Most Indian SEO retainers carry a three-month minimum term, ours included. Month four is the first month a client is allowed to leave, so it collects every doubt accumulated since kickoff.",
+        "The second is the invoice count. At ₹75,000/mo, three invoices is ₹2,25,000 — ₹2,65,500 once GST lands. That has stopped being an experiment and started being a visible line in the P&L that a co-founder or a CFO will ask about by name.",
+        "The third is the patience budget. Almost every founder is told SEO takes three to six months. What they hear is three.",
+        "Underneath all three sits the shape of the work. The heavy, unglamorous spend lands in months one and two — audit, baseline, technical fixes, keyword mapping. The return compounds from month five onward. Month four is the trough between them: structurally the worst possible month to judge an SEO engagement, and the month the contract invites you to judge it."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The trough, in one line",
+        "body": "Cost is front-loaded into months 1–2. Return compounds from month 5 onward. Month four is the point of maximum spend and minimum visible payoff — which is precisely when the minimum term expires."
+      }
+    },
+    {
+      "h2": "The timeline of a typical break, from both sides of the table",
+      "body": [
+        "Here's the sequence we see when we inherit an account from another agency. Neither column is a lie. Both parties are describing the same four months accurately. That's what makes the argument unwinnable when it finally happens."
+      ],
+      "table": {
+        "caption": "The same four months, as the agency experienced them and as the client experienced them.",
+        "head": [
+          "Month",
+          "What the agency saw",
+          "What the client saw"
+        ],
+        "rows": [
+          [
+            "1",
+            "Full crawl, analytics audit, keyword mapping, baseline set, roughly 40 hours of setup before a single new page ships.",
+            "A PDF, a spreadsheet and a call. Nothing on the site changed."
+          ],
+          [
+            "2",
+            "Redirect chains cleaned, canonicals fixed, three template-level issues resolved, first two pages published.",
+            "Two blog posts about topics they didn't ask for. Traffic flat."
+          ],
+          [
+            "3",
+            "Impressions climbing on target queries. New pages entering positions 20–50. First outreach replies landing.",
+            "Search Console looks busier. The phone rings the same amount it did in January."
+          ],
+          [
+            "4",
+            "Content stack compounding, two links placed, average position improving week over week. This is going well.",
+            "₹2.25 lakh spent. Zero attributable leads. Time to have the conversation."
+          ]
+        ]
+      },
+      "bullets": [
+        "The agency is reading **leading** indicators and they are genuinely moving.",
+        "The client is reading a **lagging** indicator and it genuinely hasn't.",
+        "Nobody agreed, in writing, which one the engagement would be judged on."
+      ]
+    },
+    {
+      "h2": "The reporting gap, and the four-month delay built into it",
+      "body": [
+        "There is a mechanical delay between an SEO action and a rupee. It isn't agency spin; it's the sequence a page has to survive. It gets crawled. It gets indexed. It climbs to a position that earns clicks. It gets clicked. It converts. Then, if you sell to businesses, a human takes 30 to 90 days to sign.",
+        "Stack those and the honest picture for a competitive site is leading movement inside 4–10 weeks, first organic leads in months four to eight, and revenue you'd defend in a board meeting from months six to twelve. Those are ranges rather than promises, because two variables dominate them and neither belongs to the agency: how competitive your keyword set is, and how long your sales cycle runs.",
+        "This is the table we now put in front of every prospect before they sign, because a client who saw it in week one doesn't fire anybody in week sixteen."
+      ],
+      "table": {
+        "caption": "What moves when, and what each signal actually proves.",
+        "head": [
+          "Signal",
+          "Typically moves",
+          "What it proves"
+        ],
+        "rows": [
+          [
+            "Fixes deployed, pages shipped",
+            "Weeks 2–4",
+            "The agency is working. Nothing more."
+          ],
+          [
+            "Indexation of new pages",
+            "Weeks 3–6",
+            "The pages are eligible to rank at all."
+          ],
+          [
+            "Impressions on target queries",
+            "Weeks 4–10",
+            "Google understands what the pages are for."
+          ],
+          [
+            "Average position on target queries",
+            "Weeks 8–16",
+            "The pages are competitive, not just present."
+          ],
+          [
+            "Organic clicks on commercial pages",
+            "Months 3–6",
+            "Searchers are choosing you over the alternatives."
+          ],
+          [
+            "Qualified leads from organic",
+            "Months 4–8",
+            "The business is getting paid. This is the number."
+          ],
+          [
+            "Closed organic revenue",
+            "Months 6–12",
+            "Mostly a function of your sales cycle, not the SEO."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The chart that ends relationships",
+        "body": "An impressions graph going up and to the right is the most dangerous slide in agency reporting. It is true, it is relevant, and it is not what the client is paying for. Lead with it in month four and you look like someone changing the subject — because you are."
+      }
+    },
+    {
+      "h2": "The failure happened in week one",
+      "body": [
+        "By the time the cancellation call happens, there is nothing useful left to argue about. Both parties have data, both sets are real, and neither can settle the question because the question was never defined. The post-mortem always lands in the same place: the kickoff.",
+        "A kickoff that prevents month four produces five artefacts. Not a deck. Five specific written things, and if your agency didn't hand you these, the month-four fight was scheduled the day you signed."
+      ],
+      "numbered": [
+        "**A frozen baseline number.** Your trailing-90-day count of qualified leads from organic search, written down before anyone touches anything. Not traffic. Not rankings. The number that pays salaries. We cover the mechanics in [how to set an SEO baseline](/journal/how-to-set-an-seo-baseline).",
+        "**A definition of 'qualified'.** Does a brochure download count? A WhatsApp enquiry? A form fill from a student? Two reasonable people will define this differently and both will be certain they were obvious.",
+        "**A named judgement date.** Ours is day 90 against the baseline. Whatever yours is, it should be a date on a calendar, not \"once things pick up\".",
+        "**A written list of what will look bad, and when.** Month one will look like nothing happened. Month two will produce content you didn't request on topics you don't rate. Month three will show impressions and no leads. Say it in week one and it reads as competence in week twelve.",
+        "**An agreed answer to 'what if it doesn't work'.** This is the question that separates the field. If the answer is a shrug and a renewal invoice, you already know how month four ends."
+      ]
+    },
+    {
+      "h2": "The half of it the client owns",
+      "body": [
+        "This part gets left out of most agency post-mortems, for obvious commercial reasons. It shouldn't be, because the arithmetic is brutal.",
+        "Take a three-pages-a-month content plan. Each page needs a brief approved and a draft approved. If a brief sits nine days waiting for a founder who is genuinely busy, and the draft sits another eleven, you've added about three weeks to that page's clock. Do that across a quarter and you've lost roughly a month of the compounding window — landing exactly where you planned to judge the results.",
+        "The dev queue is worse, because it's invisible. A template fix specified in week three that ships in week fourteen did nothing for the quarter you're assessing. The agency reported it as \"delivered\" in week three, which is true of their side and useless to yours.",
+        "Then there's tracking. If organic leads aren't tagged in your CRM, the lagging indicator can't be measured at all, and month four becomes two people arguing about a number that exists nowhere. No deck has ever settled that fight."
+      ],
+      "bullets": [
+        "**A 72-hour approval SLA, both ways.** Ours applies to us too. Anything unanswered after 72 hours gets escalated or the agency proceeds on the documented default.",
+        "**A standing developer slot.** Two hours a fortnight, booked. Not \"we'll raise a ticket\". The single most common cause of a technically-competent SEO engagement producing nothing.",
+        "**One SME hour a month.** Someone who actually knows the product, on a call with the writer. It is the difference between content that ranks and content that reads like it was written by a stranger, because otherwise it was.",
+        "**A source field on every form, and organic tagged in the CRM.** Ten minutes of setup that decides whether month four is a conversation or a fight.",
+        "**One decision-maker.** Content reviewed by a committee of four arrives late and averaged into blandness. Both of those cost rankings."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Say it out loud in the kickoff",
+        "body": "We now walk clients through what they have to do before we quote a timeline, because the timeline is conditional on it. More on that in [what clients have to do for SEO to work](/journal/what-clients-have-to-do-for-seo-to-work)."
+      }
+    },
+    {
+      "h2": "The two-report format that prevents the fight",
+      "body": [
+        "One report cannot serve both audiences, and every agency that tries produces the same hybrid: a monthly deck where good news about impressions sits next to silence about leads. It satisfies nobody and it buries the one number that matters under eleven that don't.",
+        "Split it. Two documents, different cadences, different audiences, and a hard rule that they never merge."
+      ],
+      "table": {
+        "caption": "The two-report format: what belongs where, and who reads it.",
+        "head": [
+          "",
+          "Report A — monthly work report",
+          "Report B — quarterly business report"
+        ],
+        "rows": [
+          [
+            "Audience",
+            "Whoever manages the agency day to day",
+            "Whoever signs the invoice"
+          ],
+          [
+            "Length",
+            "One page. Five numbers.",
+            "Two pages, mostly prose"
+          ],
+          [
+            "Contents",
+            "What shipped, what's blocked, indexation, impressions and average position on the target set, referring domains",
+            "Baseline versus today on qualified organic leads, what changed and why, what we got wrong"
+          ],
+          [
+            "Verdict",
+            "None. It's a status update.",
+            "A written recommendation: continue, change, or stop"
+          ],
+          [
+            "Failure mode it kills",
+            "\"I have no idea what they've been doing\"",
+            "\"They showed me traffic charts for a year\""
+          ]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "The clause that makes Report B honest",
+          "body": [
+            "Report B has to permit the word **stop**. An agency that has never once recommended a client reduce or end a retainer is not an agency with unusually good clients; it's an agency whose quarterly review is a renewal pitch wearing a hat.",
+            "We write it into the engagement: if the leading indicators are flat at 90 days and we can't explain why, we say so in writing and we tell you whether to continue. Sometimes the honest answer is that the site is fine and the product has no search demand, which is not an SEO problem and cannot be fixed by buying more SEO."
+          ]
+        },
+        {
+          "h3": "Why the monthly report should be boring",
+          "body": [
+            "Five numbers, same five every month, no design. The moment a monthly report becomes a designed artefact, someone is spending three of your paid hours in Canva and the report starts optimising for how it looks rather than what it says. [How to read an SEO report](/journal/how-to-read-an-seo-report) covers what to strip out of the one you're currently getting."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "When firing in month four is genuinely the right call",
+      "body": [
+        "Month four is a bad moment to judge outcomes and an excellent one to judge process. Some engagements should absolutely end there. The test: are the leading indicators dead, or are you impatient for the lagging one?"
+      ],
+      "subs": [
+        {
+          "h3": "Fire them",
+          "bullets": [
+            "**No baseline exists.** Nobody wrote down where you started, so nobody can ever prove you moved. This alone is enough.",
+            "**Impressions on your target queries are flat at 90 days.** Not leads — impressions. If Google hasn't noticed the work after three months, the work isn't working.",
+            "**Nothing shipped.** Count the pages published and the technical fixes deployed. If month three looks like month one, you bought a subscription to meetings.",
+            "**The links came from a network.** Ask where. \"Our own network of sites\" is a private blog network and the penalty risk sits on your domain, not theirs.",
+            "**Reporting leads with traffic and won't discuss leads.** Traffic is trivially inflatable with irrelevant queries. Refusal to talk about leads is a decision, not an oversight.",
+            "**You still haven't met anyone who touches your account.** Four months is long enough."
+          ]
+        },
+        {
+          "h3": "Don't fire them",
+          "bullets": [
+            "**Revenue hasn't moved but impressions and positions have.** That's the system working in the correct order. Switching now means paying the setup cost twice — [the real cost of switching SEO agencies](/journal/the-real-cost-of-switching-seo-agencies) puts a number on it.",
+            "**A competitor with a ten-year domain still outranks you.** They were always going to for a while.",
+            "**The content isn't what you'd have written.** Fair criticism, fixable in one call. Not a firing offence unless it's factually wrong.",
+            "**You read a thread saying SEO is dead.** It said that last year too."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The most expensive month to cancel",
+        "body": "Cancelling at month four means you funded the entire audit-and-fix phase and left before the compounding phase started. If you're going to leave, the cheap moment was month one. The next cheap moment is never."
+      }
+    },
+    {
+      "h2": "What we changed on our side, and what it costs us",
+      "body": [
+        "We rebuilt the front of our engagement around this specific failure, and it isn't charity — month-four churn is the most expensive thing that can happen to an agency. You absorb the whole setup cost and earn three invoices against it.",
+        "So: we freeze your trailing-90-day count of qualified leads from organic search on day one, before anything else happens. If we haven't beaten that number in 90 days, we keep working free until we do. We don't promise a ranking position for a keyword — nobody controls Google's index, and anybody promising position one is either buying links or buying time.",
+        "That guarantee is why we only take three clients a month. You can't carry that exposure at volume, and an agency offering it across forty accounts either isn't honouring it or has defined the metric so loosely it can't be failed.",
+        "We're month-to-month after the first quarter, 30 days' notice, and you keep every asset. So month four is still the month you're allowed to leave — we've just tried to make it a month where you have a real number in front of you instead of a feeling. See [how the guarantee works](/seo) or [what it costs](/pricing)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long should I give an SEO agency before firing them?",
+      "a": "Ninety days is the earliest fair judgement, but judge process, not revenue. By day 90 you should see impressions and average position moving on your target queries, pages shipping on cadence, and indexation climbing. Leads typically arrive months four to eight, revenue months six to twelve, depending on your sales cycle."
+    },
+    {
+      "q": "Is it normal to see no leads from SEO after three months?",
+      "a": "For a competitive keyword set, yes — and it's the single most common reason retainers get cancelled. What isn't normal is flat impressions and flat average position at 90 days. Those move first. If they haven't, the work isn't landing and the lead question is academic."
+    },
+    {
+      "q": "What should I ask my SEO agency in month three?",
+      "a": "Four things. What was our baseline number and what is it today? Which target queries improved in average position since month one? How many pages shipped versus planned, and what's blocked on our side? And: if this doesn't work, at what point do you tell us to stop?"
+    },
+    {
+      "q": "Can a client's own delays really ruin an SEO engagement?",
+      "a": "Routinely. A brief waiting nine days and a draft waiting eleven adds about three weeks per page. Across a quarter of three pages a month, that's roughly a month of compounding lost. Add a developer queue that ships technical fixes eleven weeks late and the quarter you're judging never really happened."
+    },
+    {
+      "q": "Should I switch SEO agencies or renegotiate?",
+      "a": "Renegotiate first if the leading indicators are alive. Switching resets the audit, the baseline and the relationship, and the new agency spends month one re-learning what the last one already knew. Switch when there's no baseline, nothing shipped, or the link sources won't survive a direct question."
+    },
+    {
+      "q": "Why do SEO agencies front-load the work into month one?",
+      "a": "Because the sequence is dependent. You can't sensibly write forty pages before you know which queries convert, and you can't rank any of them if the site's canonicals point at staging. Front-loading is correct practice, and it's also why the cost curve and the return curve cross around month four."
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-read-an-seo-report"
+    },
+    {
+      "type": "answers",
+      "slug": "can-i-fire-my-seo-agency"
+    },
+    {
+      "type": "compare",
+      "slug": "keyword-rankings-vs-organic-traffic"
+    },
+    {
+      "type": "glossary",
+      "slug": "impressions"
+    },
+    {
+      "type": "journal",
+      "slug": "the-real-cost-of-switching-seo-agencies"
+    }
+  ]
+}

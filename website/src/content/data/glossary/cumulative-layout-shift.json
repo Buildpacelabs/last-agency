@@ -1,0 +1,153 @@
+{
+  "slug": "cumulative-layout-shift",
+  "type": "glossary",
+  "primaryKeyword": "cumulative layout shift",
+  "secondaryKeywords": [
+    "cls meaning",
+    "how to fix cls",
+    "cls 0.1",
+    "layout shift causes",
+    "what is a good cls score"
+  ],
+  "cluster": "technical-seo",
+  "intent": "informational",
+  "h1": "Cumulative Layout Shift (CLS)",
+  "metaTitle": "Cumulative Layout Shift (CLS), Explained",
+  "metaDescription": "Cumulative Layout Shift scores how much your page jumps while loading. Keep it under 0.1. Ads, late fonts and sticky offer bars cause most of it.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Cumulative Layout Shift (CLS)",
+  "definition": "Cumulative Layout Shift is the Core Web Vital that scores how much visible content unexpectedly moves around while a page is loading, on a scale where anything under 0.1 is good.",
+  "answer": "Cumulative Layout Shift scores how much your page's visible content jumps while it loads. Under 0.1 is good, over 0.25 is poor, measured at the 75th percentile of real visits. Unlike the other Core Web Vitals, it costs you money directly: a shifting layout makes people tap the wrong thing.",
+  "takeaways": [
+    "**0.1 or lower.** The score is impact area multiplied by distance moved, summed over the worst burst of shifts in a session.",
+    "Two attributes on every image — `width` and `height` — remove the largest category of shifts on most sites in one commit.",
+    "The expensive shifts happen late: cookie bars, offer strips and ad slots that inject after the user has already started reading.",
+    "CLS is the only Core Web Vital whose failure mode is a mis-tap — it shows up in your refund inbox before it shows up in Search Console."
+  ],
+  "sections": [
+    {
+      "h2": "The Core Web Vital that costs you money directly",
+      "body": [
+        "A slow page annoys people. A shifting page charges them for the wrong thing.",
+        "Picture a product page on a phone. The buyer's thumb is already moving toward Add to Cart. A late offer banner injects above the fold, everything slides down 80 pixels, and the tap lands on \"Buy now with UPI\" instead — or on a recommended product they never wanted. Best case they go back and retry. Worst case you handle the return.",
+        "The same mechanic kills forms: a field shifts as a web font swaps in, the tap lands on the wrong input, and nothing in your analytics will ever label that as a layout problem.",
+        "That's why CLS is worth fixing even if you don't care about [Core Web Vitals](/glossary/core-web-vitals) as a ranking input at all."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Test on a phone, on a cold cache, on mobile data",
+        "body": "CLS is almost invisible on a desktop with a warm cache and fibre — everything loads too fast to see it. Open the page on your own phone, in an incognito tab, on 4G. That's the version your buyers get."
+      }
+    },
+    {
+      "h2": "How the score is calculated, briefly",
+      "body": [
+        "Each shift scores impact fraction times distance fraction — how much of the viewport moved, and how far it travelled as a share of the viewport. A full-width block moving a quarter of the screen scores far worse than a caption nudging ten pixels.",
+        "Shifts are grouped into session windows: a window opens at the first shift, extends while shifts keep coming within a second of each other, and caps at five seconds. Your CLS is the worst window, not the page total. One bad burst during load beats a hundred tiny ones.",
+        "Shifts within 500 milliseconds of a user interaction are excluded, on the reasonable basis that a menu you opened is supposed to move. Everything else counts."
+      ],
+      "bullets": [
+        "**Good:** 0.1 or below. **Needs work:** 0.1 to 0.25. **Poor:** above 0.25.",
+        "Measured at the 75th percentile of real Chrome visits over a rolling 28-day window, split mobile and desktop.",
+        "Chrome DevTools' Performance panel flags each shift and highlights the element that moved — that's your fix list, in order."
+      ]
+    },
+    {
+      "h2": "The four things that cause almost all of it",
+      "body": [
+        "In practice CLS has a short list of causes, and they're the same list on nearly every site we audit."
+      ],
+      "table": {
+        "caption": "The usual CLS causes and the fix for each.",
+        "head": [
+          "Cause",
+          "What happens",
+          "Fix"
+        ],
+        "rows": [
+          [
+            "Images without dimensions",
+            "The browser reserves zero height, then reflows everything when the image arrives.",
+            "`<img width=\"800\" height=\"600\">` — modern browsers derive the aspect ratio and hold the space."
+          ],
+          [
+            "Web fonts",
+            "Text renders in the fallback font, then reflows when the custom font loads (FOUT), or stays invisible then appears (FOIT).",
+            "Preload the font file, `font-display: swap`, and match the fallback's metrics with `size-adjust`."
+          ],
+          [
+            "Injected banners and ads",
+            "A cookie notice, offer strip or ad slot appears above existing content and shoves the page down.",
+            "Reserve the space with `min-height`, or overlay it as `position: fixed` so it takes no flow."
+          ],
+          [
+            "Late third-party widgets",
+            "Review stars, trust badges and chat bubbles render after everything else and expand their containers.",
+            "Give each widget a fixed-size wrapper before the script loads."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The one-line fix, and the ones that take longer",
+      "body": [
+        "Start with images, because it's genuinely one commit. Every `<img>` gets `width` and `height` attributes matching its intrinsic size. Browsers have used those to compute an aspect ratio and reserve the box since 2020, so the space is held before a byte of image data arrives. Responsive CSS still resizes it — set `height: auto` and the ratio holds. Where the pixel size is unknown but the ratio isn't, `aspect-ratio: 16 / 9` on the container does the same job for embeds and iframes.",
+        "Then the injected elements, which is where the design conversation lives. A cookie bar or sale strip that pushes content down is a layout shift by construction. Either reserve its height in the initial HTML, even when it's empty, or render it as a fixed overlay that never joins the flow. A bar pinned to the bottom of the viewport is free; the same bar inserted at the top of `<body>` after two seconds is a 0.3 score.",
+        "Fonts last, and they're the smallest of the wins: preload the weight you use above the fold, set `font-display: swap` so text is readable immediately, and match the fallback metrics with `size-adjust` so the swap doesn't change line heights. If your whole template needs this treatment, it's [Core Web Vitals work](/services/core-web-vitals-optimisation) rather than a ticket."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a good CLS score?",
+      "a": "0.1 or lower at the 75th percentile of real visits. Between 0.1 and 0.25 needs work, and above 0.25 is poor. Most sites that fail are failing on mobile only, because the same injected element covers a much larger share of a phone viewport."
+    },
+    {
+      "q": "Do width and height attributes on images actually still matter?",
+      "a": "More than ever. Since 2020 browsers use those two attributes to compute an aspect ratio and reserve the exact space before the image downloads. Adding them across a template is usually the single largest CLS improvement available, and it takes an afternoon."
+    },
+    {
+      "q": "Does a cookie banner hurt CLS?",
+      "a": "Only if it pushes content. A banner injected at the top of the document after load shifts everything below it and can fail the metric on its own. The same banner as a fixed overlay at the bottom of the viewport scores zero, because it never enters the layout flow."
+    },
+    {
+      "q": "Why is my CLS fine in Lighthouse but poor in Search Console?",
+      "a": "Lighthouse measures a single scripted load and stops. Real users scroll, and lazy-loaded sections, ad refreshes and late widgets shift content the lab run never reaches. Field data captures the whole visit, which is why it's the number Google uses."
+    },
+    {
+      "q": "Do animations count as layout shift?",
+      "a": "Animating `top`, `left`, `width` or `height` does, because those recalculate layout. Animating with the CSS `translate` property doesn't — the element moves on the compositor without disturbing its neighbours. Switching an animation from `top` to `translate` is usually a one-line change."
+    },
+    {
+      "q": "How quickly will a CLS fix show up?",
+      "a": "About four weeks. Field data in Search Console and PageSpeed Insights uses a 28-day rolling window, so a fix shipped today only fully replaces the old data a month later. Verify with DevTools immediately, then wait for the field number to catch up."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "core-web-vitals"
+    },
+    {
+      "type": "glossary",
+      "slug": "largest-contentful-paint"
+    },
+    {
+      "type": "glossary",
+      "slug": "interaction-to-next-paint"
+    },
+    {
+      "type": "services",
+      "slug": "core-web-vitals-optimisation"
+    },
+    {
+      "type": "seo-for",
+      "slug": "ecommerce"
+    },
+    {
+      "type": "compare",
+      "slug": "wordpress-vs-shopify-seo"
+    }
+  ]
+}

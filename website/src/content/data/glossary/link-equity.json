@@ -1,0 +1,150 @@
+{
+  "slug": "link-equity",
+  "type": "glossary",
+  "primaryKeyword": "link equity",
+  "secondaryKeywords": [
+    "link juice meaning",
+    "pagerank flow",
+    "how link equity works",
+    "link equity distribution",
+    "does link equity pass through redirects"
+  ],
+  "cluster": "off-page",
+  "intent": "informational",
+  "h1": "Link equity",
+  "metaTitle": "Link Equity: What It Is and How It Flows",
+  "metaDescription": "Link equity is the ranking value a link passes. Follow one homepage backlink through a bloated footer and you can see where most sites waste theirs.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Link equity",
+  "definition": "Link equity, often called link juice, is the ranking value that passes from one page to another through a link.",
+  "answer": "Link equity is the ranking value a link passes from one page to another. A page divides its outgoing equity across the links it carries, so a homepage with 80 links gives each one a small share. Most sites earn equity and then dilute it across a bloated navigation before it ever reaches a page that sells anything.",
+  "takeaways": [
+    "Equity divides. Eighty links on a page means each link carries roughly a eightieth — which is why footer bloat is expensive.",
+    "301 redirects don't lose equity anymore, but **irrelevant** redirects pass nothing because Google treats them as soft 404s.",
+    "Nofollowing an internal link doesn't redistribute its share to your other links. It discards it.",
+    "The highest-return link work on most sites is internal, free, and takes an afternoon."
+  ],
+  "sections": [
+    {
+      "h2": "How equity divides across a page",
+      "body": [
+        "The original model is PageRank. A page holds some value and passes a share of it along every link it carries: split fifty ways, each link gets a fiftieth. Google's systems are far more sophisticated now, but the division still describes what happens well enough to make decisions with.",
+        "One refinement matters. Google patented a \"reasonable surfer\" model that weights links by how likely someone is to click them, so the split isn't even — a link in the first paragraph carries more than the same link in a footer. Placement is part of the arithmetic. None of it is observable; there's no dial showing how much equity a page holds. Structure is observable, and structure is where the mistakes are."
+      ]
+    },
+    {
+      "h2": "Following one link through a bloated site",
+      "body": [
+        "Here's the arithmetic, worked on a shape we see constantly. It's a model, not a case study — nobody changes one thing at a time on a live site, so we won't pretend there's a clean before-and-after screenshot.",
+        "**The setup.** A site earns one strong homepage backlink from a genuine publication. Now count what the homepage links to: 8 items in the nav, 12 links in the body, and a footer carrying 60 — every service, every city, every blog category, the privacy policy, four social icons. That's 80 outgoing links.",
+        "**The split.** Each internal link now carries roughly an eightieth of whatever arrived. The three pages that actually take enquiries get one eightieth each, alongside the terms page and \"seo services in Nashik\".",
+        "**The fix.** Cut the footer to the 12 links people use. Add a contextual block high on the homepage linking the three money pages from body copy, with descriptive anchors. Outgoing links drop to about 32, and those three move from footer positions to body ones — from roughly 3/80 to 3/32, before placement weighting pushes it further.",
+        "**The caveat.** That's not a promise of a 2.5× ranking effect. Rankings aren't linear in equity, Google's model isn't raw PageRank, and a weak page won't rank because you fed it. What the arithmetic shows is where value was leaking, and leaks are worth plugging regardless."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Why this beats buying links",
+        "body": "Consolidating internal equity costs an afternoon of a developer's time and nothing else. A campaign that earns three referring domains costs a month of a team's attention. Do the free one first — we've argued the whole case in [internal linking beats link building](/journal/internal-linking-beats-link-building)."
+      }
+    },
+    {
+      "h2": "Where equity survives, and where it evaporates",
+      "body": [
+        "Four mechanics that decide whether the value you earned actually arrives somewhere useful."
+      ],
+      "table": {
+        "caption": "How link equity behaves through common site changes.",
+        "head": [
+          "Mechanic",
+          "What happens to equity",
+          "What to do about it"
+        ],
+        "rows": [
+          [
+            "301 redirect (relevant)",
+            "Passes through. Google confirmed years ago that 30x redirects don't lose PageRank.",
+            "Redirect retired URLs to the closest equivalent page. Don't fear the redirect."
+          ],
+          [
+            "301 redirect (irrelevant)",
+            "Passes nothing. Google treats a redirect to an unrelated page as a soft 404.",
+            "Never mass-redirect dead pages to the homepage. It's the classic migration mistake."
+          ],
+          [
+            "Canonical tag",
+            "Consolidates signals onto the canonical URL, if Google accepts your choice.",
+            "Use it for genuine duplicates. See [canonical tags](/glossary/canonical-tag)."
+          ],
+          [
+            "`rel=\"nofollow\"` on an internal link",
+            "The link's share is discarded, not redistributed to your other links.",
+            "Stop doing it. PageRank sculpting stopped working in 2009 and it never came back."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The consolidation audit",
+      "body": [
+        "Half a day, no budget, and it usually finds more than a link campaign would have earned in a quarter."
+      ],
+      "numbered": [
+        "**Count your sitewide links.** Nav plus footer. Above about 30 you're diluting deliberately. Ask of every footer link: does a human click this?",
+        "**Name your money pages.** Three to five URLs that take enquiries. Everything else exists to feed them.",
+        "**Find where your equity landed.** Search Console's Links report shows your most-linked pages. If that's a 2023 blog post with no links out to anything commercial, you've found the blockage.",
+        "**Link from the strong pages to the money pages**, in body copy, with descriptive anchors — mechanics in [internal linking](/glossary/internal-linking).",
+        "**Find your [orphan pages](/glossary/orphan-page).** Pages with no internal links receive nothing and are usually invisible in the index too."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The faceted navigation trap",
+        "body": "Ecommerce filters generating a URL for every colour, size and price band can create tens of thousands of crawlable pages, each carrying links and each taking a share. It's the biggest equity sink we find on Indian D2C sites, and it stays invisible until somebody crawls the site properly."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is link juice?",
+      "a": "Link juice is the informal name for link equity — the ranking value that passes along a link. It's the same concept, just older slang. Neither term describes a number you can measure directly; both describe a behaviour you can reason about structurally."
+    },
+    {
+      "q": "Does link equity pass through 301 redirects?",
+      "a": "Yes. Google has confirmed that 30x redirects don't cause PageRank loss. The exception matters though: redirecting a page to an unrelated destination gets treated as a soft 404, which passes nothing. Redirect to the closest genuine equivalent, not to the homepage."
+    },
+    {
+      "q": "Do nofollow links pass link equity?",
+      "a": "Not reliably — the attribute has been a hint rather than a rule since 2019, so Google may consider the link. What's certain is that nofollowing an internal link doesn't hand its share to your other links. The share is discarded, so you lose it without anyone gaining."
+    },
+    {
+      "q": "How many links should a page have?",
+      "a": "There's no hard limit and Google dropped its old guidance about keeping links under a hundred. As a practical rule, every link should exist because a human might click it. If a footer has sixty links and nobody clicks fifty of them, they're diluting the ten that matter."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "internal-linking"
+    },
+    {
+      "type": "glossary",
+      "slug": "301-redirect"
+    },
+    {
+      "type": "glossary",
+      "slug": "canonical-tag"
+    },
+    {
+      "type": "glossary",
+      "slug": "orphan-page"
+    },
+    {
+      "type": "compare",
+      "slug": "dofollow-vs-nofollow"
+    },
+    {
+      "type": "journal",
+      "slug": "internal-linking-beats-link-building"
+    }
+  ]
+}

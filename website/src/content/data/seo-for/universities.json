@@ -1,0 +1,223 @@
+{
+  "slug": "universities",
+  "type": "seo-for",
+  "primaryKeyword": "seo for universities",
+  "secondaryKeywords": [
+    "university seo india",
+    "college seo services",
+    "seo for higher education institutions",
+    "admission page seo",
+    "course page seo university"
+  ],
+  "cluster": "education-and-nonprofit",
+  "intent": "commercial",
+  "industry": "Universities and colleges",
+  "h1": "SEO for universities with 300 programme pages and no owner",
+  "metaTitle": "SEO for Universities: Programme Pages That Rank",
+  "metaDescription": "SEO for universities and colleges in India. Fix the programme page structure, admission content and brand search across departments that never talk.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Search a well-known Indian university's own course name — B.Tech CSE fees, MBA eligibility, cut-off — and the first three results are usually education aggregators, not the university. That's not a ranking problem. It's a governance problem: three hundred programme URLs spread across departmental sites, each written by whoever had time, none of them owned.",
+  "takeaways": [
+    "Aggregators outrank you on your own programme names because their pages answer the query — fees, eligibility, cut-off, placement — and yours links to a 90-page PDF prospectus.",
+    "The fix is a **programme page template with mandatory fields** and a named owner per programme. Not more content. The content mostly exists; it's scattered, stale and unstructured.",
+    "Departmental subdomains split your authority, duplicate your admission content and age badly. Consolidating them into subfolders is the single biggest structural gain most Indian universities have available.",
+    "Admission content is a calendar problem. Cut-off, counselling and CUET-related pages need to be standing URLs updated on the day, not new posts published after the fact.",
+    "International and NRI enquiries are high-value and almost never served — the queries use different words (tuition in USD, eligibility for foreign nationals, hostel for international students) and land on pages written for a Delhi teenager."
+  ],
+  "sections": [
+    {
+      "h2": "Why an aggregator outranks you for your own course",
+      "body": [
+        "Type your own institution's name plus `fees` into Google. If you're a mid-size Indian university, the first page probably belongs to Shiksha, Collegedunia, Careers360 or CollegeDekho before it belongs to you. Administrators usually read this as unfair. It isn't — it's earned, and understanding why is the whole strategy.",
+        "The aggregator page has one job and does it in a single screen: total fees by year, eligibility in a line, last year's cut-off, placement figures, hostel cost, and a comparison against two rival institutions. Your page has a hero image of the convocation, a paragraph about vision, and a link to a 90-page PDF prospectus that doesn't load properly on a phone.",
+        "Google isn't preferring their brand. It's preferring the page that answers the query. The good news is that you hold information they can only approximate — this year's actual fee structure, the real seat matrix, the correct eligibility, the current syllabus. When your page carries those, it is genuinely the better result and it tends to win."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "You are not competing with them everywhere",
+        "body": "Aggregators will keep the generic queries — `best engineering colleges in Maharashtra`, `top MBA colleges under 10 lakhs`. Fighting for those is a decade-long content war you have no reason to enter. Take every query that contains your institution's name or one of your specific programmes. That's the traffic that enrols."
+      }
+    },
+    {
+      "h2": "The programme page template, and the fields that are not optional",
+      "body": [
+        "Most universities have between 80 and 400 programme URLs once you count specialisations, and no two of them are structured alike. The single highest-return piece of work is agreeing one template and making the fields mandatory before a page can publish.",
+        "This is a content operations decision more than an SEO one, which is why it usually fails — it needs a registrar-level mandate, not a marketing brief."
+      ],
+      "table": {
+        "caption": "Mandatory fields for a programme page, and the query each one answers.",
+        "head": [
+          "Field",
+          "What it must contain",
+          "Query it wins"
+        ],
+        "rows": [
+          [
+            "Fees",
+            "Year-wise tuition, one-time charges, hostel and mess separately, and the current academic year stated on the page",
+            "`<programme> fees`, `<university> fees per year`, `<programme> total cost`"
+          ],
+          [
+            "Eligibility",
+            "Minimum marks, accepted qualifying exams, accepted entrance tests, age limits, reservation and category notes",
+            "`<programme> eligibility criteria`, `can i do <programme> after <qualification>`"
+          ],
+          [
+            "Admission process and dates",
+            "Application window, entrance accepted, counselling rounds, documents, with a visible last-reviewed date",
+            "`<university> admission 2026`, `<programme> last date`"
+          ],
+          [
+            "Cut-off and seat matrix",
+            "Previous years by category and round, and total seats per specialisation",
+            "`<programme> cut off`, `<university> seat matrix`"
+          ],
+          [
+            "Curriculum",
+            "Semester-wise subjects as HTML, not only as a syllabus PDF",
+            "`<programme> syllabus`, `<programme> subjects list`"
+          ],
+          [
+            "Placement",
+            "Programme-level figures with the year, the cohort size and the reporting basis stated honestly",
+            "`<university> placement`, `<programme> average package`"
+          ],
+          [
+            "Duration, mode and accreditation",
+            "Years, full-time or part-time, approving body and current accreditation status",
+            "`is <programme> at <university> UGC approved`, `<university> NAAC grade`"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Placement numbers are an E-E-A-T question, not a marketing one",
+        "body": "Publishing an average package computed only from students who got offers, without saying so, is the kind of claim that gets picked apart on forums and then cited against you. State the cohort, the participation rate and the year. An honest, lower number on a page that explains its basis outperforms an impressive one that reads as invented — to prospective students and to the systems ranking you."
+      }
+    },
+    {
+      "h2": "Departmental subdomains, and the authority you're giving away",
+      "body": [
+        "The typical Indian university domain looks like an archaeological dig. The main site on one CMS. The engineering department on a subdomain running an unpatched install from 2016. A separate subdomain for the management school, one for the research centre, one for the alumni association, one for a conference that ended in 2019. Each has its own admission page, its own contact details, and its own version of the fee structure.",
+        "Three things go wrong at once. Link equity earned by the main domain doesn't fully carry to a subdomain the way it does to a subfolder. The same programme is described on four URLs, so Google has to pick one and often picks the worst. And nobody maintains the departmental copies, so the internet's answer to your fee query is three years out of date.",
+        "Consolidation is unglamorous, politically difficult and worth more than a year of blog posts. The [subdomain versus subfolder question](/compare/subdomain-vs-subfolder) has a clear answer for a single institutional brand: subfolders."
+      ],
+      "numbered": [
+        "**Inventory everything.** Every subdomain, every CMS, every orphaned microsite. Crawl the lot and export a URL list with traffic and links against each. Most universities discover a dozen properties nobody remembered.",
+        "**Decide what dies.** Conference microsites, retired programmes, defunct centres. Archive the content that matters, then redirect or serve a clean 410.",
+        "**Pick the canonical location for each programme.** One URL per programme under `/programmes/` or `/admissions/`, owned by admissions, not by the department.",
+        "**Migrate with a redirect map, not a launch date.** Departmental content moves into subfolders with a one-to-one 301 for every URL that had traffic or links. This is where migrations kill traffic — see [what a replatform does when it goes wrong](/journal/the-replatform-that-killed-your-traffic).",
+        "**Give each department an editable section, not a domain.** The politics is solved by ownership of content, not ownership of a hostname."
+      ]
+    },
+    {
+      "h2": "Admission cycle content: standing pages, updated on the day",
+      "body": [
+        "Higher-education search demand in India runs on a fixed annual shape. Entrance results, then counselling rounds, then cut-offs, then the scramble for spot rounds and vacant seats. CUET has pulled a large part of central and participating university admissions onto one calendar, which makes the spikes sharper and more predictable than they used to be.",
+        "The mistake almost every university makes is publishing news posts. `Admissions Open for 2026` as a blog entry ranks for nothing, ages instantly, and by 2027 there are four contradictory versions of it in the index.",
+        "Build standing URLs instead. `/admissions/btech/` exists forever and gets rewritten every cycle. It accumulates links and history rather than resetting each year. Same for cut-offs: one page per programme holding every year's data, with the newest at the top."
+      ],
+      "bullets": [
+        "**Never put the year in the URL** for a page that recurs. `/admissions/mba/` outlives `/admissions/mba-2026/` and inherits five years of authority.",
+        "**Keep last year's cut-offs visible.** Students search previous-year cut-offs to judge their chances. Deleting them to look current removes the exact data the query wants.",
+        "**Add a last-reviewed date and honour it.** During counselling, information changes weekly. An undated page is untrustworthy, and applicants who get burnt by it say so publicly.",
+        "**Pre-write the counselling and spot-round pages.** These windows last days. Drafting them in advance and publishing within hours is the difference between capturing the demand and reading about it.",
+        "**One canonical fee page per programme.** If finance, admissions and the department each publish a version, you have three competing pages and one confused applicant. See [keyword cannibalisation](/glossary/keyword-cannibalization)."
+      ]
+    },
+    {
+      "h2": "International and NRI enquiries: the segment nobody writes for",
+      "body": [
+        "Foreign-national and NRI seats are typically the highest fee bracket a university has, and the content serving them is usually a single page titled 'International Students' with an email address on it.",
+        "The queries are different in vocabulary, not just in language. Somebody in Dubai or Lagos searching for an Indian degree asks about equivalence, visas, currency and living cost — not about the CUET score they don't have.",
+        "The other half of this is student origin. A university drawing applicants from six states should have content that speaks to each of them: hostel details for students moving 1,800 km, the language of instruction, what the city costs to live in. Generic 'campus life' copy answers none of it."
+      ],
+      "bullets": [
+        "**Publish fees in INR with an indicative foreign-currency note** and say clearly that the INR figure governs. `tuition in USD` is a real query and an unanswered one on most Indian university sites.",
+        "**Write the equivalence page properly** — which foreign qualifications are accepted, whether an Association of Indian Universities equivalence certificate is required, and how long the process takes.",
+        "**Cover the student visa and FRRO registration steps** as informational content. It earns links from student forums and it's the question that decides whether an applicant proceeds.",
+        "**Separate NRI, foreign national and OCI eligibility** — they are different categories with different quotas and different fees, and conflating them into 'international' makes the page wrong for all three.",
+        "**Don't reach for hreflang unless you have genuinely different language versions.** For one English site serving several countries, better content beats tag configuration every time."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Brand search is a defence, not a vanity metric",
+        "body": "A large share of a university's organic traffic is people typing your name plus a question. If your own site doesn't answer `<university> hostel fees` or `<university> is it good`, an aggregator, a forum thread or a coaching blog will — and that answer becomes the reputation. Auditing your own branded queries and writing the missing pages is usually the fastest visible win of the first quarter."
+      }
+    },
+    {
+      "h2": "What this costs, and what we guarantee",
+      "body": [
+        "A single-campus college with a manageable programme list starts at ₹40,000 a month. A multi-campus university with departmental sprawl, a migration to run and hundreds of programme URLs is ₹75,000 and up — realistically the upper end, because the work is content operations as much as SEO and it needs someone chasing thirty department heads for accurate fee data. All ex-GST, month-to-month after the first quarter, and you keep every asset. The numbers are on [pricing](/pricing).",
+        "The baseline we freeze on day one is your trailing-90-day count of qualified organic admission enquiries — application starts, prospectus requests or counselling form fills, whichever your admissions office actually works. Not sessions. A university site can gain thirty thousand sessions from result-day traffic that produces no applications at all, and we're not interested in being paid for that.",
+        "Miss the baseline in 90 days and we keep working free until we beat it. We never promise a specific ranking position, because nobody controls Google's index — and an institution that examines people for a living should be sceptical of anyone who claims otherwise. We take three clients a month, which is what makes the promise affordable to make."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "What ninety days can and can't cover",
+        "body": "Programme page restructuring and branded-query gaps often show inside 8 to 12 weeks, because you're fixing pages Google already knows about rather than building new authority. A subdomain consolidation is a six-to-nine month project with a deliberate dip in the middle. If your cycle needs both, sequence them — do not run a migration into an admission window."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why do sites like Shiksha and Collegedunia outrank our own university website?",
+      "a": "Because their page answers the query in one screen — fees, eligibility, cut-off, placement — while the official page often links to a PDF prospectus. They also have strong domains and years of links. You can't beat them on generic 'top colleges' queries, but you should hold every query containing your institution's or programme's name, and that's where the applications come from."
+    },
+    {
+      "q": "Should departmental websites be subdomains or subfolders?",
+      "a": "Subfolders, for a single institutional brand. Subdomains split link equity, duplicate admission content, and drift out of date because nobody owns them. The migration is politically hard and technically routine: inventory every property, pick one canonical URL per programme, and map a 301 for every URL with traffic or links."
+    },
+    {
+      "q": "How should we handle admission pages that change every year?",
+      "a": "Use standing URLs without the year in them — `/admissions/mba/` rather than `/admissions/mba-2026/` — and rewrite them each cycle. The page keeps its accumulated links and history instead of restarting annually. Keep previous years' cut-offs visible on the same page, because applicants search them to judge their own chances."
+    },
+    {
+      "q": "Is it risky to publish placement statistics on programme pages?",
+      "a": "It's riskier not to, because someone else will publish an estimate. The rule is disclosure: state the year, the cohort size, how many participated in placements, and how the average was computed. A modest number with a clear basis holds up under scrutiny. An impressive number with no basis gets challenged publicly and damages trust across the whole site."
+    },
+    {
+      "q": "How long does university SEO take to affect applications?",
+      "a": "Fixing programme pages Google already indexes can show movement in 8 to 12 weeks. Winning competitive programme queries against aggregators takes six to twelve months. A subdomain consolidation takes six to nine months and usually dips before it recovers, so never schedule one to land inside an admission window."
+    },
+    {
+      "q": "Do universities need separate content for international students?",
+      "a": "Yes, and it's usually the biggest unserved segment on the site. Foreign-national and NRI applicants search about qualification equivalence, visa and FRRO steps, fees in their own currency, and hostel arrangements — not about the domestic entrance test. Those are also the highest fee brackets, so the content pays for itself faster than most."
+    }
+  ],
+  "related": [
+    {
+      "type": "seo-for",
+      "slug": "edtech"
+    },
+    {
+      "type": "seo-for",
+      "slug": "coaching-institutes"
+    },
+    {
+      "type": "compare",
+      "slug": "subdomain-vs-subfolder"
+    },
+    {
+      "type": "services",
+      "slug": "site-migration-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "keyword-cannibalization"
+    },
+    {
+      "type": "journal",
+      "slug": "the-replatform-that-killed-your-traffic"
+    },
+    {
+      "type": "seo-for",
+      "slug": "preschools"
+    },
+    {
+      "type": "seo-for",
+      "slug": "nonprofits"
+    }
+  ]
+}

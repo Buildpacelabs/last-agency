@@ -8,7 +8,7 @@ import { FinalCta } from '@/components/FinalCta';
 export const metadata: Metadata = {
   title: 'Organic Social & Content That Ranks',
   description:
-    'End-to-end produced reels, carousels and SEO blogs from one content pipeline — social that grows your following and your Google rankings together. Packages from ₹30,000/mo. No lock-in.',
+    'Reels, carousels and SEO blogs produced from one pipeline — social that grows your following and your Google rankings together. From ₹30,000/mo.',
   alternates: { canonical: '/social' },
 };
 

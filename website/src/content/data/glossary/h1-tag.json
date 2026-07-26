@@ -1,0 +1,113 @@
+{
+  "slug": "h1-tag",
+  "type": "glossary",
+  "primaryKeyword": "h1 tag",
+  "secondaryKeywords": [
+    "h1 seo",
+    "how many h1 tags per page",
+    "h1 vs h2",
+    "heading structure seo",
+    "h1 best practices"
+  ],
+  "cluster": "on-page",
+  "intent": "informational",
+  "h1": "H1 tag",
+  "metaTitle": "H1 Tag: What It Is and How It Differs From Title",
+  "metaDescription": "The H1 is the main heading on a page. Learn how many you need, how it should differ from your title tag, and how headings map to page structure.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "H1 tag",
+  "definition": "An H1 tag is the top-level heading element on a page, naming what that page is about for readers, assistive technology and search engines.",
+  "answer": "An H1 is the top-level heading inside your page content — the big line readers see, as opposed to the title tag, which appears only in search results and browser tabs. HTML5 permits more than one H1 per page and Google tolerates it, but one H1 per page remains the clearer, safer default.",
+  "takeaways": [
+    "The real question everyone has is \"can I use more than one H1\". The spec says yes. The practical answer is still one.",
+    "The [title tag](/glossary/title-tag) serves someone scanning search results. The H1 serves someone who already clicked. Write them differently.",
+    "Screen reader users navigate by heading list. A broken hierarchy is an accessibility failure before it's an SEO one.",
+    "Google frequently lifts featured snippets from the block sitting directly under a heading that matches the query."
+  ],
+  "sections": [
+    {
+      "h2": "Can a page have more than one H1? The two honest answers",
+      "body": [
+        "The spec answer: HTML5 introduced sectioning elements — `<article>`, `<section>`, `<nav>`, `<aside>` — and an outline algorithm under which each section could carry its own H1 and the document outline would nest correctly. Google's own guidance has for years said multiple H1s are fine and won't cause a problem.",
+        "The practical answer: that HTML5 outline algorithm was never implemented by any browser or screen reader. The W3C eventually dropped it from the spec guidance. So a page with five H1s produces a flat outline in assistive technology, where the user hears five top-level headings and no structure at all.",
+        "Which leaves a simple rule. Multiple H1s won't get you penalised. One H1 will get you understood. Use one, put it above the fold, and make it the plain-language answer to \"what is this page\"."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The real H1 failure",
+        "body": "Not \"too many H1s\". It's using heading tags for font size — an H3 chosen because it looked right, a paragraph styled to look like a heading, a logo wrapped in an H1 on every page. Fix the CSS, not the HTML."
+      }
+    },
+    {
+      "h2": "H1 versus title tag — the same page, two different readers",
+      "body": [
+        "These two elements get confused constantly because on badly built sites they're identical. They shouldn't be. Their readers are in completely different states of mind.",
+        "Someone reading your title tag is scanning ten results and hasn't committed to anything. That title has to carry the query wording and survive pixel truncation. Someone reading your H1 has already clicked; they want confirmation they've landed in the right place, in language that reads like a page rather than a search phrase.",
+        "Practically: share the core noun phrase, differ in everything around it. If the title is \"Technical SEO Services in India — Audit in 10 Days\", the H1 can be \"Technical SEO services\". The overlap is enough for relevance; the difference gives you a second natural phrasing on the page."
+      ]
+    },
+    {
+      "h2": "A heading outline for a 1,500-word page",
+      "body": [
+        "Headings are structure, not decoration. Build the outline before you write the prose and the article usually writes itself — and the sections end up the right size, which is the part most drafts get wrong."
+      ],
+      "table": {
+        "caption": "A workable heading skeleton for a 1,500-word article.",
+        "head": ["Level", "Example heading", "What it does"],
+        "rows": [
+          ["H1", "How much SEO costs in India", "Names the page. One per page. Matches the reader's question in plain words."],
+          ["H2", "The short answer, with real numbers", "The snippet candidate. Direct answer, no preamble, roughly 150 words."],
+          ["H2", "What changes the price", "The main body section, ~500 words, broken by H3s."],
+          ["H3", "Site size and technical debt", "One idea, 150–200 words. Never an H3 with 40 words under it."],
+          ["H3", "How competitive your keywords are", "Sibling of the above. Same weight, same depth."],
+          ["H2", "What you get at each budget", "Table section. Tables under a clear H2 earn snippets."],
+          ["H2", "How to check you're not overpaying", "The practical close. Numbered steps, no summary section."]
+        ]
+      },
+      "bullets": [
+        "**Never skip a level.** H1 → H3 with no H2 between them breaks the outline for screen reader users and reads as sloppy markup to a crawler.",
+        "**Headings are questions or stages**, never \"Introduction\" or \"Conclusion\". A heading that carries no information is a wasted structural signal.",
+        "**Roughly one heading every 200–300 words** on a page this long. Denser than that and the headings are labelling paragraphs, not sections."
+      ]
+    },
+    {
+      "h2": "Accessibility first, snippets second",
+      "body": [
+        "Screen reader users navigate long pages by pulling up a list of headings and jumping — the same way you'd scan a page visually. That's the primary function of heading markup, and it's covered by WCAG's requirement that information and relationships conveyed visually are also available programmatically. A page where the headings are `<div>`s with big font sizes is unusable that way.",
+        "The SEO benefit follows from the same thing. Google lifts featured snippets from blocks that sit directly beneath a heading matching the query — a paragraph, a list, a table. If you want a section to be snippet-eligible, phrase the heading as the question and put the tight answer immediately under it. There is no markup trick here; the [featured snippet](/glossary/featured-snippet) goes to whoever formatted the answer most clearly.",
+        "Headings also do quiet work for [internal linking](/glossary/internal-linking), because a well-structured page generates jump-links and gives you obvious anchor points for links from elsewhere on the site."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many H1 tags should a page have?",
+      "a": "One. HTML5 technically permits more and Google says multiple H1s won't cause a problem, but the outline algorithm that would have made multiple H1s meaningful was never implemented by browsers or screen readers. One H1 produces a structure people can actually navigate."
+    },
+    {
+      "q": "Does the H1 need to match the title tag?",
+      "a": "No, and it's better if it doesn't match exactly. Share the core phrase, then let the title carry the search wording and the H1 read like a heading. Two natural phrasings on one page cover more query variants than one repeated twice."
+    },
+    {
+      "q": "Is the H1 a ranking factor?",
+      "a": "It's a relevance signal, not a strong one. Its practical value is structural: it tells Google what the page is about in one line, and it anchors the heading hierarchy that decides which block gets pulled into a featured snippet."
+    },
+    {
+      "q": "What happens if a page has no H1?",
+      "a": "Nothing dramatic. Google will work out the topic from the title, body and links. But you've removed the clearest structural statement on the page, and you've made it harder for screen reader users to orient. It's a free fix — add one."
+    },
+    {
+      "q": "Can I put my logo in an H1?",
+      "a": "You can, and plenty of themes do it on every page. Don't. It makes every page claim the same top-level heading, wastes the one element that should describe this specific page, and gives assistive technology a useless landmark."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "title-tag" },
+    { "type": "glossary", "slug": "featured-snippet" },
+    { "type": "glossary", "slug": "alt-text" },
+    { "type": "glossary", "slug": "on-page-seo-meaning" },
+    { "type": "services", "slug": "on-page-seo-services" },
+    { "type": "compare", "slug": "onpage-vs-offpage-seo" }
+  ]
+}

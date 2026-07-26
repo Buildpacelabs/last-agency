@@ -1,0 +1,212 @@
+{
+  "slug": "seo-audit-services",
+  "type": "services",
+  "primaryKeyword": "seo audit services",
+  "secondaryKeywords": [
+    "seo audit cost in india",
+    "website seo audit agency",
+    "one time seo audit",
+    "technical seo audit service",
+    "paid seo audit report"
+  ],
+  "cluster": "technical-seo",
+  "intent": "transactional",
+  "h1": "A paid SEO audit your developer can actually use",
+  "metaTitle": "SEO Audit Services — Fixed ₹40,000 Scope, 10 Days",
+  "metaDescription": "A fixed-scope ₹40,000 SEO audit in ten working days: crawl, content, links, logs and analytics, plus a prioritised fix list. Fee credited to your retainer.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "priceFrom": "₹40,000 one-time · credited to your first retainer month",
+  "answer": "An SEO audit is a diagnosis, not a treatment. Ours is a fixed ₹40,000 project delivered in ten working days: technical crawl, content and cannibalisation review, backlink profile, server logs and analytics validation. You get a prioritised fix list with effort estimates. Start a retainer within 60 days and the whole fee is credited back.",
+  "takeaways": [
+    "This is the only thing we sell as a project rather than a retainer, because a diagnosis genuinely has an end date.",
+    "**₹40,000 flat, ten working days, GST extra.** Credited in full against your first retainer month if you start within 60 days.",
+    "The deliverable is a prioritised fix list with effort estimates and owners — not a 90-page PDF that gets forwarded once and never opened.",
+    "The 90-day guarantee does not apply to an audit. We can guarantee an outcome we control; we can't guarantee one that depends on whether you ship the fixes."
+  ],
+  "sections": [
+    {
+      "h2": "The only thing we sell as a project, not a retainer",
+      "body": [
+        "Everything else we do compounds, which is why it's sold monthly. An audit doesn't. It has a start, an end, and a document at the finish. Selling that as a retainer would be dishonest, so we don't.",
+        "The other reason it exists is less flattering to both of us: an audit is how we find out whether we want your retainer, and how you find out whether you want us. Ten days and ₹40,000 is a much cheaper way to test an agency than three months and ₹2,25,000. If we find that your problem is a pricing page rather than a crawl budget, we'll write that down and you'll have saved a quarter.",
+        "It's priced close to cost. Around thirty hours of mostly senior time at ₹40,000 is not where an agency makes money — it's where an agency proves it can read."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Who this isn't for",
+        "body": "If your site is under 30 pages, launched this year, and has never ranked for anything, you don't need a ₹40,000 audit. You need pages worth ranking. We'll say so on the call rather than sell you a diagnosis of an empty room."
+      }
+    },
+    {
+      "h2": "The five sections, and where the hours go",
+      "body": [
+        "Roughly thirty hours of work, split like this. The write-up and the walkthrough call sit on top of these numbers rather than inside them."
+      ],
+      "table": {
+        "caption": "Scope and rough hour split of a ₹40,000 SEO audit.",
+        "head": ["Section", "What gets checked", "Hours"],
+        "rows": [
+          [
+            "Technical and rendering",
+            "Full crawl, raw-versus-rendered diff per template, canonicals, robots, sitemaps, redirect chains, Core Web Vitals on priority templates",
+            "8–10"
+          ],
+          [
+            "Content and cannibalisation",
+            "Every indexable URL mapped to the query it targets, duplicate and competing pages identified, thin and decayed pages listed with a keep, merge or retire call",
+            "6–8"
+          ],
+          [
+            "Links and authority",
+            "Referring domain profile, anchor distribution, obviously paid or toxic patterns, competitor gap on the pages that matter commercially",
+            "4–5"
+          ],
+          [
+            "Server logs and Search Console",
+            "Thirty days of Googlebot behaviour, crawl allowance waste, page indexing reasons, and which URLs Google has looked at but declined to index",
+            "4–6"
+          ],
+          [
+            "Analytics and measurement",
+            "GA4 and Search Console configuration, conversion tracking, whether organic leads are even attributable today, and what your baseline number would be",
+            "3–4"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The section most audits skip",
+        "body": "Measurement. If your conversion tracking is broken, every other finding in the report is a guess dressed as a priority — and you'll spend six months optimising toward a number nobody can verify."
+      }
+    },
+    {
+      "h2": "What you actually receive on day ten",
+      "body": [
+        "The point of an audit is that someone does something afterwards. That constrains the format more than most agencies admit."
+      ],
+      "bullets": [
+        "**A prioritised fix list in a spreadsheet**, one row per issue, with: the URLs affected, the expected effect, an effort estimate in hours, the owner (your dev, your CMS, or us), and a rank. Sorted by effect divided by effort, not by severity — severity is how a tool feels, not what you should do on Monday.",
+        "**A one-page summary** of the three things that are actually holding the site back. If we can't get it to one page, we haven't finished thinking.",
+        "**The raw artefacts.** Crawl exports, log parses, the URL-to-query map, the referring-domain pull. Yours to keep and yours to hand to any other agency.",
+        "**A frozen baseline sheet** — trailing-90-day organic sessions, qualified organic leads, indexed page count, referring domains — so that whatever you do next can be measured against something.",
+        "**A 60-minute walkthrough** with whoever will do the work, developer included. Recorded, so the person who joins in three weeks can watch it."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Why not a 90-page PDF",
+        "body": "Because nobody reads it, and because length is the easiest thing to fake. A tool exports 400 issues in nine seconds. Sorting them into the eleven that matter is the work you're paying for."
+      }
+    },
+    {
+      "h2": "What's included and what isn't",
+      "body": [
+        "The scope is fixed. That's the point of a fixed price."
+      ],
+      "table": {
+        "caption": "Fixed-scope ₹40,000 SEO audit — inclusions and exclusions.",
+        "head": ["Item", "Included", "Not included"],
+        "rows": [
+          [
+            "Diagnosis",
+            "All five sections above, on one domain, in one primary language",
+            "Additional domains, subdomains or languages — scoped and quoted separately"
+          ],
+          [
+            "Fixes",
+            "Effort estimates, implementation notes, and code or CMS instructions specific enough to action",
+            "Doing the work. An audit is a diagnosis; implementation is a retainer or your team's sprint"
+          ],
+          [
+            "Keyword work",
+            "Mapping your existing URLs to the queries they currently target, plus obvious gaps",
+            "Full keyword research and a forward URL map — that's a separate deliverable"
+          ],
+          [
+            "Competitors",
+            "Up to three named competitors, compared on content coverage and referring domains",
+            "A full competitive teardown or market sizing exercise"
+          ],
+          [
+            "Support",
+            "One 60-minute recorded walkthrough plus written follow-up questions for 30 days",
+            "Ongoing advisory, monthly reporting, or sitting in your sprint planning"
+          ],
+          [
+            "Timeline",
+            "Ten working days from the day we have full access",
+            "Ten working days from the day you sign. Access delays move the date, and they usually do"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "₹40,000, and how the credit works",
+      "body": [
+        "₹40,000 flat, ex-GST, invoiced on signature. No hourly overruns, because the scope above is what you get whether the site takes twenty-five hours or thirty-five.",
+        "If you start an SEO retainer with us within 60 days of delivery, the full ₹40,000 is credited against your first month. On a ₹75,000 retainer that means month one costs ₹35,000. There's no obligation attached and no pressure applied — we take three new clients a month, so we genuinely cannot absorb everyone who audits with us anyway.",
+        "If you take the audit to another agency or your in-house team, that's a completely normal outcome and the artefacts are built to be handed over. We'd rather be the second-best thing you bought this quarter than the most expensive."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The honest arithmetic",
+        "body": "₹40,000 for roughly thirty hours is about ₹1,300 an hour, which is close to what a competent Indian agency's delivered hour actually costs. There is no margin hidden in an audit. The margin, if we earn it, is in the retainer that follows."
+      }
+    },
+    {
+      "h2": "Why the 90-day guarantee doesn't apply to an audit",
+      "body": [
+        "Everywhere else on this site we make the same promise: we freeze your trailing-90-day count of qualified leads from organic search on day one, and if we haven't beaten it in 90 days we keep working free until we do. We never promise a specific ranking position, because nobody controls Google's index.",
+        "That guarantee does not extend to a one-off audit, and the reason is simple enough to say out loud. A diagnosis doesn't change anything. If we hand you a fix list and it sits in a Jira backlog for a quarter, the numbers won't move, and it would be absurd for either of us to pretend that was a failure of the audit.",
+        "What we do stand behind is the work itself. If a finding turns out to be wrong — we called something a rendering fault and it wasn't — we correct it and re-audit that section free. And the baseline sheet we hand over on day ten is the same baseline we'd freeze on day one of a retainer, so nothing has to be redone if you do come back.",
+        "If you want the guarantee, you want the [technical SEO retainer](/services/technical-seo-services) or [the full SEO engagement](/seo), where we control whether the fixes ship."
+      ]
+    },
+    {
+      "h2": "Free audit tools versus a paid audit, honestly",
+      "body": [
+        "A lot of what a paid audit covers, you can get for nothing. It would be dishonest to pretend otherwise, so here's the line."
+      ],
+      "bullets": [
+        "**Search Console, GA4, PageSpeed Insights and the Rich Results Test are free and genuinely good.** For a small site they'll surface most of what's wrong. If you have 30 pages and a WordPress install, spend a Saturday in Search Console before spending ₹40,000.",
+        "**Free crawlers get you the first 500 URLs.** Enough for a brochure site, useless on ecommerce. Nothing free parses server logs, and logs are where crawl waste actually shows itself.",
+        "**A free audit from an agency is a sales document.** It's produced in about forty minutes by a tool, and it's designed to generate alarm rather than a work plan. That isn't a scandal, it's just what it is — [we've written about why](/journal/why-free-seo-audits-are-sales-pitches).",
+        "**What you're paying for is judgement and sequencing.** Four hundred tool-flagged issues sorted into eleven that matter, in an order that accounts for your dev capacity. That's the part no tool does, and it's the part that decides whether anything ships."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much does an SEO audit cost in India?",
+      "a": "Paid audits in India range from about ₹15,000 for a tool-led report to ₹2,00,000 for a large ecommerce or multi-language site. Ours is fixed at ₹40,000 ex-GST for a single domain in one language, delivered in ten working days, with the fee credited if you start a retainer within 60 days."
+    },
+    {
+      "q": "How long does an SEO audit take?",
+      "a": "Ten working days from the day we have full access — Search Console, GA4, CMS, and ideally thirty days of server logs. The clock starts at access, not at signature, because waiting on a hosting provider is the single most common cause of delay."
+    },
+    {
+      "q": "Is a free SEO audit worth anything?",
+      "a": "As a lead magnet it's honest enough; as a work plan it isn't. A free audit is usually a tool export with a logo on it, generated in under an hour and weighted toward alarm. It won't include log analysis, cannibalisation mapping, or an effort estimate for a single fix."
+    },
+    {
+      "q": "Do I need an audit before starting an SEO retainer?",
+      "a": "Not with us — the first three weeks of a retainer include the same diagnosis. The standalone audit exists for people who want a second opinion, a fixed-scope deliverable for a board, or a low-risk way to test an agency before committing to a quarter."
+    },
+    {
+      "q": "Will the audit tell my developer exactly what to change?",
+      "a": "That's the format it's built for. Every row names the affected URLs, the change required, the estimated effort in hours, and who owns it. Where a fix is code, we describe it at the level a developer can quote; where it's CMS or tag manager, we describe the exact field."
+    },
+    {
+      "q": "Can I take the audit to a different agency?",
+      "a": "Yes, and the artefacts are built for that — crawl exports, log parses, the URL map and the baseline sheet are all handed over in raw form. No proprietary format, no dependency on us. If it's useful to somebody else, it was a good audit."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "what-is-an-seo-audit" },
+    { "type": "journal", "slug": "what-an-seo-audit-should-actually-find" },
+    { "type": "services", "slug": "technical-seo-services" },
+    { "type": "compare", "slug": "retainer-vs-project" },
+    { "type": "cost", "slug": "seo-agency-cost" },
+    { "type": "glossary", "slug": "log-file-analysis" }
+  ]
+}

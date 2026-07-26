@@ -1,0 +1,2342 @@
+[
+  {
+    "slug": "canonical-tag",
+    "type": "glossary",
+    "primaryKeyword": "canonical tag",
+    "secondaryKeywords": [
+      "canonical tag in seo",
+      "rel canonical",
+      "what is a canonical tag",
+      "canonical url meaning",
+      "how to add canonical tag in wordpress"
+    ],
+    "h1": "Canonical tag",
+    "metaTitle": "Canonical Tag: What It Is and How to Use It",
+    "metaDescription": "A canonical tag tells Google which version of a page is the original. See the exact syntax, the three errors we find most often, and how to check yours.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 1,
+    "angle": "Leads with the literal one-line HTML and the three canonical failures we find on almost every Indian Shopify or WooCommerce store: canonical pointing at the homepage, canonical inside body instead of head, and canonical fighting a noindex.",
+    "mustCover": [
+      "exact rel=canonical syntax and where it belongs",
+      "self-referencing canonicals",
+      "canonical vs 301 redirect",
+      "why Google ignores a canonical hint",
+      "checking the Google-selected canonical in Search Console"
+    ]
+  },
+  {
+    "slug": "canonicalization",
+    "type": "glossary",
+    "primaryKeyword": "canonicalization in seo",
+    "secondaryKeywords": [
+      "canonicalization meaning",
+      "url canonicalization",
+      "www vs non-www seo",
+      "trailing slash duplicate urls",
+      "canonical keywords"
+    ],
+    "h1": "Canonicalization",
+    "metaTitle": "Canonicalization in SEO, Explained Simply",
+    "metaDescription": "Canonicalization is how Google picks one URL when several serve the same page. Learn the four duplicate patterns that split rankings, and how to fix each.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 2,
+    "angle": "Covers the process, not the tag: the four URL variants (www, https, trailing slash, tracking parameters) that quietly create four copies of your homepage, and the server-level fix order.",
+    "mustCover": [
+      "what canonicalization means beyond the tag",
+      "the four common duplicate URL patterns",
+      "server redirects vs canonical hints",
+      "URL parameters and session IDs",
+      "how signal splitting shows up in Search Console"
+    ]
+  },
+  {
+    "slug": "indexing",
+    "type": "glossary",
+    "primaryKeyword": "indexing in seo",
+    "secondaryKeywords": [
+      "what is indexing in seo",
+      "crawled currently not indexed",
+      "how to get indexed on google",
+      "index coverage report",
+      "discovered not indexed"
+    ],
+    "h1": "Indexing",
+    "metaTitle": "Indexing in SEO: How Pages Get Into Google",
+    "metaDescription": "Indexing is Google storing your page so it can rank. Here is the crawl-render-index path and why Crawled - currently not indexed keeps showing up.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 1,
+    "angle": "Built around the Page Indexing report an Indian founder actually opens: decodes the six statuses Google shows and what each one means you should do next, this week.",
+    "mustCover": [
+      "crawl, render, index as three separate steps",
+      "Crawled - currently not indexed vs Discovered - currently not indexed",
+      "URL Inspection and Request Indexing limits",
+      "why new sites take weeks",
+      "indexing is not ranking"
+    ]
+  },
+  {
+    "slug": "crawl-budget",
+    "type": "glossary",
+    "primaryKeyword": "crawl budget",
+    "secondaryKeywords": [
+      "crawl budget seo",
+      "crawl rate limit",
+      "crawl demand",
+      "crawl budget optimization",
+      "does crawl budget matter"
+    ],
+    "h1": "Crawl budget",
+    "metaTitle": "Crawl Budget: What It Is and Who Needs to Care",
+    "metaDescription": "Crawl budget is how many URLs Googlebot will fetch from your site. Most sites under 10,000 pages do not have a problem. Here is how to tell if yours does.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 2,
+    "angle": "Spends half the page arguing you probably do not have a crawl budget problem, then gives the two situations where you genuinely do: a 10,000+ SKU catalogue and a faceted filter system generating infinite URLs.",
+    "mustCover": [
+      "crawl rate limit vs crawl demand",
+      "the rough page-count threshold where it starts to matter",
+      "faceted navigation and parameter URL explosion",
+      "Crawl Stats report in Search Console",
+      "what actually frees up crawl budget"
+    ]
+  },
+  {
+    "slug": "robots-txt",
+    "type": "glossary",
+    "primaryKeyword": "robots.txt",
+    "secondaryKeywords": [
+      "robots txt file seo",
+      "disallow robots txt",
+      "robots.txt example",
+      "how to create robots.txt",
+      "robots txt vs noindex"
+    ],
+    "h1": "Robots.txt",
+    "metaTitle": "Robots.txt: What It Does and What It Doesn't",
+    "metaDescription": "Robots.txt tells crawlers where they may go. It controls crawling, not indexing, and that single distinction breaks a surprising number of Indian sites.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 1,
+    "angle": "Anchored on one real failure mode: the developer who added Disallow: / on staging and shipped it to production, plus a copy-paste starter file for a Next.js site.",
+    "mustCover": [
+      "file location and syntax basics",
+      "User-agent, Disallow, Allow, Sitemap directives",
+      "why blocked URLs can still appear in search",
+      "AI crawler user-agents like GPTBot",
+      "how to test it in Search Console"
+    ]
+  },
+  {
+    "slug": "xml-sitemap",
+    "type": "glossary",
+    "primaryKeyword": "xml sitemap",
+    "secondaryKeywords": [
+      "sitemap in seo",
+      "how to create xml sitemap",
+      "sitemap index file",
+      "submit sitemap to google",
+      "sitemap.xml example"
+    ],
+    "h1": "XML sitemap",
+    "metaTitle": "XML Sitemap: What It Is and How to Build One",
+    "metaDescription": "An XML sitemap lists the URLs you want Google to find. Learn the 50,000-URL limit, honest lastmod dates, and why a sitemap never guarantees indexing.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 1,
+    "angle": "Treats the sitemap as a diagnostic, not a formality: split it by page type so the Search Console submitted-vs-indexed ratio tells you exactly which template Google dislikes.",
+    "mustCover": [
+      "50,000 URL and 50MB limits, sitemap index files",
+      "lastmod accuracy and why lying hurts",
+      "which URLs to exclude",
+      "splitting sitemaps by page type for diagnostics",
+      "submitting and reading the sitemap report"
+    ]
+  },
+  {
+    "slug": "hreflang",
+    "type": "glossary",
+    "primaryKeyword": "hreflang",
+    "secondaryKeywords": [
+      "hreflang tag",
+      "hreflang implementation",
+      "en-in hreflang",
+      "hreflang x-default",
+      "international seo hreflang"
+    ],
+    "h1": "Hreflang",
+    "metaTitle": "Hreflang: Language and Country Tags Explained",
+    "metaDescription": "Hreflang tells Google which language and country version of a page to show. Use en-IN, not en-india, and keep every tag reciprocal or it fails silently.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 2,
+    "angle": "Written for the Indian SaaS or D2C brand running one site for India, the Gulf and the US: shows a working en-IN, en-AE, en-US, x-default set and the reciprocity rule that breaks it.",
+    "mustCover": [
+      "correct language-region codes including en-IN",
+      "the reciprocal linking requirement",
+      "x-default and when to use it",
+      "head tags vs sitemap vs HTTP header",
+      "hreflang errors in Search Console"
+    ]
+  },
+  {
+    "slug": "301-redirect",
+    "type": "glossary",
+    "primaryKeyword": "301 redirect",
+    "secondaryKeywords": [
+      "301 vs 302 redirect",
+      "permanent redirect seo",
+      "redirect chain",
+      "how to set up 301 redirect",
+      "does 301 pass link juice"
+    ],
+    "h1": "301 redirect",
+    "metaTitle": "301 Redirect: When to Use It and When Not To",
+    "metaDescription": "A 301 redirect permanently sends one URL to another and passes its ranking signals. Learn when to use 301 over 302, and how to avoid redirect chains.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 1,
+    "angle": "Framed around a site migration: the redirect map spreadsheet, the rule that every old URL goes to its closest equivalent rather than the homepage, and how long to keep redirects live.",
+    "mustCover": [
+      "301 vs 302 vs 307 and when each applies",
+      "redirect chains and loops",
+      "one-to-one mapping during migrations",
+      "redirecting to the homepage as a soft 404",
+      "how long to keep old redirects"
+    ]
+  },
+  {
+    "slug": "404-error",
+    "type": "glossary",
+    "primaryKeyword": "404 error",
+    "secondaryKeywords": [
+      "404 not found seo",
+      "soft 404",
+      "410 vs 404",
+      "do 404 errors hurt seo",
+      "custom 404 page"
+    ],
+    "h1": "404 error",
+    "metaTitle": "404 Error: What It Means and How to Handle It",
+    "metaDescription": "A 404 error means the URL does not exist. It is not a penalty. Here is how to decide which 404s to redirect, which to restore, and which to simply leave.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 2,
+    "angle": "Gives a triage rule instead of a lecture: redirect a 404 only if it has backlinks or traffic, otherwise leave it, and shows why a site with 3,000 clean 404s can still rank fine.",
+    "mustCover": [
+      "404 vs soft 404 vs 410",
+      "why 404s are not a ranking penalty",
+      "triaging which 404s deserve a redirect",
+      "designing a useful 404 page",
+      "finding 404s with backlinks"
+    ]
+  },
+  {
+    "slug": "core-web-vitals",
+    "type": "glossary",
+    "primaryKeyword": "core web vitals",
+    "secondaryKeywords": [
+      "core web vitals 2026",
+      "page experience signals",
+      "field data vs lab data",
+      "core web vitals report",
+      "do core web vitals affect ranking"
+    ],
+    "h1": "Core Web Vitals",
+    "metaTitle": "Core Web Vitals: LCP, INP and CLS Explained",
+    "metaDescription": "Core Web Vitals are Google's three page-experience metrics: LCP, INP and CLS. See the 2026 thresholds and what they mean on an Indian 4G connection.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 1,
+    "angle": "Explains the 75th-percentile field-data rule that makes PageSpeed Insights scores misleading, and why a site that passes on office fibre fails on a Jio connection in Indore.",
+    "mustCover": [
+      "the three metrics and their 2026 thresholds",
+      "field data (CrUX) vs lab data",
+      "the 75th percentile rule",
+      "how much CWV actually affects rankings",
+      "mobile vs desktop reporting"
+    ]
+  },
+  {
+    "slug": "largest-contentful-paint",
+    "type": "glossary",
+    "primaryKeyword": "largest contentful paint",
+    "secondaryKeywords": [
+      "lcp meaning",
+      "how to improve lcp",
+      "lcp under 2.5 seconds",
+      "what causes slow lcp",
+      "lcp element"
+    ],
+    "h1": "Largest Contentful Paint (LCP)",
+    "metaTitle": "Largest Contentful Paint (LCP), Explained",
+    "metaDescription": "Largest Contentful Paint measures how fast your main content appears. Google wants under 2.5 seconds. Here is what breaks it and the order to fix things.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 2,
+    "angle": "Breaks LCP into its four sub-parts (TTFB, resource load delay, load time, render delay) so you fix the right one, and shows why an uncompressed hero banner is the usual Indian culprit.",
+    "mustCover": [
+      "the 2.5 second good threshold",
+      "identifying your LCP element",
+      "the four LCP sub-parts",
+      "image formats, sizing and preloading",
+      "TTFB, hosting and CDN choices for Indian traffic"
+    ]
+  },
+  {
+    "slug": "interaction-to-next-paint",
+    "type": "glossary",
+    "primaryKeyword": "interaction to next paint",
+    "secondaryKeywords": [
+      "inp metric",
+      "inp vs fid",
+      "how to improve inp",
+      "inp 200ms",
+      "what causes high inp"
+    ],
+    "h1": "Interaction to Next Paint (INP)",
+    "metaTitle": "Interaction to Next Paint (INP), Explained",
+    "metaDescription": "Interaction to Next Paint measures how fast your page answers a tap. Target is under 200ms. Third-party tags and chat widgets cause most of the damage.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 2,
+    "angle": "Names the specific scripts that wreck INP on Indian sites: Tag Manager containers with a dozen tags, live-chat widgets, exit-intent popups and review apps, with a load-order fix.",
+    "mustCover": [
+      "INP replaced FID in March 2024",
+      "the 200ms good threshold",
+      "long tasks and main-thread blocking",
+      "third-party scripts and tag managers",
+      "measuring INP with real user data"
+    ]
+  },
+  {
+    "slug": "cumulative-layout-shift",
+    "type": "glossary",
+    "primaryKeyword": "cumulative layout shift",
+    "secondaryKeywords": [
+      "cls meaning",
+      "how to fix cls",
+      "cls 0.1",
+      "layout shift causes",
+      "what is a good cls score"
+    ],
+    "h1": "Cumulative Layout Shift (CLS)",
+    "metaTitle": "Cumulative Layout Shift (CLS), Explained",
+    "metaDescription": "Cumulative Layout Shift scores how much your page jumps while loading. Keep it under 0.1. Ads, late fonts and sticky offer bars cause most of the problem.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 3,
+    "angle": "The only Core Web Vital that costs you money directly: shows how a shifting layout makes users mis-tap Add to Cart, and gives the width and height attributes fix in one line.",
+    "mustCover": [
+      "the 0.1 good threshold and how the score is calculated",
+      "images without width and height",
+      "web fonts and FOIT/FOUT",
+      "injected banners, ads and cookie bars",
+      "reserving space with CSS aspect-ratio"
+    ]
+  },
+  {
+    "slug": "schema-markup",
+    "type": "glossary",
+    "primaryKeyword": "schema markup",
+    "secondaryKeywords": [
+      "structured data seo",
+      "json-ld schema",
+      "rich results",
+      "schema types",
+      "how to add schema markup"
+    ],
+    "h1": "Schema markup",
+    "metaTitle": "Schema Markup: What It Is and Which Types Matter",
+    "metaDescription": "Schema markup is code that tells search engines what your content is. Learn the JSON-LD types that still earn rich results in 2026, and which ones retired.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 1,
+    "angle": "Cuts the schema list down to the five types that still do something in 2026 (Organization, Article, Product, LocalBusiness, BreadcrumbList) and names the ones Google retired, including FAQ rich results.",
+    "mustCover": [
+      "JSON-LD as the recommended format",
+      "the schema types that still earn rich results",
+      "retired and deprecated types",
+      "schema as an entity signal for AI search",
+      "validating with the Rich Results Test"
+    ]
+  },
+  {
+    "slug": "log-file-analysis",
+    "type": "glossary",
+    "primaryKeyword": "log file analysis",
+    "secondaryKeywords": [
+      "seo log file analysis",
+      "googlebot crawl logs",
+      "server log seo",
+      "log analyzer seo",
+      "verify googlebot"
+    ],
+    "h1": "Log file analysis",
+    "metaTitle": "Log File Analysis for SEO, Explained",
+    "metaDescription": "Log file analysis reads server logs to see what Googlebot actually crawled. It is the only fully accurate bot data. Here is how to run one, step by step.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 3,
+    "angle": "Gets specific about access: how to pull logs off Vercel, Cloudflare or a shared cPanel host in India, and the three questions a single week of logs answers that no crawler can.",
+    "mustCover": [
+      "what a log line contains",
+      "getting logs from common Indian hosting setups",
+      "verifying real Googlebot by reverse DNS",
+      "crawl frequency by page type",
+      "spotting wasted crawl on parameter URLs"
+    ]
+  },
+  {
+    "slug": "orphan-page",
+    "type": "glossary",
+    "primaryKeyword": "orphan page",
+    "secondaryKeywords": [
+      "orphan pages seo",
+      "how to find orphan pages",
+      "pages with no internal links",
+      "orphan url",
+      "fix orphan pages"
+    ],
+    "h1": "Orphan page",
+    "metaTitle": "Orphan Page: What It Is and How to Find One",
+    "metaDescription": "An orphan page has no internal links pointing to it, so Google struggles to find it. Here is the crawl-plus-sitemap-plus-GSC method that surfaces them.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 3,
+    "angle": "Explains why a crawler alone can never find orphan pages by definition, then walks the three-list comparison (crawl, sitemap, Search Console URLs) that actually does.",
+    "mustCover": [
+      "why crawlers cannot find orphans on their own",
+      "combining crawl, sitemap and Search Console data",
+      "common causes: old campaigns, deleted category pages, CMS templates",
+      "deciding to link, redirect or remove",
+      "orphan products on ecommerce catalogues"
+    ]
+  },
+  {
+    "slug": "broken-links",
+    "type": "glossary",
+    "primaryKeyword": "broken links",
+    "secondaryKeywords": [
+      "how to fix broken links in seo",
+      "broken link checker",
+      "internal broken links",
+      "dead links seo",
+      "broken backlinks"
+    ],
+    "h1": "Broken links",
+    "metaTitle": "Broken Links: How to Find and Fix Them",
+    "metaDescription": "Broken links point to URLs that return an error. Learn how to find them, which ones to fix first, and how to reclaim value from dead backlinks.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 2,
+    "angle": "Separates the two jobs everyone conflates: broken internal links you fix by editing, and broken inbound backlinks you fix with a redirect to recover authority you already earned.",
+    "mustCover": [
+      "internal vs outbound vs inbound broken links",
+      "free ways to find them",
+      "prioritising by traffic and link value",
+      "reclaiming backlinks pointing at dead URLs",
+      "how often to re-check"
+    ]
+  },
+  {
+    "slug": "noindex",
+    "type": "glossary",
+    "primaryKeyword": "noindex",
+    "secondaryKeywords": [
+      "noindex tag",
+      "meta robots noindex",
+      "noindex vs robots.txt",
+      "how to noindex a page",
+      "noindex follow"
+    ],
+    "h1": "Noindex",
+    "metaTitle": "Noindex: What It Does and When to Use It",
+    "metaDescription": "Noindex tells Google to keep a page out of search results. It only works if the page stays crawlable, which is why blocking it in robots.txt backfires.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 3,
+    "angle": "Built on the single most common conflict we find in audits: a page carrying both a noindex tag and a robots.txt disallow, so Google never reads the tag and the URL stays in the index.",
+    "mustCover": [
+      "meta robots vs X-Robots-Tag",
+      "the noindex plus disallow conflict",
+      "noindex, follow and whether it still works",
+      "which pages deserve noindex",
+      "how long removal takes"
+    ]
+  },
+  {
+    "slug": "javascript-seo",
+    "type": "glossary",
+    "primaryKeyword": "javascript seo",
+    "secondaryKeywords": [
+      "client side rendering seo",
+      "server side rendering seo",
+      "google render queue",
+      "react seo",
+      "next.js seo"
+    ],
+    "h1": "JavaScript SEO",
+    "metaTitle": "JavaScript SEO: What It Is and Why It Breaks",
+    "metaDescription": "JavaScript SEO makes sure Google can render and index content your code builds in the browser. Learn the render queue, CSR risks and Next.js specifics.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 3,
+    "angle": "Written for teams shipping React or Next.js: shows the difference between what View Source and the URL Inspection rendered HTML contain, and why client-side content can sit unindexed for weeks.",
+    "mustCover": [
+      "crawl, render, index and the render queue",
+      "CSR vs SSR vs static generation",
+      "checking rendered HTML in URL Inspection",
+      "links that only work as onclick handlers",
+      "hydration and content parity"
+    ]
+  },
+  {
+    "slug": "mobile-first-indexing",
+    "type": "glossary",
+    "primaryKeyword": "mobile first indexing",
+    "secondaryKeywords": [
+      "mobile first indexing meaning",
+      "mobile vs desktop indexing",
+      "responsive design seo",
+      "mobile usability",
+      "does google use mobile version"
+    ],
+    "h1": "Mobile-first indexing",
+    "metaTitle": "Mobile-First Indexing: What It Means for You",
+    "metaDescription": "Mobile-first indexing means Google ranks your site using the mobile version. With most Indian traffic arriving on phones, content parity is not optional.",
+    "intent": "informational",
+    "cluster": "technical-seo",
+    "priority": 3,
+    "angle": "Focuses on the parity trap Indian sites fall into: content hidden behind mobile accordions, tables stripped from the mobile view, and schema present only on desktop.",
+    "mustCover": [
+      "what Google indexes and why",
+      "content parity between mobile and desktop",
+      "hidden or truncated mobile content",
+      "images, alt text and schema on mobile",
+      "testing with the mobile user-agent"
+    ]
+  },
+  {
+    "slug": "title-tag",
+    "type": "glossary",
+    "primaryKeyword": "title tag",
+    "secondaryKeywords": [
+      "seo title",
+      "title tag length",
+      "how to write a title tag",
+      "does google rewrite titles",
+      "title tag vs h1"
+    ],
+    "h1": "Title tag",
+    "metaTitle": "Title Tag: What It Is and How to Write One",
+    "metaDescription": "The title tag is the clickable headline Google shows in results. Learn the pixel width that matters more than character count, and how to earn more clicks.",
+    "intent": "informational",
+    "cluster": "on-page",
+    "priority": 1,
+    "angle": "Replaces the useless 60-character myth with the real 580-pixel truncation limit, and shows five title formulas with the click-through rate logic behind each.",
+    "mustCover": [
+      "pixel width vs character count",
+      "why Google rewrites titles and how to reduce it",
+      "brand suffix conventions",
+      "title formulas for service, location and glossary pages",
+      "keyword placement without stuffing"
+    ]
+  },
+  {
+    "slug": "meta-description",
+    "type": "glossary",
+    "primaryKeyword": "meta description",
+    "secondaryKeywords": [
+      "meta description length",
+      "how to write meta description",
+      "is meta description a ranking factor",
+      "meta description example",
+      "google rewrites meta description"
+    ],
+    "h1": "Meta description",
+    "metaTitle": "Meta Description: What It Is and How to Write It",
+    "metaDescription": "A meta description is the summary under your result. Google rewrites it most of the time. Here is when yours survives and how to write one that gets used.",
+    "intent": "informational",
+    "cluster": "on-page",
+    "priority": 1,
+    "angle": "Starts from the uncomfortable fact that Google rewrites the majority of meta descriptions, then explains the query-match condition that decides when yours is kept.",
+    "mustCover": [
+      "not a ranking factor, but a click factor",
+      "the 140-155 character sweet spot",
+      "why Google swaps in its own snippet",
+      "writing for the query, not the page",
+      "pages where you should skip it"
+    ]
+  },
+  {
+    "slug": "h1-tag",
+    "type": "glossary",
+    "primaryKeyword": "h1 tag",
+    "secondaryKeywords": [
+      "h1 seo",
+      "how many h1 tags per page",
+      "h1 vs h2",
+      "heading structure seo",
+      "h1 best practices"
+    ],
+    "h1": "H1 tag",
+    "metaTitle": "H1 Tag: What It Is and How It Differs From Title",
+    "metaDescription": "The H1 is the main heading on a page. Learn how many you need, how it should differ from your title tag, and how headings map to page structure.",
+    "intent": "informational",
+    "cluster": "on-page",
+    "priority": 2,
+    "angle": "Answers the one question people actually have (can I use more than one H1) with the HTML5 answer plus the practical answer, and shows a heading outline for a 1,500-word page.",
+    "mustCover": [
+      "one H1 vs multiple H1s in HTML5",
+      "H1 versus title tag wording",
+      "H2 and H3 hierarchy",
+      "headings as an accessibility feature",
+      "headings and featured snippet eligibility"
+    ]
+  },
+  {
+    "slug": "alt-text",
+    "type": "glossary",
+    "primaryKeyword": "alt text",
+    "secondaryKeywords": [
+      "image alt text seo",
+      "alt tag",
+      "how to write alt text",
+      "decorative image alt",
+      "alt text length"
+    ],
+    "h1": "Alt text",
+    "metaTitle": "Alt Text: What It Is and How to Write It",
+    "metaDescription": "Alt text describes an image for screen readers and search engines. Learn how long it should be, when to leave it empty, and why product photos need it.",
+    "intent": "informational",
+    "cluster": "on-page",
+    "priority": 2,
+    "angle": "Frames alt text as accessibility first and SEO second, with a before-and-after table of ten real ecommerce product images rewritten from keyword mush into plain description.",
+    "mustCover": [
+      "accessibility as the primary purpose",
+      "empty alt for decorative images",
+      "practical length guidance",
+      "alt text on ecommerce product photos",
+      "alt text on Instagram and social platforms"
+    ]
+  },
+  {
+    "slug": "internal-linking",
+    "type": "glossary",
+    "primaryKeyword": "internal linking",
+    "secondaryKeywords": [
+      "internal links seo",
+      "internal linking strategy",
+      "how many internal links per page",
+      "contextual internal links",
+      "internal link structure"
+    ],
+    "h1": "Internal linking",
+    "metaTitle": "Internal Linking: What It Is and How to Do It",
+    "metaDescription": "Internal linking connects your own pages and moves ranking signals between them. Aim for 3-8 contextual links per 1,000 words. Here is how to pick them.",
+    "intent": "informational",
+    "cluster": "on-page",
+    "priority": 1,
+    "angle": "The cheapest ranking lever there is, because it needs no outreach and no budget: gives a link-density target, a three-click depth rule, and a monthly 30-minute internal linking routine.",
+    "mustCover": [
+      "how internal links pass signals",
+      "contextual links vs navigation links",
+      "3-8 links per 1,000 words as a working target",
+      "click depth and the three-click rule",
+      "linking new pages from existing strong pages"
+    ]
+  },
+  {
+    "slug": "anchor-text",
+    "type": "glossary",
+    "primaryKeyword": "anchor text",
+    "secondaryKeywords": [
+      "anchor text seo",
+      "exact match anchor text",
+      "anchor text ratio",
+      "types of anchor text",
+      "branded anchor text"
+    ],
+    "h1": "Anchor text",
+    "metaTitle": "Anchor Text: What It Is and How to Choose It",
+    "metaDescription": "Anchor text is the clickable wording in a link, and it tells Google what the target page covers. Learn safe ratios, exact-match risk and internal naming.",
+    "intent": "informational",
+    "cluster": "on-page",
+    "priority": 2,
+    "angle": "Splits the rules that everyone blurs: you can be deliberate with internal anchors, but an unnatural external anchor ratio is one of the clearest paid-link fingerprints Google has.",
+    "mustCover": [
+      "the anchor text types: exact, partial, branded, naked URL, generic",
+      "internal anchors versus external anchors",
+      "what an unnatural ratio looks like",
+      "click here and read more as wasted anchors",
+      "auditing your inbound anchor spread"
+    ]
+  },
+  {
+    "slug": "keyword-cannibalization",
+    "type": "glossary",
+    "primaryKeyword": "keyword cannibalization",
+    "secondaryKeywords": [
+      "cannibalization in seo",
+      "keyword cannibalisation fix",
+      "two pages ranking for same keyword",
+      "content cannibalization",
+      "how to find keyword cannibalization"
+    ],
+    "h1": "Keyword cannibalization",
+    "metaTitle": "Keyword Cannibalization: Spot It and Fix It",
+    "metaDescription": "Keyword cannibalization is two of your pages fighting for one query. It splits signals. Here is how to spot it in Search Console and merge pages correctly.",
+    "intent": "informational",
+    "cluster": "on-page",
+    "priority": 1,
+    "angle": "Gives the actual diagnostic: filter a query in Search Console, look for URL swapping across weeks, and only then decide between merge, differentiate or canonicalise. Intent overlap is the test, not keyword overlap.",
+    "mustCover": [
+      "intent overlap versus keyword overlap",
+      "finding URL swapping in Search Console",
+      "merge, differentiate or canonicalise decision tree",
+      "301 redirecting the weaker page",
+      "how blog archives and tag pages create it"
+    ]
+  },
+  {
+    "slug": "url-slug",
+    "type": "glossary",
+    "primaryKeyword": "url slug",
+    "secondaryKeywords": [
+      "seo friendly url",
+      "url structure seo",
+      "permalink structure",
+      "should i change my url",
+      "url best practices"
+    ],
+    "h1": "URL slug",
+    "metaTitle": "URL Slug: What It Is and How to Write One",
+    "metaDescription": "A URL slug is the readable part of a web address after the domain. Short, lowercase, hyphenated. Here is when renaming one is worth the redirect risk.",
+    "intent": "informational",
+    "cluster": "on-page",
+    "priority": 3,
+    "angle": "Ends with a rule most guides dodge: do not rename a slug on a page that already ranks unless the current one is actively misleading, because the redirect costs more than the tidiness gains.",
+    "mustCover": [
+      "slug conventions: lowercase, hyphens, no stop words",
+      "dates and category folders in URLs",
+      "when renaming is worth it",
+      "handling Hindi or transliterated terms",
+      "URL length and readability"
+    ]
+  },
+  {
+    "slug": "breadcrumb-navigation",
+    "type": "glossary",
+    "primaryKeyword": "breadcrumb navigation",
+    "secondaryKeywords": [
+      "breadcrumbs seo",
+      "breadcrumb schema",
+      "breadcrumblist structured data",
+      "types of breadcrumbs",
+      "breadcrumb best practices"
+    ],
+    "h1": "Breadcrumb navigation",
+    "metaTitle": "Breadcrumb Navigation: What It Is and Why It Helps",
+    "metaDescription": "Breadcrumb navigation shows where a page sits inside your site. It helps users, internal linking and search results. Here is the markup and common errors.",
+    "intent": "informational",
+    "cluster": "on-page",
+    "priority": 3,
+    "angle": "Makes the case for breadcrumbs as an internal linking system rather than a UI decoration: on a 500-URL site they add hundreds of hierarchy-aware links for free.",
+    "mustCover": [
+      "hierarchy, attribute and history-based breadcrumbs",
+      "BreadcrumbList structured data",
+      "breadcrumbs replacing URL paths in results",
+      "breadcrumbs as automatic internal links",
+      "mobile breadcrumb patterns"
+    ]
+  },
+  {
+    "slug": "on-page-seo-meaning",
+    "type": "glossary",
+    "primaryKeyword": "on page seo",
+    "secondaryKeywords": [
+      "on page seo meaning",
+      "what is on page optimization",
+      "on page seo checklist",
+      "on page vs off page seo",
+      "on page seo factors"
+    ],
+    "h1": "On-page SEO",
+    "metaTitle": "On-Page SEO: What It Covers, in Plain English",
+    "metaDescription": "On-page SEO is everything you control on the page itself: content, headings, links and markup. Here is the 12-point checklist we run before writing a word.",
+    "intent": "informational",
+    "cluster": "on-page",
+    "priority": 1,
+    "angle": "The umbrella page that sequences the work: a numbered 12-point checklist in the order we actually do it, with each step linking to its own glossary entry.",
+    "mustCover": [
+      "what counts as on-page versus technical and off-page",
+      "the 12-point on-page checklist",
+      "content quality as an on-page factor",
+      "on-page changes that move rankings fastest",
+      "how often to re-optimise a page"
+    ]
+  },
+  {
+    "slug": "keyword-stuffing",
+    "type": "glossary",
+    "primaryKeyword": "keyword stuffing",
+    "secondaryKeywords": [
+      "keyword density seo",
+      "over optimization penalty",
+      "keyword stuffing example",
+      "how many times to use a keyword",
+      "keyword stuffing penalty"
+    ],
+    "h1": "Keyword stuffing",
+    "metaTitle": "Keyword Stuffing: What It Is and Why It Fails",
+    "metaDescription": "Keyword stuffing is repeating a term unnaturally to game rankings. It has not worked since 2012. Here is what it looks like and what to do instead now.",
+    "intent": "informational",
+    "cluster": "on-page",
+    "priority": 3,
+    "angle": "Kills the keyword density myth with a direct answer: there is no target percentage, and the pages still doing it in India are usually following a 2014 blog post or a plugin score.",
+    "mustCover": [
+      "why keyword density targets are fiction",
+      "hidden text and footer keyword lists",
+      "city-name stuffing on Indian service pages",
+      "what SEO plugin green lights actually measure",
+      "writing for entity coverage instead"
+    ]
+  },
+  {
+    "slug": "backlink",
+    "type": "glossary",
+    "primaryKeyword": "backlink",
+    "secondaryKeywords": [
+      "what are backlinks",
+      "backlinks in seo",
+      "are backlinks important for seo",
+      "why backlinks are important",
+      "types of backlinks"
+    ],
+    "h1": "Backlink",
+    "metaTitle": "Backlink: What It Is and What Makes One Count",
+    "metaDescription": "A backlink is a link from another site to yours. Google still counts them among its top signals. Learn what makes one valuable and what makes one useless.",
+    "intent": "informational",
+    "cluster": "off-page",
+    "priority": 1,
+    "angle": "Answers the definition and then the question every Indian founder asks next: are they still worth paying for in 2026, with the relevance-over-volume evidence and what a real link costs here.",
+    "mustCover": [
+      "definition and how links pass authority",
+      "relevance and topical fit beating raw volume",
+      "editorial versus paid and directory links",
+      "backlinks in 2026 relative to content and topical authority",
+      "how many backlinks a new Indian site needs"
+    ]
+  },
+  {
+    "slug": "backlink-profile",
+    "type": "glossary",
+    "primaryKeyword": "backlink profile",
+    "secondaryKeywords": [
+      "what is a backlink profile",
+      "backlink profile analysis",
+      "healthy link profile",
+      "link profile audit",
+      "backlink profile checker"
+    ],
+    "h1": "Backlink profile",
+    "metaTitle": "Backlink Profile: What It Is and How to Read It",
+    "metaDescription": "Your backlink profile is every link pointing at your domain, taken together. Learn to read it: referring domains, anchor spread, topical fit and red flags.",
+    "intent": "informational",
+    "cluster": "off-page",
+    "priority": 2,
+    "angle": "A reading guide rather than a definition: the six columns to check in any backlink export and the pattern that says a previous agency bought links, so you know before you sign the next one.",
+    "mustCover": [
+      "the metrics that make up a profile",
+      "anchor text distribution as a health check",
+      "referring domain growth curves",
+      "spotting a bought-link pattern from a previous vendor",
+      "comparing your profile against two competitors"
+    ]
+  },
+  {
+    "slug": "domain-authority",
+    "type": "glossary",
+    "primaryKeyword": "domain authority",
+    "secondaryKeywords": [
+      "what is domain authority",
+      "da score meaning",
+      "how to increase domain authority",
+      "is domain authority a ranking factor",
+      "good da score"
+    ],
+    "h1": "Domain Authority (DA)",
+    "metaTitle": "Domain Authority (DA): What It Is and Isn't",
+    "metaDescription": "Domain Authority is Moz's 1-100 prediction of ranking strength. Google does not use it. Here is what DA is good for and where Indian founders misread it.",
+    "intent": "informational",
+    "cluster": "off-page",
+    "priority": 1,
+    "angle": "Leads with the sentence most vendors skip: Google does not use DA at all. Then explains the only legitimate use, comparing two sites on the same scale, and why DA 40 guest post offers are priced on a number Google ignores.",
+    "mustCover": [
+      "DA is a Moz metric, not a Google signal",
+      "the 1-100 logarithmic scale",
+      "what a realistic DA looks like for a new Indian site",
+      "why DA-based link pricing is a red flag",
+      "how DA differs from topical authority"
+    ]
+  },
+  {
+    "slug": "domain-rating",
+    "type": "glossary",
+    "primaryKeyword": "domain rating",
+    "secondaryKeywords": [
+      "dr score ahrefs",
+      "what is dr in seo",
+      "domain rating vs domain authority",
+      "how to increase domain rating",
+      "good dr score"
+    ],
+    "h1": "Domain Rating (DR)",
+    "metaTitle": "Domain Rating (DR): What Ahrefs Is Measuring",
+    "metaDescription": "Domain Rating is Ahrefs' 0-100 score built purely on backlinks. It moves differently from DA. Here is how to read DR without letting a vendor mislead you.",
+    "intent": "informational",
+    "cluster": "off-page",
+    "priority": 2,
+    "angle": "Explains the mechanic that makes DR gameable in a way DA is not: DR counts only links, so a site with 200 junk links can show DR 45 while ranking for nothing.",
+    "mustCover": [
+      "what DR measures and what it ignores",
+      "why DR and DA disagree",
+      "how DR can be inflated cheaply",
+      "checking traffic alongside DR",
+      "using DR as a filter, not a target"
+    ]
+  },
+  {
+    "slug": "nofollow-link",
+    "type": "glossary",
+    "primaryKeyword": "nofollow link",
+    "secondaryKeywords": [
+      "nofollow vs dofollow",
+      "rel nofollow",
+      "sponsored and ugc link attributes",
+      "do nofollow links help seo",
+      "when to use nofollow"
+    ],
+    "h1": "Nofollow link",
+    "metaTitle": "Nofollow Link: What It Is and When to Use It",
+    "metaDescription": "A nofollow link carries an attribute telling Google not to pass ranking credit. Since 2019 it is a hint, not a rule. Here is when to use one.",
+    "intent": "informational",
+    "cluster": "off-page",
+    "priority": 2,
+    "angle": "Covers the 2019 change most Indian guides still get wrong: nofollow became a hint, and rel=sponsored and rel=ugc arrived, which matters for anyone running paid posts or an open comment section.",
+    "mustCover": [
+      "rel=nofollow, sponsored and ugc",
+      "the 2019 shift from directive to hint",
+      "whether nofollow links have any value",
+      "disclosing paid links correctly",
+      "nofollowing outbound links you cannot vouch for"
+    ]
+  },
+  {
+    "slug": "link-building-meaning",
+    "type": "glossary",
+    "primaryKeyword": "link building",
+    "secondaryKeywords": [
+      "link building strategies",
+      "how do seo agencies get backlinks",
+      "link building cost india",
+      "white hat link building",
+      "link building meaning"
+    ],
+    "h1": "Link building",
+    "metaTitle": "Link Building: What It Is and What It Costs",
+    "metaDescription": "Link building is earning links from other sites on purpose. Learn the tactics that still work in India, what they cost, and which invite penalties.",
+    "intent": "commercial",
+    "cluster": "off-page",
+    "priority": 1,
+    "angle": "Puts real Indian rupee ranges against each tactic, from a ₹2,000 directory listing that does nothing to genuine digital PR, so a founder can price what an agency proposes.",
+    "mustCover": [
+      "the tactics that still work: digital PR, data studies, partnerships, listicle placement",
+      "what links actually cost in India",
+      "link schemes and manual actions",
+      "how many links a campaign realistically lands per month",
+      "questions to ask an agency about its link sources"
+    ]
+  },
+  {
+    "slug": "guest-posting",
+    "type": "glossary",
+    "primaryKeyword": "guest posting",
+    "secondaryKeywords": [
+      "guest post seo",
+      "guest blogging for backlinks",
+      "paid guest post india",
+      "guest posting sites",
+      "is guest posting still effective"
+    ],
+    "h1": "Guest posting",
+    "metaTitle": "Guest Posting: What It Is and When It Works",
+    "metaDescription": "Guest posting means writing for another site in exchange for a link and an audience. Here is how to tell a real publication from a paid link farm in India.",
+    "intent": "commercial",
+    "cluster": "off-page",
+    "priority": 2,
+    "angle": "Gives a six-point sniff test for guest post marketplaces flooding Indian inboxes: does the site have real traffic, a real editorial team, a write-for-us page selling slots, and a link in every single post.",
+    "mustCover": [
+      "genuine guest posting versus paid placement",
+      "the six-point test for a real publication",
+      "typical Indian guest post pricing and what it buys",
+      "Google's stance on links in guest posts",
+      "measuring whether a placement did anything"
+    ]
+  },
+  {
+    "slug": "link-equity",
+    "type": "glossary",
+    "primaryKeyword": "link equity",
+    "secondaryKeywords": [
+      "link juice meaning",
+      "pagerank flow",
+      "how link equity works",
+      "link equity distribution",
+      "does link equity pass through redirects"
+    ],
+    "h1": "Link equity",
+    "metaTitle": "Link Equity: What It Is and How It Flows",
+    "metaDescription": "Link equity, or link juice, is the ranking value a link passes. Learn how it flows through internal links and where most sites are quietly wasting theirs.",
+    "intent": "informational",
+    "cluster": "off-page",
+    "priority": 3,
+    "angle": "Traces one link through a real site: a homepage backlink diluted across a 60-item footer menu, and how re-pointing that equity at three money pages changed what ranked.",
+    "mustCover": [
+      "how equity divides across links on a page",
+      "equity through 301 redirects and canonicals",
+      "bloated footers and nav menus diluting equity",
+      "consolidating equity onto priority pages",
+      "why nofollow does not redistribute equity"
+    ]
+  },
+  {
+    "slug": "toxic-backlinks",
+    "type": "glossary",
+    "primaryKeyword": "toxic backlinks",
+    "secondaryKeywords": [
+      "spammy backlinks",
+      "disavow backlinks",
+      "negative seo",
+      "toxic link checker",
+      "how to remove bad backlinks"
+    ],
+    "h1": "Toxic backlinks",
+    "metaTitle": "Toxic Backlinks: What They Are and What to Do",
+    "metaDescription": "Toxic backlinks are spammy links that can drag a site down. Most are harmless. Here is how to tell the difference before you disavow anything by mistake.",
+    "intent": "informational",
+    "cluster": "off-page",
+    "priority": 2,
+    "angle": "Argues against the panic that tool toxicity scores create: Google ignores most junk links, so disavow only after a manual action or a clear paid-link history, and shows the exact disavow file format.",
+    "mustCover": [
+      "toxicity scores are vendor opinions, not Google's",
+      "when a disavow is genuinely warranted",
+      "manual actions versus algorithmic suppression",
+      "the disavow file format and submission",
+      "negative SEO in practice"
+    ]
+  },
+  {
+    "slug": "referring-domain",
+    "type": "glossary",
+    "primaryKeyword": "referring domain",
+    "secondaryKeywords": [
+      "referring domains vs backlinks",
+      "unique linking domains",
+      "what counts as a referring domain",
+      "referring domain growth",
+      "linking root domains"
+    ],
+    "h1": "Referring domain",
+    "metaTitle": "Referring Domain: What It Is and Why It Counts",
+    "metaDescription": "A referring domain is one unique website linking to you, however many links it sends. It matters more than raw link count. Here is how to read the number.",
+    "intent": "informational",
+    "cluster": "off-page",
+    "priority": 3,
+    "angle": "Explains the arithmetic that flatters bad reports: 4,000 backlinks from 12 domains is a sitewide footer link, not link building, and shows how to check the ratio in one minute.",
+    "mustCover": [
+      "referring domains versus total backlinks",
+      "the backlink-to-domain ratio as a quality check",
+      "sitewide footer and blogroll links",
+      "referring domain growth as a progress metric",
+      "comparing domain counts with competitors"
+    ]
+  },
+  {
+    "slug": "off-page-seo-meaning",
+    "type": "glossary",
+    "primaryKeyword": "off page seo",
+    "secondaryKeywords": [
+      "off page seo meaning",
+      "off page optimization techniques",
+      "off page seo activities",
+      "off page vs on page",
+      "off page seo checklist"
+    ],
+    "h1": "Off-page SEO",
+    "metaTitle": "Off-Page SEO: What It Covers, in Plain English",
+    "metaDescription": "Off-page SEO is everything that builds authority away from your website: links, mentions, reviews and PR. Here is what genuinely moves rankings in India.",
+    "intent": "informational",
+    "cluster": "off-page",
+    "priority": 1,
+    "angle": "Corrects the Indian training-institute definition that lists social bookmarking and forum posting, and replaces it with the four off-page activities that still register in 2026.",
+    "mustCover": [
+      "what off-page includes beyond links",
+      "the dead tactics still taught in Indian SEO courses",
+      "reviews and brand mentions as off-page signals",
+      "digital PR as the modern core",
+      "how to measure off-page progress"
+    ]
+  },
+  {
+    "slug": "google-business-profile",
+    "type": "glossary",
+    "primaryKeyword": "google business profile",
+    "secondaryKeywords": [
+      "google my business",
+      "gbp optimization",
+      "google business profile ranking factors",
+      "how to verify google business profile",
+      "local pack ranking"
+    ],
+    "h1": "Google Business Profile",
+    "metaTitle": "Google Business Profile, Explained for Owners",
+    "metaDescription": "A Google Business Profile is your free listing in Maps and the local pack. Primary category and reviews decide most of your ranking. Here is the setup.",
+    "intent": "navigational",
+    "cluster": "off-page",
+    "priority": 1,
+    "angle": "Leads with the single decision that matters most, the primary category, which has topped local ranking factor surveys for six straight years and which most Indian businesses pick carelessly at signup.",
+    "mustCover": [
+      "relevance, distance and prominence",
+      "why primary category outweighs everything else",
+      "verification methods including postcard delays in India",
+      "reviews, replies and review velocity",
+      "service areas versus a physical address"
+    ]
+  },
+  {
+    "slug": "local-citations",
+    "type": "glossary",
+    "primaryKeyword": "local citations",
+    "secondaryKeywords": [
+      "nap consistency",
+      "business directory listings india",
+      "citation building seo",
+      "what is a citation in local seo",
+      "justdial sulekha listings seo"
+    ],
+    "h1": "Local citations",
+    "metaTitle": "Local Citations: What They Are and Which Matter",
+    "metaDescription": "A local citation is any online mention of your business name, address and phone. Learn which Indian directories matter and how NAP mismatches hurt you.",
+    "intent": "informational",
+    "cluster": "off-page",
+    "priority": 2,
+    "angle": "Names the specific Indian directories worth claiming (JustDial, IndiaMART, Sulekha, Zomato where relevant) and explains why a phone number written five different ways splits your local signals.",
+    "mustCover": [
+      "what NAP consistency means",
+      "the Indian directories worth claiming",
+      "structured versus unstructured citations",
+      "auditing existing listings for mismatches",
+      "why bulk citation packages underperform"
+    ]
+  },
+  {
+    "slug": "topical-authority",
+    "type": "glossary",
+    "primaryKeyword": "topical authority",
+    "secondaryKeywords": [
+      "topical authority seo",
+      "how to build topical authority",
+      "topical map seo",
+      "subject matter depth seo",
+      "topical authority vs domain authority"
+    ],
+    "h1": "Topical authority",
+    "metaTitle": "Topical Authority: What It Is and How to Build",
+    "metaDescription": "Topical authority is how completely your site covers a subject. It is why a 40-page niche site outranks a bigger brand. Here is how to build it on purpose.",
+    "intent": "informational",
+    "cluster": "content",
+    "priority": 1,
+    "angle": "Turns the abstract idea into a countable plan: map every question a buyer asks across the topic, publish against all of them, and measure coverage as a percentage rather than a feeling.",
+    "mustCover": [
+      "topical authority versus domain authority",
+      "building a topic map from real questions",
+      "coverage as a measurable percentage",
+      "internal linking as the connective tissue",
+      "how long it takes to show up in rankings"
+    ]
+  },
+  {
+    "slug": "entity-seo",
+    "type": "glossary",
+    "primaryKeyword": "entity seo",
+    "secondaryKeywords": [
+      "what is an entity in seo",
+      "entities vs keywords",
+      "entity based search",
+      "google entity recognition",
+      "entity optimization"
+    ],
+    "h1": "Entity",
+    "metaTitle": "Entity in SEO: What It Is and Why It Matters",
+    "metaDescription": "An entity is a thing Google recognises: a person, brand, product or place. Learn how entities differ from keywords and how to make your brand one of them.",
+    "intent": "informational",
+    "cluster": "content",
+    "priority": 3,
+    "angle": "Shows the practical difference with one example: the string SEO agency versus the entity Last Agency, and the four consistent signals (schema, sameAs, consistent naming, third-party mentions) that turn a brand into a recognised thing.",
+    "mustCover": [
+      "strings versus things",
+      "how entities relate to the Knowledge Graph",
+      "Organization schema and sameAs links",
+      "consistent naming across the web",
+      "why entities matter more in AI answers"
+    ]
+  },
+  {
+    "slug": "e-e-a-t",
+    "type": "glossary",
+    "primaryKeyword": "e-e-a-t",
+    "secondaryKeywords": [
+      "what is eeat in seo",
+      "experience expertise authoritativeness trust",
+      "google quality rater guidelines",
+      "eeat signals",
+      "ymyl content"
+    ],
+    "h1": "E-E-A-T",
+    "metaTitle": "E-E-A-T: What Google Actually Means by It",
+    "metaDescription": "E-E-A-T stands for experience, expertise, authoritativeness and trust. It is not a score. Here is what raters look for and how to show it on your pages.",
+    "intent": "informational",
+    "cluster": "content",
+    "priority": 1,
+    "angle": "Converts a rater concept into page furniture: author bios with verifiable credentials, first-hand experience markers, cited sources and a real address, with a checklist you can apply to one page in 20 minutes.",
+    "mustCover": [
+      "what each letter means, with the 2022 Experience addition",
+      "E-E-A-T is not a ranking score",
+      "trust as the load-bearing element",
+      "YMYL topics and higher bars",
+      "concrete on-page E-E-A-T signals"
+    ]
+  },
+  {
+    "slug": "featured-snippet",
+    "type": "glossary",
+    "primaryKeyword": "featured snippet",
+    "secondaryKeywords": [
+      "position zero",
+      "how to get featured snippet",
+      "types of featured snippets",
+      "answer box google",
+      "featured snippet optimization"
+    ],
+    "h1": "Featured snippet",
+    "metaTitle": "Featured Snippet: What It Is and How to Win One",
+    "metaDescription": "A featured snippet is the answer box above the results. Learn the 40-60 word format that wins it, the question types that trigger it, and how to track it.",
+    "intent": "informational",
+    "cluster": "content",
+    "priority": 1,
+    "angle": "Gives the exact formatting recipe we use on every answer page: a 40-60 word direct answer immediately under the H1, no preamble, followed by the detail, plus what changed now that AI Overviews sit above snippets.",
+    "mustCover": [
+      "paragraph, list, table and video snippet types",
+      "the 40-60 word answer format",
+      "question phrasing that triggers snippets",
+      "featured snippets versus AI Overviews",
+      "tracking snippet wins in Search Console"
+    ]
+  },
+  {
+    "slug": "pillar-page",
+    "type": "glossary",
+    "primaryKeyword": "pillar page",
+    "secondaryKeywords": [
+      "pillar content",
+      "what is a pillar page",
+      "pillar page example",
+      "hub page seo",
+      "pillar page length"
+    ],
+    "h1": "Pillar page",
+    "metaTitle": "Pillar Page: What It Is and How to Build One",
+    "metaDescription": "A pillar page is the broad hub that links to every deep page on a topic. Learn how long it should be, what to include, and how it earns its own rankings.",
+    "intent": "informational",
+    "cluster": "content",
+    "priority": 2,
+    "angle": "Argues against the 5,000-word monster pillar: a pillar exists to route people and signals to the deep pages, so its job is coverage and linking, not exhaustive depth.",
+    "mustCover": [
+      "what a pillar page is for",
+      "realistic length and structure",
+      "linking down to and back from cluster pages",
+      "pillar page versus category page",
+      "when a pillar is not worth building"
+    ]
+  },
+  {
+    "slug": "topic-cluster",
+    "type": "glossary",
+    "primaryKeyword": "topic cluster",
+    "secondaryKeywords": [
+      "topic cluster model",
+      "content clusters seo",
+      "hub and spoke content",
+      "how to build topic clusters",
+      "cluster content strategy"
+    ],
+    "h1": "Topic cluster",
+    "metaTitle": "Topic Cluster: What It Is and How to Plan One",
+    "metaDescription": "A topic cluster is one pillar page plus the supporting pages that link to it. Here is how to plan a 12-page cluster that covers a topic without overlap.",
+    "intent": "informational",
+    "cluster": "content",
+    "priority": 2,
+    "angle": "Focuses on the planning stage where clusters usually fail: assigning one distinct search intent per page up front so siblings never cannibalise each other later.",
+    "mustCover": [
+      "pillar and spoke structure",
+      "assigning one intent per page",
+      "the linking pattern that makes a cluster work",
+      "cluster size and publishing order",
+      "how clusters prevent cannibalisation"
+    ]
+  },
+  {
+    "slug": "content-gap-analysis",
+    "type": "glossary",
+    "primaryKeyword": "content gap analysis",
+    "secondaryKeywords": [
+      "keyword gap analysis",
+      "competitor content gap",
+      "how to find content gaps",
+      "content gap tool",
+      "content opportunity analysis"
+    ],
+    "h1": "Content gap analysis",
+    "metaTitle": "Content Gap Analysis: What It Is and How to Run",
+    "metaDescription": "Content gap analysis finds queries competitors rank for and you do not. Here is how to run one without paid tools and how to prioritise what you uncover.",
+    "intent": "informational",
+    "cluster": "content",
+    "priority": 2,
+    "angle": "Gives a no-paid-tool method built on Search Console queries with impressions but no clicks, plus manual SERP checks, so a founder can run it before committing to a ₹20,000-a-month tool stack.",
+    "mustCover": [
+      "defining a gap: missing page, weak page, wrong intent",
+      "using Search Console impressions with zero clicks",
+      "manual competitor SERP sampling",
+      "prioritising gaps by commercial value",
+      "turning findings into a publishing order"
+    ]
+  },
+  {
+    "slug": "content-decay",
+    "type": "glossary",
+    "primaryKeyword": "content decay",
+    "secondaryKeywords": [
+      "traffic decline old blog posts",
+      "content refresh seo",
+      "why is my traffic dropping",
+      "content pruning",
+      "updating old content for seo"
+    ],
+    "h1": "Content decay",
+    "metaTitle": "Content Decay: Why Old Pages Lose Traffic",
+    "metaDescription": "Content decay is traffic quietly draining from pages that used to rank. Here is how to spot it in Search Console and choose between refresh, merge and cut.",
+    "intent": "informational",
+    "cluster": "content",
+    "priority": 3,
+    "angle": "Reframes a scary traffic chart as maintenance work: a quarterly review that compares each URL against its own 12-month peak and sorts pages into refresh, merge or delete.",
+    "mustCover": [
+      "how to spot decay in Search Console year-on-year data",
+      "causes: outdated facts, better competitors, intent shift, AI Overviews",
+      "the refresh, merge or delete decision",
+      "what a real refresh involves beyond changing the date",
+      "setting a maintenance cadence"
+    ]
+  },
+  {
+    "slug": "thin-content",
+    "type": "glossary",
+    "primaryKeyword": "thin content",
+    "secondaryKeywords": [
+      "what is thin content",
+      "thin content penalty",
+      "low value pages seo",
+      "doorway pages",
+      "scaled content abuse"
+    ],
+    "h1": "Thin content",
+    "metaTitle": "Thin Content: What It Is and How to Fix It",
+    "metaDescription": "Thin content is a page that adds nothing a reader could not get elsewhere. Word count is not the test. Here is the real test and how to fix pages at scale.",
+    "intent": "informational",
+    "cluster": "content",
+    "priority": 3,
+    "angle": "Applies the test to the exact thing Indian agencies sell most: 200 near-identical city landing pages where only the city name changes, which Google now classes as scaled content abuse.",
+    "mustCover": [
+      "why word count is the wrong measure",
+      "the scaled content abuse policy",
+      "template-swapped city and service pages",
+      "doorway pages",
+      "consolidating or improving thin pages"
+    ]
+  },
+  {
+    "slug": "search-intent",
+    "type": "glossary",
+    "primaryKeyword": "search intent",
+    "secondaryKeywords": [
+      "types of search intent",
+      "user intent seo",
+      "informational vs transactional keywords",
+      "how to identify search intent",
+      "keyword intent"
+    ],
+    "h1": "Search intent",
+    "metaTitle": "Search Intent: The Four Types, Explained",
+    "metaDescription": "Search intent is what someone actually wants when they type a query. Learn the four types, how to read intent from the SERP, and why it beats volume.",
+    "intent": "informational",
+    "cluster": "content",
+    "priority": 1,
+    "angle": "Teaches the SERP-reading method instead of guessing: open the results, count how many are guides versus product pages, and let Google tell you what format it already rewards.",
+    "mustCover": [
+      "informational, navigational, commercial and transactional",
+      "reading intent from the current SERP",
+      "mixed-intent queries",
+      "matching page format to intent",
+      "why intent mismatch caps rankings regardless of quality"
+    ]
+  },
+  {
+    "slug": "long-tail-keywords",
+    "type": "glossary",
+    "primaryKeyword": "long tail keywords",
+    "secondaryKeywords": [
+      "what are long tail keywords",
+      "long tail keyword examples",
+      "long tail vs short tail",
+      "how to find long tail keywords",
+      "long tail keyword strategy"
+    ],
+    "h1": "Long-tail keywords",
+    "metaTitle": "Long-Tail Keywords: What They Are and Why Use Them",
+    "metaDescription": "A long-tail keyword is a longer, more specific query with less competition. Learn how to find them in India and why they convert better than head terms do.",
+    "intent": "informational",
+    "cluster": "content",
+    "priority": 2,
+    "angle": "Uses a single worked example: seo agency versus seo agency for d2c brand in bangalore, with the realistic difference in competition, buyer readiness and time to rank.",
+    "mustCover": [
+      "definition and the demand curve",
+      "specificity versus query length",
+      "conversion rate differences",
+      "finding long-tail queries from Search Console and autocomplete",
+      "how long-tail terms feed AI and voice search"
+    ]
+  },
+  {
+    "slug": "keyword-research-meaning",
+    "type": "glossary",
+    "primaryKeyword": "keyword research",
+    "secondaryKeywords": [
+      "how to do keyword research",
+      "where to find keywords for seo",
+      "free keyword research",
+      "keyword research process",
+      "what are keywords in seo"
+    ],
+    "h1": "Keyword research",
+    "metaTitle": "Keyword Research: What It Is and How to Start",
+    "metaDescription": "Keyword research is finding the queries your buyers actually type. Here is a free method using Search Console, autocomplete and the SERP, no paid tool.",
+    "intent": "informational",
+    "cluster": "content",
+    "priority": 1,
+    "angle": "A zero-budget process for founders who cannot justify ₹10,000 a month on a tool: five free sources, a scoring rule that weighs buyer intent above volume, and a one-sheet output.",
+    "mustCover": [
+      "the free sources: Search Console, autocomplete, People Also Ask, Keyword Planner, competitor pages",
+      "why volume estimates are unreliable in India",
+      "scoring by intent and difficulty rather than volume",
+      "grouping keywords into one page per intent",
+      "turning research into a publishing plan"
+    ]
+  },
+  {
+    "slug": "serp",
+    "type": "glossary",
+    "primaryKeyword": "serp",
+    "secondaryKeywords": [
+      "what does serp mean",
+      "search engine results page",
+      "serp features",
+      "serp analysis",
+      "types of serp features"
+    ],
+    "h1": "SERP",
+    "metaTitle": "SERP: What a Search Results Page Contains",
+    "metaDescription": "SERP means search engine results page. Learn the features now sitting above the ten blue links and what each one does to your realistic share of clicks.",
+    "intent": "informational",
+    "cluster": "analytics",
+    "priority": 1,
+    "angle": "Anatomises one real Indian SERP from top to bottom, counting how many pixels of the first mobile screen an organic result can still occupy in 2026.",
+    "mustCover": [
+      "what a SERP is and how it is assembled",
+      "the main SERP features: ads, AI Overviews, local pack, snippets, People Also Ask",
+      "organic real estate on a mobile screen",
+      "why rank one means less than it did",
+      "how to run a SERP analysis before writing"
+    ]
+  },
+  {
+    "slug": "click-through-rate",
+    "type": "glossary",
+    "primaryKeyword": "click through rate",
+    "secondaryKeywords": [
+      "ctr in seo",
+      "organic ctr by position",
+      "what is a good ctr",
+      "how to improve ctr",
+      "ctr meaning"
+    ],
+    "h1": "Click-through rate (CTR)",
+    "metaTitle": "Click-Through Rate (CTR) in SEO, Explained",
+    "metaDescription": "Click-through rate is clicks divided by impressions. Learn what a normal organic CTR looks like by position and why AI Overviews have pushed it down.",
+    "intent": "informational",
+    "cluster": "analytics",
+    "priority": 2,
+    "angle": "Uses 2026 data rather than the old 2014 CTR curve: position one dropping from roughly 31% to under 20% when an AI Overview appears, and what that means for traffic forecasts.",
+    "mustCover": [
+      "how CTR is calculated in Search Console",
+      "typical CTR by position in 2026",
+      "the AI Overview effect on CTR",
+      "branded versus non-branded CTR",
+      "improving CTR through titles and snippets"
+    ]
+  },
+  {
+    "slug": "impressions",
+    "type": "glossary",
+    "primaryKeyword": "impressions in search console",
+    "secondaryKeywords": [
+      "what are impressions seo",
+      "impressions vs clicks",
+      "google search console impressions",
+      "why impressions increased but not clicks",
+      "impression definition seo"
+    ],
+    "h1": "Impressions",
+    "metaTitle": "Impressions in Search Console, Explained",
+    "metaDescription": "An impression means your page appeared in results for a query. Learn how Search Console counts them and why rising impressions with flat clicks matter.",
+    "intent": "informational",
+    "cluster": "analytics",
+    "priority": 3,
+    "angle": "Answers the exact question founders ask in month two of an SEO engagement: impressions are climbing but clicks are not, which is normal, expected, and here is when it should stop being true.",
+    "mustCover": [
+      "how Google counts an impression",
+      "impressions on page two and beyond",
+      "the impressions-first pattern in new campaigns",
+      "when flat clicks become a real problem",
+      "reading impressions alongside average position"
+    ]
+  },
+  {
+    "slug": "average-position",
+    "type": "glossary",
+    "primaryKeyword": "average position",
+    "secondaryKeywords": [
+      "average position search console",
+      "what is average position in seo",
+      "average position meaning",
+      "rank tracking vs average position",
+      "why average position changed"
+    ],
+    "h1": "Average position",
+    "metaTitle": "Average Position: What It Really Tells You",
+    "metaDescription": "Average position is the mean rank of your page across every impression. It is the most misread number in Search Console. Here is how to use it properly.",
+    "intent": "informational",
+    "cluster": "analytics",
+    "priority": 3,
+    "angle": "Explains the averaging trap with arithmetic: ranking 3 for one query and 60 for another shows as 31.5, which describes nothing real, and shows the query-level filter that fixes it.",
+    "mustCover": [
+      "how the average is calculated",
+      "why aggregate average position is misleading",
+      "filtering by query and by page",
+      "personalisation and location variation in India",
+      "average position versus a rank tracker"
+    ]
+  },
+  {
+    "slug": "bounce-rate",
+    "type": "glossary",
+    "primaryKeyword": "bounce rate",
+    "secondaryKeywords": [
+      "bounce rate in ga4",
+      "what is a good bounce rate",
+      "engagement rate ga4",
+      "high bounce rate causes",
+      "does bounce rate affect seo"
+    ],
+    "h1": "Bounce rate",
+    "metaTitle": "Bounce Rate: What It Means in GA4",
+    "metaDescription": "Bounce rate is the share of visits with no engagement. GA4 defines it differently from Universal Analytics. Here is what it can and cannot tell you.",
+    "intent": "informational",
+    "cluster": "analytics",
+    "priority": 2,
+    "angle": "Kills the myth that bounce rate is a ranking factor, then explains why an 80% bounce rate on a glossary page is fine while the same number on a pricing page is not.",
+    "mustCover": [
+      "the GA4 definition versus the old one",
+      "engagement rate as the inverse",
+      "bounce rate is not a Google ranking signal",
+      "reading bounce rate by page type",
+      "when a high bounce genuinely signals a problem"
+    ]
+  },
+  {
+    "slug": "conversion-rate",
+    "type": "glossary",
+    "primaryKeyword": "conversion rate",
+    "secondaryKeywords": [
+      "what is a good conversion rate",
+      "conversion rate formula",
+      "lead conversion rate",
+      "website conversion rate india",
+      "how to improve conversion rate"
+    ],
+    "h1": "Conversion rate",
+    "metaTitle": "Conversion Rate: What It Is and How to Track",
+    "metaDescription": "Conversion rate is the share of visitors who do what you wanted. Learn how to track leads, calls and WhatsApp chats, and what good looks like in India.",
+    "intent": "informational",
+    "cluster": "analytics",
+    "priority": 2,
+    "angle": "Deals with the Indian measurement reality nobody documents: most enquiries arrive on WhatsApp or a phone call, so a site measuring only form fills under-reports conversions badly.",
+    "mustCover": [
+      "the formula and which denominator to use",
+      "tracking WhatsApp click-to-chat and call conversions",
+      "micro versus macro conversions",
+      "realistic conversion rate ranges for Indian service and D2C sites",
+      "why traffic without conversion tracking is unmanageable"
+    ]
+  },
+  {
+    "slug": "google-search-console",
+    "type": "glossary",
+    "primaryKeyword": "google search console",
+    "secondaryKeywords": [
+      "gsc meaning",
+      "how to use search console",
+      "search console reports",
+      "verify site in search console",
+      "search console vs analytics"
+    ],
+    "h1": "Google Search Console",
+    "metaTitle": "Google Search Console: What It Is and Why Use It",
+    "metaDescription": "Google Search Console is the free tool showing how Google sees your site. Learn the five reports worth opening weekly and the ones that waste your time.",
+    "intent": "navigational",
+    "cluster": "analytics",
+    "priority": 1,
+    "angle": "A prioritised tour rather than a feature list: five reports ranked by how often they change a decision, plus the 16-month data limit that makes exporting on day one worth doing.",
+    "mustCover": [
+      "what Search Console shows that analytics cannot",
+      "verification methods",
+      "the five reports that matter: Performance, Page Indexing, Sitemaps, Core Web Vitals, Manual Actions",
+      "the 16-month data window and exporting",
+      "data sampling and anonymised queries"
+    ]
+  },
+  {
+    "slug": "google-analytics-4",
+    "type": "glossary",
+    "primaryKeyword": "google analytics 4",
+    "secondaryKeywords": [
+      "ga4 meaning",
+      "ga4 vs universal analytics",
+      "how to set up ga4",
+      "ga4 events",
+      "ga4 reports for seo"
+    ],
+    "h1": "Google Analytics 4",
+    "metaTitle": "Google Analytics 4: What It Is and What Changed",
+    "metaDescription": "Google Analytics 4 is Google's event-based analytics platform. Learn how it differs from Universal Analytics and which events a service site must track.",
+    "intent": "navigational",
+    "cluster": "analytics",
+    "priority": 2,
+    "angle": "Written for the founder who never re-learned analytics after the 2023 forced migration: the event model in plain terms, and the six events an Indian lead-gen site should be firing today.",
+    "mustCover": [
+      "sessions and pageviews versus events and parameters",
+      "what broke in the move from Universal Analytics",
+      "the six events a lead-gen site needs",
+      "connecting GA4 to Search Console",
+      "data thresholds and reporting delays"
+    ]
+  },
+  {
+    "slug": "organic-traffic",
+    "type": "glossary",
+    "primaryKeyword": "organic traffic",
+    "secondaryKeywords": [
+      "what is organic traffic",
+      "organic vs direct traffic",
+      "how to increase organic traffic",
+      "organic search meaning",
+      "organic traffic vs paid traffic"
+    ],
+    "h1": "Organic traffic",
+    "metaTitle": "Organic Traffic: What Counts and What Doesn't",
+    "metaDescription": "Organic traffic is visits from unpaid search results. Learn how to separate it from direct and referral, and why the number alone tells you very little.",
+    "intent": "informational",
+    "cluster": "analytics",
+    "priority": 2,
+    "angle": "Shows how branded search inflates the organic number: a founder celebrating 40% organic growth is often watching brand queries from an ad campaign, and here is how to split the two.",
+    "mustCover": [
+      "what counts as organic in GA4",
+      "branded versus non-branded organic traffic",
+      "dark traffic misattributed as direct",
+      "organic traffic from AI assistants",
+      "why revenue per session beats raw traffic"
+    ]
+  },
+  {
+    "slug": "google-core-update",
+    "type": "glossary",
+    "primaryKeyword": "google core update",
+    "secondaryKeywords": [
+      "core algorithm update",
+      "google algorithm update history",
+      "how to recover from core update",
+      "helpful content update",
+      "google ranking drop"
+    ],
+    "h1": "Google core update",
+    "metaTitle": "Google Core Update: What It Is and What to Do",
+    "metaDescription": "A Google core update is a broad ranking change rolled out a few times a year. Here is how to tell if one hit you and what to do in the first two weeks.",
+    "intent": "informational",
+    "cluster": "analytics",
+    "priority": 2,
+    "angle": "Gives a calm two-week protocol instead of panic: wait for the rollout to finish, compare drops by page type and query intent, and only then decide, because most knee-jerk fixes make it worse.",
+    "mustCover": [
+      "what a core update changes",
+      "confirming an update hit you using dated data",
+      "the wait-then-diagnose protocol",
+      "core updates versus spam updates and manual actions",
+      "realistic recovery timelines"
+    ]
+  },
+  {
+    "slug": "generative-engine-optimization",
+    "type": "glossary",
+    "primaryKeyword": "generative engine optimization",
+    "secondaryKeywords": [
+      "what is geo in seo",
+      "geo vs seo",
+      "difference between geo and seo",
+      "ai search optimization",
+      "getting cited by chatgpt"
+    ],
+    "h1": "Generative Engine Optimization (GEO)",
+    "metaTitle": "Generative Engine Optimization (GEO), Explained",
+    "metaDescription": "Generative engine optimization, or GEO, is getting your brand cited inside AI answers. Learn what it shares with SEO and the three things it adds.",
+    "intent": "commercial",
+    "cluster": "ai-search",
+    "priority": 1,
+    "angle": "Refuses to sell GEO as a separate product: about 80% of the work is the SEO you should already be doing, and the page names the three things that are actually new.",
+    "mustCover": [
+      "definition and where the term came from",
+      "the overlap with classic SEO",
+      "the three genuinely new practices",
+      "why citation, not ranking, is the unit of success",
+      "how to measure GEO without a rank tracker"
+    ]
+  },
+  {
+    "slug": "answer-engine-optimization",
+    "type": "glossary",
+    "primaryKeyword": "answer engine optimization",
+    "secondaryKeywords": [
+      "aeo meaning",
+      "aeo vs geo",
+      "answer engine optimisation seo",
+      "optimising for ai overviews",
+      "voice search optimization"
+    ],
+    "h1": "Answer Engine Optimization (AEO)",
+    "metaTitle": "Answer Engine Optimization (AEO), Explained",
+    "metaDescription": "Answer engine optimization, or AEO, means structuring content so answer engines quote it. Learn how AEO differs from GEO and which formats get quoted most.",
+    "intent": "commercial",
+    "cluster": "ai-search",
+    "priority": 2,
+    "angle": "Settles the AEO-versus-GEO argument in one paragraph, then spends the rest on formatting: question headings, 40-60 word answers, tables and definition-first openings that get lifted verbatim.",
+    "mustCover": [
+      "definition and the AEO versus GEO distinction",
+      "content formats that get quoted",
+      "question-shaped headings",
+      "structured data as an answer aid",
+      "measuring quoted answers"
+    ]
+  },
+  {
+    "slug": "llms-txt",
+    "type": "glossary",
+    "primaryKeyword": "llms.txt",
+    "secondaryKeywords": [
+      "what is llms txt",
+      "llms.txt seo",
+      "do i need llms.txt",
+      "llms txt example",
+      "llms full txt"
+    ],
+    "h1": "llms.txt",
+    "metaTitle": "llms.txt: What It Is and Whether You Need It",
+    "metaDescription": "llms.txt is a plain-text file that points AI models at your key pages. Google says it does not affect ranking. Here is the honest case for adding one.",
+    "intent": "informational",
+    "cluster": "ai-search",
+    "priority": 3,
+    "angle": "The most over-hyped file of 2026, handled honestly: Google has confirmed zero ranking effect, so the page gives the narrow real benefit, a sample file, and permission to skip it.",
+    "mustCover": [
+      "what the file contains and where it lives",
+      "Google's confirmed position on ranking impact",
+      "which crawlers actually read it",
+      "a working sample file",
+      "when it is not worth your developer's time"
+    ]
+  },
+  {
+    "slug": "ai-overviews",
+    "type": "glossary",
+    "primaryKeyword": "ai overviews",
+    "secondaryKeywords": [
+      "google ai overview seo",
+      "sge meaning",
+      "ai overview traffic impact",
+      "how to appear in ai overviews",
+      "ai overview citations"
+    ],
+    "h1": "AI Overviews",
+    "metaTitle": "AI Overviews: What They Are and How to Get Cited",
+    "metaDescription": "AI Overviews are Google's AI answers above the results. They appear on roughly half of queries. Here is what happens to your clicks and how to get cited.",
+    "intent": "informational",
+    "cluster": "ai-search",
+    "priority": 1,
+    "angle": "Puts hard numbers on the damage: AI Overviews on about 48% of queries and a roughly 60% CTR compression when they appear, then explains which query types are safe and which are already gone.",
+    "mustCover": [
+      "what triggers an AI Overview",
+      "measured CTR impact and query coverage",
+      "which query categories are worst hit",
+      "what sources get cited",
+      "shifting effort to queries AI Overviews do not answer"
+    ]
+  },
+  {
+    "slug": "google-ai-mode",
+    "type": "glossary",
+    "primaryKeyword": "google ai mode",
+    "secondaryKeywords": [
+      "ai mode search",
+      "google ai mode seo impact",
+      "conversational search google",
+      "query fan out",
+      "ai mode vs ai overviews"
+    ],
+    "h1": "Google AI Mode",
+    "metaTitle": "Google AI Mode: What It Is and Who It Cites",
+    "metaDescription": "Google AI Mode is the conversational search tab that answers instead of listing links. Here is how it picks sources and what it means for Indian websites.",
+    "intent": "informational",
+    "cluster": "ai-search",
+    "priority": 3,
+    "angle": "Explains query fan-out, the mechanism where one question becomes many hidden searches, and why that rewards sites with deep sub-topic coverage over sites with one big page.",
+    "mustCover": [
+      "how AI Mode differs from AI Overviews",
+      "query fan-out and hidden sub-queries",
+      "reported zero-click rates in AI Mode",
+      "what content gets pulled as a source",
+      "how to check if you appear"
+    ]
+  },
+  {
+    "slug": "zero-click-search",
+    "type": "glossary",
+    "primaryKeyword": "zero click search",
+    "secondaryKeywords": [
+      "zero click searches meaning",
+      "no click search results",
+      "zero click seo strategy",
+      "google keeping traffic",
+      "zero click statistics"
+    ],
+    "h1": "Zero-click search",
+    "metaTitle": "Zero-Click Search: What It Is and What to Do",
+    "metaDescription": "A zero-click search ends without anyone visiting a website. Roughly two-thirds now do. Here is which of your keywords are exposed and what to do next.",
+    "intent": "informational",
+    "cluster": "ai-search",
+    "priority": 3,
+    "angle": "Gives a keyword triage: sort your Search Console queries into answerable-in-one-line versus needs-a-page, and move budget to the second group before the first evaporates.",
+    "mustCover": [
+      "what counts as a zero-click search",
+      "how the rate has moved since 2019",
+      "which query types resolve without a click",
+      "triaging your own keyword list",
+      "measuring brand value from impressions without clicks"
+    ]
+  },
+  {
+    "slug": "ai-visibility",
+    "type": "glossary",
+    "primaryKeyword": "ai visibility",
+    "secondaryKeywords": [
+      "ai search visibility tracking",
+      "share of model",
+      "brand visibility in chatgpt",
+      "ai citation tracking",
+      "how to measure ai search"
+    ],
+    "h1": "AI visibility",
+    "metaTitle": "AI Visibility: What It Is and How to Measure",
+    "metaDescription": "AI visibility is how often AI assistants mention or cite your brand. Learn what to measure, how to sample prompts, and why rank tracking misses it.",
+    "intent": "commercial",
+    "cluster": "ai-search",
+    "priority": 3,
+    "angle": "Provides a manual measurement method that costs nothing: a fixed set of 25 buyer prompts run monthly across assistants, logged in a sheet, because AI answers vary per run and one-off checks prove nothing.",
+    "mustCover": [
+      "what AI visibility measures",
+      "building a fixed prompt set",
+      "why answers vary between runs and how to sample",
+      "citation share versus mention share",
+      "what actually improves it"
+    ]
+  },
+  {
+    "slug": "knowledge-graph",
+    "type": "glossary",
+    "primaryKeyword": "knowledge graph",
+    "secondaryKeywords": [
+      "google knowledge graph",
+      "knowledge panel",
+      "how to get a knowledge panel",
+      "entity in knowledge graph",
+      "knowledge graph seo"
+    ],
+    "h1": "Knowledge Graph",
+    "metaTitle": "Knowledge Graph: What It Is and How to Get In",
+    "metaDescription": "The Knowledge Graph is Google's database of entities and how they connect. Learn how a brand gets in and what a knowledge panel actually requires first.",
+    "intent": "informational",
+    "cluster": "ai-search",
+    "priority": 3,
+    "angle": "Answers the vanity question directly: you cannot buy a knowledge panel, and here are the corroborating third-party sources Google needs before it will build one for an Indian SME.",
+    "mustCover": [
+      "what the Knowledge Graph stores",
+      "knowledge panel versus Knowledge Graph",
+      "the corroboration Google needs",
+      "Organization schema and sameAs",
+      "claiming and correcting a panel"
+    ]
+  },
+  {
+    "slug": "brand-mentions",
+    "type": "glossary",
+    "primaryKeyword": "brand mentions seo",
+    "secondaryKeywords": [
+      "unlinked brand mentions",
+      "do brand mentions help seo",
+      "link reclamation",
+      "brand mentions ai search",
+      "implied links"
+    ],
+    "h1": "Brand mentions",
+    "metaTitle": "Brand Mentions in SEO and AI Search, Explained",
+    "metaDescription": "A brand mention is your name appearing without a link. Learn why unlinked mentions matter more in AI search and how to earn them without buying coverage.",
+    "intent": "informational",
+    "cluster": "ai-search",
+    "priority": 3,
+    "angle": "Argues the mention has quietly overtaken the link for AI retrieval, because language models train on text, not anchor tags, and shows where Indian brands get mentioned for free.",
+    "mustCover": [
+      "linked versus unlinked mentions",
+      "why mentions matter for AI answers",
+      "link reclamation from existing mentions",
+      "where mentions come from without PR spend",
+      "tracking mentions cheaply"
+    ]
+  },
+  {
+    "slug": "ppc",
+    "type": "glossary",
+    "primaryKeyword": "ppc",
+    "secondaryKeywords": [
+      "what is ppc marketing",
+      "pay per click meaning",
+      "ppc vs seo",
+      "how does ppc work",
+      "ppc advertising india"
+    ],
+    "h1": "PPC (pay-per-click)",
+    "metaTitle": "PPC: What Pay-Per-Click Is and How It Works",
+    "metaDescription": "PPC means pay-per-click advertising: you pay only when someone clicks. Learn how the auction works and realistic Indian CPCs before you commit a budget.",
+    "intent": "informational",
+    "cluster": "paid",
+    "priority": 1,
+    "angle": "Explains the auction with the actual arithmetic, showing how a competitor with a better Quality Score outranks you while bidding less, and gives Indian CPC ranges by category.",
+    "mustCover": [
+      "how the ad auction works",
+      "Ad Rank, bid and Quality Score interaction",
+      "where PPC runs: Search, Shopping, Meta, YouTube",
+      "realistic Indian CPC ranges",
+      "when PPC beats SEO and when it does not"
+    ]
+  },
+  {
+    "slug": "cost-per-click",
+    "type": "glossary",
+    "primaryKeyword": "cost per click",
+    "secondaryKeywords": [
+      "cpc meaning",
+      "average cpc india",
+      "how to reduce cpc",
+      "max cpc vs average cpc",
+      "cpc calculation"
+    ],
+    "h1": "Cost per click (CPC)",
+    "metaTitle": "Cost Per Click (CPC): What Drives Your Price",
+    "metaDescription": "Cost per click is what you pay for one ad click. Learn what drives it, typical CPC ranges across Indian industries, and the levers that bring yours down.",
+    "intent": "informational",
+    "cluster": "paid",
+    "priority": 2,
+    "angle": "Treats CPC as a planning input rather than a metric: works backwards from a rupee CPC and a target cost per lead to the conversion rate a landing page has to hit, and shows why the same keyword costs different amounts by device, hour and city.",
+    "mustCover": [
+      "working backwards from CPC to a required conversion rate",
+      "maximum bid versus what you actually pay",
+      "why one keyword has several prices: device, hour, location",
+      "the CPC number that makes a channel unviable for your margin",
+      "CPC versus CPM and CPA as planning units"
+    ]
+  },
+  {
+    "slug": "quality-score",
+    "type": "glossary",
+    "primaryKeyword": "quality score",
+    "secondaryKeywords": [
+      "google ads quality score",
+      "how to improve quality score",
+      "quality score components",
+      "ad relevance",
+      "landing page experience"
+    ],
+    "h1": "Quality Score",
+    "metaTitle": "Quality Score: What It Is and How to Raise It",
+    "metaDescription": "Quality Score is Google Ads' 1-10 rating of keyword, ad and landing page relevance. A high score can halve your CPC. Here is each part and how to lift it.",
+    "intent": "informational",
+    "cluster": "paid",
+    "priority": 2,
+    "angle": "Puts a rupee figure on the diagnostic: at a ₹1,00,000 monthly budget, the swing between a 4 and an 8 changes how many clicks you buy by thousands, which is why the landing page matters more than the ad.",
+    "mustCover": [
+      "the three components: expected CTR, ad relevance, landing page experience",
+      "the 1-10 scale and its cost impact",
+      "how responsive search ads changed ad relevance",
+      "fixing landing page experience first",
+      "where to find Quality Score in the interface"
+    ]
+  },
+  {
+    "slug": "return-on-ad-spend",
+    "type": "glossary",
+    "primaryKeyword": "roas",
+    "secondaryKeywords": [
+      "return on ad spend meaning",
+      "roas formula",
+      "what is a good roas",
+      "roas vs roi",
+      "break even roas"
+    ],
+    "h1": "Return on ad spend (ROAS)",
+    "metaTitle": "ROAS: What Return on Ad Spend Really Tells You",
+    "metaDescription": "ROAS is revenue divided by ad spend. Learn how to calculate it, why a 3x ROAS can still lose money, and how it differs from ROI on Indian D2C margins.",
+    "intent": "informational",
+    "cluster": "paid",
+    "priority": 2,
+    "angle": "Works a real Indian D2C unit economics example where 3x ROAS is a loss once COGS, shipping, COD returns and GST come out, and derives the break-even ROAS formula.",
+    "mustCover": [
+      "the ROAS formula",
+      "break-even ROAS from gross margin",
+      "why COD returns wreck Indian D2C ROAS",
+      "ROAS versus ROI versus contribution margin",
+      "blended versus platform-reported ROAS"
+    ]
+  },
+  {
+    "slug": "negative-keywords",
+    "type": "glossary",
+    "primaryKeyword": "negative keywords",
+    "secondaryKeywords": [
+      "negative keyword list",
+      "how to add negative keywords",
+      "negative keyword match types",
+      "search terms report",
+      "wasted ad spend"
+    ],
+    "h1": "Negative keywords",
+    "metaTitle": "Negative Keywords: What They Are and Why Use Them",
+    "metaDescription": "Negative keywords stop your ads showing for queries you do not want. Learn the starter list every Indian advertiser needs, including free, jobs and salary.",
+    "intent": "informational",
+    "cluster": "paid",
+    "priority": 3,
+    "angle": "Ships a ready-made starter negative list tuned for Indian search behaviour: free, jobs, vacancy, salary, course, pdf, near me for national campaigns, and the weekly search-terms routine that grows it.",
+    "mustCover": [
+      "how negative keywords work",
+      "negative match types and their quirks",
+      "a starter negative list for Indian advertisers",
+      "the weekly search terms report routine",
+      "account, campaign and ad group level lists"
+    ]
+  },
+  {
+    "slug": "keyword-match-types",
+    "type": "glossary",
+    "primaryKeyword": "keyword match types",
+    "secondaryKeywords": [
+      "broad match vs phrase match",
+      "exact match keywords",
+      "match types google ads",
+      "broad match modifier",
+      "which match type to use"
+    ],
+    "h1": "Keyword match types",
+    "metaTitle": "Keyword Match Types in Google Ads, Explained",
+    "metaDescription": "Keyword match types control how loosely Google matches your ad to a search. Learn broad, phrase and exact in 2026, and where each one wastes budget.",
+    "intent": "informational",
+    "cluster": "paid",
+    "priority": 3,
+    "angle": "Explains why exact match is no longer exact and broad match now leans on Smart Bidding signals, so the old advice to start broad burns small Indian budgets fastest.",
+    "mustCover": [
+      "broad, phrase and exact in their current form",
+      "close variants and why exact is not exact",
+      "how match type interacts with Smart Bidding",
+      "a match type strategy for budgets under ₹1 lakh a month",
+      "auditing match types with the search terms report"
+    ]
+  },
+  {
+    "slug": "retargeting",
+    "type": "glossary",
+    "primaryKeyword": "retargeting",
+    "secondaryKeywords": [
+      "remarketing meaning",
+      "retargeting ads",
+      "retargeting vs remarketing",
+      "audience window retargeting",
+      "how retargeting works"
+    ],
+    "h1": "Retargeting",
+    "metaTitle": "Retargeting: What It Is and When It Works",
+    "metaDescription": "Retargeting shows ads to people who already visited you. Learn audience windows, frequency caps, and the minimum traffic you need for it to work at all.",
+    "intent": "informational",
+    "cluster": "paid",
+    "priority": 2,
+    "angle": "States the traffic floor other guides avoid: below roughly 1,000 monthly visitors, retargeting audiences never fill, so the spend is better placed on prospecting.",
+    "mustCover": [
+      "how retargeting audiences are built",
+      "membership duration and audience windows",
+      "the minimum traffic threshold",
+      "frequency capping and ad fatigue",
+      "cookie loss and its effect on list sizes"
+    ]
+  },
+  {
+    "slug": "utm-parameters",
+    "type": "glossary",
+    "primaryKeyword": "utm parameters",
+    "secondaryKeywords": [
+      "utm tracking",
+      "utm source medium campaign",
+      "how to build utm links",
+      "utm naming convention",
+      "utm builder"
+    ],
+    "h1": "UTM parameters",
+    "metaTitle": "UTM Parameters: What They Are and How to Use",
+    "metaDescription": "UTM parameters are tags added to a link so analytics knows where a visit came from. Learn the five fields, a naming convention, and the classic mistakes.",
+    "intent": "informational",
+    "cluster": "paid",
+    "priority": 3,
+    "angle": "Focuses on the discipline rather than the syntax: a shared naming convention sheet, because Instagram, instagram and IG create three sources and quietly ruin a quarter of reporting.",
+    "mustCover": [
+      "the five UTM fields and what each holds",
+      "case sensitivity and naming conventions",
+      "when not to tag internal links",
+      "UTMs on WhatsApp and offline QR campaigns",
+      "reading UTM data in GA4"
+    ]
+  },
+  {
+    "slug": "instagram-seo",
+    "type": "glossary",
+    "primaryKeyword": "instagram seo",
+    "secondaryKeywords": [
+      "instagram search optimization",
+      "how to rank on instagram search",
+      "instagram keywords bio",
+      "instagram alt text",
+      "instagram discoverability"
+    ],
+    "h1": "Instagram SEO",
+    "metaTitle": "Instagram SEO: What It Is and How to Do It",
+    "metaDescription": "Instagram SEO makes your profile and posts findable in Instagram search. Learn where keywords go, what the algorithm reads, and what hashtags now do.",
+    "intent": "informational",
+    "cluster": "social",
+    "priority": 1,
+    "angle": "Built on the 2025 change that Google and Bing now index public Instagram posts, which makes each caption a small landing page and the name field the highest-value keyword slot on the app.",
+    "mustCover": [
+      "where Instagram reads keywords: name field, bio, captions, on-screen text, alt text",
+      "why the name field beats the username",
+      "engagement signals that matter: saves, shares, watch time",
+      "public post indexing by Google since 2025",
+      "what hashtags still contribute"
+    ]
+  },
+  {
+    "slug": "hashtags",
+    "type": "glossary",
+    "primaryKeyword": "hashtags",
+    "secondaryKeywords": [
+      "hashtag seo",
+      "how many hashtags to use",
+      "hashtag strategy 2026",
+      "branded hashtags",
+      "do hashtags still work"
+    ],
+    "h1": "Hashtags",
+    "metaTitle": "Hashtags: What They Do in 2026",
+    "metaDescription": "A hashtag turns a word into a searchable link. Learn how many to use per platform in 2026, and why hashtag SEO is not the reach lever it used to be.",
+    "intent": "informational",
+    "cluster": "social",
+    "priority": 3,
+    "angle": "Gives the current per-platform numbers after Instagram itself downgraded hashtags as a discovery route, so the advice is three to five relevant tags, not thirty recycled ones.",
+    "mustCover": [
+      "what a hashtag actually does now",
+      "per-platform counts for Instagram, LinkedIn, X and YouTube",
+      "branded and campaign hashtags",
+      "hashtags versus keyword search",
+      "why banned and generic tags hurt"
+    ]
+  },
+  {
+    "slug": "engagement-rate",
+    "type": "glossary",
+    "primaryKeyword": "engagement rate",
+    "secondaryKeywords": [
+      "engagement rate formula",
+      "what is a good engagement rate",
+      "engagement rate by reach",
+      "instagram engagement rate india",
+      "how to calculate engagement rate"
+    ],
+    "h1": "Engagement rate",
+    "metaTitle": "Engagement Rate: What It Is and How to Measure",
+    "metaDescription": "Engagement rate measures interactions against reach or followers. Learn the two formulas, which one your agency should report, and Indian benchmark ranges.",
+    "intent": "informational",
+    "cluster": "social",
+    "priority": 3,
+    "angle": "Exposes how the denominator choice flatters reports: engagement by reach can look three times better than engagement by followers on the same post, so the page fixes one standard.",
+    "mustCover": [
+      "engagement rate by reach versus by followers",
+      "which interactions to count",
+      "typical Indian benchmark ranges by follower size",
+      "how influencers inflate the number",
+      "why saves and shares matter most"
+    ]
+  },
+  {
+    "slug": "user-generated-content",
+    "type": "glossary",
+    "primaryKeyword": "user generated content",
+    "secondaryKeywords": [
+      "ugc meaning marketing",
+      "ugc creator",
+      "customer content marketing",
+      "ugc rights and usage",
+      "ugc vs influencer content"
+    ],
+    "h1": "User-generated content (UGC)",
+    "metaTitle": "User-Generated Content (UGC), Explained",
+    "metaDescription": "User-generated content is content your customers make about you. Learn how to collect it legally, where it converts hardest, and what rights you need.",
+    "intent": "informational",
+    "cluster": "social",
+    "priority": 2,
+    "angle": "Draws the line Indian brands blur constantly: genuine customer UGC versus paid UGC-style creator content, and the written permission you need before either appears in an ad.",
+    "mustCover": [
+      "organic UGC versus paid UGC-style creative",
+      "usage rights and written permission",
+      "where UGC converts best: product pages, ads, reviews",
+      "how to prompt customers for content",
+      "moderation and misuse risk"
+    ]
+  },
+  {
+    "slug": "influencer-marketing-meaning",
+    "type": "glossary",
+    "primaryKeyword": "influencer marketing",
+    "secondaryKeywords": [
+      "influencer marketing meaning",
+      "nano vs micro influencers",
+      "influencer rates india",
+      "how to work with influencers",
+      "influencer campaign brief"
+    ],
+    "h1": "Influencer marketing",
+    "metaTitle": "Influencer Marketing: Tiers, Rates and Briefs",
+    "metaDescription": "Influencer marketing is paying creators to reach their audience. Learn the nano to mega tiers, typical Indian rates, and how to brief so a campaign lands.",
+    "intent": "commercial",
+    "cluster": "social",
+    "priority": 2,
+    "angle": "Prices the tiers in rupees for the Indian market and explains why nano creators at ₹3,000-₹15,000 a post routinely out-convert a ₹5 lakh celebrity placement.",
+    "mustCover": [
+      "the follower tiers from nano to mega",
+      "typical Indian rate ranges in rupees",
+      "spotting bought followers and fake engagement",
+      "what a usable brief contains",
+      "disclosure rules under ASCI guidelines"
+    ]
+  },
+  {
+    "slug": "social-listening",
+    "type": "glossary",
+    "primaryKeyword": "social listening",
+    "secondaryKeywords": [
+      "social media monitoring",
+      "brand monitoring tools",
+      "sentiment analysis social",
+      "how to do social listening",
+      "social listening vs monitoring"
+    ],
+    "h1": "Social listening",
+    "metaTitle": "Social Listening: What It Is and How to Start",
+    "metaDescription": "Social listening tracks what people say about your brand and category online. Learn what to monitor, free ways to do it, and how to act on what you find.",
+    "intent": "informational",
+    "cluster": "social",
+    "priority": 3,
+    "angle": "Starts free: Google Alerts, Reddit and Quora searches, WhatsApp community chatter and review sites, before any ₹25,000-a-month listening tool enters the conversation.",
+    "mustCover": [
+      "listening versus monitoring",
+      "what to track: brand, competitors, category, complaints",
+      "free listening methods",
+      "turning findings into content and product decisions",
+      "handling a complaint thread publicly"
+    ]
+  },
+  {
+    "slug": "content-calendar",
+    "type": "glossary",
+    "primaryKeyword": "content calendar",
+    "secondaryKeywords": [
+      "social media calendar",
+      "editorial calendar template",
+      "content planning process",
+      "how to plan monthly content",
+      "content calendar example"
+    ],
+    "h1": "Content calendar",
+    "metaTitle": "Content Calendar: What It Is and How to Build",
+    "metaDescription": "A content calendar is the plan for what you publish, where and when. Learn a monthly format that survives a small team and a busy festival season.",
+    "intent": "informational",
+    "cluster": "social",
+    "priority": 3,
+    "angle": "Built for a two-person Indian marketing team: a monthly grid that plans around Diwali, Holi, exam season and quarter-end sales rather than a generic global content calendar.",
+    "mustCover": [
+      "the fields a calendar needs",
+      "planning cadence: monthly grid, weekly lock",
+      "building around Indian festivals and business seasons",
+      "leaving room for reactive content",
+      "who approves what and by when"
+    ]
+  }
+]

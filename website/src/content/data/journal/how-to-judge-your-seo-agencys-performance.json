@@ -1,0 +1,241 @@
+{
+  "slug": "how-to-judge-your-seo-agencys-performance",
+  "type": "journal",
+  "primaryKeyword": "how to measure seo agency performance",
+  "secondaryKeywords": [
+    "how to evaluate an seo agency",
+    "is my seo agency working",
+    "seo agency kpis",
+    "how to tell if seo is working",
+    "seo accountability metrics"
+  ],
+  "cluster": "client-education",
+  "intent": "commercial",
+  "h1": "How to Judge Whether Your SEO Agency Is Actually Working",
+  "metaTitle": "How to Judge Your SEO Agency's Performance",
+  "metaDescription": "To measure SEO agency performance, ignore the rank tracker. Judge three numbers: qualified organic leads, non-brand demand and work actually shipped.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Judge an SEO agency on three numbers: non-brand organic clicks, qualified leads from organic in your CRM, and the count of work actually shipped that month. If non-brand demand is flat at month six, the strategy is wrong. If shipped work is flat, the staffing is. Average position tells you neither.",
+  "takeaways": [
+    "Three numbers, in this order: **non-brand organic clicks**, **qualified organic leads (trailing 3-month)**, **shipped work counted**.",
+    "Brand search flatters everyone. Filter your brand terms out of Search Console with a regex before you read a single chart.",
+    "Each number fails differently — that's the point. Which one is flat tells you whether to change the plan or change the agency.",
+    "Average position is the worst KPI on most reports. It falls while a site is winning, because new long-tail queries enter at position 60."
+  ],
+  "sections": [
+    {
+      "h2": "Three numbers. You can delete the rest of the report.",
+      "body": [
+        "A monthly SEO report typically runs somewhere between eighteen and thirty slides. Most of it is evidence of activity: keywords tracked, pages crawled, errors found, posts published, a screenshot of a rank tracker with the good rows visible. Activity is not progress, and a deck that leads with activity is usually leading with it for a reason.",
+        "Three numbers tell you almost everything, and the order matters because each one fails in a different way. Read them together and you don't just learn whether SEO is working — you learn what specifically is broken, which is the difference between a productive conversation in month six and an expensive shrug."
+      ],
+      "bullets": [
+        "**Non-brand organic clicks and impressions** — is anyone new finding you through search.",
+        "**Qualified leads from organic, as a trailing three-month average** — is any of it worth money.",
+        "**Shipped work, counted** — is the capacity you're paying for actually reaching your account."
+      ]
+    },
+    {
+      "h2": "Number one — non-brand organic demand",
+      "body": [
+        "Brand search is the number that flatters everybody. Run a campaign, land press coverage, have a founder go mildly viral on LinkedIn, open a second office — brand searches rise, organic traffic rises with them, and the SEO report takes the credit. None of that movement came from SEO work, and in a bad engagement it's the only thing holding the chart up.",
+        "So split it before you read anything. In Google Search Console, open the Performance report, add a **Query** filter, choose **Custom (regex)**, set it to **doesn't match**, and paste in every version of your brand somebody might type — the proper name, the one-word version, the domain, the common misspellings, the founder's name if people search it.",
+        "Something like `(?i)lastagency|last agency|lastagencyhere` for us. Save it as a bookmark, export the non-brand clicks and impressions every month, and keep them in a sheet. That single series is the closest thing SEO has to a truth serum, and it takes about four minutes to set up once."
+      ],
+      "subs": [
+        {
+          "h3": "What healthy looks like",
+          "body": [
+            "Non-brand impressions move first, usually inside four to eight weeks, because a page can start appearing for queries long before it ranks well enough to be clicked. Clicks follow. Then the mix shifts: early wins are long-tail and low-volume, and over months they should be joined by mid-tail terms with commercial intent.",
+            "Flat non-brand impressions at month three is a warning worth raising. Flat at month six is a verdict."
+          ]
+        },
+        {
+          "h3": "The mix matters as much as the total",
+          "bullets": [
+            "Count distinct non-brand queries producing at least one click. Rising query count means the site is being trusted across a topic, not just on one lucky page.",
+            "Check whether new queries are commercial or purely informational. A blog winning \"what is\" queries while the service pages sit still is a real problem dressed as a good month.",
+            "Watch the click-through rate on your top twenty non-brand queries. Falling CTR at stable positions usually means an AI Overview or a rich result now sits above you."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Agree the brand-term list on day one",
+        "body": "Write the regex into the engagement notes at kickoff and don't edit it afterwards. An agency that adds terms to the brand filter mid-engagement can make non-brand growth appear; one that removes terms can make it disappear. Freeze it, like you froze the baseline."
+      }
+    },
+    {
+      "h2": "Number two — qualified lead velocity, not form fills",
+      "body": [
+        "Raw form fills include job applicants, vendors selling you backlinks, students doing a project, and the person who wanted a free audit and was never going to buy anything. Every agency knows this. Most report the raw number anyway, because it's bigger.",
+        "The fix is unglamorous: define \"qualified\" once, in writing, before work starts, and never renegotiate it mid-engagement. It doesn't have to be sophisticated. A workable definition is a lead that matches your ideal customer on two of three axes — size, budget signal, geography — and that your sales team agreed to take a call with. Sales agreeing to the call is the honest filter, because sales won't waste an hour to make marketing's chart look better.",
+        "Then measure velocity rather than a monthly count. Organic leads arrive lumpy — one month brings nine, the next brings three, and neither number means anything alone. A trailing three-month average smooths out the noise without hiding a genuine decline."
+      ],
+      "numbered": [
+        "**Write the definition down** and put it in the engagement doc, next to the baseline number.",
+        "**Track it in your CRM, not GA4.** GA4 counts events. Your CRM counts humans somebody decided were worth talking to. Only one of those pays salaries.",
+        "**Capture source properly.** A hidden field storing first-touch source and landing page on every form, plus a \"how did you hear about us\" question for the phone and WhatsApp enquiries that attribution will otherwise lose entirely.",
+        "**Report it as a trailing three-month average**, alongside the frozen baseline from day one so the comparison is always visible.",
+        "**Count offline conversions too.** In most Indian B2B and services businesses a meaningful share of organic leads arrive by phone or WhatsApp after reading a page. If nobody asks, that traffic looks like it converted at zero."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "No baseline, no argument",
+        "body": "If nobody wrote down what this number was the day work started, month six becomes a discussion about feelings. Freeze the trailing ninety days before anything else happens — [how to set an SEO baseline](/journal/how-to-set-an-seo-baseline) walks through it properly."
+      }
+    },
+    {
+      "h2": "Number three — shipped work, counted honestly",
+      "body": [
+        "This is the leading indicator almost nobody reports, because it's the one that's uncomfortable for both sides. Count it monthly, in a shared sheet either party can update: pages published, pages materially updated, technical fixes **deployed**, links earned.",
+        "The word doing the work there is *deployed*. On a typical SEO report, half the technical items have been recommended for four months and are sitting in a developer's backlog behind a payments integration. That's frequently the client's fault rather than the agency's — but somebody has to count it, because it's usually the reason the other two numbers haven't moved.",
+        "Shipped work leads the other two by months. Content published in April affects non-brand clicks in June or July and leads in August. Which means it's the only number that tells you in month two whether month six is going to be a disaster."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "\"Recommended\" is not \"shipped\"",
+        "body": "Ask for the two columns separately: recommended, and live in production. An agency reporting recommendations as output is reporting a to-do list as progress. A client whose recommended column has fifteen items sitting untouched since February has found the bottleneck, and it isn't the agency."
+      }
+    },
+    {
+      "h2": "The scorecard, on one page",
+      "body": [
+        "This is the whole review. Three rows, checked monthly, taking about fifteen minutes if the sheet is set up."
+      ],
+      "table": {
+        "caption": "The three-number scorecard for judging an SEO engagement.",
+        "head": ["The number", "Where it lives", "What a flat line means"],
+        "rows": [
+          [
+            "Non-brand organic clicks and impressions",
+            "Search Console, with a regex query filter excluding every brand term, frozen at kickoff.",
+            "The plan is aimed at queries you can't win, or at queries nobody searches. A strategy problem, not an effort problem."
+          ],
+          [
+            "Qualified organic leads, trailing three-month average",
+            "Your CRM, with first-touch source and landing page captured on every enquiry.",
+            "You're winning traffic that doesn't buy, or winning the right traffic onto pages that don't convert it."
+          ],
+          [
+            "Shipped work: pages live, fixes deployed, links earned",
+            "A shared sheet both sides update. Two columns: recommended, and live.",
+            "Capacity isn't reaching your account — or your approvals and dev queue are the bottleneck. Find out which before anyone gets fired."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "What each number should be doing, month by month",
+      "body": [
+        "Ranges rather than promises, because sites and markets differ enormously — a three-year-old site with clean technical foundations behaves nothing like a six-month-old domain in a competitive category. What doesn't differ much is the *shape*. If your engagement doesn't roughly match this shape, the deviation is the conversation."
+      ],
+      "table": {
+        "caption": "Expected shape of each number across the first year of an SEO engagement.",
+        "head": ["Month", "Non-brand impressions", "Qualified organic leads", "Shipped work"],
+        "rows": [
+          [
+            "Month 1",
+            "Flat, and that's correct. The work is audit, baseline and setup.",
+            "Flat. Anything here is coincidence.",
+            "Highest of the engagement: audit, quick technical fixes, keyword map."
+          ],
+          [
+            "Month 3",
+            "Moving. Flat here is the first genuine warning sign.",
+            "Early movement only on short sales cycles.",
+            "Steady cadence, technical backlog visibly shrinking."
+          ],
+          [
+            "Month 6",
+            "Clearly up, with new queries entering — or the strategy is wrong.",
+            "Above baseline. This is the first honest read on money.",
+            "Steady. Content and links carrying most of the hours now."
+          ],
+          [
+            "Month 12",
+            "Compounding: new queries appearing, not just old ones improving.",
+            "The number the entire engagement gets judged on.",
+            "Steady, with more refresh work and less net-new publishing."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "The honest timeline",
+        "body": "Three to six months to meaningful movement on a competitive keyword set. Six to twelve to compounding returns. Anyone quoting materially less is quoting a smaller, easier problem than the one you actually have."
+      }
+    },
+    {
+      "h2": "The decision rule when one of them is flat",
+      "body": [
+        "Here's the part that turns a scorecard into a decision. Don't fire on a feeling in month four; fire on a pattern, and make sure you're firing the right thing. Sometimes the right thing to fire is the plan."
+      ],
+      "bullets": [
+        "**Shipped work flat, any month.** The easiest to diagnose and the fastest to fix. Nothing is being produced. Ask for the count and the reason. If the reason is your approvals or your dev queue, that's yours and it's fixable inside a week. If the reason is \"resourcing\", your account is subsidising a larger one and it won't self-correct.",
+        "**Non-brand flat at month six, shipped work healthy.** The strategy is wrong, not the staffing. Change the plan before you change the agency: one honest reset conversation, a new keyword thesis aimed at queries you can realistically win, sixty days to show a different shape. A good agency will have raised this before you did.",
+        "**Non-brand up, leads flat at month six.** A conversion or intent problem, not an SEO one. You're ranking for research queries rather than buying queries, or the pages that rank don't ask for anything. Firing the agency doesn't fix either. Fix the pages, then re-aim the content at commercial intent.",
+        "**Leads up, non-brand flat.** Check whether a campaign, a PR hit or a seasonal spike is doing the work. Enjoy it, don't credit SEO for it, and don't renew on the strength of it.",
+        "**Anything still flat at month twelve.** Leave. Twelve months is long enough that either the market is unwinnable at your budget — in which case the agency should have told you in month two and refunded your optimism — or you've been paying for activity."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Before you fire anyone",
+        "body": "Ask for one thing: the list of what they'd do differently with the same budget, written down, with dates. An agency that produces a sharp answer in two days is worth another quarter. An agency that produces a deck about \"realigning on strategy\" has told you what the next quarter looks like."
+      }
+    },
+    {
+      "h2": "Why average position is the worst number on your report",
+      "body": [
+        "Average position is the most quoted SEO metric and the least useful, and the reason is mechanical rather than philosophical.",
+        "Search Console's average position is an average across every query where your site appeared, weighted by impressions. As SEO starts working, your site begins showing up for hundreds of new long-tail queries — at positions 40 to 80, because you've only just entered them. Those new rows drag the average down at exactly the moment the engagement is succeeding. A site can grow clicks by half while its average position visibly worsens for months.",
+        "Which puts an honest agency in an awkward spot. Report the average and you get punished for winning. So the industry does the other thing: a third-party rank tracker screenshot showing ten hand-picked keywords, all of them up. Both charts are technically accurate and neither tells you anything.",
+        "Third-party trackers add a further layer of fiction. They sample one location, one device and a de-personalised result that no actual human sees. Useful for spotting a large directional change. Useless as a monthly scorecard, and completely useless as the basis for a renewal decision.",
+        "There's exactly one good use for position data, and it isn't the average. Filter Search Console for queries where you sit between positions 8 and 15 with meaningful impressions. Those are pages one small improvement away from page one, where the click-through curve does the rest of the work. That's a work queue, not a KPI — the difference is covered further in [keyword rankings vs organic traffic](/compare/keyword-rankings-vs-organic-traffic) and in what [average position](/glossary/average-position) actually measures."
+      ]
+    },
+    {
+      "h2": "What goes on our own report",
+      "body": [
+        "Page one is the three numbers, with the frozen baseline printed beside the lead figure so nobody has to remember what it was. Page two is the work log, with the recommended column and the shipped column side by side, including the items stuck on your side. Page three is what we're doing next month and why we changed our mind about anything.",
+        "There's no rank tracker screenshot, and that occasionally disappoints people in month two. It stops disappointing them in month seven.",
+        "The reason we can report this way is the commitment underneath it: we freeze your trailing-ninety-day count of qualified organic leads on day one and guarantee movement against that number — never a ranking position, because nobody controls Google's index. Miss it in ninety days and we keep working free until we beat it. That's also why we cap at three new clients a month. [The guarantee, in full](/seo)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I know if my SEO agency is doing a good job?",
+      "a": "Check three numbers monthly: non-brand organic clicks in Search Console, qualified leads from organic in your CRM as a trailing three-month average, and the count of work actually shipped. If all three are moving, it's working. If one is flat, which one tells you whether the problem is the plan, the pages or the staffing."
+    },
+    {
+      "q": "How do I separate brand from non-brand traffic in Search Console?",
+      "a": "Open the Performance report, add a Query filter, select Custom (regex), set it to \"doesn't match\", and enter every version of your brand — proper name, one-word form, domain, common misspellings, founder's name. Save the view, export monthly, and never change the term list mid-engagement."
+    },
+    {
+      "q": "When should I fire my SEO agency?",
+      "a": "Not before month six, and not on a feeling. If shipped work is flat, ask why first — it's often the client's dev queue. If non-brand demand is flat at month six with healthy shipped work, reset the strategy and give it sixty days. If anything is still flat at month twelve, leave."
+    },
+    {
+      "q": "Why shouldn't I judge my agency on keyword rankings?",
+      "a": "Average position falls while a site is winning, because new long-tail queries enter at positions 40–80 and drag the average down. Rank tracker screenshots solve that by showing ten hand-picked keywords. Both are technically accurate and neither predicts revenue. Use positions 8–15 as a work queue instead."
+    },
+    {
+      "q": "What counts as a qualified lead from organic search?",
+      "a": "Define it before work starts and don't renegotiate it. A workable version: matches your ideal customer on two of three axes — size, budget signal, geography — and sales agreed to take the call. Sales agreeing is the honest filter, because they won't waste an hour to improve a marketing chart."
+    },
+    {
+      "q": "How long before an SEO agency should show results?",
+      "a": "Leading indicators — non-brand impressions and new queries appearing — inside four to eight weeks. Meaningful movement on a competitive keyword set in three to six months. Compounding returns in six to twelve. Month one is almost entirely audit, baseline and setup, and should look flat."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "how-do-i-know-if-my-seo-agency-is-doing-a-good-job" },
+    { "type": "glossary", "slug": "average-position" },
+    { "type": "journal", "slug": "how-to-set-an-seo-baseline" },
+    { "type": "journal", "slug": "how-to-read-an-seo-report" },
+    { "type": "compare", "slug": "keyword-rankings-vs-organic-traffic" },
+    { "type": "services", "slug": "seo-reporting-services" }
+  ]
+}

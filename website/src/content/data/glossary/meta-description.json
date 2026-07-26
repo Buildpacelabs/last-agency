@@ -1,0 +1,118 @@
+{
+  "slug": "meta-description",
+  "type": "glossary",
+  "primaryKeyword": "meta description",
+  "secondaryKeywords": [
+    "meta description length",
+    "how to write meta description",
+    "is meta description a ranking factor",
+    "meta description example",
+    "google rewrites meta description"
+  ],
+  "cluster": "on-page",
+  "intent": "informational",
+  "h1": "Meta description",
+  "metaTitle": "Meta Description: What It Is and How to Write It",
+  "metaDescription": "A meta description is the summary under your search result. Google often replaces it. Here's when yours survives, and how to write one that gets used.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Meta description",
+  "definition": "A meta description is an HTML meta tag that proposes a short summary of a page for search engines to display beneath the title in results.",
+  "answer": "A meta description is the short summary Google may show under your title in search results. It is not a ranking factor — Google has said so for years — but it moves click-through rate. Google frequently replaces it with its own snippet, and the usual reason is that your version doesn't contain the words the searcher typed.",
+  "takeaways": [
+    "Not a ranking factor. Still worth writing, because a ranking nobody clicks is a ranking that pays nothing.",
+    "Google generates snippets **per query**, not per page. One static description can only match one phrasing.",
+    "The 140–155 character window is a working convention, not a spec. The display limit has moved several times.",
+    "On pages that rank for hundreds of long-tail queries, no description is often better than a fixed one."
+  ],
+  "sections": [
+    {
+      "h2": "It doesn't rank you. It decides whether the ranking is worth anything.",
+      "body": [
+        "Google has stated plainly and repeatedly that the meta description is not used as a ranking signal. That fact gets quoted as a reason to ignore it, which is the wrong conclusion. Position three with a snippet that answers the question outperforms position two with a snippet that reads like a company boilerplate.",
+        "So treat it as ad copy for a slot you already won. It costs nothing, it ships with the page, and it is the only part of your search result you can write freely — the [title tag](/glossary/title-tag) is squeezed by pixel width and the URL is fixed."
+      ]
+    },
+    {
+      "h2": "Why Google swaps in its own snippet",
+      "body": [
+        "Google's own documentation is explicit that snippets are generated to suit the query. That single sentence explains almost every rewrite you've ever seen. A page that ranks for forty different phrasings has one meta description; Google would rather show a passage from the page that contains the words the searcher actually typed, with those words bolded.",
+        "Google has never published a rewrite rate, and any number you see quoted comes from third-party sampling, not from Google. What's consistently observable is that rewriting is common, not exceptional, and it climbs as a page ranks for a wider spread of queries."
+      ],
+      "subs": [
+        {
+          "h3": "What makes Google keep yours",
+          "bullets": [
+            "It contains the query phrase, or a close variant of it, in natural sentences.",
+            "It genuinely summarises the page rather than pitching the company.",
+            "It fits the display window without being cut mid-thought.",
+            "The page ranks for a narrow, well-defined set of queries — a definition page, a product page, a service page."
+          ]
+        },
+        {
+          "h3": "What gets it thrown out",
+          "bullets": [
+            "Duplicated across a template, so hundreds of URLs share one description.",
+            "Written about the brand instead of the page: \"We are a leading agency offering a range of services.\"",
+            "Stuffed with commas and keyword variants rather than written as sentences.",
+            "Wildly mismatched with the query — a description about pricing on a page ranking for a how-to."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The 140–155 character window, and why it's a convention",
+      "body": [
+        "Like titles, descriptions are truncated by rendered width rather than a hard character count, and Google has changed the display length more than once — it briefly ran much longer snippets in 2017 before pulling back. Treat 140–155 characters as a house rule that survives most of that churn, and expect mobile to show less.",
+        "Front-load the meaning. Write the sentence that would make someone click in the first eighty characters, and let the rest be the part you can afford to lose. Do not write to the character count by padding; a 120-character description that says something beats a 155-character one that trails off into filler."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The template trap",
+        "body": "The single most common failure we find in audits is a CMS that stamps the same meta description on every page in a section. It guarantees a rewrite, it flags in Search Console as duplicate metadata, and it tells anyone auditing the site that nobody has looked at these pages in years."
+      }
+    },
+    {
+      "h2": "Pages where you should skip it entirely",
+      "body": [
+        "This is the part most guides won't say: on some pages, leaving the description blank produces better snippets than writing one. Google's own guidance acknowledges that a good generated snippet can beat a poor hand-written one, and a blank field lets Google pick a passage matched to each individual query.",
+        "Skip it on: large ecommerce catalogues where you'd be generating descriptions programmatically anyway, deep blog archives that pull long-tail traffic across dozens of phrasings, and any page whose queries you genuinely can't predict. Write it deliberately on: the homepage, service pages, location pages, comparison pages and anything with a commercial query you're actively targeting.",
+        "Whichever you choose, check the result. Search Console's performance report shows you which queries a page earns clicks for — if the click rate is far below its neighbours at the same [average position](/glossary/average-position), the snippet is the suspect."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long should a meta description be?",
+      "a": "140–155 characters is a safe working range. The real limit is rendered width and Google has changed it before — it ran much longer snippets briefly in 2017. Front-load the point in the first eighty characters so the meaning survives truncation on mobile."
+    },
+    {
+      "q": "Is the meta description a ranking factor?",
+      "a": "No. Google has confirmed this repeatedly and it hasn't changed. It affects click-through rate, which affects how much traffic a ranking is worth, but it does not affect where the page ranks in the first place."
+    },
+    {
+      "q": "Why does Google show something different from my meta description?",
+      "a": "Because Google generates snippets to match the query, not the page. If the searcher's words aren't in your description, Google often pulls a passage from the body that contains them and bolds them. That is expected behaviour, not a fault."
+    },
+    {
+      "q": "Should every page have a meta description?",
+      "a": "No. Write them for homepage, service, location and comparison pages where you know the query. For large catalogues and long-tail archives, leaving it blank lets Google choose a passage per query, which usually beats one fixed sentence trying to serve forty phrasings."
+    },
+    {
+      "q": "Do duplicate meta descriptions hurt SEO?",
+      "a": "They don't cause a ranking penalty, but they guarantee Google will rewrite them and they show up as an issue in Search Console. More usefully, they're a reliable signal that a section of the site was generated and never reviewed — which is worth fixing for reasons beyond the tag."
+    },
+    {
+      "q": "Can I use my meta description as ad copy?",
+      "a": "Yes, within reason. It should describe what's on the page, because a mismatch gets it replaced and gets you a bounce. But a description that names a number, a timeframe or a specific deliverable will beat a neutral summary every time."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "title-tag" },
+    { "type": "glossary", "slug": "click-through-rate" },
+    { "type": "glossary", "slug": "serp" },
+    { "type": "glossary", "slug": "on-page-seo-meaning" },
+    { "type": "services", "slug": "on-page-seo-services" },
+    { "type": "journal", "slug": "how-to-read-an-seo-report" }
+  ]
+}

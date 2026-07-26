@@ -1,0 +1,178 @@
+{
+  "slug": "what-is-generative-engine-optimization",
+  "type": "answers",
+  "primaryKeyword": "what is generative engine optimization",
+  "secondaryKeywords": [
+    "geo marketing",
+    "generative engine optimisation meaning",
+    "what is geo in seo",
+    "answer engine optimisation"
+  ],
+  "cluster": "seo-ai",
+  "intent": "informational",
+  "h1": "Generative engine optimisation, without the hype",
+  "metaTitle": "What Is Generative Engine Optimization (GEO)?",
+  "metaDescription": "What is generative engine optimization? Getting cited inside AI answers instead of ranking below them. Here's what genuinely differs from ordinary SEO.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Generative engine optimisation is the practice of getting your pages cited inside AI-generated answers — ChatGPT, Perplexity, Google's AI Overviews — rather than ranked in a list below them. Most of the work is ordinary SEO: be crawlable, indexed, and clearly written. The genuinely new part is making answers easy to extract.",
+  "takeaways": [
+    "Roughly four-fifths of GEO is SEO you should already be doing. Crawlability, indexation, clear writing, entity consistency, third-party mentions.",
+    "The genuinely new fifth is **extractability** — putting a complete, quotable answer where a retrieval system can lift it without reading 900 words first.",
+    "You cannot be cited if you cannot be crawled. Every generative answer worth having is grounded in retrieved documents.",
+    "It does not deserve a separate budget line yet. It deserves a change to how the existing pages are written."
+  ],
+  "sections": [
+    {
+      "h2": "Where the term came from, and what it means",
+      "body": [
+        "The phrase comes from a November 2023 research paper on arXiv titled \"GEO: Generative Engine Optimization\", written by a group of academic researchers and later presented at the KDD conference in 2024. It gave a name to an obvious problem: if an AI system answers the question and cites a handful of sources, how do you become one of the sources?",
+        "The paper tested a set of content changes against a benchmark of queries and reported that adding citations, quotations from credible sources and relevant statistics improved a page's visibility inside generated answers, while keyword stuffing did not. Worth reading, worth treating as directional — it was measured on a constructed benchmark, not on live commercial traffic, and the systems have changed several times since.",
+        "Then the term got picked up by the marketing industry, which is where the trouble started. You'll now see GEO, AEO (answer engine optimisation), AI SEO and \"search everywhere optimisation\" used interchangeably, each with a price attached. The concepts underneath overlap almost completely. If you want the distinction spelled out, we've compared [GEO against ordinary SEO](/compare/geo-vs-seo) directly."
+      ]
+    },
+    {
+      "h2": "The part that is just SEO with a new name",
+      "body": [
+        "Be honest about the overlap before paying for the difference. Almost everything on the standard GEO checklist is something a competent SEO was already doing in 2019."
+      ],
+      "table": {
+        "caption": "The GEO checklist, mapped against what it was already called.",
+        "head": ["Sold as GEO", "Previously known as", "New?"],
+        "rows": [
+          [
+            "Making sure AI systems can access your content",
+            "Crawlability and indexation",
+            "No — same crawlers, more of them"
+          ],
+          [
+            "Structuring content so it can be understood",
+            "Headings, semantic HTML, schema markup",
+            "No"
+          ],
+          [
+            "Consistent brand facts across the web",
+            "Entity SEO, NAP consistency, knowledge panel work",
+            "No"
+          ],
+          [
+            "Being mentioned on authoritative third-party sites",
+            "Digital PR and link building",
+            "No"
+          ],
+          [
+            "Covering a topic comprehensively",
+            "Topical authority, topic clusters",
+            "No"
+          ],
+          [
+            "Demonstrating expertise and first-hand experience",
+            "E-E-A-T",
+            "No"
+          ],
+          [
+            "Writing self-contained, quotable answers",
+            "Featured snippet optimisation, done harder",
+            "Partly"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Why the overlap is so complete",
+        "body": "Google's AI Overviews are generated over Google's own index. Assistants that browse retrieve from live web indexes. In both cases the candidate set is drawn from pages that are crawlable and reasonably well-ranked already. The old work is the entry ticket, not an alternative to the new work."
+      }
+    },
+    {
+      "h2": "The part that's genuinely different",
+      "body": [
+        "There is a real difference, and it's narrower than the pitch decks suggest. It comes down to what happens after retrieval, when a model has your page in context and has to decide whether to use it.",
+        "A ranking system asks: is this page relevant and trustworthy enough to show? A generative system asks something harder: can I lift a defensible sentence out of this page and attribute it? Those two questions reward different writing."
+      ],
+      "bullets": [
+        "**Extractability.** A complete answer inside two or three sentences, near the top, that survives being pulled out of the page. Prose that only makes sense after 800 words of context is invisible to an extraction step.",
+        "**Self-contained blocks.** Sections that stand alone. \"As mentioned above\" is fine for a reader and useless to a system that only retrieved that chunk.",
+        "**Attributable claims.** Specific, checkable statements — a number, a date, a named source, a price. Generic advice gets absorbed into the summary without credit; a specific claim has to be attributed to somebody.",
+        "**Information that exists nowhere else.** A synthesiser blends five sources into one paragraph and cites none of them individually. It cannot do that with a figure only you have published. This is the strongest single lever and it's a content decision, not a technical one.",
+        "**Bot access as a deliberate choice.** Crawlers like `GPTBot`, `OAI-SearchBot`, `ClaudeBot`, `PerplexityBot` and Google's `Google-Extended` can each be allowed or disallowed by name. Blocking them all is a legitimate position with a cost attached: you also stop appearing in the answers your competitors appear in."
+      ]
+    },
+    {
+      "h2": "How a generative engine actually picks a source",
+      "body": [
+        "Understanding the pipeline stops you buying magic. There are three gates, and different work matters at each one."
+      ],
+      "numbered": [
+        "**Retrieval.** The system runs one or more searches and pulls a candidate set of pages. If you aren't in an index it can reach, the process ends here and nothing else you do matters. This gate is pure classic SEO.",
+        "**Selection.** From the candidates, it picks which pages to ground the answer in. Corroboration matters here — a claim confirmed in several places is safer to repeat than one that appears only on your own site. So do the usual credibility signals, because they shaped which pages ranked in the first place.",
+        "**Attribution.** The model writes an answer and decides what to link. This is where extractability pays. Pages that state something specific and quotable get named; pages that restate the consensus get blended into it without a citation."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The claim to be suspicious of",
+        "body": "Anyone offering to get you cited in AI answers without doing the SEO underneath is describing a shortcut through a gate that doesn't have one. Retrieval comes first, always. Ask what happens at gate one before discussing gates two and three."
+      }
+    },
+    {
+      "h2": "Measuring citation share, honestly",
+      "body": [
+        "This is the weakest part of the whole discipline, and it's where most GEO products oversell. There's no stable equivalent of rank tracking, for a structural reason: generated answers vary by phrasing, by session, by user context, by location and by model version. Ask the same question twice and you can get two different source lists.",
+        "What you can do is sample deliberately and accept the noise. Pick 20 to 40 questions your buyers genuinely ask. Run them across the assistants that matter to you, on a fixed schedule, from a clean session. Record whether your brand is mentioned, whether you're cited with a link, and which competitor got named instead. Repeat monthly. You're tracking a trend, not a position.",
+        "Two supporting signals are more reliable than any citation tracker. First, referral traffic from assistant domains in your analytics — small in volume, usually high in intent. Second, branded search volume, because the most common outcome of an AI mention isn't a click, it's someone Googling your name afterwards."
+      ],
+      "bullets": [
+        "**Treat smooth dashboards with suspicion.** A precise \"AI visibility score\" trending neatly upward is a modelled number. Ask how it's sampled and how much it moves on a re-run.",
+        "**Log the prompt, not just the result.** Slight rewordings change the answer. Without the exact prompt, the measurement isn't repeatable.",
+        "**Watch who else gets cited.** The competitor set in AI answers is often different from the one in the SERP, and that's genuinely useful information."
+      ]
+    },
+    {
+      "h2": "Does it deserve its own budget line? Not yet.",
+      "body": [
+        "Here's the position we'll defend. For almost every Indian business we talk to, GEO is not a separate service to buy. It's a change to how the pages you're already paying for get written and structured.",
+        "The reasoning is arithmetic. If four-fifths of the work is identical to your existing SEO, buying it twice means paying twice for the same crawl fixes, the same schema, the same digital PR. And the remaining fifth — extractability, self-contained answers, publishing information nobody else has — costs almost nothing to adopt because it's a brief and an editing standard, not a workstream.",
+        "There's one exception worth naming. If your buyers demonstrably research through assistants, and you can see it in referral data or hear it on sales calls, then dedicated measurement and a deliberate content programme start to earn a line item. For most people that day hasn't arrived, and paying for it early funds a category rather than a result.",
+        "The practical move today is smaller than the pitch: answer the question in the first two sentences of every page, publish at least some information that doesn't exist anywhere else, keep your brand facts consistent, and decide on purpose which crawlers you allow. That's most of GEO, and it makes your ordinary rankings better too. The tactical detail sits in [how to get cited by AI assistants](/answers/how-do-i-get-my-brand-cited-in-chatgpt)."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "How we price it",
+        "body": "We don't sell GEO separately. It's inside SEO from ₹75,000/mo, and from ₹40,000/mo for smaller sites, ex-GST. The guarantee is unchanged and doesn't depend on citation counts: beat your own frozen trailing-90-day organic lead baseline in 90 days, or we keep working free until you do. Details on [how that works](/seo)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is GEO different from SEO?",
+      "a": "Mostly not. The retrieval layer that feeds AI answers is the same index that produces search results, so crawlability, structure, credibility and third-party mentions matter identically. The genuine difference is writing self-contained, quotable answers and publishing claims specific enough to require attribution."
+    },
+    {
+      "q": "What's the difference between GEO and AEO?",
+      "a": "Very little, and the usage isn't settled. Answer engine optimisation generally refers to earning direct answers — featured snippets, voice results, AI summaries. Generative engine optimisation refers to being cited inside generated text. In practice the same work serves both, and the distinction matters more to vendors than to your site."
+    },
+    {
+      "q": "How do I know if GEO is working?",
+      "a": "Sample a fixed set of buyer questions across the assistants that matter to you, monthly, from clean sessions, and record whether you're mentioned or cited. Support it with referral traffic from assistant domains and with branded search volume, which tends to move before anything else does."
+    },
+    {
+      "q": "Does schema markup help with AI citations?",
+      "a": "It helps machines parse your page correctly, which is a prerequisite rather than a trick. There is no special \"GEO schema\" type, and anyone selling one is selling a directory submission with a new name. Use the standard types that describe your content accurately and move on."
+    },
+    {
+      "q": "Should I block AI crawlers instead?",
+      "a": "It's a legitimate choice with a real cost. Blocking `GPTBot` and similar keeps your content out of training and, depending on the bot, out of live retrieval — which also keeps you out of answers where competitors appear. Publishers with an ad-funded model often block; businesses selling a service usually shouldn't."
+    },
+    {
+      "q": "How much should generative engine optimisation cost?",
+      "a": "For most businesses, nothing extra. The overlapping four-fifths is your existing SEO retainer, and the new fifth is an editing standard rather than a workstream. Treat a large separate GEO invoice as a question to ask, not a price to accept."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "generative-engine-optimization" },
+    { "type": "compare", "slug": "geo-vs-seo" },
+    { "type": "compare", "slug": "aeo-vs-geo" },
+    { "type": "answers", "slug": "how-do-i-get-my-brand-cited-in-chatgpt" },
+    { "type": "journal", "slug": "is-generative-engine-optimization-real" },
+    { "type": "services", "slug": "aeo-geo-services" }
+  ]
+}

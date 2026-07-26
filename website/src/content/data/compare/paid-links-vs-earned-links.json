@@ -1,0 +1,204 @@
+{
+  "slug": "paid-links-vs-earned-links",
+  "type": "compare",
+  "primaryKeyword": "paid links vs earned links",
+  "secondaryKeywords": [
+    "is buying backlinks worth it",
+    "backlink packages india price",
+    "google link spam update",
+    "how to earn backlinks naturally",
+    "link vendor red flags"
+  ],
+  "cluster": "link-building",
+  "intent": "informational",
+  "h1": "Paid links vs earned links: what ₹800 really buys you",
+  "metaTitle": "Paid vs Earned Links: What ₹800 Really Buys",
+  "metaDescription": "Paid links vs earned links: here's what a ₹800 'DA 50 guest post' really is, how Google's link spam systems treat it, and what earned links cost.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "A ₹800 \"DA 50 guest post\" is almost never a DA 50 site in any meaningful sense. It's usually a rebuilt expired domain or a general blog running sponsored posts across unrelated categories, with no readers. Google's link spam systems mostly devalue those links rather than penalise you — so nothing happens, quietly, and you've still paid.",
+  "takeaways": [
+    "DA is Moz's number, not Google's, and it's manipulable by design. Anyone selling on DA alone is selling the metric, not the link.",
+    "Since March 2024 Google's spam policies name expired domain abuse explicitly. That's the business model behind most cheap \"high DA\" inventory.",
+    "Devaluation is the normal outcome, not a penalty. You don't get told, the report still shows 20 new referring domains, and nothing moves.",
+    "Disavow is for manual actions. If Search Console is clean, the disavow file is a document you wrote to feel better."
+  ],
+  "sections": [
+    {
+      "h2": "The ₹800 line item, taken apart",
+      "body": [
+        "Ask around the Indian link market and you'll get the same offer in three WhatsApp groups: guest post, DA 50 site, permanent dofollow, ₹800 each, bulk discount over ten. Someone will quote ₹600.",
+        "The arithmetic looks unanswerable: twenty links for ₹16,000, against a digital PR campaign quoting ₹1 lakh with no promised placements. So the useful question isn't whether ₹800 is cheap. It's what a website has to be, structurally, to sell a permanent followed link to a stranger for ₹800 and still make money.",
+        "Work backwards. At that price the site needs volume — dozens of posts a month across whatever categories the buyers happen to be in. It can't afford an editor. It can't sell advertising, because advertisers buy audiences and this site hasn't got one. And it can't have a reputation to protect, because that would mean refusing most of its orders.",
+        "You're not buying a link on a publication. You're renting a row in a database."
+      ]
+    },
+    {
+      "h2": "Where a \"DA 50\" domain at that price comes from",
+      "body": [
+        "Domain Authority is a Moz metric, scored 0–100, from Moz's own link index. Google doesn't use it and has no equivalent public number; Ahrefs' DR works the same way with a different index. The commercial point: both are computed from links, so both can be raised by acquiring links. That's the supply chain behind cheap high-metric inventory, and three routes dominate.",
+        "**The rebuilt expired domain.** Somebody buys a domain that used to be a college department or a defunct magazine, still carrying a decade of genuine links. Generic template, filler content, placements sold against a metric earned by a website that no longer exists. Google named **expired domain abuse** as a spam policy in March 2024, which tells you how common this got.",
+        "**The metric farm.** An ordinary new site pointed at by a tier of other sites built for the purpose. DA climbs, nothing else does.",
+        "**The real site that started selling.** A genuine blog that found it could take ₹800 a post, until its outbound profile made it indistinguishable from the other two.",
+        "Five checks separate all three from a real publication:"
+      ],
+      "bullets": [
+        "**Organic traffic against the metric.** DA 50 with a few hundred estimated monthly visits isn't a strong site, it's a strong number.",
+        "**The category list.** A homepage carrying business, health, casino, travel and crypto means the categories are buyers, not an audience.",
+        "**The authors.** Check whether the byline exists anywhere else on the internet.",
+        "**Branded search.** If nobody searches the publication's name, nobody reads it.",
+        "**The write-for-us page.** The pricing tiers and turnaround promise are the real product description."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The metric is the sales pitch",
+        "body": "If a vendor leads with DA or DR and won't tell you the site's organic traffic, you already have your answer. [Domain authority is a vanity metric](/journal/domain-authority-is-a-vanity-metric) everywhere — the link market is where the vanity turns into an invoice."
+      }
+    },
+    {
+      "h2": "The two purchases, side by side",
+      "table": {
+        "caption": "A ₹800 marketplace placement against one genuinely earned link.",
+        "head": ["", "₹800 paid placement", "One earned link"],
+        "rows": [
+          [
+            "Price",
+            "₹800, or ₹600 in bulk. Instant and predictable.",
+            "No unit price. Typically ₹10,000–₹50,000 of effort per link that lands, and highly variable."
+          ],
+          [
+            "What you're buying",
+            "A slot in a database of sites that sell slots. 48 hours to two weeks.",
+            "Someone else's editorial decision to reference you. Six weeks to a quarter, sometimes nothing."
+          ],
+          [
+            "Anchor text",
+            "Yours, exactly as specified. That's the tell.",
+            "Theirs. Often your brand name or a bare URL."
+          ],
+          [
+            "Readers on the page",
+            "Effectively none. Check referral traffic in 90 days.",
+            "Whoever reads that publication, plus anyone who finds it later."
+          ],
+          [
+            "How Google treats it",
+            "Devalued when detected. Occasionally a manual action if the pattern is loud.",
+            "Counted. It's the behaviour ranking systems exist to reward."
+          ],
+          [
+            "Expected life",
+            "Short and unannounced. Sites get sold, purged, blanket-nofollowed or deindexed.",
+            "As long as the publisher keeps its archive — usually indefinitely."
+          ],
+          [
+            "Effect on brand",
+            "None. Nobody read it, including the publisher.",
+            "A named mention feeding branded search, sales conversations and AI citations."
+          ],
+          [
+            "In a diligence review",
+            "A liability an acquirer's reviewer finds in twenty minutes.",
+            "A slide."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Devalued, not penalised — which is worse than it sounds",
+      "body": [
+        "Founders brace for a penalty. Penalties are rare — and honestly, one would be more useful than what actually happens.",
+        "Google's December 2022 link spam update used SpamBrain to **neutralise** the credit from unnatural links rather than punish the site receiving them, and that approach has continued. The practical result: a bought link most often does nothing at all. Counted as zero, silently, with no notification and no line in any report.",
+        "Sit with what that means operationally. The monthly deck shows 20 new referring domains. DA ticks up, because Moz doesn't know what Google discounted. Rankings don't move, nobody can explain why, and the conclusion becomes \"SEO takes time\" — so you buy 20 more. A penalty at least tells you. Devaluation just spends your money.",
+        "Manual actions do still exist, appearing in Search Console under Security & Manual Actions as \"Unnatural links to your site\". If you have one, that's [penalty recovery work](/services/penalty-recovery-services) and a different project from ordinary SEO."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The honest expected value",
+        "body": "₹16,000 on twenty placements has three outcomes: nothing happens (most likely), a small lift that decays as the pages rot (possible), or a manual action and a quarter spent cleaning up (uncommon but real). None of the three is worth ₹16,000."
+      }
+    },
+    {
+      "h2": "What one genuinely earned link costs in India",
+      "body": [
+        "Earned links have no list price, which is why the ₹800 comparison wins arguments it shouldn't. Here's the honest way to cost one.",
+        "On a typical Indian SEO retainer, link and PR work absorbs roughly 20–30% of the hours. On a ₹75,000/month engagement that's ₹15,000–₹22,500 a month — researching an angle, mining the data, writing the asset, building a pitch list, and doing outreach that mostly gets ignored.",
+        "Over a quarter that's ₹45,000–₹67,500 of work, and the return varies enormously: a story that lands produces a handful of links plus secondary pickups, one that doesn't produces none. Averaged out, **₹10,000–₹50,000 per earned link** is a reasonable planning range. It's wide because the outcome genuinely is — anyone quoting a tight per-link figure is quoting placements they pre-arranged, which makes them paid links with better manners.",
+        "So yes, one earned link can cost forty times a bought one. It's also the only one still working in a year, bringing readers, surviving an audit and putting your name into pages answer engines read. Fuller numbers sit in [what link building costs in India](/cost/link-building-cost)."
+      ]
+    },
+    {
+      "h2": "Auditing a paid link profile you inherited",
+      "body": [
+        "Most founders reading this didn't buy the links. A previous agency did, on a line item labelled \"off-page\". Here's how to find out what you're holding, in two hours."
+      ],
+      "numbered": [
+        "**Check Search Console for a manual action first.** Thirty seconds, and it changes the entire response.",
+        "**Export referring domains from both sources** — Search Console's Links report plus Ahrefs or Semrush. One shows what Google knows about, the other shows more history.",
+        "**Sort by first-seen date and look for clusters.** Forty new referring domains in one month, then nothing, is a purchase order with a date on it.",
+        "**Check anchor text distribution.** Natural profiles are dominated by brand names, bare URLs and \"click here\"-grade text. If a large share are exact commercial phrases, someone typed them into a form.",
+        "**Sample twenty linking sites and apply the five checks above.** Twenty tells you what the other two hundred look like.",
+        "**Look for footprints.** Same theme, same \"advertise with us\" wording, same categories. Networks are built from templates, and templates are visible."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What to do with the answer",
+        "body": "With no manual action, the answer is usually to stop buying and start outweighing: publish, earn coverage, and let the bought links decay on their own schedule. Read [toxic backlinks](/glossary/toxic-backlinks) before anyone sells you an urgent clean-up retainer."
+      }
+    },
+    {
+      "h2": "Disavow: when it helps and when it's theatre",
+      "body": [
+        "The disavow tool is free, and the most over-prescribed instrument in SEO.",
+        "**It helps in one situation:** a manual action for unnatural links, or a reconsideration request you're preparing because you know you bought at scale. There the file is a declaration.",
+        "**It's theatre everywhere else.** Google's own guidance is that most sites never need it, because the systems already discount what they don't trust. Disavowing links Google had already ignored changes nothing except your sense of having acted.",
+        "**It can hurt.** `domain:` entries are easy to over-apply, and a cleanup that sweeps up genuine editorial links costs more than the bought ones ever did.",
+        "**It does not undo a core update.** If traffic fell during one, the cause is content quality, intent match or a competitor doing more. Check for a manual action first; if there isn't one, close the tool and go earn something."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "How we work, and what we guarantee",
+        "body": "Last Agency runs SEO from ₹75,000/mo, smaller sites from ₹40,000/mo, ex-GST. We don't buy links or report link counts as an outcome. We freeze your trailing-90-day qualified organic leads on day one, and if we haven't beaten that in 90 days we work free until we do. We never promise a ranking position."
+      }
+    }
+  ],
+  "versus": {
+    "a": "Paid links",
+    "b": "Earned links",
+    "verdict": "If you've already bought links and Search Console shows no manual action, stop buying and outweigh the old profile with earned coverage — the disavow file is theatre in that situation, and worth writing only when Google has actually told you there's a problem."
+  },
+  "faqs": [
+    {
+      "q": "Is buying backlinks worth it?",
+      "a": "On expected value, no. The most likely outcome of a ₹16,000 bulk order is that Google devalues the links, nothing moves, and no report tells you why. The less likely outcomes are a short-lived lift that decays, or a manual action and a quarter spent undoing it."
+    },
+    {
+      "q": "What is a DA 50 site really worth?",
+      "a": "It depends entirely on whether the DA came from a real audience or from links pointed at it on purpose. Check the site's organic traffic and its branded search volume. A DA 50 domain with negligible traffic is a number somebody built; a DA 30 trade publication your buyers read is worth far more."
+    },
+    {
+      "q": "Will Google penalise me for buying links?",
+      "a": "Usually it just ignores them. Google's link spam systems neutralise the credit rather than penalising the receiving site, which means you pay and nothing happens. Manual actions do exist and appear in Search Console, but they're rare relative to how much link buying goes on."
+    },
+    {
+      "q": "How do I earn backlinks without paying for them?",
+      "a": "Publish something worth citing, then tell the people who'd cite it. In practice that means original data you already own — your booking, pricing or hiring numbers — written up plainly and pitched to named journalists and practitioners. It's slower than a purchase order and it's the only version that survives."
+    },
+    {
+      "q": "Should I disavow the links my old agency built?",
+      "a": "Check Search Console for a manual action first. If there isn't one, almost certainly not — Google has likely already discounted them, and an over-broad disavow file can strip out genuine links you earned. Spend the effort on new coverage instead of on a text file."
+    },
+    {
+      "q": "How can I tell if my agency is buying links?",
+      "a": "Ask where each link came from and who at the publication agreed to it. A real answer names a person and a story. \"Our network\", \"our partner sites\" or \"we have relationships\" means a marketplace. Then check your referring domains for clusters of first-seen dates in the same week."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "how-to-get-backlinks-for-a-new-website" },
+    { "type": "compare", "slug": "da-vs-dr" },
+    { "type": "glossary", "slug": "toxic-backlinks" },
+    { "type": "services", "slug": "penalty-recovery-services" },
+    { "type": "cost", "slug": "link-building-cost" },
+    { "type": "journal", "slug": "domain-authority-is-a-vanity-metric" }
+  ]
+}

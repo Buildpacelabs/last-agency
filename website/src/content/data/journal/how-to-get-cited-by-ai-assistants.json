@@ -1,0 +1,323 @@
+{
+  "slug": "how-to-get-cited-by-ai-assistants",
+  "type": "journal",
+  "primaryKeyword": "how to get cited by ai assistants",
+  "secondaryKeywords": [
+    "rank in chatgpt",
+    "get mentioned in ai overviews",
+    "llm citation seo",
+    "perplexity visibility",
+    "ai search citations"
+  ],
+  "cluster": "ai-search",
+  "intent": "informational",
+  "h1": "How Pages Get Picked Up by ChatGPT, Perplexity and AI Overviews",
+  "metaTitle": "How to Get Cited by AI Assistants",
+  "metaDescription": "To get cited by AI assistants a page needs extractable claims, one consistent entity and corroboration elsewhere. Here's what we change on the page.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "To get cited by an AI assistant, a page needs three things: claims that survive being cut out of context, one consistent entity behind them, and corroboration on sites you don't own. The unit of retrieval is the passage, not the page — so write paragraphs that stand alone and carry a number.",
+  "takeaways": [
+    "The retrieved unit is a **passage**. A paragraph that needs the two above it to make sense is a paragraph that won't get lifted.",
+    "Every claim wants a number, a range or a date attached. Vague sentences aren't quoted because there's nothing in them to quote.",
+    "**Blocking the wrong crawler** is the commonest self-inflicted wound. Training bots and citation bots are different bots with different names.",
+    "You can track this for free: a frozen prompt set run monthly, a referrer segment in GA4, and your server logs. No tool required."
+  ],
+  "sections": [
+    {
+      "h2": "What actually happens between the question and the citation",
+      "body": [
+        "Most advice on this subject skips the mechanism, which is why it ends up as \"write helpful content\" with extra steps. The mechanism is knowable and it dictates almost every practical decision below.",
+        "A question arrives. The system rewrites it into several sub-questions, because a real question like \"which SEO agency should a Bangalore SaaS company hire\" contains four separate lookups. Each sub-question hits an index — Google's own for AI Overviews, a mix of licensed and self-crawled indexes for the assistants. Candidate passages come back. The model ranks them, drops the ones that repeat each other, writes an answer from the survivors, and attaches citations to the passages it actually used.",
+        "A question arrives. The system rewrites it into several sub-questions, because a real question like \"which SEO agency should a Bangalore SaaS company hire\" contains four separate lookups. Each sub-question hits an index — Google's own for AI Overviews, a mix of licensed and self-crawled indexes for the assistants. Candidate passages come back, the model ranks them, drops the ones that repeat each other, writes an answer from the survivors, and attaches citations to the passages it actually used."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Why this isn't just ranking again",
+        "body": "You can rank third and be the only site cited, or rank first and be ignored entirely. Position gets you into the candidate pool. What gets you quoted is whether one specific paragraph on your page answers one specific sub-question better than the alternatives — a much smaller, much more winnable contest."
+      }
+    },
+    {
+      "h2": "Write claims that survive being cut out of the page",
+      "body": [
+        "This is the change with the biggest effect and the lowest cost, and it's an editing discipline rather than a technical one. Assume every paragraph you write will be read alone, by a machine, with no title, no heading and no surrounding context. Then write accordingly.",
+        "Six rules cover most of it."
+      ],
+      "numbered": [
+        "**Restate the subject instead of using pronouns.** \"It usually takes three to six months\" is unusable on its own. \"SEO usually takes three to six months to show movement on a competitive keyword set\" is a complete, liftable claim.",
+        "**Put the claim in the first sentence, the reasoning after.** Inverted pyramid, but at paragraph level rather than article level. A retriever scoring a chunk sees the opening first.",
+        "**Attach a number, a range or a date.** \"Fairly expensive\" gets skipped. \"₹75,000 a month, ex-GST\" gets quoted. This is also the finding of the research that named this field: sources with statistics, quotations and citations got picked up more often than sources without.",
+        "**Keep the answering unit to roughly 40–80 words.** Longer, and the retriever has to decide which half of your paragraph is the answer — and it may decide wrong, or decide to use someone shorter.",
+        "**One idea per paragraph, one question per heading.** Headings that match how people actually ask are free retrieval signals. Headings like \"Our Approach\" match nothing.",
+        "**Date the claims that expire.** \"As of July 2026\" costs three words and tells a system with a mixed-vintage index which version of a fact yours is."
+      ],
+      "table": {
+        "caption": "The same information written to rank, and written to be quoted.",
+        "head": [
+          "Written to rank",
+          "Written to be quoted"
+        ],
+        "rows": [
+          [
+            "Our comprehensive audits cover all the key areas your site needs, giving you a clear picture of where you stand and what to do next.",
+            "A technical SEO audit covers five areas: crawling and indexing, site speed and Core Web Vitals, on-page structure, internal linking, and the backlink profile. On a mid-size site it takes two to three weeks."
+          ],
+          [
+            "It typically takes a while before you start seeing results, depending on a number of factors specific to your situation.",
+            "SEO takes three to six months to show meaningful movement on a competitive keyword set, and six to twelve months to compound. Leading indicators — impressions and average position — move in four to eight weeks."
+          ],
+          [
+            "We offer flexible pricing designed to suit businesses of every size and stage.",
+            "Last Agency runs SEO from ₹75,000 per month, or ₹40,000 per month for smaller sites, ex-GST, month-to-month after the first quarter."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Be one entity, everywhere, in the same words",
+      "body": [
+        "Ranking tolerates inconsistency. Being described accurately does not. When an assistant is asked what your company does, it assembles an answer from whatever it can retrieve about you — your site, your LinkedIn, a directory listing from 2021, a press mention that got your founding year wrong. It will pick a version. There is no guarantee it picks yours.",
+        "[Entity consistency](/glossary/entity-seo) is a finishable project, which makes it unusually satisfying work in a discipline where nothing is ever finished. A focused week gets most of it done."
+      ],
+      "bullets": [
+        "**One canonical name string.** Decide whether you're the legal entity or the trading name and use that form in every description. Machines resolving entities are matching strings before they're matching meaning.",
+        "**One one-sentence description**, reused verbatim on your homepage, About page, LinkedIn, Crunchbase, directory listings, conference bios, YouTube channel and press boilerplate. Verbatim, not \"broadly similar\".",
+        "**Consistent name, address and phone** if you have a physical presence — including formatting. \"Ground Floor\" and \"G/F\" are different strings to a matcher.",
+        "**Real named authors with real bio pages.** A byline that goes nowhere is not an author entity. The bio page should state credentials specifically and link out to that person's profiles elsewhere.",
+        "**`Organization` schema with `sameAs`** pointing at every profile you just made consistent. This is the machine-readable version of the same statement.",
+        "**Go and kill the old descriptions.** The 2021 directory listing calling you a \"web design studio\" is retrievable and will be repeated. Update it or get it removed."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Check what they say about you before you optimise anything",
+        "body": "Ask four assistants to describe your company, then ask each one who your competitors are. Do it from a logged-out browser in the country you sell to. Half the time the interesting finding isn't absence — it's an inaccurate description that's been quietly circulating for a year."
+      }
+    },
+    {
+      "h2": "You can't be your own only source",
+      "body": [
+        "Here's the part that no amount of on-page work substitutes for. Retrieval systems weight agreement across sources. A claim only you make, on a domain only you control, is one source saying one thing. Three independent sources saying it makes it a fact the model is comfortable stating.",
+        "This is also where [brand mentions](/glossary/brand-mentions) behave differently from backlinks. A link is a vote that passes ranking signals. A mention on a page these systems retrieve from can earn you a citation with no link at all, because what's being read is the text, not the anchor. Unlinked coverage that classic SEO reporting ignores genuinely counts here."
+      ],
+      "subs": [
+        {
+          "h3": "The sources that carry weight",
+          "bullets": [
+            "Industry and trade publications in your category — the ones practitioners actually read, not the ones that publish anyone for ₹8,000.",
+            "Forums and communities with real discussion. Reddit threads, specialist Slack and Discord archives that get indexed, Stack Exchange in technical categories.",
+            "Review platforms with substantive written reviews, particularly G2, Capterra and Clutch in B2B.",
+            "Podcasts and video with published transcripts. An untranscribed podcast is invisible to a text retriever.",
+            "Documentation, standards pages and integration listings if you're technical. These get cited constantly and almost nobody optimises them."
+          ]
+        },
+        {
+          "h3": "The uncomfortable bit",
+          "body": [
+            "All of that is public relations. It's slow, it's relationship-dependent, and it's the most expensive item on this page by a distance. It also can't be automated, because the other side is a person deciding whether you're worth their credibility.",
+            "Which gives you a clean test for any vendor selling AI visibility: if the scope contains no earned-media component at all, they're selling you formatting. Formatting helps. It doesn't make you a source."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Structured data: what helps, and what's sold as helping",
+      "body": [
+        "Google has been explicit that there's no special markup that gets content into AI Overviews, and no assistant has published a markup requirement. That doesn't make schema pointless — it makes it hygiene rather than a lever, and it's worth knowing which parts do real work."
+      ],
+      "table": {
+        "caption": "Markup ranked by whether it plausibly affects being cited.",
+        "head": [
+          "Markup",
+          "Worth doing?",
+          "Why"
+        ],
+        "rows": [
+          [
+            "`Organization` with `sameAs`",
+            "Yes",
+            "The clearest machine-readable statement of which entity you are and which profiles are yours. Directly supports the consistency work above"
+          ],
+          [
+            "`Article` with a real `Person` author",
+            "Yes",
+            "Ties a claim to a named, credentialled human rather than to a domain. Attribution signals matter more when the output is a quote"
+          ],
+          [
+            "`Product` with price and availability",
+            "Yes, for commerce",
+            "A machine-readable price is quotable. A price sitting inside a JPEG is not"
+          ],
+          [
+            "`FAQPage`",
+            "Marginal",
+            "Google restricted FAQ rich results to a narrow set of authoritative sites years ago. The underlying Q&A text still helps, but that's because it chunks cleanly — not because of the markup"
+          ],
+          [
+            "`HowTo`",
+            "No",
+            "Google deprecated HowTo rich results. Write the steps as a numbered list instead; the list is what gets retrieved anyway"
+          ],
+          [
+            "`llms.txt`",
+            "No evidence",
+            "Proposed in 2024 and widely written about. Google has said publicly that it doesn't use it, and no major assistant has confirmed that it does"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "The honest hierarchy",
+        "body": "A well-structured HTML page with clear headings, real tables and short answering paragraphs beats a badly-structured page carrying perfect schema. Markup describes the page. It doesn't rewrite it."
+      }
+    },
+    {
+      "h2": "Crawler access is the gate nobody checks",
+      "body": [
+        "This is the one that quietly cancels everything else, and it usually gets broken without a search person in the room. Somebody reads about AI training on copyrighted work, adds a blanket disallow, and removes the company from every citation surface while doing nothing whatsoever about content already trained on. The bots are separate and their jobs are different. Decide per bot, in writing."
+      ],
+      "table": {
+        "caption": "The crawlers that matter, and what blocking each one actually costs you.",
+        "head": [
+          "Crawler",
+          "Run by",
+          "What blocking it costs"
+        ],
+        "rows": [
+          [
+            "`Googlebot`",
+            "Google",
+            "Everything. AI Overviews are served from Google Search's index — if Googlebot can't fetch you, you're out of both"
+          ],
+          [
+            "`Google-Extended`",
+            "Google",
+            "Use of your content in Gemini and Vertex AI grounding. It does **not** control AI Overviews and does not affect Search ranking. Blocking it to escape AI Overviews doesn't work"
+          ],
+          [
+            "`GPTBot`",
+            "OpenAI",
+            "Training use. Blocking it does not remove you from ChatGPT's search results"
+          ],
+          [
+            "`OAI-SearchBot`",
+            "OpenAI",
+            "Being surfaced and cited in ChatGPT search. This is the one that costs you citations"
+          ],
+          [
+            "`ChatGPT-User`",
+            "OpenAI",
+            "Live fetches when a user's request needs your page right now. Blocking it breaks the on-demand path"
+          ],
+          [
+            "`PerplexityBot`",
+            "Perplexity",
+            "Indexing for Perplexity answers"
+          ],
+          [
+            "`ClaudeBot`",
+            "Anthropic",
+            "Anthropic's crawler for its systems"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Snippet controls cut both ways",
+        "body": "`nosnippet`, `data-nosnippet` and `max-snippet` do suppress your text from AI Overviews. They also suppress your ordinary search snippet, and a result with no description gets clicked far less. It's a real trade with a real cost — [we've argued the whole question out separately](/journal/should-you-block-ai-crawlers) rather than pretending there's an obvious answer."
+      }
+    },
+    {
+      "h2": "Tracking citations without paying for a tool",
+      "body": [
+        "The tools in this category are improving and some are worth the money at scale. You do not need one to start, and building the manual version first means you'll know what the tool is actually measuring when you buy it."
+      ],
+      "numbered": [
+        "**Freeze a prompt set.** Thirty to fifty questions your actual buyers ask, written down before you change anything. Real phrasing, not keyword phrasing — \"is it worth hiring an SEO agency for a 20-person SaaS company\" rather than \"seo agency india\".",
+        "**Run each prompt three times per engine, monthly.** Answers vary between runs; the same question can return different sources twice in a row. Log a citation *rate*, not a yes/no. A boolean is the single commonest flaw in AI-visibility reporting.",
+        "**Use a clean, logged-out browser with the right country set.** Personalisation and location change the answers, and testing from your own account measures your own history.",
+        "**Log five columns:** prompt, engine, cited (out of three runs), which URL, and whether the description of you was accurate. That last column earns its place — misdescription is fixable and invisible if you only count citations.",
+        "**Build a referral segment in GA4** for `chatgpt.com`, `perplexity.ai`, `copilot.microsoft.com` and `gemini.google.com`. ChatGPT also appends `utm_source=chatgpt.com` to outbound links, which makes it easy to isolate. Note that AI Overview clicks arrive as ordinary Google organic and can't be separated this way.",
+        "**Grep your server logs for the crawler user agents in the table above.** Free, immediate, and the earliest possible signal — if `OAI-SearchBot` has never fetched you, no amount of paragraph editing is the problem."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Expect small numbers",
+        "body": "Assistant referral volume is a fraction of Google organic for almost every site, and anyone showing you otherwise has a very specific audience. The visitors do tend to arrive further along and convert better, which is a reason to track it — not a reason to re-plan your quarter around it."
+      }
+    },
+    {
+      "h2": "Five things we'd stop doing tomorrow",
+      "body": [
+        "The response to this shift has produced as much waste as it has useful work. These five come up constantly."
+      ],
+      "bullets": [
+        "**Stop bolting FAQ blocks onto the end of every page.** Six questions that restate the article in interrogative form add length, not answers. If a question deserves an answer, it deserves a heading and a real paragraph.",
+        "**Stop publishing `llms.txt` and calling it a strategy.** It costs nothing, so publish it if you like. Don't put it on a scope sheet, and don't let anyone charge you for it.",
+        "**Stop writing 400 words of context before the answer.** It was already bad for readers. Now it means the first retrievable chunk of your page is a preamble.",
+        "**Stop putting numbers in images and PDFs.** A price in a JPEG is a price that can't be quoted, compared or cited. Same for spec tables rendered as screenshots.",
+        "**Stop treating citation count as the KPI.** It's a leading indicator at best. We've seen the logic used to defend a retainer where mentions climbed steadily and enquiries didn't move at all."
+      ]
+    },
+    {
+      "h2": "What a citation is worth, and what we still measure instead",
+      "body": [
+        "Everything above is worth doing, and we do it inside a normal SEO engagement rather than as a separate line item — partly because the same edits also help you rank, and partly because we don't think citation counts are an honest thing to be accountable for. The same prompt returns different sources on different runs. Building a guarantee on a number that fluctuates that much would be a nice way to look confident while promising nothing.",
+        "So the accountability stays where it's always been. We freeze your trailing-90-day qualified organic lead count on day one and guarantee movement against that number. Miss it in 90 days and we keep working free until we beat it. We never promise a specific ranking position for a specific keyword, and we won't promise a specific citation either. SEO runs from ₹75,000/mo, or ₹40,000/mo for smaller sites, ex-GST, month-to-month after the first quarter, and you keep every asset if you leave. It's why we take three clients a month — a guarantee needs slack in the roster to be worth anything.",
+        "If you're doing this yourself, the order that matters is: crawler access first, because it gates everything. Then entity consistency, because it's finishable and it stops a wrong description spreading. Then the paragraph-level editing, which is cheap and compounds. Then earned media, which is slow, expensive, and the part that actually makes you a source.",
+        "And before you spend a rupee on any of it, work out how much you've genuinely lost. [Segment your Search Console data first](/journal/what-ai-overviews-did-to-your-organic-traffic). It takes an afternoon and it decides whether this is a project or a paragraph in next quarter's plan."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I get my website cited by ChatGPT?",
+      "a": "Three requirements. Let `OAI-SearchBot` and `ChatGPT-User` crawl you — check your robots.txt, because blanket blocks are common. Write self-contained paragraphs that lead with a specific claim and a number. And get corroborated on sites you don't own, because a claim only you make is a claim from a single source."
+    },
+    {
+      "q": "Does schema markup help you get cited by AI?",
+      "a": "Indirectly and modestly. Google has said there's no special structured data that gets content into AI Overviews. `Organization` with `sameAs` and a real `Person` author genuinely help machines resolve who you are, but well-structured HTML with clear headings and short answering paragraphs does more work than any markup."
+    },
+    {
+      "q": "Should I add an llms.txt file?",
+      "a": "You can — it takes ten minutes and breaks nothing. But Google has said publicly that it doesn't use llms.txt, and no major assistant has confirmed it does. Treat it as an optional experiment, not a deliverable, and don't pay anyone a retainer line for it."
+    },
+    {
+      "q": "How do I track whether AI assistants mention my brand?",
+      "a": "Freeze a set of 30–50 real buyer questions, run each three times per engine every month from a logged-out browser, and log the citation rate plus whether the description was accurate. Add a GA4 referral segment for the assistant domains, and grep your server logs for the AI crawler user agents."
+    },
+    {
+      "q": "Does blocking AI crawlers protect my content?",
+      "a": "Partly, and it has a cost. Blocking a training crawler like GPTBot doesn't remove anything already trained on, and blocking a search crawler like OAI-SearchBot removes you from citations entirely. Google-Extended doesn't control AI Overviews at all, so blocking it for that reason simply doesn't work."
+    },
+    {
+      "q": "Is getting cited by AI worth more than ranking?",
+      "a": "Not yet, for most businesses — the referral volume is a small fraction of Google organic. It converts better, because the visitor arrives pre-qualified by a recommendation. Treat it as a growing second channel worth real editorial attention, not as a replacement for the one paying your bills."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "how-do-i-get-my-brand-cited-in-chatgpt"
+    },
+    {
+      "type": "glossary",
+      "slug": "llms-txt"
+    },
+    {
+      "type": "glossary",
+      "slug": "entity-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "should-you-block-ai-crawlers"
+    },
+    {
+      "type": "glossary",
+      "slug": "brand-mentions"
+    },
+    {
+      "type": "services",
+      "slug": "ai-search-optimisation-services"
+    }
+  ]
+}

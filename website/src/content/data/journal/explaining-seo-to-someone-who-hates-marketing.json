@@ -1,0 +1,252 @@
+{
+  "slug": "explaining-seo-to-someone-who-hates-marketing",
+  "type": "journal",
+  "primaryKeyword": "how to explain seo in simple terms",
+  "secondaryKeywords": [
+    "explain seo to a beginner",
+    "seo explained simply",
+    "what is seo in plain english",
+    "how to describe seo to a client",
+    "seo for non marketers"
+  ],
+  "cluster": "client-education",
+  "intent": "informational",
+  "h1": "How to Explain SEO to a Friend Who Thinks Marketing Is Nonsense",
+  "metaTitle": "How to Explain SEO in Simple Terms to a Sceptic",
+  "metaDescription": "Three analogies for explaining SEO in simple terms to a sceptic, each stress-tested against the objection it invites, plus a one-slide internal pitch.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "SEO is shelf space you earn instead of rent. You pay once to build a page, and it either keeps returning buyers for years or it never ranks and you paid for nothing. That risk is the honest version, and it's the version a sceptic will actually accept. Three analogies below, each with the objection it invites.",
+  "takeaways": [
+    "A sceptic isn't confused about SEO. They're suspicious of it. Explaining the mechanism harder doesn't help — you have to answer **what am I buying, when will I know, and what if it fails**.",
+    "Every analogy breaks somewhere. Say where yours breaks before your CFO finds it, because the person who names the flaw first is the person who gets believed.",
+    "Three analogies cover the whole thing: **shelf space** for the economics, **the librarian** for crawling and indexing, **small-town reputation** for links and authority.",
+    "Never say \"free traffic\". It's prepaid traffic with an uncertain delivery date, and a finance person will spot the difference in about four seconds."
+  ],
+  "sections": [
+    {
+      "h2": "Your sceptic isn't confused. They're suspicious.",
+      "body": [
+        "We sit in a lot of rooms where a founder has already decided to do SEO and now has to get one other person to agree. Usually a co-founder who runs finance, sometimes a board member, occasionally a spouse. The founder starts explaining keywords and backlinks, and within ninety seconds the sceptic has stopped listening — not because it's complicated, but because it sounds exactly like every other marketing pitch they've been burned by.",
+        "That's the mistake. You're explaining the mechanism to someone who is objecting to the category. They don't want to know how crawling works. They want to know three things, and they'll keep asking them in different costumes until you answer them.",
+        "What am I actually buying. When will I know if it worked. What happens if it doesn't.",
+        "Every analogy below exists to answer one of those. And every analogy below breaks somewhere, which matters more than it sounds — a sceptic's whole job is finding the seam. Name it yourself and you keep the room. Let them find it and you've lost the argument you were winning."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The test we use",
+        "body": "If you can't state the failure condition of your own plan in one sentence, you're not ready to pitch it internally. \"If organic qualified leads haven't moved off today's number in 90 days, this isn't working\" is a sentence a finance person can hold you to. That's why it lands."
+      }
+    },
+    {
+      "h2": "Analogy one: shelf space you earn instead of rent",
+      "body": [
+        "Google's results page is a shelf. There are ten or so eye-level positions for any given question, and everybody selling something wants one.",
+        "You can rent that shelf. That's Google Ads: you pay per shopper who picks you up, the price goes up when a competitor decides they want the same slot, and the day you stop paying your product leaves the store. Nothing accumulates. Month thirteen costs the same as month one, usually more.",
+        "Or you can earn the shelf. That's SEO. You build something the store wants to stock — a page that genuinely answers the question better than what's currently there — and it sits on the shelf without a monthly rent. Build forty of those over a year and you've got a section, not a slot.",
+        "This is the analogy for the money conversation, because it makes the actual trade visible: ads are an operating expense that ends when the invoice does, and SEO is closer to a capital expense that either produces an asset or produces nothing. Both are legitimate. They're just different lines on a spreadsheet, and a CFO understands the difference instantly."
+      ],
+      "subs": [
+        {
+          "h3": "Where it breaks",
+          "bullets": [
+            "**You don't own the shelf.** The retailer rearranges it whenever it wants. Google ships broad core updates a few times a year, and the store's own guidance is that a site knocked down by one may not recover until a later one.",
+            "**The shelf is rebuilt for every shopper.** It isn't one fixed display. Results change by query, location, device and history, so \"we're number three\" is a statement about one person's screen at one moment.",
+            "**Sometimes the shopper never reaches the shelf.** AI Overviews and answer boxes settle a share of questions at the door. That's real, it's uneven by query type, and pretending otherwise is how you lose credibility six months in.",
+            "**There's no rent, but there's also no guarantee of placement.** You can build the product and get shelved at the back. That's the risk you're asking your CFO to underwrite, and it's better said out loud."
+          ]
+        },
+        {
+          "h3": "The objection it triggers",
+          "body": [
+            "\"So we're spending money on something we might not get.\" Yes. That's correct, and agreeing quickly is the strongest move available to you. Then narrow it: the risk isn't binary across forty pages, it's a distribution. Some rank, some don't, and after two months of data you can tell which pattern you're in — which is exactly what the [first 90 days with an agency](/answers/what-happens-in-the-first-90-days-with-an-seo-agency) is for."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Analogy two: the librarian who can only file what it can read",
+      "body": [
+        "Now they want to know why this needs a specialist. Here's the one for that.",
+        "Imagine a library with a catalogue built by a robot. The robot walks the city, finds every book it can, opens it, reads it, and writes a card. If your book is behind a locked door, the card never gets written. If the book is written in a font the robot can't parse, the card is blank. If the robot has limited hours and your building is a maze of corridors, it gets to page four and leaves.",
+        "That's crawling and [indexing](/glossary/indexing) — and it is genuinely most of what \"technical SEO\" means. Not tricks. Access. Can the machine reach the page, render it, and understand what it's about.",
+        "The reason this analogy is worth using on a sceptic is that it's unglamorous, and unglamorous is credible. Nobody has ever been scammed by someone promising to fix redirect chains."
+      ],
+      "subs": [
+        {
+          "h3": "Where it breaks",
+          "bullets": [
+            "**Real librarians file what you hand them.** Google comes and fetches, on its own schedule, with a finite crawl budget. Submitting a sitemap is a suggestion, not a delivery.",
+            "**Cataloguing and ranking are two separate steps.** Being in the index means you're in the building. It says nothing about which ten cards get pulled when someone asks a question. Conflating the two is why founders think \"we're indexed\" is progress.",
+            "**The catalogue can refuse you.** \"Crawled — currently not indexed\" in Search Console means the robot read the book and decided it wasn't worth a card. There's no appeal form."
+          ]
+        },
+        {
+          "h3": "The objection it triggers",
+          "body": [
+            "\"If Google can already find us, what are we paying for?\" Being findable is free. Being chosen isn't. For any commercial question there are hundreds of catalogued pages competing for ten slots, and the work is the difference between being in the building and being pulled off the shelf. Say it that plainly and the question usually stops."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Analogy three: a reputation in a small town",
+      "body": [
+        "The last piece is authority, which is the part that sounds most like astrology and is easiest to explain with people.",
+        "You move to a small town and open a workshop. Nobody knows you. Then the town's most respected builder tells three people you do good work. That single recommendation moves you further than fifty strangers saying the same thing, because the source carries weight the strangers don't.",
+        "Links are that. A link from a site people trust is a public reference. A link from a site built purely to sell references is a stranger being paid to vouch for you, and everyone in the town can tell.",
+        "This analogy does a second job: it explains, without any moralising, why the cheap version of SEO is the dangerous version. You can pay for references. It's easy, it's fast, and the reason it's cheap is that it stops working and then costs you something. We've priced that wreckage in detail in [what a bad SEO agency actually costs you](/journal/what-a-bad-seo-agency-actually-costs-you)."
+      ],
+      "subs": [
+        {
+          "h3": "Where it breaks",
+          "bullets": [
+            "**Reputation in a town is general. Google's is topical.** A reference from a respected accountant helps you on accounting questions and does almost nothing for you on dentistry. Authority is subject-shaped, not a single score.",
+            "**It decays.** A page nobody links to and nobody updates loses ground to a fresher one. A small-town reputation lasts a decade; a page's doesn't.",
+            "**The scoreboard everyone quotes isn't Google's.** Domain Authority and Domain Rating are third-party tool estimates. Useful for comparison, not a number Google holds. If someone reports it as a KPI, that's a tell."
+          ]
+        },
+        {
+          "h3": "The objection it triggers",
+          "body": [
+            "\"So we buy some references and skip the wait.\" This is the moment the whole conversation is actually about. The honest answer: yes, you can, and the market rate in India starts around ₹300 a link, and that price exists because those links are either ignored or actively counted against you. Paying for a link is a policy violation, not a grey area. The cleanup costs more than the shortcut saved."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The five objections your CFO will actually raise",
+      "body": [
+        "Analogies get you through the first ten minutes. These get you through the rest. Each objection below is fair — that's why it keeps coming up — so the answer has to concede the fair part before it argues."
+      ],
+      "table": {
+        "caption": "The five standard finance objections to SEO, and the answers that survive follow-up.",
+        "head": [
+          "The objection",
+          "Why it's fair",
+          "The answer that holds"
+        ],
+        "rows": [
+          [
+            "\"This is unmeasurable.\"",
+            "Most SEO reporting leads with traffic and rankings, both of which are easy to inflate with queries nobody buys from.",
+            "We measure one number: qualified leads from organic search, out of the CRM. Here's what it was over the last 90 days. That number is frozen, and everything gets judged against it."
+          ],
+          [
+            "\"Six months is too long.\"",
+            "It is long, and most vendors quote shorter to win the deal.",
+            "Ads buy the next thirty days at a price a competitor can raise. This buys month thirteen onward at a price that doesn't move. If we need revenue in six weeks, this is the wrong instrument and we should say so."
+          ],
+          [
+            "\"Can't we just run ads?\"",
+            "Often yes — especially to test demand fast.",
+            "Run both, deliberately. Three weeks of ads tells you which queries actually convert. That's the research budget for what we then build permanently."
+          ],
+          [
+            "\"AI answers are eating search.\"",
+            "On informational queries, genuinely true. Click-through on \"what is X\" style questions has taken a hit.",
+            "So we stop writing what a machine can answer in one sentence and write what needs a price, a comparison, a local option or a decision. Those still need a click."
+          ],
+          [
+            "\"What happens if we stop paying?\"",
+            "Every vendor dodges this one, which is why it gets asked twice.",
+            "Rankings decay slowly instead of stopping instantly. Pages you built keep working for months; they just stop improving while competitors keep going. That's the real structural difference from ads."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The one slide",
+      "body": [
+        "If you get five minutes in a management meeting, this is the slide. Five lines, no screenshots of rank trackers, no word clouds. We've watched this version get signed off in rooms where a fourteen-slide deck died."
+      ],
+      "numbered": [
+        "**Where we are today.** Qualified leads from organic search over the trailing 90 days, taken from the CRM, not from analytics. One number. If it's twelve, write twelve.",
+        "**What we're buying.** A specific count of pages against a specific list of queries that people search when they're close to buying. Name three of the queries. Specificity is what separates this from every deck that came before it.",
+        "**What it costs.** The monthly figure, ex-GST, and the commitment length. For reference, our SEO retainer starts at ₹75,000/mo, and smaller sites start at ₹40,000/mo — the full picture of [what SEO costs in India](/cost/seo-cost-in-india) sits at a wider range than that.",
+        "**When we'll know.** Leading indicators — impressions and average position for the target queries — at week six. First honest read at day 90. Compounding from month six to twelve.",
+        "**What happens if it fails.** Written down, before it starts. Ours is that we freeze your trailing-90-day organic lead count on day one and keep working free until we beat it if we haven't in 90 days. Whatever yours is, it needs to exist in a sentence, not a paragraph."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Do not say \"free traffic\"",
+        "body": "Organic traffic has no click cost, which is not the same as free. You paid for it in advance, in labour, and the delivery date was never guaranteed. Say \"free\" to a finance person and they will spend the rest of the meeting looking for what else you've oversimplified."
+      }
+    },
+    {
+      "h2": "Five sentences that sink the pitch",
+      "body": [
+        "We've heard all of these said in good faith by founders who then lost the room. They're not lies. They're just the exact phrases that pattern-match to every bad marketing pitch your sceptic has already sat through."
+      ],
+      "bullets": [
+        "**\"We'll rank number one for [keyword].\"** Nobody controls the index, Google's own guidelines warn against position guarantees, and a sceptic knows a promise nobody can keep when they hear one.",
+        "**\"The algorithm rewards...\"** The second you say algorithm you sound like you're explaining a slot machine. Say \"Google's ranking systems\" or, better, say what the page does for the reader.",
+        "**\"Everyone in our category is doing it.\"** A finance person hears \"commodity, no advantage, why us\". If it's table stakes, argue the cost of being the one who skipped it.",
+        "**\"Look at these keyword rankings.\"** Rank tracker screenshots persuade people who already agree. Show the CRM number instead, even when it's small.",
+        "**\"It's basically free after the first few months.\"** It isn't. Content decays, competitors publish, and maintenance is a real line. Overclaiming here costs you the renewal conversation."
+      ]
+    },
+    {
+      "h2": "How to tell whether it landed",
+      "body": [
+        "Don't ask \"does that make sense\". Everyone says yes. Ask them to explain it back to somebody else in the room, and listen to which analogy survived.",
+        "If they say \"so we write blog posts\", the shelf analogy landed and nothing else did — you'll get budget and lose it in month four when the blog posts don't sell anything. Go back and do the reputation piece properly.",
+        "If they say \"so we fix the website\", the librarian landed alone. That funds a technical audit and stops there, which is a real outcome but a third of the plan.",
+        "What you want back is roughly this: **we're building pages that earn a permanent slot, we're making sure Google can read them, and we're getting real sites to vouch for us — and we'll know by day 90 whether it's working, against a number we wrote down today.**",
+        "That sentence has the economics, the mechanics, the authority and the failure condition in it. If your sceptic can say it unprompted, you don't need any more slides. You need the [baseline written down](/answers/how-do-i-know-if-my-seo-agency-is-doing-a-good-job) before anyone starts work."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is SEO in plain English?",
+      "a": "SEO is the work of getting your pages to show up when people search for what you sell, without paying for each click. It has three parts: making sure Google can read your site, publishing pages that answer real questions better than what's already ranking, and getting credible sites to link to you."
+    },
+    {
+      "q": "What's the simplest way to explain SEO to a client?",
+      "a": "Shelf space you earn instead of rent. Ads rent a position and the position disappears when you stop paying. SEO builds a page that holds a position without a monthly fee — with the honest caveat that it might not get one at all, which is the risk you're pricing."
+    },
+    {
+      "q": "How do I explain why SEO takes six months?",
+      "a": "Because three slow things happen in sequence. Google has to find and index the page, the page has to accumulate enough impressions for its position to stabilise, and other sites have to start referencing it. Each stage takes weeks, and they stack. A page's honest read is at three to six months old."
+    },
+    {
+      "q": "How do I answer \"can't we just run ads instead\"?",
+      "a": "Agree, then reframe. Ads are the right instrument when you need pipeline in three weeks or you're testing whether demand exists at all. Run them, find out which queries actually convert, then build permanent pages against exactly those. The ad data becomes the SEO brief, which makes both cheaper."
+    },
+    {
+      "q": "What if the sceptic asks what happens when we stop paying?",
+      "a": "Tell the truth: rankings decay rather than switch off. Pages keep earning for months after the work stops, then slowly lose ground as competitors publish and content ages. That slow decay is the entire structural argument for SEO over ads, so it's a strange thing to hide."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-is-seo"
+    },
+    {
+      "type": "answers",
+      "slug": "how-does-seo-work"
+    },
+    {
+      "type": "glossary",
+      "slug": "indexing"
+    },
+    {
+      "type": "compare",
+      "slug": "ppc-vs-seo"
+    },
+    {
+      "type": "cost",
+      "slug": "is-seo-worth-the-money"
+    },
+    {
+      "type": "journal",
+      "slug": "is-seo-worth-the-cost"
+    },
+    {
+      "type": "journal",
+      "slug": "what-working-with-an-seo-agency-actually-feels-like"
+    }
+  ]
+}

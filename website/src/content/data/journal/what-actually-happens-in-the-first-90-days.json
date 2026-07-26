@@ -1,0 +1,234 @@
+{
+  "slug": "what-actually-happens-in-the-first-90-days",
+  "type": "journal",
+  "primaryKeyword": "first 90 days with an seo agency",
+  "secondaryKeywords": [
+    "seo onboarding process",
+    "seo 30 60 90 plan",
+    "what happens in month one of seo",
+    "new seo client checklist",
+    "seo kickoff"
+  ],
+  "cluster": "client-education",
+  "intent": "informational",
+  "h1": "What Actually Happens in the First 90 Days of an SEO Engagement",
+  "metaTitle": "What Happens in the First 90 Days of SEO",
+  "metaDescription": "The first 90 days with an SEO agency, week by week: access, baseline freeze, audit, first fixes, first pages, and the weeks that are load-bearing.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Ninety days is thirteen weeks. Weeks 1–2 go on access, a frozen baseline and interviews; weeks 3–5 on the audit and a prioritised fix list; weeks 6–10 on deploying fixes and publishing the first pages; weeks 11–13 on measuring against that baseline. Week 6 is the real deadline — nothing live by then reads as flat at day 90.",
+  "takeaways": [
+    "Three weeks of the thirteen usually disappear into **access and approvals**. Nobody plans for this and it happens on almost every engagement.",
+    "The load-bearing weeks are **1, 3 and 6**. Slip week 6 and day 90 is already decided, because impressions lag publication by four to eight weeks.",
+    "The 90-day play on an existing site is **rewriting pages that already rank 11–25**, not publishing net-new content. New pages are a month-six play.",
+    "Freeze the baseline before anything changes: trailing-90-day qualified organic leads, non-brand clicks, the brand regex, indexed page count.",
+    "Most delayed quarters are client-side. Named approver, 48-hour decision SLA, and four hours a week of developer time fix more than any agency process does."
+  ],
+  "sections": [
+    {
+      "h2": "Ninety days is thirteen weeks, and two of them go on passwords",
+      "body": [
+        "Everyone signs an SEO contract imagining month one as a flurry of work. What actually happens in week one is that somebody asks for Search Console access at owner level, and the person who set it up in 2021 left the company, and the agency spends four days verifying a domain property through a DNS record that requires a ticket with your hosting provider.",
+        "This is not a joke about incompetence. It's the single most predictable feature of SEO onboarding, and it consumes real calendar time out of a fixed window. If access takes three weeks instead of three days, you've spent 23% of the quarter on permissions before a single line of work has shipped.",
+        "So here's the full thirteen weeks, honestly. Read it as a schedule with dependencies rather than a list of activities, because that's what it is — each stage genuinely blocks the one after it, and the slippage compounds forward rather than washing out."
+      ],
+      "table": {
+        "caption": "The 90-day schedule, with dependencies and consequences.",
+        "head": ["Weeks", "What the agency does", "What you must deliver", "If it slips"],
+        "rows": [
+          [
+            "1–2",
+            "Access setup, baseline freeze, stakeholder interviews, first crawl running",
+            "Every login, a named approver, three 30-minute interviews, five recorded sales calls",
+            "Everything after moves by the same amount. This is a hard dependency, not a soft one."
+          ],
+          [
+            "3–5",
+            "Technical audit, keyword map against existing URLs, competitor gap, prioritised fix list",
+            "Answers to audit questions inside 48 hours, a developer contact, staging access",
+            "The fix list arrives in week 7 and the shipping window halves."
+          ],
+          [
+            "6–10",
+            "Fixes deployed, existing pages rewritten, first new pages live, internal linking pass",
+            "Copy approvals in 48 hours, subject-matter review, 2–4 hours a week of dev time",
+            "Day 90 is decided here. Nothing live by end of week 6 cannot produce a signal by week 13."
+          ],
+          [
+            "11–13",
+            "Measurement against the frozen baseline, re-crawl, honest read, next-quarter plan",
+            "CRM data for the lead count, one hour for the review",
+            "You get a report about traffic instead of a decision about the business."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Weeks 1–2 — access, the baseline freeze, and the interviews nobody schedules",
+      "body": [
+        "Three things happen here and only one of them looks like work.",
+        "**Access.** Collect it in one go rather than discovering each missing login on the day it's needed. The list is longer than most clients expect, and every item on it exists because something breaks without it."
+      ],
+      "subs": [
+        {
+          "h3": "The access list, in full",
+          "bullets": [
+            "**Google Search Console** — owner or full user, not restricted. A domain-level property if possible, because subdomain-only properties hide half the picture.",
+            "**Google Analytics 4** — Editor, and Admin if events or conversions need configuring.",
+            "**CMS** — admin, or a dedicated editor account plus access to staging. Publishing rights matter more than people think; content that needs to be emailed to somebody to publish gets published slowly.",
+            "**DNS or registrar** — access, or a named human who can act inside 24 hours. Needed for property verification, redirect rules, subdomain decisions and CDN changes.",
+            "**Google Ads** — read-only is enough. Search-term reports and conversion values are the best keyword intent data most businesses own, and it's already paid for.",
+            "**Google Business Profile** — manager access, if you have any physical location at all.",
+            "**CRM** — read access, or a monthly export with source and landing page fields. Without this, nobody can count leads and the engagement defaults to reporting traffic.",
+            "**Tag Manager** — publish rights or a named publisher who'll respond same-day.",
+            "**Server or CDN logs** — if they exist. Often they don't, and that's survivable; when they do, they answer crawl questions nothing else can.",
+            "**Bing Webmaster Tools** — cheap, fast to set up, and increasingly worth having as AI assistants lean on that index."
+          ]
+        },
+        {
+          "h3": "The baseline freeze",
+          "body": [
+            "This is the most important hour of the entire engagement and it takes about an hour. Write down, in a document both sides sign, what the numbers were before anything changed. Once work starts, the past becomes unrecoverable in practice — you'll be arguing from memory in month nine, and memory is generous to whoever is speaking.",
+            "Freeze: the trailing-90-day count of qualified leads from organic search, with the definition of \"qualified\" written out in a sentence. Non-brand organic clicks and impressions over the same 90 days. The brand-term regex itself, so nobody can quietly edit the list later. Indexed page count from Search Console. Referring domain count. The top twenty organic landing pages with their conversion rates. And the comparison window you'll use for every subsequent report. The full method is in [how to set an SEO baseline](/journal/how-to-set-an-seo-baseline)."
+          ]
+        },
+        {
+          "h3": "The interviews nobody schedules",
+          "body": [
+            "Ninety minutes, split three ways, and they change the entire content plan.",
+            "Thirty minutes with whoever sells: what do buyers actually ask, what words do they use, what kills a deal in the last week. Thirty minutes with support: what breaks, what gets asked forty times a month, what the manual doesn't cover. Thirty minutes with the founder: what we're genuinely best at, what we will not claim, and which competitor comparison you're tired of losing.",
+            "Then five recorded sales calls. A keyword tool gives you volume; sales calls give you the phrasing that converts, and the two are frequently not the same phrase. This is also the fastest way to find out that the term your industry uses internally is not the term your customers type."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "If nobody asks for CRM access by day three",
+        "body": "They intend to report traffic. Traffic is easy to grow and easy to inflate with queries that will never buy anything. An agency that wants to be judged on leads asks for the lead data before it asks for anything else."
+      }
+    },
+    {
+      "h2": "Weeks 3–5 — the audit, and the one output that matters",
+      "body": [
+        "The audit itself is unglamorous and largely mechanical: a full crawl, Search Console index coverage, log files where they exist, Core Web Vitals field data rather than lab scores, a keyword map of every existing URL against the queries it currently earns, and a competitor gap analysis that identifies which of their pages are doing work yours aren't.",
+        "The deliverable is where audits go wrong. A 90-page PDF is not an output, it's a receipt. The output is a **prioritised fix list**: one line per item, with an owner, an effort estimate, an expected effect, and a status column that will be updated weekly for the rest of the engagement. If it isn't sortable, it isn't a plan.",
+        "The prioritisation rule is worth stating plainly, because it's what separates a 90-day-capable plan from a 12-month one: **fix what is currently suppressing pages that already have demand, before you create new demand.** A page sitting at position 14 with 3,000 monthly impressions and a broken canonical tag will move faster than any new page you could write, because Google has already decided the page is relevant and is merely ranking it badly.",
+        "That's the honest 90-day play on an established site, and any agency promising day-90 movement without one is either planning to buy links or planning to explain themselves in month four. More on what a real audit turns up in [what an SEO audit should actually find](/journal/what-an-seo-audit-should-actually-find)."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "New domains are a different conversation",
+        "body": "If the site is under six months old, or was recently rebuilt on a new domain, 90 days buys foundation rather than leads and anyone claiming otherwise is selling. We say this on the first call rather than in month four, and it's occasionally why we don't take an engagement at all."
+      }
+    },
+    {
+      "h2": "Weeks 6–10 — shipping, which is where the quarter is decided",
+      "body": [
+        "This is the block that produces everything the report will eventually show, and it's also where the gap between agencies is widest — not in what they know, but in how much actually reaches production.",
+        "Two workstreams run at once. Technical fixes get deployed: redirect chains collapsed, canonical tags corrected, indexation cleaned up, schema added, internal links rewired, whatever page-speed work sits inside the budget. And content ships, in a specific order — existing pages that rank 11–25 get rebuilt first, thin pages get merged or expanded, and net-new pages come after.",
+        "The order matters because of arithmetic. An existing page has authority, internal links and a crawl history. A new page has none of those and needs weeks just to be taken seriously. Inside a 90-day window, rewriting six pages that already rank on page two beats publishing six new ones almost every time.",
+        "Volume: be realistic about what a retainer buys. A ₹75,000/month engagement doesn't buy a full-time person — after tools, account management and reporting, it buys somewhere between a person-week and a person-week-and-a-half of specialist time each month. In practice that's four to six substantial pages, or three pages plus a genuine technical sprint, and rarely both in the same month. Ask any agency to state their own figure before you sign. A straight answer takes ten seconds; hedging takes two minutes and tells you they haven't planned the work.",
+        "Link work starts here too and will not produce anything measurable inside the window. That's expected. Links take the longest to compound and the outreach started in week 8 is a month-five result."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The dev queue is the most common cause of a dead quarter",
+        "body": "Technical recommendations that need a developer will sit behind whatever your engineering team is actually shipping. Two to four hours a week, committed in advance and put in a sprint, is usually enough. Without it, half the fix list is still \"recommended\" at day 90 and both sides spend the review meeting being polite about it."
+      }
+    },
+    {
+      "h2": "Weeks 11–13 — the read against the frozen number",
+      "body": [
+        "Day 90 is the first point at which you can fairly judge anything, and it's a real read rather than a ceremonial one — but only if you're honest about which numbers are allowed to have moved.",
+        "**What should be true.** Non-brand impressions moving, because pages that went live in week 6 have had four to seven weeks to be crawled, indexed and start appearing. Indexed page count up and matching what was published. First non-brand clicks on the rewritten pages. Rankings improving on the page-two pages that were rebuilt. On a short sales cycle — ecommerce, local services, anything transactional — the first organic leads attributable to new or rebuilt pages.",
+        "**What should not be true.** Head terms in the top three. A doubling of organic revenue. Anything that looks like a full return. If those appear at day 90, look at what else changed — a PR hit, a seasonal window, an ad campaign lifting brand search — before you credit SEO with them.",
+        "**What flat means.** Flat non-brand impressions at day 90, with a healthy shipped-work log, points at strategy: the plan is aimed at queries you can't win at your authority level, or at queries nobody searches. Flat impressions with a thin work log points at capacity or at approvals, and the work log tells you which side owns it. Those are different problems with different fixes, and conflating them is how good agencies get fired for a client-side dev backlog.",
+        "This is also where our own commitment lands. We freeze the trailing-90-day count of qualified leads from organic search on day one and guarantee movement against that number — never a specific ranking position for a specific keyword, because nobody controls Google's index and anyone promising one is telling you something about themselves. If we haven't beaten your own baseline in 90 days, we keep working free until we do. That's why we take three new clients a month and no more: you cannot carry that risk at volume, and a site with a broken technical foundation is a full quarter of somebody's attention. [How the guarantee works](/seo)."
+      ]
+    },
+    {
+      "h2": "The client-side deliverables that block everything",
+      "body": [
+        "Most delayed SEO quarters are not caused by slow agencies. They're caused by a copy approval sitting in an inbox for eleven days, or a developer contact who was never named. Here's the list, with the date each item is genuinely needed — treat it as a checklist you complete before kickoff rather than a set of requests you respond to as they arrive."
+      ],
+      "table": {
+        "caption": "What the client has to deliver, when, and what stalls without it.",
+        "head": ["Deliverable", "Needed by", "What stalls without it"],
+        "rows": [
+          ["Search Console owner access and GA4 editor", "Day 1", "The baseline can't be frozen, so the whole engagement loses its scorecard."],
+          ["CRM read access or a monthly export with source fields", "Day 3", "Leads can't be counted. The engagement quietly becomes a traffic-reporting exercise."],
+          ["CMS admin plus staging access", "Week 1", "Every fix becomes a request instead of an action, adding days to each one."],
+          ["A named developer contact and 2–4 hours a week of their time", "Week 1", "Technical fixes stay in the 'recommended' column all quarter."],
+          ["One named approver with actual authority", "Week 1", "Copy sits in a three-person committee. This is the single most common cause of a slow quarter."],
+          ["Three 30-minute interviews and five recorded sales calls", "Week 2", "The content plan gets built on the agency's assumptions about your customer."],
+          ["A 48-hour decision SLA, written down", "Week 2", "The shipping window compresses one day at a time until week 6 arrives with nothing live."],
+          ["Subject-matter review of drafts, returned in 48 hours", "Week 6 onward", "Pages are accurate but generic, which is the most expensive kind of content to publish."],
+          ["Compliance or legal reviewer, if you're in a regulated category", "Week 1", "Everything ships two weeks late and nobody planned for it."],
+          ["Product photography, specs or data the pages need", "Week 4", "Pages go live incomplete and get rebuilt later at full cost."]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The uncomfortable version",
+        "body": "If you can't commit to a named approver and four hours a week of developer time, a retainer will underperform regardless of who you hire — and an agency that doesn't tell you that before signing is prioritising the sale. We wrote the whole argument out in [what clients have to do for SEO to work](/journal/what-clients-have-to-do-for-seo-to-work)."
+      }
+    },
+    {
+      "h2": "Which weeks are load-bearing",
+      "body": [
+        "Not all thirteen weeks carry the same weight. Three of them are structural, and slipping any one of them moves day 90 whether or not anybody notices at the time.",
+        "**Week 1 — access.** It's a pure dependency. Nothing downstream can start, and every day lost here is a day lost at the far end. It's also the cheapest week to protect: one hour of your IT or ops person, booked in advance.",
+        "**Week 3 — the fix list exists.** The audit can run late and still be fine; the prioritised list cannot, because it's what both content and technical work are scheduled from. A fix list arriving in week 7 rather than week 4 doesn't delay the quarter by three weeks — it halves the shipping window, because weeks 11–13 are needed for measurement and can't absorb overflow.",
+        "**Week 6 — the first thing goes live.** This is the real deadline and almost nobody treats it as one. The mechanics are unforgiving: a page has to be crawled, then indexed, then accumulate enough impressions for the data to mean anything. On an established site with a healthy sitemap that's typically days to a couple of weeks for indexing, then several more weeks for impressions to build into a readable signal. A page published in week 6 produces its first honest read around week 11. A page published in week 9 produces nothing you can interpret before the quarter ends.",
+        "Which gives you a useful question to ask in week 4, when there's still time to act on the answer: *what is going live by the end of week 6, and what's blocking it?* Ask it early enough and the quarter is recoverable. Ask it at the day-90 review and you're conducting a post-mortem."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The lag that sets the deadline",
+        "body": "Publication to indexation is typically days to a few weeks on an established site with a working sitemap. Indexation to a readable impression trend is several weeks more. Add them and you get four to eight weeks between a page going live and it telling you anything — which is why week 6, not week 10, is where a 90-day window is won or lost."
+      }
+    },
+    {
+      "h2": "What month four looks like if the first quarter went right",
+      "body": [
+        "The shape changes. Weeks 1–13 are front-loaded with setup that never repeats: the access scramble, the audit, the baseline, the interviews, the initial technical debt clearance. None of that recurs, which means month four onward buys materially more production for the same money — a fact worth remembering when you're evaluating the value of month one, which looks expensive and is.",
+        "Cadence takes over. Content ships on a rhythm rather than in a burst. The technical backlog shrinks from a list to a queue. Link and digital PR work, started in week 8, begins producing placements. Internal linking gets revisited as the cluster fills out. Reporting settles into the same three numbers on the same fixed comparison window, which is the point at which the monthly call becomes a fifteen-minute decision rather than an hour of narration.",
+        "And the honest caveat, because this site is built on saying the uncomfortable part: 90 days is where you find out whether the plan is right, not where you find out whether SEO works. Meaningful movement on a competitive keyword set takes three to six months. Compounding returns take six to twelve. What a well-run first quarter buys you is the ability to tell, at day 90, which of those two timelines you're on — and that's worth considerably more than a chart that goes up."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What happens in the first month with an SEO agency?",
+      "a": "Access collection, a frozen baseline, stakeholder interviews and the start of a technical audit. Almost nothing visible ships. That's correct — month one is the setup that everything else depends on, and an agency publishing content in week two is skipping the research that decides whether the content is aimed at anything."
+    },
+    {
+      "q": "Should I expect results in 90 days from SEO?",
+      "a": "You should expect leading indicators: non-brand impressions moving, indexed pages rising, page-two rankings improving, and on short sales cycles the first organic leads. You should not expect head terms in the top three or a full return. Meaningful movement takes three to six months, compounding six to twelve."
+    },
+    {
+      "q": "What access does an SEO agency need?",
+      "a": "Search Console at owner level, GA4 editor, CMS admin plus staging, a DNS contact who can act inside 24 hours, read-only Google Ads, Google Business Profile if you have locations, Tag Manager publish rights, and CRM read access. That last one is the tell — an agency that doesn't ask for it plans to report traffic."
+    },
+    {
+      "q": "Why does SEO onboarding take so long?",
+      "a": "Because access is a hard dependency and it routinely takes two to three weeks rather than three days — the person who set up Search Console has left, DNS needs a hosting ticket, CRM access needs a licence. It's the most predictable delay in SEO and the easiest to prevent by collecting everything before kickoff."
+    },
+    {
+      "q": "What should a client do in the first 90 days of SEO?",
+      "a": "Hand over every login in week one, name a single approver with authority, commit two to four hours a week of developer time, sit three 30-minute interviews, share five recorded sales calls, and return copy approvals inside 48 hours. Those six things prevent most of the delays that get blamed on agencies."
+    },
+    {
+      "q": "Which week of an SEO engagement matters most?",
+      "a": "Week 6. A page has to be crawled, indexed and then accumulate impressions before it means anything, which takes four to eight weeks on an established site. Anything not live by the end of week 6 cannot produce a readable signal by day 90, no matter how good it is."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "what-happens-in-the-first-90-days-with-an-seo-agency" },
+    { "type": "journal", "slug": "how-to-set-an-seo-baseline" },
+    { "type": "journal", "slug": "what-clients-have-to-do-for-seo-to-work" },
+    { "type": "services", "slug": "seo-audit-services" },
+    { "type": "glossary", "slug": "indexing" },
+    { "type": "answers", "slug": "how-long-does-it-take-for-seo-to-work" }
+  ]
+}

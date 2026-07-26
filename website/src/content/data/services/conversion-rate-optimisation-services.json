@@ -1,0 +1,220 @@
+{
+  "slug": "conversion-rate-optimisation-services",
+  "type": "services",
+  "primaryKeyword": "conversion rate optimisation services",
+  "secondaryKeywords": [
+    "cro agency india",
+    "cro services cost india",
+    "ab testing service india",
+    "landing page optimisation service",
+    "conversion optimisation agency india"
+  ],
+  "cluster": "conversion-analytics",
+  "intent": "commercial",
+  "h1": "Fix the leaks before you buy more traffic",
+  "metaTitle": "Conversion Rate Optimisation Services in India",
+  "metaDescription": "Conversion rate optimisation with a published traffic floor: under 15,000 sessions a month we fix, we don't test. From ₹75,000 a month, no lock-in.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "priceFrom": "From ₹75,000 / mo",
+  "answer": "Conversion rate optimisation finds and fixes the reasons visitors leave without buying. Real A/B testing needs volume — roughly 15,000 sessions a month before a test can settle inside a quarter. Below that we run sequential fixes off session replay and customer research instead, and we say so before invoicing. From ₹75,000 a month.",
+  "takeaways": [
+    "We publish a **traffic floor**. Under 15,000 sessions a month, A/B testing is theatre — the maths is in the first table and you can check it yourself.",
+    "Below the floor we ship sequential fixes and report the confounds honestly, rather than pretending a pre/post comparison is a controlled test.",
+    "Hypotheses come from session replay, form analytics, one-question exit surveys and your sales calls. Not from a listicle of 47 CRO tips.",
+    "Indian checkouts break in Indian ways: UPI app-switching, COD, OTP screens and WhatsApp handoffs. Most imported CRO advice ignores all four.",
+    "We never promise a percentage lift. We freeze your baseline conversion rate on day one and commit to beating it in 90 days."
+  ],
+  "sections": [
+    {
+      "h2": "The 15,000-session floor, and the arithmetic behind it",
+      "body": [
+        "Most CRO pitches skip the only question that decides whether testing is worth your money: do you have enough traffic for a test to mean anything? The answer is arithmetic, not opinion.",
+        "The rough sample size for an A/B test at 95% confidence and 80% power is **16 × p × (1 − p) ÷ d²**, where p is your current conversion rate and d is the absolute difference you want to detect. It's an approximation, but it's the one every honest testing tool uses under the hood. Here's what it produces for a site converting at 2%."
+      ],
+      "table": {
+        "caption": "Sessions needed per variant to detect a lift at a 2% baseline conversion rate, 95% confidence, 80% power.",
+        "head": [
+          "Lift you want to detect",
+          "Sessions per variant",
+          "How long that takes at 15,000 sessions a month"
+        ],
+        "rows": [
+          [
+            "+5% relative (2.00% to 2.10%)",
+            "~313,000",
+            "Roughly three and a half years. Not a test, a hobby."
+          ],
+          [
+            "+10% relative (2.00% to 2.20%)",
+            "~78,000",
+            "Roughly ten months, assuming nothing else on the site changes."
+          ],
+          [
+            "+20% relative (2.00% to 2.40%)",
+            "~19,600",
+            "Roughly ten weeks. Workable."
+          ],
+          [
+            "+30% relative (2.00% to 2.60%)",
+            "~8,700",
+            "Roughly five weeks. This is the size of change worth testing at your volume."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "What agencies do instead of telling you this",
+        "body": "They run the test anyway, stop it on the day the variant is ahead, and call it a 14% win. Stopping a test when it looks good is the single most common way CRO produces a number that never shows up in your bank account. If the stop date wasn't agreed before launch, the result isn't a result."
+      }
+    },
+    {
+      "h2": "What we do for sites under the floor — which is most sites",
+      "body": [
+        "Turning work away is bad for revenue, so almost nobody publishes a floor. But under 15,000 sessions a month the honest service is different work, not the same work with worse maths.",
+        "Below the floor we run sequential fixes: find the leak with qualitative evidence, fix it, ship it, watch the metric, move to the next one. No control group, because there isn't the traffic for one. What we owe you in exchange is honesty about what that measurement can and cannot prove."
+      ],
+      "bullets": [
+        "**We fix in priority order, one change at a time.** Ship five changes in a week and you'll never know which one did it.",
+        "**We compare like with like.** Same channel, same device, same campaign mix. A conversion rate that 'improved' because your paid traffic paused is not an improvement.",
+        "**We name the confounds in the report.** Festive season, a price change, a new ad set — if any of those overlap the window, it goes in writing next to the number.",
+        "**We stop calling them wins.** They're fixes. A fix that removes an obvious barrier — a broken mobile form, a hidden delivery charge, a payment method that fails on half of Android — doesn't need a statistical test to justify it."
+      ]
+    },
+    {
+      "h2": "Where hypotheses actually come from",
+      "body": [
+        "The worst CRO work starts with a list of best practices and applies them to a site that has none of those problems. The research stack exists so that every change we propose can be traced back to a specific human failing at a specific step."
+      ],
+      "numbered": [
+        "**Session replay.** We watch the sessions that reached the checkout and left, not the happy ones. Rage clicks on a non-clickable element, and the scroll-up-scroll-down loop that means someone is hunting for a delivery charge.",
+        "**Form analytics.** Field-level drop-off, error message frequency, and re-entry counts. If 30% of your users retype the pincode field, the field is broken, not the users.",
+        "**One-question exit surveys.** A single question at the point of abandonment — 'what stopped you today?' — outperforms a ten-question survey nobody finishes.",
+        "**Sales call and WhatsApp transcript review.** Your sales team already knows the three objections. They've just never been asked to write them down. This is the cheapest research in the stack and it's the one most agencies skip because it isn't billable-looking.",
+        "**Analytics funnels.** Where the drop-off is steepest, segmented by device and channel. This tells us where to look; the four above tell us why."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Heatmaps are the weakest tool in the box",
+        "body": "They make beautiful slides and they rarely change a decision. A scroll map tells you people didn't reach your form. Replay tells you why they gave up before it. We use heatmaps for orientation, never as evidence for a change."
+      }
+    },
+    {
+      "h2": "Indian checkout problems that imported CRO advice ignores",
+      "body": [
+        "Most CRO writing is American, and it assumes a card-first, single-screen checkout with no app-switching. Indian funnels break somewhere else."
+      ],
+      "bullets": [
+        "**UPI app-switching.** An intent-flow payment throws the user into GPay or PhonePe and often never brings them back to your thank-you page. Your conversion rate looks worse than it is, and the fix is server-side confirmation from the gateway webhook rather than a client-side event. That's a [tracking build](/services/analytics-setup-services), not a design change — and until it's done, every CRO number you have is wrong.",
+        "**COD and the RTO trade.** Removing cash on delivery reliably cuts returns and reliably cuts conversions. The interesting middle is partial prepaid, a small COD fee, or COD hidden for high-risk pincodes. That's a margin decision, so we model it with you rather than deciding for you.",
+        "**OTP screens.** Every OTP is a place to lose someone: SMS delay, an autofill that doesn't fire, a resend button that resets the timer. Count your OTP abandonment before you redesign anything above it.",
+        "**Address forms.** Pincode should auto-fill city and state. It usually doesn't. On mobile, each extra field costs you people who were already halfway out.",
+        "**The WhatsApp handoff.** For a lot of Indian businesses the real conversion is a chat, not a form. If it isn't tracked as an event with the page it came from, nobody can optimise it and everybody argues about it in month three."
+      ]
+    },
+    {
+      "h2": "What's included, and what isn't",
+      "body": [
+        "CRO sits alongside our [SEO work](/seo) rather than replacing it — there's no point optimising a page nobody reaches, and no point sending more traffic to a page that leaks."
+      ],
+      "table": {
+        "caption": "Conversion rate optimisation scope — included versus explicitly excluded.",
+        "head": [
+          "Included",
+          "Not included"
+        ],
+        "rows": [
+          [
+            "Research: session replay, form analytics, exit surveys, sales call review",
+            "A brand repositioning exercise — different project, different budget"
+          ],
+          [
+            "A ranked hypothesis backlog with the evidence attached to each item",
+            "Tests we know can't reach significance, run anyway so the report looks busy"
+          ],
+          [
+            "Test design, sample-size maths and a stop date agreed before launch",
+            "Calling a winner on day four because the variant is ahead"
+          ],
+          [
+            "Variant build and QA across mobile and desktop, in your tool or ours",
+            "New photography, video or illustration"
+          ],
+          [
+            "Checkout and form work: UPI, COD, OTP, address fields, WhatsApp handoff",
+            "Backend or payment-gateway development inside your codebase"
+          ],
+          [
+            "Event tracking fixes needed to measure a test at all",
+            "A full GA4 rebuild — that's a separate fixed-fee build"
+          ],
+          [
+            "Monthly readout: shipped, won, lost, and what happens next",
+            "A promised percentage lift, because nobody can promise that honestly"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Price, and the number the guarantee runs on",
+      "body": [
+        "CRO starts at **₹75,000 a month**, ex-GST, month-to-month after the first quarter with 30 days' notice. Every test document, research file and variant build is yours to keep if you leave. Full numbers are on the [pricing page](/pricing).",
+        "Our company guarantee is about leads: we freeze your trailing-90-day qualified leads from organic search on day one, and if we haven't beaten that number in 90 days we keep working free until we do. On a CRO engagement we freeze a second number alongside it — your trailing-90-day conversion rate on the specific flows in scope — and report against it monthly.",
+        "Here's the part worth arguing about before you sign, not after. Conversion rate moves when traffic mix moves. Double your paid spend into a colder audience and the rate drops even though the page got better. So the segmentation rule goes in the contract on day one: which channels, which devices, which flows count. Agreeing that in month one takes ten minutes. Agreeing it in month three, when the number is disputed, takes a lawyer.",
+        "What we won't do is quote you an expected lift. Anyone who quotes 20% before looking at your funnel is quoting an average from someone else's business, and averages are the enemy of this discipline."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much do conversion rate optimisation services cost in India?",
+      "a": "CRO retainers in India typically run ₹50,000–₹2,50,000 a month depending on traffic volume, funnel complexity and whether the agency builds variants or just designs them. Ours start at ₹75,000 a month ex-GST. One-off landing page projects cost less but tend to produce one improvement and no learning."
+    },
+    {
+      "q": "How much traffic do I need before A/B testing is worth it?",
+      "a": "Around 15,000 sessions a month on the flow you want to test, and even then you can only reliably detect changes of about 20–30%. The maths is 16 × p × (1 − p) ÷ d² per variant. Below that volume, sequential fixes based on session replay and customer research beat underpowered tests."
+    },
+    {
+      "q": "How long does a CRO test take to reach a result?",
+      "a": "Two to six weeks for most tests on a site above the traffic floor, and the duration should be calculated before launch, not judged by eye. Always run a whole number of weeks — weekday and weekend behaviour differ enough to skew a test stopped mid-week."
+    },
+    {
+      "q": "Can you guarantee a conversion rate increase?",
+      "a": "We guarantee movement against your own frozen baseline within 90 days, not a specific percentage. Anyone quoting you a number before seeing your funnel is quoting an average from an unrelated business. The honest commitment is a baseline, a segmentation rule and a date, all agreed in writing before work starts."
+    },
+    {
+      "q": "Should I fix conversion rate or buy more traffic first?",
+      "a": "Fix the leak first if your funnel has an obvious break — a failing payment method, a broken mobile form, a hidden delivery charge. Buy traffic first if your funnel converts fine and volume is the constraint. The expensive mistake is scaling ad spend into a checkout that fails on half of Android."
+    },
+    {
+      "q": "Do you need access to our codebase?",
+      "a": "Not usually. Most variants run through a testing tool or your tag manager, and we hand over the code either way. Deeper checkout work — payment retries, address validation, server-side purchase confirmation — needs your developers, and we scope that with them rather than around them."
+    }
+  ],
+  "related": [
+    {
+      "type": "services",
+      "slug": "analytics-setup-services"
+    },
+    {
+      "type": "compare",
+      "slug": "cro-vs-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "conversion-rate"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-you-measure-seo-success"
+    },
+    {
+      "type": "cost",
+      "slug": "is-seo-worth-the-money"
+    },
+    {
+      "type": "journal",
+      "slug": "what-clients-have-to-do-for-seo-to-work"
+    }
+  ]
+}

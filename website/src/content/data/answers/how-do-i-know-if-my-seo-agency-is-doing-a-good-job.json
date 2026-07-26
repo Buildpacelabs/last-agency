@@ -1,0 +1,202 @@
+{
+  "slug": "how-do-i-know-if-my-seo-agency-is-doing-a-good-job",
+  "type": "answers",
+  "primaryKeyword": "how do i know if my seo agency is doing a good job",
+  "secondaryKeywords": [
+    "is my seo agency working",
+    "how to evaluate an seo agency's performance",
+    "how to audit your seo agency",
+    "signs your seo agency is failing"
+  ],
+  "cluster": "agency-selection",
+  "intent": "commercial",
+  "h1": "Is your SEO agency actually working? Seven checks",
+  "metaTitle": "Is My SEO Agency Doing a Good Job? 7 Checks",
+  "metaDescription": "Seven checks you run yourself in Search Console and your CMS to tell whether your SEO agency is working. Each takes ten minutes and needs no paid tools.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Run seven checks yourself, in Search Console and your own CMS, without opening the agency's report: non-brand query growth, page-level impressions, whether shipped work is actually live, index coverage trend, link quality, whether reporting ties to revenue, and whether they ask you for anything. Two failures means a conversation.",
+  "takeaways": [
+    "Every check below runs on **free tools you already own**. If the agency controls the only view of performance, you don't have a view of performance.",
+    "Filter your brand name out of everything. Brand queries grow for reasons that have nothing to do with the retainer.",
+    "The most common failure isn't bad strategy — it's **work that was delivered in a document and never shipped to the site**.",
+    "One failed check is noise. Two is a conversation. Four is a decision."
+  ],
+  "sections": [
+    {
+      "h2": "Why you shouldn't grade them on their own report",
+      "body": [
+        "An SEO report is a marketing document written by the party being evaluated. That doesn't make it dishonest — most agencies genuinely believe theirs. It makes it the wrong evidence.",
+        "Reports select. They pick the date range where the line goes up, the keyword set that moved, the traffic number that includes brand searches you'd have received anyway. None of that is fraud. All of it is unusable for the question you're actually asking, which is: is this working?",
+        "So don't audit the report. Audit the site and the search data, using accounts you own. Seven checks, all free, none of which requires you to know SEO."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "If you can't run these checks, that's the finding",
+        "body": "Every check here needs owner-level access to Google Search Console, GA4 and your CMS. If the agency holds those and you don't, stop reading and fix that this week. Access you can't reach is a lever someone else is holding."
+      }
+    },
+    {
+      "h2": "The seven checks at a glance",
+      "body": [
+        "Block ninety minutes. Do them in order — the early ones tell you where to look harder in the later ones."
+      ],
+      "table": {
+        "caption": "Seven self-serve checks, where to run them, and what failure looks like.",
+        "head": ["#", "Check", "Where", "A fail looks like"],
+        "rows": [
+          ["1", "Non-brand query growth", "Search Console → Performance → Queries", "Flat or falling non-brand impressions at month four"],
+          ["2", "Do new pages earn impressions?", "Search Console → Performance → Pages", "Pages live 60+ days with zero impressions"],
+          ["3", "Is the work actually live?", "Your CMS + a private browser window", "Deliverables that exist only in a spreadsheet"],
+          ["4", "Index coverage trend", "Search Console → Indexing → Pages", "Published count rising, indexed count flat"],
+          ["5", "Link profile spot check", "Search Console → Links", "Ten linking sites that share one template"],
+          ["6", "Does reporting reach revenue?", "The report + your CRM", "Page one leads with traffic and DA"],
+          ["7", "Are they asking you for anything?", "Your inbox", "A month of comfortable silence"]
+        ]
+      }
+    },
+    {
+      "h2": "Checks 1 and 2 — is your surface area growing?",
+      "body": [
+        "Before rankings move and long before revenue does, one thing changes: the number of different things people find you for. That's the earliest honest signal in SEO, and it lives in a free tool."
+      ],
+      "subs": [
+        {
+          "h3": "Check 1 — non-brand query growth",
+          "body": [
+            "Open Search Console → Performance → Search results. Set the date range to the last three months, tick \"Compare\" and pick the previous three months. Open the Queries tab.",
+            "Now the part everyone skips: add a query filter that **excludes your brand name** and every misspelling of it. Brand searches rise when you run ads, get press, or simply exist for another quarter. They are not evidence that the retainer works.",
+            "What you want to see by month four is more distinct non-brand queries and more non-brand impressions than the previous quarter. Rising impressions with flat clicks is fine early — it means you're appearing on page two and three, which is where page one comes from. Flat impressions at month four is the real warning."
+          ]
+        },
+        {
+          "h3": "Check 2 — are the new pages earning anything?",
+          "body": [
+            "Same report, Pages tab. Take the list of URLs the agency published in the last 90 days and search for each one.",
+            "A page that's been live for sixty days and has zero impressions has one of two problems: it targets a query nobody searches, or Google hasn't indexed it. Check 4 tells you which. Either way, more content at the same cadence won't fix it, and that's usually the next thing you'll be sold."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Checks 3 and 4 — is the work live, and is Google keeping it?",
+      "body": [
+        "This pair catches the single most common failure in agency SEO, and it's rarely malice. It's a handoff that nobody owned."
+      ],
+      "subs": [
+        {
+          "h3": "Check 3 — open the deliverables in a private window",
+          "body": [
+            "Pull last month's deliverable list. For each item, open the URL in a private or incognito window and verify with your own eyes.",
+            "Title and meta changes: view the page source and search for `<title>`. Content updates: check the revision history in your CMS and confirm the date matches when it was reported. Technical fixes: ask which URL changed and go look at it.",
+            "The failure mode is boring and enormous. The agency writes 40 title-tag recommendations into a sheet, sends it to your developer, marks the task done, and nobody ships it. Four months later everyone is confused about why nothing moved. If more than a couple of items fail this check, your problem is a broken implementation route, not strategy — and that one's fixable in a fortnight."
+          ]
+        },
+        {
+          "h3": "Check 4 — the index coverage trend",
+          "body": [
+            "Search Console → Indexing → Pages. Look at the Indexed line over the last three months against how many pages you've published.",
+            "If you shipped 20 pages and the indexed count moved by 6, something is broken. Scroll to the \"Not indexed\" reasons. Large numbers under **Crawled – currently not indexed** usually mean Google looked and wasn't convinced. **Discovered – currently not indexed** points at crawl or internal linking problems. **Duplicate without user-selected canonical** means you're competing with yourself.",
+            "Ask the agency to explain the specific reason with the biggest number. A good answer is a diagnosis. A bad one is \"indexing takes time\", which is the SEO equivalent of shrugging."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Checks 5 and 6 — the links and the money",
+      "body": [
+        "One check on the work you can't see, and one on whether any of it reaches your bank account."
+      ],
+      "subs": [
+        {
+          "h3": "Check 5 — spot check the link profile",
+          "body": [
+            "Search Console → Links → Top linking sites → More. You don't need a paid tool for this. Google's link data is sampled and lags by weeks, so read it for shape rather than counts.",
+            "Open ten linking domains at random and ask: does this site look like it has actual readers? Is it in a language your customers read? Does the page hosting your link have anything to do with your subject? And the important one — do several of them share the same layout, the same generic name and the same thin posts? That's a network, and it's a penalty waiting for a core update.",
+            "Then ask the agency for the links they built last quarter with live URLs, and check whether they show up here at all. See [what backlinks actually are](/glossary/backlink) if the report is throwing terms at you."
+          ]
+        },
+        {
+          "h3": "Check 6 — does the reporting reach revenue?",
+          "body": [
+            "Read page one of the last report. If it opens with sessions, \"keywords in top 10\" and a domain authority score, you're being shown the numbers that are easiest to move rather than the ones that pay salaries.",
+            "The question that settles it: *how many of last month's closed deals started as an organic search session?* If nobody can answer, attribution was never built, and everything either side of this conversation is guesswork. That's a joint failure — most clients never wire their CRM up either — but it needs fixing before month six, not after.",
+            "The number should sit against a frozen starting point, not last month. [Setting a baseline properly](/journal/how-to-set-an-seo-baseline) takes an afternoon and makes every later argument short."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Check 7 — are they asking you for anything?",
+      "body": [
+        "This one isn't in any dashboard and it predicts outcomes better than most of the others.",
+        "Real SEO generates homework for the client. Someone needs a half-hour with your sales lead to learn what buyers actually object to. Someone needs product data, or a customer to quote, or approval on a page that names a competitor. Someone needs a developer ticket raised and prioritised.",
+        "An agency that goes a full month without asking you for anything is either blocked and not telling you, or producing work that requires nothing from your business — which means it reads like everyone else's. Comfortable silence is the most under-rated warning sign in this industry."
+      ],
+      "bullets": [
+        "Has anyone requested a subject-matter interview this quarter?",
+        "Has a developer ticket been raised, and did it get prioritised?",
+        "Have they pushed back on anything you asked for? A team that agrees with every instruction isn't advising you.",
+        "Do they tell you what didn't work, unprompted, before you notice it?"
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The reverse is also true",
+        "body": "If they've asked six times for the SME interview and you haven't booked it, the failed checks above may be yours. SEO is the rare service where the client's input materially changes the output. Worth an honest look before the meeting."
+      }
+    },
+    {
+      "h2": "What to do when two checks fail",
+      "body": [
+        "One failure is noise — SEO is seasonal, algorithms move, a quarter can genuinely be flat. Two failures in the same quarter is a pattern. Handle it in this order."
+      ],
+      "numbered": [
+        "**Get owner-level access on everything first.** Search Console verified through your own DNS or GA4, GA4 admin on your own email, CMS admin, Google Business Profile primary ownership. Do this before the difficult conversation, not after it.",
+        "**Put the failures in writing.** One email, the two or three checks that failed, screenshots attached, no adjectives. Written questions get written answers, and written answers are much harder to walk back.",
+        "**Ask for a 30-day recovery plan** that names one number, its value today, and where it should be in thirty days. If the plan is a list of activities rather than a number, ask again.",
+        "**Read which checks failed, because they mean different things.** Checks 3 and 4 failing is an execution problem — fixable, often quickly, sometimes by your own developer. Checks 1, 2 and 6 failing together is a strategy problem, and the same team rarely produces a different strategy.",
+        "**Give it one cycle.** Thirty days. SEO is slow, but a recovery plan isn't — you're measuring whether they can respond, not whether they can rank.",
+        "**Then decide.** If you're leaving, do it in the order set out in [how to leave an SEO agency without losing your work](/answers/can-i-fire-my-seo-agency), because the sequence matters more than the decision does."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Month four is when most people quit",
+        "body": "It's also the point at which the first content batch is usually only starting to gain traction, which makes it an expensive month to get wrong. Before you fire anyone, work out whether the checks are failing or whether you're impatient. The two feel identical and cost very differently."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How soon should I expect results from an SEO agency?",
+      "a": "Leading indicators — non-brand impressions and distinct query count in Search Console — should move within four to eight weeks. Meaningful ranking and traffic movement on a competitive set takes three to six months, and compounding returns six to twelve. Flat non-brand impressions at month four is a real warning sign."
+    },
+    {
+      "q": "What are the signs an SEO agency is failing?",
+      "a": "Flat non-brand impressions after four months, deliverables that exist only in documents, published pages that never get indexed, a link profile of near-identical sites, reporting that leads with traffic instead of leads, and a month of silence with no requests from them. Two or more together is a pattern."
+    },
+    {
+      "q": "Can I check my SEO agency's work without paid tools?",
+      "a": "Yes — every check that matters runs in Google Search Console, GA4 and your own CMS, all free. Paid tools add competitive context and faster link data, but they add nothing to the core question of whether your surface area is growing and whether the work shipped."
+    },
+    {
+      "q": "My traffic is up but leads aren't. Is my agency doing a good job?",
+      "a": "Not yet. Traffic rising without leads usually means the content targets research queries rather than buying ones, or the pages that convert were never touched. Ask which queries the growth came from. If they're informational and unrelated to purchase, the strategy needs correcting, not scaling."
+    },
+    {
+      "q": "Should I ask my agency to explain a failed check?",
+      "a": "Always, and in writing. A good team gives you a specific diagnosis and a date. A struggling one gives you \"SEO takes time\" or points at an algorithm update. The quality of the explanation is itself one of the more reliable signals you'll get."
+    },
+    {
+      "q": "How often should I run these checks?",
+      "a": "Quarterly is enough for checks 1, 2, 4 and 5, since those move slowly and monthly noise will mislead you. Check 3 — whether the work actually shipped — is worth doing every month, because it catches the failure that costs the most and is cheapest to fix."
+    }
+  ],
+  "related": [
+    { "type": "journal", "slug": "how-to-judge-your-seo-agencys-performance" },
+    { "type": "answers", "slug": "can-i-fire-my-seo-agency" },
+    { "type": "glossary", "slug": "google-search-console" },
+    { "type": "compare", "slug": "keyword-rankings-vs-organic-traffic" },
+    { "type": "services", "slug": "seo-reporting-services" },
+    { "type": "journal", "slug": "how-to-read-an-seo-report" }
+  ]
+}

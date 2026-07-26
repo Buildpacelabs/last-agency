@@ -1,0 +1,205 @@
+{
+  "slug": "is-seo-dead",
+  "type": "answers",
+  "primaryKeyword": "is seo dead",
+  "secondaryKeywords": [
+    "is seo dead in 2026",
+    "is seo still relevant",
+    "is seo dying",
+    "is seo dead or evolving in 2026"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "Is SEO dead in 2026? What the data says",
+  "metaTitle": "Is SEO Dead in 2026? What the Data Says",
+  "metaDescription": "Is SEO dead? No, but click rates on AI Overview queries fell hard and unevenly. The measured numbers, plus four tactics that genuinely stopped working.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "No, but the click economics changed. Pew Research Center found US users clicked a search result on 8% of visits where an AI summary appeared, against 15% where none did. Ahrefs measured roughly a third lower click-through on position one. The loss concentrated on informational queries, where AI Overviews appear most.",
+  "takeaways": [
+    "The decline is real and measured. The **recovery** is mostly a reshuffle in where AI Overviews appear, not clicks returning to the same queries.",
+    "Four things genuinely died: thin definitional content, volume-first publishing, rented authority, and treating rank as a proxy for traffic.",
+    "Three things got more valuable: brand demand, bottom-of-funnel pages, and information that doesn't already exist anywhere else.",
+    "**Publishers lost a business model. Most businesses lost a vanity metric.** Which one you are depends on what your top-ten queries look like."
+  ],
+  "sections": [
+    {
+      "h2": "The numbers people mean when they say SEO is dead",
+      "body": [
+        "Two public datasets do most of the work in this argument, and both are worth reading with their caveats attached rather than as headline stats.",
+        "Neither one says SEO stopped working. Both say the same query, at the same position, now returns fewer clicks than it did — which is a different and much more manageable claim."
+      ],
+      "table": {
+        "caption": "The two most-cited public measurements of AI Overview impact, with what each one actually covers.",
+        "head": [
+          "Source",
+          "What it measured",
+          "Finding",
+          "Worth knowing"
+        ],
+        "rows": [
+          [
+            "Pew Research Center (July 2025)",
+            "Real browsing behaviour of a US panel across a month of Google searches",
+            "Users clicked a search result on 8% of visits with an AI summary, versus 15% without. Around 1% clicked a link inside the summary itself.",
+            "A panel of roughly 900 US adults over one month. Directionally strong, not a global figure."
+          ],
+          [
+            "Ahrefs (March 2025)",
+            "Click-through rate for top-ranking pages on a large keyword set, with and without an AI Overview",
+            "Position one saw roughly a third lower average CTR when an AI Overview was present.",
+            "Averages across a keyword sample. Your own mix of queries may look nothing like it."
+          ],
+          [
+            "Google's own position",
+            "Aggregate clicks to websites, year on year",
+            "Google has publicly said total organic click volume has stayed broadly stable and that clicks from AI experiences are higher quality.",
+            "Google has not published the underlying data. Treat as a claim, not a measurement."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Be suspicious of one number",
+        "body": "Anyone quoting you a single percentage for \"the AI Overview CTR drop\" is compressing several incompatible studies with different samples, countries and query mixes into a stat that sounds authoritative. The honest version is a range with a shrug attached."
+      }
+    },
+    {
+      "h2": "Which queries lost the clicks, and which barely moved",
+      "body": [
+        "The loss is not spread evenly, and this is the part that decides whether any of it matters to you. AI Overviews trigger heavily on questions with a settled factual answer and lightly on queries where the searcher clearly intends to do something.",
+        "So the damage lands almost entirely on the top of the funnel."
+      ],
+      "bullets": [
+        "**Hit hardest:** definitional queries (\"what is X\"), simple how-to, quick facts, comparisons of well-documented concepts, and symptom-style health questions. These were always the cheapest traffic you had.",
+        "**Hit moderately:** research-stage commercial queries where the searcher still wants several opinions — \"best CRM for small business\" — because the summary rarely settles it.",
+        "**Barely touched:** brand and navigational searches, transactional queries with buying language, \"near me\" and map-pack searches, pricing queries, and anything needing a booking, a quote or a login.",
+        "**Untouched entirely:** the search that starts with your company's name in it. Nothing intercepts that."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Do this before you form an opinion",
+        "body": "Open Search Console, take the last 12 months of queries by clicks, and sort them into those four buckets. Most B2B and services businesses find 70% of their conversions come from the bottom two. Most publishers find the opposite."
+      }
+    },
+    {
+      "h2": "The rebound, and why it's a reshuffle rather than a recovery",
+      "body": [
+        "The \"it's coming back\" claim has some substance and a lot of wishful thinking around it. Here's what can honestly be said.",
+        "AI Overview coverage has never been stable. Google rolled them out broadly, publicly pulled them back on several query classes after the mess of June 2024 — Google's own write-up described restricting them on nonsensical queries, hard news and certain health topics — then expanded them again through 2025. Third-party trackers have followed that curve, and they disagree with each other about the magnitude at every point on it.",
+        "So when a site sees traffic return, the usual cause isn't clicks coming back to the same query. It's that the AI Overview stopped triggering on that query, or the site's demand shifted toward query types that were never exposed. That's a composition effect, and it can reverse next month without warning.",
+        "What genuinely does recover, and stays recovered, is brand-driven and bottom-of-funnel demand. Those queries were never the ones being intercepted. If your rebound is concentrated there, it's real. If it's spread across informational pages, enjoy it but don't build a plan on it. Our longer read on [what AI Overviews did to organic traffic](/journal/what-ai-overviews-did-to-your-organic-traffic) has the diagnostic."
+      ]
+    },
+    {
+      "h2": "Four tactics that genuinely stopped working",
+      "body": [
+        "These aren't declining. They're finished, and continuing to fund them is the real risk in 2026."
+      ],
+      "numbered": [
+        "**Thin definitional content.** The 700-word \"what is a sales funnel\" post existed to catch a query that an AI summary now answers in the results. Even when it still ranks, the click doesn't come. Writing more of them is spending money to produce impressions.",
+        "**Volume-first publishing.** Forty near-identical pages a month, spun from a template with the city or the keyword swapped. Google's spam policies named scaled content abuse explicitly in March 2024, and the enforcement has been consistent since. This one didn't die because of AI; AI just removed the last excuse for it.",
+        "**Rented authority.** Buying placements on expired domains, or renting a subfolder on a big publisher's site to rank for your commercial terms. Both are named spam policies now — expired domain abuse and site reputation abuse — and enforcement on the second began in late 2024. Agencies still sell both, quietly.",
+        "**Rank as a proxy for traffic.** Position three used to imply a fairly predictable share of clicks. On a query with an AI Overview it implies almost nothing. Any report that leads with average position and doesn't show clicks alongside it is now measuring a number that has come loose from the business."
+      ]
+    },
+    {
+      "h2": "Three that got more valuable",
+      "body": [
+        "The flip side, and it's genuinely a better set of incentives than the one it replaced."
+      ],
+      "subs": [
+        {
+          "h3": "Brand demand",
+          "body": [
+            "The only search nothing can intercept is one with your name in it. AI Overviews rarely trigger on brand queries; assistants tend to answer them by pointing at you. Every rupee spent making people search your name specifically is now worth more than it was, because it routes around the whole problem.",
+            "It also compounds into the assistants themselves. Models associate categories with the brands they see discussed, cited and reviewed. That association is slow to build and slow to lose."
+          ]
+        },
+        {
+          "h3": "Bottom-of-funnel and local pages",
+          "body": [
+            "Pricing pages, comparison pages, \"near me\" and service-area pages, booking and quote pages. Low AI Overview exposure, high intent, and usually a fraction of the volume of your blog with a multiple of the revenue. Most sites are badly under-built here because these pages are boring to write.",
+            "For anyone with a physical location, the map pack has been the least disrupted surface in search. That's not a small thing."
+          ]
+        },
+        {
+          "h3": "Information that doesn't already exist",
+          "body": [
+            "A synthesiser can only summarise what's already written. Original data, your own numbers, a method nobody has documented, a first-hand account of doing the thing — these have to be cited rather than absorbed, because there's no second source to blend them with.",
+            "This is also the only honest version of [generative engine optimisation](/answers/what-is-generative-engine-optimization). Being citable is mostly a content problem, not a technical trick."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Publishers lost a business model. You probably lost a metric.",
+      "body": [
+        "The loudest \"SEO is dead\" voices are publishers, and they have every reason to be loud. Ad-funded media monetises the pageview directly: fewer clicks means proportionally less revenue, immediately, with no way to make it up on quality. A site where most traffic came from informational queries has watched its core inventory get answered above the fold. That is an existential problem and calling it one is fair.",
+        "A services business, a SaaS company or a clinic monetises a tiny fraction of visits. If organic sessions fell 30% but the sessions you lost were people reading a glossary post, your pipeline didn't notice. We've seen sites lose a quarter of their traffic and hold their lead count flat, because the traffic they lost was never going to convert.",
+        "That's the test. Not \"did traffic fall\" but \"did qualified leads fall\". It's why we freeze the trailing-90-day organic lead count on day one of every engagement and measure against that, rather than against a session graph that can move for a dozen reasons that have nothing to do with the work. Details on [how the guarantee works](/seo)."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The honest position",
+        "body": "SEO isn't dead. Cheap SEO is dead. The tactics that stopped working were the ones that cost the least to execute, which is exactly why so many agencies are the ones announcing the funeral."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is SEO still worth it in 2026?",
+      "a": "For businesses with commercial and local intent in their query mix, yes — those queries lost the least and convert the most. For anyone whose model depends on high-volume informational traffic monetised by ads, the maths is genuinely worse than it was, and no amount of optimisation fixes a structural change in how answers get delivered."
+    },
+    {
+      "q": "How much did AI Overviews reduce organic clicks?",
+      "a": "The two clearest public studies point in the same direction with different magnitudes. Pew Research Center found clicks on 8% of visits with an AI summary versus 15% without, in a US panel. Ahrefs measured roughly a third lower CTR at position one. Both are samples, not universal rates. Your own Search Console data is more reliable than either."
+    },
+    {
+      "q": "Will AI replace search engines entirely?",
+      "a": "Nothing in the current behaviour suggests it. Assistants and search engines are converging rather than replacing each other — assistants retrieve from search indexes, and search results now contain generated summaries. The practical effect is fewer clicks per query, not fewer queries. Optimising to be retrieved and cited is the same work as being findable, done more carefully."
+    },
+    {
+      "q": "Should I stop writing blog posts?",
+      "a": "Stop writing definitional posts that an AI summary answers in two lines. Keep writing anything carrying original data, first-hand experience, or a genuine commercial decision — comparisons, pricing explanations, implementation detail. The rule of thumb: if a model could write your post accurately without reading your post, don't publish it."
+    },
+    {
+      "q": "Has link building stopped working?",
+      "a": "Earned links still matter. Bought links matter less than they did and carry more risk than they did, particularly the expired-domain and rented-subfolder varieties Google now names in its spam policies. The gap between the cheap version and the real version has widened, which is inconvenient for anyone who was selling the cheap version."
+    },
+    {
+      "q": "How do I know if AI Overviews have hurt my site specifically?",
+      "a": "Compare impressions and clicks for the same query set year on year in Search Console. Flat or rising impressions with falling clicks is the signature. Then check which queries — if the drop sits on informational pages and your commercial pages are steady, you've lost traffic without losing revenue."
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "what-ai-overviews-did-to-your-organic-traffic"
+    },
+    {
+      "type": "glossary",
+      "slug": "ai-overviews"
+    },
+    {
+      "type": "answers",
+      "slug": "will-seo-be-replaced-by-ai"
+    },
+    {
+      "type": "compare",
+      "slug": "geo-vs-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "zero-click-search"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-generative-engine-optimization"
+    },
+    {
+      "type": "answers",
+      "slug": "where-is-seo-used"
+    }
+  ]
+}

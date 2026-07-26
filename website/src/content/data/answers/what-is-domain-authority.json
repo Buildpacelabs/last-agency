@@ -1,0 +1,205 @@
+{
+  "slug": "what-is-domain-authority",
+  "type": "answers",
+  "primaryKeyword": "what is domain authority",
+  "secondaryKeywords": [
+    "domain authority meaning",
+    "is domain authority a ranking factor",
+    "what is a good domain authority score",
+    "da in seo"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "Domain Authority: what it is and what it isn't",
+  "metaTitle": "What Is Domain Authority? And Its Real Limits",
+  "metaDescription": "What is domain authority? A third-party score built by Moz, not a Google metric. Here's what it predicts, where it misleads, and what to use instead.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Domain Authority is a 1–100 score built by Moz that predicts how likely a site is to rank in Google. Google does not use it, does not see it, and publishes no equivalent. It's a third-party guess at Google's output — useful for rough comparison, useless as a target.",
+  "takeaways": [
+    "DA is a **prediction of Google's rankings**, not an input to them. Moz built it; Google has never used it.",
+    "The scale is **logarithmic**. Going 20 to 30 is ordinary work. Going 60 to 70 is a different sport.",
+    "DA, Ahrefs' DR and Semrush's Authority Score measure different things from different crawls. A DA 40 site is not a DR 40 site.",
+    "For link decisions, check the **linking page's** organic traffic and topic. For competitor decisions, check keyword overlap. Both beat DA.",
+    "Any agency selling you a DA target is selling the easiest number on this page to inflate with cheap links."
+  ],
+  "sections": [
+    {
+      "h2": "Where the number actually comes from",
+      "body": [
+        "Domain Authority is Moz's metric. They built it so people could compare two sites at a glance without reading a backlink report, and it caught on because a single number is easier to put in a slide than a link profile is.",
+        "It runs 1 to 100 and it isn't a formula you can audit. It's a machine-learning model, trained on one job: given a domain's link profile as Moz's crawler sees it, how likely is that domain to show up in Google's results? The model is calibrated against real SERPs. That's the whole trick, and it's a legitimate piece of engineering — as long as you remember what it was built to do.",
+        "Two properties of the score cause most of the confusion:"
+      ],
+      "bullets": [
+        "**It's logarithmic.** The gap between 20 and 30 is small. The gap between 70 and 80 is enormous. A flat DA at 34 for six months is not a stalled campaign.",
+        "**It's relative.** Moz recalibrates the model against its index. Your score can fall while your site gets objectively stronger, because everybody else's new links got counted in the same pass.",
+        "**It's site-wide.** Google ranks pages, not domains. Moz has a separate Page Authority score for exactly this reason, and almost nobody uses it."
+      ]
+    },
+    {
+      "h2": "Why Google does not use it",
+      "body": [
+        "Google has said, repeatedly and publicly, that it has no metric called Domain Authority. Moz says the same thing. It's their score, built from their crawl, and they have never claimed Google reads it. The confusion is entirely on the buyer's side.",
+        "The deeper problem is circularity. DA is trained to predict Google's rankings. If you then use DA to explain why something ranks, you haven't learned anything about Google — you've learned that Moz's model works. That's a fine thing to know and a terrible basis for a strategy.",
+        "There's also an index-size problem. Moz crawls a fraction of what Google crawls, and every link tool finds a different subset of the web. Two sites with identical DA can look nothing alike to Google, because Google is looking at links Moz never found and discounting links Moz counted.",
+        "None of this means site-level strength is imaginary. Nobody sensible argues that a domain registered last Tuesday and a twenty-year-old publication are treated identically. What's untrue is that there's a single public number for it, and that Moz has it."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The question that settles it",
+        "body": "Ask any agency quoting DA growth: \"if Google doesn't use this number, what happens to my leads when it goes up?\" A good answer explains why links matter and treats DA as shorthand. A bad answer repeats the number louder."
+      }
+    },
+    {
+      "h2": "What DA is genuinely good for",
+      "body": [
+        "It isn't worthless. It's just badly aimed at the jobs people give it. Three uses where it earns its keep:"
+      ],
+      "numbered": [
+        "**Triage at volume.** Screening four thousand link prospects, you need a first filter that costs nothing. DA is that filter. It removes the obvious junk so a human can look at what's left.",
+        "**Rough peer comparison in one market.** Pull every competitor from the same tool on the same day and you get a usable ordering. Compare a DA pulled today against one someone screenshotted last year and you get noise.",
+        "**Spotting mismatches.** A site with DA 68 and almost no organic traffic is a site whose links don't match its performance. That's a signal worth chasing — usually the links were bought, or the site has been penalised, or it died three years ago and nobody removed the links."
+      ],
+      "bullets": [
+        "Where it fails: deciding whether one specific link is worth paying for, judging content quality, forecasting your own traffic, and — worst of all — serving as the KPI on a retainer."
+      ]
+    },
+    {
+      "h2": "DA vs DR vs Authority Score",
+      "body": [
+        "Three tools, three scores, three different definitions. People quote them interchangeably, which is how a client ends up believing their DA fell when what actually happened is somebody switched from Ahrefs to Moz."
+      ],
+      "table": {
+        "caption": "The three third-party authority scores and what each one actually measures.",
+        "head": [
+          "Score",
+          "Who builds it",
+          "What goes into it",
+          "Scale"
+        ],
+        "rows": [
+          [
+            "Domain Authority (DA)",
+            "Moz",
+            "A model trained to predict ranking likelihood, fed by Moz's link index",
+            "1–100, logarithmic"
+          ],
+          [
+            "Domain Rating (DR)",
+            "Ahrefs",
+            "Backlink profile only — unique referring domains, weighted by their own DR and how many sites they link out to",
+            "0–100, logarithmic"
+          ],
+          [
+            "Authority Score (AS)",
+            "Semrush",
+            "A composite of link power, estimated organic traffic and spam signals",
+            "0–100"
+          ]
+        ]
+      },
+      "bullets": [
+        "DR is the purest link metric of the three — it ignores traffic and content entirely, which makes it cleaner and easier to game.",
+        "AS is the only one with traffic baked in, so it moves when a site's search performance moves, not just when its links do.",
+        "None of them is comparable to the others. If you want the argument in full, see [DA vs DR](/compare/da-vs-dr)."
+      ]
+    },
+    {
+      "h2": "Two metrics to use instead",
+      "body": [
+        "DA gets used for two real decisions: is this link worth having, and how far behind this competitor am I? Both have better answers."
+      ],
+      "subs": [
+        {
+          "h3": "For link decisions: the linking page's traffic and topic",
+          "body": [
+            "Stop looking at the domain. Look at the specific URL your link would sit on. Two questions decide it. Does that page get organic search traffic, per Ahrefs or Semrush? And is it about something adjacent to what you sell?",
+            "A page with 300 monthly organic visits on a genuinely related topic beats a DA 70 site whose \"write for us\" page has never ranked for anything in its life. Google has to crawl, index and trust the page your link is on. Domain-level scores can't tell you whether it does."
+          ],
+          "bullets": [
+            "Is the exact URL indexed? Search a distinctive sentence from it in quotes. If nothing comes back, neither will your link's value.",
+            "How many other sites does that page link out to? Forty outbound links means your share is small.",
+            "Is the site's organic traffic trend rising, flat, or off a cliff? A falling trend on a high-DA site usually means a penalty you're about to associate yourself with."
+          ]
+        },
+        {
+          "h3": "For competitor decisions: keyword overlap and traffic trend",
+          "body": [
+            "DA tells you a competitor is \"stronger\". It doesn't tell you where, and where is the only part you can act on.",
+            "Pull their ranking keywords, intersect with yours, and sort by the queries you both target where they beat you. That intersection is your content plan, ordered by opportunity, in about twenty minutes. Then look at their twelve-month organic traffic line to see whether they're building or coasting — DA is site-wide and slow, so it won't show you that for months."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "So what counts as a good Domain Authority score?",
+      "body": [
+        "There is no good score in the abstract, and anyone who gives you a target number without asking about your market is guessing. The only reading that means anything is relative: pull the DA of the ten sites currently ranking for the query you want, and see where you sit.",
+        "If you're at 18 and the page-one median is 55, you have a link problem on top of whatever else is wrong. If you're at 45 and the median is 30, links aren't the constraint — go and read your own pages, because that's where the answer is.",
+        "The broad shapes you'll see in practice: a domain launched this year sits in single digits. An established small business with a few years of natural links usually lands in the twenties or thirties. A recognised national brand often sits in the fifties or sixties. Large publishers sit above eighty. Those are rough shapes, not benchmarks — they vary enormously by market, and a niche B2B site can outrank a DA 60 competitor on relevance alone. Understanding [what backlinks are](/answers/what-are-backlinks) and [how agencies earn them](/answers/how-do-seo-agencies-get-backlinks) will tell you more than any of it."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "\"We'll get your DA to 40\"",
+        "body": "Walk. DA is the easiest metric on this page to inflate with cheap links, and Moz's spam filtering is not Google's — you can buy DA, and plenty of people do. You cannot buy the leads it's meant to stand in for. Our own guarantee is movement against your frozen trailing-90-day organic lead baseline. DA appears nowhere in it, on purpose."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is domain authority a Google ranking factor?",
+      "a": "No. Domain Authority is Moz's score, calculated from Moz's crawl of the web, and Google has stated it has no such metric. DA is trained to predict Google's rankings, which makes it an output of the system rather than an input to it."
+    },
+    {
+      "q": "What is a good domain authority score?",
+      "a": "Only relative to your competition. Check the DA of the ten sites ranking for the query you want and compare. As a rough shape: new domains sit in single digits, established small businesses in the twenties to thirties, known national brands in the fifties to sixties, big publishers above eighty."
+    },
+    {
+      "q": "How do I increase my domain authority?",
+      "a": "Earn links from real sites that get real search traffic, and keep earning them. There's no other durable route. Buying links can move DA quickly because Moz's spam filtering is imperfect, but it moves your Google rankings in the opposite direction eventually."
+    },
+    {
+      "q": "Why did my domain authority drop when nothing changed?",
+      "a": "Because DA is relative and Moz periodically recalibrates the model against a refreshed index. Your links may be identical while everyone else's grew, or Moz may have found and discounted links it previously counted. A drop of a few points with no other symptoms is usually recalibration, not damage."
+    },
+    {
+      "q": "DA or DR — which should I use?",
+      "a": "DR if you want a clean link-only signal, since Ahrefs computes it purely from the referring-domain graph. AS if you want links plus traffic in one number. Whichever you pick, use one tool consistently — mixing them across a project is how false alarms get raised."
+    },
+    {
+      "q": "Should my agency report on domain authority?",
+      "a": "As context, fine. As the headline metric, no. DA is inflatable with links that Google discounts or penalises, which means an agency can grow it while your organic leads flatline. Ask for qualified leads from organic search instead, measured against a baseline set on day one."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "domain-authority"
+    },
+    {
+      "type": "compare",
+      "slug": "da-vs-dr"
+    },
+    {
+      "type": "journal",
+      "slug": "domain-authority-is-a-vanity-metric"
+    },
+    {
+      "type": "answers",
+      "slug": "what-are-backlinks"
+    },
+    {
+      "type": "glossary",
+      "slug": "referring-domain"
+    },
+    {
+      "type": "services",
+      "slug": "link-building-services"
+    },
+    {
+      "type": "answers",
+      "slug": "how-does-seo-work-in-digital-marketing"
+    }
+  ]
+}

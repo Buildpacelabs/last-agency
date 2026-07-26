@@ -1,0 +1,190 @@
+{
+  "slug": "car-dealerships",
+  "type": "seo-for",
+  "primaryKeyword": "seo for car dealerships",
+  "secondaryKeywords": [
+    "car dealer seo india",
+    "used car dealership seo",
+    "showroom local seo",
+    "seo for auto dealers",
+    "on road price keywords"
+  ],
+  "cluster": "manufacturing-and-trade",
+  "intent": "commercial",
+  "industry": "Car dealerships",
+  "h1": "SEO for car dealerships squeezed between the OEM and the portals",
+  "metaTitle": "SEO for Car Dealerships: Own Local Model Terms",
+  "metaDescription": "SEO for car dealerships in India. We rank showroom pages for on-road price, EMI and test drive queries in your city, where OEM pages stay generic.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "A dealership can't outrank the OEM or the big portals for a model name, and shouldn't try. It can own the local half of the query — 'Creta on-road price in Pune', 'test drive near Baner' — because road tax, offers, EMI and stock are city-level facts a national page cannot carry. Expect movement in two to four months.",
+  "takeaways": [
+    "On-road price is a **state-level** number. That's the structural gap between what buyers search and what a national OEM page can answer.",
+    "The OEM's model copy sitting unedited on 300 dealer sites is a duplicate-content problem you inherited and can fix in a fortnight.",
+    "Used stock needs an indexation policy before it needs content. One URL per unit, unmanaged, is index bloat with a resale value.",
+    "Service and insurance renewal queries are cheaper to win than new-car terms, and the workshop is where dealership margin actually lives."
+  ],
+  "sections": [
+    {
+      "h2": "You are the third result on a page about your own product",
+      "body": [
+        "Search any model name in India and the first screen belongs to the manufacturer and two or three classified portals. That's not unfair, it's structural — they have national link profiles, thousands of indexed pages and a decade of head start. A single-city dealership competing for `Hyundai Creta` is buying a lottery ticket with a retainer.",
+        "The half of the query they can't answer well is the local half. Road tax is a state subject and varies materially between Maharashtra, Karnataka, Delhi and Telangana, by price slab and by fuel type. Insurance quotes differ. Dealer-level offers, exchange bonuses, corporate discounts and waiting periods differ by week and by branch. A national page has to hedge all of that; you don't.",
+        "So the target set isn't the model. It's the model plus a city, a variant, a price question or an intent to act — and that set is large, high-intent and mostly under-served."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The keyword list, in one line",
+        "body": "Model × city × {on-road price, EMI, offers, waiting period, test drive, exchange value, colours, variant comparison, service cost}. Multiply by the models you carry. That's a genuine few hundred pages of demand for most multi-brand dealer groups — no keyword tool required to see it."
+      }
+    },
+    {
+      "h2": "The on-road price page, done so it can't be copied",
+      "body": [
+        "This is the page that earns the click, and most dealer versions of it are a number in a heading with nothing to support it. On-road price is a sum, and buyers searching for it are usually trying to understand the sum, not just the total.",
+        "Break it out. Ex-showroom, state road tax, registration, insurance, the statutory tax collected at source above the threshold, extended warranty and accessories as optional lines. Then show the same table per variant, because the variant choice is the actual decision being made."
+      ],
+      "table": {
+        "caption": "What separates a dealer on-road price page from an OEM or portal page.",
+        "head": ["Element", "OEM or portal page", "What your page can do"],
+        "rows": [
+          [
+            "Price",
+            "Ex-showroom, or an estimated on-road figure with a disclaimer",
+            "The actual out-the-door number for your state, split line by line"
+          ],
+          [
+            "Offers",
+            "Rarely, and never dealer-level",
+            "This month's exchange bonus, corporate discount and finance scheme, dated"
+          ],
+          [
+            "EMI",
+            "A generic calculator on a fixed assumed rate",
+            "Real tenures and rates from the financiers you actually work with"
+          ],
+          [
+            "Stock and waiting period",
+            "Absent",
+            "Which variants and colours are on the floor this week"
+          ],
+          [
+            "Next step",
+            "A national lead form routed to somebody",
+            "A named consultant, a showroom address and a test drive slot"
+          ]
+        ]
+      },
+      "bullets": [
+        "**Date the page visibly** — 'offers valid to 31 July' does more for click-through than any title tag rewrite, and it forces someone to own the update.",
+        "**One permanent URL per model-city**, refreshed monthly. Not `/creta-offers-july-2026`, which is an orphan by August and a redirect chain by December.",
+        "**Answer the sum in text**, not only inside a calculator widget. If the numbers only exist after a JavaScript interaction, they mostly don't exist for search."
+      ]
+    },
+    {
+      "h2": "The OEM's copy is on 300 dealer sites, including yours",
+      "body": [
+        "Most dealer websites are built from a manufacturer-supplied template with manufacturer-supplied model descriptions. Every dealer in the country publishes the same 400 words about the same engine. Google picks one of them to show, and it is almost never the dealership in your district.",
+        "The fix is unglamorous and fast: rewrite the model pages locally. Same specifications, different words — what the variant costs on the road here, what the waiting period looks like at your branch, which colours move in this market, what people trade in for it, where the nearest workshop is."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Don't canonical your model pages to the OEM",
+        "body": "It gets suggested surprisingly often, usually to 'avoid duplicate content'. A [canonical tag](/glossary/canonical-tag) pointing at the manufacturer's site tells Google to drop your page from the index entirely and credit theirs. You solve a duplication problem by deleting yourself from the results. Rewrite instead."
+      }
+    },
+    {
+      "h2": "An indexation policy for used stock",
+      "body": [
+        "Used inventory is where dealer sites quietly break. A hundred units come and go every month, each with its own URL, thin content and a lifespan of eleven days. Left alone, that's index bloat with number plates. Decide the policy once and encode it in the platform."
+      ],
+      "table": {
+        "caption": "How to treat used-car URLs through their lifecycle.",
+        "head": ["Situation", "Do this", "Why"],
+        "rows": [
+          [
+            "Unit in stock, photographed, priced",
+            "Index it, with vehicle listing structured data — make, model, year, odometer, condition, price, VIN where you publish it",
+            "It's a real product page and it's eligible for vehicle listing experiences"
+          ],
+          [
+            "Unit in stock but no photos or price",
+            "Keep it out of the index until it's complete",
+            "A stub page with a placeholder image is thin content that drags the template's reputation down"
+          ],
+          [
+            "Sold",
+            "Keep the URL live for a short window with a clear 'sold' state and links to similar stock, then 301 to the model-city listing",
+            "Preserves any links it earned and catches people arriving from a saved search"
+          ],
+          [
+            "Long gone, no equivalent",
+            "301 to the used-cars category for that make",
+            "Bulk redirects to the homepage get treated as soft 404s and help nobody"
+          ]
+        ]
+      },
+      "bullets": [
+        "**Cap the index deliberately.** If you list 400 units, most of them shouldn't be individually indexed — the model-city listing page is what people search for, and it's what should rank.",
+        "**Keep the listing pages, not the units, as your ranking assets.** 'Used Swift in Coimbatore under 6 lakh' is a durable page; a specific 2019 unit is inventory."
+      ]
+    },
+    {
+      "h2": "The conversion is a test drive slot, not a form fill",
+      "body": [
+        "Dealership lead forms are a graveyard. The buyer fills one in, gets a call four hours later from someone reading a script, and books with whoever answered first. The pages that convert treat the booking as the product: a date, a time, a location, a car that's definitely there.",
+        "Home test drives changed this in metros and most dealer sites still haven't said so on the page. If you'll bring the car to someone's office in Whitefield on a Saturday, that sentence belongs above the fold, not in a brochure."
+      ],
+      "numbered": [
+        "Put a real slot picker on the model-city page, not a generic contact form in the footer.",
+        "Offer WhatsApp as a first-class option with a real number — in India it converts and it's easier for your team to work than a CRM queue.",
+        "Name the consultant, with a photo. Dealerships are a trust purchase and anonymity costs you.",
+        "Track booked test drives as the conversion in analytics and in the CRM. Form submissions flatter the report; showroom visits pay the salaries.",
+        "Ask for the review after delivery, at the branch, from the salesperson who did the handover. That's what feeds the map pack."
+      ]
+    },
+    {
+      "h2": "Service and insurance renewal is where the margin already sits",
+      "body": [
+        "It's well understood in the trade that a dealership makes more on the workshop, finance and insurance than on the metal. Search budgets rarely reflect that. Service and renewal queries are less contested than new-car terms, they repeat annually, and the searcher is usually already your customer.",
+        "The cluster writes itself: `<brand> service centre in <locality>`, `<model> service cost`, `car insurance renewal <city>`, `free service coupon`, `<model> 40000 km service what's included`. Publish honest service schedules with indicative labour and parts costs by model, and you'll capture people who are currently ringing three independent garages.",
+        "Showroom and workshop are usually different addresses, which means different Google Business Profiles, different pages and separate review streams. Treating the workshop as an afterthought on the showroom profile throws away the half of the business that renews itself. The wider version of this is in [SEO for automotive brands](/seo-for/automotive), and the local mechanics are in [our local SEO work](/services/local-seo-services)."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Budget and what we actually guarantee",
+        "body": "Our SEO runs from ₹75,000/mo, smaller sites from ₹40,000/mo, ex-GST, month-to-month after the first quarter. See [what local SEO costs](/cost/local-seo-cost). We freeze your trailing-90-day qualified leads from organic on day one — test drives and service bookings, not form fills — and if we haven't beaten that in 90 days we keep working free until we do. No promised ranking positions, ever."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can a dealership outrank the OEM for its own car models?",
+      "a": "Not for the bare model name, and it isn't worth the budget. You outrank both the OEM and the portals for the local half of the query — model plus city, on-road price, EMI, offers, waiting period, test drive — because those are dealer-level facts a national page has to hedge on."
+    },
+    {
+      "q": "Should my dealer website canonical to the manufacturer's site?",
+      "a": "No. A canonical pointing at the OEM tells Google to index their page instead of yours, which removes you from results entirely. If your model pages duplicate manufacturer copy, rewrite them with local pricing, stock, waiting periods and branch detail. Same specs, different words."
+    },
+    {
+      "q": "How should used car listings be handled for SEO?",
+      "a": "Index only complete units — photographed, priced, with vehicle listing structured data. Keep sold units live briefly with a clear sold state and links to similar stock, then redirect them to the model or make listing. Never redirect retired stock in bulk to the homepage; Google reads that as a soft 404."
+    },
+    {
+      "q": "How many Google Business Profiles does a dealership need?",
+      "a": "One per physical address. Showroom, workshop and any pre-owned outlet are usually separate locations, so they're separate profiles with separate pages and separate review streams. Merging them into one listing means the workshop never shows up for service searches in its own neighbourhood."
+    },
+    {
+      "q": "How long before dealership SEO produces enquiries?",
+      "a": "Two to four months for most local model and city terms, sometimes faster for map-pack and service queries where profile completeness and reviews matter more than domain strength. Competitive metro terms for high-volume models take longer, because portals defend them hard."
+    }
+  ],
+  "related": [
+    { "type": "seo-for", "slug": "automotive" },
+    { "type": "services", "slug": "google-business-profile-optimisation" },
+    { "type": "glossary", "slug": "canonical-tag" },
+    { "type": "compare", "slug": "local-seo-vs-national-seo" },
+    { "type": "cost", "slug": "local-seo-cost" },
+    { "type": "answers", "slug": "how-to-do-local-seo" }
+  ]
+}

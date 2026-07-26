@@ -1,0 +1,214 @@
+{
+  "slug": "how-does-seo-work-in-digital-marketing",
+  "type": "answers",
+  "primaryKeyword": "how does seo work in digital marketing",
+  "secondaryKeywords": [
+    "how seo fits in digital marketing",
+    "seo in a marketing funnel",
+    "how does seo support marketing",
+    "seo workflow in marketing teams"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "How SEO work actually runs inside a marketing team",
+  "metaTitle": "How Does SEO Work in Digital Marketing Teams?",
+  "metaDescription": "How does seo work in digital marketing teams day to day? The workflow, the approvals, the dev dependency and the handoffs that decide whether it ships.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Inside a marketing team, SEO runs as a ticket queue rather than a strategy deck. A query brief becomes a draft, the draft clears editing and approvals, a CMS build publishes it, and anything structural becomes an engineering ticket. Most programmes stall in one of three places: approvals, the dev backlog, or nobody owning what happens after publish.",
+  "takeaways": [
+    "The unit of SEO work is a ticket with an owner and a due date. Everything that stays an idea stays unpublished.",
+    "Roughly a third of technical SEO can't be done in the CMS. Without a standing engineering allocation, that third becomes a PDF nobody actions.",
+    "A two-week approval loop turns a four-article month into a two-article month. Nobody invoices you for the delay — you just get less.",
+    "Publishing isn't the finish line. A page with no internal links pointing at it and no confirmed index status is work you paid for and didn't receive."
+  ],
+  "sections": [
+    {
+      "h2": "SEO is a queue, and the queue has owners",
+      "body": [
+        "Most explanations of SEO inside marketing describe the funnel: awareness at the top, consideration in the middle, conversion at the bottom. Accurate, and completely useless on a Tuesday when three drafts are stuck waiting for someone's approval.",
+        "What actually determines whether SEO works inside a company is throughput. How many briefs turn into published, indexed, internally linked pages per month, and how many technical fixes reach production. Everything else — the strategy, the audit, the keyword map — is inventory sitting in a warehouse.",
+        "So this page is about the pipeline as an operations problem, which is the version nobody puts in a pitch deck and the version that decides your result."
+      ]
+    },
+    {
+      "h2": "From keyword brief to published page",
+      "body": [
+        "Here's the real sequence, with realistic elapsed times for an Indian SMB or mid-market team. The times assume nothing goes wrong, which is optimistic."
+      ],
+      "table": {
+        "caption": "The content pipeline, with the owner and the usual failure point at each stage.",
+        "head": [
+          "Stage",
+          "Who owns it",
+          "Realistic elapsed time",
+          "What stalls it"
+        ],
+        "rows": [
+          [
+            "Query research and page brief",
+            "SEO lead or agency",
+            "2–4 days per cluster",
+            "No access to Search Console, analytics or the CRM"
+          ],
+          [
+            "Draft",
+            "Writer, in-house or agency",
+            "3–5 days per page",
+            "No subject-matter access, so the writer guesses and the draft reads like it"
+          ],
+          [
+            "Subject-matter and editorial review",
+            "Product, sales or the founder",
+            "2 days if scheduled, 3 weeks if not",
+            "A single approver with a full calendar"
+          ],
+          [
+            "Legal or compliance review",
+            "Legal, in regulated sectors",
+            "0 days to 3 weeks",
+            "No pre-approved library of claims, so every page is reviewed from scratch"
+          ],
+          [
+            "Build and on-page QA",
+            "Content ops or agency",
+            "1 day",
+            "A CMS that can't set titles, canonicals or schema independently"
+          ],
+          [
+            "Publish, internal links, index request",
+            "Whoever owns the CMS",
+            "Same day",
+            "Nobody assigned, so the page ships orphaned and never gets linked"
+          ],
+          [
+            "Structural changes — schema, speed, redirects",
+            "Engineering",
+            "One sprint to never",
+            "SEO tickets competing with the product roadmap on the same board"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The engineering dependency nobody budgets for",
+      "body": [
+        "Roughly a third of technical SEO work cannot be done inside a CMS. Redirect rules, sitemap generation, hreflang, pagination, template-level schema, Core Web Vitals, server response times, robots rules, how JavaScript renders — all of it lives in the codebase.",
+        "The structural problem is that SEO tickets arrive as small, unglamorous, individually low-priority items, into a backlog scored on product impact. They never win a sprint on merit, and they never will, because 'add BreadcrumbList schema to the category template' loses every argument against a feature customers asked for.",
+        "Three things actually fix this, and none of them are a better-worded recommendation."
+      ],
+      "bullets": [
+        "**A standing allocation.** One engineer-day per sprint, permanently assigned, no negotiation per ticket. Small and constant beats large and hypothetical.",
+        "**Batch by template, not by page.** One ticket that fixes the schema on 340 product pages is a real piece of work. Three hundred and forty tickets is a reason to ignore you.",
+        "**Acceptance criteria a developer can test.** 'Improve page speed' is not a ticket. 'LCP under 2.5s on the category template at p75 on mobile' is.",
+        "**A named engineer.** Not a team, not a queue. One person who knows why the redirect map matters."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Say this out loud before you sign anything",
+        "body": "If you can't get engineering time, tell your agency before the contract starts. An agency can rewrite your titles and publish your content. It cannot deploy your redirects. Half a technical audit implemented is worth roughly nothing, and you'll both spend three months finding that out politely."
+      }
+    },
+    {
+      "h2": "Approvals, and how legal quietly kills the calendar",
+      "body": [
+        "In most Indian SMBs the approver is the founder, and the founder is the bottleneck by design — they're the only person who knows whether a claim is true. That works at four pages a month and collapses at twelve.",
+        "In regulated categories the second gate is real and slow. Lending, insurance, healthcare, pharma, education with outcome claims — legal review isn't bureaucracy, it's the thing that stops a page becoming a regulatory problem. But it's usually run badly: every page reviewed from scratch, no memory between reviews, three weeks per round.",
+        "The arithmetic is worth stating plainly, because nobody does. A two-week approval loop on a four-article month gives you two published articles. You paid a full retainer either way. Nobody bills you for the delay; the delay just eats the deliverable, and the monthly report shows drafts submitted rather than pages live."
+      ],
+      "numbered": [
+        "**Build a claims library once.** Get the twenty sentences you use repeatedly pre-approved, in writing. Then most pages need no legal review at all.",
+        "**Separate fact from opinion in the draft.** Mark the claims. Legal reviews the marked lines, not 1,400 words of context.",
+        "**Book a standing 30-minute review slot** every week. Reviews expand to fill the absence of a calendar entry.",
+        "**Set a default-approve rule** after five working days for anything with no marked claims. Silence should mean yes, or silence becomes your content strategy."
+      ]
+    },
+    {
+      "h2": "Who measures, and what gets reported to whom",
+      "body": [
+        "Three data sources, usually three different owners, and nothing works until they reconcile. Search Console belongs to whoever owns SEO. GA4 belongs to marketing ops or analytics. Lead source belongs to the CRM owner, usually sales ops.",
+        "The number that matters is the one furthest downstream: qualified leads from organic search, recorded in the CRM, measured against a baseline that was frozen before any work began. Traffic reports are easy to make look good and easy to inflate with queries nobody buys from.",
+        "A cadence that holds up under pressure:"
+      ],
+      "bullets": [
+        "**Weekly, internal:** pages shipped, pages confirmed indexed, dev tickets opened and closed. Throughput only. Five minutes.",
+        "**Monthly, SEO owner to head of marketing:** impressions and average position for the target query set, organic sessions, organic leads in the CRM, what changed and why.",
+        "**Quarterly, head of marketing to founder:** leads against the frozen baseline, cost per organic lead against cost per paid lead, and what the next quarter's plan is.",
+        "Anything that only ever gets reported as a chart with no decision attached should be deleted from the report. It's costing someone an hour a month to produce."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The baseline, and what we do with it",
+        "body": "We freeze your trailing-90-day qualified leads from organic search on day one. If we haven't beaten that number in 90 days, we keep working free until we do. We don't promise a specific ranking position for a specific keyword — nobody controls Google's index, and a position isn't a business outcome anyway. See [how we run it](/seo)."
+      }
+    },
+    {
+      "h2": "The three stall points, and the fix for each",
+      "body": [
+        "Almost every stalled SEO programme we've looked at is stuck in one of these three places, and usually the client and the agency each think it's the other one's fault."
+      ],
+      "numbered": [
+        "**The brief queue.** Briefs get written faster than drafts get approved, so work-in-progress piles up and the agency looks busy while nothing goes live. The fix is a WIP cap: don't commission brief nine until page four is published. It feels like slowing down. It doubles throughput.",
+        "**The dev backlog.** Technical recommendations become a document that gets praised in a meeting and actioned never. The fix is the standing allocation above. A recommendation that can't be scoped into a testable ticket isn't a recommendation, it's an observation.",
+        "**The post-publish void.** The page ships and nothing happens to it — no internal links, no promotion, no check that it got indexed, no refresh at month six. The fix is a definition of done: a page isn't finished until at least three relevant existing pages link to it and Search Console confirms it's indexed. [Internal linking](/answers/internal-linking-best-practices) is the cheapest ranking work available and it's the first thing dropped when a month gets busy."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The fastest way to waste ₹75,000 a month",
+        "body": "Hire well, then approve slowly. The single biggest difference between clients who get results and clients who don't isn't budget or industry — it's how fast a draft comes back with a decision on it. See [what clients actually have to do](/journal/what-clients-have-to-do-for-seo-to-work) for the uncomfortable version of that list."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Who is responsible for SEO in a marketing team?",
+      "a": "One named person should own the number, usually a marketing lead or an in-house SEO. Around them: a writer, an editor or subject-matter approver, someone who owns the CMS, and a named engineer for structural work. When SEO is 'everyone's job', it becomes nobody's ticket and stops shipping."
+    },
+    {
+      "q": "How much engineering time does SEO need?",
+      "a": "Less than teams fear and more than they schedule. For most mid-market sites, one engineer-day per two-week sprint, permanently allocated, covers the ongoing work after the initial fixes. The first quarter is heavier — redirects, template schema and Core Web Vitals usually need a concentrated block."
+    },
+    {
+      "q": "How does SEO fit with the rest of the marketing plan?",
+      "a": "It supplies raw material to everything else. Query research becomes ad group structure and negative keyword lists, pillar pages become sales enablement, and Search Console query data tells you the exact words customers use — which is nearly always better ad copy than the words your team invented internally."
+    },
+    {
+      "q": "How many pages a month should a marketing team publish?",
+      "a": "Publish what you can approve and internally link properly, which for most teams is four to eight pages a month. Cadence beats volume: four solid pages every month for a year outperforms forty in one quarter followed by silence, because the site's crawl and refresh pattern responds to consistency."
+    },
+    {
+      "q": "What's the most common reason SEO fails inside a company?",
+      "a": "Throughput, not strategy. Briefs waiting on approval, technical fixes waiting on a sprint, and published pages that nobody linked to or checked for indexing. Almost every stalled programme we've seen has a good plan sitting behind a queue that nobody owns."
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "what-clients-have-to-do-for-seo-to-work"
+    },
+    {
+      "type": "journal",
+      "slug": "what-a-75000-rupee-seo-retainer-actually-buys"
+    },
+    {
+      "type": "answers",
+      "slug": "internal-linking-best-practices"
+    },
+    {
+      "type": "compare",
+      "slug": "agency-vs-in-house"
+    },
+    {
+      "type": "services",
+      "slug": "seo-reporting-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "answers",
+      "slug": "what-are-keywords-in-seo"
+    }
+  ]
+}

@@ -18,7 +18,7 @@ import { FinalCta } from '@/components/FinalCta';
 export const metadata: Metadata = {
   title: 'Pricing & Bundles',
   description:
-    'Transparent monthly pricing for SEO, organic social and performance marketing — ex-GST, no lock-in. Bundle two or three services and save up to ~21% off à la carte.',
+    'Transparent monthly pricing for SEO, organic social and paid media — ex-GST, no lock-in. Bundle two or three services and save up to 21% off.',
   alternates: { canonical: '/pricing' },
 };
 

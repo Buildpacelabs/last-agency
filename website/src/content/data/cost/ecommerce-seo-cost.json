@@ -1,0 +1,188 @@
+{
+  "slug": "ecommerce-seo-cost",
+  "type": "cost",
+  "primaryKeyword": "seo cost for ecommerce",
+  "secondaryKeywords": [
+    "ecommerce seo pricing india",
+    "shopify seo cost",
+    "how much does ecommerce seo cost",
+    "online store seo package price",
+    "product page seo cost"
+  ],
+  "cluster": "cost-by-business-type",
+  "intent": "commercial",
+  "h1": "Ecommerce SEO cost, priced by how many SKUs you carry",
+  "metaTitle": "Ecommerce SEO Cost in India: Priced by SKU Count",
+  "metaDescription": "Ecommerce SEO cost scales with catalogue size, not ambition. We price 500, 5,000 and 50,000-SKU stores in rupees and show what changes at each jump.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Ecommerce SEO in India is priced by catalogue size, because catalogue size sets the technical work. A 500-SKU store runs ₹75,000–₹1,00,000 a month. At 5,000 SKUs it's ₹1,25,000–₹1,75,000. Past 50,000 SKUs, ₹2,50,000 upward. The jump isn't more writing — it's faceted navigation and crawl budget.",
+  "takeaways": [
+    "On a services site the unit of work is a page. On a store it's a **template** and a **crawl path**. That single difference explains every price gap on this page.",
+    "The cost cliff arrives when filters go live. Colour × size × brand × price × sort produces thousands of crawlable URLs per category, and someone has to decide the fate of every one of them.",
+    "Category pages earn traffic. Product pages mostly need to stop being duplicates. Spend roughly 70% of content budget on the first group.",
+    "Judge the retainer on **organic revenue per session**, not rankings. Store rankings move with stock and price every week; revenue per session tells you whether the traffic you won actually buys."
+  ],
+  "sections": [
+    {
+      "h2": "Catalogue size sets the bill, not ambition",
+      "body": [
+        "Ecommerce quotes look irrational until you understand what's being priced. A 50,000-product store is not 50,000 pages of work. It's one product template, one or two category templates, a filter system, a search page, a pagination scheme — and, if the filters were configured by whoever set up the theme, several hundred thousand crawlable URL permutations that nobody meant to create.",
+        "That last number is what you're paying for. Content on a store is comparatively cheap and comparatively optional. Crawl control is neither. Which is why the honest way to quote ecommerce SEO is to ask three questions before anything else: how many SKUs, are filters generating URLs, and which platform. The answers usually predict the retainer to within about 20%."
+      ]
+    },
+    {
+      "h2": "Three catalogue sizes, priced",
+      "body": [
+        "Indian ecommerce retainers cluster around three shapes. Ex-GST, assuming one country and one language — add roughly ₹15,000 a month per additional language, and more if you're running country domains with hreflang."
+      ],
+      "table": {
+        "caption": "Ecommerce SEO retainers in India by catalogue size, with where the hours go and what breaks first.",
+        "head": ["Catalogue", "Typical monthly retainer", "Where the hours go", "The thing that breaks first"],
+        "rows": [
+          [
+            "~500 SKUs, single country, filters mostly cosmetic",
+            "₹75,000–₹1,00,000",
+            "Category page content, product schema, internal linking, two to four buying-intent guides a month, Core Web Vitals.",
+            "Thin and duplicated product descriptions imported straight from a supplier feed."
+          ],
+          [
+            "~5,000 SKUs, multi-brand, filters live and indexable",
+            "₹1,25,000–₹1,75,000",
+            "Faceted navigation rules, crawl control, category taxonomy, template-level fixes, a real content programme, link acquisition.",
+            "Index bloat — filter URLs outnumbering real products ten to one and diluting everything."
+          ],
+          [
+            "50,000+ SKUs, multi-market or marketplace-scale",
+            "₹2,50,000–₹5,00,000",
+            "Log-file analysis, crawl budget engineering, pagination and sitemap architecture, hreflang, programmatic category creation, a standing dev channel.",
+            "Googlebot never reaching new products, so stock arrives and quietly never gets indexed."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The line that's missing from your quote",
+        "body": "Most ecommerce proposals price content and links, then say \"technical SEO\" once. On a 5,000-SKU store, sorting out faceted navigation properly is 40–80 hours of research, implementation and log-file verification. If that isn't costed separately, it isn't planned — and it's the work that determines whether any of the content gets seen."
+      }
+    },
+    {
+      "h2": "The cost cliff: faceted navigation and crawl budget",
+      "body": [
+        "Filters multiply. Five colours, six sizes, twelve brands, four price bands and three sort orders on a single category produce thousands of unique URLs, every one of them crawlable unless somebody decided otherwise. Multiply by 80 categories and you have a site whose real URL count is two orders of magnitude larger than its product count.",
+        "Google will crawl a lot of that. It won't crawl all of it, it will spend the effort on the wrong URLs, and your new products will sit unindexed while a bot works through /category?colour=blue&sort=price-desc&page=7. That's what [crawl budget](/glossary/crawl-budget) actually means in practice, and it's the single biggest reason large stores underperform relative to how much content they've bought.",
+        "The work isn't a config toggle, which is why it's expensive."
+      ],
+      "numbered": [
+        "**Demand research per facet.** Which filter combinations do people actually search for? \"Running shoes for men under 5000\" has demand. \"Running shoes, blue, size 9, sorted by newest\" does not. Only the first deserves an indexable URL.",
+        "**A written rule for every facet.** One or two get real, indexable, linkable URLs with their own copy. Some get canonicalised to the parent. Some get parameter handling and no internal links pointing at them. Some get blocked outright.",
+        "**Implementation, usually with your developers.** Template changes, internal link logic, canonical rules, sitemap regeneration, pagination behaviour. This is where a locked stack turns three hours into three weeks.",
+        "**Log-file verification.** The only honest proof. Pull the server logs 30 days later and check whether Googlebot's crawl actually moved from filter URLs to product and category URLs. Without this step you've bought a theory."
+      ]
+    },
+    {
+      "h2": "Category pages earn. Product descriptions defend.",
+      "body": [
+        "The most common way to waste money on ecommerce content is to rewrite every product description. On a 5,000-SKU store, bespoke copy at ₹300 a product is ₹15,00,000, and the overwhelming majority of those pages will never rank for anything because nobody searches for that exact product name.",
+        "Category and collection pages are where the searchable demand lives. \"Running shoes for men\", \"cotton kurtas under 1500\", \"gaming laptops with RTX\" — head and mid-tail queries with volume, intent and margin. A properly researched category page with real copy, correct internal links and a sensible filter set costs **₹6,000–₹12,000** and can carry a hundred products behind it.",
+        "Product pages have a different job: don't be a duplicate, don't be thin, be technically correct. Split the catalogue and spend accordingly."
+      ],
+      "bullets": [
+        "**Top 10% by revenue and by impressions get bespoke copy.** These are the products people search by name, compare, and abandon. Worth ₹300–₹800 each.",
+        "**Everything else gets a unique templated structure.** Specs, materials, use case, care, size guidance — generated from real attribute data, not spun text. The goal is uniqueness and usefulness, not word count.",
+        "**Product schema on all of them, without exception.** Price, availability, review count, GTIN where you have it. It's cheap, it's template-level, and it's what makes your listing look like a product rather than a paragraph.",
+        "**Budget split we'd recommend at 5,000 SKUs: roughly 70% of content spend to categories and buying guides, 30% to the product tail.** Reverse that and you'll have paid for a great deal of prose nobody was searching for."
+      ]
+    },
+    {
+      "h2": "Shopify, WooCommerce, Magento: same job, different bill",
+      "body": [
+        "Platform doesn't change what needs doing. It changes how much of it is free and how much needs a developer, and that lands directly on the retainer."
+      ],
+      "table": {
+        "caption": "Effort differences by ecommerce platform, expressed against a Shopify baseline.",
+        "head": ["Platform", "What you get free", "What you pay to work around", "Monthly effort"],
+        "rows": [
+          [
+            "Shopify",
+            "Fast hosting, sensible product schema, decent defaults, canonical handling that mostly behaves.",
+            "Forced /collections/ and /products/ URL structures, limited control over parameter handling, and app sprawl that quietly destroys page speed.",
+            "Baseline"
+          ],
+          [
+            "WooCommerce",
+            "Total control of URLs, robots directives, canonicals and templates. Nothing is off-limits.",
+            "Performance. Plugin sprawl, heavy queries, slow category pages, and hosting quality that is entirely your problem to solve.",
+            "+10–20%, mostly speed and hygiene"
+          ],
+          [
+            "Magento / Adobe Commerce",
+            "Genuine enterprise faceting, layered navigation control, multi-store and multi-language handled natively.",
+            "Complexity. Layered navigation generates parameter URLs aggressively by default, and nothing ships without a developer and a release cycle.",
+            "+25–40%, mostly dev coordination"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Headless is its own line item",
+        "body": "A headless build on Next.js or similar removes most rendering problems and adds a new one: every SEO change is now a code change with a deploy behind it. Budget for developer time as a standing monthly cost, not an occasional favour. It's usually worth it — just not free."
+      }
+    },
+    {
+      "h2": "Judge the spend on revenue per session, not rankings",
+      "body": [
+        "Store rankings are noisy by nature. They move with stock levels, price changes, seasonality and whatever a marketplace discounted this week. Reporting on them produces a chart that always has an explanation and never has a conclusion. Two numbers tell the truth instead: **organic revenue** and **organic revenue per session**. The second matters more, because it separates traffic that buys from traffic that merely arrived.",
+        "Run the break-even openly. A ₹1,25,000/mo retainer is ₹15,00,000 a year. At a 25% gross margin it has to add ₹60,00,000 of organic revenue to pay for itself — ₹5,00,000 a month. If your organic sessions currently produce ₹60 each, that's roughly 8,300 extra qualifying sessions a month. Swap in your own margin and revenue-per-session figures; the structure holds and the sum takes two minutes.",
+        "Track three things monthly and you'll know long before the revenue tells you: indexed product count against published count, organic revenue per session, and the share of organic revenue from non-brand queries. The third shows whether you're growing or just harvesting demand you already had."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The indexation ratio",
+        "body": "Publish 2,000 products and get 700 indexed and you have a crawl problem, not a content problem — and no amount of extra writing fixes it. Check the ratio in Search Console before you approve any content budget increase."
+      }
+    },
+    {
+      "h2": "What we charge, and what we guarantee instead of rankings",
+      "body": [
+        "Our SEO starts at **₹75,000/mo**, with smaller sites from **₹40,000/mo**. A catalogue past a few thousand SKUs prices above the start line for the reasons on this page — faceting, crawl engineering and template work are real hours, and we'd rather quote them than absorb them badly. Organic Social & Content is ₹30,000, ₹50,000 or ₹70,000 a month; Performance Marketing is ₹40,000, ₹75,000 or ₹1,50,000. Bundles: SEO plus social ₹99,000/mo, social plus performance ₹75,000/mo, all three ₹1,75,000/mo. All ex-GST, ad spend billed separately with zero media markup.",
+        "We don't promise a ranking position for a product term — nobody controls Google's index, and stock availability alone will move you three places in a week. What we freeze on day one is your trailing-90-day count of qualified leads from organic search, agreed in writing before anyone touches a template. Miss it in 90 days and we keep working free until we beat it. It's why we take three new clients a month and no more.",
+        "If you want to sanity-check the number you've been quoted, [the seven variables that move an SEO quote](/cost/seo-pricing-factors) attaches a rupee swing to each one, and [our pricing page](/pricing) has the current card."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much does ecommerce SEO cost in India?",
+      "a": "₹75,000–₹1,00,000 a month for around 500 SKUs, ₹1,25,000–₹1,75,000 at 5,000, and ₹2,50,000 upward past 50,000. Ex-GST, single language. The jumps are driven by faceted navigation and crawl budget work, not by content volume."
+    },
+    {
+      "q": "Why does ecommerce SEO cost more than SEO for a normal website?",
+      "a": "Because the URL count isn't the product count. Filters combine multiplicatively, so a 5,000-product store can expose hundreds of thousands of crawlable URLs. Deciding the fate of each pattern, implementing it and then verifying it in server logs is 40–80 hours that a services site never needs."
+    },
+    {
+      "q": "How much does Shopify SEO cost?",
+      "a": "Shopify sits at the baseline of platform effort — fast hosting and sane defaults — so a 500-SKU Shopify store lands at ₹75,000–₹1,00,000 a month. The costs specific to Shopify are working around fixed URL structures, limited parameter control, and app-driven speed decay."
+    },
+    {
+      "q": "Should I rewrite all my product descriptions for SEO?",
+      "a": "No. Give bespoke copy to the top 10% by revenue and by impressions, and give everything else a unique templated structure built from real attribute data. Rewriting 5,000 descriptions at ₹300 each is ₹15,00,000 spent mostly on pages nobody searches for by name."
+    },
+    {
+      "q": "How do I measure whether ecommerce SEO is working?",
+      "a": "Organic revenue per session, indexed product count against published count, and the share of organic revenue from non-brand queries. Rankings move weekly with stock and price, so they make an unreliable report. Revenue per session tells you whether the traffic you bought actually converts."
+    },
+    {
+      "q": "Is ecommerce SEO worth it compared to marketplace selling?",
+      "a": "They answer different questions. A marketplace rents you demand and takes a commission on every order forever; your own store's organic traffic costs more upfront and keeps producing after you stop paying. Most Indian D2C brands should run both and stop treating it as a choice."
+    }
+  ],
+  "related": [
+    { "type": "services", "slug": "ecommerce-seo-services" },
+    { "type": "seo-for", "slug": "ecommerce" },
+    { "type": "answers", "slug": "how-to-do-seo-for-an-ecommerce-website" },
+    { "type": "compare", "slug": "wordpress-vs-shopify-seo" },
+    { "type": "glossary", "slug": "crawl-budget" },
+    { "type": "cost", "slug": "seo-pricing-factors" }
+  ]
+}

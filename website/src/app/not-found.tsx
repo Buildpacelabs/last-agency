@@ -27,7 +27,10 @@ export default function NotFound(): JSX.Element {
             <Link className="btn btn-lg btn-red" href="/">
               Back to home
             </Link>
-            <Link className="btn btn-lg btn-cream" href="/pricing">
+            <Link className="btn btn-lg btn-cream" href="/answers">
+              Read the answers
+            </Link>
+            <Link className="btn btn-lg btn-ghost" href="/pricing">
               See pricing
             </Link>
           </div>

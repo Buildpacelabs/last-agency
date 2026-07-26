@@ -1,0 +1,209 @@
+{
+  "slug": "what-does-an-seo-specialist-do",
+  "type": "answers",
+  "primaryKeyword": "what does seo specialist do",
+  "secondaryKeywords": [
+    "seo specialist job description",
+    "seo specialist responsibilities",
+    "what does an seo specialist do daily",
+    "seo specialist role"
+  ],
+  "cluster": "seo-career",
+  "intent": "informational",
+  "h1": "What an SEO specialist does on a normal Tuesday",
+  "metaTitle": "What Does an SEO Specialist Do? Daily Reality",
+  "metaDescription": "An hour-by-hour look at a real SEO specialist's weekday: the tools open on screen, where the time actually goes, and what the job ad quietly leaves out.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "An SEO specialist spends a normal weekday less on strategy than on spreadsheets, tickets and chasing approvals. A typical day runs: Search Console before standup, a crawl or data pull mid-morning, briefs and edits after lunch, then a long negotiation with a developer about a redirect. Roughly a third of the week is coordination.",
+  "takeaways": [
+    "The job is roughly **80% diagnosis, briefing and coordination**, and about 20% work you can ship yourself.",
+    "The tool that's open longest isn't the expensive one. It's a spreadsheet.",
+    "Most of a specialist's real influence comes from persuading engineers and editors, not from knowing more about Google.",
+    "Agency days are wide and shallow across many clients. In-house days are narrow, deep, and full of meetings."
+  ],
+  "sections": [
+    {
+      "h2": "One Tuesday, hour by hour",
+      "body": [
+        "This is a composite of a mid-level in-house SEO's weekday at an Indian company — not one person's diary, but a shape anyone who's done the job will recognise immediately. Times are IST, and the day rarely survives contact with 10am."
+      ],
+      "table": {
+        "caption": "A composite weekday for a mid-level SEO specialist.",
+        "head": ["Time", "What's happening", "What's on screen"],
+        "rows": [
+          [
+            "9:15",
+            "Search Console, last 7 days against the previous 7, filtered to the pages that shipped last month. You're scanning for anything that fell off a cliff overnight.",
+            "Search Console"
+          ],
+          [
+            "9:45",
+            "Standup. Three of your ten minutes go to explaining, again, why last sprint's redirect ticket still matters.",
+            "Slack, Jira"
+          ],
+          [
+            "10:05",
+            "One template's clicks halved. Twenty-five minutes later you find a front-end release stripped the H1 from about 400 URLs on Friday.",
+            "Search Console, browser dev tools"
+          ],
+          [
+            "11:00",
+            "A crawl runs in the background while you build the brief for next month's cluster — search intent notes, the questions to answer, the internal links it must carry.",
+            "Screaming Frog, Docs"
+          ],
+          [
+            "12:30",
+            "Feedback on a writer's draft. It's well written and answers a different question from the one people search. That conversation takes longer than the edit.",
+            "Docs, Slack"
+          ],
+          [
+            "14:00",
+            "The weekly report. Ninety minutes, most of it spent explaining a number that moved for a reason nobody in the room controls.",
+            "Sheets, GA4, Looker Studio"
+          ],
+          [
+            "15:30",
+            "Call with the dev lead. You want server-side rendering on one template; they want to talk about the Q3 roadmap. You get half a ticket.",
+            "Meet, Jira"
+          ],
+          [
+            "16:30",
+            "Forty minutes of manual internal linking in the CMS — work a script could partly automate, which nobody has been given time to write.",
+            "CMS, Sheets"
+          ],
+          [
+            "17:45",
+            "Two pages go live. You request indexing knowing it changes little, then log the day's changes with dates. Future you will need that log.",
+            "CMS, Search Console, Sheets"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The bit that surprises people",
+        "body": "Nothing in that day involved \"choosing keywords\". Keyword research is real work, but it's a few days a quarter — not a daily activity. The daily activity is noticing things and getting other people to fix them."
+      }
+    },
+    {
+      "h2": "Where the month actually goes",
+      "body": [
+        "Zoom out from one Tuesday to a month and the split gets clearer. These are approximations from how the work tends to fall, and any individual month swings ten points in either direction — a migration month is 70% technical, a launch month is 60% content."
+      ],
+      "bullets": [
+        "**Diagnosis and analysis — roughly 25%.** Reading Search Console, pulling data, crawling, working out why something changed. The part the job title implies.",
+        "**Briefing, editing, content shaping — roughly 25%.** Rarely writing the whole thing yourself past your first year. Mostly deciding what a page must answer and sending it back when it doesn't.",
+        "**Coordination — roughly 30%.** Tickets, approvals, follow-ups, explaining the same trade-off to three stakeholders, reports. This is the number nobody puts in a job ad.",
+        "**Implementation you control — roughly 20%.** Metadata, internal links, schema, redirects, publishing, whatever the CMS lets you touch without a deploy."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The career test",
+        "body": "If a whole week passes with no data pull and no engineering ticket, you're a content coordinator with an SEO job title. That's a real job and a fine one — it just doesn't compound into a senior salary, because the skills that get paid later are the ones you're not practising."
+      }
+    },
+    {
+      "h2": "The tools genuinely open during the day",
+      "body": [
+        "Job ads list eleven tools. Most days you'll use five, and the one you spend the longest in is the boring one."
+      ],
+      "bullets": [
+        "**Google Search Console** — first-party query, impression and indexing data. Everything else is an estimate, which matters more than beginners realise.",
+        "**A spreadsheet** — genuinely the tool with the most hours on it. Crawl exports, query dumps, content inventories, the change log.",
+        "**Screaming Frog or Sitebulb** — crawling. Free tier handles 500 URLs, which covers a small site entirely.",
+        "**Ahrefs or Semrush** — competitor visibility, referring domains, keyword sizing. Useful for direction, unreliable for absolutes.",
+        "**GA4 and Looker Studio** — sessions, conversions, and the recurring project of making a dashboard nobody reads.",
+        "**PageSpeed Insights and Lighthouse** — checking [Core Web Vitals](/glossary/core-web-vitals) before you argue for engineering time.",
+        "**Jira or Asana, and Slack** — where most of your influence is actually exercised, in writing, one nudge at a time."
+      ]
+    },
+    {
+      "h2": "What the job ad promises versus what the day is",
+      "body": [
+        "None of these are lies exactly. They're just written by someone describing the intent of the role rather than its texture."
+      ],
+      "table": {
+        "caption": "Standard job-ad phrasing, translated.",
+        "head": ["The job ad says", "The day looks like"],
+        "rows": [
+          [
+            "Own the organic growth strategy",
+            "Own the spreadsheet tracking which parts of last quarter's strategy actually shipped."
+          ],
+          [
+            "Work cross-functionally with product and engineering",
+            "Ask for the same ticket four times, in four politely escalating tones."
+          ],
+          [
+            "Data-driven decision making",
+            "Reconcile three tools that disagree, pick the least wrong number, and caveat it in the report."
+          ],
+          [
+            "Stay ahead of algorithm updates",
+            "Find out about the update from a colleague's Slack link, then spend two weeks establishing whether it was the update or your redirect."
+          ],
+          [
+            "Content strategy and creation",
+            "Write briefs, edit drafts, chase legal, publish at 6pm on Friday because that's when approval landed."
+          ],
+          [
+            "Manage the SEO tool stack and reporting",
+            "Renew the subscriptions and rebuild the dashboard every time a tracking change breaks it."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Agency Tuesday versus in-house Tuesday",
+      "body": [
+        "Same job title, materially different days. Neither is better; they build different people.",
+        "At an agency you'll touch four to eight clients in a week. The day is fragmented — an hour on a D2C site's product templates, an hour on a B2B blog cluster, a call where you explain to a founder why month two looks flat. You develop pattern recognition fast because you see many sites and many mistakes. What you don't get is the authority to make anything happen: you recommend, and someone else's developer decides.",
+        "In-house you have one site, one CMS and one set of politics. The work goes deeper — you'll learn that codebase's specific pathologies better than anyone. You'll also spend meaningfully more of your week in meetings, and your progress is capped by how much engineering time you can win. Many in-house SEOs discover their real job is [making the case internally](/journal/how-to-read-an-seo-report) rather than doing SEO at all.",
+        "Freelance is a third shape again: everything above, plus invoicing, plus finding the next client, minus anyone to check your thinking."
+      ]
+    },
+    {
+      "h2": "The parts nobody writes into the job description",
+      "body": [
+        "These aren't complaints. They're the actual content of the role, and knowing them up front is the difference between a good hire and someone who quits in month seven."
+      ],
+      "numbered": [
+        "**Waiting.** You'll ship something correct and see nothing for eight weeks. The discipline is not touching it again out of anxiety.",
+        "**Being blamed for the market.** A competitor raised funding and outspent you on content. That will still appear in your review.",
+        "**Explaining the same trade-off repeatedly** to people who forgot it because it wasn't their trade-off.",
+        "**Defending work you didn't do.** Every specialist inherits a site with a decade of other people's decisions in it, half of them undocumented.",
+        "**Knowing when to say nothing moved.** The most respected SEOs in any company are the ones who report a flat month plainly instead of finding a metric that went up. A senior role is mostly this, which is also most of [what an SEO manager does](/answers/what-does-an-seo-manager-do)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is an SEO specialist a technical job?",
+      "a": "Partly. You don't need to write production code, but you do need to read HTML, understand how a page renders, know what a redirect chain does and be able to talk to engineers without a translator. Specialists who avoid the technical half spend their careers waiting for someone else to explain their own data."
+    },
+    {
+      "q": "What's the difference between an SEO specialist and an SEO manager?",
+      "a": "A specialist does the work and owns tasks. A manager owns the number, decides what doesn't get done, and defends the budget. The transition is less about extra SEO knowledge and more about prioritisation and being able to argue a case in money rather than sessions."
+    },
+    {
+      "q": "How many hours a day does an SEO specialist actually work on SEO?",
+      "a": "In a nine-hour day, perhaps three to four hours of focused SEO work. The rest is meetings, reporting, follow-ups and context switching. That ratio is normal across professional roles — it just surprises people who imagined the job as continuous research."
+    },
+    {
+      "q": "Do SEO specialists write the content themselves?",
+      "a": "In year one, often yes. After that, usually briefs and edits, because the constraint stops being writing capacity and becomes deciding what's worth writing. Small teams are the exception — at a startup the SEO specialist frequently writes, publishes and reports on everything alone."
+    },
+    {
+      "q": "What does an SEO specialist do in the first month at a new company?",
+      "a": "Crawl the site, read twelve months of Search Console, find pages with impressions but poor click-through, list what's broken technically, and write down the baseline. Shipping big changes in month one is a red flag — you can't fix what you haven't measured."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "what-does-an-seo-manager-do" },
+    { "type": "answers", "slug": "how-hard-is-it-to-get-into-an-seo-career" },
+    { "type": "answers", "slug": "is-seo-a-stressful-job" },
+    { "type": "glossary", "slug": "google-search-console" },
+    { "type": "journal", "slug": "how-to-read-an-seo-report" },
+    { "type": "compare", "slug": "technical-seo-vs-content-seo" }
+  ]
+}

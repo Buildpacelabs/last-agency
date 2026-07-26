@@ -1,0 +1,209 @@
+{
+  "slug": "gurgaon",
+  "type": "seo-agency",
+  "primaryKeyword": "seo agency in gurgaon",
+  "secondaryKeywords": [
+    "seo company in gurgaon",
+    "b2b seo agency gurgaon",
+    "saas seo gurgaon",
+    "seo services gurugram",
+    "demand generation seo gurgaon"
+  ],
+  "cluster": "city-india-ncr",
+  "intent": "commercial",
+  "city": {
+    "name": "Gurgaon",
+    "region": "Haryana",
+    "country": "India"
+  },
+  "h1": "B2B SEO in Gurgaon, measured in pipeline not traffic",
+  "metaTitle": "B2B SEO Agency in Gurgaon: Pipeline, Not Traffic",
+  "metaDescription": "An SEO agency in Gurgaon for B2B and SaaS teams: keywords mapped to MQL, SQL and closed-won, plus a 90-day guarantee against your own baseline.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "B2B SEO in Gurgaon has to answer to a pipeline number, not a traffic chart, because the person buying it carries an MQL quota. That means mapping every query to a funnel stage, publishing bottom-funnel pages first, and measuring qualified leads in the CRM — with a 90-day window that matches one sales cycle.",
+  "takeaways": [
+    "Gurgaon marketing leads report against pipeline, so an SEO report that opens with sessions is a report they can't forward.",
+    "Map each query to **MQL**, **SQL** or **closed-won**. Most agencies only build for the top of that list, which is why month four gets uncomfortable.",
+    "The commonest technical problem in Cyber City isn't your competitors' site. It's your own global HQ site outranking you for India queries.",
+    "Your buyers live on LinkedIn and mostly won't click a blog. Publish the pages they search for **after** they see you there.",
+    "90 days is one B2B sales cycle. We measure qualified leads, not closed revenue, because closed revenue lands outside the window and pretending otherwise would be dishonest."
+  ],
+  "sections": [
+    {
+      "h2": "The keyword-to-pipeline map",
+      "body": [
+        "Gurgaon runs on B2B. The corridor from Udyog Vihar down Golf Course Road through Cyber City holds an unusual density of MNC India offices, global capability centres and B2B software companies, and the people buying marketing here carry a quota expressed in qualified pipeline.",
+        "So the first artefact we build isn't a content calendar. It's a map from query type to funnel stage, with an honest answer in the last column about how long each takes."
+      ],
+      "table": {
+        "caption": "Query types mapped to B2B pipeline stages, with realistic time to first contribution.",
+        "head": [
+          "Query type",
+          "Where it lands",
+          "What it produces",
+          "Realistic timeline"
+        ],
+        "rows": [
+          [
+            "`[competitor] alternatives`, `[you] vs [them]`",
+            "SQL / late-stage",
+            "Enquiries from people already in a buying cycle, often already talking to someone else",
+            "4–10 weeks — few companies write these properly"
+          ],
+          [
+            "`[category] pricing`, `[category] cost`",
+            "SQL",
+            "Self-qualifying enquiries. Also filters out the ones your AEs would have lost anyway",
+            "6–12 weeks"
+          ],
+          [
+            "`[category] software`, `[category] vendors India`",
+            "MQL",
+            "Volume at the top of the shortlist stage. The page procurement finds",
+            "2–4 quarters, needs links"
+          ],
+          [
+            "`how to [job to be done]`, `[problem] template`",
+            "Early MQL",
+            "Email captures, nurture entries, retargeting pools. Not pipeline this quarter",
+            "1–2 quarters to traffic, longer to revenue"
+          ],
+          [
+            "`[regulation] compliance checklist`, `[standard] requirements`",
+            "MQL / trust",
+            "The page procurement and legal read before they let anyone talk to you",
+            "1–2 quarters, low competition"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The order most agencies get backwards",
+        "body": "Almost every proposal starts at the top of that table's fourth row — how-to content — because it's easy to produce and easy to show volume against. It's also the row furthest from a deal. Build rows one and two first. They're smaller, harder to write, and the only ones that will save the engagement in month four."
+      }
+    },
+    {
+      "h2": "Competing with your own global HQ site",
+      "body": [
+        "This is the single most common technical problem we find in Gurgaon, and it almost never appears in the brief because the India team doesn't think of it as an SEO problem. It thinks of it as an org chart problem.",
+        "You run the India business. Global runs `brand.com`, with fifteen years of links and a domain rating you'll never match from `brand.com/in`. Both pages target the same query, Google picks one, and it usually picks authority — so an Indian buyer lands on a page with US pricing, a US phone number and a form that routes to a US SDR.",
+        "The fixes are mechanical. Getting HQ's cooperation is the hard part."
+      ],
+      "numbered": [
+        "**Reciprocal hreflang between every pair of equivalent pages.** `en-in` and `en-us` pointing at each other, plus an `x-default`. Not a ranking boost — a swap instruction telling Google which version to serve which searcher.",
+        "**Make the India page genuinely different**, not a copy with the currency changed. Local pricing, local references, local compliance context, local contact. Near-duplicates give Google no reason to prefer yours.",
+        "**Kill the internal cannibalisation.** If four pages across two subfolders target \"[category] software India\", consolidate to one and redirect the rest. Usually a bigger win than any new content.",
+        "**Get a separate Search Console property for the India folder.** You can't argue for budget with data you can't see, and most India teams look at a global property where their numbers are a rounding error.",
+        "**Escalate with a query-level report, not a request.** \"These 30 India queries land on a page quoting dollars\" moves a global web team. \"We'd like our own pages\" doesn't."
+      ]
+    },
+    {
+      "h2": "Content approvals in an MNC India office, and how to plan around them",
+      "body": [
+        "The Cyber City and Golf Course Road reality: the India marketing team often can't publish on the global domain without a review chain crossing time zones, brand, legal and sometimes a regional VP on a different quarter's planning cycle.",
+        "That constraint isn't going away and it isn't your fault. But it should change how the retainer is scoped, because one sized for eight pages a month that publishes two is one you're overpaying for."
+      ],
+      "bullets": [
+        "**Measure your real throughput first.** Count what went live in the last two quarters, not what was written. Size the plan to that number and grow it deliberately.",
+        "**Start where approval is fastest.** Technical fixes, internal linking, schema, page speed and consolidating duplicates need no brand review, and on an MNC subfolder they frequently move more in quarter one than content does.",
+        "**Batch the review.** One monthly meeting with a stack of briefs beats fifteen approval threads, and it gets you a decision-maker who's paying attention.",
+        "**Pre-clear the template, not each page.** If legal signs off a structure and a claims boundary once, individual pages stop being individual negotiations.",
+        "**Own an asset global doesn't want.** A comparison page, a pricing explainer, an India regulation checklist — things HQ has no plan for are the easiest to get approved and the closest to a deal."
+      ]
+    },
+    {
+      "h2": "Your buyers are on LinkedIn and won't click your blog",
+      "body": [
+        "Gurgaon B2B buying is unusually LinkedIn-mediated. Your prospects see your posts, your competitors' posts and a lot of ex-colleagues' posts. What they don't do is click through to an 1,800-word article about industry trends.",
+        "This gets misread as \"SEO doesn't work for us\". What's happening is that search sits later in the sequence than the blog assumes. LinkedIn creates awareness. Search is where the same person goes twenty minutes or three weeks later, privately, to check whether you're real and what you cost. So publish for the second moment."
+      ],
+      "bullets": [
+        "**A pricing page with real numbers or real ranges.** Nothing else does as much qualifying work, and \"contact us for pricing\" reliably loses the buyer comparing three vendors on a Sunday night.",
+        "**A page per integration and per platform you plug into.** Found by people who've already picked the category and are checking compatibility.",
+        "**Comparison pages you'd be comfortable showing the competitor.** Honest ones, including where you lose. They convert better precisely because they're credible.",
+        "**Customer-facing security and compliance documentation.** For enterprise deals this is the page that unblocks procurement, and it ranks because almost nobody optimises it.",
+        "**Turn the good LinkedIn post into the page.** If a post landed, the argument works — and the page version catches people searching for that argument six months later. See [organic social versus paid social](/compare/organic-social-vs-paid-social)."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The measurement trap",
+        "body": "Self-reported attribution will tell you LinkedIn drove the deal and search drove nothing, because the buyer remembers the post and forgets the search. Both channels are being paid for by the same budget. Judge them together or you'll defund the one doing the quiet half of the work."
+      }
+    },
+    {
+      "h2": "What the guarantee measures when your sales cycle is longer than the guarantee",
+      "body": [
+        "Here's the honest problem with a 90-day promise in B2B. If your average deal takes five months from first touch to signature, a lead generated in week ten closes long after the window shuts. Any agency guaranteeing closed revenue in 90 days on that cycle either doesn't understand your business or is counting on you not doing the maths.",
+        "So we measure what genuinely lands inside the window: qualified leads from organic search, as your CRM defines qualified, against your own trailing-90-day count frozen on day one. Beat it or we keep working free until we do. Never a ranking position — nobody controls the index. Ninety days is long enough for technical fixes and bottom-funnel pages to produce leads, and short enough that you find out whether we're any good before you've spent a year."
+      ],
+      "bullets": [
+        "**Qualified is your definition.** If your MQL bar is a demo request from a company above 200 employees, that's the bar. We don't get to count newsletter signups.",
+        "**Branded search is separated out.** If demand for your own name grows from a campaign we didn't run, it isn't our result.",
+        "**Closed-won gets tracked but isn't the guarantee.** We report it from month four because it matters most — it just can't be what we bet on inside 90 days.",
+        "**Seasonality is declared before signature.** If your trailing quarter was quiet because of a holiday period, that flatters us, and we say so in writing rather than banking it."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "Why three clients a month",
+        "body": "A guarantee that costs us free labour when we miss is only survivable at low volume. At three accounts the promise can be honoured; at forty it becomes marketing copy. Pricing and scope on [our SEO page](/seo)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much does a B2B SEO agency in Gurgaon cost?",
+      "a": "The market advertises from around ₹10,000 a month to ₹3,00,000+ for enterprise scope. Serious B2B work with technical, content and digital PR running together starts around ₹75,000. That's where we start, ex-GST, with smaller sites from ₹40,000 and month-to-month terms after the first quarter."
+    },
+    {
+      "q": "Our global HQ owns the website. Can we still do SEO from the India office?",
+      "a": "Yes, and it's usually the highest-return work available to you. Hreflang between the India and global pages, consolidating duplicate India-targeted pages, a separate Search Console property for your folder, and India-specific pricing and compliance pages that HQ has no plan for anyway."
+    },
+    {
+      "q": "How do you connect SEO to pipeline rather than traffic?",
+      "a": "Every target query gets mapped to a funnel stage before anything is written, UTM and CRM plumbing is checked before publishing starts, and the monthly report leads with qualified leads by source. Traffic appears, but it appears below the number your board actually asks about."
+    },
+    {
+      "q": "Our sales cycle is six months. Does a 90-day guarantee make sense?",
+      "a": "It does, as long as it measures the right thing. We guarantee qualified organic leads against your frozen trailing-90-day baseline, not closed revenue — closed revenue on a six-month cycle lands outside the window, and guaranteeing it would be a number we couldn't honestly stand behind."
+    },
+    {
+      "q": "Is Gurgaon SEO different from Delhi SEO?",
+      "a": "The buyer is. Delhi's search demand skews local, wholesale and price-shopped; Gurgaon's skews B2B, corporate and pipeline-measured. The SERP overlaps heavily because Google ranks local results by distance and NCR is one continuous urban area, so your competitor set spans both."
+    },
+    {
+      "q": "Do you work with global capability centres and MNC India offices?",
+      "a": "Yes, and the work is as much internal as external — building the query-level evidence that gets a global web team to act, and finding the pages you can publish without a three-country approval chain. Scoping that honestly matters more than the content plan."
+    }
+  ],
+  "related": [
+    {
+      "type": "seo-for",
+      "slug": "b2b"
+    },
+    {
+      "type": "compare",
+      "slug": "b2b-seo-vs-b2c-seo"
+    },
+    {
+      "type": "answers",
+      "slug": "what-are-seo-kpis"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-judge-your-seo-agencys-performance"
+    },
+    {
+      "type": "glossary",
+      "slug": "hreflang"
+    },
+    {
+      "type": "seo-agency",
+      "slug": "noida"
+    },
+    {
+      "type": "seo-agency",
+      "slug": "ghaziabad"
+    }
+  ]
+}

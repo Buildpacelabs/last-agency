@@ -1,0 +1,168 @@
+{
+  "slug": "dofollow-vs-nofollow",
+  "type": "compare",
+  "primaryKeyword": "dofollow vs nofollow links",
+  "secondaryKeywords": [
+    "do nofollow links help seo",
+    "sponsored and ugc link attributes",
+    "nofollow is a hint",
+    "natural backlink profile ratio",
+    "how to check if a link is nofollow"
+  ],
+  "cluster": "link-building",
+  "intent": "informational",
+  "h1": "Dofollow vs nofollow: when to take the link anyway",
+  "metaTitle": "Dofollow vs Nofollow: When to Take the Link",
+  "metaDescription": "Dofollow vs nofollow links matter less since 2020, when nofollow became a hint. Here's when to take a nofollow link happily and when to walk away.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "A followed link passes ranking signals; a nofollow link tells Google it may ignore them. Since March 2020 nofollow is a hint, not a rule, so Google can count it anyway. Judge a link on whether real people will click it — not on which attribute the publisher's CMS applied by default.",
+  "takeaways": [
+    "\"Dofollow\" doesn't exist in HTML. Followed is the default; `nofollow` is the markup you add to switch it off.",
+    "Since 1 March 2020 Google treats nofollow as a hint for crawling and indexing, not a directive. It may follow the link. You don't get told either way.",
+    "The better acceptance test is referral traffic. If forty real humans a month click the link, the attribute is a footnote.",
+    "A backlink profile that's 95% followed doesn't look strong. It looks bought."
+  ],
+  "sections": [
+    {
+      "h2": "\"Dofollow\" is not a thing, and that matters",
+      "body": [
+        "There is no `rel=\"dofollow\"` in the HTML spec. There never was. A link is followed by default; `rel=\"nofollow\"` is the markup a publisher adds to stop passing signals. \"Dofollow\" is jargon SEOs invented to name the absence of an attribute.",
+        "That sounds pedantic until you watch what it does to people's judgement. A whole outreach industry has organised itself around a binary that only exists in one direction, and it produces a specific bad habit: checking the attribute first and asking whether the page is any good second. Or never.",
+        "The right order is the reverse. Look at the page. Then look at the attribute, if you still care."
+      ]
+    },
+    {
+      "h2": "What actually changed on 1 March 2020",
+      "body": [
+        "In September 2019 Google announced two new link attributes and a change in how it would treat nofollow. From 10 September 2019 the attributes became hints for ranking purposes, and from **1 March 2020** they became hints for crawling and indexing too.",
+        "\"Hint\" means Google may choose to follow a nofollow link and may choose to count it. Google's stated reasoning was that nofollow had become blunt — huge categories of genuinely useful links were being blanket-nofollowed by CMS defaults, and Google was discarding real information about the web.",
+        "Two consequences follow, and both are practical.",
+        "First, a nofollow link is no longer worth zero. It's worth an unknown amount between zero and something. Nobody outside Google knows which, and no tool reports it. Anyone who tells you a nofollow link definitely passes value, or definitely doesn't, is guessing with confidence.",
+        "Second, nofollow stopped being a reliable way to hide a page from Google. If you need something excluded, use `noindex` or block it in robots.txt — see [noindex](/glossary/noindex) for which one applies when."
+      ]
+    },
+    {
+      "h2": "The three attributes, and when each one applies",
+      "body": [
+        "Publishers now have three markers rather than one. They can be combined — `rel=\"sponsored nofollow\"` is valid and common."
+      ],
+      "table": {
+        "caption": "The link attributes, what each declares, and where you'll meet it.",
+        "head": ["Attribute", "What it declares", "Where it shows up"],
+        "rows": [
+          [
+            "No attribute",
+            "An ordinary editorial link. Signals pass normally.",
+            "Body copy on most publisher sites, citations, resource pages, genuine editorial mentions."
+          ],
+          [
+            "`rel=\"nofollow\"`",
+            "\"Don't associate us with this link.\" A hint since March 2020.",
+            "Wikipedia, most large forums, comment sections, and the default outbound setting on a lot of big publishers."
+          ],
+          [
+            "`rel=\"sponsored\"`",
+            "This link was paid for, in money or in kind.",
+            "Advertorials, sponsored posts, affiliate links, paid placements. Required disclosure under Google's spam policies."
+          ],
+          [
+            "`rel=\"ugc\"`",
+            "A user put this here, not the publisher.",
+            "Forum posts, comments, community answers, profile fields, reviews."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The one that carries real risk",
+        "body": "If you paid for a link — cash, free product, an exchange — it needs `sponsored` or `nofollow`. Undisclosed paid links violate Google's spam policies, and the exposure is on both sides of the transaction. This is the single line in link building worth being boring about."
+      }
+    },
+    {
+      "h2": "The better test: would a human click it?",
+      "body": [
+        "Here's the replacement for the attribute check. Stop asking whether a link is followed. Ask whether the page it sits on has readers who might become customers.",
+        "The test is measurable, which is what makes it better than a vibe. Take the placement, wait 30 to 90 days, then open GA4 and look at the referral channel for that domain. Sessions, engagement, and — if you're tracking properly — leads.",
+        "A nofollow link on a page that sends you forty qualified visitors a month is a customer acquisition channel. Whether Google counts it as a ranking signal is genuinely a secondary question at that point; you're getting paid either way. A followed link on a page nobody reads sends nothing, converts nothing, and gives you a number in a backlink tool.",
+        "The test also settles most outreach arguments before they start:"
+      ],
+      "bullets": [
+        "**Nofollow on a large industry publication your buyers read.** Take it. Immediately. Take it twice.",
+        "**Nofollow in a genuine community answer where the question matches your product.** Take it. That's the highest-intent traffic on the internet.",
+        "**Followed link on a 'general news' site publishing eight posts a day about insurance, casinos and yoga.** Refuse. The followed attribute is precisely why it's dangerous — see [paid links vs earned links](/compare/paid-links-vs-earned-links).",
+        "**Followed link in a footer, a sidebar or a 'partners' block.** Low value at best, a footprint at worst.",
+        "**Nofollow in a directory nobody has visited since 2014.** Ignore. Not because of the attribute, because of the nobody."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "How to check the attribute in four seconds",
+        "body": "View source, find your link, look for `rel=`. Or `curl -s <url> | grep -i \"yourdomain\"`. Ahrefs and Semrush both show it as a column on referring-domain exports. You do not need a paid extension for this."
+      }
+    },
+    {
+      "h2": "Why an all-dofollow profile is a red flag",
+      "body": [
+        "This is the part that surprises founders who've been buying links, and it's simple arithmetic about how the web behaves.",
+        "A brand that genuinely gets talked about accumulates links from places that nofollow by default — press sites with blanket outbound rules, forums, Reddit threads, LinkedIn posts, YouTube descriptions, comment replies, aggregators, syndication feeds. Those are not accidents; they're what real attention looks like when it hits a CMS with defaults.",
+        "So a natural profile is mixed. Heavily mixed. Nobody can hand you the correct ratio, because it varies enormously by industry — a B2B SaaS with an active community will look nothing like a jewellery brand — and any specific percentage you see quoted was made up by someone selling something.",
+        "But the direction is unambiguous. A profile where nearly every referring domain passes a followed link, with commercially-worded anchor text, did not happen naturally. It happened because someone specified it on an order form. Google's link spam systems are pattern-matchers, and that is a very legible pattern.",
+        "The practical version: if you're auditing an inherited profile, a suspiciously clean followed ratio is a stronger signal of purchased links than any domain metric. [Domain authority is a vanity metric](/journal/domain-authority-is-a-vanity-metric) — the shape of the profile isn't."
+      ]
+    },
+    {
+      "h2": "Nofollow links and getting cited by AI assistants",
+      "body": [
+        "This is the newest reason the attribute matters less than it did, and it's structural rather than speculative.",
+        "The `rel` attribute is a link-graph instruction. It tells a crawler something about how to weight an edge between two pages. It says nothing about whether the text on the page is readable, and text is what answer engines consume.",
+        "When an AI assistant summarises \"best options for X in India\", it's working from pages it has ingested. If your brand is named, described accurately and placed in the right category on a page that gets crawled, that's the input. Whether the link next to your name carried `nofollow` does not change what the sentence says about you.",
+        "Which flips a long-standing outreach preference. A nofollow mention in a widely-read comparison article on a publication that AI systems read is now plausibly worth more than a followed link on a site with no readers and no reason to be quoted. The same logic runs through [dofollow-obsessed guest posting versus digital PR](/compare/guest-posting-vs-digital-pr) — coverage produces mentions, marketplaces produce attributes.",
+        "None of this means links stopped mattering. They matter. It means the attribute was never the thing you were actually buying, and in 2026 it's a smaller fraction of the thing than ever."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "How we approach link work",
+        "body": "Last Agency runs SEO from ₹75,000/mo, smaller sites from ₹40,000/mo, ex-GST. We don't buy placements and we don't quote link counts, because a link count isn't an outcome. We freeze your trailing-90-day qualified organic leads on day one and keep working free past 90 days if we haven't beaten it."
+      }
+    }
+  ],
+  "versus": {
+    "a": "Dofollow links",
+    "b": "Nofollow links",
+    "verdict": "If the link sits on a page your buyers actually read, take it whether it's nofollow or not; only walk away when the page exists purely to host links, in which case the followed attribute is the reason to refuse rather than the reason to accept."
+  },
+  "faqs": [
+    {
+      "q": "Do nofollow links help SEO?",
+      "a": "Possibly, directly — since March 2020 Google treats nofollow as a hint and may count it. Certainly, indirectly: referral traffic, brand mentions, and the balance a natural profile needs. What nobody can tell you is how much direct value any individual nofollow link passes, because Google doesn't publish it."
+    },
+    {
+      "q": "How do I check if a link is dofollow or nofollow?",
+      "a": "View the page source, find your link, and look for a `rel` attribute. No `rel` means followed. You can also run `curl -s <url> | grep yourdomain`, or read the attribute column in an Ahrefs or Semrush referring-domains export. No paid tool required."
+    },
+    {
+      "q": "What's the right ratio of dofollow to nofollow links?",
+      "a": "There isn't a published one, and any specific number you're quoted is invented. What's true is directional: a real brand accumulates plenty of nofollow links from forums, press and social platforms, so a profile that's almost entirely followed with commercial anchors reads as purchased rather than earned."
+    },
+    {
+      "q": "What's the difference between nofollow, sponsored and ugc?",
+      "a": "`sponsored` means paid for. `ugc` means a user added it, not the publisher. `nofollow` is the general \"don't associate us with this\" marker and still works for both. Google treats all three as hints. If you paid for the link, `sponsored` or `nofollow` is not optional."
+    },
+    {
+      "q": "Should I ask a publisher to remove the nofollow?",
+      "a": "Ask once, politely, if the link is genuinely editorial and their CMS applied it by default. Never ask on a paid placement — you'd be requesting an undisclosed paid link, which puts both of you in breach of Google's policies for a signal that may not even move."
+    },
+    {
+      "q": "Do nofollow links count for AI search visibility?",
+      "a": "The attribute is a link-graph instruction; answer engines work from the text on the page. A clear, accurate mention of your brand on a page that gets crawled is the input, regardless of the `rel` value on the link beside it."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "nofollow-link" },
+    { "type": "glossary", "slug": "backlink-profile" },
+    { "type": "compare", "slug": "paid-links-vs-earned-links" },
+    { "type": "answers", "slug": "why-are-backlinks-important-for-seo" },
+    { "type": "cost", "slug": "link-building-cost" },
+    { "type": "journal", "slug": "how-much-do-backlinks-actually-matter" }
+  ]
+}

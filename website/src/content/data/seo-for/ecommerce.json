@@ -1,0 +1,190 @@
+{
+  "slug": "ecommerce",
+  "type": "seo-for",
+  "primaryKeyword": "ecommerce seo services india",
+  "secondaryKeywords": [
+    "ecommerce seo agency india",
+    "seo for online stores",
+    "shopify seo india",
+    "product page seo",
+    "category page seo",
+    "woocommerce seo services"
+  ],
+  "cluster": "ecommerce-and-d2c",
+  "intent": "transactional",
+  "industry": "Ecommerce",
+  "h1": "Ecommerce SEO that makes your category pages earn their keep",
+  "metaTitle": "Ecommerce SEO Services India: Category-Page First",
+  "metaDescription": "Ecommerce SEO services in India that fix faceted navigation, thin category copy and duplicate product URLs so your whole catalogue gets indexed and sells.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Ecommerce SEO in India usually fails on two faults: faceted navigation generating millions of crawlable filter URLs, and category pages carrying forty words of copy. Fix the parameters, write category content that helps someone choose, mark products up correctly, and the catalogue you already own starts ranking. Three to six months.",
+  "takeaways": [
+    "Faceted navigation is the most expensive SEO fault in Indian ecommerce and it's invisible from the front end. Check Search Console's 'Discovered – currently not indexed' first.",
+    "You won't outrank a marketplace for your own SKU name. You can outrank it for the category, because its category pages are generated and yours doesn't have to be.",
+    "Out-of-stock is not a reason to delete a URL. Stock is temporary; rankings and links are not.",
+    "Content that links only to other content is a blog. Content that links to collections is a sales channel."
+  ],
+  "sections": [
+    {
+      "h2": "Five filters, eight values each, and a crawl problem",
+      "body": [
+        "Faceted navigation is the single most expensive SEO fault in Indian ecommerce, and it never shows up in a pitch deck because you can't see it from the front end. Do the arithmetic once and it stops being abstract.",
+        "Take one category with five filters — size, colour, brand, price band, discount — carrying roughly eight values each, plus three sort orders. Every combination that produces its own URL is a page Googlebot can discover and try to fetch. From that one category the combinations run into the hundreds of thousands.",
+        "Now multiply by your category count. A 4,000-SKU store routinely exposes several million crawlable URLs. Googlebot doesn't crawl them all — it crawls some, spends its allocation on `?colour=blue&sort=price_asc`, and never reaches the 600 product pages you launched last month. That's why catalogue owners so often find a few thousand URLs indexed and most of them junk. It's a [crawl budget](/glossary/crawl-budget) problem wearing a UX costume."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "How to confirm it in ten minutes",
+        "body": "Search Console → Pages → look at the 'Discovered – currently not indexed' and 'Crawled – currently not indexed' buckets. Then pull a week of server logs and count Googlebot hits containing a question mark. If most bot traffic is parameter URLs, this is your problem, and no volume of blog content will fix it."
+      }
+    },
+    {
+      "h2": "Write the facet policy down once",
+      "body": [
+        "Every facet needs one of three decisions: indexable, crawlable but not indexable, or blocked. Deciding template by template, six months apart, by different people, is how a store ends up with both duplicate content and de-indexed money pages."
+      ],
+      "table": {
+        "caption": "How to treat each facet type on an Indian catalogue.",
+        "head": ["Facet type", "Do this", "Why"],
+        "rows": [
+          [
+            "Category plus one high-demand attribute — 'running shoes for men', 'cotton kurta sets'",
+            "Static, indexable URL with its own title, H1 and copy",
+            "People search this exact phrase. It deserves a landing page, not a filter state."
+          ],
+          [
+            "Colour, size, multi-select combinations",
+            "Crawlable, `noindex, follow`, canonical to the parent category",
+            "Genuine user value, near-zero search demand, effectively infinite combinations."
+          ],
+          [
+            "Sort order, view toggles, session IDs, tracking parameters",
+            "Disallow in `robots.txt` and strip from internal links",
+            "Pure crawl waste. Nothing here can ever rank for anything."
+          ],
+          [
+            "Price bands and discount filters",
+            "Block unless there's real demand — 'sarees under 1000' occasionally is",
+            "Sometimes a genuine query. Usually a trap that generates thousands of near-duplicates."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Never `noindex` and `disallow` the same URL.** Google can't read a `noindex` on a page it isn't allowed to fetch, so the page stays in the index as a URL-only result. Pick one.",
+        "**Clean the internal link graph, don't patch it.** `rel=nofollow` on facet links is a hint Google may ignore. Links that only exist behind JavaScript-driven filter state are a far more reliable control.",
+        "**Keep pagination crawlable.** Sequential `?page=2` URLs with self-referencing canonicals and real links are how deep products get discovered. Infinite scroll with no paginated fallback hides most of a large catalogue."
+      ]
+    },
+    {
+      "h2": "Category copy that beats a marketplace listing",
+      "body": [
+        "You will not quickly outrank Amazon or Flipkart for your own product name if they also sell it. Accept that and stop budgeting for it — we've written separately about [selling through marketplaces versus owning search](/compare/seo-vs-marketplace-selling).",
+        "What you can win is the category, because marketplace category pages are generated. They're identical in structure across a million SKUs, they carry no buying guidance, and nobody at Amazon is writing 400 considered words about how to pick a cotton kurta for a Chennai summer.",
+        "That advantage disappears the moment your category page is also forty words of stuffed copy behind a 'Read more' toggle at the bottom. Category pages that rank do a job: they help someone choose."
+      ],
+      "bullets": [
+        "**150–300 words that genuinely narrow the choice** — what to look for, what the price bands mean, what's worth paying more for, what isn't.",
+        "**India-specific detail marketplaces won't write** — sizing mapped to Indian sizes, fabrics that survive humidity, GST-inclusive pricing, COD availability, return windows.",
+        "**A real FAQ block** answering what your support inbox is already asked twenty times a week.",
+        "**Internal links out** to sub-categories and two or three best sellers, so the page distributes authority as well as receiving it.",
+        "**Zero duplication across siblings.** If your 'kurta' and 'kurti' pages share paragraphs, you haven't built two pages, you've built a cannibalisation problem and a thin-content risk at the same time."
+      ]
+    },
+    {
+      "h2": "Product schema: price, rating, availability — and the parts that get you penalised",
+      "body": [
+        "Product markup is the cheapest rich-result win in ecommerce and the easiest place to break Google's structured data policies. Both halves of that sentence matter."
+      ],
+      "bullets": [
+        "**Required in practice**: `name`, `image`, `offers.price`, `offers.priceCurrency` set to INR, and `offers.availability`. Availability has to update when stock does — a stale `InStock` on a sold-out SKU degrades your merchant listings and irritates buyers who click through.",
+        "**`aggregateRating` only from reviews you actually collected on your own site.** Marking up invented ratings, or borrowing the manufacturer's, is squarely covered by the structured data spam policies. A manual action here strips rich results across the entire domain, not just the offending page.",
+        "**Handle variants deliberately.** One shirt in eight sizes should not become eight indexable URLs sharing a description. Either canonical variants to a parent product or serve one URL with in-page selection — but choose, because platform defaults rarely do.",
+        "**Shipping and returns markup** feeds the price-comparison surfaces, and for Indian buyers COD and return windows are frequently the deciding factor between two identical listings."
+      ]
+    },
+    {
+      "h2": "A retirement policy for out-of-stock and seasonal URLs",
+      "body": [
+        "The default reflex — 404 the page, or redirect everything to the homepage — throws away rankings and links you spent money earning. Stock is temporary. URLs shouldn't be."
+      ],
+      "table": {
+        "caption": "URL retirement policy for a catalogue that changes weekly.",
+        "head": ["Situation", "Do this", "Don't do this"],
+        "rows": [
+          [
+            "Temporarily out of stock",
+            "Keep the URL live and indexed, set `availability: OutOfStock`, show alternatives and a back-in-stock alert",
+            "404 it and lose every link and ranking it had"
+          ],
+          [
+            "Discontinued, close replacement exists",
+            "301 to the nearest equivalent product",
+            "301 everything to the homepage — Google treats bulk irrelevant redirects as soft 404s"
+          ],
+          [
+            "Discontinued, nothing comparable",
+            "301 to the parent category, or keep the page with a clear notice if it still earns links",
+            "Leave it returning 200 with an empty template"
+          ],
+          [
+            "Seasonal collection — Diwali, wedding season, back to school",
+            "Keep one permanent URL and refresh it each year",
+            "Publish `/diwali-sale-2025` and `/diwali-sale-2026` and orphan both by February"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Point your content at collections, not at other posts",
+      "body": [
+        "Most ecommerce blogs link to other blog posts. That's why they rank and sell nothing. The blog's job is to earn links and rankings that it then hands to pages with a buy button on them."
+      ],
+      "numbered": [
+        "Every article links to at least one collection page with descriptive anchor text — 'linen shirts for summer', never 'shop now'.",
+        "Every collection links up to its parent and across to two or three siblings, so authority circulates instead of pooling on the homepage.",
+        "Product pages link back to the collections they belong to in body content, not only through breadcrumbs.",
+        "Audit orphan products quarterly. A product reachable only via site search and a filter state is invisible to Google and nearly invisible to customers."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where we start on a catalogue site",
+        "body": "Month one goes to crawl control and category templates before a single article is commissioned, because content routed into a broken crawl path is money set on fire. Our SEO runs from ₹75,000/mo, smaller sites from ₹40,000/mo — see [what ecommerce SEO costs](/cost/ecommerce-seo-cost). The baseline we freeze is your own trailing-90-day qualified leads or revenue from organic. Miss it in 90 days and we keep working free until we beat it."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why are most of my product pages not indexed?",
+      "a": "Usually crawl waste rather than page quality. If faceted navigation is generating hundreds of thousands of parameter URLs, Googlebot spends its allocation there and never reaches deep products. Fix the parameters and internal links first — adding more products or more content makes the problem worse, not better."
+    },
+    {
+      "q": "Should ecommerce category pages have text on them?",
+      "a": "Yes, but useful text, not keyword filler shoved below the product grid. 150–300 words that help someone choose — what to look for, price bands, sizing, materials — is what separates your page from a marketplace's generated one. Copy that only exists for the crawler reads that way to both."
+    },
+    {
+      "q": "Is Shopify or WooCommerce better for SEO in India?",
+      "a": "Both rank fine and both have specific faults. Shopify duplicates products across collection paths and gives you limited control over robots and URL structure. WooCommerce gives you full control and lets you build a crawl disaster with three plugins. The platform is rarely the reason a store isn't ranking."
+    },
+    {
+      "q": "What should I do with out-of-stock product pages?",
+      "a": "Keep them live and indexed with `availability: OutOfStock`, plus alternatives and a back-in-stock alert. Only redirect when the product is permanently gone, and then to the closest replacement or the parent category. Deleting the page throws away the links and rankings it accumulated."
+    },
+    {
+      "q": "How long does ecommerce SEO take to show results?",
+      "a": "Three to six months for meaningful movement on category terms, and often faster on the technical side — recovering an index that was capped by crawl waste can show up in six to eight weeks because the pages already exist. Link-dependent competitive categories take longer."
+    },
+    {
+      "q": "How much do ecommerce SEO services cost in India?",
+      "a": "Typically ₹40,000–₹2,50,000 a month, driven mostly by catalogue size and how much developer access the fixes need. Our SEO starts at ₹75,000/mo with smaller stores from ₹40,000/mo, ex-GST, month-to-month after the first quarter, and you keep every asset if you leave."
+    }
+  ],
+  "related": [
+    { "type": "cost", "slug": "ecommerce-seo-cost" },
+    { "type": "services", "slug": "ecommerce-seo-services" },
+    { "type": "answers", "slug": "how-to-do-seo-for-an-ecommerce-website" },
+    { "type": "compare", "slug": "seo-vs-marketplace-selling" },
+    { "type": "glossary", "slug": "crawl-budget" },
+    { "type": "seo-for", "slug": "d2c-brands" }
+  ]
+}

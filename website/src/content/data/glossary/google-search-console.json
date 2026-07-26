@@ -1,0 +1,146 @@
+{
+  "slug": "google-search-console",
+  "type": "glossary",
+  "primaryKeyword": "google search console",
+  "secondaryKeywords": [
+    "gsc meaning",
+    "how to use search console",
+    "search console reports",
+    "verify site in search console",
+    "search console vs analytics"
+  ],
+  "cluster": "analytics",
+  "intent": "navigational",
+  "h1": "Google Search Console",
+  "metaTitle": "Google Search Console: The Reports That Matter",
+  "metaDescription": "Google Search Console is the free tool showing how Google sees your site. Here are the five reports worth opening weekly and the 16-month data trap.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Google Search Console",
+  "definition": "Google Search Console is Google's free reporting tool showing how its crawler and its search results treat your site — queries, impressions, indexing status and penalties.",
+  "answer": "Google Search Console is a free tool that reports how your site performs in Google search: which queries showed it, how many clicks each earned, which pages are indexed, and whether you've been penalised. It's the only source of query data Google gives you, and it keeps just 16 months of it.",
+  "takeaways": [
+    "Search Console shows what happened **before** the click. Analytics shows what happened after. You need both and they will never match.",
+    "Verify a **domain property** via DNS, not a URL-prefix property. It captures every subdomain and both protocols in one place.",
+    "The Performance report holds **16 months**. Set up an export on day one or the data is simply gone.",
+    "Manual Actions is the one report where an empty page is the whole point. Check it anyway."
+  ],
+  "sections": [
+    {
+      "h2": "What it shows that analytics can't",
+      "body": [
+        "Analytics starts counting when someone lands on your site. Search Console counts everything that happened in the results page first — how many times you appeared, at what position, for which query, and whether anyone clicked.",
+        "That pre-click layer is the whole point. When rankings move, Search Console tells you six weeks before revenue does. And since Google stopped passing query data to analytics tools well over a decade ago, this is the only place you see actual search terms rather than guesses."
+      ],
+      "bullets": [
+        "**Queries** — the real ones, aggregated. Nothing else gives you this.",
+        "**Impressions and average position** — the leading indicators that move first.",
+        "**Index coverage** — which of your pages Google has actually kept, and why it dropped the rest.",
+        "**Manual actions and security issues** — a human penalty notice arrives here and nowhere else.",
+        "**Links** — a partial view of who links to you, straight from Google rather than a third-party crawler."
+      ]
+    },
+    {
+      "h2": "Getting verified, and which property type to pick",
+      "body": [
+        "Two property types exist and the choice matters more than people expect. A **URL-prefix** property covers exactly one protocol and one hostname — `https://www.example.com` and `https://example.com` are two separate properties with two separate datasets. A **domain** property covers every subdomain and both protocols at once.",
+        "Pick the domain property. It's a single TXT record at your DNS provider, and it stops the classic mistake of staring at a dataset covering a third of your traffic."
+      ],
+      "bullets": [
+        "**DNS TXT record** — the only method that gets you a domain property. Ten minutes with whoever holds the domain.",
+        "**HTML file upload** — a file at your root. Fine, but it breaks if a migration doesn't carry it across.",
+        "**HTML meta tag** — one line in the head. Same fragility.",
+        "**Google Analytics or Tag Manager** — quickest if you already have edit access to either."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Verify before you migrate, not after",
+        "body": "Search Console can't retroactively collect data. If you verify the day a replatform goes live, you have no before to compare the after against — and diagnosing a traffic drop without a baseline is guesswork."
+      }
+    },
+    {
+      "h2": "Five reports, ranked by how often they change a decision",
+      "body": [
+        "The interface has far more than five screens. Most of them you'll open twice a year. These are the ones that actually alter what you do next."
+      ],
+      "numbered": [
+        "**Performance.** Filter to the last 28 days, compare to the previous 28, and sort by impression change. Rising impressions with flat clicks means you're ranking on page two — the highest-return work on most sites. Use the query filter to split branded from non-branded; see [impressions](/glossary/impressions) for how to read the number properly.",
+        "**Page indexing.** The list of pages Google decided not to keep, with reasons. `Crawled — currently not indexed` on a big share of your content is a quality signal, not a bug. `Discovered — currently not indexed` usually means crawl priority or thin pages.",
+        "**Sitemaps.** Submit it, then read the submitted-versus-indexed ratio. A 400-URL sitemap with 90 indexed pages is telling you something urgent about [indexing](/glossary/indexing).",
+        "**Core Web Vitals.** Built on real Chrome user data, so it needs enough traffic to populate and it lags a rolling 28-day window. Slow to react, which is exactly why it's trustworthy.",
+        "**Manual Actions.** Rarely populated, catastrophic when it is. This is where a human reviewer at Google tells you your links were bought. Check it monthly and after any ranking cliff."
+      ]
+    },
+    {
+      "h2": "The 16-month window, and the other limits",
+      "body": [
+        "Search Console keeps 16 months of Performance data and then deletes the oldest day, every day. There is no archive and no paid tier that extends it. Any question about what happened two years ago is unanswerable unless you exported.",
+        "So export on day one. The cheapest route is the free BigQuery bulk data export, which writes daily rows you keep forever. Looker Studio connected to the API is the second option. Doing neither is a decision to lose your own history."
+      ],
+      "bullets": [
+        "**Anonymised queries** — rare search terms are stripped from the query table for privacy. Your query rows will never sum to your total clicks. This is normal, not a bug.",
+        "**Row limits** — the interface exports 1,000 rows. The API and Looker Studio go far beyond that.",
+        "**Two to three days of lag** — today's data isn't there yet. Don't panic on a Monday morning.",
+        "**Average position is an average of averages** — useful as a trend line, misleading as a number. [Average position](/glossary/average-position) covers why.",
+        "**Clicks from AI Overviews are folded into the same totals** and not broken out, so you can't isolate them here."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Export before you need it",
+        "body": "The BigQuery export costs almost nothing at typical site volumes and takes an afternoon to configure. Every client who asks us to explain a decline from 20 months ago has the same problem: the data expired while they were deciding whether to bother."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Google Search Console free?",
+      "a": "Entirely. There is no paid tier, no seat limit, and no upsell. The only cost is the optional BigQuery export, which for most Indian sites lands in single-digit hundreds of rupees a month for storage."
+    },
+    {
+      "q": "What's the difference between Search Console and Google Analytics?",
+      "a": "Search Console measures the results page — impressions, queries, position, clicks. Analytics measures behaviour after the click. The two will never agree on click counts because they count different things at different moments; treat the gap as expected rather than as an error to fix."
+    },
+    {
+      "q": "Why don't my Search Console query numbers add up to the total?",
+      "a": "Because Google removes queries made by very few people to protect their privacy. Those clicks still count in the site total but the individual rows are withheld. On niche B2B sites the anonymised share can be substantial."
+    },
+    {
+      "q": "How often should I check Search Console?",
+      "a": "Weekly for Performance during active SEO work, monthly for Page Indexing and Manual Actions, and immediately after any deploy, migration or ranking drop. Daily checking mostly produces anxiety, since the data lags two to three days anyway."
+    },
+    {
+      "q": "Can I see who links to my site in Search Console?",
+      "a": "Partially. The Links report shows top linking sites and pages, sampled and capped, straight from Google's own index. It's more trustworthy than a third-party crawler on what Google knows, and less complete on what exists. Use both."
+    },
+    {
+      "q": "Does Search Console show AI Overview clicks separately?",
+      "a": "No. Google folds clicks and impressions from AI Overviews into the standard Performance totals rather than splitting them out. That's why measuring AI search impact requires inference from query-type patterns rather than a clean report."
+    }
+  ],
+  "related": [
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-analytics-4"
+    },
+    {
+      "type": "glossary",
+      "slug": "impressions"
+    },
+    {
+      "type": "glossary",
+      "slug": "average-position"
+    },
+    {
+      "type": "services",
+      "slug": "seo-reporting-services"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-read-an-seo-report"
+    }
+  ]
+}

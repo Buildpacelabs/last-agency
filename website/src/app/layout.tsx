@@ -6,9 +6,12 @@ import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { ORG_NODE, WEBSITE_NODE, SITE_URL } from '@/lib/site';
 
-const TITLE = "Last Agency — The Last SEO, Social & Performance Agency You'll Hire";
+// Both fields are length-budgeted for the SERP: title <= 60 chars rendered,
+// description 120-155. The previous pair ran 76 and 195, so Google was
+// truncating the hook out of both.
+const TITLE = "SEO Agency India — Rank or It's Free | Last Agency";
 const DESCRIPTION =
-  "One team for SEO, organic social and performance marketing — run as a single growth system with a beat-your-numbers-in-90-days-or-you-don't-pay guarantee. No lock-in. Only 3 clients a month.";
+  "One team for SEO, organic social and paid media, on one guarantee: beat your 90-day baseline or you don't pay. No lock-in. Three clients a month.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -30,6 +33,12 @@ export const metadata: Metadata = {
     locale: 'en_IN',
   },
   twitter: { card: 'summary_large_image' },
+  // Google Search Console ownership. The same token verifies both the
+  // URL-prefix property (via this meta tag) and the Domain property (via a
+  // DNS TXT record on lastagencyhere.com). Do not remove it after
+  // verification — Google re-checks periodically and will un-verify the
+  // property if the token disappears.
+  verification: { google: 'WG2SVhxFsNHSvhSz5mvjOxMVXJshxJnYCuD4MqlBFr0' },
   robots: {
     index: true,
     follow: true,

@@ -1,0 +1,219 @@
+{
+  "slug": "wordpress-vs-shopify-seo",
+  "type": "compare",
+  "primaryKeyword": "wordpress vs shopify seo",
+  "secondaryKeywords": [
+    "shopify seo limitations",
+    "woocommerce vs shopify seo",
+    "best platform for ecommerce seo india",
+    "shopify url structure seo",
+    "wordpress core web vitals"
+  ],
+  "cluster": "platform-choice",
+  "intent": "commercial",
+  "h1": "WordPress vs Shopify for SEO: URLs, duplicates and page speed",
+  "metaTitle": "WordPress vs Shopify SEO: URLs and Duplicates",
+  "metaDescription": "WordPress vs Shopify SEO: forced URL structures and duplicate variants on one side, plugin bloat and speed debt on the other. Here's how to choose.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Shopify locks your URLs into /collections/ and /products/ and generates variant and tag duplicates you can't delete. WordPress hands you full URL control and the performance bill instead — plugin bloat on cheap shared hosting. Below roughly ₹1 crore annual GMV with no developer on staff, Shopify's constraints cost you less.",
+  "takeaways": [
+    "Shopify's URL prefixes are permanent. You cannot serve a category at the root, and you cannot nest one category inside another.",
+    "Both platforms manufacture duplicate URLs. The difference is that on WooCommerce you can fix all of them, and on Shopify you can't.",
+    "WordPress doesn't have a speed problem. Cheap Indian shared hosting plus thirty plugins has a speed problem, and WordPress gets the blame.",
+    "The right question isn't which platform ranks better. It's whether you have a developer, and whether content is your acquisition channel."
+  ],
+  "sections": [
+    {
+      "h2": "Two constraints decide this, not forty features",
+      "body": [
+        "Most WordPress-vs-Shopify comparisons are feature matrices forty rows long. Almost none of those rows change your organic revenue. Two do.",
+        "**Shopify takes your URL structure away and hands you a fast, managed site.** **WordPress hands you the URL structure and takes away any guarantee that the site is fast.** That's the whole trade. Everything else — apps, themes, checkout, GST plugins — is a business decision, not an SEO one.",
+        "So the honest version is: which constraint hurts your store more? A 200-SKU D2C brand answers that very differently from a 40,000-SKU industrial catalogue."
+      ]
+    },
+    {
+      "h2": "Shopify's URL paths are not negotiable",
+      "body": [
+        "Shopify serves every page under a fixed prefix. Collections at `/collections/<handle>`, products at `/products/<handle>`, static pages under `/pages/`, articles under `/blogs/<blog>/<article>`. You can change the handle. You cannot remove the prefix, and you cannot nest one collection inside another — there is no `/collections/mens/shirts`.",
+        "The cost isn't the missing keyword in the path. Google has been clear for years that words in a URL are a very weak signal, and anyone selling a replatform on that basis is selling something else. The real cost is **architectural**. A URL hierarchy is how you express category depth, and category depth is how large catalogues get crawled sensibly and how breadcrumbs, internal links and site-wide relevance line up.",
+        "On Shopify you express that hierarchy through navigation, internal linking and breadcrumb schema instead. It works — it's just deliberate work, and most stores never do it, which is why so many Shopify catalogues have 900 products and a flat four-link menu.",
+        "The second cost arrives later. Every URL carries a platform word, so leaving Shopify means redirecting every single one. Fine if the redirect map is complete. It usually isn't — see [what a bad replatform actually costs](/journal/the-replatform-that-killed-your-traffic)."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "One old complaint that's now fixed",
+        "body": "Shopify's robots.txt used to be untouchable. It's been editable through `robots.txt.liquid` since 2021, so any article still listing that as a dealbreaker was written before then and hasn't been checked since."
+      }
+    },
+    {
+      "h2": "Where the duplicate URLs come from on each platform",
+      "body": [
+        "Both platforms generate near-identical pages by design. Neither is malicious about it. What differs is how much of it you're allowed to clean up."
+      ],
+      "subs": [
+        {
+          "h3": "Shopify",
+          "bullets": [
+            "**Collection-scoped product URLs.** The same product renders at `/collections/<collection>/products/<handle>` for every collection it belongs to. Stock themes canonicalise these back to `/products/<handle>` — but that canonical lives in `theme.liquid`, and customised themes lose it more often than you'd think.",
+            "**Variant parameters.** `?variant=` on every colour and size. Normally canonicalised, again by the theme.",
+            "**Tag-filter URLs.** `/collections/<handle>/<tag>` combinations appear as soon as you tag products, get linked from filter widgets, and are usually thin. This is the one that actually bites.",
+            "**Vendor, type and search URLs.** Auto-generated listing pages nobody planned and nobody reviews."
+          ]
+        },
+        {
+          "h3": "WooCommerce",
+          "bullets": [
+            "**Faceted filters as query strings.** `?filter_colour=red&filter_size=m&orderby=price` multiplies combinatorially. On a large catalogue this is the single biggest crawl waste on the internet.",
+            "**Attribute archives, tag archives, author archives, date archives, paginated archives and feeds** — all switched on by default, most of them worthless.",
+            "**Plugin-generated URLs** from wishlists, comparison tools and sliders, which nobody remembers installing."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The difference that matters",
+        "body": "On WooCommerce every one of these is fixable with canonicals, noindex rules and robots directives. On Shopify some simply aren't. Shopify makes fewer messes but locks the ones it makes; WordPress makes more and hands you the mop."
+      }
+    },
+    {
+      "h2": "The comparison, on the things that change revenue",
+      "table": {
+        "caption": "Shopify vs WordPress + WooCommerce, scored only on what affects organic revenue.",
+        "head": ["", "Shopify", "WordPress + WooCommerce"],
+        "rows": [
+          [
+            "URL control",
+            "Fixed prefixes. No nested categories. Handles editable, paths aren't.",
+            "Total. Any structure you can define, including deep category paths."
+          ],
+          [
+            "Duplicate handling",
+            "Theme canonicals cover products and variants. Tag, vendor and search URLs you cannot fully remove.",
+            "Every duplicate is fixable — if someone actually fixes it."
+          ],
+          [
+            "Speed floor",
+            "High. Managed hosting, global CDN, sane TTFB out of the box.",
+            "Whatever your host gives you. On entry-level shared hosting, TTFB alone eats most of the LCP budget."
+          ],
+          [
+            "Speed ceiling",
+            "Capped by theme JS and app scripts you don't fully control.",
+            "Very high with real caching and a CDN — and a developer to set it up."
+          ],
+          [
+            "Blog and content model",
+            "Articles and tags. No nested taxonomies, no custom post types, limited templating.",
+            "Still the best content CMS on the internet."
+          ],
+          [
+            "Schema markup",
+            "Theme-dependent. Product and breadcrumb usually present; anything else is code or a paid app.",
+            "Granular and free through the usual SEO plugins."
+          ],
+          [
+            "Who maintains it",
+            "Shopify. You never patch anything.",
+            "You. Core, theme and every plugin, forever."
+          ],
+          [
+            "Typical failure mode",
+            "Hundreds of thin, indexable collection-tag URLs and an app stack shipping several hundred KB of third-party JS.",
+            "A cheap host, thirty-odd plugins, and a server response time nobody has ever measured."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Plugin bloat, shared hosting and Core Web Vitals",
+      "body": [
+        "Google's thresholds are published and unambiguous: Largest Contentful Paint under 2.5 seconds, Interaction to Next Paint under 200 milliseconds, Cumulative Layout Shift under 0.1. The guidance around LCP suggests keeping server response time under roughly 800 milliseconds, because TTFB sits inside LCP and everything else happens after it.",
+        "That's where cheap Indian hosting kills WooCommerce. An uncached WooCommerce page is a PHP execution plus a stack of database queries, run fresh on every request, on a box shared with hundreds of other sites. Add the cart-fragments call that fires on every page load, and thirty plugins each loading CSS and JS whether the page uses them or not, and the 800ms budget is gone before your server has decided what a product is.",
+        "None of that is WordPress's fault, and all of it is your problem. The fix is unglamorous: full-page caching, object caching, a CDN, and a host that isn't ₹200 a month. Decent managed WordPress hosting in India runs ₹1,500–₹6,000/month — a rounding error against ad spend, and the highest-return line item on a slow store.",
+        "Shopify isn't immune. Every app injects script — review widgets, upsell popups, currency switchers, chat — and they compound, with INP taking the damage. The difference is structural: Shopify's floor is high and its ceiling capped; WordPress's floor is whatever you paid for and its ceiling much higher."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The ₹300 hosting decision",
+        "body": "If you're on WooCommerce and you've never measured your TTFB, measure it today before you spend anything on content or links. Content on a slow site is content nobody reaches. Start with [Core Web Vitals work](/services/core-web-vitals-optimisation), not another blog post."
+      }
+    },
+    {
+      "h2": "Blog and content capability, honestly compared",
+      "body": [
+        "This is where the gap is widest and where most comparisons wave their hands.",
+        "Shopify's content model is one object type — the article — with tags, inside a blog. No nested categories. No custom post types. No author archives with real bios unless your theme builds them. Metafields have made this better than it was, but you're still assembling a content site from parts that weren't designed for one.",
+        "For a store publishing twenty buying guides, fine. For a store where organic content is the acquisition channel — where most Indian D2C brands end up once paid social gets expensive — the model starts fighting you somewhere north of a hundred articles. Topic hubs, cross-linked clusters and category authority pages all get built by hand.",
+        "The usual resolution is a Shopify store with a WordPress blog served at `/blog` through a reverse proxy. Same domain, same authority, proper CMS. Serve it as a subfolder rather than `blog.yourstore.com` — reasoning in [subdomain vs subfolder](/compare/subdomain-vs-subfolder)."
+      ]
+    },
+    {
+      "h2": "What we'd pick at ₹50 lakh GMV and at ₹5 crore GMV",
+      "body": [
+        "Revenue is a better decision input than feature lists, because it tells you what team you can afford."
+      ],
+      "subs": [
+        {
+          "h3": "At ₹50 lakh a year",
+          "body": [
+            "Shopify. Not close. You're doing roughly ₹4 lakh a month, you have no developer, and the founder is also the merchandiser and the support desk. Your binding constraint is throughput of work, not URL structure.",
+            "At 200 SKUs the `/collections/` prefix costs you nothing measurable. A WooCommerce checkout that breaks after a plugin update costs you a week of revenue and a fortnight of nerve."
+          ]
+        },
+        {
+          "h3": "At ₹5 crore a year",
+          "body": [
+            "Now it depends, and the deciding question is whether a developer already sits on your team.",
+            "If yes, and you have thousands of SKUs with real category depth, and content is your growth channel — WordPress or a headless build earns back its maintenance cost. You get the hierarchy, the content model and the performance ceiling, and someone to keep them.",
+            "If no developer, or you're still ad-led with a narrow catalogue — stay on Shopify and put the replatform budget into content and digital PR. A migration is a six-figure project with real downside and no guaranteed upside. Most stores here get more from [ecommerce SEO work](/services/ecommerce-seo-services) on the platform they already have."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "How we price this",
+        "body": "Last Agency runs SEO from ₹75,000/mo, smaller stores from ₹40,000/mo, ex-GST, month-to-month after the first quarter. We freeze your trailing-90-day qualified organic leads on day one, and if we haven't beaten that number in 90 days we keep working free until we do. We never promise a ranking position."
+      }
+    }
+  ],
+  "versus": {
+    "a": "WordPress + WooCommerce",
+    "b": "Shopify",
+    "verdict": "Below roughly ₹1 crore in annual GMV with no developer on the team, take Shopify and live with the URL prefixes; above that, with a developer on staff and content as your main acquisition channel, WordPress earns back what it costs to maintain."
+  },
+  "faqs": [
+    {
+      "q": "Is Shopify bad for SEO?",
+      "a": "No. It's constrained, not bad. You lose URL hierarchy and some control over auto-generated tag and vendor pages, and you gain a fast, maintained, CDN-backed site with sane defaults. Plenty of stores rank well on Shopify. None of them rank because of the platform."
+    },
+    {
+      "q": "Can I remove /collections/ or /products/ from my Shopify URLs?",
+      "a": "No. The prefixes are fixed at the platform level for collection and product pages, and no app or theme change removes them. You can edit the handle after the prefix. If someone offers to strip them, they're proposing a proxy layer that will create more problems than it solves."
+    },
+    {
+      "q": "Does WooCommerce actually rank better than Shopify?",
+      "a": "Neither platform ranks. Hosting speed, content depth, internal linking and links rank. WooCommerce gives you a higher ceiling on all four and a much lower floor on speed. If nobody is going to maintain it, that higher ceiling is theoretical and the lower floor is real."
+    },
+    {
+      "q": "Should I move my Shopify blog to WordPress?",
+      "a": "Only if content is genuinely your acquisition channel and you've hit the limits of articles-plus-tags — usually somewhere past a hundred posts. If you do, serve it at yourstore.com/blog through a reverse proxy rather than on a subdomain, and redirect the old /blogs/ URLs one to one."
+    },
+    {
+      "q": "What hosting does a WooCommerce store in India actually need?",
+      "a": "Enough to keep server response time under roughly 800ms with the cache cold. In practice that means managed or well-configured VPS hosting in the ₹1,500–₹6,000/month range for most stores, plus a CDN. Entry-level shared hosting at ₹200–₹500 will not do it once WooCommerce is running."
+    },
+    {
+      "q": "Will replatforming cost me my rankings?",
+      "a": "Only if the redirect map is incomplete, which is the usual cause. Every old URL needs a 301 to its closest equivalent, including collection, tag and paginated URLs. Expect a dip for four to eight weeks even when it's done properly, and budget for it."
+    }
+  ],
+  "related": [
+    { "type": "compare", "slug": "subdomain-vs-subfolder" },
+    { "type": "compare", "slug": "nextjs-vs-wordpress-seo" },
+    { "type": "glossary", "slug": "core-web-vitals" },
+    { "type": "services", "slug": "ecommerce-seo-services" },
+    { "type": "cost", "slug": "ecommerce-seo-cost" },
+    { "type": "journal", "slug": "the-replatform-that-killed-your-traffic" }
+  ]
+}

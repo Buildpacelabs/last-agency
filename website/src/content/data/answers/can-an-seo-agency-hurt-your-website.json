@@ -1,0 +1,235 @@
+{
+  "slug": "can-an-seo-agency-hurt-your-website",
+  "type": "answers",
+  "primaryKeyword": "can an seo agency hurt your website",
+  "secondaryKeywords": [
+    "bad seo agency damage",
+    "can seo hurt my site",
+    "seo penalty from agency",
+    "how to fix damage from a bad seo agency"
+  ],
+  "cluster": "agency-mechanics",
+  "intent": "informational",
+  "h1": "How a bad SEO agency can damage your site",
+  "metaTitle": "Can an SEO Agency Hurt Your Website?",
+  "metaDescription": "Can an SEO agency hurt your website? Yes. Spam links, mass thin pages and botched redirects cause real damage. Here's how to spot and undo each one.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Yes. A bad SEO agency can get your site demoted or manually penalised — usually through paid links, mass thin pages, or a migration that breaks redirects. Redirect damage is reversible in days. Link and content damage takes months, because recovery often waits for the next core update. Losing access to your own accounts can be permanent.",
+  "takeaways": [
+    "The damage that scares people — **spam links** — is often the least dangerous. Google's systems usually ignore junk links rather than act on them.",
+    "The damage that actually kills sites is **scaled thin content** and **broken migrations**. Both are self-inflicted and both are avoidable in the contract.",
+    "**Recovery is not symmetric.** A migration can be fixed in a week. A quality demotion often waits for the next core update, months away.",
+    "The worst damage isn't algorithmic at all. It's your Business Profile, your analytics and your domain sitting in someone else's account."
+  ],
+  "sections": [
+    {
+      "h2": "Six ways an agency actually damages a site",
+      "body": [
+        "Nearly every horror story we're handed by a founder fits one of six shapes. Recovery time varies enormously between them, which is the part nobody tells you when they promise to \"fix your SEO\".",
+        "Treat the times below as realistic ranges, not schedules. Algorithmic recoveries depend on when Google next re-evaluates your site, and that isn't on a calendar you control."
+      ],
+      "table": {
+        "caption": "The six common failure modes, how they present, and realistic time to undo.",
+        "head": [
+          "The damage",
+          "How it shows up",
+          "Realistic time to undo"
+        ],
+        "rows": [
+          [
+            "Paid or spammy link building",
+            "A manual action in Search Console, or a quiet slide on your money pages with no obvious cause.",
+            "Weeks if it's a manual action you can clean and appeal. Longer if it's algorithmic."
+          ],
+          [
+            "Mass thin or scaled AI pages",
+            "Hundreds of near-identical URLs. New pages stop getting indexed. Sitewide quality drop after a core update.",
+            "Three to twelve months. Usually gated on the next core update."
+          ],
+          [
+            "Botched migration or redirect chains",
+            "A traffic cliff dated exactly to a launch. 404s in Search Console coverage.",
+            "Days to weeks, if you still have a pre-migration crawl."
+          ],
+          [
+            "Keyword cannibalisation from over-publishing",
+            "Positions oscillate. The wrong URL ranks. Nothing holds a stable spot.",
+            "One to three months of consolidation."
+          ],
+          [
+            "Business Profile owned or hijacked by the agency",
+            "You can't edit hours, photos or categories. Requests to change go through them.",
+            "Weeks via Google's ownership request flow — and it can fail."
+          ],
+          [
+            "Assets held on the agency's accounts",
+            "You leave and lose the content, the historical analytics, or the site itself.",
+            "Immediate if the contract covers it. Otherwise, a rebuild."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Date the drop before you diagnose it",
+        "body": "Pull your organic traffic chart and mark three dates: when the agency started, when they launched anything, and the known Google core update dates. A drop that lands on a launch date is a technical failure. A drop that lands on a core update is a quality problem. They have completely different fixes."
+      }
+    },
+    {
+      "h2": "Toxic links, and the disavow file that probably isn't the answer",
+      "body": [
+        "Buying links violates Google's link spam policy. That part isn't controversial. What has changed is the consequence: Google's systems increasingly neutralise spammy links — ignoring them rather than punishing the site they point at — and Google's own guidance is that most sites never need the disavow tool at all.",
+        "That matters, because the standard panic response is to disavow thousands of domains, and disavowing links that were actually helping is a far more common self-inflicted wound than the original spam. The disavow file is a loaded gun aimed at your own link profile.",
+        "So work through it in order, and stop as soon as the evidence runs out."
+      ],
+      "numbered": [
+        "**Check for a manual action first.** Search Console, Security & Manual Actions. If there's nothing there, you almost certainly don't have a link penalty, whatever a sales email told you.",
+        "**Ask the agency for the placement list.** Every URL, every month, with invoices. An agency that built real links can produce this in an afternoon. \"Our private network\" is a confession.",
+        "**Look for the footprint, not the volume.** Sudden spikes of hundreds of referring domains, identical anchor text, the same six footer templates, unrelated foreign-language sites. Pattern beats count.",
+        "**Try removal before disavow** on anything you or the agency actually paid for and can get taken down.",
+        "**Disavow at domain level, only with cause** — a live manual action, or a documented paid campaign. Not a tool's \"toxicity score\", which is a vendor's opinion dressed as a metric.",
+        "**File a reconsideration request** with the evidence attached: what happened, who did it, what you removed, what changed in your process. Reviewers are people, and honest requests get resolved faster than defensive ones."
+      ]
+    },
+    {
+      "h2": "Scaled content: the fastest route to a sitewide problem",
+      "body": [
+        "This is now the most common way an agency damages a client, and it accelerated the moment content became cheap to generate. Google's spam policies explicitly cover scaled content abuse — producing many pages primarily to manipulate rankings — and the policy is deliberately indifferent to whether a human or a model wrote them. Volume plus low value is the offence. The tooling is irrelevant.",
+        "The tell is a publishing chart that looks like a cliff face: 40 pages in a month on a site that had 30 pages total, all following one template, all thin, most never picking up a single impression. Indexing usually breaks first — Google crawls the new URLs, decides they aren't worth storing, and quietly stops.",
+        "The damage isn't confined to the bad pages either. Enough low-value URLs and the assessment applies to the site, which is why a founder's good, hand-written service pages start slipping for no visible reason.",
+        "Fixing it is unglamorous: audit every URL published under the agency, then prune, consolidate or rewrite. Pages with no impressions and no links get removed or noindexed. Near-duplicates get merged into one genuinely useful page with the redirects wired correctly. Then you wait, because sitewide quality assessments typically refresh with core updates, and those arrive a few times a year rather than on request."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The recovery nobody promises",
+        "body": "Cleaning up scaled content improves your odds. It doesn't guarantee a return to previous traffic, and any agency promising full recovery on a date is guessing. Assume three to twelve months and a partial recovery, and be pleasantly surprised."
+      }
+    },
+    {
+      "h2": "The migration that quietly deleted your traffic",
+      "body": [
+        "A replatform or redesign is the single highest-risk event in a site's life, and it's where agencies do the most damage in the shortest time. The failure is almost never exotic. It's one of six boring things.",
+        "The good news: this is the most reversible category on the list. If you can identify what broke, fixing it restores rankings faster than any other kind of recovery, because the pages themselves never lost their standing — Google just lost the thread to them."
+      ],
+      "bullets": [
+        "**Everything redirected to the homepage.** Google treats a mass redirect to an irrelevant page as a soft 404, and none of the equity carries. Redirects must be page-to-equivalent-page.",
+        "**Redirect chains and loops.** Old URL to interim URL to new URL. Each hop is a chance to lose the trail. Collapse them to a single [301](/glossary/301-redirect).",
+        "**The staging `robots.txt` shipped to production.** A single `Disallow: /` line has deindexed more sites than every penalty combined.",
+        "**Canonicals pointing at the old domain**, or at staging, or at nothing.",
+        "**URL structure changed with no mapping file.** If nobody exported the old URL list before launch, nobody can build the redirect map afterwards.",
+        "**Content dropped in the rebuild.** New design, shorter pages, half the copy gone — and with it the reason the page ranked."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The one artefact that saves you",
+        "body": "A full crawl of the old site, exported before launch, with URLs, titles, and traffic per page. If your agency can't produce one, that absence is itself the finding — and it tells you how the migration was run."
+      }
+    },
+    {
+      "h2": "The damage Google never sees: access and ownership",
+      "body": [
+        "Algorithmic damage is recoverable. Ownership damage frequently isn't, and it's the category founders discover at the worst possible moment — the week they decide to leave.",
+        "None of this requires bad intent, incidentally. Most of it happens because an account got created in a hurry on whichever Google login was open at the time. It's still your problem to unwind.",
+        "Here is what must be in your name, on your login, before any work starts."
+      ],
+      "bullets": [
+        "**Google Business Profile** — you're the Owner, the agency is a Manager. Getting ownership back from an unresponsive holder runs through Google's request process, takes weeks, and can be refused.",
+        "**Google Analytics 4** — the property lives in *your* account with the agency granted access. If the property is theirs, you lose every year of historical data when you leave, and it cannot be recreated.",
+        "**Search Console** — your verification, your property. Same reasoning, plus your entire query history.",
+        "**The domain** — registered to your company, at a registrar you can log into. A domain in an agency's name is leverage, whether or not they ever use it.",
+        "**The CMS and hosting** — your account, billed to your card. \"We host it for you\" means \"we can switch it off\".",
+        "**The content itself** — copyright assigns to you on payment, in writing. Otherwise you're renting the words on your own site."
+      ]
+    },
+    {
+      "h2": "How to check whether it already happened to you",
+      "body": [
+        "Ninety minutes and no budget. Run these in order — the early ones rule out the expensive diagnoses."
+      ],
+      "numbered": [
+        "**Search Console → Security & Manual Actions.** Nothing there means no manual penalty. This takes ten seconds and eliminates the scariest possibility.",
+        "**Overlay your traffic chart with dates.** Agency start, every launch, every known core update. The alignment usually names the culprit on its own.",
+        "**Compare published pages to indexed pages.** Coverage report versus your sitemap. Publish 60, index 12, and you have a quality problem, not a volume problem.",
+        "**Chart referring domains by month.** Healthy is a gentle climb. A vertical spike in one month, from domains you don't recognise, is a bought batch.",
+        "**Crawl your own site.** Any crawler, free tier, one run. Look for redirect chains, 404s from internal links, duplicate titles and [cannibalisation](/glossary/keyword-cannibalization).",
+        "**Check who owns what.** Business Profile owner, analytics property owner, WHOIS on your domain, admin on your CMS. Four logins, four answers."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "What a clean handover looks like",
+        "body": "Every account in your name. A monthly link placement report with live URLs. A pre-migration crawl in your Drive. Content ownership assigned on payment. If your current contract has none of those, the next one should."
+      }
+    },
+    {
+      "h2": "The contract terms that prevent all six",
+      "body": [
+        "Damage is easier to prevent in a contract than to unwind in Search Console. These clauses cost nothing to ask for, and an agency's reaction to them tells you more than the pitch did.",
+        "For what it's worth, this is how we run our own engagements: month-to-month after the first quarter, 30 days' notice, and the client keeps every asset — accounts, content, data, all of it. That's not generosity. It's the only structure that makes our guarantee mean anything, because a client who can leave any month is a client we have to keep earning. See [how the SEO engagement is structured](/seo), or read [what a bad agency actually costs you](/journal/what-a-bad-seo-agency-actually-costs-you) for the full arithmetic."
+      ],
+      "bullets": [
+        "All accounts created in the client's name from day one, agency granted access, never the reverse.",
+        "Monthly link report listing every live placement URL. An explicit written ban on paid links and private networks.",
+        "Content ownership and copyright assign to the client on payment.",
+        "No migration without a pre-launch crawl, a redirect map and a rollback plan, signed off by both sides.",
+        "A published-page cap or a quality gate, so nobody hits a volume target by shipping filler.",
+        "Exit on 30 days' notice with a documented handover. Long lock-ins protect the agency's revenue, not your site."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can SEO actually get my site penalised by Google?",
+      "a": "Yes, though outright manual penalties are rarer than people think. Check Search Console under Security & Manual Actions — if it's empty, you don't have a manual penalty. Far more common is an algorithmic demotion from scaled thin content or a broken migration, which shows up as a slide rather than a notice."
+    },
+    {
+      "q": "How do I know if my agency built bad links?",
+      "a": "Ask for the placement list: every URL, every month, with invoices. A real link programme produces it in an afternoon. Then chart your referring domains by month — a vertical spike of unfamiliar domains in a single month is a bought batch, not earned coverage."
+    },
+    {
+      "q": "Should I disavow the links my old agency built?",
+      "a": "Only with cause — a live manual action or a documented paid campaign. Google's guidance is that most sites never need the disavow tool, because its systems usually ignore spammy links. Disavowing links that were quietly helping is a more common and more expensive mistake than the original spam."
+    },
+    {
+      "q": "How long does it take to recover from a bad SEO agency?",
+      "a": "It depends entirely on what broke. A migration fault fixed in a week can restore rankings within a month. A sitewide quality demotion from scaled content typically takes three to twelve months, because the reassessment usually waits for a core update. Nobody can promise a date on that second one."
+    },
+    {
+      "q": "Can I get my Google Business Profile back from an agency?",
+      "a": "Usually, but not instantly. Google has an ownership request process: you request access, the current owner has a window to respond, and if they don't, Google can transfer it. It takes weeks and it can fail if they actively refuse. Far easier to be the Owner from day one and grant them Manager access."
+    },
+    {
+      "q": "Who owns the content my agency wrote for me?",
+      "a": "Whatever the contract says — and if it says nothing, the answer may not be you. Get copyright assignment on payment written in, along with access to the source files. This is worth settling before the relationship sours, not after."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "toxic-backlinks"
+    },
+    {
+      "type": "services",
+      "slug": "penalty-recovery-services"
+    },
+    {
+      "type": "journal",
+      "slug": "the-replatform-that-killed-your-traffic"
+    },
+    {
+      "type": "answers",
+      "slug": "what-are-the-red-flags-of-a-bad-seo-agency"
+    },
+    {
+      "type": "compare",
+      "slug": "white-hat-vs-black-hat-seo"
+    },
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "answers",
+      "slug": "how-can-an-seo-agency-help-my-business"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "slug": "pillar-page",
+  "type": "glossary",
+  "primaryKeyword": "pillar page",
+  "secondaryKeywords": [
+    "pillar content",
+    "what is a pillar page",
+    "pillar page example",
+    "hub page seo",
+    "pillar page length"
+  ],
+  "cluster": "content",
+  "intent": "informational",
+  "h1": "Pillar page",
+  "metaTitle": "Pillar Page: What It Is and How to Build One",
+  "metaDescription": "A pillar page is the hub that routes readers to every deep page on a topic. Here's the right length, the linking pattern, and when not to build one.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Pillar page",
+  "definition": "A pillar page is the broad hub page for a topic that introduces every subtopic and links out to the deeper page covering each one.",
+  "answer": "A pillar page is the broad hub page for a topic that links out to every deeper page beneath it. Its job is coverage and routing, not depth — which is why the 5,000-word pillar is usually a mistake. If the pillar answers everything, the cluster pages beneath it have nothing left to say.",
+  "takeaways": [
+    "A pillar exists to route people and internal link equity to the deep pages. It is a switchboard, not an encyclopedia.",
+    "Length should fall out of the number of subtopics — typically 1,200 to 2,000 words, with 150 to 300 words per subtopic before the link down.",
+    "A pillar that fully answers each subtopic will compete with its own cluster pages. You built a cannibalisation problem and called it a strategy.",
+    "If you have fewer than five or six deep pages to link to, you don't need a pillar yet. Build the deep pages."
+  ],
+  "sections": [
+    {
+      "h2": "What a pillar page is for",
+      "body": [
+        "A pillar page does three jobs, and only three. It gives a broad topic one URL that can compete for the head term. It gives a reader who arrived knowing nothing a map of the whole subject and a route to the specific bit they need. And it collects the internal links pointing at the topic and distributes them down to the pages that convert.",
+        "That third job is the one people underrate. External links land on the pillar because it's the shareable, linkable version of the topic. Internal links point up at it from everywhere. It becomes the strongest page in the cluster — which is exactly why it should be spending that strength on the deep pages rather than hoarding it.",
+        "The clearest test of a pillar: read it, and count how many times you wanted to click through for more. If the answer is zero, you wrote an article and filed it under the wrong name."
+      ]
+    },
+    {
+      "h2": "The case against the 5,000-word pillar",
+      "body": [
+        "Somewhere around 2017 \"pillar page\" started to mean \"very long guide\", and the advice hardened into a word count. It's the most common way clusters fail, and it fails in three distinct directions."
+      ],
+      "subs": [
+        {
+          "h3": "It competes with its own cluster",
+          "body": [
+            "If the pillar contains 900 exhaustive words on implant costs, and there's also a dedicated cost page, Google has two of your URLs answering the same query. It will pick one, change its mind periodically, and split your internal links across both. That's [keyword cannibalisation](/glossary/keyword-cannibalization), self-inflicted, at the planning stage."
+          ]
+        },
+        {
+          "h3": "It can't satisfy forty intents at once",
+          "body": [
+            "A page ranks by matching one dominant intent well. A monster pillar is trying to serve the person choosing a clinic, the person comparing prices, the person worried about recovery and the person who doesn't know what an implant is. It ends up mediocre for all four, and each one is losing to a page that's about only them."
+          ]
+        },
+        {
+          "h3": "Nobody ever updates it",
+          "body": [
+            "Five thousand words is a page that gets written once and quietly rots. A 1,500-word pillar can be revised in an afternoon when a subtopic changes, which is the difference between a hub that stays current and one that's still describing your 2023 process."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Word count is not the deliverable",
+        "body": "If an agency's content plan specifies \"one 5,000-word pillar\" before anyone has mapped the subtopics, the number was chosen first and the topic second. Length should be an output of the structure, never an input to it."
+      }
+    },
+    {
+      "h2": "Building one: shape, links, and when to skip it",
+      "body": [
+        "The pattern below is what we use. It's deliberately unimpressive."
+      ],
+      "bullets": [
+        "**Open with the topic answered directly** — 40 to 60 words, snippet-shaped, before any preamble.",
+        "**One section per subtopic**, 150 to 300 words, ending in a link down to the deep page with that page's own subject as the anchor text.",
+        "**One or two tables** — comparison, cost ranges, options. Tables are what a hub page is genuinely good at and they earn snippets.",
+        "**Every deep page links back up** to the pillar, once, with a consistent anchor.",
+        "**A clear next step at the end**, because the person who read the whole map is the closest to deciding.",
+        "**No section that fully resolves a subtopic** with its own deep page. Summarise, then hand off. That restraint is the entire skill."
+      ],
+      "table": {
+        "caption": "A pillar page and a category page are not the same thing.",
+        "head": ["", "Pillar page", "Category page"],
+        "rows": [
+          ["Purpose", "Explain a topic and route to depth", "List items and let people filter"],
+          ["Content", "Written prose plus curated internal links", "Mostly automated listings, with a little intro copy"],
+          ["Query it targets", "Broad head term, informational or mixed intent", "Broad commercial or product intent"],
+          ["When to build it", "You have six or more deep pages needing a hub", "You have a catalogue"],
+          ["Its usual failure", "Bloating into a guide nobody finishes", "Thin text bolted on top of a product grid"]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "When not to build a pillar at all",
+          "bullets": [
+            "**You have fewer than five or six deep pages.** A hub with three links is a page with three links. Build the depth, then the hub.",
+            "**A category or product page already ranks for the head term.** Adding a prose pillar targeting the same query creates a competitor you own.",
+            "**The head term's results are entirely commercial** — listings, marketplaces, ads. A 1,500-word explainer isn't winning that page, and the effort belongs on the long tail.",
+            "**You can't name the subtopics yet.** Then the real job is [topic cluster](/glossary/topic-cluster) planning, not writing."
+          ]
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long should a pillar page be?",
+      "a": "Usually 1,200 to 2,000 words, but length should follow structure rather than a target: 150 to 300 words per subtopic, times the number of subtopics, plus an opening answer and a table or two. If it's running past 3,000, you're probably answering things your cluster pages exist to answer."
+    },
+    {
+      "q": "What's the difference between a pillar page and a blog post?",
+      "a": "A blog post covers one thing in depth and stands alone. A pillar covers a whole topic at summary depth and exists to route readers and internal links to the posts beneath it. Same word processor, opposite jobs — a pillar with no outbound internal links is just a long blog post."
+    },
+    {
+      "q": "Should a pillar page target the head keyword?",
+      "a": "Usually yes — it's the only page in the cluster broad enough to. But check the results first. If the head term returns marketplace listings, local packs and ads, no prose page is going to win it, and the pillar's real value becomes internal routing rather than ranking."
+    },
+    {
+      "q": "Is a pillar page the same as a category page?",
+      "a": "No. A category page lists items and lets people filter; a pillar explains a topic and links out to deeper explanations. On an ecommerce site the category page usually owns the commercial head term already, which means a pillar targeting the same query is competing with your own money page."
+    },
+    {
+      "q": "How many links should a pillar page have?",
+      "a": "One down to each cluster page from the section that summarises it — so six to fifteen internal links in a typical cluster. Use each destination's own subject as the anchor. Ten links all reading the same head term tell Google nothing about which page owns which question."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "topic-cluster" },
+    { "type": "glossary", "slug": "internal-linking" },
+    { "type": "glossary", "slug": "keyword-cannibalization" },
+    { "type": "journal", "slug": "internal-linking-beats-link-building" },
+    { "type": "journal", "slug": "how-many-blog-posts-you-actually-need" },
+    { "type": "services", "slug": "content-marketing-services" }
+  ]
+}

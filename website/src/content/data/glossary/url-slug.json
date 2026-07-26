@@ -1,0 +1,127 @@
+{
+  "slug": "url-slug",
+  "type": "glossary",
+  "primaryKeyword": "url slug",
+  "secondaryKeywords": [
+    "seo friendly url",
+    "url structure seo",
+    "permalink structure",
+    "should i change my url",
+    "url best practices"
+  ],
+  "cluster": "on-page",
+  "intent": "informational",
+  "h1": "URL slug",
+  "metaTitle": "URL Slug: What It Is and How to Write One",
+  "metaDescription": "A URL slug is the readable part of a web address after the domain. Short, lowercase, hyphenated. Here is when renaming one is worth the redirect risk.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "URL slug",
+  "definition": "A URL slug is the human-readable part of a web address that identifies a specific page, sitting after the domain and any folder path.",
+  "answer": "A URL slug is the readable end of a web address — the `url-slug` in `/glossary/url-slug`. Keep it lowercase, hyphenated, short and descriptive. The rule most guides dodge: don't rename the slug on a page that already ranks unless the current one actively misleads, because the redirect costs more than the tidiness gains.",
+  "takeaways": [
+    "Lowercase, hyphens, no stop words, ideally under five words. Set it right at publish and forget it.",
+    "URL wording is a weak ranking signal. Google has said so for years. Readability for humans is the better reason to care.",
+    "Renaming a ranking page's slug is a trade: small tidiness gain, real reprocessing cost. The default answer is no.",
+    "For Hindi and other Indian-language content, a transliterated Latin slug usually beats a Devanagari one — it survives copy-paste."
+  ],
+  "sections": [
+    {
+      "h2": "The conventions, and the reason behind each one",
+      "body": [
+        "None of these are arbitrary. Each fixes a specific failure mode."
+      ],
+      "bullets": [
+        "**Lowercase only.** Many servers treat `/Pricing` and `/pricing` as two different URLs. That's two versions of the same page, split signals, and a duplicate-content headache you created by pressing shift.",
+        "**Hyphens, not underscores.** Google treats a hyphen as a word separator and has historically treated an underscore as a joiner, so `seo_cost_india` can be read as one long token. Hyphens have been the recommendation for well over a decade.",
+        "**Drop stop words that carry nothing.** `/what-is-a-canonical-tag` and `/canonical-tag` describe the same page; the second is easier to say aloud and to paste into a message.",
+        "**Aim for three to five words.** Long enough to be self-describing, short enough to survive being read out on a phone call.",
+        "**No spaces, no `%20`, no ampersands, no capitals.** Anything that gets percent-encoded makes the URL unreadable the moment somebody shares it.",
+        "**Match the page, not the campaign.** A slug like `/summer-offer-2024` becomes a lie in October."
+      ]
+    },
+    {
+      "h2": "Dates, folders, and what URL structure actually signals",
+      "body": [
+        "The default WordPress permalink puts the date in the URL: `/2019/03/seo-tips`. It ages your content in public. A reader looking at a result from `/2019/` decides it's stale before they click, and you can't fix that by updating the article — the date is in the address. Unless you publish genuine dated news, strip it.",
+        "Folders are more interesting. A path like `/glossary/url-slug` is useful because it mirrors a real hierarchy: it feeds [breadcrumb navigation](/glossary/breadcrumb-navigation), it tells a reader where they are, and it makes site-wide analysis trivial (every glossary page shares a prefix). What it does not do is confer topical authority by itself. Google has been clear for years that URL structure is a minor signal — a folder called `/best-seo-services/` does not make the pages inside it authoritative.",
+        "So build folders for humans and for your own reporting. Don't build them expecting a ranking boost, and don't nest four levels deep to express a taxonomy nobody browses."
+      ]
+    },
+    {
+      "h2": "When renaming is worth the redirect, and when it isn't",
+      "body": [
+        "This is the section most guides skip, because the honest answer is unglamorous: usually, leave it alone.",
+        "Google confirmed back in 2016 that a 301 redirect doesn't cost you PageRank. That's the technical answer and it's true. The practical answer is messier. A rename means reprocessing lag while Google re-crawls and re-associates the URL, every inbound link now takes an extra hop, any third-party tracking keyed to the exact URL breaks, social share counts reset, and somebody eventually forgets to update an internal link. None of that is fatal. All of it is friction you chose."
+      ],
+      "subs": [
+        {
+          "h3": "Worth renaming",
+          "bullets": [
+            "The slug names a product, service or city you no longer serve.",
+            "It's a CMS default — `/?p=1423`, `/page-2-copy`, `/untitled-3`.",
+            "It contains a typo, a competitor's name, or a claim you can no longer make.",
+            "You're merging two cannibalising pages anyway, so the redirect is happening regardless. See [keyword cannibalization](/glossary/keyword-cannibalization)."
+          ]
+        },
+        {
+          "h3": "Not worth renaming",
+          "bullets": [
+            "The slug is a bit long, or has one stop word in it.",
+            "You want the exact keyword in the URL. That's the weakest signal on this page.",
+            "You changed the H1 and want the URL to match. It doesn't need to.",
+            "Somebody on the team finds the inconsistency annoying. Note it in a style guide and apply it to new pages only."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The one thing you cannot skip",
+        "body": "If you do rename, the 301 goes in the same deploy as the change — not next sprint. A slug change without a redirect turns a ranking page into a 404, loses every inbound link pointing at it, and is one of the most common ways a site migration quietly destroys a year of work."
+      }
+    },
+    {
+      "h2": "Hindi, transliteration and non-Latin slugs",
+      "body": [
+        "If you publish in Hindi, Marathi, Tamil or Bengali, you have three options and they behave differently.",
+        "A **native-script slug** — `/एसईओ-क्या-है` — is valid and Google handles it fine. The problem is downstream: it gets percent-encoded the moment it's copied into an email, a WhatsApp message or an analytics report, where it arrives as an unreadable string of `%E0%A4` sequences. That's a real cost every time somebody shares the page.",
+        "A **transliterated Latin slug** — `/seo-kya-hai` — stays readable everywhere and matches how a large share of Hindi-language queries are actually typed in India, in Latin script rather than Devanagari. This is usually the right default.",
+        "An **English slug with native-script content** — `/what-is-seo-hindi` — is the tidiest for a mixed-language site with a single URL convention, and costs you nothing meaningful because the page's language is declared in the markup and the content, not the address. We go further into this in [SEO in Hindi and Indian languages](/journal/seo-in-hindi-and-indian-languages)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does the URL slug affect SEO?",
+      "a": "A little, and less than most people assume. Google treats URL wording as a minor relevance signal. The bigger effects are human: a readable URL gets clicked and shared more, and a sensible folder structure feeds breadcrumbs and makes your own reporting far easier."
+    },
+    {
+      "q": "Should I change an old URL to add my keyword?",
+      "a": "No. The gain is marginal and the cost is real: reprocessing lag, an extra hop on every inbound link, broken tracking, and the internal link somebody forgets to update. Rename only when the current slug is misleading, broken or a CMS default."
+    },
+    {
+      "q": "Hyphens or underscores in URLs?",
+      "a": "Hyphens. Google treats a hyphen as a word separator, while an underscore has historically been read as joining words together. It's a long-standing recommendation and there's no upside to going the other way."
+    },
+    {
+      "q": "Should dates be in my blog URLs?",
+      "a": "Only for genuine dated news. For evergreen articles the date makes the page look stale in search results and you can't fix that by updating the content. Strip dates from the permalink structure before the archive gets large enough to make the migration painful."
+    },
+    {
+      "q": "How long should a URL slug be?",
+      "a": "Three to five words is a good working range. Long enough to describe the page, short enough to read aloud. There's no hard limit that matters in practice — the constraint is human legibility, not a crawler restriction."
+    },
+    {
+      "q": "Can I use Hindi characters in a URL?",
+      "a": "Yes, and Google handles them correctly. But they get percent-encoded when copied into messages, emails or analytics reports, arriving as unreadable strings. A transliterated Latin slug is usually the better trade for a page that gets shared."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "301-redirect" },
+    { "type": "glossary", "slug": "breadcrumb-navigation" },
+    { "type": "glossary", "slug": "canonical-tag" },
+    { "type": "compare", "slug": "subdomain-vs-subfolder" },
+    { "type": "services", "slug": "site-migration-seo" },
+    { "type": "journal", "slug": "seo-in-hindi-and-indian-languages" }
+  ]
+}

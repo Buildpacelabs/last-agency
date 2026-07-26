@@ -1,0 +1,177 @@
+{
+  "slug": "is-seo-worth-the-money",
+  "type": "cost",
+  "primaryKeyword": "is seo worth the money",
+  "secondaryKeywords": [
+    "is seo worth it for small business",
+    "seo roi india",
+    "does seo give return on investment",
+    "is seo worth paying for",
+    "seo payback period"
+  ],
+  "cluster": "seo-roi",
+  "intent": "commercial",
+  "h1": "Is SEO worth the money? Do this maths before you sign anything",
+  "metaTitle": "Is SEO Worth the Money? The Payback Maths in INR",
+  "metaDescription": "Is SEO worth the money? At ₹75,000 a month it must return about ₹9 lakh a year. Here is the break-even maths, plus three businesses we tell to skip SEO.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "SEO is worth it when your gross profit from organic beats the fee, and the fee is bigger than it looks: ₹75,000 a month is ₹9,00,000 a year. Divide that by your gross margin to get the organic revenue you need. At 60% margin that's ₹15 lakh. If that number looks impossible, don't buy SEO.",
+  "takeaways": [
+    "Break-even revenue = **annual fee ÷ gross margin**. At ₹75,000/mo and 60% margin, you need ₹15,00,000 of organic revenue a year.",
+    "The deepest cash hole is usually around **month 6**, not month 1. Budget for it before you start.",
+    "High-margin, high-ticket businesses clear the bar with three enquiries a month. Low-margin volume businesses need seventy-plus.",
+    "Three business types genuinely shouldn't buy SEO. We say so on the call, and we've said so on this page.",
+    "The guarantee caps the downside: beat your frozen 90-day baseline or we keep working free. It's never a promised ranking position."
+  ],
+  "sections": [
+    {
+      "h2": "The formula, in one line",
+      "body": [
+        "Almost every \"is SEO worth it\" argument collapses because both sides are comparing fee against *revenue* instead of fee against *gross profit*. Revenue is not money you keep.",
+        "So the calculation is short. Take your annual fee. Divide by your gross margin. That's the organic revenue you must generate just to be square. Then divide by average order value to get orders, and by your close rate to get enquiries."
+      ],
+      "numbered": [
+        "**Annual fee.** ₹75,000/month = ₹9,00,000. At our smaller-site rate of ₹40,000, it's ₹4,80,000.",
+        "**Break-even organic revenue** = annual fee ÷ gross margin. At 60% margin on ₹9,00,000, that's ₹15,00,000.",
+        "**Orders or customers needed** = break-even revenue ÷ average order value.",
+        "**Enquiries needed** = orders ÷ close rate. Divide by twelve for the monthly number you'll actually be judged on."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Add the hidden line",
+        "body": "The retainer is not the bill. Developer hours, your own review time, tools and asset production add roughly 40% on top over twelve months. Run the maths on ₹12,80,000, not ₹9,00,000 — the full breakdown is in [the real cost of SEO across 12 months](/cost/total-cost-of-seo)."
+      }
+    },
+    {
+      "h2": "Five businesses, same fee, wildly different answers",
+      "body": [
+        "Here's the formula run against five business shapes we see constantly in India, all against the same ₹9,00,000 annual fee. The illustrative margins and close rates are placeholders — swap in your own, the structure is what matters."
+      ],
+      "table": {
+        "caption": "Break-even requirement for a ₹75,000/month SEO retainer (₹9,00,000/year) by business shape.",
+        "head": ["Business", "Order value", "Gross margin", "Close rate", "Organic revenue needed", "Enquiries or orders / month"],
+        "rows": [
+          ["D2C skincare brand", "₹1,800", "55%", "Checkout", "₹16.4 lakh", "76 orders"],
+          ["B2B SaaS, annual contract", "₹1,20,000", "80%", "20%", "₹11.3 lakh", "4 qualified leads"],
+          ["Dental clinic", "₹18,000", "60%", "40%", "₹15.0 lakh", "17 enquiries"],
+          ["Interior design studio", "₹8,00,000", "25%", "15%", "₹36.0 lakh", "3 enquiries"],
+          ["Packers and movers", "₹12,000", "35%", "25%", "₹25.7 lakh", "71 enquiries"]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "Read the last column, not the fifth",
+        "body": "₹36 lakh sounds terrifying until you see it's three enquiries a month. ₹16.4 lakh sounds manageable until you see it's 76 orders a month from a standing start. Order value and margin decide whether SEO is easy or brutal for you — the fee is identical either way."
+      }
+    },
+    {
+      "h2": "The lag: where the money goes before it comes back",
+      "body": [
+        "SEO doesn't return money on the schedule you pay for it. Pages get indexed, then earn impressions, then earn clicks, then earn leads — and each step takes weeks. Meanwhile the invoice arrives every month regardless.",
+        "Here's the shape of a twelve-month engagement where organic gross profit ramps at a normal pace. These are modelled figures, not a forecast — the point is the curve, not the cells."
+      ],
+      "table": {
+        "caption": "Modelled cash position over 12 months on a ₹75,000/month retainer.",
+        "head": ["Quarter", "Cumulative fees", "Organic gross profit that quarter", "Cumulative position"],
+        "rows": [
+          ["Q1 (months 1–3)", "₹2,25,000", "₹25,000", "−₹2,00,000"],
+          ["Q2 (months 4–6)", "₹4,50,000", "₹1,25,000", "−₹3,00,000"],
+          ["Q3 (months 7–9)", "₹6,75,000", "₹2,75,000", "−₹2,50,000"],
+          ["Q4 (months 10–12)", "₹9,00,000", "₹4,75,000", "₹0"]
+        ]
+      },
+      "bullets": [
+        "**The hole is deepest around month 6**, at roughly ₹3,00,000. That's the number to have in the bank, not the ₹75,000 monthly.",
+        "**Break-even usually lands between month 9 and month 14** in Indian markets — later for long B2B sales cycles, earlier for transactional categories where the buyer searches and buys the same week.",
+        "**The return lives in year two.** Months 13–24 carry the same fee against a content and link base that's already built, which is the entire economic argument for SEO."
+      ]
+    },
+    {
+      "h2": "Three businesses we tell to skip SEO entirely",
+      "body": [
+        "We turn work away for these reasons more often than people expect. Taking the retainer would be easy; the guarantee would then eat us alive, which is presumably why most agencies don't offer one."
+      ],
+      "subs": [
+        {
+          "h3": "1. Nobody is searching for what you sell yet",
+          "body": [
+            "If you've invented a category, or you sell something buyers don't know exists, there's no search demand to capture. SEO harvests existing intent — it doesn't create it.",
+            "Check before you spend: pull your category's head terms in Search Console or any keyword tool. If the whole cluster is a few hundred searches a month nationally, your money belongs in paid social, sales outbound or partnerships. Come back when people start typing your category name."
+          ]
+        },
+        {
+          "h3": "2. You need revenue in the next 90 days",
+          "body": [
+            "Runway shorter than the payback period is the clearest disqualifier there is. If you're nine months from running out of cash, spending ₹75,000 a month on a channel that breaks even at month twelve is arithmetic working against you.",
+            "Paid search answers the same question in three weeks. Buy the fast channel while the clock is loud, then buy the slow one when it isn't."
+          ]
+        },
+        {
+          "h3": "3. Your site converts at close to nothing",
+          "body": [
+            "SEO multiplies whatever your site already does. If a thousand visitors currently produce two enquiries, doubling traffic produces four. That's not a return, that's a rounding error with an invoice attached.",
+            "Fix the offer, the pricing page and the enquiry form first. That work costs a fraction of a retainer and it raises the ceiling on everything you spend afterwards."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The same ₹9 lakh in Google Ads — what that comparison really shows",
+      "body": [
+        "The honest answer to \"should I just run ads instead\" is: probably first, not instead.",
+        "Ads tell you within three weeks whether people search for your thing, click your offer, and buy at a price that works. That's an enormously valuable answer and SEO takes nine months to give it. Ads also stop the day the card declines — you're renting demand, and the rent goes up when competitors bid.",
+        "SEO is the opposite trade. Slow, uncertain at the start, and it leaves you owning pages that keep earning after you stop paying. Traffic decays over months rather than hours when you pause.",
+        "The sequence that actually works: run ads to find which queries convert and at what cost, then commission SEO against exactly those queries. You'll have paid to remove most of the guesswork, which is a rational use of ad budget even when the ads themselves break even. The full comparison sits in [SEO against Google Ads](/compare/google-ads-vs-seo)."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The one number that ends the debate",
+        "body": "Your cost per acquisition from paid, today. If it's comfortably inside your margin, keep buying it and add SEO for compounding. If it's already at the edge, SEO isn't optional — paid has no room to scale without going underwater."
+      }
+    },
+    {
+      "h2": "How we cap the downside without promising a position",
+      "body": [
+        "Everything above is a forecast, and forecasts are how agencies get paid for being wrong. So we moved the risk.",
+        "On day one we freeze your trailing-90-day count of qualified leads from organic search. That number is written down before any work starts, and it's yours, not a benchmark we picked. If we haven't beaten it in 90 days, we keep working free until we do.",
+        "What we will never do is promise you position one for a keyword. Nobody controls Google's index, Google's own guidelines warn against exactly that claim, and any agency offering it is either buying links or counting on you not checking. A guarantee against your own baseline is a real commitment. A promised ranking is a sales line.",
+        "That's also why we take three clients a month. You cannot carry that risk at volume, and anyone who says they can hasn't priced it. Our rates: SEO from ₹75,000/month, smaller sites from ₹40,000, ex-GST, month-to-month after the first quarter, and you keep every asset if you leave. See [what an SEO agency costs](/cost/seo-agency-cost) for how that compares to the rest of the market."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I calculate SEO ROI?",
+      "a": "Gross profit from organic minus total SEO cost, divided by total SEO cost. The two mistakes are using revenue instead of gross profit, and using the retainer instead of the true cost — developer time, your own hours, tools and asset production add roughly 40% over a year."
+    },
+    {
+      "q": "How long before SEO pays for itself?",
+      "a": "Typically month 9 to month 14 in Indian markets. Transactional categories with short buying cycles land earlier; B2B with a six-month sales cycle lands later, because a lead generated in month four doesn't become revenue until month ten. Budget for the deepest cash point around month six."
+    },
+    {
+      "q": "Is SEO worth it for a small business?",
+      "a": "It depends almost entirely on margin and order value. A design studio needs three enquiries a month to justify ₹75,000; a low-margin volume business might need seventy. If you're a single-location service business, local SEO at ₹15,000–₹25,000 a month usually beats a national retainer outright."
+    },
+    {
+      "q": "Is it better to spend on Google Ads than SEO?",
+      "a": "Usually first, rather than instead. Ads tell you in three weeks which queries convert and at what cost — an answer SEO takes nine months to produce. Then commission SEO against exactly those proven queries. Ads rent demand; SEO builds pages you keep."
+    },
+    {
+      "q": "What happens if SEO doesn't work?",
+      "a": "With most agencies, the invoice arrives anyway — a retainer buys capacity, not outcomes. With us, if we haven't beaten your frozen 90-day baseline of qualified organic leads within 90 days, we keep working free until we do. That's a commitment against your number, not a promised ranking position."
+    },
+    {
+      "q": "Is cheap SEO ever worth the money?",
+      "a": "Rarely, because the failure mode is invisible. A ₹8,000 retainer doesn't produce bad rankings, it produces no change at all, and you spend a year concluding the channel doesn't work for your category. The cost isn't the ₹96,000 — it's the year."
+    }
+  ],
+  "related": [
+    { "type": "cost", "slug": "total-cost-of-seo" },
+    { "type": "cost", "slug": "seo-agency-cost" },
+    { "type": "compare", "slug": "google-ads-vs-seo" },
+    { "type": "journal", "slug": "is-seo-worth-the-cost" },
+    { "type": "answers", "slug": "what-is-the-roi-of-seo" },
+    { "type": "answers", "slug": "is-cheap-seo-worth-it" }
+  ]
+}

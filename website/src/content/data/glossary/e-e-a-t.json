@@ -1,0 +1,117 @@
+{
+  "slug": "e-e-a-t",
+  "type": "glossary",
+  "primaryKeyword": "e-e-a-t",
+  "secondaryKeywords": [
+    "what is eeat in seo",
+    "experience expertise authoritativeness trust",
+    "google quality rater guidelines",
+    "eeat signals",
+    "ymyl content"
+  ],
+  "cluster": "content",
+  "intent": "informational",
+  "h1": "E-E-A-T",
+  "metaTitle": "E-E-A-T: What Google Actually Means by It",
+  "metaDescription": "E-E-A-T means experience, expertise, authoritativeness and trust. It isn't a score. Here's what raters look for and a 20-minute fix for any page.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "E-E-A-T",
+  "definition": "E-E-A-T is the experience, expertise, authoritativeness and trust framework Google's human quality raters use to judge whether a page deserves to be shown.",
+  "answer": "E-E-A-T stands for experience, expertise, authoritativeness and trust. It's the framework Google's human quality raters use to judge pages — not a score in the algorithm and not something you can check. Trust is the load-bearing letter; the other three exist to support it. You show it with page furniture, not adjectives.",
+  "takeaways": [
+    "The second E — **Experience** — was added in December 2022. It asks whether the author has actually done the thing, which is the one signal a language model can't manufacture honestly.",
+    "There is no E-E-A-T score and no dial. Raters don't change individual rankings; their judgments are used to evaluate the systems that do.",
+    "Google's own rater guidelines call Trust the most important member of the family. The others feed it.",
+    "Most Indian agency and clinic sites fail Trust before they get to anything else: no address, no named people, no prices, no policies."
+  ],
+  "sections": [
+    {
+      "h2": "What the four letters ask",
+      "body": [
+        "E-E-A-T comes from Google's Search Quality Rater Guidelines — a public document written for the thousands of contractors Google pays to evaluate search results. It's not written for you, which is exactly why it's worth reading: it's the least marketed description of what Google considers a good page.",
+        "Each letter is a question about the page and the people behind it."
+      ],
+      "table": {
+        "caption": "The four letters, and what each one looks like when it's actually present.",
+        "head": ["Letter", "What it asks", "What it looks like on the page"],
+        "rows": [
+          ["Experience (added 2022)", "Has this person actually done the thing?", "First-hand detail: what you ran, what broke, a screenshot of your own dashboard, dates, the part that went wrong."],
+          ["Expertise", "Does the author know the subject?", "A named author with a bio and a verifiable track record. Not \"Admin\", not \"Team\"."],
+          ["Authoritativeness", "Is this site a recognised source on this topic?", "Other credible sites citing you, a coherent body of work on the subject, third-party coverage that isn't a press release."],
+          ["Trust", "Can a reader safely act on this?", "Real address and phone, clear pricing, refund and privacy policies, sources cited, nothing hidden until checkout."]
+        ]
+      }
+    },
+    {
+      "h2": "\"Not a ranking factor\" is the important part",
+      "body": [
+        "Quality raters don't move your rankings. They score sample results, and those scores are used to evaluate whether changes to Google's systems made search better or worse. So there's no E-E-A-T score attached to your domain, nothing to look up, and nothing an agency can raise by 12 points this quarter.",
+        "That sounds like it makes the concept useless. It does the opposite — it tells you what to do. You can't optimise a score that doesn't exist, but you can make a page that a paid stranger, reading it cold against a 170-page rubric, would pass. That's a concrete brief.",
+        "Here's the uncomfortable version for most Indian service sites. You don't have an expertise problem. You have a trust problem: no registered address in the footer, no named humans, no pricing, a WhatsApp number and a contact form. Ten years of genuine expertise, invisible to anyone who hasn't already met you."
+      ]
+    },
+    {
+      "h2": "Trust carries the load, and YMYL raises the bar",
+      "body": [
+        "Google's rater guidelines say it directly: Trust is the most important member of the E-E-A-T family. A page can be written by a genuine expert with real experience and still fail, if the site it sits on is untrustworthy — no contact details, misleading claims, or a checkout flow that surprises people.",
+        "The bar moves with the stakes. **YMYL** — Your Money or Your Life — covers health, finance, legal, safety, and major life decisions, and raters are told to apply the highest standard to those pages. That's most of what Indian medical, fintech, insurance and legal marketers publish.",
+        "For an IVF clinic or a mutual fund distributor, an unattributed 1,200-word blog post isn't competitive and shouldn't be. Those pages need a named clinician or licensed professional, stated credentials, a review date, and citations to sources you could defend to a regulator. We go through this in detail on [SEO for healthcare](/seo-for/healthcare)."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Don't invent the expert",
+        "body": "Attaching a fabricated \"Dr. Sharma, MBBS\" byline to a model-drafted health article is not an SEO tactic. It's fabricating professional credentials, and in a regulated category that's a legal exposure long before it's a ranking problem. If nobody qualified will put their name on the page, the honest fix is not to publish it."
+      }
+    },
+    {
+      "h2": "The twenty-minute pass on a single page",
+      "body": [
+        "Pick the page that matters most — usually a money page or the article you'd most like an AI assistant to quote. Work through this once and you'll have a template for the rest."
+      ],
+      "numbered": [
+        "Add a real byline linking to a bio page with credentials, years in the field, and a licence or registration number where the profession has one.",
+        "Add one paragraph only someone who has done this could write. A specific failure, a number from your own work, the thing that surprised you. This is the whole of the first E.",
+        "Show both dates — published and updated — visibly. If you update the page, change something real, not just the date.",
+        "Name and link two sources for any claim that isn't yours. \"Studies show\" with nothing behind it is a trust deduction to a rater and to a reader.",
+        "Put the registered business name, address and phone in the footer, and make them match your [Google Business Profile](/glossary/google-business-profile) exactly.",
+        "Delete every unsupported superlative. \"India's #1 agency\" with no citation reads as a claim you couldn't back — which is precisely what it is.",
+        "Publish the price, or the range, or at minimum how the price is arrived at. Nothing builds trust with an Indian buyer faster, and almost nobody in this market does it. Ours is on [the pricing page](/pricing)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is E-E-A-T a ranking factor?",
+      "a": "Not directly. There's no E-E-A-T score in the algorithm. It's the framework human quality raters use, and their ratings are used to evaluate Google's systems rather than to rank individual pages. The signals it describes — authorship, citations, trust markers — do influence rankings through those systems."
+    },
+    {
+      "q": "What does the extra E in E-E-A-T stand for?",
+      "a": "Experience, added to the rater guidelines in December 2022. It asks whether the author has first-hand experience of what they're writing about — having used the product, treated the condition, run the campaign. It's deliberately different from expertise: a patient describing a treatment has experience without formal credentials."
+    },
+    {
+      "q": "What is YMYL content?",
+      "a": "Your Money or Your Life: pages that could affect someone's health, finances, safety, legal position or major life decisions. Raters apply their strictest standard to these. If you publish about medicine, investing, insurance, law or anything similar, anonymous content is a structural disadvantage you can't write your way out of."
+    },
+    {
+      "q": "How do I improve E-E-A-T on my website?",
+      "a": "Name your authors and give them real bios. Add first-hand detail only a practitioner would have. Cite sources by name. Put your registered address, phone, pricing and policies where anyone can find them. Then get credible third parties to reference you. In that order — trust first, authority last, because authority takes years."
+    },
+    {
+      "q": "Does AI-written content automatically fail E-E-A-T?",
+      "a": "No. Google's position is that it judges quality, not production method. But the first E is genuinely hard to fake: a model has no first-hand experience to report. Drafts that a real practitioner then edits, corrects and signs are a different thing from unread output published at volume."
+    },
+    {
+      "q": "Can I check my E-E-A-T score?",
+      "a": "There isn't one. Any tool offering an E-E-A-T score has invented a number. The closest useful exercise is to read the relevant section of Google's Search Quality Rater Guidelines and grade your own page against it honestly — or ask someone who doesn't like you to do it."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "thin-content" },
+    { "type": "glossary", "slug": "google-core-update" },
+    { "type": "glossary", "slug": "topical-authority" },
+    { "type": "journal", "slug": "does-ai-written-content-still-rank" },
+    { "type": "services", "slug": "content-marketing-services" },
+    { "type": "seo-for", "slug": "healthcare" }
+  ]
+}

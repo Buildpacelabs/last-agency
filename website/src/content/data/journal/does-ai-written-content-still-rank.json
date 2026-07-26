@@ -1,0 +1,261 @@
+{
+  "slug": "does-ai-written-content-still-rank",
+  "type": "journal",
+  "primaryKeyword": "does ai generated content rank on google",
+  "secondaryKeywords": [
+    "is ai content penalised",
+    "chatgpt content seo",
+    "ai writing for seo",
+    "google ai content policy",
+    "using ai to write blog posts"
+  ],
+  "cluster": "ai-search",
+  "intent": "informational",
+  "h1": "AI-Written Content Ranks. AI-Written Content Also Gets Sites Killed.",
+  "metaTitle": "Does AI-Generated Content Still Rank on Google?",
+  "metaDescription": "AI-generated content does rank on Google, until it's published at scale with no editing. Here's the line between assisted writing and content spam.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Yes. Google indexes and ranks AI-written pages every day, and its spam policy is deliberately authorship-neutral. What gets sites demoted is scale without editing: hundreds of pages restating what already ranks. The variable is marginal value per page and who reviewed it, not which tool produced the first draft.",
+  "takeaways": [
+    "Google's spam policy on scaled content abuse covers pages made by **automation, humans, or any mix**. Authorship was deliberately written out of the rule.",
+    "The two things that decide a page's fate are **marginal value** (does this page contain anything the top ten don't?) and **editorial review** (did a named human sign it off?).",
+    "The failure mode of AI drafting isn't bad writing. It's **confident, invisible wrongness** — a plausible number, a misremembered policy, a court case that never happened.",
+    "The honest saving on an AI-assisted page is roughly **20–40%**, not 90%. Cheap drafts push cost into editing, they don't remove it.",
+    "If nobody at your agency will put their name on a page, that's the signal. Not the tooling."
+  ],
+  "sections": [
+    {
+      "h2": "Google stopped caring who typed it in 2023, and said so in writing",
+      "body": [
+        "The most repeated claim in this argument — that Google penalises AI content — has been wrong since February 2023, when Google Search Central published its guidance on AI-generated content. The core line is short: Google's focus is the quality of content, not how the content was produced. Automation used to manipulate rankings breaks the spam policies. Automation used to help people breaks nothing.",
+        "Then in March 2024 Google did something more consequential and much less discussed. It rewrote the old \"spammy automatically-generated content\" policy into **scaled content abuse**, removing the machine from the definition entirely. The policy now covers pages produced at scale to game rankings whether they were made by automation, by human effort, or by some combination of the two.",
+        "Read that twice, because it inverts the usual advice. A content farm with forty freelancers in a WhatsApp group shipping 300 near-identical location pages is covered by the same rule as a script. Google didn't build an AI detector. It built a value test, and a value test doesn't need to know who held the keyboard.",
+        "So the question \"will Google catch that I used AI?\" is the wrong question and always was. The right one: **if a reader landed on this page having already read the three pages above it, would they have gained anything?** That question has the same answer regardless of authorship, which is exactly why Google asks it instead."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Detection isn't the mechanism",
+        "body": "AI-detection tools are unreliable in both directions — they flag careful human writing and clear well-edited machine drafts. Google has never claimed to run one as a ranking system, and it doesn't need to. Sameness, thinness and a publish-rate step-change are all measurable without knowing the source."
+      }
+    },
+    {
+      "h2": "What the scaled-content enforcement actually hit",
+      "body": [
+        "Every enforcement wave since that policy landed produces the same genre of post: a traffic graph falling off a table, a screenshot of a manual action, and a figure for \"sites affected\" that nobody can source.",
+        "We're not quoting one of those numbers. There's no public register of manual actions, Google doesn't publish per-wave counts, and every figure in circulation is an extrapolation from somebody's self-selected sample. What we can describe is the profile, because it repeats with unusual consistency across the sites that get hit."
+      ],
+      "bullets": [
+        "**A publish-rate step-change.** A site averaging four posts a month suddenly ships 250 in six weeks. Nothing about the business changed to justify it. That pattern is trivially visible in an index.",
+        "**Template sameness.** Every page opens the same way, runs the same H2s, and differs only in the noun that was swapped in. This is the [line programmatic SEO has to stay on the right side of](/journal/programmatic-seo-and-the-scaled-content-line) — and volume alone doesn't cross it, sameness does.",
+        "**Zero original input.** No pricing, no screenshots, no first-hand test, no data the owner gathered. The whole page is a rearrangement of the current top ten.",
+        "**No traceable author.** A byline with no history and no identifiable person behind it. E-E-A-T isn't a score, but an unattributable page carries no experience signal at all.",
+        "**Pages nobody asked for.** Keyword permutations built because a tool found them, not because a customer ever asked the question in that shape.",
+        "**Expired-domain reuse.** Buying an old domain with residual authority and refilling it with generated pages is its own named policy violation — and the version that gets deindexed rather than demoted."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The recoverable and the unrecoverable",
+        "body": "Algorithmic demotion for thin content is usually reversible — prune, consolidate, rebuild the survivors and wait for a core update. A manual action for scaled content abuse on a domain whose entire archive was generated is often not worth recovering. The cheapest possible content decision can cost you the domain, which is the most expensive asset you own."
+      }
+    },
+    {
+      "h2": "The two variables that actually decide the outcome",
+      "body": [
+        "Strip the argument down and there are only two axes that matter. Where a page lands on the grid predicts what happens to it far better than knowing whether a model wrote the first draft."
+      ],
+      "table": {
+        "caption": "Where an AI-assisted page lands, and what tends to happen to it.",
+        "head": ["Marginal value of the page", "Editorial review", "What tends to happen"],
+        "rows": [
+          [
+            "High — real data, real pricing, a position someone could disagree with",
+            "Edited and signed off by a named human",
+            "Ranks and holds. This is a large share of the good content on the web now, and Google has neither the ability nor the motive to separate it out."
+          ],
+          [
+            "High",
+            "Published exactly as generated",
+            "Ranks, then breaks. Hallucinated specifics sit there until a customer, a journalist or a competitor finds them. The SEO damage is the small part."
+          ],
+          [
+            "Low — a competent restatement of page one",
+            "Carefully edited",
+            "Never ranks. A well-edited restatement is still a restatement, and Google already has ten of those."
+          ],
+          [
+            "Low, published at volume",
+            "None",
+            "Scaled content abuse. Demotion first, manual action if the archive is mostly this."
+          ]
+        ]
+      },
+      "bullets": [
+        "Note which quadrant contains no AI at all: a human agency shipping four thin, unedited restatements a month is in row three. It's slower, so it dies quieter.",
+        "Note also that row two — good content, no review — is the one growing fastest, and it's the one clients underestimate. It doesn't fail in search. It fails in front of a buyer."
+      ]
+    },
+    {
+      "h2": "The human-in-the-loop steps we run before anything goes live",
+      "body": [
+        "We use AI in our content process. Pretending otherwise in 2026 would be theatre, and you'd catch us anyway. What we don't do is publish a generated draft, and here's the actual sequence — the same one every page on this site went through, including this one."
+      ],
+      "numbered": [
+        "**Justify the page before drafting it.** Every page needs a named query with real demand and a one-sentence reason it beats what already ranks. If we can't write that sentence, we kill it. This step rejects more pages than it approves and it's the single biggest protection against scaled content abuse.",
+        "**Gather the original input first, not last.** Our pricing, our hour splits, screenshots, the thing we got wrong last quarter. If a page has no original input available, it isn't a page — it's a paragraph on an existing one.",
+        "**Outline against the actual competition.** We read the top results and build the outline around their gaps. Models summarise what's there and are constitutionally incapable of noticing what's missing, because the missing thing isn't in the training data.",
+        "**Draft — with AI, alone, or in a mix. We genuinely don't police this.** What we police is what happens next.",
+        "**Strip every unsourced specific.** Every number, date, policy name and quotation gets checked against a primary source or it comes out. Not softened — deleted. Most of the editing hours go here, because a confident false number on a site selling honesty is a brand contradiction before it's an SEO problem.",
+        "**Senior edit for position.** Someone who does this work for a living asks: is it true, is it what we'd say on a client call, and is there a sentence here a competitor wouldn't dare publish? A page with nothing risky in it usually has nothing useful in it.",
+        "**Name on it.** A person is accountable for every page — not an \"editorial team\", a person. That rule fixes more quality problems than any tool policy, because nobody signs off slop with their own name attached.",
+        "**Review date set on publish.** Anything with pricing, policy or platform mechanics gets a recheck window. [Content decay](/glossary/content-decay) hits AI-assisted pages faster precisely because they lean on facts nobody in the building personally verified."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "Where the hours moved",
+        "body": "Drafting used to be the expensive part of content and checking was cheap. That has flipped completely. On our workflow, drafting is now the smallest line item and verification is the largest — which is why the total cost fell far less than everyone expected."
+      }
+    },
+    {
+      "h2": "Where AI genuinely earns its place in our workflow",
+      "body": [
+        "The productive uses share a shape: the machine handles the part with a checkable right answer, and a human handles the part where someone has to be wrong in public."
+      ],
+      "subs": [
+        {
+          "h3": "Research and triage",
+          "bullets": [
+            "Clustering 40,000 queries into intent groups. This was three days of an analyst's month and is now a script.",
+            "Reading 200 pages of a client's existing content and telling us which ones overlap. Human cannibalisation audits are slow and error-prone; this one is genuinely better done by a machine.",
+            "Summarising a competitor's entire blog archive into the arguments they make repeatedly. Useful for finding what nobody in the market has said yet."
+          ]
+        },
+        {
+          "h3": "Structure and scaffolding",
+          "bullets": [
+            "Outlines, briefs, FAQ candidates drawn from real query data.",
+            "Schema markup and internal-link suggestions — structured, validated, machine-checkable.",
+            "First-pass Hindi, Tamil or Marathi drafts. Editing those so they don't read like an appliance manual is still a person's job, and a well-paid one."
+          ]
+        },
+        {
+          "h3": "Quality assurance, which is the underrated one",
+          "bullets": [
+            "Adversarial reading: feed a finished draft in and ask what a hostile expert would attack. It finds real holes.",
+            "Consistency checks across 200 pages — pricing that drifted, a policy stated two different ways, a claim that contradicts another page.",
+            "Readability and structure passes against our own house rules rather than a generic score."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Notice what's missing from that list",
+        "body": "\"Write the article.\" Not because it's forbidden — we've said we don't police drafting. Because it's the step where the value per hour is lowest and the risk per hour is highest, so it's the last place we'd spend an automation budget."
+      }
+    },
+    {
+      "h2": "The cost illusion: cheap drafts, expensive edits",
+      "body": [
+        "The pitch that sold AI content to a lot of Indian founders was a 90% cost cut. Drafts that cost ₹4,000 now cost nothing, so the page costs nothing. The arithmetic only works if editing is free, and editing got harder, not easier.",
+        "A human writer who invents a statistic gets fired. A model that invents one gets a compliment on its fluency. The failure mode moved from visible (clumsy prose, obvious padding) to invisible (a plausible figure, a misattributed quote, a policy that changed two years ago), and invisible errors cost more to catch than visible ones. Here's how the line items actually move on a 1,500-word page at Indian market rates."
+      ],
+      "table": {
+        "caption": "Where the money goes on a 1,500-word page, human-first versus AI-assisted and honestly staffed.",
+        "head": ["Line item", "Human-first", "AI-assisted, staffed honestly"],
+        "rows": [
+          [
+            "First draft",
+            "₹3,000–₹6,000 at typical Indian rates of ₹2–₹4 a word",
+            "Close to zero"
+          ],
+          [
+            "Verifying every specific",
+            "Light — the writer sourced them and owns them",
+            "Heavy — the draft asserts false things in a confident voice, and nothing in the prose flags which ones"
+          ],
+          [
+            "Senior edit",
+            "One pass, mostly for position and tightening",
+            "Two passes — the first is structural, because the draft defaults to the average of page one"
+          ],
+          [
+            "Original input: data, screenshots, opinion, pricing",
+            "Same either way — nobody and nothing can generate this for you",
+            "Same either way"
+          ],
+          [
+            "Realistic net saving",
+            "—",
+            "Roughly 20–40%. Anyone quoting 90% has removed the checking step and hasn't noticed yet"
+          ]
+        ]
+      },
+      "bullets": [
+        "The saving is real. It's just a margin improvement, not a business model. Twenty percent off content is a good quarter, not a reason to publish 400 pages.",
+        "The shops that priced their whole offer on the 90% figure are the ones now shipping unreviewed drafts, because that's the only way the sums work. Cheap content is downstream of a pricing decision, not a tooling one."
+      ]
+    },
+    {
+      "h2": "Auditing content you've already published this way",
+      "body": [
+        "If a previous agency shipped you 150 AI pages and you're reading this with a sinking feeling, the fix is unglamorous and it works. Do it in this order."
+      ],
+      "numbered": [
+        "**Pull impressions and clicks per URL** from Search Console over six months, sorted ascending. Pages with near-zero impressions after 90+ days indexed aren't underperforming — they were never wanted.",
+        "**Check indexed versus published.** If you shipped 150 and 40 are indexed, Google has already made its assessment. Publishing another 150 is not the response.",
+        "**Read twenty pages at random, properly.** You'll know within two whether anyone edited them. Look for numbers, dates and named policies, then verify three.",
+        "**Group into keep, merge, delete.** Merge near-duplicates into one strong page with a 301. Delete the rest — a 410 on a worthless page is a gift to your crawl budget, not a loss.",
+        "**Rebuild the survivors with real input.** One page carrying your actual pricing outranks nine restating a competitor's.",
+        "**Freeze a baseline first**, so you can prove the pruning worked. [Setting the baseline properly](/journal/how-to-set-an-seo-baseline) takes an afternoon and settles every argument that follows."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Deleting pages feels like deleting assets",
+        "body": "It isn't. Pages with no impressions have no traffic to lose, and they're actively costing you — crawl attention spread thin, internal link equity diluted, and a site-level quality signal dragged down by its worst quartile. Founders resist this step harder than any other in SEO, and it's usually the fastest recovery available."
+      }
+    },
+    {
+      "h2": "What we'll put our name on, and what we won't",
+      "body": [
+        "Our position is boring and we're comfortable with it. We use models for research, clustering, outlines, schema, translation drafts and QA. Humans decide what gets written, verify every specific, edit for position and sign off by name. We don't sell volume, and we won't ship a page whose only reason for existing is that a tool found the keyword.",
+        "That has a price. We run SEO from ₹75,000/mo, or ₹40,000 for smaller sites, and take three new clients a month, because verification doesn't scale the way drafting does. An agency quoting thirty articles a month for ₹25,000 isn't using better tooling than us. It has removed the step this whole page is about.",
+        "The commercial argument is simple: we guarantee movement against your own frozen trailing-90-day organic lead count, and if we miss it in 90 days we keep working free until we beat it. We never promise a specific ranking position, because nobody controls Google's index. But a guarantee written against leads makes publishing 200 worthless pages our problem rather than yours — which is exactly why we don't. Here's [how the SEO engagement runs](/seo).",
+        "In two years the interesting question won't be whether AI content ranks. It'll be whether anyone can tell a page written to be read from a page written to exist. Google is building for the first. Most of the web is filling up with the second. Pick which one you're funding."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Google penalise AI-generated content?",
+      "a": "No — not for being AI-generated. Google's guidance since February 2023 has been that it judges quality, not production method, and the March 2024 spam policy on scaled content abuse explicitly covers content made by automation, humans, or a mix. What gets penalised is publishing many low-value pages to game rankings. Authorship is not the test."
+    },
+    {
+      "q": "Can Google detect AI content?",
+      "a": "Google has never claimed to run an AI detector as a ranking system, and public detection tools are unreliable in both directions. It doesn't need one. Sameness across pages, thin marginal value, a sudden publish-rate jump and no original input are all measurable without knowing who or what wrote the draft."
+    },
+    {
+      "q": "Is it safe to use ChatGPT to write blog posts?",
+      "a": "It's safe to use it to draft. It's not safe to publish what comes out unedited, because the failure mode is confident wrongness — a plausible number, a policy that changed, a source that doesn't exist. Verify every specific against a primary source, add something the model couldn't know, and put a named person's byline on it."
+    },
+    {
+      "q": "How much content can I publish before it looks like scaled content abuse?",
+      "a": "There's no page-count threshold, which frustrates everyone. The test is marginal value per page and whether the pages exist because customers ask those questions. A thousand genuinely distinct location pages with real local data are fine; forty near-identical ones swapping a city name are not. Volume isn't the trigger, sameness is."
+    },
+    {
+      "q": "Does AI content actually save money on SEO?",
+      "a": "Roughly 20–40% on a typical page, not the 90% that got quoted in 2023. Drafting cost collapsed, verification cost rose, and original input — your pricing, your data, your opinion — costs exactly what it always did. Anyone quoting a 90% saving has deleted the checking step from their process."
+    },
+    {
+      "q": "What should I do with the AI pages my last agency published?",
+      "a": "Pull impressions per URL over six months, sort ascending, and be honest about what was never wanted. Keep pages with real demand and something original, merge near-duplicates with 301s, delete the rest. Then rebuild the survivors with input only you have. Freeze a baseline first so you can prove the pruning worked."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "does-ai-content-hurt-seo" },
+    { "type": "answers", "slug": "can-chatgpt-do-seo" },
+    { "type": "glossary", "slug": "thin-content" },
+    { "type": "journal", "slug": "programmatic-seo-and-the-scaled-content-line" },
+    { "type": "cost", "slug": "content-writing-cost-india" },
+    { "type": "services", "slug": "content-marketing-services" }
+  ]
+}

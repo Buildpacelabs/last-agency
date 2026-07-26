@@ -1,0 +1,184 @@
+{
+  "slug": "what-is-an-seo-agent",
+  "type": "answers",
+  "primaryKeyword": "what is seo agent",
+  "secondaryKeywords": [
+    "what is an seo agent",
+    "seo agent meaning",
+    "ai seo agent",
+    "what does an seo agent do"
+  ],
+  "cluster": "agency-mechanics",
+  "intent": "informational",
+  "h1": "SEO agent: the AI meaning and the human meaning",
+  "metaTitle": "What Is an SEO Agent? Both Meanings",
+  "metaDescription": "An SEO agent is either an autonomous AI tool running SEO tasks or a person reselling SEO on commission. Here's what each ships, and where each fails.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "SEO agent means two things now. In software, it's an autonomous AI tool that runs SEO tasks on its own — crawling, clustering, drafting, filing tickets, sometimes editing pages. In sales, it's a person who resells SEO on commission and passes the delivery to somebody else. The word tells you nothing until you ask which.",
+  "takeaways": [
+    "An agent isn't a chatbot. It's given a goal, picks its own steps, calls tools, checks the result and tries again — which is exactly why write access to a live site is the dangerous part.",
+    "Agents are strong at breadth: crawl triage, clustering, bulk drafting. They're weak at consequence: what to publish, what to kill, what a wrong canonical costs.",
+    "The human meaning is older and still common. A commission agent adds margin without adding capability — always ask who performs the work.",
+    "Whichever meaning you're dealing with, the question is the same: **who is accountable when it goes wrong?**"
+  ],
+  "sections": [
+    {
+      "h2": "Working out which one you've found",
+      "body": [
+        "Search results for this term are a mess because two unrelated things landed on the same phrase within a few years of each other. Ten seconds of context usually settles it."
+      ],
+      "bullets": [
+        "It has a pricing page with monthly tiers, a dashboard screenshot and the word \"autonomous\" — **software**.",
+        "It messaged you on LinkedIn or WhatsApp, wants a call, and can't name the team that will do the work — **a person on commission**.",
+        "It's in a job listing alongside \"business development\" — the sales meaning, still standard in a lot of Indian and Gulf agencies.",
+        "It's in a technical article next to \"tool calling\" or \"MCP\" — the software meaning."
+      ]
+    },
+    {
+      "h2": "Meaning one: the autonomous AI agent",
+      "body": [
+        "An agent is not a model you type into. The difference is the loop. You give it an outcome — \"find why the category pages lost impressions\" — and it decides its own steps: pull Search Console data, run a crawl, compare against last month, inspect the canonical tags, form a hypothesis, test it, report.",
+        "What makes that possible is tool access. An SEO agent typically connects to a crawler, the Search Console API, an analytics property, your CMS, sometimes your repository. Each connection makes it more useful and raises the cost of a mistake by roughly the same amount.",
+        "That's the honest frame. Agents don't know more SEO than a good specialist. They're just tireless, cheap per task, and completely unbothered by whether an action is reversible."
+      ]
+    },
+    {
+      "h2": "What agents ship reliably, and what they still get wrong",
+      "body": [
+        "This table is the practical answer to \"should I use one\". The pattern is consistent across the agent products we've tested: strong at anything that's pattern-matching over structured data, unreliable at anything requiring a judgement about consequence."
+      ],
+      "table": {
+        "caption": "SEO tasks, and how much of each an agent can actually own.",
+        "head": ["Task", "How an agent handles it", "What a person still has to do"],
+        "rows": [
+          [
+            "Crawling a site and grouping errors",
+            "Very well. This is pattern-matching over structured data.",
+            "Decide which fifteen of the 4,000 issues actually matter"
+          ],
+          [
+            "Clustering keywords by intent",
+            "Better than a human, at a scale no human matches.",
+            "Sanity-check the clusters against what the live SERP is actually returning"
+          ],
+          [
+            "Drafting titles and metas at volume",
+            "Well, and within character limits.",
+            "Catch the ones promising something you don't sell"
+          ],
+          [
+            "Writing a first draft of a page",
+            "Competently, and generically.",
+            "Add the numbers, the specifics and the opinion that make it worth reading"
+          ],
+          [
+            "Turning audit findings into dev tickets",
+            "Well, with a template and a repo it can read.",
+            "Prioritise them and win the sprint capacity to ship them"
+          ],
+          [
+            "Deciding what to publish and what to delete",
+            "Badly. Models are biased towards producing more.",
+            "All of it — pruning is where the judgement lives"
+          ],
+          [
+            "Earning a link from a real publication",
+            "Not at all.",
+            "Everything. This is a relationship, not a task"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The realistic role",
+        "body": "An agent replaces the workload of a junior SEO executive, not the judgement of a senior one. If you were paying somebody ₹25,000 a month to export crawls and format reports, that job changed. If you were paying somebody ₹1,50,000 a month to decide what to do about it, that job didn't."
+      }
+    },
+    {
+      "h2": "The risk nobody prices: letting an agent edit a live site",
+      "body": [
+        "Every failure mode below is quiet. No error page, no alert, no angry customer email. Just a graph that starts falling and a fortnight of nobody knowing why."
+      ],
+      "bullets": [
+        "**A `noindex` tag or a `robots.txt` disallow left in place** after a staging test. The site keeps working perfectly for humans while disappearing from the index.",
+        "**Canonical tags pointed at the wrong URL across a template.** You deindex an entire section without generating a single 404.",
+        "**A redirect rule that loops**, or one that flattens 400 product URLs onto the homepage because the pattern match was too greedy.",
+        "**Bulk-rewritten titles that drop the brand or the city name** that was doing the actual ranking work.",
+        "**Schema claiming a rating, a price or an availability the page doesn't show.** That's a structured-data manual action waiting to happen."
+      ],
+      "numbered": [
+        "Staging first. Always. No agent gets production write access on day one, or day ninety.",
+        "Diff review before merge, by a person who can explain what the change does.",
+        "A change log with timestamps, so the next traffic drop has an obvious first suspect.",
+        "A rollback path you've actually tested, not one you assume exists.",
+        "A hard block on directive-level files — `robots.txt`, canonicals, hreflang, redirects. Those get human hands only."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Autonomy and accountability are the same dial",
+        "body": "Every notch of autonomy you give an agent is a notch of accountability you take on yourself, because there's nobody else left to ask. Turn it up slowly and only where mistakes are cheap and visible."
+      }
+    },
+    {
+      "h2": "Meaning two: the SEO agent who is a person",
+      "body": [
+        "Long before any of this, \"SEO agent\" meant a salesperson. It still does across a lot of the Indian and Gulf market: someone who finds clients, signs them, takes a commission, and hands the account to a delivery team you never meet — often at a different company entirely.",
+        "This isn't automatically bad. Reselling is a normal structure and some white-label delivery is genuinely good. It becomes a problem when nobody tells you it's happening, because it adds a margin and a layer of telephone between you and whoever is actually touching your site."
+      ],
+      "bullets": [
+        "**The tell:** they can't answer a specific technical question without \"checking with the team\". Twice in one call is a pattern.",
+        "**The other tell:** the pitch is a price and a package, never a plan for your specific site.",
+        "**The question to ask:** \"Who performs the work, and are they employed by the company named on this contract?\" Then ask for that person's name.",
+        "**The consequence:** every escalation goes through someone whose incentive ended when you signed. More on this in [is your agency outsourcing your SEO](/journal/is-your-agency-outsourcing-your-seo)."
+      ]
+    },
+    {
+      "h2": "So do you need either one?",
+      "body": [
+        "If you have a small site, someone internal who owns the outcome, and a tolerance for checking things, agent tooling can genuinely do the work you'd otherwise hire a junior for. It won't earn you links, it won't argue for sprint capacity with your engineering manager, and it won't tell you the page you're about to commission shouldn't exist.",
+        "If you're looking at a human sales agent, the calculation is simpler: a commission layer costs money and adds no capability. Deal directly with whoever does the work, or with an agency that employs them. The comparison is laid out in [AI SEO tools versus an SEO agency](/compare/ai-seo-tools-vs-seo-agency).",
+        "For what it's worth, we run agent tooling ourselves — crawl triage, clustering, first drafts, ticket generation. A person edits everything and approves anything that reaches a client site. It's included in SEO from ₹75,000/mo, and from ₹40,000 for smaller sites, ex-GST. Nobody on our side gets a commission for signing you, which is one reason we only take three clients a month."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The question that covers both meanings",
+        "body": "\"When this goes wrong at 2am on a Saturday, whose name is on it?\" An agent has no answer. A commission agent has a phone that's off. That's the whole comparison."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the difference between an SEO agent and an SEO tool?",
+      "a": "A tool does what you tell it — run this crawl, pull this report. An agent is given an outcome and chooses its own steps, calling tools in sequence and reacting to what it finds. That autonomy is the whole value and also the whole risk."
+    },
+    {
+      "q": "Can an AI SEO agent replace an SEO agency?",
+      "a": "It replaces the junior execution layer, not the rest. Agents can't earn links from real publications, can't negotiate sprint capacity with your developers, and can't be held accountable for a number. For a small site with an internal owner, that may still be enough."
+    },
+    {
+      "q": "Is it safe to let an AI agent edit my live website?",
+      "a": "Only with staging, diff review and a tested rollback. Directive-level files — robots.txt, canonicals, hreflang, redirects — should stay human-only, because a wrong value there deindexes pages silently. No 404s, no alerts, just a graph that falls."
+    },
+    {
+      "q": "What does a human SEO agent do?",
+      "a": "Sells SEO on commission, usually without performing it. They find the client, sign the contract and hand delivery to an in-house team or a white-label partner. Ask who performs the work and whether they're employed by the company on your contract."
+    },
+    {
+      "q": "How much do AI SEO agent tools cost?",
+      "a": "Pricing moves fast enough that any number here would be stale within months, and it varies by crawl volume and connected data sources. The useful comparison isn't tool price against agency fee — it's tool price plus the internal hours needed to check its output."
+    },
+    {
+      "q": "Do SEO agents work for large sites?",
+      "a": "Agent tooling is most useful exactly where sites are large, because the grunt work scales badly for humans — crawl triage across 50,000 URLs, template-level pattern detection, index bloat analysis. The review burden scales too, which is why the human stays."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "what-is-an-ai-seo-agency" },
+    { "type": "compare", "slug": "ai-seo-tools-vs-seo-agency" },
+    { "type": "answers", "slug": "can-chatgpt-do-seo" },
+    { "type": "glossary", "slug": "noindex" },
+    { "type": "journal", "slug": "is-your-agency-outsourcing-your-seo" },
+    { "type": "answers", "slug": "will-seo-be-replaced-by-ai" }
+  ]
+}

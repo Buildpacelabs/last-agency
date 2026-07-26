@@ -1,0 +1,208 @@
+{
+  "slug": "what-surprised-us-about-how-seo-agencies-operate",
+  "type": "journal",
+  "primaryKeyword": "how seo agencies actually operate",
+  "secondaryKeywords": [
+    "what seo agencies don't tell clients",
+    "seo agency business model",
+    "who actually does the seo work",
+    "how do seo agencies work behind the scenes",
+    "seo agency staffing"
+  ],
+  "cluster": "agency-economics",
+  "intent": "informational",
+  "h1": "The Most Surprising Thing We Learned About How SEO Agencies Operate",
+  "metaTitle": "What Surprised Us About How SEO Agencies Operate",
+  "metaDescription": "Few clients see how SEO agencies actually operate. Here's the staffing pyramid, the white-label resale layer and the margin maths behind your retainer.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "The surprise isn't tactics — it's arithmetic. After margin, overhead, content and outreach, a ₹25,000/month SEO retainer leaves around ₹2,000 of delivery budget: four to seven hours of junior time, and no senior time at all. That one constraint explains the junior-heavy org charts and the quiet subcontracting underneath a lot of agency work.",
+  "takeaways": [
+    "A retainer is an hours budget wearing a nicer name. Divide the fee by a loaded hourly cost and you can predict, within a rounding error, who will actually touch your account.",
+    "At ₹25,000/mo the maths forces junior delivery and bought content. That's not a moral failing — it's what the price allows.",
+    "Agencies plan capacity at **65–75% utilisation**. Hitting that number requires a pyramid: a few seniors, many juniors. The pitch is the top of the pyramid; the delivery is the bottom.",
+    "White-label subcontracting isn't automatically bad. Undisclosed subcontracting is, because you can't judge work when you don't know who did it.",
+    "Ask who writes the first draft, how many accounts your strategist carries, and to see a working file. Three questions, ten minutes, most of the answer."
+  ],
+  "sections": [
+    {
+      "h2": "The reframe: a retainer is an hours budget in a nicer wrapper",
+      "body": [
+        "We came into this expecting the interesting differences between agencies to be strategic — better keyword models, smarter link angles, a technical trick somebody else hadn't found. Some of that exists. Very little of it explains why one engagement works and another burns a year.",
+        "What explains it is money divided by time. An SEO agency sells hours it has to pay for, marks them up, and hopes the mix of hours it sends you is good enough to move a number. Once you can do that division yourself, most of the mystery about how agencies operate evaporates — and so does most of the mystery about why a cheap retainer disappoints.",
+        "So here's our own arithmetic, assumptions stated. You can change any of them. The shape of the answer doesn't change much when you do."
+      ],
+      "subs": [
+        {
+          "h3": "The assumptions we're using",
+          "bullets": [
+            "**Net margin: 25%.** A services shop running below about 15% can't survive a client leaving, a bad quarter, or a founder taking a holiday. Healthy Indian agencies plan for more.",
+            "**Overhead: ~22% of revenue.** Rent, admin, accounting, laptops, and tool seats. An Ahrefs or Semrush licence alone runs into five figures a month at list price, and Search Console being free doesn't offset that.",
+            "**Utilisation: 70%.** Of a ~160-hour month, roughly 110 hours reach client work. The rest is internal meetings, training, pitch support, leave and the admin nobody bills.",
+            "**Loaded hourly cost.** Salary × ~1.4 (statutory contributions, equipment, seat, tool access, supervision) ÷ 110 delivered hours. On metro salaries that lands around **₹320–₹510/hr for a junior**, **₹760–₹1,270 for mid-level**, and **₹1,900–₹3,200 for a senior strategist**. These are ranges because Indian SEO salaries vary enormously by city and by whether the person has ever owned a number."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Where ₹25,000 goes, line by line",
+      "body": [
+        "Run the model on the two prices founders actually get quoted in India. The ₹25,000 column is the entry-level retainer that fills most inboxes. The ₹75,000 column is where we start.",
+        "Nothing here is a leaked rate card. It's division, and you can do it on the back of the proposal you're holding."
+      ],
+      "table": {
+        "caption": "Our model of where a monthly SEO retainer goes, ex-GST. Change the assumptions and the numbers move; the shape doesn't.",
+        "head": ["Line item", "At ₹25,000 / mo", "At ₹75,000 / mo"],
+        "rows": [
+          [
+            "Net margin the shop needs to survive a bad quarter (25%)",
+            "₹6,250",
+            "₹18,750"
+          ],
+          [
+            "Overhead — rent, admin, tool seats, sales amortised (22%)",
+            "₹5,500",
+            "₹16,500"
+          ],
+          [
+            "Content production",
+            "₹8,000 — four pieces bought in at ₹2,000",
+            "₹18,000 — four pieces briefed, written and edited in-house, ~4–5 loaded hours each"
+          ],
+          [
+            "Links and outreach",
+            "₹3,000 — two paid placements",
+            "₹9,000 — one real PR angle, pitched properly"
+          ],
+          [
+            "What's left for strategy, technical work and reporting",
+            "₹2,250",
+            "₹12,750"
+          ],
+          [
+            "What that residue actually buys",
+            "Four to seven junior hours. No senior time.",
+            "Roughly two senior hours, five mid-level hours and six junior hours"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Six hours is the whole month",
+        "body": "At ₹25,000 the entire monthly allowance for thinking — reading your Search Console, deciding what to fix, checking whether last month worked — is somewhere between four and seven hours of someone who started this job eighteen months ago. Not because the agency is lazy. Because that's what ₹25,000 buys after everything else is paid for."
+      }
+    },
+    {
+      "h2": "Why the org chart has to be junior-heavy",
+      "body": [
+        "The second surprise follows straight from the first. If your rate card is built on retainers between ₹20,000 and ₹60,000, your average delivered hour has to cost you a few hundred rupees. There is exactly one staffing shape that produces that average, and it's a pyramid with a wide base.",
+        "This isn't a preference. A senior can review four or five people's work in a week. They cannot do four or five people's work. So the moment an agency needs volume — and every agency priced at the low end needs volume — the base of the pyramid widens and the top stays the same size.",
+        "Which produces the thing every founder notices and nobody can quite name: the pitch is genuinely brilliant, and the delivery is genuinely fine. Both are true. They were done by different people."
+      ],
+      "bullets": [
+        "**Utilisation is the hidden governor.** Push it past ~80% and quality drops because nobody has time to check anything. Let it fall to 50% and the agency loses money. Everything else in the model bends to protect that band.",
+        "**Seniority is spent on the pitch, not the work.** Winning a ₹50,000 retainer costs roughly the same hours as winning a ₹5,00,000 one, so the best people get pointed at the pipeline.",
+        "**The account lead's headcount matters more than the retainer.** A strategist carrying twelve accounts gives yours about eight hours a month regardless of what you pay, because there are only 110 hours in their month and eleven other people want them."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The question this makes obvious",
+        "body": "Don't ask how big the team is. Ask how many accounts the person running yours also runs. Team size flatters the agency; account load tells you your share."
+      }
+    },
+    {
+      "h2": "The resale layer nobody puts in the deck",
+      "body": [
+        "White-label SEO is a real and substantial industry. Agencies buy delivery — audits, content, outreach, reporting — from specialist providers, put their own logo on it, and sell it on. It exists because the arithmetic above makes it inevitable: a shop that can't afford a technical SEO can still sell technical SEO if someone else does it for ₹8,000 a site.",
+        "We want to be careful here, because this is the exact place where writers start inventing percentages. We don't know what share of Indian SEO delivery is subcontracted, and neither does anyone else — the whole point is that it isn't disclosed. What we can say is what the model forces, and the model forces a lot of it.",
+        "Subcontracting is not automatically bad. A specialist link team that only does digital PR will beat a generalist every time. It becomes a problem in two specific ways: when it's hidden, and when it's priced so low that the subcontractor is running the same squeezed maths one layer down.",
+        "That second one is the real damage. Every layer takes a margin. A ₹25,000 retainer that gets resold at ₹12,000 leaves the person actually opening your CMS with a budget measured in hundreds of rupees. That's how you end up approving an article that is grammatically perfect, structurally correct, and contains not one fact about your business."
+      ],
+      "subs": [
+        {
+          "h3": "Tells that delivery is happening somewhere else",
+          "bullets": [
+            "Content that reads competently but contains no detail only your company would know — no customer objection, no price, no named process.",
+            "Deliverables that arrive on a rigid template with the same section order every month, including sections that don't apply to you.",
+            "Turnaround that doesn't match the stated team size, in either direction — suspiciously fast, or a fortnight for a title-tag change.",
+            "Nobody on the call can answer a follow-up about *why* a recommendation was made without saying they'll check and revert.",
+            "The audit names a CMS or a plugin you don't use. It happens more than you'd think."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "What changes when you cap the client list at three a month",
+      "body": [
+        "We take three new clients a month. That number isn't a scarcity trick and it isn't modesty — it's the only structure that survives our own guarantee.",
+        "We freeze your trailing-90-day count of qualified leads from organic search on day one. If we haven't beaten it in 90 days, we keep working free until we do. Price that risk against the model above and volume stops being possible. Every extra account is another chance to be working for nothing in month four, and unpaid months come out of the 25% margin line, not out of thin air.",
+        "So the cap changes the delivery shape in three concrete ways. First, senior hours go into delivery instead of the pipeline, because we're not trying to win twelve accounts a quarter. Second, we can't subcontract the thinking, because the thinking is the part carrying the risk. Third, we say no to sites where we can't see a path to the baseline — which is a strange sales motion and a very good filter.",
+        "It also means our pricing has to be honest about what it's paying for. SEO starts at ₹75,000/mo, smaller sites from ₹40,000, ex-GST, month-to-month after the first quarter. The [full pricing](/pricing) is public because the arithmetic above is the argument for it."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The trade we're making",
+        "body": "Three clients a month is roughly a tenth of what a 20-person shop needs to sign. We're buying the right to put senior hours on delivery, and paying for it in growth rate. If we're wrong about a client, we find out in 90 days and it costs us, not them."
+      }
+    },
+    {
+      "h2": "Three questions that expose the real delivery team",
+      "body": [
+        "You don't need an audit of the agency. You need ten minutes and three questions that can't be answered with a case study. Ask them in the pitch, before price comes up."
+      ],
+      "numbered": [
+        "**\"Who writes the first draft of an article, and are they on your payroll?\"** The honest answers are \"our in-house writer\", \"a freelancer we've used for two years, here's her name\", or \"a content partner\". All three are workable. The answer to watch for is \"we have a network of vetted writers\" — a network is a marketplace, and a marketplace prices by the word.",
+        "**\"How many other accounts does the person running mine also run?\"** Anything above six or seven means your share of a senior brain is a few hours a month. That may still be the right buy at your price. It is not the right buy at ₹1,50,000.",
+        "**\"Can you show me a working file from a live account, redacted?\"** A crawl export with the errors triaged. A redirect map. A content brief with a customer's actual words in it. Real delivery leaves artefacts; resold delivery leaves decks. This question is the one that produces the longest pause, which is itself the answer."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "One more, if you want to be unkind",
+        "body": "\"Will the people in this room run my account?\" Ask it, then say nothing for five seconds. What happens in those five seconds is more informative than the rest of the meeting."
+      }
+    },
+    {
+      "h2": "What this doesn't mean",
+      "body": [
+        "Two corrections, because arithmetic used carelessly turns into snobbery.",
+        "First: a ₹25,000 agency isn't running a scam. It's running a constraint. For a single-location business with forty pages, a competent junior doing six focused hours a month on Google Business Profile, page titles, site speed and one article can genuinely produce results. The failure mode isn't the price — it's selling that package to a company that needed ₹1,00,000 of work and letting them believe otherwise.",
+        "Second: price is a ceiling, not a promise. An agency charging ₹2,00,000 a month can run exactly the same junior-heavy pyramid and simply keep the difference. Paying more buys the *possibility* of senior hours. Only the answers to those three questions tell you whether you actually got them.",
+        "The one thing we'd hold onto from all of this: whatever you're paying, write down the number the work is meant to move and what it was on day one. Everything else in an agency relationship is contestable. That isn't. If you want the mechanics of that, we've written about [how to set an SEO baseline](/journal/how-to-set-an-seo-baseline) and about [where your retainer money actually goes](/journal/where-your-seo-retainer-money-actually-goes)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many hours of work does a ₹25,000 SEO retainer actually buy?",
+      "a": "By our model — 25% margin, 22% overhead, content and outreach paid as hard costs — around ₹2,000 of delivery budget survives, which is four to seven hours of junior time at Indian metro loaded rates. The content and links are real; the strategy time is what gets squeezed to nothing."
+    },
+    {
+      "q": "Do SEO agencies outsource their work?",
+      "a": "Many do, through white-label providers who deliver audits, content and outreach under the agency's logo. It isn't inherently bad — specialists often beat generalists. It's bad when it's undisclosed, and worse when the resale price leaves the person doing the work with a few hundred rupees of budget."
+    },
+    {
+      "q": "Why do agencies have so many junior staff?",
+      "a": "Because the rate card requires it. If your average retainer is ₹40,000, your average delivered hour has to cost a few hundred rupees, and only a wide-based pyramid produces that average. Seniors review work; they can't personally deliver five people's output."
+    },
+    {
+      "q": "What is a good utilisation rate for an SEO agency?",
+      "a": "Most professional-services businesses plan at 65–75% of available hours reaching client work. Above 80% quality drops because nobody has time to check anything; below about 50% the business loses money. That band quietly governs how many accounts each person carries."
+    },
+    {
+      "q": "How can I tell who is really working on my account?",
+      "a": "Ask who writes the first draft and whether they're on payroll, how many accounts your account lead also runs, and to see a redacted working file from a live client. Real delivery leaves artefacts — crawl exports, redirect maps, briefs with customer language in them."
+    },
+    {
+      "q": "Is a more expensive SEO agency always better?",
+      "a": "No. Price is a ceiling, not a promise. A ₹2,00,000 retainer can fund the same junior pyramid and the agency simply keeps the difference. Paying more makes senior hours possible; only the delivery questions tell you whether you got them."
+    }
+  ],
+  "related": [
+    { "type": "journal", "slug": "where-your-seo-retainer-money-actually-goes" },
+    { "type": "journal", "slug": "is-your-agency-outsourcing-your-seo" },
+    { "type": "journal", "slug": "why-we-only-take-three-clients-a-month" },
+    { "type": "cost", "slug": "seo-agency-fees-breakdown" },
+    { "type": "answers", "slug": "how-many-clients-should-an-seo-agency-take" },
+    { "type": "compare", "slug": "agency-vs-freelancer" }
+  ]
+}

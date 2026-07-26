@@ -1,0 +1,120 @@
+{
+  "slug": "average-position",
+  "type": "glossary",
+  "primaryKeyword": "average position",
+  "secondaryKeywords": [
+    "average position search console",
+    "what is average position in seo",
+    "average position meaning",
+    "rank tracking vs average position",
+    "why average position changed"
+  ],
+  "cluster": "analytics",
+  "intent": "informational",
+  "h1": "Average position",
+  "metaTitle": "Average Position: What It Really Tells You",
+  "metaDescription": "Average position is the mean rank of your page across every impression. It's the most misread number in Search Console — here's how to use it properly.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Average position",
+  "definition": "Average position is the impression-weighted mean of the highest position your site held across every search result where it appeared.",
+  "answer": "Average position is the mean rank your site held across every impression in the period, weighted by impressions. Unfiltered, it describes nothing real — ranking 3 on one query and 60 on another can average out to a number you hold on neither. Filter to one query or one page and it becomes useful.",
+  "takeaways": [
+    "Google takes your **topmost** position in each result set, then averages across impressions — not across queries.",
+    "Because it's impression-weighted, one high-volume query you rank badly for can dominate the whole number.",
+    "Sitewide average position getting worse is often a sign of growth: new pages enter low and drag the mean.",
+    "Filter to a query or a page. Unfiltered average position belongs in no report anyone acts on."
+  ],
+  "sections": [
+    {
+      "h2": "How the number is actually built",
+      "body": [
+        "For each result set where your site appeared, Google records the highest position any of your links occupied. Two pages ranking 4th and 9th for one query record as position 4, not 6.5.",
+        "Then it averages those positions across every impression in the period. That second part is what almost nobody knows, and it changes everything: the average is **weighted by impressions**, not by queries. A query with 10,000 impressions counts ten thousand times; one with 3 counts three times.",
+        "Positions are also counted within the organic list only. Ads, an [AI Overview](/glossary/ai-overviews) and a local pack push your result down the actual page without touching the reported number — which is how a stable average position sits alongside a collapsing click count."
+      ]
+    },
+    {
+      "h2": "The averaging trap, with the arithmetic",
+      "body": [
+        "Here's the example everyone uses. You rank 3 for one query and 60 for another, so your average is 31.5 — a position you hold for nothing.",
+        "That's directionally right and arithmetically wrong, and the real version is worse. Because the average is impression-weighted, it depends entirely on how many impressions each query produced."
+      ],
+      "table": {
+        "caption": "Two queries, one meaningless average. Weighting does the damage.",
+        "head": ["Query", "Position", "Impressions", "Contribution to the mean"],
+        "rows": [
+          ["\"seo agency bangalore\"", "3", "100", "3 × 100 = 300"],
+          ["\"seo\"", "60", "900", "60 × 900 = 54,000"],
+          ["**Reported average**", "**54.3**", "**1,000**", "54,300 ÷ 1,000"],
+          ["Simple mean of the two", "31.5", "—", "What most people assume it shows"]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "This is how good months look bad",
+        "body": "Publish twenty new pages, start appearing for a hundred broad queries at position 45, and your sitewide average position gets worse while your business gets better. Any agency reporting sitewide average position as a headline metric is either not thinking or counting on you not to."
+      }
+    },
+    {
+      "h2": "The fix: filter to one query or one page",
+      "body": [
+        "Average position becomes genuinely useful the moment it's scoped to something real. Two filters do almost all the work.",
+        "**Filter by query.** Add a query filter for one target term and read the position. Now it means what you thought it meant. Do this for the twenty queries in your plan and you have a real rank report, from Google's own data, free.",
+        "**Filter by page.** Pick a URL and see its average across everything it ranks for. Good for spotting a page that has slipped broadly, and for catching [keyword cannibalisation](/glossary/keyword-cannibalization) — when two URLs trade places on one query, both look erratic and neither looks broken.",
+        "Then add the dimension people forget: **country and device**. India and mobile filters change the picture substantially, because the global blend hides where your buyers actually are."
+      ],
+      "numbered": [
+        "Performance report → date range 3 or 6 months → **Compare** to the previous period.",
+        "Add a country filter for India, then a device filter for mobile.",
+        "Add a query filter for one planned target term.",
+        "Read position and [impressions](/glossary/impressions) together. Position improving with impressions rising is the shape you want.",
+        "Repeat across your twenty target queries. Twenty minutes a month, and it beats most paid dashboards."
+      ]
+    },
+    {
+      "h2": "Average position versus a rank tracker",
+      "body": [
+        "A rank tracker asks a robot to search a term from a set location and records what it sees. Search Console reports where real people actually saw you. They will never agree, and the reasons are informative rather than annoying.",
+        "Results in India vary heavily by city. Search a commercial query from Bangalore and from Patna and you get different pages, especially with local intent. Search Console blends all of that into one number; a tracker gives one city's snapshot. Neither is the truth.",
+        "Personalisation, search history, device and time of day add more variance — as does Search Console reporting a period average while a tracker reports a moment.",
+        "Use each for what it's good at. The tracker tells you where you stand in one market on one day. Search Console tells you what your real audience experienced across the period. Neither is the metric worth being paid on — that's leads, which is why our own guarantee is written against a client's trailing-90-day organic lead baseline rather than any position."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where average position belongs in a report",
+        "body": "As a leading indicator on named target queries, next to impressions. Never as a sitewide headline, and never as the thing anyone is paid against. More on reading a report honestly in [how to read an SEO report](/journal/how-to-read-an-seo-report)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is my average position getting worse when traffic is up?",
+      "a": "Almost always because you're appearing for more queries than before. New pages enter results at low positions, and since the average is impression-weighted, a pile of position-45 impressions drags the mean down while clicks rise. Filter to your target queries and the picture usually inverts."
+    },
+    {
+      "q": "How does Google calculate average position?",
+      "a": "It takes the highest position your site occupied in each result set where it appeared, then averages those values across every impression in the period. The weighting by impressions rather than by query is the part that makes unfiltered numbers misleading."
+    },
+    {
+      "q": "Is position 1 in Search Console the same as being first on the page?",
+      "a": "No. Position is counted within the organic list. Ads, AI Overviews, local packs and shopping rows sit above the organic block without affecting the reported number. You can hold position 1 and still be below the fold on a phone."
+    },
+    {
+      "q": "Why doesn't my rank tracker match Search Console?",
+      "a": "They measure different things. A tracker records what a robot saw from one location at one moment; Search Console records where real users across all locations saw you over a period. In India, city-level variation alone is enough to explain most of the gap."
+    },
+    {
+      "q": "What's a good average position?",
+      "a": "For a filtered target query, top ten means you're in the contest and top three means you're winning it. For an unfiltered sitewide figure there is no good number, because the number doesn't describe anything you can act on."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "impressions" },
+    { "type": "glossary", "slug": "click-through-rate" },
+    { "type": "glossary", "slug": "google-search-console" },
+    { "type": "compare", "slug": "keyword-rankings-vs-organic-traffic" },
+    { "type": "compare", "slug": "ga4-vs-search-console" },
+    { "type": "journal", "slug": "how-to-read-an-seo-report" }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "slug": "content-decay",
+  "type": "glossary",
+  "primaryKeyword": "content decay",
+  "secondaryKeywords": [
+    "traffic decline old blog posts",
+    "content refresh seo",
+    "why is my traffic dropping",
+    "content pruning",
+    "updating old content for seo"
+  ],
+  "cluster": "content",
+  "intent": "informational",
+  "h1": "Content decay",
+  "metaTitle": "Content Decay: Why Old Pages Lose Traffic",
+  "metaDescription": "Content decay is traffic quietly draining from pages that used to rank. Here's how to spot it in Search Console and choose between refresh, merge and cut.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Content decay",
+  "definition": "Content decay is the gradual loss of rankings, impressions and traffic on a page that once performed well, usually caused by the page standing still while the results around it move.",
+  "answer": "Content decay is the slow traffic loss on pages that used to rank. It's rarely a penalty — it's competitors publishing better pages, facts going stale, or the SERP changing shape underneath you. The fix is a quarterly review that measures every URL against its own 12-month peak, then refreshes, merges or deletes it.",
+  "takeaways": [
+    "Decay is maintenance, not disaster. Every content site has it, including ours.",
+    "Compare each URL to **its own peak**, not to the site total. A site can grow while 40% of its pages quietly bleed.",
+    "Three outcomes only: **refresh**, **merge**, or **delete**. Anything else is procrastination.",
+    "Changing the published date and nothing else is fraud with extra steps. Google reads the page, not the timestamp."
+  ],
+  "sections": [
+    {
+      "h2": "What decay looks like in Search Console",
+      "body": [
+        "Site-level traffic charts hide decay, because new pages mask old ones dying. A blog can be up 15% year on year while half its library is in free-fall. You have to look per URL.",
+        "Open the Performance report, switch to the **Pages** tab, and use the date comparison — last 6 months versus the same 6 months a year ago. Sort by the click difference, ascending. The top of that list is your decay report, and it will be longer than you expect.",
+        "Then do the harder version: for each losing URL, find its best-ever month. A page that pulled 900 clicks in a month and now pulls 300 is down 67% against itself, even if last year's comparison only shows a 20% dip because it was already sliding. Peak-relative is the honest measure."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Seasonality first, panic second",
+        "body": "Before you call anything decay, check the same period two years back. Indian search has hard seasonal swings — exam calendars, festive quarters, financial year-end. A page that drops every March and recovers every June isn't decaying, it's behaving."
+      }
+    },
+    {
+      "h2": "Why pages decay",
+      "body": [
+        "There are four common causes and they call for genuinely different responses. Diagnosing before acting is the whole game here; most people skip straight to \"add 500 words\", which fixes exactly one of the four."
+      ],
+      "bullets": [
+        "**The facts went stale.** Prices, tool names, version numbers, tax rules, screenshots. Common on anything with a number in the title. Readers bounce, and competitors with current figures win.",
+        "**Somebody wrote a better page.** The most frequent cause and the least discussed. Your page didn't get worse; the bar moved. Check what now ranks above you and be honest about whether it's better.",
+        "**Intent shifted.** Google re-read the query and now favours a different format — a comparison, a tool, a video. Your excellent guide is answering a question nobody's asking any more. See [search intent](/glossary/search-intent).",
+        "**The SERP grew a new feature.** An [AI Overview](/glossary/ai-overviews), an expanded local pack, a shopping row. Your position is unchanged and your clicks are down, which is the tell: flat average position, falling [click-through rate](/glossary/click-through-rate)."
+      ]
+    },
+    {
+      "h2": "Refresh, merge or delete",
+      "body": [
+        "Once a URL is on the list, it gets exactly one of three verdicts. Leaving it in \"we'll look at it later\" is how sites accumulate 400 pages nobody maintains and Google stops trusting."
+      ],
+      "table": {
+        "caption": "The decision rule we run on every decaying URL.",
+        "head": ["What you're seeing", "What it means", "Verdict"],
+        "rows": [
+          [
+            "Still ranks 5–15, clicks down, topic still commercially relevant",
+            "The page has equity and a fixable quality gap",
+            "**Refresh.** Highest return in the whole exercise."
+          ],
+          [
+            "Two or three of your URLs compete for the same query",
+            "Keyword cannibalisation, splitting signals three ways",
+            "**Merge** into the strongest URL and 301 the rest."
+          ],
+          [
+            "No impressions for 12 months, no links, no commercial purpose",
+            "Nobody wants it and it dilutes the site's topical focus",
+            "**Delete** and 410, or 301 if a genuine successor exists."
+          ],
+          [
+            "Position flat, CTR down, an AI Overview now sits above",
+            "You lost clicks, not rankings",
+            "Rework the title and opening, not the whole page."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "What a real refresh involves",
+      "body": [
+        "A refresh is not a date change. Republishing a 2022 post with a 2026 timestamp is the single most common non-fix in this business, and it does nothing except make your dateModified a lie.",
+        "A refresh means the page is materially better than it was. In practice that's most of this list on any page worth saving:"
+      ],
+      "numbered": [
+        "Read the top three results that beat you, and write down what each covers that you don't.",
+        "Update every number, price, tool name and screenshot. Delete claims you can no longer support.",
+        "Fix the intent match. If the SERP now wants a comparison table, add the comparison table.",
+        "Rewrite the first 150 words. That's what the snippet and the AI citation pull from, and it's usually the oldest prose on the page.",
+        "Re-do the internal links, both directions — new pages published since should point at this one.",
+        "Only then update the date, and only if the change is genuine."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The cadence that actually holds",
+        "body": "One decay review per quarter, capped at ten URLs. Not a heroic annual audit that finds 90 broken pages and gets abandoned in week two. Ten a quarter is 40 a year, which for most sites is the entire library that matters. More on the timing in [when to update old content instead of writing new](/journal/when-to-update-old-content-instead-of-writing-new)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I know if it's content decay or a Google update?",
+      "a": "Decay is gradual and page-specific. An algorithm update is abrupt and hits a cluster of pages on the same day. Plot daily clicks: a cliff on one date points at an update; a slope over months points at decay. Check the update timeline before assuming either."
+    },
+    {
+      "q": "Does updating the published date help rankings?",
+      "a": "Only if the content genuinely changed. Google renders the page and compares it to what it indexed before. A date change with no substantive edit gets you nothing, and in a manual review it reads as the kind of trust signal you don't want to be caught faking."
+    },
+    {
+      "q": "Is deleting old content bad for SEO?",
+      "a": "Deleting pages that have links, traffic or purpose is bad. Deleting pages with none of the three is usually a net gain — it concentrates crawl attention and tightens your topical focus. Redirect anything with backlinks to the closest genuine equivalent, not to your homepage."
+    },
+    {
+      "q": "How long before a fresh page starts decaying?",
+      "a": "There's no fixed clock. Pages on fast-moving topics — tools, pricing, anything with a year in it — can start sliding within six to nine months. Evergreen explanations can hold for years. The variable is how quickly the competition and the facts move, not the page's age."
+    },
+    {
+      "q": "Should I refresh or write something new?",
+      "a": "Refresh first, almost always. An existing URL carries links, age and whatever ranking history it built. Starting a new URL for the same query throws all of that away and creates cannibalisation. Write new only when the query genuinely needs a different page."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "thin-content" },
+    { "type": "glossary", "slug": "keyword-cannibalization" },
+    { "type": "glossary", "slug": "ai-overviews" },
+    { "type": "journal", "slug": "when-to-update-old-content-instead-of-writing-new" },
+    { "type": "services", "slug": "content-marketing-services" },
+    { "type": "compare", "slug": "keyword-rankings-vs-organic-traffic" }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "slug": "why-did-my-rankings-drop",
+  "type": "answers",
+  "primaryKeyword": "why did my rankings drop",
+  "secondaryKeywords": [
+    "why did my website traffic drop",
+    "google ranking dropped suddenly",
+    "organic traffic drop causes",
+    "how to recover lost rankings"
+  ],
+  "cluster": "seo-measurement",
+  "intent": "informational",
+  "h1": "Why your rankings dropped, diagnosed in order",
+  "metaTitle": "Why Did My Rankings Drop? A Diagnostic Order",
+  "metaDescription": "Why did my rankings drop? Work through nine causes in order, from tracking errors to core updates to AI Overviews, before you change a single page.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Rankings drop for nine reasons, and you should rule them out in order: broken tracking, a rank-tracker setting, de-indexing, your own recent deploy, internal-link changes, lost backlinks, a core update, a SERP layout change like AI Overviews, and competitor movement. Most drops are one of the first four, not the update everyone blames.",
+  "takeaways": [
+    "Diagnose in order. A large share of the \"drops\" we get called about are a **measurement artefact or a deploy**, and both are found in twenty minutes.",
+    "The most useful early split: is this **one page or the whole site?** Page-level points at your own changes. Site-wide points at an update or an access problem.",
+    "A core update is the **last** thing to check, not the first. It's also the only cause here with no fix you control.",
+    "If position held and clicks fell, your ranking didn't drop — the **SERP** changed around you. Different problem, different answer."
+  ],
+  "sections": [
+    {
+      "h2": "Step one: prove the drop is real before you touch anything",
+      "body": [
+        "The most expensive hour in SEO is the one spent rewriting a page that never lost anything. Reporting breaks far more often than rankings do, and it breaks silently.",
+        "Five checks, in this order, about two minutes each."
+      ],
+      "numbered": [
+        "**Cross-check two sources.** Search Console clicks flat but GA4 sessions collapsed means your analytics broke, not your rankings. Both falling together means the drop is real.",
+        "**Check the tag actually fired.** A container republished without the GA4 tag, or a consent banner defaulting to deny, produces a cliff-edge chart on a perfectly healthy site.",
+        "**Check the rank tracker's settings.** Location, device, language, personalisation. Someone switching the tracked location from Mumbai to \"India\" moves half your keywords overnight while nothing happened on your site.",
+        "**Compare against last year.** Indian B2B traffic falls every Diwali week and every late December. Seasonality looks exactly like a penalty on a 28-day chart.",
+        "**Is it one page or the whole site?** Filter Search Console by page. One URL falling is a page problem; every URL slipping a few positions is a site or update problem. This halves your search space."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The most common false alarm",
+        "body": "Average position rising while traffic falls almost always means you started ranking for a pile of new low-position queries, dragging the average up as the good ones slip. Never diagnose from a site-wide average. Filter to the fifteen queries that actually make you money."
+      }
+    },
+    {
+      "h2": "Step two: check Google can still reach and index the page",
+      "body": [
+        "If the drop is real and confined to specific URLs, the next question isn't quality. It's whether the page is in the index at all. A de-indexed page doesn't rank lower — it stops ranking, and the chart is identical to a catastrophic quality problem.",
+        "Run the URL through the URL Inspection tool in Search Console and read the actual response, then check these four."
+      ],
+      "bullets": [
+        "**A `noindex` that shouldn't be there.** Staging ships with it, and some CMS plugins add it when a post status changes. The most common self-inflicted de-indexing there is.",
+        "**A `robots.txt` change.** One `Disallow: /` in production removes a site over the following days. Check the file's edit history, not just its current contents.",
+        "**A canonical pointing elsewhere.** Google will index that URL instead — see [what a canonical tag does](/answers/what-is-a-canonical-tag-in-seo) if that mechanic is new.",
+        "**Server errors or a blocked crawler.** 5xx responses, a new WAF rule or bot protection can refuse Googlebot while serving humans normally. Crawl stats will show it.",
+        "**Rendering failures.** On JavaScript-heavy sites a build change can leave content invisible in the rendered HTML while looking fine in your browser."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "If the page isn't indexed",
+        "body": "Stop here and fix that first. Nothing else on this list matters while the page is out of the index, and no other fix will show an effect until it's back in. [Why pages don't get indexed](/answers/why-is-my-page-not-indexed-on-google) covers the full list of causes."
+      }
+    },
+    {
+      "h2": "Step three: what did you ship in the two weeks before the drop?",
+      "body": [
+        "This is the step everyone skips and where the answer usually is. Google reacts to your changes on a lag of days to weeks, which breaks the mental link between cause and effect — by the time the chart moves, the deploy feels like old news.",
+        "Pull your release log, CMS revision history and CDN config changes for the 21 days before the drop began. Look for these, which move rankings hardest while looking harmless in a pull request."
+      ],
+      "bullets": [
+        "**A migration or replatform.** New URLs without complete 301s is the classic. So is redirecting everything to the homepage, which Google treats as a soft 404.",
+        "**Title and H1 rewrites at scale.** A template change that rewrites 400 titles at once is a site-wide experiment you didn't mean to run.",
+        "**Navigation or internal-link changes.** Removing a footer block or collapsing a menu into a JavaScript drawer strips links from hundreds of pages. Worth reading [internal linking best practices](/answers/internal-linking-best-practices) before any nav redesign.",
+        "**New pages competing with old ones.** Publish three articles on one topic and Google has to pick. It often picks wrong, the original drops, and cannibalisation looks exactly like a penalty.",
+        "**Speed regressions.** A hero video, a chat widget or an extra tag container can push Largest Contentful Paint past the threshold on mobile.",
+        "**Lost backlinks.** Not your deploy, same window. A partner redesigning, an article unpublished, a directory going down. Check referring domains month over month."
+      ]
+    },
+    {
+      "h2": "Step four: was it actually a core update?",
+      "body": [
+        "Only now is it fair to blame Google. Core updates are real, they move whole sites rather than single pages, and they're announced — Google publishes start and end dates on its Search Status Dashboard. That gives you something rare in SEO: a checkable date.",
+        "The correlation has to be tight. Line your daily impressions against the announced rollout window. A drop that starts the day the rollout starts and stabilises when it ends is a core update. A drop that began nine days earlier is your deploy, and blaming the update will cost you a quarter.",
+        "Two more tests: core updates hit **site-wide**, not one URL, and they usually hit a whole category of sites at once. If you fell and no competitor did, it's you."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The uncomfortable part",
+        "body": "There is no button that reverses a core update. Google's own guidance is that there's nothing specific to fix — you improve the site and wait for the next assessment. The honest recovery estimate is one to two updates away, which is three to nine months. Anyone selling a 30-day core-update recovery is selling something else."
+      }
+    },
+    {
+      "h2": "Step five: the SERP moved, not you",
+      "body": [
+        "Here's the case that fools the most people. Your average position is unchanged. Your clicks halved. Nothing broke and no update landed. What changed is the page your result sits on.",
+        "Position three used to be near the top of the screen. On a query that now returns an AI Overview, a shopping row, a People Also Ask block and four ads, position three can be a full scroll down. You didn't drop; the real estate above you grew.",
+        "Pull clicks, impressions, position and CTR together for your top queries. Steady impressions, steady position, falling CTR is the signature. Then run the query yourself, logged out, on mobile, and look at what's above you."
+      ],
+      "bullets": [
+        "**AI Overviews** answer the question inline. Informational queries lose most; buying, local and comparison queries lose least.",
+        "**More ads on commercial queries.** Nothing to fix — only a decision about whether the query is worth paid coverage. That's a [performance marketing](/performance) call, not an SEO one.",
+        "**A new pack.** A map pack, video carousel or product grid appearing pushes every organic result down without changing a single ranking.",
+        "**A competitor genuinely got better.** Rewrote the page above you, earned twenty links, added the schema you never got round to. The most common non-technical cause and the least fun to accept."
+      ]
+    },
+    {
+      "h2": "Recovery timelines, by cause",
+      "body": [
+        "Different causes recover on completely different clocks, and knowing which one you're on stops you panicking in week two or waiting patiently through a fixable problem. These are the windows we plan around — ranges, because crawl frequency, site size and authority all move them."
+      ],
+      "table": {
+        "caption": "Nine causes of a ranking drop, how to confirm each, and a realistic recovery window.",
+        "head": ["Cause", "How you confirm it", "Realistic recovery"],
+        "rows": [
+          ["Tracking or reporting break", "Search Console flat while GA4 falls", "Immediate — nothing was lost"],
+          ["Rank tracker setting changed", "Compare location, device and language to last month", "Immediate"],
+          ["Page de-indexed or blocked", "URL Inspection shows noindex, a robots block or an error", "Days to 3 weeks after the fix is recrawled"],
+          ["Bad deploy or migration", "Release log for the 21 days before the drop", "2–8 weeks once reverted; longer if URLs changed"],
+          ["Internal links lost or cannibalisation", "Crawl the site; check which URL Google now picks", "3–8 weeks"],
+          ["Lost backlinks", "Referring domains down month over month", "1–3 months, and sometimes never if the link is gone"],
+          ["Google core update", "Drop aligns to announced rollout dates, site-wide", "Next update or the one after — 3–9 months, not guaranteed"],
+          ["SERP layout change or AI Overviews", "Position steady, CTR down", "Not recoverable by ranking; it lowered the ceiling"],
+          ["Competitor overtook you", "Their page improved or gained links", "1–4 months of genuinely better work"]
+        ]
+      }
+    },
+    {
+      "h2": "What not to do in the first week",
+      "body": [
+        "Panic causes more damage than most drops. Change one thing, write down the date, wait for a recrawl, then change the next."
+      ],
+      "bullets": [
+        "**Don't disavow links** unless you have a manual action in Search Console. The disavow file is a loaded gun aimed at your own backlink profile.",
+        "**Don't rewrite ten pages at once.** You'll lose the ability to attribute any recovery to any change.",
+        "**Don't buy links to push it back up.** That converts a temporary drop into a permanent one.",
+        "**Don't fire the agency in week two.** Do ask for the diagnostic order above in writing, with dates. If they open with \"it's the algorithm\" before checking your deploy log, that's your answer — and [how to judge your agency](/answers/how-do-i-know-if-my-seo-agency-is-doing-a-good-job) covers the rest of that conversation.",
+        "**Don't change the measurement.** Whatever baseline you agreed on stays frozen. Moving the goalposts mid-drop is how six months disappear."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long does it take to recover lost rankings?",
+      "a": "It depends entirely on the cause. A tracking error recovers instantly because nothing was lost. A de-indexing fix takes days to three weeks once the page is recrawled. A bad deploy takes two to eight weeks after reverting. A core update is the slow one: three to nine months, and no guarantee."
+    },
+    {
+      "q": "Did a Google core update cause my drop?",
+      "a": "Check the dates. Google publishes core update rollout windows on its Search Status Dashboard. If your daily impressions started falling the day the rollout began and stabilised when it ended, and the fall is site-wide rather than on one page, it's plausible. If the drop began a week earlier, look at what you deployed instead."
+    },
+    {
+      "q": "My rankings are the same but traffic dropped. What happened?",
+      "a": "The SERP changed around you. An AI Overview, an extra ad block, a map pack or a video carousel appearing on your queries pushes your result further down the screen without changing your position number. Pull clicks, impressions, position and CTR together — steady position with falling CTR is the signature."
+    },
+    {
+      "q": "Should I disavow backlinks after a ranking drop?",
+      "a": "Almost never. Only use the disavow tool if you have an actual manual action in Search Console, or if you knowingly bought links and need to clean up. Google ignores most low-quality links automatically, and a careless disavow file removes links that were helping you. It is not a diagnostic step."
+    },
+    {
+      "q": "Is a ranking drop always a penalty?",
+      "a": "Rarely. True manual penalties are announced in the Manual Actions report in Search Console — if there's nothing there, you don't have one. Most drops are measurement errors, self-inflicted site changes, algorithmic re-assessment, or the SERP layout changing around a result that never actually moved."
+    },
+    {
+      "q": "How do I stop this happening again?",
+      "a": "Three habits. Keep an annotated log of every deploy, redirect and template change with dates. Track the fifteen queries that generate revenue, not a site-wide average. And run a crawl before and after any release that touches templates, navigation or URLs — that catches most of this before Google sees it."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "why-is-my-page-not-indexed-on-google" },
+    { "type": "glossary", "slug": "google-core-update" },
+    { "type": "glossary", "slug": "ai-overviews" },
+    { "type": "journal", "slug": "what-ai-overviews-did-to-your-organic-traffic" },
+    { "type": "services", "slug": "penalty-recovery-services" },
+    { "type": "compare", "slug": "keyword-rankings-vs-organic-traffic" }
+  ]
+}

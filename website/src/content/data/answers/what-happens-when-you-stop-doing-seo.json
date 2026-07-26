@@ -1,0 +1,213 @@
+{
+  "slug": "what-happens-when-you-stop-doing-seo",
+  "type": "answers",
+  "primaryKeyword": "what happens when you stop doing seo",
+  "secondaryKeywords": [
+    "do seo rankings drop if you stop",
+    "what happens if i pause seo",
+    "is seo permanent",
+    "seo decay after stopping"
+  ],
+  "cluster": "agency-mechanics",
+  "intent": "informational",
+  "h1": "What happens to your rankings when you stop SEO",
+  "metaTitle": "What Happens When You Stop Doing SEO?",
+  "metaDescription": "What happens when you stop doing SEO? Rankings decay slowly, not instantly. Here's the realistic decline curve by month and which gains actually stick.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Stop SEO and your rankings decay slowly, not overnight. Most sites hold for one to three months, then slide as competitors publish and content ages. Earned links and fixed site architecture keep paying you. Freshness, publishing velocity and new keyword coverage stop the day you stop. A year off usually costs more to rebuild than it saved.",
+  "takeaways": [
+    "Nothing collapses in week one. The first real symptom is **impressions flattening**, and it shows up before any position drops.",
+    "Two things you already paid for keep working: **earned links** and **technical fixes**. Everything else is a subscription.",
+    "You don't fall down the results page. You get **passed** — by whoever kept publishing while you didn't.",
+    "Pausing is sometimes the right call. Pausing without freezing your baseline first never is."
+  ],
+  "sections": [
+    {
+      "h2": "What decays, what persists, and why the difference matters",
+      "body": [
+        "SEO isn't one asset. It's a pile of assets with wildly different shelf lives, and the reason \"what happens if I stop\" gets such vague answers is that people average them together.",
+        "Split the pile into things you own permanently and things you're effectively renting. The permanent stuff survives a pause. The rented stuff stops the day the invoice does."
+      ],
+      "table": {
+        "caption": "Which parts of an SEO programme survive a pause, and which stop immediately.",
+        "head": ["The asset", "Shelf life", "What actually happens when you stop"],
+        "rows": [
+          [
+            "Technical fixes — redirects, canonicals, schema, site speed",
+            "Durable",
+            "Nothing degrades on its own. It degrades the next time a developer ships a change with no SEO in the room."
+          ],
+          [
+            "Earned links",
+            "Durable, slowly eroding",
+            "Links stay live until the linking page is pruned or redesigned. Link rot is real but it's slow — measured in years, not months."
+          ],
+          [
+            "Rankings on evergreen, uncontested queries",
+            "Durable-ish",
+            "Often hold for a very long time, because nobody is actively attacking them."
+          ],
+          [
+            "Rankings on competitive commercial queries",
+            "Perishable",
+            "Contested every week. You lose ground to whoever kept shipping."
+          ],
+          [
+            "Freshness on dated pages",
+            "Perishable, on a schedule",
+            "\"Best X in 2026\" and anything with a year, a price or a stat in it ages out predictably."
+          ],
+          [
+            "New keyword coverage",
+            "Stops instantly",
+            "The queries you never entered don't appear in any decline chart. This is the largest cost and the hardest one to see."
+          ],
+          [
+            "Internal link equity from new pages",
+            "Stops instantly",
+            "Older pages stop receiving fresh internal links, so the ones you were pushing up stop getting pushed."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The loss you can't chart",
+        "body": "A decay curve only shows what you had. It can't show the 40 queries you'd have entered in the next two quarters. Most of the real cost of pausing sits in that invisible column."
+      }
+    },
+    {
+      "h2": "The decline curve, month by month",
+      "body": [
+        "There is no universal curve, and anyone who shows you one with clean percentages made it up. How fast you slide depends on how contested your queries are, how old and well-linked your domain is, and how much of your traffic is brand.",
+        "The shape, though, is consistent — and the reasoning behind each stage is worth more than a number. Here's what to expect and why."
+      ],
+      "table": {
+        "caption": "The typical shape of ranking decay after stopping SEO, and the mechanism behind each stage.",
+        "head": ["Time since stopping", "What usually happens", "Why"],
+        "rows": [
+          [
+            "Month 0–1",
+            "Almost nothing visible.",
+            "Nothing changed on your site and competitors haven't shipped much yet. Google has no new information to act on."
+          ],
+          [
+            "Month 1–3",
+            "Positions hold. Impressions flatten, then dip.",
+            "Your long-tail footprint stops growing. Impressions are the first honest signal, which is why they're the one to watch."
+          ],
+          [
+            "Month 3–6",
+            "Visible slide on competitive commercial terms. Brand and evergreen terms hold.",
+            "Competitors have now published a full quarter. Core updates start re-scoring pages against a field that moved."
+          ],
+          [
+            "Month 6–12",
+            "Compounding decline. Dated pages fall out of the top 10.",
+            "Content decay plus accumulated technical drift from site changes nobody reviewed."
+          ],
+          [
+            "Month 12+",
+            "Losses harden. Restarting costs more than maintaining would have.",
+            "Links lost to page pruning, a widened authority gap, and topical coverage holes that now need filling from scratch."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Don't wait for the traffic chart",
+        "body": "By the time organic sessions visibly drop, you're usually four to six months into the slide. Track impressions and average position for your target queries in Search Console instead — they turn first."
+      }
+    },
+    {
+      "h2": "The thing that actually moves is your competitors",
+      "body": [
+        "Search results are a ranked list, not a score. You don't fall. You get passed. That single reframe explains almost every confusing thing about SEO decay.",
+        "If three serious competitors in your market each publish eight pages a month, six months of you doing nothing is roughly 144 competitor pages against your zero. If nobody in your market publishes anything, you can stop for a year and barely notice. Both of these are genuinely true, for different businesses, in the same week.",
+        "So before you decide how risky a pause is, find out which market you're in."
+      ],
+      "bullets": [
+        "Run `site:competitor.com/blog` on your top three rivals, note the count, and run it again in 60 days. That's your publishing arms race, measured for free.",
+        "Check their referring domain growth in whatever backlink tool you already pay for. Flat means safe to pause. Climbing means expensive to pause.",
+        "Watch SERP churn on ten of your money keywords. If the top 10 is the same set of URLs it was a year ago, the market is sleepy.",
+        "Check whether your traffic is mostly brand. Brand queries barely decay, which makes some brands feel invincible right up until the non-brand half disappears."
+      ]
+    },
+    {
+      "h2": "When pausing SEO is genuinely the right call",
+      "body": [
+        "Plenty of agencies will tell you never to stop. They have an obvious interest in that answer. Here are the cases where stopping is the correct commercial decision, and we'd say so on the call."
+      ],
+      "bullets": [
+        "**Cash is the binding constraint and SEO isn't yet the channel paying salaries.** A retainer you have to fund from your runway is worse than a pause you plan properly.",
+        "**You're mid-replatform.** Publishing 20 pages into a site you're about to rebuild is money in a bin. Pause the content, keep the technical seat at the table.",
+        "**You don't know which queries matter yet.** Pre-product-market-fit, keyword research is guesswork with a spreadsheet. Ads will tell you faster which words convert.",
+        "**Your current agency is doing harm.** Pausing beats paying for damage — see [how a bad SEO agency can hurt your site](/answers/can-an-seo-agency-hurt-your-website).",
+        "**A genuinely dead season.** Even then, you publish *before* the season, not during it — search demand shows up weeks ahead of the buying."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The middle option most people miss",
+        "body": "You don't have to choose between ₹75,000 a month and zero. A maintenance tier — technical monitoring, refreshing your ten best pages, and nothing else — holds far more ground than a full stop, at a fraction of the cost."
+      }
+    },
+    {
+      "h2": "How to pause without losing everything",
+      "body": [
+        "A planned stop and an abrupt one produce completely different outcomes six months later. Six things to do before the last invoice."
+      ],
+      "numbered": [
+        "**Freeze your baseline.** Export trailing-90-day organic leads, impressions, indexed page count, referring domains and positions for your top 50 keywords. Store it somewhere that isn't the agency's Drive. Without this you can never prove what the pause cost, or what the restart earned.",
+        "**Finish the technical work.** Half a migration is worse than no migration. Redirects, canonicals and indexing fixes are the assets that survive the pause — leave them done.",
+        "**Ship the drafts you've already paid for.** A half-finished [topic cluster](/glossary/topic-cluster) ranks worse than no cluster, because the pillar page has nothing pointing at it.",
+        "**Keep the boring hour.** 404 monitoring, Search Console coverage checks, uptime, Google Business Profile posts and review replies. That's roughly an hour a month and it prevents the failures that are expensive to reverse.",
+        "**Confirm you own everything.** Analytics property, Search Console, Business Profile, domain registrar, CMS admin, and the content itself. Ownership disputes are the one form of damage a pause makes permanent.",
+        "**Set a review date.** Put a calendar entry at 90 days to check impressions and position. A pause with no end date is a cancellation wearing a nicer word."
+      ]
+    },
+    {
+      "h2": "What restarting actually costs",
+      "body": [
+        "Restarting isn't starting from zero — that's the good news. Your links are still there and your technical fixes are still holding, assuming nobody shipped a redesign over them.",
+        "It isn't starting from where you left off either. Expect a re-audit, a backlog of pages that need refreshing rather than writing, a technical drift list from every change made while nobody was watching, and a link gap that widened quietly. In practice, the first 60 to 90 days of a restart look a lot like the first 60 to 90 days of a new engagement, which is exactly the money the pause was meant to save.",
+        "That arithmetic is why the maintenance tier usually wins. Twelve months at a reduced scope almost always costs less than twelve months off plus a full restart — and you keep the ground.",
+        "When we do restart a paused site, we freeze the baseline on day one — the client's own trailing-90-day qualified leads from organic — and if we haven't beaten it in 90 days we keep working free until we do. It's the same commitment on a restart as on a new site, and it's why we cap at three clients a month. See [how our SEO work is structured](/seo)."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The honest summary",
+        "body": "One to three months of grace. Three to six months of visible slide on contested terms. Six to twelve months to lose the compounding. Twelve months plus, and you're rebuilding rather than resuming."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long before my rankings drop if I stop SEO?",
+      "a": "Usually one to three months before anything visible moves, and three to six before competitive commercial terms slide. Uncontested and brand queries can hold for years. Impressions in Search Console flatten well before positions fall, so that's the number to watch if you've paused."
+    },
+    {
+      "q": "Is SEO permanent, or do I have to pay forever?",
+      "a": "Parts of it are permanent. Technical fixes stay fixed and earned links keep pointing at you. What isn't permanent is your position relative to competitors who keep publishing, and freshness on any page containing a year, a price or a statistic. So: partly permanent, partly a subscription."
+    },
+    {
+      "q": "Will I lose my backlinks if I stop doing SEO?",
+      "a": "Not quickly. Links disappear when the linking page is deleted, redesigned or pruned, which happens gradually across any link profile. You'll lose a slow trickle over years, not a chunk in a quarter. The bigger cost is the links you'd have earned and didn't."
+    },
+    {
+      "q": "Is it cheaper to pause SEO and restart later, or to run a smaller retainer?",
+      "a": "Usually the smaller retainer. A restart repeats the audit, the technical catch-up and a content refresh backlog, which is most of the cost of a new engagement. A reduced scope that keeps the technical monitoring and refreshes your best ten pages holds far more ground for the money."
+    },
+    {
+      "q": "Does Google penalise a site for not publishing?",
+      "a": "No. There's no penalty for going quiet. What happens is competitive — pages that were updated more recently and cover the topic more completely get ranked above yours. It feels like a penalty from your side of the chart, but the mechanism is entirely relative."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "content-decay" },
+    { "type": "answers", "slug": "how-long-does-it-take-for-seo-to-work" },
+    { "type": "compare", "slug": "retainer-vs-project" },
+    { "type": "journal", "slug": "when-to-update-old-content-instead-of-writing-new" },
+    { "type": "cost", "slug": "is-seo-worth-the-money" },
+    { "type": "services", "slug": "seo-retainer-plans" }
+  ]
+}

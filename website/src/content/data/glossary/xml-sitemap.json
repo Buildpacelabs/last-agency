@@ -1,0 +1,145 @@
+{
+  "slug": "xml-sitemap",
+  "type": "glossary",
+  "primaryKeyword": "xml sitemap",
+  "secondaryKeywords": [
+    "sitemap in seo",
+    "how to create xml sitemap",
+    "sitemap index file",
+    "submit sitemap to google",
+    "sitemap.xml example"
+  ],
+  "cluster": "technical-seo",
+  "intent": "informational",
+  "h1": "XML sitemap",
+  "metaTitle": "XML Sitemap: What It Is and How to Build One",
+  "metaDescription": "An XML sitemap lists the URLs you want Google to find. Learn the 50,000-URL limit, honest lastmod dates, and how to turn a sitemap into a diagnostic.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "XML sitemap",
+  "definition": "An XML sitemap is a machine-readable file listing the URLs on a site that you want search engines to know about, along with optional metadata such as when each URL last changed.",
+  "answer": "An XML sitemap is a file listing the URLs you want search engines to discover, with an optional `lastmod` date for each. One file holds up to 50,000 URLs or 50MB uncompressed; beyond that you split it and add a sitemap index. It aids discovery. It never guarantees indexing.",
+  "takeaways": [
+    "50,000 URLs or 50MB uncompressed per file. Past that, split and use a sitemap index.",
+    "Google ignores `priority` and `changefreq` entirely. It uses `lastmod` — but only if you've never lied to it.",
+    "Split sitemaps by page type. The submitted-versus-indexed ratio per file is the cheapest content diagnostic you own.",
+    "A sitemap is a suggestion. If a page isn't indexed, listing it again won't change Google's mind."
+  ],
+  "sections": [
+    {
+      "h2": "What it's for, and the limits",
+      "body": [
+        "A sitemap tells search engines a URL exists and roughly when it last changed. That's the whole job. It helps most where discovery is genuinely hard — a large site, a new site with few external links, pages buried deep in pagination.",
+        "It helps least on a small, well-linked site. If your 60 pages are all two clicks from the homepage, Google was going to find them anyway. The sitemap still earns its place, but as an instrument rather than a discovery tool.",
+        "The constraints are fixed: **50,000 URLs or 50MB uncompressed per file**, whichever you hit first. Exceed either and you split into multiple files and publish a **sitemap index** — a sitemap of sitemaps, itself capped at 50,000 files. Gzip is allowed; the 50MB ceiling applies uncompressed.",
+        "Two tags in the spec are dead weight. Google has said plainly it ignores `<priority>` and `<changefreq>`. Setting every page to priority 1.0 tells a reviewer only that whoever configured your plugin didn't read the docs."
+      ]
+    },
+    {
+      "h2": "Split it by page type and it becomes a diagnostic",
+      "body": [
+        "This is the part most sites skip, and the part that pays. One `sitemap.xml` with 500 URLs tells you one number. Eight sitemaps, one per page type, tell you which of your templates Google actually respects.",
+        "Search Console lets you filter the Page Indexing report by sitemap. Publish `sitemap-services.xml`, `sitemap-glossary.xml`, `sitemap-locations.xml`, and you can read the submitted-versus-indexed ratio for each page type independently. A site-wide 78% indexed rate is noise. Service pages at 100% and location pages at 31% is a decision.",
+        "Here's how to read it."
+      ],
+      "table": {
+        "caption": "What a low indexed ratio in a single sitemap is telling you.",
+        "head": ["Sitemap", "A low ratio here usually means"],
+        "rows": [
+          [
+            "Core service or product pages",
+            "Something structural — a canonical pointing elsewhere, or a noindex left on the template. Fix now; this is your money."
+          ],
+          [
+            "Blog or article pages",
+            "Quality or duplication. Google crawled and passed. More posts won't help; consolidating will."
+          ],
+          [
+            "Location or city pages",
+            "The classic template-variant verdict. If the only difference is the city name, Google has correctly identified them as one page."
+          ],
+          [
+            "Category or collection pages",
+            "Thin category copy, or near-identical product lists across categories."
+          ],
+          [
+            "Tag or archive pages",
+            "Ignore — these mostly shouldn't be in the sitemap at all."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Why this beats a crawl report",
+        "body": "A crawler tells you what your site contains. The sitemap-filtered indexing report tells you what Google decided about it. Those are different questions, and only the second one predicts traffic."
+      }
+    },
+    {
+      "h2": "lastmod, and the cost of lying",
+      "body": [
+        "`lastmod` is the one optional field Google genuinely uses — as a hint about whether a page is worth re-crawling. Which makes it the one worth being disciplined about.",
+        "The failure mode is a CMS that stamps today's date on every URL every night. Google checks a handful, finds the content identical to last time, and learns your dates are meaningless. From then on it ignores `lastmod` across your whole site — including the day you genuinely update something important.",
+        "So set it when the substantive content changes. Not when a comment lands, not on a nightly rebuild. If your build can't tell content changes from deploys, omit `lastmod` entirely. An absent field is honest; a wrong one is a signal you've spent."
+      ],
+      "subs": [
+        {
+          "h3": "Which URLs to leave out",
+          "bullets": [
+            "Anything with a `noindex` tag. Listing it says \"index this\" and \"don't index this\" in one breath.",
+            "Anything that redirects. A sitemap holds final URLs returning 200.",
+            "Non-canonical variants. Every URL should be the [canonical](/glossary/canonical-tag) version of itself.",
+            "Paginated archives, tag pages, internal search results, filter combinations.",
+            "Anything blocked in [robots.txt](/glossary/robots-txt) — you're asking Google to fetch what you told it not to."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Submitting it, and what the report actually says",
+      "body": [
+        "Two steps. Add a `Sitemap:` line to your robots.txt with the absolute URL — that's how crawlers with no access to your Search Console account find it. Then submit it under Sitemaps in Search Console, which is how you get the reporting.",
+        "The Sitemaps report itself is thin: last read date, status, discovered URL count. Don't stop there. \"Discovered\" means Google parsed the file, not that it indexed anything. The number you want is in the Page Indexing report, filtered by sitemap.",
+        "One honest limit: if a page isn't indexed because Google judged it thin or duplicated, resubmitting changes nothing. The sitemap solved discovery. What's failing is the [indexing](/glossary/indexing) decision — a content problem wearing a technical costume."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The number that should worry you",
+        "body": "Submitted 400, indexed 90. That gap isn't a sitemap fault — it's Google declining three-quarters of what you published. Publishing another 400 pages against that ratio is how a site ends up classified as scaled content. Fix the ratio before you increase the volume."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does an XML sitemap improve rankings?",
+      "a": "No. It affects discovery, not position. A sitemap can get a page found faster, which matters on large or poorly-linked sites, but it has no influence on where that page ranks once it's indexed."
+    },
+    {
+      "q": "How many URLs can one sitemap contain?",
+      "a": "50,000 URLs or 50MB uncompressed, whichever comes first. Beyond either limit you split into multiple files and reference them from a sitemap index file, which can itself list up to 50,000 sitemaps."
+    },
+    {
+      "q": "Should I include noindexed pages in my sitemap?",
+      "a": "No — it's a direct contradiction. The sitemap says \"here's a page I want indexed\" and the tag says the opposite. Search Console flags the conflict, and it's one of the quickest signals that nobody's checked the setup."
+    },
+    {
+      "q": "Do I need an HTML sitemap as well?",
+      "a": "Rarely, for search. An HTML sitemap is a user-facing page of links, and if you need one to make pages reachable, your navigation and internal linking are the real problem. Fix those instead."
+    },
+    {
+      "q": "How often should a sitemap update?",
+      "a": "Automatically, whenever you publish or substantively edit a page. Nearly every CMS and framework does this — WordPress SEO plugins generate it, and `app/sitemap.ts` handles it in Next.js. Hand-maintained sitemaps go stale within a month, without exception."
+    },
+    {
+      "q": "Why does Search Console say discovered URLs but not indexed?",
+      "a": "Because those are different stages. Discovered means Google read the file and knows the URLs exist. Indexed means it chose to store them. To see the second number, open the Page Indexing report and filter by that sitemap."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "indexing" },
+    { "type": "glossary", "slug": "robots-txt" },
+    { "type": "glossary", "slug": "google-search-console" },
+    { "type": "compare", "slug": "nextjs-vs-wordpress-seo" },
+    { "type": "services", "slug": "technical-seo-services" },
+    { "type": "journal", "slug": "programmatic-seo-and-the-scaled-content-line" }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "slug": "nextjs-vs-wordpress-seo",
+  "type": "compare",
+  "primaryKeyword": "next.js vs wordpress for seo",
+  "secondaryKeywords": [
+    "is javascript bad for seo",
+    "server side rendering seo",
+    "headless cms seo",
+    "react seo problems",
+    "static site generation seo"
+  ],
+  "cluster": "platform-choice",
+  "intent": "informational",
+  "h1": "Next.js vs WordPress for SEO: it's an argument about rendering",
+  "metaTitle": "Next.js vs WordPress SEO: Rendering and Workflow",
+  "metaDescription": "Next.js vs WordPress for SEO is a rendering argument. Here's what Googlebot sees on each, plus the editorial workflow cost your content team will pay.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Both can rank perfectly well. Next.js only loses when it ships an empty HTML shell and makes Googlebot wait for JavaScript; WordPress only loses when a slow host buries it. The deciding question is simpler than either: can a marketer publish a page without a developer, a build and a deploy?",
+  "takeaways": [
+    "Server-rendered Next.js and WordPress look identical to Googlebot. Client-rendered Next.js does not.",
+    "Google renders JavaScript. Most AI crawlers currently don't — which makes an empty first response more expensive in 2026 than it was in 2020.",
+    "Check what you actually ship with `curl` and the URL Inspection tool. It takes ten minutes and settles the argument.",
+    "The real Next.js tax isn't rendering. It's that changing a meta description becomes a pull request."
+  ],
+  "sections": [
+    {
+      "h2": "Reduce it to two questions",
+      "body": [
+        "This comparison usually gets fought on benchmarks — Lighthouse scores, bundle sizes, hydration timings. Those matter at the margin. Two things matter much more, and both are answerable in an afternoon.",
+        "**One: what does Googlebot receive in the first HTTP response?** Not eventually. In the first response, before any JavaScript runs.",
+        "**Two: how many developer hours does your marketer need to publish one page?** Including the title, the meta description, the internal links and the schema.",
+        "Answer those two and the platform choice makes itself. Everything else is a preference about tooling, and preferences about tooling do not show up in Search Console."
+      ]
+    },
+    {
+      "h2": "What Googlebot receives on the first response",
+      "body": [
+        "Google crawls in two passes. The crawler fetches the raw HTML and indexes what's there. Anything that only appears after JavaScript executes goes into a render queue, gets processed by a headless Chromium, and comes back for a second pass. Google says that queue is usually fast. Usually is doing a lot of work in that sentence, and you don't control it.",
+        "WordPress renders on the server. PHP assembles the page, the response contains the headline, the body, the links and the metadata. There is no second pass to wait for. That's the whole of WordPress's rendering advantage, and it's a real one.",
+        "Next.js can do exactly the same thing — better, in fact. App Router components are server components by default, and static generation produces HTML files that are already complete when the request arrives. A properly built Next.js site and a WordPress site are indistinguishable to a crawler.",
+        "Next.js gets into trouble when a team reaches for `'use client'` everywhere, fetches the page's main content in a `useEffect`, and ships a shell containing a nav, a footer and a loading spinner. That page will still probably get indexed. It will get indexed late, its internal links won't be discovered on the first pass, and every crawler that doesn't execute JavaScript sees nothing."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The 2026 version of this problem",
+        "body": "Google renders JavaScript. Most AI crawlers — the ones feeding answer engines and assistants — largely do not; they take the raw HTML and move on. An empty first response now costs you visibility in a whole category of search that didn't exist when the SSR-versus-CSR debate started."
+      }
+    },
+    {
+      "h2": "How to check what Google actually gets — three ways, ten minutes",
+      "body": [
+        "Don't take a developer's word for it, and don't take ours. Test it."
+      ],
+      "numbered": [
+        "**`curl` the URL and read the response.** `curl -s https://yoursite.com/page | grep -i \"<h1\"`. If your headline and body copy aren't in there, they aren't in the first response. This is the fastest and least arguable test there is.",
+        "**Search Console URL Inspection.** Run a live test, then open the HTML tab. That shows you what Google's renderer produced. Compare it against the `curl` output — the gap between the two is exactly what depends on JavaScript.",
+        "**Disable JavaScript in Chrome DevTools** and reload the page. Not a perfect simulation of Googlebot, but if the page is blank you have your answer in five seconds and you can stop reading."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What a pass looks like",
+        "body": "Headline, body copy, canonical, title, meta description, structured data and every internal link present in the raw HTML. Comments, related-post carousels and personalised blocks arriving later is completely fine."
+      }
+    },
+    {
+      "h2": "Metadata, sitemaps and schema in each stack",
+      "body": [
+        "This is where the effort difference shows up, and it's larger than most developers estimate."
+      ],
+      "table": {
+        "caption": "The same SEO jobs, done in each stack.",
+        "head": ["The job", "WordPress", "Next.js (App Router)"],
+        "rows": [
+          [
+            "Title and meta description",
+            "A field under the editor. The person writing the page fills it in.",
+            "`generateMetadata()` in code, or a CMS field you built and wired up first."
+          ],
+          [
+            "Canonical tags",
+            "Handled by the SEO plugin, including paginated and parameterised URLs.",
+            "You set `alternates.canonical` yourself. Nobody catches the ones you miss."
+          ],
+          [
+            "XML sitemap",
+            "Generated and updated automatically on publish.",
+            "`app/sitemap.ts` — one file, fine to write, easy to forget to extend when a new route family appears."
+          ],
+          [
+            "Schema markup",
+            "Article, breadcrumb, FAQ and product schema out of the box from the plugin.",
+            "JSON-LD you write and maintain per template. More control, more surface to get wrong."
+          ],
+          [
+            "Redirects",
+            "A plugin with a UI. Marketing can add one.",
+            "`next.config.js` or middleware. A code change and a deploy."
+          ],
+          [
+            "Publishing a new page",
+            "Log in, write, publish. Live in minutes.",
+            "Branch, code or CMS entry, review, build, deploy — unless a CMS with revalidation is already in place."
+          ],
+          [
+            "Typical failure mode",
+            "Slow host, thirty plugins, a TTFB nobody measured.",
+            "A client-rendered template and a marketing team that can't change a title without a sprint."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The developer dependency your marketing team inherits",
+      "body": [
+        "Here's the uncomfortable part, and it's the reason most Next.js SEO programmes stall.",
+        "SEO is a high-frequency, low-ceremony activity. You rewrite a title because impressions are up and clicks aren't. You add four internal links because a cluster page is orphaned. You fix a canonical. You publish a page because a competitor published one. Individually these take four minutes.",
+        "On WordPress, four minutes is what they take. On a hand-rolled Next.js site with content in the repo, each one becomes a ticket, a branch, a review, a build and a deploy — and it queues behind the product roadmap, because it always does. The task didn't get harder. It got scheduled.",
+        "The compounding effect is what kills you. A content programme that ships four pages a month and fifty small fixes turns into one that ships four pages a month and no fixes, because nobody wants to file a ticket to change a meta description. Two quarters later the site is technically fast, architecturally clean, and rotting quietly — and it's a far more common way to lose than any rendering bug.",
+        "If your marketing team can't ship a page alone, the platform is wrong for SEO regardless of how good its Lighthouse score is."
+      ]
+    },
+    {
+      "h2": "When a headless CMS resolves both",
+      "body": [
+        "You don't have to choose. The pattern that fixes both problems is Next.js for rendering with a real CMS behind it — Sanity, Payload, Contentful, or WordPress itself running headless and serving content over its REST or GraphQL API.",
+        "Content lives in an editor a marketer can use. Pages render on the server or get statically generated. On-demand revalidation republishes the affected route the moment something is saved, so publishing takes seconds and doesn't involve a deploy. That's genuinely better than either default.",
+        "It isn't free. Someone has to build the metadata fields, the sitemap generation, the schema templates, the redirect handling and the preview environment before a single page ships. Budget a real engineering block for that, not a weekend. And keep headless WordPress in the running — the editing experience your team already knows, with the rendering layer replaced, is often the shortest path to the same outcome.",
+        "This site runs on Next.js, which is exactly why we're specific about the tax: everything above is a bill we pay ourselves. If you want the rendering audited before you commit either way, that's [technical SEO work](/services/technical-seo-services), and it's cheaper than the replatform you're considering."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where we land, and what we charge",
+        "body": "Last Agency runs SEO from ₹75,000/mo, smaller sites from ₹40,000/mo, ex-GST, month-to-month after the first quarter. We freeze your trailing-90-day qualified organic leads on day one, and if we haven't beaten that in 90 days we work free until we do. We never promise a specific ranking position."
+      }
+    },
+    {
+      "h2": "The short version, by situation",
+      "bullets": [
+        "**Content-led site, no developer on the marketing team.** WordPress. Server-rendered, publishable by a human, and every SEO job is a field rather than a ticket.",
+        "**Product-led site with an engineering team already shipping in React.** Next.js, server-rendered, with a headless CMS wired in before the first content page goes live — not after.",
+        "**Existing Next.js site with a rendering problem.** Fix the rendering, don't migrate. Moving the main content to server components is days of work; a replatform is months and carries its own [traffic risk](/journal/the-replatform-that-killed-your-traffic).",
+        "**Existing WordPress site that's slow.** It's the host and the plugins, not WordPress. Fix those first — see [Core Web Vitals](/glossary/core-web-vitals) for what you're actually aiming at.",
+        "**Nobody has checked what the raw HTML contains.** Do that before you argue about anything else. Half these debates end the moment somebody runs `curl`."
+      ]
+    }
+  ],
+  "versus": {
+    "a": "Next.js",
+    "b": "WordPress",
+    "verdict": "If nobody on the marketing team can deploy code, choose WordPress — a server-rendered CMS a marketer can publish from beats a faster stack they have to queue for; choose Next.js only when an engineering team is already in place or a headless CMS is built in from day one."
+  },
+  "faqs": [
+    {
+      "q": "Is JavaScript bad for SEO?",
+      "a": "JavaScript isn't the problem; depending on it for your main content is. Google renders JS but does it in a second pass you don't control, and most AI crawlers don't render it at all. Ship the headline, body, metadata and internal links in the raw HTML and JavaScript costs you nothing."
+    },
+    {
+      "q": "Does Google index client-side rendered React pages?",
+      "a": "Usually yes, eventually. The page goes into a render queue and gets processed by a headless Chromium before indexing. The risks are delay, links not discovered on the first pass, and non-Google crawlers that never render at all. It works — it just works less reliably than server rendering."
+    },
+    {
+      "q": "Is a static site better for SEO than WordPress?",
+      "a": "Static output removes server response time as a variable, which helps LCP. It doesn't help ranking on its own. A static site with thin content loses to a WordPress site with good content every time. Speed is a threshold, not a scoreboard."
+    },
+    {
+      "q": "How do I check whether my site is server-rendered?",
+      "a": "Run `curl -s https://yoursite.com/page` and search the output for your headline. If it's there, you're server-rendered for the part that matters. If you get a `<div id=\"root\"></div>` and a script tag, you're client-rendered. That's the entire test."
+    },
+    {
+      "q": "Can WordPress run headless with a Next.js front end?",
+      "a": "Yes, over the REST or GraphQL API, and it's a sensible middle path — editors keep the interface they know, you get server rendering and full control of the front end. The cost is that previews, redirects and metadata plumbing all have to be rebuilt by hand."
+    },
+    {
+      "q": "Do Core Web Vitals differ much between the two?",
+      "a": "The floors differ, not the ceilings. Next.js on a modern host starts fast and can be ruined by client-side data fetching. WordPress starts wherever your host puts it and gets fast with caching and a CDN. Both can hit the thresholds; neither does it by accident."
+    }
+  ],
+  "related": [
+    { "type": "compare", "slug": "wordpress-vs-shopify-seo" },
+    { "type": "compare", "slug": "subdomain-vs-subfolder" },
+    { "type": "glossary", "slug": "javascript-seo" },
+    { "type": "glossary", "slug": "core-web-vitals" },
+    { "type": "services", "slug": "technical-seo-services" },
+    { "type": "journal", "slug": "the-replatform-that-killed-your-traffic" }
+  ]
+}

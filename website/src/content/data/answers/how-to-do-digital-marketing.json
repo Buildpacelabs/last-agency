@@ -1,0 +1,280 @@
+{
+  "slug": "how-to-do-digital-marketing",
+  "type": "answers",
+  "primaryKeyword": "how to do digital marketing",
+  "secondaryKeywords": [
+    "how to start digital marketing for business",
+    "digital marketing steps",
+    "how to run digital marketing yourself",
+    "digital marketing plan"
+  ],
+  "cluster": "digital-marketing-basics",
+  "intent": "informational",
+  "h1": "How to do digital marketing with one person and a small budget",
+  "metaTitle": "How to Do Digital Marketing on a Small Budget",
+  "metaDescription": "How to do digital marketing when you're the whole marketing team: pick one channel, set up tracking, run it 90 days, then earn the right to a second.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Pick one channel, set up measurement before you spend anything, run it for 90 days without adding a second, then judge it against one number. On ₹25,000 a month you can run exactly one channel properly. Running five badly is the most common way small Indian brands waste a year and a budget.",
+  "takeaways": [
+    "One channel, funded properly, beats five channels funded at a fifth each. This is arithmetic, not philosophy.",
+    "Choose the first channel by **where your buyers already look**, not by which platform you personally enjoy.",
+    "Set up conversion tracking before the first rupee of spend. You cannot backfill data you never collected.",
+    "You earn the second channel when the first produces traceable leads for two consecutive months — not when you get bored."
+  ],
+  "sections": [
+    {
+      "h2": "Why one channel beats five",
+      "body": [
+        "The standard advice is to be everywhere your customers are. It's the most expensive sentence in marketing.",
+        "Here's the arithmetic. Every channel has a fixed cost of competence before it produces anything: learning the interface, building creative, writing copy, setting up tracking, then running long enough for a readable signal. Call it 15 hours and ₹20,000 per channel. Five channels is 75 hours and ₹1,00,000 — so on a ₹25,000 budget you never get any of them past that threshold.",
+        "The second problem is diagnostic. When five things run at quarter power and nothing happens, you can't tell whether the channels were wrong, the offer was wrong, or the funding was. You spent the money and bought no information. One channel at full power gives a clean answer either way — and in year one, that answer is what you're actually buying.",
+        "So: one channel, properly, for 90 days. Then the next. It feels slow and it's the fastest route available. If you're not sure what the shortlist even is, [the eight channels are priced here](/answers/what-are-the-types-of-digital-marketing)."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The most expensive month in small-brand marketing",
+        "body": "Month two, when nothing has happened and someone suggests \"we should also try LinkedIn\". That impulse turns one under-funded channel into three. Write the 90-day end date on a wall and don't move it."
+      }
+    },
+    {
+      "h2": "Choosing the first channel",
+      "body": [
+        "One question settles this, and it isn't which platform you like: **when someone realises they have the problem you solve, what do they do next?**",
+        "Ask five recent customers. Not a survey — a phone call. The answers are usually consistent, and frequently not what the founder assumed."
+      ],
+      "table": {
+        "caption": "First channel, by how your buyers currently find people like you.",
+        "head": [
+          "If your buyers…",
+          "First channel",
+          "Why"
+        ],
+        "rows": [
+          [
+            "Search for a solution when the problem hits",
+            "Search — SEO and a small Google Ads budget",
+            "Demand already exists. Capturing it is cheaper than creating it."
+          ],
+          [
+            "Search locally, or ask for a nearby option",
+            "Google Business Profile plus reviews",
+            "The map pack takes the click before the website does. Nothing else competes at this stage."
+          ],
+          [
+            "Discover things while scrolling, then buy on impulse",
+            "Paid social, Meta first",
+            "Discovery is a feed problem. Search cannot find people who don't know they want it."
+          ],
+          [
+            "Ask a peer, or check who's active in the industry",
+            "Founder-led LinkedIn plus email",
+            "Trust transfers from a person, not a brand page. This is nearly free and mostly time."
+          ],
+          [
+            "Already bought from you once",
+            "Email and WhatsApp",
+            "Cheapest revenue in the business. Most brands skip it to chase strangers."
+          ],
+          [
+            "Compare options on a marketplace",
+            "Marketplace listings first",
+            "Fix where the transaction happens before funding traffic to somewhere else."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Where a lot of Indian B2B gets it wrong",
+        "body": "Founders pick Instagram because it feels like marketing, while their buyers search for a specific capability on Google and ask two peers on WhatsApp. Search plus a visible founder on LinkedIn is unglamorous and works."
+      }
+    },
+    {
+      "h2": "Set up measurement before you spend a rupee",
+      "body": [
+        "This takes a day, costs nothing, and is the difference between a 90-day test that produces a decision and one that produces an argument.",
+        "In order:"
+      ],
+      "numbered": [
+        "**Define the one number.** Qualified enquiries or orders per month. Not traffic, not impressions, not followers. Write down the trailing 90-day average before you start — without a baseline, nothing you do afterwards is provable.",
+        "**Install GA4 and Tag Manager**, with conversion events for the actions that matter: form submit, WhatsApp click, call tap, checkout. Tag Manager means you never wait on a developer to change tracking again.",
+        "**Verify Google Search Console**, even if search isn't your first channel. It's the only honest record of what people searched before they found you, and it takes ten minutes.",
+        "**Put [UTM parameters](/glossary/utm-parameters) on every link you control** — ads, email, social bios, WhatsApp broadcasts. One naming convention, written in a shared doc. Inconsistent tagging is the most common cause of unreadable reports.",
+        "**Ask every enquiry how they found you**, in one required field. Imprecise, and still the most useful data a small business has — it catches the WhatsApp forwards and word-of-mouth no analytics tool ever sees."
+      ]
+    },
+    {
+      "h2": "The 90-day protocol",
+      "body": [
+        "Ninety days is the shortest window that gives a trustworthy verdict on a paid channel, and the shortest honest checkpoint on an organic one."
+      ],
+      "subs": [
+        {
+          "h3": "Days 1–14: build, don't optimise",
+          "body": [
+            "Tracking live. One landing page built for this channel, not your homepage. Three to five creative or content variants, because one is a guess. The offer in plain language a stranger understands in eight seconds.",
+            "Resist launching on day two with whatever exists. Sending paid traffic to a page that wasn't built for it is the most common reason a channel test fails for reasons unrelated to the channel."
+          ]
+        },
+        {
+          "h3": "Days 15–45: run it, and leave it alone",
+          "body": [
+            "Launch at the full monthly budget, not a cautious fraction. Underfunding a test extends it, and an extended test costs more than a decisive one.",
+            "Check weekly, not daily — daily checking on small numbers is how people react to noise, and a bad Tuesday isn't a signal. Change one variable at a time and note the date. On organic channels, this stage is publishing on cadence and nothing else."
+          ]
+        },
+        {
+          "h3": "Days 46–75: cut and double",
+          "body": [
+            "Enough data to act. Kill the bottom-performing audiences, keywords or content formats, and move that budget onto whatever produces enquiries — not clicks.",
+            "This is also where you fix the page rather than the ads. If clicks are cheap and enquiries aren't, the problem is downstream, and no amount of bid tuning fixes a page that convinces nobody."
+          ]
+        },
+        {
+          "h3": "Days 76–90: the verdict",
+          "body": [
+            "Compare enquiries in the last 30 days against your frozen baseline. Work out cost per qualified enquiry against what a customer is worth.",
+            "Three outcomes. It works: fund it harder, hold everything else steady. It half-works: one more 90-day cycle with a specific fix named, and only one. It doesn't work: stop, write down why, move the budget to the next channel. Stopping is a valid result and the one founders find hardest."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "When you've earned a second channel",
+      "body": [
+        "Not when you're bored, and not when a competitor posts something. Four conditions, all of them, before you add anything:"
+      ],
+      "bullets": [
+        "**The first channel produced traceable enquiries two months running.** One good month is variance.",
+        "**Someone owns it in under five hours a week.** If channel one still eats all your time, channel two gets the leftovers and produces nothing.",
+        "**You can fund channel two at its own full level**, without cutting channel one. Splitting one budget across two is how both stop working.",
+        "**The second channel does a different job.** If channel one captures existing demand, channel two should create it, or convert people already on your list. Two channels doing the same job is one channel with extra reporting."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "A reasonable second choice",
+        "body": "If search worked first, add email — the cheapest channel you'll ever run, monetising an audience the first channel already brought you. If paid social worked first, add search: you now know which products people want and which words they use."
+      }
+    },
+    {
+      "h2": "What to stop doing today",
+      "body": [
+        "Half of doing this properly is deleting activity that survives only because someone started it once. These five produce nothing at small scale and eat the time your real channel needs:"
+      ],
+      "numbered": [
+        "**Posting daily to a platform that has never sent an enquiry.** Check the data before you defend it. Consistency on a dead channel is just consistency.",
+        "**Chasing follower counts.** Followers aren't an asset unless the platform shows your posts to them, and it mostly doesn't. An email list of 400 beats 40,000 followers for almost any small brand.",
+        "**Redesigning the website again.** Unless it's slow or broken on mobile, design is rarely the constraint. Copy usually is, and copy is cheaper to fix.",
+        "**Boosting posts.** The boost button spends real money optimising for engagement. Run a proper campaign with a conversion objective, or don't run one.",
+        "**Reading reports nobody acts on.** If a dashboard hasn't changed a decision in three months, delete the dashboard."
+      ]
+    },
+    {
+      "h2": "A realistic ₹25,000 a month plan",
+      "body": [
+        "This is what ₹25,000 buys when you do the work yourself. Not a lot, and genuinely enough to find out whether a channel works."
+      ],
+      "table": {
+        "caption": "Two ₹25,000 monthly plans, depending on whether search or social is your first channel.",
+        "head": [
+          "Line",
+          "Search-first",
+          "Social-first"
+        ],
+        "rows": [
+          [
+            "Media spend",
+            "₹15,000 on Google Ads, tight keyword set, exact and phrase match only",
+            "₹15,000 on Meta, one campaign, three audiences"
+          ],
+          [
+            "Content or creative",
+            "₹6,000 — one strong landing page plus one comparison page",
+            "₹7,000 — six to eight creative variants, mostly video"
+          ],
+          [
+            "Tools",
+            "₹2,000 — rank tracker; everything else on free tiers",
+            "₹2,000 — scheduler and design tool"
+          ],
+          [
+            "Contingency",
+            "₹2,000 for the thing that breaks",
+            "₹1,000 for the thing that breaks"
+          ],
+          [
+            "Your time",
+            "6–8 hours a week, non-negotiable",
+            "6–8 hours a week, non-negotiable"
+          ]
+        ]
+      },
+      "bullets": [
+        "**₹25,000 doesn't buy an agency.** Anyone selling a full service at that number is giving you a fraction of one person's attention. Ours starts at ₹40,000/mo for smaller sites, ₹75,000/mo standard, and we'd rather say so than sell a diluted version.",
+        "**Your time is the real budget line.** Six to eight hours a week is worth more than the ₹25,000. Spend it on the channel, not on reading about channels — and keep tooling near zero using [a stack that fits this budget](/answers/what-are-digital-marketing-tools).",
+        "**Scale the plan, don't broaden it.** At ₹50,000 a month, the right move is the same channel funded harder plus content — not a second platform."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "When it's time to hand it over",
+        "body": "When the channel works and your own hours have become the bottleneck. That's the honest trigger — not a plateau, not frustration. For the arithmetic, read [what SEO costs in India](/cost/seo-cost-in-india) and [how to choose an SEO agency](/answers/how-to-choose-an-seo-agency)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I start digital marketing for my business with no experience?",
+      "a": "Set up GA4, Tag Manager and Search Console, define one number you'll judge everything by, pick the single channel your buyers already use, and run it for 90 days at full budget. Skip the courses until you've run one real campaign — the campaign teaches faster."
+    },
+    {
+      "q": "How much money do I need to start digital marketing?",
+      "a": "₹25,000 a month is enough to test one channel properly and get a clear answer in 90 days. Below about ₹15,000 a month you can still do SEO, email and organic social with your own time, but paid channels won't gather enough data to mean anything."
+    },
+    {
+      "q": "Can I do digital marketing myself instead of hiring an agency?",
+      "a": "Yes, and for the first year most small brands should. One channel, run consistently by the founder who understands the customer, usually beats a thin agency retainer. Hire when the channel works and your own hours have become the constraint."
+    },
+    {
+      "q": "Which digital marketing channel should I start with?",
+      "a": "The one your buyers already use. If people search when the problem hits, start with search. If they discover while scrolling, start with paid social. If they're local, start with Google Business Profile and reviews. Ask five recent customers rather than guessing."
+    },
+    {
+      "q": "How long before digital marketing works?",
+      "a": "Paid channels give a readable verdict in 90 days at full budget. Organic search and content take three to six months for movement and six to twelve to compound. Anything promising faster on the organic side is describing an easier problem than yours."
+    },
+    {
+      "q": "How do I know if my digital marketing is working?",
+      "a": "Compare qualified enquiries in the last 30 days against the trailing 90-day average you froze before starting, and work out cost per qualified enquiry. If you didn't record a baseline, you can't prove anything — which is exactly why step one is writing the number down."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-are-the-types-of-digital-marketing"
+    },
+    {
+      "type": "answers",
+      "slug": "what-are-digital-marketing-tools"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-cost-for-small-business"
+    },
+    {
+      "type": "compare",
+      "slug": "ppc-vs-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-analytics-4"
+    },
+    {
+      "type": "answers",
+      "slug": "digital-marketing-tips"
+    }
+  ]
+}

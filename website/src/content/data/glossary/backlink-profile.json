@@ -1,0 +1,142 @@
+{
+  "slug": "backlink-profile",
+  "type": "glossary",
+  "primaryKeyword": "backlink profile",
+  "secondaryKeywords": [
+    "what is a backlink profile",
+    "backlink profile analysis",
+    "healthy link profile",
+    "link profile audit",
+    "backlink profile checker"
+  ],
+  "cluster": "off-page",
+  "intent": "informational",
+  "h1": "Backlink profile",
+  "metaTitle": "Backlink Profile: How to Read One Properly",
+  "metaDescription": "Your backlink profile is every link pointing at your domain, taken together. Here are six columns to check and the pattern that means links were bought.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Backlink profile",
+  "definition": "A backlink profile is the complete set of links pointing at a domain, read as a pattern — who links to you, how often, with what anchor text, and how that has changed over time.",
+  "answer": "A backlink profile is every link pointing at your domain, read together rather than one at a time. The pattern is what matters: how many separate sites link to you, how relevant they are, what anchor text they use, and how fast the count grew. A profile can look strong on volume and still be evidence that someone bought links.",
+  "takeaways": [
+    "One export, sorted six ways. Six columns tell you almost everything: **referring domain, anchor text, link type, first-seen date, the linking page, and that domain's traffic**.",
+    "Anchor text distribution is the fastest health check. Real profiles are mostly brand, URL and messy descriptive anchors.",
+    "A cluster of links all first seen in the same fortnight is the clearest fingerprint of a purchase.",
+    "Audit **before** you sign the next agency. What the last vendor did becomes your problem on day one."
+  ],
+  "sections": [
+    {
+      "h2": "What a profile is made of",
+      "body": [
+        "Individual links get all the attention. Profiles decide outcomes, because search engines evaluate the aggregate — the shape of who points at you, not the merits of link number 47.",
+        "Six things make up that shape. Everything else in a tool's dashboard is a derivative of these."
+      ],
+      "bullets": [
+        "**Referring domains** — how many separate sites link to you. The headline number, not total backlinks. One site linking you 3,000 times through a footer is one domain and roughly one vote.",
+        "**Topical relevance** — how many of those domains cover your subject. Four hundred unrelated domains are weaker than forty relevant ones.",
+        "**Anchor text distribution** — the words people used when linking. The health check nobody runs.",
+        "**Link type** — followed, nofollow, `rel=\"sponsored\"`, `rel=\"ugc\"`. A profile that's 95% followed on paid-looking placements is a flag by itself.",
+        "**Velocity** — the growth curve of referring domains. Shape matters more than slope.",
+        "**Link quality** — is the linking page indexed, does it get traffic, does it link out to forty unrelated businesses."
+      ]
+    },
+    {
+      "h2": "The six columns to check in any export",
+      "body": [
+        "Export referring domains from Ahrefs, Semrush or the Links report in [Google Search Console](/glossary/google-search-console) — the free one is less complete, but it's Google's own view. Then work through this in order. Forty minutes on a mid-size site, and it beats any automated audit score you'll be sold."
+      ],
+      "numbered": [
+        "**Sort by first-seen date.** Look for clusters. Twenty new domains in a fortnight, on a site that normally earns two a month, is a campaign — and if nobody on your team ran one, somebody bought it.",
+        "**Sort by anchor text and group it.** Add up brand, URL, generic (\"here\", \"this guide\") and exact-match commercial anchors. That last bucket is the one to watch.",
+        "**Sort by referring domain traffic.** A decent authority score with near-zero organic traffic means a link shop. If a third of your profile sits there, you know what happened.",
+        "**Scan the topics.** Open ten linking sites at random. If you sell dental software and casino, essay-writing and crypto blogs link to you, that profile was purchased.",
+        "**Check the link type.** Paid placements should carry `rel=\"sponsored\"`. If every commercial-looking guest post is followed, somebody ignored Google's policy on your behalf.",
+        "**Open the linking pages.** Indexed? Any other links? Is yours in the body, or in a bio box under a name with no surname?"
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The bought-link fingerprint",
+        "body": "Exact-match commercial anchors clustered above roughly 10–15% of the profile, a spike of same-week first-seen dates, and linking domains with authority scores but no traffic. Any one of those alone can be innocent. All three together is a previous vendor spending your budget on a marketplace."
+      }
+    },
+    {
+      "h2": "Reading the anchor text distribution",
+      "body": [
+        "This is the check that separates people who read profiles from people who read dashboards. When strangers link to you naturally, they use your brand name, your URL, the page title, or a shrug of a phrase like \"this breakdown\". Almost nobody spontaneously types \"best seo agency in bangalore\" as anchor text — so when 30% of a profile does, it wasn't spontaneous.",
+        "There's no official safe ratio, and anyone quoting one made it up. The useful test is comparative: pull the same distribution for two competitors ranking above you. If theirs is 60% brand and URL while yours is 40% exact-match commercial, you've found the anomaly without needing a threshold. The mechanics are in [anchor text](/glossary/anchor-text) — anchors are a strong relevance hint, which makes them the first thing manipulators reach for and the first thing spam systems watch."
+      ]
+    },
+    {
+      "h2": "Comparing yours against two competitors",
+      "body": [
+        "A profile in isolation means nothing. Two hundred referring domains is dominant in one market and negligible in another. Only the comparative reading produces a decision.",
+        "Pick two sites in the top five for the query that actually sells for you — not your biggest-name competitor, the one currently taking the traffic. Export their referring domains. Subtract yours. What's left is a target list of sites that demonstrably link to businesses like yours."
+      ],
+      "table": {
+        "caption": "What the comparison tells you, and what to do about it.",
+        "head": [
+          "What you find",
+          "What it means",
+          "What to do"
+        ],
+        "rows": [
+          [
+            "They have 3× your referring domains, mostly relevant",
+            "You have a genuine authority gap on this query",
+            "Budget for links, but only after the page itself is better than theirs"
+          ],
+          [
+            "Similar domain counts, you rank lower",
+            "Links aren't the constraint",
+            "Look at content depth, intent match and technical issues instead"
+          ]
+        ]
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What does a healthy backlink profile look like?",
+      "a": "Steady referring-domain growth without cliff-edge spikes, most links from sites in or adjacent to your sector, anchor text dominated by brand, URL and descriptive phrases, and a mix of followed and nofollow links. Perfectly uniform profiles are the suspicious ones — real ones are messy."
+    },
+    {
+      "q": "How do I check my backlink profile for free?",
+      "a": "The Links report in Google Search Console gives you top linking sites, top linked pages and top anchor text at no cost. It's less complete than Ahrefs or Semrush and it won't show first-seen dates, but it's Google's own view of your profile, which is worth more than a third-party estimate."
+    },
+    {
+      "q": "How can I tell if my last agency bought links?",
+      "a": "Sort your referring domains by first-seen date and look for clusters that don't match any campaign you ran. Then check whether those domains have organic traffic. Authority scores without traffic, appearing in batches, with commercial anchor text, is the pattern. Ask the agency for its link log before you sign anywhere else."
+    },
+    {
+      "q": "Should I disavow links I don't like the look of?",
+      "a": "Almost certainly not. Google ignores most low-quality links automatically, and a careless disavow can remove links that were helping. Disavow after a manual action, or when you know a vendor bought links at scale. Otherwise leave it alone — see [toxic backlinks](/glossary/toxic-backlinks)."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "referring-domain"
+    },
+    {
+      "type": "glossary",
+      "slug": "anchor-text"
+    },
+    {
+      "type": "glossary",
+      "slug": "toxic-backlinks"
+    },
+    {
+      "type": "compare",
+      "slug": "ahrefs-vs-semrush"
+    },
+    {
+      "type": "services",
+      "slug": "off-page-seo-services"
+    },
+    {
+      "type": "journal",
+      "slug": "domain-authority-is-a-vanity-metric"
+    }
+  ]
+}

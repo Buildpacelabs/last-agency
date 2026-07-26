@@ -1,0 +1,116 @@
+{
+  "slug": "alt-text",
+  "type": "glossary",
+  "primaryKeyword": "alt text",
+  "secondaryKeywords": [
+    "image alt text seo",
+    "alt tag",
+    "how to write alt text",
+    "decorative image alt",
+    "alt text length"
+  ],
+  "cluster": "on-page",
+  "intent": "informational",
+  "h1": "Alt text",
+  "metaTitle": "Alt Text: What It Is and How to Write It",
+  "metaDescription": "Alt text describes an image for screen readers and search engines. Learn how long it should be, when to leave it empty, and why product photos need it.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Alt text",
+  "definition": "Alt text is the written description inside an image's alt attribute, read aloud by screen readers and used by search engines to understand what the image shows.",
+  "answer": "Alt text is the description in an image's `alt` attribute. Its first job is accessibility: it's what a screen reader reads aloud in place of the picture. Search engines use it as a secondary signal for image search and page context. Decorative images should carry an empty `alt=\"\"`, not a keyword.",
+  "takeaways": [
+    "Write it for the person who can't see the image. The search benefit is a by-product, and it's the smaller of the two.",
+    "`alt=\"\"` is a real, correct answer for decorative images. Omitting the attribute entirely is not — some screen readers then read the filename aloud.",
+    "On ecommerce, alt text is where most catalogues quietly fail: thousands of images carrying the SKU, the brand name, or nothing.",
+    "Roughly 125 characters is a sensible working ceiling. It's a convention, not a specification."
+  ],
+  "sections": [
+    {
+      "h2": "Accessibility is the job. Search is the side effect.",
+      "body": [
+        "The `alt` attribute exists so that a non-text element has a text equivalent. WCAG's first success criterion — 1.1.1, Non-text Content — is exactly this requirement, and it predates anyone caring about image search. A blind user browsing your product page hears the alt text where a sighted user sees the photo. If the alt says `img_4471_final_v2`, that user learns nothing.",
+        "In India this has weight beyond good manners. The Rights of Persons with Disabilities Act, 2016 requires accessibility standards for services, and the government's own web guidelines are built on WCAG. If you sell to government or large enterprises, accessibility conformance shows up in procurement questionnaires.",
+        "Search engines read the same attribute because it's the most reliable plain-language description of an image on the page. Useful for image search, mildly useful as page context, and not a ranking lever you can pull hard."
+      ]
+    },
+    {
+      "h2": "When to leave it empty on purpose",
+      "body": [
+        "Not every image carries meaning. Dividers, background flourishes, a decorative icon sitting next to a text label that already says the same thing — describing these out loud makes a page worse to listen to, not better.",
+        "For those, use an explicitly empty attribute: `alt=\"\"`. That tells assistive technology to skip the image entirely. What you must not do is leave the attribute off altogether, because several screen readers fall back to announcing the filename, and nobody needs to hear `hero-banner-v3-compressed-final.webp` read out character by character."
+      ],
+      "bullets": [
+        "**Empty alt:** decorative dividers, background textures, icons that duplicate adjacent text, spacer images.",
+        "**Described alt:** product photos, charts, screenshots, infographics, team photos, anything carrying information not in the surrounding copy.",
+        "**Linked images:** the alt text becomes the link's accessible name, so describe the destination, not the picture. An image link to your pricing page should read \"Pricing\", not \"blue button\".",
+        "**Charts and data images:** the alt gives the takeaway in a sentence; the detail belongs in a caption or a table below it, where everyone can read it."
+      ]
+    },
+    {
+      "h2": "Rewriting ecommerce product alt text",
+      "body": [
+        "Product catalogues are where alt text goes to die. A theme fills it with the SKU, or a plugin fills it with the target keyword, or nobody fills it at all. Here's the pattern we apply: describe what a customer would see, in the order they'd notice it — product type, then the distinguishing attribute, then colour or material, then context if the shot has any."
+      ],
+      "table": {
+        "caption": "Typical product images, rewritten from keyword mush into plain description.",
+        "head": ["The image", "What catalogues usually put", "What it should say"],
+        "rows": [
+          ["Running shoe, side view", "running shoes buy online india best price", "Grey mesh running shoe, side view, with a white cushioned sole"],
+          ["Cotton kurta on a model", "kurta kurta for men cotton kurta online", "Model wearing a full-sleeve indigo cotton kurta with a mandarin collar"],
+          ["Silver hoop earrings on white", "IMG_2043", "Pair of thin silver hoop earrings, about two centimetres across"],
+          ["Coffee grinder, close crop of dial", "coffee grinder best coffee grinder india", "Close-up of the grind-size dial on a stainless steel burr grinder"],
+          ["Sofa in a styled living room", "sofa furniture home decor sofa set", "Three-seat beige fabric sofa in a living room with a wooden coffee table"],
+          ["Size chart graphic", "size chart", "Size chart: chest and length measurements in inches for sizes XS to XXL"]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Stuffing the alt attribute is still stuffing",
+        "body": "Repeating the target keyword across every image on a page is one of the oldest and most detectable forms of [keyword stuffing](/glossary/keyword-stuffing). It doesn't rank the page, it degrades the experience for screen reader users, and on a large catalogue it produces thousands of near-identical strings — which reads as generated, because it is."
+      }
+    },
+    {
+      "h2": "Length, and the platforms with their own version of this",
+      "body": [
+        "There is no maximum length in the HTML spec. The commonly cited ceiling of about 125 characters comes from screen reader behaviour rather than any standard, and it's a good discipline anyway: if you need three sentences, the image is carrying information that belongs in the page copy where everyone can read it.",
+        "Social platforms have their own fields for the same thing. Instagram auto-generates a description of your image and lets you override it with custom alt text in the advanced settings before posting; LinkedIn and X both offer an alt field on image uploads. Writing them is the same discipline as on a website, and on Instagram it's one of the few genuine text signals attached to a post — see [Instagram SEO](/glossary/instagram-seo) for where that fits.",
+        "One last thing worth saying: alt text does nothing for the file weight problem. A 4 MB hero image with perfect alt text still fails [Core Web Vitals](/glossary/core-web-vitals). Compress first, describe second."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long should alt text be?",
+      "a": "About 125 characters is a sensible ceiling — a convention drawn from screen reader behaviour, not a spec limit. One clear sentence is usually right. If you need more than that, the information belongs in the visible page copy or a caption instead."
+    },
+    {
+      "q": "What's the difference between alt text and an alt tag?",
+      "a": "There is no alt tag. `alt` is an attribute of the `<img>` element, not a tag of its own. The phrase \"alt tag\" is common shorthand and everyone knows what you mean, but if a developer corrects you, that's why."
+    },
+    {
+      "q": "Should decorative images have alt text?",
+      "a": "No — give them an explicitly empty attribute, `alt=\"\"`, so screen readers skip them. Do not omit the attribute entirely, because some readers then announce the filename instead, which is worse than silence."
+    },
+    {
+      "q": "Does alt text help SEO?",
+      "a": "A little. It's the main text signal for image search and it adds context to the page, but it's a weak ranking input compared with your content, headings and links. Write it for accessibility and take the search benefit as change."
+    },
+    {
+      "q": "Do I need alt text on every product image in a large catalogue?",
+      "a": "Yes, and on a catalogue of thousands it has to be systematic rather than hand-written. Build it from structured product data — type, colour, material, view — so each string is genuinely different. A template that outputs the same keyword every time is worse than nothing."
+    },
+    {
+      "q": "Does Instagram alt text matter?",
+      "a": "It matters for accessibility, and it's one of the few text fields attached to an image post. Instagram generates its own description automatically, so writing custom alt text in the advanced settings replaces a machine guess with an accurate one."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "keyword-stuffing" },
+    { "type": "glossary", "slug": "instagram-seo" },
+    { "type": "glossary", "slug": "core-web-vitals" },
+    { "type": "glossary", "slug": "on-page-seo-meaning" },
+    { "type": "services", "slug": "ecommerce-seo-services" },
+    { "type": "seo-for", "slug": "ecommerce" }
+  ]
+}

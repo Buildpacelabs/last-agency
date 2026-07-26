@@ -1,0 +1,149 @@
+{
+  "slug": "nofollow-link",
+  "type": "glossary",
+  "primaryKeyword": "nofollow link",
+  "secondaryKeywords": [
+    "nofollow vs dofollow",
+    "rel nofollow",
+    "sponsored and ugc link attributes",
+    "do nofollow links help seo",
+    "when to use nofollow"
+  ],
+  "cluster": "off-page",
+  "intent": "informational",
+  "h1": "Nofollow link",
+  "metaTitle": "Nofollow Link: What It Is and When to Use It",
+  "metaDescription": "A nofollow link tells Google not to pass ranking credit. Since 2019 it is a hint, not a rule, and rel=sponsored and rel=ugc changed how paid posts work.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Nofollow link",
+  "definition": "A nofollow link carries the attribute rel=\"nofollow\", which tells search engines the linking site does not want to pass ranking credit to the destination.",
+  "answer": "A nofollow link carries `rel=\"nofollow\"`, telling search engines not to pass ranking credit to the page it points at. Google changed the rules in September 2019: nofollow became a hint rather than a directive, and two new attributes arrived — `rel=\"sponsored\"` for paid links and `rel=\"ugc\"` for user-generated ones.",
+  "takeaways": [
+    "Since **September 2019**, nofollow is a hint Google may ignore, not a rule it must obey. Most Indian guides still describe the 2005 version.",
+    "There are three attributes now, not one: `nofollow`, `sponsored`, `ugc`. Paid placements should carry `sponsored`.",
+    "Nofollow links still deliver referral traffic, brand visibility and a natural-looking profile. They just don't come with a guarantee.",
+    "Don't use nofollow to manage crawling. It stopped working for that in 2020, and it never worked as well as people thought."
+  ],
+  "sections": [
+    {
+      "h2": "What changed in 2019, and why it still catches people out",
+      "body": [
+        "Nofollow was introduced in 2005 for one job: killing the incentive to spam blog comments. For fourteen years the rule was simple — a nofollowed link passed nothing, full stop.",
+        "In September 2019 Google changed that. It announced two new attributes and reclassified all three as hints: signals Google considers when deciding how to treat a link, rather than instructions it must obey. The change applied to ranking immediately; for crawling and indexing, Google set 1 March 2020. The reasoning was that links carry useful information about language and context, and discarding all of it was wasteful.",
+        "This matters commercially, because half the link market still sells on the old model — \"dofollow guaranteed\", as though follow status and value were the same thing. They've never been further apart. The wider comparison sits in [dofollow vs nofollow](/compare/dofollow-vs-nofollow)."
+      ]
+    },
+    {
+      "h2": "The three attributes and when each applies",
+      "body": [
+        "You'll see all three in the wild, often used interchangeably by people who haven't read the documentation. They're not interchangeable, and using the right one is both a compliance question and a clarity one."
+      ],
+      "table": {
+        "caption": "Google's three link attributes and their intended use.",
+        "head": [
+          "Attribute",
+          "Use it for",
+          "Typical example"
+        ],
+        "rows": [
+          [
+            "`rel=\"sponsored\"`",
+            "Links you were paid for, or paid to place",
+            "A sponsored post, an affiliate link, a paid review, a brand partnership"
+          ],
+          [
+            "`rel=\"ugc\"`",
+            "Links inside content your users wrote",
+            "Blog comments, forum posts, community profiles, reviews"
+          ],
+          [
+            "`rel=\"nofollow\"`",
+            "Anything else you don't want to vouch for",
+            "A source you're citing critically, a competitor, an unvetted outbound link"
+          ]
+        ]
+      },
+      "bullets": [
+        "You can combine them — `rel=\"sponsored nofollow\"` is valid and is what cautious publishers use on paid placements.",
+        "Using `nofollow` where `sponsored` belongs isn't a violation on its own, but `sponsored` is the clearer disclosure and the one Google asked for."
+      ]
+    },
+    {
+      "h2": "Do nofollow links do anything?",
+      "body": [
+        "For rankings, directly: no promise and no way to verify. Google treats the attribute as a hint, so the honest answer is \"sometimes, possibly, and you'll never know which\".",
+        "Indirectly, quite a lot. Nofollow links send referral traffic, and referral traffic converts. They put your brand in front of the linking site's audience, they get seen by journalists, and a profile made entirely of followed links looks assembled rather than earned.",
+        "There's an Indian version of this that costs founders money. Many major Indian news sites nofollow outbound links as policy, including on the branded content they sell. So a ₹60,000 \"national media placement\" often delivers a nofollowed link. That can still be worth ₹60,000 — for the audience and the credibility — but not for the reason it was sold to you."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Verify follow status yourself",
+        "body": "Open the live page, view source, find your link and read the `rel` attribute. It takes ten seconds. Agencies and marketplaces report follow status from their own spreadsheets, and spreadsheets are optimistic."
+      }
+    },
+    {
+      "h2": "Disclosing paid links properly",
+      "body": [
+        "Google's link spam policy is direct: exchanging money, goods or services for a link that passes ranking credit is a link scheme. The fix isn't secrecy, it's the attribute — mark it `sponsored` and you're compliant. Sellers resist because the attribute removes the exact property they charged for, which tells you what you were buying.",
+        "In India there's a second obligation that has nothing to do with Google. ASCI's influencer advertising guidelines require material connections in paid promotion to be disclosed to the audience — a label a human can see, not just an HTML attribute. Running paid content or creator partnerships, you owe both.",
+        "This is the part [guest posting](/glossary/guest-posting) marketplaces quietly skip. [The way we build links instead](/services/digital-pr-services) is slower and it survives audits."
+      ]
+    },
+    {
+      "h2": "When to nofollow your own outbound links",
+      "body": [
+        "Less often than people do. Nofollowing everything you link to is a superstition left over from the era of PageRank sculpting, and it doesn't work as imagined: nofollowed links still consume their share of a page's outgoing value, which is then discarded rather than redirected. You lose it, nobody gains it — the mechanics are in [link equity](/glossary/link-equity)."
+      ],
+      "bullets": [
+        "**Do nofollow** paid and affiliate links (`sponsored`), user-submitted links (`ugc`), and sites you're citing as an example of something bad.",
+        "**Don't use nofollow to control crawling.** Since March 2020 it's a hint there too. Use `robots.txt` to block crawling and `noindex` to keep a page out of the index.",
+        "**Don't nofollow internal links** to hoard value. It evaporates the share rather than redistributing it."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do nofollow links help SEO?",
+      "a": "Not as a guaranteed pass of ranking credit, but they aren't discarded either — since 2019 Google treats the attribute as a hint. The dependable value is referral traffic, brand visibility, and a link profile that looks earned rather than assembled. Treat direct ranking benefit as a bonus you can't measure."
+    },
+    {
+      "q": "What's the difference between nofollow, sponsored and ugc?",
+      "a": "Sponsored marks links you paid for or were paid to place. UGC marks links inside content your users wrote — comments, forum posts, reviews. Nofollow covers everything else you don't want to vouch for. All three are hints, and they can be combined on a single link."
+    },
+    {
+      "q": "How do I check if a link is nofollow?",
+      "a": "Open the page, view the source, and look at the rel attribute on the anchor tag. Browser extensions will highlight it for you, but reading the source yourself is the version you can trust — especially when someone has invoiced you for a followed link."
+    },
+    {
+      "q": "Should I ask a publisher to remove nofollow?",
+      "a": "You can ask, and on genuinely editorial placements you'll sometimes get it. But asking a publisher to strip the attribute from a paid placement is asking them to breach Google's policy on your behalf, and the placement is worth having on its own merits anyway. Push on the audience, not the attribute."
+    }
+  ],
+  "related": [
+    {
+      "type": "compare",
+      "slug": "dofollow-vs-nofollow"
+    },
+    {
+      "type": "glossary",
+      "slug": "link-equity"
+    },
+    {
+      "type": "glossary",
+      "slug": "guest-posting"
+    },
+    {
+      "type": "glossary",
+      "slug": "backlink"
+    },
+    {
+      "type": "compare",
+      "slug": "paid-links-vs-earned-links"
+    },
+    {
+      "type": "services",
+      "slug": "digital-pr-services"
+    }
+  ]
+}

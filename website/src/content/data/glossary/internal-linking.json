@@ -1,0 +1,121 @@
+{
+  "slug": "internal-linking",
+  "type": "glossary",
+  "primaryKeyword": "internal linking",
+  "secondaryKeywords": [
+    "internal links seo",
+    "internal linking strategy",
+    "how many internal links per page",
+    "contextual internal links",
+    "internal link structure"
+  ],
+  "cluster": "on-page",
+  "intent": "informational",
+  "h1": "Internal linking",
+  "metaTitle": "Internal Linking: What It Is and How to Do It",
+  "metaDescription": "Internal linking connects your own pages and moves ranking signals between them. Aim for 3-8 contextual links per 1,000 words. Here's how to pick them.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Internal linking",
+  "definition": "Internal linking is the practice of connecting pages on your own website with hyperlinks so that readers and crawlers can move between related pages.",
+  "answer": "Internal linking is linking your own pages to each other. It's the cheapest ranking lever you have: no outreach, no budget, no permission needed. A working target is three to eight contextual links per 1,000 words, every important page reachable within three clicks, and every new page linked from something that already ranks.",
+  "takeaways": [
+    "You control both ends of an internal link — including the anchor text. That's true of no other link on the internet.",
+    "Navigation and footer links are boilerplate. Contextual links inside a paragraph carry the real signal.",
+    "**3–8 contextual links per 1,000 words** is our working target. Fewer and the page is a dead end; more and each link means less.",
+    "A new page linked from three strong existing pages gets found, crawled and ranked faster than the same page sitting in the sitemap alone."
+  ],
+  "sections": [
+    {
+      "h2": "What an internal link actually passes",
+      "body": [
+        "Three separate things, and it's worth keeping them apart because different link placements do them in different amounts."
+      ],
+      "numbered": [
+        "**Discovery.** A crawler finds pages by following links. A page linked from nowhere is an [orphan page](/glossary/orphan-page) — it may be in your sitemap and still get crawled rarely, because nothing on the site suggests it matters.",
+        "**Context.** The [anchor text](/glossary/anchor-text) and the sentence around it tell Google what the target page is about. This is the only link context on the internet you fully control.",
+        "**Authority.** Link equity flows along internal links the same way it flows between sites. Your homepage usually holds the most; every link out of it passes a share downward."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Why this is the cheapest lever",
+        "body": "Link building needs outreach, budget and someone else's agreement. Internal linking needs an editor and thirty minutes. On most Indian sites under 200 pages we find more available upside in the internal link graph than in a quarter of external link work — which is the argument we make at length in [internal linking beats link building](/journal/internal-linking-beats-link-building)."
+      }
+    },
+    {
+      "h2": "Contextual links versus navigation links",
+      "body": [
+        "Your header, footer and sidebar links appear on every page. Google has been discounting site-wide boilerplate for a very long time — a link that exists on 400 pages is not evidence that any one of those pages endorses the target.",
+        "A contextual link is different. It sits inside a paragraph, in the middle of an argument, surrounded by text on the same topic, with anchor text a human chose. That's the link that carries weight.",
+        "The practical consequence is unglamorous: adding your new service page to the footer is not an internal linking strategy. Linking to it from the three existing pages that already rank for adjacent queries is."
+      ],
+      "bullets": [
+        "**Header/nav:** structural. Keep it short. It should reflect how the business is organised, not every page you'd like ranked.",
+        "**Footer:** useful for legal, contact and hub pages. Stuffing forty keyword-anchored links here is a very old tactic that hasn't worked in a decade.",
+        "**Contextual body links:** where the work is. Editorial, specific, varied anchor text.",
+        "**Breadcrumbs:** hierarchy-aware and automatic. See [breadcrumb navigation](/glossary/breadcrumb-navigation) for why they're underrated."
+      ]
+    },
+    {
+      "h2": "The two numbers: density and depth",
+      "body": [
+        "**Three to eight contextual links per 1,000 words.** Our house target, not a Google rule, and it has a reason at both ends. Below three, a long page becomes a terminus — the reader finishes and leaves, the crawler has nowhere to go. Above eight or so, the links stop reading as editorial and each one carries proportionally less.",
+        "**Three clicks from the homepage.** The three-click rule began as a usability heuristic and has never been a Google ranking rule — anyone saying otherwise is repeating folklore. What is true is that click depth correlates with crawl frequency: pages buried eight clicks deep get crawled less, get updates indexed later, and look unimportant because your own structure says they are.",
+        "Both are targets, not laws. A 3,000-word pillar with fifteen useful links to its cluster is fine. A 600-word page with fifteen is not."
+      ]
+    },
+    {
+      "h2": "The 30-minute monthly internal linking routine",
+      "body": [
+        "This is a calendar item, not a project. Once a month, half an hour, in this order."
+      ],
+      "numbered": [
+        "Open Search Console, Performance, last 3 months. Sort pages by **impressions**, not clicks. The top ten are your strongest pages — these are the ones whose links are worth something.",
+        "List everything you published in the last month. For each new page, find two or three of those strong pages that could naturally mention it, and add a contextual link with descriptive anchor text.",
+        "Run a `site:yourdomain.com \"topic phrase\"` search for the topic of each new page. It surfaces older pages that discuss it and have no link — that's your fastest set of wins.",
+        "Check the reverse direction: does each new page link **out** to three to eight relevant pages? Cluster pages should always link back to their pillar.",
+        "Crawl the site (any crawler will do) and pull the list of pages with zero inbound internal links. Fix the ones that matter, delete or merge the ones that don't.",
+        "Skim your anchor text for repeats. If eleven pages all link to one target with the identical phrase, vary a few — different phrasings help you cover more query variants."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The failure mode nobody talks about",
+        "body": "Internal linking gets treated as a launch task and then never touched again. A site with 300 pages and a link graph designed when it had 40 is the most common structural problem we find in audits — and it's also the one clients are most annoyed to have paid an agency for and not received."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many internal links should a page have?",
+      "a": "Three to eight contextual links per 1,000 words is a solid working target, plus whatever your navigation and breadcrumbs contribute. It's a guideline rather than a rule — the test is whether each link would genuinely help the reader, not whether you hit a count."
+    },
+    {
+      "q": "Do internal links help rankings?",
+      "a": "Yes, in three ways: they get pages discovered and crawled, they tell Google what the target page is about through anchor text, and they pass link equity from stronger pages to weaker ones. It's the only link type where you control every variable."
+    },
+    {
+      "q": "Is the three-click rule real?",
+      "a": "It's a usability heuristic, not a Google rule. What's real is that click depth correlates with crawl frequency and perceived importance — pages buried deep get crawled less and updated in the index later. Keep money pages shallow because it works, not because Google mandates it."
+    },
+    {
+      "q": "Do footer links count as internal links?",
+      "a": "They count, but they're worth much less. Site-wide boilerplate has been discounted for years, because a link on 400 pages says nothing about any particular page's relevance. Contextual links inside body copy are where the signal lives."
+    },
+    {
+      "q": "Should internal links open in a new tab?",
+      "a": "No. New tabs are for external destinations and downloads. Forcing new tabs on internal links breaks the back button, annoys people on mobile, and is a known accessibility complaint. It makes no difference to SEO either way."
+    },
+    {
+      "q": "How do I find pages with no internal links?",
+      "a": "Crawl the site with any standard crawler and compare the crawled URL list against your XML sitemap. Anything in the sitemap that the crawler never reached by following links is an orphan. Fix them by linking from a relevant existing page, not from the footer."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "anchor-text" },
+    { "type": "glossary", "slug": "orphan-page" },
+    { "type": "glossary", "slug": "link-equity" },
+    { "type": "glossary", "slug": "breadcrumb-navigation" },
+    { "type": "journal", "slug": "internal-linking-beats-link-building" },
+    { "type": "services", "slug": "on-page-seo-services" }
+  ]
+}

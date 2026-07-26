@@ -1,0 +1,189 @@
+{
+  "slug": "canonical-vs-noindex",
+  "type": "compare",
+  "primaryKeyword": "canonical vs noindex",
+  "secondaryKeywords": [
+    "when to use canonical tag",
+    "noindex vs canonical duplicate content",
+    "canonical tag in seo",
+    "faceted navigation seo",
+    "pagination canonical best practice"
+  ],
+  "cluster": "technical-choices",
+  "intent": "informational",
+  "h1": "Canonical vs noindex: a decision table for five real cases",
+  "metaTitle": "Canonical vs Noindex: A 5-Case Decision Table",
+  "metaDescription": "Canonical vs noindex, settled with a decision table for the five duplicate content cases Indian ecommerce sites hit — plus why you must never combine them.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "A canonical tag is a hint that two URLs are the same page and their signals should merge. A noindex is a directive that removes a page from search entirely. Use canonical for duplicates you want consolidated, noindex for pages that shouldn't be findable, and never both on the same URL.",
+  "takeaways": [
+    "**Canonical is a suggestion. Noindex is an order.** Google ignores canonicals it disagrees with roughly every day. It does not ignore noindex.",
+    "Putting both on one URL sends contradictory instructions, and the risk isn't that nothing happens — it's that the noindex gets applied to the page you were trying to keep.",
+    "A noindexed page has to stay crawlable. Block it in `robots.txt` and Google never reads the tag, so the URL can sit in the index with no snippet, forever.",
+    "Never canonical page 2 of a paginated series to page 1. Google will usually ignore it, and when it doesn't, you've hidden half your catalogue.",
+    "If you're reaching for both tags on the same page, the honest answer is usually that the page shouldn't exist."
+  ],
+  "sections": [
+    {
+      "h2": "What each one tells Google, and what it doesn't",
+      "body": [
+        "These get discussed as if they're two settings on the same dial. They aren't. One is about *which URL should represent a piece of content*. The other is about *whether a page belongs in search at all*. Confusing them is how sites accidentally deindex their category pages.",
+        "The row that matters most is the last one. A canonical merges signals; a noindex throws them away."
+      ],
+      "table": {
+        "caption": "Canonical vs noindex: two different tools for two different problems.",
+        "head": ["", "rel=canonical", "meta robots noindex"],
+        "rows": [
+          ["What it says", "\"This other URL is the real version of this page\"", "\"Do not show this page in search results\""],
+          ["Binding?", "A hint. Google may pick a different canonical.", "A directive. Google honours it."],
+          ["Where it goes", "`<link rel=\"canonical\">` in `<head>`, or an HTTP header", "`<meta name=\"robots\" content=\"noindex\">`, or `X-Robots-Tag`"],
+          ["Effect on link signals", "Consolidates them onto the target URL", "Discards them over time"],
+          ["Page stays crawlable?", "Yes, and it must", "Yes, and it must — or Google never sees the tag"],
+          ["Reversible", "On the next crawl", "Yes, but re-indexing takes weeks"],
+          ["Use when", "Two URLs are genuinely the same page", "The page is fine for humans, wrong for search"]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The robots.txt mistake that undoes both",
+        "body": "If a URL is disallowed in `robots.txt`, Google can't fetch the page, which means it can't read your canonical tag *or* your noindex. Blocked-but-linked URLs routinely appear in results as a bare URL with no title. If you want a page out of the index, let Google crawl it and read the noindex. Block it only once it's gone."
+      }
+    },
+    {
+      "h2": "The five-case decision table",
+      "body": [
+        "These are the five duplicate-content situations that account for most of what we find in audits of Indian ecommerce and service sites. The right answer is different in every one, and in two of them the answer is neither tag."
+      ],
+      "table": {
+        "caption": "Five real cases, and the exact directive for each.",
+        "head": ["Case", "What to ship", "Why"],
+        "rows": [
+          [
+            "**1. Faceted filters** — `/sarees?colour=red&size=m&sort=price`",
+            "Keep filter links uncrawlable, and `Disallow` the parameter patterns in `robots.txt`. Canonical the ones that do get crawled to the clean category.",
+            "Crawl budget is the real problem, not duplication. Four filters with six values each is thousands of near-identical URLs. Noindex doesn't help — Google still has to crawl every one to read the tag."
+          ],
+          [
+            "**2. A filter with genuine search demand** — `/running-shoes/under-3000`",
+            "A real, indexable landing page with a self-referencing canonical and its own copy.",
+            "People search this. Treating it as duplicate junk throws away a page that could rank. Curate a handful; don't generate ten thousand."
+          ],
+          [
+            "**3. Pagination** — `/blog/page/2`, `/kurtis?page=4`",
+            "Self-referencing canonical on every page. Keep them indexable. **Do not** canonical page 2 to page 1.",
+            "Google retired `rel=next/prev` support in 2019. Pointing page 2 at page 1 either gets ignored or hides every product past the first page from discovery."
+          ],
+          [
+            "**4. Templated city pages** — 40 pages, one paragraph, city name swapped",
+            "Neither tag. Delete or merge them into fewer pages with real local substance.",
+            "A canonical hides the symptom and the doorway-page problem stays. Google classifies templated location pages as scaled content, and the penalty is site-wide, not page-level."
+          ],
+          [
+            "**5. UTM and campaign parameters** — `?utm_source=whatsapp`",
+            "Self-referencing canonical on the clean URL, present on every parameterised version.",
+            "Google's URL Parameters tool was retired in 2022, so the canonical is your only lever. Never noindex these — a noindex on the parameterised URL can take the clean one with it."
+          ],
+          [
+            "**6. Thank-you, cart, account and internal search pages**",
+            "`noindex, follow`. No canonical.",
+            "There's no duplicate to consolidate — these simply don't belong in search. Google's guidance explicitly discourages indexing internal search result pages."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "That's six rows in a five-case table",
+        "body": "Because case 1 and case 2 look identical in a crawl and need opposite treatment. The difference is whether a human searches that filter combination. Check Search Console and Keyword Planner before you decide — this is the judgement call that separates an audit from a checklist."
+      }
+    },
+    {
+      "h2": "Why canonical plus noindex on one page breaks",
+      "body": [
+        "It's a common pattern in CMS plugins and it looks tidy: mark the duplicate `noindex` *and* point its canonical at the original. Both instincts are reasonable. Together they're contradictory.",
+        "The canonical says: *this page and that page are one thing, treat them as a unit, consolidate them.* The noindex says: *drop this page from search.* If Google honours the canonical and treats the two URLs as one entity, the noindex arguably applies to the merged entity. Google has warned about exactly this for years, and while the behaviour isn't deterministic, the downside is asymmetric.",
+        "You get one of three outcomes. Google ignores the canonical and deindexes the duplicate — fine, but the canonical was pointless. Google ignores the noindex and consolidates — fine, but the noindex was pointless. Or Google deindexes the target page you were trying to protect. Two are wasted work; one is a real loss. The rule is one directive per URL.",
+        "There's a related trap in `noindex, follow`. It works initially, but a page Google keeps out of the index gets crawled less over time and its outgoing links stop helping discovery. If a page exists mainly to pass internal links deeper into the site, noindexing it is a slow way to orphan whatever sat behind it."
+      ]
+    },
+    {
+      "h2": "A canonical is a hint, and Google overrules it constantly",
+      "body": [
+        "This is the part that surprises people who've only read the documentation summary. You declare a canonical; Google decides one. When those disagree, Google's choice wins and your tag is just one vote among several.",
+        "The other votes include internal linking patterns, which URL appears in your sitemap, redirects, HTTPS versus HTTP, hreflang clusters, and which URL looks cleaner and shorter. If your canonical points at URL A but every internal link and your sitemap point at URL B, Google will reasonably conclude the tag is a mistake."
+      ],
+      "bullets": [
+        "**Make every signal agree.** Internal links, sitemap entries, hreflang and the canonical tag should all name the same URL. Contradiction is what gets your tag ignored.",
+        "**Absolute URLs only.** Relative canonicals resolve differently across environments and are a reliable way to canonicalise a live site to a staging path.",
+        "**One canonical per page.** Two `<link rel=\"canonical\">` tags — usually a theme and a plugin each adding one — means Google ignores both.",
+        "**Canonicals don't work across genuinely different content.** If the pages aren't near-duplicates, Google treats the tag as noise. Use a [301 redirect](/compare/301-vs-302-redirect) if one page really should replace the other."
+      ]
+    },
+    {
+      "h2": "The cases where neither tag is the answer",
+      "body": [
+        "Half the canonical questions we get in audits are really content questions wearing a technical costume. Reaching for a tag is the fast fix; it's rarely the right one.",
+        "Before you ship either directive, check whether one of these applies."
+      ],
+      "numbered": [
+        "**The page should be gone.** Serve a `410 Gone` and remove the internal links. Faster and cleaner than noindexing something you'll never revisit.",
+        "**The page should be a redirect.** If one URL genuinely replaces the other and users should never see the old one, that's a 301, not a canonical.",
+        "**There are simply too many pages.** Fifteen thin articles on one topic don't need canonicals; they need to become three good ones with 301s from the rest. That's the fix for [keyword cannibalisation](/glossary/keyword-cannibalization), and it usually lifts rankings rather than tidying a report.",
+        "**They're generated at a scale you can't justify.** Tagging them treats a symptom — [programmatic SEO crosses a scaled-content line](/journal/programmatic-seo-and-the-scaled-content-line) that no directive fixes.",
+        "**The duplicate is on someone else's site.** Neither tag helps. Google is usually right about which one is the original."
+      ]
+    },
+    {
+      "h2": "How to verify the choice actually worked",
+      "body": [
+        "Shipping the tag is not the same as Google accepting it, and the gap between the two is where most technical SEO time disappears. Search Console tells you exactly what Google decided — most teams just never open the right screen.",
+        "Check these three, in this order, one to three weeks after deploying."
+      ],
+      "numbered": [
+        "**URL Inspection on a sample URL.** Compare *User-declared canonical* with *Google-selected canonical*. If they differ, your tag lost, and the reason is almost always inconsistent internal links or a sitemap pointing elsewhere.",
+        "**Page indexing report.** 'Alternate page with proper canonical tag' means it worked. 'Duplicate, Google chose different canonical than user' means it didn't. 'Excluded by noindex tag' confirms a noindex landed.",
+        "**A live fetch of the header.** `curl -s https://yoursite.com/page | grep -i canonical` and `curl -sI https://yoursite.com/page | grep -i x-robots`. A CDN, an edge worker or a plugin can rewrite the head after your CMS renders it. What Google sees is what's on the wire, not what's in your template."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Expect it to take weeks",
+        "body": "Canonical consolidation and noindex removal both require Google to re-crawl the URL, and low-traffic pages get crawled rarely. Two to six weeks is normal on a mid-size site. If something needs to disappear today — a leaked page, a live pricing error — use the Removals tool for the temporary block and ship the noindex behind it. This kind of cleanup is core to [technical SEO work](/services/technical-seo-services), and it's usually the highest-return month of any engagement."
+      }
+    }
+  ],
+  "versus": {
+    "a": "rel=canonical",
+    "b": "meta robots noindex",
+    "verdict": "Use a canonical when two URLs are genuinely the same page and you want the ranking signals merged — filters, UTM parameters, print versions; use noindex when the page is useful to humans but has no business in search at all — carts, thank-you pages, internal search results — and if you find yourself wanting both on one URL, the page probably shouldn't exist."
+  },
+  "faqs": [
+    {
+      "q": "Can I use canonical and noindex on the same page?",
+      "a": "No. They're contradictory: the canonical asks Google to treat two URLs as one entity, and the noindex asks it to drop the page. Google has warned for years that the combination is unpredictable, and the worst outcome is that the noindex propagates to the page you were trying to keep. Ship one directive per URL."
+    },
+    {
+      "q": "Should I canonical page 2 of pagination to page 1?",
+      "a": "No. Google retired support for rel=next/prev in 2019 and its current guidance is to let paginated pages self-canonicalise and stay indexable. Pointing page 2 at page 1 is usually ignored, and when it isn't, you've hidden everything past the first page from discovery — which on an ecommerce catalogue means most of your products."
+    },
+    {
+      "q": "How do I handle faceted navigation on an ecommerce site?",
+      "a": "Treat it as a crawl budget problem, not a duplicate content one. Keep low-value filter links uncrawlable, disallow the parameter patterns in robots.txt, and canonical any that slip through to the clean category. Then pick the handful of filter combinations people actually search for and build those as real, indexable landing pages with their own copy."
+    },
+    {
+      "q": "Why is Google ignoring my canonical tag?",
+      "a": "Because it's a hint, and something else is outvoting it. Usually your internal links or XML sitemap point at a different URL than your canonical does, or the two pages aren't similar enough for Google to accept them as duplicates. Check URL Inspection for the Google-selected canonical, then make every signal on your site name the same URL."
+    },
+    {
+      "q": "Does a noindex page still pass link equity?",
+      "a": "Initially, if it's set to noindex, follow. Over time Google crawls a persistently noindexed page less often, and its outgoing links stop doing much for discovery. Don't rely on a noindexed page as a hub that funnels internal links deeper into the site — you'll slowly orphan whatever sits behind it."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "canonical-tag" },
+    { "type": "glossary", "slug": "noindex" },
+    { "type": "glossary", "slug": "canonicalization" },
+    { "type": "compare", "slug": "301-vs-302-redirect" },
+    { "type": "services", "slug": "technical-seo-services" },
+    { "type": "journal", "slug": "a-post-mortem-on-keyword-cannibalization" }
+  ]
+}

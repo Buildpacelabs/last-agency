@@ -1,0 +1,111 @@
+{
+  "slug": "google-ai-mode",
+  "type": "glossary",
+  "primaryKeyword": "google ai mode",
+  "secondaryKeywords": [
+    "ai mode search",
+    "google ai mode seo impact",
+    "conversational search google",
+    "query fan out",
+    "ai mode vs ai overviews"
+  ],
+  "cluster": "ai-search",
+  "intent": "informational",
+  "h1": "Google AI Mode",
+  "metaTitle": "Google AI Mode: What It Is and Who It Cites",
+  "metaDescription": "Google AI Mode answers in prose instead of listing links. How query fan-out picks sources, and why deep sub-topic coverage beats one giant page.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Google AI Mode",
+  "definition": "Google AI Mode is a conversational tab inside Google Search that returns a written answer assembled from many simultaneous background searches, with a handful of source links attached, instead of a ranked list of results.",
+  "answer": "Google AI Mode is a separate conversational tab in Google Search that answers your question in prose instead of listing ten links. It runs on query fan-out: your one question becomes many hidden background searches, and the answer is stitched from whatever those return. Deep sub-topic coverage wins; one big page loses.",
+  "takeaways": [
+    "AI Mode is a **different surface** from AI Overviews, not a bigger version of it. You can win the organic result and appear nowhere in AI Mode.",
+    "**Query fan-out** means Google isn't looking for a page that matches your question. It's looking for the best source for each fragment of it.",
+    "Fifteen tight pages that each own one sub-question can get cited fifteen times. One 4,000-word guide gets cited once, if that.",
+    "Search Console doesn't break AI Mode out. Checking whether you appear is a manual, monthly, slightly tedious job."
+  ],
+  "sections": [
+    {
+      "h2": "AI Mode and AI Overviews are not the same surface",
+      "body": [
+        "An AI Overview is a block that sits on top of a normal results page. The ten blue links are still underneath it. AI Mode is a separate tab: you ask, Google writes the whole answer, and you keep asking follow-ups in the same thread. There's no ranked list to scroll to.",
+        "The practical difference matters. An AI Overview competes with your listing for attention. AI Mode replaces the listing unless Google chooses to cite you. On the same query you can rank third organically and be completely absent from the AI Mode answer — those are two separate contests with two separate scoreboards."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Both surfaces move without warning",
+        "body": "Google ships changes to AI Mode quietly, and what it does on an Indian English query this month isn't necessarily what it did last month. Check your own queries rather than trusting a screenshot from somebody's blog post."
+      }
+    },
+    {
+      "h2": "Query fan-out: one question becomes many",
+      "body": [
+        "Google describes AI Mode as using a **query fan-out** technique. Your single question gets broken into sub-topics, Google runs multiple searches across those sub-topics simultaneously in the background, and the answer is assembled from what comes back.",
+        "So if someone asks AI Mode whether an SEO retainer is worth it for a twelve-person SaaS company, it isn't hunting for a page with that title. It's separately searching what a retainer includes, what SEO costs in India, how long SEO takes for SaaS, and what the alternatives are — then pulling the best source it can find for each fragment.",
+        "That changes what a good site looks like. One enormous ultimate guide answers one fragment well and the rest adequately, so it wins one citation slot at most. A cluster of tight pages, each genuinely the best answer to one narrow question, can be pulled for several fragments of the same conversation. This is the whole structural argument for a [topic cluster](/glossary/topic-cluster) over a monolith."
+      ]
+    },
+    {
+      "h2": "What actually gets pulled as a source",
+      "body": [
+        "Nobody outside Google has the selection logic, and anyone who tells you they do is selling something. But the pattern across surfaces is consistent enough to plan around."
+      ],
+      "bullets": [
+        "**An extractable answer, early.** If the answer to the sub-query is in paragraph fourteen after an anecdote, it's harder to lift than one sitting in the first hundred words.",
+        "**Specificity that can't be paraphrased from anywhere else** — a real number, a named process, a stated price. Generic advice is interchangeable, so any source will do, and it won't be yours.",
+        "**Corroboration.** Claims that line up with what other credible sources say are safer for a model to repeat. Contrarian claims need visible evidence attached or they get dropped.",
+        "**Crawl access from the right agent.** Googlebot governs whether the page can be retrieved at all; Google-Extended governs training use. Block the wrong one in `robots.txt` and you vanish from answers, not just training data.",
+        "**Freshness on anything dated.** Pricing, tool comparisons and anything with a year in the query skew hard toward recently updated pages."
+      ]
+    },
+    {
+      "h2": "How to check whether you appear",
+      "body": [
+        "Badly, is the honest answer. Google folds AI Mode data into the ordinary Web search type in Search Console rather than breaking it out, so there's no filter that isolates it and no chart you can point at in a board meeting.",
+        "What's left is manual. Take twenty to thirty questions a real buyer would type, run them in AI Mode once a month, and record whether you were cited, linked or absent. Log it in a sheet with the date. It's the same method used for [AI visibility](/glossary/ai-visibility) generally — tedious, unglamorous, and currently the only free option that produces a trend line.",
+        "Two things make the manual check less misleading. Sign out or use a clean browser profile, so personalisation doesn't flatter you. And run each prompt twice, because these answers vary between runs on identical input — a single check tells you almost nothing.",
+        "On public numbers: Google hasn't published click-through data for AI Mode. The nearest real evidence is Pew Research Center's March 2025 analysis of US search behaviour, which found people clicked a link on roughly 8% of visits to a results page carrying an AI summary, against about 15% without one. That's AI Overviews, on desktop, in the US — treat it as a direction of travel, not a number for your Indian traffic. See [zero-click search](/glossary/zero-click-search) for the wider picture."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Don't chase the format",
+        "body": "The reflex is to bolt on thin FAQ pages and an llms.txt file and call it AI Mode optimisation. Neither is what gets cited. Being the most specific published source on a narrow question is what gets cited, and there's no shortcut around writing that."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the difference between AI Mode and AI Overviews?",
+      "a": "AI Overviews is a summary block on top of a normal results page — the blue links survive underneath. AI Mode is a separate conversational tab with no ranked list at all, where you can ask follow-ups in a thread. Appearing in one does not mean you appear in the other."
+    },
+    {
+      "q": "What is query fan-out?",
+      "a": "It's Google's term for breaking your question into sub-topics and running several searches for those sub-topics at once in the background, then assembling one answer from the results. It means the winning site is often not the one with a matching page title, but the one with the best page for a fragment you never typed."
+    },
+    {
+      "q": "Can I see AI Mode traffic in Search Console?",
+      "a": "Not separately. Google includes AI Mode data inside the standard Web search type rather than giving it its own filter, so you can't isolate impressions or clicks from it. Manual monthly prompt checks are the practical workaround until that changes."
+    },
+    {
+      "q": "Does blocking AI crawlers keep me out of AI Mode?",
+      "a": "It can. Google-Extended controls whether your content is used for training Gemini models, but AI Mode still retrieves live pages via ordinary Googlebot access. Block Googlebot and you're out of everything. Block Google-Extended and you're making a training-data decision, not a visibility one."
+    },
+    {
+      "q": "Should I write shorter pages for AI Mode?",
+      "a": "Write narrower pages, which usually means shorter ones. Fan-out rewards a site that has a genuinely best-in-market page for each sub-question over a site with one long page covering all of them at medium depth. Depth across sub-topics beats depth on a single URL."
+    },
+    {
+      "q": "Is AI Mode available in India?",
+      "a": "Google has rolled AI Mode out to English queries in India, and coverage keeps widening. Because rollouts are staged and change often, check it on your own queries from an Indian IP rather than relying on a coverage list published a few months ago."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "ai-overviews" },
+    { "type": "glossary", "slug": "zero-click-search" },
+    { "type": "glossary", "slug": "generative-engine-optimization" },
+    { "type": "compare", "slug": "geo-vs-seo" },
+    { "type": "journal", "slug": "how-to-get-cited-by-ai-assistants" },
+    { "type": "services", "slug": "ai-search-optimisation-services" }
+  ]
+}

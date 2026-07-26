@@ -1,0 +1,177 @@
+{
+  "slug": "what-does-an-seo-agency-do",
+  "type": "answers",
+  "primaryKeyword": "what does an seo agency do",
+  "secondaryKeywords": [
+    "what seo agency do",
+    "what seo company do",
+    "what do seo agencies do",
+    "what does an seo company do",
+    "seo agency services"
+  ],
+  "cluster": "agency-mechanics",
+  "intent": "informational",
+  "h1": "What an SEO agency does for you every month",
+  "metaTitle": "What Does an SEO Agency Do? Real Deliverables",
+  "metaDescription": "What does an SEO agency do each month? The itemised deliverable list with realistic counts, what you only get once, and five line items to refuse.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "An SEO agency ships a countable list of deliverables every month: a technical fix queue, keyword and content briefs, published or optimised pages, link placements, and one report tied to an agreed number. On a ₹75,000/month retainer, expect roughly 8–12 briefs, 4–8 technical fixes and 2–5 earned links.",
+  "takeaways": [
+    "A month of SEO should arrive as **countable artefacts** — fixes shipped, briefs written, pages published, links placed, one report. If you can't count it, treat it as not having happened.",
+    "At ₹75,000/month, roughly **8–12 briefs, 4–8 technical fixes and 2–5 links** is a sane shape. It's a hygiene check, not a contract — a migration month legitimately eats everything.",
+    "Most of month one is **one-off**: audit, baseline, tracking, keyword map. You buy it once and it steers the next eleven months.",
+    "The report is the smallest deliverable and the most gamed. Ask for access to the shared drive, not the deck."
+  ],
+  "sections": [
+    {
+      "h2": "The monthly deliverable list, with real counts",
+      "body": [
+        "Here's what a month of SEO looks like once you can count it. The numbers assume a mid-size Indian retainer — around ₹75,000/month, which buys roughly 45–60 people-hours. Scale them close to linearly: half the budget, half the counts.",
+        "Two caveats before you hold anyone to this. Months aren't identical — a replatform or a Core Web Vitals rebuild can legitimately consume an entire month and produce two deliverables instead of twenty. And counts are a hygiene check, never a strategy. Twelve mediocre briefs are worse than four good ones, and considerably more expensive to publish."
+      ],
+      "table": {
+        "caption": "Typical monthly deliverables on a ₹75,000/month SEO retainer. Counts are indicative, not contractual.",
+        "head": ["Deliverable", "Typical monthly count", "Recurring or one-off"],
+        "rows": [
+          ["Technical fixes specified and ticketed", "4–8", "Recurring, front-loaded in months 1–3"],
+          ["Content briefs (query, intent, outline, internal links)", "8–12", "Recurring"],
+          ["New pages published", "4–8", "Recurring"],
+          ["Existing pages rewritten or refreshed", "2–4", "Recurring, rises after month 6"],
+          ["Internal linking pass across a cluster", "1", "Recurring"],
+          ["Earned links / digital PR placements", "2–5", "Recurring, and the most variable line by far"],
+          ["Google Business Profile updates, if you sell locally", "2–4", "Recurring"],
+          ["Report tied to the agreed baseline number", "1", "Recurring"],
+          ["Full technical audit", "—", "One-off, month 1, revisited every 6–12 months"],
+          ["Keyword map and content plan", "—", "One-off, month 1, extended quarterly"],
+          ["Analytics and conversion tracking setup", "—", "One-off, month 1"]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "A count is not a commitment to quality",
+        "body": "Twelve briefs written by someone who has never spoken to your sales team produce twelve pages nobody searches for. Ask to see one finished brief before you sign. It's the fastest quality test in this business and it costs you ten minutes."
+      }
+    },
+    {
+      "h2": "What you only ever get once",
+      "body": [
+        "Month one is expensive and looks empty. That's because most of what you're buying is one-off work that never repeats and never shows up as a published page."
+      ],
+      "bullets": [
+        "**The technical audit** — full crawl, indexation check, speed profile, mobile rendering, log review if your server gives you one. Produces a fix list, not traffic.",
+        "**The baseline** — your trailing-90-day qualified organic leads, written down and frozen. Without it, every later claim of improvement is unfalsifiable. It's the deliverable most agencies skip, because it's the only one that can be used against them.",
+        "**The keyword map** — every priority query assigned to exactly one URL. Prevents [keyword cannibalisation](/glossary/keyword-cannibalization), which is far cheaper to avoid than to unpick.",
+        "**Tracking setup** — GA4 events, Search Console, call and form tracking, CRM source fields. Skip it and you'll spend month six arguing about whose numbers are right instead of what to do next."
+      ],
+      "body2": [],
+      "subs": [
+        {
+          "h3": "Why month one looks like nothing happened",
+          "body": [
+            "Those four items usually consume 60–80% of the first month's hours. If you're expecting published articles in the first four weeks, you're expecting the wrong thing — and an agency that hands you articles in week two has skipped the audit to make the invoice feel justified.",
+            "The honest framing: month one buys direction. Months two onward buy output. An agency that can't explain that distinction on the kickoff call will struggle to explain anything harder later."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The shared drive versus the report",
+      "body": [
+        "There are two places agency work shows up, and only one of them is hard to fake. The report is a summary written by the people being graded. The shared drive is the raw output.",
+        "Ask for access to both on day one. A folder that fills week by week with crawl exports, fix tickets, briefs, drafts and outreach trackers is the clearest evidence work is happening. A polished monthly PDF with three charts is evidence that a template was filled in."
+      ],
+      "bullets": [
+        "**Should be in the drive:** crawl exports, the technical fix log with ticket IDs and ship dates, every content brief and draft, published URLs, the outreach tracker with target sites and outcomes, the keyword map.",
+        "**Should be in the report:** the frozen baseline and where the number is now, what shipped, what moved, what didn't, what happens next month — and one thing the agency got wrong.",
+        "**Should be in neither:** a rank-tracker screenshot with no date range, and \"traffic is up\" with no query breakdown. Traffic is trivially inflated by irrelevant queries; leads are not."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The report we'd want as a client",
+        "body": "One page. The frozen baseline, today's number, the delta, three things shipped, one thing that failed. Everything else belongs in the drive. More on reading them properly in [how to read an SEO report](/journal/how-to-read-an-seo-report)."
+      }
+    },
+    {
+      "h2": "How the four disciplines split a month",
+      "body": [
+        "The deliverable list maps onto four workstreams, and the split shifts as the engagement ages. If your month-nine invoice is funding the same mix as month one, nobody has re-planned the work."
+      ],
+      "table": {
+        "caption": "Where the hours go, by engagement stage.",
+        "head": ["Workstream", "Months 1–3", "Months 4–12", "What it produces"],
+        "rows": [
+          ["Technical", "25–35%", "5–15%", "Fix tickets, indexation and speed gains, migration cover"],
+          ["Content and on-page", "35–45%", "45–55%", "Briefs, new pages, rewrites, internal links"],
+          ["Links and digital PR", "10–20%", "25–35%", "Referring domains from real, editorially independent sites"],
+          ["Analytics and reporting", "10–15%", "~10%", "Baseline, tracking, the monthly read"]
+        ]
+      },
+      "body2": [],
+      "subs": [
+        {
+          "h3": "What changes if you sell to one city",
+          "body": [
+            "Local businesses trade part of the link budget for Google Business Profile work, review generation and citation cleanup. Different deliverables, identical logic — and usually a better trade, because the map pack sits above the organic results and most local competitors have never seriously touched their profile."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Five things you should refuse to accept as a deliverable",
+      "body": [
+        "Each of these appears on real Indian SEO reports every month. Each one occupies a slot a genuine deliverable could have used, which is the actual cost."
+      ],
+      "numbered": [
+        "**\"Directory and classified submissions — 50 completed.\"** These links have been worthless for well over a decade. Their only remaining function is to make a report look full.",
+        "**\"Meta tags optimised\", repeated every month.** Title and description work is largely one-off per page. Seeing it monthly means the line exists to fill space, not to change anything.",
+        "**\"Social bookmarking\" or \"article submissions.\"** Same category, same era. If either appears, assume the rest of the report needs auditing too.",
+        "**A blog post with no brief behind it.** Ask which query it targets, what intent it serves, and which page it links to. No answer means it was written to hit a number.",
+        "**A backlink report you can't audit.** You should be able to click every link, see the page it sits on, and judge whether a human would ever read it. \"100 backlinks built\" with no URLs attached is an invoice, not a deliverable."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The volume tell",
+        "body": "Any agency quoting link counts rather than link sources is buying them. Earned links arrive in ones and twos and take weeks each. [What link building actually costs](/cost/link-building-cost) explains why the cheap version prices the way it does."
+      }
+    },
+    {
+      "h2": "The deliverable that outranks all the others",
+      "body": [
+        "Everything above is an input. Inputs are easy to produce, easy to admire and easy to fake. The only output that matters is the number you agreed to move, measured against where it stood on day one.",
+        "So the real monthly deliverable is one sentence: here is the number we froze, here is what it is now, here is what we did about it. An agency that can produce that sentence every month has nothing to hide behind. An agency that can't will send a deck instead, and the deck will be very good.",
+        "That's the basis of [how our SEO retainers work](/seo). We freeze your trailing-90-day qualified organic leads before the first ticket is written, and if we haven't beaten that number in 90 days we keep working free until we do. It's also why we cap ourselves at three new clients a month — you can't carry that risk at volume, and anyone who says they can hasn't priced it."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many blog posts should an SEO agency publish per month?",
+      "a": "Four to eight new pages a month is typical on a ₹75,000 retainer, plus two to four refreshes of existing pages. Cadence beats volume: four solid pages every month for a year outperforms forty in one quarter followed by silence, because search results reward sites that stay current."
+    },
+    {
+      "q": "What does an SEO agency deliver in the first month?",
+      "a": "Mostly one-off work: a technical audit, a keyword map, analytics and conversion tracking, and a frozen baseline number. Usually one or two pages published, sometimes none. Month one buys direction. If you're handed ten articles in week two, the audit was skipped."
+    },
+    {
+      "q": "How many backlinks should an SEO agency build each month?",
+      "a": "Two to five genuinely earned links a month is a healthy pace on a mid-size retainer, and some months produce none while a digital PR campaign lands. Any agency promising twenty or fifty a month is buying them, and bought links are a penalty with an unknown date on it."
+    },
+    {
+      "q": "Should my SEO agency write the content or just the briefs?",
+      "a": "Both models are legitimate and they price very differently. Strategy-only retainers assume you supply writers — cheaper, but only works if you actually have them. Confirm which you're buying before signing, because an unwritten brief produces exactly as much traffic as no brief at all."
+    },
+    {
+      "q": "What if my agency misses the agreed deliverable counts?",
+      "a": "Ask what they did instead. A month spent on an unexpected migration or a Core Web Vitals rebuild is a good reason to miss counts. \"We were busy\" isn't. If counts slip two months running with no substitution, the account has been deprioritised for a bigger client."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "what-do-seo-services-include" },
+    { "type": "answers", "slug": "what-does-an-seo-retainer-include" },
+    { "type": "services", "slug": "seo-reporting-services" },
+    { "type": "journal", "slug": "where-your-seo-retainer-money-actually-goes" },
+    { "type": "cost", "slug": "seo-agency-fees-breakdown" },
+    { "type": "compare", "slug": "technical-seo-vs-content-seo" }
+  ]
+}

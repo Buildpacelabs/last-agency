@@ -1,0 +1,270 @@
+{
+  "slug": "a-post-mortem-on-keyword-cannibalization",
+  "type": "journal",
+  "primaryKeyword": "how keyword cannibalization kills traffic",
+  "secondaryKeywords": [
+    "keyword cannibalization fix",
+    "two pages ranking for same keyword",
+    "cannibalization audit",
+    "content overlap seo",
+    "url consolidation seo"
+  ],
+  "cluster": "seo-strategy",
+  "intent": "informational",
+  "h1": "Post-mortem: how four near-duplicate pages cost one site its best keyword",
+  "metaTitle": "A Post-Mortem on Keyword Cannibalization",
+  "metaDescription": "Keyword cannibalization kills traffic quietly. A post-mortem on how four overlapping pages split one query, and the 301 plan that put it back together.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Keyword cannibalization is two or more of your own pages competing for the same intent, and it kills traffic quietly — rankings flip between URLs, impressions split, and clicks fall while nothing looks broken. The fix is almost never deletion. It's picking one winner, folding the rest into it, and 301-redirecting the losers.",
+  "takeaways": [
+    "Cannibalization is an **intent collision**, not a word collision. Two pages mentioning the same keyword is a topic. Two pages answering the same question is a problem.",
+    "The symptom is instability, not a drop. Watch for the **same query returning different URLs** week to week in Search Console — that sawtooth is the tell.",
+    "Pick the survivor by **referring domains first**, content quality last. Content moves in an afternoon. Links take a quarter to rebuild.",
+    "The step that half-kills most consolidations is **internal links**. If your nav still points at the redirected URL, you've told Google two contradictory things.",
+    "A four-column keyword map — query cluster, owning URL, page type, owner — costs one afternoon and prevents the whole failure."
+  ],
+  "sections": [
+    {
+      "h2": "Cannibalization is an intent collision, not a word collision",
+      "body": [
+        "Most definitions of keyword cannibalization are wrong in a way that makes the problem harder to fix. It is not two pages that mention the same keyword. Every page on an SEO site mentions SEO. That's a topic, not a fault.",
+        "Cannibalization is two or more URLs on your own domain that satisfy the same search intent. Same question, same expected answer, same page type. Google has to pick one, and because the two are so close, the pick isn't stable. It flips with each recrawl, each minor edit, each wobble in whichever signal was breaking the tie.",
+        "That instability is the damage, and it's why the problem is so easy to miss. A page sitting steadily at position 6 accumulates clicks, engagement and — eventually — links. A query where your position swaps between two URLs every fortnight accumulates none of that, because neither URL is ever around long enough to become the thing people bookmark or cite. You don't see a crash. You see a page that never quite arrives."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The one-line test",
+        "body": "If you'd be equally happy for either page to be the result someone lands on for a given query, you have cannibalization. If one is obviously the right answer and the other obviously isn't, you have a keyword mention and nothing to fix."
+      }
+    },
+    {
+      "h2": "How a content calendar builds this without anybody making a mistake",
+      "body": [
+        "What follows is a composite. We've run this cleanup often enough that the details repeat, so we've reconstructed one version of the pattern rather than attach numbers to an account we'd have to anonymise anyway. Nothing here is a figure lifted from a specific client.",
+        "A B2B services company starts publishing. Month 2, the pillar page goes live — the definitive guide to the thing they sell. It's good. It ranks. Month 9, a new writer joins, gets handed a keyword-volume export, and briefs a beginner's guide against a variant of the same phrase. Also good. Also live. Month 14, someone reads that checklists earn links, so a checklist post ships against the same query with the word \"checklist\" appended. Month 22, a marketing manager refreshes the original pillar, and — because the CMS makes it easy and the year looks tidy in a slug — publishes the refresh at a new URL. The old one stays up.",
+        "Four URLs. One intent. Twenty-two months. Nobody did anything stupid; every one of those four commissions was defensible on the day it was made. The failure is structural. No document anywhere said which URL owned that intent, so four briefs were allowed to answer the same question, and the site quietly started competing with itself for the only keyword that was ever going to pay for the content programme."
+      ],
+      "table": {
+        "caption": "The four pages, in the order they were published.",
+        "head": [
+          "When",
+          "What shipped",
+          "Intent it was briefed against",
+          "Intent it actually served"
+        ],
+        "rows": [
+          [
+            "Month 2",
+            "The pillar guide",
+            "Head term — the definitive explainer",
+            "The definitive explainer. Correct."
+          ],
+          [
+            "Month 9",
+            "\"Beginner's guide to…\"",
+            "A long-tail variant from a volume export",
+            "The definitive explainer, again, for the same reader."
+          ],
+          [
+            "Month 14",
+            "\"…checklist\"",
+            "Link-earning format play",
+            "Mostly the explainer, with bullets."
+          ],
+          [
+            "Month 22",
+            "Refreshed pillar at a new slug",
+            "Nothing — it was a refresh",
+            "The explainer, competing with its own earlier self."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The symptom: URL flip-flop in Search Console",
+      "body": [
+        "Search Console will not hand you a cannibalization report. It hands you the raw material, and the whole diagnosis lives in the relationship between one query and the pages that serve it. Five minutes, no tools, no subscription.",
+        "Do this for the ten queries you most need to own. Not all of them — the ten that matter."
+      ],
+      "numbered": [
+        "Open the **Performance** report, set the range to the last 16 months, and stay on the **Queries** tab. Pick a query you believe you should own.",
+        "Click into that query, then switch to the **Pages** tab. You are now looking at every URL that earned an impression for that single query. More than one URL with real impressions is your candidate cluster.",
+        "Export it by week or month and chart average position per URL. Cannibalization has a shape: URL A holds position 7 for three weeks, URL B takes over at 11, A comes back at 9. A healthy page is a flat line with a slope.",
+        "Check click-through rate against what that position should return. A split intent usually under-performs its position, because the URL Google surfaced is frequently the wrong one for the query the person typed.",
+        "Sanity-check with `site:yourdomain.com \"the exact phrase\"` in Google. Crude, unreliable as a ranking read, but it surfaces the candidate set in about eight seconds."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "What this isn't",
+        "body": "Two URLs appearing for a broad head term where one is a category page and one is a product page is normal, often desirable, and not cannibalization. Chasing that pattern is how teams end up deleting pages that were earning money. Only act when the two pages would satisfy the same searcher."
+      }
+    },
+    {
+      "h2": "Merge, redirect, differentiate or delete — the decision rules",
+      "body": [
+        "Once you have the cluster, each URL in it gets exactly one of four outcomes. Choosing wrong is considerably more expensive than choosing slowly, so this is the part to think about over a coffee rather than in a sprint planning session.",
+        "The default instinct — delete the duplicates — is the one to resist hardest. A deleted URL takes its links with it."
+      ],
+      "table": {
+        "caption": "Decision rules for a cluster of competing URLs.",
+        "head": [
+          "What you're looking at",
+          "What to do",
+          "Why"
+        ],
+        "rows": [
+          [
+            "Same intent, one page clearly stronger",
+            "Fold the useful parts of the weaker page into the stronger one, then 301 the weaker",
+            "Keeps the accumulated links, ends the split, loses nothing."
+          ],
+          [
+            "Same intent, both pages weak",
+            "Write one proper page, 301 both old URLs into it",
+            "Neither deserves to be the survivor; the query does."
+          ],
+          [
+            "Look similar, actually different stages — \"what is X\" versus \"what X costs\"",
+            "Differentiate: new title, new H1, rewrite the first 200 words, cross-link both ways",
+            "The intents were genuinely separate. The writing wasn't."
+          ],
+          [
+            "Zero impressions in 12 months, no referring domains",
+            "Remove it. 410 if you're confident, noindex if it still serves a human purpose",
+            "Nothing to preserve, and a redirect to an unrelated page is read as a soft 404 anyway."
+          ],
+          [
+            "A refresh that was published at a new URL",
+            "301 the old URL to the new one today",
+            "The easiest case in this table and the one most often left undone."
+          ]
+        ]
+      },
+      "bullets": [
+        "**A canonical tag is not a substitute for a 301 when the page should die.** Canonical is a hint; a redirect is an instruction. Use canonical when both URLs must stay reachable for users. See [canonical versus noindex](/compare/canonical-vs-noindex) for which tool fits which situation.",
+        "**Never blanket-redirect a cluster to the home page.** Google treats an irrelevant redirect as a soft 404 and the link equity evaporates. One-to-one or nothing.",
+        "**Don't differentiate two pages that genuinely have one intent.** Rewriting titles to look different doesn't create a second reader."
+      ]
+    },
+    {
+      "h2": "How we pick the survivor",
+      "body": [
+        "The obvious move is to keep the page with the most traffic. That's the wrong first criterion roughly a third of the time, because traffic is a symptom of the split you're trying to fix and it can be sitting on the wrong URL for accidental reasons — an internal link from the nav, a slightly older publish date.",
+        "We rank the candidates in this order, and we stop at the first clear winner."
+      ],
+      "numbered": [
+        "**Referring domains pointing at the URL.** Links are the single hardest thing on this list to rebuild. If one URL has eleven referring domains and the other has one, the argument is usually over.",
+        "**Rank history depth.** Which URL held a position for the longest stretch? Longevity suggests Google has already decided this URL is the one, and agreeing with that decision is cheaper than fighting it.",
+        "**URL fit.** Does the slug describe the intent that's actually winning? A slug reading `/blog/2023-beginners-guide-updated` is a bad long-term home for your best commercial query.",
+        "**Page-level conversion**, if you track it. Two pages can rank identically and convert very differently.",
+        "**Content quality — last.** Yes, last. Better content can be moved onto the surviving URL in an afternoon. Earning those links again is a quarter's work."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "When criteria 1 and 5 disagree",
+        "body": "Keep the URL with the links, and move the better content onto it. That's a copy-paste job and one lost afternoon. Doing it the other way round means rebuilding a link profile from scratch to preserve some paragraphs you could have pasted."
+      }
+    },
+    {
+      "h2": "The 301 plan, in order",
+      "body": [
+        "Sequence matters here more than it looks. Redirecting first and merging content later means Google recrawls a destination page that doesn't yet answer the query it inherited, and the consolidation reads as a downgrade."
+      ],
+      "numbered": [
+        "**Fold the content first.** Move anything genuinely useful from the losing pages onto the survivor. Publish it. Let it sit for three to seven days so the improved page gets recrawled on its own terms.",
+        "**Then 301 the losers**, one-to-one, each to the survivor. Server-level redirects, not a plugin chain if you can avoid it.",
+        "**Rewrite every internal link** that pointed at the redirected URLs. This gets its own section below because it's where most consolidations quietly fail.",
+        "**Fix the sitemap.** Remove the redirected URLs, keep the survivor, resubmit. A sitemap that still lists dead URLs slows the recrawl.",
+        "**Update what you control off-site.** Guest post bylines, email footers, Google Business Profile links, social bios, the PDF someone sent to 400 people.",
+        "**Request indexing on the survivor** in Search Console. It's a nudge, not a lever, and the quota is small — use it on the one URL that matters.",
+        "**Wait four to eight weeks before judging it.** Watch impressions for the target query on the survivor, not total site traffic."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The honest timeline",
+        "body": "Consolidations usually look worse before they look better. Google has to recrawl every redirected URL and re-evaluate the survivor, and on a mid-size site that takes four to eight weeks. If someone tells you a merge pays back in a fortnight, they're describing a two-page site."
+      }
+    },
+    {
+      "h2": "Rewriting internal links is the step everyone skips",
+      "body": [
+        "301s work. They also stop being a fix and start being technical debt the moment you rely on them as architecture instead of as a transition.",
+        "Three reasons to do the rewrite properly. First, every redirected internal link is an extra hop for a crawler, and hops compound into chains the next time somebody restructures. Second, chains beyond a couple of hops get treated with less patience than a direct link. Third — and this is the one that actually costs rankings — your internal linking is a statement about which URL you consider canonical. If your navigation, your related-posts block and forty old articles all still point at the URL you just retired, you have told Google two contradictory things about the same page. Contradictory signals are how a consolidation half-works, which is the worst available outcome: you've taken the disruption and kept the ambiguity.",
+        "Finding them is unglamorous and finite. Crawl the site and filter for links resolving with a 3xx. Search your CMS body content for the old slug string. Then check the places a crawler flags but people forget: navigation and footer templates, sidebar widgets, hardcoded links inside components, author bios, and the inline links in old posts that nobody has opened since 2024.",
+        "While you're in there, point the recovered internal links at the survivor with anchor text that describes the query it now owns. Consolidation is one of the few moments you get to rewrite a site's internal linking with full context — [internal linking beats link building](/journal/internal-linking-beats-link-building) more often than founders expect, and this is the cheapest chance you'll get to prove it."
+      ]
+    },
+    {
+      "h2": "The keyword map that stops it happening again",
+      "body": [
+        "The cleanup is a week. The prevention is an afternoon, and it's a spreadsheet — which is why almost nobody builds it.",
+        "Four columns: **query cluster**, **owning URL**, **page type**, **owner** (a named human). Every query you intend to win appears exactly once. Every commissioned brief cites the row it belongs to. That's the whole system, and it's the cheapest insurance in content marketing."
+      ],
+      "bullets": [
+        "**One intent, one URL** — written down before the brief is written, not after the second page ranks.",
+        "**A refresh never gets a new URL.** Update in place. The publish date can change; the slug cannot. This single rule would have prevented the month-22 page in the story above.",
+        "**No row, no brief.** If a writer wants to cover something that isn't on the map, the map gets a new row first, and adding that row forces the conversation about overlap.",
+        "**Quarterly flip-flop check.** Pull your top 30 queries, look at the Pages tab for each, flag any query with two URLs earning impressions. Fifteen minutes a quarter.",
+        "**Kill the year from your slugs.** `/guide-2025` guarantees somebody publishes `/guide-2026` next January, and now you're back here."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The expensive version of this",
+        "body": "On sites past a few hundred URLs, cannibalization stops being fixable query by query and becomes an architecture problem. That's the point at which it belongs in a proper [SEO audit](/services/seo-audit-services) rather than a Friday afternoon — because by then the overlaps also involve category pages, tag archives and filtered URLs you didn't know were indexed."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I know if keyword cannibalization is actually hurting me?",
+      "a": "Open Search Console, click a query you should own, then switch to the Pages tab. If two or more of your URLs earn real impressions for that single query and the winner changes week to week, it's hurting you. One URL steadily ranking while another picks up scraps is usually fine."
+    },
+    {
+      "q": "Should I delete duplicate pages or redirect them?",
+      "a": "Redirect, in almost every case. A 301 passes the links and the history to the surviving URL; deletion throws both away. Only delete outright when a page has zero impressions over 12 months and no referring domains — at that point there is genuinely nothing to preserve."
+    },
+    {
+      "q": "Can I just add canonical tags instead of merging the pages?",
+      "a": "You can, and it's the right call when both URLs need to stay reachable for humans — a printable version, a filtered listing. But canonical is a hint Google can ignore, and it leaves two competing documents on your site. If one page should not exist, redirect it."
+    },
+    {
+      "q": "How long does it take to recover traffic after consolidating pages?",
+      "a": "Four to eight weeks on a mid-size site before the picture is readable, longer if crawl frequency is low. Expect a dip first while the redirected URLs are recrawled. Judge it on impressions and average position for the specific target query, not on total site traffic."
+    },
+    {
+      "q": "Do two pages targeting similar keywords always cannibalise each other?",
+      "a": "No. Similar keywords with different intent need separate pages — \"what SEO costs\" wants a number, \"is SEO worth it\" wants an argument. The test isn't word overlap, it's whether a single page could satisfy both searchers completely. If it could, you have one page's worth of work."
+    },
+    {
+      "q": "What causes keyword cannibalization in the first place?",
+      "a": "Almost always a content calendar with no keyword map behind it. Briefs get written from a volume export rather than a list of owned intents, refreshes get published at new URLs, and format experiments repeat an answer that already exists. It's a process failure, not a writing one."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "keyword-cannibalization"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-keyword-cannibalization"
+    },
+    {
+      "type": "compare",
+      "slug": "canonical-vs-noindex"
+    },
+    {
+      "type": "compare",
+      "slug": "301-vs-302-redirect"
+    },
+    {
+      "type": "journal",
+      "slug": "when-to-update-old-content-instead-of-writing-new"
+    },
+    {
+      "type": "services",
+      "slug": "seo-audit-services"
+    }
+  ]
+}

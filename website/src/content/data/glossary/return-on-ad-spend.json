@@ -1,0 +1,124 @@
+{
+  "slug": "return-on-ad-spend",
+  "type": "glossary",
+  "primaryKeyword": "roas",
+  "secondaryKeywords": [
+    "return on ad spend meaning",
+    "roas formula",
+    "what is a good roas",
+    "roas vs roi",
+    "break even roas"
+  ],
+  "cluster": "paid",
+  "intent": "informational",
+  "h1": "Return on ad spend (ROAS)",
+  "metaTitle": "ROAS: What Return on Ad Spend Really Tells You",
+  "metaDescription": "ROAS is revenue divided by ad spend. A worked Indian D2C example showing why 3x loses money once GST, COGS, shipping and COD returns come out.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Return on ad spend (ROAS)",
+  "definition": "ROAS is the revenue attributed to an advertising campaign divided by the amount spent on that campaign, expressed as a multiple.",
+  "answer": "ROAS is revenue divided by ad spend, written as a multiple — ₹3,00,000 of sales on ₹1,00,000 of spend is 3x. It says nothing about profit. On a typical Indian D2C order with 40% COGS, GST, forward and reverse shipping and COD returns, break-even can sit near 3.7x, so a 3x campaign quietly loses money.",
+  "takeaways": [
+    "ROAS uses **revenue**, not margin. It is structurally incapable of telling you whether you made money.",
+    "Break-even ROAS = 1 ÷ your contribution margin, measured against the same revenue figure the platform reports.",
+    "COD returns are the line item that ruins Indian D2C maths, because the platform counts the order at checkout and you eat the cost at delivery.",
+    "**Blended ROAS** — total revenue ÷ total ad spend — is the only version that reconciles to your bank account."
+  ],
+  "sections": [
+    {
+      "h2": "The formula, and what it deliberately ignores",
+      "body": [
+        "ROAS = revenue attributed to the ads ÷ ad spend. Spend ₹1,00,000, generate ₹3,50,000 of tracked revenue, and that's 3.5x.",
+        "Missing from that line: everything that turns revenue into money. Product cost, GST, packaging, shipping both ways, gateway charges, returns, salaries. ROAS is a media efficiency metric, never a profitability one, and treating it as the latter is how brands scale into losses behind a green dashboard.",
+        "The folk wisdom that \"3x is good\" is the specific problem. Whether 3x is good depends entirely on your gross margin, and for most Indian D2C it isn't."
+      ]
+    },
+    {
+      "h2": "A worked Indian D2C order",
+      "body": [
+        "Illustrative numbers on a ₹1,000 MRP product. Yours will differ — the method is the point, not the figures."
+      ],
+      "table": {
+        "caption": "One order, ₹1,000 MRP, GST-inclusive pricing.",
+        "head": ["Line item", "Per order", "Note"],
+        "rows": [
+          ["Selling price", "₹1,000", "What the ad platform reports as revenue"],
+          ["Less GST at 18%", "−₹153", "₹1,000 ÷ 1.18 = ₹847 net revenue"],
+          ["Cost of goods", "−₹400", "40% of MRP"],
+          ["Packaging", "−₹20", "Box, filler, label"],
+          ["Forward shipping", "−₹75", "Blended courier rate"],
+          ["Gateway / COD handling", "−₹25", "Blended across prepaid and COD"],
+          ["**Contribution per delivered order**", "**₹327**", "Before a single rupee of ad spend"]
+        ]
+      }
+    },
+    {
+      "h2": "COD returns are the line item that ruins it",
+      "body": [
+        "Now add the thing that makes Indian D2C different from the American blog posts you're reading. Cash on delivery is a large share of orders, and a meaningful proportion of COD orders are refused at the door or never delivered.",
+        "Say 45% of orders are COD and a quarter of those come back — a rate plenty of Indian brands live with. That's roughly 11 return-to-origin orders per 100. Each one costs forward shipping, reverse shipping and packaging, call it ₹170, and earns nothing.",
+        "**Per 100 attributed orders:** 89 delivered × ₹327 = ₹29,103, minus 11 × ₹170 = ₹1,870. Contribution: **₹27,233**.",
+        "The ad platform, meanwhile, still reports ₹1,00,000 of revenue, because it counted the order at checkout and has no idea what happened at the doorstep.",
+        "Break-even ROAS = ₹1,00,000 ÷ ₹27,233 = **3.67x**. At the celebrated 3x, you spent ₹33,333 to generate ₹27,233 of contribution. That's a ₹6,100 loss on a campaign your dashboard is calling a winner — before overheads, salaries or agency fees."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Prepaid discounting is a ROAS lever nobody counts",
+        "body": "Offering 5% off for prepaid looks like margin destruction. On the numbers above, ₹50 off an order removes most of the RTO exposure on that order. Run it as an experiment against your own return rate before deciding it's expensive — the accounting is rarely as obvious as it looks."
+      }
+    },
+    {
+      "h2": "Break-even ROAS in one line",
+      "body": [
+        "**Break-even ROAS = 1 ÷ contribution margin**, where contribution margin is measured against the same revenue figure the ad platform reports.",
+        "That last clause is where most calculations fall apart. If you compute margin on net-of-GST revenue but your ROAS is reported on gross, you'll understate break-even by the GST rate and wonder later where the money went. Pick one revenue definition and use it in both halves of the fraction.",
+        "Reference points, all on gross reported revenue: 50% margin breaks even at 2x. 33% at 3x. 27% at 3.7x — the example above. 20% at 5x. Anyone quoting a target ROAS without asking your margin first is guessing.",
+        "And break-even isn't the goal. Salaries, rent, software and returns processing still have to come out. Set your target at break-even plus what the business actually needs, then judge campaigns against that."
+      ]
+    },
+    {
+      "h2": "ROAS, ROI and the blended number",
+      "body": [
+        "**ROAS** is revenue ÷ ad spend. **ROI** is (profit − investment) ÷ investment and includes every cost. A 3x ROAS and a negative ROI coexist happily, as above. **Contribution margin** tells you whether an extra order is worth having at all.",
+        "Then attribution. Meta and Google will both claim the same order — Meta's default window counts 7-day clicks and 1-day views, Google runs data-driven attribution over a longer click window. Add up platform-reported revenue and it comfortably exceeds what your order system recorded. Not fraud, just two systems each answering \"did I influence this?\" with yes.",
+        "**Blended ROAS** — total revenue from your own order system ÷ total ad spend everywhere — is the number that can't be double counted. Some teams call it MER. Report blended to yourself; use platform figures only for moving budget between channels.",
+        "Measuring that properly is an analytics job before it's a media job: clean [UTM parameters](/glossary/utm-parameters), server-side order data, one agreed definition of revenue. We run [performance marketing](/performance) from ₹40,000/mo with ad spend billed separately at zero markup — the other half of the same honesty problem, since an agency taking a cut of spend has a reason to prefer the flattering number."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a good ROAS?",
+      "a": "The one above your break-even, which is 1 divided by your contribution margin. At a 50% margin, 2x works. At 27% — realistic for Indian D2C after GST, shipping and COD returns — you need about 3.7x just to stand still. There is no universal good number, and anyone quoting one hasn't seen your P&L."
+    },
+    {
+      "q": "How do I calculate break-even ROAS?",
+      "a": "Work out contribution per order: selling price minus GST, COGS, packaging, shipping, gateway fees and a share of return costs. Divide that by the selling price the ad platform reports to get your contribution margin. Break-even ROAS is 1 divided by that margin."
+    },
+    {
+      "q": "What's the difference between ROAS and ROI?",
+      "a": "ROAS compares revenue to ad spend only. ROI compares profit to total investment, including product costs, operations and salaries. ROAS answers whether the media bought efficiently. ROI answers whether the business made money. They routinely disagree, and ROI is the one that pays anyone."
+    },
+    {
+      "q": "Why is my platform ROAS higher than my actual revenue suggests?",
+      "a": "Because platforms count conversions inside their own attribution windows and each claims credit independently, so Meta and Google both bank the same order. View-through conversions inflate it further. Compare against your order system, not against the sum of the dashboards."
+    },
+    {
+      "q": "Does ROAS work for lead generation businesses?",
+      "a": "Not directly, because there's no revenue at the point of conversion. Use cost per qualified lead and cost per closed deal instead, with your close rate and average order value to convert back into an equivalent. Applying an ecommerce ROAS target to a lead-gen account produces confident nonsense."
+    },
+    {
+      "q": "Should I optimise campaigns for ROAS in the ad platform?",
+      "a": "Target ROAS bidding works once you have enough conversion volume, typically several dozen conversions a month per campaign. Below that it starves. And remember you're feeding it platform-reported revenue, so it optimises toward the inflated number unless you send back the values that actually survived returns."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "cost-per-click" },
+    { "type": "glossary", "slug": "conversion-rate" },
+    { "type": "glossary", "slug": "utm-parameters" },
+    { "type": "compare", "slug": "ppc-vs-seo" },
+    { "type": "services", "slug": "analytics-setup-services" },
+    { "type": "journal", "slug": "why-indian-d2c-brands-overspend-on-ads" }
+  ]
+}

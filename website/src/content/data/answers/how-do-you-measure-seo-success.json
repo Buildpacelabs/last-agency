@@ -1,0 +1,190 @@
+{
+  "slug": "how-do-you-measure-seo-success",
+  "type": "answers",
+  "primaryKeyword": "how do you measure seo success",
+  "secondaryKeywords": [
+    "how to measure seo results",
+    "how do you measure the success of an seo agency's work",
+    "seo success metrics",
+    "measuring seo performance"
+  ],
+  "cluster": "seo-measurement",
+  "intent": "informational",
+  "h1": "How to measure SEO success without lying to yourself",
+  "metaTitle": "How Do You Measure SEO Success? Honestly",
+  "metaDescription": "How do you measure SEO success? Not by rankings. Here is the four-level metric hierarchy that ties organic work to revenue, and how each level gets gamed.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Measure SEO at four levels, fastest to most meaningful: impressions and indexed pages, then non-brand clicks and tracked positions, then qualified sessions and key events, then leads and revenue in your CRM. Only the last one pays salaries. The first three tell you early whether it's coming.",
+  "takeaways": [
+    "Rankings are an input, not a result. A number one position on a query nobody searches is a screenshot, not revenue.",
+    "**Every metric in the hierarchy can be inflated**, and each level has its own trick. Knowing the trick is most of the defence.",
+    "Brand search is not SEO's win. If your report doesn't separate brand from non-brand, it isn't a report.",
+    "Pick the metric and the model before work starts, then don't change either mid-contract. Switching attribution halfway is how a flat quarter becomes a great one."
+  ],
+  "sections": [
+    {
+      "h2": "Start at the bottom, then work upwards",
+      "body": [
+        "Most measurement conversations start with rankings because rankings are easy to screenshot. They're the wrong end of the problem. Start with the only question your finance team will ever ask — did organic search produce more qualified customers than it did before we started paying for this — and then work backwards to the earlier signals that predict it.",
+        "That ordering matters because SEO's real metric is slow. Revenue from organic is a lagging indicator by three to nine months, so if it's the only thing you watch, you find out you wasted two quarters at the end of two quarters. The leading indicators exist to give you a verdict earlier than that, not to replace the verdict."
+      ]
+    },
+    {
+      "h2": "The four levels, and how each one gets inflated",
+      "body": [
+        "Every honest SEO report is a version of this table. Every dishonest one is a version of this table with the top row enlarged and the bottom row missing."
+      ],
+      "table": {
+        "caption": "The measurement hierarchy from leading to lagging, with the failure mode at each level.",
+        "head": ["Level", "What you measure", "When it moves", "How a report inflates it"],
+        "rows": [
+          [
+            "1 — Exposure",
+            "Impressions, indexed pages, count of distinct queries you appear for",
+            "2–6 weeks",
+            "Counting brand impressions, and queries you would never want to serve"
+          ],
+          [
+            "2 — Attention",
+            "Non-brand clicks, average position across a fixed tracked set, click-through rate",
+            "4–12 weeks",
+            "Quietly adding easy long-tail terms to the tracked set and dropping the losers"
+          ],
+          [
+            "3 — Intent",
+            "Qualified organic sessions, key events: pricing page views, form starts, demo clicks",
+            "2–4 months",
+            "Promoting soft events — scroll depth, time on page — into the conversion column"
+          ],
+          [
+            "4 — Money",
+            "Qualified leads from organic in the CRM, pipeline created, closed revenue",
+            "3–9 months",
+            "Changing the attribution model mid-engagement, or booking brand-search leads as organic wins"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Read it as a chain, not a menu",
+        "body": "Level one moving while level two doesn't means you're ranking on page two. Level two moving while level three doesn't means you're winning the wrong queries. Level three moving while level four doesn't means the traffic is right and the offer, the pricing or the sales follow-up is the bottleneck — which is not an SEO problem and no amount of content will fix it."
+      }
+    },
+    {
+      "h2": "Strip out brand before you claim anything",
+      "body": [
+        "This is the largest single distortion in agency reporting, and it's usually not even deliberate. Your brand-name searches grow when you run ads, when a founder does a podcast, when a customer recommends you at a conference. None of that is organic search work — but it lands in the organic channel, and an unfiltered report claims it.",
+        "The fix takes ten minutes. In Search Console, apply a regex filter to the query dimension that excludes your brand name, its common misspellings and your product names, and save it as a permanent view. Report brand and non-brand as two separate lines, forever.",
+        "Then keep watching brand anyway — for the opposite reason. Brand queries are the ones you should never lose. If a competitor or an aggregator starts outranking you for your own name, that's an emergency, and an unsegmented report will hide it inside a healthy-looking total."
+      ]
+    },
+    {
+      "h2": "Attribution lag, and why last-click undercounts organic",
+      "body": [
+        "Organic search is disproportionately a discovery channel. Someone finds you through a guide in March, doesn't buy, comes back in May by typing your name, and converts. Under last-click that sale belongs to direct traffic. Under first-click it belongs entirely to organic, which flatters SEO just as unfairly.",
+        "There is no attribution model that is simply correct. Every model is a set of assumptions with a name. The discipline isn't finding the true one; it's choosing one, writing it into the reporting agreement, and refusing to change it mid-engagement — because the fastest way to turn a flat quarter into a great one is to switch models and not mention it."
+      ],
+      "bullets": [
+        "**Add a self-reported field** to your enquiry form. \"How did you hear about us?\" is unscientific and still the most useful attribution data most businesses have.",
+        "**Cohort by first visit, not by conversion date.** Group leads by the month they first landed, and you'll see the lag instead of arguing about it.",
+        "**Budget for the sales cycle.** If your deals take 90 days to close, content published in month two shows revenue in month six. Judging month three on closed revenue is judging a crop on the day you planted it.",
+        "**Compare models rather than trusting one.** Run last-click and data-driven side by side; the gap between them is roughly the size of the uncertainty you're working with."
+      ]
+    },
+    {
+      "h2": "Match the reporting cadence to the metric",
+      "body": [
+        "Reporting too often is not diligence. It's how a strategy dies. Weekly ranking reports show mostly noise, noise reads as failure, and failure triggers a change of direction before the last change had time to work."
+      ],
+      "table": {
+        "caption": "What to look at, and how often to look at it.",
+        "head": ["Cadence", "What you review", "What you decide"],
+        "rows": [
+          [
+            "Weekly",
+            "Nothing. Optionally a technical alert for indexing or uptime breakage",
+            "Nothing. Fix breakages, don't discuss strategy"
+          ],
+          [
+            "Monthly",
+            "Level 1 and 2, plus a list of what actually shipped",
+            "Whether the work is happening and the surface area is growing"
+          ],
+          [
+            "Quarterly",
+            "Level 3 and 4 against the frozen baseline",
+            "Whether to continue, change emphasis, or stop"
+          ],
+          [
+            "Annually",
+            "Your share of category demand, and where it's going",
+            "Budget, new categories, new geographies or languages"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Month four is where engagements die",
+        "body": "Leading indicators have moved, revenue hasn't yet, and somebody asks for proof. If the reporting agreement didn't set expectations at the start, this is the meeting where the strategy gets replaced by quick wins — and quick wins are exactly the work that doesn't compound. [How to read an SEO report](/journal/how-to-read-an-seo-report) covers what to look for in that meeting."
+      }
+    },
+    {
+      "h2": "Measuring when AI answers absorb the clicks",
+      "body": [
+        "Impressions up, clicks flat or down, is now a normal-looking pattern. When an AI answer sits above the results and resolves the question, the user never clicks — and your click-through rate falls on queries where you did nothing wrong.",
+        "That's not automatically failure, and it's not automatically fine either. The clicks that survive tend to be the more committed ones, so conversion rate on organic sessions often rises even as sessions fall. The honest position is that nobody has clean measurement for this yet, and anyone selling you a proprietary visibility score is selling you a number they invented."
+      ],
+      "bullets": [
+        "**Track click-through rate by query type**, separating informational from commercial. Informational CTR falling while commercial holds is the expected shape.",
+        "**Sample manually, monthly.** Take your 30 most important queries, check whether an AI answer appears and whether you're cited in it, and log it in a spreadsheet. It's tedious and it's more reliable than most tools.",
+        "**Keep a fixed prompt set** for the main assistants — the same 15 buying questions each month — and record whether your brand shows up. Consistency of method matters more than the sample size.",
+        "**Watch branded search and direct traffic.** If assistants are recommending you, people search your name afterwards. That's the citation showing up in a place you can actually count.",
+        "**Judge conversion rate, not just volume.** Fewer, better-qualified sessions producing the same number of leads is a good quarter, however the traffic chart looks."
+      ]
+    },
+    {
+      "h2": "Agree the number before anyone starts working",
+      "body": [
+        "All of this collapses into one practical instruction: pick the number, write down what it is today, and date it. Do it before the first invoice, not during the first argument.",
+        "Not traffic. Not average position. Something that appears in the business — qualified leads from organic search, or organic revenue — with a definition of \"qualified\" that both sides sign. A lead everyone agrees is real is worth more as a metric than a hundred impressions nobody can spend.",
+        "We built our own contract on exactly that. Your trailing-90-day qualified organic lead count is frozen on day one, and if we haven't beaten it in 90 days we keep working free until we do. We never promise a ranking position for a keyword, because nobody controls Google's index and anyone who says otherwise is guessing with your money. [How the guarantee works](/seo) has the full terms.",
+        "If you're building a reporting template rather than hiring, start with [the SEO KPIs worth reporting](/answers/what-are-seo-kpis) and calibrate against [what a normal growth rate looks like](/answers/what-is-a-good-organic-traffic-growth-rate)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the single best metric for SEO success?",
+      "a": "Qualified leads or revenue from non-brand organic search, measured in your CRM against a frozen starting baseline. Everything else is a leading indicator that helps you predict it earlier. If you can only track one thing, track that one, and accept it will lag the work by three to nine months."
+    },
+    {
+      "q": "Are keyword rankings a good measure of SEO success?",
+      "a": "They're a useful diagnostic and a poor scorecard. Positions vary by device, location and personalisation, and a top ranking on a query with no commercial intent produces nothing. Track a fixed keyword set so you can spot problems, but never let the tracked set change quietly during an engagement."
+    },
+    {
+      "q": "How do I separate brand traffic from SEO results?",
+      "a": "Apply a regex filter in Search Console that excludes your brand name, its misspellings and your product names, and save it as a permanent view. Report brand and non-brand separately. Brand search rises from ads, PR and word of mouth, so counting it as an SEO win overstates the work every time."
+    },
+    {
+      "q": "How long before SEO results show up in revenue?",
+      "a": "Three to nine months, depending on your sales cycle. Content published in month two influences deals that close in month six on a 90-day cycle. That's why the leading indicators exist — impressions and non-brand clicks tell you at week six whether the revenue is plausibly on its way."
+    },
+    {
+      "q": "How do I measure SEO now that AI answers reduce clicks?",
+      "a": "Add three things: click-through rate split by informational versus commercial queries, a monthly manual sample of whether you're cited in AI answers for your top 30 queries, and branded search volume. Then judge conversion rate rather than session count. Nobody has clean measurement for this yet, so be sceptical of vendor scores."
+    },
+    {
+      "q": "How often should my agency report on SEO?",
+      "a": "Monthly for leading indicators and shipped work, quarterly for revenue against the baseline. Weekly reporting produces noise, and noise produces strategy changes that stop the compounding work from ever compounding. Fixed technical alerts are the one thing worth watching in real time."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "what-are-seo-kpis" },
+    { "type": "journal", "slug": "how-to-read-an-seo-report" },
+    { "type": "compare", "slug": "keyword-rankings-vs-organic-traffic" },
+    { "type": "compare", "slug": "ga4-vs-search-console" },
+    { "type": "glossary", "slug": "google-search-console" },
+    { "type": "services", "slug": "seo-reporting-services" }
+  ]
+}

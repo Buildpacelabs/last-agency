@@ -1,0 +1,223 @@
+{
+  "slug": "what-does-an-seo-manager-do",
+  "type": "answers",
+  "primaryKeyword": "who is a seo manager",
+  "secondaryKeywords": [
+    "what does an seo manager do",
+    "seo manager job description",
+    "seo manager role",
+    "seo manager responsibilities"
+  ],
+  "cluster": "agency-mechanics",
+  "intent": "informational",
+  "h1": "The SEO manager role, decoded",
+  "metaTitle": "Who Is an SEO Manager? The Role, Decoded",
+  "metaDescription": "Who is a SEO manager and what fills their week? The real calendar, the team they run, who they answer to, and the Indian salary band for the role.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "An SEO manager owns the SEO number for a company or an agency account. They set the plan, brief specialists, unblock developers and defend the roadmap in meetings. In practice the job is roughly 70% coordination and 30% hands-on SEO. In India it typically pays ₹6–18 lakh a year and asks for three to seven years of experience.",
+  "takeaways": [
+    "The title says SEO. The calendar says **project management** — briefs, approvals, escalations and status updates fill most of the week.",
+    "An SEO manager rarely does the work. They run two to six people, plus whichever developers they can persuade.",
+    "The two relationships that decide the role's success are **engineering** and **content**. Neither of them reports to the SEO manager.",
+    "Who they report to changes the job more than the company size does. Reporting into a founder is a different role from reporting into a performance-marketing head."
+  ],
+  "sections": [
+    {
+      "h2": "What an SEO manager is actually accountable for",
+      "body": [
+        "One number, usually. Depending on the company it's organic sessions, organic-sourced pipeline, non-brand organic revenue, or in a rare good setup, qualified leads from organic. Everything else on the job description is a means to that number.",
+        "The confusion comes from the gap between what they're accountable for and what they control. The site belongs to engineering. The words belong to content or brand. The budget belongs to whoever runs marketing. The manager's job is to convert that borrowed capacity into movement on their one number.",
+        "Which is why the role is coordination-heavy. Anyone who wants to spend the day inside a crawl report should be an SEO specialist instead — see [what an SEO specialist does](/answers/what-does-an-seo-specialist-do)."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The clearest question in an SEO manager interview",
+        "body": "\"What number will I be judged on, and who else can move it?\" If the number is traffic and the answer to the second half is \"nobody, it's all yours\", the company hasn't thought about it and the role will be a year of blame with no levers."
+      }
+    },
+    {
+      "h2": "A realistic week in the calendar",
+      "body": [
+        "Here's what a normal week looks like for an SEO manager running one large in-house programme or three to four agency accounts. The shape holds either way; only the client names change.",
+        "Roughly 12–18 hours of this week is meetings and written coordination. Six to ten is review and QA. Whatever's left — often under a day — is the SEO craft people imagine the job is made of."
+      ],
+      "table": {
+        "caption": "A representative SEO manager week. Deep work survives only where it's been defended in advance.",
+        "head": [
+          "Day",
+          "What's in it",
+          "Why it eats the week"
+        ],
+        "rows": [
+          [
+            "Monday",
+            "Performance review, Search Console and GA4 scan, standup, priority reset.",
+            "A weekend ranking drop has to be triaged before anyone asks about it in Slack."
+          ],
+          [
+            "Tuesday",
+            "Content briefs and editorial review. Sign-off, and rejecting drafts written to the wrong intent.",
+            "Editing costs more time than writing. A vague brief produces an article you can't fix later."
+          ],
+          [
+            "Wednesday",
+            "Developer sync. Ticket grooming, spec writing, arguing for a redirect fix against a feature release.",
+            "SEO tickets carry no launch date, so they lose every sprint unless somebody defends them."
+          ],
+          [
+            "Thursday",
+            "Stakeholder meetings — marketing lead, product, sometimes sales. Roadmap defence, budget questions.",
+            "Nobody outside the team reads a rankings chart. Translating it into pipeline language is weekly work."
+          ],
+          [
+            "Friday",
+            "Reporting, next-month planning, link review, and the one block of SEO work that survived.",
+            "First slot eaten whenever anything breaks earlier in the week."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The team an SEO manager runs — and the one they don't",
+      "body": [
+        "Team size is smaller than the title suggests. Most SEO managers directly run two to six people. Agency-side, the pod is usually tighter than in-house because the manager is also the client-facing lead.",
+        "The people who determine whether the plan ships, though, mostly sit outside that reporting line."
+      ],
+      "subs": [
+        {
+          "h3": "Direct reports, typically",
+          "bullets": [
+            "**One to two SEO executives or specialists** — crawls, on-page work, technical audits, keyword mapping.",
+            "**One to three content writers or an editor** — in-house or a freelance bench the manager commissions.",
+            "**A link or digital PR person**, in larger setups. In smaller ones this is an outsourced vendor the manager briefs and audits.",
+            "**An analyst**, usually shared with the wider marketing team rather than owned."
+          ]
+        },
+        {
+          "h3": "Not direct reports, and yet the whole job depends on them",
+          "bullets": [
+            "**Engineering.** Every technical recommendation becomes a ticket in somebody else's backlog.",
+            "**Brand or product marketing**, who often own the pages that matter most commercially.",
+            "**The CMS owner**, who decides whether the manager can publish without a deploy.",
+            "**Legal or compliance**, in fintech, healthcare and education, where a claim in an H1 is a real risk."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The quiet failure mode",
+        "body": "An SEO manager with no engineering influence produces excellent audits and no change. If you're hiring for this role, budget for developer capacity in the same breath — otherwise you've hired a person to write documents that nobody implements."
+      }
+    },
+    {
+      "h2": "The two relationships that decide whether they succeed",
+      "body": [
+        "Ask any SEO manager where their programme died and you get one of two answers: dev never shipped it, or content wrote something else."
+      ],
+      "subs": [
+        {
+          "h3": "Engineering",
+          "body": [
+            "The winning pattern is boring: fewer tickets, each specced properly, each carrying an estimate of what it's worth. \"Fix our Core Web Vitals\" loses to \"these 40 URLs carry most of our organic entries and their LCP is 4.1s — here's the image-loading change\".",
+            "Managers who get things shipped usually did one thing early: paired with a single engineer, fixed something visible fast, and bought credibility with it."
+          ]
+        },
+        {
+          "h3": "Content",
+          "body": [
+            "The friction here is intent. A writer optimising for readership and a manager optimising for a query will produce different articles from the same title. The brief is the contract between them, and a weak brief is the single most common reason a content programme produces pages that never rank.",
+            "Good briefs name the query, the intent behind it, the pages already ranking, the angle that differs from them, and the internal links in and out. Everything else is preference."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Who they report to, and why it changes the job",
+      "body": [
+        "The reporting line reshapes the role more than headcount or budget does. Same title, four very different jobs."
+      ],
+      "bullets": [
+        "**Into a performance marketing head** — you'll be asked to defend SEO against a channel with same-day attribution. Expect to spend real energy explaining why organic can't be measured on a 7-day window.",
+        "**Into a content or brand lead** — publishing is easy, technical work is hard. You'll ship articles quickly and wait months for a redirect fix.",
+        "**Into a founder or CEO** — fast decisions, no political cover, and a standing risk that a single bad month gets read as a failed strategy.",
+        "**Into engineering or product** — technical work moves, content stalls, and you'll spend the year fighting for a writing budget."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Related reading",
+        "body": "If you're deciding where the role should sit at all, [who owns SEO inside a company](/answers/who-is-responsible-for-seo-in-a-company) covers the trade-offs by company size."
+      }
+    },
+    {
+      "h2": "What the role pays in India, and what gets you there",
+      "body": [
+        "The band is wide and the title is used loosely, so treat any single number with suspicion. A \"manager\" at a 15-person agency and a \"manager\" at a funded product company are doing different jobs for different money.",
+        "Agency-side managers tend to sit lower, because the agency is selling hours at a margin. In-house roles at product and D2C companies pay more for the same title, because the person carries revenue accountability rather than an account list. Metros pay above tier-2, though remote hiring has narrowed that.",
+        "Three years is the usual floor, and it should be three years of doing the work rather than managing it. Most people arrive via executive, then specialist, then manager. The underestimated step is craft to coordination — a genuinely different skill that plenty of excellent specialists dislike.",
+        "For the wider picture across roles and seniority, see [what SEO pays in India](/answers/what-is-the-salary-of-seo-in-india). If you're weighing this hire against a part-time expert instead, [what an SEO consultant does](/answers/what-is-an-seo-consultant) covers that trade."
+      ],
+      "bullets": [
+        "**Agency-side manager:** typically the lower half of the ₹6–18 lakh band, rising with the size of the accounts carried.",
+        "**In-house at a funded product or D2C company:** typically the upper half, and above it where the role owns pipeline rather than traffic.",
+        "**Skills that actually move the number:** writing a defensible brief, specifying a dev ticket, reading GA4 and Search Console properly, and presenting a flat month without losing the room."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is an SEO manager a technical role?",
+      "a": "Partly. You need enough technical fluency to spec a ticket, read a crawl report and argue with a developer credibly — but you rarely write the code. The heavier skill is translation: turning a technical finding into a business case that survives a sprint planning meeting."
+    },
+    {
+      "q": "How many years of experience do you need to become an SEO manager?",
+      "a": "Three years is the usual floor and it should be three years of hands-on work. Most people move executive to specialist to manager. Jumping straight into the title without having done the craft makes the developer and content conversations very hard to win."
+    },
+    {
+      "q": "What's the difference between an SEO manager and an SEO specialist?",
+      "a": "The specialist owns execution of a defined task. The manager owns the outcome number and the plan behind it. A specialist can have a great month while the programme fails; a manager can't. It's an accountability difference more than a skill difference."
+    },
+    {
+      "q": "Do agencies give you an SEO manager?",
+      "a": "Most do, though the title varies — account lead, SEO lead, strategist. The question worth asking is how many accounts that person carries. Beyond roughly five or six, the coordination work stops fitting in the week and your account gets whatever attention is left over."
+    },
+    {
+      "q": "Does an SEO manager write content?",
+      "a": "Occasionally, but it isn't the job. They brief it, review it and reject the drafts written to the wrong intent. Managers who write everything themselves usually do it because the brief process broke — which is the thing they should be fixing instead."
+    },
+    {
+      "q": "Is SEO manager a good career in India?",
+      "a": "It's a stable one, and the coordination skills transfer well into broader growth and marketing leadership roles. The ceiling depends on whether you can tie organic work to revenue rather than traffic — managers who only report sessions tend to plateau at the same band for years."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-does-an-seo-specialist-do"
+    },
+    {
+      "type": "answers",
+      "slug": "who-is-responsible-for-seo-in-a-company"
+    },
+    {
+      "type": "compare",
+      "slug": "seo-consultant-vs-seo-agency"
+    },
+    {
+      "type": "compare",
+      "slug": "agency-vs-in-house"
+    },
+    {
+      "type": "journal",
+      "slug": "future-of-seo-jobs-in-india"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "answers",
+      "slug": "why-hire-a-digital-agency"
+    }
+  ]
+}

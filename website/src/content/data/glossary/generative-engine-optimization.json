@@ -1,0 +1,140 @@
+{
+  "slug": "generative-engine-optimization",
+  "type": "glossary",
+  "primaryKeyword": "generative engine optimization",
+  "secondaryKeywords": [
+    "what is geo in seo",
+    "geo vs seo",
+    "difference between geo and seo",
+    "ai search optimization",
+    "getting cited by chatgpt"
+  ],
+  "cluster": "ai-search",
+  "intent": "commercial",
+  "h1": "Generative Engine Optimization (GEO)",
+  "metaTitle": "Generative Engine Optimization (GEO), Explained",
+  "metaDescription": "Generative engine optimization means getting cited inside AI answers. Most of it is the SEO you should already be doing — here are the three new parts.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Generative engine optimization (GEO)",
+  "definition": "Generative engine optimization is the practice of getting your content retrieved, quoted and cited inside AI-generated answers rather than ranked in a list of blue links.",
+  "answer": "Generative engine optimization is the work of getting cited inside AI-generated answers from ChatGPT, Perplexity, Gemini and AI Overviews. Roughly four-fifths of it is ordinary SEO — crawlable pages, clear structure, genuine authority. The genuinely new parts are quotable phrasing, off-site presence on the sources models retrieve, and measuring citations instead of ranks.",
+  "takeaways": [
+    "The term comes from a 2023 academic paper, not from an agency. Anyone selling it as a proprietary method is selling you a research abstract.",
+    "Most of GEO is SEO. If your site isn't crawlable and doesn't rank, there is nothing for a model to retrieve.",
+    "Three things are actually new: **quotable phrasing**, **off-site presence where models look**, and **citation as the unit of measurement**.",
+    "There is no rank tracker for this. You measure with a repeatable prompt panel and referral data, and you accept the noise."
+  ],
+  "sections": [
+    {
+      "h2": "Where the term came from",
+      "body": [
+        "GEO was coined in a 2023 research paper titled **GEO: Generative Engine Optimization**, from researchers at Princeton, Georgia Tech, the Allen Institute for AI and IIT Delhi. They tested how editing a page changed its visibility inside generative answers, and found that adding citations, direct quotations and statistics tended to improve how often and how prominently a source was used — while classic keyword stuffing did not.",
+        "That's the honest provenance. It is a research direction with early empirical support, not a mature discipline with settled best practice. Treat anyone claiming a proven GEO playbook with the scepticism you'd apply to a proven playbook for a search engine that launched last year."
+      ]
+    },
+    {
+      "h2": "The part that's just SEO wearing a new hat",
+      "body": [
+        "Generative engines don't hallucinate your website into existence. They retrieve — from a search index, from their own crawl, from a live query to Bing or Google. Which means the entry requirements are the ones you already know.",
+        "If you skip this list and buy a GEO package instead, you are paying a premium for the second half of a job whose first half is missing."
+      ],
+      "bullets": [
+        "**Crawlable and indexable.** If Googlebot and the AI crawlers can't fetch it, nothing downstream matters. Check your [robots.txt](/glossary/robots-txt) actually permits the assistants you want to be cited by.",
+        "**Ranking already.** Sources cited in AI answers overwhelmingly come from pages already visible for the query. Page-one presence remains the entry fee.",
+        "**Clear structure.** Headings that describe their content, short paragraphs, tables for comparisons. Retrieval works on chunks, and a wall of text chunks badly.",
+        "**Real authority.** [Topical authority](/glossary/topical-authority) and consistent entity signals matter more here, not less — a model choosing between five sources leans on the same reputation cues as a ranking system.",
+        "**Accurate, dated facts.** Models prefer specific, verifiable, recent claims over adjectives."
+      ]
+    },
+    {
+      "h2": "The three things that are genuinely new",
+      "body": [
+        "Strip out everything that's ordinary SEO and this is what remains. It's a short list, which is exactly why we don't sell it as a separate product."
+      ],
+      "subs": [
+        {
+          "h3": "1. Write in liftable units",
+          "body": [
+            "A model extracts a passage, not a page. So every important claim needs to survive being cut out of its context — self-contained, subject named rather than pronouned, number attached where a number exists.",
+            "Practically: define the term in the first sentence under the heading, put comparisons in tables rather than prose, and attribute statistics to a nameable source in the same sentence. That last habit is the one the original research pointed at most clearly."
+          ]
+        },
+        {
+          "h3": "2. Be present where models retrieve, not just on your own site",
+          "body": [
+            "Assistants pull heavily from places you don't own — community threads, review platforms, industry directories, YouTube transcripts, documentation sites. A brand with no third-party footprint is invisible to a retrieval step no matter how good its own pages are.",
+            "This is closer to digital PR than to technical SEO, and it makes [brand mentions](/glossary/brand-mentions) without links genuinely valuable for the first time."
+          ]
+        },
+        {
+          "h3": "3. Manage crawler access deliberately",
+          "body": [
+            "AI crawlers are separate user agents from Googlebot, and blocking them is a real decision with real trade-offs — no citation without access. Most businesses selling something should let them in; publishers monetising pageviews have a legitimate argument the other way."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Citation is the unit, and it's hard to count",
+      "body": [
+        "There is no average position in a generative answer. Either you were used as a source or you weren't, and the same prompt can produce different sources twice in a row. That non-determinism breaks every measurement habit built over twenty years of rank tracking.",
+        "What works instead is cruder and more honest. Build a fixed panel of 30 to 50 prompts a real buyer would type, run them on a schedule across the assistants you care about, and log whether you appear and in what role. It's sampling, it's noisy, and it's still the best available signal.",
+        "Alongside that, watch referral sessions from assistant domains in [GA4](/glossary/google-analytics-4) — small volumes today for most Indian sites, but the trend line is worth owning early. And accept the ceiling: a citation with no click still shifted a buyer's shortlist, and nothing in your analytics will ever show it."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "What we won't sell you",
+        "body": "We don't invoice GEO as a separate retainer line, because roughly four-fifths of the work is the SEO you're already paying for. It runs inside the SEO engagement. If you want the specifics of what that includes, [AEO and GEO services](/services/aeo-geo-services) sets it out — but the honest pitch is that it's a change of emphasis, not a new product."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the difference between GEO and SEO?",
+      "a": "SEO aims at a position in a list of links; GEO aims at being the source an AI answer quotes. The underlying work overlaps heavily — crawlability, structure, authority — because generative engines retrieve from search indexes. GEO adds quotable phrasing, off-site presence and citation-based measurement."
+    },
+    {
+      "q": "Is GEO worth paying extra for?",
+      "a": "As a separate retainer, usually not. Most of what a GEO package contains is standard SEO with different vocabulary. What's worth insisting on is that your existing SEO work includes liftable formatting, third-party presence and a prompt-panel measurement habit — three additions, not a second invoice."
+    },
+    {
+      "q": "How do I get cited by ChatGPT or Perplexity?",
+      "a": "Rank for the query first, since retrieval mostly draws from pages already visible. Then make the answer extractable: a direct definition under a question-shaped heading, specific numbers with named sources, comparisons in tables. Then build presence on the third-party sites and communities models pull from."
+    },
+    {
+      "q": "Does GEO have anything to do with local SEO?",
+      "a": "No, despite the acronym clash. GEO here means generative engine optimization. Geographic or local SEO is an entirely separate discipline about map packs, Google Business Profiles and city-level ranking. The overlapping abbreviation is unfortunate and increasingly common in briefs."
+    },
+    {
+      "q": "Can I track GEO results the way I track rankings?",
+      "a": "Not reliably. Generative answers are non-deterministic, so the same prompt can cite different sources minutes apart. The practical substitute is a fixed panel of buyer-realistic prompts, run on a schedule, logging appearance rate — plus referral traffic from assistant domains as a secondary signal."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "answer-engine-optimization"
+    },
+    {
+      "type": "compare",
+      "slug": "geo-vs-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "ai-overviews"
+    },
+    {
+      "type": "services",
+      "slug": "aeo-geo-services"
+    },
+    {
+      "type": "journal",
+      "slug": "is-generative-engine-optimization-real"
+    },
+    {
+      "type": "glossary",
+      "slug": "brand-mentions"
+    }
+  ]
+}

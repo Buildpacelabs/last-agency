@@ -1,0 +1,226 @@
+{
+  "slug": "penalty-recovery-services",
+  "type": "services",
+  "primaryKeyword": "google penalty recovery services",
+  "secondaryKeywords": [
+    "manual action removal service",
+    "seo penalty recovery india",
+    "google core update recovery service",
+    "reconsideration request service",
+    "sudden traffic drop seo help"
+  ],
+  "cluster": "technical-seo",
+  "intent": "commercial",
+  "h1": "First we find out if it's actually a penalty",
+  "metaTitle": "Google Penalty Recovery Services — Diagnosis First",
+  "metaDescription": "Google penalty recovery that diagnoses first. Most traffic drops are core updates or indexing faults, not manual actions. ₹99,000 fixed fee, ex-GST.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "priceFrom": "From ₹99,000 / diagnosis",
+  "answer": "Most sites sent to us for penalty recovery have not been penalised. They've lost ground to a core update, shipped a noindex tag by accident, or had a firewall start blocking Googlebot. So we sell a ₹99,000 fixed diagnosis first, and we tell you when recovery is unlikely rather than billing you monthly to find out.",
+  "takeaways": [
+    "A **manual action is visible in Search Console** and takes sixty seconds to rule out. If that panel is empty, you don't have a penalty — you have something else, and the something else is usually cheaper to fix.",
+    "The three real categories are manual action, algorithmic loss, and self-inflicted deindexing. They need completely different work, and guessing wrong costs you a quarter.",
+    "Core update recovery can take **more than one update cycle** to show, because Google reassesses at update time. Nobody can shorten that queue.",
+    "Our 90-day baseline guarantee does **not** apply to recovery work. We say why below rather than selling certainty we don't have."
+  ],
+  "sections": [
+    {
+      "h2": "Most \"penalties\" aren't penalties",
+      "body": [
+        "The call always sounds the same. Traffic fell off a cliff, revenue followed, and by the time we're on the phone the word \"penalty\" has been repeated enough times that everyone assumes it's established fact.",
+        "It usually isn't. Actual manual actions — a human reviewer at Google deciding your site breaks the spam policies — are comparatively rare, and they announce themselves in a specific place in Search Console. The far more common causes are an algorithmic reassessment during a core update, or something your own team shipped without noticing.",
+        "This distinction is not academic. A manual action needs a documented clean-up and a reconsideration request. A core update loss needs months of content and authority work with no submit button anywhere. An accidental `noindex` needs a one-line fix and a re-crawl. Sell the wrong one and you've spent six months and several lakh solving a problem you didn't have."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The sixty-second check you can run yourself",
+        "body": "Search Console → Security & Manual Actions → Manual actions. If it says \"No issues detected\", you do not have a manual penalty. Anyone quoting you for penalty recovery without having looked at that panel is quoting for a diagnosis they haven't done."
+      }
+    },
+    {
+      "h2": "The triage: three causes, and how to tell them apart in an hour",
+      "body": [
+        "The shape of the drop tells you most of what you need. A cliff on a single day is almost never an algorithm — algorithms roll out over days or weeks. A cliff is usually something that was deployed."
+      ],
+      "table": {
+        "caption": "How the three causes of a traffic collapse actually present.",
+        "head": [
+          "What you're seeing",
+          "Most likely cause",
+          "How to confirm"
+        ],
+        "rows": [
+          [
+            "Vertical drop on one date, whole site, impressions gone too",
+            "Self-inflicted: `noindex` shipped, `robots.txt` disallow, canonical pointing off-site, firewall or WAF blocking Googlebot, expired DNS or certificate",
+            "URL Inspection with a live test, plus `robots.txt`, response headers and your CDN's bot rules. Logs will show Googlebot getting 403s or nothing at all."
+          ],
+          [
+            "Gradual slide over one to three weeks, uneven across sections, impressions down but pages still indexed",
+            "Algorithmic — a core update or a spam-system reassessment",
+            "Line the dates up against Google's published core update log, and check whether the loss sits in one content type. Rankings drop; indexing stays healthy."
+          ],
+          [
+            "Specific pages or the whole domain gone from branded search, message in Search Console",
+            "Manual action",
+            "The manual actions panel names the issue and the scope. That's the only place it exists."
+          ],
+          [
+            "Sessions down but Search Console impressions and clicks flat",
+            "Not a search problem at all — broken analytics, a consent banner change, or a tag manager release",
+            "Compare GA4 against Search Console clicks for the same period. If Search Console is fine, the traffic never left."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The ₹99,000 diagnosis, and when we turn the job down",
+      "body": [
+        "One fixed fee, ex-GST, no retainer attached. Ten working days. You get a written diagnosis with the evidence attached, a fix plan with owners and effort estimates, and an honest probability of recovery.",
+        "The fee is the same whether the answer takes us three hours or ten days, and sometimes it takes three hours. We considered pricing it lower for the easy cases and decided against it, because a diagnosis priced by difficulty pays us to find something complicated."
+      ],
+      "bullets": [
+        "**What's in it.** Manual action review, crawl and index audit, log analysis where logs exist, backlink profile review, content assessment of the affected sections, update-date correlation, and a written verdict.",
+        "**What you can do with it.** Anything. Hand it to your in-house team, your developer, or another agency. We don't withhold the fix plan to force a retainer.",
+        "**Credited back.** If you start an [SEO retainer](/pricing) with us within 60 days, the full ₹99,000 comes off the first invoice.",
+        "**When we refuse.** If the diagnosis shows the traffic was built on expired-domain abuse, a private blog network, scaled low-quality content, or parasite pages on someone else's domain, we say so and stop. Those aren't recovery projects — the thing Google removed is the thing the business was doing. We'll tell you what a legitimate rebuild would cost, and it's usually more than starting fresh."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Why we charge for the diagnosis at all",
+        "body": "Free audits exist to sell retainers, which means they're structurally incentivised to find something big and ongoing. Charging for the diagnosis is what lets us tell you the answer is a one-line fix and send you on your way. It costs us the retainer. It's the only version we're willing to sell."
+      }
+    },
+    {
+      "h2": "What's included, and what isn't",
+      "body": [
+        "Recovery work splits into diagnosis and treatment. They're priced separately for a reason — plenty of clients only need the first."
+      ],
+      "table": {
+        "caption": "Penalty and traffic-loss recovery scope.",
+        "head": [
+          "Area",
+          "In scope",
+          "Not in scope"
+        ],
+        "rows": [
+          [
+            "Diagnosis (₹99,000 fixed)",
+            "Manual action review, crawl and index audit, log analysis, backlink profile review, content assessment, update correlation, written verdict and fix plan",
+            "Implementation. The diagnosis tells you what to do; doing it is a separate decision."
+          ],
+          [
+            "Manual action work",
+            "Documented clean-up, link removal outreach and disavow file, evidence pack, drafting and submitting the reconsideration request, handling follow-up rounds",
+            "Any promise about Google's decision or its timing. We don't control the reviewer or the queue."
+          ],
+          [
+            "Algorithmic recovery",
+            "Content quality remediation, thin and duplicate page consolidation, E-E-A-T evidence, internal linking rebuild, technical clean-up — inside a normal retainer",
+            "A dated recovery promise. Reassessment happens on Google's schedule, not on our invoice cycle."
+          ],
+          [
+            "Self-inflicted faults",
+            "The fix itself, re-crawl and re-index verification, plus a written post-mortem on how it shipped so it doesn't ship twice",
+            "Nothing withheld here. These are usually quick, and we'll often close them inside the diagnosis fee."
+          ],
+          [
+            "Ongoing growth",
+            "Available as a normal [SEO retainer](/services/technical-seo-services) once the site is stable",
+            "Bundled into recovery pricing to make the invoice look better. Recovery and growth are different jobs."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Reconsideration requests, and what the timeline really looks like",
+      "body": [
+        "A reconsideration request only exists if there's a manual action. There is none for a core update loss, whatever a proposal tells you, because there's nothing for a human to reconsider.",
+        "Where one does apply, the request is the easy part. The clean-up before it is the work, and a request submitted before the clean-up is genuinely finished gets rejected and puts you back in the queue."
+      ],
+      "numbered": [
+        "**Establish the exact scope.** Sitewide or partial, and which issue Google named. Partial actions affect specific URLs and the rest of the site is unaffected.",
+        "**Fix it completely.** For link-based actions that means removal attempts documented with dates and responses, then a disavow file for what won't come down. For thin or scaled content it means the content is actually gone or genuinely rewritten, not noindexed and left in place.",
+        "**Build the evidence pack.** Spreadsheets of contacted domains, screenshots, before-and-after examples, dates. Reviewers are reading dozens of these. Make yours checkable in five minutes.",
+        "**Write the request honestly.** What went wrong, who did it, what you removed, what you changed structurally so it can't recur. Requests that argue with the reviewer or blame a previous agency do not perform well.",
+        "**Wait.** Google gives no service-level commitment. In practice responses land anywhere from a few days to several weeks, and complex link cases often take longer. Anyone quoting you a guaranteed turnaround is quoting a queue they don't run."
+      ]
+    },
+    {
+      "h2": "Core update recovery, without the false certainty",
+      "body": [
+        "If your loss lines up with a broad core update, here's the honest position, and it's the one Google itself publishes. There is no violation to fix. Core updates reassess how well pages serve their queries, and the only response is to make the site genuinely more deserving — better content, clearer expertise, less duplication, real evidence that a real business stands behind the pages.",
+        "The part agencies skip: **improvements may not show until Google next reassesses**, and broad core updates land a handful of times a year. Work finished in month one might not be reflected until an update three or four months later, and sites that recover often do so across two update cycles rather than one.",
+        "That's hard to sell and easy to lie about. When traffic doesn't return in month two, an agency can always say the work needs more time — technically correct, achieving nothing. Our version: agree the quality work up front, ship it on a schedule you can audit, and report at each update whether the assessment moved. If two updates pass with nothing, the diagnosis was wrong and we say so."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Recovery is not guaranteed, and rarely complete",
+        "body": "Some sites recover fully. Many recover partially. Some never do, because the traffic they lost was awarded on a judgement Google has since reversed and does not intend to reverse back. Any recovery pitch that doesn't contain this paragraph is missing it on purpose."
+      }
+    },
+    {
+      "h2": "Why our 90-day guarantee doesn't apply here",
+      "body": [
+        "Every normal engagement we run carries the same commitment: we freeze your trailing-90-day count of qualified leads from organic search on day one, and if we haven't beaten it in 90 days we keep working free until we do. We never promise a specific ranking position, ever.",
+        "Recovery is the one place we take that guarantee off the table, and it would be easy to quietly leave it on to win the deal. Two reasons it doesn't belong here.",
+        "**We don't control the decision.** A reconsideration request is judged by a person at Google on a timetable nobody outside Google can see, and a core update reassessment happens when the next update runs. We control the quality of the work and the speed of the fix. A guarantee that depends on someone else's calendar is theatre.",
+        "**The baseline is already broken.** The guarantee works because we freeze a stable trailing-90-day number. On a penalised site that number is a wreck, and beating a collapsed baseline is trivially easy — which makes the promise meaningless in the other direction.",
+        "What you get instead: a fixed-fee diagnosis, a written probability of recovery with our reasoning attached, a fix plan you own outright, and the sentence \"we don't think this is recoverable\" when that's the truth. Once the site is stable, a normal retainer with the normal guarantee is available — measured from a baseline that means something."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I know if my site has a Google penalty?",
+      "a": "Open Search Console, go to Security & Manual Actions, and look at the manual actions panel. If it reports no issues, you don't have a manual penalty. A drop with an empty panel is an algorithmic reassessment or a technical fault, and the two need completely different work."
+    },
+    {
+      "q": "How long does Google penalty recovery take?",
+      "a": "Manual actions can clear within days to several weeks of a successful reconsideration request, though complex link cases take longer and Google publishes no service level. Algorithmic losses depend on when Google next reassesses — often the following core update, sometimes the one after that."
+    },
+    {
+      "q": "What does penalty recovery cost in India?",
+      "a": "Ours is a fixed ₹99,000 ex-GST for the diagnosis, delivered in ten working days, credited back in full if you start a retainer within 60 days. Remediation is quoted separately once we know what's actually wrong. Beware anyone pricing recovery before diagnosing it."
+    },
+    {
+      "q": "Can you guarantee my traffic will come back?",
+      "a": "No, and neither can anyone else. We can give you a written probability with the reasoning attached, and we refuse jobs where recovery is unlikely rather than taking the retainer. Some sites recover fully, many partially, and some never do."
+    },
+    {
+      "q": "Is a core update the same as a penalty?",
+      "a": "No. A penalty is a manual action taken by a human reviewer against a specific policy breach. A core update is Google reassessing which pages best answer queries. There's no violation to fix and no request to submit — the only route back is being genuinely more deserving by the next reassessment."
+    },
+    {
+      "q": "Should I use a disavow file?",
+      "a": "Only with a real reason. For a link-based manual action, yes — after documented removal attempts. Otherwise it's usually unnecessary and occasionally harmful, because a careless disavow throws away links that were helping you. It is not a routine hygiene task, whatever the tool that generated the list implies."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "why-did-my-rankings-drop"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-core-update"
+    },
+    {
+      "type": "glossary",
+      "slug": "toxic-backlinks"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "compare",
+      "slug": "white-hat-vs-black-hat-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "why-ranking-guarantees-are-a-lie"
+    }
+  ]
+}

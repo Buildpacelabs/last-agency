@@ -1,0 +1,230 @@
+{
+  "slug": "technical-seo-vs-content-seo",
+  "type": "compare",
+  "primaryKeyword": "technical seo vs content seo",
+  "secondaryKeywords": [
+    "should i fix technical seo or write content first",
+    "technical seo audit checklist",
+    "content seo strategy",
+    "indexation issues seo",
+    "crawl budget india"
+  ],
+  "cluster": "seo-disciplines",
+  "intent": "informational",
+  "h1": "Technical SEO vs content SEO: three checks tell you which you need",
+  "metaTitle": "Technical vs Content SEO: A 3-Test Diagnostic",
+  "metaDescription": "Technical SEO vs content SEO: run three checks on indexation, crawl gap and keyword coverage before you spend a rupee. Here's the full diagnostic.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Neither wins in general — your Search Console tells you which one you need. If pages aren't indexed, it's technical. If they're indexed with impressions but no rankings, it's content quality. If your money keywords have no page at all, it's neither: it's coverage. Run all three checks before spending anything.",
+  "takeaways": [
+    "\"You need both\" is true and useless. You need one **first**, and the order decides whether the first ₹3 lakh does anything.",
+    "Three checks, all free, all inside Search Console, about 40 minutes total.",
+    "The most common real answer isn't technical or content quality — it's **coverage**. Most sites simply have no page for the queries that would pay them.",
+    "Technical work never drops to zero. It drops to a floor of a few hours a month, and skipping the floor is how sites quietly lose a year."
+  ],
+  "sections": [
+    {
+      "h2": "Why \"you need both\" is a non-answer",
+      "body": [
+        "Ask most agencies whether to fix technical SEO or write content and you'll get \"both, obviously.\" True in the same way \"eat well and sleep well\" is true. It doesn't tell you where the next ₹3 lakh goes.",
+        "The order matters. Publish 40 articles on a site Google can't crawl properly and you've bought inventory nobody sees. Spend six months on Core Web Vitals for a site with three thin service pages and you've made a fast site that ranks for nothing. You don't need an agency to work out which one you are — Google gives you the diagnostic free, and it takes about 40 minutes."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What you need before you start",
+        "body": "A verified Search Console property with 90 days of data, your XML sitemap URL, and a list of the 20–40 queries that would genuinely make you money. No keyword list? Stop — that's a separate job, and everything below depends on it."
+      }
+    },
+    {
+      "h2": "Test 1 — indexed pages against submitted pages",
+      "body": [
+        "The cheapest test, and the one people skip. You're checking whether Google actually accepted the pages you told it about.",
+        "Open **Indexing → Pages** and read two numbers: indexed and not indexed. Compare the total against your sitemap's URL count. A 5–10% gap is normal — Google skips duplicates, filtered URLs and pages it judges low value, and it's usually right. A gap over 25% on a site with clean URLs is a signal."
+      ],
+      "numbered": [
+        "Note your **indexed** and **not indexed** counts, then open the not-indexed list and read the reasons in order of size.",
+        "\"Discovered – currently not indexed\" at scale means Google found the URL and chose not to fetch it — a crawl-priority problem, usually internal linking, sitemap hygiene, or a site so repetitive Google is rationing attention. See [crawl budget](/glossary/crawl-budget).",
+        "\"Crawled – currently not indexed\" means Google fetched the page, read it, and decided it wasn't worth storing. That's a content quality verdict wearing a technical-sounding label.",
+        "\"Duplicate, Google chose a different canonical\" points at [canonical tags](/glossary/canonical-tag) or duplication across your URL parameters. Anything under \"Server error (5xx)\", \"Redirect error\", \"Blocked by robots.txt\" or \"Soft 404\" is straightforwardly technical — fix those first regardless of what the other two tests say."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The label that fools everyone",
+        "body": "\"Crawled – currently not indexed\" sits in a technical report and reads like a technical error. It isn't. Google read your page and passed. The honest fix is a better page, not a faster one — and agencies love this label precisely because it lets them bill technical work for a content problem."
+      }
+    },
+    {
+      "h2": "Test 2 — impressions against crawl activity",
+      "body": [
+        "Test 1 tells you whether pages exist in the index. Test 2 tells you whether the ones that exist are doing anything, and whether crawling is the constraint.",
+        "Go to **Settings → Crawl stats** and look at total crawl requests over 90 days. Then go to **Performance** and look at impressions over the same 90 days. You're comparing the shape of two lines, not their values.",
+        "There are three readings, and each points somewhere different."
+      ],
+      "bullets": [
+        "**Crawl falling, impressions falling.** Something changed on the server or in the site structure. Check response times in the same report — if average response time climbed, Google throttled itself. Technical, and urgent.",
+        "**Crawl healthy and flat, impressions flat.** Google fetches your pages perfectly well and the market ignores them. Crawling isn't your bottleneck. This is content quality or coverage, and no amount of schema will move it.",
+        "**Crawl healthy, impressions rising, clicks flat.** You're being shown and not chosen. Titles, meta descriptions, intent mismatch — the cheapest fix on this page, and an afternoon's work."
+      ],
+      "subs": [
+        {
+          "h3": "The trap in crawl stats",
+          "body": [
+            "High crawl volume isn't automatically good. If most of Google's requests land on filtered category URLs, session parameters or paginated archives, you have a crawl problem that looks like crawl health. Sort crawl stats by response — a block of 301s and 404s crawled repeatedly is attention you're paying for in ranking speed."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Test 3 — money keywords with no page at all",
+      "body": [
+        "This is the test almost nobody runs, and the one that most often returns the real answer.",
+        "Take your 20–40 money queries. For each, ask one question: **which page on my site is supposed to rank for this?** Not which page does — which one is meant to. Write the URL next to the keyword, and leave it blank if there isn't one. Then check yourself in Search Console: filter Performance by that query and see which URL Google is actually showing."
+      ],
+      "table": {
+        "caption": "How to read the keyword-to-page map you just built.",
+        "head": ["What you find", "What it means", "The fix"],
+        "rows": [
+          [
+            "No page exists for the query",
+            "Coverage gap. This is the most common result on most sites and it is neither a technical nor a quality problem.",
+            "Build the page. Nothing else on this list matters until you do."
+          ],
+          [
+            "A page exists, gets impressions, sits past position 20",
+            "It isn't competitive — usually thinner, less specific or less current than what ranks.",
+            "Rewrite, don't republish. Changing the date and nothing else does nothing."
+          ],
+          [
+            "Two or three of your URLs alternate for the query",
+            "[Keyword cannibalisation](/glossary/keyword-cannibalization). You're competing with yourself.",
+            "Consolidate into one page, 301 the rest, fix internal anchors."
+          ],
+          [
+            "Google shows a page you never intended",
+            "Internal linking and titles are pointing Google at the wrong URL.",
+            "On-page and internal linking work. Cheap, fast, frequently ignored."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "What we usually find",
+        "body": "On sites that come to us convinced they have a technical problem, the blank column in this test is normally the longest one. Not broken — absent. There is no page for the thing the buyer types."
+      }
+    },
+    {
+      "h2": "Reading the three results as a decision matrix",
+      "body": [
+        "Now put the three answers side by side. This table tells you where the first rupee goes."
+      ],
+      "table": {
+        "caption": "Three test results, one spending decision.",
+        "head": ["Test 1: indexation gap", "Test 2: crawl vs impressions", "Test 3: coverage gap", "Diagnosis → where the money goes"],
+        "rows": [
+          [
+            "Large (>25% unindexed)",
+            "Crawl requests flat or falling",
+            "Small",
+            "**Technical.** Fix crawl and indexing before you write another word. New pages inherit the same blockage."
+          ],
+          [
+            "Small (<10%)",
+            "Crawl healthy, impressions flat",
+            "Small",
+            "**Content quality.** Your pages are seen and passed over. Rewrite the ten that matter, properly."
+          ],
+          [
+            "Small",
+            "Impressions rising, clicks flat",
+            "Small",
+            "**Titles and intent match.** An afternoon of work. Do this before anything else on the list."
+          ],
+          [
+            "Small",
+            "Healthy",
+            "Large",
+            "**Coverage.** Straight content build. Technical is genuinely not your problem — stop paying for audits."
+          ],
+          [
+            "Large",
+            "Crawl falling",
+            "Large",
+            "**Everything, but technical first.** Otherwise you're publishing into a site Google has already decided to visit less often."
+          ],
+          [
+            "Small",
+            "Healthy",
+            "Small",
+            "Neither. Your bottleneck is links, brand or product-market fit. See [on-page vs off-page SEO](/compare/onpage-vs-offpage-seo)."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The maintenance floor technical SEO never drops below",
+      "body": [
+        "Even when the diagnostic says content, technical work doesn't go to zero. It goes to a floor of a few hours a month. Sites that skip the floor are the ones that lose a quarter of their traffic in a replatform and can't say when it happened."
+      ],
+      "bullets": [
+        "**Monthly:** read the Pages report for new not-indexed reasons. A new category appearing is the earliest warning you get.",
+        "**Monthly:** Core Web Vitals — not for the score, for the direction. A field-data regression usually means a script somebody added without telling you.",
+        "**Every release:** check staging didn't ship with `noindex` still on. Five seconds, and it has cost Indian sites more traffic than every algorithm update combined.",
+        "**Quarterly:** crawl properly. Redirect chains, orphan pages, broken internal links, and any URL returning a 200 that should return a 404.",
+        "**Before any migration:** a signed-off URL map before a single DNS change. The [audit that catches this](/journal/what-an-seo-audit-should-actually-find) costs a fraction of the recovery."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The expensive version of skipping the floor",
+        "body": "A migration without a redirect map can wipe out years of accumulated authority in a weekend. Recovery takes months and doesn't reliably get you back. The floor costs a few hours a month; this costs a year."
+      }
+    },
+    {
+      "h2": "What each side costs, and which to buy first",
+      "body": [
+        "Rough shape of the spend, so you can sanity-check a quote. Technical work is front-loaded and then drops sharply. Content is level and continuous — a subscription to your own visibility that stops working when you stop paying it.",
+        "On a typical Indian retainer, technical takes 20–30% of hours in the first quarter and settles near 10% after. Content runs 40–50% throughout. If a proposal still has technical at 40% of hours in month seven, ask what they're fixing.",
+        "We run [SEO from ₹75,000/mo](/pricing), smaller sites from ₹40,000, and we run this exact diagnostic in week one before anyone signs anything. What we won't do is sell a six-month technical programme when your Search Console says coverage. If we can't beat your own frozen 90-day organic lead baseline within 90 days, we keep working free until we do — that's a movement guarantee, not a ranking promise. Nobody can make one of those honestly."
+      ]
+    }
+  ],
+  "versus": {
+    "a": "Technical SEO",
+    "b": "Content SEO",
+    "verdict": "If more than a quarter of your submitted pages aren't indexed, spend on technical first — every rupee of content you buy before that fix is inventory Google never sees; in every other case, coverage and content quality are the better bet."
+  },
+  "faqs": [
+    {
+      "q": "Should I fix technical SEO before writing content?",
+      "a": "Only if Google is struggling to crawl or index you. Check Indexing → Pages in Search Console: if more than about a quarter of your submitted URLs aren't indexed, or you have server errors and redirect errors at scale, fix that first. If indexation is clean, technical work is maintenance and your money belongs in content."
+    },
+    {
+      "q": "What does \"Crawled – currently not indexed\" actually mean?",
+      "a": "Google fetched your page, read it, and decided not to store it. Despite living in a technical report, it is a quality verdict — the page was judged thin, duplicative or not useful enough to keep. The fix is a materially better page, not faster hosting."
+    },
+    {
+      "q": "How do I know if my problem is content quality or content coverage?",
+      "a": "Filter Search Console Performance by your money keyword. Impressions but a bad average position means quality — the page exists and loses. Zero impressions and no page you can name means coverage. Coverage is far more common and far cheaper to fix, because you're building, not repairing."
+    },
+    {
+      "q": "Is crawl budget a real problem for Indian sites?",
+      "a": "For most sites under a few thousand URLs, no — Google will happily crawl everything. It becomes real on large ecommerce catalogues, faceted navigation, and sites generating thousands of parameter URLs. If \"Discovered – currently not indexed\" is your biggest bucket, crawl priority is worth investigating."
+    },
+    {
+      "q": "How much technical SEO does a site need once it's fixed?",
+      "a": "A few hours a month. Read the Pages report and Core Web Vitals monthly, check every release for stray noindex tags, crawl the site quarterly, and never migrate without a signed-off redirect map. That floor prevents the failures that cost a year to undo."
+    },
+    {
+      "q": "Can I run this diagnostic without paying for tools?",
+      "a": "Yes. All three tests use Google Search Console, which is free. You'll want a crawler for the quarterly maintenance crawl, but the diagnostic itself needs nothing but a verified property, your sitemap, and an honest list of the queries that would make you money."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "indexing" },
+    { "type": "glossary", "slug": "crawl-budget" },
+    { "type": "compare", "slug": "onpage-vs-offpage-seo" },
+    { "type": "services", "slug": "technical-seo-services" },
+    { "type": "journal", "slug": "what-an-seo-audit-should-actually-find" },
+    { "type": "cost", "slug": "seo-cost-in-india" }
+  ]
+}

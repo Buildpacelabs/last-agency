@@ -1,0 +1,228 @@
+{
+  "slug": "ai-seo-tools-vs-seo-agency",
+  "type": "compare",
+  "primaryKeyword": "ai seo tools vs seo agency",
+  "secondaryKeywords": [
+    "can ai replace seo agency",
+    "what is an ai seo agency",
+    "ai content for seo ranking",
+    "chatgpt for seo",
+    "ai seo software cost"
+  ],
+  "cluster": "how-to-buy",
+  "intent": "commercial",
+  "h1": "AI SEO tools vs an agency: what ₹5,000 a month really replaces",
+  "metaTitle": "AI SEO Tools vs an Agency: What ₹5,000 Replaces",
+  "metaDescription": "AI SEO tools vs an SEO agency: ₹5,000 a month of software really does replace drafts, briefs and schema. Here are the four jobs it still cannot do.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "About ₹5,000 a month of AI tooling genuinely replaces keyword grunt work, content briefs, first drafts, schema and meta tags. It does not replace getting a fix shipped, earning a link from a human editor, running a migration, or deciding which twenty good ideas to drop. Those four still need people.",
+  "takeaways": [
+    "AI has eaten more of the SEO deliverable list than most agencies admit. Anyone charging ₹60,000 a month for work a ₹2,000 subscription now does is living on borrowed time.",
+    "What it hasn't eaten is anything requiring **access** — to your CMS, your developers, your sales calls, or another company's editor.",
+    "Publishing AI drafts at scale without editorial judgement is the fastest route into Google's **scaled content abuse** policy, which covers human-written content too.",
+    "For most small sites: ₹5,000 of tools and your own hands, with an agency only once the constraint becomes links or engineering."
+  ],
+  "sections": [
+    {
+      "h2": "What AI has already eaten, honestly",
+      "body": [
+        "Concede the obvious part first, because agencies that skip this section lose the argument by being visibly self-interested.",
+        "A large chunk of what an SEO retainer produced five years ago is now a prompt. Not a bad version — a genuinely acceptable one, sometimes better than the junior executive who used to do it at 11pm before a client call.",
+        "That list is a real fraction of a mid-market retainer's hours. If your agency's monthly report is mostly the items above, you're paying agency rates for software output."
+      ],
+      "bullets": [
+        "**First drafts.** For informational pages with no proprietary insight, a well-briefed model produces a draft as good as a ₹1.50-per-word freelancer, in ninety seconds.",
+        "**Content briefs and outlines.** Competitor structure, subheading coverage, entity checklists, questions to answer. This was a two-hour job and is now a five-minute one.",
+        "**Keyword clustering and intent labelling.** Paste 2,000 queries, get them grouped by intent and mapped to page types. Faster and more consistent than doing it by hand.",
+        "**Meta titles and descriptions at volume.** Character-counted, intent-matched, hundreds at a time. Nobody should bill for this by the hour any more.",
+        "**Schema markup.** JSON-LD for articles, FAQs, products, breadcrumbs — generated and validated in minutes.",
+        "**Turning a technical audit into developer tickets.** Genuinely useful, and genuinely time-consuming before."
+      ]
+    },
+    {
+      "h2": "The realistic ₹5,000 stack, itemised",
+      "body": [
+        "Here's what ₹5,000 a month actually buys, and it's more than most people assume — because the highest-value tools in SEO have always been free. The stack comes in under budget. The interesting part is the last column."
+      ],
+      "table": {
+        "caption": "A workable ₹5,000/month SEO stack, and where each piece stops.",
+        "head": [
+          "Tool",
+          "Roughly",
+          "What it does well",
+          "Where it stops"
+        ],
+        "rows": [
+          [
+            "Google Search Console",
+            "Free",
+            "The only true source of what you rank for, with impressions and position by query",
+            "Tells you what happened, never why"
+          ],
+          [
+            "Google Analytics 4",
+            "Free",
+            "Sessions, conversions, landing-page performance",
+            "Needs correct setup, which is itself a project"
+          ],
+          [
+            "One LLM subscription (ChatGPT / Claude / Gemini)",
+            "~₹1,700–₹2,000 (about $20)",
+            "Drafts, briefs, clustering, schema, meta, ticket writing",
+            "No live index access, no relationships, no accountability"
+          ],
+          [
+            "Screaming Frog, free tier",
+            "Free to 500 URLs",
+            "A real crawl of a small site: redirects, titles, canonicals, broken links",
+            "Hard stop at 500 URLs; no JavaScript rendering on the free tier"
+          ],
+          [
+            "PageSpeed Insights + CrUX",
+            "Free",
+            "Core Web Vitals from real Chrome users, per page template",
+            "Diagnoses; can't fix anything"
+          ],
+          [
+            "A budget rank tracker",
+            "₹1,000–₹2,500",
+            "Daily positions on a defined keyword list",
+            "Positions are a proxy. Leads are the thing"
+          ],
+          [
+            "A full backlink index (Ahrefs / Semrush)",
+            "Roughly ₹8,000–₹12,000+",
+            "Referring domains, competitor link gaps, toxic-link review",
+            "Outside the ₹5,000 budget entirely — this is the honest gap"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "What the ₹5,000 leaves undone",
+        "body": "No backlink index, so you're blind to competitor link gaps and to your own toxic links. No crawler above 500 URLs. No outreach infrastructure. For a 40-page local business site, none of that matters much. For a 4,000-URL ecommerce catalogue, all of it does."
+      }
+    },
+    {
+      "h2": "Why publishing AI pages at scale gets the site flagged",
+      "body": [
+        "Google's position on AI content is narrower than either camp likes to claim. Using a model to write is not against the guidelines — Google has said repeatedly that it rewards helpful content regardless of how it was produced. What it penalises is a different thing.",
+        "Google's spam policies name **scaled content abuse** explicitly: producing content at scale primarily to manipulate rankings rather than help people. The policy is worded to cover content made by automation, by humans, or by both. Volume isn't the trigger. Volume with no reason for anyone to read it is.",
+        "The failure mode is predictable because the economics push everyone the same way. Drafting a page costs almost nothing now, so publishing 400 looks free. It isn't — every thin page competes with your own good pages for crawl attention and internal link equity.",
+        "The practical line is editorial, not technological. Would someone who knows this subject find anything in the page they didn't already know? If the answer is no across most of your library, the model didn't cause the problem — it made it cheap. More in [programmatic SEO and the scaled content line](/journal/programmatic-seo-and-the-scaled-content-line) and [does AI-written content still rank](/journal/does-ai-written-content-still-rank)."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The cost nobody prices in",
+        "body": "Cleaning up 400 thin pages costs more than writing 40 good ones. You have to decide what to merge, what to redirect, what to noindex, and then wait for the index to catch up. Budget six weeks and a real crawler before you start publishing at volume."
+      }
+    },
+    {
+      "h2": "The four jobs that still need a person",
+      "body": [
+        "A pattern shows up the moment you look at what's left. Everything AI has eaten is a production task. Everything it hasn't requires **access** — to a system, to a colleague, or to a stranger with no reason to reply."
+      ],
+      "subs": [
+        {
+          "h3": "1. Getting the fix shipped",
+          "body": [
+            "A model can tell you your canonical tags are wrong. It cannot open your CMS, find the template that generates them, write a ticket your developers accept, defend it in sprint planning against a feature everyone else wants, and verify it in production three weeks later.",
+            "Most SEO recommendations die in a backlog, not in a document. Getting them out of the backlog is the job that actually pays."
+          ]
+        },
+        {
+          "h3": "2. Earning a link from a human editor",
+          "body": [
+            "Link earning is the hardest thing here to automate, and it's getting harder rather than easier. The bottleneck was never writing the pitch — it was being someone an editor at a real publication will reply to.",
+            "AI made pitch-writing free, so every editor's inbox now holds hundreds of fluent, personalised, worthless emails a day. Reply rates on cold outreach have collapsed, and the things still working were never about volume: a novel dataset, an expert who'll go on record, a relationship built over years. You can automate the mechanics of outreach. You cannot automate being worth linking to."
+          ]
+        },
+        {
+          "h3": "3. Migrations and anything with rollback risk",
+          "body": [
+            "A replatform is a sequence of irreversible decisions taken under time pressure with incomplete information: redirect mapping, URL structure, template parity, staging validation, launch-day monitoring, and a rollback plan somebody has rehearsed.",
+            "A model will happily generate a redirect map. It will also generate one for URLs that don't exist, because it has no way of knowing your legacy CMS serves three URLs per product. Nobody carries the risk of that being wrong except a person."
+          ]
+        },
+        {
+          "h3": "4. Judgement, and telling you no",
+          "body": [
+            "Ask a model what to do about your SEO and you'll get twenty-five valid recommendations. Every one is defensible. Executing all twenty-five is how a year disappears.",
+            "The job is deciding which three matter this quarter, given your team's capacity, your sales cycle, what your competitors are doing, and the fact that your head of product will veto anything touching the pricing page. That means sitting in your meetings, and it frequently means telling the founder the idea they're excited about is worth nothing. A tool has no incentive to disagree with you — which sounds like a feature until you notice it's the reason it can't do the job."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "So who should buy which",
+      "body": [
+        "The honest recommendation depends on where your constraint sits, and it moves as the site grows.",
+        "One category worth naming: the \"AI SEO agency\" charging agency rates for what is essentially the ₹5,000 stack plus a prompt library. The tell is the deliverable list — high page volume, no named link placements, no engineering involvement, no baseline. Ask what they'd do if the right answer were \"stop publishing and fix the internal linking\". Where AI genuinely changes the agency job is on the other side: optimising for AI Overviews and assistant citations, covered in [AI search optimisation](/services/ai-search-optimisation-services)."
+      ],
+      "bullets": [
+        "**Under 100 pages, local or niche, nobody publishing weekly** — buy the ₹5,000 stack and do it yourself. Genuinely. Fix your Google Business Profile, fix your speed, write honestly about what you sell.",
+        "**100–1,000 pages, competitors active, no in-house SEO** — tools plus a consultant a few days a month. You need judgement more than capacity here.",
+        "**Competitive national keyword set, or engineering as the bottleneck** — an agency, because the constraint is shipping and links, and neither is a software problem. Ours starts at ₹75,000/mo, smaller sites from ₹40,000/mo, ex-GST, measured against your own frozen 90-day baseline for qualified organic leads.",
+        "**Any site mid-migration** — a person, immediately, whatever the budget. Worst possible place to save money."
+      ]
+    }
+  ],
+  "versus": {
+    "a": "AI SEO tools (a ~₹5,000/month stack)",
+    "b": "An SEO agency retainer",
+    "verdict": "If you run a sub-100-page site in a market where nobody publishes weekly, the ₹5,000 stack plus your own hands genuinely beats a cheap retainer; the moment your constraint becomes earning links or getting fixes through engineering, no amount of software substitutes for a person with access."
+  },
+  "faqs": [
+    {
+      "q": "Can AI replace an SEO agency?",
+      "a": "It has already replaced a real slice of one — drafts, briefs, clustering, schema, meta tags. It hasn't replaced getting a fix shipped through your developers, earning a link from a human editor, running a migration, or deciding what not to do. Those need access and accountability, not intelligence."
+    },
+    {
+      "q": "Does Google penalise AI-written content?",
+      "a": "Not for being AI-written. Google's spam policies target scaled content abuse — content produced at scale mainly to manipulate rankings — and the policy explicitly covers human-written content too. The test is whether a knowledgeable reader gets anything from the page, not which tool typed it."
+    },
+    {
+      "q": "What can I actually do with ChatGPT for SEO?",
+      "a": "Cluster a keyword export by intent, write briefs and first drafts, generate and validate schema, produce meta titles at volume, turn an audit into developer tickets, and suggest internal links. What it can't do is see the live index, know your commercial priorities, or make anyone outside your company reply to an email."
+    },
+    {
+      "q": "How much do AI SEO tools cost per month?",
+      "a": "A workable stack runs about ₹3,000–₹5,000: one LLM subscription at roughly ₹1,700–₹2,000, a budget rank tracker at ₹1,000–₹2,500, and free tiers of Search Console, GA4, Screaming Frog and PageSpeed Insights. A full backlink index like Ahrefs or Semrush sits well above that budget."
+    },
+    {
+      "q": "What is an 'AI SEO agency' and are they worth it?",
+      "a": "Usually a normal agency with a prompt library, sometimes charging normal rates for software output. Judge it by deliverables: are there named link placements, engineering involvement, and a baseline number? If the offer is mainly page volume, you're buying the ₹5,000 stack at a markup."
+    },
+    {
+      "q": "Should I publish AI-drafted pages at scale?",
+      "a": "Only where each page answers something a real person searched and a knowledgeable editor has passed it. Cleaning up 400 thin pages costs more than writing 40 good ones, and thin pages compete with your own good ones for crawl attention and internal link equity."
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "does-ai-written-content-still-rank"
+    },
+    {
+      "type": "journal",
+      "slug": "programmatic-seo-and-the-scaled-content-line"
+    },
+    {
+      "type": "answers",
+      "slug": "will-seo-exist-in-5-years"
+    },
+    {
+      "type": "services",
+      "slug": "ai-search-optimisation-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "ai-overviews"
+    },
+    {
+      "type": "compare",
+      "slug": "geo-vs-seo"
+    }
+  ]
+}

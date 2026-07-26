@@ -1,0 +1,234 @@
+{
+  "slug": "can-chatgpt-do-seo",
+  "type": "answers",
+  "primaryKeyword": "can chatgpt do seo",
+  "secondaryKeywords": [
+    "chatgpt for seo",
+    "can ai do seo",
+    "using chatgpt for seo tasks",
+    "is chatgpt good for seo"
+  ],
+  "cluster": "seo-ai",
+  "intent": "informational",
+  "h1": "What ChatGPT can and can't do for SEO",
+  "metaTitle": "Can ChatGPT Do SEO? Task-by-Task Verdict",
+  "metaDescription": "Can ChatGPT do SEO? For some tasks yes, for others it invents data. A task-by-task verdict, with the prompts that work and the ones that mislead you.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Partly. ChatGPT is good at clustering keywords, writing briefs, drafting titles and meta descriptions, generating schema and explaining technical concepts. It's unreliable at anything requiring live data: it invents search volumes, keyword difficulty scores and backlink counts, because it has no access to the datasets those numbers come from.",
+  "takeaways": [
+    "The dividing line is **data versus language**. Language tasks: yes. Anything with a number attached to a live index: verify or don't use it.",
+    "Search volumes it gives you are guesses shaped like facts. There is no free source for that data, so a model without a tool connection is inventing it.",
+    "Best real uses: intent clustering, content briefs, title and meta drafting, schema, regex, and arguing with your own outline.",
+    "It replaces a junior's output, not a tool's dataset. Budget accordingly — it doesn't remove the need for Search Console."
+  ],
+  "sections": [
+    {
+      "h2": "The verdict, task by task",
+      "body": [
+        "Run down this list before you ask it anything. The pattern is consistent: it's strong where the answer is a judgement about language and weak where the answer is a fact held in someone's database."
+      ],
+      "table": {
+        "caption": "What ChatGPT is reliable for in SEO work, and where it isn't.",
+        "head": ["Task", "Verdict", "Why"],
+        "rows": [
+          [
+            "Grouping a keyword list by intent",
+            "Pass",
+            "Pure language judgement. Faster and often better than doing it by hand."
+          ],
+          [
+            "Writing a content brief from a target query",
+            "Pass",
+            "Structure, entities to cover, questions to answer. Still needs a human to check against the live results."
+          ],
+          [
+            "Drafting titles and meta descriptions",
+            "Pass, with counting caveats",
+            "Good at angles, unreliable at character limits. Count them yourself."
+          ],
+          [
+            "Generating schema markup",
+            "Pass",
+            "Produces valid JSON-LD quickly. Validate it, and check the page actually supports the claims."
+          ],
+          [
+            "Explaining a technical concept or debugging regex",
+            "Pass",
+            "Well-documented territory. This is what it's best at."
+          ],
+          [
+            "First drafts of routine copy",
+            "Pass, edited",
+            "Category text, FAQ answers, product blurbs. Nothing ships unedited."
+          ],
+          [
+            "Monthly search volume for a keyword",
+            "Fail",
+            "No access to the underlying data. It produces a plausible number, not a measured one."
+          ],
+          [
+            "Keyword difficulty scores",
+            "Fail",
+            "These are vendor-specific formulas over live link data. It cannot compute them and will still give you one."
+          ],
+          [
+            "Backlink counts or referring domains",
+            "Fail",
+            "Requires a live link index. Numbers here are invented."
+          ],
+          [
+            "\"Who currently ranks for X\"",
+            "Fail without browsing",
+            "Rankings are personalised, local and change daily. Without a live fetch it's guessing from training data."
+          ],
+          [
+            "Deciding what to publish next",
+            "Fail",
+            "Depends on your margins, your sales cycle and what your team can actually ship. It doesn't know any of that."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Why it can't give you search volume, ever",
+      "body": [
+        "This is the failure people get burned by most, so it's worth understanding the mechanism rather than just the rule.",
+        "Search volume isn't a fact sitting on the open web. Google doesn't publish it. The numbers in every SEO tool come from two places: Google's own advertiser-facing data, which is bucketed and rounded and only visible through an ads account, and third-party clickstream panels that vendors buy and model on top of. Both are licensed, commercial datasets.",
+        "A language model has read none of that. When you ask for the volume of \"seo agency in pune\", it generates the most statistically plausible-looking number in context — a round figure, a believable order of magnitude, delivered in the same confident tone as everything else it says. It isn't lying. It's completing a pattern. The output is indistinguishable in tone from a real figure, which is exactly what makes it dangerous.",
+        "The fix is a tool connection, not a better prompt. When a model is wired to a real API — Search Console, an ads account, a rank tracker — it stops guessing because it's reading. If it's only reading its own weights, no amount of \"be accurate\" changes the output."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The test that takes ten seconds",
+        "body": "Ask for the same keyword's volume in three separate chats. If the numbers differ, you've just watched it invent all three. Real data doesn't change between sessions."
+      }
+    },
+    {
+      "h2": "Where it genuinely earns its keep",
+      "body": [
+        "Three uses justify the subscription on their own, and each works better with a specific prompt shape."
+      ],
+      "subs": [
+        {
+          "h3": "Clustering",
+          "body": [
+            "Paste an exported keyword list — real volumes attached, from a real tool — and ask it to group by search intent and by the page that should serve each group. This is the single best use of a model in SEO work, because it's a language problem at a scale humans handle badly."
+          ],
+          "bullets": [
+            "Works: *\"Group these 400 queries into clusters that could each be served by one page. Label each cluster with the intent and the page type. Flag any that belong on a page we already have.\"*",
+            "Misleads: *\"Find me the best keywords for my business.\"* No data, no context, confident answer."
+          ]
+        },
+        {
+          "h3": "Briefs",
+          "body": [
+            "Give it the target query, the live top five URLs, and your own constraints. Ask for structure, entities, questions to answer and what would make your version different. Then check the brief against the actual results page yourself, because its idea of what the query means is a prior, not an observation."
+          ],
+          "bullets": [
+            "Works: *\"Here are the five pages currently ranking. Here's what we sell. Write a brief for a page that answers something these five don't.\"*",
+            "Misleads: *\"Write a 2,000-word SEO-optimised article on X.\"* You'll get a competent average of everything already published — which is the definition of a page nobody needs."
+          ]
+        },
+        {
+          "h3": "Titles, metas and internal link suggestions",
+          "body": [
+            "Fast, good at angles, careless with limits. Ask for ten variants and pick, rather than asking for one and accepting it. For internal links, paste your actual URL list — it can't guess your site structure and will invent paths if you let it."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The check that goes before publish",
+      "body": [
+        "Five checks, in order. Skipping the first two is how sites end up with confident nonsense on a money page."
+      ],
+      "numbered": [
+        "**Every fact about your business.** Prices, turnaround, guarantee terms, service areas, what you refuse to do. Models produce fluent sentences about policies you've never had.",
+        "**Every external fact and every citation.** If it names a study, a percentage or a source, open it. Fabricated-but-plausible references are the classic failure, and a made-up statistic on your site is a credibility problem long before it's a ranking problem.",
+        "**Every number that came from the model rather than a tool.** Volumes, difficulty, traffic estimates, competitor figures. Delete or replace.",
+        "**Intent, against the live results.** Open the query in an incognito window. If the SERP is all product pages and your brief says \"write a guide\", the brief is wrong.",
+        "**The voice.** Models default to hedged, symmetrical, list-heavy prose. If it reads like everything else on the topic, it is everything else on the topic, and it will be summarised rather than clicked."
+      ]
+    },
+    {
+      "h2": "What it costs against the paid tools",
+      "body": [
+        "The honest comparison isn't ChatGPT versus Ahrefs. They do different jobs — one produces language, the other holds data — and most working setups pay for both. List prices move, so treat these as orders of magnitude and check before you budget."
+      ],
+      "table": {
+        "caption": "Rough monthly cost of a working SEO stack in India, and what each part is actually for.",
+        "head": ["What you're paying for", "Rough monthly cost", "What it gets you"],
+        "rows": [
+          [
+            "Google Search Console",
+            "₹0",
+            "Your own impressions, clicks, queries and index status. The most important dataset you have, and it's free."
+          ],
+          [
+            "A consumer AI subscription",
+            "Roughly ₹1,500–₹2,500",
+            "Clustering, briefs, drafts, schema, explanations. Replaces junior hours, not data."
+          ],
+          [
+            "An entry seat on a major SEO suite",
+            "Roughly ₹9,000–₹15,000",
+            "Real volumes, difficulty, live rank tracking, a link index. The things the model can't know."
+          ],
+          [
+            "A rank tracker on its own",
+            "Roughly ₹1,500–₹5,000",
+            "Cheaper if you only need positions and already have Search Console for the rest."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The cheap stack that actually works",
+        "body": "Search Console plus one AI subscription plus a single suite seat covers most small-business SEO. That's under ₹20,000 a month in tooling. The expensive part was never the software — it's the person who knows which of the 200 findings to act on. Our take on [which SEO tool is best](/answers/which-seo-tool-is-best) goes deeper."
+      }
+    },
+    {
+      "h2": "A division of labour that holds up",
+      "body": [
+        "Give the model the language work and keep the data and the decisions. In practice that means: it clusters, you validate. It briefs, you check the SERP. It drafts, you add the parts only you know — your prices, your test results, the client project that went sideways. It suggests, you decide what not to publish.",
+        "That last one matters more than it sounds. Models are biased towards producing more, and more is precisely what stopped working. Google's spam policies name scaled content abuse directly, and the risk sits in publishing volume nobody would miss rather than in the tool that produced it — the full picture is in [does AI content hurt SEO](/answers/does-ai-content-hurt-seo).",
+        "Used this way, ChatGPT genuinely removes the tedious half of SEO work. It does not remove the need to know what you're looking at, which is the half that was always expensive."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can ChatGPT do keyword research?",
+      "a": "It can do the thinking half and none of the data half. Give it a real keyword export and it'll cluster by intent better than most people. Ask it for volumes or difficulty and it will produce invented numbers in a confident tone. Pair it with Search Console or a paid tool and it becomes genuinely useful."
+    },
+    {
+      "q": "Why does ChatGPT give different search volumes each time?",
+      "a": "Because it's generating a plausible number rather than reading one. Search volume lives in Google's advertiser data and in licensed clickstream panels, neither of which a language model has access to. Different sessions produce different guesses, which is the clearest proof that none of them is a measurement."
+    },
+    {
+      "q": "Is ChatGPT enough to replace an SEO tool subscription?",
+      "a": "No. They solve different problems. A model produces language; a suite holds live data about volumes, links and rankings. Search Console is free and covers your own site. If budget is tight, run Search Console plus one AI subscription and add a paid suite when you need competitor data."
+    },
+    {
+      "q": "Will content written by ChatGPT rank on Google?",
+      "a": "It can, and plenty does. Google's stated position is that helpful content is rewarded regardless of how it was produced. What gets punished is scaled, low-value publishing. An edited draft carrying your own data, prices and experience is fine; forty generated pages a month with nothing original in them is the risk."
+    },
+    {
+      "q": "Can ChatGPT do technical SEO?",
+      "a": "It's good at explaining directives, writing regex, drafting schema and reading an error message. It's poor at deciding which fixes matter on your site, because it can't see your engineering constraints. Never apply a redirect rule, canonical or robots directive it wrote without a person checking it first."
+    },
+    {
+      "q": "What are the best ChatGPT prompts for SEO?",
+      "a": "The good ones supply data and constraints: paste a real keyword export, the live top-ranking URLs, your actual URL list, your prices. The bad ones ask it to know things — \"find my best keywords\", \"what's the volume for X\". Prompt quality matters far less than whether the model has something real to work from."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "does-ai-content-hurt-seo" },
+    { "type": "answers", "slug": "which-seo-tool-is-best" },
+    { "type": "compare", "slug": "ahrefs-vs-semrush" },
+    { "type": "glossary", "slug": "keyword-research-meaning" },
+    { "type": "services", "slug": "keyword-research-services" },
+    { "type": "journal", "slug": "does-ai-written-content-still-rank" }
+  ]
+}

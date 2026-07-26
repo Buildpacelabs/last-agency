@@ -1,0 +1,219 @@
+{
+  "slug": "what-is-seo-marketing",
+  "type": "answers",
+  "primaryKeyword": "what is seo marketing",
+  "secondaryKeywords": [
+    "what is seo in marketing",
+    "seo marketing meaning",
+    "what is seo marketing agency",
+    "seo marketing explained"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "What people mean by 'SEO marketing'",
+  "metaTitle": "What Is SEO Marketing? The Term Explained",
+  "metaDescription": "What is SEO marketing? The phrase usually means content aimed at search. Here's what it covers, what it quietly excludes, and why that matters.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "\"SEO marketing\" is a redundant phrase — SEO is already marketing — but in practice it almost always means content-led SEO: keyword research, blog articles, on-page optimisation and reporting. It usually excludes the technical half of the discipline. That distinction decides whether the agency you hire can actually fix your problem.",
+  "takeaways": [
+    "The phrase is a tautology, but it's a useful signal: people who say it usually mean **content aimed at search**.",
+    "Content-led SEO and technical SEO are different jobs, different people and different price points. Most \"SEO marketing\" packages are the first one only.",
+    "If your pages aren't indexed, more content is money set on fire. Check indexing before you buy a content plan.",
+    "Write the brief in symptoms, not services. \"We publish and nothing ranks\" gets you a better proposal than \"we need SEO marketing\"."
+  ],
+  "sections": [
+    {
+      "h2": "Why the phrase doesn't parse, and why that's useful",
+      "body": [
+        "Expand it: search engine optimisation marketing. Optimisation of a marketing channel, marketing. SEO has been a marketing discipline since the phrase was coined, so bolting \"marketing\" on adds nothing except reassurance to someone who isn't sure SEO is marketing.",
+        "Which is exactly why it's worth paying attention to. Nobody in a technical SEO role says \"SEO marketing\". The phrase belongs to the content and agency side of the industry, and it turns up most in service names, course titles and job ads written by marketing teams rather than engineers.",
+        "So when a founder asks for SEO marketing, they usually mean something specific even if they can't name it: they want articles that bring in customers. Not log-file analysis. Not crawl budget. Content, aimed at search, that produces enquiries.",
+        "That's a legitimate thing to want. The problem is that it's roughly half of SEO, and the half you need depends entirely on what's actually broken."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Related phrases in the same family",
+        "body": "\"Search engine marketing\" (SEM) is different again — it usually means paid search, sometimes paid and organic together. \"Content marketing\" overlaps heavily with SEO marketing but includes channels other than search. Nobody agrees on any of these, so define terms in the first meeting."
+      }
+    },
+    {
+      "h2": "The three things people actually mean by it",
+      "body": [
+        "Pin down which one you're being sold before you sign anything."
+      ],
+      "numbered": [
+        "**Content-led SEO.** Keyword research, articles, on-page optimisation, internal linking, a monthly report. Roughly 80% of the time, this is it. Perfectly good work — but it assumes the site is technically sound, and nobody checked.",
+        "**The whole discipline, said loosely.** Some agencies use \"SEO marketing\" to mean everything: technical, content, links, reporting. Fine, as long as the scope document names the technical work explicitly. If it doesn't, it isn't included.",
+        "**A positioning label.** \"SEO marketing agency\" ranks for searches \"SEO agency\" doesn't, and is easier to sell to a marketing manager than \"technical SEO consultancy\". Sometimes the phrase is just the sign above the door."
+      ]
+    },
+    {
+      "h2": "Content-led SEO versus technical SEO",
+      "body": [
+        "These are genuinely different jobs. The people are different, the tools are different, and buying the wrong one is the most common expensive mistake in this category."
+      ],
+      "table": {
+        "caption": "The two halves of SEO, and how to tell which one you need.",
+        "head": [
+          "Dimension",
+          "Content-led SEO",
+          "Technical SEO"
+        ],
+        "rows": [
+          [
+            "What it fixes",
+            "You rank for nothing because you've published nothing worth ranking",
+            "You've published plenty and Google is ignoring it"
+          ],
+          [
+            "Typical work",
+            "Keyword research, articles, page rewrites, titles, internal links",
+            "Crawl and index diagnosis, rendering, speed, redirects, canonicals, schema, migrations"
+          ],
+          [
+            "Who does it",
+            "Strategists, writers, editors",
+            "People comfortable in a crawler, a log file and your repo"
+          ],
+          [
+            "Time to effect",
+            "3–9 months",
+            "Days to 8 weeks"
+          ],
+          [
+            "How it's bought",
+            "Monthly retainer, priced per article or per cadence",
+            "Often a one-off project, then light maintenance"
+          ],
+          [
+            "The tell you need it",
+            "Thin or missing pages for queries your buyers use",
+            "Published-versus-indexed gap, traffic that fell off a cliff after a redesign"
+          ]
+        ]
+      },
+      "bullets": [
+        "Most sites need technical first and content second, because content is a multiplier on a working site and a rounding error on a broken one.",
+        "Most agencies sell content first, because it's recurring revenue and easier to demonstrate. That's not a conspiracy — it's just an incentive worth knowing about. More on the split in [technical SEO vs content SEO](/compare/technical-seo-vs-content-seo)."
+      ]
+    },
+    {
+      "h2": "What an SEO marketing agency typically sells",
+      "body": [
+        "Read enough proposals in this category and the scope is remarkably consistent. Here's what's almost always in, and what's almost always quietly out."
+      ],
+      "subs": [
+        {
+          "h3": "Usually included",
+          "bullets": [
+            "Keyword research and a content calendar, often 4–8 articles a month.",
+            "On-page optimisation: title tags, meta descriptions, headings, internal links.",
+            "Basic technical hygiene — broken links, missing alt text, an XML sitemap.",
+            "Some link outreach, frequently guest posts of variable quality.",
+            "A monthly report leading with traffic and keyword rankings."
+          ]
+        },
+        {
+          "h3": "Usually excluded, and rarely mentioned",
+          "bullets": [
+            "Log-file analysis and crawl-budget work on large sites.",
+            "JavaScript rendering diagnosis — the reason a lot of modern sites don't index.",
+            "[Core Web Vitals](/glossary/core-web-vitals) work that needs a developer, not a plugin.",
+            "Site migrations and replatforms, where the largest single traffic risk lives.",
+            "Structured data beyond whatever the CMS plugin generates.",
+            "Conversion work on the pages the traffic lands on. Traffic that doesn't convert is a report, not a result."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The mismatch that costs the most",
+        "body": "Paying content prices for a technical problem. You spend ₹75,000 a month for nine months, publish fifty pages, and eighteen of them get indexed — because the template emits a canonical tag pointing at the homepage. The content was fine. It was never the bottleneck."
+      }
+    },
+    {
+      "h2": "How to tell you need the technical half first",
+      "body": [
+        "Four checks, all free, all doable this afternoon. Two bad answers and content is not your first purchase."
+      ],
+      "numbered": [
+        "**Search Console → Indexing → Pages.** Compare indexed against not-indexed. A large \"Crawled – currently not indexed\" or \"Discovered – currently not indexed\" bucket is a quality or crawl problem that publishing more will make worse.",
+        "**Search `site:yourdomain.com` in Google.** Roughly how many pages come back versus how many you've published? Order-of-magnitude gaps matter; exact counts don't.",
+        "**Did traffic drop after a redesign, replatform or URL change?** That's almost never a content problem. That's redirects, and it's fixable — see [what a site migration should cover](/services/site-migration-seo).",
+        "**Open a key page with JavaScript disabled, or use Search Console's URL Inspection to view the rendered HTML.** If your main content isn't there, no amount of writing will help until the rendering is."
+      ]
+    },
+    {
+      "h2": "How to write the brief so you get what you need",
+      "body": [
+        "The single best change you can make to an agency search: stop briefing in services and start briefing in symptoms. Services invite a template proposal. Symptoms force a diagnosis, and how an agency responds to a symptom tells you more than any case study.",
+        "Send this, roughly. It fits in an email."
+      ],
+      "bullets": [
+        "**The symptom.** \"We publish two posts a month and organic enquiries haven't moved in a year.\" Or \"traffic halved after we moved to Shopify in March.\"",
+        "**The number and the baseline.** \"We got 22 qualified organic leads in the last 90 days. We want to beat that.\" This one line changes every proposal you receive.",
+        "**The constraints.** Budget range, whether you have a developer, whether anyone internal can write, what your CMS is.",
+        "**The specific ask.** \"Tell us whether this is a content problem or a technical one, and how you'd know.\"",
+        "**The disqualifier.** \"We don't want guest posts on general-interest blogs. Tell us where your links come from.\""
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "What we sell, plainly",
+        "body": "Technical, content, links and reporting as one scope — from ₹75,000/mo, smaller sites from ₹40,000, ex-GST. We freeze your trailing-90-day qualified organic leads on day one and if we haven't beaten that number in 90 days we keep working free until we do. We never promise a specific ranking position. [How the guarantee works](/seo)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is SEO marketing the same as SEO?",
+      "a": "Technically yes — the phrase is redundant. In practice, people who say \"SEO marketing\" usually mean content aimed at search: keyword research, articles, on-page work. The technical half of SEO tends not to be included, so check the scope document rather than the job title."
+    },
+    {
+      "q": "What's the difference between SEO marketing and SEM?",
+      "a": "SEM usually means paid search — Google Ads, Bing Ads, shopping campaigns — though some people use it as an umbrella for paid and organic together. SEO marketing means unpaid search results. The reliable way to avoid confusion is to ask whether the budget includes media spend."
+    },
+    {
+      "q": "What does an SEO marketing agency do day to day?",
+      "a": "Keyword research, briefs, writing and editing, publishing, on-page optimisation, internal linking, some outreach for links, and monthly reporting. Roughly 40–50% of hours go to content on a typical retainer. If nobody on the team looks at Search Console's indexing report monthly, that's a gap worth raising."
+    },
+    {
+      "q": "Do I need SEO marketing or technical SEO?",
+      "a": "Check the ratio of published pages to indexed pages in Search Console. If most pages are indexed and simply rank poorly, you have a content and relevance problem. If a large share aren't indexed at all, or traffic collapsed after a site change, you have a technical problem and content spend will not fix it."
+    },
+    {
+      "q": "How much does SEO marketing cost in India?",
+      "a": "Content-led retainers commonly run ₹25,000–₹1,50,000 a month depending on cadence and writer quality; technical work is often a one-off project of ₹50,000–₹3,00,000 followed by light maintenance. Our SEO starts at ₹75,000/mo, with smaller sites from ₹40,000, ex-GST."
+    },
+    {
+      "q": "Can content-led SEO work without any technical work?",
+      "a": "On a small, modern, well-built site — yes, often. On anything with a migration in its past, a large catalogue, or a JavaScript-heavy front end, no. The tell is whether new pages get indexed within a couple of weeks of publishing. If they do, content is your constraint and you can proceed."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-is-seo"
+    },
+    {
+      "type": "answers",
+      "slug": "what-does-seo-include"
+    },
+    {
+      "type": "compare",
+      "slug": "technical-seo-vs-content-seo"
+    },
+    {
+      "type": "compare",
+      "slug": "seo-vs-content-marketing"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "thin-content"
+    }
+  ]
+}

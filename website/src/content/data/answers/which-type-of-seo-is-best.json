@@ -1,0 +1,176 @@
+{
+  "slug": "which-type-of-seo-is-best",
+  "type": "answers",
+  "primaryKeyword": "which type of seo is best",
+  "secondaryKeywords": [
+    "which seo type should i start with",
+    "best type of seo",
+    "most important type of seo",
+    "what kind of seo do i need"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "Which type of SEO to do first",
+  "metaTitle": "Which Type of SEO Is Best? Depends on Symptoms",
+  "metaDescription": "Which type of seo is best for you? Diagnose by symptom: no impressions, impressions but no clicks, or clicks but no sales each point to a different fix.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "There isn't a best type — there's a type that fixes what's currently broken. No impressions means technical and indexing work. Impressions without clicks means on-page and search intent. Clicks without enquiries means content and UX. A ceiling at positions 5–15 means off-page. Search Console tells you which one you are.",
+  "takeaways": [
+    "Rank the types by **your symptom**, not by a general list. Technical SEO is everything on a site Google can't index and close to pointless on a clean site nobody links to.",
+    "The diagnosis takes about ten minutes in Search Console: published pages, indexed pages, impressions, clicks, enquiries. The biggest drop between two of those is your answer.",
+    "Off-page is the slowest and most expensive type, which is exactly why it's the one most often sold to people who don't need it yet.",
+    "If most of your revenue comes from within driving distance, none of this applies in the usual order — the map pack decides, and the website is second."
+  ],
+  "sections": [
+    {
+      "h2": "There is no best type — only the one that fixes your bottleneck",
+      "body": [
+        "Most answers to this question just rank the disciplines: technical, on-page, off-page, local, content. That ordering is useless, because the correct order changes completely depending on what's wrong with your site right now.",
+        "Technical SEO is the single most important thing in the world on a site Google can't crawl. On a clean 40-page site that nobody has ever linked to, it's the least important thing you could spend a rupee on. Same discipline, opposite verdict, and the only thing that changed is the site.",
+        "So diagnose first. The symptoms below map onto [the four types of SEO](/answers/what-are-the-4-types-of-seo), and you can work out which one you've got in about ten minutes in Google Search Console."
+      ],
+      "table": {
+        "caption": "Symptom-to-type: find your row before you buy anything.",
+        "head": ["Symptom", "What it means", "Type to do first", "First move"],
+        "rows": [
+          [
+            "Few or no impressions",
+            "Google hasn't indexed the page, or doesn't consider it a candidate for anything",
+            "Technical SEO",
+            "Open the Pages report and URL Inspection before writing a single new page"
+          ],
+          [
+            "Impressions, almost no clicks",
+            "You're on the results page and losing the click to someone else's title",
+            "On-page SEO",
+            "Compare that page's CTR to your own site average at the same average position"
+          ],
+          [
+            "Clicks, no enquiries",
+            "Right query, wrong page — or you rank for an intent you can't sell to",
+            "Content and CRO",
+            "Read the top five queries per page and ask whether a buyer would type them"
+          ],
+          [
+            "Stuck at positions 5–15 against bigger sites",
+            "Relevance is fine. Authority isn't.",
+            "Off-page SEO",
+            "Count referring domains — yours against the three sites above you"
+          ],
+          [
+            "Fine on the web, invisible on Maps",
+            "You're playing an entirely different game",
+            "Local SEO",
+            "Fix the Google Business Profile first and the website second"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "No impressions: the page isn't in the race",
+      "body": [
+        "If a page has near-zero impressions over 90 days, it isn't losing to competitors. It isn't competing. Nothing you do to the copy will change that, and every rupee spent on links pointing at it is wasted.",
+        "The Pages report in Search Console gives you a status per URL, and the statuses mean different things that get confused constantly."
+      ],
+      "bullets": [
+        "**Discovered – currently not indexed.** Google knows the URL exists and hasn't bothered fetching it. Usually a crawl demand or server problem: too many junk URLs, slow responses, or the page has no internal links pointing at it.",
+        "**Crawled – currently not indexed.** Google fetched it and chose not to keep it. That's a quality or duplication verdict. Rewriting the page can fix it. Publishing forty more pages will not.",
+        "**Duplicate, Google chose a different canonical.** You have near-identical pages and Google picked the other one. Consolidate them or make them genuinely different.",
+        "**Excluded by 'noindex' tag** or **Blocked by robots.txt.** Somebody, at some point, told Google to stay away. Often a staging setting that shipped to production."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The most expensive mistake in this bucket",
+        "body": "Buying links to pages Google hasn't indexed. It happens more than you'd think, because link packages are easy to sell and indexing problems are boring to explain. Check the index status of every page in a link plan before you approve it."
+      }
+    },
+    {
+      "h2": "Impressions but no clicks: you're losing at the title",
+      "body": [
+        "Ignore the generic click-through-rate-by-position charts. They average across query types, devices, brands and SERP layouts that have nothing to do with yours, and the numbers move every year.",
+        "Use your own site as the benchmark instead. In Search Console, filter Performance to the page, note its average position and CTR, then compare it to your site's overall CTR at that same position band. If the page is at half your own average, the problem is the promise you're making in the title, not the ranking.",
+        "One caveat that saves a lot of pointless work: at an average position of 12, low CTR is a position problem, not a title problem. Only rewrite titles for pages already in the top five or six."
+      ],
+      "bullets": [
+        "Google rewrote your title because it didn't match the query. Check what actually shows in the SERP, not what's in your `title` tag.",
+        "The query wants a format you're not offering — a price, a list, a tool, a table — and your title promises an essay.",
+        "An AI Overview, a video carousel or a local pack sits above you. Your position number is flat; your share of the visible screen isn't.",
+        "You rank for queries you shouldn't. High impressions, no clicks, and on inspection nobody searching that phrase wanted your page."
+      ]
+    },
+    {
+      "h2": "Clicks but no enquiries: it isn't an SEO problem",
+      "body": [
+        "This is the uncomfortable one, because SEO did its job. Traffic arrived. The problem is upstream of the rankings and downstream of them at the same time.",
+        "Split your top pages into two lists: queries a buyer types, and queries a student types. If your traffic is concentrated in the second list, you have a keyword selection failure, not a ranking failure — and no amount of extra ranking will fix it. Ranking first for a definition query with zero purchase intent produces exactly the revenue you'd expect.",
+        "If the queries are genuinely commercial and the page still converts nothing, it's the page. Slow load on mobile, no next step, a form asking for eleven fields, or an offer that doesn't match what the searcher was actually trying to do. That's [CRO territory rather than SEO](/compare/cro-vs-seo), and it's usually faster and cheaper than another quarter of content."
+      ]
+    },
+    {
+      "h2": "Stuck at positions 5–15: it's authority, and it's the slow fix",
+      "body": [
+        "The plateau has a distinctive shape. Your pages get indexed. They rank. They rank on page one or the top of page two. They've sat there for six months while you tweaked headings.",
+        "At that point relevance is solved and something else is capping you. Count referring domains on the three URLs ranking above you and compare with yours. If they have 300 unique linking domains and you have 11, no amount of on-page work closes that gap.",
+        "Off-page is also the slowest and most expensive type to buy, which is why it gets sold to people who don't need it yet. Plenty of Indian SMB sites are being sold link packages while they have 60% of their pages sitting on 'Crawled – currently not indexed'. Fix the free problem first."
+      ]
+    },
+    {
+      "h2": "The local exception, which overrides everything above",
+      "body": [
+        "If most of your revenue comes from customers within driving distance — a clinic, a studio, a showroom, a repair service — the map pack decides your month, not the blue links underneath it.",
+        "That pack runs on relevance, distance and prominence, and it's fed largely by your Google Business Profile: primary category, service area, review volume and recency, photos, hours, and consistent name-address-phone details across the web. A perfect website with a neglected profile loses to a mediocre website with a well-run one, every time.",
+        "So for local businesses the order flips: profile first, location and service pages second, everything else third. [What local SEO actually covers](/answers/what-is-local-seo) is a different discipline wearing the same name."
+      ]
+    },
+    {
+      "h2": "Reading the pattern in Search Console in ten minutes",
+      "body": [
+        "Do this before you talk to any agency, including us. It costs nothing and it changes what you should be buying."
+      ],
+      "numbered": [
+        "Count the pages you've published that are meant to rank. Exclude tag archives, filters and pagination.",
+        "Search Console → Pages → **Indexed**. Note the number and the top three reasons under Not indexed.",
+        "Performance → last 3 months → Pages tab. Count URLs with at least one impression.",
+        "Same view: count URLs with at least one click.",
+        "In your CRM, count enquiries attributed to organic search over the same period.",
+        "Find the biggest percentage drop between two consecutive numbers. That gap is the type of SEO you should be buying this quarter."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "How long each fix takes to show up",
+        "body": "Indexing fixes: days to three weeks. On-page and title work: two to six weeks. New content reaching its position: two to four months. Off-page authority: six to twelve months. Pick the fix that matches both your symptom and your patience, and start a [technical audit](/services/seo-audit-services) if you can't tell which bucket you're in."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Which type of SEO is most important overall?",
+      "a": "There's no universal answer, but if forced to pick one for a site that's never had SEO, it's technical and indexing work — because every other type depends on Google being able to fetch and store your pages. Once indexing is healthy, content and on-page usually give the fastest return."
+    },
+    {
+      "q": "Should a new website start with technical SEO or content?",
+      "a": "Both, in that order, within the same month. A new site needs a crawlable structure, a clean sitemap, indexable templates and fast responses before content has anywhere to land. But don't spend a quarter on technical polish for a 20-page site — a week is usually enough, then write."
+    },
+    {
+      "q": "Do I need off-page SEO if my technical SEO is good?",
+      "a": "Only when you've hit the authority ceiling — pages consistently landing at positions 5 to 15 while competitors with far more referring domains sit above you. Before that point, links are the expensive answer to a problem you don't have yet."
+    },
+    {
+      "q": "Is local SEO a different type or part of on-page SEO?",
+      "a": "Genuinely different. It runs on relevance, distance and prominence signals attached to your Google Business Profile rather than your web pages, and the ranking surface is the map pack. A local business can win the pack with a modest website and lose it with a beautiful one."
+    },
+    {
+      "q": "How do I know if my agency is working on the right type?",
+      "a": "Ask them which of the five symptoms in this page describes your site, and what number they used to decide. If the answer is a discipline rather than a diagnosis — \"we're doing on-page this month\" — they picked the work before they looked at your data."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "what-are-the-4-types-of-seo" },
+    { "type": "compare", "slug": "technical-seo-vs-content-seo" },
+    { "type": "compare", "slug": "onpage-vs-offpage-seo" },
+    { "type": "glossary", "slug": "average-position" },
+    { "type": "services", "slug": "seo-audit-services" },
+    { "type": "journal", "slug": "what-an-seo-audit-should-actually-find" }
+  ]
+}

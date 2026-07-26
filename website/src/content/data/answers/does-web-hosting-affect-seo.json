@@ -1,0 +1,202 @@
+{
+  "slug": "does-web-hosting-affect-seo",
+  "type": "answers",
+  "primaryKeyword": "does web hosting affect seo",
+  "secondaryKeywords": [
+    "cheapest web hosting",
+    "does hosting affect page speed",
+    "best hosting for seo in india",
+    "shared hosting seo problems",
+    "does server location matter for seo"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "Does web hosting affect SEO? Only in four ways",
+  "metaTitle": "Does Web Hosting Affect SEO? Four Real Ways",
+  "metaDescription": "Does web hosting affect SEO? Only through uptime, server response time, shared-IP neighbours and location. Here's how to test all four on your own site.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Web hosting affects SEO through exactly four variables: uptime, server response time, the neighbours on your shared IP, and physical server location. Only the second one routinely causes real damage. Google's own tooling flags any server response over 600ms, and cheap shared plans regularly exceed that on a WordPress site once real traffic arrives.",
+  "takeaways": [
+    "**Server response time is the variable that matters.** Everything else on the list is either rare, cheap to fix, or largely a myth.",
+    "Three free ways to measure it: PageSpeed Insights, Search Console crawl stats, and the Network tab. Do all three — they measure different things.",
+    "Bad shared-IP neighbours hurt you through stolen CPU and server-level compromises, not through guilt by association. Google has been clear it doesn't judge you by your IP.",
+    "Budget hosting doesn't fail on uptime. It fails on response time under load, months before you notice."
+  ],
+  "sections": [
+    {
+      "h2": "The four variables, and the ones that don't exist",
+      "body": [
+        "\"Does hosting affect SEO\" is usually a vague worry answered with a vague yes. Narrowed down, it's four measurable things — each with a free test and a threshold you can check this afternoon."
+      ],
+      "table": {
+        "caption": "The four hosting variables that touch search performance, and how to test each one free.",
+        "head": ["Variable", "How it reaches rankings", "Free test", "Bad number"],
+        "rows": [
+          [
+            "Server response time (TTFB)",
+            "Directly feeds LCP, and a slow server makes Googlebot crawl less",
+            "PageSpeed Insights, Search Console crawl stats, DevTools Network tab",
+            "Over 600ms flagged; over 1s is costing you"
+          ],
+          [
+            "Uptime",
+            "Sustained 5xx errors get URLs dropped from the index",
+            "Any free uptime monitor on a five-minute check",
+            "Below 99.9%, or any outage over a few hours"
+          ],
+          [
+            "Shared IP neighbours",
+            "Resource contention and server-level compromises, not reputation",
+            "Reverse-IP lookup, plus Search Console Security Issues",
+            "Malware on the box, or CPU throttling in your host panel"
+          ],
+          [
+            "Server location",
+            "Network latency to your audience. A weak geotargeting hint at best",
+            "Test TTFB from a location matching your customers",
+            "Over 200ms of pure round-trip before anything renders"
+          ]
+        ]
+      },
+      "bullets": [
+        "**Not a thing:** your hosting brand. No ranking bonus comes with a premium logo on the invoice.",
+        "**Not a thing:** a dedicated IP as a ranking factor. Useful for email. Irrelevant to search.",
+        "**Not a thing:** \"SEO hosting\" selling C-class IP diversity for link networks — a product built for a tactic Google has penalised for a decade."
+      ]
+    },
+    {
+      "h2": "Server response time: the one that actually costs you",
+      "body": [
+        "Time to first byte is how long the server takes to start sending the page after the browser asks. It's the variable cheap hosting fails first.",
+        "It matters more than it sounds because TTFB is *inside* Largest Contentful Paint, not next to it. The LCP clock starts at navigation. If your server takes 1.2 seconds to answer, you've spent half the 2.5-second \"good\" budget before a byte of HTML arrives, and image compression can't buy it back. That's the link between your hosting bill and your [Core Web Vitals](/glossary/core-web-vitals)."
+      ],
+      "subs": [
+        {
+          "h3": "Three ways to measure it, all free",
+          "bullets": [
+            "**PageSpeed Insights.** Look for the \"Reduce initial server response time\" audit — Google fails it above 600ms. One lab test from one location, so treat it as a smoke alarm rather than a measurement.",
+            "**Search Console → Settings → Crawl stats.** The \"Average response time\" figure is Googlebot's own measurement across every URL it fetched, over months. The most representative number you'll ever get about your host, and almost nobody looks at it. The Host status panel in the same report flags connectivity failures.",
+            "**Chrome DevTools → Network tab.** Click the document request, open Timing, read \"Waiting for server response\". Append a query string so you're testing the server, not a cache."
+          ]
+        },
+        {
+          "h3": "What the numbers mean",
+          "bullets": [
+            "**Under 200ms** — genuinely fast. Usually real caching and a nearby server.",
+            "**200–500ms** — fine. Leave it and go fix something else.",
+            "**500–800ms** — you're eating LCP budget and Google's audit is about to fail you.",
+            "**Over 1s, consistently** — now your biggest technical problem, ahead of anything in the content plan. Google reduces crawl rate for slow or erroring servers, so it compounds: slow server, less crawling, slower discovery of everything you publish."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Test under load, not at 3am",
+        "body": "Shared hosting looks great when the server is idle. Run your test during your actual peak hour, on a page that can't be served from cache. The gap between those two numbers is what you're really paying for when you save ₹400 a month."
+      }
+    },
+    {
+      "h2": "Uptime: what Google actually does when your site is down",
+      "body": [
+        "Google handles short outages far more gracefully than most people fear. A brief run of 5xx responses gets retried, and Googlebot temporarily slows its crawl rate rather than punishing you. Rankings don't evaporate because your host had a bad twenty minutes.",
+        "Sustained downtime is different. Days of server errors will eventually see URLs dropped from the index, and they come back slower than they left. For planned maintenance, return a **503** with a `Retry-After` header — that tells Google this is temporary. The common mistake is a holding page returning a **200**, which tells Google your page is now a holding page.",
+        "Set a free uptime monitor on a five-minute check and forget it. The arithmetic: 99.9% uptime is about 43 minutes down a month, which is fine. 99% is about seven hours, which is not."
+      ]
+    },
+    {
+      "h2": "Shared IP neighbours: when it matters and when it's folklore",
+      "body": [
+        "This is the part of the question carrying the most myth. Google has said consistently that sharing an IP with low-quality sites is not itself a ranking problem — most of the web sits on shared hosting, and treating an IP as a reputation signal would punish millions of legitimate small sites. Stop worrying about that specific fear.",
+        "What genuinely bites you from bad neighbours is more mundane."
+      ],
+      "bullets": [
+        "**Stolen resources.** On an oversold box, a neighbour's traffic spike or runaway script eats shared CPU and your response times triple. This is the real cost, it's invisible from outside, and it shows up in that crawl stats average.",
+        "**Server-level compromise.** If the host is breached and malware injected across accounts, you get a Safe Browsing warning and a Security Issues notice in Search Console. A genuine emergency, arriving through your neighbours.",
+        "**Email deliverability.** A spammy IP range gets your outreach and transactional mail filtered. It doesn't touch rankings, but it quietly breaks link outreach and lead follow-up — which then gets blamed on the SEO."
+      ]
+    },
+    {
+      "h2": "Server location versus a CDN",
+      "body": [
+        "Two questions get tangled here: latency and geotargeting.",
+        "**Latency is physics.** A user in Chennai hitting a server in Virginia pays for the round trip — typically 200ms or more — several times over before the first byte arrives. If your customers are Indian, a server in India or Singapore removes it.",
+        "**Geotargeting is mostly not about the server.** Google works out who a page is for from your ccTLD, hreflang, language and content. Server location is a weak hint at best. A `.in` domain hosted in Frankfurt isn't confused about which country it serves; it's just slow.",
+        "A CDN sits between the two. It genuinely fixes images, CSS and JavaScript from a nearby edge. It does **not** fix a slow dynamic response unless you turn on full-page caching at the edge, which most people never do — which is why sites add a CDN, see no TTFB change, and conclude CDNs don't work.",
+        "Rule of thumb: Indian audience, host in India or Singapore. Mixed or overseas, host near your largest market and put a CDN with full-page caching in front."
+      ]
+    },
+    {
+      "h2": "What a ₹99-a-month plan cuts to hit that price",
+      "body": [
+        "Budget hosting isn't a scam. It's a set of engineering trade-offs, perfectly sensible for one kind of site and quietly ruinous for another. Here's what gets traded."
+      ],
+      "bullets": [
+        "**Density.** Hundreds of accounts on one machine. Every resource you use is one somebody else isn't.",
+        "**Hard limits.** CPU, memory and concurrent-process caps. Hit them and requests don't fail with a clear error — they queue. That queue is your TTFB.",
+        "**Slower storage.** Older SATA disks rather than NVMe, which shows up immediately on database-heavy WordPress queries.",
+        "**No server-level caching.** No object cache, no full-page cache before PHP starts. A plugin cache helps, but it's doing in PHP what a proper stack does earlier.",
+        "**\"Unlimited\" bandwidth** with a fair-use clause that throttles you exactly when a page takes off."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "When cheap hosting is the right answer",
+        "body": "A five-page brochure site with 300 visits a month is fine on a ₹200 plan. The failure appears when you add a database-driven catalogue, a dozen plugins and real traffic. If you're paying an agency five figures a month, a decent VPS or managed plan is a rounding error against that invoice — and it's usually the first thing we ask for."
+      }
+    },
+    {
+      "h2": "When to move host, and how to move without losing rankings",
+      "body": [
+        "Move when Search Console's average response time sits above roughly 800ms and your host can't explain why, when neighbours are visibly costing you resources, or when you're serving Indian traffic from a distant continent for no reason. Don't move because a review site scored someone higher.",
+        "A host move is not a migration. Your URLs, protocol and structure shouldn't change at all — which makes it far lower-risk than [a genuine site migration](/services/site-migration-seo). Follow this order and the risk is close to zero."
+      ],
+      "numbered": [
+        "**Baseline first.** Current TTFB, Search Console average response time, Core Web Vitals field data, rankings for your tracked queries. Without this you'll never know if the move helped.",
+        "**Copy, don't cut.** Stand the site up on the new host and test via a hosts-file entry or a hostname behind HTTP auth — never a public staging URL that can get indexed.",
+        "**Drop DNS TTL to 300 seconds** a day or two before the switch, so cutover takes minutes rather than hours.",
+        "**Keep the old server serving for at least 72 hours** after you flip DNS. Propagation is uneven and some visitors still land on the old box.",
+        "**Check status codes on your top 100 URLs** right after cutover, plus the SSL certificate and — critically — that `robots.txt` is the production file.",
+        "**Watch crawl stats for two weeks.** If average response time hasn't improved, you moved for nothing, and it's worth saying so out loud."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The one that actually kills sites",
+        "body": "A `robots.txt` with `Disallow: /` copied from staging. It takes days to notice, weeks to recover from, and it looks exactly like an algorithm update while it's happening. If rankings fall off a cliff after any server change, check that file before you check anything else — see [why rankings drop](/answers/why-did-my-rankings-drop)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does cheap hosting hurt SEO?",
+      "a": "Indirectly, and mostly through one channel: server response time. Cheap plans oversubscribe hardware, so requests queue under load and time to first byte climbs. That eats your LCP budget and slows Googlebot's crawl rate. Uptime on budget hosts is usually acceptable — it's response time that quietly fails."
+    },
+    {
+      "q": "Does server location matter for SEO in India?",
+      "a": "For speed, yes — a server in India or Singapore removes 200ms or more of round-trip latency for Indian visitors compared with a US or European host. For geotargeting, barely. Google works out which country a page serves from your ccTLD, hreflang and content, not from where the machine sits."
+    },
+    {
+      "q": "Is shared hosting bad for SEO?",
+      "a": "Not inherently. Google doesn't judge you by your IP neighbours. What shared hosting genuinely risks is resource contention — someone else's traffic spike slowing your responses — and server-level malware that hits every account on the box. Check your crawl stats average response time; that number tells you whether it's a problem for you."
+    },
+    {
+      "q": "What is a good TTFB for SEO?",
+      "a": "Under 200ms is genuinely fast, 200–500ms is fine, and Google's own PageSpeed audit fails anything over 600ms. Above one second consistently, hosting becomes your biggest technical problem — it's inside your LCP measurement and it reduces how much Googlebot crawls."
+    },
+    {
+      "q": "Will a CDN fix my slow hosting?",
+      "a": "Only partly. A CDN serves images, CSS and JavaScript from a nearby edge, which helps a lot. It does nothing for a slow dynamic HTML response unless you turn on full-page caching at the edge, which most setups leave off. If your TTFB is bad, a CDN masks the symptom on assets and leaves the cause intact."
+    },
+    {
+      "q": "Will changing web hosts hurt my rankings?",
+      "a": "Not if your URLs stay identical and nothing breaks in the switch. A host move is much safer than a migration. The failure cases are always the same three: a staging robots.txt going live, an SSL certificate that doesn't cover every hostname, and the old server being switched off before DNS finished propagating."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "core-web-vitals" },
+    { "type": "glossary", "slug": "largest-contentful-paint" },
+    { "type": "services", "slug": "core-web-vitals-optimisation" },
+    { "type": "services", "slug": "site-migration-seo" },
+    { "type": "answers", "slug": "why-did-my-rankings-drop" },
+    { "type": "compare", "slug": "nextjs-vs-wordpress-seo" }
+  ]
+}

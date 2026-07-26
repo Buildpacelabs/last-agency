@@ -1,0 +1,168 @@
+{
+  "slug": "surat",
+  "type": "seo-agency",
+  "primaryKeyword": "seo agency in surat",
+  "secondaryKeywords": [
+    "seo company in surat",
+    "seo services surat",
+    "textile seo surat",
+    "diamond industry marketing",
+    "saree wholesaler marketing",
+    "b2b seo gujarat"
+  ],
+  "cluster": "city-india-manufacturing",
+  "intent": "commercial",
+  "h1": "SEO in Surat that ends in a WhatsApp catalogue",
+  "metaTitle": "SEO Agency in Surat: Textiles, Diamonds, Wholesale",
+  "metaDescription": "Surat trade closes on WhatsApp. Our SEO gets saree wholesalers and diamond exporters the first search-to-chat handoff, on a 90-day baseline guarantee.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "In Surat the sale doesn't close on the website. A reseller finds you on Google, taps once, and the whole conversation moves to WhatsApp inside a single message. So the job of SEO here isn't form fills — it's producing qualified chats and knowing which page and which query produced each one.",
+  "takeaways": [
+    "Put a short reference code in the prefilled WhatsApp message, unique per page. It's the cheapest attribution you'll ever build.",
+    "Wholesale buyers want the price band and the MOQ before they'll chat. Publishing both wins the query and filters the timewasters.",
+    "Diamond and lab-grown export buyers search in English, in low volume, at very high value. Five good pages beat fifty.",
+    "Instagram wins discovery and loses search. Your catalogue still needs to exist as crawlable HTML."
+  ],
+  "sections": [
+    {
+      "h2": "The handoff is the conversion, so measure the handoff",
+      "body": [
+        "Every Surat business we've looked at has the same reporting hole. Organic traffic is measurable. WhatsApp chats are measurable. The line between them isn't, because the conversation happens in an app your analytics can't see. So the agency reports sessions, the founder can't connect sessions to orders, and everyone quietly agrees SEO is unprovable.",
+        "It's provable. It takes ten minutes of setup almost nobody does. Use `wa.me` links with a prefilled message, and put a short reference token inside that message that changes per page — `Ref: CHIFFON-WHL`, `Ref: CVD-2CT`. When the chat lands, your team sees which page sent it without a cookie, a consent banner or a line of tracking code. Then fire a GA4 event on the outbound click carrying the page path, and you have both halves of the funnel."
+      ],
+      "numbered": [
+        "**One prefilled message per page**, with a reference token. Not one floating chat button that strips all page context.",
+        "**A GA4 outbound-click event** with page path. That's your organic-to-chat funnel.",
+        "**A `wa.me` link where Google lets you put one** — the booking link on your Business Profile is the most-missed placement in Indian local search.",
+        "**Tag the chat in your CRM** the moment it arrives, using the token. Untagged chats become anecdotes by Friday.",
+        "**Agree what \"qualified\" means before month one.** A chat that says \"rate?\" and vanishes isn't a lead, and counting it makes the reporting useless in both directions."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "If you can't attribute the chat, you'll get traffic reports",
+        "body": "Not because your agency is dishonest — because traffic is the only thing left to report. Build the attribution first and the question of whether SEO works becomes a five-minute conversation about numbers instead of a six-month argument about faith."
+      }
+    },
+    {
+      "h2": "Saree and fabric wholesale: you're recruiting resellers, not selling sarees",
+      "body": [
+        "Surat is India's largest man-made fabric hub, and the Ring Road textile markets run on a model most e-commerce SEO advice simply doesn't fit. Your customer isn't a woman buying a saree. It's a reseller in Nagpur or Guwahati looking for a supplier who'll dispatch single pieces, update the catalogue weekly and answer the phone.",
+        "That changes every keyword. \"Saree online\" is worthless to you. \"Surat saree wholesaler single piece\", \"dropshipping saree supplier Surat\", \"chiffon saree manufacturer wholesale rate\" — those are the queries, and they're strikingly under-served because everyone in the market thinks their catalogue is the product. It isn't. The terms of trade are. A reseller is choosing between forty suppliers with near-identical stock, and they pick on MOQ, dispatch time, damage policy and whether you answer at 9pm."
+      ],
+      "bullets": [
+        "**Publish the price band.** Everyone hides it; the buyer's first question is always price; the page that answers it gets the chat.",
+        "**State the MOQ plainly**, and mark it up — schema.org's `Offer` has an `eligibleQuantity` property and a `businessFunction` value for wholesale, and almost nobody in the market uses either.",
+        "**Catalogue pages as crawlable HTML** with real text. An image grid with no alt text and a PDF download is invisible to Google and to the buyer searching a fabric name.",
+        "**A dispatch and damage-policy page.** Unromantic, heavily searched by resellers who've been burnt, and it converts.",
+        "**Fabric explainers** — georgette versus chiffon, what a weave does in a Delhi summer. Resellers get asked by their own customers and search for the answer."
+      ]
+    },
+    {
+      "h2": "Diamonds and lab-grown: the buyer is abroad and searching in English",
+      "body": [
+        "The industry body GJEPC and most trade coverage put the share of the world's diamonds cut and polished in Surat at around nine in ten, and the Surat Diamond Bourse that opened at Khajod in 2023 was built on the assumption the trade would keep concentrating here. Lab-grown production has since layered a second, faster-moving market on the same skill base.",
+        "The search brief for both is nothing like the textile one. The buyer is in New York, Antwerp, Tel Aviv, Hong Kong or Dubai, searching in English, in tiny volumes, with enormous order values. \"CVD diamond manufacturer India\", \"IGI certified lab grown supplier Surat\", \"melee parcel wholesale\" — a keyword tool will call these zero-volume. It's wrong about what a fifty-visit page is worth when one of those visits is a repeat buyer.",
+        "What wins here is credibility, not volume: certification detail and what an IGI or GIA report actually covers, compliance content, honest HPHT-versus-CVD explainers, real facility photographs, and a named human with an email address. Five substantial pages will outperform fifty thin ones — the durable argument for [SEO over marketplace selling](/compare/seo-vs-marketplace-selling) in a category where platforms take a cut of a very large number."
+      ]
+    },
+    {
+      "h2": "Gujarati, Hinglish and what people actually type",
+      "body": [
+        "Gujarati is the language of the city and almost never the language of the search box for B2B trade. Surat's wholesale and export buyers search in English or Hinglish, partly because many aren't Gujarati speakers themselves — the textile markets run on a workforce and a buyer base drawn from across north and east India, and Hindi is the working language of a great deal of it.",
+        "So the split is narrower than agencies pitching \"regional language SEO\" would like. Gujarati-script content earns its place for local consumer services — clinics, schools, home services, retail — and almost nothing for a diamond exporter or a fabric wholesaler. What does pay everywhere is mirroring the buyer's phrasing in your FAQ blocks. Resellers type \"1 piece milega\", \"kitne ka padega\". Writing an FAQ question in the words a buyer would use, rather than the words your brochure uses, wins long-tail queries no tool will show you. The fuller argument is in [English versus regional-language SEO](/compare/english-vs-regional-language-seo)."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where the query data actually lives",
+        "body": "Not in Ahrefs. Export twelve months of Search Console queries and read them properly, then read three months of your own WhatsApp enquiries. The overlap is your real keyword list, and it will look nothing like the one a tool generates."
+      }
+    },
+    {
+      "h2": "Instagram is not a catalogue Google can read",
+      "body": [
+        "Surat's textile trade moved to Instagram faster than almost any Indian B2B market, and for good reason — it's visual, it's fast, and a reseller can screenshot a reel to their own customer in seconds. None of that is an argument against indexable pages, though it gets used as one weekly.",
+        "Two problems. An Instagram post effectively never ranks for \"chiffon saree wholesaler Surat\", because the platform isn't built to be crawled. And you don't own the reach — a change in the feed can halve your enquiries in a fortnight with no appeal. The workable arrangement is boring and durable: the catalogue lives on your own site as crawlable, marked-up pages Google can index and Merchant Center can read, Instagram drives discovery and links to it, and both routes end at the same WhatsApp handoff with the same token. In-app Instagram search is a genuinely separate discipline, covered in [Instagram SEO services](/services/instagram-seo-services), and not a substitute for the first thing."
+      ]
+    },
+    {
+      "h2": "Setting a baseline when the conversion happens in WhatsApp",
+      "body": [
+        "This is what we spend the first fortnight of a Surat engagement on, and it's what makes the guarantee mean anything. We never promise a ranking position — nobody controls Google's index. We promise to beat a number you and we agree on before any work starts. For most clients that's trailing-90-day qualified leads from organic search; in Surat it's usually trailing-90-day qualified WhatsApp chats originating from organic."
+      ],
+      "numbered": [
+        "**Define qualified.** Usually a chat where the buyer states a product, a quantity or a market. Written down, agreed, not revisited later.",
+        "**Instrument the handoff.** Per-page prefilled messages with tokens, GA4 outbound events, CRM tagging.",
+        "**Freeze the baseline.** Ninety days of history, taken before we touch anything. If the history doesn't exist we run a 30-day measurement period first and say so out loud rather than inventing a starting point.",
+        "**Then the work.** Technical and schema, catalogue architecture, reseller-terms pages, certification and explainer content, links.",
+        "**Day 90.** We beat the number or we keep working free until we do."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "What it costs",
+        "body": "SEO from ₹75,000/mo, smaller sites from ₹40,000/mo, ex-GST. Month-to-month after the first quarter, 30 days' notice, and you keep every page and every tracking setup. We take three clients a month because you can't carry a guarantee like this at volume — [how the guarantee works](/seo)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I track leads when everything moves to WhatsApp?",
+      "a": "Two pieces. Put a short reference token in the prefilled `wa.me` message, unique per page, so your team sees the source inside the chat. Then fire a GA4 outbound-click event carrying the page path. Together they connect an organic query to a real conversation without any cross-app tracking."
+    },
+    {
+      "q": "Should a saree wholesaler publish prices on the website?",
+      "a": "Publish a band rather than a fixed rate, and state the MOQ. Price is the first thing a reseller asks and the last thing suppliers put on the page, which is exactly why the page that answers it wins the query. You'll also stop spending time on buyers who were never going to order."
+    },
+    {
+      "q": "Is SEO worth it for a diamond or lab-grown exporter with tiny search volume?",
+      "a": "Often yes, precisely because volume is tiny. Order values are large and repeat, so a page with fifty monthly visitors can outperform everything else in your marketing. The work is credibility content — certification, compliance, process, named people — not volume content."
+    },
+    {
+      "q": "Do I need a Gujarati website in Surat?",
+      "a": "For B2B textile and diamond trade, no. Those buyers search in English or Hinglish, and much of the market's workforce and buyer base isn't Gujarati-speaking anyway. For local consumer services — clinics, schools, retail, home services — Gujarati content genuinely helps."
+    },
+    {
+      "q": "My business runs entirely on Instagram. Why would I need SEO?",
+      "a": "Because Instagram posts don't rank for the queries resellers type, and you don't control the reach. An indexable catalogue on your own domain captures the buyer who searches rather than scrolls, and it doesn't disappear when the feed changes. Run both — they end in the same chat."
+    },
+    {
+      "q": "How much does an SEO agency in Surat cost?",
+      "a": "Local agencies commonly quote ₹15,000–₹50,000 a month; specialist B2B and export work sits higher. Ours starts at ₹75,000/mo, smaller sites from ₹40,000/mo, ex-GST, month-to-month after the first quarter. Below roughly ₹25,000 you're buying part-time attention, not a programme."
+    }
+  ],
+  "related": [
+    {
+      "type": "seo-for",
+      "slug": "jewellery"
+    },
+    {
+      "type": "seo-for",
+      "slug": "fashion"
+    },
+    {
+      "type": "services",
+      "slug": "instagram-seo-services"
+    },
+    {
+      "type": "compare",
+      "slug": "seo-vs-marketplace-selling"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-cost-in-india"
+    },
+    {
+      "type": "seo-agency",
+      "slug": "ahmedabad"
+    },
+    {
+      "type": "seo-agency",
+      "slug": "ludhiana"
+    }
+  ],
+  "city": {
+    "name": "Surat",
+    "region": "Gujarat",
+    "country": "India"
+  }
+}

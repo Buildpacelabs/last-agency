@@ -1,0 +1,143 @@
+{
+  "slug": "serp",
+  "type": "glossary",
+  "primaryKeyword": "serp",
+  "secondaryKeywords": [
+    "what does serp mean",
+    "search engine results page",
+    "serp features",
+    "serp analysis",
+    "types of serp features"
+  ],
+  "cluster": "analytics",
+  "intent": "informational",
+  "h1": "SERP",
+  "metaTitle": "SERP: What a Search Results Page Contains",
+  "metaDescription": "SERP means search engine results page. The features now sitting above the ten blue links, and what each one does to your realistic share of the clicks.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "SERP (search engine results page)",
+  "definition": "A SERP is the page Google assembles in response to a single query, built fresh for that query, that user and that location out of ads, features and organic results.",
+  "answer": "SERP stands for search engine results page — the page Google builds in response to a query. It isn't a stored list of ten links. It's assembled per query, per location, per device, out of ads, an AI Overview, a local pack, People Also Ask and organic results. On a phone, organic often starts below the first screen.",
+  "takeaways": [
+    "A SERP is generated, not retrieved. Two people in Bangalore and Bhopal get different pages for the same query.",
+    "Rank one is a position in the organic list, not a position on the page. Those stopped being the same thing years ago.",
+    "On a commercial mobile query, the first screenful is frequently ads, an AI Overview and a local pack — no organic result at all.",
+    "Read the SERP before you write. It tells you the format, the competition and the realistic ceiling in about ninety seconds."
+  ],
+  "sections": [
+    {
+      "h2": "What a SERP actually is",
+      "body": [
+        "The mental model most people carry — Google keeps a ranked list, you climb it — has been wrong for a long time. There is no stored page. When a query arrives, Google decides which result types are relevant, runs retrieval and ranking, and composes a layout in real time. The composition changes with location, device, language, search history and time of day.",
+        "Which is why \"we're number one\" is a statement that needs three qualifiers to mean anything: number one for whom, where, and on what device. A result at organic position one on a query with an AI Overview, a four-ad block and a local pack above it is number one in a list nobody has scrolled to yet.",
+        "It also explains why your rank tracker and your Search Console [average position](/glossary/average-position) never agree. They're measuring differently assembled pages."
+      ]
+    },
+    {
+      "h2": "The stack on a commercial Indian query",
+      "body": [
+        "Search something like \"seo agency in bangalore\" on a phone and you'll typically get a version of the following, top to bottom. The exact mix changes weekly and by query, so treat this as the shape rather than a fixed layout."
+      ],
+      "table": {
+        "caption": "Typical top-to-bottom stack on a commercial mobile SERP in India.",
+        "head": ["Slot", "What it is", "What it does to your clicks"],
+        "rows": [
+          [
+            "Sponsored block",
+            "Two to four paid results, labelled Sponsored",
+            "Takes the first screen. You can't earn your way past it."
+          ],
+          [
+            "AI Overview",
+            "A generated summary with a handful of source links",
+            "Answers the query in place. Cited sites get some clicks; everyone else gets fewer."
+          ],
+          [
+            "Local pack",
+            "Map plus three Business Profiles",
+            "Absorbs most near-me intent. A [Google Business Profile](/glossary/google-business-profile) is the only way in."
+          ],
+          [
+            "People Also Ask",
+            "Expandable related questions",
+            "Satisfies follow-ups without a click, but the expansions are citable slots."
+          ],
+          [
+            "Featured snippet",
+            "One result pulled up and quoted",
+            "Wins a large share of clicks on informational queries — or ends them."
+          ],
+          [
+            "Organic results",
+            "The classic blue links",
+            "Where the actual competition happens, once everything above has taken its cut."
+          ],
+          [
+            "Related searches",
+            "Query suggestions at the foot",
+            "A free map of adjacent intents. Useful for planning."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The first-screen problem, in arithmetic",
+      "body": [
+        "Do the sums on a mid-range Android, which is the device most of your Indian traffic is using. The viewport is commonly around 360 CSS pixels wide by roughly 640–780 tall once you subtract the browser chrome. That's your first screen — everything a visitor sees before deciding whether to scroll.",
+        "Now stack the components. The search box and filters take a chunk. A single sponsored result runs to around a hundred pixels; a block of three or four fills most of what's left. An AI Overview, even collapsed behind a \"show more\", generally occupies several hundred pixels on its own. A local pack with a map and three listings takes several hundred more.",
+        "On a commercial query with all three present, the first organic result routinely begins somewhere past the second or third screenful. Not demoted — just downstream. That's the honest picture, and it's why forecasting traffic from position alone produces numbers that don't arrive.",
+        "One caveat worth stating plainly: these are approximate component heights, not measurements from a controlled study, and Google changes them constantly. Don't take our arithmetic — run yours. Open your top ten commercial queries on an actual phone, in incognito, with the right location, and note where the first organic result lands. That five-minute exercise tells you more about your realistic ceiling than any rank report."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "What this does to a traffic forecast",
+        "body": "Any projection built on \"we'll hit position three, and position three gets X% of clicks\" is using a curve measured on a page that no longer exists. If the query carries an AI Overview and a local pack, expect materially less than the published [CTR curves](/glossary/click-through-rate) suggest, and build the forecast with a range rather than a number."
+      }
+    },
+    {
+      "h2": "How to run a SERP analysis before you write",
+      "body": [
+        "SERP analysis is the cheapest research in SEO and the most commonly skipped. Ninety seconds per query, before a brief is written, not after the page fails."
+      ],
+      "numbered": [
+        "**Search it in incognito**, location set to your target market. Personalisation and location change the page enough to invalidate a lazy check.",
+        "**Photograph the whole page** by scrolling and screenshotting. You want the composition, not just the top.",
+        "**Count the features.** Ads, AI Overview, local pack, snippet, PAA, video, images. Each one is real estate you can't have.",
+        "**Classify the organic results by format.** Guides, product pages, comparisons, directories. The majority format tells you what to build — this is the whole method behind [search intent](/glossary/search-intent).",
+        "**Note who's cited in the AI Overview.** Those are the pages you'd have to displace to be the source, which is a different contest from the ranking.",
+        "**Decide honestly whether the slot is winnable.** If the top five are national directories with a decade of links and you're a six-month-old domain, spend the effort on a query where you can actually land."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What does SERP stand for?",
+      "a": "Search engine results page. It's the page returned in response to a query — not just the organic list, but the whole composition including ads, AI Overviews, the local pack, People Also Ask, and any other feature Google decides that particular query warrants."
+    },
+    {
+      "q": "Why do I see different results than my client does?",
+      "a": "Because the page is assembled per request. Location, device, language, signed-in state and search history all feed into it. Two people in different Indian cities get materially different pages for the same commercial query, and neither of them is wrong."
+    },
+    {
+      "q": "Do SERP features help or hurt?",
+      "a": "Both, and which one depends on whether you're in them. A featured snippet or an AI Overview citation sends you traffic you wouldn't otherwise get. The same feature, occupied by a competitor, takes traffic from you at an unchanged ranking position."
+    },
+    {
+      "q": "Is ranking number one still worth it?",
+      "a": "Yes, but it's worth less than it was and it's worth different amounts on different queries. Position one on an informational query with a big AI Overview is a very different asset from position one on a transactional query with no features. Judge each query on its own layout."
+    },
+    {
+      "q": "How do I track SERP features for my keywords?",
+      "a": "Most rank trackers flag which features appear on each tracked query. If you don't have one, check your top twenty queries manually once a quarter on a phone in incognito. Slow, but it catches layout changes that a position number never reveals."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "ai-overviews" },
+    { "type": "glossary", "slug": "featured-snippet" },
+    { "type": "glossary", "slug": "zero-click-search" },
+    { "type": "glossary", "slug": "click-through-rate" },
+    { "type": "glossary", "slug": "search-intent" },
+    { "type": "journal", "slug": "what-ai-overviews-did-to-your-organic-traffic" }
+  ]
+}

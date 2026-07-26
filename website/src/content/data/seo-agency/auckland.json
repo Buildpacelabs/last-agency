@@ -1,0 +1,149 @@
+{
+  "slug": "auckland",
+  "type": "seo-agency",
+  "primaryKeyword": "seo agency in auckland",
+  "secondaryKeywords": [
+    "seo company auckland",
+    "seo services new zealand",
+    "local seo auckland",
+    "small business seo nz",
+    "ecommerce seo new zealand"
+  ],
+  "cluster": "city-apac",
+  "intent": "commercial",
+  "h1": "Auckland SEO where conversion beats traffic",
+  "metaTitle": "SEO Agency in Auckland: Conversion Over Traffic",
+  "metaDescription": "Most Auckland commercial keywords draw low hundreds of searches a month. Growth comes from conversion and long-tail coverage, not traffic charts.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "city": { "name": "Auckland", "region": "Auckland", "country": "New Zealand" },
+  "answer": "Auckland is a city of roughly 1.7 million inside a country of about 5.3 million, so most commercial keywords there draw low hundreds of searches a month. Traffic growth runs out fast as a strategy. The two levers that keep working are conversion rate on the sessions you already have, and exhaustive long-tail coverage.",
+  "takeaways": [
+    "A 300% traffic increase in a market this size can be forty extra visits. Percentage targets flatter small numbers, which is exactly why agencies report in percentages.",
+    "Keyword tools show zero volume for terms that convert here every week. Zero-volume is a data limitation, not a demand signal.",
+    "Your real competitor on generic queries is often a .com.au site that outranks you because Australia is five times the market.",
+    "When your baseline is a single-digit lead count per month, the definition of \"qualified\" matters more than the SEO does. We write it down before we start."
+  ],
+  "sections": [
+    {
+      "h2": "The arithmetic of a five-million-person market",
+      "body": [
+        "New Zealand has around 5.3 million people and roughly a third of them live in Auckland. Put that through the funnel and you get search volumes that surprise people arriving from bigger markets. A commercial term that returns tens of thousands of monthly searches in the UK returns low hundreds here. A specific one returns a number so small the tools round it to zero.",
+        "Which means the standard agency plan — grow traffic, report the percentage, renew the retainer — hits a ceiling within a year. There simply aren't more people to attract for that keyword. You've got them.",
+        "Here's the shape of the problem, using round illustrative numbers rather than data from anyone's account, so you can see where the gains actually live."
+      ],
+      "table": {
+        "caption": "Illustrative arithmetic for a small-market site. These are round numbers to show the shape, not measured data.",
+        "head": ["The lever", "What changes", "What you gain"],
+        "rows": [
+          [
+            "Rank higher on the head term",
+            "Position 5 to position 2 on a 400-searches-a-month keyword",
+            "A few dozen extra sessions a month. Real, but finite, and then it's over."
+          ],
+          [
+            "Improve the conversion rate",
+            "1.5% to 3% on the 2,000 sessions you already get",
+            "Doubles the leads from the same traffic. No new rankings required."
+          ],
+          [
+            "Cover the long tail exhaustively",
+            "40 pages, each drawing 5 to 30 searches a month",
+            "Compounds indefinitely, and the intent is far closer to a purchase."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The reporting trick to watch for",
+        "body": "In a small market, percentages are a magic trick. Traffic up 340% sounds spectacular and can mean you went from 12 visits to 53. Insist on absolute numbers next to every percentage, in every report, for every metric. Any agency that resists that is telling you something."
+      }
+    },
+    {
+      "h2": "Long-tail coverage is the mechanism, not the head term",
+      "body": [
+        "The growth engine in a market this size isn't ranking better. It's ranking for more things — and specifically, for the hundreds of small, specific, intent-heavy queries that keyword tools underreport or miss entirely.",
+        "Tools estimate volume from clickstream samples. In a country of five million the sample is thin, so a term genuinely searched fifteen times a month lands as \"0\" or \"10\". Agencies with a volume threshold in their process filter those out, which is convenient for them and expensive for you. Fifteen searches a month for \"commercial dishwasher repair north shore\" is a better month than four hundred for \"dishwasher\".",
+        "So the research runs off different sources: your Search Console query export, which shows real impressions for terms no tool lists; your sales inbox, which contains the exact phrasing buyers use; autocomplete and \"people also ask\", which reflect real query strings; and your quote requests, which tell you which suburb names keep appearing. [Keyword research services](/services/keyword-research-services) covers the method.",
+        "Then you write pages that deserve to exist for each one. Not spun variants — that's the scaled-content line and Google is explicit about it. Genuinely different pages, because a Ponsonby cafe fit-out and a Manukau warehouse fit-out are different jobs and you know why."
+      ]
+    },
+    {
+      "h2": "Conversion is the other half of the retainer",
+      "body": [
+        "If the traffic ceiling is real, then the rate at which traffic becomes enquiries stops being someone else's department. On most Auckland sites we look at, the fastest available gain isn't a ranking — it's the fact that the phone number isn't clickable on mobile, or the quote form asks eleven questions, or there's no price indication anywhere so half the visitors leave to find one.",
+        "None of that is glamorous and all of it is measurable, and in a capped market it's where the retainer earns its keep. The specific things worth checking first — the same list we work through in [conversion rate optimisation](/services/conversion-rate-optimisation-services):"
+      ],
+      "bullets": [
+        "**Price signals.** New Zealand buyers research hard before they call. A page with no indication of cost loses to one with a range, even if the range is wide and hedged.",
+        "**Form length.** Every field you add costs you completions. Name, contact, one free-text box, and ask the rest on the phone.",
+        "**Local proof.** Suburb names, real project photos, review counts. Trust is doing more work here than authority is.",
+        "**Mobile speed.** New Zealand sits a long way from most origin servers. If your site loads from Sydney or California with no CDN in front of it, your Largest Contentful Paint is worse than your developer's test suggests.",
+        "**The map pack path.** For a trade or a clinic, a large share of enquiries never touch your website. The Business Profile is the landing page, and it needs treating as one."
+      ]
+    },
+    {
+      "h2": "co.nz, hosting, and the Australian results that keep showing up",
+      "body": [
+        "Three technical questions come up on every New Zealand engagement, and only one of them has an interesting answer.",
+        "**Domain.** A .co.nz or .nz domain is a country-code TLD, which Google reads as a strong signal that the site targets New Zealand. That's the right choice if New Zealand is your market. It's the wrong choice if you intend to sell to Australia or globally later, because a ccTLD is difficult to grow beyond its country. If you're export-minded, run a .com and target New Zealand through content, hreflang and local signals instead.",
+        "**Hosting.** Barely matters as a ranking signal. It matters as a speed signal, and in New Zealand those are different problems. Put a CDN in front of the site with an edge presence in Australia or New Zealand and the hosting question mostly goes away.",
+        "**The Australian bleed.** This is the interesting one. Australia is roughly five times New Zealand's population, so Australian sites have more content, more links and more authority on identical English-language terms. On generic queries, .com.au results routinely appear on google.co.nz. You can check this in ten minutes: search your top ten commercial terms with the location set to Auckland and count how many top-ten results are Australian.",
+        "You beat that with specificity, not authority. GST rather than tax, NZ pricing in NZD, suburb and region names, New Zealand standards and compliance references, and content that would read as obviously foreign to an Australian. Generic pages lose to Australia. New Zealand-specific pages don't, because the Australian site can't write them."
+      ]
+    },
+    {
+      "h2": "Where Auckland competition actually sits",
+      "body": [
+        "The competitive picture here isn't the same as the one in a big market, and it's worth knowing before you commit a budget.",
+        "**Trades and home services** are the most contested local category — builders, electricians, plumbers, roofers, landscapers. The map pack decides most of it and review volume decides the map pack. Winnable suburb by suburb, with a review programme running alongside.",
+        "**Clinics and allied health** — physio, dental, dermatology, cosmetic. Competitive but frequently badly executed, with slow sites, thin service pages and neglected profiles. Often the best value work available in the city.",
+        "**E-commerce** faces a structural problem: Trade Me is New Zealand's dominant marketplace and holds a large share of product and classified intent, and Australian and global stores ship here. Winning means owning categories the marketplace serves poorly — considered purchases, technical products, anything needing advice before the sale.",
+        "**Professional and B2B services** are the quietest and often the easiest. Small addressable markets, competitors who don't publish, buyers who search very specific phrases. This is where exhaustive long-tail coverage does its best work."
+      ]
+    },
+    {
+      "h2": "What the guarantee measures when the numbers are small",
+      "body": [
+        "The first fortnight is a technical crawl, a Search Console and analytics review, a long-tail keyword build off your own query data, and a written baseline: your trailing-90-day count of qualified leads from organic search, frozen on day one.",
+        "That number is the whole contract. Miss it in ninety days and we keep working free until we beat it. We never promise a ranking position — nobody controls Google's index, and on a keyword with 90 searches a month a position guarantee would be a promise about almost nothing anyway.",
+        "Small numbers do change how we set this up. When a baseline is eight leads a quarter, one unusually good week distorts the percentage, so we work in absolute counts and define \"qualified\" narrowly and in writing before day one — what counts, what's spam, what's an existing customer coming back through search. If your volumes are genuinely tiny, we'll propose a longer measurement window rather than pretend ninety days is statistically clean. That's a worse-sounding offer and a more honest one.",
+        "Our SEO is ₹75,000/mo — roughly NZ$1,450 at a rupee–dollar rate near ₹88, which moves — with smaller sites from ₹40,000, around NZ$770. All ex-GST on our side; New Zealand GST treatment on imported services is your accountant's call, not ours. Ad spend is billed separately with zero media markup. Auckland runs six and a half to seven and a half hours ahead of India depending on daylight saving, which is the best working overlap of any English-speaking market we serve: your afternoon is our morning. We take three new clients a month, because a guarantee like this can't be carried at volume. The wider cost picture is in [what SEO costs in India](/cost/seo-cost-in-india)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why shouldn't I set a traffic target for my Auckland site?",
+      "a": "Because the market caps it. With about 1.7 million people in Auckland and 5.3 million nationally, most commercial keywords draw low hundreds of searches a month, so traffic growth runs out within a year or so. Set the target on qualified enquiries instead, and treat conversion rate and long-tail coverage as the levers."
+    },
+    {
+      "q": "Keyword tools show zero volume for my terms. Is there no demand?",
+      "a": "Usually there is. Tools estimate from clickstream samples, and in a country of five million the sample is too thin to register genuine low-volume terms. Use your own Search Console query export, your sales inbox and autocomplete instead. A term searched fifteen times a month by ready buyers is worth having."
+    },
+    {
+      "q": "Should I use a .co.nz or a .com domain?",
+      "a": "A .co.nz or .nz domain is a strong New Zealand targeting signal and the right choice if New Zealand is your market. If you intend to sell into Australia or globally later, run a .com instead and target New Zealand through content, hreflang and local signals — a country-code domain is hard to grow beyond its country."
+    },
+    {
+      "q": "Why do Australian sites outrank me in New Zealand results?",
+      "a": "Australia has roughly five times the population, so Australian sites accumulate more content and more links on identical English terms. They win generic queries. They lose New Zealand-specific ones — NZD pricing, GST, local standards, suburb and region names — because they can't write them credibly. Specificity is the counter, not authority."
+    },
+    {
+      "q": "How much does SEO cost in Auckland?",
+      "a": "New Zealand agencies price off New Zealand salaries, so expect quotes to reflect that. Ours is ₹75,000/mo, roughly NZ$1,450 at a rupee–dollar rate near ₹88, with smaller sites from ₹40,000 or about NZ$770. Ex-GST on our side, ad spend billed separately with zero media markup."
+    },
+    {
+      "q": "How does the 90-day guarantee work with tiny lead volumes?",
+      "a": "We freeze your trailing-90-day count of qualified organic leads on day one and work in absolute numbers, not percentages. \"Qualified\" gets defined in writing before we start. If your volumes are small enough that ninety days is statistically noisy, we'll propose a longer window rather than pretend otherwise."
+    }
+  ],
+  "related": [
+    { "type": "seo-agency", "slug": "melbourne" },
+    { "type": "services", "slug": "conversion-rate-optimisation-services" },
+    { "type": "glossary", "slug": "long-tail-keywords" },
+    { "type": "compare", "slug": "keyword-rankings-vs-organic-traffic" },
+    { "type": "journal", "slug": "how-to-set-an-seo-baseline" },
+    { "type": "cost", "slug": "seo-cost-in-india" }
+  ]
+}

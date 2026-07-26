@@ -1,0 +1,177 @@
+{
+  "slug": "marketplaces",
+  "type": "seo-for",
+  "primaryKeyword": "seo for marketplaces",
+  "secondaryKeywords": [
+    "marketplace seo india",
+    "programmatic seo for marketplaces",
+    "seo for aggregator platforms",
+    "supply page seo",
+    "user generated content seo"
+  ],
+  "cluster": "saas-and-tech",
+  "intent": "commercial",
+  "industry": "Marketplaces",
+  "h1": "SEO for marketplaces, where supply pages are the actual product",
+  "metaTitle": "SEO for Marketplaces: Programmatic at Scale",
+  "metaDescription": "SEO for marketplaces in India. Decide which category, city and supplier templates deserve indexing, noindex the rest, and prove it with sitemaps and logs.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Marketplace SEO is an indexation problem before it is a content problem. Category, city and supplier templates multiply into hundreds of thousands of URLs, most of them thin. Decide which templates earn indexing, noindex the rest, and prove it with segmented sitemaps and log files. Expect six to twelve months.",
+  "takeaways": [
+    "Past roughly 100,000 URLs, indexation stops keeping pace with publication. Nothing broke — the site simply outgrew its crawl allocation and its average page quality.",
+    "Write the index rule into the template, not into a document. A city page below your listing floor should noindex itself, and index itself again the week it fills.",
+    "`noindex` does not save crawl. Google has to fetch the page to read the tag. Robots.txt saves crawl but can leave a bare URL in the results. They solve different problems.",
+    "Segment your XML sitemaps by template. It converts 'indexation is bad' into 'the supplier template is at 11% and everything else is fine' — which is a fixable statement."
+  ],
+  "sections": [
+    {
+      "h2": "The URL count nobody budgeted for",
+      "body": [
+        "Take 40 categories, 60 cities, eight filters and four sort orders. That is not 40 pages. Multiplied out, with pagination on top, it's a number with six digits in it — and every one of those URLs is a request Googlebot may or may not choose to make.",
+        "Marketplaces hit the wall at a predictable moment. Somewhere past the first hundred thousand URLs, indexation stops keeping pace with publication. New supplier pages sit in 'Discovered — currently not indexed' for weeks. Search Console starts reporting more excluded pages than valid ones. The engineering team can't find a bug because there isn't one. The site got bigger than its crawl allocation, and the average quality of a page fell below the line at which Google bothers."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "What crawl allocation is actually rationing",
+        "body": "Google crawls based on how fast your server responds and how much it wants your pages. You control both. A marketplace serving two-second responses with 60% near-duplicate templates is asking Googlebot to spend its allocation on pages it already decided not to index, while the pages that would rank wait at the back of the queue. The mechanics are in [crawl budget](/glossary/crawl-budget)."
+      }
+    },
+    {
+      "h2": "Index thresholds: the rule that decides which pages exist for Google",
+      "body": [
+        "The useful question is not 'should we index listing pages'. It's 'what has to be true about a listing page before it earns a place in the index'. Write that rule down, put it in the template, and let the code enforce it — because a rule that needs a human to flip a flag will not be applied at 200,000 URLs."
+      ],
+      "table": {
+        "caption": "A workable indexation policy for a large marketplace.",
+        "head": ["Template", "Default", "The rule"],
+        "rows": [
+          [
+            "Category (`/plumbers`)",
+            "Index",
+            "Always. This is the head term and the hub everything below it links from."
+          ],
+          [
+            "Category × city (`/plumbers/pune`)",
+            "Index above a threshold",
+            "Index when the page carries enough live listings to be useful. Pick a floor — five to ten is common — and enforce it in code. Below it, keep the page live for users and noindex it until it fills."
+          ],
+          [
+            "Category × city × filter (`/plumbers/pune/24x7`)",
+            "Index a chosen few",
+            "Only the filter values with real search demand: emergency, 24x7, verified, price band. Everything else stays usable but noindexed, or never gets a crawlable URL at all."
+          ],
+          [
+            "Sort orders and pagination",
+            "Noindex or canonical",
+            "Sorting changes order, not content. Noindex the sort variants, self-canonicalise page two onwards, and don't rely on `rel=next` and `rel=prev` — Google stopped using them in 2019."
+          ],
+          [
+            "Individual supplier or listing page",
+            "Index, conditionally",
+            "Index when the supplier has real content: description, photos, reviews, hours, coverage. Auto-generated stubs are the single largest source of thin pages on a marketplace."
+          ],
+          [
+            "Zero-result pages",
+            "Never index",
+            "An empty results page is a soft 404 to Google and a dead end to the user. Show the nearest useful alternative and keep the empty state out of the index."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Never block and noindex the same URL.** A page disallowed in robots.txt can't be fetched, so its noindex tag is never seen and the URL can linger in results. This is the most common indexation bug on large sites, and it's usually about a year old by the time anyone finds it.",
+        "**Make the thresholds dynamic in both directions.** Pages fill and pages empty. A city that drops below the floor because three suppliers churned should quietly step out of the index.",
+        "**Don't index a page you wouldn't send a paid click to.** It's a crude test and it's right more often than a committee."
+      ]
+    },
+    {
+      "h2": "Segmented sitemaps and log files, or you are guessing",
+      "body": [
+        "You cannot manage indexation on a marketplace by reading the site-level coverage report. It averages across templates and tells you nothing about which one is failing. Five changes turn that report into something you can act on."
+      ],
+      "numbered": [
+        "**Split XML sitemaps by template.** One for categories, one for city pages, one for suppliers, one per major vertical if you're large. Search Console reports indexation per sitemap, which turns a vague problem into a specific one.",
+        "**Cap each sitemap well under the 50,000-URL limit** so the percentages stay readable, and set `lastmod` honestly. A sitemap claiming everything changed yesterday gets treated as noise.",
+        "**Pull server logs monthly and count Googlebot hits by template.** [Log file analysis](/glossary/log-file-analysis) is the only way to see where crawl actually goes, and on most large marketplaces the answer is embarrassing: parameter URLs, expired listings and page 14 of pagination absorb most of it.",
+        "**Track time-to-index for new supply.** Measure the days between a listing going live and its first Googlebot hit, then its first impression. When that number starts climbing you have a crawl problem months before traffic shows it.",
+        "**Fix response time before adding pages.** Crawl rate is partly a function of how fast you serve. A faster origin genuinely earns more crawl, and it's usually cheaper than another content sprint."
+      ]
+    },
+    {
+      "h2": "Supply pages before demand: the SEO version of chicken and egg",
+      "body": [
+        "Every marketplace launches a city before it has suppliers there, and every marketplace asks the same question: publish the empty page and hope, or wait until it fills and lose six months of ranking age?",
+        "Neither. Publish it, keep it out of the index, and make it useful with something other than listings — which is exactly the content most marketplaces never write."
+      ],
+      "bullets": [
+        "**Build the non-listing content first.** What the service costs in that city, what a typical job involves, licensing or registration requirements, seasonal demand, how long people usually wait. This ranks on its own and it's what lets the page clear a quality bar the moment listings arrive.",
+        "**Seed from the demand side.** A city page with zero suppliers and a working 'post a requirement' form still converts, still collects intent data, and tells your supply team exactly where to recruit next.",
+        "**Never fake supply.** Scraped listings and placeholder profiles are the shortest path to a manual action, and in India the shortest path to a consumer complaint thread outranking your own brand page.",
+        "**Promote to indexable the week the floor is crossed**, not at the next quarterly review. That gap is where months of ranking age quietly disappear."
+      ]
+    },
+    {
+      "h2": "Duplicate listings and UGC: the ranking asset that also breaks the site",
+      "body": [
+        "Reviews, questions and supplier descriptions are the only content on a marketplace a competitor cannot copy. They are also where most of your duplication comes from, because suppliers list themselves three times, copy each other's descriptions, and paste the same paragraph across every city they claim to serve."
+      ],
+      "bullets": [
+        "**Deduplicate at creation.** Phone number, GST number and address matching at listing time prevents a problem that is close to unfixable at 200,000 URLs.",
+        "**Enforce a minimum on supplier-written copy**, or generate structured content from fields you actually hold — services, coverage, hours, price band, response time — rather than shipping a blank description because a supplier couldn't be bothered.",
+        "**Moderate reviews and keep the bad ones.** A category where every supplier holds five stars reads as fake to users and to Google, and review markup that only ever shows perfect ratings invites a structured-data manual action.",
+        "**Never mark up ratings you didn't collect.** Pulling a supplier's rating from their own website and republishing it as yours is a policy problem, not a clever shortcut.",
+        "**Retire expired listings deliberately.** 410 for genuinely gone, 301 to the parent category where a real equivalent exists, and keep the page alive with a 'no longer available — here are 12 nearby' block where the URL has links. The one thing you must not do is leave 40,000 dead pages returning 200."
+      ]
+    },
+    {
+      "h2": "When a template turns out to be thin: fill, merge or prune",
+      "body": [
+        "Sooner or later you will find a template producing 30,000 pages and 400 clicks a month. There are three honest responses, and 'publish more of them' is not one of them."
+      ],
+      "numbered": [
+        "**Fill** — if the pages could genuinely carry different content and you will actually build it. Data you already hold counts: median price in that city, typical response time, how many suppliers, what changed this month.",
+        "**Merge** — collapse `plumbers/pune/24x7` and `emergency-plumbers/pune` into whichever URL is stronger, 301 the loser, and stop pretending they were different queries.",
+        "**Prune** — noindex, or remove and return 410. Cutting 30,000 thin pages regularly improves how the survivors perform, because thin content at scale is a site-level signal, not a per-page one."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where we'd start on a marketplace",
+        "body": "Indexation policy first, because content spend on a site that can't get crawled is money set on fire. Then sitemap segmentation and a log pull, then the supply-page content model, then the head categories. We've written more about that judgment call in [programmatic SEO and the scaled content line](/journal/programmatic-seo-and-the-scaled-content-line). Our SEO runs from ₹75,000/mo, ex-GST, and the number we commit to is your own trailing-90-day qualified leads from organic search, frozen on day one — miss it in 90 days and we keep working free until we beat it."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many URLs is too many for a marketplace?",
+      "a": "There is no fixed number. The signal to watch is the ratio: what share of submitted URLs is indexed, by template, and whether that share is falling as you publish. When new supplier pages take four weeks to get a first crawl instead of four days, you're past your allocation regardless of the absolute count."
+    },
+    {
+      "q": "Should individual marketplace listing pages be indexed?",
+      "a": "Conditionally. A supplier page with a real description, photos, reviews and coverage details deserves indexing and often ranks for long-tail brand-plus-city queries. An auto-generated stub with a name and a phone number does not. Set a content floor in the template and let it decide."
+    },
+    {
+      "q": "Does noindex save crawl budget?",
+      "a": "No. Google has to crawl a page to see the noindex tag, so a noindexed URL still costs a fetch. Over time Google crawls persistently noindexed pages less often, but if you need immediate crawl relief, stop generating the URL or block the pattern in robots.txt — accepting that a blocked URL can still surface as a bare link."
+    },
+    {
+      "q": "How do you build city pages before you have suppliers there?",
+      "a": "Publish the page with genuinely useful non-listing content — local pricing, what the job involves, seasonal demand — and keep it noindexed until it clears your listing floor. It converts demand-side signups from day one, and it has real age and internal links the moment supply arrives."
+    },
+    {
+      "q": "How long does marketplace SEO take to show results?",
+      "a": "Six to twelve months on a large site, and the range is that wide because it depends on how much of the first quarter goes to fixing indexation rather than adding pages. Sites that start with a crawl and template audit usually move slower in month two and considerably faster by month six."
+    },
+    {
+      "q": "Is programmatic SEO safe for marketplaces in 2026?",
+      "a": "Yes, when each generated page contains something a reader would miss if it vanished — real listings, real prices, real reviews. Google's spam policies target pages created at scale that add no value, not templating itself. If you cannot say what a page does for a reader, don't publish it."
+    }
+  ],
+  "related": [
+    { "type": "services", "slug": "programmatic-seo-services" },
+    { "type": "journal", "slug": "programmatic-seo-and-the-scaled-content-line" },
+    { "type": "glossary", "slug": "crawl-budget" },
+    { "type": "glossary", "slug": "thin-content" },
+    { "type": "answers", "slug": "why-is-my-page-not-indexed-on-google" },
+    { "type": "seo-for", "slug": "ecommerce" }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "slug": "ai-search-optimisation-services",
+  "type": "services",
+  "primaryKeyword": "ai search optimisation services",
+  "secondaryKeywords": [
+    "ai seo services india",
+    "llm visibility service",
+    "chatgpt search optimisation service",
+    "ai overviews optimisation",
+    "ai search agency india"
+  ],
+  "cluster": "ai-search",
+  "intent": "commercial",
+  "h1": "Make sure the AI crawlers can reach you first",
+  "metaTitle": "AI Search Optimisation Services — Access Comes First",
+  "metaDescription": "AI search optimisation starts with access. We prove GPTBot and PerplexityBot can crawl you, fix Bing indexation, then track mentions across assistants.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "priceFrom": "From ₹75,000 / mo",
+  "answer": "AI search optimisation starts with access, not content. We pull your server logs to see which AI crawlers reached you and which got a 403, fix the robots.txt and CDN bot rules blocking them, repair Bing indexation, then track your mentions across assistants monthly. From ₹75,000 a month.",
+  "takeaways": [
+    "A large share of the Indian sites we audit are invisible to assistants for a boring reason: a Cloudflare bot rule, a copy-pasted robots.txt, or no Bing index presence at all.",
+    "**Blocking a training crawler and blocking a search crawler are different decisions.** Block `OAI-SearchBot` or `PerplexityBot` and you delete yourself from citations. Block `GPTBot` and you mostly affect training.",
+    "Copilot and several assistants read Bing. If you're not in Bing's index, that entire surface is closed regardless of how good your Google rankings are.",
+    "From ₹75,000/mo. The 90-day baseline is your assistant mention count against a frozen prompt panel, plus qualified organic leads. Never a guaranteed mention."
+  ],
+  "sections": [
+    {
+      "h2": "Week one is a log-file audit, not a content plan",
+      "body": [
+        "Most AI visibility proposals start with content. Ours starts with a question that takes a day to answer and decides whether the rest of the work is worth doing: in the last 30 days, did an AI crawler request a page on your site, and what status code did it get back?",
+        "The answer is regularly ugly. We see sites where `GPTBot` and `PerplexityBot` have been served a 403 on every request for months, sites where the whole `/blog/` directory is disallowed by a robots.txt somebody copied from a template in 2019, and sites where the crawler got a 200 with an empty HTML shell because the content only exists after JavaScript runs.",
+        "None of those are content problems. You can rewrite every page on a blocked site and change nothing. So we read [the server logs](/glossary/log-file-analysis) first, in week one, before anyone opens a document."
+      ],
+      "numbered": [
+        "**Pull 30–90 days of raw server or CDN logs** and filter by AI user agent. Analytics won't show you this; bots don't run JavaScript.",
+        "**Record status codes per bot.** A 403 or 429 pattern is a block. A 200 that returns a near-empty body is a rendering problem, which is worse because it looks fine.",
+        "**Diff robots.txt against intent.** Not what you meant to allow — what the file actually says today.",
+        "**Check the CDN and WAF rules separately.** Robots.txt can permit a crawler that Cloudflare then blocks before it ever reaches your server.",
+        "**Test render without JavaScript.** If your content isn't in the initial HTML, assume a meaningful share of crawlers never see it."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "If you can't get logs, say so early",
+        "body": "Some managed hosts in India won't hand over raw logs, and some Shopify plans simply don't expose them. There are workarounds — Cloudflare's own analytics, a reverse-proxy log, synthetic fetch tests per user agent — but they're partial. We'd rather tell you the audit is 70% confident than pretend it's complete."
+      }
+    },
+    {
+      "h2": "Who's actually crawling you, and what blocking each one costs",
+      "body": [
+        "The single most useful distinction in this whole field, and the one most 'AI SEO' proposals blur: some of these crawlers build training data, and some of them fetch pages to answer a question right now. Blocking the second group removes you from citations. Blocking the first group is a licensing and copyright decision with a much smaller visibility cost.",
+        "We map every one of them against your logs and give you a decision per bot, with the trade-off written down."
+      ],
+      "table": {
+        "caption": "AI crawlers, what they're for, and what blocking each one actually costs.",
+        "head": ["Agent", "Who runs it", "What it does", "Cost of blocking it"],
+        "rows": [
+          ["`GPTBot`", "OpenAI", "Crawls broadly, primarily for model training data.", "Mostly a training and licensing decision, not a citation one."],
+          ["`OAI-SearchBot`", "OpenAI", "Indexes pages so ChatGPT can surface and link them in search results.", "High. Block it and you remove yourself from ChatGPT's linked results."],
+          ["`ChatGPT-User`", "OpenAI", "Fetches a page live because a user's question needed it.", "High. This is the real-time citation path."],
+          ["`PerplexityBot`", "Perplexity", "Indexes pages for Perplexity's answers.", "High. Perplexity cites sources prominently and sends real clicks."],
+          ["`ClaudeBot`", "Anthropic", "Crawls for Anthropic's models and assistant retrieval.", "Moderate to high, depending on how your buyers use it."],
+          ["`Google-Extended`", "Google", "A robots token controlling use of your content in Gemini and Vertex AI grounding.", "Low for search. It does not affect Google Search indexing or AI Overviews inclusion."],
+          ["`Bingbot`", "Microsoft", "Builds the Bing index that Copilot and several assistants read from.", "Very high. This is the least glamorous and most consequential row here."],
+          ["`Applebot-Extended`", "Apple", "Opt-out token for Apple's generative training, separate from `Applebot` search crawling.", "Low for visibility, relevant if training use concerns you."],
+          ["`CCBot`", "Common Crawl", "Builds the open dataset a great many models are trained on.", "Training exposure only, and it's a one-way door once you're out of the archive."]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "There's a real argument for blocking some of these",
+        "body": "If your business is publishing, letting training crawlers take everything for free is a genuine commercial question, not a technical one. We're not ideological about it. We'll implement whichever position you take — we just insist you take it knowingly. The two sides are laid out in [should you block AI crawlers](/journal/should-you-block-ai-crawlers)."
+      }
+    },
+    {
+      "h2": "Cloudflare is usually the culprit",
+      "body": [
+        "When a site is invisible to assistants and the robots.txt looks fine, the answer is almost always sitting in front of the origin. India's small-and-mid-market web runs heavily on Cloudflare's free and Pro tiers, and its bot controls are aggressive by design — that's what they're for.",
+        "Cloudflare has also shipped one-click AI crawler blocking, and since mid-2025 has been blocking AI crawlers by default for newly onboarded domains. If nobody at your company has looked at that setting, the default may well be making your decision for you."
+      ],
+      "bullets": [
+        "**Bot Fight Mode** challenges clients that don't behave like browsers. Legitimate crawlers frequently fail that test and receive a challenge page instead of your content.",
+        "**Managed AI-crawler rules** may be on without anyone enabling them deliberately, particularly on domains added recently.",
+        "**Rate limiting** at aggressive thresholds looks like a partial block: some pages get through, deep pages never do, and the pattern is invisible without logs.",
+        "**Firewall rules by country or ASN**, written years ago to stop scrapers, that also catch the datacentre IPs these crawlers use — or a security level left on 'I'm Under Attack' after an incident and never turned back down."
+      ],
+      "subs": [
+        {
+          "h3": "What we change, and what we ask you to decide",
+          "body": [
+            "We write the robots.txt, propose the CDN rule set, and hand you a one-page decision sheet: allow, allow-with-rate-limit, or block, per agent, with the visibility trade-off for each. Implementation is ours if we have access, your team's if you'd rather. Then we re-pull logs in 14 days to confirm the crawler actually came back with a 200 — because 'we changed the rule' and 'the bot returned' are two different claims and only one of them is evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Bing and IndexNow, because half this surface runs on Bing",
+      "body": [
+        "Indian companies spend years on Google and never open Bing Webmaster Tools. That was a reasonable trade when Bing was three percent of search. It stopped being reasonable when Microsoft grounded Copilot in Bing's index, and it's worth noting DuckDuckGo has long drawn on Bing results too.",
+        "We check whether you're indexed there at all — the answer is often 'partially, and nobody noticed' — and fix it. Bing's tooling makes this cheap: you can import your Google Search Console verification and property in a few clicks rather than re-verifying from scratch."
+      ],
+      "bullets": [
+        "**Verify and import the property**, then read Bing's own index coverage report. It flags different problems than Google's, and some of them are real.",
+        "**Submit sitemaps to Bing explicitly.** Discovery is slower there and it will not find you as forgivingly as Google does.",
+        "**Wire up IndexNow.** It's supported by Bing, Yandex, Seznam and Naver, and Cloudflare offers a one-toggle integration. New and updated URLs get pushed instead of waiting to be found.",
+        "**Fix Bing-specific crawl blocks.** `bingbot` is sometimes rate-limited or blocked by rules written to stop scrapers, entirely by accident.",
+        "**Check your pages actually render for Bingbot**, which historically handles JavaScript less generously than Googlebot."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The cheapest hour in the engagement",
+        "body": "Bing verification, sitemap submission and IndexNow together take roughly an hour of setup and no ongoing effort. There is no other hour in AI search work with that ratio of cost to potential surface area."
+      }
+    },
+    {
+      "h2": "How we track share of voice across assistants",
+      "body": [
+        "Once access is fixed there's a measurement problem, and it's genuinely hard. Assistants are non-deterministic — the same prompt can return different sources on consecutive runs — and answers vary by region and by account history. A single screenshot of ChatGPT mentioning you is not data.",
+        "So we sample. At kickoff we agree a panel of prompts your buyers would actually type, freeze the wording, and run the same panel every month from consistent locations. The panel doesn't change mid-engagement, because rewriting the questions is how an agency manufactures a rising line."
+      ],
+      "bullets": [
+        "**A frozen panel**, typically 40–80 prompts spanning category, comparison, cost and 'best in India' style questions.",
+        "**Run monthly across ChatGPT, Perplexity, Google AI Overviews and Copilot**, logging mention, link and cited URL separately.",
+        "**Report share of voice** — the share of panel prompts where you appear — plus the competitors appearing most, and which of your URLs earn the citations.",
+        "**Log the losses.** Prompts where a rival is quoted every month are the most useful lines in the report and the ones most agencies quietly omit.",
+        "**Show the error bars.** A sampled panel is an estimate with real variance. We print that on the report, not in a footnote."
+      ]
+    },
+    {
+      "h2": "What's included, what it costs, and what the guarantee covers",
+      "body": [
+        "AI search optimisation starts at **₹75,000 a month**, ex-GST, month-to-month after the first quarter, thirty days' notice, and you keep every asset. Smaller sites start at **₹40,000 a month**. Most clients pair it with [answer engine optimisation](/services/aeo-geo-services) — this service makes sure you're reachable, that one makes sure you're quotable. Full numbers on [pricing](/pricing)."
+      ],
+      "table": {
+        "caption": "What the AI search optimisation retainer covers, and what it doesn't.",
+        "head": ["Included", "Not included"],
+        "rows": [
+          ["Log-file audit of AI crawler access, with status codes per agent", "Server, CDN and hosting costs, or migrating you off a host that won't give logs"],
+          ["Robots.txt rewrite and a per-bot allow/block decision sheet", "The commercial decision itself — you own that, we implement it"],
+          ["CDN and WAF bot-rule review, with implementation if we have access", "Security architecture and DDoS response beyond crawler access"],
+          ["Bing Webmaster Tools setup, sitemap submission and IndexNow wiring", "Bing Ads or any paid placement on Microsoft properties"],
+          ["Rendering checks and a fix specification where content needs JavaScript", "Front-end engineering to implement server-side rendering"],
+          ["Frozen prompt panel, monthly runs, share-of-voice reporting with competitors", "Enterprise AI-monitoring tool licences if you want one alongside ours"],
+          ["Content restructuring for citation — only if you add [AEO](/services/aeo-geo-services)", "Wholesale content rewriting inside this retainer"]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "The guarantee, stated exactly",
+          "body": [
+            "We freeze two numbers on day one: your mention count across the agreed prompt panel, and your trailing-90-day qualified leads from organic search. Miss either at day 90 and we keep working free until we beat it. It isn't a refund and we won't market it as one — it's unpaid work until the numbers clear. Three clients a month, because you cannot carry that risk at volume.",
+            "We will never guarantee that a named assistant mentions you for a named prompt. Model outputs aren't stable and aren't controllable by anyone outside those companies. That promise is the 2026 version of guaranteeing position one — same trick, newer paint, and fewer founders have learned to spot it yet."
+          ]
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I know if AI crawlers are being blocked right now?",
+      "a": "Check your server or CDN logs for `GPTBot`, `OAI-SearchBot`, `PerplexityBot` and `ClaudeBot` over the last 30 days and look at the status codes they received. A run of 403s or challenge responses means you're blocked. Analytics won't show this — bots don't execute the JavaScript your analytics depends on."
+    },
+    {
+      "q": "Does blocking GPTBot remove me from ChatGPT answers?",
+      "a": "Not directly. `GPTBot` is primarily the training crawler; the ones that matter for live citations are `OAI-SearchBot` and `ChatGPT-User`. Many sites block all three by accident with one broad rule, which is the outcome nobody actually wanted. Separating those decisions is most of the value in the first month."
+    },
+    {
+      "q": "Do I need to be in Bing for AI search?",
+      "a": "For a meaningful part of the surface, yes. Microsoft Copilot is grounded in Bing's index, and DuckDuckGo has long used Bing results. If you're not indexed there, that whole path is shut regardless of how well you rank in Google. Verification and sitemap submission take about an hour."
+    },
+    {
+      "q": "Is this the same as AEO or GEO?",
+      "a": "No, and we split them on purpose so nobody pays twice. This service handles access and measurement — crawlers, robots, CDN rules, Bing, rendering, tracking. [Answer engine optimisation](/services/aeo-geo-services) handles content structure and entities so a model quotes your sentence rather than a competitor's."
+    },
+    {
+      "q": "Will llms.txt fix my AI visibility?",
+      "a": "Almost certainly not on its own. It's a proposed standard and no major assistant has publicly confirmed it uses one. We'll add it because it costs ten minutes, but a proposal that leads with `llms.txt` is a proposal with very little else in it. See [llms.txt](/glossary/llms-txt)."
+    },
+    {
+      "q": "How long until we see movement in assistant mentions?",
+      "a": "If access was blocked, unblocking it can show up within 4–8 weeks as crawlers re-fetch and indexes refresh. If access was already fine, the work is structural and takes three to six months. Retrieval behaviour also changes on the assistants' schedule, not ours, and we won't pretend to control that."
+    }
+  ],
+  "related": [
+    { "type": "services", "slug": "aeo-geo-services" },
+    { "type": "journal", "slug": "should-you-block-ai-crawlers" },
+    { "type": "glossary", "slug": "llms-txt" },
+    { "type": "answers", "slug": "what-are-google-ai-overviews" },
+    { "type": "glossary", "slug": "ai-visibility" },
+    { "type": "compare", "slug": "geo-vs-seo" }
+  ]
+}

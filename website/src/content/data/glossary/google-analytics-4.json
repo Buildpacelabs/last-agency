@@ -1,0 +1,136 @@
+{
+  "slug": "google-analytics-4",
+  "type": "glossary",
+  "primaryKeyword": "google analytics 4",
+  "secondaryKeywords": [
+    "ga4 meaning",
+    "ga4 vs universal analytics",
+    "how to set up ga4",
+    "ga4 events",
+    "ga4 reports for seo"
+  ],
+  "cluster": "analytics",
+  "intent": "navigational",
+  "h1": "Google Analytics 4",
+  "metaTitle": "Google Analytics 4: What Changed, What to Track",
+  "metaDescription": "Google Analytics 4 records events, not pageviews. Here's what broke in the forced migration and the six events an Indian lead-gen site must fire.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Google Analytics 4",
+  "definition": "Google Analytics 4 is Google's current analytics platform, which records everything a visitor does as an event with parameters rather than as pageviews inside a session.",
+  "answer": "Google Analytics 4 is Google's event-based analytics platform, and since July 2023 it's the only version collecting data. Everything — a page view, a scroll, a WhatsApp tap — is an event with parameters attached. For a lead-generation site, the setup that matters is six events, marked as key events, plus a Search Console link.",
+  "takeaways": [
+    "In GA4 there are no pageviews and no goals. There are **events** and **parameters**, and a handful of events you flag as **key events**.",
+    "Your Universal Analytics history is gone. Google deleted it from 2024 onward — if nobody exported, that era is unrecoverable.",
+    "Default GA4 tells you almost nothing useful. The value is entirely in the six or so events you configure yourself.",
+    "Link GA4 to Search Console. It takes two minutes and most properties still haven't done it."
+  ],
+  "sections": [
+    {
+      "h2": "Sessions and pageviews became events and parameters",
+      "body": [
+        "Universal Analytics thought in sessions containing pageviews. GA4 thinks in events, full stop. A page view is an event named `page_view`. A scroll is `scroll`. A form submission is whatever you name it. Each carries parameters — the page path, the button label, the value in rupees.",
+        "This is genuinely better for the way people actually behave now, where a visit spans an app, a mobile browser and a desktop. It's also why every report looks unfamiliar: you're no longer counting visits to pages, you're counting things that happened.",
+        "Sessions still exist, defined as activity ending after 30 minutes of inactivity. Unlike the old tool, GA4 doesn't start a new session at midnight or when the campaign source changes — so your session counts will not match your old ones, and shouldn't."
+      ]
+    },
+    {
+      "h2": "What broke in the migration, honestly",
+      "body": [
+        "Standard Universal Analytics properties stopped processing data on 1 July 2023 and the historical data was deleted from July 2024. This was not a gentle upgrade and pretending otherwise wastes people's time."
+      ],
+      "bullets": [
+        "**Your history is gone** unless somebody exported it to Sheets or BigQuery before the deletion. There's no recovery path.",
+        "**Goals became key events**, and Google renamed conversions to key events in 2024 to stop the confusion with Google Ads conversions. Same idea, different words, all your old documentation is wrong.",
+        "**Bounce rate changed meaning.** GA4's version is the inverse of engagement rate — see [bounce rate](/glossary/bounce-rate) for why the comparison across the migration is invalid.",
+        "**Views are gone.** The filtered-view pattern everyone relied on doesn't exist; you get data streams and, on the paid tier, subproperties.",
+        "**BigQuery export is free**, which it wasn't before. This is the one unambiguous upgrade, and almost nobody switches it on."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Check your data retention setting",
+        "body": "GA4 defaults user-level data retention to two months on the free tier. Fourteen months is available in Admin, one dropdown away, and it applies going forward only. Every month you leave it on the default is a month you can't explore later."
+      }
+    },
+    {
+      "h2": "The six events a lead-gen site should be firing today",
+      "body": [
+        "Out of the box, GA4 gives you page views and a few automatic events. Useful for nothing. This is the minimum set for an Indian service or D2C site, and all six are Tag Manager triggers rather than developer work."
+      ],
+      "numbered": [
+        "**`generate_lead`** — form submitted, fired on the actual success state rather than the button click. Button clicks count failed validations as leads.",
+        "**`click_whatsapp`** — any click on a `wa.me` or `api.whatsapp.com` link. On most Indian sites this outnumbers form fills.",
+        "**`click_phone`** — any `tel:` link click. Mobile-heavy traffic makes this the largest conversion path on local service sites.",
+        "**`view_pricing`** — a page view on your pricing or packages page, as a strong intent signal well before anyone enquires.",
+        "**`file_download`** — brochures, catalogues, spec sheets, price lists. Common in manufacturing and B2B.",
+        "**`book_meeting`** — the Calendly or booking-tool completion, tracked properly rather than assumed."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Mark them, don't drown in them",
+        "body": "Flag only the two or three that represent a real enquiry as key events. Everything else stays a plain event you can still report on. A property with eleven key events has no key events."
+      }
+    },
+    {
+      "h2": "Linking Search Console, and the gotchas that waste an afternoon",
+      "body": [
+        "In Admin, link your [Google Search Console](/glossary/google-search-console) property, then publish the Search Console reports from the Library — the second step is the one everyone forgets, which is why the reports appear to be missing. Once linked you can see landing pages next to the queries that produced them, which neither tool shows alone. The differences between them are covered in [GA4 versus Search Console](/compare/ga4-vs-search-console).",
+        "Four things reliably cost people an afternoon before they realise it's normal behaviour rather than a broken setup."
+      ],
+      "bullets": [
+        "**Data thresholds.** With Google signals enabled, GA4 hides rows that could identify an individual — you'll see a small orange icon and lower totals. Turn signals off if demographic data isn't worth it to you.",
+        "**Processing delay.** Standard properties can take 24 to 48 hours to finalise. Realtime shows now; the rest doesn't.",
+        "**`(not set)`** — a parameter that didn't arrive. Usually a tag firing before the value exists.",
+        "**Cardinality limits.** Very high-variety dimensions get bundled into an `(other)` row. Custom dimensions on unique IDs are the usual culprit."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Universal Analytics data recoverable?",
+      "a": "No. Google stopped processing standard Universal Analytics data on 1 July 2023 and deleted the historical data from July 2024. If it wasn't exported to Sheets, Looker Studio extracts or BigQuery beforehand, it's gone permanently."
+    },
+    {
+      "q": "What is a key event in GA4?",
+      "a": "It's what used to be called a conversion. Any event can be flagged as a key event in Admin, which promotes it into the main reports. Google renamed it in 2024 to separate it from Google Ads conversions. Keep the list to two or three that genuinely represent an enquiry."
+    },
+    {
+      "q": "Why don't GA4 and Search Console numbers match?",
+      "a": "They measure different moments. Search Console counts clicks on the results page; GA4 counts sessions that loaded a tag. Ad blockers, bounced loads, consent banners and redirects all sit between the two. A gap of 10–20% is routine and not worth investigating."
+    },
+    {
+      "q": "Do I need Google Tag Manager to use GA4?",
+      "a": "Not strictly, but almost always yes. Every event beyond the automatic ones needs a trigger, and doing that in Tag Manager takes minutes where a developer ticket takes weeks. Install both together or you'll end up reinstalling anyway."
+    },
+    {
+      "q": "How long does GA4 keep my data?",
+      "a": "Aggregate reports are retained indefinitely, but user-level and event-level data for exploration defaults to two months on the free tier, extendable to fourteen in Admin. The setting is not retroactive, so change it on day one."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "glossary",
+      "slug": "conversion-rate"
+    },
+    {
+      "type": "glossary",
+      "slug": "bounce-rate"
+    },
+    {
+      "type": "services",
+      "slug": "analytics-setup-services"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    }
+  ]
+}

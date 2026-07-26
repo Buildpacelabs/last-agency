@@ -1,0 +1,192 @@
+{
+  "slug": "what-is-a-backlink-profile",
+  "type": "answers",
+  "primaryKeyword": "what is a backlink profile",
+  "secondaryKeywords": [
+    "backlink profile meaning",
+    "how to analyse a backlink profile",
+    "what makes a healthy backlink profile",
+    "toxic backlink profile"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "Reading a backlink profile like an auditor",
+  "metaTitle": "What Is a Backlink Profile? How to Read One",
+  "metaDescription": "What is a backlink profile and how do you judge one? Six ratios with healthy ranges, from anchor spread to link velocity, plus when a disavow helps.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "A backlink profile is the full set of links pointing at your site, viewed as a shape rather than a number: which domains, what anchor text, what proportion nofollowed, acquired at what rate. Auditing it means checking six ratios. A bought profile fails at least three of them within ten minutes.",
+  "takeaways": [
+    "A profile isn't a score. It's a distribution, and distributions have signatures — natural growth is messy, purchased growth is suspiciously tidy.",
+    "The single fastest tell is **anchor text**. Natural profiles are dominated by brand names and bare URLs, not commercial keywords.",
+    "The ranges below are working heuristics from auditing sites, not Google-published thresholds. Nobody outside Google has those.",
+    "Most sites never need to disavow anything. Reflexive disavowing does more damage than the links did."
+  ],
+  "sections": [
+    {
+      "h2": "A profile is a shape, not a score",
+      "body": [
+        "Every tool that shows you backlinks also shows a number — DA, DR, Trust Flow, Authority Score. Those are third-party estimates built to be comparable at a glance, and they're the least informative thing on the screen. Two sites with identical DR 40 can have completely different profiles, one of which survives the next core update.",
+        "What an auditor reads instead is the distribution: where links come from, how varied the sources are, what words they're wrapped in, when they arrived, and whether the pattern has a plausible cause in the real world. A profile is a story about how a business became known. Real stories are uneven. Manufactured ones are regular in ways that are easy to spot.",
+        "One thing upfront: the ranges below are practitioner heuristics, from looking at a lot of profiles and knowing which ones later had problems. Google publishes no thresholds. Anyone quoting an exact safe percentage is dressing up the same guesswork."
+      ]
+    },
+    {
+      "h2": "The six ratios, and where healthy sits",
+      "body": [
+        "Run these in order. Any backlink tool gives you all six, free tiers included, and Search Console's links report covers the first two adequately."
+      ],
+      "table": {
+        "caption": "Six backlink profile ratios, with working ranges. Heuristics, not published thresholds.",
+        "head": ["Ratio", "What healthy looks like", "What a failure means"],
+        "rows": [
+          [
+            "**1. Referring domains : total backlinks**",
+            "Roughly 1:5 to 1:50 for most sites. Older sites and news publishers sit higher.",
+            "1:500 and up means sitewide footer, widget or template links inflating the count. Ignore the big number."
+          ],
+          [
+            "**2. Branded and bare-URL anchor share**",
+            "Usually the majority — brand name, domain name, \"here\", the page title.",
+            "If exact-match commercial anchors are more than roughly 10–15% of anchors, no natural process produced that."
+          ],
+          [
+            "**3. Dofollow : nofollow**",
+            "A real profile carries a meaningful nofollowed share — social, forums, big media, Wikipedia.",
+            "Near 100% dofollow is the clearest purchase signal there is. Nobody earns only followed links."
+          ],
+          [
+            "**4. New referring domains per month**",
+            "Uneven, and correlated with something you did — a launch, a study, press coverage.",
+            "Vertical spikes with no cause, or perfectly identical monthly counts. Both are subscriptions."
+          ],
+          [
+            "**5. Topically relevant domain share**",
+            "A clear majority from your sector or adjacent to it, plus local and general press.",
+            "A dental clinic with links from crypto, casino and essay-writing sites is holding somebody else's inventory."
+          ],
+          [
+            "**6. Geographic and language mix**",
+            "Broadly matches where you sell. An Indian B2B firm should skew Indian, with some global trade press.",
+            "Heavy concentration in unrelated markets and languages is the signature of a cheap link package."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "A seventh, if you have time",
+        "body": "Homepage versus deep-page link share. Small sites are legitimately homepage-heavy. But if 95% of links point at the homepage and none at the pages you're trying to rank, that profile was built for a metric, not a ranking."
+      }
+    },
+    {
+      "h2": "The ten-minute audit",
+      "body": [
+        "This is the actual sequence, in the order that finds problems fastest. It works on your own site and just as well on a competitor's, which is the more interesting use."
+      ],
+      "numbered": [
+        "**Pull referring domains, not links.** Then ignore whatever authority metric your tool shows and just read the domain names. Thirty seconds of that catches most of what an algorithm would flag.",
+        "**Open the anchor text report** and sort by frequency. If a commercial phrase sits above your brand name, you've found the problem already.",
+        "**Check the dofollow split.** Anything above roughly 90% followed deserves an explanation.",
+        "**Look at the referring domain graph over time.** Shape, not slope. Steps mean campaigns; smooth vertical climbs mean purchases.",
+        "**Sample twenty referring pages at random and actually visit them.** The step everyone skips and the one that settles it. Does the page look like something a person would read? Is your link surrounded by six unrelated commercial links?",
+        "**Check where the links point.** Homepage-only distribution on a fifty-page site means the links were bought for a number, not a ranking."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The sample-twenty step is non-negotiable",
+        "body": "Every metric can be gamed and most spam scores are noisy. Twenty minutes of opening actual pages has never let us down, and it's how we can tell a client's previous agency bought links without needing a tool to agree."
+      }
+    },
+    {
+      "h2": "What a bought profile looks like from the outside",
+      "body": [
+        "Once you've read a few, purchased profiles become obvious. They share tells because a small number of suppliers produce them from the same playbook."
+      ],
+      "bullets": [
+        "**Guest posts on sites that publish nothing else anyone reads.** Twelve unrelated industries in one blog category, every post around 800 words with two outbound commercial links.",
+        "**Identical anchor text across dozens of domains.** Real writers phrase things differently. Order forms don't.",
+        "**Links appearing in a burst, then nothing.** Somebody bought a package in March and let it lapse.",
+        "**Domains with high authority scores and no traffic.** Expired domains rebuilt to sell links. The metric survived; the audience didn't.",
+        "**Referring sites whose own outbound links are 90% commercial.** Opening a referring site's link report is the fastest way to identify a network.",
+        "**Footer links across an entire template**, usually a web developer's client sites all pointing at each other."
+      ]
+    },
+    {
+      "h2": "When a disavow is justified — and when it backfires",
+      "body": [
+        "The disavow tool tells Google to ignore specific links. It's useful in a narrow set of cases and harmful as routine hygiene, which is how a lot of tools market it.",
+        "Google's position has been consistent for years: most sites never need it, because the systems already discount links they don't trust. It exists mainly for cases where you know something bad was built and Google might reasonably hold you responsible."
+      ],
+      "subs": [
+        {
+          "h3": "Justified",
+          "bullets": [
+            "You have a **manual action** for unnatural links in Search Console. The clearest case, and it usually needs a removal effort alongside the file.",
+            "You **know links were bought** — by you or a previous agency — and can identify them specifically.",
+            "A **penalty-era legacy** on an old domain, where thousands of directory or PBN links were built years ago and you're cleaning up before a relaunch."
+          ]
+        },
+        {
+          "h3": "Not justified",
+          "bullets": [
+            "A tool gave some links a red \"toxic\" score. That's the vendor's opinion, not Google's, and it's frequently wrong about legitimate sites.",
+            "Rankings dropped and you don't know why. Core updates, competitor improvement and intent shifts explain far more drops than links do. Diagnose first.",
+            "Someone pointed spam at you. Google's systems assume this happens and largely ignore it — see [why links only break ties](/answers/why-are-backlinks-important-for-seo)."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Disavows are hard to take back",
+        "body": "Disavowing a domain that was actually helping you costs real rankings, and reversing it means Google has to re-crawl and re-evaluate — weeks, sometimes longer. Treat the file the way you'd treat a database migration: know exactly what each line is doing and why."
+      }
+    },
+    {
+      "h2": "What you're actually trying to build",
+      "body": [
+        "The target isn't a number. It's a profile a sceptical human would find plausible reading it top to bottom — links from places your customers, suppliers and industry actually read, acquired at a rate that matches what your business has been doing, described in the words people naturally use about you.",
+        "For a mid-size Indian business that usually means industry associations and trade press, the business media in your city, suppliers and partners who list you, a piece of original data people cite because it's the only source, and a slow drip of citations from people you've never spoken to. Slower than buying, and the only version that keeps its value.",
+        "For what that costs properly, [link building costs](/cost/link-building-cost) breaks the numbers down — including why the cheap tier can't produce this profile at that price."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The benchmark that beats every metric",
+        "body": "Print your top 50 referring domains. Would you show that list to a customer as evidence of your reputation? If not, the profile is a liability whatever your authority score says."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What makes a backlink profile healthy?",
+      "a": "Variety and plausibility. Many different referring domains rather than many links, anchor text dominated by your brand name, a real share of nofollowed links, growth that tracks something your business actually did, and sources concentrated in your sector and your market."
+    },
+    {
+      "q": "What is a toxic backlink?",
+      "a": "There's no official Google category — \"toxic\" is a vendor label. In practice it means a link from a site that exists to sell links: PBNs, scraped directories, hacked pages, link farms. Individually they're usually just ignored. In volume, and pointing at money pages with commercial anchors, they become a pattern worth cleaning up."
+    },
+    {
+      "q": "How do I check my backlink profile for free?",
+      "a": "Search Console's Links report shows your top linking sites, top linked pages and anchor text — that covers ratios one, two and six. Free tiers of the major backlink tools fill in the dofollow split and the growth graph. That's enough for a first pass on any small site."
+    },
+    {
+      "q": "Should I remove bad backlinks?",
+      "a": "Try removal first only if you can realistically reach the site owner, which for spam networks you can't. For everything else, disavow is the mechanism — and most sites shouldn't use it at all. Google already discounts links it doesn't trust, and the tool exists mainly for links you know you built."
+    },
+    {
+      "q": "How often should I audit my backlink profile?",
+      "a": "Twice a year for most businesses, and immediately if you take over a site, change agencies, or lose rankings you can't otherwise explain. Monthly monitoring is a service people sell rather than a need most sites have."
+    },
+    {
+      "q": "Does the number of referring domains matter more than the number of links?",
+      "a": "Yes, decisively. A hundred links from one domain is close to one vote. A hundred links from a hundred domains is a hundred. Any report that leads with total backlinks rather than referring domains is leading with the flattering number."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "backlink-profile" },
+    { "type": "glossary", "slug": "toxic-backlinks" },
+    { "type": "glossary", "slug": "referring-domain" },
+    { "type": "compare", "slug": "da-vs-dr" },
+    { "type": "answers", "slug": "what-are-backlinks" },
+    { "type": "journal", "slug": "domain-authority-is-a-vanity-metric" }
+  ]
+}

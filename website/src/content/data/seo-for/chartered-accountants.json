@@ -1,0 +1,278 @@
+{
+  "slug": "chartered-accountants",
+  "type": "seo-for",
+  "primaryKeyword": "seo for chartered accountants",
+  "secondaryKeywords": [
+    "ca firm seo india",
+    "seo for accounting firms india",
+    "icai advertising guidelines website",
+    "gst content seo",
+    "seo for tax consultants"
+  ],
+  "cluster": "professional-services",
+  "intent": "commercial",
+  "industry": "Chartered accountancy",
+  "h1": "SEO for CA firms where every filing deadline is a traffic spike",
+  "metaTitle": "SEO for Chartered Accountants: Deadline Demand",
+  "metaDescription": "SEO for chartered accountants in India. Time GST, ITR and ROC content to statutory deadlines, inside ICAI limits on what a CA firm may publish.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "CA firm search demand is a sawtooth, not a line. It spikes before 31 July for ITR, 30 September for tax audit, the 11th and 20th of every month for GST returns, and around AGM season for ROC filings. Publish six to eight weeks ahead of each date, inside ICAI's limits on what a firm may say.",
+  "takeaways": [
+    "Content published the week of a deadline is content published too late. Indexing plus signal accumulation needs a **six-to-eight week head start**.",
+    "The single biggest same-day traffic event in this category is a **due-date extension**. Have the page live and ready to edit within the hour.",
+    "ICAI restricts solicitation and advertisement by members in practice. Your marketing agency does not get to interpret that for you.",
+    "Notice queries — ASMT-10, DRC-01, 143(1), 139(9) — are panic searches with enormous intent, and they're the least contested part of the category.",
+    "ClearTax and the filing portals own the head terms. Firms win on notices, sector specifics, and the local map pack."
+  ],
+  "sections": [
+    {
+      "h2": "The statutory calendar is the content plan",
+      "body": [
+        "Most industries get a flat demand curve with a seasonal wobble. Accounting gets a sawtooth. ITR queries climb through June, peak in the last ten days of July and collapse on 1 August. GST queries spike twice a month, ahead of the 11th and the 20th. ROC queries cluster around AGM season.",
+        "So publishing cadence matters more here than anywhere else in professional services. A page published on 25 July for a 31 July deadline has barely been crawled, has no engagement history and will not rank. Work backwards from every date on the calendar."
+      ],
+      "table": {
+        "caption": "Working backwards from the statutory calendar.",
+        "head": [
+          "Obligation",
+          "Statutory date",
+          "Publish or refresh by",
+          "Queries that spike"
+        ],
+        "rows": [
+          [
+            "Monthly GST returns",
+            "GSTR-1 by the 11th, GSTR-3B by the 20th (staggered under QRMP)",
+            "Evergreen pages, refreshed monthly",
+            "GSTR-3B late fee, ITC mismatch with 2B, how to amend GSTR-1"
+          ],
+          [
+            "Advance tax instalments",
+            "15 June, 15 September, 15 December, 15 March",
+            "Four to six weeks before each",
+            "advance tax calculation, interest under 234B and 234C"
+          ],
+          [
+            "ITR, non-audit cases",
+            "31 July",
+            "Mid-May, refreshed through June",
+            "which ITR form, old vs new regime, capital gains reporting"
+          ],
+          [
+            "Tax audit report",
+            "30 September",
+            "Early August",
+            "44AB turnover limit, presumptive taxation under 44AD and 44ADA"
+          ],
+          [
+            "ROC annual filing",
+            "AOC-4 within 30 days of AGM, MGT-7 within 60",
+            "Early September",
+            "AOC-4 due date, ₹100 per day additional fee, AGM extension"
+          ],
+          [
+            "Director KYC",
+            "30 September",
+            "Mid-August",
+            "DIR-3 KYC late fee, DIN deactivated"
+          ],
+          [
+            "Annual GST return",
+            "GSTR-9 and 9C, 31 December",
+            "Late October",
+            "GSTR-9 applicability turnover, reconciliation differences"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The extension is the traffic event",
+        "body": "The CBDT has extended the 31 July date in several recent years, and the announcement produces a same-day search surge larger than anything else in the calendar. Keep a live page at a stable URL — not a new post each year — with the current date at the top and a visible \"last checked\" stamp. Being the first accurate page after the notification is worth more than a quarter of blog posts."
+      }
+    },
+    {
+      "h2": "What ICAI actually lets a firm publish",
+      "body": [
+        "The underlying prohibition sits in the First Schedule to the Chartered Accountants Act, 1949: a member in practice commits misconduct by soliciting clients or professional work, or by advertising their professional attainments. The Council's advertisement guidance softens that for websites, but the model it permits is a pull model — information available to someone who comes looking, not material pushed at people who didn't ask.",
+        "That rules out a lot of standard marketing, and leaves exactly the thing that ranks anyway: accurate technical writing about tax and corporate law, published under the firm's name."
+      ],
+      "bullets": [
+        "**Write about the law, not about the firm.** \"How section 43B(h) affects payments to MSME suppliers\" is compliant and rankable. \"India's most trusted CA firm\" is neither.",
+        "**Name authors with credentials.** Membership number, qualification, area of work. A credibility signal for Google, and a factual particular rather than a claim of attainment.",
+        "**Keep client work anonymous.** \"A manufacturer with ₹40 crore turnover\" carries the technical point without naming anyone.",
+        "**No fee advertising.** If you want to talk about cost, talk about what drives it — turnover, entity type, number of returns — without a number.",
+        "**Skip lead-generation marketplaces.** Buying enquiries from a portal is the sort of arrangement the guidelines are aimed at, whatever the portal's salesperson tells you."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Check the current text, every time",
+        "body": "ICAI has revised its advertisement guidance more than once and further relaxation gets debated regularly. Whatever your agency read two years ago may be out of date. Confirm the current position with your firm's ethics contact before publishing — the disciplinary exposure is yours, not your marketer's. We'll write to whatever line you set."
+      }
+    },
+    {
+      "h2": "Three clusters, three completely different readers",
+      "body": [
+        "A CA firm's traffic looks like one audience and behaves like three. Splitting the site accordingly is most of the architecture work."
+      ],
+      "table": {
+        "caption": "Query clusters and who is actually searching them.",
+        "head": [
+          "Cluster",
+          "Who's searching",
+          "What ranks"
+        ],
+        "rows": [
+          [
+            "GST",
+            "In-house accounts staff mid-filing, plus business owners who got a mismatch alert",
+            "Step-by-step portal walkthroughs with current screen names, reconciliation logic, and the exact error codes"
+          ],
+          [
+            "Income tax and ITR",
+            "Salaried individuals in June–July, business owners in September–October",
+            "Form selection, regime comparison with worked numbers, capital gains and foreign asset reporting"
+          ],
+          [
+            "ROC and MCA",
+            "Company secretaries, founders and their ops leads",
+            "Form-by-form filing guides, event-based compliance, additional-fee consequences"
+          ],
+          [
+            "Notices and disputes",
+            "Anyone who just opened a scary email. Highest intent in the category",
+            "What the notice means, the reply window, the drafting steps, escalation path"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Screenshots date faster than text",
+        "body": "GST and income tax portal walkthroughs are the most-searched and fastest-decaying pages you'll own. The portal redesigns, the menu moves, and your step four now points at nothing. Put a review date on every walkthrough and re-check after each portal change — a stale walkthrough is worse than no walkthrough, because someone trusted it."
+      }
+    },
+    {
+      "h2": "Notices are the most underserved search in accounting",
+      "body": [
+        "Someone receives an intimation under section 143(1) showing a demand they don't understand, or a GST ASMT-10 scrutiny notice with a fifteen-day clock. They search the form number that night. They are not comparing firms. They want to know what it means and what happens if they ignore it.",
+        "This is the strongest commercial content a CA firm can publish and it's mostly left to generic filing portals that cover it in four hundred words. A firm that handles these weekly can write the version nobody else can: what the department is actually looking at, which reply usually closes it, and when it escalates."
+      ],
+      "bullets": [
+        "**GST:** ASMT-10 scrutiny, DRC-01A intimation and DRC-01 show cause, DRC-07 order, registration cancellation and revocation, e-way bill detention under section 129.",
+        "**Income tax:** 143(1) intimation, 139(9) defective return, 245 adjustment against refund, 133(6) information request, 148 reassessment, 154 rectification.",
+        "**TDS:** short deduction and late fee defaults on TRACES, 26AS and AIS mismatches — the AIS feedback loop alone is a page most firms haven't written.",
+        "**MCA:** STK-1 strike-off, DIN deactivation, adjudication notices for late filing.",
+        "Each page needs the reply window in days, in bold, near the top. That's the fact the reader came for, and it's what earns the call."
+      ]
+    },
+    {
+      "h2": "Startups and established SMEs need different service pages",
+      "body": [
+        "Most firm websites have one \"Our Services\" page listing fourteen services. Two very different buyers read it and neither finds themselves.",
+        "The founder searching at 11pm wants incorporation, DPIIT recognition, ESOP structuring and someone to say whether they need a virtual CFO. The forty-year-old manufacturing business wants GST litigation support, an audit that doesn't drag, and help with the 45-day MSME payment rule under section 43B(h) that quietly changed their working capital. Two entirely separate content paths."
+      ],
+      "subs": [
+        {
+          "h3": "Startup and early-stage",
+          "bullets": [
+            "Incorporation comparison — private limited versus LLP versus OPC, with the compliance cost of each stated as a count of filings rather than a fee.",
+            "DPIIT recognition and the section 80-IAC exemption, including what the application actually asks for.",
+            "ESOP taxation at exercise and at sale, the point every founder gets wrong.",
+            "FEMA reporting for foreign investment — FC-GPR timelines and what happens when they're missed.",
+            "Virtual CFO and bookkeeping stack pages, which is where a lot of the recurring revenue sits."
+          ]
+        },
+        {
+          "h3": "Established SME",
+          "bullets": [
+            "GST department correspondence, audits and appeals, written from the department's angle.",
+            "Section 43B(h) and payment timelines to MSME-registered suppliers, with the disallowance mechanics worked through.",
+            "Statutory audit readiness — the document list, the timeline, what delays it.",
+            "Related-party and transfer pricing obligations for anyone with a cross-border group entity.",
+            "Succession, family settlement and business restructuring, which are searched privately and converted slowly."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "\"CA near me\" is a real query with a real map pack",
+      "body": [
+        "Accounting is one of the few professional services where the map pack still drives serious enquiry volume. \"CA near me\", \"chartered accountant in [locality]\" and \"GST consultant near me\" all return a local pack above the organic results, and the businesses in it get the calls.",
+        "The compliant version is a factual Google Business Profile: firm name exactly as registered, office address, hours, phone. No superlatives in the description, and no review campaign — soliciting reviews sits far too close to the solicitation ICAI restricts, which is the specific thing to raise with your ethics contact first. The same caution applies to your [law firm neighbours](/seo-for/law-firms).",
+        "What you can build safely is depth: a page per office with real detail, and locality pages only where you operate. Mechanics in [our local SEO work](/services/local-seo-services)."
+      ],
+      "bullets": [
+        "One page per office, with the address, the partners who sit there, the languages spoken and the courts or department offices that jurisdiction covers.",
+        "Name the local tax office and jurisdictional range on the office page. It's factual, it's useful, and it's the sort of detail no template farm has.",
+        "Consistent name, address and phone across every listing. Mismatches are the most common reason a firm doesn't appear in the pack.",
+        "Skip city pages for cities you don't have an office in. Twelve fictional locations is scaled content, and Google's policy on it applies to accountants too."
+      ]
+    },
+    {
+      "h2": "What we'd do first, and what we commit to",
+      "body": [
+        "For a firm starting from a five-page brochure site, month one is the calendar and the notice cluster — publish the fifteen highest-intent notice pages and the ITR and GST pillars, then let them season before the next spike. Everything else waits.",
+        "Our SEO runs from ₹75,000/mo, and from ₹40,000/mo for smaller sites. Ex-GST, month-to-month after the first quarter, 30 days' notice, and every asset stays yours. Full numbers on [our pricing page](/pricing).",
+        "The commitment is not a ranking position — nobody controls Google's index and any agency promising a spot is telling you a story. We freeze your trailing-90-day qualified enquiries from organic search on day one. If we haven't beaten that number in 90 days, we keep working free until we do.",
+        "The accounting-specific caveat: if we start in September, your 90 days ends in December, which is a genuinely quiet stretch for this category. We'd rather set the baseline window honestly against your own seasonality than pretend the calendar doesn't exist."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The honest timeline",
+        "body": "Notice and form-specific pages often gather impressions inside six to ten weeks because the competition is thin. Head terms like \"GST consultant in Mumbai\" take six to twelve months. The gap between those two numbers is the whole reason to sequence the work rather than publish everything at once."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are chartered accountants allowed to do SEO in India?",
+      "a": "Yes, within limits. ICAI restricts solicitation and advertising professional attainments, and its guidance permits a firm website on a pull model. Publishing accurate technical content about tax and corporate law is compliant and is also what ranks. Superlative claims, fee advertising and paid lead generation are where firms get into trouble."
+    },
+    {
+      "q": "When should we publish ITR content for the July deadline?",
+      "a": "Publish by mid-May and refresh through June. A page published in the last week of July has no crawl history, no engagement data and no chance against pages that have been accumulating both for two months. The exception is an extension announcement, where speed on an existing URL beats everything."
+    },
+    {
+      "q": "Can we compete with ClearTax and the filing portals?",
+      "a": "Not on head terms like \"how to file ITR\" — they have a decade of links and topical depth. You compete where a portal can't go deep: specific notices and their reply strategy, sector-specific treatment, state-level GST practice, and local intent where a real office in a real city beats a national brand."
+    },
+    {
+      "q": "Should a CA firm ask clients for Google reviews?",
+      "a": "Raise it with your ethics contact before you do anything. Review solicitation sits close to the solicitation ICAI restricts, and client confidentiality complicates it further. Many firms take the conservative route of a factual listing with no review campaign, and accept the ranking cost."
+    },
+    {
+      "q": "How many pages does a CA firm site actually need?",
+      "a": "Far fewer than most proposals suggest. Roughly twenty notice pages, three or four pillar pages per compliance area with their clusters, a service page for each buyer type, and one page per real office. That's a year of serious work and it beats two hundred thin posts comfortably."
+    },
+    {
+      "q": "Does old content about repealed provisions hurt us?",
+      "a": "Yes, in two ways. Tax content ages badly and a page describing a superseded rate or threshold damages credibility with exactly the reader you want. It also splits ranking signals across near-duplicate versions. Update in place at a stable URL rather than publishing a fresh post each assessment year."
+    }
+  ],
+  "related": [
+    {
+      "type": "seo-for",
+      "slug": "law-firms"
+    },
+    {
+      "type": "services",
+      "slug": "local-seo-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "content-decay"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-do-local-seo"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-cost-for-small-business"
+    },
+    {
+      "type": "journal",
+      "slug": "when-to-update-old-content-instead-of-writing-new"
+    }
+  ]
+}

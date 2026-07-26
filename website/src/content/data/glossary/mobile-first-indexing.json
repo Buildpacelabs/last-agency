@@ -1,0 +1,162 @@
+{
+  "slug": "mobile-first-indexing",
+  "type": "glossary",
+  "primaryKeyword": "mobile first indexing",
+  "secondaryKeywords": [
+    "mobile first indexing meaning",
+    "mobile vs desktop indexing",
+    "responsive design seo",
+    "mobile usability",
+    "does google use mobile version"
+  ],
+  "cluster": "technical-seo",
+  "intent": "informational",
+  "h1": "Mobile-first indexing",
+  "metaTitle": "Mobile-First Indexing: What It Means for You",
+  "metaDescription": "Mobile-first indexing means Google ranks your site using the mobile version. With most Indian traffic on phones, content parity isn't optional any more.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Mobile-first indexing",
+  "definition": "Mobile-first indexing is Google's practice of crawling and indexing the mobile version of a page with its smartphone crawler, and using that version to determine what the page ranks for.",
+  "answer": "Mobile-first indexing means Google crawls and indexes your site with a smartphone crawler and ranks it on what the mobile version contains. Anything missing from mobile — copy, headings, images, schema — is effectively missing from your site. The transition finished in 2024, so this is simply how indexing works now.",
+  "takeaways": [
+    "Google indexes the mobile rendering. Your desktop page is no longer consulted, so content that only exists there does nothing for you.",
+    "The trap is **parity**, not responsiveness. A responsive theme can still strip content, tables, images and schema at mobile breakpoints.",
+    "Content inside accordions and tabs is indexed normally — as long as it's in the HTML. Content fetched on tap isn't.",
+    "Search Console retired the Mobile Usability report and the Mobile-Friendly Test in December 2023. Use Lighthouse and DevTools instead."
+  ],
+  "sections": [
+    {
+      "h2": "What Google indexes now, and why it changed",
+      "body": [
+        "Google started shifting sites to mobile-first indexing in 2018 and finished the job by mid-2024. Googlebot Smartphone crawls the page, the mobile rendering is what gets indexed, and ranking decisions are made on that version.",
+        "The reasoning was never subtle: most searches happen on phones, and in India that isn't a majority so much as an overwhelming default — a large share of the country's internet users have only ever browsed on an Android phone over mobile data.",
+        "The practical translation is short. Whatever your mobile page contains is what your site contains. Everything else is decoration for the desktop minority."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "This isn't a project any more",
+        "body": "Mobile-first indexing stopped being a migration to plan for and became the ambient condition. Nobody \"gets moved\" any more. If you're reading this because someone flagged it as a pending task, the task is closed — what's left is checking parity."
+      }
+    },
+    {
+      "h2": "The parity trap",
+      "body": [
+        "Responsive design is not the same as content parity, and that's where Indian sites lose ground most often. A responsive theme reflows a layout; it's the CSS and the template conditionals on top that quietly delete things. In rough order of how often we find them:"
+      ],
+      "table": {
+        "caption": "Common mobile parity failures and what they cost.",
+        "head": [
+          "What's missing on mobile",
+          "Why it happens",
+          "Consequence"
+        ],
+        "rows": [
+          [
+            "Body copy trimmed or truncated",
+            "\"Too long for mobile\" — an editor's call, or a theme's `display: none`.",
+            "The trimmed copy is copy Google doesn't have."
+          ],
+          [
+            "Specification and pricing tables removed",
+            "Tables are awkward on narrow screens, so the template hides them.",
+            "Product detail vanishes. Comparison queries stop matching."
+          ],
+          [
+            "Images dropped or swapped for tiny versions",
+            "A well-meant bandwidth saving.",
+            "Image search eligibility goes with them, alt text included."
+          ],
+          [
+            "Structured data only on desktop",
+            "Schema injected by a desktop-only template partial.",
+            "Rich result eligibility disappears — Google reads the mobile HTML."
+          ],
+          [
+            "Links hidden in a menu that loads on tap",
+            "A JavaScript mega-menu built mobile-last.",
+            "Discovery and internal link equity both suffer."
+          ]
+        ]
+      },
+      "bullets": [
+        "`display: none` still ships the content in the HTML, so it's usually indexed. Hiding it visually is a design choice, not a deletion.",
+        "A template conditional that never renders the block, or a fetch triggered by a tap, genuinely removes it. Hidden in CSS is fine; absent from the HTML is not."
+      ]
+    },
+    {
+      "h2": "Accordions, tabs and \"read more\"",
+      "body": [
+        "Google has been consistent that content inside tabs and accordions is indexed normally when it's present in the HTML. Collapsing a long FAQ on a phone doesn't hurt you.",
+        "What hurts is the version where tapping fires a network request and injects the content afterwards. Googlebot doesn't tap. It renders once, with a tall viewport, and takes what's there. Content that requires an interaction to exist is content that doesn't exist.",
+        "Same logic for \"read more\" links that navigate to a URL — fine, that's a link — versus buttons that lazy-fetch the rest of the article. And infinite scroll: Googlebot doesn't scroll either, so give listing pages real paginated URLs underneath. It's a [JavaScript SEO](/glossary/javascript-seo) problem in a mobile costume."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Lazy loading that depends on scroll events",
+        "body": "Native `loading=\"lazy\"` and IntersectionObserver both work for Googlebot, because it renders with a very tall viewport. A hand-written scroll-event listener does not — Googlebot never fires the event, so everything below never loads and never gets indexed."
+      }
+    },
+    {
+      "h2": "How to actually test it",
+      "body": [
+        "Google retired the Mobile-Friendly Test, its API, and the Mobile Usability report in Search Console in December 2023, so the tool most people reach for no longer exists. Here's what replaced it.",
+        "**URL Inspection.** Test Live URL, then View Tested Page. It uses Googlebot Smartphone, so the rendered HTML it shows you is the mobile HTML Google indexes. Search it for your body copy, your schema block and your internal links. This is the authoritative test; everything else is a convenience.",
+        "**A `curl` diff.** Fetch the same URL twice, once with a desktop user-agent and once with Googlebot Smartphone's, and diff the two responses. If the mobile version is materially shorter, you've found your problem without opening a browser. **Lighthouse** covers the usability signals the retired report used to — tap target size, viewport configuration, legible fonts.",
+        "One more thing no tool will do for you: open your own site on a three-year-old Android, on mobile data, somewhere with bad signal, and buy something. The list you compile in four minutes will be longer and more useful than the audit — and it's the same list your [Core Web Vitals](/glossary/core-web-vitals) data has been trying to tell you."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Google still index the desktop version of my site?",
+      "a": "No. Google completed the move to mobile-first indexing in 2024 and now crawls with Googlebot Smartphone. The mobile rendering is what gets indexed and ranked. Content that exists only on desktop contributes nothing to your search performance."
+    },
+    {
+      "q": "Is content hidden in accordions still indexed?",
+      "a": "Yes, provided it's in the HTML. Google has said repeatedly that content in tabs and accordions is indexed normally. The failure case is content that only loads when someone taps — Googlebot doesn't tap, so that content never enters the DOM it indexes."
+    },
+    {
+      "q": "Do I need a separate mobile site?",
+      "a": "No, and you actively shouldn't build one now. Separate m-dot URLs mean maintaining two sets of content, canonicals, hreflang and schema, and they were the main source of parity failures during the mobile-first transition. Responsive design with full parity is the standard answer."
+    },
+    {
+      "q": "Where did the Mobile Usability report in Search Console go?",
+      "a": "Google removed it, along with the Mobile-Friendly Test tool and API, in December 2023. The reasoning was that the mobile web had matured past needing a dedicated report. Use Lighthouse in Chrome DevTools or PageSpeed Insights for the same checks."
+    },
+    {
+      "q": "How do I check what Googlebot sees on mobile?",
+      "a": "Use URL Inspection in Search Console, run Test Live URL, then View Tested Page and read the rendered HTML. That's Googlebot Smartphone's output. Search it for your main copy, your JSON-LD and your navigation links — if any are missing, that's your finding."
+    },
+    {
+      "q": "Does mobile-first indexing mean speed matters more?",
+      "a": "It means speed is measured on mobile, which is a harsher test. Your Core Web Vitals field data is dominated by phones on mobile networks, so a fast desktop experience doesn't rescue a slow mobile one. The two things are separate signals but they fail together."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "core-web-vitals"
+    },
+    {
+      "type": "glossary",
+      "slug": "javascript-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "indexing"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "services",
+      "slug": "core-web-vitals-optimisation"
+    },
+    {
+      "type": "journal",
+      "slug": "local-seo-in-tier-2-india"
+    }
+  ]
+}

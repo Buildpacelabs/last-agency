@@ -1,0 +1,241 @@
+{
+  "slug": "what-is-the-roi-of-seo",
+  "type": "answers",
+  "primaryKeyword": "seo roi",
+  "secondaryKeywords": [
+    "how to calculate seo roi",
+    "what is the roi of seo",
+    "is seo a good investment",
+    "seo return on investment formula"
+  ],
+  "cluster": "agency-cost",
+  "intent": "informational",
+  "h1": "How to calculate SEO ROI without fooling yourself",
+  "metaTitle": "SEO ROI: How to Calculate It Honestly",
+  "metaDescription": "SEO ROI done right means stripping out branded traffic and counting gross profit, not revenue. Here's the formula, the traps and a worked INR example.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "SEO ROI is (gross profit from incremental organic − total SEO cost) ÷ total SEO cost. The word doing the work is incremental: strip out branded searches and pages that already ranked before the engagement started. Skip that step and a 116% return reports as 476%, which is how most SEO case studies are built.",
+  "takeaways": [
+    "Count **gross profit**, not revenue. Revenue-based ROI is the oldest flattering error in agency reporting.",
+    "Subtract branded search. Somebody typing your company name was going to find you anyway — that lead is not something SEO earned.",
+    "Subtract leads from pages that already ranked on page one before month one. You inherited those.",
+    "Count the whole cost: retainer plus tools plus your own team's hours. Internal time is real money and it never appears in the agency's ROI slide.",
+    "Judge SEO over 12–24 months. A quarterly ROI figure will always lose to paid search, because the cost is front-loaded and the return isn't."
+  ],
+  "sections": [
+    {
+      "h2": "The formula, and the three inputs people fudge",
+      "body": [
+        "The arithmetic is trivial. Getting the inputs honest is not.",
+        "`SEO ROI = (gross profit from incremental organic − total SEO cost) ÷ total SEO cost`",
+        "Three inputs decide whether the answer means anything, and each one has a standard way of being quietly inflated."
+      ],
+      "bullets": [
+        "**Gross profit, not revenue.** A ₹1 crore ecommerce year at 25% margin is ₹25 lakh of actual money. Reporting ROI on the crore multiplies your apparent return by four before anyone has told a single lie.",
+        "**Incremental organic, not all organic.** This is the big one, and it gets its own section below.",
+        "**Total cost, not the retainer.** Retainer, plus content if it's billed separately, plus tools, plus the hours your own people spend briefing, reviewing and approving. Four hours a week is roughly 200 hours a year. Price it and add it."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The cost line nobody counts",
+        "body": "Internal time is the most commonly omitted input in SEO ROI. It's also the input that decides whether the engagement works at all — the agencies that fail most often are the ones nobody on the client side had time for."
+      }
+    },
+    {
+      "h2": "Strip out the traffic you'd have had anyway",
+      "body": [
+        "Organic search reports lump together three very different things: people who searched for your brand, people who found pages that were already ranking, and people who found pages the SEO work actually won. Only the third group is a return on anything.",
+        "**Branded search** is the worst offender. Someone typing your company name has already been convinced by something — an ad, a referral, a podcast, a conference. They convert at a far higher rate than non-branded searches, which is exactly why including them flatters the number so effectively. Worse, branded search volume rises when your paid and social spend rises, so a good quarter on Meta shows up as an SEO win.",
+        "**Pre-existing rankings** are the quieter one. If a page was sitting at position four for a decent query in month zero, the leads it produced in month twelve aren't the agency's work. They're inheritance. Freeze a list of every query you already rank on page one for before anyone starts, and hold the ROI calculation to what's outside that list.",
+        "Both filters are free. Search Console lets you exclude queries containing your brand name; the landing-pages report shows which URLs were already earning clicks. It's an afternoon's work and it's the most useful afternoon in the whole exercise — see [how to set an SEO baseline](/journal/how-to-set-an-seo-baseline)."
+      ]
+    },
+    {
+      "h2": "A worked example, in rupees",
+      "body": [
+        "Numbers below are illustrative — invented to show the arithmetic, not drawn from a client. Plug in your own and the shape of the result rarely changes.",
+        "A B2B services company runs a ₹75,000/month retainer for twelve months. Here's the honest chain."
+      ],
+      "numbered": [
+        "**Cost.** Retainer ₹9,00,000, tools ₹60,000, internal time ₹2,40,000. **Total ₹12,00,000.**",
+        "**Raw organic leads over the year: 480.** This is the number that goes in the deck.",
+        "**Minus 210 branded-search leads.** They typed the company name. Something else sent them.",
+        "**Minus 90 leads from pages already ranking on page one in month zero.** Inherited, not earned.",
+        "**Incremental leads: 180.**",
+        "**× 20% close rate = 36 customers.**",
+        "**× ₹1,20,000 average contract value = ₹43,20,000 revenue.**",
+        "**× 60% gross margin = ₹25,92,000 gross profit.**",
+        "**− ₹12,00,000 cost = ₹13,92,000. ROI: 116%.**"
+      ],
+      "table": {
+        "caption": "Illustrative: the same twelve months, counted three ways.",
+        "head": [
+          "How it's counted",
+          "Leads",
+          "Value counted",
+          "Cost counted",
+          "Reported ROI"
+        ],
+        "rows": [
+          [
+            "The pitch-deck version",
+            "All 480",
+            "₹1,15,20,000 revenue",
+            "₹9,00,000 retainer only",
+            "1,180%"
+          ],
+          [
+            "Half honest — profit, but no filters",
+            "All 480",
+            "₹69,12,000 gross profit",
+            "₹12,00,000 all-in",
+            "476%"
+          ],
+          [
+            "Honest",
+            "180 incremental",
+            "₹25,92,000 gross profit",
+            "₹12,00,000 all-in",
+            "116%"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "Where the inflation comes from",
+        "body": "Leaving branded and pre-existing traffic in the numerator turns 116% into 476% — a bit over four times the real figure, with no fabricated data at all. Switching from gross profit to revenue and dropping the non-retainer costs takes it past 1,000%. Every step is a defensible-sounding choice. Together they produce a number that means nothing."
+      }
+    },
+    {
+      "h2": "Assisted conversions, and why last-click undercounts SEO",
+      "body": [
+        "Having just argued for stripping the numerator down, here's the correction in the other direction: strict last-click attribution genuinely understates organic search, and pretending otherwise is its own kind of dishonesty.",
+        "The common path looks like this. Someone reads a comparison article you wrote, doesn't convert, thinks about it for three weeks, then searches your brand name and fills in the form. Last-click credits brand search. GA4's data-driven model spreads some credit backwards, but the two touches are usually in different sessions, sometimes on different devices, and often outside the lookback window. The article did the work and gets none of the credit.",
+        "There's also a lag problem. Content published in month two typically starts earning in month six to nine, which means a twelve-month ROI calculation is measuring twelve months of cost against roughly six months of return. That's not a reason to stop measuring — it's a reason to state the window you're using and stick to it.",
+        "So report a range rather than a point. Calculate the strict number — non-branded, non-inherited, last non-direct click. Then calculate the generous one that includes assisted conversions from organic landing pages. Report both every month. If both are rising, it's working. If only the generous one is rising, somebody is stretching.",
+        "Two practical habits make either number trustworthy: track leads in your **CRM** rather than analytics, because your sales team knows which form fills were real; and hold the definition of \"qualified\" constant, because loosening it mid-engagement is the easiest way to manufacture improvement. See [how to read an SEO report](/journal/how-to-read-an-seo-report)."
+      ]
+    },
+    {
+      "h2": "Comparing SEO ROI with paid search ROI",
+      "body": [
+        "The comparison founders actually want is against Google Ads, and it's an unfair fight in both directions depending on the window you pick. Over one quarter, paid wins almost every time. Over three years, SEO usually wins on cost per lead — though \"the asset keeps producing\" means \"decays slowly\", not \"lasts forever\"."
+      ],
+      "table": {
+        "caption": "The same rupee, spent two ways.",
+        "head": [
+          "Dimension",
+          "Paid search",
+          "SEO"
+        ],
+        "rows": [
+          [
+            "Time to first usable data",
+            "Days",
+            "8–12 weeks for leading indicators"
+          ],
+          [
+            "Cost behaviour",
+            "Linear — stop paying, stop appearing, same week",
+            "Front-loaded, then compounding while maintained"
+          ],
+          [
+            "Attribution quality",
+            "Clean and click-level",
+            "Messy — assists, lag, brand spill"
+          ],
+          [
+            "What competition does to it",
+            "Raises your CPC directly, this month",
+            "Raises the content and link bar, over quarters"
+          ],
+          [
+            "Honest measurement window",
+            "Weekly to monthly",
+            "12–24 months"
+          ],
+          [
+            "What happens if you stop",
+            "Traffic ends immediately",
+            "Traffic decays over 6–18 months as pages age"
+          ]
+        ]
+      },
+      "bullets": [
+        "Run both if you can. Paid tells you which keywords convert in three weeks; SEO then wins those same keywords without the per-click bill. That handoff is worth more than either channel's isolated ROI — see [PPC vs SEO](/compare/ppc-vs-seo).",
+        "If it's one or the other and you need revenue this quarter, it's paid. SEO is not a cash-flow instrument."
+      ]
+    },
+    {
+      "h2": "When SEO ROI stays negative — and it does",
+      "body": [
+        "Some businesses should not do SEO, and you can usually tell in an afternoon rather than a year.",
+        "The test is arithmetic, not enthusiasm: monthly search volume for your commercial queries, times a realistic click share, times your conversion rate, times gross profit per customer. If that doesn't clear your monthly SEO cost within eighteen months, the channel is wrong for you. Any agency can run that before you sign. Most don't."
+      ],
+      "bullets": [
+        "**Genuinely new categories.** Nobody searches for a thing they can't name yet. Demand has to be created first, usually on social or through PR.",
+        "**Tiny total addressable search.** If forty people a month search your commercial terms nationwide, page one is worth less than one good sales hire.",
+        "**Sites you can't change.** No CMS access, no developer, a locked-down template. Technical fixes are usually the first return available, and you can't have them.",
+        "**Very long, very low-volume sales cycles.** If you close six deals a year, one extra deal swings ROI by hundreds of percent in either direction. The number is real but it isn't a signal."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "How we make the return measurable",
+        "body": "We freeze your trailing-90-day qualified organic leads on day one — that's the denominator every claim gets held against. Miss it in 90 days and we keep working free until we beat it. We never promise a specific ranking position, because nobody controls Google's index. [See how the guarantee works](/seo), or [what SEO costs with us](/pricing)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's a good ROI for SEO?",
+      "a": "Anything positive on a strict, branded-stripped, gross-profit basis inside twelve months is a good result — most engagements are still in payback at that point. Triple-digit returns are realistic in years two and three for businesses with decent margins and real search volume, because the cost stays flat while the asset compounds."
+    },
+    {
+      "q": "How do I calculate SEO ROI if I can't track conversions properly?",
+      "a": "Use a proxy and be explicit that it's a proxy. Multiply incremental non-branded organic sessions by your site-wide conversion rate and your gross profit per customer. It's rough, but it's defensible if you keep the same method every month, and the trend will be right even when the absolute number isn't."
+    },
+    {
+      "q": "How long before SEO shows positive ROI?",
+      "a": "Leading indicators — impressions and average position for target queries — move in roughly 4–8 weeks. Leads follow in three to six months. Cumulative ROI usually crosses zero somewhere between month nine and month eighteen, later for competitive markets and long sales cycles. Anyone quoting faster is quoting a smaller problem than the one you have."
+    },
+    {
+      "q": "Should I include branded search traffic in SEO ROI?",
+      "a": "Not in the headline number. Report it separately, because branded search volume is a genuinely useful measure of brand demand — it just isn't a measure of SEO. If an agency's ROI case collapses when you exclude it, that tells you what the case was made of."
+    },
+    {
+      "q": "Is SEO a good investment compared to running ads?",
+      "a": "Over three years, usually yes on cost per lead, because you stop renting each click. Over one quarter, usually no. The failure mode is judging a compounding asset on a rental channel's timeline, then cancelling in month five having paid for all the cost and collected none of the return."
+    },
+    {
+      "q": "Does SEO ROI include the traffic that stays after I stop?",
+      "a": "It should, and almost nobody models it. Rankings decay rather than vanish — competitors publish, content ages, Google updates. A reasonable convention is to count a tapering residual for twelve months after the engagement ends rather than either zero or forever."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "is-seo-worth-it"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-you-measure-seo-success"
+    },
+    {
+      "type": "compare",
+      "slug": "ppc-vs-seo"
+    },
+    {
+      "type": "cost",
+      "slug": "is-seo-worth-the-money"
+    },
+    {
+      "type": "glossary",
+      "slug": "organic-traffic"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    }
+  ]
+}

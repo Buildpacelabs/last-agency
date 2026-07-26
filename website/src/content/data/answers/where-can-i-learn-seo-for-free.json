@@ -1,0 +1,255 @@
+{
+  "slug": "where-can-i-learn-seo-for-free",
+  "type": "answers",
+  "primaryKeyword": "where can i learn seo for free",
+  "secondaryKeywords": [
+    "where to learn seo",
+    "how to learn seo for free",
+    "free seo courses",
+    "best free seo resources"
+  ],
+  "cluster": "seo-career",
+  "intent": "informational",
+  "h1": "Where to learn SEO free, in the right order",
+  "metaTitle": "Where Can I Learn SEO for Free? In Order",
+  "metaDescription": "A 12-week self-study plan for learning SEO free, built only from primary sources, with the exact thing to practise on your own site every single week.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Start with Google's Search Central documentation, the Search Console Training series, Moz's Beginner's Guide and Screaming Frog's free tier — in that order, applied to a live site you own. Twelve weeks at six to eight hours a week covers fundamentals, technical, content and measurement, which is roughly a junior's working knowledge.",
+  "takeaways": [
+    "The material is free. **The sequence is what people are missing**, which is why so many self-taught SEOs know a lot and can't diagnose anything.",
+    "Every week has a practice task on your own domain. Reading without a live site produces confident beginners who freeze in interviews.",
+    "Total cost: a domain, roughly ₹700–₹1,200 for year one. Everything else here is free.",
+    "Week 12's output is a case study with a baseline — the artefact that gets you interviews."
+  ],
+  "sections": [
+    {
+      "h2": "Order matters far more than the source list",
+      "body": [
+        "Every SEO concept is explained free within four minutes of searching. That's not the constraint. The constraint is that most people learn topics in whatever order autoplay serves them, so they know what a backlink is before they know what indexing is — the equivalent of learning to garnish before you can boil water.",
+        "The plan below runs twelve weeks at six to eight hours a week, with a source and a practice task each week. Skip the practice and you'll finish with vocabulary and no judgement. One purchase first: a domain, roughly ₹700–₹1,200 for year one."
+      ]
+    },
+    {
+      "h2": "Weeks 1–4: fundamentals and Search Console",
+      "body": [
+        "This block makes the rest legible. Almost every confused SEO question online traces back to not knowing that crawling, indexing and ranking are three separate systems that fail separately."
+      ],
+      "subs": [
+        {
+          "h3": "Week 1 — How search actually works",
+          "body": [
+            "Crawling, indexing, ranking, serving — and where each breaks independently. This is why you'll later say \"that's not a ranking problem, it never got indexed\"."
+          ],
+          "bullets": [
+            "**Source:** Search Central's \"How Search Works\" and the SEO Starter Guide.",
+            "**Practice:** buy the domain, publish three real pages about something you know."
+          ]
+        },
+        {
+          "h3": "Week 2 — Search Console, properly",
+          "body": [
+            "Verify the property, submit a sitemap, learn URL Inspection and the Pages report. Most people use a tenth of this tool, and it's your only free first-party data source."
+          ],
+          "bullets": [
+            "**Source:** Google's Search Console Training series on the Search Central YouTube channel.",
+            "**Practice:** screenshot the empty performance graph, dated. That's your baseline for week 12."
+          ]
+        },
+        {
+          "h3": "Week 3 — Queries and search intent",
+          "body": [
+            "Why one keyword returns four page formats in the top ten, and why picking the wrong one is the commonest reason a good page never ranks."
+          ],
+          "bullets": [
+            "**Source:** Moz's Beginner's Guide chapters on keyword research, plus Ahrefs' free material.",
+            "**Practice:** classify the intent of ten queries and note which page type Google rewards."
+          ]
+        },
+        {
+          "h3": "Week 4 — On-page, done deliberately",
+          "body": [
+            "Titles, headings, URL structure, internal links, and the real job of a meta description — click-through, not ranking."
+          ],
+          "bullets": [
+            "**Source:** Search Central docs on titles, snippets and link best practices.",
+            "**Practice:** ship three more pages, writing every title as if it must win a click against nine rivals. It must."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Weeks 5–8: technical work and content structure",
+      "body": [
+        "Now you break things on purpose. This block separates people who can fix a site from people who can only describe one, and it's the block most self-taught SEOs skip."
+      ],
+      "subs": [
+        {
+          "h3": "Week 5 — Crawl your own site",
+          "body": [
+            "Screaming Frog's free tier handles 500 URLs, more than your site has. Find your broken links, redirect chains, duplicate titles and orphans."
+          ],
+          "bullets": [
+            "**Source:** Screaming Frog's user guide — dry, thorough, free.",
+            "**Practice:** fix everything the crawl flags, re-crawl, confirm the list is shorter."
+          ]
+        },
+        {
+          "h3": "Week 6 — Indexing controls",
+          "body": [
+            "`robots.txt`, `noindex`, canonicals, sitemaps. The distinction that trips up every junior: blocking a crawl isn't removing a page from the index, and the wrong one gets the opposite result."
+          ],
+          "bullets": [
+            "**Source:** Search Central's docs on robots, canonicalisation and removals, plus [what a canonical tag does](/glossary/canonical-tag).",
+            "**Practice:** noindex a throwaway page, watch it leave the index, bring it back."
+          ]
+        },
+        {
+          "h3": "Week 7 — Speed and Core Web Vitals",
+          "body": [
+            "Lighthouse is already in your browser. Learn what LCP, INP and CLS measure and which fixes move them, not thresholds you'll misquote later."
+          ],
+          "bullets": [
+            "**Source:** web.dev and PageSpeed Insights, plus [Core Web Vitals](/glossary/core-web-vitals) fundamentals.",
+            "**Practice:** get LCP under 2.5 seconds on your slowest page and record what changed it."
+          ]
+        },
+        {
+          "h3": "Week 8 — Content structure at scale",
+          "body": [
+            "Pillars, clusters, internal linking, and cannibalisation — what happens when three of your pages compete for one query and all three lose."
+          ],
+          "bullets": [
+            "**Source:** Ahrefs' and Moz's material on topic clusters, checked against your own data.",
+            "**Practice:** publish one pillar and four cluster pages, then wire the links deliberately."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Weeks 9–12: links, measurement and a live case study",
+      "body": [
+        "The last block is about proof — for search engines and for whoever interviews you."
+      ],
+      "subs": [
+        {
+          "h3": "Week 9 — Links, and what's genuinely against the rules",
+          "body": [
+            "Read Google's link spam policies before anyone's link building advice. Much of what's sold in India is listed there as a violation, and knowing which part is hireable on its own."
+          ],
+          "bullets": [
+            "**Source:** Google's spam policies for web search, then digital PR material from Ahrefs and Moz.",
+            "**Practice:** earn exactly one real link — a community, a supplier, someone who knows your work."
+          ]
+        },
+        {
+          "h3": "Week 10 — Measurement",
+          "body": [
+            "GA4 setup, events, conversions, and why GA4 and Search Console never agree. Explaining that discrepancy calmly is disproportionately impressive."
+          ],
+          "bullets": [
+            "**Source:** Google's free Analytics courses on Skillshop and the GA4 docs.",
+            "**Practice:** define one conversion event and link Search Console to GA4."
+          ]
+        },
+        {
+          "h3": "Week 11 — Structured data and AI answers",
+          "body": [
+            "Schema.org, Google's structured data docs, the Rich Results Test. Then the newer question: what gets a page quoted inside an AI answer rather than ranked. Treat that part as provisional."
+          ],
+          "bullets": [
+            "**Source:** schema.org, Google's structured data docs and its guidance on AI features.",
+            "**Practice:** add valid schema to one page type and pass the Rich Results Test."
+          ]
+        },
+        {
+          "h3": "Week 12 — Read the marking scheme, then write it up",
+          "body": [
+            "Google publishes its Search Quality Rater Guidelines free — long, dry, and the closest thing to the examiner's notes."
+          ],
+          "bullets": [
+            "**Source:** Search Quality Rater Guidelines (free PDF from Google).",
+            "**Practice:** publish the write-up — dated baseline, change log, what moved, what didn't, what you'd change."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Twelve weeks isn't the end",
+        "body": "This gets you to junior competence — enough to hold a technical conversation and diagnose obvious problems. Depth comes from repetition on sites you didn't build, which argues for an agency job early. See [how to get your first SEO job](/answers/how-hard-is-it-to-get-into-an-seo-career)."
+      }
+    },
+    {
+      "h2": "Free sources worth trusting — and the ones to skip",
+      "body": [
+        "Primary sources first, practitioners second, anyone promising speed not at all."
+      ],
+      "subs": [
+        {
+          "h3": "Worth your time",
+          "bullets": [
+            "**Google Search Central** — docs, blog, YouTube and the Search Console Training series. Written by the people who build the system.",
+            "**Google's Search Quality Rater Guidelines** — free, exhaustive, the closest look at what Google means by quality.",
+            "**Moz's Beginner's Guide to SEO** — still the best structured introduction, still free.",
+            "**Ahrefs and Semrush blogs and channels** — good material with an obvious commercial interest. Read the method, ignore the pitch.",
+            "**web.dev and Lighthouse docs** — anything performance related.",
+            "**Screaming Frog's user guide** — teaches crawling by teaching the crawler."
+          ]
+        },
+        {
+          "h3": "Skip",
+          "bullets": [
+            "Anything promising rankings in days, or \"the trick Google doesn't want you to know\". There's no trick; there's a queue.",
+            "Tutorials that never show a URL. A blurred domain means the case study is decoration.",
+            "Material still teaching keyword density, article spinning or bulk directory submission. Some of it gets sites penalised.",
+            "Telegram groups handing out cracked tool accounts — theft, malware, and a fast way to lose your Google account.",
+            "Reddit threads where nobody links a source."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The failure mode",
+        "body": "Collecting tutorials feels like progress and isn't. A week where you watched four hours of video and changed nothing on a live site produced roughly nothing. Publish something every week, even badly."
+      }
+    },
+    {
+      "h2": "How to prove what you learned",
+      "body": [
+        "Nobody can verify that you finished a free curriculum, which is why the write-up matters more than the study. One page on the site you built: the queries, the dated baseline screenshot, the change log, what moved, what didn't.",
+        "Name the queries so anyone can check them. Use Search Console screenshots, not third-party estimates. Include a failure — a page that never indexed, a redirect that went wrong — because diagnosis is the skill being assessed.",
+        "That document beats any certificate you could have bought, which is most of the argument in [are SEO courses worth it](/answers/are-seo-courses-worth-it)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I really learn SEO for free, or do I need paid tools?",
+      "a": "You can learn it entirely free. Search Console, GA4, Lighthouse, PageSpeed Insights and Screaming Frog's 500-URL tier cover everything a beginner needs. Paid tools like Ahrefs and Semrush matter when you're analysing competitors at scale, which is not a beginner problem."
+    },
+    {
+      "q": "How long does it take to learn SEO on your own?",
+      "a": "Twelve weeks at six to eight hours a week gets you to junior competence if you're practising on a live site throughout. Reading without practising can take a year and still leave you unable to diagnose a traffic drop, which is the thing you'll be tested on."
+    },
+    {
+      "q": "Is YouTube a good place to learn SEO?",
+      "a": "For specific tasks, yes — watching someone configure Search Console or run a crawl is faster than reading it. For fundamentals, no: YouTube optimises for confident delivery, not accuracy, and outdated tactics stay in circulation for years because old videos keep ranking."
+    },
+    {
+      "q": "What should I build my practice site about?",
+      "a": "Something you genuinely know and won't get bored of by week five. A hobby, your hometown, a niche skill, a specific product category. It has to sustain fifteen pages of real detail, and thin content on a fake topic teaches you nothing because nothing will ever rank."
+    },
+    {
+      "q": "Do I need to learn coding to do SEO?",
+      "a": "No, but you need to read HTML comfortably, understand how a page renders, and know enough about your CMS to spot when a template is causing the problem. Some SQL and basic scripting become genuinely valuable at the senior end, where the data gets too big for a spreadsheet."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "are-seo-courses-worth-it" },
+    { "type": "answers", "slug": "how-hard-is-it-to-get-into-an-seo-career" },
+    { "type": "answers", "slug": "seo-tips-for-beginners" },
+    { "type": "glossary", "slug": "google-search-console" },
+    { "type": "glossary", "slug": "core-web-vitals" },
+    { "type": "compare", "slug": "onpage-vs-offpage-seo" }
+  ]
+}

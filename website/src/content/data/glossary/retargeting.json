@@ -1,0 +1,127 @@
+{
+  "slug": "retargeting",
+  "type": "glossary",
+  "primaryKeyword": "retargeting",
+  "secondaryKeywords": [
+    "remarketing meaning",
+    "retargeting ads",
+    "retargeting vs remarketing",
+    "audience window retargeting",
+    "how retargeting works"
+  ],
+  "cluster": "paid",
+  "intent": "informational",
+  "h1": "Retargeting",
+  "metaTitle": "Retargeting: What It Is and When It Works",
+  "metaDescription": "Retargeting shows ads to people who already visited you. Audience windows, frequency caps, cookie loss — and the traffic floor below which it can't work.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Retargeting",
+  "definition": "Retargeting is advertising shown only to people who have already interacted with you — visited a page, watched a video, or landed on a customer list you uploaded.",
+  "answer": "Retargeting shows ads only to people who already visited your site, watched your video or opened your app. Platforms build the audience from a tracking tag, then let you serve to it for a set window — up to 180 days on Meta, up to 540 on Google Ads. Below roughly 1,000 monthly visitors, the lists never fill.",
+  "takeaways": [
+    "Retargeting and remarketing mean the same thing. \"Remarketing\" is Google's word for it.",
+    "The audience window you choose is a strategy, not a default. Seven days and 180 days are different campaigns.",
+    "**There is a traffic floor.** Under about 1,000 visitors a month, the money belongs in prospecting instead.",
+    "Your list is smaller than your analytics implies — browser cookie limits and ad blockers eat a real share of it."
+  ],
+  "sections": [
+    {
+      "h2": "How a retargeting audience actually gets built",
+      "body": [
+        "A tag sits on your site — the Meta pixel, the Google Ads tag, or a GA4 property wired to Google Ads. When someone loads a page it drops an identifier and fires an event. You then write a rule: anyone who hit the pricing page in the last 30 days, or anyone who added to cart and didn't buy.",
+        "The platform holds that list, refreshes it as people qualify and expire, and serves your ads to it. You never see individuals — you see a count, often rounded or hidden until it clears a minimum.",
+        "Not all lists come from a pixel. Uploaded customer lists, video viewers, Instagram profile visitors and lead form openers work the same way, and they're usually the healthier list, because they don't depend on a browser cookie surviving."
+      ]
+    },
+    {
+      "h2": "Membership duration: the window is the strategy",
+      "body": [
+        "Membership duration is how long someone stays on the list after their visit. Most accounts leave it at the default and then wonder why their retargeting reaches people who bought three months ago."
+      ],
+      "table": {
+        "caption": "Audience windows and what each one is genuinely for.",
+        "head": ["Window", "What it's good for", "What goes wrong"],
+        "rows": [
+          [
+            "1–7 days",
+            "Cart and checkout abandoners. Highest intent you'll ever buy.",
+            "The audience is tiny. On low traffic it may never clear the platform minimum."
+          ],
+          [
+            "8–30 days",
+            "The workhorse for considered purchases — pricing page visitors, demo page bouncers.",
+            "Fine. This is where most budgets should sit."
+          ],
+          [
+            "31–180 days",
+            "Long B2B cycles, high-ticket categories, brand recall.",
+            "You're paying to reach people who bought from someone else six weeks ago. Exclude converters."
+          ],
+          [
+            "181–540 days",
+            "Winback and renewal, Google Ads only.",
+            "Treat it as a separate campaign with different creative. Same ad, ninth month, is just annoying."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The traffic floor nobody quotes you",
+      "body": [
+        "This is the part that gets left out of the pitch. Platforms enforce minimum audience sizes before they'll deliver — Google needs on the order of a hundred active users for Display and around a thousand for Search, and Meta needs a base of roughly a hundred people before an audience serves at all. Check the current figure inside your own account, because these move.",
+        "Now the arithmetic. A site with 1,000 visitors a month, on a 30-day window, has at best 1,000 people on the list. Strip out cookie loss, ad blockers and declined consent and you're realistically at half that. Split it by page — cart abandoners, pricing viewers, blog readers — and each segment is a few dozen people.",
+        "At that size retargeting isn't a channel, it's a rounding error. Put the money into prospecting or search intent until the traffic exists to retarget — usually where [SEO](/seo) or a well-built search campaign earns its place first."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The uncomfortable version",
+        "body": "Retargeting has the best-looking ROAS in almost every account, because it advertises to people who were already going to buy. Impressive numbers, minimal incremental revenue. If retargeting is your best-performing campaign, that's a sign your prospecting isn't working, not that your retargeting is."
+      }
+    },
+    {
+      "h2": "Frequency caps and the point it turns hostile",
+      "body": [
+        "A small audience and a normal budget produce the same result every time: one person sees your ad eleven times a day. Cap frequency at campaign level — two or three impressions a day is a sensible ceiling — and learn the signature of fatigue: frequency rising, click-through rate falling, cost per thousand impressions climbing.",
+        "The fix is more creative, not more budget. Three or four variants in rotation, and a rule that converters drop off the list immediately. Nothing dents a brand quite like chasing a customer around the internet with an ad for the thing they already bought."
+      ]
+    },
+    {
+      "h2": "Why your lists shrink on their own",
+      "body": [
+        "Browser policy quietly changed what a retargeting list can be. Safari's tracking prevention caps script-set first-party cookies at seven days, so a 30-day window behaves like a seven-day one for a chunk of Indian iPhone traffic. Firefox blocks third-party cookies outright. Ad blockers stop the pixel firing at all, and consent banners take another slice.",
+        "Server-side tagging and conversion APIs recover some of it by sending events from your server rather than the browser. They don't restore the list to what it would have been in 2018, and anyone claiming otherwise is selling implementation. Plan for smaller lists than your [organic traffic](/glossary/organic-traffic) suggests, and keep your [UTM parameters](/glossary/utm-parameters) clean so you can measure what you do capture."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the difference between retargeting and remarketing?",
+      "a": "Nothing meaningful. \"Remarketing\" is Google's term and occasionally gets used for email win-back campaigns; \"retargeting\" is the wider industry word for paid ads served to a known audience. If an agency draws a hard distinction between them, they're filling time."
+    },
+    {
+      "q": "How much traffic do I need before retargeting works?",
+      "a": "Roughly 1,000 visitors a month is the point where segmented lists start to fill reliably. Below that, platform minimums and cookie loss leave audiences too small to deliver, and the budget does more work in prospecting or search."
+    },
+    {
+      "q": "How long should my retargeting window be?",
+      "a": "Match it to your sales cycle. Impulse purchases: 7 to 14 days. Considered purchases: 30 days. B2B with a two-month cycle: 90 days, with converters excluded. Don't run one window for everything — the intent is completely different at day two and day ninety."
+    },
+    {
+      "q": "Is retargeting worth it for a small business in India?",
+      "a": "Only once the traffic exists. A local business with 400 monthly visitors gets more from Google Business Profile and search than from retargeting a list of eighty people. Once you're past a few thousand monthly visitors, a cart or pricing-page retargeting campaign is usually the cheapest paid win available."
+    },
+    {
+      "q": "Does retargeting still work now that cookies are restricted?",
+      "a": "Yes, but with smaller lists and shorter effective windows than the platforms' stated maximums. Lists built from logged-in behaviour, uploaded customer data, video views and in-app activity survive far better than lists built purely from a browser cookie."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "utm-parameters" },
+    { "type": "glossary", "slug": "return-on-ad-spend" },
+    { "type": "glossary", "slug": "cost-per-click" },
+    { "type": "compare", "slug": "organic-social-vs-paid-social" },
+    { "type": "journal", "slug": "why-indian-d2c-brands-overspend-on-ads" },
+    { "type": "cost", "slug": "digital-marketing-agency-cost-india" }
+  ]
+}

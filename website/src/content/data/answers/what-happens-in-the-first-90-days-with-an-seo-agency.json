@@ -1,0 +1,205 @@
+{
+  "slug": "what-happens-in-the-first-90-days-with-an-seo-agency",
+  "type": "answers",
+  "primaryKeyword": "what happens in the first 90 days with an seo agency",
+  "secondaryKeywords": [
+    "seo agency onboarding process",
+    "first 90 days of seo",
+    "what to expect from an seo agency in 3 months",
+    "seo onboarding checklist"
+  ],
+  "cluster": "agency-mechanics",
+  "intent": "commercial",
+  "h1": "Your first 90 days with an SEO agency",
+  "metaTitle": "First 90 Days With an SEO Agency: What Happens",
+  "metaDescription": "What happens in the first 90 days with an SEO agency, week by week — and why the things that deliberately don't happen yet are protecting your baseline.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "In the first 90 days, an SEO agency spends weeks one and two on access, analytics and a frozen baseline number, weeks two to six on technical fixes, publishes its first new page around week five, and starts link outreach around week seven. Movement shows up in impressions before it shows up in leads.",
+  "takeaways": [
+    "Week one produces no rankings and no articles. It produces access, a crawl and a **frozen baseline number**. That is the deliverable.",
+    "Nothing new goes live before week five for a reason — publishing onto a site with broken canonicals and a redirect mess just adds more pages to the problem.",
+    "Outreach waits until week seven because you can only pitch a page that exists, loads, and says something worth citing.",
+    "By day 90 you should see impressions and average position move on your target queries. The full revenue return usually isn't there yet, and anyone claiming otherwise is protecting a renewal."
+  ],
+  "sections": [
+    {
+      "h2": "Week one: you get access, not output",
+      "body": [
+        "The first week looks alarming if you're expecting deliverables. Nothing gets published. No rankings change. What actually happens is handover — and the speed of that handover sets the pace of the entire quarter.",
+        "The list below is what a competent agency asks for on day one. If they ask for less, they're planning to guess. Note that CRM access is on it: the number being measured is qualified leads, and leads live in your CRM, not in your analytics."
+      ],
+      "bullets": [
+        "**Google Search Console** — the domain property, not just one `https://www.` variant. Old properties too, if you've migrated.",
+        "**GA4 admin**, plus whatever tag manager container is actually firing.",
+        "**CMS and staging access**, and the name of the person who can deploy to production.",
+        "**DNS or CDN access**, or at minimum the name of whoever holds it.",
+        "**Server or CDN logs**, if your stack keeps them. Most Indian mid-market stacks don't, and that's worth knowing early.",
+        "**CRM read access** and the definition of a qualified lead your sales team already uses.",
+        "**History** — past migrations, past penalties, past agencies, and any period where traffic changed shape."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The real bottleneck is access, not strategy",
+        "body": "The most common cause of a slow first month isn't the agency. It's a client who can't find who owns the domain, or a dev team that needs three weeks to grant staging access. Start hunting on day one, not on the kickoff call."
+      }
+    },
+    {
+      "h2": "The one thing week one must produce: a frozen baseline",
+      "body": [
+        "Before anything on the site changes, the number you'll be judged against has to be written down and agreed. Not estimated later. Written down, in the contract, on day one.",
+        "Ours is the trailing 90 days of qualified leads from organic search. Yours might be organic revenue, or booked demos, or footfall enquiries. The metric matters less than the freezing. An unfrozen baseline drifts — definitions loosen, seasonality gets re-explained, and by month six nobody can prove anything either way."
+      ],
+      "numbered": [
+        "**The metric**, named exactly. \"Organic traffic\" is not a metric; \"non-brand organic sessions that submitted the enquiry form\" is.",
+        "**The source of truth** — which system's number wins when two disagree.",
+        "**The window** — trailing 90 days ending the day before work starts.",
+        "**The definition of qualified**, and who decides in a borderline case.",
+        "**The exclusions** — branded search, paid traffic, existing customers, obvious spam.",
+        "**The read date**, so nobody negotiates the deadline in month three."
+      ],
+      "subs": [
+        {
+          "h3": "Why the freeze is the part that gets skipped",
+          "body": [
+            "Because it's the only step that constrains the agency. Everything else in onboarding expands their room to manoeuvre; the baseline shrinks it. We wrote more about the mechanics in [how to set an SEO baseline](/journal/how-to-set-an-seo-baseline)."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "What deliberately doesn't happen, and when it does",
+      "body": [
+        "Most onboarding anxiety comes from silence that looks like neglect. Here's the schedule of absences, and the reason behind each one. If your agency is behind these dates, ask why. If they're wildly ahead of them, ask harder."
+      ],
+      "table": {
+        "caption": "The first-90-days schedule, framed by what isn't happening yet.",
+        "head": ["Deliverable", "Earliest you should see it", "Why it waits"],
+        "rows": [
+          [
+            "Keyword strategy document",
+            "Week 3",
+            "A week-one keyword list is a tool export. It hasn't been checked against what your sales team actually closes, or against the pages you already own."
+          ],
+          [
+            "First technical fixes shipped",
+            "Week 2",
+            "Crawl results arrive within days, so fixes start within days. This is the only part of onboarding that should be fast."
+          ],
+          [
+            "First new page live",
+            "Week 5",
+            "Publishing onto a site with duplicate canonicals, a redirect chain and no internal linking model just manufactures more pages that don't rank."
+          ],
+          [
+            "Link outreach begins",
+            "Week 7",
+            "You can't pitch a page that doesn't exist. Outreach against a thin site burns the contacts you'll want in month eight."
+          ],
+          [
+            "First honest read on movement",
+            "Day 90",
+            "Impressions move first, and they move noisily. Below a 90-day window you're reading weather, not climate."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Weeks two to six: the fixes nobody will compliment you on",
+      "body": [
+        "This stage produces the least impressive status report and frequently the highest return in the whole engagement. On an older Indian site, the single most common finding is a replatform from three years ago whose redirects were never fully mapped — traffic you already earned, quietly leaking into 404s.",
+        "None of it is glamorous. All of it caps everything that comes after."
+      ],
+      "bullets": [
+        "Redirect chains and loops collapsed to single hops.",
+        "Canonical tags that point somewhere sensible. See [what a canonical tag does](/glossary/canonical-tag) if you've never had to care.",
+        "Indexation reconciled — published pages versus indexed pages, and a reason for every gap.",
+        "Orphan pages wired into the internal link graph, or deleted.",
+        "Thin and duplicate pages merged, redirected or improved. Rarely all three.",
+        "Core Web Vitals, in that order of severity: layout shift, then interaction delay, then load time.",
+        "Schema that describes what the page actually is, not a copy-paste of someone else's markup."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The dev dependency",
+        "body": "Most of this needs your developers, not ours. Agencies that ship technical fixes on time are usually the ones that asked for a dev SLA in the contract. If your queue is eight weeks long, say so before signing — it changes what day 90 can realistically show."
+      }
+    },
+    {
+      "h2": "Why nothing new goes live before week five",
+      "body": [
+        "Three reasons, and the third is the one that matters to you commercially.",
+        "First, quality is assessed at site level as well as page level. Adding ten new pages to a site full of thin, duplicated, half-indexed ones doesn't average upward. It just gives the crawler more evidence.",
+        "Second, a page published before its cluster exists lands as an orphan. It has no internal links pointing at it, no supporting pages, and no reason for the crawler to come back. You get an article and no ranking, then everyone concludes content doesn't work.",
+        "Third — and this is the commercial argument — if content ships in week two alongside the technical fixes, you can never separate the two. When traffic moves you won't know which lever did it, so you'll fund the wrong one for the next twelve months.",
+        "The rule bends in exactly one case: if your site is technically clean and your actual problem is that you only have four pages, content can start in week two. A good agency will tell you that on the kickoff call rather than pad the schedule."
+      ]
+    },
+    {
+      "h2": "Why link outreach waits until week seven",
+      "body": [
+        "Outreach spends a resource you can't top up: the contact. A journalist, an editor or a partner will take one pitch from you per quarter before they start filtering. Spending that on a page that isn't ready is expensive in a way that never shows on the invoice.",
+        "There's also a pattern problem. A domain that has published nothing for two years and suddenly acquires forty referring domains in six weeks looks exactly like a domain that bought them. Slow accumulation isn't a stylistic preference — it's what earned links look like.",
+        "Before the first pitch goes out, four things need to be true."
+      ],
+      "bullets": [
+        "There's a page worth citing — original data, a genuinely useful tool, or a position nobody else has stated plainly.",
+        "The site loads fast enough that a journalist clicking from their phone doesn't bounce.",
+        "There's an author or about page that survives thirty seconds of scrutiny.",
+        "The claim is checkable. Anything unverifiable gets you one placement and no repeat."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Ask where the links come from",
+        "body": "The answer \"our network\" means a private blog network. It's rented authority that disappears the month the payment stops, and occasionally takes your rankings with it. [How agencies actually get backlinks](/answers/how-do-seo-agencies-get-backlinks) covers the legitimate routes."
+      }
+    },
+    {
+      "h2": "Day 90: what's realistic, and what a guarantee can't cover",
+      "body": [
+        "At the ninety-day read, this is a fair set of expectations for a site that started with normal amounts of technical debt.",
+        "Realistic: impressions up on your target query set, average position improving on mid-tail terms, all new pages indexed, the first handful of new referring domains, and — if your sales cycle is short — the first attributable leads. Not realistic: head terms in a competitive national market, a full revenue return, or a recovered position on a domain carrying a manual action.",
+        "This is also where the honest version of a guarantee lives. We don't promise a position for a keyword, because nobody controls Google's index and anyone claiming they do is either lying or buying. What we guarantee is movement against your own frozen baseline: beat that trailing-90-day qualified lead count within 90 days, or we keep working free until we do. It's the reason we take three clients a month — you can't carry that exposure at volume. The mechanics are on [our SEO page](/seo)."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "What stops the clock being fair",
+        "body": "If the fix list sits in your dev queue for eight weeks, day 90 is measuring two weeks of work. A guarantee is a shared obligation or it's theatre — which is why ours comes with an approval and deployment SLA on your side too."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What should an SEO agency deliver in month one?",
+      "a": "A technical crawl and prioritised fix list, an analytics and Search Console review, competitor gap analysis, a keyword map against your existing pages, and a written, frozen baseline number. What you should not get in month one is published content or new links — both are premature and both muddy the measurement."
+    },
+    {
+      "q": "Is it normal to see no results after 30 days?",
+      "a": "Yes, and it's usually a good sign. At day 30 the technical fixes are still shipping and nothing new has been published. If rankings jump in week three on a site that had nothing wrong with its content, the most likely explanation is bought links — which is a problem arriving on a delay."
+    },
+    {
+      "q": "What do I need to give an SEO agency in week one?",
+      "a": "Search Console (domain property), GA4 admin, CMS and staging access, whoever controls DNS, CRM read access, and an honest history of migrations, penalties and previous agencies. Access delays are the single most common reason a first quarter underperforms, and they're entirely within your control."
+    },
+    {
+      "q": "Can content start earlier than week five?",
+      "a": "It can, if your site is technically clean and your real problem is that you've only got a handful of pages. In that case the audit finishes quickly and briefs can start in week two. On any site with redirect debt, duplicate canonicals or indexation gaps, publishing early wastes the content."
+    },
+    {
+      "q": "What happens if the agency misses the 90-day target?",
+      "a": "That depends entirely on what you wrote down in week one. With no baseline, nothing happens — you argue about interpretation and renew anyway. With a frozen baseline and a stated remedy, the consequence is contractual. Ours is that we keep working at no charge until we beat the number."
+    },
+    {
+      "q": "Should I sign a 12-month contract to give SEO time to work?",
+      "a": "SEO does need six to twelve months to compound, but that's an argument for staying, not for being locked in. A long minimum term protects the agency's revenue during the exact months when their work is hardest to verify. Month-to-month after the first quarter keeps the incentive pointed at you."
+    }
+  ],
+  "related": [
+    { "type": "journal", "slug": "how-to-set-an-seo-baseline" },
+    { "type": "answers", "slug": "how-long-does-it-take-for-seo-to-work" },
+    { "type": "services", "slug": "seo-audit-services" },
+    { "type": "compare", "slug": "retainer-vs-project" },
+    { "type": "glossary", "slug": "google-search-console" },
+    { "type": "journal", "slug": "what-actually-happens-in-the-first-90-days" }
+  ]
+}

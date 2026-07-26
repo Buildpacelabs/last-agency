@@ -1,0 +1,195 @@
+{
+  "slug": "what-are-canonical-keywords",
+  "type": "answers",
+  "primaryKeyword": "canonical keywords",
+  "secondaryKeywords": [
+    "what are canonical keywords",
+    "canonical keyword meaning",
+    "primary keyword vs canonical keyword",
+    "canonical page keyword mapping"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "'Canonical keywords' isn't a real term. Here's what people mean.",
+  "metaTitle": "Canonical Keywords: What People Actually Mean",
+  "metaDescription": "Searching canonical keywords? It isn't a standard SEO term. People usually mean keyword-to-URL mapping. Here's what that is and how to build one.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "\"Canonical keywords\" isn't a standard SEO term. Nobody in the field uses it consistently, and no tool reports it. People searching it usually want one of two real things: the single primary query a page is built to own, or a keyword-to-URL map that assigns every target query exactly one owning page.",
+  "takeaways": [
+    "There's no accepted definition. If a proposal uses the phrase, ask what they mean before you agree to anything.",
+    "The confusion comes from the **canonical tag**, which handles duplicate URLs, not keywords.",
+    "What you probably need is a **keyword-to-URL map**: one primary query per page, one page per query.",
+    "The rule is one *intent* per URL, not one string. Pages ranking for hundreds of related queries is the goal, not a fault.",
+    "A map is the cheapest defence against cannibalisation, because it stops the duplicate page from being commissioned at all."
+  ],
+  "sections": [
+    {
+      "h2": "The short version: it isn't a term",
+      "body": [
+        "There's no textbook definition of \"canonical keywords\", no tool that reports them, and no Google documentation that uses the phrase. It's a compound of two ideas that both exist separately, welded together by autocomplete and repeated in enough blog posts to look official.",
+        "That matters practically. If an agency proposal promises to \"identify your canonical keywords\", the phrase is doing no work — ask which of the meanings below they mean. If they can't say, you've learned something useful about the proposal for free."
+      ],
+      "table": {
+        "caption": "What people usually mean when they type 'canonical keywords'.",
+        "head": [
+          "What they probably meant",
+          "The real name for it",
+          "What it actually does"
+        ],
+        "rows": [
+          [
+            "The one keyword this page is built to win",
+            "Primary keyword, or target query",
+            "Anchors a single page's title, H1 and internal anchor text"
+          ],
+          [
+            "The sheet that says which page owns which keyword",
+            "Keyword-to-URL mapping",
+            "Prevents two pages chasing the same query"
+          ],
+          [
+            "The head term a group of near-identical queries collapses into",
+            "Head term, or cluster representative",
+            "Groups variants so you plan one page, not eleven"
+          ],
+          [
+            "Something to do with duplicate URLs",
+            "Canonical tag",
+            "Nothing to do with keywords at all"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Why the phrase gets tangled with canonical tags",
+      "body": [
+        "\"Canonical\" in SEO has a precise, established meaning, and it's about addresses rather than words. A [canonical tag](/answers/what-is-a-canonical-tag-in-seo) tells Google which URL to index when several serve the same content. It's the tool that stops `?utm_source=` variants and filtered category pages from competing with the original.",
+        "Because canonicalisation and keyword mapping both solve versions of \"two things competing when one should win\", the vocabulary bleeds. Someone reads about canonical URLs, applies the word to keywords, and a search query is born.",
+        "The second source of confusion is legitimate and closer to useful. Search engines normalise queries: \"seo agency india\", \"india seo agency\" and \"seo agencies in india\" get treated as substantially the same intent, and every keyword tool clusters them the same way. Some people call the representative of that group the canonical query. It isn't wrong exactly — it just isn't standard, and \"head term\" is what everyone else says."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "How to test whether two queries are the same thing",
+        "body": "Search both. Compare the top ten URLs. If five or more overlap, Google considers them one intent and one page should cover both. If the results barely overlap, they're different pages, however similar the words look."
+      }
+    },
+    {
+      "h2": "What you probably need: a keyword-to-URL map",
+      "body": [
+        "A keyword-to-URL map is a single sheet with one rule: every query you're targeting has exactly one owning URL, and every URL worth ranking has exactly one primary query plus a list of supporting variants.",
+        "It's unglamorous and it's the document that decides whether a content programme compounds or eats itself. Without one, three writers over two years produce four pages about the same thing, none of which rank, and every internal link about that topic gets pointed at whichever page the writer remembered.",
+        "The map does four jobs at once:"
+      ],
+      "bullets": [
+        "**Commissioning.** Before anyone writes anything, the map answers \"do we already have a page for this?\"",
+        "**Internal linking.** It tells you the correct anchor text and destination for any given phrase, which is most of an [internal linking](/glossary/internal-linking) strategy in one column.",
+        "**Reporting.** You can measure position per target query against its assigned URL, rather than celebrating whichever page happened to rank.",
+        "**Pruning.** Any URL with no assigned query is a candidate for merging or deletion. That list is usually longer than expected."
+      ]
+    },
+    {
+      "h2": "The one-primary-keyword-per-URL rule, and its honest limits",
+      "body": [
+        "The rule people repeat is \"one keyword per page\". Stated that way it's misleading, and following it literally produces thin, over-segmented sites.",
+        "A healthy page ranks for hundreds of queries. That's not a failure of focus — it's what happens when a page covers a topic properly, and it's the main reason long-form content outperforms a page targeting one exact string. The rule isn't about strings.",
+        "The rule is **one search intent per URL**. Two queries that produce broadly the same results page belong on the same URL, whatever they look like. Two queries whose results barely overlap need separate pages, however similar the words are.",
+        "The classic example is commercial versus informational. \"What SEO costs in India\" and \"SEO agency pricing\" look like near-synonyms. Search them and the results diverge: one returns explainers, the other returns agency pages. Those are two pages, one aimed at somebody learning and one aimed at somebody buying. Force them together and you'll rank badly for both."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The over-segmentation failure",
+        "body": "The opposite mistake is worse. Building a separate page for \"seo agency india\", \"seo agencies in india\" and \"best seo agency india\" gives you three thin near-identical pages, which is textbook scaled content. Google will index one and ignore the rest, and it may take a dimmer view of the whole site while it's at it."
+      }
+    },
+    {
+      "h2": "Building the map for a 200-page site",
+      "body": [
+        "This is a real afternoon-and-a-bit of work, not a project. Budget a day for someone who knows the business and two if the site has grown without supervision — most of the time goes on judgement calls, not data collection."
+      ],
+      "numbered": [
+        "**Export every indexable URL.** Crawl the site, or take the XML sitemap if you trust it. Strip out anything noindexed, paginated or parameterised. This is your row list.",
+        "**Export Search Console performance, last 12 months, by page and by query.** This tells you what each URL already earns, which beats any assumption about what it was meant to earn.",
+        "**Assign an incumbent primary to each URL.** For each page, take the query with the highest impressions where that page is genuinely the best match on the site. Not the highest-ranking query — the best-matching one.",
+        "**Layer in your target list.** Bring your keyword research over and assign each target to the best-fit existing URL, or mark it \"new page required\". Resist creating a new page when an existing one is 80% there.",
+        "**Flag every duplicate assignment.** Any query assigned to two or more URLs goes on a conflicts tab. That tab is your [cannibalisation](/answers/what-is-keyword-cannibalization) backlog, already prioritised by search volume.",
+        "**Set a status per row.** Own, rewrite, merge, or new. Every URL gets one. Anything that lands on \"merge\" needs a target and a redirect plan before it goes into a sprint."
+      ],
+      "bullets": [
+        "Columns worth having: URL, primary query, intent, monthly volume, current average position, supporting variants, title tag, internal-link anchor, status, owner.",
+        "One tab. Not one per section. The whole value is that it's the single place anyone can check in ten seconds.",
+        "Date it and re-run steps 2 and 5 quarterly. Search Console data ages, and so does your site."
+      ]
+    },
+    {
+      "h2": "How the map stops cannibalisation before it starts",
+      "body": [
+        "Cannibalisation is usually diagnosed after the fact — two pages trading places in the results, neither reaching page one, someone spending a week deciding which to merge. The map moves the intervention months earlier, to the point where the second page was about to be commissioned.",
+        "The mechanism is boring and it works: nobody briefs an article without checking the map first. If the query already has an owner, the brief becomes \"improve the existing URL\" instead of \"write a new one\". That single habit prevents more overlap than any amount of post-hoc auditing.",
+        "It also fixes the quieter version of the problem. When writers don't know which URL owns a phrase, internal links get scattered across three candidates, and Google reads the ambiguity exactly as you'd expect. A map with an anchor-text column makes every internal link a vote for the same page.",
+        "The catch, said plainly: a map only works if it's the thing people actually check. A sheet nobody opens is a spreadsheet, and there are a great many of those. Put it where briefs are written, make one person its owner, and review it quarterly against fresh Search Console data."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "What good looks like",
+        "body": "On a 200-page site, a finished map typically produces three lists: pages that own a query and just need improving, pages that duplicate another and should merge, and queries with no owner at all. The third list is your content plan for the next quarter, and it costs a day to produce."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are canonical keywords the same as primary keywords?",
+      "a": "That's the most common intended meaning, yes. A primary keyword is the single query a page is built to win — the one shaping its title, H1 and internal anchor text. \"Primary keyword\" or \"target query\" is what practitioners actually say, so use that in briefs and proposals."
+    },
+    {
+      "q": "Do canonical keywords have anything to do with canonical tags?",
+      "a": "No. A canonical tag is a technical instruction about which URL to index when several serve the same content. It operates on addresses, not on keywords. The shared word is why the confused query exists in the first place."
+    },
+    {
+      "q": "Can one page target more than one keyword?",
+      "a": "It should. A well-built page ranks for hundreds of related queries, and that's the goal rather than a problem. The rule is one search intent per URL, not one string — group everything that returns broadly the same results page onto a single page."
+    },
+    {
+      "q": "How do I know if two keywords need separate pages?",
+      "a": "Search both and compare the top ten results. Five or more shared URLs means Google sees one intent and one page should cover both. Little or no overlap means separate pages, however similar the words look. It takes two minutes and it beats guessing."
+    },
+    {
+      "q": "What should a keyword-to-URL map contain?",
+      "a": "One row per indexable URL, with the primary query, the intent, search volume, current average position, supporting variants, the preferred internal-link anchor, and a status of own, rewrite, merge or new. Keep it on one tab so anyone can check it in seconds."
+    },
+    {
+      "q": "How often should the map be updated?",
+      "a": "Quarterly for the data, and continuously for new pages. Refresh the Search Console export each quarter, re-check which URL Google actually shows for each target query, and add a row every time something is published. A map that lags the site by a year is worse than none."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-is-keyword-cannibalization"
+    },
+    {
+      "type": "glossary",
+      "slug": "keyword-cannibalization"
+    },
+    {
+      "type": "glossary",
+      "slug": "search-intent"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-do-keyword-research"
+    },
+    {
+      "type": "services",
+      "slug": "keyword-research-services"
+    },
+    {
+      "type": "compare",
+      "slug": "keyword-rankings-vs-organic-traffic"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-seo-marketing"
+    }
+  ]
+}

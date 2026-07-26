@@ -1,0 +1,191 @@
+{
+  "slug": "bounce-rate",
+  "type": "glossary",
+  "primaryKeyword": "bounce rate",
+  "secondaryKeywords": [
+    "bounce rate in ga4",
+    "what is a good bounce rate",
+    "engagement rate ga4",
+    "high bounce rate causes",
+    "does bounce rate affect seo"
+  ],
+  "cluster": "analytics",
+  "intent": "informational",
+  "h1": "Bounce rate",
+  "metaTitle": "Bounce Rate in GA4: What It Really Tells You",
+  "metaDescription": "Bounce rate is the share of sessions with no engagement. GA4 redefined it, Google doesn't rank on it, and it only means anything read by page type.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Bounce rate",
+  "definition": "Bounce rate is the percentage of sessions on your site that ended without meaningful engagement — in GA4, it is simply the inverse of engagement rate.",
+  "answer": "Bounce rate is the share of sessions that weren't engaged. GA4 counts a session as engaged if it lasts over 10 seconds, fires a key event, or views two or more pages — so bounce rate is 100% minus engagement rate. It is not a Google ranking factor, and it means nothing without page context.",
+  "takeaways": [
+    "GA4's bounce rate and the old Universal Analytics one are **different metrics with the same name**. Don't compare them across the 2023 migration.",
+    "Google does not use Google Analytics data to rank pages. Bounce rate is **not a ranking signal**, and never was.",
+    "80% on a glossary page is healthy. 80% on a pricing page is a fire.",
+    "The useful version of this metric is **engagement rate segmented by landing page and channel** — never the sitewide average."
+  ],
+  "sections": [
+    {
+      "h2": "What GA4 changed, and why the old number is gone",
+      "body": [
+        "In Universal Analytics, a bounce was a session with exactly one interaction hit. Land, read for eleven minutes, leave without clicking anything — that was a bounce, and it was recorded with a session duration of zero. The metric punished pages that answered the question on the first screen, which is most good pages.",
+        "GA4 flipped it. It measures **engaged sessions** first and derives bounce rate from what's left over."
+      ],
+      "table": {
+        "caption": "The same word, two different definitions.",
+        "head": [
+          "",
+          "Universal Analytics",
+          "GA4"
+        ],
+        "rows": [
+          [
+            "A bounce is",
+            "A single-hit session",
+            "A session that wasn't engaged"
+          ],
+          [
+            "Time on page counted?",
+            "No — bounced sessions logged 0 seconds",
+            "Yes — 10 seconds is enough to escape"
+          ],
+          [
+            "Scroll or video play",
+            "Ignored unless tagged as an event",
+            "Counts as engagement if it fires an event"
+          ],
+          [
+            "Typical direction",
+            "Higher",
+            "Lower, often much lower"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Don't chart it across the migration",
+        "body": "If your bounce rate 'improved' in mid-2023, it didn't. Universal Analytics stopped processing data on 1 July 2023 and GA4 counts differently. Any year-on-year bounce comparison spanning that line is measuring the tool, not the site."
+      }
+    },
+    {
+      "h2": "Bounce rate is not a ranking signal",
+      "body": [
+        "This one refuses to die, so plainly: Google does not read your [Google Analytics 4](/glossary/google-analytics-4) property to decide where you rank. Google's search team has said so publicly, repeatedly, for over a decade. Most sites Google ranks don't even have Analytics installed.",
+        "What confuses people is that bounce rate and rankings often move together. Both are downstream of the same cause — a page that matches [search intent](/glossary/search-intent) keeps people and gets links; a page that doesn't, doesn't. Correlation, not a lever.",
+        "So no, you cannot fix rankings by shaving your bounce rate. Adding a fake 15-second timer event to force engagement will improve the number on your dashboard and change nothing at all in the index."
+      ]
+    },
+    {
+      "h2": "Read it by page type, or don't read it",
+      "body": [
+        "A sitewide bounce rate averages a definition page against a checkout. The average is meaningless and always has been. Segment by landing page type and the number starts saying something."
+      ],
+      "table": {
+        "caption": "What a high bounce rate means depends entirely on the job of the page.",
+        "head": [
+          "Page type",
+          "High bounce means",
+          "Verdict"
+        ],
+        "rows": [
+          [
+            "Glossary or definition page",
+            "They got the answer and left",
+            "Fine — that's the job"
+          ],
+          [
+            "Blog post answering one question",
+            "Answered, no next step offered",
+            "Fix the internal links, not the content"
+          ],
+          [
+            "Contact or location page",
+            "Got the phone number and called",
+            "Fine — track the tel: click instead"
+          ],
+          [
+            "Service or pricing page",
+            "Wrong audience, or the price scared them",
+            "Investigate"
+          ],
+          [
+            "Homepage",
+            "Navigation or load speed is failing",
+            "Investigate urgently"
+          ],
+          [
+            "Paid landing page",
+            "The ad promised something the page doesn't",
+            "Money is burning"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "When a high bounce genuinely signals a problem",
+      "body": [
+        "Four patterns are worth acting on. Everything else is noise."
+      ],
+      "numbered": [
+        "**Bounce rate jumps on one template overnight.** That's rarely human behaviour — it's a broken deploy, a failed script, or a layout shift on mobile. Check [Core Web Vitals](/glossary/core-web-vitals) before you touch the copy.",
+        "**Bounce is high on pages that convert elsewhere.** If the same offer converts at 4% from email and 0.2% from organic, the organic queries are wrong, not the page.",
+        "**High bounce plus short session on a page you paid to send traffic to.** This is the only version of the metric that costs real money per visit.",
+        "**Engagement rate falls while rankings hold.** Usually means you started ranking for a query you shouldn't — worth checking in [Search Console](/glossary/google-search-console) rather than in Analytics."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The metric that replaces it",
+        "body": "Once your calls, WhatsApp clicks and form fills are tracked as key events, bounce rate stops mattering — you can look at conversion rate per landing page instead, which is the question you were actually asking."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a good bounce rate?",
+      "a": "There isn't one number. Content and reference pages routinely sit at 70–90% and that's healthy. Homepages, service pages and paid landing pages should be far lower. Judge each template against its own trailing average, not against a published benchmark from someone else's site."
+    },
+    {
+      "q": "Does bounce rate affect SEO?",
+      "a": "No. Google doesn't use Google Analytics data as a ranking input, and most ranking sites have no Analytics at all. Bounce rate and rankings correlate because both follow from whether the page answers the query — fixing the metric directly changes nothing."
+    },
+    {
+      "q": "How is engagement rate different from bounce rate?",
+      "a": "They're the same measurement from opposite ends. Engagement rate is the share of sessions that lasted over 10 seconds, fired a key event, or included two or more page views. Bounce rate is 100% minus that. Report engagement rate — it's the one that goes up when things improve."
+    },
+    {
+      "q": "Why did my bounce rate drop massively in 2023?",
+      "a": "Because you moved from Universal Analytics to GA4 and the definition changed underneath you. GA4 forgives a ten-second read where UA counted it as a bounce. The site didn't change; the ruler did."
+    },
+    {
+      "q": "Can I change how GA4 defines an engaged session?",
+      "a": "Partly. The 10-second threshold is adjustable up to 60 seconds in the data stream's session settings. Raising it makes your engagement rate look worse and your reporting stricter. Most sites should leave it alone and tag real interactions as events instead."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "conversion-rate"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-analytics-4"
+    },
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "services",
+      "slug": "analytics-setup-services"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-read-an-seo-report"
+    },
+    {
+      "type": "glossary",
+      "slug": "search-intent"
+    }
+  ]
+}

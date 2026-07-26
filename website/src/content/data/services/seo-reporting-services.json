@@ -1,0 +1,203 @@
+{
+  "slug": "seo-reporting-services",
+  "type": "services",
+  "primaryKeyword": "seo reporting services",
+  "secondaryKeywords": [
+    "seo reporting dashboard service",
+    "monthly seo report india",
+    "looker studio seo dashboard service",
+    "seo kpi reporting",
+    "transparent seo reporting agency"
+  ],
+  "cluster": "conversion-analytics",
+  "intent": "commercial",
+  "h1": "Reporting you can check without asking us",
+  "metaTitle": "SEO Reporting Services — Live Dashboard From Day One",
+  "metaDescription": "SEO reporting with a live dashboard from day one: nine metrics, one frozen baseline, and the same numbers our 90-day guarantee is settled against.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "priceFrom": "Free inside every retainer · from ₹40,000 / mo standalone",
+  "answer": "SEO reporting is the record of what changed and why. Ours is a live read-only dashboard from day one, nine metrics wide, sitting on top of a baseline snapshot frozen in week one. It's free inside every retainer, because a report you have to ask for isn't reporting.",
+  "takeaways": [
+    "Nine metrics, published below. Three of them are designed to make us look bad when we deserve it.",
+    "**The dashboard is live from day one**, read-only, and you get it before the first invoice — not in a PDF on the 7th of next month.",
+    "Average position is in there. It is not the headline, because a page can rise three positions and lose clicks to an AI Overview.",
+    "The baseline snapshot is frozen in week one and signed off in writing. That's the number the 90-day guarantee settles against.",
+    "It costs nothing inside a retainer. Reporting is not a product; it's the receipt for work you already paid for."
+  ],
+  "sections": [
+    {
+      "h2": "The nine numbers, published in advance",
+      "body": [
+        "Most agency reports are built backwards: the month happens, then somebody picks the charts that went up. The fix is to fix the metric list before the work starts, publish it, and never change it mid-engagement. Here's ours."
+      ],
+      "table": {
+        "caption": "The nine metrics on every Last Agency dashboard, and what each is honestly good for.",
+        "head": ["Metric", "Source", "What it actually tells you"],
+        "rows": [
+          [
+            "Qualified leads from organic",
+            "Your CRM, tagged at source",
+            "The only number the guarantee settles on. Hard to inflate, hard to argue with"
+          ],
+          [
+            "Organic sessions to revenue pages",
+            "GA4",
+            "Traffic to pages that can sell. A blog spike doesn't move it, which is the point"
+          ],
+          [
+            "Organic conversion rate",
+            "GA4 plus CRM",
+            "Whether new traffic is the right traffic. Rising sessions with a falling rate means we chased the wrong queries"
+          ],
+          [
+            "Clicks and CTR on the tracked query set",
+            "Search Console",
+            "Whether we're winning the click, not just the position"
+          ],
+          [
+            "Impressions on the tracked query set",
+            "Search Console",
+            "The earliest honest signal. Usually moves in four to eight weeks, or something's wrong"
+          ],
+          [
+            "Average position, per query, tracked set only",
+            "Search Console",
+            "Useful query by query. Meaningless as one blended number"
+          ],
+          [
+            "Indexed pages versus published pages",
+            "Search Console page indexing report",
+            "If we publish 20 and Google keeps 6, more content isn't the fix"
+          ],
+          [
+            "Referring domains gained and lost",
+            "A third-party link index",
+            "Slow and steady is healthy. A sudden 400 means somebody bought links"
+          ],
+          [
+            "Pages losing traffic month on month",
+            "GA4 and Search Console, compared",
+            "Content decay. This one names our own failures, and it sits on the first screen"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Why decay is on the front page",
+        "body": "Every content programme quietly rots at the back while the front looks healthy. If the decay list isn't visible, the first you'll hear about it is a flat quarter eighteen months from now. It's the least flattering chart we build and the most useful."
+      }
+    },
+    {
+      "h2": "Why average position isn't the headline",
+      "body": [
+        "Rankings are the metric clients ask for and the metric that has aged worst. Three reasons, all structural.",
+        "First, results are personalised and localised, so there is no single position — Search Console's average position is an average across wildly different searches, and it moves when you start ranking on page four for a hundred irrelevant queries. Second, position and clicks have come apart. AI Overviews, featured snippets, video blocks and the People Also Ask stack push the first organic result further down some pages than others, so rising two places can genuinely mean fewer visits. Third, a blended average across every query you accidentally rank for is trivially gameable, and every agency knows exactly how.",
+        "So we report position per query, against a query set agreed in week one, alongside clicks for the same set. If position improves and clicks don't, that's a finding, not something to hide behind a nicer chart."
+      ]
+    },
+    {
+      "h2": "The baseline snapshot, frozen in week one",
+      "body": [
+        "Before any work starts, we take a snapshot of all nine metrics over the trailing 90 days, write it into a document, and both sides sign it. It doesn't get revised later, which is the entire point — a baseline you can adjust is a baseline you can win against.",
+        "Two things usually complicate this, and it's better to hit them in week one than in month four.",
+        "The first is broken measurement. Plenty of Indian sites have GA4 counting a WhatsApp click as nothing, a UPI payment as an exit, and a thank-you page as three conversions. If your data can't support a baseline, we say so before we take a fee for a guarantee we can't fairly settle — see [analytics setup](/services/analytics-setup-services) for what fixing that involves.",
+        "The second is defining \"qualified\". A lead that leaves a phone number and a real requirement counts; a bot filling your contact form does not. We agree that definition in writing, with examples, because arguing about what counted in month three is how these promises get wriggled out of. There's a fuller walkthrough in [how to set an SEO baseline](/journal/how-to-set-an-seo-baseline)."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "No baseline, no accountability",
+        "body": "If your current agency can't tell you what your organic lead count was on the day they started, nothing they report can be proved or disproved. That's not an oversight. It's the design."
+      }
+    },
+    {
+      "h2": "The dashboard: live, read-only, yours on day one",
+      "body": [
+        "The dashboard goes up during onboarding, before the first month's work is finished, and it stays live. It's built in Looker Studio on top of your own GA4, Search Console and CRM connections, so nothing sits inside our tooling where you'd need to ask us for it.",
+        "Access goes to whoever needs it, not to one nominated contact. In practice that's three people with three different questions."
+      ],
+      "bullets": [
+        "**You**, checking whether leads are moving, usually on a Sunday night.",
+        "**Your finance lead**, who wants cost per organic lead next to what we invoice, and is right to want it.",
+        "**Your developer**, who needs the technical view — indexation, Core Web Vitals, crawl errors — with the affected URLs listed, not summarised.",
+        "**Read-only, always.** Nobody can quietly change a date range or drop a chart, including us. If a definition changes, it's logged on the dashboard with the date."
+      ]
+    },
+    {
+      "h2": "The monthly note, including the part where we were wrong",
+      "body": [
+        "A dashboard tells you what happened. It cannot tell you why, and the gap between those two is where most reporting fails. So every month there's a written note, and it has four fixed parts.",
+        "It's short — usually a page — and it goes out before the review call, not during it, so the call is a conversation rather than a recital."
+      ],
+      "numbered": [
+        "**What moved, and what we think caused it.** With a confidence level attached. \"Impressions up 31% on the tracked set, most likely the 14 refreshed pages, though a core update landed the same week\" is more useful than a clean claim we can't support.",
+        "**What didn't move.** Named. If links were flat for the second month running, it says so and explains what was in the way.",
+        "**What we got wrong.** A call that didn't work, a page that shouldn't have been written, an estimate that was optimistic. There is always something, and a note with an empty section here isn't honest.",
+        "**What happens next month**, with the two or three things we're dropping to make room."
+      ]
+    },
+    {
+      "h2": "What's included, what isn't, and what it costs",
+      "body": [
+        "Reporting is free inside every retainer — SEO from ₹75,000/mo, smaller sites from ₹40,000/mo, and the social and performance retainers too. We don't itemise it, because charging separately for the receipt is a strange way to run a business, and because an agency that bills for reporting has a quiet incentive to make reports longer rather than clearer.",
+        "If you're not a client and you want the dashboard and the monthly read on someone else's work — which happens, and is fair — that's [SEO consulting](/services/seo-consulting) at ₹40,000 a month ex-GST: the build, the baseline, and eight hours a month of somebody senior reading it. Plenty of people use those hours to audit the agency they already pay."
+      ],
+      "table": {
+        "caption": "Reporting scope — what's in the dashboard and what isn't.",
+        "head": ["Included", "Not included"],
+        "rows": [
+          ["Live Looker Studio dashboard, built in week one, read-only, unlimited viewers", "A weekly report. Weekly SEO data is noise wearing a suit"],
+          ["Baseline snapshot across all nine metrics, signed by both sides", "Retro-fitting a baseline after work has started"],
+          ["GA4, Search Console and CRM connections built on your own accounts", "Buying tool licences in your name — link data comes via ours"],
+          ["Query-level position and clicks for an agreed tracked set", "A blended average position headline. We'll show it, we won't lead with it"],
+          ["Monthly written note, sent before the review call", "Rewriting the note to omit a bad month"],
+          ["Technical view with affected URLs listed for your developer", "Fixing your CRM's lead sources — that's an [analytics build](/services/analytics-setup-services)"],
+          ["Full export of raw data whenever you ask, including after you leave", "Attribution modelling across paid, offline and brand. Different project"],
+          ["Definition change log, dated, on the dashboard itself", "Custom board decks. We'll join the board call instead"]
+        ]
+      }
+    },
+    {
+      "h2": "What the reporting is ultimately settling",
+      "body": [
+        "All of this exists to answer one question at day 90 without a debate: did the number move.",
+        "We freeze your trailing-90-day qualified leads from organic search on day one. If we haven't beaten that in 90 days, we keep working free until we do. That's the whole promise, and it only works because the measurement was agreed before there was anything at stake. We never promise a specific ranking position for a specific keyword — nobody controls Google's index, and a guarantee against a number we don't control isn't a guarantee, it's a sales line.",
+        "The uncomfortable corollary: honest reporting occasionally proves that SEO isn't your problem. If organic leads are up 40% and revenue is flat, the dashboard will show it, and the conversation moves to your sales follow-up instead of to another content plan. We'd rather have that conversation in month three than in month twelve."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much do SEO reporting services cost?",
+      "a": "Inside our retainers, nothing — it's included from ₹40,000/mo for smaller sites and ₹75,000/mo standard. Standalone, it's part of SEO consulting at ₹40,000 a month ex-GST. Elsewhere in India, dashboard builds are often sold as one-off projects between ₹25,000 and ₹1,00,000 depending on how many sources need connecting."
+    },
+    {
+      "q": "How often should an SEO agency report?",
+      "a": "Monthly for the written read, live for the data. Weekly SEO reporting sounds diligent and mostly reports noise — Search Console data alone fluctuates enough week to week to produce a false story in either direction. If you want to check on a Tuesday, that's what the live dashboard is for."
+    },
+    {
+      "q": "What should be in a monthly SEO report?",
+      "a": "Leads or revenue from organic first, then sessions to pages that sell, then conversion rate, then query-level clicks and impressions, then indexation and links. Plus a written explanation of what moved and why. If the first chart is traffic or rankings, the report is arguing rather than informing."
+    },
+    {
+      "q": "Why don't you lead with keyword rankings?",
+      "a": "Because position and clicks have come apart. AI Overviews, snippets and video blocks change how far down the real first result sits, so a page can gain two positions and lose visits. We report position per query alongside clicks, so you can see when that's happening rather than being reassured by a chart."
+    },
+    {
+      "q": "Do we own the dashboard and the data?",
+      "a": "Yes. It's built on your GA4, your Search Console and your CRM, and you keep all three whatever happens between us. On exit you get a full export and the dashboard file. No lock-in means nothing if the data lives in the agency's account."
+    },
+    {
+      "q": "Can you report on work another agency is doing?",
+      "a": "Yes, and it's a common reason people call. That's SEO consulting at ₹40,000 a month: we build the dashboard, set the baseline, and read it each month. We won't manufacture a case against your current agency, and sometimes the honest answer is that they're doing fine."
+    }
+  ],
+  "related": [
+    { "type": "services", "slug": "analytics-setup-services" },
+    { "type": "journal", "slug": "how-to-read-an-seo-report" },
+    { "type": "journal", "slug": "how-to-set-an-seo-baseline" },
+    { "type": "answers", "slug": "what-are-seo-kpis" },
+    { "type": "compare", "slug": "ga4-vs-search-console" },
+    { "type": "glossary", "slug": "google-search-console" }
+  ]
+}

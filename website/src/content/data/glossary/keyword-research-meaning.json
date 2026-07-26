@@ -1,0 +1,148 @@
+{
+  "slug": "keyword-research-meaning",
+  "type": "glossary",
+  "primaryKeyword": "keyword research",
+  "secondaryKeywords": [
+    "how to do keyword research",
+    "where to find keywords for seo",
+    "free keyword research",
+    "keyword research process",
+    "what are keywords in seo"
+  ],
+  "cluster": "content",
+  "intent": "informational",
+  "h1": "Keyword research",
+  "metaTitle": "Keyword Research: What It Is and How to Start",
+  "metaDescription": "Keyword research is finding the queries your buyers actually type. Here's a free method using Search Console, autocomplete and the SERP — no paid tool.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Keyword research",
+  "definition": "Keyword research is the process of finding and prioritising the search queries your buyers use, so that every page you build targets demand that already exists.",
+  "answer": "Keyword research is finding the queries your buyers actually type, then deciding which ones deserve a page. You can run the whole process free using Search Console, Google autocomplete, People Also Ask, Keyword Planner and your competitors' navigation. Score what you find by buyer intent first and volume last — especially in India, where volume estimates are unreliable.",
+  "takeaways": [
+    "Five free sources cover 90% of what a ₹10,000-a-month tool gives you. Buy the tool when speed is your bottleneck.",
+    "Volume estimates in India are worse than most people assume — demand splits across English, Hinglish and regional spellings.",
+    "Score by **intent and beatability**, not volume. The biggest number on the sheet is usually the worst target.",
+    "The deliverable is one row per **page**, not one row per keyword. Grouping is the actual work."
+  ],
+  "sections": [
+    {
+      "h2": "The five free sources, in the order you should use them",
+      "body": [
+        "Nobody needs a subscription to start. They need a method. Work these in order — each one narrows what you look at in the next.",
+        "Budget three hours for a first pass on a small site. Boring, and the most valuable three hours in the plan."
+      ],
+      "numbered": [
+        "**Google Search Console.** The only source built from your own data. Performance report, Queries tab, six months, sorted by impressions. Every row is a query a real person typed. Start here, always.",
+        "**Google autocomplete.** Type your core term and cycle the alphabet after it, then prefix it with \"how\", \"why\", \"cost of\", \"best\". Drawn from live query logs, so more current than any tool's database.",
+        "**People Also Ask.** Expand the box twice on each main term. Google is showing you how it clusters sub-questions — a free topic map.",
+        "**Google Keyword Planner.** Free with any Ads account. Without live spend it reports wide ranges rather than exact numbers — annoying, but honest. Use it for relative scale and new phrasings, not precision.",
+        "**Competitor navigation.** Open the four competitors you actually lose deals to. Their services menu and blog categories are their keyword strategy, already published."
+      ]
+    },
+    {
+      "h2": "Why the volume number lies, and lies harder in India",
+      "body": [
+        "Every tool's volume figure is a model, not a measurement — built from clickstream panels, Keyword Planner ranges and extrapolation. Two reputable tools give different numbers for the same query on the same day.",
+        "In the Indian market the error gets wider for reasons that are structural, not fixable:"
+      ],
+      "bullets": [
+        "**Language fragmentation.** The same intent gets typed in English, Hinglish and regional scripts. Each variant is counted separately, so each looks small and the real total is invisible.",
+        "**Spelling variance.** \"Jewellery\" and \"jewelry\", \"optimisation\" and \"optimization\", every transliteration of a city name. Demand splits across all of them.",
+        "**Panel coverage.** Clickstream panels underrepresent Indian users, so Indian estimates carry more modelling and less observation.",
+        "**Rounding to zero.** Anything under roughly ten searches a month gets reported as 0 or 10. That's where most high-intent [long-tail queries](/glossary/long-tail-keywords) live."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The trap this sets",
+        "body": "A founder opens a tool, sorts by volume, commissions twenty articles on the biggest numbers. Those are almost always the broadest, most competitive, least commercial queries on the list. Sorting by volume is a decision to lose slowly."
+      }
+    },
+    {
+      "h2": "Score by intent and beatability, not by volume",
+      "body": [
+        "Once you have a raw list — a few hundred rows is plenty — score each row against three questions. Anything scoring 1 across the board gets deleted, not parked."
+      ],
+      "table": {
+        "caption": "The three-question score we run on every candidate query.",
+        "head": ["Question", "Scores 3", "Scores 1"],
+        "rows": [
+          [
+            "How close to buying is the person typing this?",
+            "Names a service, a price, a city or a comparison",
+            "Generic curiosity, or clearly a student or job-seeker"
+          ],
+          [
+            "Can we beat what's ranking now?",
+            "Top five are thin, outdated, or not really about this",
+            "Top five are established brands with years of links"
+          ],
+          [
+            "Can we say something genuinely better?",
+            "We have real numbers, real experience, real examples",
+            "We'd be paraphrasing the current results"
+          ]
+        ]
+      },
+      "bullets": [
+        "**Volume is a tiebreaker only.** When two queries score identically, take the bigger one. That's the whole role volume should play.",
+        "**Check the SERP before scoring question two.** Ninety seconds in incognito beats any difficulty metric — see [search intent](/glossary/search-intent)."
+      ]
+    },
+    {
+      "h2": "Group into one page per intent",
+      "body": [
+        "This step separates research from a list, and most people skip it. You aren't building one page per keyword. You're building one page per **question a searcher is asking**, and each will rank for dozens of phrasings.",
+        "\"seo agency cost\", \"how much does an seo agency charge\" and \"seo agency pricing india\" are one page. Publishing three is how you create [keyword cannibalisation](/glossary/keyword-cannibalization) and end up with three pages at position 14 instead of one at position 4.",
+        "Sort by meaning, not by string. Two queries satisfied by the same page belong together. Two needing different formats — a definition versus a pricing table — are separate pages."
+      ]
+    },
+    {
+      "h2": "The one-sheet output, and the publishing order",
+      "body": [
+        "The deliverable is one sheet with a row per planned page — not a 4,000-row keyword export, which gets abandoned in a shared drive within a fortnight.",
+        "Six columns: target page, primary query, variants it should cover, intent, the format the SERP demands, the URL. Then order the rows — commercial pages first, each cluster's pillar before its supporting pages, and refreshes ahead of anything new, because an existing URL already carries whatever authority it built.",
+        "That order is your publishing calendar. [Our keyword research work](/services/keyword-research-services) ends with exactly this sheet, and it's where an SEO retainer starts — ours from ₹75,000/mo, smaller sites from ₹40,000."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "When a paid tool starts earning its fee",
+        "body": "When you can publish faster than you can find targets — usually past 50 pages, or once link data starts driving decisions. Before that, a ₹10,000-a-month subscription buys a longer list you haven't got the capacity to write."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I do keyword research without a paid tool?",
+      "a": "Yes, and for a site under about 100 pages the free method is close to as good. Search Console, autocomplete, People Also Ask, Keyword Planner and competitor navigation cover discovery. What you lose is speed and link-difficulty data, not accuracy about what people search."
+    },
+    {
+      "q": "How accurate are keyword volume numbers?",
+      "a": "Treat them as order-of-magnitude signals, not measurements. Every tool models volume from panels and Keyword Planner ranges, and two tools routinely disagree on the same query. In India the error widens because demand fragments across English, Hinglish and regional spellings."
+    },
+    {
+      "q": "How many keywords should I target per page?",
+      "a": "One intent, many phrasings. A good page targets a single question and picks up dozens of ways of asking it. Trying to force two genuinely different intents onto one URL means it serves neither well, and splitting one intent across two URLs causes cannibalisation."
+    },
+    {
+      "q": "Should I target keywords my competitors already rank for?",
+      "a": "Only when you can beat the page that's ranking. A competitor's ranking proves demand exists and shows you the format required. It doesn't mean the slot is available. Check whether the current top five are genuinely strong or merely first."
+    },
+    {
+      "q": "How often should keyword research be redone?",
+      "a": "A full pass once a year, plus a monthly ten-minute skim of new Search Console queries. Google surfaces you for queries you never planned for, and those rows are the cheapest new-page ideas you'll ever get."
+    },
+    {
+      "q": "What's the difference between keyword research and a content plan?",
+      "a": "Research produces a scored list of queries. A content plan is the decision about which of them become pages, in what format, and in what order. The list is raw material; most of the value is in the grouping and sequencing that follows."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "search-intent" },
+    { "type": "glossary", "slug": "long-tail-keywords" },
+    { "type": "glossary", "slug": "keyword-cannibalization" },
+    { "type": "glossary", "slug": "content-gap-analysis" },
+    { "type": "services", "slug": "keyword-research-services" },
+    { "type": "compare", "slug": "ahrefs-vs-semrush" }
+  ]
+}

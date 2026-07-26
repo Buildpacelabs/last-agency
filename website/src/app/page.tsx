@@ -9,6 +9,7 @@ import {
 } from '@/lib/site';
 import { JsonLd } from '@/components/JsonLd';
 import { FinalCta } from '@/components/FinalCta';
+import { ContentTeaser } from '@/components/ContentTeaser';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/' },
@@ -203,6 +204,20 @@ export default function HomePage(): JSX.Element {
           </div>
         </div>
       </section>
+
+      <ContentTeaser
+        eyebrow="No pitch, no gate, no email required"
+        title="Everything we know, published."
+        prefer={[
+          { type: 'answers', slug: 'how-do-seo-agencies-work' },
+          { type: 'cost', slug: 'seo-cost-in-india' },
+          { type: 'compare', slug: 'ppc-vs-seo' },
+          { type: 'compare', slug: 'agency-vs-in-house' },
+          { type: 'answers', slug: 'how-to-choose-an-seo-agency' },
+          { type: 'glossary', slug: 'backlink' },
+        ]}
+        fill={['answers', 'cost', 'compare', 'glossary', 'journal']}
+      />
 
       <FinalCta />
     </>

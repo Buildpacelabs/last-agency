@@ -1,0 +1,172 @@
+{
+  "slug": "saas",
+  "type": "seo-for",
+  "primaryKeyword": "seo for saas companies",
+  "secondaryKeywords": [
+    "saas seo agency india",
+    "b2b saas seo strategy",
+    "saas seo services",
+    "seo for software companies india",
+    "programmatic seo for saas",
+    "saas content marketing seo"
+  ],
+  "cluster": "saas-and-tech",
+  "intent": "commercial",
+  "industry": "SaaS",
+  "h1": "SEO for SaaS companies that need pipeline, not pageviews",
+  "metaTitle": "SEO for SaaS Companies: Demos, Not Just Traffic",
+  "metaDescription": "SEO for SaaS companies in India that ranks comparison, alternatives and free-tool pages — the queries buyers type right before they book a demo.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "SaaS SEO works when it targets the queries buyers type days before they buy: competitor alternatives, you-versus-rival comparisons, best-software-for-segment lists, and free tools that solve one job. Definition posts pull traffic that never signs up. Expect four to eight months before demo volume shifts.",
+  "takeaways": [
+    "The comparison and alternatives layer is the shortest path from ranking to a booked demo. Most SaaS teams write it last, badly, and in-house.",
+    "Programmatic pages are fine when each one does a job. The same page with the noun swapped is scaled content abuse and Google's spam policies name it.",
+    "Docs and changelogs are usually a SaaS site's largest URL set and its least governed. Decide the indexation rules before the library gets big.",
+    "Report keyword → landing page → signup → qualified. A report built on sessions tells you nothing, because sessions and signups move independently."
+  ],
+  "sections": [
+    {
+      "h2": "Why your best-performing blog post books no demos",
+      "body": [
+        "Most SaaS blogs rank at the top of the funnel: what is X, X best practices, X template. Those posts pull traffic. They pull the wrong traffic — students, competitors, and people who might buy in three years. Then the quarterly review turns into an argument about whether SEO works, when the real problem is that the keyword list was sorted by volume.",
+        "The queries that come immediately before a purchase look different. They name a vendor, a category, a segment, or a specific job. Volume is low, intent is high, and your competitor's marketing team has usually already written the page — which is precisely why it's worth writing yours."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The volume trap",
+        "body": "A keyword with 8,000 monthly searches and 0.2% demo intent is worth less than one with 90 searches and 8% demo intent. Sort your keyword sheet by expected signups instead of volume and roughly half of it disappears. That's the half you were about to spend a year on."
+      }
+    },
+    {
+      "h2": "The comparison and alternatives layer",
+      "body": [
+        "This is the content that does the most work per page, and it's the content most commonly handed to whoever has capacity. Four templates cover almost all of it, and each one has a specific reason it ranks."
+      ],
+      "table": {
+        "caption": "Bottom-funnel page templates every SaaS site should own.",
+        "head": ["Page type", "Query pattern", "What it must contain to rank"],
+        "rows": [
+          [
+            "Head-to-head",
+            "`you vs competitor`",
+            "A real feature table, honest pricing, and a paragraph naming who should pick them instead. Pages that concede nothing don't get linked or cited."
+          ],
+          [
+            "Alternatives",
+            "`competitor alternatives`",
+            "Five to eight genuine options, including ones that beat you on price. You rank because the page is useful, not because you put yourself first."
+          ],
+          [
+            "Best-for-segment",
+            "`best category software for segment`",
+            "Segment-specific criteria — compliance, seat count, integrations, INR billing. Generic top-10 lists lose to G2 and Capterra every time."
+          ],
+          [
+            "Migration",
+            "`switch from competitor`",
+            "Import steps, data mapping, downtime, what breaks. Converts hardest of the four and almost nobody writes it."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Write them assuming your competitor's head of marketing will read them**, because they will. Sales-deck comparison tables get screenshotted and mocked; fair ones get cited, including by AI assistants summarising the category.",
+        "**Update the pricing rows quarterly.** A comparison page with 2024 pricing is worse than no page — it's a public demonstration that you don't maintain anything.",
+        "**Don't hide the competitor's name behind 'Tool A'.** Nobody searches for Tool A."
+      ]
+    },
+    {
+      "h2": "Free tools and calculators, without tripping the scaled-content line",
+      "body": [
+        "Programmatic SEO earns SaaS companies more qualified signups than the blog does, and it's also the fastest way to get a domain suppressed. The difference is whether each generated page does something a human would miss if it vanished."
+      ],
+      "bullets": [
+        "**One template, many pages — only if the pages differ.** An ROI calculator templated across 40 industries works when each page carries industry-specific inputs, sourced benchmarks and different copy. The same page with the noun swapped is what Google's spam policies describe as scaled content abuse. The line is real and we've written about [where programmatic SEO crosses it](/journal/programmatic-seo-and-the-scaled-content-line).",
+        "**Free tools that solve one job** — a slug generator, an invoice template, a UTM builder, a GST calculator. They rank, they attract links, and they put your product in front of somebody mid-task.",
+        "**Gate nothing at first.** An email wall kills the links that make the page rank in the first place. Capture the signup on the result screen instead.",
+        "**Kill what doesn't index.** If 300 of your 500 generated pages sit unindexed eight weeks after launch, the template is thin. Cut it rather than publishing 500 more and hoping."
+      ]
+    },
+    {
+      "h2": "Docs, changelogs and the indexation rules nobody writes down",
+      "body": [
+        "Documentation is usually the largest URL set a SaaS company owns and the least governed. Left alone it either becomes a genuine topical asset or it consumes crawl budget and quietly cannibalises the pages that sell."
+      ],
+      "bullets": [
+        "**Subfolder beats subdomain** where your stack allows it — `yoursite.com/docs` sits inside the same authority and internal link graph as everything else. It is not always worth a migration to fix; see [subdomain vs subfolder](/compare/subdomain-vs-subfolder) before anyone touches DNS.",
+        "**Version your canonicals deliberately.** Docs for v1, v2 and v3 of the same endpoint are near-duplicates. Canonical older versions to current, or `noindex` them, but decide — don't let the docs framework decide for you.",
+        "**Changelogs: index the changelog, not every entry.** A URL per bugfix is a thousand thin pages. Keep one page, or `noindex` the entries and keep them for humans and for support.",
+        "**Watch the cannibalisation.** Docs outranking marketing for 'API rate limits' is usually correct. Docs outranking your pricing page for 'pricing' is not. [Keyword cannibalization](/glossary/keyword-cannibalization) on a docs-heavy site is almost always a canonical or internal-link problem, not a content one."
+      ]
+    },
+    {
+      "h2": "Pricing and integration pages are underrated ranking assets",
+      "body": [
+        "Two page types on a typical SaaS site get treated as product UI and never as search assets. Both of them sit right on top of purchase intent."
+      ],
+      "subs": [
+        {
+          "h3": "Pricing",
+          "body": [
+            "`[Product] pricing` is often the highest-intent branded query you own, and third-party review sites regularly outrank you for it — because they publish numbers and you publish 'Contact sales'. Publish something real: a starting price, what moves it, what's excluded, what a typical account pays.",
+            "If you genuinely can't publish a single number, publish the ranges and the variables. We do exactly that on [our own pricing page](/pricing), which is harder than hiding behind a form and considerably more useful."
+          ]
+        },
+        {
+          "h3": "Integrations",
+          "body": [
+            "`[Your product] + [their product] integration` is a query pattern with as many instances as you have integrations, and the searcher is already paying for one side of it.",
+            "A directory with a real page per partner — setup steps, what syncs, what doesn't, rate limits, known gotchas — is programmatic SEO nobody can call thin, because every page describes a genuinely different system. It also gives partner marketing something to link to, which is how these pages pick up authority without an outreach campaign."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Measure trial signups and MQLs, not sessions",
+      "body": [
+        "A SaaS SEO report built on sessions tells you nothing useful, because sessions and signups move independently — and the pages that generate the most of one are rarely the pages that generate the most of the other. The mapping you need is keyword → landing page → signup → qualified, and it takes an afternoon to wire up."
+      ],
+      "numbered": [
+        "Record first-touch organic landing page in your CRM or product analytics, not just last click. Bottom-funnel SaaS content is frequently a first-touch asset that closes six weeks later through a direct visit.",
+        "Split self-serve signups from demo requests. They come from different queries, and a blended conversion rate hides the truth about both.",
+        "Report signup-to-qualified by landing page. A comparison page at 4% signup and 60% qualified beats a guide at 12% signup and 5% qualified, and only this cut makes that visible.",
+        "Feed closed-won back into the model each quarter. Twelve months in, your pages ranked by revenue rarely match your pages ranked by traffic — and the gap is the whole argument for changing next quarter's plan."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where we'd start on a SaaS site",
+        "body": "Comparison layer and pricing page first, because they're the shortest distance between a ranking and a demo. Category-explainer content comes later, once there's something to catch it. Our SEO runs from ₹75,000/mo, smaller sites from ₹40,000/mo, and the number we commit to is your own trailing-90-day qualified leads from organic, frozen on day one. Miss it in 90 days and we keep working free until we beat it."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long does SaaS SEO take to produce demos?",
+      "a": "Four to eight months on a competitive category, and the range is that wide because it depends almost entirely on your existing domain authority. Comparison and alternatives pages on an established domain can rank inside eight weeks. The same pages on a six-month-old domain wait for links first."
+    },
+    {
+      "q": "Should a SaaS company write comparison pages against its own competitors?",
+      "a": "Yes, and honestly. Those queries have the highest purchase intent of anything in the category, and someone will rank for them regardless. A fair page that names who should choose the competitor gets linked, cited and trusted. A page that pretends you win every row gets ignored."
+    },
+    {
+      "q": "Is programmatic SEO safe for SaaS in 2026?",
+      "a": "It's safe when each page contains something that couldn't be auto-generated — real data, a working tool, genuinely different content. Google's spam policies target pages created at scale that add no value, not templating itself. If you can't explain what each page does for a reader, don't publish it."
+    },
+    {
+      "q": "Should SaaS documentation be indexed by Google?",
+      "a": "Usually yes — docs rank well for problem-shaped queries and build topical depth. What shouldn't be indexed is every historical version of every page, every changelog entry, and internal API references nobody outside the product will search for. Set the rule once, then enforce it in the docs build."
+    },
+    {
+      "q": "How much does SaaS SEO cost in India?",
+      "a": "Serious SaaS SEO in India typically runs ₹75,000–₹3,00,000 a month depending on how competitive the category is and how much engineering support the site needs. Our SEO starts at ₹75,000/mo, with smaller sites from ₹40,000/mo, all ex-GST and month-to-month after the first quarter."
+    }
+  ],
+  "related": [
+    { "type": "services", "slug": "saas-seo-services" },
+    { "type": "cost", "slug": "saas-seo-cost" },
+    { "type": "compare", "slug": "b2b-seo-vs-b2c-seo" },
+    { "type": "journal", "slug": "programmatic-seo-and-the-scaled-content-line" },
+    { "type": "seo-for", "slug": "b2b" },
+    { "type": "answers", "slug": "how-to-do-keyword-research" }
+  ]
+}

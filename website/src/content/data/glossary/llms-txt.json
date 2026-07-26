@@ -1,0 +1,163 @@
+{
+  "slug": "llms-txt",
+  "type": "glossary",
+  "primaryKeyword": "llms.txt",
+  "secondaryKeywords": [
+    "what is llms txt",
+    "llms.txt seo",
+    "do i need llms.txt",
+    "llms txt example",
+    "llms full txt"
+  ],
+  "cluster": "ai-search",
+  "intent": "informational",
+  "h1": "llms.txt",
+  "metaTitle": "llms.txt: What It Is and Whether You Need One",
+  "metaDescription": "llms.txt lists your key pages for AI models. Google says it has no ranking effect. Here's the honest case for one, a sample file, and when to skip it.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "llms.txt",
+  "definition": "llms.txt is a proposed plain-Markdown file at a site's root that lists its most important pages so a language model can find them without crawling everything.",
+  "answer": "llms.txt is a Markdown file at yoursite.com/llms.txt listing your key pages with one-line descriptions, proposed by Jeremy Howard in September 2024. Google's Search Relations team has said it has no effect on ranking and that they aren't aware of AI systems using it. Add it if it's automated; skip it if it costs developer days.",
+  "takeaways": [
+    "It's a **proposal**, not a standard. No major AI provider has confirmed reading it.",
+    "Google has publicly said it has **no ranking effect** — the comparison drawn was to the old keywords meta tag.",
+    "The real benefit is narrow and real: cleaner ingestion for documentation, when a tool you use already generates the file.",
+    "If it needs a sprint of developer time, that time is better spent on page speed, internal links or a page that answers a buying question."
+  ],
+  "sections": [
+    {
+      "h2": "What the file is and where it lives",
+      "body": [
+        "llms.txt sits at your domain root, alongside `robots.txt` and `sitemap.xml`, at `https://example.com/llms.txt`. Unlike robots.txt it issues no instructions and grants no permissions — it's a curated index in Markdown, meant to let a model find your best pages without crawling and parsing your whole site.",
+        "Jeremy Howard, co-founder of Answer.AI, proposed it in September 2024. The stated problem was real: HTML pages are full of navigation, cookie banners and scripts, and a model with a limited context window wastes most of it on furniture rather than content.",
+        "A companion convention, `llms-full.txt`, concatenates the actual content of those pages into one long Markdown file so a model can ingest everything in a single fetch."
+      ]
+    },
+    {
+      "h2": "A working sample file",
+      "body": [
+        "The format is deliberately simple — an H1 with the site name, a blockquote summary, then H2 sections containing Markdown links with short descriptions. An `## Optional` section marks pages a model may skip when it's short on context."
+      ],
+      "bullets": [
+        "`# Meridian Ceramics`",
+        "`> Meridian Ceramics is a Jaipur-based manufacturer of hand-glazed tableware, shipping to 14 countries.`",
+        "`## Products`",
+        "`- [Dinner sets](https://example.com/dinner-sets): Sizes, glazes, lead times and minimum order quantities.`",
+        "`- [Custom orders](https://example.com/custom): The process, tooling costs and typical eight-week timeline.`",
+        "`## Company`",
+        "`- [About](https://example.com/about): Founded 2009, 40-person studio, kiln capacity and certifications.`",
+        "`## Optional`",
+        "`- [Press coverage](https://example.com/press): Media mentions since 2019.`"
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "You may already have one",
+        "body": "Documentation platforms including Mintlify generate llms.txt automatically, and several site frameworks now ship a plugin for it. If yours does, the cost-benefit conversation is over — leave it on and move on."
+      }
+    },
+    {
+      "h2": "What Google and the model providers have actually said",
+      "body": [
+        "Google's John Mueller has publicly compared llms.txt to the old keywords meta tag — a file a site owner writes about itself, which a search system therefore has little reason to trust — and has said he isn't aware of any AI system currently using it. Google has been consistent that it has no bearing on ranking.",
+        "On the provider side, none of the major labs have documented llms.txt support in their crawler documentation. Where the file does get read today, it's mostly by developer tools, coding assistants and documentation platforms fetching a specific site on request, rather than by large-scale training or retrieval crawls.",
+        "That's the honest state of it. Not a scam, not a standard, and nowhere near the thing being sold in 2026 as a shortcut to AI visibility."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Line items to refuse",
+        "body": "If an agency quotes you a separate fee for llms.txt implementation, or presents it as a driver of AI visibility, that's a tell about the rest of the proposal. The file takes under an hour to write by hand for a small site. Ask what else on the invoice is priced the same way."
+      }
+    },
+    {
+      "h2": "When it's worth it, and when to skip",
+      "body": [
+        "Two clear cases, and a large middle where the answer is genuinely no."
+      ],
+      "table": {
+        "caption": "A straight cost-benefit read.",
+        "head": [
+          "Your situation",
+          "Verdict"
+        ],
+        "rows": [
+          [
+            "Your docs platform generates it automatically",
+            "Keep it. Zero cost, small upside."
+          ],
+          [
+            "You publish technical documentation people query in coding assistants",
+            "Worth doing. This is the case the proposal was designed for."
+          ],
+          [
+            "Small business site, 20 to 200 pages, no developer on call",
+            "Skip it, or spend the hour writing it by hand and expect nothing."
+          ],
+          [
+            "An agency wants a paid sprint for it",
+            "No. Spend it on internal links or page speed."
+          ],
+          [
+            "You have no XML sitemap yet",
+            "Fix that first. Sitemaps are read by systems that demonstrably exist."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "What to do instead, if AI visibility is the goal",
+      "body": [
+        "If the real question is being cited by assistants, the answers sit elsewhere and they're not new. Make sure your [XML sitemap](/glossary/xml-sitemap) is accurate and your [robots.txt](/glossary/robots-txt) doesn't accidentally block the AI crawlers you want to be read by — a genuinely common own-goal, and a decision worth making deliberately rather than inheriting from a template.",
+        "Then do the work that actually moves citation rates: rank for the query, write extractable answers, and build third-party presence. That's covered properly in [generative engine optimization](/glossary/generative-engine-optimization), and none of it fits in a text file at your domain root."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does llms.txt affect SEO rankings?",
+      "a": "No. Google has stated it has no effect on ranking, and John Mueller has publicly compared it to the old keywords meta tag. Any proposal implying it lifts rankings is either mistaken or hoping you won't check."
+    },
+    {
+      "q": "Do ChatGPT, Claude or Gemini read llms.txt?",
+      "a": "None of the major providers document support for it in their crawler documentation. Where it's read today, it's mostly documentation platforms, coding assistants and developer tools fetching a specific site on request. Adoption may broaden, but as of now nobody should budget on the assumption that it has."
+    },
+    {
+      "q": "What's the difference between llms.txt and robots.txt?",
+      "a": "robots.txt is an established standard that grants or denies crawler access, and it's obeyed by every major crawler. llms.txt is a proposal that grants nothing — it's a curated Markdown index of your best pages. One controls access, the other suggests reading order."
+    },
+    {
+      "q": "What is llms-full.txt?",
+      "a": "A companion convention that concatenates the full Markdown content of your key pages into a single file, so a model can ingest everything in one fetch rather than following links. It's most useful for documentation sites and largely pointless for a marketing site of 50 pages."
+    },
+    {
+      "q": "Should a small business add llms.txt?",
+      "a": "Only if it's free. If your platform generates one, keep it. If it needs developer time, that time returns more on page speed, internal linking or one page that answers a real buying question. The file is cheap to add later if adoption picks up."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "robots-txt"
+    },
+    {
+      "type": "glossary",
+      "slug": "xml-sitemap"
+    },
+    {
+      "type": "glossary",
+      "slug": "generative-engine-optimization"
+    },
+    {
+      "type": "journal",
+      "slug": "should-you-block-ai-crawlers"
+    },
+    {
+      "type": "services",
+      "slug": "ai-search-optimisation-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "ai-visibility"
+    }
+  ]
+}

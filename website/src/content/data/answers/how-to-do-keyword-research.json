@@ -1,0 +1,222 @@
+{
+  "slug": "how-to-do-keyword-research",
+  "type": "answers",
+  "primaryKeyword": "how to do keyword research",
+  "secondaryKeywords": [
+    "keyword research process",
+    "how to research keywords for seo",
+    "keyword research for beginners",
+    "how to pick keywords"
+  ],
+  "cluster": "seo-howto",
+  "intent": "informational",
+  "h1": "Keyword research that ends in a publishing plan",
+  "metaTitle": "How to Do Keyword Research That Ships Pages",
+  "metaDescription": "How to do keyword research that ends in a real publishing plan: seed from customers, expand, cluster by intent, then one primary keyword per URL.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Keyword research is five steps: seed from what customers actually say, expand those seeds with autocomplete and Search Console, cluster them by intent, check each cluster against the live SERP, then assign exactly one primary keyword per URL. The output is a publishing plan with owners and dates — not a 4,000-row spreadsheet.",
+  "takeaways": [
+    "The deliverable is a table of URLs with owners and ship dates. If your research ends in a keyword export, you've done the fun half and skipped the useful one.",
+    "**Cluster by SERP overlap, not by word similarity.** If the same pages rank for two queries, Google thinks they're one question — so build one page.",
+    "One primary keyword per URL. Two pages chasing the same query is cannibalisation, and it costs you both.",
+    "A local business usually needs 15–25 primary keywords. Most sites research ten times that and publish a tenth of it."
+  ],
+  "sections": [
+    {
+      "h2": "Start from the output, or you'll never reach it",
+      "body": [
+        "Most keyword research fails at the handover. Somebody spends a fortnight building an impressive sheet, presents it, everyone agrees it's thorough, and nine months later three of the pages exist. The research wasn't wrong. It just wasn't a plan.",
+        "So define the artefact before you start. A finished keyword plan is a table where every row is a URL somebody has agreed to ship on a date. Say you run a twelve-person accounting firm in Bengaluru selling to startup founders. Five rows of that plan look like this."
+      ],
+      "table": {
+        "caption": "What a keyword plan looks like when it's finished. Every row is a commitment.",
+        "head": [
+          "URL",
+          "Primary keyword",
+          "Intent → format",
+          "Owner / ship date"
+        ],
+        "rows": [
+          [
+            "/services/gst-return-filing",
+            "gst return filing for startups",
+            "Commercial → service page with a pricing table",
+            "Founder / 8 Aug"
+          ],
+          [
+            "/pricing",
+            "accounting firm fees bangalore",
+            "Commercial → published fee ranges",
+            "Founder / 15 Aug"
+          ],
+          [
+            "/blog/gst-late-fee-calculation",
+            "gst late fee calculation",
+            "Informational → calculator plus a worked example",
+            "Writer + dev / 29 Aug"
+          ],
+          [
+            "/blog/private-limited-vs-llp",
+            "private limited vs llp for startups",
+            "Commercial investigation → comparison table and a verdict",
+            "Writer / 12 Sep"
+          ],
+          [
+            "/blog/what-is-form-16",
+            "what is form 16",
+            "Informational → short explainer, one annotated screenshot",
+            "Junior / 26 Sep"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "A 4,000-row export is not research",
+        "body": "It's a decision you postponed. Every keyword you don't assign to a URL with a date is a keyword you've silently agreed not to target, but you've written it down so it feels like progress. Delete the rows you won't act on this quarter — you'll find they were most of them."
+      }
+    },
+    {
+      "h2": "Step 1 — Seed from customers, not from a tool",
+      "body": [
+        "Open the tool second. First, spend an afternoon collecting the words people already use about your business, because those words convert and no keyword database will ever surface them with the right emphasis.",
+        "Aim for thirty seed phrases. Not variants — distinct problems and product categories. The variants come free in step two.",
+        "Where they come from: the last twenty sales calls, your support inbox, live chat and WhatsApp threads, your site's internal search log, the objections in your sales deck, and the way your best customer described you in an email. Then your Search Console queries, which show what Google already associates you with. We've ranked [nine free places to find keywords](/answers/where-to-find-keywords-for-seo) if you want the full list.",
+        "The classic failure here is seeding from your own product vocabulary. If your homepage says 'compliance automation' and every customer says 'GST filing', a tool fed the first phrase returns a tidy list of terms nobody searches."
+      ]
+    },
+    {
+      "h2": "Step 2 — Expand, then cluster by intent",
+      "body": [
+        "Expansion is mechanical and fast. Take each seed and run it through the modifier passes below. Thirty seeds becomes a few hundred queries in an hour."
+      ],
+      "numbered": [
+        "**Autocomplete and alphabet soup** — type the seed, then the seed plus each letter, and record the suggestions.",
+        "**People Also Ask** — open the boxes and watch them multiply. Stop when the questions stop being about your topic.",
+        "**Modifiers** — price, cost, near me, best, vs, alternative, for startups, in India, online, free, template. Each one signals a different buyer stage.",
+        "**Search Console** — every query with impressions, especially those sitting between positions 8 and 20.",
+        "**Competitor titles and sitemaps** — public, free, and a readable list of what somebody already decided was worth paying for."
+      ],
+      "subs": [
+        {
+          "h3": "Cluster by SERP overlap, not by wording",
+          "body": [
+            "Now group them. The naive method sorts by shared words, which produces neat clusters and wrong pages. The method that works: if the same URLs rank for two queries, Google has decided they're the same question, and one page should serve both. If the ranking pages are completely different, they're separate pages no matter how similar the wording looks.",
+            "'seo agency cost' and 'seo agency pricing' almost always share ranking pages — one page. 'seo cost' and 'seo course cost' look related and share nothing — two pages, two audiences, and merging them wastes both.",
+            "You can do this by hand for a hundred queries: open the top five results for each, note the URLs, group the overlaps. It's tedious for an afternoon and it prevents a quarter of misdirected writing."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Step 3 — Validate each cluster against the live SERP",
+      "body": [
+        "Before a cluster becomes a row in your plan, search it and read what's actually there. Google has already decided what a good answer looks like for that query, and arguing with that decision is the most common way a well-researched page fails.",
+        "You're checking three things."
+      ],
+      "bullets": [
+        "**Format.** Are the top results comparison tables, calculators, videos, product pages, or long guides? Publish the format that's winning. A 2,000-word essay ranked against five calculators loses to all five.",
+        "**Who owns it.** If the first page is Amazon, Reddit, Quora and three national publications, you're not winning that query this year with a new site. Note it, park it, pick the specific version of the query instead.",
+        "**Intent.** [Search intent](/glossary/search-intent) is decided by the results, not by the words. 'seo agency' returns directories and agency homepages, so it's a commercial query, however informational it sounds."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Do it in incognito, with the region set",
+        "body": "Personalised and location-based results will lie to you about what a stranger sees. Use an incognito window, set the region to India explicitly, and check on mobile too — for local and commercial queries the mobile results are frequently a different page entirely."
+      }
+    },
+    {
+      "h2": "Step 4 — One primary keyword per URL",
+      "body": [
+        "This is the rule that keeps a plan honest, and it's where most spreadsheets quietly fall apart.",
+        "Each URL gets exactly one primary keyword: the query the page exists to answer, the one you'd write the title around. Everything else in the cluster is a secondary — worth covering in the body, worth an H2, not worth its own page.",
+        "The discipline this enforces is subtraction. When two rows want the same primary keyword, one of them isn't a page. Either merge them or find the genuinely different question the second one answers. Publish both and you've built a [cannibalisation](/answers/what-is-keyword-cannibalization) problem where your own pages compete, split their links, and swap positions unpredictably while you wonder why neither ranks.",
+        "It also fixes the reporting problem before it starts. One keyword per URL means you can say, per page, whether it worked — which is the only way anyone can be held to a number later."
+      ]
+    },
+    {
+      "h2": "Step 5 — Add owners and dates, then stop researching",
+      "body": [
+        "The last step takes twenty minutes and is the one that gets skipped.",
+        "Sort your clusters by a simple ranking: commercial intent first, then queries where Search Console already shows impressions, then everything else. Take the top fifteen. Assign each an owner and a ship date. Put the rest in a second tab labelled 'not this quarter' and close it.",
+        "Fifteen pages at one a week is a quarter of work for a small team, and it will out-earn the version where forty pages were planned and eleven appeared. Cadence beats volume in SEO the way it beats it everywhere else.",
+        "Then stop. Research again when you've published the list, when the SERPs shift after a core update, or when the business starts selling something new. Re-researching before you've shipped is procrastination with a spreadsheet."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The date is the deliverable",
+        "body": "A keyword plan without dates isn't a plan, it's a wish list with a filter applied. If nobody's name is against a row and no date is on it, assume that page does not exist and will not exist. Plan the quarter you can actually staff."
+      }
+    },
+    {
+      "h2": "How many keywords a small site actually needs",
+      "body": [
+        "Far fewer than the industry implies, because the constraint has never been ideas. It's pages that are genuinely worth reading.",
+        "Rough guides, based on how these sites are usually structured rather than on any survey.",
+        "If you'd rather not run this yourself, it's [what our keyword research work delivers](/services/keyword-research-services) — and we hand over the plan with dates, not the export. Whether we're doing it or you are, the measure stays the same: qualified leads from organic against your own trailing-90-day baseline, frozen before anything ships."
+      ],
+      "bullets": [
+        "**Local service business** — 15–25 primary keywords. Service pages, a location page or two, and the handful of questions customers ask before booking. Most of the work is the Google Business Profile, not the content volume.",
+        "**B2B or SaaS** — 60–120 across two or three clusters, built over a year. Deep beats broad here; owning one topic completely is worth more than touching six.",
+        "**Ecommerce** — one primary keyword per category and per genuinely distinct product type, not per SKU. Thousands of near-identical product pages is a template problem, not a research problem.",
+        "**A brand-new site** — start with 10. Publish them properly, watch what Search Console reports back after eight weeks, and let real impression data shape the next twenty. That feedback beats any amount of upfront research."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long should keyword research take?",
+      "a": "For a small site, two to three focused days. An afternoon collecting seeds from calls and tickets, a day expanding and clustering, half a day checking SERPs and assigning URLs. Anything past a week is usually avoidance — the pages aren't going to write themselves while the sheet gets tidier."
+    },
+    {
+      "q": "Can I do keyword research without a paid tool?",
+      "a": "Yes, and for a first plan you probably should. Search Console, autocomplete, People Also Ask, Google Trends and your own support inbox cover seeding, expansion and validation completely. Paid tools mainly add competitor keyword lists, which matter once you're competing hard rather than starting out."
+    },
+    {
+      "q": "Should I target high-volume or low-volume keywords?",
+      "a": "Neither, as a rule. Target queries where the intent matches what you sell and the current results look beatable. A query with 90 monthly searches and buying intent beats one with 9,000 informational searches, because one produces enquiries and the other produces a traffic chart."
+    },
+    {
+      "q": "How do I know if two keywords need one page or two?",
+      "a": "Search both and compare the top five results. Substantial overlap in the ranking URLs means Google treats them as one question — build one page. Completely different results mean two audiences and two pages, no matter how similar the phrasing looks to you."
+    },
+    {
+      "q": "What is keyword difficulty and should I trust it?",
+      "a": "It's a proprietary score each tool invents, derived mostly from the links pointing at the current top results. Useful for sorting a list, meaningless as an absolute number, and not comparable between tools. Reading the actual SERP for two minutes tells you more than the score does."
+    },
+    {
+      "q": "How often should I redo keyword research?",
+      "a": "When you've published the current plan, when a core update visibly reshuffles your SERPs, or when the business starts selling something new. For most sites that's once or twice a year. Refreshing the sheet quarterly while the page count stays flat is a well-disguised way of not publishing."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "where-to-find-keywords-for-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "search-intent"
+    },
+    {
+      "type": "glossary",
+      "slug": "topic-cluster"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-keyword-cannibalization"
+    },
+    {
+      "type": "services",
+      "slug": "keyword-research-services"
+    },
+    {
+      "type": "journal",
+      "slug": "a-post-mortem-on-keyword-cannibalization"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-fix-broken-links-in-seo"
+    }
+  ]
+}

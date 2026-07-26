@@ -1,0 +1,201 @@
+{
+  "slug": "why-is-my-page-not-indexed-on-google",
+  "type": "answers",
+  "primaryKeyword": "why is my page not indexed",
+  "secondaryKeywords": [
+    "page not indexed google",
+    "crawled currently not indexed fix",
+    "discovered currently not indexed",
+    "how to get a page indexed faster"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "Why Google will not index your page",
+  "metaTitle": "Why Is My Page Not Indexed? A Nine-Step Check",
+  "metaDescription": "Why is my page not indexed by Google? Work this nine-step elimination in order, from a stray noindex tag to a quality threshold no tag will ever fix.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "A page usually isn't indexed for one of four reasons: a noindex tag, a robots.txt block, a canonical pointing elsewhere, or Google crawled it and decided it wasn't worth storing. Check those in that order in Search Console's URL Inspection tool. The fourth is the most common and the only one no tag fixes.",
+  "takeaways": [
+    "**URL Inspection in Search Console is the only source of truth.** A `site:` search is an approximation and it lies in both directions.",
+    "Work the checks in order. Skipping to \"request indexing\" before you've read the exclusion reason wastes a fortnight.",
+    "**Blocking a page in robots.txt stops Google reading your noindex tag.** The two together do the opposite of what people expect.",
+    "\"Crawled – currently not indexed\" is a verdict on the page, not a bug. Google looked and passed.",
+    "On a healthy site a new page is usually indexed within days. Two weeks with a clean URL Inspection is when it becomes a content problem."
+  ],
+  "sections": [
+    {
+      "h2": "Step zero: confirm the page is genuinely missing",
+      "body": [
+        "Most \"my page isn't indexed\" panics are actually \"my page is indexed and ranking on page four\". Those are completely different problems with completely different fixes, and it's worth spending sixty seconds separating them.",
+        "Open Search Console, paste the full URL into the inspection bar at the top, and read what comes back. \"URL is on Google\" means it is indexed and your problem is ranking. Anything else gives you an exclusion reason, and that reason is the rest of this page.",
+        "Don't rely on `site:yourdomain.com/page`. The `site:` operator returns an approximation of the index, it drops pages that are genuinely there, and it occasionally shows pages that have since been removed. It's a smell test, not evidence."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "If you have no Search Console access",
+        "body": "Get it before you do anything else. Verifying a property takes ten minutes and every diagnosis below depends on it. An agency that can't show you the URL Inspection screen for a specific page is guessing as much as you are."
+      }
+    },
+    {
+      "h2": "The nine-step elimination, in order",
+      "body": [
+        "Run these in sequence. Each one rules out a whole class of cause, and the order matters — checking rendering before you've checked robots.txt is how people lose an afternoon."
+      ],
+      "numbered": [
+        "**Read the exclusion reason in URL Inspection.** Google usually tells you outright. Steps 2 to 9 exist for when the reason is vague or you want to know why the reason is what it is.",
+        "**Check for a noindex tag.** View source and search for `noindex` — both in a `meta name=robots` tag and in the `X-Robots-Tag` HTTP response header, which is invisible in the page source and catches people constantly.",
+        "**Check robots.txt.** Fetch `yourdomain.com/robots.txt` and look for a `Disallow` matching the path. A blocked page can't be crawled, which means Google never reads anything on it.",
+        "**Check the canonical tag.** If `rel=\"canonical\"` points at a different URL, you have asked Google not to index this one. Compare \"user-declared canonical\" against \"Google-selected canonical\" in URL Inspection.",
+        "**Check the HTTP status and redirects.** A 404, a soft 404, an intermittent 5xx during Google's crawl, or a redirect chain landing somewhere unexpected will all stop indexing dead.",
+        "**Check that the page is discoverable.** Is it in your XML sitemap? Does anything on the site link to it? An [orphan page](/glossary/orphan-page) with zero internal links is a page Google has little reason to crawl and less reason to keep.",
+        "**Check rendering.** Use the \"Test live URL\" screenshot and rendered HTML in URL Inspection. If your content only appears after JavaScript runs, and a blocked script or a client-side route stops it running, Google indexes an empty shell.",
+        "**Check for duplication.** If the content substantially matches another URL on your site or someone else's, Google consolidates rather than stores both. This shows as \"Duplicate, Google chose different canonical than user\".",
+        "**Accept the quality verdict.** If steps 1 to 8 are clean and the page still isn't indexed, Google fetched it and decided the index is better off without it. There is no tag for this. See the last section."
+      ]
+    },
+    {
+      "h2": "What each Search Console status actually means",
+      "body": [
+        "The strings in the Pages report are more precise than they look. Read them literally."
+      ],
+      "table": {
+        "caption": "Search Console indexing statuses, translated.",
+        "head": ["Status", "What Google is telling you", "What to do"],
+        "rows": [
+          [
+            "Excluded by 'noindex' tag",
+            "It fetched the page and found a noindex instruction.",
+            "Remove the tag or header, then request indexing."
+          ],
+          [
+            "Blocked by robots.txt",
+            "It never fetched the page at all.",
+            "Unblock the path. Nothing else you change will be seen until you do."
+          ],
+          [
+            "Alternate page with proper canonical tag",
+            "Working as intended — this URL points at another one you chose.",
+            "Nothing, unless the canonical is wrong."
+          ],
+          [
+            "Duplicate, Google chose different canonical than user",
+            "It read your canonical and overruled it.",
+            "Find the conflicting signal. Usually internal links or the sitemap."
+          ],
+          [
+            "Discovered – currently not indexed",
+            "It knows the URL exists but hasn't crawled it yet.",
+            "Improve internal links to it and check for crawl-budget strain from thin or parameter URLs."
+          ],
+          [
+            "Crawled – currently not indexed",
+            "It read the page and chose not to store it.",
+            "A quality or duplication judgement. Rewrite or merge; requesting indexing again won't help."
+          ],
+          [
+            "Soft 404",
+            "The page returned 200 but looks empty or error-like.",
+            "Add real content or return a proper 404."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The three that bite hardest",
+      "body": [
+        "In practice, three causes account for most indexing failures on real sites, and all three are self-inflicted by a setting somebody forgot."
+      ],
+      "subs": [
+        {
+          "h3": "A noindex tag your theme or plugin shipped",
+          "body": [
+            "WordPress has a checkbox under Settings → Reading labelled \"Discourage search engines from indexing this site\". It's on by default in most staging setups, and it survives the move to production more often than anyone admits. Every SEO plugin also has per-post-type noindex toggles, and page builders sometimes add their own.",
+            "The nastier version is `X-Robots-Tag: noindex` in the HTTP response header, usually left behind by a server config or a CDN rule for a staging domain. It doesn't appear in view-source. Check it in your browser's network tab or with `curl -I`."
+          ]
+        },
+        {
+          "h3": "A robots.txt block that hides everything else",
+          "body": [
+            "This one is counter-intuitive enough to deserve its own warning. `Disallow` in robots.txt does not mean \"don't index\". It means \"don't fetch\". A disallowed URL can still appear in results with no description if enough pages link to it, because Google knows the URL exists without ever having read it.",
+            "The consequence people miss: if a page is disallowed, Google never reads its noindex tag either. Combining the two to be extra sure produces the opposite of what you wanted. Pick one — noindex to remove a page, robots.txt to save crawl budget on URLs you don't care about."
+          ]
+        },
+        {
+          "h3": "A canonical pointing somewhere else",
+          "body": [
+            "Parameter URLs, paginated archives, print views, and duplicated templates all commonly carry a canonical to a \"main\" version. That's correct behaviour, right up until a template bug points every page in a section at the section index — or, memorably, at the homepage.",
+            "If a whole content type has vanished from the index at once, check the canonical before anything else. It's a one-line template fix and it explains an entire missing directory. There's a fuller treatment in [what a canonical tag does](/answers/what-is-a-canonical-tag-in-seo)."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The robots.txt trap, stated plainly",
+        "body": "Never block a URL in robots.txt and add a noindex tag to it at the same time. Google can't read the tag on a page it isn't allowed to fetch, so the page can linger in results as a bare blue link with no snippet — exactly the outcome you were trying to prevent."
+      }
+    },
+    {
+      "h2": "Requesting indexing, and how long to actually wait",
+      "body": [
+        "URL Inspection has a \"Request Indexing\" button. It puts your URL in a priority crawl queue. It does not override any of the causes above, it has a daily quota, and hammering it does nothing except use the quota up.",
+        "Use it once after you've fixed something. Then leave it alone.",
+        "The durable version is boring: get the URL into your XML sitemap, link to it from pages that already get crawled often, and ship it alongside other content so the section looks alive. Internal links are the strongest indexing lever you fully control — a page linked from your homepage gets crawled on a different schedule to one linked from nowhere."
+      ],
+      "bullets": [
+        "**Established site, regular publishing:** hours to a few days is normal for a new page.",
+        "**New or rarely updated site:** a week or two is normal, and not a sign of anything wrong.",
+        "**Large site with thin or parameter URLs:** longer, because Google is spending its crawl allowance on pages you'd rather it skipped. Fix that before you fix the individual page.",
+        "**Two weeks with a clean URL Inspection and no exclusion reason:** stop looking for a technical cause. It's the next section."
+      ]
+    },
+    {
+      "h2": "When nothing is broken and Google still says no",
+      "body": [
+        "This is the ending most articles avoid, and it's the most common one. \"Crawled – currently not indexed\" means Google fetched your page, evaluated it, and decided its index is better off without it. That is a judgement about the page, not a fault in your setup.",
+        "Google doesn't index everything it finds, and hasn't for years. Storage and serving cost money, and a page that duplicates something already indexed — including something already on your own site — adds nothing. Thin pages, near-identical location or service permutations, tag archives, auto-generated variants and pages that restate a topic already covered elsewhere on the site all fail here routinely.",
+        "The fix is editorial, not technical. Either make the page substantially better than what's already indexed for its topic, or merge it into the page that does the job properly and redirect it. If you have forty pages in this state, you don't have forty problems — you have one content strategy that produced forty near-duplicates, and pruning is the faster route back. That's the same machinery behind [keyword cannibalisation](/answers/what-is-keyword-cannibalization).",
+        "One honest note on scale: if you publish twenty pages a month and six get indexed, adding more volume makes it worse, not better. Google is telling you the marginal page isn't wanted. Believe it."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The order of operations, compressed",
+        "body": "Confirm in URL Inspection → noindex → robots.txt → canonical → status code → discoverability → rendering → duplication → quality. Nine checks, roughly thirty minutes on a single page. Do them in that order and you'll never guess."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long should it take Google to index a new page?",
+      "a": "On an established site that publishes regularly, hours to a few days. On a new or rarely updated site, one to two weeks is normal. If URL Inspection shows no exclusion reason and it's still missing after two weeks, treat it as a content judgement rather than a technical fault."
+    },
+    {
+      "q": "What does 'Crawled – currently not indexed' mean?",
+      "a": "Google fetched the page, evaluated it, and chose not to store it. Nothing is technically broken. It usually means the page duplicates something already indexed, or is too thin to earn the space. Rewriting or merging it works; requesting indexing repeatedly does not."
+    },
+    {
+      "q": "What's the difference between 'Discovered' and 'Crawled – currently not indexed'?",
+      "a": "Discovered means Google knows the URL exists but hasn't fetched it — usually a crawl-priority issue, fixed with internal links and by cleaning up low-value URLs. Crawled means it did fetch it and declined to index. The first is a plumbing problem, the second is a content problem."
+    },
+    {
+      "q": "Does requesting indexing in Search Console actually work?",
+      "a": "It moves your URL into a priority crawl queue, which helps after you've fixed a real cause. It cannot override a noindex tag, a robots.txt block or a quality judgement. There's a daily quota, and submitting the same URL repeatedly achieves nothing."
+    },
+    {
+      "q": "Can a page be blocked in robots.txt and still show in Google?",
+      "a": "Yes, and this surprises people. Robots.txt blocks fetching, not indexing. If enough pages link to a blocked URL, Google can list it with no title or description. To keep a page out of the index properly, allow crawling and use a noindex tag."
+    },
+    {
+      "q": "Why did a page that was indexed for months suddenly disappear?",
+      "a": "Check for a recent deploy first — template changes that add a noindex or flip a canonical are the usual culprit. After that, check the status code and whether a near-duplicate was published. Google also drops pages it has stopped considering worth storing, which shows as a change of status rather than an error."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "indexing" },
+    { "type": "glossary", "slug": "noindex" },
+    { "type": "glossary", "slug": "robots-txt" },
+    { "type": "answers", "slug": "what-is-a-canonical-tag-in-seo" },
+    { "type": "compare", "slug": "canonical-vs-noindex" },
+    { "type": "services", "slug": "technical-seo-services" }
+  ]
+}

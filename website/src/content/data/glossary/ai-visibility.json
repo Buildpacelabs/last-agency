@@ -1,0 +1,131 @@
+{
+  "slug": "ai-visibility",
+  "type": "glossary",
+  "primaryKeyword": "ai visibility",
+  "secondaryKeywords": [
+    "ai search visibility tracking",
+    "share of model",
+    "brand visibility in chatgpt",
+    "ai citation tracking",
+    "how to measure ai search"
+  ],
+  "cluster": "ai-search",
+  "intent": "commercial",
+  "h1": "AI visibility",
+  "metaTitle": "AI Visibility: What It Is and How to Measure",
+  "metaDescription": "AI visibility is how often assistants mention or cite your brand. A free manual method: 25 fixed buyer prompts, run monthly, logged in a sheet.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "AI visibility",
+  "definition": "AI visibility is how often, and how favourably, AI assistants mention or cite your brand when someone asks them a question your business ought to be the answer to.",
+  "answer": "AI visibility is how often AI assistants — ChatGPT, Gemini, Perplexity, Google AI Mode — mention or cite your brand when someone asks a question you should own. There's no Search Console for it. The workable method is manual: fix 25 buyer prompts, run them monthly across assistants, and log every mention and citation in a sheet.",
+  "takeaways": [
+    "Rank tracking misses this entirely. There is no position one in a generated answer, and the same prompt returns different text on different runs.",
+    "**A one-off check proves nothing.** Sampling is the whole method — same prompts, same day of month, multiple runs.",
+    "Separate **mention share** (you were named) from **citation share** (you were linked). They move independently and they mean different things.",
+    "Paid AI-visibility tools mostly automate this exact loop. Run it by hand for two months first so you know what you're paying for."
+  ],
+  "sections": [
+    {
+      "h2": "What AI visibility actually measures",
+      "body": [
+        "Three separate things, usually blurred into one word.",
+        "**Presence** — does it name you at all in your category? **Position** — first of three vendors, or fourth of six? **Framing** — is the description accurate? A brand can be highly visible and consistently mischaracterised, which is worse than absent.",
+        "None of it appears in Search Console, Analytics or any rank tracker. Assistants don't publish impression data, and referral traffic under-reports badly because most assistant use ends in the assistant. If you want to manage this, you'll have to measure it yourself."
+      ]
+    },
+    {
+      "h2": "Build the prompt set: 25 questions, then freeze them",
+      "body": [
+        "The value is in the fixed set. Twenty-five prompts you never change gives you a comparable number month over month. Twenty-five prompts you tweak each time gives you a mood.",
+        "Write them the way a buyer would type them, not the way a keyword tool would. Mix the stages:"
+      ],
+      "numbered": [
+        "**Category discovery** — \"best SEO agencies in Bangalore for a B2B SaaS company\".",
+        "**Solution comparison** — \"SEO agency vs in-house SEO hire in India\".",
+        "**Price** — \"how much should SEO cost per month in India\".",
+        "**Objection** — \"how do I know if my SEO agency is scamming me\".",
+        "**Brand** — \"what is Last Agency\", \"is Last Agency any good\". These catch mischaracterisation early."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Include your competitors' names",
+        "body": "Add three or four prompts naming rivals — \"alternatives to X\", \"X vs Y\". If you never appear in those, you have a positioning problem, not a visibility problem, and no amount of publishing fixes it."
+      }
+    },
+    {
+      "h2": "Why one check proves nothing, and how to sample",
+      "body": [
+        "Generated answers aren't deterministic. The same prompt, same assistant, five minutes apart, can name a different set of brands. Retrieval varies, sampling varies, location varies. A single screenshot showing you in the answer is a coin flip you won, not a measurement.",
+        "So sample. Run each prompt **three times** in fresh sessions, signed out, and record how many named you. Three of three is presence. One of three is noise — don't celebrate it, don't panic about it.",
+        "Do it on the same date each month, and from India if you sell in India — location changes the answer. Twenty-five prompts across three assistants at three runs each is 225 checks, roughly two hours a month. That's the real cost, and it's why almost nobody does it and almost everybody has an opinion about their AI visibility anyway."
+      ]
+    },
+    {
+      "h2": "Mention share versus citation share",
+      "body": [
+        "Log two separate columns, because they answer two different questions.",
+        "**Mention share** is the percentage of your prompt runs where your brand name appears anywhere in the answer. It's the closest thing to share of voice, and it's driven mostly by how often your name appears in text across the web — see [brand mentions](/glossary/brand-mentions). Links aren't required.",
+        "**Citation share** is the percentage of runs where your site appears as a linked source. It's driven by whether you have a retrievable page that answers the specific fragment being asked, and it's the one that produces actual traffic.",
+        "Plenty of well-known brands run high mention share and near-zero citation share: the name is everywhere, the site answers nothing specific. The fix for each is different, which is why they shouldn't be one number."
+      ],
+      "table": {
+        "caption": "What each gap is telling you.",
+        "head": ["Pattern", "Diagnosis", "What to fix"],
+        "rows": [
+          ["Mentioned, never cited", "Known brand, unhelpful site", "Publish specific, extractable answers"],
+          ["Cited, rarely mentioned", "Useful pages, weak brand", "Get named in third-party coverage and comparisons"],
+          ["Neither", "Nobody is writing about you", "Both, and expect it to take quarters"],
+          ["Mentioned wrongly", "Stale or thin public record", "Correct your own pages, then the sources repeating them"]
+        ]
+      }
+    },
+    {
+      "h2": "What actually improves it",
+      "body": [
+        "Nothing exotic, which is the disappointing part. Assistants retrieve from the open web and from what they absorbed in training, so the levers are the old ones pointed at narrower targets.",
+        "Publish the most specific answer available to each buyer sub-question — a real number, a stated price, a named method. Get named in third-party comparisons, forums and podcasts, because that's what gets read when a model is asked who to hire. Keep your entity data consistent. Make sure the pages are crawlable by the agents you want retrieving them.",
+        "If you'd rather that ran as a programme than a personal chore, it sits inside [our SEO work](/seo). The measurement above costs nothing but a Tuesday morning, and you should own it either way."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Ignore anyone selling guaranteed AI placement",
+        "body": "There is no submission form, no index to be added to, and no vendor with a back channel into a model's answer. If a pitch implies otherwise, it's the 2026 version of guaranteed number-one rankings."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I track AI visibility in Google Analytics?",
+      "a": "Only partially. You'll see referral traffic from some assistants, and you can tag it, but it badly under-counts — most assistant conversations end without a click, so the answer you appeared in leaves no trace. Referral data measures the clicks you won, not the visibility you had."
+    },
+    {
+      "q": "How many prompts do I need for a reliable read?",
+      "a": "Twenty-five is a sensible floor and gives you a percentage that doesn't swing wildly. Fewer than fifteen and one flaky run moves your number by seven points. More than about fifty and the monthly check stops happening, which is worse than a slightly noisy number."
+    },
+    {
+      "q": "What is share of model?",
+      "a": "It's an emerging term for the same idea as share of voice, applied to AI answers: the proportion of relevant prompts where your brand shows up versus your competitors. There's no standard definition or standard measurement behind it yet, so ask any vendor using it exactly what they count."
+    },
+    {
+      "q": "Why do I appear one day and not the next?",
+      "a": "Because generated answers aren't deterministic, retrieval results change, and personalisation and location affect what's returned. That's not a bug in your SEO — it's the nature of the surface, and it's precisely why you sample multiple runs instead of trusting a single screenshot."
+    },
+    {
+      "q": "Are AI visibility tracking tools worth paying for?",
+      "a": "Once you're running the manual loop and it's costing you real hours, yes — they automate exactly this. Before that, no. Buying a dashboard for a metric you haven't yet defined means you'll accept whatever the vendor decided to count."
+    },
+    {
+      "q": "Does an llms.txt file improve AI visibility?",
+      "a": "There's no evidence any major assistant reads it as a ranking or retrieval input today. It costs nothing to publish and it might matter later, but treat it as a small bet, not a strategy. What's being retrieved is your actual pages."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "google-ai-mode" },
+    { "type": "glossary", "slug": "brand-mentions" },
+    { "type": "glossary", "slug": "generative-engine-optimization" },
+    { "type": "compare", "slug": "aeo-vs-geo" },
+    { "type": "journal", "slug": "how-to-get-cited-by-ai-assistants" },
+    { "type": "services", "slug": "ai-search-optimisation-services" }
+  ]
+}

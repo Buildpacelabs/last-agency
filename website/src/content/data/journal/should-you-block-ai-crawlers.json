@@ -1,0 +1,272 @@
+{
+  "slug": "should-you-block-ai-crawlers",
+  "type": "journal",
+  "primaryKeyword": "should you block ai crawlers",
+  "secondaryKeywords": [
+    "gptbot robots.txt",
+    "block ai bots seo",
+    "llms.txt",
+    "ai crawler policy",
+    "does blocking ai bots hurt traffic"
+  ],
+  "cluster": "ai-search",
+  "intent": "informational",
+  "h1": "Should You Block AI Crawlers? Only If You Can Afford the Silence.",
+  "metaTitle": "Should You Block AI Crawlers From Your Site?",
+  "metaDescription": "Whether to block AI crawlers depends on how you make money. Here's the call by business model, the directives to use, and what blocking really costs.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Most businesses shouldn't block AI crawlers. If you sell a product or a service, being cited in an assistant answer is free distribution. Blocking makes sense when pageviews are the revenue — ad-funded publishers, paywalled archives, licensable data. Separate the training crawlers from the retrieval ones; blocking retrieval is what actually costs you visibility.",
+  "takeaways": [
+    "Three different jobs hide behind the phrase \"AI crawler\": **training**, **retrieval** (fetching a page to answer a live question), and **search indexing**. Blocking all three with one rule is the most common and most expensive mistake.",
+    "`Google-Extended` does **not** remove you from AI Overviews. Only blocking `Googlebot` does that — and that removes you from Google Search entirely.",
+    "robots.txt is a request, not a fence. Well-behaved crawlers honour it; scrapers ignore it. If you need enforcement, that's an edge or WAF rule, not a text file.",
+    "For SaaS, services businesses and most ecommerce, we'd allow everything. Your revenue isn't per pageview, so a citation you don't get paid for is still demand you didn't have.",
+    "Decide with a measurable test: eight weeks of assistant referrals, crawler hits in your logs and branded search volume, before and after."
+  ],
+  "sections": [
+    {
+      "h2": "This is a revenue-model question wearing an ethics costume",
+      "body": [
+        "The public argument about AI crawlers is moral. They took our work, they trained on it without paying, they answer the question so nobody clicks. All of that can be true and none of it tells you what to put in your robots.txt file on Monday.",
+        "The useful version of the question is narrower: **does a person reading about you without visiting you cost you money, or make you money?** For a newspaper funded by ad impressions, the answer is obviously cost. For a B2B SaaS company that wants to be the default answer when someone asks an assistant which tool to buy, it's obviously revenue. Same crawler, opposite call.",
+        "So we're going to skip the principle and go straight to the decision, by business model, with the directives for each. If you want the offensive version of this — how to actually get named in those answers — that's [how to get cited by AI assistants](/journal/how-to-get-cited-by-ai-assistants). This page is the defensive half."
+      ]
+    },
+    {
+      "h2": "Three jobs, one misleading label",
+      "body": [
+        "\"AI crawler\" is doing far too much work as a phrase. There are three distinct jobs, they have different commercial consequences, and most vendors run a separate user-agent for each precisely so you can treat them differently.",
+        "Confusing them is how sites end up invisible in assistants they never meant to block."
+      ],
+      "numbered": [
+        "**Training.** Collecting pages to train or fine-tune a model. The content ends up as weights, not as a link. There's no traffic upside here at all — the only argument for allowing it is that your material shapes what the model believes about your category.",
+        "**Retrieval.** Fetching a live page to answer a question right now, usually with a citation and a clickable link. This is the one that sends you traffic. Blocking it is the version of blocking that costs you money.",
+        "**Search indexing.** Building a searchable index the assistant queries — Bing for Copilot, Google's index for AI Overviews, and vendor-specific indexes elsewhere. Block this and you disappear from the answer *and* from the search engine behind it."
+      ],
+      "table": {
+        "caption": "The main crawler tokens and what each one is actually for. Vendors add and rename these, so check each vendor's published docs before you commit a rule.",
+        "head": ["User-agent", "Operator", "Job it does", "What blocking it costs you"],
+        "rows": [
+          [
+            "`GPTBot`",
+            "OpenAI",
+            "Training data collection",
+            "Nothing in traffic terms. This is the low-cost block."
+          ],
+          [
+            "`OAI-SearchBot`",
+            "OpenAI",
+            "Indexing for search inside ChatGPT",
+            "Your listing and citation in ChatGPT search results."
+          ],
+          [
+            "`ChatGPT-User`",
+            "OpenAI",
+            "Live fetch when a user asks about your page",
+            "The answer to \"what does this company do?\" comes from memory or a competitor instead."
+          ],
+          [
+            "`Google-Extended`",
+            "Google",
+            "Consent token for Gemini training and grounding",
+            "Not your Search rankings, and not AI Overviews. See the next section."
+          ],
+          [
+            "`ClaudeBot` / `Claude-User` / `Claude-SearchBot`",
+            "Anthropic",
+            "Training / live fetch / search indexing",
+            "Same split as OpenAI's. Block the first, think hard about the other two."
+          ],
+          [
+            "`PerplexityBot` / `Perplexity-User`",
+            "Perplexity",
+            "Indexing / user-triggered fetch",
+            "Citations in an assistant that links out more than most."
+          ],
+          [
+            "`Applebot-Extended`",
+            "Apple",
+            "Opt-out of Apple foundation-model training",
+            "Nothing — `Applebot` still handles Siri and Spotlight separately."
+          ],
+          [
+            "`Bingbot`",
+            "Microsoft",
+            "Bing's index, which also feeds Copilot",
+            "Bing and Copilot together. Rarely worth it."
+          ],
+          [
+            "`CCBot`",
+            "Common Crawl",
+            "Open web archive used by many downstream trainers",
+            "Nothing directly. Blocks a lot of secondary training reuse in one line."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "robots.txt is a request, not a fence",
+        "body": "Compliance is voluntary. The named operators above honour it; scrapers running on residential proxies do not, and they don't announce themselves. If you need actual enforcement, that's an edge rule, a WAF, rate limiting or authentication. And if you're behind a CDN, check your settings before assuming you're open — AI-bot blocking is now a one-click toggle on some providers and it may already be on without anyone deciding it."
+      }
+    },
+    {
+      "h2": "The Google-Extended trap, which catches nearly everyone",
+      "body": [
+        "This is the single most common error we find when we audit a site's crawler policy, and it runs in both directions.",
+        "`Google-Extended` is a consent token. Disallowing it tells Google not to use your content to train or ground its Gemini models. It has no effect on Google Search crawling, on your rankings, or on whether you appear in AI Overviews — because AI Overviews are generated from the ordinary Google Search index that `Googlebot` builds.",
+        "So the site that blocked `Google-Extended` to stay out of AI Overviews is still in AI Overviews, and is quietly baffled. And the site that refused to block it because it feared losing rankings gave away training consent it never had to give. Both mistakes come from treating one token as if it controlled everything Google does.",
+        "The uncomfortable corollary: **there is currently no way to be in Google Search but out of AI Overviews**, short of `nosnippet` and `max-snippet` directives that also strip your normal search snippets. That's a real trade-off with no clean answer, and anyone telling you they've found one is selling something. We've written about what that did to traffic in [AI Overviews and your organic numbers](/journal/what-ai-overviews-did-to-your-organic-traffic)."
+      ]
+    },
+    {
+      "h2": "The recommendation, by business model",
+      "body": [
+        "Here's our actual call for each model. \"Training\" means the pure training crawlers. \"Retrieval and indexing\" means everything that can send a human being to your site."
+      ],
+      "table": {
+        "caption": "What we'd do for each business model, and why.",
+        "head": ["Business model", "What you actually sell", "Training crawlers", "Retrieval and indexing"],
+        "rows": [
+          [
+            "Ad-funded publisher",
+            "Attention, priced per pageview",
+            "Block. A model reproducing your article without the visit is straight substitution of your product.",
+            "Allow, reluctantly. Referral clicks from assistants are a growing share of the few clicks left. Pursue a licensing deal if you're large enough to be worth one."
+          ],
+          [
+            "Subscription or paywalled publisher",
+            "Access to the archive itself",
+            "Block hard, and enforce at the edge. The corpus is the asset.",
+            "Allow for free content only. Keep paid content behind auth, not behind a robots.txt line."
+          ],
+          [
+            "B2B SaaS",
+            "Software seats, on long cycles",
+            "Allow. Being present in training is how a model learns your category and your name exist.",
+            "Allow everything. Being the tool an assistant names is worth more than the click you'd have got."
+          ],
+          [
+            "Services — agency, clinic, law firm, consultancy",
+            "A handful of high-intent enquiries a month",
+            "Allow. There is no scenario where obscurity helps you here.",
+            "Allow everything. You need ten good enquiries, not a million sessions."
+          ],
+          [
+            "Ecommerce",
+            "Products, at a per-order margin",
+            "Neutral — nobody buys a kurta from a model's memory. Allow.",
+            "Allow. Product data surfacing in assistants is upside. Your real bot problem is price scrapers, which ignore robots.txt anyway."
+          ],
+          [
+            "Data, research or stock-media business",
+            "A licensable corpus",
+            "Block, enforce, and get a lawyer rather than a text file.",
+            "Allow the marketing site, block the corpus. These are two different properties and should be two different policies."
+          ],
+          [
+            "Course creator, paid community",
+            "Access to proprietary teaching",
+            "Block on paid material. Allow on the free funnel.",
+            "Allow on the free funnel — that's your top of funnel and assistants are increasingly where it starts."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The Indian SMB version of this answer",
+        "body": "For nearly every Indian business we work with — SaaS, D2C, clinics, B2B manufacturing, professional services — the answer is allow everything and spend the energy on being worth citing instead. Your problem isn't that ChatGPT knows too much about you. It's that it can't find a single page stating your pricing, your service area, or what you actually do."
+      }
+    },
+    {
+      "h2": "Writing the directives, and what each line really does",
+      "body": [
+        "If you've decided to block training but keep retrieval, the file is short. Each block is a `User-agent:` line followed by `Disallow: /` for a full block, and crawlers read the group matching their own token — so you need one group per user-agent, not a comma-separated list.",
+        "A few mechanics worth knowing before you write anything, because they trip people up more often than the syntax does."
+      ],
+      "bullets": [
+        "**Blocking a training crawler does not remove content already trained on.** Weights don't get un-learned. You're controlling future collection only, which makes blocking a decision about the next model, not this one.",
+        "**Disallowing a path in robots.txt advertises that path.** The file is public. Never use it to hide a private directory — that's an auth job.",
+        "**A blanket `User-agent: *` block is almost never what you want.** It hits Googlebot, Bingbot and every legitimate tool at once. We've seen this shipped by well-meaning developers and it removed a site from Google for three weeks.",
+        "**Crawl-delay is ignored by most of these operators.** If aggressive crawling is genuinely hurting your server, that's rate limiting at the edge, not a directive.",
+        "**Standards here are still moving.** There's active work on a formal machine-readable preferences standard, and some CDNs have shipped their own signal formats ahead of it. Nothing is settled, so whatever you write today should be reviewed in six months. The basic robots.txt mechanics haven't changed in twenty years; the tokens sitting on top of them change every quarter."
+      ]
+    },
+    {
+      "h2": "llms.txt: does anything actually read it?",
+      "body": [
+        "Short answer, as of writing: no major assistant vendor has confirmed that it does.",
+        "`llms.txt` was proposed in September 2024 by Jeremy Howard of Answer.AI. It's a markdown file at your root that gives a model a clean, curated map of your site — the important pages, described in plain language, without navigation and cookie banners in the way. As an idea it's sensible. As a standard it currently has adoption on the publishing side and close to none on the consuming side, and Google's John Mueller has publicly compared it to the keywords meta tag: a signal sites volunteer and search systems ignore.",
+        "That comparison is the right frame. The keywords meta tag failed not because it was a bad idea but because a signal the site controls, with no cost to lying, is worth nothing to whoever's reading it. Any file where you self-describe your own importance has that problem built in.",
+        "Our position: shipping one costs you an hour, breaks nothing, and might matter later. Just don't count it as work. If someone puts `llms.txt` on a proposal as a deliverable with a price attached, you're being charged for a text file. The things that genuinely affect whether assistants cite you — clear factual pages, stated prices, structured data, being quoted elsewhere — are all much less exciting than a new filename. There's more on [llms.txt](/glossary/llms-txt) in the glossary."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The consultant tell",
+        "body": "Any 2026 proposal whose AI-visibility section is mostly \"we'll implement llms.txt\" is padding. Ask instead what they'll do about the pages that don't state your pricing, the schema you don't have, and the fact that nobody outside your own domain has ever described what you sell."
+      }
+    },
+    {
+      "h2": "How to measure what blocking actually cost you",
+      "body": [
+        "Nobody should make this decision on vibes in either direction. It's testable, imperfectly but usefully, in about eight weeks. Run this before you block and again after."
+      ],
+      "numbered": [
+        "**Assistant referral traffic.** In GA4, segment sessions by referrer for the assistant domains — chatgpt.com, perplexity.ai, copilot.microsoft.com, claude.ai and so on. Volume is usually small and conversion rate is usually high, because the person arrived pre-qualified by an answer.",
+        "**Crawler hits in server logs.** Filter by the user-agent tokens above. This tells you who's actually visiting, how often, and — after a block — whether they respected it. It's the only way to catch a crawler ignoring your file.",
+        "**Branded search volume.** If assistants describe you to people who then search your name, this is where it shows up. A rise in branded impressions with flat non-branded is a fingerprint of assistant-driven discovery.",
+        "**Manual prompt testing, logged.** Take the fifteen questions a buyer would actually ask, run them monthly across the assistants your buyers use, and record whether you're named and whether the description is accurate. Tedious, unautomatable at small scale, and the only direct read on citation you have.",
+        "**Qualified leads from all of the above.** The number that matters. Tag it in the CRM, not in analytics, because assistant referrals frequently arrive as direct traffic once someone copies a link into a new tab.",
+        "**Freeze the before-picture first.** Eight weeks of all five metrics, written down, before you change a single line. Without that you'll be arguing from memory in November, and memory always agrees with whoever made the decision."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "Expect small numbers and a high conversion rate",
+        "body": "Assistant referrals are typically a low single-digit share of sessions for most Indian sites today. That's the wrong reason to ignore them — the visits tend to convert far better than average because the assistant already did the shortlisting, and the share has only moved in one direction so far."
+      }
+    },
+    {
+      "h2": "What we do, and what we tell clients",
+      "body": [
+        "On this site we allow everything. We'd rather be quoted inaccurately and get the chance to correct it than be absent from the answer entirely — and we publish our prices in plain text partly so that an assistant asked what an Indian SEO agency costs has something true to repeat.",
+        "For clients, the recommendation follows the table above, and in practice that means we've advised blocking exactly twice: once for a business whose entire product was a proprietary dataset, and once for a paywalled archive where the content *is* the subscription. Everyone else was better served by being findable.",
+        "The trap we watch for is founders blocking out of irritation. It's an understandable reaction — the asymmetry is genuinely unfair, you wrote it and something else is answering with it. But irritation is not a strategy, and the cost of the block lands entirely on you while the model has already trained on the version of your industry it needed.",
+        "If AI visibility is what you're actually worried about, the defensive move is the smaller half of the work. The bigger half is being the clearest, most quotable source on the questions your buyers ask — which is the same work that has always won organic search, wearing a new hat. That's [what we do on an SEO engagement](/seo), from ₹75,000/mo or ₹40,000 for smaller sites, with movement guaranteed against your own frozen trailing-90-day organic lead baseline rather than against a ranking position we don't control."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does blocking GPTBot hurt my SEO?",
+      "a": "No. `GPTBot` collects training data only and has nothing to do with Google, Bing or your rankings. Blocking it costs you no search traffic. What can cost you is blocking OpenAI's other tokens — `OAI-SearchBot` and `ChatGPT-User` — which handle search listings and live fetches, and those are where citations and referral clicks come from."
+    },
+    {
+      "q": "Will blocking Google-Extended remove me from AI Overviews?",
+      "a": "No, and this is the most common misunderstanding in the whole topic. `Google-Extended` only controls training and grounding for Gemini. AI Overviews are generated from the regular Google Search index built by `Googlebot`. There is currently no way to stay in Google Search while opting out of AI Overviews without also damaging your normal search snippets."
+    },
+    {
+      "q": "Do AI companies actually respect robots.txt?",
+      "a": "The named operators — OpenAI, Google, Anthropic, Microsoft, Apple, Perplexity — publish their tokens and generally honour the file, because being caught not doing so is a legal and reputational problem for them. Anonymous scrapers on residential proxies don't, and won't identify themselves. robots.txt is a request; enforcement needs a WAF or edge rules."
+    },
+    {
+      "q": "Should a small business block AI crawlers?",
+      "a": "Almost never. If you need ten good enquiries a month rather than a million pageviews, an assistant naming you is free distribution you didn't pay for. Blocking removes the upside and keeps none of the content already trained on. Spend the effort on having pages worth citing instead."
+    },
+    {
+      "q": "Is llms.txt worth implementing?",
+      "a": "It costs an hour and breaks nothing, so ship it if you like. Just don't treat it as work that will change anything — no major vendor has confirmed reading it, and Google's John Mueller has publicly likened it to the keywords meta tag. A self-declared signal with no cost to lying is worth little to whoever consumes it."
+    },
+    {
+      "q": "How do I know if AI assistants are sending me traffic?",
+      "a": "Segment GA4 sessions by referrer for chatgpt.com, perplexity.ai, copilot.microsoft.com and claude.ai, then check server logs for the crawler tokens. Expect small volumes with an unusually high conversion rate. A lot of it also lands as direct traffic when someone copies the link, so tag leads at source in your CRM."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "llms-txt" },
+    { "type": "glossary", "slug": "ai-overviews" },
+    { "type": "journal", "slug": "how-to-get-cited-by-ai-assistants" },
+    { "type": "journal", "slug": "what-ai-overviews-did-to-your-organic-traffic" },
+    { "type": "answers", "slug": "what-are-google-ai-overviews" },
+    { "type": "services", "slug": "ai-search-optimisation-services" }
+  ]
+}

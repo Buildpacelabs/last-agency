@@ -1,0 +1,240 @@
+{
+  "slug": "who-is-responsible-for-seo-in-a-company",
+  "type": "answers",
+  "primaryKeyword": "who is seo in a company",
+  "secondaryKeywords": [
+    "who is responsible for seo in a company",
+    "who owns seo in an organisation",
+    "which department handles seo",
+    "who manages seo internally"
+  ],
+  "cluster": "agency-mechanics",
+  "intent": "informational",
+  "h1": "Who owns SEO inside a company?",
+  "metaTitle": "Who Is Responsible for SEO in a Company?",
+  "metaDescription": "Who is SEO in a company? Usually nobody, which is the problem. Here's who should own rankings, who owns the fixes, and where the handoff breaks down.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "In most companies nobody owns SEO outright — marketing owns the traffic target, engineering owns the code that decides whether the site can rank, and neither owns the other. The fix is to name one accountable person for the organic number, then give engineering a standing share of sprint capacity for SEO tickets.",
+  "takeaways": [
+    "SEO is the only marketing channel where the person judged on the result doesn't control the inputs. That gap is the whole problem.",
+    "**Accountable is exactly one name.** The moment it's two people, it's nobody, and the quarterly review becomes a discussion about whose fault it was.",
+    "The dev backlog is where most SEO retainers quietly die. A standing 5% of sprint capacity beats a heroic quarterly push.",
+    "Hiring an agency doesn't remove the internal owner. It changes what they do — from executing to unblocking."
+  ],
+  "sections": [
+    {
+      "h2": "Why \"nobody\" is the honest answer",
+      "body": [
+        "Ask five people at a 200-person company who owns SEO and you'll get four answers and one shrug. That's not incompetence; it's structural.",
+        "Look at the other channels. A performance marketer controls the budget, the creative, the targeting and the landing page — everything that determines the result sits inside their remit. An email marketer owns the list, the copy and the send button. In both cases, judgement and control land on the same desk.",
+        "SEO doesn't work like that. The person held responsible for organic traffic needs code changes they can't make, product decisions they don't own, content approvals from people with other priorities, and a developer roadmap they're not on. They have the target and none of the levers. Which is why so many SEO hires burn out in eighteen months and so many retainers get cancelled in month four, when the actual failure was an approval chain."
+      ]
+    },
+    {
+      "h2": "Three departments, three pieces, one gap",
+      "body": [
+        "Each of these teams owns a genuine part of the outcome, and each of them can do its job perfectly while the site quietly stops ranking."
+      ],
+      "subs": [
+        {
+          "h3": "Marketing owns the demand side",
+          "body": [
+            "Keyword strategy, briefs, publishing, internal linking inside the CMS, reporting. This is where the SEO headcount usually sits, and it's the right home for it."
+          ],
+          "bullets": [
+            "Has: the plan, the writers, the budget, the number they're judged on.",
+            "Doesn't have: write access to the codebase, a say in URL structure, or a seat in sprint planning."
+          ]
+        },
+        {
+          "h3": "Product owns the shapes",
+          "body": [
+            "URL structure, navigation, faceted filters, pagination, whether a thing gets a page at all, and what happens during a replatform. These decisions determine the ceiling on organic performance for years."
+          ],
+          "bullets": [
+            "Has: the architecture decisions that matter most and last longest.",
+            "Doesn't have: any reason to think about search until traffic drops and someone escalates."
+          ]
+        },
+        {
+          "h3": "Engineering owns whether anything ships",
+          "body": [
+            "Rendering, speed, redirects, robots directives, canonical logic, schema in templates. Roughly a third of any technical audit needs code, and code is theirs."
+          ],
+          "bullets": [
+            "Has: the ability to fix or break organic traffic sitewide in a single release.",
+            "Doesn't have: a reason to prioritise a canonical tag over a payments bug, unless someone made the business case."
+          ]
+        },
+        {
+          "h3": "The gap between them",
+          "body": [
+            "The failure is rarely dramatic. Marketing publishes into a template with a broken canonical. Product ships a new filter system that generates 90,000 crawlable URLs. Engineering deploys a rendering change that hides the copy from crawlers. Everyone hit their goals. Traffic halved."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "A RACI you can copy into a doc this afternoon",
+      "body": [
+        "This is the cheapest fix available, and most companies have never written it down. Responsible does the work. Accountable is one name who answers for it. Consulted gets asked before, not after."
+      ],
+      "table": {
+        "caption": "A working RACI for SEO in a company with an internal marketing team and a developer function.",
+        "head": ["SEO task", "Responsible", "Accountable (one name)", "Consulted"],
+        "rows": [
+          [
+            "Keyword and content plan",
+            "SEO lead or agency",
+            "Head of marketing",
+            "Sales, founders"
+          ],
+          [
+            "Writing and publishing pages",
+            "Content team or agency",
+            "Head of marketing",
+            "Subject expert; compliance if regulated"
+          ],
+          [
+            "Titles, metas and internal links on CMS pages",
+            "Marketing",
+            "Head of marketing",
+            "SEO lead"
+          ],
+          [
+            "Template-level changes: schema, headings, rendering",
+            "Engineering",
+            "Engineering manager",
+            "SEO lead"
+          ],
+          [
+            "Redirects, robots.txt, canonicals, sitemaps",
+            "Engineering",
+            "Engineering manager",
+            "SEO lead"
+          ],
+          [
+            "Core Web Vitals and page speed",
+            "Engineering",
+            "Engineering manager",
+            "SEO lead, product"
+          ],
+          [
+            "URL structure and navigation",
+            "Product",
+            "Head of product",
+            "SEO lead, engineering"
+          ],
+          [
+            "Migration or replatform",
+            "Engineering and product",
+            "Whoever signs off the launch date",
+            "SEO lead — before the date is fixed, not after"
+          ],
+          [
+            "Google Business Profile and reviews",
+            "Marketing or ops",
+            "Head of marketing",
+            "Branch or store managers"
+          ],
+          [
+            "The organic lead number itself",
+            "SEO lead or agency",
+            "One named person on the exec team",
+            "Everyone above"
+          ]
+        ]
+      },
+      "bullets": [
+        "**Accountable is always one name.** Two names means nobody, and you'll find that out in the quarterly review.",
+        "**Consulted needs a deadline.** \"Consulted\" without a date reliably means \"told after launch\".",
+        "**Print the migration row and pin it somewhere.** It's the one that costs the most when it's ignored."
+      ]
+    },
+    {
+      "h2": "Why the dev backlog is where SEO goes to die",
+      "body": [
+        "The shape of this is depressingly consistent. An audit produces forty findings. Twelve need code. Those twelve enter a backlog behind a payments bug, a compliance deadline and a feature the CEO announced at an offsite. Six months later the SEO investment is judged a failure, and the cause is sitting untouched on a board nobody in marketing can see.",
+        "The fixes are all boring and all work."
+      ],
+      "numbered": [
+        "**Give SEO a standing allocation.** A fixed share of every sprint — even 5% — outperforms a heroic quarterly push, because SEO debt accrues continuously.",
+        "**Attach money to the ticket.** \"Fix the canonical on 900 category pages\" loses to a feature request. \"Recover 900 category pages currently excluded from the index\" doesn't.",
+        "**Put SEO checks in the definition of done.** Redirect map, canonical, robots directive, title, schema. Five checkboxes on the pull-request template catch most of it before it ships.",
+        "**Get the SEO owner into sprint planning.** Not a monthly sync. The planning meeting, where priorities are actually set.",
+        "**Escalate the replatform early.** It's the only SEO event with a hard external deadline, and it's the one most often raised after launch, when the redirect map is already being written in a panic."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The replatform tell",
+        "body": "If your SEO owner learns about the new site three weeks before launch, the traffic loss is already booked — you're just waiting for it to show up in the graph. Bring them in while the URL structure is still a wireframe. That single meeting is worth more than a year of blog posts. There's a longer version of this in [what a bad SEO agency actually costs you](/journal/what-a-bad-seo-agency-actually-costs-you)."
+      }
+    },
+    {
+      "h2": "Who signs off on published content",
+      "body": [
+        "The second bottleneck is cheaper to fix and almost as damaging. A content plan sized for four pages a month produces one, because four people have opinions and none of them have deadlines.",
+        "The symptoms are recognisable: drafts sitting in review for three weeks, line edits arriving from someone asked only to check facts, and a founder who rewrites tone on every piece. Four rules stop most of it."
+      ],
+      "bullets": [
+        "**One approver, named, with a 48-hour window.** Silence past 48 hours counts as approval. Write that down.",
+        "**Regulated industries get compliance at the brief stage**, not after the draft. Finance, health and legal content rewritten post-draft costs twice.",
+        "**Subject-matter review is about facts, not style.** Say that explicitly in the request or you'll get prose preferences instead of corrections.",
+        "**The founder gets one tone veto.** After that it's the approver's call, or you'll publish four pages a quarter and wonder why the content plan isn't working."
+      ]
+    },
+    {
+      "h2": "What you still own after you hire an agency",
+      "body": [
+        "Hiring out doesn't remove the internal owner — it changes their job from executing to unblocking. These five things cannot be outsourced no matter what the contract says, and they're the difference between a retainer that works and one that gets cancelled in month four."
+      ],
+      "numbered": [
+        "**The accounts.** Search Console, GA4, Google Business Profile, Tag Manager and the CMS created on your logins, agency invited as a user. Not the reverse, ever.",
+        "**The baseline.** Whatever number the work is judged by, written down with a date, before anything starts. No baseline means nobody can prove movement in either direction.",
+        "**The dev capacity.** No agency can merge a template fix into your repository without your engineers or your explicit permission. If they have neither, half the audit is decoration.",
+        "**Subject-matter access.** One person who can answer \"is this actually true about our product\" within a day. This is the single biggest input on content quality and the one most often missing.",
+        "**The right to say no.** Agencies are structurally biased towards producing more pages. Someone internal has to be allowed to kill a plan. The [agency versus in-house comparison](/compare/agency-vs-in-house) goes deeper on where that line sits."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "How we structure it",
+        "body": "Before we start, we agree one name on your side who owns the relationship and one number we're judged on — your trailing-90-day qualified organic leads, frozen on day one. Beat it in 90 days or we keep working free until we do. That only works if somebody internal can unblock a developer, which is why we ask who that is in the first call."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Which department should own SEO?",
+      "a": "Marketing should own the number and the plan, because that's where content, budget and reporting already sit. But the accountability only works if engineering commits a standing share of sprint capacity to SEO tickets and product consults the SEO owner before URL structure changes."
+    },
+    {
+      "q": "Should SEO sit under marketing or engineering?",
+      "a": "Marketing, in almost every case. Engineering owns delivery of technical fixes, not the strategy or the target. The exception is large product-led companies where organic is the primary acquisition channel — there, a growth or product function sometimes owns it outright."
+    },
+    {
+      "q": "Does a small company need a dedicated SEO person?",
+      "a": "Below roughly 30 employees, usually not. What you need is one named owner who spends a few hours a week on it and can get a developer's attention. A dedicated hire makes sense when the backlog consistently exceeds what that person can supervise."
+    },
+    {
+      "q": "Who is accountable when rankings drop?",
+      "a": "The one named person on the RACI — and their job is diagnosis, not blame. Most drops trace to a release, a migration, an algorithm update or a competitor's move. Without a change log covering all four, everyone argues from opinion."
+    },
+    {
+      "q": "How much developer time does SEO actually need?",
+      "a": "Heaviest in the first quarter, when the technical backlog is being cleared, then a steady trickle for regressions and new templates. A standing 5% of sprint capacity handles most mid-size sites. Migrations are the exception and need dedicated planning, not spare hours."
+    },
+    {
+      "q": "Can an agency replace an internal SEO owner?",
+      "a": "No, and any agency claiming otherwise hasn't worked with your engineering team. Someone inside has to approve content, unblock developers, answer product questions and decide what not to build. That role gets smaller with an agency, but it never reaches zero."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "what-does-an-seo-manager-do" },
+    { "type": "compare", "slug": "agency-vs-in-house" },
+    { "type": "answers", "slug": "should-i-hire-an-seo-agency-or-do-it-in-house" },
+    { "type": "journal", "slug": "what-clients-have-to-do-for-seo-to-work" },
+    { "type": "glossary", "slug": "core-web-vitals" },
+    { "type": "services", "slug": "technical-seo-services" }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "slug": "how-to-fix-broken-links-in-seo",
+  "type": "answers",
+  "primaryKeyword": "how to fix broken links in seo",
+  "secondaryKeywords": [
+    "how to find broken links",
+    "fixing 404 errors seo",
+    "broken link checker",
+    "do broken links hurt seo"
+  ],
+  "cluster": "seo-howto",
+  "intent": "informational",
+  "h1": "Fixing broken links without breaking anything else",
+  "metaTitle": "How to Fix Broken Links in SEO the Right Way",
+  "metaDescription": "How to fix broken links in SEO: find them, then decide per URL between a redirect, a rebuild, or leaving the 404. Blanket homepage redirects fail.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Fix broken links one URL at a time. Redirect a dead URL to the closest equivalent page if one genuinely exists, rebuild the page if real sites still link to it, and leave it as a 404 if neither is true. Never point everything at your homepage — Google treats an irrelevant redirect as a soft 404.",
+  "takeaways": [
+    "Three different problems get called 'broken links'. Internal links to your own 404s, external links pointing at your dead pages, and your outbound links to sites that died. Each needs a different fix.",
+    "**404s do not penalise your site.** Google has said so repeatedly. What costs you is the link equity stranded on a dead URL and the visitor who bounces.",
+    "The decision rule is inbound links plus traffic history. No links, no traffic, no equivalent page: leave it 404 and move on.",
+    "A blanket redirect to the homepage doesn't preserve anything. It hides the problem from your reports and gets treated as a soft 404 anyway."
+  ],
+  "sections": [
+    {
+      "h2": "Three different problems get the same name",
+      "body": [
+        "Before you fix anything, work out which of these you actually have. They look identical in a crawl report and they need completely different responses.",
+        "**Internal links to your own dead pages.** Your navigation, an old blog post, or a template links to a URL that no longer exists. You control both ends, so the fix is to edit the link — not to build a redirect to paper over it.",
+        "**External links pointing at your dead pages.** Someone else linked to a page you deleted or renamed. You control one end. This is the expensive category, because those links carry authority that's currently landing on nothing.",
+        "**Your outbound links to sites that died.** You linked out, they shut down or restructured. This is a housekeeping and credibility issue rather than a ranking one — a 2019 article citing four dead sources reads as abandoned, and readers notice before Google does.",
+        "As for how much all this hurts: less than most audit tools imply. Google's position on [404s](/glossary/404-error) has been consistent for years — they're a normal part of the web and having them doesn't drag down the rest of your site. The real cost is narrower and more concrete. Equity stranded on dead URLs, visitors bouncing at a dead end, and crawlers spending fetches on URLs that will never rank."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "A 404 in your report is not automatically a bug",
+        "body": "Audit tools show every 404 in red because red gets attention. Plenty of them are correct: expired campaign URLs, deleted test pages, a product you'll never sell again, someone's typo. Fixing those wastes an afternoon and adds redirect rules you'll be maintaining in 2030."
+      }
+    },
+    {
+      "h2": "Finding them: internal, inbound and outbound",
+      "body": [
+        "Four sources between them find everything. You need all four because each is blind to something the others catch."
+      ],
+      "numbered": [
+        "**Run a crawler** over the whole site and filter for 4xx responses. That gives you every internal link pointing at a dead URL, and the crawler will tell you which pages contain the link — which is the bit you need to fix it. Screaming Frog's free tier handles 500 URLs, which covers most small sites.",
+        "**Search Console's Pages report.** Filter for 'Not found (404)'. This is what Google has actually tried to fetch, which is a different and more relevant list than what your crawler found. Click into any URL and use the 'referring page' data where it exists.",
+        "**Search Console's Links report.** Export your external links and cross-reference the target URLs against your 404 list. Anything that appears in both is a real link from a real site currently landing on nothing. This is your priority list.",
+        "**Server logs**, if you can get them. They show what's genuinely being requested, including URLs no crawler will ever discover — old print pages, feeds, links from a PDF someone emailed in 2021. Overkill for a ten-page site, essential above a few thousand URLs."
+      ]
+    },
+    {
+      "h2": "The decision rule",
+      "body": [
+        "Every dead URL gets one of three outcomes. Two questions decide which: does anything external link to it, and does a genuinely equivalent page exist? Traffic history breaks the tie.",
+        "Run the list through this table and stop trying to make it more complicated than it is."
+      ],
+      "table": {
+        "caption": "What to do with each dead URL, based on links and equivalence.",
+        "head": [
+          "Situation",
+          "What to do",
+          "Why"
+        ],
+        "rows": [
+          [
+            "External links, and a genuinely equivalent page exists",
+            "301 to that page",
+            "The link keeps working and the equity lands somewhere relevant. Google has said 301s don't lose PageRank"
+          ],
+          [
+            "External links, no equivalent page",
+            "Rebuild a page worth the link",
+            "A redirect to something unrelated is treated as a soft 404. If the link is good enough, the page is worth writing again"
+          ],
+          [
+            "No links, real historical traffic, close equivalent exists",
+            "301 to the equivalent",
+            "You're rescuing returning visitors and bookmarks, not equity"
+          ],
+          [
+            "No links, no traffic, no equivalent",
+            "Leave it as a 404",
+            "This is the correct answer and it's free. Google expects 404s"
+          ],
+          [
+            "Product permanently discontinued, category still live",
+            "301 to the category only if it's genuinely the next best answer",
+            "Otherwise serve a helpful 404 that lists alternatives. A shopper who wanted a specific model is not served by a category dump"
+          ],
+          [
+            "Inbound link with a typo in the URL",
+            "301 to the correct page",
+            "Free authority. Fix these first — they take minutes"
+          ],
+          [
+            "Expired campaign, test or staging URL",
+            "404 or 410",
+            "Nothing to preserve. 410 says 'gone deliberately' and Google drops it marginally faster"
+          ],
+          [
+            "Internal link to a dead page",
+            "Edit the link itself",
+            "A redirect works, but you've added a permanent rule to hide a five-second fix"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "What 'equivalent' means",
+        "body": "A page that answers the same question the visitor was asking when they clicked. Not the same category, not the same topic area, not your homepage. If you'd be embarrassed to land there after clicking the original link, it isn't equivalent."
+      }
+    },
+    {
+      "h2": "Why redirecting everything to the homepage fails",
+      "body": [
+        "This is the default reflex, usually installed by a plugin with a checkbox labelled something like 'redirect all 404s to homepage'. It's the wrong move for four separate reasons and it's worth being clear about each.",
+        "**Google treats it as a soft 404 anyway.** A redirect to a page that doesn't fulfil the original request gets classified as a soft 404 rather than passing anything along. You've built maintenance overhead and gained nothing.",
+        "**It destroys your diagnostics.** Once every dead URL returns 200 at the homepage, your reports go clean. You've stopped seeing the problem rather than fixing it, and six months later nobody remembers which 400 URLs are silently broken.",
+        "**It's a bad experience.** Someone clicked a link about a specific product and landed on your brand statement. They don't hunt for the page. They go back to the results and click someone else.",
+        "**It hides genuinely valuable links.** The one dead URL with fourteen editorial links pointing at it is now indistinguishable from 300 expired UTM parameters. That's the URL you needed to see."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Check for this plugin setting today",
+        "body": "Many SEO and redirect plugins ship with blanket 404-to-homepage handling either on by default or one enthusiastic click away. If your site 'has no 404s' according to your tools, that's not a clean bill of health — it's usually this setting, and it's been eating your diagnostics quietly."
+      }
+    },
+    {
+      "h2": "The part with the money in it: reclaiming stranded links",
+      "body": [
+        "Here's the thing nobody puts in the audit deck. On an older site, the dead URLs with external links pointing at them are often worth more than a quarter of new link building — and they cost an afternoon rather than a retainer.",
+        "The work is unglamorous and mechanical."
+      ],
+      "numbered": [
+        "Export external links from Search Console and, if you have access, from any link tool you use.",
+        "Cross-reference the target URLs against your 404 list. Sort by number of distinct referring domains.",
+        "For every match with a genuine equivalent page: 301 it. Do these first, they take minutes each.",
+        "For matches with no equivalent and several quality referring domains: decide whether to rebuild the page. If a real publication linked to your 2022 pricing guide, that guide is worth writing again.",
+        "For links pointing at typo'd URLs: 301 them. People misspell URLs constantly and every one of those is authority you already earned and never received.",
+        "Where the link is from a site you have a relationship with, email and ask them to update it. A direct link beats a redirect, and it's a two-line email."
+      ]
+    },
+    {
+      "h2": "Chains, loops, and the maintenance rule",
+      "body": [
+        "Redirects accumulate. A site that's been through two rebuilds and a platform migration typically has rules redirecting to rules redirecting to rules, and each hop is a fetch that could have been spent on a page that earns money.",
+        "Google follows a limited number of hops in a single crawl attempt, then picks the chain up later. You never need to know the exact number if you keep every chain at one hop — which is the rule.",
+        "**Flatten, don't append.** When you add a redirect from A to B and B already redirects to C, update the A rule to point at C directly and update the B rule too. A crawler sorted by 'redirect chain' shows you every one of these in a single view.",
+        "**Loops are worse than chains.** A to B and B back to A means neither page is reachable by anyone, ever. They usually come from a trailing-slash or www rule fighting with an application-level redirect, and they're invisible in the browser because the browser just gives up quietly.",
+        "**Watch the layers.** Redirect rules can live in your CMS plugin, your application code, your server config and your CDN's edge rules simultaneously, and they execute in that order. A chain that makes no sense in the codebase is usually an edge rule somebody added during a migration. Check all four before you conclude the code is haunted.",
+        "As a cadence: crawl the site monthly, check Search Console's Pages report monthly, and audit the full redirect map whenever you migrate, replatform or restructure URLs. That's the whole discipline. If it's not happening, it's the sort of thing [an SEO audit should surface immediately](/journal/what-an-seo-audit-should-actually-find), and [technical SEO work](/services/technical-seo-services) covers it as a matter of course."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do broken links hurt SEO?",
+      "a": "Not the way most people fear. Google has said consistently that 404s are a normal part of the web and don't penalise the rest of your site. What genuinely costs you is external link equity stranded on dead URLs, visitors bouncing at a dead end, and crawl budget spent fetching URLs that can never rank."
+    },
+    {
+      "q": "Should I redirect a 404 page to my homepage?",
+      "a": "Almost never. Google treats a redirect to an irrelevant page as a soft 404, so you gain nothing, and it wipes out your ability to see which URLs are actually broken. Redirect to a genuinely equivalent page, rebuild the page if the links justify it, or leave the 404 in place."
+    },
+    {
+      "q": "What's the difference between a 404 and a 410?",
+      "a": "404 means 'not found', which leaves open the possibility it comes back. 410 means 'gone, deliberately, don't come looking'. Google has indicated it drops 410s marginally faster. For a handful of URLs the difference is negligible; for thousands of deliberately removed pages, 410 is the cleaner signal."
+    },
+    {
+      "q": "How do I find broken links on my website for free?",
+      "a": "Three free sources cover it. Screaming Frog's free tier crawls up to 500 URLs and shows which pages contain each broken link. Search Console's Pages report shows what Google itself hit a 404 on. Search Console's Links report, cross-referenced against those 404s, finds the ones with external links worth rescuing."
+    },
+    {
+      "q": "How many redirects are too many?",
+      "a": "The count matters less than the depth. Thousands of single-hop redirects are fine and normal after a migration. A handful of five-hop chains is a real problem, because each hop costs a fetch and Google follows only so many in one pass. Keep every chain at one hop and the total stops mattering."
+    },
+    {
+      "q": "Do I need to fix outbound links to sites that no longer exist?",
+      "a": "For rankings, it's a minor issue. For credibility, it's worth an hour a year. An article citing four dead sources signals that nobody has looked at the page since it was published, and that impression reaches readers well before it reaches an algorithm. Replace the source or remove the claim."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "broken-links"
+    },
+    {
+      "type": "glossary",
+      "slug": "301-redirect"
+    },
+    {
+      "type": "compare",
+      "slug": "301-vs-302-redirect"
+    },
+    {
+      "type": "answers",
+      "slug": "why-is-my-page-not-indexed-on-google"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "journal",
+      "slug": "what-an-seo-audit-should-actually-find"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-improve-seo"
+    }
+  ]
+}

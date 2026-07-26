@@ -1,0 +1,221 @@
+{
+  "slug": "where-to-find-keywords-for-seo",
+  "type": "answers",
+  "primaryKeyword": "where to find keywords for seo",
+  "secondaryKeywords": [
+    "where to get seo keywords",
+    "free keyword sources",
+    "how to find keywords for my website",
+    "keyword ideas without paid tools"
+  ],
+  "cluster": "seo-howto",
+  "intent": "informational",
+  "h1": "Where to find keywords without paying for a tool",
+  "metaTitle": "Where to Find Keywords for SEO: 9 Free Sources",
+  "metaDescription": "Where to find keywords for SEO without a paid tool: nine free sources ranked by how well they convert, from sales calls to Search Console filters.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "The best free keyword sources are the ones where buyers already used their own words: sales call recordings, support tickets and your site's internal search log. After those come Search Console, Google autocomplete, People Also Ask and competitor SERPs. Paid keyword tools rank last — they estimate demand the first three sources prove.",
+  "takeaways": [
+    "Rank your sources by **whose words they are**. A phrase a customer typed into your support form beats a phrase a tool inferred from a clickstream panel.",
+    "Search Console is the only free source that shows what Google *already* associates with you — and it holds 16 months of it.",
+    "A tool reporting **0 searches a month** usually means 'below our sampling threshold', not 'nobody searches this'.",
+    "Free tiers are more generous than people assume and capped exactly where the work gets interesting. Check the current limits before you plan a quarter around one."
+  ],
+  "sections": [
+    {
+      "h2": "Nine sources, ranked by how well the keywords convert",
+      "body": [
+        "Every keyword source is a guess about what people type. The difference is whose guess it is. A keyword tool infers demand from clickstream panels and models the gaps. Your support inbox contains the actual sentence a real buyer wrote at 11pm, when they were confused enough to ask a stranger.",
+        "So this ranking isn't by search volume, and it isn't by how many ideas each source spits out. It's by how likely the resulting page is to produce a lead — which is the only ordering a business should care about."
+      ],
+      "table": {
+        "caption": "Free keyword sources, ranked by the commercial quality of what they produce.",
+        "head": ["Source", "What it gives you", "Why it sits there"],
+        "rows": [
+          [
+            "1. Sales calls and demo recordings",
+            "The exact phrasing prospects use for their problem, before your marketing teaches them your vocabulary",
+            "Highest intent of anything on this list, and already transcribed if you record calls"
+          ],
+          [
+            "2. Support tickets, WhatsApp and live chat",
+            "Post-purchase questions, objections, and the words people use when something has gone wrong",
+            "Any question you answer twice a week is a page you should have published"
+          ],
+          [
+            "3. Your site's internal search log",
+            "What visitors couldn't find on a site they had already chosen to visit",
+            "Demand plus context. These people are further down the funnel than anyone on Google"
+          ],
+          [
+            "4. Google Search Console",
+            "Every query you got an impression for in 16 months, with clicks and average position",
+            "Proven demand where Google already treats you as a candidate"
+          ],
+          [
+            "5. Autocomplete, People Also Ask, related searches",
+            "Query variants Google has seen often enough to suggest unprompted",
+            "Free, effectively infinite, and it is Google describing its own view of the topic"
+          ],
+          [
+            "6. Competitor SERPs and sitemaps",
+            "Their titles, H2s, FAQ blocks and public XML sitemap",
+            "You inherit their research. A ranked page has already passed the demand test"
+          ],
+          [
+            "7. Communities and reviews",
+            "Reddit and Quora threads, industry WhatsApp groups, one-star reviews of the product you replace",
+            "Objections and comparison queries you would never have invented"
+          ],
+          [
+            "8. Keyword Planner, Trends, Bing Webmaster Tools",
+            "Bucketed volume ranges, seasonality, regional splits, and Bing's own query data",
+            "Free but modelled. Size a decision with these; don't make one"
+          ],
+          [
+            "9. Free tiers of the paid suites",
+            "Capped exports of competitor keywords and backlinks",
+            "Genuinely useful, genuinely limited, and the least specific to your business"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Sources 1–3: the words your buyers already used",
+      "body": [
+        "This is the part most keyword guides skip, because it doesn't produce a spreadsheet in ten minutes. It's still the best hour you'll spend all quarter.",
+        "Pull the last twenty sales calls and the last hundred support tickets. Read them with one question in mind: what did they call it? Not what your product page calls it — what they called it before they learned your vocabulary. Founders are consistently surprised here. You sell workforce management; they search staff attendance app.",
+        "Internal site search is the same trick with less reading. If your CMS logs it, you already own a list of queries from people who liked you enough to visit. If it doesn't, turn on site search tracking in GA4 this week. It costs nothing and it starts paying by the next report."
+      ],
+      "bullets": [
+        "**Live chat and WhatsApp** — shorter, blunter, and closer to how people actually type into a search box than anything they'd say on a call.",
+        "**Sales objections** — \"how is this different from X\" is a comparison page waiting to be written, and it converts better than anything above it."
+      ]
+    },
+    {
+      "h2": "Source 4: the demand you're already half-getting",
+      "body": [
+        "Search Console's Performance report is the best free keyword source on this list, and most sites open it twice a year. It holds 16 months of queries — every search where your site appeared, whether or not anyone clicked.",
+        "Three filters do most of the work."
+      ],
+      "numbered": [
+        "**Average position 8–20, sorted by impressions.** Google already associates these queries with you but hasn't committed. A rewritten page, a sharper title, or two internal links often moves them into the range where clicks happen.",
+        "**Queries with impressions and no clicks.** Either your page answers a different question, or your title is losing the click to someone else's. Both are cheap to diagnose and cheap to fix.",
+        "**Queries ranking on a page you never wrote for them.** That's a page worth building properly, and frequently a [keyword cannibalisation](/answers/what-is-keyword-cannibalization) knot to untangle first."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Zero volume doesn't mean zero demand",
+        "body": "When a tool reports 0 searches a month, it usually means the query fell below its sampling threshold — not that nobody searches it. Long-tail queries with 'no volume' are often the ones that convert, because they're specific enough to be a buying decision. Check your Search Console impressions before you delete a keyword for being small."
+      }
+    },
+    {
+      "h2": "Sources 5–7: Google's suggestions, and other people's pages",
+      "body": [
+        "Once you've exhausted your own data, you're looking for demand you haven't earned yet. Three free places give it to you."
+      ],
+      "subs": [
+        {
+          "h3": "Autocomplete, People Also Ask and related searches",
+          "body": [
+            "Type a seed into Google and read the suggestions before you press enter. Then add each letter of the alphabet after it and read again — that's a few hundred real variants in ten minutes. Open the People Also Ask boxes and watch them multiply as you go. Scroll to the related searches at the foot of the page.",
+            "Do it in an incognito window with your region set to India, because autocomplete is personalised and location-dependent. Otherwise you're researching your own browsing history."
+          ]
+        },
+        {
+          "h3": "Read competitor SERPs, not competitor traffic",
+          "body": [
+            "You don't need a subscription to see what a competitor targeted. Their title tags, H1, H2 order and FAQ blocks tell you exactly. So does their XML sitemap, which is public by design — try /sitemap.xml, or read their robots.txt for the path.",
+            "A competitor's blog sitemap is a plain list of the topics somebody decided were worth paying a writer for. Whether it worked is a separate question, but it's free research either way."
+          ]
+        },
+        {
+          "h3": "Communities, reviews and the questions people ask strangers",
+          "body": [
+            "Reddit and Quora threads now rank for a lot of Indian commercial queries, which is Google telling you it considers those threads a decent answer. Read them for phrasing, not for volume. And the one-star reviews of the product you're replacing are the richest source of comparison queries anywhere — pre-sorted by how annoyed the customer was."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Hinglish, transliteration and the queries tools underreport",
+      "body": [
+        "Indian search is multilingual in a way most keyword databases handle badly. The same buyer might search a clean English phrase on Monday, a Hinglish version on Wednesday and a transliterated Hindi one on their phone that evening. Your tool will probably report the first and shrug at the rest.",
+        "You find those variants by going where they're recorded rather than where they're modelled."
+      ],
+      "bullets": [
+        "**Autocomplete with the region set to India** — set location, not just language. The suggestions genuinely differ.",
+        "**Google Trends region comparison** — no absolute volume, but it will show you which phrasing is rising and which states search it.",
+        "**YouTube search** — transliterated and regional queries surface there before they show up in any keyword tool.",
+        "**Your own WhatsApp and support threads** — the most honest record in existence of how your customers phrase things.",
+        "**Bing Webmaster Tools** — a different index with its own free keyword data. Smaller market, real numbers."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Which language to publish in",
+        "body": "Finding a Hindi variant doesn't automatically mean writing a Hindi page. Check the live SERP first — if English pages rank for the transliterated query, Google has already decided which language the searcher wants. We pick that apart in [English vs regional-language SEO](/compare/english-vs-regional-language-seo)."
+      }
+    },
+    {
+      "h2": "Sources 8–9: free tiers, and exactly where they stop",
+      "body": [
+        "Two things are true at once. The free tiers are more useful than most people assume, and they cut off precisely where the interesting work starts."
+      ],
+      "bullets": [
+        "**Google Keyword Planner** — free with a Google Ads account, but volumes show as wide buckets unless the account is actively spending. Fine for relative sizing, useless for precision.",
+        "**Google Trends** — relative interest over time, never absolute volume. Best for seasonality and for settling an argument between two phrasings.",
+        "**Bing Webmaster Tools** — free keyword research from Bing's own query data, no ad spend required.",
+        "**Ahrefs Webmaster Tools** — free for sites you can verify. Shows your backlinks and your ranking keywords; not your competitors'.",
+        "**Free tiers of the big suites** — typically a few searches a day. Enough to check a hunch, not enough to plan a quarter."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Free-tier limits move",
+        "body": "Vendors change free allowances every few months, quietly. Everything above is free to use today, but verify the current caps before you build a monthly process that depends on one. If a free tier is load-bearing for your planning, you've bought a dependency without paying for it."
+      }
+    },
+    {
+      "h2": "You have 200 ideas. That still isn't a plan",
+      "body": [
+        "A list is raw material. The next moves are grouping by intent, checking each group against the live SERP, and assigning exactly one primary keyword per URL — which is the whole of [keyword research done properly](/answers/how-to-do-keyword-research).",
+        "Most small sites also need far fewer keywords than they collect. Twenty-five well-chosen ones, each with a page that genuinely answers the query, will out-earn a 4,000-row export nobody opens twice. Research volume was never the constraint. Publishing is.",
+        "If you'd rather hand the exercise over, that's [what our keyword research work covers](/services/keyword-research-services). Read your own support tickets first regardless — nobody can do it as well as the person who answered them."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I do keyword research without paying for a tool?",
+      "a": "Yes, and for a small site it's usually the better first move. Search Console, autocomplete, People Also Ask, Google Trends, Bing Webmaster Tools and your own support inbox cover the whole job for ₹0. Paid tools mainly buy you competitor data and speed — neither of which matters until you're publishing regularly."
+    },
+    {
+      "q": "What's the best free keyword tool?",
+      "a": "Google Search Console, by a wide margin, because it reports real queries your site actually appeared for rather than modelled estimates. Its limitation is that it can only show queries you already rank for somewhere. For everything else, autocomplete plus People Also Ask is the most productive free pairing."
+    },
+    {
+      "q": "How many keyword ideas do I actually need?",
+      "a": "Fewer than you think. A local service business usually needs 15–25 primary keywords, each mapped to one page. A B2B SaaS site might need 60–120 across a couple of clusters. Beyond that you're collecting, not planning — and the pages don't write themselves either way."
+    },
+    {
+      "q": "Does Google Keyword Planner show real search volume?",
+      "a": "Not exactly. Without active ad spend on the account, Keyword Planner groups volumes into wide ranges like 1K–10K, and even the precise numbers are averages built for advertisers. Treat every volume figure from any tool as an estimate with a wide error bar, and rank decisions on intent instead."
+    },
+    {
+      "q": "Where do I find keywords in Hindi or Hinglish?",
+      "a": "Google autocomplete with your region set to India, YouTube search, Google Trends region comparisons, and your own WhatsApp and support conversations. Keyword databases underreport transliterated queries badly, so the recorded sources beat the modelled ones by an even wider margin here than in English."
+    },
+    {
+      "q": "Should I target keywords my competitors already rank for?",
+      "a": "Sometimes. Reading their SERPs tells you what passed the demand test, which is genuinely useful. But copying their keyword list also copies their positioning, and you'll be the second-best answer to a question they've owned for three years. Mine their list for gaps, not for a to-do list."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "how-to-do-keyword-research" },
+    { "type": "glossary", "slug": "long-tail-keywords" },
+    { "type": "glossary", "slug": "google-search-console" },
+    { "type": "compare", "slug": "english-vs-regional-language-seo" },
+    { "type": "services", "slug": "keyword-research-services" },
+    { "type": "journal", "slug": "what-content-actually-does-for-seo" }
+  ]
+}

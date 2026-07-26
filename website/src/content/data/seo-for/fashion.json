@@ -1,0 +1,156 @@
+{
+  "slug": "fashion",
+  "type": "seo-for",
+  "primaryKeyword": "seo for fashion brands",
+  "secondaryKeywords": [
+    "fashion ecommerce seo india",
+    "apparel seo services",
+    "seo for clothing brands india",
+    "size and fit content seo",
+    "seasonal collection seo"
+  ],
+  "cluster": "ecommerce-and-d2c",
+  "intent": "commercial",
+  "industry": "Fashion",
+  "h1": "SEO for fashion brands when marketplaces own every keyword",
+  "metaTitle": "SEO for Fashion Brands: Beyond Marketplaces",
+  "metaDescription": "SEO for fashion brands in India. We build occasion, fabric and fit content that ranks where marketplaces stay thin, and stop listings outranking you.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Fashion brands lose search twice: marketplace listings outrank their own product pages for their own names, and every quarterly collection leaves a trail of dead URLs. Fix both, then build the occasion, fabric and fit clusters marketplaces write badly. Expect three to six months, and a redirect map before anything else.",
+  "takeaways": [
+    "If you send marketplaces the same product copy you publish yourself, your own page is the duplicate — and theirs has more links.",
+    "Nobody searches for 'dress'. They search for a situation: a haldi, a Chennai summer, an office that expects cotton and a commute that doesn't forgive linen.",
+    "Retiring a collection URL without a redirect map throws away every link the launch campaign earned. Fashion brands do this four times a year.",
+    "The size guide is a ranking asset and a returns fix at the same time. It's the most under-built page in Indian apparel."
+  ],
+  "sections": [
+    {
+      "h2": "Your own product page is the duplicate",
+      "body": [
+        "Here's the sequence that quietly costs Indian fashion brands their branded search. You write product copy. You export the same copy in the marketplace feed. Three marketplaces publish it against listings on domains with vastly more authority than yours. Google picks a canonical for that near-identical text, and it isn't you.",
+        "So you end up paying to acquire a customer who searches your brand plus a product name, finds a marketplace listing, buys there, and hands a commission to a platform for demand you created. The listing wasn't stealing your traffic. Your feed handed it over.",
+        "The fix costs a copywriter, not a developer. Write the marketplace feed and your own product detail pages differently — different opening lines, different detail, different structure. Marketplace listings should be functional and specification-led, because that's how people browse there. Your own page should carry the things a feed template physically can't hold: styling context, fabric behaviour, care, the model's measurements alongside the size worn, and the reason the piece exists."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Run the brand SERP audit this week",
+        "body": "Search your brand name, then brand plus your five best-selling products, in an incognito window on mobile. Count how many of the first ten results you control. Most Indian D2C fashion brands find they own three or four, and are surprised by which sites hold the rest. That count is your baseline for the next quarter."
+      }
+    },
+    {
+      "h2": "Nobody searches for 'dress'. They search for a situation.",
+      "body": [
+        "Head terms in apparel belong to the marketplaces and will for the foreseeable future. That's fine, because head terms are also where intent is weakest. The demand that converts is specific, and it clusters into three shapes that marketplace category pages handle badly because they're generated from attribute data rather than written by someone who understands the occasion.",
+        "This is the same argument we make in [ecommerce SEO](/seo-for/ecommerce), but in fashion the gap is wider — because clothing is bought for a context, and context is exactly what a generated grid can't describe."
+      ],
+      "table": {
+        "caption": "Three query clusters marketplaces under-serve, and what should answer each.",
+        "head": ["Cluster", "How people actually search", "What ranks"],
+        "rows": [
+          [
+            "Occasion",
+            "Outfit for a haldi, mehendi guest outfit, first-day-of-office wear, cocktail saree",
+            "A curated edit page with real styling guidance, linking to 12–20 products"
+          ],
+          [
+            "Fabric and climate",
+            "Linen shirts for Chennai summer, breathable kurtas for humidity, chanderi versus cotton",
+            "A guide that explains the trade-off honestly, then links to the collection"
+          ],
+          [
+            "Fit and body",
+            "Petite length trousers, plus size ethnic wear, maternity work wear, tall sizes India",
+            "A permanent collection page, not a filter state — this demand is stable and under-supplied"
+          ]
+        ]
+      },
+      "bullets": [
+        "**Edits are collections, not blog posts.** If your occasion content lives in `/blog` and links only to other posts, it will rank and sell nothing. Give it a collection URL with products on it.",
+        "**Write the guidance a stylist would give**, including what not to buy. The paragraph that says 'linen creases and that's the point, so skip it for a nine-hour travel day' is the one that gets linked to.",
+        "**Fit clusters are the most neglected and the most loyal.** Someone who finds a brand that actually stocks their length doesn't go back to searching."
+      ]
+    },
+    {
+      "h2": "Collections die every quarter. Your URLs shouldn't.",
+      "body": [
+        "Fashion has a structural problem no other retail category has at the same frequency: four or more collection changes a year, each one launched with a campaign, links and paid traffic, then quietly deleted. Over three years that's a dozen retired URLs that once held every link the launch bought.",
+        "The default reflex — delete the page, or redirect the lot to the homepage — throws that away. Google treats bulk redirects to an irrelevant destination as soft 404s, so the link equity doesn't transfer; it evaporates. Write the retirement policy once, before the next drop, and make it part of the launch checklist rather than a cleanup task nobody owns."
+      ],
+      "numbered": [
+        "**Evergreen URLs for anything that repeats.** `/collections/summer-edit` refreshed every year, not `/collections/ss26` archived every year. Season codes belong in the page content, not the path.",
+        "**Retiring a collection with a clear successor**: [301 redirect](/glossary/301-redirect) to the successor collection. Same audience, same intent, links preserved.",
+        "**Retiring a one-off collaboration or capsule**: keep the URL live as an archive page with the story and links to current stock, especially if press coverage points at it. A page that earned real links is worth more alive.",
+        "**Sold-out individual products**: keep the URL indexed with the correct availability state and visible alternatives. Stock is temporary, rankings aren't.",
+        "**Never redirect a collection to the homepage in bulk.** If nothing comparable exists, send it to the parent category and accept the smaller loss."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The replatform version of this",
+        "body": "Most fashion brands change platform at least once. If the new URL structure ships without a full old-to-new redirect map — including collection pages, retired capsules and paginated URLs — you will lose traffic in week one and spend two quarters getting it back. The map is cheaper than the recovery."
+      }
+    },
+    {
+      "h2": "The size guide is a ranking asset and a returns fix",
+      "body": [
+        "Indian apparel sizing is inconsistent between brands, and the conversions between IN, UK, US and EU labelling are something buyers genuinely look up before ordering. `saree blouse size chart`, `womens shoe size chart india`, `kurta size guide` are real, recurring searches — and most brands answer them with a modal popup that a crawler never sees and a customer can't bookmark.",
+        "Give the size guide a real indexable URL per category. Put actual garment measurements in a table, not just labels: chest, shoulder, length, sleeve, in centimetres and inches. Add how to measure, what the fit is intended to be, and the model's height with the size worn on every product photo set.",
+        "Then look at your returns data before you argue about the priority. Ask ops what proportion of returns cite size or fit — in apparel it's usually the largest single reason. A size page that reduces that number is paying for itself twice, once in search and once in reverse logistics.",
+        "The same logic applies to the returns and exchange policy page. Indian shoppers check it before a first purchase from an unfamiliar brand, it earns branded search, and burying it in a footer link with legal phrasing costs you conversions you already paid to acquire."
+      ]
+    },
+    {
+      "h2": "Images and video are the product, so treat them like pages",
+      "body": [
+        "In apparel, the photograph is the product description. It's also, on most fashion sites, the reason the page is slow and the reason it doesn't appear in image search.",
+        "Google Images is a genuine discovery surface for clothing — people search visually for silhouettes, prints and colours — and it's a surface where you can beat a marketplace, because your photography is yours and theirs is often the same supplier shot everyone else uses."
+      ],
+      "bullets": [
+        "**Descriptive filenames and alt text.** `ivory-chanderi-kurta-set-front.jpg` with alt text describing the garment, not `IMG_4471.jpg` with alt text repeating the brand name.",
+        "**Include images in an image sitemap**, especially if the gallery loads through JavaScript. Lazy loading implemented badly is the most common reason a catalogue's photography is invisible to Google.",
+        "**Fix the hero image before anything else.** It's almost always the Largest Contentful Paint element on a product page — serve it in a modern format, sized correctly, with explicit dimensions so the gallery doesn't shift the layout as it loads.",
+        "**Mark up product video** with `VideoObject` where you have it. Try-on and drape videos answer the question static photography can't, and they're eligible for their own results.",
+        "**Unique photography per SKU.** Shared supplier imagery across your site and three marketplaces gives Google nothing to distinguish you with."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where we start, and what it costs",
+        "body": "Month one on a fashion site goes to the redirect map, the feed-versus-site copy split and the image pipeline — before a single edit is commissioned. Our SEO runs from ₹75,000/mo, smaller sites from ₹40,000/mo, ex-GST, month-to-month after the first quarter. See [what ecommerce SEO costs](/cost/ecommerce-seo-cost). We freeze your trailing-90-day organic orders or qualified leads on day one; miss that in 90 days and we keep working free until we beat it. Never a promised ranking position."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why do marketplace listings outrank my own product pages?",
+      "a": "Usually because they carry the copy you sent them in the feed, on domains with far more authority. Google picks one version of near-identical text and it won't be yours. Write feed copy and site copy separately: specification-led for marketplaces, styling and fabric context on your own pages."
+    },
+    {
+      "q": "Should fashion brands sell on marketplaces at all?",
+      "a": "Most should, for reach and cash flow. The mistake isn't listing there, it's letting the listing become the canonical description of your product. Keep the copy distinct, keep your own photography exclusive where you can, and measure how much of your branded search finishes on someone else's checkout."
+    },
+    {
+      "q": "What should I do with old collection URLs each season?",
+      "a": "Redirect to the successor collection when there is one, keep genuinely link-worthy capsules alive as archive pages, and never redirect retired collections in bulk to the homepage — Google treats that as a soft 404 and the link equity is lost. Better still, use evergreen URLs and refresh them instead of retiring them."
+    },
+    {
+      "q": "Do size guides actually help SEO?",
+      "a": "Yes, on two counts. Size chart queries are real and recurring, so an indexable size guide per category earns traffic a popup never will. And a good one reduces size-related returns, which in apparel is usually the largest return reason. Ask your ops team for the split before deciding the priority."
+    },
+    {
+      "q": "How important is image SEO for clothing brands?",
+      "a": "More than in most categories, because people search visually for silhouettes, prints and colours, and because your own photography is a genuine point of difference against generated marketplace grids. Descriptive filenames and alt text, an image sitemap, and a properly optimised hero image cover most of the return."
+    },
+    {
+      "q": "How long does fashion ecommerce SEO take in India?",
+      "a": "Three to six months for occasion and fit clusters to establish, sometimes faster when the first work is recovering an index broken by redirects or crawl waste, because those pages already exist. Highly contested head terms against marketplaces are not a realistic target on any timeline."
+    }
+  ],
+  "related": [
+    { "type": "compare", "slug": "seo-vs-marketplace-selling" },
+    { "type": "seo-for", "slug": "d2c-brands" },
+    { "type": "seo-for", "slug": "ecommerce" },
+    { "type": "glossary", "slug": "301-redirect" },
+    { "type": "services", "slug": "ecommerce-seo-services" },
+    { "type": "cost", "slug": "ecommerce-seo-cost" }
+  ]
+}

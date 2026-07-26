@@ -4,11 +4,12 @@ import { JsonLd } from '@/components/JsonLd';
 import { Guarantee } from '@/components/Guarantee';
 import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
+import { ContentTeaser } from '@/components/ContentTeaser';
 
 export const metadata: Metadata = {
   title: "SEO That Ranks — or It's Free",
   description:
-    "The Last Agency Growth System: six SEO engines — technical, content, digital PR, programmatic SEO, AEO/GEO and live reporting — for one price. Beat your organic baseline in 90 days or we work free. From ₹75,000/mo.",
+    'Six SEO engines — technical, content, digital PR, programmatic and AEO — for one price. Beat your organic baseline in 90 days or we work free.',
   alternates: { canonical: '/seo' },
 };
 
@@ -39,7 +40,7 @@ const QUAL_YES = [
   'You have a real product and real revenue — SEO is a growth lever, not a science project.',
   "You're done paying for rankings and want leads and pipeline instead.",
   'You can move fast on approvals and let a senior team actually run the play.',
-  'You want one partner who owns search end-to-end, not five vendors pointing fingers.',
+  'You want one partner who owns search from crawl to closed deal, not five vendors pointing fingers.',
 ];
 
 const QUAL_NO = [
@@ -247,6 +248,21 @@ export default function SeoPage(): JSX.Element {
         </div>
         <FaqList items={SEO_FAQ} />
       </section>
+
+      <ContentTeaser
+        eyebrow="Before you book anything"
+        title="Read us first. Decide after."
+        prefer={[
+          { type: 'answers', slug: 'how-do-seo-agencies-work' },
+          { type: 'cost', slug: 'seo-cost-in-india' },
+          { type: 'compare', slug: 'agency-vs-freelancer' },
+          { type: 'compare', slug: 'agency-vs-in-house' },
+          { type: 'compare', slug: 'ppc-vs-seo' },
+          { type: 'services', slug: 'seo-audit-services' },
+        ]}
+        fill={['answers', 'cost', 'compare', 'services']}
+        band="band-cream"
+      />
 
       <FinalCta
         title={

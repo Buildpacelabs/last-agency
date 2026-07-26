@@ -1,0 +1,300 @@
+{
+  "slug": "what-are-seo-services",
+  "type": "answers",
+  "primaryKeyword": "what are seo services",
+  "secondaryKeywords": [
+    "what's seo services",
+    "what is seo services",
+    "types of seo services",
+    "seo services meaning"
+  ],
+  "cluster": "agency-mechanics",
+  "intent": "informational",
+  "h1": "The six categories of SEO services, explained",
+  "metaTitle": "What Are SEO Services? The 6 Categories",
+  "metaDescription": "SEO services split into six buyable categories: technical, on-page, content, links and digital PR, local and international. Here's which to buy first.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "SEO services are the six buyable categories of work that make a site rank: technical SEO, on-page SEO, content, link acquisition and digital PR, local SEO, and international SEO. Most Indian agencies sell them bundled into a monthly retainer from ₹25,000 to ₹3,00,000, but you can buy them individually.",
+  "takeaways": [
+    "Six categories, and you almost certainly don't need all six. Buying the wrong two first is the most common way SEO money gets wasted.",
+    "Technical SEO doesn't create growth. It removes the ceiling on it — which is why it comes first and then mostly stops.",
+    "Content is the only category that has to run as a **cadence**. The other five can be bought as projects.",
+    "If someone sells you \"SEO optimisation\" without naming which of the six it maps to, they're selling you a word."
+  ],
+  "sections": [
+    {
+      "h2": "The six categories, side by side",
+      "body": [
+        "Every real SEO deliverable belongs to one of six categories. Agencies bundle them, rename them and reorder them in decks, but the underlying work doesn't change.",
+        "The taxonomy matters for one practical reason: it lets you read a proposal and see what's missing. A quote with no link acquisition is a content service. A quote that's 80% technical for a 30-page site is an upsell."
+      ],
+      "table": {
+        "caption": "The six categories of SEO services and what each one actually moves.",
+        "head": [
+          "Category",
+          "The work",
+          "What it changes",
+          "Share of a typical retainer"
+        ],
+        "rows": [
+          [
+            "Technical SEO",
+            "Crawling, indexing, site speed, Core Web Vitals, schema, redirects, JavaScript rendering.",
+            "Whether Google can reach, render and trust your pages at all.",
+            "20–30% up front, ~10% after"
+          ],
+          [
+            "On-page SEO",
+            "Titles, headings, internal links, URL structure, per-page schema, image handling.",
+            "How well a page you already have matches a query you already want.",
+            "10–15%"
+          ],
+          [
+            "Content",
+            "Keyword research, briefs, new pages, rewrites of pages that have decayed.",
+            "How many queries you're eligible to answer in the first place.",
+            "35–45%"
+          ],
+          [
+            "Links and digital PR",
+            "Earned placements, data stories, expert commentary, partnerships, resource pages.",
+            "Whether you can compete for the queries everyone else also wants.",
+            "20–30%"
+          ],
+          [
+            "Local SEO",
+            "Google Business Profile, citations, reviews, location pages, map pack visibility.",
+            "Whether you show up when somebody nearby searches with intent.",
+            "Often the entire budget for a single-location business"
+          ],
+          [
+            "International SEO",
+            "Hreflang, country targeting, subfolder or ccTLD structure, translated and localised copy.",
+            "Which country's version of your page ranks in which market.",
+            "Zero unless you sell across borders"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Technical SEO: the ceiling, not the engine",
+      "body": [
+        "Technical SEO is the only category that doesn't produce growth by itself. It removes the thing that was capping growth. That distinction changes how you should buy it.",
+        "On an older site with a migration or two in its history, the first technical pass often recovers traffic that was quietly lost years ago — no new content required. On a clean 40-page site built last year, the same pass finds four things and takes an afternoon. Same service, wildly different value."
+      ],
+      "bullets": [
+        "**Crawl and index control** — robots directives, sitemaps, canonicals, pagination, index bloat.",
+        "**Rendering** — whether your content exists before JavaScript runs. This is the single most common silent failure on modern stacks.",
+        "**Speed and Core Web Vitals** — LCP, INP, CLS. Real thresholds, measurable, and mostly a developer's job rather than a marketer's.",
+        "**Redirects and site structure** — chains, loops, orphan pages, and whatever survived the last replatform.",
+        "**Schema markup** — how you tell search engines what a page is, rather than hoping they infer it."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The shape of the spend",
+        "body": "Technical work front-loads. Expect a quarter to a third of the first three months, then roughly a tenth of every month after that — reviews, regression checks, and cleaning up whatever last week's release broke. If your technical line item is still 30% at month nine, ask why."
+      }
+    },
+    {
+      "h2": "On-page and content: the two people keep merging",
+      "body": [
+        "These get bundled constantly, and they're genuinely different purchases with different economics."
+      ],
+      "subs": [
+        {
+          "h3": "On-page is per-page and finite",
+          "body": [
+            "On-page work takes a page that already exists and makes it a better answer to a query it's already close to. Title, headings, internal links, schema, the first hundred words."
+          ],
+          "bullets": [
+            "You can buy it as a one-off project — 200 pages audited and rewritten, done, invoice closed.",
+            "It's the fastest-moving category. Search Console impressions can shift inside a few weeks.",
+            "It runs out. Once every page is properly built, there's nothing left to fix until you publish more."
+          ]
+        },
+        {
+          "h3": "Content is per-query and never finishes",
+          "body": [
+            "Content creates eligibility. You cannot rank for a query you haven't written about, and no amount of on-page work on your homepage changes that.",
+            "It's also the only category where cadence beats volume. Four solid pages a month for a year outperforms fifty in one quarter followed by silence, because search engines reward sites that keep being useful and because internal linking compounds."
+          ]
+        },
+        {
+          "h3": "Why the difference matters when you're buying",
+          "body": [
+            "Old site with traffic, untouched for three years? Buy on-page first — those pages are already indexed and already carry some authority. New or thin site? On-page has nothing to act on. Buy content, then buy on-page for that content six months later."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Links and digital PR: slowest, priciest, hardest to fake",
+      "body": [
+        "This is where the gap between honest and dishonest agencies is widest, because the output is the hardest to inspect.",
+        "Real link work is relationship work at volume: pitching journalists, publishing something worth citing, commenting as a named expert. It's slow, it doesn't scale with budget, and a good month on a ₹75,000 retainer is two to five earned placements. Anyone promising forty is selling something else."
+      ],
+      "bullets": [
+        "**Ask where the links come from.** \"Our network\" means a private blog network. That's a penalty waiting to land on your domain, not theirs.",
+        "**Ask for URLs, not counts.** A monthly report listing 12 links without a single clickable URL is a report about nothing.",
+        "**Watch the referring-domain graph.** Slow and steady is healthy. A sudden spike of hundreds is the signature of bought links.",
+        "**Expect it to be expensive.** Links are the category where costs are highest per unit and least negotiable — see [what link building actually costs](/cost/link-building-cost)."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Don't buy links before you have something worth linking to",
+        "body": "Outreach on behalf of a site with nine thin pages fails, and you'll have paid for the failure. Get the content and the technical foundation right first, then spend on links. In that order, every time."
+      }
+    },
+    {
+      "h2": "Local and international: the two categories shaped by geography",
+      "body": [
+        "These two aren't add-ons to the other four. They're separate disciplines with their own tooling, their own ranking surfaces and their own failure modes."
+      ],
+      "subs": [
+        {
+          "h3": "Local SEO",
+          "body": [
+            "Local SEO competes for the map pack — the three-result block that appears above the normal results for anything with local intent. It's a different ranking surface with different inputs, which is why [local SEO](/answers/what-is-local-seo) can work brilliantly for a business whose website barely ranks at all."
+          ],
+          "bullets": [
+            "Google Business Profile: categories, services, hours, photos, posts, Q&A.",
+            "Reviews — volume, recency and whether anyone replies.",
+            "NAP consistency across directories, which matters more in India than most people expect because listing data is so messy here.",
+            "Location pages with genuinely different content, not one template with the city name swapped."
+          ]
+        },
+        {
+          "h3": "International SEO",
+          "body": [
+            "Almost entirely structural. Get hreflang, URL structure and country targeting right and translated content works. Get them wrong and your Indian pages outrank your UAE pages in Dubai, permanently, however good the copy is. Don't buy this until you have real demand in a second market — the structure is expensive to build and painful to unwind."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Which two to buy first, by where your site actually is",
+      "body": [
+        "Nobody buys all six at once, and the sequence matters more than the total budget. This is the table worth arguing with your agency about."
+      ],
+      "table": {
+        "caption": "Buying order by site maturity.",
+        "head": [
+          "Where your site is",
+          "Buy first",
+          "Buy second",
+          "Skip for now"
+        ],
+        "rows": [
+          [
+            "Brand new, under 20 pages, no rankings",
+            "A small technical foundation, once",
+            "Content on the ten queries closest to money",
+            "Links, digital PR, international"
+          ],
+          [
+            "1–3 years old, some rankings, growth flat",
+            "On-page and content refresh",
+            "Internal linking across what you already have",
+            "Net-new content volume"
+          ],
+          [
+            "Old, thousands of pages, traffic falling",
+            "Technical audit and index control",
+            "Consolidating pages that compete with each other",
+            "New content until the crawl is clean"
+          ],
+          [
+            "Single-location service business",
+            "Local SEO — profile, reviews, location pages",
+            "A handful of properly built service pages",
+            "Digital PR and national keyword sets"
+          ],
+          [
+            "Selling into two or more countries",
+            "Hreflang and country structure",
+            "Market-specific content, not translations",
+            "Anything at all before the structure is right"
+          ]
+        ]
+      },
+      "bullets": [
+        "Two rules sit under that whole table. Never buy content before the site can be crawled and rendered.",
+        "And never buy links before there's something on the site a stranger would willingly cite."
+      ]
+    },
+    {
+      "h2": "What gets sold as a category but isn't one",
+      "body": [
+        "Four things show up in proposals as line items and shouldn't. If you see them, ask which of the six they map to."
+      ],
+      "bullets": [
+        "**\"SEO optimisation\"** — a word standing in for a scope. Ask for the line items and the volumes. The full list is in [what SEO services include](/answers/what-do-seo-services-include).",
+        "**Directory submissions at volume** — 200 listings on sites nobody visits. This was a tactic in 2011.",
+        "**Social signals** — likes and shares are not a ranking input you can buy your way into. Social is a real channel; it just isn't this one.",
+        "**Reporting as a category** — reporting wraps the other six. It's a deliverable, not a purchase, and it shouldn't be more than about a tenth of the hours."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "How we price the mix",
+        "body": "SEO from ₹75,000/mo, and from ₹40,000 for smaller sites, ex-GST. The mix across the six categories changes every quarter based on what the numbers say — which is the point of paying for a team rather than a package. Details on [our pricing page](/pricing)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I buy SEO services separately instead of as a package?",
+      "a": "Yes. Technical audits, on-page projects and local SEO all work as standalone purchases with a defined end. Content and link acquisition don't — both depend on cadence, and a one-month burst of either produces close to nothing you can measure."
+    },
+    {
+      "q": "Which SEO service gives the fastest results?",
+      "a": "On-page work on pages that already rank between positions 5 and 20. You're improving assets that are already indexed and already trusted, so Search Console impressions often move within four to six weeks. Everything else is slower."
+    },
+    {
+      "q": "Is local SEO a different service from regular SEO?",
+      "a": "Yes. Local SEO competes for the map pack, which ranks on proximity, profile completeness and reviews rather than purely on your website. A local business can win the map pack while its website ranks poorly, and vice versa."
+    },
+    {
+      "q": "Do I need international SEO if I already rank in India?",
+      "a": "Only if you're genuinely selling in another country. International SEO is structural work — hreflang, URL architecture, country targeting — and it's expensive to build and painful to unwind. Prove the demand exists first."
+    },
+    {
+      "q": "Are SEO services and digital marketing services the same thing?",
+      "a": "No. SEO is one channel inside digital marketing, alongside paid ads, social, email and affiliate. A digital marketing agency may or may not have real SEO specialists; ask who does the technical work and where the links come from."
+    },
+    {
+      "q": "How much do SEO services cost in India?",
+      "a": "Retainers run from about ₹25,000 to ₹3,00,000 a month, and the number tracks how many of the six categories run at once. Below ₹40,000 you get one category at a time. Around ₹75,000 the four core ones can run together."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-do-seo-services-include"
+    },
+    {
+      "type": "compare",
+      "slug": "technical-seo-vs-content-seo"
+    },
+    {
+      "type": "compare",
+      "slug": "onpage-vs-offpage-seo"
+    },
+    {
+      "type": "services",
+      "slug": "local-seo-services"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-services-cost"
+    },
+    {
+      "type": "glossary",
+      "slug": "off-page-seo-meaning"
+    },
+    {
+      "type": "answers",
+      "slug": "how-many-seo-agencies-are-there-in-the-world"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "slug": "what-are-seo-kpis",
+  "type": "answers",
+  "primaryKeyword": "seo kpis",
+  "secondaryKeywords": [
+    "what are seo kpis",
+    "seo key performance indicators",
+    "which kpis to track for seo",
+    "seo reporting metrics"
+  ],
+  "cluster": "seo-measurement",
+  "intent": "informational",
+  "h1": "The SEO KPIs worth putting in a board deck",
+  "metaTitle": "SEO KPIs Worth Reporting to a Board",
+  "metaDescription": "Pick SEO KPIs your leadership will accept: nine metrics with a definition, a data source and a sensible target range for a mid-size Indian site.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "SEO KPIs are the small set of metrics with a target, an owner and a decision attached: non-brand clicks, non-brand impressions, top-ten rankings from a frozen tracked set, qualified organic leads, organic conversion rate, index coverage of new pages, new referring domains, Core Web Vitals pass rate, and work shipped.",
+  "takeaways": [
+    "A KPI has a target, an owner and a decision attached. Everything else on your dashboard is a metric, and metrics are free.",
+    "**Nine is the ceiling.** Five on the slide, four in the appendix. A forty-metric dashboard is a way of avoiding a choice.",
+    "The tracked keyword set is the easiest thing in any SEO report to quietly rewrite. Freeze it at kickoff and put it in the contract.",
+    "AI visibility is worth two new KPIs and no vendor scores. If you can't reproduce the number yourself, it isn't a KPI."
+  ],
+  "sections": [
+    {
+      "h2": "A KPI has a target, an owner and a decision. A metric doesn't.",
+      "body": [
+        "Most SEO dashboards fail the same test. Point at any number on the screen and ask: what's the target, who is accountable for it, and what would we do differently if it moved twenty per cent this month? If there are three answers, it's a KPI. If there aren't, it's decoration that makes the deck look thorough.",
+        "That test kills about two thirds of what agencies typically report. Bounce rate has no owner. Domain Rating has no decision attached — you can't do anything about it directly. Total organic sessions has no honest target, because half of it is people typing your brand name after seeing an ad.",
+        "What follows is the nine that survive, with a definition, a data source and a planning range you can lift into your own template. If you want the reasoning behind the hierarchy they sit in, [how to measure SEO success](/answers/how-do-you-measure-seo-success) covers it."
+      ]
+    },
+    {
+      "h2": "The nine KPIs, with sources and target ranges",
+      "body": [
+        "The ranges below are calibrated for what we'd call a mid-size Indian site: roughly 20–300 pages, 1,000–10,000 organic sessions a month, and a retainer somewhere between ₹40,000 and ₹1,50,000. They are planning ranges derived from how indexing, crawling and link acquisition actually behave — not survey results. A site recovering from neglect will beat them easily; a site that already owns its category will not.",
+        "Two of the nine are inputs rather than outcomes. That's deliberate. If you only measure outcomes, you can't tell a slow quarter from an agency that stopped working."
+      ],
+      "table": {
+        "caption": "Nine SEO KPIs with definitions, data sources and planning ranges for a mid-size Indian site.",
+        "head": ["KPI", "Definition", "Source", "Planning range"],
+        "rows": [
+          [
+            "Non-brand organic clicks",
+            "Clicks from search with your brand and product names filtered out",
+            "Search Console, saved regex view",
+            "+5–15% month on month through months 4–12 on a site with room. Flat for two months after month four needs an explanation."
+          ],
+          [
+            "Non-brand impressions",
+            "How often you appear at all for queries that aren't your name",
+            "Search Console",
+            "Moves 4–6 weeks ahead of clicks. If impressions climb and clicks don't, you're stacking up on page two."
+          ],
+          [
+            "Top-10 rankings, frozen set",
+            "Count of tracked keywords sitting in positions 1–10",
+            "Any rank tracker, keyword set frozen at kickoff",
+            "From a 100–200 term set, steady monthly additions. A sudden jump usually means the set changed."
+          ],
+          [
+            "Qualified organic leads",
+            "Leads from organic that sales agrees are real, not form fills",
+            "Your CRM, never analytics alone",
+            "The one that matters. Target: beat your own frozen trailing-90-day count."
+          ],
+          [
+            "Organic conversion rate",
+            "Qualified organic leads divided by non-brand organic sessions",
+            "CRM plus GA4",
+            "Hold or rise. Clicks up with conversion rate collapsing means you're winning queries your buyers don't search."
+          ],
+          [
+            "Index coverage of new pages",
+            "Pages indexed divided by pages published, 30 days after publishing",
+            "Search Console Pages report against your CMS",
+            "Above 90%. Below 70% is a quality or crawl problem, and publishing more will not fix it."
+          ],
+          [
+            "New referring domains",
+            "Distinct domains linking to you for the first time this month",
+            "Any link tool, cross-checked against Search Console links",
+            "3–10 a month on an honest ₹75,000 retainer. A spike of 400 means somebody bought them with your domain."
+          ],
+          [
+            "Core Web Vitals pass rate",
+            "Share of URLs rated Good on mobile, from real-user field data",
+            "Search Console Core Web Vitals report",
+            "75%+ of URLs Good on mobile. Below 50% it's an engineering ticket, not an SEO task."
+          ],
+          [
+            "Work shipped",
+            "Substantive pages published or materially rewritten",
+            "Your CMS plus the agency's work log",
+            "4–8 a month at ₹75,000. An input KPI, and the only one entirely inside the agency's control."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Freeze the tracked keyword set in writing",
+        "body": "Of everything in an SEO report, the tracked keyword list is the easiest thing to rewrite quietly. Add fifty easy long-tail terms, drop the twelve that went backwards, and a flat quarter becomes a chart that climbs. Agree the set at kickoff, put it in an appendix both sides sign, and require a written change request to alter it."
+      }
+    },
+    {
+      "h2": "Two new KPIs for AI answers, and one to refuse",
+      "body": [
+        "AI answers now sit above the results for a growing share of informational queries, which means appearing in search and being read are no longer the same thing. Two KPIs are worth adding. Both are manual, both are cheap, and both are more trustworthy than what's currently sold as tooling."
+      ],
+      "numbered": [
+        "**AI answer presence rate.** Take your 30 most commercially important queries. Each month, check how many return an AI answer above the organic results, and log it. Rising presence with falling click-through on those queries is the pattern you're looking for — and it tells you to move effort towards queries where the answer can't be summarised in a paragraph.",
+        "**Citation rate.** Keep a fixed list of 15 buying-intent prompts — the questions a real customer would type into an assistant — and run the same list monthly across the main assistants. Record whether your brand appears and in what context. Log the prompts verbatim so next month's run is comparable."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The one to refuse",
+        "body": "Any vendor \"AI visibility score\" or \"GEO index\" with an unpublished method. You can't set a target against a number you can't reproduce, you can't tell improvement from a change in their sampling, and you certainly can't put it in front of a board. If they won't publish the method, it's a subscription, not a KPI."
+      }
+    },
+    {
+      "h2": "Which KPI belongs to which stakeholder",
+      "body": [
+        "The fastest way to lose a budget conversation is to show a founder a chart of impressions. Different people need different rows, and the SEO team is the only group that should see all nine."
+      ],
+      "table": {
+        "caption": "KPI ownership by role.",
+        "head": ["Who", "What they should see", "What they do with it"],
+        "rows": [
+          [
+            "Founder or CEO",
+            "Qualified organic leads, cost per organic lead, organic share of pipeline",
+            "Decides whether to keep funding it"
+          ],
+          [
+            "Head of marketing",
+            "Non-brand clicks, organic conversion rate, AI citation rate",
+            "Decides where next quarter's content effort goes"
+          ],
+          [
+            "Sales",
+            "Lead quality and landing page, cohorted by month of first visit",
+            "Tells you which pages produce deals and which produce time-wasters"
+          ],
+          [
+            "Engineering or product",
+            "Core Web Vitals pass rate, index coverage, crawl errors",
+            "Prioritises the tickets that genuinely block rankings"
+          ],
+          [
+            "The SEO team",
+            "All nine, plus every diagnostic underneath them",
+            "Runs the work and explains the gaps"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "How many KPIs is too many",
+      "body": [
+        "Nine is the ceiling for a team. Five is the ceiling for a slide. Anything beyond that isn't rigour, it's a refusal to decide what matters — and it has a predictable consequence: when everything is measured, nothing gets prioritised, because there's always a green number to point at in a bad month.",
+        "Apply the twenty per cent test to every row before it earns a place. If this number moved twenty per cent tomorrow, up or down, what would we do differently? No answer, no row. It's brutal and it takes about fifteen minutes, and most teams delete more than half their dashboard the first time they run it.",
+        "One structural rule: keep at least one input KPI. Outcomes lag by months, so if your entire scorecard is outcomes, you cannot distinguish a slow quarter from an agency that stopped shipping. Pages published and referring domains earned are the two that tell you the engine is still running."
+      ]
+    },
+    {
+      "h2": "The metrics to delete from your report",
+      "body": [
+        "Every one of these appears in agency decks. None of them survives the twenty per cent test."
+      ],
+      "bullets": [
+        "**Domain Authority or Domain Rating as a target.** Third-party scores from tools, not Google metrics, and improving them is not a plan. Worth a glance as a rough competitive comparison, nothing more — see [why domain authority is a vanity metric](/journal/domain-authority-is-a-vanity-metric).",
+        "**Bounce rate.** On a page that answers a question completely, a fast exit means you did the job. Optimising against it is optimising against being useful.",
+        "**Total organic traffic.** Includes your brand searches, which grow from ads and PR. Report non-brand or don't report it.",
+        "**Average position across every query.** An average over thousands of accidental long-tail terms hides everything you actually care about.",
+        "**Any tool's out-of-ten \"SEO score\".** It measures compliance with the tool's checklist, and no ranking system reads that checklist.",
+        "**Social shares, keyword density, time on page.** Interesting occasionally, decision-relevant almost never.",
+        "**Number of keywords ranked for, in total.** Sites accumulate thousands of irrelevant ones. The count rises whether the work is good or not, which is exactly why it's popular in reports."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "Set the targets against your own numbers",
+        "body": "Every range on this page is a planning band, not a promise. The real target is your own frozen baseline: what your trailing-90-day qualified organic lead count was on day one. That's the number our own guarantee runs against, and it's the only benchmark that can't be argued with. For the growth side of it, see [what a normal organic growth rate looks like](/answers/what-is-a-good-organic-traffic-growth-rate)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the difference between an SEO KPI and an SEO metric?",
+      "a": "A KPI has a target, a named owner and a decision attached to it. A metric is just a number you can collect. Impressions become a KPI the moment you say who owns them, what good looks like, and what you'll change if they stall. Until then it's a chart."
+    },
+    {
+      "q": "How many SEO KPIs should we track?",
+      "a": "Five on the reporting slide, up to nine in total. Beyond that you stop prioritising, because there's always a green number available in a bad month. Test each one: if it moved twenty per cent tomorrow, what would you do differently? No answer means it doesn't belong."
+    },
+    {
+      "q": "Is organic traffic a good KPI?",
+      "a": "Non-brand organic clicks, yes. Total organic traffic, no — it includes people searching your brand name, which grows from advertising, PR and word of mouth rather than SEO work. Filter brand out in Search Console and save it as a permanent view before you set any target."
+    },
+    {
+      "q": "Should Domain Authority be an SEO KPI?",
+      "a": "No. It's a third-party score invented by a tool vendor to approximate link strength, not a Google ranking factor, and you cannot act on it directly. Track new referring domains per month instead — it's the underlying thing DA is trying to summarise, and you can actually influence it."
+    },
+    {
+      "q": "What KPIs show whether SEO is working before revenue arrives?",
+      "a": "Non-brand impressions move first, usually inside four to six weeks. Then non-brand clicks, then index coverage of newly published pages, then referring domains. If all four are flat at month three, revenue is not quietly on its way and it's time for a direct conversation."
+    },
+    {
+      "q": "Which SEO KPIs should go in a board deck?",
+      "a": "Qualified organic leads against the frozen baseline, cost per organic lead, organic share of pipeline, and one leading indicator — non-brand clicks — so the board can see momentum ahead of revenue. Keep impressions, rankings and technical metrics in the appendix for whoever asks."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "how-do-you-measure-seo-success" },
+    { "type": "journal", "slug": "domain-authority-is-a-vanity-metric" },
+    { "type": "glossary", "slug": "impressions" },
+    { "type": "glossary", "slug": "ai-visibility" },
+    { "type": "compare", "slug": "ga4-vs-search-console" },
+    { "type": "services", "slug": "seo-reporting-services" }
+  ]
+}

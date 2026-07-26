@@ -1,0 +1,195 @@
+{
+  "slug": "restaurants",
+  "type": "seo-for",
+  "primaryKeyword": "seo for restaurants",
+  "secondaryKeywords": [
+    "restaurant seo india",
+    "restaurant local seo",
+    "seo for cafes india",
+    "google business profile restaurant",
+    "menu page seo"
+  ],
+  "cluster": "travel-and-hospitality",
+  "intent": "commercial",
+  "industry": "Restaurants and cafés",
+  "h1": "SEO for restaurants that fills tables on a slow Tuesday",
+  "metaTitle": "SEO for Restaurants: Footfall From Search",
+  "metaDescription": "SEO for restaurants that brings walk-ins, not impressions. We optimise your Google Business Profile, menu pages and photos for hungry local searches.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Restaurant search is a twenty-minute decision. Someone opens Maps, filters to open now and 4.0+, scans four photos and a price level, then picks. So the work is operational, not literary: correct hours, fresh photos, an HTML menu with prices, and replies to reviews. Long-form food writing wins nothing at 8:40pm.",
+  "takeaways": [
+    "Your competition isn't every restaurant in the city. It's the six on the same screen, inside the same filter, at the same moment.",
+    "Wrong hours don't lower your ranking — they **remove you from the results entirely** for anyone using the open-now filter. Set special hours for every festival.",
+    "A PDF menu is a dead end: slow, unsearchable, un-updatable and invisible to a price query. Put the menu on a web page with the prices in text.",
+    "Occasion queries — birthdays, group bookings, rooftop, pure veg — are where your own site beats your aggregator listing, because nobody else answers the constraint.",
+    "Dropping below 4.0 takes you out of a rating filter people actually use, and the arithmetic of climbing back is brutal. Protect the average before you have to rebuild it."
+  ],
+  "sections": [
+    {
+      "h2": "Twenty minutes, four thumbnails, one filter",
+      "body": [
+        "Picture the actual search. It's 8:40pm, four people are in a car on Old Airport Road, and someone opens Maps and types `restaurants near me`. They tap open now. Maybe they tap 4.0+. They scroll past six results, look at one photo each, glance at the price level, and the argument is over in under two minutes.",
+        "Nothing in that sequence rewards a 1,800-word essay about your chef's philosophy. What it rewards is a complete profile, a photo that makes the food look like the food, a rating above the filter threshold, and hours that are correct tonight. Restaurant SEO is an operating rhythm more than a content strategy, and that's why so many agencies do it badly — there's nothing impressive to put in a deck."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The holiday-hours bug that costs you the best night of the year",
+        "body": "If your profile shows regular hours on Diwali, Christmas or a long weekend and you're actually open, the open-now filter still counts you as closed, and you vanish from the shortlist on the busiest evening of the quarter. Set special hours a month ahead for every festival you trade on. It takes four minutes and nobody does it."
+      }
+    },
+    {
+      "h2": "The profile jobs that repeat weekly, not once",
+      "body": [
+        "Most restaurants treat the [Google Business Profile](/glossary/google-business-profile) as a setup task. It's a channel, and channels have a cadence. Here's a rhythm a single outlet's manager can genuinely sustain."
+      ],
+      "table": {
+        "caption": "A workable operating rhythm for one outlet's Google presence.",
+        "head": ["Cadence", "The job", "Why it matters"],
+        "rows": [
+          [
+            "Weekly",
+            "Three to five new photos: dishes currently on the menu, the room at service time, the frontage lit at night",
+            "Photos are what the searcher compares. The lit-frontage shot is how they find your door once they've decided."
+          ],
+          [
+            "Weekly",
+            "One Post — the new dish, the weekend set menu, the live act",
+            "Posts show on the profile and give someone a reason to pick you tonight rather than in general."
+          ],
+          [
+            "Weekly",
+            "Reply to every new review",
+            "The reply is written for the next diner reading it, not for the reviewer. Nobody changes their mind; everybody reads."
+          ],
+          [
+            "Monthly",
+            "Check hours and set special hours for next month's festivals and holidays",
+            "Wrong hours remove you from the open-now filter completely. This is the highest-return four minutes in the list."
+          ],
+          [
+            "Monthly",
+            "Update the menu link and any price changes",
+            "A stale price is a one-star review waiting to be written at the billing counter."
+          ],
+          [
+            "Quarterly",
+            "Re-check categories, attributes and the reservation link",
+            "Attributes feed the filters diners use: outdoor seating, rooftop, live music, pure veg, wheelchair accessible."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Put the menu on a web page, and put the prices on it",
+      "body": [
+        "The PDF menu is the single most common self-inflicted wound in restaurant SEO. It loads slowly on mobile, forces pinch-to-zoom, often can't be read as text, can't be edited by the manager when the paneer price moves, produces no snippet, and answers no query. Someone searching `wood fired pizza price in indiranagar` will never see it.",
+        "An HTML menu page fixes all of that at once. Sections, item names, a one-line description, and the price in text. Add `Restaurant` structured data with `servesCuisine`, `priceRange`, `acceptsReservations` and `openingHoursSpecification`, plus `Menu`, `MenuSection` and `MenuItem` markup so the crawler understands what it's reading."
+      ],
+      "bullets": [
+        "**One page per menu, not one PDF per menu.** The bar menu, the weekend brunch, the party set menus and the lunch buffet each rank for something different.",
+        "**Prices in text, never baked into an image.** An image price is invisible to search and to anyone using a screen reader.",
+        "**Say what's Jain-adaptable, what's vegan, what the spice level is, and what contains onion or garlic.** These are searched constantly in India and almost never published.",
+        "**Point the profile's Menu field at the HTML page**, not the PDF. Keep the PDF for the printer.",
+        "**Put the price of the three dishes you're known for in the page title area.** That's the query, so answer it above the fold."
+      ]
+    },
+    {
+      "h2": "Occasion queries are where your site beats your aggregator listing",
+      "body": [
+        "For `restaurants near me`, your website rarely wins — the map pack and the aggregators own that page, and that's fine, because your profile is competing there anyway. Occasion queries are the opposite. They carry a constraint, and a constraint is something only you can answer.",
+        "Every one of these is a page, and every page needs a number on it."
+      ],
+      "bullets": [
+        "`birthday party restaurants in <area>` — with your cake-cutting policy, outside-cake charge and whether you'll do the décor.",
+        "`private dining room for 20 people <area>` and `restaurants for large groups near me` — capacity, minimum spend, notice period.",
+        "`rooftop restaurants in <area>` — and whether the terrace closes in monsoon, because that's the follow-up question every single time.",
+        "`pure veg restaurants near <landmark>`, `jain food restaurant in <area>`, `no onion no garlic restaurant` — enormous, specific, and usually answered by nobody.",
+        "`corporate lunch buffet near <office park>` and `office catering <area>` — planned in advance, high ticket, repeat.",
+        "`restaurants open after 11pm near me` — if that's you, own it, because the competing set is tiny."
+      ],
+      "subs": [
+        {
+          "h3": "The two pages that pay for themselves",
+          "body": [
+            "A **party and bulk enquiry page** with capacity by seating style, a per-head price band, the minimum spend and a WhatsApp enquiry button. Group bookings are the highest-value thing a restaurant can win from search, and the enquiry is nearly always a chat rather than a form.",
+            "A **book a table page** that takes a date, a party size and a phone number and nothing else. If you're on a reservation partner that feeds Google's booking module, connect it — but keep your own page too, because the partner takes a cut of a customer you already earned."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The arithmetic of climbing back over 4.0",
+      "body": [
+        "Maps lets people filter by rating. Slip under 4.0 and you're not ranked lower for those searchers — you're removed from their shortlist entirely. That's a step change, not a slope.",
+        "The unpleasant part is the maths, because an average is a weighted mean and old reviews never expire. Say you have 200 reviews averaging 3.9. That's 780 stars in total. To reach 4.2 you need 75 consecutive five-star reviews — and that assumes not a single one-star arrives in the meantime. At ten reviews a month, that's seven months of flawless service. This is why protecting the average is cheaper than recovering it."
+      ],
+      "bullets": [
+        "**Ask everyone, at the table, when the bill is settled and the meal clearly went well.** Not by SMS the next afternoon, when the moment has gone.",
+        "**Put a QR on the bill folder** that opens the review link directly. One tap, no searching.",
+        "**Never trade a dessert, a discount or a lucky-draw entry for a review.** Incentivised reviews break Google's policy, get removed in sweeps, and can take the profile with them.",
+        "**Reply to the bad ones inside 48 hours**, name the specific fix and the date it happens. Don't argue. The audience is the next diner, not the reviewer.",
+        "**Fix the operational cause first.** No amount of [review management](/services/review-management-services) out-runs a kitchen that collapses at 9pm on Saturdays."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Recovery is a function of covers, not budget",
+        "body": "A 300-cover restaurant can rebuild an average in a quarter. A 40-cover café simply cannot, because it doesn't have the volume of new reviews to outweigh the old ones. Small rooms have to be far more careful, far earlier — that's a real constraint, not a sales objection."
+      }
+    },
+    {
+      "h2": "Turning a search into a seated table",
+      "body": [
+        "The last ten metres is where most restaurant marketing quietly fails. Someone found you, liked the photos, and now has to do something on a phone in a moving car."
+      ],
+      "numbered": [
+        "**One tap to call, one tap to WhatsApp, one tap to directions.** Nothing else above the fold on mobile. Not a newsletter, not a video, not a cookie wall.",
+        "**Pre-fill the WhatsApp message** with the date, party size and outlet name so the first reply from your side can be useful.",
+        "**Tag each `wa.me` link by surface** — profile, menu page, party page — so you know which one produced the booking.",
+        "**Answer within minutes during service, or don't publish the channel.** An unanswered WhatsApp is worse than no WhatsApp.",
+        "**Count covers, not clicks.** Ask the host to log how the booking arrived. It's one column in the reservation book and it's the only number that settles the argument about whether this is working."
+      ]
+    },
+    {
+      "h2": "What this costs, and what we guarantee",
+      "body": [
+        "A single outlet sits at the ₹40,000 a month end of our [SEO pricing](/pricing) — profile cadence, menu pages, a handful of occasion pages and a review habit. A group with several outlets is ₹75,000 and up, because it's separate profiles, separate menus, separate review programmes and a genuine risk of two of your own outlets filtering each other out of the same map pack. [What local SEO costs](/cost/local-seo-cost) sets out the market range.",
+        "We never promise a ranking position — nobody controls Google's index, and you wouldn't trust a chef who guaranteed a table would be full either. We freeze your trailing-90-day count of qualified enquiries from organic search on day one, calls and WhatsApp included. If we haven't beaten it in 90 days, we keep working free until we do. Three clients a month is what makes that possible to mean."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does my restaurant need a website if I'm already on Zomato and Swiggy?",
+      "a": "Yes, for a narrow but valuable set of queries. Aggregators handle discovery and delivery well and take a cut of it. They don't answer `private dining for 20 people in <area>` or publish your banquet minimum spend. Those bookings are high-value, and your own site is the only place they can land."
+    },
+    {
+      "q": "Why shouldn't I use a PDF menu on my website?",
+      "a": "It's slow on mobile, needs pinch-to-zoom, often isn't readable as text by search engines, can't be updated by the manager, and can't answer a price query. An HTML menu with prices in text solves all five and can be edited in two minutes when the supplier rate changes."
+    },
+    {
+      "q": "How many Google reviews does a restaurant need?",
+      "a": "There's no threshold, and any agency quoting one invented it. What matters is the rate, the recency and staying above the 4.0 filter. A steady ten a month with replies beats a static pile from three years ago, and it's the only defence against a bad week dragging the average down."
+    },
+    {
+      "q": "How do I fix a rating that has fallen below 4.0?",
+      "a": "Arithmetic, patience and fixed operations. With 200 reviews at 3.9, seventy-five straight five-stars gets you to 4.2 — assuming no new bad ones. So fix the cause first, then ask every satisfied table at the moment the bill is settled. Never buy or incentivise reviews; the sweeps take the whole profile."
+    },
+    {
+      "q": "Do Google Business Profile posts actually do anything for a restaurant?",
+      "a": "They won't outrank a nearer competitor on their own. What they do is give someone comparing three profiles a reason to choose tonight — a new dish, a set menu, live music on Friday. Treat them as merchandising in the shop window rather than as a ranking tactic."
+    },
+    {
+      "q": "Should I publish my prices on the website?",
+      "a": "Yes. Price is a large part of what the searcher is deciding, and hiding it means being compared on nothing but photos and distance. Published prices also pre-qualify walk-ins, which the floor staff will thank you for more than they'll ever thank you for a blog post."
+    }
+  ],
+  "related": [
+    { "type": "seo-for", "slug": "cloud-kitchens" },
+    { "type": "services", "slug": "review-management-services" },
+    { "type": "services", "slug": "local-seo-services" },
+    { "type": "glossary", "slug": "google-business-profile" },
+    { "type": "answers", "slug": "how-to-do-local-seo" },
+    { "type": "cost", "slug": "local-seo-cost" }
+  ]
+}

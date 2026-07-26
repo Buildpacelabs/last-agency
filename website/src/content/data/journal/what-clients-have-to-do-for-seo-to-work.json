@@ -1,0 +1,246 @@
+{
+  "slug": "what-clients-have-to-do-for-seo-to-work",
+  "type": "journal",
+  "primaryKeyword": "what clients need to do for seo to work",
+  "secondaryKeywords": [
+    "client responsibilities seo project",
+    "why seo projects stall",
+    "approval delays marketing",
+    "dev resources for seo",
+    "seo collaboration with agency"
+  ],
+  "cluster": "client-education",
+  "intent": "informational",
+  "h1": "The Half of SEO Your Agency Can't Do For You",
+  "metaTitle": "What Clients Have to Do for SEO to Work",
+  "metaDescription": "A two-week approval cycle and a blocked dev queue turn a 90-day SEO plan into 150 days. Here's the arithmetic, and five commitments to fix it.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "SEO stalls on the client side more often than the agency side. A two-week approval cycle and a fortnightly release train turn a 90-day plan into a 150-day one, because the delays compound rather than add. Agree five things at kickoff: a named approver with 48-hour turnaround, dev hours, expert access, day-one system access, and one decision-maker.",
+  "takeaways": [
+    "Delays don't add, they compound. Each late input then waits for the next available slot on the other side, which is why a fortnight of drag produces a month of slip.",
+    "**Five commitments, agreed in writing at kickoff**: named approver with a 48-hour SLA, dev capacity, 45 minutes of expert time a month, day-one access, one decision-maker.",
+    "The dev queue is the single best predictor of outcomes we've found. Better than the audit, better than the budget, better than the industry.",
+    "An agency that hasn't told you it's blocked by week two isn't being polite. It's protecting the renewal conversation at the cost of your quarter."
+  ],
+  "sections": [
+    {
+      "h2": "The arithmetic: how a 90-day plan becomes a 150-day plan",
+      "body": [
+        "This is a worked example, not a study — nobody has surveyed this and we're not going to pretend otherwise. But the arithmetic is real, and it's the arithmetic behind most disappointing quarters we've seen.",
+        "Take a standard first-quarter plan. Two assumptions on the client side: approvals come back in two working days, and technical fixes reach production within a week of being handed over. Now change only those two assumptions — approvals take ten working days, and fixes wait for a fortnightly release train whose next slot is three weeks out. Nothing about the agency's work changes. Nobody is lazy. Nobody misses a deadline they set.",
+        "Here's what happens to the calendar."
+      ],
+      "table": {
+        "caption": "The same 90-day plan under two-day approvals versus ten-day approvals and a fortnightly release train.",
+        "head": ["Milestone", "Planned", "With client-side drag", "Slip"],
+        "rows": [
+          ["All system access granted", "Day 3", "Day 15", "+12 days"],
+          ["Audit and baseline signed off", "Day 10", "Day 22", "+12 days"],
+          ["Technical fix list handed to engineering", "Day 18", "Day 30", "+12 days"],
+          ["First batch of fixes live in production", "Day 25", "Day 51", "+26 days"],
+          ["First content briefs approved", "Day 22", "Day 40", "+18 days"],
+          ["First pages published", "Day 32", "Day 62", "+30 days"],
+          ["Publishing cadence reached", "Day 55", "Day 100", "+45 days"],
+          ["First honest read on results", "Day 90", "Day 150", "+60 days"]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "Eight days of drag, sixty days of slip",
+        "body": "The individual delays are small — eight working days here, a missed release window there. The slip at the end is two months, because a late input doesn't just arrive late, it arrives after the slot it was meant to fill and waits for the next one. That's the whole mechanism, and it's why 'we were only a week behind on approvals' is never only a week."
+      }
+    },
+    {
+      "h2": "Why it compounds instead of adding",
+      "body": [
+        "Three things happen when an input slips, and only the first one is obvious.",
+        "**It misses the slot.** A brief approved on Thursday afternoon doesn't enter a writer's Thursday. It enters next week's allocation, because the writer's week was planned on Monday. Two days of delay becomes five days of calendar. A technical fix handed over the day after the release cut-off doesn't wait a day, it waits a fortnight.",
+        "**Context evaporates.** A page reviewed ten days after it was drafted gets reviewed by someone who has forgotten the brief, so the feedback is about the angle rather than the copy. That triggers a rewrite instead of an edit, which costs a full cycle rather than an afternoon. This is the expensive one and almost nobody counts it.",
+        "**The queue behind it fills up.** While your approvals sit, the agency's writers, technical people and outreach team are working on other accounts. When your approval finally lands, you're not first in line any more. That's not an agency being difficult; it's what capacity means. An agency that holds a person idle waiting for you is an agency that will need to bill you for idle time.",
+        "The fix isn't working faster. It's removing the wait states — which mostly means deciding things earlier, in bulk, at the brief stage rather than the draft stage."
+      ]
+    },
+    {
+      "h2": "The five commitments to agree at kickoff",
+      "body": [
+        "Every one of these has a number attached. That's deliberate — a commitment without a number is a mood. Put them on one page next to the baseline document and have both sides sign it before the first invoice."
+      ],
+      "numbered": [
+        "**A named approver with a 48-hour turnaround, and a named backup.** One person, by name, who can approve a brief, a draft and a title change. The backup exists so a holiday doesn't cost you a fortnight. Add a silence clause: if nothing comes back in five working days, the piece proceeds as drafted. That clause sounds aggressive and is the single most effective thing on this list.",
+        "**Developer capacity, stated in hours or in a named release path.** Either a recurring block — say four to eight hours a fortnight — or an agreed route by which SEO changes reach production without a sprint negotiation each time. Plus an emergency path for anything that breaks indexing, because a stray `noindex` on a template can't wait for the next planning cycle.",
+        "**Forty-five minutes of subject-matter expert time a month, recorded.** Your best salesperson, your senior engineer, the founder. Recorded, so a writer can use it three weeks later. This is the input with the highest return per minute in the entire engagement and it's the one most often cancelled.",
+        "**Day-one access, all of it.** Search Console at owner level, GA4, CMS with publish rights, CRM read access, and a named person who controls DNS. Not \"we'll sort that out\" — a checklist with owners and dates, completed inside the first week. Access delays alone routinely cost two weeks at the exact point in the engagement where two weeks is worth most.",
+        "**One decision-maker on strategy.** Not a committee, not consensus. Somebody who can say no to their own colleague's favourite keyword. Where strategy has three owners, every plan gets edited into a compromise that targets nothing, and the agency ends up producing content that satisfies internal politics rather than search demand."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Put it next to the baseline",
+        "body": "These five commitments and the frozen baseline belong on the same page. One document, two signatures, before work starts. [How to set an SEO baseline](/journal/how-to-set-an-seo-baseline) covers the measurement half — this is the obligations half, and a guarantee that names client duties without stating them specifically is a guarantee with an escape hatch in it."
+      }
+    },
+    {
+      "h2": "The dev queue is where SEO goes to die",
+      "body": [
+        "If we could ask one question before quoting, it would be this one: how does a change reach your production site, and who decides? The answer predicts outcomes better than the audit, the budget or the industry. We've seen well-funded engagements produce nothing because a title-tag change needed a ticket, a sprint slot, QA and a fortnightly release window — and we've seen small budgets do well because a marketer had CMS rights and a developer who answered Slack.",
+        "The practical work is to shrink the set of things that need engineering at all, then protect a small, reliable channel for the rest."
+      ],
+      "subs": [
+        {
+          "h3": "Move everything possible out of the dev queue",
+          "bullets": [
+            "Titles, meta descriptions, headings, body copy, internal links, canonical tags and redirects should all be editable in the CMS by a marketer. If they aren't, that's a one-time engineering project worth more than three months of content.",
+            "A redirect map that marketing can edit prevents the most common self-inflicted traffic loss in the business.",
+            "Schema via a CMS field or a tag manager rather than a template change, where your stack allows it.",
+            "If the site is on a modern framework, ask specifically who can deploy a content change without a full release. Sometimes the answer is nicer than everyone assumed."
+          ]
+        },
+        {
+          "h3": "Protect what's left",
+          "bullets": [
+            "A standing SEO slot in sprint planning, however small. Four hours a fortnight, reliably, beats twenty hours promised and never delivered.",
+            "Batch the technical backlog into one release rather than drip-feeding tickets. Engineering resistance is usually about interruption, not effort.",
+            "Ask for staging access so the agency can verify a fix before it ships instead of after it breaks.",
+            "Separate the backlog into two columns — recommended and live — and review the gap monthly. A recommended column with fifteen untouched items since February has told you where your quarter went."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Six-week release trains and 90-day plans don't fit",
+        "body": "If your release cadence is six weeks, a 90-day engagement buys roughly one deployment of technical work. That isn't a reason to skip SEO — it's a reason to front-load everything that doesn't need engineering, and to be honest with yourself about what the first quarter can contain. We turn down guarantee work behind release trains like this, because we'd be promising an outcome we can't reach the controls for."
+      }
+    },
+    {
+      "h2": "The interviews nobody can fake for you",
+      "body": [
+        "Here's the uncomfortable one. A writer with no access to your business produces a page that reads exactly like every competitor's page, because every competitor also hired a writer with no access to their business. The result is a category full of interchangeable content, all of it technically correct, none of it worth ranking.",
+        "Google's own guidance on helpful content asks, more or less directly, whether the page demonstrates first-hand expertise and adds something beyond what's already indexed. That isn't a scoring formula you can game — it's a description of the gap between a page written from other pages and a page written from a conversation with someone who does the work. The second one takes forty-five minutes of your expert's time. There's no substitute anyone can sell you.",
+        "The good news is that the input required is small and it doesn't have to be an interview in the formal sense."
+      ],
+      "bullets": [
+        "**A recorded call with your best salesperson**, once a month. What objections come up, what competitors get said in the room, which questions get asked before a deal closes.",
+        "**Access to sales call recordings**, if you already record them. This is the cheapest content research available and almost nobody hands it over.",
+        "**The support inbox or ticket tags.** The questions customers ask after buying are the questions prospects search before buying, phrased in real language.",
+        "**Your actual pricing logic.** Not the number — the reasoning. It's the thing every competitor hides and the thing every buyer searches for.",
+        "**One senior technical or operational person, quarterly.** Forty-five minutes produces enough for several pages nobody else can write.",
+        "**A fast factual review.** Not a copy edit — a check that the claims are true. Ask your agency to send questions 24 hours ahead so the expert doesn't have to improvise."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Regulated categories need legal in the workflow from day one",
+        "body": "Financial services, healthcare, education and insurance all carry claim restrictions, and a compliance review bolted on at the end adds a full cycle to every piece. Build a pre-approved claims library in week one — the sentences legal has already cleared — and approve at brief stage rather than draft stage. It converts a recurring two-week delay into a one-time week of work."
+      }
+    },
+    {
+      "h2": "What actually stalls, ranked by what it costs you",
+      "body": [
+        "From the pattern of engagements we've run and the accounts we've inherited, roughly in order of damage done. None of these require more money to fix. All of them require somebody deciding they're their job."
+      ],
+      "table": {
+        "caption": "Common client-side blockers, who owns them, and the fix.",
+        "head": ["The blocker", "Typical cost", "The fix"],
+        "rows": [
+          [
+            "No developer capacity for SEO changes",
+            "Most of a quarter. Technical fixes recommended in week two ship in month four, or never.",
+            "A standing fortnightly slot plus CMS control over titles, links and redirects."
+          ],
+          [
+            "Approvals sitting with an unnamed \"the team\"",
+            "8–15 working days per cycle, every cycle, compounding.",
+            "One named approver, one named backup, a 48-hour SLA and a five-day silence clause."
+          ],
+          [
+            "Access not granted in week one",
+            "Two weeks at the most valuable point in the engagement, plus a distorted baseline.",
+            "An access checklist with owners and dates, signed off before kickoff."
+          ],
+          [
+            "Subject-matter interviews cancelled",
+            "Undifferentiated content that ranks nowhere. The cost arrives silently in month six.",
+            "A recurring 45-minute calendar hold, recorded, with questions sent a day ahead."
+          ],
+          [
+            "Strategy owned by a committee",
+            "Plans edited into compromise. Everything gets covered, nothing gets won.",
+            "One decision-maker who can overrule a colleague's favourite keyword."
+          ],
+          [
+            "No CRM or lead source tracking",
+            "You can't tell whether it worked, so the renewal decision becomes a feeling.",
+            "A hidden source field on every form plus a \"how did you hear about us\" question for phone and WhatsApp enquiries."
+          ],
+          [
+            "Slow response to inbound leads",
+            "Organic leads convert worse, and the agency gets judged on a number sales controls.",
+            "Measure time-to-first-contact and report it beside the lead count."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "What we do when the client side stalls",
+      "body": [
+        "Most agencies handle this by saying nothing and billing anyway. It's the rational choice — raising it is awkward, the invoice clears either way, and by the time it matters the quarter is gone. It's also the reason so many founders end an engagement convinced SEO doesn't work, when what didn't work was the arrangement around it. [Why clients fire their SEO agency in month four](/journal/why-clients-fire-their-seo-agency-in-month-four) is very often this story with the ending already written.",
+        "We flag it because we have to. Our guarantee is measured against your own frozen baseline, so a blocked quarter is our problem financially, not just yours strategically. That's an incentive worth being honest about — we're not raising it out of virtue.",
+        "The ladder, in order."
+      ],
+      "numbered": [
+        "**Week two — in writing, low key.** A single line in the weekly note: here's what's waiting, here's what it delays. No drama. Most stalls end here because nobody knew.",
+        "**Week four — re-plan around it.** We shift the quarter towards what we can control without you: net-new pages that don't need approval, technical work that lives in the CMS, link and digital PR work, research and briefs banked for later. It's a worse plan, but it's a plan that can actually run.",
+        "**Week six — a call with whoever signed.** Not the day-to-day contact, who is usually as frustrated as we are and has less power to fix it. The conversation is short: here's the arithmetic, here's the revised date for the first honest read, here's what would need to change to get the original one.",
+        "**Before day 90 — restate the guarantee position in writing.** If the client-side commitments haven't been met, we say so before the measurement date, not after it. An agency that discovers your obligations were unmet only when you try to claim has designed the clause that way.",
+        "**If it doesn't move — we'd rather end it.** Month-to-month after the first quarter, 30 days' notice, and you keep every asset. Billing a stalled account is easy money and a guaranteed bad reference, which is a poor trade for an agency that takes three clients a month."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The question to ask your current agency this week",
+        "body": "\"What are you waiting on from us right now, and what has it delayed?\" If the answer is nothing, ask for the recommended-versus-live backlog and check. If the answer is a list they've never mentioned, you've found your quarter — and you've also learned something about how the relationship is being managed."
+      }
+    },
+    {
+      "h2": "The version of this that takes an hour",
+      "body": [
+        "If you're mid-engagement and don't want to renegotiate anything, do these five things this week instead. They're the compressed version and they cover most of the damage.",
+        "Name your approver and tell the agency, in an email, with a 48-hour commitment attached. Ask engineering for a recurring fortnightly slot, however small, and defend it. Put a 45-minute monthly hold in your best expert's calendar and label it something they won't cancel. Audit your access list and fix whatever's missing today. Then ask for the recommended-versus-live backlog and read the gap.",
+        "None of that costs money. All of it is the difference between the first honest read landing on day 90 and landing on day 150. [What actually happens in the first 90 days](/answers/what-happens-in-the-first-90-days-with-an-seo-agency) sets out what the agency side is supposed to be doing in the same window, so you can check both halves against each other.",
+        "For what it's worth on our side: SEO from ₹75,000 a month, from ₹40,000 for smaller sites, ex-GST. We freeze your trailing-90-day count of qualified organic leads on day one and guarantee movement against that number — never a ranking position, because nobody controls Google's index. Miss it and we keep working free until we beat it. Which is precisely why we ask for the five commitments in writing before anybody signs anything. [The guarantee in full](/seo)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What do clients need to do for SEO to work?",
+      "a": "Five things, agreed in writing at kickoff: a named approver with a 48-hour turnaround and a backup, developer capacity stated in hours or a named release path, 45 minutes of subject-matter expert time a month, complete system access in week one, and one decision-maker on strategy rather than a committee."
+    },
+    {
+      "q": "How much do approval delays actually cost an SEO project?",
+      "a": "More than the delay itself. A brief approved eight working days late misses the writer's weekly allocation, loses context so feedback triggers a rewrite instead of an edit, and rejoins the queue behind other work. In a worked example, ten-day approvals plus a fortnightly release train push a 90-day plan out to roughly 150 days."
+    },
+    {
+      "q": "How much developer time does SEO actually need?",
+      "a": "Less than people fear, but it has to be reliable. Four to eight hours a fortnight as a standing slot handles most technical backlogs. The larger win is a one-time project that moves titles, meta descriptions, headings, internal links, canonical tags and redirects into the CMS so a marketer can edit them without a release."
+    },
+    {
+      "q": "Why does my agency keep asking to interview our team?",
+      "a": "Because a page written only from other pages reads like every competitor's page, and Google's helpful-content guidance asks whether content shows first-hand expertise. Forty-five recorded minutes with a salesperson or a senior engineer produces material nobody else can write. It's the highest-return input you provide and the one most often cancelled."
+    },
+    {
+      "q": "What should I do if my SEO agency says it's blocked?",
+      "a": "Take it seriously the first time, because most agencies never say it. Ask for the specific list, the dates each item has been waiting, and what it delays. Then fix the two cheapest blockers — usually a named approver and system access — before touching the harder one, which is almost always engineering capacity."
+    },
+    {
+      "q": "Can an agency still deliver if we have no developer available?",
+      "a": "Partially, and it should tell you so up front. Content, digital PR, link work and anything editable in the CMS can proceed. Technical fixes, site speed, indexation and schema mostly cannot. Expect a slower and smaller first quarter, and be sceptical of any agency that accepts the constraint without adjusting the plan or the promise."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "what-happens-in-the-first-90-days-with-an-seo-agency" },
+    { "type": "journal", "slug": "why-clients-fire-their-seo-agency-in-month-four" },
+    { "type": "journal", "slug": "how-to-set-an-seo-baseline" },
+    { "type": "answers", "slug": "what-should-be-in-an-seo-contract" },
+    { "type": "glossary", "slug": "e-e-a-t" },
+    { "type": "services", "slug": "seo-retainer-plans" }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "slug": "what-are-keywords-in-seo",
+  "type": "answers",
+  "primaryKeyword": "what are the keywords in seo",
+  "secondaryKeywords": [
+    "what are keywords in seo",
+    "seo keywords meaning",
+    "types of keywords in seo",
+    "what is a keyword"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "What keywords are, and why intent beats volume",
+  "metaTitle": "What Are Keywords in SEO? Intent Over Volume",
+  "metaDescription": "What are the keywords in SEO, and how do you pick one? The four intent types, why volume misleads, and how to read a SERP before you commit a page.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "A keyword is the phrase someone types into a search engine, and the page you build around it. In practice it's a package of three things: the words, the intent behind them, and the page format Google has already decided satisfies that intent. Miss the third and the first two won't rank.",
+  "takeaways": [
+    "Keywords aren't picked from a list, they're **read** — and the SERP tells you everything the tool can't.",
+    "Search volume is a modelled estimate, not a measurement. It's the least reliable number on the screen and the one founders anchor to hardest.",
+    "The four intents — informational, commercial, transactional, navigational — determine the page type. Google has already ruled on which one your keyword is.",
+    "In India, a large share of real demand arrives as Hinglish and transliterated queries that Western keyword tools barely register."
+  ],
+  "sections": [
+    {
+      "h2": "A keyword is a question with an instruction attached",
+      "body": [
+        "Most keyword advice treats a keyword as a string of words with a number next to it. That's the part tools can measure, so it's the part people optimise. It's also the least useful part.",
+        "What a keyword actually carries is an unspoken instruction about what the searcher expects to find. \"Seo agency pricing\" expects a table of numbers. \"Best seo agency\" expects a list. \"How does seo work\" expects an explanation. \"Last agency\" expects one specific website. Same three-word shape, four completely different pages required.",
+        "Google has already made that ruling for every keyword you're considering, and it publishes the ruling in plain sight — as the ten results currently on page one. Every page you build is a bet that you can satisfy the intent better than the incumbents. If your page format is wrong, you're not competing badly. You're not competing at all."
+      ]
+    },
+    {
+      "h2": "The four intents, and the page each one demands",
+      "body": [
+        "Every commercial keyword set sorts into four buckets. The bucket decides the page type, the length, the tone, and whether the page belongs on your blog or in your navigation."
+      ],
+      "table": {
+        "caption": "Search intent types, the pages that satisfy them, and how to spot each on a SERP.",
+        "head": ["Intent", "The searcher wants", "SERP tells you by", "Page you build"],
+        "rows": [
+          [
+            "**Informational**",
+            "To understand something. No purchase in mind yet.",
+            "Featured snippet, People Also Ask, videos, mostly guides and Wikipedia.",
+            "Article, explainer, FAQ. Depth wins."
+          ],
+          [
+            "**Commercial**",
+            "To compare before buying. Purchase intended, vendor undecided.",
+            "Listicles, review sites, comparison tables, some ads.",
+            "Comparison, alternatives page, honest pros-and-cons."
+          ],
+          [
+            "**Transactional**",
+            "To buy, book or sign up now.",
+            "Shopping results, heavy ad load, product and pricing pages.",
+            "Service page, product page, pricing page."
+          ],
+          [
+            "**Navigational**",
+            "To reach one specific site or brand.",
+            "One dominant result plus its sitelinks.",
+            "Nothing, unless it's your brand. Don't chase these."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The single most expensive SEO mistake",
+        "body": "Writing a 2,000-word blog post for a transactional keyword. It reads well, it gets shared internally, and it never ranks — because Google decided years ago that this query wants a product page. No amount of links fixes a format mismatch."
+      }
+    },
+    {
+      "h2": "Read the SERP before you commit a page",
+      "body": [
+        "This is the skill that separates people who do keyword research from people who fill in a spreadsheet. It takes about five minutes per keyword and it kills roughly a third of any list before a single word gets written."
+      ],
+      "numbered": [
+        "**Search it, logged out, on mobile.** Incognito, and set the location to where your buyers are. Your own logged-in results are personalised and lying to you.",
+        "**Count the page types in the top ten.** Eight category pages and two blog posts is a ruling. Build the category page or don't enter.",
+        "**Look at what sits above the results.** Ads, shopping, a map pack, an AI Overview, a video carousel. Each one takes clicks off the table before you get any, and that changes whether the keyword is worth the work.",
+        "**Read People Also Ask.** It's the cheapest sub-topic research available and it tells you what the page has to answer to be considered complete.",
+        "**Check who's ranking.** If the top five are all national publishers or marketplaces, and you're a six-page site, pick a different keyword this quarter and come back to this one.",
+        "**Ask what the page must contain.** Not word count — components. A pricing table, a comparison, a downloadable, an author with credentials. Match the components, then beat them."
+      ]
+    },
+    {
+      "h2": "Why volume is the least useful number on the screen",
+      "body": [
+        "Search volume feels like data because it's an integer. It isn't a measurement. Keyword tools estimate it from clickstream panels and advertising data, then round it into buckets — which is why so many keywords report suspiciously tidy figures like 1,000 or 2,400.",
+        "There are three separate ways it misleads, and they compound."
+      ],
+      "bullets": [
+        "**It groups variants.** Tools frequently roll close variants into one figure, so the number you see may belong to a family of queries rather than the exact phrase you're targeting.",
+        "**It measures searches, not clicks.** A query answered by an AI Overview, a featured snippet or a map pack can send a fraction of its volume onward. High volume with nowhere to click is a decoy.",
+        "**It hides seasonality and it hides money.** An annual average flattens a term that only exists in March. And a 90-searches-a-month query like \"saas seo agency india\" is worth more than a 40,000-a-month query like \"digital marketing\" to almost every business reading this."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The replacement question",
+        "body": "Instead of \"what's the volume?\", ask \"if ten people searched this and landed on my page, how many would become a lead?\" Then multiply by what a lead is worth. That number decides priority. Volume only breaks ties."
+      }
+    },
+    {
+      "h2": "Head, body and long tail — and where the money sits",
+      "body": [
+        "Keywords sort by length and specificity into three rough bands. The bands matter because they map almost perfectly onto how winnable a term is and how close the searcher is to spending."
+      ],
+      "table": {
+        "caption": "The three keyword bands and what each is realistically worth to a mid-size business.",
+        "head": ["Band", "Example", "Character"],
+        "rows": [
+          [
+            "Head",
+            "\"seo\"",
+            "Enormous volume, almost no intent, dominated by giants. Vanity target for nearly everyone."
+          ],
+          [
+            "Body",
+            "\"seo agency india\"",
+            "Real intent, real competition. Where most of a serious retainer's effort goes."
+          ],
+          [
+            "Long tail",
+            "\"seo agency for d2c brands in bangalore\"",
+            "Low volume each, high intent, individually winnable. Wins by accumulation, not by page."
+          ]
+        ]
+      },
+      "bullets": [
+        "The long tail isn't a consolation prize. It's usually the only band a business under ₹50 crore can win in its first year, and it converts several times better because the searcher has already narrowed the field themselves.",
+        "Long tail also compounds. Forty pages each earning a handful of qualified visits a month is a channel; one page chasing a head term is a lottery ticket.",
+        "A useful rule: chase body terms with your service pages, long tail with your content, and ignore head terms until your brand is the reason people search them. More on the mechanics in [how to do keyword research](/answers/how-to-do-keyword-research)."
+      ]
+    },
+    {
+      "h2": "Hinglish, transliteration and the demand tools can't see",
+      "body": [
+        "Indian search doesn't behave like the market these tools were built for. A meaningful share of real queries arrive transliterated — \"seo kya hai\", \"gst return kaise bhare\", \"ghar ke liye loan\" — typed in Roman script but not in English. Others come in Devanagari, Tamil or Bengali script. A growing share arrives by voice, which makes queries longer and more conversational than anything a keyword tool has in its index.",
+        "Western keyword tools underreport this demand for a structural reason, not a mysterious one: their clickstream panels skew English-speaking and desktop-heavy, and their databases are built around the phrase forms those panels produce. So the tool shows 20 searches a month for a term that's actually driving traffic to a competitor.",
+        "Two practical moves. First, trust Search Console over any third-party tool — it shows the queries you genuinely received, transliterated ones included, and it's free. Second, if you find regional demand, don't machine-translate an English page onto it. A transliterated query usually signals a different reader with different assumptions, and a literal translation reads as one. [English versus regional-language SEO](/compare/english-vs-regional-language-seo) covers where that's worth the investment and where it isn't."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "Where to look first",
+        "body": "Open Search Console, set the date range to 12 months, and sort your queries by impressions with clicks near zero. That list is demand you already have visibility for and are failing to capture. It's better keyword research than any paid tool will hand you in week one."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many keywords should one page target?",
+      "a": "One primary intent, and as many phrasings of it as read naturally. A page about SEO pricing should rank for \"seo cost\", \"seo pricing india\" and \"how much does seo cost\" without you doing anything clever — they're the same question. Targeting two different intents on one page usually means it ranks for neither."
+    },
+    {
+      "q": "What's the difference between a keyword and a search query?",
+      "a": "A query is what a person actually typed. A keyword is what you decided to target. They overlap but they aren't the same set, which is why Search Console regularly shows you queries you never planned for — and those are often the best ones you have."
+    },
+    {
+      "q": "Do I still need to put keywords in my content?",
+      "a": "You need to use the words your readers use, in the title, the H1 and naturally through the page. What you don't need is a density target. There's no threshold Google is counting to, and writing to one produces pages that read like they were written to one."
+    },
+    {
+      "q": "Are keyword tools worth paying for?",
+      "a": "Once you have traffic, Search Console plus a free tier covers most of what a small site needs. Paid tools earn their fee when you need competitor gap analysis and rank tracking at scale. Buying a ₹10,000/month subscription before you have twenty pages is the wrong order of spending."
+    },
+    {
+      "q": "What are LSI keywords and do they matter?",
+      "a": "LSI keywords are SEO folklore. Latent semantic indexing is a real 1980s information-retrieval technique that Google has said it doesn't use. Related terms do matter — because a page that genuinely covers a topic naturally contains them — but there's no list to sprinkle in."
+    },
+    {
+      "q": "Should I target keywords my competitors already rank for?",
+      "a": "Only where you can build a better page than theirs, which is rarer than gap-analysis tools suggest. The more useful output of competitor research is the keywords nobody in your market has covered properly. Those are cheaper to win and they're usually closer to a sale."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "search-intent" },
+    { "type": "glossary", "slug": "long-tail-keywords" },
+    { "type": "answers", "slug": "how-to-do-keyword-research" },
+    { "type": "compare", "slug": "english-vs-regional-language-seo" },
+    { "type": "services", "slug": "keyword-research-services" },
+    { "type": "answers", "slug": "what-is-keyword-cannibalization" }
+  ]
+}

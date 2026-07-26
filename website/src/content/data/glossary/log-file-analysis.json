@@ -1,0 +1,162 @@
+{
+  "slug": "log-file-analysis",
+  "type": "glossary",
+  "primaryKeyword": "log file analysis",
+  "secondaryKeywords": [
+    "seo log file analysis",
+    "googlebot crawl logs",
+    "server log seo",
+    "log analyzer seo",
+    "verify googlebot"
+  ],
+  "cluster": "technical-seo",
+  "intent": "informational",
+  "h1": "Log file analysis",
+  "metaTitle": "Log File Analysis for SEO, Explained",
+  "metaDescription": "Log file analysis reads server logs to see what Googlebot actually crawled. It's the only fully accurate bot data. Here's how to run one, step by step.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Log file analysis",
+  "definition": "Log file analysis is the practice of reading your web server's raw access logs to see exactly which URLs search engine bots requested, when, and what status code they received.",
+  "answer": "Log file analysis reads your server's raw access logs to see exactly what Googlebot requested, when, and what it got back. It's the only completely accurate record of crawler behaviour on your site — every other tool infers or samples. One week of logs is usually enough to find the problem.",
+  "takeaways": [
+    "A crawler tells you what Google *could* fetch. Logs tell you what Google *did* fetch. On a large site those are very different lists.",
+    "Getting the logs is the hard part, not analysing them. Vercel, Cloudflare and Shopify all make raw access logs awkward or impossible.",
+    "Verify Googlebot by reverse DNS first. Plenty of traffic claiming to be Googlebot is a scraper wearing the badge.",
+    "Three questions only logs answer: what got crawled, how often, and what Google has never requested at all."
+  ],
+  "sections": [
+    {
+      "h2": "What a log line contains",
+      "body": [
+        "A server access log is one line per request, always the same shape. In Apache's Combined Log Format: the requesting IP, a timestamp, the method and path, the protocol, the status code, bytes sent, the referrer, and the user-agent string.",
+        "Read one line and you know that at 09:14 on Tuesday something calling itself Googlebot asked for `/collections/kurtas?sort=price&page=7` and got a 200. Read a million and you know how Google is spending its attention on your site — status codes in aggregate, crawl frequency by directory, and the first date each URL was ever fetched."
+      ]
+    },
+    {
+      "h2": "Getting the logs — the genuinely annoying part",
+      "body": [
+        "This is where most log analysis projects die, so deal with it first. Where your site is hosted determines whether this is a ten-minute job or a procurement conversation."
+      ],
+      "table": {
+        "caption": "How to get raw access logs from common Indian hosting setups.",
+        "head": [
+          "Setup",
+          "How you get logs",
+          "The catch"
+        ],
+        "rows": [
+          [
+            "Shared cPanel (Hostinger, BigRock, GoDaddy India, Bluehost)",
+            "cPanel → Raw Access Logs → download the gzipped file.",
+            "Often only the last 24 hours. Turn on log archiving first, then wait a week."
+          ],
+          [
+            "VPS or dedicated (Nginx / Apache)",
+            "`/var/log/nginx/access.log` and its rotated `.gz` siblings.",
+            "Rotation may discard them after 7 or 14 days. Check `logrotate` before you need them."
+          ],
+          [
+            "Vercel",
+            "Dashboard runtime logs are short-lived; a Log Drain streams them somewhere you control.",
+            "Drains sit on paid plans. Set one up before the migration, not after."
+          ],
+          [
+            "Cloudflare in front of anything",
+            "Logpush to R2, S3 or a log platform.",
+            "Enterprise feature. Lower plans get sampled analytics, not raw lines — and cached responses never reach your origin log."
+          ],
+          [
+            "Shopify, Wix, Squarespace",
+            "You can't. There is no raw log access.",
+            "Use Search Console's Crawl Stats report, and accept that it's aggregated and sampled."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The CDN blind spot",
+        "body": "A CDN in front of your origin serves cached requests without them ever reaching your server, so they never appear in your origin log. You'll conclude Googlebot ignores your category pages when it has been hammering them all week. Pull logs at the CDN layer."
+      }
+    },
+    {
+      "h2": "Verify Googlebot before you believe it",
+      "body": [
+        "The user-agent string is self-declared text. Anyone can send it, and plenty of scrapers do, precisely because sites whitelist Googlebot.",
+        "The check is two DNS lookups. Reverse-resolve the IP — the hostname must end in `googlebot.com` or `google.com`. Then forward-resolve that hostname and confirm it returns the same IP. Anything that fails either step isn't Google. For a million-line file, match against the crawler IP ranges Google publishes as JSON instead.",
+        "Do it before analysing anything, or you'll spend a morning worrying about crawl budget burned by a scraper in Frankfurt."
+      ]
+    },
+    {
+      "h2": "The three questions logs answer that no crawler can",
+      "body": [
+        "Screaming Frog and Sitebulb simulate a crawl: they tell you what a bot *would* find starting from your homepage today. That's a hypothesis. Logs are the record. Aggregate a week of verified Googlebot hits by directory and three things become answerable."
+      ],
+      "numbered": [
+        "**What is Google spending its crawl on?** Group requests by path pattern. If 60% of hits land on `?sort=` and `?colour=` variants of twelve collections, your faceted navigation is eating the budget your product pages needed. That's a `robots.txt` and [canonical](/glossary/canonical-tag) job — and now you can justify it.",
+        "**How often does each template get recrawled?** Money pages daily and blog archives monthly is healthy. Money pages monthly means your internal linking is starving them, and new content won't fix that.",
+        "**What has Google never requested?** Diff your sitemap against the URLs appearing in the logs. Anything in one and absent from the other has never been fetched — usually because nothing links to it. That's an [orphan page](/glossary/orphan-page) list you can't build any other way."
+      ]
+    },
+    {
+      "h2": "How to actually run one",
+      "body": [
+        "You don't need a platform. A spreadsheet and a filter cover a small site; Screaming Frog's Log File Analyser handles a few million lines on a laptop and imports a crawl alongside them.",
+        "The sequence: pull at least seven days, verify Googlebot, drop everything else, group by directory and status code, then join against a fresh crawl and your sitemap. The findings write themselves.",
+        "Cadence: once a year for a brochure site, quarterly for a large catalogue, and always in the fortnight after a migration — that's when logs are worth most, because they show which old URLs Google is still asking for and getting a 404 from. It belongs in any [technical SEO audit](/services/technical-seo-services) above a few thousand URLs, and it's overkill below that."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many days of logs do I need?",
+      "a": "Seven is the practical minimum and thirty is better. A week catches daily crawl patterns; a month reveals which templates Google only visits occasionally, which is usually the more interesting finding. After a migration, pull daily and watch the 404 curve fall."
+    },
+    {
+      "q": "Can I do log file analysis without server access?",
+      "a": "Not properly. Search Console's Crawl Stats report is the free substitute — it shows total requests, response codes and file types over 90 days, with sample URLs. It's aggregated and sampled, so it tells you something is wrong without telling you which URLs."
+    },
+    {
+      "q": "How do I verify that a hit is really from Googlebot?",
+      "a": "Reverse DNS the IP and confirm the hostname ends in googlebot.com or google.com, then forward-resolve that hostname and check it returns the same IP. Google also publishes its crawler IP ranges as JSON, which is easier when you're processing millions of lines."
+    },
+    {
+      "q": "What's the most common finding in a log analysis?",
+      "a": "Crawl waste on parameter URLs. Faceted navigation on an ecommerce site generates a near-infinite set of filter combinations, and Google will happily crawl thousands of them while your new product pages wait. It's the finding that pays for the exercise."
+    },
+    {
+      "q": "Does log analysis matter for a small site?",
+      "a": "Rarely. If you have 200 URLs, Google crawls all of them and crawl budget isn't your constraint — content and links are. Logs become worth the effort somewhere above a few thousand URLs, or immediately after any migration regardless of size."
+    },
+    {
+      "q": "Do AI crawlers show up in server logs?",
+      "a": "Yes, and increasingly loudly. GPTBot, ClaudeBot, PerplexityBot and others identify themselves in the user-agent string, so your logs are the only place you can measure how much of your bandwidth they use and which sections they read most."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "crawl-budget"
+    },
+    {
+      "type": "glossary",
+      "slug": "orphan-page"
+    },
+    {
+      "type": "glossary",
+      "slug": "robots-txt"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "journal",
+      "slug": "the-replatform-that-killed-your-traffic"
+    },
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    }
+  ]
+}

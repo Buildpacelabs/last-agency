@@ -1,0 +1,241 @@
+{
+  "slug": "exporters",
+  "type": "seo-for",
+  "primaryKeyword": "seo for exporters",
+  "secondaryKeywords": [
+    "international seo for indian exporters",
+    "export seo services india",
+    "hreflang for exporters",
+    "seo for export companies",
+    "global buyer seo india"
+  ],
+  "cluster": "manufacturing-and-trade",
+  "intent": "commercial",
+  "industry": "Exporters",
+  "h1": "SEO for exporters who want buyers in Rotterdam, not Rajkot",
+  "metaTitle": "SEO for Exporters: Rank in Buyer Countries",
+  "metaDescription": "SEO for exporters in India. Set hreflang and x-default properly, research keywords per destination market, and build the proof pages buyers check first.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Most Indian exporter sites either have no hreflang or have it broken — invalid codes like `hreflang=\"uk\"`, tags that don't point back, or hreflang bolted onto a single English site that needs none. Fix that first, then rebuild keyword sets per destination country, because a US buyer and a UK buyer name the same product differently.",
+  "takeaways": [
+    "If you run one English site with one page per product, you don't need hreflang at all. Adding it badly is worse than not adding it.",
+    "The word **exporter** is mostly an Indian-side word. Your buyer in Ohio searches *supplier* or *manufacturer*.",
+    "\"How to import [product] from India\" looks like a competitor query. It's the buyer, doing their homework, and almost nobody serves it.",
+    "A US buyer's working day starts around 6:30pm IST. Whoever replies inside that window gets the shortlist slot.",
+    "Buyers check proof before they reply: capacity, audits, certifications, test reports. Publish what's true and say plainly what you don't have."
+  ],
+  "sections": [
+    {
+      "h2": "Check hreflang before you write a word — you may not need it",
+      "body": [
+        "Hreflang does one job: it tells search engines which of several near-duplicate pages to serve to which audience. If you run a single English website with one page per product, there's no set of alternates to choose between and hreflang has nothing to do. Adding it anyway is the most common piece of misapplied international SEO on Indian export sites, usually by a plugin nobody configured.",
+        "You need it when you genuinely build country variants — `/us/`, `/uk/`, `/ae/` folders, or separate country domains — with the same product described in different terms, units and certifications. That's a real decision with real maintenance cost, and it should follow evidence that a market is worth it.",
+        "Nothing in Search Console will warn you when it breaks, either. The International Targeting report was retired, so hreflang faults now surface only if somebody crawls for them. Which nobody does, which is why they sit there for years."
+      ],
+      "table": {
+        "caption": "The five hreflang faults we find on almost every exporter site that has it.",
+        "head": [
+          "Fault",
+          "What it looks like",
+          "The fix"
+        ],
+        "rows": [
+          [
+            "Invalid code",
+            "`hreflang=\"uk\"` or `hreflang=\"en-UAE\"`",
+            "ISO 639-1 language plus ISO 3166-1 alpha-2 region: `en-GB`, `en-AE`. \"UK\" isn't a language"
+          ],
+          [
+            "Not reciprocal",
+            "The UK page points at the US page, the US page points at nothing",
+            "Every page in the set lists every other page in the set, including itself"
+          ],
+          [
+            "No x-default",
+            "Only en-US, en-GB and en-AE declared",
+            "Add `x-default` pointing at your global English page, so buyers in Chile or Vietnam get a deliberate destination"
+          ],
+          [
+            "Points at a redirecting URL",
+            "The tag names an `http://` or non-trailing-slash version that 301s",
+            "Always point at the final, self-canonical URL"
+          ],
+          [
+            "Points at non-indexable pages",
+            "Staging URLs or `noindex` variants inside the set",
+            "Only indexable, canonical pages belong in an hreflang cluster"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Country folders you can't fill are a liability",
+        "body": "A `/us/` folder containing the same eight pages as the main site, with \"USA\" swapped into the headings, is duplicate content with extra steps. Build a country variant only when you have something genuinely different to say — different certification, different sizing, different MOQ, different lead time. Otherwise one strong English site outperforms four thin ones."
+      }
+    },
+    {
+      "h2": "One product, three vocabularies",
+      "body": [
+        "This is the part that costs exporters the most and gets the least attention. Keyword research done from an Indian keyboard, in Indian English, produces a keyword list your buyers never type.",
+        "The differences are not subtle. Sizes, spellings, product names and even the noun for what you are all shift by market. Research each destination separately, with the search location set to that country, and expect a third of your assumptions to be wrong."
+      ],
+      "table": {
+        "caption": "How the same export product is searched in three markets.",
+        "head": [
+          "Category",
+          "United States",
+          "United Kingdom",
+          "UAE and Gulf"
+        ],
+        "rows": [
+          [
+            "Home textiles",
+            "\"bed sheets\", \"sheet sets\", Queen/King in inches",
+            "\"bed linen\", \"duvet covers\", UK King and Super King sizing",
+            "\"bed linen supplier Dubai\", hotel and HORECA framing"
+          ],
+          [
+            "Apparel",
+            "\"private label clothing manufacturer\", \"apparel supplier\"",
+            "\"clothing manufacturer\", \"trade supplier\", \"wholesale\"",
+            "\"garment supplier UAE\", \"uniform manufacturer\""
+          ],
+          [
+            "Food and spices",
+            "\"bulk spices supplier\", USDA organic and FDA framing",
+            "\"herbs and spices wholesale\", BRCGS expected by retailers",
+            "\"spices supplier Dubai\", halal certification foregrounded"
+          ],
+          [
+            "Engineering parts",
+            "\"custom machining supplier\", imperial drawings common",
+            "\"precision engineering supplier\", metric throughout",
+            "\"supplier in Dubai/Sharjah\", metric, re-export framing"
+          ]
+        ]
+      },
+      "bullets": [
+        "**Drop \"exporter\" from your primary targets.** It's how Indian sellers describe themselves and how Indian searchers phrase queries. Foreign buyers search *manufacturer*, *supplier*, *wholesale* and *private label*.",
+        "**Regional product names are real search volume.** Aubergine and eggplant, gram flour and besan and chickpea flour. Pick the buyer's word for the page targeting that buyer.",
+        "**Units and standards belong in the copy.** A US buyer scanning for inches on a page written entirely in millimetres reads it as \"not for me\" in about two seconds.",
+        "**Country in the query is a strong signal of a live buyer.** \"Indian supplier of X\" and \"X manufacturer India\" are people who've already decided on India and are choosing between you and eleven others."
+      ]
+    },
+    {
+      "h2": "HS codes and compliance content the buyer is already searching",
+      "body": [
+        "Import compliance is the friction in every cross-border deal, and it's a content category almost every Indian exporter ignores because it feels like the buyer's problem. That's exactly why it works — the buyer is searching it, finding nothing helpful, and remembering whoever answered.",
+        "Start with the HS code. The first six digits are harmonised worldwide; India's ITC(HS) extends to eight. Buyers, customs brokers and freight forwarders all search by code. Putting the correct HS code on each product page costs nothing and catches a specific, high-quality slice of demand.",
+        "Then write the destination-side requirement. Not vaguely — by market."
+      ],
+      "bullets": [
+        "**United States:** FDA facility registration and prior notice for food, FSVP obligations on the importer, USDA organic where claimed, FCC for electronics, CPSIA for children's products.",
+        "**European Union and UK:** CE and UKCA marking, REACH declarations, EU organic equivalence, food contact material rules, and the EU deforestation regulation for wood, coffee and related goods — whose application dates have been pushed back more than once, so date whatever you publish.",
+        "**UAE and Gulf:** conformity and quality marks, halal certification where applicable, Arabic labelling requirements, and re-export documentation for goods moving onward from Jebel Ali.",
+        "**Universal:** phytosanitary certificates for plant products, ISPM-15 heat treatment marking on wooden packaging, certificate of origin, and the test reports the buyer's QA team will ask for anyway.",
+        "**The page nobody writes:** \"How to import [product] from India\" — documentation, timeline, typical landed cost heads, and what usually goes wrong at their port. It reads like a competitor's query. It's your buyer."
+      ]
+    },
+    {
+      "h2": "The proof pages a foreign buyer checks before replying",
+      "body": [
+        "An overseas buyer sourcing from India is managing risk before they're managing price. They will look for evidence that your factory exists, that it can hold the volume, and that someone independent has been inside it. Most exporter sites answer none of those questions and then wonder why enquiries go quiet after the first email.",
+        "Publish what's actually true. An exporter with no third-party audits is in a weaker position than one with a SMETA report, but is in a much weaker position still if they imply an audit they don't have and it surfaces during onboarding."
+      ],
+      "numbered": [
+        "**Capacity, in the buyer's units.** Monthly output, line count, shift pattern, headcount, covered floor area. \"Large modern facility\" tells a sourcing manager nothing.",
+        "**A machine or line list** — the same list your production head would give an auditor. Most convincing page on an industrial export site, and it takes an afternoon.",
+        "**Audit and certification detail as text.** Standard, certificate number, issuing body, scope, expiry. SMETA, BSCI, ISO 9001, GOTS, OEKO-TEX, FSSC 22000 or BRCGS depending on sector.",
+        "**Third-party test reports**, dated, from a named accredited lab. Redact commercially sensitive detail rather than skipping the page.",
+        "**Commercial terms in the open.** MOQ, lead time from PO to shipment, payment terms, Incoterms, packing specification. Buyers filter on these and would rather self-select out than waste a week.",
+        "**References only with written consent.** \"A European home retailer, 2 × 40ft monthly since 2019\" carries the point without breaching a confidentiality clause."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Photos and video do the work here",
+        "body": "Dated photographs of the actual line, a two-minute unedited walk-through and a picture of your loading bay convince a foreign buyer faster than any amount of copy. Compress them properly, give them real alt text describing the process, and host them yourself so they load quickly on a connection in Hamburg."
+      }
+    },
+    {
+      "h2": "Enquiry handling across time zones is an SEO problem",
+      "body": [
+        "You can win the ranking and lose the buyer in the handover. A US East Coast buyer sends an RFQ at 3pm their time — about 1:30am in India. If your reply goes out at 11am IST, they read it roughly 20 hours after writing, by which point two suppliers have replied and one has sent a price.",
+        "Do the arithmetic once, properly. Europe and the Gulf fit inside the Indian working day. North America doesn't, and the fix is a rostered evening window rather than heroics."
+      ],
+      "bullets": [
+        "**A 6:30–10:30pm IST slot covers the US East Coast morning.** One person, four evenings a week, is usually enough to change your conversion rate on American enquiries entirely.",
+        "**Auto-replies should state a real time**, in the buyer's timezone: \"You'll have a response by 9am ET tomorrow.\" Not \"We will get back to you shortly.\"",
+        "**Publish your hours per market** on the contact page, with a scheduling link that renders in the visitor's timezone.",
+        "**Use WhatsApp Business properly for Gulf and African buyers**, where it's the default channel — but keep email primary for EU and US procurement, where it's the record.",
+        "**Tag enquiries by destination country at the form.** Otherwise you'll never know which market your content actually reached, and you'll keep guessing which one to build a country page for."
+      ]
+    },
+    {
+      "h2": "What we'd fix first, and what we commit to",
+      "body": [
+        "Month one on an export site is usually the same short list: audit and either repair or remove hreflang, put HS codes and specification tables into HTML, build the capacity and certification proof pages, and rebuild the enquiry form to capture destination, Incoterm and volume. None of it is glamorous and all of it moves faster than link building.",
+        "After that, keyword research per destination market and one content cluster per priority country — starting with the market where you already have customers, because relevance you can prove beats a market you merely fancy. The freight side of this overlaps with what we describe for [logistics companies](/seo-for/logistics), and the factory side with [manufacturing SEO](/seo-for/manufacturing). If you're weighing full country variants, read our take on [international SEO](/services/international-seo-services) first.",
+        "Our SEO runs from ₹75,000/mo, and from ₹40,000/mo for smaller sites. Ex-GST, month-to-month after the first quarter, 30 days' notice, and every asset stays yours. Full numbers on [our pricing page](/pricing).",
+        "We don't promise a ranking position in any country — nobody controls Google's index, and anyone guaranteeing a US position for an Indian domain is guessing. We freeze your trailing-90-day qualified enquiries from organic search on day one, and if we haven't beaten that number in 90 days we keep working free until we do."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The honest timeline for a new market",
+        "body": "Six to twelve months is realistic for a market where your domain has no history, and longer than the three-to-six you'd expect domestically. You're building relevance in a country that has never sent you a signal, against local suppliers with a decade of it. Existing markets move much faster, which is why we start there."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does an Indian exporter need hreflang?",
+      "a": "Only if you publish country-specific versions of the same pages. One English site with one page per product needs none — and a badly configured hreflang set on such a site actively confuses signals. Audit what's there before adding anything, because Search Console no longer reports hreflang errors for you."
+    },
+    {
+      "q": "Should we build separate country websites or one global site?",
+      "a": "Start with one strong English site and country-specific content clusters inside it. Split into folders or domains only when a market justifies genuinely different content — certification, sizing, MOQ, pricing conventions. Four thin country sites divide your links and attention; one strong site keeps them together."
+    },
+    {
+      "q": "Can an Indian domain rank in the US or Germany?",
+      "a": "Yes. Google doesn't rank by the owner's location, it ranks by relevance and authority for the query. A `.in` domain is a mild association with India rather than a barrier, and for \"Indian supplier of X\" queries it's arguably a help. A generic `.com` gives more room if you're starting fresh."
+    },
+    {
+      "q": "What content actually brings export enquiries?",
+      "a": "Specification pages with the buyer's units and terminology, HS code and import compliance content for the destination, and proof pages — capacity, audits, certifications, test reports. Company profile pages and \"why choose us\" content bring almost nothing, because they answer a question no buyer asked."
+    },
+    {
+      "q": "Is Alibaba or IndiaMART better than doing our own SEO?",
+      "a": "They're different channels with different economics. Marketplace enquiries are shared with competing sellers and stop when you stop paying. Organic enquiries are exclusive and compound. Most exporters should run both for a couple of quarters and compare cost per qualified enquiry before deciding anything."
+    },
+    {
+      "q": "How do we do keyword research for a country we've never sold to?",
+      "a": "Set the tool's location to that country, not India, and check the actual SERP from there. Read how local distributors and importers describe the product on their own sites, and lift their nouns. Then sanity-check with anyone you know in that market — vocabulary errors are the most expensive and least visible mistake in export SEO."
+    }
+  ],
+  "related": [
+    {
+      "type": "seo-for",
+      "slug": "manufacturing"
+    },
+    {
+      "type": "seo-for",
+      "slug": "logistics"
+    },
+    {
+      "type": "services",
+      "slug": "international-seo-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "hreflang"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-an-international-seo-agency"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-cost-in-india"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "slug": "how-to-start-an-seo-agency",
+  "type": "answers",
+  "primaryKeyword": "how to start seo agency",
+  "secondaryKeywords": [
+    "how to start an seo agency",
+    "how to start an seo agency in india",
+    "starting an seo business",
+    "how to open an seo company"
+  ],
+  "cluster": "agency-mechanics",
+  "intent": "informational",
+  "h1": "How to start an SEO agency in India",
+  "metaTitle": "How to Start an SEO Agency in India",
+  "metaDescription": "How to start an SEO agency in India: entity choice, GST, a real month-one cost sheet in rupees, pricing your first retainers and when to make hire one.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "To start an SEO agency in India you need a registered entity (a proprietorship is enough on day one), GST registration once you cross ₹20 lakh in turnover, roughly ₹25,000–₹60,000 of month-one setup and tools, and one paying client. The client is the hard part. Everything else takes a fortnight.",
+  "takeaways": [
+    "Start as a **proprietorship**. Convert to LLP or private limited when a client's procurement team asks you to, or when you take on a partner.",
+    "Your month-one cash outlay is smaller than people expect — **₹25,000–₹60,000** — because the expensive tools are monthly and cancellable.",
+    "Price your first three retainers at what the work costs, not at what a nervous founder will accept. The ₹15,000 retainer is the most common way to fail slowly.",
+    "Make the first hire when *you* become the bottleneck on delivery, not when revenue hits a round number."
+  ],
+  "sections": [
+    {
+      "h2": "Pick an entity in an afternoon, then stop thinking about it",
+      "body": [
+        "Founders lose weeks to this decision and it almost never matters in year one. The structure you need on day one is the cheapest one that lets you raise an invoice.",
+        "The only three that are worth considering in India:"
+      ],
+      "table": {
+        "caption": "Entity options for a new Indian SEO agency, and what each one actually costs you in effort.",
+        "head": [
+          "Structure",
+          "Set up in",
+          "Ongoing burden",
+          "Pick it when"
+        ],
+        "rows": [
+          [
+            "Sole proprietorship",
+            "Days",
+            "Income taxed at your personal slab. No MCA filings. A bank current account usually wants a GST certificate or a shop-and-establishment registration.",
+            "You're starting. This is the right answer for almost everyone reading this."
+          ],
+          [
+            "LLP",
+            "2–3 weeks",
+            "MCA registration, partner identification, annual returns. Liability is limited, audit only kicks in above turnover thresholds.",
+            "You have a co-founder and want the liability separation without company-grade compliance."
+          ],
+          [
+            "Private limited",
+            "2–4 weeks",
+            "Two directors minimum, mandatory annual audit regardless of turnover, board and ROC filings, a company secretary's time.",
+            "You'll raise money, issue ESOPs, or sell to enterprises whose vendor onboarding rejects proprietorships."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Converting later is normal",
+        "body": "Proprietorship to LLP or private limited is a routine conversion your CA has done dozens of times. Nobody has ever lost a client because they incorporated in month nine instead of month one. Plenty have burned month one on it."
+      }
+    },
+    {
+      "h2": "GST, invoicing, and the bit that quietly eats your cash",
+      "body": [
+        "GST registration for a services business becomes mandatory once your aggregate annual turnover crosses ₹20 lakh in most states, or ₹10 lakh in the special-category states. Below that it's optional — and plenty of new agencies register anyway, because a lot of corporate clients simply won't onboard a vendor who can't issue a GST invoice.",
+        "Digital marketing services attract GST at 18%. That's collected from the client and paid onward, so it isn't your money at any point — but it does sit in your bank account for a few weeks and it will feel like your money. Spend it and you'll discover otherwise around the 20th of the following month.",
+        "Two more things nobody warns first-time agency owners about."
+      ],
+      "bullets": [
+        "**TDS.** Most corporate clients deduct tax at source on agency invoices before paying you. Which section applies to marketing work is genuinely contested between advisers, so ask your CA which one your clients are using and plan for the deduction — you reclaim it at filing, but the cash is gone for months.",
+        "**Export of services.** If you invoice a foreign client, that's an export and can be zero-rated under a Letter of Undertaking. Get the LUT filed before the first foreign invoice, not after.",
+        "**Invoice on day one of the service month, not the last.** Retainers are for a period, not a result. Every day you delay invoicing is a day added to the cash gap described in [how to start a marketing agency](/answers/how-to-start-a-marketing-agency)."
+      ]
+    },
+    {
+      "h2": "The month-one cost sheet, in rupees",
+      "body": [
+        "Here's what it genuinely costs to open the doors as a one-person SEO agency in India. The ranges are wide where they should be, and I've marked the lines that are priced in dollars — those numbers move with the exchange rate and with each vendor's pricing changes, so treat them as an order of magnitude and check current pricing before you budget."
+      ],
+      "table": {
+        "caption": "Realistic month-one outlay for a solo Indian SEO agency.",
+        "head": [
+          "Line item",
+          "Month-one cost (INR)",
+          "Notes"
+        ],
+        "rows": [
+          [
+            "Proprietorship setup + current account",
+            "₹0–₹3,000",
+            "Udyam registration is free. Some banks want a shop-and-establishment certificate first."
+          ],
+          [
+            "LLP or private limited incorporation (if you skip proprietorship)",
+            "₹6,000–₹20,000",
+            "Government fees plus a CA or CS. Varies a lot by state and by who files it."
+          ],
+          [
+            "GST registration",
+            "₹0–₹5,000",
+            "Free on the portal. Most people pay a CA to avoid the rejection loop."
+          ],
+          [
+            "Accountant on retainer",
+            "₹2,000–₹8,000 / mo",
+            "Monthly GST filing plus books. Do not do this yourself to save ₹3,000."
+          ],
+          [
+            "One all-in-one SEO platform (entry tier)",
+            "₹11,000–₹16,000 / mo",
+            "USD-priced. This is your single biggest recurring cost and the last one to cancel."
+          ],
+          [
+            "Desktop crawler licence",
+            "₹18,000–₹25,000 / yr",
+            "USD or GBP priced, billed annually. Free tier caps out fast on real client sites."
+          ],
+          [
+            "Google Workspace",
+            "₹150–₹900 per user / mo",
+            "A domain email is not optional. Nobody signs a retainer with a gmail address."
+          ],
+          [
+            "Website, domain, hosting",
+            "₹0–₹10,000 setup",
+            "An SEO agency with a bad site loses the argument before the call starts."
+          ],
+          [
+            "Search Console, Analytics, Looker Studio, Google Business Profile",
+            "₹0",
+            "Free, and between them they cover most of your reporting for the first year."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "Total, month one",
+        "body": "Roughly ₹25,000–₹60,000 depending on entity choice and how much of the tool stack you buy on day one. That's the honest number. The reason agencies fail isn't the setup cost — it's the eleven months of fixed cost that follow before revenue is predictable."
+      }
+    },
+    {
+      "h2": "Pricing your first three retainers",
+      "body": [
+        "Almost every new agency underprices the first three clients out of fear, then spends two years trying to raise those same accounts and losing them in the attempt. Price the first three at roughly what you intend to charge the tenth, and win fewer of them.",
+        "The arithmetic is unforgiving and worth doing before you quote. A real SEO retainer needs a technical pass, keyword research, content production, link work and reporting. Even lean, that's 25–45 hours a month on a small site. At a ₹15,000 retainer you're billing under ₹600 an hour before tools, tax and the hours you spend selling. You cannot hire anyone at that rate, which means you can never stop doing the work yourself.",
+        "Anchor to the market instead. Indian SEO retainers run roughly ₹25,000–₹3,00,000 a month depending on scope and competitiveness — the full breakdown is in [what SEO costs in India](/cost/seo-cost-in-india). For context on where an established shop sits, we run SEO from ₹75,000/mo, with smaller sites from ₹40,000."
+      ],
+      "numbered": [
+        "**Quote a scope, not a discount.** \"Four articles, technical fixes, two earned links, monthly reporting\" is defensible. \"₹18,000 because you're my first client\" is a permanent ceiling.",
+        "**Never quote hourly for retainer work.** It caps your income at your speed and punishes you for getting good. [How agencies price their work](/answers/how-do-seo-agencies-price-their-work) covers when hourly does make sense.",
+        "**Bill monthly, in advance, with a three-month minimum.** Three months is the shortest period in which SEO can show anything honest. Anything shorter and you're selling a service that's guaranteed to look like it failed.",
+        "**Write the baseline into the contract.** Agree the one number you're both measuring on day one. It protects you more than it protects them — it's the only defence against a client who redefines success in month four."
+      ]
+    },
+    {
+      "h2": "When to make the first hire",
+      "body": [
+        "The trigger isn't revenue. It's the point at which you are personally the constraint on delivery and you've stopped selling because you're busy delivering. That's the death spiral of a solo agency: sell, deliver, stop selling, pipeline empties, panic-sell, over-commit, deliver badly.",
+        "Watch for these three signals together, not individually."
+      ],
+      "bullets": [
+        "**You've missed a client deadline twice in a quarter** for reasons that were capacity, not chaos.",
+        "**You haven't sent a proposal in six weeks** because delivery has eaten every hour.",
+        "**You have three months of the new person's fully-loaded cost in the bank** — salary plus roughly 25–40% for statutory contributions, laptop, tools and desk. Hiring against a verbal promise of a fourth client is how agencies end up making a redundancy in month five."
+      ],
+      "body2": [],
+      "callout": {
+        "kind": "warn",
+        "title": "Hire for the work you hate, not the work you're bad at",
+        "body": "Most founders hire a junior to do the content and keep the technical work \"because it's specialist\". Then they're still the bottleneck, just on a narrower task. Hire out whichever workstream consumes the most of your hours per rupee earned — usually content production or reporting — and buy back the time you sell with."
+      }
+    },
+    {
+      "h2": "What actually decides whether you're still here in year two",
+      "body": [
+        "Not your tool stack. Not your entity. Not your logo. Three things, in order.",
+        "**Retention.** An agency with six clients and 90% annual retention is a business. An agency with six clients and 40% retention is a treadmill with a good month occasionally. Every month you spend replacing a churned client is a month you didn't spend growing.",
+        "**A defensible reason to be chosen.** \"We do SEO\" is not one — there are thousands of you. A niche, a guarantee, a method, a market nobody else covers. We built ours around a guarantee and a hard cap of three new clients a month, because you can't carry outcome risk at volume. Yours will be different, but it has to be something.",
+        "**Cash discipline.** Profitable and broke are the same thing on the day payroll clears. Bill in advance, chase on day 31, and never let one client be more than 40% of revenue if you can help it."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much money do I need to start an SEO agency in India?",
+      "a": "Roughly ₹25,000–₹60,000 covers month one: entity setup, GST registration, an SEO platform subscription, a crawler licence and a domain email. The harder number is runway — plan for six months of personal expenses, because your first retainer probably won't be paid until month three."
+    },
+    {
+      "q": "Do I need GST registration to start an SEO agency?",
+      "a": "Not until your aggregate turnover crosses ₹20 lakh in most states, or ₹10 lakh in special-category states. Many new agencies register voluntarily anyway, because corporate procurement teams frequently refuse to onboard vendors who can't issue a GST invoice. Ask your first two target clients before deciding."
+    },
+    {
+      "q": "Proprietorship or private limited for an SEO agency?",
+      "a": "Proprietorship, unless you have a co-founder or you're selling to enterprises whose vendor onboarding rejects it. Private limited brings mandatory annual audit and ROC filings from day one, which is real money and real time for a business with two clients. Convert when there's a reason to."
+    },
+    {
+      "q": "Where do the first SEO agency clients come from?",
+      "a": "Almost always from people who already know you — former employers, ex-colleagues, vendors, and founders in whatever community you're already active in. Cold outreach works eventually but converts far too slowly to fund month one. Your network is the only channel that's already warm."
+    },
+    {
+      "q": "Should I niche down when starting an SEO agency?",
+      "a": "Eventually, yes — a niche makes your case studies compound and your pitch shorter. But niching before you've delivered five projects means guessing which niche you're good at. Take the first few clients broadly, then notice which ones you enjoyed and made money on, and narrow towards that."
+    },
+    {
+      "q": "How many clients can one person handle?",
+      "a": "Three to five small retainers, depending on how much content you produce yourself. Past that you're either working weekends or delivering badly. That ceiling is the real reason to hire, and it arrives much earlier than most first-time agency owners plan for."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "how-to-start-a-digital-marketing-agency"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-start-a-marketing-agency"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-pricing-models"
+    },
+    {
+      "type": "journal",
+      "slug": "what-it-costs-to-hire-seo-talent-in-india"
+    },
+    {
+      "type": "compare",
+      "slug": "agency-vs-freelancer"
+    },
+    {
+      "type": "journal",
+      "slug": "inside-the-indian-seo-agency-market"
+    },
+    {
+      "type": "answers",
+      "slug": "why-hire-a-digital-agency"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "slug": "schema-markup",
+  "type": "glossary",
+  "primaryKeyword": "schema markup",
+  "secondaryKeywords": [
+    "structured data seo",
+    "json-ld schema",
+    "rich results",
+    "schema types",
+    "how to add schema markup"
+  ],
+  "cluster": "technical-seo",
+  "intent": "informational",
+  "h1": "Schema markup",
+  "metaTitle": "Schema Markup: What It Is and Which Types Matter",
+  "metaDescription": "Schema markup is code that tells search engines what your content is. Here are the JSON-LD types that still earn rich results, and the ones Google retired.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Schema markup",
+  "definition": "Schema markup is structured data added to a page — almost always as a JSON-LD script — that labels what the content is, so search engines can classify it rather than guess.",
+  "answer": "Schema markup is code that labels your content for search engines: this is a product, that's its price, this is the business, that's its address. Google recommends JSON-LD. It doesn't improve rankings directly — it changes how you appear in results and helps machines identify you as an entity.",
+  "takeaways": [
+    "Use **JSON-LD**. Google recommends it, it lives in one script tag, and it doesn't entangle your markup with your templates.",
+    "Five types carry most of the value now: **Organization, Article, Product, LocalBusiness, BreadcrumbList**. Most of the rest are noise or retired.",
+    "Google retired FAQ rich results for most sites in 2023, and HowTo the same year. Anyone still shipping HowTo schema for the rich result is decorating a coffin.",
+    "Schema is not a ranking factor. It's an eligibility and identity signal — which matters more now that AI answers need to know who you are."
+  ],
+  "sections": [
+    {
+      "h2": "What schema actually does — and doesn't",
+      "body": [
+        "Search engines read your page as text and infer meaning. Schema removes the inference: instead of hoping Google works out that \"₹4,999\" is a price and \"4.6\" is a rating, you declare it in a machine-readable block.",
+        "Two consequences, routinely confused. Schema makes you **eligible** for a different-looking result — star ratings, price, breadcrumbs in place of a URL. It does not make you **rank** higher; Google's line has been consistent for years that structured data isn't a ranking signal.",
+        "Worth having anyway: a result carrying a price and a rating takes more attention than a plain blue link. But an agency selling schema as a ranking service is billing you for a presentation change."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "JSON-LD, not microdata",
+        "body": "Microdata and RDFa still work, but they thread attributes through your HTML, so every template change risks breaking them. JSON-LD is a single `<script type=\"application/ld+json\">` block — the one your developers won't quietly delete during a redesign."
+      }
+    },
+    {
+      "h2": "The types that still earn something",
+      "body": [
+        "Schema.org lists hundreds of types. Google supports a fraction of them for search features, and that list has been shrinking, not growing. Here's the shortlist worth your time on a normal Indian business site."
+      ],
+      "table": {
+        "caption": "The schema types that still do useful work, and what each one buys you.",
+        "head": [
+          "Type",
+          "Where it goes",
+          "What it gets you"
+        ],
+        "rows": [
+          [
+            "Organization",
+            "Sitewide, usually the homepage.",
+            "Logo, name, social profiles and contact details tied to one entity. The base for a knowledge panel."
+          ],
+          [
+            "Article / BlogPosting",
+            "Every editorial page.",
+            "Author, publish and update dates, publisher. Feeds Top Stories and Discover eligibility."
+          ],
+          [
+            "Product with Offer",
+            "Every product page.",
+            "Price, currency, availability and review stars in the result. The highest-value type for ecommerce, by a distance."
+          ],
+          [
+            "LocalBusiness",
+            "Location pages and contact pages.",
+            "Address, hours, phone and geo — reinforces the [Google Business Profile](/glossary/google-business-profile) entity for local queries."
+          ],
+          [
+            "BreadcrumbList",
+            "Any page more than one level deep.",
+            "Replaces the raw URL with a readable path. Cheap, safe, still works."
+          ]
+        ]
+      },
+      "bullets": [
+        "Vertical types still worth it where they genuinely apply: **Recipe**, **Event**, **JobPosting**, **VideoObject**, **Course**.",
+        "**Review** and **AggregateRating** must reflect real reviews collected on your own site. Marking up ratings you invented is a manual-action risk, not a clever hack."
+      ]
+    },
+    {
+      "h2": "What Google retired, and what people still ship anyway",
+      "body": [
+        "This section exists because half the schema advice online is dated, and nobody updates a blog post that already ranks.",
+        "**FAQ rich results** were cut back in August 2023 to a small set of authoritative government and health sites. **HowTo rich results** were removed entirely around the same time. The **sitelinks search box** was retired in late 2024.",
+        "None of it is harmful. FAQPage schema still describes your page accurately and is still parsed — it just doesn't produce the visual result it used to. Keep it if it's already there. Don't build a project around it."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The proposal tell",
+        "body": "If an SEO proposal in 2026 promises \"FAQ schema to capture more SERP real estate\", the person writing it hasn't checked Google's documentation in three years. It's a fast way to judge whether the rest of the audit is current."
+      }
+    },
+    {
+      "h2": "Schema as an identity signal for AI answers",
+      "body": [
+        "The more interesting job schema does now has nothing to do with rich results. Answer engines need to resolve entities — which \"Apex Logistics\" is this, is it the same company as the one on LinkedIn, does it operate in Pune.",
+        "Organization schema with `sameAs` links to your verified profiles, and consistent name and URL values across your site, your Google Business Profile and your social accounts, makes that reconciliation trivial instead of probabilistic. A hedging machine cites someone else.",
+        "It's the same work that underpins [entity SEO](/glossary/entity-seo): say who you are, in the same words, in a format a parser can't misread."
+      ]
+    },
+    {
+      "h2": "Adding it and checking it",
+      "body": [
+        "Most CMSs already emit some of this: a decent WordPress SEO plugin covers Organization, Article and Breadcrumb, and Shopify themes usually ship Product schema. Check what you have before adding a plugin that leaves you with two conflicting Organization blocks on one page. On a custom Next.js build, generate the JSON-LD server-side so it exists in the raw HTML.",
+        "Then validate. Google's **Rich Results Test** tells you whether a page qualifies for a search feature; **validator.schema.org** tells you whether the markup is valid at all. Search Console's Enhancements reports catch errors at scale — that's where you find 400 products that lost their price field in a theme update.",
+        "One rule overrides the rest: the markup must match what a human sees on the page. Marking up a price nobody can find, or reviews that don't exist, is exactly what manual actions are for."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does schema markup improve rankings?",
+      "a": "Not directly, and Google has said so repeatedly. Structured data affects eligibility for search features and helps engines identify your entity. Those can raise clicks on the same position, which people then read as a ranking improvement. Useful, but not the same thing."
+    },
+    {
+      "q": "Which schema format should I use?",
+      "a": "JSON-LD. Google recommends it, it lives in a single script tag independent of your HTML structure, and it survives template changes. Microdata and RDFa are still supported, but they're harder to maintain and easier to break during a redesign."
+    },
+    {
+      "q": "Is FAQ schema still worth adding?",
+      "a": "Only incidentally. Google restricted FAQ rich results to authoritative government and health sites in August 2023, so most sites no longer get the expandable Q&A. If your CMS emits it anyway, leave it — it still describes the page accurately. Don't pay for it as a tactic."
+    },
+    {
+      "q": "How do I test my schema markup?",
+      "a": "Run the URL through Google's Rich Results Test for search-feature eligibility, and validator.schema.org for general validity. Then watch Search Console's Enhancements reports, which surface errors across every URL rather than the one you happened to test."
+    },
+    {
+      "q": "Can schema markup get me penalised?",
+      "a": "Yes, when it describes something that isn't on the page. Fake review ratings, prices no visitor can see, or markup for content behind a login are all grounds for a structured data manual action, which removes your rich results entirely until it's fixed."
+    },
+    {
+      "q": "Does schema help with AI search and AI Overviews?",
+      "a": "It helps machines identify you, which is a precondition for being cited. Organization markup with consistent `sameAs` links makes entity resolution easy. It's not a switch that gets you into AI answers — but ambiguity about who you are reliably keeps you out."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "entity-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "knowledge-graph"
+    },
+    {
+      "type": "services",
+      "slug": "schema-markup-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "featured-snippet"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-get-cited-by-ai-assistants"
+    },
+    {
+      "type": "compare",
+      "slug": "aeo-vs-geo"
+    }
+  ]
+}

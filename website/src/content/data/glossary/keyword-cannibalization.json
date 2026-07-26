@@ -1,0 +1,142 @@
+{
+  "slug": "keyword-cannibalization",
+  "type": "glossary",
+  "primaryKeyword": "keyword cannibalization",
+  "secondaryKeywords": [
+    "cannibalization in seo",
+    "keyword cannibalisation fix",
+    "two pages ranking for same keyword",
+    "content cannibalization",
+    "how to find keyword cannibalization"
+  ],
+  "cluster": "on-page",
+  "intent": "informational",
+  "h1": "Keyword cannibalization",
+  "metaTitle": "Keyword Cannibalization: Spot It and Fix It",
+  "metaDescription": "Keyword cannibalization is two of your pages fighting for one query. It splits signals. Here's how to spot it in Search Console and merge pages correctly.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Keyword cannibalization",
+  "definition": "Keyword cannibalization is when two or more pages on the same site compete for the same search query, splitting the signals that would otherwise rank one page well.",
+  "answer": "Keyword cannibalization is two of your own pages competing for one query. The diagnostic isn't keyword overlap — it's intent overlap. Filter the query in Search Console and watch which URL ranks week to week. If Google keeps swapping between two of your URLs, it can't decide, and neither page reaches its ceiling.",
+  "takeaways": [
+    "Two pages mentioning the same keyword is normal. Two pages **answering the same question** is the problem.",
+    "The evidence is URL swapping across weeks in Search Console, not a spreadsheet of overlapping keywords.",
+    "Three fixes, in order of how often they're right: differentiate, merge, canonicalise. Deleting is almost never the answer.",
+    "Most of it is self-inflicted — tag archives, and the habit of publishing a new post instead of updating the old one."
+  ],
+  "sections": [
+    {
+      "h2": "Intent overlap is the test, not keyword overlap",
+      "body": [
+        "Almost every audit tool will hand you a list of \"cannibalisation issues\" built by finding pages that share keywords. Most of that list is noise. Two pages on a site about SEO pricing will both contain the phrase \"seo cost\" — that's a topic, not a conflict.",
+        "The real test is one question: **would the same searcher be satisfied by either page?** If someone types \"seo cost in india\" and both your pricing breakdown and your \"is SEO worth it\" essay would answer them equally well, those pages compete. If one answers what it costs and the other answers whether to spend it, they serve different intents and can coexist happily — and should link to each other.",
+        "The distinction matters because the wrong fix is expensive. Merging two pages that served different intents throws away one that was working, and you rarely get the traffic back."
+      ]
+    },
+    {
+      "h2": "The Search Console diagnostic, step by step",
+      "body": [
+        "You don't need a tool for this. [Google Search Console](/glossary/google-search-console) gives you the evidence directly, and it's the only source that shows what Google actually did rather than what a third-party crawler estimates."
+      ],
+      "numbered": [
+        "Performance → Search results. Set the date range to the last 6 months.",
+        "Filter by **query**, exact match, on the phrase you're worried about.",
+        "Switch to the **Pages** tab. If one URL appears, there's nothing to fix. If two or more appear with meaningful impressions, keep going.",
+        "Now compare periods. Set a four-week window, note the top URL, then step the window back four weeks at a time.",
+        "**Look for swapping.** URL A ranks in March, URL B in April, A again in May. That oscillation is Google being unable to decide, and it's the clearest evidence of genuine cannibalisation.",
+        "Check average position on both. Two URLs stuck at positions 14 and 19 for the same query is a much stronger case than one at position 4 and one at 60 — the second is just a page that happens to mention the topic."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What isn't cannibalisation",
+        "body": "Two URLs both showing impressions for a query in the same week is often just Google testing which page fits better, especially on a new page. Give it four to six weeks before you restructure anything. Plenty of \"fixes\" are applied to problems that were going to resolve themselves."
+      }
+    },
+    {
+      "h2": "Merge, differentiate or canonicalise",
+      "body": [
+        "Once you've confirmed it, the decision is mechanical. Match your situation to the row."
+      ],
+      "table": {
+        "caption": "Choosing the fix once cannibalisation is confirmed.",
+        "head": ["Situation", "Fix", "What it involves"],
+        "rows": [
+          [
+            "Same intent, one page clearly stronger",
+            "Merge into the strong page",
+            "Move the useful content across, [301 redirect](/glossary/301-redirect) the weaker URL to the stronger one, update every internal link that pointed at the old URL."
+          ],
+          [
+            "Same intent, both mediocre",
+            "Merge into a new, better page",
+            "Write the page that should have existed, redirect both old URLs to it. Expect a dip for four to eight weeks before it settles."
+          ],
+          [
+            "Different intent, similar wording",
+            "Differentiate",
+            "Rewrite titles, H1s and opening paragraphs so each page states its distinct question. Fix internal anchor text so it stops pointing both ways with the same phrase."
+          ],
+          [
+            "Near-duplicates you have to keep",
+            "Canonicalise",
+            "Print views, faceted URLs, parameter variants. A [canonical tag](/glossary/canonical-tag) points them at the primary version without removing them."
+          ],
+          [
+            "Low-value pages nobody should reach",
+            "Noindex, then reconsider",
+            "Tag archives, thin category pages. But never noindex a page with inbound links — redirect it instead so the equity moves."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Redirect to the closest equivalent, never the homepage",
+        "body": "Bulk-redirecting a batch of retired pages to the homepage is treated as a soft 404 — Google decides the redirect is irrelevant and drops the signal entirely. If there's no close equivalent for a page, let it 410 honestly rather than pretend the homepage answers the query."
+      }
+    },
+    {
+      "h2": "Where it comes from: archives, and enthusiasm",
+      "body": [
+        "Most cannibalisation is manufactured on-site, not stumbled into. Three sources cover nearly all of it.",
+        "**Automatic archives.** WordPress ships with tag, category, author and date archives switched on. A blog with 200 posts and 180 tags produces 180 thin pages, each listing a couple of posts, each competing with the posts themselves. Noindex the tag and date archives, keep a few curated categories.",
+        "**Publishing instead of updating.** The editorial habit behind most of it. Someone writes a fresh post on a topic you covered eighteen months ago, because writing new is more satisfying than revising old. Now two pages answer the question and neither is complete. If a page already targets the query, update that page — see [when to update old content instead of writing new](/journal/when-to-update-old-content-instead-of-writing-new).",
+        "**Templated location or service pages.** Fifty pages differing only by city name compete with each other and look like scaled content abuse. Each has to say something true and specific, or it shouldn't exist."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I find keyword cannibalization?",
+      "a": "Filter an exact query in Search Console's performance report, open the Pages tab, then step the date window back four weeks at a time. If the top URL keeps switching between two of your pages, that's cannibalisation. A tool's keyword-overlap report is a hypothesis, not evidence."
+    },
+    {
+      "q": "Is keyword cannibalization a Google penalty?",
+      "a": "No. There's no penalty and no manual action for it. It's a self-inflicted dilution: your links, relevance and engagement signals split across two URLs, so neither reaches the position one consolidated page would have."
+    },
+    {
+      "q": "Should I delete the weaker page?",
+      "a": "Rarely. Deleting throws away whatever links and history that URL accumulated. Fold the useful content into the stronger page and 301 the old URL to it, so the signals move rather than evaporate."
+    },
+    {
+      "q": "Can two of my pages rank for the same keyword on purpose?",
+      "a": "Yes, and it happens legitimately — a service page and a comparison page can both appear for a commercial query and occupy two slots. That's a good outcome. The problem is only when they trade places instead of holding position together."
+    },
+    {
+      "q": "How long after merging pages will rankings recover?",
+      "a": "Usually four to eight weeks for the redirect to be fully processed and the consolidated page to settle, longer on big or slowly crawled sites. Expect a visible dip first. Merging during a quarter you need results is a timing mistake, not a strategy mistake."
+    },
+    {
+      "q": "Do tag and category pages cause cannibalization?",
+      "a": "Frequently, yes. Default archives generate thin listing pages that mention the same terms as the posts they list. Noindex tag, author and date archives; keep a small number of genuine categories that a human would actually browse."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "canonical-tag" },
+    { "type": "glossary", "slug": "301-redirect" },
+    { "type": "glossary", "slug": "thin-content" },
+    { "type": "compare", "slug": "canonical-vs-noindex" },
+    { "type": "journal", "slug": "a-post-mortem-on-keyword-cannibalization" },
+    { "type": "services", "slug": "seo-audit-services" }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "slug": "what-is-local-seo",
+  "type": "answers",
+  "primaryKeyword": "what is local seo",
+  "secondaryKeywords": [
+    "local seo meaning",
+    "what does local seo mean",
+    "local seo explained",
+    "how is local seo different"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "What local SEO is, and who it's actually for",
+  "metaTitle": "What Is Local SEO? The Map Pack Explained",
+  "metaDescription": "What is local SEO? Ranking for searches with location intent, where a three-slot map pack decides winners and proximity is the input you can't edit.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Local SEO is the work of ranking for searches with location intent — \"dentist near me\", \"CA in Andheri\" — where Google returns a map pack of three businesses above the normal blue links. Those three slots are decided by relevance, distance and prominence. Distance is the one input you cannot edit.",
+  "takeaways": [
+    "There is no single ranking for a local query. Your position changes with where the searcher is standing, so the honest report is a **grid**, not a number.",
+    "For map pack results the thing being ranked is your **Google Business Profile**, not your website. The site supports it.",
+    "Reviews are a ranking input, not decoration — and the words inside them get matched against queries.",
+    "If your target searches don't show a map pack, local SEO isn't your problem and no amount of it will help."
+  ],
+  "sections": [
+    {
+      "h2": "The variable you can't optimise",
+      "body": [
+        "Two dental clinics in Andheri, three kilometres apart. Same services, same fees, both with tidy websites. A patient in Vile Parle searches \"dentist near me\". One appears in the map pack. The other doesn't, and nothing its marketing team does that month changes that result.",
+        "That's local SEO. Google measures proximity from wherever the searcher is standing — not from a city centre, not from a pin you choose. So \"ranking #1 for dentist in Andheri\" isn't a coherent claim. There are as many rankings as there are street corners, and your visibility is a radius that fades with distance.",
+        "So if anyone reports your local ranking as a single position, they're using their own office as the search location or they're guessing. Local performance is measured on a grid of points across your catchment. The useful question is how far your radius reaches."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The one-minute test",
+        "body": "Search your five main service terms on a phone, logged out, from your premises. Then have someone do the same from four kilometres away. The gap between those two results is your real local SEO problem."
+      }
+    },
+    {
+      "h2": "Relevance, distance and prominence — Google's own three",
+      "body": [
+        "Google publishes the three things it weighs for local results, though never the weights. The categories are stable and they're a useful way to sort your work: two of them respond to effort, one barely does."
+      ],
+      "table": {
+        "caption": "The three local ranking inputs and how much of each you actually control.",
+        "head": ["Input", "What Google is weighing", "How much you control"],
+        "rows": [
+          [
+            "Relevance",
+            "How closely your profile and landing page match what was typed — category, services listed, description, the words on the page.",
+            "**High.** Mostly a data-entry job that almost nobody finishes."
+          ],
+          [
+            "Distance",
+            "How far your verified address or service area is from the searcher's live location.",
+            "**Almost none**, short of opening a second verified location."
+          ],
+          [
+            "Prominence",
+            "How well known the business is — reviews, citations, links, press, and how often people search the brand by name.",
+            "**Medium**, and it's the slowest of the three to move."
+          ]
+        ]
+      },
+      "bullets": [
+        "Because distance is fixed, relevance and prominence are where the whole budget goes. That's not a limitation — it's why local SEO is cheaper and faster than national [SEO work](/seo).",
+        "Relevance is the fastest win in the discipline and the one most businesses have half-done. Twenty minutes of accurate form-filling frequently beats a month of link building."
+      ]
+    },
+    {
+      "h2": "Your Google Business Profile is the ranking asset",
+      "body": [
+        "For map pack results, the entity being ranked is the profile — not the page. Your website is supporting evidence. This is why a plumber with an ugly one-page site and a complete, active profile routinely outranks a competitor with a beautiful site and a half-filled listing.",
+        "Treat it as a product page. Everything below is a field somebody has to fill in and keep true."
+      ],
+      "bullets": [
+        "**Primary category.** The most consequential field on the profile and the most commonly fudged. Google matches category against query before it matches anything else.",
+        "**Services and products.** Each is a matchable string. A clinic listing \"root canal treatment\" is eligible for that query in a way one listing \"dentistry\" is not.",
+        "**Address, hours, phone.** Identical everywhere they appear online, including the directories carrying an old version. Those repeated mentions are your citations, and inconsistency in them is the commonest quiet drag on a local profile.",
+        "**Service area**, if you travel to customers. A sensible radius beats a greedy one.",
+        "**Posts, Q&A and photos**, updated. An abandoned profile reads as a closed business to Google and to the person looking at it."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The category mistake that costs the most",
+        "body": "Picking the aspirational category over the accurate one. A general dentist who sets \"Cosmetic Dentist\" because those treatments pay better loses the far larger \"dentist\" query set and gains a category they can't win. Set what you are, then add the rest as secondary."
+      }
+    },
+    {
+      "h2": "Reviews and photos are inputs, not decoration",
+      "body": [
+        "Reviews feed prominence directly — volume, rating and recency all count, and recency matters more than founders expect. Forty reviews from 2021 and nothing since reads worse than twelve from this quarter.",
+        "There's a second effect people miss: review text gets matched against queries. A patient who writes \"came in for a root canal, painless\" has added a keyword no form field would let you add. Which is why asking \"could you mention what you came in for?\" beats asking for five stars."
+      ],
+      "subs": [
+        {
+          "h3": "How to ask without it going wrong",
+          "bullets": [
+            "Ask in person at the moment of delivery, when the customer is happiest. A follow-up SMS three days later converts a fraction as well.",
+            "Never buy reviews or run incentive schemes. Google filters them, removes them, and can suspend the profile — and suspensions take weeks to reverse.",
+            "Reply to every review, the bad ones included. Replies are public and they're the only part of your reputation you fully control.",
+            "Don't gate reviews behind a \"were you happy?\" screen. It breaks Google's policy and it's the sort of thing competitors report."
+          ]
+        },
+        {
+          "h3": "Photos, and one piece of folklore",
+          "body": [
+            "Fresh, real photos of the premises, the team and the work matter — mainly because they decide whether anyone taps your listing instead of the one above it. Stock imagery is obvious and it costs clicks.",
+            "Geotagging photos is folklore. Google has said it doesn't use EXIF location data to rank profiles, and platforms strip that metadata on upload anyway. Anyone selling geotagged image packages is selling a ritual."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Where local SEO stops helping",
+      "body": [
+        "This is the section most agencies leave out, because local SEO is easy to sell to anyone with an address. It genuinely doesn't help several categories of business."
+      ],
+      "bullets": [
+        "**Nationwide e-commerce.** If you ship anywhere in India, your buyer isn't typing a place name. The fight is on product and category pages, not the map.",
+        "**SaaS and most B2B.** A buyer choosing accounting software doesn't care that you're in Koramangala. [B2B SEO versus B2C](/compare/b2b-seo-vs-b2c-seo) covers what replaces proximity there.",
+        "**Online-only services with no verified address.** No address and no verified service area means no map pack, and no workaround survives Google's verification.",
+        "**Categories where buyers travel for quality.** Complex surgery, wedding photography, specialist litigation. People cross a city for these, Google knows it, and proximity carries less weight in exactly those categories."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Virtual offices don't work",
+        "body": "Renting a mailbox in a suburb you want to rank in breaks Google's guidelines, and it's the most reported profile abuse there is. Suspensions take weeks to appeal and sometimes don't reverse. A second real location with real staff is the only version that holds."
+      }
+    },
+    {
+      "h2": "The order to do it in",
+      "body": [
+        "Local SEO rewards sequence, because the cheap work outperforms the expensive work and people still do it in the wrong order."
+      ],
+      "numbered": [
+        "**Claim and verify the profile.** Nothing else counts until the listing is genuinely yours.",
+        "**Fix the primary category**, then add accurate secondary ones. Fifteen minutes, biggest single swing available.",
+        "**Complete every field** — services, products, hours, attributes, description, booking links. Empty fields are lost matches.",
+        "**Make the name, address and phone identical everywhere**, then clean up the directories carrying old versions.",
+        "**Build one real page per location and per major service**, with content a human would actually read. Not doorway pages.",
+        "**Systematise review collection.** A weekly habit beats a quarterly campaign, and recency counts.",
+        "**Then, and only then**, spend on citations, digital PR and links to raise prominence."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What this costs",
+        "body": "Local is the cheapest serious SEO there is, because the competitive set is a few kilometres wide instead of a country. Our SEO starts at ₹75,000/mo, smaller sites from ₹40,000 — and [what local SEO costs](/cost/local-seo-cost) covers the market range, including the parts you can do yourself."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long does local SEO take to work?",
+      "a": "Profile fixes can show up within days to a few weeks, which makes local the fastest-moving part of SEO. Prominence — reviews, citations, links — takes two to four months to shift the radius meaningfully. Anything promising map pack dominance in a fortnight is describing profile completion, not ranking."
+    },
+    {
+      "q": "Do I still need a website if I have a Google Business Profile?",
+      "a": "Yes, though a small one. The profile can win the map pack alone, but the site is where relevance is proven, where the organic results below the map are won, and where you own the asset. A profile is rented from Google and can be suspended; your site can't."
+    },
+    {
+      "q": "Can I rank in a city where I don't have an office?",
+      "a": "Not in the map pack — that needs a verified address or a declared service area, and fake addresses get profiles suspended. You can rank in the organic results below the map with a genuine city page and local relevance. It's a smaller prize but a legitimate one."
+    },
+    {
+      "q": "How many Google reviews do I need to rank?",
+      "a": "There's no threshold, and anyone quoting one is inventing it. What matters is being comparable to the businesses currently in the map pack for your query. Look at their counts, ratings and dates, then aim to look normal against that set rather than at an arbitrary number."
+    },
+    {
+      "q": "Does local SEO work for service-area businesses like plumbers or packers and movers?",
+      "a": "Yes, and it's often their best channel. You hide the address and declare a service area instead. The radius Google honours tends to be tighter than the one you'd like, so set it to where you genuinely operate rather than to the whole metro."
+    },
+    {
+      "q": "What's the difference between local SEO and regular SEO?",
+      "a": "Same fundamentals, different battlefield. Regular SEO fights over one national result set. Local SEO fights over a three-slot map pack that changes with the searcher's location, ranks a business profile rather than a page, and treats reviews and citations as first-order signals."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "google-business-profile" },
+    { "type": "glossary", "slug": "local-citations" },
+    { "type": "compare", "slug": "local-seo-vs-national-seo" },
+    { "type": "cost", "slug": "local-seo-cost" },
+    { "type": "services", "slug": "local-seo-services" },
+    { "type": "answers", "slug": "how-to-do-local-seo" }
+  ]
+}

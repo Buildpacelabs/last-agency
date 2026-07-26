@@ -1,0 +1,125 @@
+{
+  "slug": "canonical-tag",
+  "type": "glossary",
+  "primaryKeyword": "canonical tag",
+  "secondaryKeywords": [
+    "canonical tag in seo",
+    "rel canonical",
+    "what is a canonical tag",
+    "canonical url meaning",
+    "how to add canonical tag in wordpress"
+  ],
+  "cluster": "technical-seo",
+  "intent": "informational",
+  "h1": "Canonical tag",
+  "metaTitle": "Canonical Tag: What It Is and How to Use It",
+  "metaDescription": "A canonical tag tells Google which URL is the original. Here's the exact syntax, the three ways it breaks on Indian stores, and how to check your own.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Canonical tag",
+  "definition": "A canonical tag is a line of HTML in a page's head that tells search engines which URL is the preferred version when several URLs serve the same content.",
+  "answer": "A canonical tag is one line of HTML: `<link rel=\"canonical\" href=\"https://example.com/page\" />`. It sits in the head and tells Google which URL to index when several show the same content. It's a hint, not an order — Google overrides it whenever your other signals disagree with it.",
+  "takeaways": [
+    "The tag belongs in `<head>`, uses an **absolute** URL, and there must be exactly one of them per page.",
+    "Every page should carry a **self-referencing** canonical pointing at itself. That's the default, not the exception.",
+    "A canonical is a hint. A **301 redirect** is a rule. If you never want the old URL served again, redirect it.",
+    "Search Console's URL Inspection tool shows you the Google-selected canonical. That's the only opinion that counts."
+  ],
+  "sections": [
+    {
+      "h2": "The tag itself, and where it goes",
+      "body": [
+        "Here is the whole thing: `<link rel=\"canonical\" href=\"https://example.com/products/brass-lamp\" />`.",
+        "Four rules govern it, and breaking any one of them makes it useless.",
+        "Most pages should point at themselves. A self-referencing canonical costs nothing, and it stops Google guessing when someone links to your page with `?fbclid=` stapled on the end. Set it as the template default and override only where you mean to."
+      ],
+      "bullets": [
+        "**It goes in `<head>`.** Anywhere else and it's ignored outright.",
+        "**Use an absolute URL**, with the protocol and host. `/products/brass-lamp` is not enough.",
+        "**One per page.** Two conflicting canonicals and Google discards both.",
+        "**Match the URL you actually want** — right protocol, right www setting, right trailing slash. A canonical pointing at a URL that 301s somewhere else is a wasted signal."
+      ]
+    },
+    {
+      "h2": "The three ways it breaks on real stores",
+      "body": [
+        "We see the same three failures on Shopify and WooCommerce catalogues over and over. None of them throw an error. All of them quietly cost you indexed pages."
+      ],
+      "numbered": [
+        "**Every page canonicalising to the homepage.** Usually a theme setting or a plugin field somebody filled in once with the site URL. The effect is brutal: you're telling Google that 400 product pages are all duplicates of your homepage, so none of them get indexed. If your product count in Search Console collapsed after a theme update, check this first.",
+        "**The canonical injected by JavaScript into the body.** A tag manager or a client-side script writes it after the page loads, and it lands outside `<head>`. It looks right in DevTools. It does nothing. View source — not Inspect Element — and check where it actually sits in the raw HTML.",
+        "**Canonical fighting a noindex.** A page says \"don't index me\" and \"the real version of me is over there\" at the same time. Google's own guidance is not to combine the two, because they're contradictory instructions and you don't control which one wins. Pick one. If the page shouldn't be in the index, noindex it and remove the canonical to elsewhere; see [canonical vs noindex](/compare/canonical-vs-noindex) for which to use when."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The Shopify collections trap",
+        "body": "Shopify serves the same product at `/products/x` and `/collections/y/products/x` and canonicalises to the short version by default. That's correct. It breaks when a theme or an app rewrites internal links to the collection path — you then link internally to a URL you've told Google to ignore. Check what your nav actually links to."
+      }
+    },
+    {
+      "h2": "Canonical tag or 301 redirect?",
+      "body": [
+        "These get confused constantly, and the difference is simple: a canonical keeps both URLs reachable and picks one for search. A redirect makes one URL unreachable."
+      ],
+      "table": {
+        "caption": "Which one to reach for.",
+        "head": ["Situation", "Use"],
+        "rows": [
+          ["Product reachable through two category paths", "Canonical — users need both paths to work"],
+          ["Tracking parameters on shared links", "Canonical — you can't stop people adding them"],
+          ["Printer-friendly or AMP variant", "Canonical to the main version"],
+          ["Old URL after a rename or migration", "301 — nobody should land on the old one again"],
+          ["http and www duplicates", "301 at the server, then a self-referencing canonical"],
+          ["Two pages competing for one keyword", "Neither — merge them, then 301"]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "The overlap case",
+          "body": [
+            "Host and protocol variants deserve both. Redirect them at the server so only one version ever responds, then let the surviving page canonicalise to itself. That belt-and-braces order is covered properly in [canonicalization](/glossary/canonicalization)."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Why Google ignores your canonical, and how to check",
+      "body": [
+        "Google calls rel=canonical a hint. It weighs your declared canonical against internal links, sitemap entries, redirects, hreflang and which version users see more of. When those disagree with the tag, the tag loses.",
+        "So stop reading the HTML and read Search Console. Open URL Inspection, paste the URL, and look at two fields: **User-declared canonical** (what your tag says) and **Google-selected canonical** (what Google decided). When they differ, Google has told you plainly that it doesn't believe you.",
+        "In the Page Indexing report, the same disagreement shows up as **Duplicate, Google chose different canonical than user**. That's not an error to dismiss — it's a list of pages you thought were indexed and aren't.",
+        "The fix is almost never a better tag. It's making every other signal agree: link internally to the canonical URL only, list only the canonical URL in your [XML sitemap](/glossary/xml-sitemap), and make sure the canonical target returns a 200 rather than redirecting."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does every page need a canonical tag?",
+      "a": "Not strictly — Google will pick a canonical on its own. But a self-referencing canonical on every page is cheap insurance against parameters, session IDs and syndicated copies, and it removes the guesswork. Set it in the template so nobody has to remember."
+    },
+    {
+      "q": "Can a canonical tag point to a different domain?",
+      "a": "Yes. Cross-domain canonicals are how syndication is meant to work — the publisher who reprints your article points back at your original. Google honours it more often than not, though as with any canonical it's a hint rather than a guarantee."
+    },
+    {
+      "q": "How do I add a canonical tag in WordPress?",
+      "a": "You almost certainly already have one. Yoast and Rank Math both output self-referencing canonicals by default, with a per-page override field in the editor sidebar. View source and search for `rel=\"canonical\"` before installing anything else — duplicate tags from two plugins are a common self-inflicted problem."
+    },
+    {
+      "q": "Does a canonical tag pass link equity?",
+      "a": "Google consolidates the signals from duplicate URLs onto the canonical one, links included. It isn't a redirect and it doesn't move users, but for ranking purposes the canonical URL inherits what the duplicates earned."
+    },
+    {
+      "q": "Why does Search Console show a different canonical from mine?",
+      "a": "Because your other signals contradict your tag. Usually internal links point at the non-canonical version, or the sitemap lists both, or the canonical target redirects. Fix the contradiction rather than re-writing the tag — Google is telling you which signal it trusts more."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "canonicalization" },
+    { "type": "compare", "slug": "canonical-vs-noindex" },
+    { "type": "glossary", "slug": "noindex" },
+    { "type": "compare", "slug": "wordpress-vs-shopify-seo" },
+    { "type": "services", "slug": "technical-seo-services" },
+    { "type": "journal", "slug": "a-post-mortem-on-keyword-cannibalization" }
+  ]
+}

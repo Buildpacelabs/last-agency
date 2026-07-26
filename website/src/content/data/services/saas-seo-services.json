@@ -1,0 +1,211 @@
+{
+  "slug": "saas-seo-services",
+  "type": "services",
+  "primaryKeyword": "saas seo services",
+  "secondaryKeywords": [
+    "saas seo agency india",
+    "b2b saas seo services",
+    "seo for software companies",
+    "product led seo service",
+    "saas seo cost india"
+  ],
+  "cluster": "vertical-seo",
+  "intent": "commercial",
+  "h1": "SEO for SaaS, measured in trials not traffic",
+  "metaTitle": "SaaS SEO Services That Report Pipeline, Not Sessions",
+  "metaDescription": "SaaS SEO built around integration, alternatives and comparison pages that convert to trials. Pipeline reported inside your CRM, not just GA4 sessions.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "priceFrom": "From ₹75,000 / mo",
+  "answer": "SaaS SEO that works starts at the bottom of the funnel: integration pages, alternatives pages, competitor comparisons and use cases — the queries where someone is already choosing. The blog comes last, because it takes six to twelve months to compound. From ₹75,000 a month, reported as trials in your CRM.",
+  "takeaways": [
+    "We build the funnel **backwards**. Integrations and alternatives pages first, blog last. A seed-stage company at 40 trials a month cannot fund nine months of waiting for content to compound.",
+    "Comparison pages work when they're fair. A hatchet job on a named competitor gets you a legal letter, removed from their partner directory, and distrusted by the buyer reading it.",
+    "If organic isn't visible in your CRM as a source on the opportunity record, you don't have SaaS SEO — you have a traffic report.",
+    "From ₹75,000/mo. The baseline is your trailing-90-day organic trial starts and non-branded organic sessions, frozen on day one."
+  ],
+  "sections": [
+    {
+      "h2": "We build the funnel backwards, and here's the order",
+      "body": [
+        "The standard SaaS SEO pitch is a content calendar: forty top-of-funnel posts about the category, publishing weekly, compounding over a year. It works. It also takes about a year, and most Indian SaaS companies below Series A don't have a year of runway to give to a channel that hasn't proved itself yet.",
+        "So we invert it. Start where the buyer is already holding a credit card and work upward. The pages are less exciting, the search volumes are smaller, and they convert at a multiple of what a blog post does — because the person reading 'X vs Y' has already decided to buy something.",
+        "Picking the order inside each layer is the part that takes judgement. We rank candidate pages by three inputs: which competitors already appear in your closed-won and closed-lost notes, which integrations your existing customers actually connect, and which of those queries currently return a review site rather than a vendor. A query owned by a review-site listicle is winnable. A query where the competitor's own comparison page sits at position one is a longer fight, and we say so before we brief it."
+      ],
+      "table": {
+        "caption": "The build order for a SaaS site, and what each layer is actually for.",
+        "head": ["Layer", "Example query", "Time to first traffic", "Why it's in this position"],
+        "rows": [
+          [
+            "1. Integration pages",
+            "\"[your tool] slack integration\"",
+            "2–8 weeks",
+            "Lowest competition on the whole site. The searcher already uses both tools. Partner directories often link back, so they earn links as well as traffic."
+          ],
+          [
+            "2. Alternatives pages",
+            "\"[competitor] alternatives\"",
+            "2–4 months",
+            "The searcher has decided to leave someone. You just need to be on the list, honestly described."
+          ],
+          [
+            "3. Comparison pages",
+            "\"[competitor] vs [you]\"",
+            "2–4 months",
+            "Late-stage evaluation. Low volume, absurd conversion rates, and if you don't write it, a review site writes it for you."
+          ],
+          [
+            "4. Use case and job pages",
+            "\"invoice reconciliation software\"",
+            "3–6 months",
+            "Category-adjacent demand from people who know the problem but not the vendors."
+          ],
+          [
+            "5. Category and 'best' pages",
+            "\"best helpdesk software india\"",
+            "6–12 months",
+            "High volume, high difficulty, dominated by review sites. Worth attacking once the rest is earning."
+          ],
+          [
+            "6. Blog and educational content",
+            "\"how to reconcile invoices\"",
+            "6–12 months",
+            "Compounds well, converts badly on first touch. It's an investment, not a rescue."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The trap in layer one",
+        "body": "Integration pages are cheap to template and that's exactly how they become scaled content abuse. One page per integration you genuinely support, with real setup steps, real screenshots and a real use case. Two hundred spun pages for integrations you half-support is a manual action waiting to happen, and Google has been explicit about this pattern."
+      }
+    },
+    {
+      "h2": "Writing comparison pages without being a jerk about it",
+      "body": [
+        "Every SaaS company wants a page that says why they beat the market leader. Most of those pages are useless, because the buyer can smell the bias in the first table row and leaves.",
+        "The pages that convert do something harder. They tell the reader who each tool is genuinely better for, including the cases where it isn't you. That reads as confidence, and confidence is the thing being sold."
+      ],
+      "bullets": [
+        "**Pull the competitor's facts from their public pricing and docs pages, with a date.** Then put 'last verified' on your page. Their pricing will change and your page will be wrong within a quarter otherwise.",
+        "**Say who they're better for.** 'If you need SOC 2 today and you're a 500-seat enterprise, buy theirs.' You lose a deal you were never winning and you gain the trust of everyone else on the page.",
+        "**Never claim a missing feature without checking this month.** Feature claims that are wrong are the ones that generate legal letters, and they're the easiest to disprove.",
+        "**Don't build these against companies whose partner or affiliate programme you depend on.** Read the terms first. Losing a directory listing can cost more traffic than the comparison page earns.",
+        "**Accept you won't outrank their own site for their brand name.** You're competing for 'X vs Y' and 'X alternatives', not for 'X'. Anyone promising otherwise is selling."
+      ],
+      "subs": [
+        {
+          "h3": "The alternatives page that actually ranks",
+          "body": [
+            "A page titled '[Competitor] alternatives' listing only your product is not an alternatives page. It's a landing page with a misleading title, and Google's raters and the buyer both spot it immediately.",
+            "List five to eight real options, including yours, with an honest one-line verdict on each. Rank yourself where you belong for that specific use case. The page earns links, gets quoted by AI assistants, and converts the reader who wanted a shortlist rather than a sales pitch."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Closing the loop: session to trial to CRM opportunity",
+      "body": [
+        "This is where most SaaS SEO engagements quietly fail. The agency reports sessions and keyword positions. The founder looks at pipeline. The two numbers never meet, so nobody can tell whether the channel works, and the retainer gets cut in month seven on a hunch.",
+        "SaaS attribution is genuinely hard, and the hardest part is honest. Somebody finds you through an organic search on Tuesday, thinks about it for three weeks, then types your brand name into Google and signs up. GA4's default model calls that a branded search. Organic gets no credit for the discovery it actually did."
+      ],
+      "numbered": [
+        "**Capture first touch and last touch on the signup form** as hidden fields — landing page, referrer, UTM parameters, first-seen timestamp. Stored on the user record, not just in analytics.",
+        "**Push those fields into the CRM** on trial creation, so the source lives on the opportunity, not in a dashboard nobody opens.",
+        "**Separate branded from non-branded organic** in every report. Branded search is a measure of your marketing everywhere else. Non-branded is what we're being paid to move.",
+        "**Add a self-reported 'how did you hear about us' field.** It disagrees with your analytics, often sharply, and where the two disagree is where the truth about your channel mix lives.",
+        "**Report opportunities and closed revenue by source monthly**, alongside trials. Trials are the leading indicator; revenue is the one your board asks about."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The honest caveat on attribution",
+        "body": "No attribution setup is accurate. Every one of them is a defensible estimate. We'll build the estimate, show you its assumptions, and tell you the error bars rather than presenting a dashboard number as fact. If your monthly trial volume is small, single-month swings are noise — which is why the guarantee below uses two numbers, not one."
+      }
+    },
+    {
+      "h2": "What a pre-Series-A budget should skip",
+      "body": [
+        "Founders ask what to buy. The more useful question is what to refuse, because at ₹75,000 a month every rupee spent on the wrong layer is a page that won't exist."
+      ],
+      "table": {
+        "caption": "Where a pre-Series-A SaaS should and shouldn't spend on SEO.",
+        "head": ["Spend on this", "Skip this until later"],
+        "rows": [
+          ["The 20–40 bottom-of-funnel pages: integrations, alternatives, comparisons", "A 4-articles-a-week blog calendar"],
+          ["Fixing signup-flow tracking so organic is visible in the CRM", "An enterprise SEO suite licence"],
+          ["Getting listed and reviewed on G2, Capterra and your partners' directories", "Paid guest posts and sponsored placements"],
+          ["Technical basics: indexation, page speed, sitemap hygiene, schema", "Translating the site into other languages"],
+          ["Digital PR once you have a product story worth telling", "Programmatic page generation before 20 solid pages exist"],
+          ["Documentation and changelog pages, which rank surprisingly well", "Chasing 'best software' category terms head-on in year one"]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The documentation point is not a throwaway",
+        "body": "Docs, changelogs and API references rank for problem-shaped queries that your marketing site will never touch, and they're already written. Making them crawlable, indexable and internally linked is often the cheapest traffic available to a SaaS company in its first year."
+      }
+    },
+    {
+      "h2": "What's included, what it costs, and what we guarantee",
+      "body": [
+        "SaaS SEO starts at **₹75,000 a month**, ex-GST, month-to-month after the first quarter, thirty days' notice, and every asset stays yours. Pre-launch companies with a small site can start at **₹40,000 a month** — that buys the technical foundation and the first bottom-of-funnel pages, not a full programme. Numbers on [pricing](/pricing), and the market range on [what SaaS SEO costs](/cost/saas-seo-cost)."
+      ],
+      "table": {
+        "caption": "What the SaaS retainer covers, and what it doesn't.",
+        "head": ["Included", "Not included"],
+        "rows": [
+          ["Bottom-of-funnel page programme: integrations, alternatives, comparisons, use cases", "Product marketing positioning work and messaging workshops"],
+          ["Keyword and SERP research against your actual competitor set, not a category list", "Review-site paid placements on G2 or Capterra"],
+          ["Technical SEO, indexation, schema and Core Web Vitals on your marketing site", "Engineering work inside the product application itself"],
+          ["Attribution build: form fields, CRM mapping, branded and non-branded splits", "CRM licences, analytics tooling and subscriptions"],
+          ["Digital PR and link earning aimed at your category, not directory spam", "Outbound sales sequences and lead lists"],
+          ["Monthly reporting on trials and opportunities from organic, against the frozen baseline", "Paid search and paid social — that's [performance marketing](/performance)"]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "The guarantee, and why it's two numbers for SaaS",
+          "body": [
+            "We freeze two things on day one: your trailing-90-day **trial starts from organic**, and your trailing-90-day **non-branded organic sessions**. If we haven't beaten both in 90 days, we keep working free until we do. It isn't a refund, and we won't call it one — it's unpaid work until the numbers clear.",
+            "Two numbers, because SaaS trial volumes are small enough to be noisy. If you get nine organic trials a quarter, a single enterprise buyer's holiday can swing the result. Non-branded sessions move earlier and lie less, so it keeps both sides honest when the trial count is statistically thin.",
+            "What we don't do is promise you rank one for your category term. Nobody controls Google's index, and if you want to see how we think about the alternative sales pitch, read [B2B against B2C SEO](/compare/b2b-seo-vs-b2c-seo) or the wider [SEO for SaaS companies](/seo-for/saas) page."
+          ]
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long does SaaS SEO take to produce trials?",
+      "a": "Integration and long-tail pages can produce the first organic trials inside 6–10 weeks because competition is low. Alternatives and comparison pages land in 2–4 months. Category terms take 6–12. If someone quotes you meaningful pipeline in month one, they're describing paid search with a different name."
+    },
+    {
+      "q": "Is SEO worth it for a SaaS with a small ticket size?",
+      "a": "It depends on payback, not on ticket size. At ₹75,000/mo you need roughly that much in incremental gross profit from organic to break even monthly. Work out your organic trial-to-paid rate and LTV first — if the arithmetic doesn't clear inside twelve months, paid acquisition is the more honest recommendation and we'll say so."
+    },
+    {
+      "q": "Do you write about competitors by name?",
+      "a": "Yes, factually and with dates. We pull claims from public pricing and documentation pages, mark when they were verified, and state who each competitor is genuinely better suited to. We don't publish unverified feature claims — those produce legal letters and lose the trust of the buyer reading the page."
+    },
+    {
+      "q": "What if our product changes every sprint?",
+      "a": "Then comparison and integration pages need a refresh cadence built into the retainer, which we schedule quarterly. Stale feature pages are worse than no feature pages — a buyer who finds one wrong row stops believing every other row, and so does the AI assistant summarising you."
+    },
+    {
+      "q": "Can you work with our existing content writer?",
+      "a": "Often the better setup, since they know the product. We do research, briefs, structure and editing; your writer or product marketer writes. It costs less than us writing everything, and the pages sound like your company instead of an agency."
+    },
+    {
+      "q": "Should we do programmatic SEO for our SaaS?",
+      "a": "Eventually, maybe — after 20 to 30 solid pages prove the demand shape. Programmatic pages built too early are template output with nothing behind them, which is the exact pattern Google demotes. See [programmatic SEO](/services/programmatic-seo-services) for where the line sits."
+    }
+  ],
+  "related": [
+    { "type": "cost", "slug": "saas-seo-cost" },
+    { "type": "seo-for", "slug": "saas" },
+    { "type": "compare", "slug": "b2b-seo-vs-b2c-seo" },
+    { "type": "compare", "slug": "keyword-rankings-vs-organic-traffic" },
+    { "type": "glossary", "slug": "content-gap-analysis" },
+    { "type": "services", "slug": "programmatic-seo-services" }
+  ]
+}

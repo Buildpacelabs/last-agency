@@ -1,0 +1,126 @@
+{
+  "slug": "hreflang",
+  "type": "glossary",
+  "primaryKeyword": "hreflang",
+  "secondaryKeywords": [
+    "hreflang tag",
+    "hreflang implementation",
+    "en-in hreflang",
+    "hreflang x-default",
+    "international seo hreflang"
+  ],
+  "cluster": "technical-seo",
+  "intent": "informational",
+  "h1": "Hreflang",
+  "metaTitle": "Hreflang: Language and Country Tags Explained",
+  "metaDescription": "Hreflang tells Google which language and country version of a page to show. Use en-IN, not en-india, and keep every tag reciprocal or it fails silently.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Hreflang",
+  "definition": "Hreflang is an annotation that tells search engines which language and regional version of a page to show a given searcher.",
+  "answer": "Hreflang is an annotation telling Google which language or country version of a page to show a given searcher. It uses ISO codes — `en-IN` for English in India, `en-AE` for English in the UAE. Every page in the set must link to every other page including itself, or Google discards the whole set.",
+  "takeaways": [
+    "Language code first, region second, both from ISO standards. `en-IN` is valid. `en-india` and `en-uk` are not.",
+    "**Reciprocity is not optional.** If page B doesn't point back at page A, Google ignores the annotation on both.",
+    "Hreflang swaps which URL is shown. It doesn't lift rankings, and it doesn't merge authority across your regional pages.",
+    "Search Console retired the International Targeting report in 2022. Nothing in the interface validates this for you any more."
+  ],
+  "sections": [
+    {
+      "h2": "What it does, and the promise it doesn't make",
+      "body": [
+        "You sell to India, the Gulf and the US, and you keep three versions of your pricing page because the currency and plan names differ. Without hreflang, Google picks one and shows it to everyone — usually the one with the most links, usually the US page. Your Bangalore buyer sees dollar pricing and bounces.",
+        "Hreflang fixes precisely that. It tells Google the three pages are regional alternates and which searcher belongs to which, and Google swaps in the right URL.",
+        "What it doesn't do catches people out: it won't improve rankings. If your `/ae/` pages don't rank in the UAE, hreflang won't make them. It doesn't pool authority either — three regional pages are three pages, each earning links on its own. It's a labelling system that explains duplication rather than removing it.",
+        "And if you have one page, in one language, selling to everyone, you don't need hreflang. It's for sites with genuinely parallel versions, not for sites that would like more international traffic."
+      ]
+    },
+    {
+      "h2": "A working set for India, the Gulf and the US",
+      "body": [
+        "Say a Bangalore SaaS company runs `/in/pricing`, `/ae/pricing` and `/us/pricing`. All three carry the same block of four link elements in `<head>` — identical, including the self-reference."
+      ],
+      "bullets": [
+        "`<link rel=\"alternate\" hreflang=\"en-IN\" href=\"https://example.com/in/pricing\" />`",
+        "`<link rel=\"alternate\" hreflang=\"en-AE\" href=\"https://example.com/ae/pricing\" />`",
+        "`<link rel=\"alternate\" hreflang=\"en-US\" href=\"https://example.com/us/pricing\" />`",
+        "`<link rel=\"alternate\" hreflang=\"x-default\" href=\"https://example.com/pricing\" />`"
+      ],
+      "subs": [
+        {
+          "h3": "Getting the codes right",
+          "bullets": [
+            "**Language is ISO 639-1** (two letters): `en`, `hi`, `ta`, `ar`. **Region is ISO 3166-1 Alpha-2**: `IN`, `AE`, `US`, `GB`.",
+            "**Language alone is valid. Region alone is not.** `hreflang=\"en\"` works; `hreflang=\"IN\"` is invalid and ignored.",
+            "**`en-uk` is the commonest error here.** The country code for the United Kingdom is `GB`.",
+            "**`en-india`, `en_IN`, `english-india`** — all invalid. Two letters, hyphen, two letters.",
+            "**Adding Hindi later** means `hi-IN` alongside `en-IN`, and every page gains a fifth line. The set grows as a whole or not at all."
+          ]
+        },
+        {
+          "h3": "x-default, and when it earns its place",
+          "body": [
+            "`x-default` is the fallback for searchers matching none of your targeted regions. A user in Nairobi matches none of `en-IN`, `en-AE` or `en-US`, so they get the x-default page.",
+            "Point it at your genuine global default — the language-neutral landing page, the selector, or whichever version you'd want a stranger to see. Omitting it means Google guesses for everyone outside your list, which is where you started."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The reciprocity rule, and how it fails silently",
+      "body": [
+        "The rule that breaks most implementations: **every page in a set must reference every other page in the set, including itself.** If `/in/pricing` claims `/us/pricing` as its US alternate but `/us/pricing` says nothing back, Google treats the claim as unverified and may ignore the annotation entirely.",
+        "That's deliberate — without it, anyone could point hreflang at a competitor's page. The cost is that a three-page set has nine link elements to keep in sync, and a five-language site with 200 pages has five thousand. This is a template job, generated from data, never maintained by hand.",
+        "The failure has no error state. Nothing goes red. Your pages stay indexed and keep ranking; they just get served to the wrong country, and you find out from a support ticket asking why the site quoted rupees to someone in Dallas."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The canonical conflict",
+        "body": "Every page in an hreflang set needs a **self-referencing** canonical. If `/in/pricing` canonicalises to `/us/pricing`, you've told Google that page shouldn't be indexed — and an unindexed page can't be swapped in for anyone. It's the commonest way a technically correct set does nothing. See [canonical tag](/glossary/canonical-tag)."
+      }
+    },
+    {
+      "h2": "Where to put it, and how to check it now",
+      "body": [
+        "Three implementation methods, and you pick exactly one. Mixing them is how sets fall out of sync.",
+        "**HTML `<head>` link elements** — readable, fine up to a few languages. **XML sitemap `xhtml:link` entries** — the right choice past three or four locales, since the annotations live in one generated file rather than scattered across templates. **HTTP `Link:` headers** — for non-HTML files like PDFs. Whichever you choose, use **absolute URLs**; relative hrefs are invalid and silently dropped.",
+        "Now the uncomfortable part. Google retired the International Targeting report in Search Console in 2022 and nothing replaced it. No part of the interface tells you your hreflang is broken any more. You validate with a crawler — Screaming Frog, Sitebulb, Ahrefs — set to check reciprocity and code validity, re-run after every template change. Spot-check by hand and you'll miss the page that quietly stopped pointing back.",
+        "For an Indian company selling into the Gulf, the UK or the US, this is the plumbing that decides whether your regional pages get seen at all. It's a fixed part of any [international SEO](/services/international-seo-services) build, and the wider market shape is in [Indian agencies serving global clients](/journal/indian-agencies-serving-global-clients)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need hreflang if all my pages are in English?",
+      "a": "Only if you run separate pages per country — different currency, pricing, legal terms or stock. Same language, different regional versions is exactly what `en-IN`, `en-AE` and `en-US` are for. One English page serving everyone needs nothing."
+    },
+    {
+      "q": "What is the correct hreflang code for India?",
+      "a": "`en-IN` for English targeted at India, `hi-IN` for Hindi, `ta-IN` for Tamil, and so on. Language first, region second, both ISO codes, separated by a hyphen. `in`, `en-india` and `IN` are all invalid."
+    },
+    {
+      "q": "Does hreflang help my site rank in other countries?",
+      "a": "No. It controls which of your existing pages gets shown to which searcher. Ranking in a new market still needs local relevance and links from that market. Hreflang stops the wrong page appearing; it doesn't put you on page one."
+    },
+    {
+      "q": "What happens if hreflang tags aren't reciprocal?",
+      "a": "Google may ignore the annotation altogether. It verifies the return link before trusting the claim, because otherwise anyone could annotate someone else's pages. Non-reciprocal sets fail silently — no warning, no error, just the wrong page served."
+    },
+    {
+      "q": "Should hreflang go in the head or the sitemap?",
+      "a": "Head tags are easier to read and fine up to three or four locales. Past that, use the XML sitemap — the annotations live in one generated file rather than scattered across templates, which makes reciprocity far easier to keep intact. Use one method, not both."
+    },
+    {
+      "q": "How do I check hreflang errors without Search Console?",
+      "a": "You need a crawler. Search Console removed the International Targeting report in 2022 and never replaced it. Screaming Frog, Sitebulb and Ahrefs all validate reciprocity and code syntax — run one after every template change, not once at launch."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "canonical-tag" },
+    { "type": "glossary", "slug": "xml-sitemap" },
+    { "type": "services", "slug": "international-seo-services" },
+    { "type": "compare", "slug": "indian-seo-agency-vs-international-agency" },
+    { "type": "compare", "slug": "english-vs-regional-language-seo" },
+    { "type": "journal", "slug": "indian-agencies-serving-global-clients" }
+  ]
+}

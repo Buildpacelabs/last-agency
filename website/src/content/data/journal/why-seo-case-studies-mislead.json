@@ -1,0 +1,270 @@
+{
+  "slug": "why-seo-case-studies-mislead",
+  "type": "journal",
+  "primaryKeyword": "are seo case studies reliable",
+  "secondaryKeywords": [
+    "seo case study red flags",
+    "fake seo results",
+    "how to verify agency case study",
+    "percentage growth misleading",
+    "seo proof of results"
+  ],
+  "cluster": "opinion",
+  "intent": "informational",
+  "h1": "How to take apart an SEO case study in five minutes",
+  "metaTitle": "Are SEO Case Studies Reliable? Read Them Like This",
+  "metaDescription": "SEO case studies are rarely reliable as published. Here are the six omissions that inflate them, and the questions that make a real result easy to verify.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Rarely, as published. A case study is a marketing asset written by the party being judged, and six omissions do most of the inflating: no starting number, brand traffic counted as an organic win, an unstated or cherry-picked window, no mention of concurrent ad spend, no link to revenue, and no word on whether the client stayed.",
+  "takeaways": [
+    "**\"412% growth\" is a ratio, not a result.** Ask for the two absolute numbers. Growth from 340 to 1,740 monthly sessions is a real percentage and a rounding error in the P&L.",
+    "**Brand searches are the biggest single distortion.** A funding round, a TV spot or a viral founder post lifts branded organic, and branded organic sits in the same chart as the SEO.",
+    "Three questions settle almost every case study: what was the number on day one, was brand traffic excluded, and is that client still paying?",
+    "The most informative thing about any case study is the one thing none of them contain — **churn**. Nobody publishes the account that flatlined in month five."
+  ],
+  "sections": [
+    {
+      "h2": "Who writes a case study, and why that decides what's in it",
+      "body": [
+        "A case study is written by the agency, approved by the client's marketing team, and designed to close deals. It is not a report, an audit or a study. Nobody is lying — the numbers in a decent case study are usually real numbers taken from a real dashboard. The distortion comes from what gets selected, and selection is where all the persuasion lives.",
+        "Think about the pipeline. An agency with forty clients over three years has a few hundred client-quarters of data. A handful produced a chart worth screenshotting, and those become the case studies. The rest — the flat ones, the seasonal ones, the ones where the client's dev team never shipped the fixes — leave no public trace at all.",
+        "So the honest way to read a case study is as a **best case**, filtered by an interested party, presented in the frame most favourable to them. That's still useful information. It tells you the ceiling, the vertical they know, and the kind of work they consider impressive. It just isn't evidence of what will happen to you.",
+        "Six omissions do most of the work. Here's each one, what it hides, and the sentence that gets it back."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The frame to hold",
+        "body": "You aren't trying to catch anybody out. You're trying to convert a marketing asset back into a fact you can compare against another agency's marketing asset. Every question below is fair, and a good agency will answer all of them in one email."
+      }
+    },
+    {
+      "h2": "Omission one: the number it started from",
+      "body": [
+        "Percentages are the workhorse of the genre because percentages are enormous when the base is small. This isn't a trick anyone had to invent — it's just arithmetic, and it flatters the smallest accounts the most.",
+        "Run the numbers yourself and the headline collapses into something you can actually judge."
+      ],
+      "table": {
+        "caption": "The same headline percentage, at three different starting points.",
+        "head": [
+          "Headline claim",
+          "If it started at…",
+          "It ended at…",
+          "What that's worth"
+        ],
+        "rows": [
+          [
+            "412% organic growth",
+            "340 sessions / month",
+            "1,741 sessions / month",
+            "Roughly 1,400 extra visits. At a 2% enquiry rate, about 28 enquiries a month. Real, small, and cheap to achieve on a new site."
+          ],
+          [
+            "412% organic growth",
+            "12,000 sessions / month",
+            "61,440 sessions / month",
+            "A genuinely difficult result that took a competitive site to a different weight class. Worth paying serious money for."
+          ],
+          [
+            "412% organic growth",
+            "40 sessions / month",
+            "205 sessions / month",
+            "Statistical noise on a site that had almost no traffic. Publishing this as a case study is the tell."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Ask for both absolute numbers**, start and end, with the units named. Sessions, users, clicks and impressions are four different things and they get swapped mid-chart more often than you'd think.",
+        "**Watch for a y-axis that doesn't start at zero.** A line going from 1,200 to 1,600 looks vertical on a well-chosen axis.",
+        "**Treat brand-new sites as a separate category.** Going from nothing to something is a different craft from taking an established site past its competitors, and only one of them describes your situation."
+      ]
+    },
+    {
+      "h2": "Omission two: brand traffic counted as an organic win",
+      "body": [
+        "This is the big one, and it's the one most agencies don't even think of as a distortion, because the traffic really did arrive through organic search.",
+        "Here's the mechanic. When someone searches your company name and clicks your site, Search Console and GA4 both record it as organic search. It is organic search. But it wasn't produced by SEO — it was produced by whatever made that person know your name. A funding announcement, a founder's post that travelled, a podcast, a billboard, a Diwali campaign, a marketplace listing, a friend's recommendation.",
+        "In an Indian D2C or SaaS business running paid social alongside SEO, branded queries frequently make up the majority of organic clicks. If a case study reports total organic growth over a period when the client also raised a round or ran a big paid campaign, the chart is measuring the round.",
+        "The fix takes about fifteen seconds in Search Console: filter queries to exclude the brand name and its common misspellings, then look at the same date range. If the shape of the curve survives, the SEO is real. If it flattens, you've found the story."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The question that produces the most silence",
+        "body": "\"Is brand traffic excluded from this chart?\" Ask it and watch. An agency that has genuinely done non-brand work has that filtered screenshot already, because it's the view they use internally. An agency that hasn't will explain why brand traffic counts, which is your answer."
+      }
+    },
+    {
+      "h2": "Omission three: the window nobody names",
+      "body": [
+        "A case study chart without labelled dates on the x-axis is not a chart, it's a shape. And even a labelled window can be selected after the fact — which is a much subtler problem, because everything in it is true.",
+        "Three ways a window flatters a result, all of them common and none of them requiring dishonesty:"
+      ],
+      "numbered": [
+        "**Seasonality.** Compare February to October for an Indian ecommerce brand and you've measured the festive season, not the SEO. The correct comparison is year-on-year for the same months, or a full twelve months against the previous twelve.",
+        "**A core update landed inside the window.** Google publishes its ranking release history with dates. If the growth begins the week a core update finished rolling out, you're reading a chart about Google's model, not about anyone's work. This cuts both ways — an agency whose result arrived on the back of an update usually doesn't know it either.",
+        "**The start date was chosen after the fact.** The engagement began in January, the chart starts in April. Ask what happened in February and March. Occasionally the answer is \"audit and technical work, nothing published yet\", which is honest. Occasionally it's a dip the chart was cropped to avoid."
+      ],
+      "bullets": [
+        "**Minimum credible window for SEO is twelve months.** Anything shorter can't distinguish work from seasonality, and anything under six months usually can't distinguish work from an algorithm update.",
+        "**Ask what the chart looks like today**, not at the point it was captured. A result from 2023 that has since decayed to nothing is a different claim from one that held."
+      ]
+    },
+    {
+      "h2": "Omission four: everything else that was running that quarter",
+      "body": [
+        "No SEO engagement happens in a sealed room. The client was almost certainly doing other things during the same window, and several of them lift organic numbers.",
+        "The concurrent-spend omission is the most consequential because paid media and organic search interact directly. Heavy paid social creates brand awareness, brand awareness creates brand searches, and brand searches land in the organic report. Meanwhile paid search on the same terms lifts total SERP presence and can shift click behaviour on the organic listing.",
+        "None of this means the SEO did nothing. It means you can't tell from the chart, which is exactly the point — and it's why we'd rather sign a contract against [a frozen leads baseline](/journal/how-to-set-an-seo-baseline) than argue about a traffic line nine months later."
+      ],
+      "table": {
+        "caption": "Things that lift the organic line without being SEO.",
+        "head": [
+          "What was also happening",
+          "What it does to the chart",
+          "How to check"
+        ],
+        "rows": [
+          [
+            "Paid social or paid search at scale",
+            "Raises branded organic search volume, sometimes doubling it within weeks",
+            "Ask for monthly ad spend across the same window, then compare the two curves"
+          ],
+          [
+            "A funding announcement or press cycle",
+            "A sharp step change in brand queries that decays over 6–10 weeks",
+            "Search the client's name in Google News, filtered to the window"
+          ],
+          [
+            "A site migration or replatform",
+            "Either a recovery from a self-inflicted drop, or a genuine technical gain",
+            "Wayback Machine, comparing the site at the start and end dates"
+          ],
+          [
+            "A new product line or category launch",
+            "New pages ranking for queries that didn't previously apply to the business",
+            "Ask which URLs drove the growth — if they're all new SKUs, it's merchandising"
+          ],
+          [
+            "Recovery from a penalty or a previous agency's mess",
+            "Dramatic percentages, because the starting point was artificially suppressed",
+            "Ask what the traffic was 24 months before the engagement, not 3"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Omission five: the metric that doesn't pay salaries",
+      "body": [
+        "Most case studies report traffic, rankings and impressions. Very few report leads. Almost none report revenue. That ordering is not an accident — it's the order of how easy each one is to move and how hard each one is to dispute.",
+        "Traffic is the softest of the three. It's entirely possible to triple organic sessions in a year by ranking informational articles that no buyer reads — every query in the set is some version of *what is*, and none of them are *near me*, *pricing* or *vs*. The chart goes up and the sales team notices nothing.",
+        "Rankings are softer still, because an agency picks the keyword list. Forty first-place positions on queries nobody with a budget searches is a real achievement in the same way that winning an argument with yourself is."
+      ],
+      "bullets": [
+        "**Traffic** — easy to grow, easy to grow with the wrong queries. Useful only when segmented to non-brand commercial intent.",
+        "**Rankings** — meaningful only against a keyword list agreed before the work started, by someone who wasn't graded on it.",
+        "**Leads** — the first metric with a business consequence. Needs a CRM, a definition of *qualified*, and a source field that gets filled in.",
+        "**Revenue** — the honest one, and the hardest to attribute cleanly when the sale takes months and four touchpoints. Ask anyway; the way they handle the difficulty tells you a lot.",
+        "**Cost per lead from organic, against paid** — the comparison a founder actually cares about, and the one almost nobody publishes."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The escalation to use",
+        "body": "\"Show me the same chart, but leads instead of sessions.\" If leads weren't tracked, ask why not — a year of SEO without lead tracking means nobody could tell whether it worked, including the agency. [How to read an SEO report](/journal/how-to-read-an-seo-report) covers what should be in the monthly version of this."
+      }
+    },
+    {
+      "h2": "Omission six: where that client is now",
+      "body": [
+        "This is the shortest check and the most revealing. Look at the publish date on the case study, then find out whether the relationship is still running.",
+        "A case study from 2024 about a client who left in early 2025 tells a very specific story: the result was real, and it wasn't enough to keep the account. Maybe the client took it in-house, which is a legitimate ending. Maybe the growth stalled. Maybe the fee stopped making sense. All three are things you'd want to know before signing a similar contract.",
+        "Retention is the number agencies could publish and don't. Any agency can produce five good charts across three years. Only a good one can tell you what proportion of clients are still paying at month twelve, and the ones who track it are usually happy to say."
+      ],
+      "bullets": [
+        "**Check the client's current site** for the agency's footer credit, or check whether the agency still lists them.",
+        "**Ask directly: is this client still with you?** Then ask about one that isn't.",
+        "**Ask for month-twelve retention across the whole book.** A firm that says \"we don't measure that\" is telling you something either way."
+      ]
+    },
+    {
+      "h2": "The three questions that end the argument",
+      "body": [
+        "You don't need a forensic process. Three questions, sent in one email, resolve almost every case study you'll be shown. A good agency answers all three within a day, because they already have the screenshots."
+      ],
+      "numbered": [
+        "**\"What was the number on day one, in absolute terms, and what is it now?\"** Not a percentage. Two numbers with units. This kills the small-base illusion instantly.",
+        "**\"Is brand traffic excluded, and can I see the non-brand view for the same dates?\"** This separates work from awareness, and it's the single question the weakest case studies can't survive.",
+        "**\"Is that client still paying you, and can I speak to one who isn't?\"** The first half tests durability. The second half tests confidence, and the hesitation is the answer whichever way it goes."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "One thing no case study can promise",
+        "body": "Nobody controls Google's index, so no result in anyone's portfolio is a forecast for your site. Treat every case study as evidence of capability in a specific market at a specific time — never as a prediction, and never as a substitute for a written commitment about your own numbers. [What a realistic best case actually looks like](/journal/what-a-realistic-best-case-seo-outcome-looks-like) sets the ceiling honestly."
+      }
+    },
+    {
+      "h2": "What we show instead, and where it falls short",
+      "body": [
+        "We're subject to every incentive described above, so it would be strange to end this by producing a chart.",
+        "What we do instead is put the number in the contract before the work starts. On day one we freeze your trailing-90-day count of qualified leads from organic search — your CRM, your definition of qualified, both signed. If we haven't beaten that number in 90 days, we keep working free until we do. That's a commitment about *your* business, made before we know whether we'll manage it, rather than a chart about somebody else's business chosen after the fact.",
+        "It has an obvious cost and we'd rather state it than have you find it. Carrying a free-quarter liability means we can only take three clients a month, and it makes us decline work: brand-new domains with no baseline to beat, businesses with no CRM, and sites behind a six-week release train where we can't ship a fix inside the window. SEO runs from ₹75,000/mo, ₹40,000 for smaller sites, ex-GST, month-to-month after the first quarter.",
+        "It also isn't magic. A frozen baseline can't tell you what would have happened without us — no marketing measurement can, short of a holdout test almost nobody runs. What it does is remove the two things that make case studies useless: the number is yours, and it was written down before anyone knew the answer. If you're comparing us against a shortlist, [why every top-10 agency list is sold](/journal/why-best-seo-agency-lists-are-paid) is worth reading alongside this one."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are SEO case studies fake?",
+      "a": "Usually not fabricated — the numbers typically come from a real dashboard. They're selected, though. An agency with three years of history has a handful of quarters worth screenshotting and a hundred that aren't, and only the handful gets published. Read them as a best case from an interested party, not as an average."
+    },
+    {
+      "q": "What is the biggest red flag in an SEO case study?",
+      "a": "A percentage with no absolute numbers beside it. 412% growth means nothing until you know whether the site went from 340 sessions to 1,741 or from 12,000 to 61,440. The second is a serious result; the first is a few weeks of work on a small site."
+    },
+    {
+      "q": "Why does brand traffic make SEO results look better than they are?",
+      "a": "Because a search for your company name is recorded as organic search even though SEO didn't create it. Funding news, paid social, PR and word of mouth all generate brand searches. Filter the brand name out in Search Console and look at the same dates — if the curve flattens, the growth wasn't SEO."
+    },
+    {
+      "q": "How long should an SEO case study window be?",
+      "a": "Twelve months minimum, ideally year-on-year for the same months. Shorter windows can't separate the work from seasonality, and under six months you usually can't separate it from a Google core update. Check the dates against Google's published ranking release history before you accept the story."
+    },
+    {
+      "q": "Should I ask to speak to an agency's clients?",
+      "a": "Yes, and ask specifically for one who left. Current clients are selected and coached; a churned client will tell you what the agency was like when things went badly, which is the situation you're actually insuring against. An agency that won't hand over any lost client has told you something."
+    },
+    {
+      "q": "Can an agency guarantee it will repeat a case study result for me?",
+      "a": "No, and one that offers to is worth avoiding — nobody controls Google's index, and no two sites share a starting position, a dev team or a market. What can be guaranteed is movement against your own frozen baseline, with a defined remedy and a date. That's a commitment; a repeated chart isn't."
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "what-a-realistic-best-case-seo-outcome-looks-like"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-compare-seo-proposals"
+    },
+    {
+      "type": "glossary",
+      "slug": "organic-traffic"
+    },
+    {
+      "type": "compare",
+      "slug": "keyword-rankings-vs-organic-traffic"
+    },
+    {
+      "type": "journal",
+      "slug": "why-best-seo-agency-lists-are-paid"
+    },
+    {
+      "type": "journal",
+      "slug": "the-biggest-misconception-about-seo-agencies"
+    }
+  ]
+}

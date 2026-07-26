@@ -1,0 +1,254 @@
+{
+  "slug": "how-to-improve-seo",
+  "type": "answers",
+  "primaryKeyword": "how to improve seo",
+  "secondaryKeywords": [
+    "ways to improve seo",
+    "how to improve website seo",
+    "how to boost seo ranking",
+    "improve seo quickly"
+  ],
+  "cluster": "seo-howto",
+  "intent": "informational",
+  "h1": "How to improve SEO on a site that already ranks",
+  "metaTitle": "How to Improve SEO on a Site That Ranks",
+  "metaDescription": "How to improve seo when you already rank on page two: eleven moves that lift existing pages, ordered by effort, each with a realistic time to effect.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Improve SEO on a site that already ranks by working the pages sitting in positions 5 to 20. Pull that list from Search Console, rewrite titles for click-through, refresh pages that have decayed, add internal links from your strongest URLs, and prune the pages splitting your relevance. Expect movement in four to eight weeks.",
+  "takeaways": [
+    "A page at position 12 has already convinced Google it's relevant. It needs a nudge. A page at position 60 needs a different page.",
+    "Rankings and clicks are separate problems. **Half the improvement available to most sites is click-through, not position.**",
+    "Pruning works, but a bulk delete run from a script is the fastest way to lose traffic you already had.",
+    "Change one variable per cycle and keep five pages untouched as a control. Otherwise you're collecting anecdotes, not evidence."
+  ],
+  "sections": [
+    {
+      "h2": "The only list that matters: positions 5 to 20",
+      "body": [
+        "If your site ranks for nothing at all, this is the wrong page — start with [step-by-step SEO for a site you already have](/answers/how-to-do-seo-for-a-website-step-by-step). This one is for the other situation: you rank, just not high enough for anyone to click.",
+        "Positions 5 to 20 are where the return sits. Those pages have already persuaded Google they belong on the topic. They don't need to be invented, indexed or argued for. Getting one from 11 to 6 is a smaller job than getting a new page from nowhere to 20, and it pays sooner.",
+        "Here's the exact pull:"
+      ],
+      "bullets": [
+        "Search Console → Performance → Search results. Set the range to the last three months, not 28 days. You want a stable average, not last week's noise.",
+        "Turn on both Query and Page, then export to a sheet.",
+        "Keep rows where average position falls between 5 and 20, and impressions clear a floor that means something for your business — maybe 100 a month for niche B2B, 1,000 for consumer.",
+        "Sort by impressions descending. The top twenty rows are your next quarter of work. Everything below that is a distraction wearing a spreadsheet."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Don't trust the average blindly",
+        "body": "[Average position](/glossary/average-position) in Search Console averages every impression the page received, including odd long-tail variants and other countries. A page reading 11.4 might be sitting at 6 for the query you care about and 40 for junk. Filter to the single query before you act on the number."
+      }
+    },
+    {
+      "h2": "The eleven moves, ordered by effort",
+      "body": [
+        "Roughly in order of cost. The cheap ones at the top are not the weak ones — moves 1 to 3 take an afternoon and frequently produce the first visible change."
+      ],
+      "table": {
+        "caption": "Eleven improvements, ordered by effort. Timings are estimates and vary with how often Google recrawls the page and how contested the query is.",
+        "head": [
+          "Move",
+          "Effort",
+          "Typical time to effect"
+        ],
+        "rows": [
+          [
+            "1. Rewrite the title tag around the actual query",
+            "10 min per page",
+            "4–6 weeks"
+          ],
+          [
+            "2. Rewrite the meta description as an advert",
+            "10 min per page",
+            "2–4 weeks, clicks only"
+          ],
+          [
+            "3. Put a direct answer in the first 60 words",
+            "30 min per page",
+            "4–8 weeks"
+          ],
+          [
+            "4. Refresh: update facts, dates, prices, examples",
+            "1–2 hrs per page",
+            "4–8 weeks"
+          ],
+          [
+            "5. Expand to cover sub-questions the top five answer",
+            "3–5 hrs per page",
+            "6–12 weeks"
+          ],
+          [
+            "6. Full rewrite against the current SERP format",
+            "About a day per page",
+            "8–16 weeks"
+          ],
+          [
+            "7. Add 3–5 internal links from your strongest pages",
+            "30 min per page",
+            "2–6 weeks"
+          ],
+          [
+            "8. Fix vague anchor text on existing internal links",
+            "1–2 hrs sitewide",
+            "4–8 weeks"
+          ],
+          [
+            "9. Consolidate two pages competing for one query",
+            "2–4 hrs per pair",
+            "6–12 weeks"
+          ],
+          [
+            "10. Prune URLs with nothing to show for 12 months",
+            "About a day sitewide",
+            "8–16 weeks"
+          ],
+          [
+            "11. Annotate every change and measure it properly",
+            "15 min per change",
+            "Immediate, and permanent"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Moves 1–3: the cheapest lift on the site is click-through",
+      "body": [
+        "Ranking and getting clicked are different problems, and almost everyone only works on the first one. Sitting at position 6 with a click-through rate well below what that slot usually earns means you're leaving traffic on a ranking you've already paid for.",
+        "There's no universal CTR benchmark worth quoting — it swings wildly by query type, by how many ads sit above the results, and by whether an AI Overview is occupying the top of the page. So don't chase an industry number. Compare each page against its own past, and against your other pages at similar positions."
+      ],
+      "bullets": [
+        "**Lead the title with the query as people type it.** If they search 'seo cost in india', 'Pricing | Company' will never win the click, however good the page is.",
+        "**Add the differentiator in the remaining characters** — a number, a price, a year, a city, a constraint. 'Nine tests' beats 'a complete guide'. Specific beats comprehensive on a results page.",
+        "**Write the meta description as ad copy.** It's not a ranking factor. It is the only sentence of yours a searcher reads before deciding, and Google rewrites it when it's lazy.",
+        "**Answer the query inside the first 60 words**, in plain sentences, before any preamble. This is what a featured snippet and an AI answer both lift, and it's what makes the page look decisive to a skimmer."
+      ]
+    },
+    {
+      "h2": "Moves 4–6: refresh, rewrite, or leave it alone",
+      "body": [
+        "Pages rarely fall because Google punished them. They fall because someone published something better and yours stopped being updated. That's [content decay](/glossary/content-decay), and it's the most predictable traffic loss in SEO — every page you own is depreciating right now.",
+        "The decision between a refresh and a rewrite is not a matter of taste, and there's a two-minute test for it. Open an incognito window, search the query, and look hard at the top five results."
+      ],
+      "numbered": [
+        "**Refresh** when the top five are the same shape as your page — same format, same intent, same kind of answer — and yours is simply older. Update the numbers, the dates, the screenshots, the examples. Cut the paragraphs that have aged badly. This is an hour or two and it's the best hour on this list.",
+        "**Expand** when the top five all answer three sub-questions your page ignores. Add those sections properly, with your own view in them. Don't pad to a word count; word count isn't the mechanism, coverage is.",
+        "**Rewrite** when the SERP has changed shape underneath you — your page is an essay and the top five are all comparison tables, or yours is a product page and Google now shows guides. Adding 500 words to a page that answers the wrong question doesn't fix the question."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The republish trap",
+        "body": "Changing the date at the top and republishing without changing the content does nothing except tell your readers you're padding. Google looks at what changed in the body, not the timestamp. If the update is real, say what changed and when."
+      }
+    },
+    {
+      "h2": "Moves 7–8: internal links from the pages Google already trusts",
+      "body": [
+        "Your site already has authority. It's just distributed badly — usually piled onto the homepage and whatever post got shared once three years ago, then trickled evenly across the footer.",
+        "Find your strongest pages: the highest count of referring domains if you have a link tool, or the highest organic clicks in Search Console if you don't. Then link from those pages, inside body copy, to the striking-distance URLs from section one. Three to five links per target, from three to five different pages.",
+        "Then audit the anchors you already have. Forty internal links reading 'click here' pointing at your pricing page tell Google nothing about the page. Descriptive anchor text is free and it's read as a description of the destination. More on why this outperforms most outreach in [internal linking beats link building](/journal/internal-linking-beats-link-building)."
+      ],
+      "bullets": [
+        "Link from contextual body copy, not from a sidebar block that appears on 400 pages.",
+        "Vary the anchor text naturally across links. Identical exact-match anchors 30 times reads as a pattern, because it is one.",
+        "Check the link actually renders in the HTML. A link that only appears after a JavaScript click event may never be seen."
+      ]
+    },
+    {
+      "h2": "Moves 9–10: pruning, the one that feels wrong",
+      "body": [
+        "This is the move people refuse to make, because deleting pages feels like deleting work you paid for.",
+        "But every URL is a claim on Google's attention. Pages that have earned nothing in twelve months don't sit there neutrally. They blur what your site appears to be about, they consume crawl capacity on large sites, and now and then one of them outranks the page you actually wanted ranked.",
+        "Pruning is not a synonym for deleting. In order of preference:"
+      ],
+      "numbered": [
+        "**Consolidate.** Two pages chasing one query is the most common fixable problem on a mature blog. Merge the better material into the stronger URL, 301 the weaker one, update the internal links pointing at it.",
+        "**Improve.** If the topic genuinely matters to your business and the page is just bad, rewriting it is better than removing it.",
+        "**Noindex.** For pages that serve users but have no business in search — thank-you pages, thin tag archives, internal tools.",
+        "**Remove.** Only for pages that serve nobody: no impressions, no links, no conversions, no strategic reason. Redirect to the closest relevant page if one exists."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Never prune from a script",
+        "body": "Check every candidate URL for backlinks, existing conversions and impressions before it goes. The fastest way to lose traffic you already had is a bulk delete that removes the three old pages holding the only real links your domain has ever earned."
+      }
+    },
+    {
+      "h2": "Move 11: proving which change actually did it",
+      "body": [
+        "You're about to make ten kinds of change across twenty pages. Do them all in one week and you will learn precisely nothing about your own site, which is the expensive part — not the wasted month, the wasted lesson.",
+        "The discipline is dull and it's what separates people who improve their SEO from people who keep buying advice about it."
+      ],
+      "bullets": [
+        "**One change type per cycle.** Titles this month. Internal links next month. Refreshes the month after.",
+        "**Log it.** One row per URL: date, what changed, target query. A sheet is fine. GA4 annotations are fine. Memory is not.",
+        "**Compare 28 days after to 28 days before**, same page, same query filter, in Search Console. Not sitewide traffic — sitewide traffic moves for a dozen reasons that have nothing to do with you.",
+        "**Keep a control group.** Leave five striking-distance pages untouched. If they rise as much as the ones you edited, the market moved and you didn't.",
+        "**Ignore the first fortnight.** Google has to recrawl, and rankings wobble after any change. A drop on day three is noise, not a verdict."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The number worth arguing about",
+        "body": "Traffic is easy to move and easy to fake. Qualified leads from organic search are neither. It's the number we freeze on day one for every client and measure everything against — see [how the guarantee works](/seo). Whether or not you hire anyone, pick that number and write down what it is today."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How quickly can I improve my SEO?",
+      "a": "Title and snippet rewrites can shift click-through within 4–6 weeks of Google recrawling the page. Content refreshes and internal linking typically take 6–12 weeks to settle. Consolidation and pruning are the slowest, at 8–16 weeks. Nothing legitimate moves a competitive ranking in days."
+    },
+    {
+      "q": "What are striking-distance keywords?",
+      "a": "Queries where you already rank roughly between positions 5 and 20 — close enough that the page is credible to Google, far enough down that almost nobody clicks it. They're the cheapest improvements available because you're editing a page that already works rather than building one that doesn't exist."
+    },
+    {
+      "q": "Should I refresh an old post or write a new one?",
+      "a": "Refresh when the top results for the query look like your page and yours is simply out of date. Write new when the query deserves its own page and your existing one covers a different intent. Writing a second page for a query you already rank for usually creates cannibalisation instead of a second ranking."
+    },
+    {
+      "q": "Does deleting old pages really improve SEO?",
+      "a": "It can, when the pages are genuinely dead weight — no impressions, no links, no conversions over twelve months. The improvement comes from clearer topical focus and, on big sites, better crawl allocation. It goes badly when the prune is automated and takes down pages that were quietly holding your backlinks."
+    },
+    {
+      "q": "Do meta descriptions affect rankings?",
+      "a": "No. They've not been a ranking factor for many years, and Google frequently rewrites them from page content anyway. They do affect whether someone clicks your result, which affects traffic. Write them for the human reading the results page, not for the algorithm."
+    },
+    {
+      "q": "How many pages should I work on at once?",
+      "a": "Twenty is a sensible quarter for one person. Fewer if the changes are rewrites rather than title edits. The constraint isn't your capacity to edit — it's your capacity to measure. Change forty pages in a month and you'll have no idea which of your changes was worth repeating."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "content-decay"
+    },
+    {
+      "type": "glossary",
+      "slug": "click-through-rate"
+    },
+    {
+      "type": "answers",
+      "slug": "why-did-my-rankings-drop"
+    },
+    {
+      "type": "journal",
+      "slug": "when-to-update-old-content-instead-of-writing-new"
+    },
+    {
+      "type": "compare",
+      "slug": "keyword-rankings-vs-organic-traffic"
+    },
+    {
+      "type": "services",
+      "slug": "on-page-seo-services"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-do-seo"
+    }
+  ]
+}

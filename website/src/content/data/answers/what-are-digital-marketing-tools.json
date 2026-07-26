@@ -1,0 +1,185 @@
+{
+  "slug": "what-are-digital-marketing-tools",
+  "type": "answers",
+  "primaryKeyword": "what are the digital marketing tools",
+  "secondaryKeywords": [
+    "digital marketing tools list",
+    "best digital marketing tools",
+    "free digital marketing tools",
+    "tools used in digital marketing"
+  ],
+  "cluster": "digital-marketing-basics",
+  "intent": "informational",
+  "h1": "A digital marketing tool stack that fits a small budget",
+  "metaTitle": "What Are the Digital Marketing Tools You Need?",
+  "metaDescription": "The digital marketing tools a small Indian team genuinely needs: a working stack under ₹10,000 a month, and the expensive ones you can safely skip.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "The tools a two-person Indian marketing team actually needs cost under ₹10,000 a month. Search Console, GA4, Tag Manager, Looker Studio and PageSpeed Insights are free. A crawler, a rank tracker, a design tool, a scheduler and an email platform cost a few thousand between them. The expensive suites earn their fee only above a certain volume.",
+  "takeaways": [
+    "**Roughly 70% of the useful stack is free**, and it's Google's. Most paid tools repackage data you already have in Search Console.",
+    "The buying rule: a tool is worth it when the hours it saves cost more than the tool. Below that it's a subscription that makes you feel professional.",
+    "Skip the ₹10,000–₹30,000/month keyword suites until you publish four or more pages a month or run outreach.",
+    "SaaS pricing moves constantly. Treat every rupee figure here as an order of magnitude and check before you buy."
+  ],
+  "sections": [
+    {
+      "h2": "The stack, priced",
+      "body": [
+        "This is a working stack for a two-person team running a website, a search channel and one social channel. It covers measurement, content, publishing and email — everything you need to run a real programme and report on it honestly.",
+        "Nothing here is a compromise version of something better. The free Google tools are the primary source; the paid ones are mostly interfaces on top of them."
+      ],
+      "table": {
+        "caption": "A complete small-team digital marketing stack. Prices are approximate and vendors reprice often.",
+        "head": ["Job", "Tool", "Approx. monthly cost"],
+        "rows": [
+          ["Search performance data", "Google Search Console", "Free"],
+          ["Site and behaviour analytics", "Google Analytics 4", "Free"],
+          ["Event and tag management", "Google Tag Manager", "Free"],
+          ["Reporting dashboards", "Looker Studio", "Free"],
+          ["Second search engine's data", "Bing Webmaster Tools", "Free"],
+          ["Keyword ideas and volume", "Google Keyword Planner", "Free with an active Ads account"],
+          ["Page speed and Core Web Vitals", "PageSpeed Insights and the CrUX report", "Free"],
+          ["Technical site crawl", "Screaming Frog", "Free to 500 URLs; the licence works out around ₹1,500–₹2,000 a month annualised"],
+          ["Rank tracking", "A standalone tracker rather than a suite", "₹1,000–₹3,000"],
+          ["Design and creative", "Canva Pro", "Around ₹500 per user"],
+          ["Social scheduling", "A free or entry tier scheduler", "₹0–₹1,000"],
+          ["Email and automation", "Brevo, MailerLite or similar free tier", "₹0 until a few thousand contacts"],
+          ["Lead capture and chat", "WhatsApp Business app", "Free"],
+          ["CRM", "A free CRM tier, or a disciplined spreadsheet", "₹0"]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "What it totals",
+        "body": "Roughly ₹3,000–₹6,500 a month, and about ₹0 if you stay inside every free tier and skip the crawler licence for a while. The gap between this and a ₹40,000-a-month tool budget is almost entirely convenience, not capability."
+      }
+    },
+    {
+      "h2": "Measurement first, because everything else is unaudited without it",
+      "body": [
+        "If you install one thing this week, install tracking. Not because it's interesting, but because every rupee you spend before it is unmeasurable forever — you can't backfill data you never collected.",
+        "The four free Google tools do more than most people ask of them:"
+      ],
+      "bullets": [
+        "**Search Console** is the only source of truth for what people actually searched before they landed on you. Queries, impressions, clicks, average position, indexing status, and the [Core Web Vitals](/glossary/core-web-vitals) report. Paid keyword tools estimate what this tool knows.",
+        "**GA4** tells you what happened after the click. Set up conversion events properly on day one — a form submit, a WhatsApp click, a call tap — and ignore everything else in the interface until you have.",
+        "**Tag Manager** lets you add and change tracking without a developer. This is the single biggest unblocker for a small team, because dev backlogs are where marketing requests go to die.",
+        "**Looker Studio** joins Search Console, GA4 and Ads into one page so you stop exporting spreadsheets on the last Friday of every month."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The mistake that costs the most",
+        "body": "Tracking pageviews instead of leads. If your dashboard reports sessions and your business reports enquiries, you'll spend a year optimising a number that doesn't pay salaries. Define the conversion event before you buy a single ad."
+      }
+    },
+    {
+      "h2": "Content and design without a subscription pile",
+      "body": [
+        "The design tool market is crowded with products that solve a problem a two-person team doesn't have yet. What you actually need is: make a decent-looking image quickly, keep brand colours consistent, and don't wait on a designer for a social post.",
+        "Canva Pro handles that for a few hundred rupees a month per user, and the brand kit feature is the part that earns the upgrade over the free tier. Beyond that, most creative tooling is a want, not a need, until you're producing daily.",
+        "For writing and research, the honest answer is that your constraint is subject-matter knowledge, not software. The best content tool a founder has is a recording of a sales call — real objections, real vocabulary, real questions. No keyword tool surfaces phrasing that specific. If you want a view on how far AI writing gets you, [does AI-written content still rank](/journal/does-ai-written-content-still-rank) covers it."
+      ]
+    },
+    {
+      "h2": "Social scheduling and email",
+      "body": [
+        "Both categories have unusually generous free tiers, because both are trying to acquire you before you grow. Take the offer.",
+        "**Scheduling.** A free tier covering three to five channels with a modest monthly post limit is enough for most small brands. Paid tiers start at a few hundred rupees per channel and are worth it when you're posting daily across four platforms or need more than one person approving. One caveat that costs people reach: platform-native posting sometimes performs better than third-party scheduling, particularly for anything with video, so test rather than assume.",
+        "**Email.** Free tiers commonly cover a few hundred to a few thousand contacts or a daily send limit, which comfortably covers a brand's first year. Pick the platform on deliverability and automation depth, not on template galleries. The one thing worth doing properly from day one is domain authentication — SPF, DKIM and DMARC records — because inbox placement is the whole game and it's a one-hour job you only do once."
+      ]
+    },
+    {
+      "h2": "The expensive tools you can skip, and when they stop being optional",
+      "body": [
+        "Every tool on this list is genuinely good. That's not the question. The question is whether it earns its fee at your scale, and for most Indian small teams the answer is not yet.",
+        "Here's the threshold for each, stated plainly enough to argue with:"
+      ],
+      "table": {
+        "caption": "Expensive tool categories and the point at which they start paying for themselves.",
+        "head": ["Category", "Typical cost", "Buy it when"],
+        "rows": [
+          [
+            "Full SEO suite (Ahrefs, Semrush and similar)",
+            "₹9,000–₹30,000 / mo",
+            "You publish four or more pages a month, or you run link outreach. Below that, Search Console and Keyword Planner cover it."
+          ],
+          [
+            "Marketing automation platform",
+            "₹15,000–₹1,00,000+ / mo",
+            "Your list is past a few thousand contacts and you have more than two real segments. Before that, a free email tool does the same job."
+          ],
+          [
+            "Heatmaps and session recording",
+            "₹2,000–₹10,000 / mo",
+            "A single page gets over roughly 1,000 sessions a month. Below that you're watching a handful of sessions and calling it a pattern."
+          ],
+          [
+            "Social listening suite",
+            "₹10,000–₹75,000 / mo",
+            "Your brand is mentioned often enough that manual checking takes real hours each week. Most brands aren't there and won't admit it."
+          ],
+          [
+            "AI content platforms sold as SEO software",
+            "₹2,000–₹20,000 / mo",
+            "Rarely. They produce volume, and volume without expertise is the exact profile Google's helpful-content work suppresses."
+          ],
+          [
+            "Enterprise analytics",
+            "Quoted, and high",
+            "You have compliance requirements or data volumes GA4 can't handle. That's a genuinely large business, and you'd know."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "How to decide whether a tool is worth buying",
+      "body": [
+        "One test, applied honestly, prevents most wasted spend: **does the tool save more hours than it costs, at your hourly rate, this month?**",
+        "A ₹12,000-a-month keyword suite has to save around six to eight hours of an executive's time monthly just to break even. If you're publishing two articles a month, it doesn't come close. If you're publishing sixteen and doing outreach, it pays for itself in a week.",
+        "Five more rules that hold up:"
+      ],
+      "numbered": [
+        "**Buy tools for jobs you're already doing manually and hating.** Never buy one to start a discipline — the tool won't make you do the work, and the annual plan will haunt you.",
+        "**Take the free tier to its limit first.** Hitting a free-tier ceiling is real evidence of scale. Upgrading before you hit it is a guess.",
+        "**Prefer monthly over annual until year two.** The discount is 15–20%; the risk of paying for twelve months of a tool you abandon in six is 100%.",
+        "**Audit the stack every quarter.** Cancel anything nobody opened. In most small teams that's at least one subscription, and often the most expensive one.",
+        "**Never buy a tool to replace a decision.** No dashboard will tell you which channel to run. That's covered in [how to do digital marketing on a small budget](/answers/how-to-do-digital-marketing)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What are the essential digital marketing tools for a beginner?",
+      "a": "Google Search Console, GA4, Tag Manager and Looker Studio — all free — plus a design tool, a scheduler and an email platform on free tiers. That's a complete working stack for under ₹5,000 a month, and often for nothing at all in the first year."
+    },
+    {
+      "q": "Do I need Ahrefs or Semrush?",
+      "a": "Not until you publish around four or more pages a month or run link outreach. Below that, Search Console gives you real query data rather than estimates, and Keyword Planner covers volume. Above it, a suite saves enough hours to justify ₹9,000–₹30,000 a month."
+    },
+    {
+      "q": "What free digital marketing tools are actually good?",
+      "a": "Search Console, GA4, Tag Manager, Looker Studio, PageSpeed Insights, Bing Webmaster Tools, Keyword Planner, Screaming Frog up to 500 URLs, Canva's free tier and the free tiers of most email platforms. That covers roughly 70% of what a small team needs."
+    },
+    {
+      "q": "How much should a small business spend on marketing tools?",
+      "a": "Under ₹10,000 a month, and often under ₹5,000. If tooling is more than about 10% of your total marketing budget, you're funding software instead of work. The tools are cheap; the person operating them is where the money should go."
+    },
+    {
+      "q": "Are AI marketing tools worth paying for?",
+      "a": "For drafting, research summaries and creative variations, they save real hours. For publishing volume unedited, they produce exactly the kind of content Google's helpful-content work targets. Judge them as time-savers for a competent person, not as a replacement for one."
+    },
+    {
+      "q": "Which tool shows my Google rankings?",
+      "a": "Search Console shows average position for queries you already rank for, free and accurate to your own data. A standalone rank tracker at ₹1,000–₹3,000 a month adds daily granularity, competitor positions and SERP-feature flags, including whether an AI Overview appeared."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "what-are-seo-tools" },
+    { "type": "compare", "slug": "ga4-vs-search-console" },
+    { "type": "glossary", "slug": "google-search-console" },
+    { "type": "answers", "slug": "how-to-do-digital-marketing" },
+    { "type": "compare", "slug": "ahrefs-vs-semrush" },
+    { "type": "services", "slug": "analytics-setup-services" }
+  ]
+}

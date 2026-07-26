@@ -1,0 +1,188 @@
+{
+  "slug": "our-favourite-seo-play-and-why-it-works",
+  "type": "journal",
+  "primaryKeyword": "most effective seo strategy",
+  "secondaryKeywords": [
+    "best seo tactic that works",
+    "seo strategy that actually works",
+    "seo playbook",
+    "high roi seo tactics",
+    "seo quick wins that last"
+  ],
+  "cluster": "seo-strategy",
+  "intent": "informational",
+  "h1": "Our Favourite SEO Play: Take the Page That's Already Close",
+  "metaTitle": "The Most Effective SEO Strategy We Run",
+  "metaDescription": "The most effective SEO strategy we run isn't new content. It's rescuing pages ranking 8 to 20 that already earn impressions. Here's the exact sequence.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "The most effective SEO strategy we run is a striking-distance rescue: find the pages ranking 8–20 that already earn impressions, then fix intent match, on-page copy and internal links on those pages before writing anything new. It moves inside 4–8 weeks because the page is already indexed and already trusted.",
+  "takeaways": [
+    "Pages at positions 8–20 have already been judged relevant by Google. You're arguing about placement, not admission — a far shorter argument.",
+    "The list is finite. On a 200-page site it's usually 15–40 URLs, and that's the point: it ends, which stops it becoming a subscription.",
+    "One change window per page, then 21–28 days of leaving it alone. Editing in week two makes week four unreadable.",
+    "If a page has under about 50 impressions in 90 days, there's nothing to rescue. No impressions means no demand or no relevance, and neither is an on-page problem."
+  ],
+  "sections": [
+    {
+      "h2": "The play, in one paragraph",
+      "body": [
+        "Pull every page on your site currently sitting between positions 8 and 20 with real impressions behind it. Take the top twenty by impressions. Fix each one against the queries it already earns — not the keyword somebody wrote in a brief eighteen months ago. Wire internal links into it. Ship once. Measure four weeks later.",
+        "That's it. No new content, no outreach campaign, no tool licence. We run it in the first fortnight of almost every engagement, and it produces more measurable movement in the first quarter than anything else we do. It's also the least impressive thing to put in a proposal, which is exactly why most agencies open with a content calendar instead."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Why the 8–20 band specifically",
+        "body": "Above 8 you're usually arguing about the title tag and the snippet. Below 20 the page generally isn't in the conversation at all and needs rewriting or merging. The 8–20 band is where Google has already decided your page belongs on the topic and is only unsure where to put it. That's a much cheaper argument to win."
+      }
+    },
+    {
+      "h2": "Why we start here instead of writing anything new",
+      "body": [
+        "A brand-new page has to clear four gates before it earns a rupee: get discovered, get crawled, get indexed, then accumulate enough query data for Google to work out where it belongs. On a competitive query that last gate is measured in months, not weeks, and there's no button that skips it.",
+        "A page already at position 12 has cleared all four. It's indexed, it has internal links pointing at it, it has a history of impressions, and often it has picked up a link or two. What you're changing is a single variable — how well the page matches the query — and relevance gets re-evaluated on the next crawl rather than on a slow trust curve.",
+        "Then there's the shape of the click curve. Click share on a results page is heavily top-loaded and most people never load page two. Dragging a page from 12 to 6 doesn't add a few percent of traffic — it usually multiplies it, because you've crossed from a page nobody scrolls to onto the page everybody sees. Crossing that boundary is the single biggest step change available without new authority.",
+        "We're not arguing against publishing. We're arguing about order. Rescue first because it pays fastest, publish second because it refills the rescue list next quarter, chase links third because they take longest to compound. Reversing that order is how agencies end up with twelve months of blog posts and one flat line."
+      ]
+    },
+    {
+      "h2": "Step one: pulling the list out of Search Console",
+      "body": [
+        "You don't need a paid tool for this, though one makes it faster. Open Search Console, go to Performance → Search results, set the date range to the last three months, and switch on both Average position and Impressions.",
+        "Then do this in order: filter position to greater than 7.9 and less than 20.1, export to a sheet, and group by page. Sort by impressions descending. Cut anything under about 50 impressions in the period. What's left, usually 15 to 40 URLs on a mid-size site, is your quarter's work.",
+        "Read the [average position](/glossary/average-position) number with suspicion, though. It's an average across the whole period and across every query the page touches, including long-tail noise you'll never care about. A page showing 'average position 14' might be sitting at 6 for its main query and 40 for forty junk variants. Always click into the page and look at its individual queries before you decide what's wrong with it."
+      ],
+      "table": {
+        "caption": "What's usually wrong, by position band — and how fast the fix shows.",
+        "head": ["Where it sits", "What's usually wrong", "The fix that usually works", "How fast it shows"],
+        "rows": [
+          [
+            "4–7",
+            "Nothing structural. The title and snippet are losing the click.",
+            "Rewrite the title tag and description around the query it actually earns impressions on.",
+            "1–3 weeks after recrawl"
+          ],
+          [
+            "8–10",
+            "The page answers a near-neighbour of the query rather than the query.",
+            "Add the missing section, and move the direct answer into the first screen.",
+            "2–6 weeks"
+          ],
+          [
+            "11–20",
+            "Format mismatch, or no internal links pointing at it.",
+            "Match the format the SERP rewards, then wire in 3–8 descriptive internal links.",
+            "3–8 weeks"
+          ],
+          [
+            "21–50",
+            "Not in the conversation. Usually thin, duplicated, or competing with your own page.",
+            "Merge it into the stronger page and redirect, or rewrite from a blank file.",
+            "6 weeks, or never"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The five-step rescue sequence",
+      "body": [
+        "Same five steps every time, in this order. The order isn't decoration — step two regularly kills a page before anyone wastes a day rewriting it."
+      ],
+      "numbered": [
+        "**Read the queries the page already earns, not the one you targeted.** Filter Search Console to that single URL and look at its query list over three months. A surprising share of rescuable pages are ranking for a question nobody set out to answer. Optimise for the demand that turned up, not the demand somebody forecast.",
+        "**Check the SERP is even the right shape.** Open the target query fresh, from the right country. If the top ten are comparison tables and price lists and your page is a 2,000-word essay, no amount of on-page work closes that gap. Change the format or take the page off the list. This is the step people skip, and it's the one that saves the most hours.",
+        "**Rewrite top-down against the query set.** Title tag carrying the query, an H1 that matches it, the direct answer inside the first hundred words, then one clean section per sub-question the query implies. Cut every paragraph that exists to hit a word count. Pages get rescued by becoming shorter at least as often as by becoming longer.",
+        "**Wire in internal links.** Three to eight contextual links from your strongest, genuinely related pages, with anchor text that describes what's on the other end. Then check the rescued page links out to its own cluster too. This costs an hour and is the most underused move in the industry — we made the full case in [internal linking beats link building](/journal/internal-linking-beats-link-building).",
+        "**Ship once, request indexing, then leave it alone for 21–28 days.** Log the date, the starting average position, and the starting impressions in a sheet before you push. One change window per page. Anything you edit in week two makes week four impossible to read."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The one thing that quietly ruins this play",
+        "body": "Two of your own pages competing for the same query. Rescuing one while the other keeps splitting the signal produces exactly nothing, twice. Check for [keyword cannibalization](/glossary/keyword-cannibalization) before you start — if two URLs both show impressions for the same query, the correct move is to merge them and redirect, not to optimise either."
+      }
+    },
+    {
+      "h2": "Why this fits inside a 90-day measurement window",
+      "body": [
+        "We sell against a frozen baseline: your trailing-90-day count of qualified leads from organic search, recorded on day one. Miss it in 90 days and we keep working free until we beat it. That commitment changes what work is rational in the first quarter, and it's worth being blunt about the mechanics.",
+        "New content, on a competitive keyword set, does not reliably land inside 90 days. It's the right investment and it's what carries months six to twenty-four, but planning your first quarter around it is planning to be told 'it's still early' in the month-three review. Striking-distance rescue is the only class of work we've found that produces defensible movement inside the window on most sites, because the lag is recrawl plus re-evaluation rather than discovery plus trust.",
+        "So the first ninety days are weighted towards rescue and technical fixes, and content volume ramps behind it. Not because rescue is better work — because it's the work whose payoff arrives while the clock is still running. Anyone selling you a 90-day guarantee on the back of a content calendar hasn't done the arithmetic on their own promise."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "What to expect, honestly",
+        "body": "On a site with clean technical foundations, expect roughly half a rescue list to move a meaningful number of positions within 4–8 weeks, a quarter to move slightly, and a quarter to do nothing. We give a range rather than a figure because the outcome depends on crawl frequency, competition and link profile — three things that differ enormously between sites and none of which we control."
+      }
+    },
+    {
+      "h2": "When the play does nothing, and how to tell early",
+      "body": [
+        "This is a specific tool for a specific problem. Here's where it fails, so you don't spend a quarter finding out the expensive way."
+      ],
+      "bullets": [
+        "**No impressions.** Under about 50 in 90 days means there's nothing to rescue. Either nobody searches for it or Google doesn't consider the page relevant, and both are demand or content problems, not on-page ones.",
+        "**The SERP wants a different species of page.** A blog post cannot rescue its way onto a results page made entirely of product listings, and a product page can't out-rank a page of definitions. Format is a gate, not a tie-breaker.",
+        "**Authority is the ceiling.** On money queries in finance, health and insurance, the top ten is often a wall of national brands. A four-month-old domain sitting at 14 isn't there because of a weak H1. Nothing in this play produces the authority that gap requires.",
+        "**Something site-wide is capping you.** A stray `noindex`, a canonical pointing at a different URL, main content that only renders in JavaScript, or a template that takes eight seconds on 4G. Fix that first or the rescue is measuring a blocked road.",
+        "**The page is already dead content.** If the subject genuinely doesn't exist any more — a discontinued product, a repealed rule — you're not rescuing, you're embalming. Redirect it into something current. That decision has its own rules in [when to update old content instead of writing new](/journal/when-to-update-old-content-instead-of-writing-new)."
+      ]
+    },
+    {
+      "h2": "How to stop it becoming endless tinkering",
+      "body": [
+        "The failure mode of this play isn't that it doesn't work. It's that it works, someone gets excited, and six months later a marketer is editing the same title tag every Tuesday and nobody can tell what caused what.",
+        "Four rules keep it honest, and we hold ourselves to them because we're the ones who'd otherwise be billing for the tinkering."
+      ],
+      "numbered": [
+        "**One change window per page per quarter.** Everything you intend to change ships in a single push, on a logged date. No trickle edits.",
+        "**Write the hypothesis before you touch anything.** URL, target query, current average position, current impressions, what you're changing, review date. Six fields in a sheet. Without them you're not testing, you're redecorating.",
+        "**Two attempts, then retire.** If two rescue cycles across six months produce nothing on a page, the constraint isn't on that page. Merge it, redirect it, or leave it and move on. Stubbornness is not a strategy.",
+        "**Watch the median, not the winners.** If the median page on your list has moved less than two positions after two cycles, the constraint is authority or links, not copy. Stop editing and go earn links. Continuing to edit at that point is how a team spends a year busy and flat."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Rankings wobble on their own",
+        "body": "Positions move a couple of places week to week with no input from anybody — personalisation, location, index churn, and Google's own constant testing. Reacting to a two-position drop four days after a change is the fastest route to undoing work that was about to pay. Twenty-one days minimum before you form an opinion."
+      }
+    },
+    {
+      "h2": "What happens when the list runs out",
+      "body": [
+        "It runs out. That's the honest end of this article and it's the part that separates a play from a product.",
+        "On a 200-page site the striking-distance list is usually 15 to 40 URLs. Work through them properly and by month four or five you've harvested it. There's no version where you rescue your way to a business, and any agency still billing you ₹75,000 a month in month nine for 'optimisation' of the same pages is selling you activity.",
+        "So the list refills from somewhere else. New content published this quarter becomes next quarter's striking-distance list — that's the actual argument for a publishing cadence, far more than any theory about topical coverage. Links raise the ceiling on every page at once, which is what turns a rescue that stalls at 9 into one that lands at 4. And technical work keeps the crawl fast enough that any of it registers.",
+        "Rescue is the opener, not the programme. We lead with it because it's the fastest honest way to show a founder that something is happening, and because a first quarter that produces visible movement buys the patience the slower work needs. Sequencing beats novelty in this discipline more or less always."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What counts as a striking-distance keyword?",
+      "a": "Any query where one of your pages already sits between positions 8 and 20 with real impressions behind it — we use roughly 50 impressions over 90 days as the floor. Below that there isn't enough demand or relevance to rescue, and you're optimising a page nobody is looking at."
+    },
+    {
+      "q": "How long before a rescued page moves?",
+      "a": "Usually 4–8 weeks, sometimes 2 on a site Google crawls daily. The lag is recrawl plus re-evaluation, so crawl frequency drives most of the variance. Give it a full 21–28 days before forming an opinion, because positions wobble by a couple of places on their own."
+    },
+    {
+      "q": "Is this better than publishing new content?",
+      "a": "It's faster, not better. Rescue harvests what already exists and the list is finite; publishing refills that list and carries months six to twenty-four. Run rescue first because it pays inside a quarter, then publish behind it. Reversing the order is why so many programmes look flat at month six."
+    },
+    {
+      "q": "Do I need a paid tool to do this?",
+      "a": "No. Search Console gives you position, impressions and the query list per URL, which is everything the play needs. A paid rank tracker makes weekly monitoring easier and a crawler catches the technical blockers faster, but the core work runs on a free tool and a spreadsheet."
+    },
+    {
+      "q": "Why not just rewrite the whole page every time?",
+      "a": "Because you'd throw away the thing that made it rescuable. The page has history, internal links and a query footprint. A blank-file rewrite resets the relevance signal and often costs you positions for a few weeks. Rewrite from scratch only when the SERP wants a different type of page entirely."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "average-position" },
+    { "type": "glossary", "slug": "impressions" },
+    { "type": "journal", "slug": "when-to-update-old-content-instead-of-writing-new" },
+    { "type": "services", "slug": "on-page-seo-services" },
+    { "type": "answers", "slug": "why-did-my-rankings-drop" },
+    { "type": "compare", "slug": "keyword-rankings-vs-organic-traffic" }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "slug": "onpage-vs-offpage-seo",
+  "type": "compare",
+  "primaryKeyword": "on page vs off page seo",
+  "secondaryKeywords": [
+    "difference between on page and off page seo",
+    "on page seo checklist",
+    "off page seo techniques",
+    "which is more important on page or off page",
+    "technical on page off page seo"
+  ],
+  "cluster": "seo-disciplines",
+  "intent": "informational",
+  "h1": "On-page vs off-page SEO: what the first 60 days should look like",
+  "metaTitle": "On-Page vs Off-Page SEO: The First 60 Days",
+  "metaDescription": "On page vs off page SEO is a sequencing question, not a ranking of importance. Spend the first 60 days on-page, then earn links. Here's the order.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "On-page SEO is everything you control on your own site — structure, content, internal links, speed. Off-page is what other sites say about you, mostly links. Neither wins the argument; sequence does. Spend the first 60 days on-page, because a link pointing at a badly structured site spends most of its value on nothing.",
+  "takeaways": [
+    "\"Which matters more\" is the wrong question. The right one is **which comes first**, and the answer is on-page, almost always.",
+    "An expensive link landing on a page that isn't internally linked to anything passes its value into a dead end.",
+    "A five-check readiness test tells you whether the site can hold links at all. Run it before you spend on outreach.",
+    "Once the technical base is clean and you're ranking 4–8, the split flips hard toward off-page — usually in year two, not month two."
+  ],
+  "sections": [
+    {
+      "h2": "The dividing line: what you control, what you earn",
+      "body": [
+        "On-page is anything you can change by logging into your own CMS. Off-page requires someone else to act. That's the whole distinction, and it beats the textbook version because it maps onto how long each thing takes.",
+        "Technical SEO gets treated as a third category and isn't really one — it's on-page work done by developers instead of writers. We split it out anyway on [technical SEO vs content SEO](/compare/technical-seo-vs-content-seo), because the two need different people."
+      ],
+      "table": {
+        "caption": "Where each common SEO job sits, and how quickly it responds.",
+        "head": ["The job", "Side", "Who has to act", "Time to effect"],
+        "rows": [
+          ["Title tags, H1s, intent match", "On-page", "You", "Days to weeks"],
+          ["Internal linking and site structure", "On-page", "You", "2–6 weeks"],
+          ["Content depth and coverage", "On-page", "You", "4–12 weeks"],
+          ["Indexability: robots, canonicals, noindex, redirects", "On-page (technical)", "Your developers", "Days to weeks"],
+          ["Core Web Vitals and page speed", "On-page (technical)", "Your developers", "Weeks"],
+          ["Schema markup", "On-page (technical)", "Your developers", "Weeks"],
+          ["Backlinks from other sites", "Off-page", "Someone else's editor", "3–12 months"],
+          ["Digital PR and unlinked brand mentions", "Off-page", "Journalists", "Months"],
+          ["Reviews and Google Business Profile signals", "Off-page", "Your customers", "Ongoing"],
+          ["Being cited by AI assistants", "Both", "You, then everyone else", "Months"]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Why the timings matter more than the categories",
+        "body": "Look at the last column. On-page work responds in weeks and you control the schedule. Off-page work responds in months and you control almost none of it. That asymmetry — not importance — is why on-page goes first."
+      }
+    },
+    {
+      "h2": "Days 1–60: the on-page work order",
+      "body": [
+        "The sequence isn't arbitrary — each step is wasted if the one before it hasn't happened. Writing brilliant content on a page Google won't index is a hobby, not SEO. Sixty days is realistic for a few hundred URLs with developers who ship weekly. Add a month if your dev team is booked out, which they always are."
+      ],
+      "numbered": [
+        "**Days 1–7 — crawl and count.** Run a full crawl. Compare pages published against pages indexed in Search Console. If you've published 180 and 62 are indexed, stop reading and fix that; nothing else you do this quarter matters as much.",
+        "**Days 8–14 — indexability.** Robots.txt rules, stray noindex tags, canonicals pointing at the wrong URL, redirect chains, parameter duplicates. This is where sites quietly lose half their potential and nobody notices, because nothing looks broken.",
+        "**Days 15–21 — cannibalisation.** Find every case where three pages chase the same intent. Pick the strongest, merge the rest, redirect. Routinely the fastest visible gain of the whole sixty days. See [keyword cannibalization](/glossary/keyword-cannibalization) for how to spot it in Search Console.",
+        "**Days 22–30 — intent match on money pages.** Check titles, H1s, opening paragraphs and page format against what actually ranks. If the top ten are comparison pages and yours is a brochure, no amount of link building fixes the mismatch.",
+        "**Days 31–40 — internal linking.** Wire clusters to their pillar and back, kill orphan pages, and get commercial pages within three clicks of the homepage with descriptive anchor text from your best content.",
+        "**Days 41–50 — the impressions-without-clicks list.** Every query with decent impressions and poor click-through is a page Google already trusts enough to show. Rewriting the title and first 100 words is the cheapest traffic in SEO.",
+        "**Days 51–60 — Core Web Vitals and schema, then re-crawl.** Fix the worst template, not the worst page. Then crawl again and diff against day one, so you can prove what changed rather than describe it."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The step everyone skips",
+        "body": "Day 1–7. Founders find the index count boring because it isn't a strategy. It is also the only number on this list that can silently cap everything else at zero, and it takes twenty minutes to check."
+      }
+    },
+    {
+      "h2": "The readiness test: five checks before you spend on links",
+      "body": [
+        "Link building is the most expensive line in most SEO budgets and the easiest to waste. Before you commission a single placement, the site should pass all five of these — an afternoon's work. Fail any one and spend that month's link budget on on-page instead; the links will be worth more in sixty days."
+      ],
+      "numbered": [
+        "**Every page you'd want a link to is indexed.** Check the exact URL in Search Console, not the site total. A link to a non-indexed page is a donation.",
+        "**One URL per intent.** If Google can't decide which of your pages to rank, an external link just makes it indecisive with more force.",
+        "**Commercial pages sit three clicks or fewer from the homepage** and are linked from your strongest content. If they're buried, external authority never reaches them.",
+        "**Pages with impressions have a click-through rate you'd accept.** If Google is already showing you and nobody clicks, the problem is your title's promise, not your authority.",
+        "**Core Web Vitals are green on your main templates** — LCP at or under 2.5 seconds, INP at or under 200 milliseconds, CLS at or under 0.1, on real mobile users. Not a lab score."
+      ]
+    },
+    {
+      "h2": "How bad internal linking wastes an expensive backlink",
+      "body": [
+        "Here's the mechanic that makes the sequencing argument concrete rather than philosophical. You spend real money — a decent editorial placement in India runs into tens of thousands of rupees — and earn a link from a well-regarded publication. It points at a blog post adjacent to what you sell. Good link, good page, everyone's pleased.",
+        "Now follow the authority. It lands on the blog post and flows onward through whatever links that post contains. If the post links to three other blog posts and nothing commercial, the value circulates inside your blog and never reaches the page that makes money. If the post is an orphan, it parks there and stops.",
+        "The fix costs nothing. Before the link lands, make the target page link to your commercial page with descriptive anchor text, and wire the pillar to the target and back. Same link, three jobs, paid for once. That's why on most sites [internal linking beats link building](/journal/internal-linking-beats-link-building) as the first investment — and why [link building](/services/link-building-services) works far better on a site that's already wired properly."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "A quick diagnostic",
+        "body": "Crawl your site and list every page with zero incoming internal links. On most sites that have been publishing for three years, the list is long and includes at least one page that used to rank. Every one of those is authority you already paid for, sitting in a room with no doors."
+      }
+    },
+    {
+      "h2": "What changes once the site already ranks",
+      "body": [
+        "The 60-days-on-page rule is advice for a specific situation: a site that has never had a proper technical pass, or has had one and never acted on it. That covers most sites and most first engagements.",
+        "It stops being true at an identifiable point. Once the technical base is clean, your content covers the topic properly, and you're sitting at positions four to eight for queries you should own, on-page runs out of road. What separates you from the three sites above is that theirs are cited more often, by more credible places.",
+        "Then the split inverts — roughly 60–70% off-page, with on-page becoming maintenance: refreshing decaying pages, extending into adjacent queries, fixing what new releases break. That usually lands in the second year of serious work, not the second month."
+      ],
+      "bullets": [
+        "**New site, no technical pass** — 80% on-page. Nearly always right for the first two quarters.",
+        "**Established site, clean technical base, ranking 4–8** — flip to 60–70% off-page. You've exhausted what you control.",
+        "**Local business** — off-page matters much earlier, but it's reviews, citations and Google Business Profile rather than editorial links.",
+        "**Brand-new domain** — a handful of early links, for discovery rather than authority.",
+        "**Post-migration recovery** — 100% on-page until the index settles. Buying links mid-migration is spending into a system that hasn't finished changing."
+      ]
+    },
+    {
+      "h2": "What day 61 onward looks like",
+      "body": [
+        "The mistake after a good sixty days is treating on-page as finished. It isn't finished; it's just no longer the constraint. From day 61 the cadence is on-page maintenance in the background, content on a schedule you can sustain for a year, and link earning in parallel because it takes longest to compound.",
+        "Agree the number this gets judged on before any of it. Not rankings, not sessions — qualified leads from organic search, frozen at their trailing-90-day figure on day one. It's what our own guarantee is measured against, and worth writing down even if you're doing the work yourself: it's the only way to know in month five whether the sixty days paid."
+      ]
+    }
+  ],
+  "versus": {
+    "a": "On-page SEO",
+    "b": "Off-page SEO",
+    "verdict": "For a site that has never had a proper technical pass — which is most sites — on-page wins the first 60 days outright; off-page only starts beating it once every target page is indexed, unique in intent, and within three clicks of the homepage."
+  },
+  "faqs": [
+    {
+      "q": "Which is more important, on-page or off-page SEO?",
+      "a": "It's a sequencing question, not a ranking. On-page work responds in weeks and you control it entirely; off-page takes months and depends on other people. Do on-page first because links pointing at a badly structured site lose most of their value before they reach anything that makes money."
+    },
+    {
+      "q": "Is technical SEO on-page or off-page?",
+      "a": "On-page. Anything you can change by logging into your own site or shipping code is on-page — indexability, speed, schema, canonical tags. It gets treated as a third category mainly because it needs developers rather than writers, which is a staffing distinction, not a search one."
+    },
+    {
+      "q": "How long should on-page SEO take before starting link building?",
+      "a": "About 60 days for a site of a few hundred URLs with developers who ship weekly; add a month if dev time is scarce. The real gate isn't the calendar, it's the readiness test — indexed target pages, one URL per intent, commercial pages within three clicks, acceptable CTR, and green Core Web Vitals."
+    },
+    {
+      "q": "Can you rank with good on-page SEO and no backlinks?",
+      "a": "In low-competition and local markets, frequently yes. In competitive national markets, rarely — at some point every remaining gap between you and position one is other people's citations. The useful question is whether you've exhausted what you control, and most sites haven't come close."
+    },
+    {
+      "q": "What are the most important on-page factors?",
+      "a": "In the order they actually pay off: being indexed at all, having one page per intent, matching the format the results page rewards, internal linking that reaches your commercial pages, and titles that earn the click. Speed and schema matter, but they rarely rank ahead of those five."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "on-page-seo-meaning" },
+    { "type": "glossary", "slug": "off-page-seo-meaning" },
+    { "type": "compare", "slug": "technical-seo-vs-content-seo" },
+    { "type": "journal", "slug": "internal-linking-beats-link-building" },
+    { "type": "services", "slug": "link-building-services" },
+    { "type": "cost", "slug": "link-building-cost" }
+  ]
+}

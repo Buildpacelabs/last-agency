@@ -1,0 +1,177 @@
+{
+  "slug": "what-is-an-ai-seo-agency",
+  "type": "answers",
+  "primaryKeyword": "what is an ai seo agency",
+  "secondaryKeywords": [
+    "ai seo agency meaning",
+    "what does an ai seo agency do",
+    "ai powered seo agency",
+    "ai seo services"
+  ],
+  "cluster": "agency-mechanics",
+  "intent": "commercial",
+  "h1": "What an AI SEO agency is, and the two very different things it can mean",
+  "metaTitle": "What Is an AI SEO Agency? Two Meanings",
+  "metaDescription": "An AI SEO agency can mean two different businesses: one automates delivery with AI, one gets you cited inside AI answers. Ask which one you're buying.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "An AI SEO agency is one of two different businesses wearing the same label. The first uses AI to produce ordinary SEO work faster — audits, clustering, briefs, drafts. The second tries to get your brand cited inside AI answers like ChatGPT and Google's AI Overviews. Ask which one you're buying before you sign.",
+  "takeaways": [
+    "Two incompatible business models, one phrase. Model A sells cheaper delivery. Model B sells a new kind of visibility. Most pitch decks blur them on purpose.",
+    "AI genuinely compresses research and first drafts — the most billable block of hours in a traditional retainer. That should show up on your invoice as a **smaller** number.",
+    "Nothing an AI produces should reach a live site without a person approving it. The failure modes are quiet, sitewide and expensive.",
+    "If an agency is certain about AI-citation measurement, be careful. The tracking is young and the answers change between sessions."
+  ],
+  "sections": [
+    {
+      "h2": "Two businesses, one label",
+      "body": [
+        "The phrase \"AI SEO agency\" got attached to two things at roughly the same time, and they have almost nothing in common except the letters.",
+        "One is a production story: we do the same SEO everyone does, but faster and cheaper because machines handle the grunt work. The other is a visibility story: search behaviour is moving into assistants, and we'll get you mentioned there. Both can be legitimate. Buying one while expecting the other is where people lose a year."
+      ],
+      "table": {
+        "caption": "The two businesses that both call themselves AI SEO agencies.",
+        "head": ["Question", "Model A — AI-assisted delivery", "Model B — AI-answer visibility"],
+        "rows": [
+          [
+            "What they sell",
+            "Ordinary SEO, produced faster with AI tooling",
+            "Being mentioned and cited inside AI-generated answers"
+          ],
+          [
+            "What changes on your site",
+            "The same things as any retainer: pages, technical fixes, links",
+            "Structure, extractable answers, entity consistency, third-party mentions"
+          ],
+          [
+            "How they prove it",
+            "Rankings, organic traffic, leads — the normal scoreboard",
+            "Citation and mention tracking, which is genuinely immature"
+          ],
+          [
+            "Who it suits",
+            "Anyone overpaying for slow delivery",
+            "Brands whose buyers already research through assistants"
+          ],
+          [
+            "The honest caveat",
+            "AI writes the first draft, never the last one",
+            "You can't be cited if you aren't indexed, so the SEO comes first anyway"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Model A: what AI genuinely speeds up",
+      "body": [
+        "This part is real, and pretending otherwise makes an agency look like it's protecting its billable hours. There's a specific list of tasks where machines are now faster than a competent human, and it's mostly the tasks nobody enjoyed."
+      ],
+      "bullets": [
+        "**Crawl triage.** Turning 4,000 raw crawl errors into fifteen grouped problems with a probable root cause.",
+        "**Keyword clustering.** Grouping tens of thousands of queries by intent, at a scale no analyst matches by hand.",
+        "**Cannibalisation detection.** Cross-referencing a keyword-to-URL map against live Search Console data to find pages competing with each other.",
+        "**Brief generation.** Outline, target query, entities to cover, internal link candidates, sources to check.",
+        "**Schema drafting.** Producing valid structured data from an existing page, then flagging where the page doesn't support the claims.",
+        "**First drafts of routine copy.** Category descriptions, FAQ answers, meta descriptions at volume.",
+        "**Log-file and GSC first passes.** Spotting the shape of a problem before a person decides whether it matters."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The 200-page audit nobody reads",
+        "body": "An AI-generated audit that lists 4,000 issues without ranking them isn't an audit — it's a crawl export with a cover page. The value in an audit is the judgement about which fifteen things matter and in what order. If that judgement is missing, you paid for a CSV."
+      }
+    },
+    {
+      "h2": "Where the output still needs a person, every single time",
+      "body": [
+        "The pattern is consistent: models are strong at breadth and weak at consequence. Anything with a cost attached to being wrong still needs a human between the model and the world."
+      ],
+      "numbered": [
+        "**Anything factual about your business.** Prices, availability, guarantees, regulatory claims. A model will produce a confident sentence about your refund policy that you have never had.",
+        "**Anything that ships to a live site.** Redirects, canonicals, `robots.txt`, `noindex` tags. A wrong directive applied across a template deindexes a section silently — no 404s, no error page, just a graph that falls off a cliff.",
+        "**Search-intent calls the SERP contradicts.** The model has a prior about what a query means. The live results are the actual answer. Someone has to check.",
+        "**Deciding a page shouldn't exist.** Models are structurally biased towards producing more. Pruning is a human decision and usually a profitable one.",
+        "**First-hand experience.** The E in E-E-A-T. A model cannot have used your product, visited the site, or run the campaign that went wrong. That's the part readers can tell is missing."
+      ]
+    },
+    {
+      "h2": "Model B: getting cited inside AI answers",
+      "body": [
+        "The second business is younger and harder to evaluate honestly. Here's what can be said without overselling it.",
+        "Google's AI Overviews are generated over Google's own index, which means a page that isn't crawled and indexed cannot be cited. Assistants that browse work the same way — they retrieve from the open web. So ordinary SEO isn't a separate discipline from AI visibility; it's the entry requirement for it. Anyone offering to skip the SEO and go straight to the citations is describing something that doesn't exist.",
+        "What does appear to help is unglamorous: being crawlable by the relevant bots, putting a clear, extractable answer near the top of the page instead of burying it under 600 words of preamble, keeping your entity information consistent everywhere you appear, and being mentioned on third-party sites the models have already read. That's the honest version of [generative engine optimisation](/answers/what-is-generative-engine-optimization)."
+      ],
+      "bullets": [
+        "**Measurement is the weak point.** There's no stable equivalent of rank tracking. Answers vary by phrasing, by session, by user context and by model version.",
+        "**Treat certainty as a warning.** An agency showing you a precise, smooth \"AI visibility score\" trending up should be asked exactly how it's sampled and how much it moves when you re-run the same prompt.",
+        "**Ignore the products that sell shortcuts.** \"GEO schema\", paid listings in AI directories, and keyword stuffing aimed at language models are the 2026 version of directory submissions.",
+        "**Brand mentions are doing real work here.** Being talked about by other sites matters for retrieval in a way that's familiar to anyone who's done digital PR."
+      ]
+    },
+    {
+      "h2": "Five questions that tell you which one you're buying",
+      "body": [
+        "Ask these in the pitch. The answers take a competent agency about ten seconds each."
+      ],
+      "numbered": [
+        "**\"Which of the two businesses are you?\"** A good answer names one, explains the other, and says which parts of your problem it doesn't solve. \"Both, obviously\" is the answer of someone who hasn't picked.",
+        "**\"Show me one deliverable and tell me where the AI stopped.\"** You want to see the draft and the edit, not the polished PDF. If nobody can point to where a human intervened, nobody did.",
+        "**\"What exactly do you measure for AI visibility, and how noisy is it?\"** The honest answer includes the words \"this is immature\" and a description of the sampling method.",
+        "**\"You're using AI — what came off my invoice?\"** If the tooling made them 40% faster and the price went up, the AI is in the pitch deck, not the workflow.",
+        "**\"Who approves anything before it touches my live site?\"** Name a person. \"Our automated QA\" is not a person, and it is not accountable in month four."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "A fair test of Model B claims",
+        "body": "Ask for two brands they've had cited in AI answers, then check the same prompts yourself, twice, a day apart. You're not testing whether they're lying — you're testing whether the result is stable enough to sell."
+      }
+    },
+    {
+      "h2": "Why AI tooling should shrink your invoice, not inflate it",
+      "body": [
+        "Here's the uncomfortable arithmetic. The hours AI actually compresses — research, clustering, triage, first drafts — were historically the largest and most billable block in an SEO retainer. The hours it doesn't compress are judgement, editing, developer coordination and the relationships behind links.",
+        "So an agency using AI properly ends up with the same senior time and much less junior time. That should show up as more output per rupee, or the same output for less. When \"AI-powered\" arrives as a premium instead, you're paying for positioning.",
+        "There's a second-order effect worth knowing about too: because production got cheap, the marginal value of an average page fell. The pages that still earn anything are the ones carrying something a model couldn't generate — your data, your prices, your opinion, your mistakes. That's an argument for fewer, better pages, and most agencies haven't repriced for it yet."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What we actually do with it",
+        "body": "We use AI for crawl triage, clustering, brief generation and first drafts. A person edits everything and approves anything that reaches a client site. It's priced into SEO from ₹75,000/mo, and from ₹40,000 for smaller sites, ex-GST — not billed as an extra. We don't guarantee a ranking position; we guarantee you beat your own frozen trailing-90-day organic lead baseline in 90 days, or we keep working free until you do. See [how that works](/seo)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is an AI SEO agency different from a normal SEO agency?",
+      "a": "Sometimes only in the wording. Nearly every competent agency now uses AI for research, clustering and first drafts. The label is meaningful when it signals a genuine specialism in AI-answer visibility, and meaningless when it's a normal retainer with a new adjective on the deck."
+    },
+    {
+      "q": "Can AI replace an SEO agency entirely?",
+      "a": "Not yet, and the gaps are specific: earning a link from a real publication, coordinating with your developers, deciding what not to publish, and carrying accountability for a number. AI removes the junior workload, not the senior judgement or the relationships."
+    },
+    {
+      "q": "Does Google penalise AI-generated content?",
+      "a": "Google's stated position is that it rewards helpful content regardless of how it was produced, and acts against scaled content abuse — mass-produced pages made primarily to rank rather than to help. The production method isn't the problem. Volume without value is."
+    },
+    {
+      "q": "How do I get my brand mentioned in ChatGPT answers?",
+      "a": "Be indexable, be clear, and be mentioned elsewhere. Assistants retrieve from the open web, so pages that can't be crawled can't be cited. Put a direct answer near the top of the page, keep your entity details consistent, and earn mentions on sites models already read."
+    },
+    {
+      "q": "Should an AI SEO agency cost more than a regular one?",
+      "a": "No. AI compresses the research and drafting hours that used to make up the largest share of a retainer, so the economics point downwards. If an agency is faster because of tooling and more expensive because of it, ask which of those two facts is doing the pricing."
+    },
+    {
+      "q": "Is AI visibility worth paying for separately today?",
+      "a": "For most Indian businesses, not as a separate line item. The work that improves AI citation — indexability, clear answers, consistent entities, third-party mentions — is largely the work that improves rankings. Buy it once, measure both."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "what-is-generative-engine-optimization" },
+    { "type": "answers", "slug": "how-do-i-get-my-brand-cited-in-chatgpt" },
+    { "type": "compare", "slug": "ai-seo-tools-vs-seo-agency" },
+    { "type": "glossary", "slug": "ai-overviews" },
+    { "type": "services", "slug": "ai-search-optimisation-services" },
+    { "type": "journal", "slug": "is-generative-engine-optimization-real" }
+  ]
+}

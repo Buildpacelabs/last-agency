@@ -1,0 +1,192 @@
+{
+  "slug": "indore",
+  "type": "seo-agency",
+  "primaryKeyword": "seo agency in indore",
+  "secondaryKeywords": [
+    "seo company in indore",
+    "seo services indore",
+    "d2c seo indore",
+    "amazon seller seo indore",
+    "food brand seo india",
+    "local seo indore"
+  ],
+  "cluster": "city-india-emerging",
+  "intent": "commercial",
+  "h1": "SEO in Indore for D2C food brands and marketplace sellers",
+  "metaTitle": "SEO Agency in Indore: D2C Food and Marketplace Sellers",
+  "metaDescription": "Indore's namkeen, snack and D2C brands live on Amazon and Flipkart. We move margin back to your own site, on a 90-day guarantee against your baseline.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Most Indore food and D2C brands sell through Amazon and Flipkart, then wonder why their own site gets no traffic. The fix isn't more marketplace ads — it's owning the branded, recipe-level and bulk queries a listing can't rank for, so repeat orders land on your site at full margin.",
+  "takeaways": [
+    "Stop fighting your own Amazon listing on the same query. Let it keep the cold category demand; take the branded, bulk and how-to demand it can't serve.",
+    "Food copy has a legal layer. India's **Food Safety and Standards (Advertising and Claims) Regulations, 2018** decide which adjectives you're allowed to rank for.",
+    "Hindi in Indore is mostly **transliterated**, not Devanagari — and keyword tools barely see it. Search Console is your keyword tool here.",
+    "A good freelancer beats a cheap agency. Below roughly ₹40,000/month, we'll say so."
+  ],
+  "sections": [
+    {
+      "h2": "Your Amazon listing and your own product page are fighting each other",
+      "body": [
+        "Search your brand name plus a product and count the results. The Amazon listing is usually first, Flipkart second, a couple of aggregators after that, and your own product page on page two if it's there at all. That isn't a bug or a penalty — marketplace domains carry two decades of link equity and millions of indexed URLs, and a three-year-old Shopify store carries neither.",
+        "So don't fight for the same query. You'll lose, and winning would only mean paying to redirect a customer who was already buying. Split it instead: let the marketplace keep the cold, category-level demand where the buyer has no brand in mind, and take everything downstream, where a listing has nothing to say and your site has everything. That's the logic behind [SEO versus selling on marketplaces](/compare/seo-vs-marketplace-selling), applied to a category built on repeat purchase."
+      ],
+      "bullets": [
+        "**Brand and SKU queries.** Your product page should be first. If it isn't, the page is thin, mis-canonicalised or blocked — check Search Console before blaming the algorithm.",
+        "**Recipe, storage and shelf-life queries.** Amazon can't host them. They reach the same buyer weeks earlier and they compound.",
+        "**Bulk, distributor and corporate-gifting queries.** High value, almost no marketplace competition, and invisible in your ad account because nobody bids on them."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The margin maths nobody puts in the deck",
+        "body": "An order that starts on a marketplace pays a referral fee, fulfilment, returns handling and increasingly sponsored-ad spend before you see a rupee. The same order starting on your own site pays a payment gateway. Shifting even a slice of repeat orders to owned search changes the P&L more than an equivalent lift in gross traffic does."
+      }
+    },
+    {
+      "h2": "What FSSAI lets you write, and what schema lets Google read",
+      "body": [
+        "Food is one of the few categories where the copy that ranks and the copy that's legal aren't automatically the same sentence. India's Food Safety and Standards (Advertising and Claims) Regulations, 2018 govern what you may claim in an advertisement — and a product page is an advertisement. *Natural*, *fresh*, *pure* and *original* carry defined conditions. \"Low fat\" and \"no added sugar\" are allowed only when the product meets the threshold. Claims that a food prevents or cures a disease are out entirely.",
+        "None of that stops you ranking. It means your writer needs the rules before they reach for a superlative, and most don't have them. On the technical side, Indore food brands are badly underserved: proper product markup is what puts a price, a delivery estimate and a returns line into the result itself."
+      ],
+      "bullets": [
+        "`Product` and `Offer` on every SKU, with availability, `priceValidUntil` and a GTIN where one exists.",
+        "`shippingDetails` and `hasMerchantReturnPolicy` — Google reads both and can surface them.",
+        "`FAQPage` built from your customer-care inbox: shelf life, storage in humidity, whether the sev survives a Delhi summer in transit.",
+        "Your FSSAI licence number as visible text, not baked into a footer image no crawler will read.",
+        "`Recipe` markup on genuine recipes only. Bolting it onto a product page to farm a rich result is what core updates eventually clean up."
+      ]
+    },
+    {
+      "h2": "Freelancer or agency: the question every Indore SME asks first",
+      "body": [
+        "Nearly every founder here has a freelancer quote sitting next to an agency quote at five times the number. Both are sometimes right, and the deciding factor isn't quality — it's how many disciplines you need running at once.",
+        "A good freelancer beats a cheap agency, reliably. One person who genuinely reads your Search Console every week beats four working through a checklist. But a freelancer is one specialism: usually content, occasionally technical, rarely both, almost never links at scale. If your site is small and your real problem is that nobody has written anything, hire the freelancer. We'll say so on the call.",
+        "It breaks the month you need a Shopify theme fixed, a content calendar shipped, marketplace strategy decided and press outreach started together. One person becomes a queue. Our SEO starts at ₹75,000/mo, with genuinely small sites from ₹40,000/mo, ex-GST — below that, [the freelancer-versus-agency comparison](/compare/agency-vs-freelancer) is a more useful read than our pricing page."
+      ]
+    },
+    {
+      "h2": "Hindi is the language your customers search in, even when they buy in English",
+      "body": [
+        "Indore searches in Hindi more than Bangalore does and less than Lucknow does. That produces three separate keyword problems, and most agencies solve none of them because their tooling can't see the demand."
+      ],
+      "numbered": [
+        "**Transliterated Hindi in Latin script** — \"namkeen ka rate\", \"sev online order karna hai\" — is the largest share and the easiest win. Google usually returns English pages for it, so your existing content can rank with an H1 and an FAQ block written in the buyer's phrasing rather than yours.",
+        "**Devanagari queries** are a smaller share and much harder to fake. A machine-translated mirror is worse than no Hindi at all: Google's spam policies name unreviewed automated translation directly.",
+        "**Mixed queries** — a Hindi verb around an English noun — are extremely common and effectively invisible in keyword tools. Export twelve months of Search Console queries and read them."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "\"No volume\" usually means \"no data\"",
+        "body": "Keyword tools under-report Devanagari and Hinglish badly. A zero in Ahrefs is a statement about their index, not about central India. We build Indore keyword sets from Search Console exports, your WhatsApp enquiries and your call logs first, then sanity-check the tools."
+      }
+    },
+    {
+      "h2": "Pin-code and shipping pages: the boring traffic that converts",
+      "body": [
+        "This is the least glamorous page type in Indian e-commerce and one of the highest-converting. People search delivery before they search product: does this brand ship to my pin code, is there cash on delivery, can I collect it today.",
+        "Two rules keep it on the right side of the scaled-content line. Every page must say something genuinely different — real transit times, named couriers, real COD rules, real pickup options. And publish only what you can serve. A thousand auto-generated pin-code pages sharing one paragraph is the example Google reaches for when it explains scaled content abuse, and the damage doesn't stay confined to those URLs."
+      ],
+      "table": {
+        "caption": "Delivery-intent queries in Indore and the page that should own each one.",
+        "head": [
+          "What they search",
+          "Who ranks now",
+          "What wins it"
+        ],
+        "rows": [
+          [
+            "\"<brand> delivery in Indore\"",
+            "Usually nobody, or your own marketplace listing",
+            "One shipping page with real timelines, named couriers, COD rules"
+          ],
+          [
+            "\"namkeen home delivery Vijay Nagar\"",
+            "Quick-commerce apps and local aggregators",
+            "A same-day or pickup page — only if you genuinely offer it"
+          ],
+          [
+            "\"bulk namkeen supplier Indore\"",
+            "IndiaMART",
+            "A wholesale page with MOQ, price bands and a number a human answers"
+          ],
+          [
+            "\"<brand> shelf life\" / \"how to store sev\"",
+            "Quora threads and unrelated blogs",
+            "An FAQ block on the product page, marked up as `FAQPage`"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "What the first 90 days look like",
+      "numbered": [
+        "**Weeks 1–2.** Freeze the baseline: trailing-90-day qualified leads and orders from organic. Full crawl, marketplace overlap audit, twelve months of Search Console queries exported including the Hindi ones.",
+        "**Weeks 2–5.** Technical and schema. Product, offer, shipping and returns markup, Core Web Vitals on the theme, canonical and faceted-URL cleanup. On most Shopify and WooCommerce stores this recovers traffic before a single new page ships.",
+        "**Weeks 4–12.** Content on cadence. Brand and SKU pages first, then the recipe and storage cluster, then wholesale and gifting, internally linked so the cluster holds.",
+        "**Ongoing.** Digital PR. Indore's food industry earns national coverage on its own merits, which is more than most categories can say."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "What we actually guarantee",
+        "body": "Not a position — nobody controls Google's index. We freeze your trailing-90-day qualified leads from organic search on day one, and if we haven't beaten that number within 90 days we keep working free until we do. It's also why we take three clients a month. See [how the guarantee works](/seo)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much does an SEO agency in Indore cost?",
+      "a": "Local freelancers commonly quote ₹8,000–₹25,000 a month; agencies range from roughly ₹25,000 to ₹1,50,000 depending on scope. Ours starts at ₹75,000/mo, with smaller sites from ₹40,000/mo, ex-GST. Below about ₹25,000 you're funding part-time attention, not a programme."
+    },
+    {
+      "q": "Should I do SEO if most of my sales come from Amazon?",
+      "a": "Yes, but not the same SEO. Amazon SEO is about listing conversion and the marketplace's own ranking factors. Google SEO is about demand that never touches the marketplace: branded, recipe, storage, bulk and gifting queries. The second is where your margin lives."
+    },
+    {
+      "q": "Do I need Hindi content for an Indore audience?",
+      "a": "Usually you need Hindi phrasing more than Hindi pages. Most central-India search is transliterated Hindi typed in Latin script, and Google generally serves English pages for it. Build Devanagari URLs only when Search Console shows real Devanagari demand, and only with a human writer."
+    },
+    {
+      "q": "What can I legally claim about my food product online?",
+      "a": "The Food Safety and Standards (Advertising and Claims) Regulations, 2018 apply to product pages as well as packaging. Terms like natural, fresh and pure carry conditions, nutrition claims must meet thresholds, and disease prevention or cure claims aren't allowed. Get the copy reviewed before it goes live."
+    },
+    {
+      "q": "How long before SEO beats what I spend on marketplace ads?",
+      "a": "Three to six months for meaningful movement, six to twelve for compounding returns. Marketplace ads stop the day you stop paying; organic doesn't. The honest comparison isn't month three, it's month eighteen — and we'd rather you judge us on the 90-day baseline first."
+    }
+  ],
+  "related": [
+    {
+      "type": "seo-for",
+      "slug": "d2c-brands"
+    },
+    {
+      "type": "compare",
+      "slug": "seo-vs-marketplace-selling"
+    },
+    {
+      "type": "cost",
+      "slug": "ecommerce-seo-cost"
+    },
+    {
+      "type": "services",
+      "slug": "schema-markup-services"
+    },
+    {
+      "type": "journal",
+      "slug": "local-seo-in-tier-2-india"
+    },
+    {
+      "type": "seo-agency",
+      "slug": "bhopal"
+    },
+    {
+      "type": "seo-agency",
+      "slug": "guwahati"
+    }
+  ],
+  "city": {
+    "name": "Indore",
+    "region": "Madhya Pradesh",
+    "country": "India"
+  }
+}

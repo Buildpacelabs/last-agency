@@ -1,0 +1,159 @@
+{
+  "slug": "indexing",
+  "type": "glossary",
+  "primaryKeyword": "indexing in seo",
+  "secondaryKeywords": [
+    "what is indexing in seo",
+    "crawled currently not indexed",
+    "how to get indexed on google",
+    "index coverage report",
+    "discovered not indexed"
+  ],
+  "cluster": "technical-seo",
+  "intent": "informational",
+  "h1": "Indexing",
+  "metaTitle": "Indexing in SEO: How Pages Get Into Google",
+  "metaDescription": "Indexing is Google storing your page so it can rank. Here's the crawl-render-index path, and what each Page Indexing status means you should do this week.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Indexing",
+  "definition": "Indexing is the step where a search engine stores and organises a page it has already crawled, making that page eligible to appear in results.",
+  "answer": "Indexing is Google storing a page it has crawled so the page can be returned in search results. It's the third step, after crawling and rendering, and it's optional — Google indexes what it judges worth storing. A page that isn't indexed can't rank for anything, no matter how well written it is.",
+  "takeaways": [
+    "Crawl, render and index are three separate steps. A page can pass the first two and fail the third.",
+    "**Discovered — currently not indexed** is a crawl problem. **Crawled — currently not indexed** is a quality or duplication problem. They need opposite fixes.",
+    "Request Indexing has a daily quota and no priority. It's for one urgent page, not for a launch.",
+    "Indexed is not ranked. Getting into the index is the entry fee, not the outcome."
+  ],
+  "sections": [
+    {
+      "h2": "Crawl, render, index — three steps, three failure points",
+      "body": [
+        "People use \"crawled\" and \"indexed\" interchangeably. Google doesn't, and the distinction is where most diagnosis happens.",
+        "**Crawling** is Googlebot requesting your URL and receiving the HTML. **Rendering** is Google running the page's JavaScript in a headless browser to see what the content becomes. **Indexing** is Google deciding to store the result, extract its meaning, and make it eligible to appear.",
+        "Each step fails on its own. Robots.txt blocks the crawl. A client-rendered template starves the render. And a page that crawls and renders perfectly can still be refused at the index because Google judged it duplicated, thin, or not worth the storage. That last one carries no error message, which is why founders find it maddening."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The site: check is not a report",
+        "body": "`site:yourdomain.com` gives a rough count Google itself says isn't precise. Use the Page Indexing report for anything you plan to act on."
+      }
+    },
+    {
+      "h2": "Reading the Page Indexing report, status by status",
+      "body": [
+        "This is the report to open. It lists every URL Google knows about and why it isn't indexed. Here's what each of the common statuses actually means, and the move it should trigger."
+      ],
+      "table": {
+        "caption": "Page Indexing statuses and what to do about each.",
+        "head": ["Status", "What it means", "What to do this week"],
+        "rows": [
+          [
+            "Discovered — currently not indexed",
+            "Google knows the URL exists but hasn't fetched it yet. Usually crawl capacity or low crawl demand.",
+            "Add internal links from pages Google already crawls often. Check server response times. Don't republish."
+          ],
+          [
+            "Crawled — currently not indexed",
+            "Google fetched the page and chose not to store it. A judgement, not a bug.",
+            "Improve or merge the page. If it duplicates another of yours, consolidate. If it's thin, make it worth storing or remove it."
+          ],
+          [
+            "Duplicate without user-selected canonical",
+            "Google found copies and you never declared which one is real.",
+            "Add self-referencing canonicals and fix the URL variants underneath."
+          ],
+          [
+            "Duplicate, Google chose different canonical than user",
+            "You declared a canonical and Google overruled it.",
+            "Make internal links and sitemap agree with your tag. Google trusts those more."
+          ],
+          [
+            "Excluded by 'noindex' tag",
+            "Working as instructed — or somebody left a staging directive live.",
+            "Confirm it's deliberate. This is the single most common self-inflicted traffic loss after a launch."
+          ],
+          [
+            "Soft 404",
+            "The page returns 200 but reads as empty or missing to Google.",
+            "Either give it real content or return a genuine 404 status."
+          ],
+          [
+            "Blocked by robots.txt",
+            "The crawl never happened.",
+            "Check the file. If it's meant to be public, remove the rule — noindex won't work while it's blocked."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The two \"not indexed\" statuses people confuse",
+      "body": [
+        "These sound similar and mean opposite things, so it's worth being blunt about it."
+      ],
+      "subs": [
+        {
+          "h3": "Discovered — currently not indexed",
+          "body": [
+            "Google hasn't looked yet. This is about access and demand: how easily Googlebot reaches the URL, how fast your server answers, and how much reason Google has to bother. Pages buried four clicks deep with no internal links sit here for weeks.",
+            "The fix is structural. Link the page from somewhere Google crawls often — a hub page, a recent post. See [internal linking](/glossary/internal-linking) for building those paths deliberately rather than hoping."
+          ]
+        },
+        {
+          "h3": "Crawled — currently not indexed",
+          "body": [
+            "Google looked and passed. Publishing more pages like it makes this worse. Common causes: the page repeats what three of your other pages say, it's a thin template variant with the city name swapped, or there's nothing on it a person couldn't get faster elsewhere.",
+            "This status across a whole page type is a verdict on the template. That's the moment to stop the content calendar and fix what's already published — the argument in [when to update old content instead of writing new](/journal/when-to-update-old-content-instead-of-writing-new)."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Request Indexing, sitemaps, and why new sites take weeks",
+      "body": [
+        "URL Inspection has a **Request Indexing** button. It's for one genuinely urgent page — a pricing change, a corrected fact. It carries a daily quota per property, it doesn't jump any queue, and pressing it repeatedly on the same URL does nothing.",
+        "For volume, use your [XML sitemap](/glossary/xml-sitemap): submit it, keep `lastmod` honest, and let the report show the submitted-versus-indexed ratio per page type.",
+        "New domains are slow for an unglamorous reason. Google allocates crawl attention partly on demand, and a site nobody links to generates almost none. Weeks is normal; months is normal with no external links at all. No button fixes this — links from sites Google already crawls, plus a clean internal structure, are the whole answer."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Indexed is not ranked",
+        "body": "Getting indexed means eligible to appear. It says nothing about position. A page can be indexed within a day and rank on page nine for two years. If someone sells you an \"indexing service\" as an SEO deliverable, they're selling the entry fee as the prize."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long does Google take to index a new page?",
+      "a": "On an established site with good internal linking, often hours to a few days. On a new domain with few links, weeks is normal and a couple of months isn't unusual. The variable is crawl demand — how much reason Google has to come back — not anything you can toggle."
+    },
+    {
+      "q": "Why is my page crawled but not indexed?",
+      "a": "Google fetched it and judged it not worth storing. Usually it duplicates another page of yours, it's thin, or it's a near-identical template variant. Adding more pages of the same kind makes it worse. Merge, deepen, or delete."
+    },
+    {
+      "q": "Does submitting a sitemap guarantee indexing?",
+      "a": "No. A sitemap tells Google what exists and when it changed. It's a discovery aid, not an instruction. Its real value is diagnostic — split it by page type and the submitted-versus-indexed ratio tells you which template Google is refusing."
+    },
+    {
+      "q": "How do I get my site indexed faster?",
+      "a": "Earn a link from a site Google crawls frequently, link the new page from an existing page that already ranks, keep server response times low, and submit an accurate sitemap. Those four cover almost everything you actually control."
+    },
+    {
+      "q": "Can I force Google to index a page?",
+      "a": "No. Request Indexing asks; it doesn't compel. Google indexes what it judges worth storing, and there is no paid or technical route around that judgement. Anyone selling guaranteed indexing is either using it as a synonym for submission, or doing something you'd rather they didn't."
+    },
+    {
+      "q": "Is noindex the same as not indexed?",
+      "a": "No. Noindex is your explicit instruction to keep a page out. \"Not indexed\" in Search Console usually means Google decided on its own. Check the status label — Excluded by 'noindex' tag is yours; Crawled — currently not indexed is Google's."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "crawl-budget" },
+    { "type": "glossary", "slug": "noindex" },
+    { "type": "glossary", "slug": "google-search-console" },
+    { "type": "glossary", "slug": "thin-content" },
+    { "type": "services", "slug": "technical-seo-services" },
+    { "type": "journal", "slug": "when-to-update-old-content-instead-of-writing-new" }
+  ]
+}

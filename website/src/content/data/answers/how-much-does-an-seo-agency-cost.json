@@ -1,0 +1,231 @@
+{
+  "slug": "how-much-does-an-seo-agency-cost",
+  "type": "answers",
+  "primaryKeyword": "how much does seo agency cost",
+  "secondaryKeywords": [
+    "how much do seo agencies charge",
+    "what do seo companies charge",
+    "seo agency pricing",
+    "how much does an seo agency cost per month"
+  ],
+  "cluster": "agency-cost",
+  "intent": "commercial",
+  "h1": "What an SEO agency costs per month",
+  "metaTitle": "How Much Does an SEO Agency Cost per Month?",
+  "metaDescription": "Indian SEO agencies charge ₹15,000 to ₹3,00,000 a month. Two variables set your band — run the worksheet here to predict your own quote first.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Indian SEO agencies charge ₹15,000 to ₹3,00,000 a month, but the price list matters less than two things: how much of the work needs developer time you don't control, and how many funded competitors already rank in your category. Those two variables move a quote further than any package tier.",
+  "takeaways": [
+    "A quote is a guess about **friction**, not a rate card. The friction is your codebase and your competition.",
+    "The single biggest cost driver most buyers never mention in a brief: who is allowed to deploy a change to the site, and how long their queue is.",
+    "Score yourself on the six questions below. The total predicts your band more accurately than any published package page.",
+    "Add 18% GST. Then ask what's excluded — content production, tool licences and developer hours are the three that go missing."
+  ],
+  "sections": [
+    {
+      "h2": "The bands, quickly, before the part that matters",
+      "body": [
+        "Here's the Indian market in one table, so we can stop talking about price lists and start talking about what actually sets your number."
+      ],
+      "table": {
+        "caption": "Monthly SEO retainer bands in India, ex-GST, and the honest ceiling of each.",
+        "head": [
+          "Monthly retainer",
+          "Who it's built for",
+          "What it can't do"
+        ],
+        "rows": [
+          [
+            "₹15,000–₹25,000",
+            "One-location service business, simple site, local intent",
+            "Any contested national keyword set; anything needing developer time"
+          ],
+          [
+            "₹40,000–₹75,000",
+            "Single-market B2B or D2C, roughly under 500 URLs",
+            "Run four disciplines at full tilt at once; sustain digital PR"
+          ],
+          [
+            "₹75,000–₹1,50,000",
+            "National keyword set with real competition",
+            "Multi-country, multi-language, or catalogues in the tens of thousands"
+          ],
+          [
+            "₹1,50,000–₹3,00,000",
+            "E-commerce at scale, SaaS, multi-market",
+            "Little — though a chunk of the fee now buys coordination, not work"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The table is the easy half",
+        "body": "Two businesses in the same band routinely get quotes ₹1 lakh apart, and neither agency is being dishonest. The rest of this page is about why."
+      }
+    },
+    {
+      "h2": "Variable one: how much of the work needs a developer you don't control",
+      "body": [
+        "This is the cost driver almost nobody mentions in a brief, and it's the one that most reliably doubles a quote.",
+        "SEO recommendations are worthless until they're live. Roughly a third of the work on a typical engagement is technical: canonicals, redirects, internal link modules, structured data, render-blocking scripts, pagination, faceted navigation. Whether that costs ₹15,000 a month or ₹60,000 depends entirely on who is allowed to change the code and how long their queue is.",
+        "On a standard WordPress or Shopify install, an SEO can usually make most of those changes directly. Same-week turnaround, one person, no meetings. On a custom Next.js or Java stack owned by an internal product team, every single fix becomes a written specification, a ticket, a sprint negotiation, a QA cycle and a re-test after deploy. The work didn't get harder. The **coordination cost** went up by a factor of three or four, and the agency has to price for it because it eats their hours whether or not anything ships."
+      ],
+      "bullets": [
+        "**You or your marketing team can deploy changes** — cheapest case. Most of the technical budget goes into actual fixes.",
+        "**In-house dev team with a two-week sprint** — mid case. Expect the agency to bill for spec writing, ticket grooming and post-deploy verification.",
+        "**External web vendor on a support contract** — expensive. Every fix has a commercial negotiation attached, and someone has to run it.",
+        "**Locked platform or a builder you can't edit templates on** — most expensive relative to results, because a real share of the recommendations simply cannot be implemented at any price."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The line that should be in your brief",
+        "body": "\"Changes to our site are shipped by ___, and their current lead time is ___ weeks.\" Give an agency that sentence and you'll get a quote that survives month three. Withhold it and you'll get a cheap quote followed by a scope conversation in month two."
+      }
+    },
+    {
+      "h2": "Variable two: how many funded competitors already own your results",
+      "body": [
+        "SEO is a relative game. You aren't optimising against a standard — you're trying to be more useful, more trusted and more linked-to than whoever currently holds the top ten. The cost of doing that is set by them, not by you.",
+        "Open a private window and search your five most commercially important queries. Then count. Not competitors in your industry — competitors **in the results**.",
+        "If the top ten is a mix of small sites, an outdated directory and two competitors with a blog nobody has touched since 2023, you're in a cheap category. Modest content, clean technical work and a handful of genuine links get you into contention. If the top ten is aggregators, marketplaces, publishers running affiliate content, and two funded rivals who publish four researched pieces a week, then matching them is not a ₹40,000-a-month exercise, and any agency quoting that number either hasn't looked or is planning to ship you something else.",
+        "The blunt version: your budget doesn't need to beat your competitor's revenue. It needs to beat their **content and link output**, sustained, for longer than they're willing to sustain it."
+      ],
+      "bullets": [
+        "**Marketplaces or aggregators in the top five** (Amazon, Justdial, IndiaMART, Practo, a large publisher) — you're competing for a smaller pool of winnable positions. Costs more, and the strategy changes shape entirely.",
+        "**AI Overviews firing on your head terms** — expect fewer clicks per position, which raises the budget needed to hit the same lead number.",
+        "**A rival publishing weekly with visible author bylines and original data** — that's a funded content operation. Price against it honestly.",
+        "**Nobody in your category has fixed their site speed or their titles** — good news, genuinely. This is the one situation where a small retainer can outperform its band."
+      ]
+    },
+    {
+      "h2": "A worksheet that predicts your own band",
+      "body": [
+        "Score each question 0, 1 or 2. Add them up. It takes four minutes and it will get you closer to your real quote than any package page will."
+      ],
+      "numbered": [
+        "**Who ships a code change to your site this week?** You or your marketing team, directly (0). An in-house dev with a sprint queue (1). An external vendor, or a platform you can't edit (2).",
+        "**What's your stack?** Standard WordPress, Webflow or a stock Shopify theme (0). Heavily customised build on a common CMS (1). Custom, headless or a client-rendered single-page app (2).",
+        "**How many URLs does the site have?** Under 200 (0). 200–2,000 (1). Over 2,000, or a catalogue that generates URLs on its own (2).",
+        "**How many of your top-ten results are held by well-resourced competitors publishing regularly?** Two or fewer (0). Three to five (1). Six or more (2).",
+        "**Is your market one city, one country, or several?** Single city (0). National (1). Multiple countries or languages (2).",
+        "**Are marketplaces, aggregators or AI Overviews occupying your money queries?** No (0). Sometimes (1). Consistently (2)."
+      ],
+      "table": {
+        "caption": "Worksheet score against the monthly band a fair quote should land in, ex-GST.",
+        "head": [
+          "Your score",
+          "Likely band",
+          "Why it lands there"
+        ],
+        "rows": [
+          [
+            "0–3",
+            "₹25,000–₹40,000",
+            "Small surface area, few funded rivals, and you can ship your own fixes. Most of the value is on-page and local."
+          ],
+          [
+            "4–6",
+            "₹40,000–₹75,000",
+            "One or two real constraints. All four disciplines run, but not simultaneously at full pace."
+          ],
+          [
+            "7–9",
+            "₹75,000–₹1,50,000",
+            "A contested category, a stack that fights back, or both starting to bite. Needs specialists working in parallel."
+          ],
+          [
+            "10–12",
+            "₹1,50,000+",
+            "Heavy coordination cost plus a category that's already been won once. Expect a dedicated team and a longer payback."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Where we sit on this",
+        "body": "Last Agency runs SEO from ₹75,000/mo, with smaller sites from ₹40,000/mo, ex-GST. Bundled with organic social it's ₹99,000/mo. Full numbers, including what pushes a quote up, are on [the pricing page](/pricing)."
+      }
+    },
+    {
+      "h2": "What the number on the proposal excludes",
+      "body": [
+        "Retainers are quoted ex-GST and, more importantly, ex-several-things. These are the four that most often show up as a surprise in month two."
+      ],
+      "bullets": [
+        "**GST at 18%.** If you're GST-registered it's input credit and the ex-GST figure is your real cost. If you're not registered, it's an 18% price rise — budget for it.",
+        "**Content production.** Some agencies fold writing into the retainer; some bill per piece. This alone can shift an apparent quote by a third, so ask how many published pages a month the number includes.",
+        "**Tool licences.** Ahrefs or Semrush, a crawler, a rank tracker and a reporting layer run into real money annually. Most agencies absorb this; some pass it through. Ask which.",
+        "**Developer hours.** If your agency writes the spec and someone else builds it, that build is your cost, not theirs. On a dev-heavy site this can exceed the retainer in the first quarter.",
+        "**Ad spend, if you're bundling paid.** It should be billed at cost with zero markup and appear as a pass-through, not a service line. Ours is."
+      ]
+    },
+    {
+      "h2": "Telling an inflated quote from a fair one",
+      "body": [
+        "You can't judge a quote by the number. You can judge it by whether the number is attached to anything.",
+        "A fair proposal answers four questions without being asked: how many hours a month and at what seniority mix, how many published pages, how many earned links or live PR pitches, and which number you'll both be judged on. It also names the constraints — \"this assumes your team can deploy template changes within two weeks; if not, add ₹20,000.\"",
+        "An inflated quote is generic. It arrives with a tier name, a list of deliverables that could describe any business in India, and no reference to your stack, your competitors or your baseline. Ask what the price would be if you halved your URL count, and see whether the number moves. If it doesn't, it was never calculated — it was chosen.",
+        "The other honest tell is what happens when you say the budget is lower than the quote. A good agency narrows the scope: fewer target queries, one discipline first, a clear order of operations. A bad one keeps the same scope and drops the price, which means the work was always going to be thinner than the deliverable list implied.",
+        "If you're comparing several, [how to compare SEO proposals](/answers/how-to-compare-seo-proposals) walks through normalising them, and [what SEO costs in India band by band](/answers/how-much-does-seo-cost-in-india) covers why the floor here is so much lower than anywhere else."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The guarantee question",
+        "body": "Ask what happens if it doesn't work. Nobody honest promises a specific ranking position — nobody controls Google's index. What an agency can commit to is movement against your own baseline. We freeze your trailing-90-day qualified organic leads on day one, and if we haven't beaten that number in 90 days we keep working free until we do."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much does an SEO agency cost per month in India?",
+      "a": "₹15,000 to ₹3,00,000 a month, ex-GST. The working band for a business that wants competitive rankings is ₹40,000–₹1,50,000. Below ₹25,000 you're buying a few hours of junior time; above ₹1,50,000 a meaningful share of the fee buys coordination and speed rather than additional output."
+    },
+    {
+      "q": "Why do two SEO agencies quote such different prices for the same website?",
+      "a": "Usually because one of them looked properly. A quote prices friction — how contested your results already are and how hard it is to get a change deployed on your stack. An agency that hasn't checked either will quote its standard tier, which is why cheap quotes so often turn into scope conversations by month two."
+    },
+    {
+      "q": "Is a ₹25,000 a month SEO retainer ever worth it?",
+      "a": "For a single-location service business with a simple site and a lightly contested local market, yes — it buys 15–25 hours, which is enough for Google Business Profile work, on-page fixes and a couple of pages a month. For a national keyword set with funded competitors, it buys reporting."
+    },
+    {
+      "q": "Does an SEO agency quote include GST?",
+      "a": "Almost never. Indian agency retainers are quoted ex-GST, with 18% added on the invoice. If you're GST-registered it's recoverable as input credit, so the ex-GST figure is your true cost. If you're not registered, treat it as an 18% increase and budget accordingly."
+    },
+    {
+      "q": "What should I send an agency so the quote is accurate?",
+      "a": "Four things: your site's URL count, your CMS or stack and who deploys changes to it, your five most commercially important queries, and your trailing-90-day organic lead count. That last one is also your baseline, which is what any outcome commitment has to be measured against."
+    },
+    {
+      "q": "Do SEO agencies charge more for e-commerce?",
+      "a": "Yes, and legitimately. Catalogue sites generate URLs on their own through filters, variants and pagination, so technical work never finishes. Add seasonal merchandising and out-of-stock handling, and a store with a few thousand SKUs consumes more monthly hours than a 60-page B2B site in the same category."
+    }
+  ],
+  "related": [
+    {
+      "type": "cost",
+      "slug": "seo-agency-cost"
+    },
+    {
+      "type": "answers",
+      "slug": "how-much-does-seo-cost-per-month"
+    },
+    {
+      "type": "answers",
+      "slug": "why-is-seo-so-expensive"
+    },
+    {
+      "type": "compare",
+      "slug": "retainer-vs-project"
+    },
+    {
+      "type": "journal",
+      "slug": "where-your-seo-retainer-money-actually-goes"
+    },
+    {
+      "type": "services",
+      "slug": "seo-retainer-plans"
+    }
+  ]
+}

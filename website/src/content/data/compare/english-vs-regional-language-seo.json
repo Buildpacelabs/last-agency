@@ -1,0 +1,220 @@
+{
+  "slug": "english-vs-regional-language-seo",
+  "type": "compare",
+  "primaryKeyword": "english seo vs regional language seo",
+  "secondaryKeywords": [
+    "hindi seo india",
+    "regional language content marketing india",
+    "vernacular seo strategy",
+    "hreflang for indian languages",
+    "tamil seo keywords"
+  ],
+  "cluster": "seo-disciplines",
+  "intent": "informational",
+  "h1": "English vs regional language SEO: when a second track pays for itself",
+  "metaTitle": "English vs Regional Language SEO in India",
+  "metaDescription": "English SEO vs regional language SEO in India: Hindi and Tamil queries convert differently. Which categories have volume to justify both, and which don't.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Regional language SEO pays when your category already has vernacular buying demand — health, government schemes, jobs, agriculture, finance basics. It rarely pays for B2B software or anything bought in English at work. Check Keyword Planner set to Hindi or Tamil before committing: a second track roughly doubles your content cost, not adds 20%.",
+  "takeaways": [
+    "The question isn't \"do Indians search in Hindi\" — they obviously do. It's whether they search in Hindi **for the thing you sell**.",
+    "Vernacular **reading** volume and vernacular **buying** volume are different numbers. Recipes and devotional content have enormous one and almost none of the other.",
+    "Hinglish — Latin-script Hindi — is a third language and most sites target neither it nor Devanagari properly.",
+    "A second language track is a **second content budget**. Anyone pricing it as a small uplift is planning to translate, and translation doesn't rank."
+  ],
+  "sections": [
+    {
+      "h2": "Where regional demand is genuinely there — and where it isn't",
+      "body": [
+        "India passed the point where most of its internet users came online in English years ago. That fact gets quoted in every vernacular-content deck and then used to justify translating a B2B SaaS site into Hindi, which wastes a quarter's budget.",
+        "The useful question is narrower: do people searching in Hindi, Tamil or Marathi for **your category** also buy in it? Sometimes the overlap is near-total. Sometimes they read, share and never convert, because the purchase decision happens at work, in English. Here's the honest split — treat it as a hypothesis, then verify it."
+      ],
+      "table": {
+        "caption": "Which categories have enough vernacular buying demand to fund a second content track.",
+        "head": ["Category", "How the demand behaves", "Worth a second track?"],
+        "rows": [
+          [
+            "Health symptoms, conditions, treatments",
+            "People search symptoms in the language they think in. Vernacular symptom queries are more specific and more likely to end in a booking.",
+            "**Yes**"
+          ],
+          [
+            "Government schemes, exams, sarkari jobs",
+            "Audience skews non-metro and the source documents are already bilingual. English coverage is often the weaker side.",
+            "**Yes**"
+          ],
+          [
+            "Agriculture and agri-inputs",
+            "Buyer and language overlap almost perfectly, and English competition is thin because nobody serious writes for this audience in English.",
+            "**Yes**"
+          ],
+          [
+            "Personal finance, insurance, loan basics",
+            "Explainer intent runs strongly vernacular. \"Term insurance kya hai\" pulls a different person at a different stage than the English version.",
+            "**Often**"
+          ],
+          [
+            "Local services — clinics, gyms, salons, repairs",
+            "City-dependent. Matters more in tier-2 and tier-3, and your Google Business Profile outworks content in either language.",
+            "**Sometimes**"
+          ],
+          [
+            "Entertainment, devotional, recipes, lyrics",
+            "Enormous volume, near-impossible to monetise unless ads are your model.",
+            "**Only if ads pay you**"
+          ],
+          [
+            "B2B SaaS, developer tools, enterprise services",
+            "Researched at work, in English, by people whose professional vocabulary is English. Hindi versions collect impressions and no demos.",
+            "**No**"
+          ],
+          [
+            "Premium D2C, luxury, high-ticket retail",
+            "Buyer skews English-first and metro. The Hindi version mostly competes with your own English page for the same person.",
+            "**Rarely**"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "How to check this in 20 minutes, free",
+        "body": "Keyword Planner lets you set language and location. Set Hindi and India, paste your ten money terms in Devanagari, repeat in Latin script, then search the top three manually. All news aggregators and content farms? There's traffic there, but no commercial intent."
+      }
+    },
+    {
+      "h2": "Hinglish is a third language, and most sites ignore it",
+      "body": [
+        "A whole category of query belongs to neither track: Hindi typed in Latin script. \"Sardi ka gharelu upay\". \"Bike insurance kaise renew kare\". The volume is enormous, and it comes from a keyboard reality — most Indian phones default to Latin, and switching scripts is friction people don't bother with.",
+        "Google does some transliteration matching, not reliably enough to bet a content plan on. In practice a Devanagari page underperforms for the Latin-script version of its own query, and an English page won't rank at all because the words aren't on it. The fix is unglamorous:"
+      ],
+      "bullets": [
+        "**Target Hinglish on English-script pages**, not Devanagari ones. URL, title and H1 carry the transliterated phrase as people type it.",
+        "**Write the way the query is written.** If your audience searches \"paisa kaise kamaye\", don't title the page \"How to earn money\" and hope. The exact string matters more here — no synonym engine is doing the work for you.",
+        "**Include both spellings** where it reads naturally: the Devanagari term once in context, the transliteration in headings. Don't stuff it.",
+        "**Accept the variants.** Transliterated spelling isn't standardised and never will be. Cover the two commonest forms and let Google handle the rest."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The mistake that kills the whole track",
+        "body": "Running English pages through a translation tool, publishing them at /hi/, and calling it a Hindi strategy. They fail on both counts: they don't match how anyone searches in Hindi, and they don't carry the Hinglish strings people type. You've paid for a second site that ranks in neither language."
+      }
+    },
+    {
+      "h2": "URL structure and hreflang, done once, correctly",
+      "body": [
+        "The technical layer is genuinely simple, and it's the part to get right on day one — changing it later means a migration.",
+        "For a single India-focused business, use **subfolders**: `yoursite.com/hi/`, `yoursite.com/ta/`. Not subdomains, not separate ccTLDs. Subfolders inherit the main domain's authority, which matters enormously when the Hindi track starts from zero and your English site has five years of links behind it."
+      ],
+      "numbered": [
+        "**Use full language-region codes**: `hi-IN`, `ta-IN`, `mr-IN`, `en-IN`. Bare `hi` works; the regional form is more precise for an India-only business.",
+        "**Every version references every version, including itself.** A self-referencing [hreflang](/glossary/hreflang) tag on each page. Missing self-references are the commonest error and they quietly break the cluster.",
+        "**Set an `x-default`** pointing at your English page — that's what's served to anyone whose language you haven't covered.",
+        "**Make the pages genuinely different.** Hreflang decides which version a Hindi speaker sees. It won't stop near-identical pages being treated as duplicates, so it can't protect a machine translation.",
+        "**Keep language in the URL, not a cookie.** Auto-redirecting by browser language breaks crawling and can stop the version you want indexed from being fetched at all."
+      ]
+    },
+    {
+      "h2": "Translation is the wrong build, and here's why",
+      "body": [
+        "Translating an English page into Hindi produces a page that answers an English question in Hindi words. That isn't a Hindi page, and the gap shows in three places.",
+        "**The keywords are different, not translated.** The Hindi query for a symptom describes the sensation; the English one names the condition. A translation carries the wrong head term into a market that doesn't use it.",
+        "**The intent differs at the same stage.** English searchers in many Indian categories arrive later, already told what to Google. Vernacular searchers are earlier, so the page explains more and sells less.",
+        "**The register differs.** Formal literary Hindi reads like a government notice. The Hindi people search in is closer to how they talk.",
+        "What works: give a native writer the query list and the brief, not the English article. Same cost, and it's the difference between a page that ranks and a page that exists."
+      ]
+    },
+    {
+      "h2": "What a second language track costs per month",
+      "body": [
+        "A second language track is close to a second content budget. Not a 20% uplift, not a translation line item — if someone prices it as an add-on, they're planning to translate. Treat the ranges below as sanity checks for a quote, not a rate card: Indian content pricing varies more by subject difficulty than by language."
+      ],
+      "table": {
+        "caption": "The real cost lines of adding one Indian language. Market observations, not a survey — get three quotes.",
+        "head": ["Line item", "What it adds", "Shape of the cost"],
+        "rows": [
+          [
+            "Native writer",
+            "Someone who searches in the language, not someone who translates into it. This is the whole build.",
+            "The largest line. Indian freelance rates commonly run ₹2–₹8 a word, climbing sharply for medical, legal and financial subjects."
+          ],
+          [
+            "In-language editing",
+            "Someone senior enough to catch a wrong term or an embarrassing register.",
+            "Hardest role to fill, most often skipped. Budget a freelance editor even if the writer is good."
+          ],
+          [
+            "Keyword research in-language",
+            "Different head terms, SERPs and competitors. It can't be derived from your English list.",
+            "Roughly 10–15% on top of the research block, then a smaller refresh."
+          ],
+          [
+            "Technical setup",
+            "Hreflang, sitemaps, URL routing, language switcher.",
+            "One-time, then near zero. The cheapest part, and the one people worry about most."
+          ],
+          [
+            "Separate reporting",
+            "Its own Search Console filtering and conversion tracking.",
+            "Small but real. Skip it and you'll never know if the track earned its money."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "The number that decides it",
+        "body": "Work out what one conversion is worth, then how many vernacular conversions a month would cover the second track. If that's more than the whole query set could deliver at a good ranking, the maths has answered you. An hour's work; it saves quarters."
+      }
+    },
+    {
+      "h2": "The order that actually works",
+      "body": [
+        "Businesses that get this right nearly all use the same sequence. The ones that waste money use a different order.",
+        "**First, get English depth right.** A second language can't rescue a site that isn't winning in its first — you're duplicating a failure in a language you can't read.",
+        "**Second, pick one language**, chosen by where your customers already are rather than by national speaker counts. If 40% of your leads come from Tamil Nadu, Tamil beats Hindi whatever the population table says.",
+        "**Third, build 10–15 pages properly**, targeting the highest-intent queries rather than the highest-volume ones, and give it two quarters. Vernacular SERPs are often less competitive, so a good page can move faster than you're used to.",
+        "**Fourth, judge it on leads, not traffic.** Vernacular content produces flattering traffic charts more easily than English does. If leads don't follow within two quarters of ranking, you found reading demand, not buying demand.",
+        "We run [SEO from ₹75,000/mo](/pricing), smaller sites from ₹40,000, and we'll say plainly when a second track isn't worth funding — we guarantee movement against your own frozen 90-day organic lead baseline, and a track producing impressions without leads makes that harder for both of us. More in [SEO in Hindi and Indian languages](/journal/seo-in-hindi-and-indian-languages) and [local SEO in tier-2 India](/journal/local-seo-in-tier-2-india)."
+      ]
+    }
+  ],
+  "versus": {
+    "a": "English SEO",
+    "b": "Regional language SEO",
+    "verdict": "For a B2B or SaaS business selling to buyers who work in English, put the entire budget into English depth; regional only earns a second content budget when your category has vernacular buying intent — health, schemes, jobs, agriculture, finance basics — rather than just vernacular reading volume."
+  },
+  "faqs": [
+    {
+      "q": "Is Hindi SEO worth it for my business?",
+      "a": "Only if people search in Hindi for what you sell, not just in Hindi generally. Health, government schemes, jobs, agriculture and finance basics have genuine vernacular buying intent. B2B software, enterprise services and premium D2C mostly don't — those buyers research in English because that's the language of the decision."
+    },
+    {
+      "q": "Should I translate my English pages or write new ones in Hindi?",
+      "a": "Write new ones. The Hindi query for the same topic is usually a different phrase with a different intent behind it, and translated pages carry the English head term into a market that doesn't use it. Give a native writer your Hindi keyword list and brief, never your finished English article."
+    },
+    {
+      "q": "What are Hinglish keywords and how do I target them?",
+      "a": "Hindi typed in Latin script — \"bike insurance kaise renew kare\". Volume is large because most Indian phones default to a Latin keyboard. Target them on English-script pages with the transliterated phrase in the URL, title and H1, not on your Devanagari pages, which won't reliably match them."
+    },
+    {
+      "q": "Should Indian language pages sit on a subfolder or a subdomain?",
+      "a": "Subfolder — yoursite.com/hi/. It inherits your main domain's authority, which matters enormously when the new track starts from zero links. Subdomains and separate ccTLDs mean building authority twice, which is a real cost for no benefit unless you're running genuinely separate businesses."
+    },
+    {
+      "q": "Does hreflang help my Hindi pages rank?",
+      "a": "No. Hreflang decides which version of a page gets served to which searcher — it's a serving instruction, not a ranking signal. If your Hindi page doesn't rank, the page isn't competitive for the query. Adding more hreflang won't change that, and it never was the problem."
+    },
+    {
+      "q": "How much does a second language track cost per month?",
+      "a": "Close to a second content budget rather than a small uplift. The dominant line is a native writer, with Indian freelance rates commonly ₹2–₹8 per word depending on subject difficulty, plus in-language editing that most teams forget to fund. Anyone quoting it as a 20% add-on is quoting translation."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "hreflang" },
+    { "type": "journal", "slug": "seo-in-hindi-and-indian-languages" },
+    { "type": "journal", "slug": "local-seo-in-tier-2-india" },
+    { "type": "compare", "slug": "local-seo-vs-national-seo" },
+    { "type": "cost", "slug": "content-writing-cost-india" },
+    { "type": "services", "slug": "international-seo-services" }
+  ]
+}

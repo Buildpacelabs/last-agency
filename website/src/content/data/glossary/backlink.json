@@ -1,0 +1,142 @@
+{
+  "slug": "backlink",
+  "type": "glossary",
+  "primaryKeyword": "backlink",
+  "secondaryKeywords": [
+    "what are backlinks",
+    "backlinks in seo",
+    "are backlinks important for seo",
+    "why backlinks are important",
+    "types of backlinks"
+  ],
+  "cluster": "off-page",
+  "intent": "informational",
+  "h1": "Backlink",
+  "metaTitle": "Backlink: What It Is and What Makes One Count",
+  "metaDescription": "A backlink is a link from another site to yours. Here is how links pass authority, what makes one worth having, and what a real link costs in India.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Backlink",
+  "definition": "A backlink is a hyperlink on another website that points to a page on yours, and search engines read it as one site vouching for another.",
+  "answer": "A backlink is a link from another website to yours. Search engines treat it as a vote — one site vouching for another — and links remain one of the signals Google uses to decide which page ranks. Relevance and editorial intent decide a link's worth: ten links from your own sector beat two hundred from directories.",
+  "takeaways": [
+    "Links still count. Less than they did in 2015, and far less than content that answers the query — but no serious ranking model ignores them.",
+    "Relevance beats volume, and it isn't close. One link from a site your buyers read beats fifty from unrelated blogs.",
+    "The useful unit is **referring domains**, not backlinks. One site linking you a hundred times is one vote.",
+    "There's no magic number for a new Indian site. Count the referring domains of the pages already ranking, and aim for that order of magnitude."
+  ],
+  "sections": [
+    {
+      "h2": "How a link actually passes authority",
+      "body": [
+        "The original mechanic is PageRank: a page holds some value and passes a share of it along each link it carries, so pages linked from valuable pages become valuable themselves. That model is twenty-five years old and Google has moved well past it, but the idea underneath — a link is a citation, and citations from respected sources count more — still holds.",
+        "Two refinements matter. The value divides across outgoing links, so a link from a page carrying six links beats one from a page carrying two hundred. And Google's patents describe weighting links by how likely someone is to click them, which makes placement part of the calculation: body copy beats a sitewide footer. That's the mechanic behind [link equity](/glossary/link-equity). None of it is visible to you — anyone quoting a score for a single link is quoting a tool's guess."
+      ]
+    },
+    {
+      "h2": "What makes one link worth more than another",
+      "body": [
+        "Founders ask how many links they need. The better question is which links, because the spread between a good one and a bad one is several orders of magnitude."
+      ],
+      "table": {
+        "caption": "What separates a link that counts from one that doesn't.",
+        "head": [
+          "Factor",
+          "Worth having",
+          "Effectively worthless"
+        ],
+        "rows": [
+          [
+            "Topical relevance",
+            "A site your buyers already read, covering your subject",
+            "A general \"business news\" blog posting about crypto, CBD and SaaS in one week"
+          ],
+          [
+            "Editorial intent",
+            "Someone linked because the page was useful",
+            "You paid ₹4,000 and supplied the anchor text"
+          ],
+          [
+            "Placement",
+            "Inside the body of the article, in context",
+            "Author bio, sidebar, sitewide footer"
+          ],
+          [
+            "The linking page itself",
+            "Indexed, gets organic traffic, has other real links",
+            "Indexed by nothing, no traffic, exists to sell links"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Count domains, not links",
+        "body": "A site-wide footer link on a 4,000-page site shows up as 4,000 backlinks in a tool and counts, roughly, as one. Track [referring domains](/glossary/referring-domain) instead — it's the number that maps to reality and the number that's hard to fake."
+      }
+    },
+    {
+      "h2": "Editorial, paid and directory links",
+      "body": [
+        "Three categories, with very different risk profiles.",
+        "**Editorial links** are given because someone found the page worth citing — a journalist using your data, a peer linking your explainer, a partner referencing your integration. The hardest to get, and the ones the system was built to reward.",
+        "**Paid links** are bought, and Google's link spam policy is unambiguous: a paid link that passes ranking credit is a link scheme. The compliant version exists — mark it `rel=\"sponsored\"` — but that removes the exact property the seller charged for. Since the December 2022 link spam update, Google leans toward neutralising unnatural links rather than penalising the site. That sounds merciful and is worse: your money vanishes and nothing tells you it failed.",
+        "**Directory and citation links** sit in the middle. Most general directories do nothing for rankings. Genuine local citations — consistent name, address and phone across Justdial, IndiaMART, Sulekha — still matter for the map pack, but that's local visibility, not link authority. Don't buy a directory package expecting the first."
+      ]
+    },
+    {
+      "h2": "Are backlinks still worth paying for in 2026?",
+      "body": [
+        "Yes, with caveats. Google's public framing has softened over the decade — mid-2010s statements put links among the top signals; more recent commentary from Google staff calls them less important than they were. Nobody outside Google knows the weight.",
+        "The pattern is observable, though. On long-tail and low-competition queries links barely matter — good content on a sound site ranks unaided. On competitive commercial queries, where six sites all have adequate pages, links are frequently the difference. That's where a link budget earns its place, and nowhere else. Fix indexing, publish pages that answer the query, build [topical authority](/glossary/topical-authority), then buy attention for the best of it."
+      ],
+      "bullets": [
+        "**How many a new Indian site needs:** no universal figure. Check the referring domain counts of the top five results for your money query. For a suburban service business that can be ten to thirty domains; for a national commercial term in finance or edtech it's routinely hundreds.",
+        "**What a real link costs here:** marketplace guest posts get pitched at ₹2,000–₹25,000 a placement and mostly buy nothing. Earned links cost agency time instead of placement fees, and the effective cost per link runs far higher — which is why they work. See [what link building costs](/cost/link-building-cost)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are backlinks still important for SEO in 2026?",
+      "a": "Yes, though less than a decade ago. On long-tail and low-competition queries, content and technical health decide the result. On competitive commercial terms, where several sites have equally good pages, links are often the tiebreaker. Treat them as the last lever, not the first."
+    },
+    {
+      "q": "What are the main types of backlinks?",
+      "a": "Editorial links, given because someone cited you; paid placements, which Google's policy treats as link schemes unless marked rel=sponsored; directory and citation links, which help local visibility more than rankings; and user-generated links from forums and comments, which are usually nofollowed. Only the first is reliably worth chasing."
+    },
+    {
+      "q": "How many backlinks do I need to rank?",
+      "a": "Nobody can answer that in the abstract, and anyone who does is selling a package. Check the referring domain counts of the pages currently ranking for your target query and aim for the same order of magnitude. The gap between you and them is your actual brief."
+    },
+    {
+      "q": "Can bad backlinks hurt my site?",
+      "a": "Far less often than tools imply. Google ignores most junk links automatically, and disavowing is warranted mainly after a manual action or a known history of bought links. Toxicity scores are vendor opinions, not Google's — check [toxic backlinks](/glossary/toxic-backlinks) before you disavow anything."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "referring-domain"
+    },
+    {
+      "type": "glossary",
+      "slug": "link-building-meaning"
+    },
+    {
+      "type": "glossary",
+      "slug": "toxic-backlinks"
+    },
+    {
+      "type": "compare",
+      "slug": "paid-links-vs-earned-links"
+    },
+    {
+      "type": "cost",
+      "slug": "link-building-cost"
+    },
+    {
+      "type": "journal",
+      "slug": "how-much-do-backlinks-actually-matter"
+    }
+  ]
+}

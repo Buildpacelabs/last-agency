@@ -1,0 +1,268 @@
+{
+  "slug": "what-content-actually-does-for-seo",
+  "type": "journal",
+  "primaryKeyword": "role of content in seo strategy",
+  "secondaryKeywords": [
+    "does content marketing help seo",
+    "how much content do you need for seo",
+    "content vs technical seo",
+    "seo content strategy",
+    "why blog posts don't rank"
+  ],
+  "cluster": "seo-strategy",
+  "intent": "informational",
+  "h1": "What content actually does for SEO (it isn't what your blog is doing)",
+  "metaTitle": "What Content Actually Does for SEO",
+  "metaDescription": "Content's job in SEO is covering a buying decision, not hitting a word count. Why 30 pages mapped to one decision beat 200 scattered blog posts.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Content's job is to cover every question inside one buying decision, and to prove you can answer them. That's coverage, not volume. Thirty pages mapped to a single decision will out-rank two hundred scattered posts, because search engines rank the page that answers the query, not the site that publishes the most.",
+  "takeaways": [
+    "A buying decision contains a finite number of real questions — usually **30 to 60**. Cover them and you're done. Publish 200 posts around them and you've built a maze.",
+    "Company-news posts don't rank because **nobody searches for them**. There's no query to win. They aren't bad writing; they're writing aimed at zero demand.",
+    "The document that decides everything is the **intent map**: query, stage of decision, page type, and what the page must say that nobody else is saying.",
+    "AI answers cite pages that state a specific, checkable thing. Hedged, generic paragraphs get read and discarded.",
+    "A ₹75,000/month retainer sustains roughly **four to six new pages plus two refreshes** a month, done properly. Anyone promising twenty is producing something else."
+  ],
+  "sections": [
+    {
+      "h2": "Content has two jobs, and neither one is blogging",
+      "body": [
+        "Ask most agencies what content does for SEO and you'll get an answer about freshness, keywords and Google liking sites that publish often. That's roughly the level of understanding that produced 200-post blogs nobody reads.",
+        "Content does exactly two things. First, it **covers** — it puts a page in front of every question a buyer asks between not knowing you exist and signing. Second, it **proves** — it demonstrates, in public and in detail, that you actually know the thing you're selling. Coverage gets you into the result set. Proof is what makes a human click and a language model quote you.",
+        "Volume is not on that list. Volume is a side effect of doing coverage honestly, and when it appears without coverage it's just cost."
+      ]
+    },
+    {
+      "h2": "Coverage of a decision beats coverage of a topic",
+      "body": [
+        "Here's the reframe that changes what gets written. Stop asking what to write about your topic. Start asking what someone must find out before they can buy from you.",
+        "Those are very different lists. A topic is infinite — you can write about SEO forever. A decision is finite. Someone hiring an SEO agency needs to know what agencies do, what it costs, whether it's worth it, how long it takes, how to tell a good one from a bad one, what happens if it doesn't work, and whether they should just hire someone instead. That's maybe 30 to 60 real questions, depending on how complicated the purchase is. It's a list you can finish.",
+        "This site is that argument made literally. It exists as a large set of pages, each one answering a single question inside one decision — should I hire an SEO agency, and which one — with prices, ranges and the uncomfortable parts left in. Not because more URLs are better, but because that particular decision has that many genuine questions in it, and a page that half-answers a question loses to a page that finishes the job.",
+        "The failure mode on the other side is familiar: 200 posts, published over four years, each aimed at whatever seemed interesting that month. They overlap, they compete with each other for the same query, none of them is the definitive answer to anything, and internal links point nowhere in particular. That's not a content strategy. That's a landfill with a publish button. It's also how [keyword cannibalisation](/glossary/keyword-cannibalization) starts."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The volume trap",
+        "body": "If you can't say which decision each published page belongs to, you're paying for words rather than coverage. Audit it this week: list your last 30 posts, write the buyer question each one answers, and count how many rows come back blank."
+      }
+    },
+    {
+      "h2": "The intent map: the document that decides what gets written",
+      "body": [
+        "Before anything gets written, one spreadsheet gets built. Every query worth having, tagged with where it sits in the decision, what kind of page it needs, and — the column everyone skips — what this page says that the current top result doesn't.",
+        "That last column is the whole game. If you can't fill it, don't commission the page. You'd be paying to publish the fourth-best version of something that already exists, which is the most common way content budgets disappear."
+      ],
+      "table": {
+        "caption": "An intent map, using the decision this site is built around.",
+        "head": [
+          "Stage of decision",
+          "Query shape",
+          "Page type",
+          "What it must do"
+        ],
+        "rows": [
+          [
+            "Doesn't know the category",
+            "\"what is technical SEO\"",
+            "Glossary or definition page",
+            "Define it in one sentence, then say why it costs money to ignore."
+          ],
+          [
+            "Knows the category, sizing it",
+            "\"how much does SEO cost in India\"",
+            "Cost page with a real table",
+            "Publish actual numbers in rupees. Ranges with reasons, not \"it depends\"."
+          ],
+          [
+            "Comparing approaches",
+            "\"agency vs freelancer\"",
+            "Comparison with a verdict",
+            "Pick a side and say who each option is wrong for."
+          ],
+          [
+            "Comparing providers",
+            "\"how to choose an SEO agency\"",
+            "Answer page with a checklist",
+            "Give the questions, including the ones that make us uncomfortable."
+          ],
+          [
+            "Ready, checking the risk",
+            "\"what if SEO doesn't work\"",
+            "Answer or journal page",
+            "State the guarantee and its exact conditions. No hedging."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Query shape, not just keyword.** \"SEO cost\" and \"is SEO worth the money\" look adjacent and need completely different pages — one wants a table, one wants an argument.",
+        "**One query cluster, one page.** Two pages chasing the same intent split their own links and impressions.",
+        "**Volume last.** A 40-searches-a-month query that only your buyer types is worth more than a 12,000-a-month query typed by students. Indian volume data is estimated and rounded anyway, so treat it as a ranking, not a measurement.",
+        "**Kill column.** If the answer to \"what does this add\" is nothing, delete the row. That's a saved ₹8,000 and a page you'll never have to maintain."
+      ]
+    },
+    {
+      "h2": "Why your company-news blog has never ranked",
+      "body": [
+        "\"We attended an expo.\" \"We've moved offices.\" \"Team offsite 2026.\" These posts don't fail because they're badly written. They fail because there is no query. Nobody, anywhere, is searching for the thing they answer, so there's no result set for them to enter. Google isn't ignoring them — there's nothing to ignore them in.",
+        "It's worse than neutral, for three mechanical reasons. Crawl attention is finite, and on a large site a few hundred zero-demand URLs absorb some of it. Internal link equity flows into pages that will never return it. And the ratio of pages that earn impressions to pages that don't is itself a signal about the site's overall usefulness — 200 dead posts around 30 good ones makes the good ones harder to find, for crawlers and humans alike.",
+        "None of which means don't publish company news. It means don't count it as SEO. Put it in a newsroom section, keep it out of the blog that's supposed to be doing a job, and stop wondering why the retainer isn't working. If old posts are decaying, pruning and merging usually beats writing more."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The one-minute test",
+        "body": "Open Search Console, filter to the page, and look at impressions over 12 months. Zero impressions means zero demand, not bad luck. No amount of rewriting fixes a query that doesn't exist."
+      }
+    },
+    {
+      "h2": "What content does inside AI answers",
+      "body": [
+        "The rules for being quoted by an AI assistant are stricter than the rules for ranking, not looser. A language model summarising a topic needs something to attribute. Hedged, general prose gives it nothing to hold onto.",
+        "What gets pulled is the specific claim: a number, a range with its reasoning, a named process, a clear yes or no. \"SEO pricing varies based on your requirements\" is unquotable. \"SEO in India runs ₹25,000–₹3,00,000 a month, and below ₹25,000 nobody is covering technical, content and links at once\" is a sentence a model can lift and a reader can check.",
+        "So the content that wins citations looks the same as the content that wins readers, only more so. Answer in the first sentence. Put the number in the paragraph, not in a downloadable PDF. Say the uncomfortable thing plainly, because the uncomfortable thing is usually the most specific one, and specificity is what gets quoted. [How to get cited by AI assistants](/journal/how-to-get-cited-by-ai-assistants) goes deeper on the mechanics."
+      ],
+      "bullets": [
+        "Lead with the answer. Anything below 300 words of preamble may as well not exist.",
+        "Attach a number to every claim you can, and a reason to every range you can't pin down.",
+        "Use plain headings that match the question a person would actually ask.",
+        "Keep the facts in text. Images, carousels and PDFs are not quotable.",
+        "Say who you are and what you charge. Anonymous advice is cheap to ignore."
+      ]
+    },
+    {
+      "h2": "The cadence a ₹75,000 retainer can actually sustain",
+      "body": [
+        "Content plans fall over on arithmetic more often than on strategy. So here's ours, out loud.",
+        "A ₹75,000/month SEO retainer covers four disciplines, not just writing. Content typically takes 40–50% of the hours. What that buys, done properly — research, an interview with someone who knows the subject, drafting, editing, internal linking, publishing, and checking it got indexed — is roughly **four to six new pages a month, plus two refreshes of pages already slipping**.",
+        "That's the honest number. If someone offers twenty pages a month at the same price, one of three things is true: the pages are 400 words of nothing, nobody spoke to a subject-matter expert, or a model wrote them and no human checked whether the claims are true. All three end at the same place.",
+        "Cadence beats bursts, and it isn't close. Four pages a month for eighteen months is 72 pages, all of them ageing, accumulating links and internal connections. Fifty pages in one quarter followed by nine months of silence is a site that looks abandoned to both crawlers and buyers. [How many blog posts you actually need](/journal/how-many-blog-posts-you-actually-need) does the maths for different category sizes."
+      ],
+      "table": {
+        "caption": "Where the content hours go on one properly-made page.",
+        "head": [
+          "Step",
+          "Roughly",
+          "Skipped when the price is too low"
+        ],
+        "rows": [
+          [
+            "SERP and competitor read",
+            "45–60 min",
+            "Almost always"
+          ],
+          [
+            "Expert interview or internal input",
+            "30–45 min",
+            "Always"
+          ],
+          [
+            "Drafting",
+            "2–3 hrs",
+            "Replaced by generation"
+          ],
+          [
+            "Edit for accuracy and voice",
+            "45–90 min",
+            "Usually"
+          ],
+          [
+            "Internal linking and publishing",
+            "30 min",
+            "Sometimes"
+          ],
+          [
+            "Index check and first-30-day review",
+            "20 min",
+            "Nearly always"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "When content isn't the constraint at all",
+      "body": [
+        "Sometimes the honest answer is that you don't need more content, and any agency selling you a content plan at that moment is selling you the wrong thing.",
+        "Three diagnostics, in order. Run them before you commission a single word."
+      ],
+      "numbered": [
+        "**Indexed pages versus published pages.** If you've published 80 and Google has indexed 31, adding page 81 changes nothing. Fix the indexing first — that's a [technical problem, not a content one](/compare/technical-seo-vs-content-seo).",
+        "**Where your existing pages sit.** Pages ranking 8–20 are the cheapest wins on the site: they already have relevance, they need depth, links and a better title. Rewriting one usually beats writing three new ones.",
+        "**Pages stuck past 50 with good content.** That's not a writing problem. That's an authority problem, and the fix is links and time, not more articles. Publishing harder here is the single most common way a year of retainer disappears."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The order that costs the most money",
+        "body": "Commissioning 40 articles on a site with broken indexing is the most expensive sequencing error in SEO. You pay for all 40, Google sees maybe a third, and you conclude content doesn't work. It works fine. It just can't work through a wall."
+      }
+    },
+    {
+      "h2": "How we'd sequence your first 30 pages",
+      "body": [
+        "If you're starting from a blog full of company news and want to know what the first six months looks like, this is the order. It's deliberately front-loaded with pages that are close to money, because a content plan that shows nothing for nine months doesn't survive contact with a finance review."
+      ],
+      "numbered": [
+        "**Pages 1–5: the money questions.** Cost, comparison against the obvious alternative, and the objection your sales team hears weekly. These convert fastest because the searcher is already at the end of the decision.",
+        "**Pages 6–12: the comparison set.** You versus the alternatives, the approaches versus each other. High intent, usually badly served, and they earn links from people arguing about them.",
+        "**Pages 13–22: the mechanism.** How the thing works, what's in it, what goes wrong. This is where proof lives, and where AI assistants find something worth quoting.",
+        "**Pages 23–30: the definitions.** Terms your buyer half-knows. Cheap to write, they catch the widest search demand, and they exist to feed internal links to the pages above.",
+        "**Then stop and read the data.** Six months in, half your assumptions will be wrong. Refresh what's ranking 8–20, prune what has zero impressions, and only then commission the next thirty. Writing content and doing content marketing differ right here, in what you do with the results."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much content do I actually need to rank?",
+      "a": "Enough to cover the decision, which is usually 30 to 60 pages for a considered purchase and far fewer for a simple local service. It's a finite list you can finish, not a monthly quota. Once the decision is covered, more pages add maintenance cost rather than ranking."
+    },
+    {
+      "q": "Does blogging still help SEO in 2026?",
+      "a": "Writing that answers a query people actually type still works exactly as well as it always did. Blogging in the sense of publishing company updates never worked, because there's no search demand behind it. The format was never the point; the query behind the page is."
+    },
+    {
+      "q": "Is content or technical SEO more important?",
+      "a": "Technical work sets the ceiling, content decides how much of it you use. A perfect site with nothing to rank has nothing to rank. Brilliant content on an unindexable site never gets seen. Check indexed-versus-published first, then spend on content — that order costs less."
+    },
+    {
+      "q": "Why don't my blog posts rank even though they're well written?",
+      "a": "Usually one of three reasons. There's no search demand for what they answer. Several of your own pages target the same query and split the signal. Or the writing is fine but generic, and it adds nothing the current top result doesn't already say. Check demand first."
+    },
+    {
+      "q": "How many pages a month should a ₹75,000 retainer produce?",
+      "a": "Four to six new pages plus around two refreshes, with content taking 40–50% of the hours and the rest going to technical work, links and reporting. Twenty pages at that price means the research, the expert input or the editing has been dropped. Usually all three."
+    },
+    {
+      "q": "Does AI-written content still get ranked and cited?",
+      "a": "Google's guidance targets content made to game rankings rather than the tool used to write it. In practice, generated text fails on specificity — it hedges, it repeats the consensus, and there's nothing checkable for a search engine or an AI answer to quote. Facts and first-hand input are what survive."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "topic-cluster"
+    },
+    {
+      "type": "glossary",
+      "slug": "search-intent"
+    },
+    {
+      "type": "compare",
+      "slug": "technical-seo-vs-content-seo"
+    },
+    {
+      "type": "services",
+      "slug": "content-marketing-services"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-do-keyword-research"
+    },
+    {
+      "type": "journal",
+      "slug": "how-many-blog-posts-you-actually-need"
+    },
+    {
+      "type": "journal",
+      "slug": "our-favourite-seo-play-and-why-it-works"
+    }
+  ]
+}

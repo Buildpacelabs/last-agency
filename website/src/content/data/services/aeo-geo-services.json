@@ -1,0 +1,183 @@
+{
+  "slug": "aeo-geo-services",
+  "type": "services",
+  "primaryKeyword": "answer engine optimisation services",
+  "secondaryKeywords": [
+    "aeo services",
+    "geo services seo",
+    "generative engine optimisation agency",
+    "aeo agency india",
+    "answer engine optimization company"
+  ],
+  "cluster": "ai-search",
+  "intent": "commercial",
+  "h1": "Getting quoted when the answer engine replies",
+  "metaTitle": "Answer Engine Optimisation Services (AEO and GEO)",
+  "metaDescription": "Answer engine optimisation services that get your brand cited in AI answers. We restructure content and entities, then report citation share every month.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "priceFrom": "From ₹75,000 / mo",
+  "answer": "Answer engine optimisation restructures your content so a model can lift it: 40 to 60 word answer blocks under question-shaped headings, comparison tables, named numbers, and entity markup that makes you resolvable as a source. We report citation share across ChatGPT, Perplexity and AI Overviews monthly. From ₹75,000 a month.",
+  "takeaways": [
+    "A model quotes **passages**, not pages. The unit of optimisation is a self-contained 40–60 word block, not a 2,000-word article.",
+    "Tables and named numbers get lifted intact. Prose gets paraphrased into somebody else's summary, and the citation goes to them.",
+    "Entity work is the unglamorous half: consistent naming, `Organization` schema with `sameAs`, real authors, and third parties who corroborate that you exist.",
+    "From ₹75,000/mo. We report citation-count movement against a frozen prompt panel. We will never guarantee a mention — nobody controls a model's output."
+  ],
+  "sections": [
+    {
+      "h2": "What we're honest about before you pay for this",
+      "body": [
+        "There is no published, independently verifiable study that tells anyone exactly how ChatGPT, Perplexity or Google's AI Overviews choose which source to quote. Anyone who shows you a chart claiming to have cracked the ranking factors of a large language model has made the chart up.",
+        "What can be said confidently is mechanical. These systems retrieve documents, then generate an answer from passages inside them. A passage that already reads as a complete, attributable answer is easier to lift than one that needs three paragraphs of context to make sense. Structured data is easier to parse than an implied claim. A brand that resolves to a consistent entity across the web is easier to name than one spelled four different ways.",
+        "That's the basis for the work. It's engineering against how retrieval and generation function, not a decoded algorithm. If you'd rather see the argument in full, we've written about [whether generative engine optimisation is real](/journal/is-generative-engine-optimization-real) without the pitch attached."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "On llms.txt",
+        "body": "We'll add one. It takes ten minutes and costs nothing. But no major assistant has publicly confirmed reading it, so nobody should be charging you for it as a service line. If an agency's AI proposal leads with `llms.txt`, ask what else is in there."
+      }
+    },
+    {
+      "h2": "The answer-block pattern we apply to every page",
+      "body": [
+        "The core edit is small and it changes almost every page on a site. Under each H2, phrased as the question a person would actually type, we place a direct answer of roughly 40 to 60 words that makes complete sense with zero surrounding context. Everything else — the nuance, the caveats, the examples — comes after it.",
+        "Forty to sixty words is the target for a specific reason: it's long enough to contain a claim, a qualifier and a number, and short enough that a model can drop it into an answer without editing it. Below thirty words you're usually asserting without supporting. Above eighty, the model starts summarising you, and summarised sources get cited less consistently than quoted ones."
+      ],
+      "bullets": [
+        "**Question-shaped headings.** 'How much does SEO cost in India' beats 'Pricing'. The heading is a retrieval hook, not a design element.",
+        "**Self-contained answers.** No 'as we mentioned above', no pronouns pointing at the previous paragraph. Assume the block is read alone, because it will be.",
+        "**A number, a range or a named thing in every block.** Specifics survive summarisation. Adjectives don't.",
+        "**Dates on claims that decay.** 'As of July 2026' gives a model a reason to prefer you over an undated page from 2021.",
+        "**One idea per block.** Two claims fused into one paragraph get split, and the half that gets quoted is rarely the half you cared about."
+      ],
+      "subs": [
+        {
+          "h3": "Why tables do more work than paragraphs",
+          "body": [
+            "A comparison table hands a model rows it can reproduce. Three paragraphs comparing the same two things hand it raw material to paraphrase — and paraphrased content usually gets attributed to whoever's version was cleanest. On competitive commercial queries we build the table first and write the prose around it.",
+            "The same applies to short numbered processes, price lists and specification blocks. If information has a natural shape, give it that shape rather than burying it in sentences."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Entity work: making a model resolve you as a named source",
+      "body": [
+        "A model can only cite something it can name. If your company appears as 'Last Agency', 'LastAgency' and 'Last Agency Pvt Ltd' across LinkedIn, your own footer and every directory listing, you're three weak entities instead of one strong one.",
+        "Entity work is the least visible part of this service and the part that compounds. It's also cheap, because most of it is a one-time cleanup rather than an ongoing programme."
+      ],
+      "bullets": [
+        "**`Organization` schema with a complete `sameAs` array** pointing at your LinkedIn, Crunchbase, GitHub and any profile you control. This is the machine-readable statement that all those profiles are one company.",
+        "**One canonical name and one description**, used identically everywhere. Boring, and it's the hour in this engagement that pays back hardest.",
+        "**Real authors with real credentials**, marked up as `Person`, linked to their own profiles. Anonymous content is harder to attribute and easier to ignore.",
+        "**Unlinked brand mentions**, which count for entity resolution even where the link doesn't exist. This is why digital PR matters here as much as it does for classic rankings.",
+        "**Third-party corroboration** — a Wikidata entry if you genuinely qualify, listings on the platforms your category uses, consistent details on every one of them.",
+        "**`FAQPage` and `Article` markup.** Google stopped showing FAQ rich results for most sites in 2023, so this isn't a snippet play any more. We still mark it up because it's cheap, unambiguous structure for anything parsing the page."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where entity work overlaps with everything else",
+        "body": "Most of this is also just good [schema markup](/services/schema-markup-services) and good digital PR. If you're already running a serious SEO programme with us, a chunk of the AEO scope is work you're paying for once, not twice. We'll tell you which parts overlap before we quote."
+      }
+    },
+    {
+      "h2": "How we measure citation share, and what the number means",
+      "body": [
+        "Assistants are non-deterministic. Ask the same question twice and you can get two different sets of sources. Ask from Mumbai and from London and the answers diverge again. Any agency reporting 'you are cited for X' from a single check is reporting a coin flip.",
+        "So we measure a sample, not an instance. At kickoff we agree a frozen panel of prompts — typically 40 to 80, written the way your buyers actually phrase things, covering the full funnel from category education to 'best X in India'. That panel doesn't change during the engagement, because changing the questions is how agencies manufacture improvement."
+      ],
+      "numbered": [
+        "**Run the frozen panel monthly** across ChatGPT, Perplexity and Google AI Overviews, at a consistent time and from consistent locations.",
+        "**Log three things per prompt**: whether you were mentioned, whether you were linked, and which specific URL got the citation.",
+        "**Report citation share** — the percentage of panel prompts where you appear — plus which competitors appear most often and which of your pages are doing the work.",
+        "**Trace the winners.** When a page starts getting cited, we look at what changed and apply the same treatment to the pages that aren't.",
+        "**Report the misses too.** Prompts where a competitor is consistently quoted and you aren't are the most useful lines in the report, and they're the ones most reports omit."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Sampling is an estimate, and we'll say so on the report",
+        "body": "A monthly panel run is a snapshot with real error bars. It's directionally useful across months and it is not a precise measurement. We put that caveat on the report itself rather than in a footnote you'll never read, because the alternative is a false-precision dashboard that eventually gets us fired."
+      }
+    },
+    {
+      "h2": "Where this stops and AI search optimisation starts",
+      "body": [
+        "We split AI visibility into two services because they're genuinely two different jobs, done by different people, and bundling them lets agencies charge twice for whichever half they were going to do anyway.",
+        "This page is content and structure. The other half — [AI search optimisation](/services/ai-search-optimisation-services) — is access and plumbing, proving the crawlers can actually reach you. If an assistant is blocked at your CDN, no amount of answer-block rewriting will help, which is why we usually run the access audit first."
+      ],
+      "table": {
+        "caption": "How the two AI services divide.",
+        "head": ["This service (AEO / GEO)", "AI search optimisation (the sibling service)"],
+        "rows": [
+          ["Answer blocks, question-shaped headings, quotable structure", "Log-file proof of which AI crawlers reached you and which got a 403"],
+          ["Comparison tables, named numbers, dated claims", "Robots.txt, Google-Extended and CDN bot-rule decisions"],
+          ["Entity consistency, `Organization` and `Person` schema, `sameAs`", "Bing indexation and IndexNow submission"],
+          ["Content rewriting and new page creation for retrieval", "Rendering checks — whether your content exists without JavaScript"],
+          ["Monthly citation-share reporting across assistants", "Crawler access monitoring and share-of-voice plumbing"]
+        ]
+      }
+    },
+    {
+      "h2": "What's included, what it costs, and what the guarantee covers",
+      "body": [
+        "Answer engine optimisation starts at **₹75,000 a month**, ex-GST, month-to-month after the first quarter, thirty days' notice, and you keep every asset. Smaller sites with fewer than about 30 pages start at **₹40,000 a month**. See [pricing](/pricing) for the rest, including the bundle if you're running SEO and social with us."
+      ],
+      "table": {
+        "caption": "What the AEO retainer covers, and what it doesn't.",
+        "head": ["Included", "Not included"],
+        "rows": [
+          ["Answer-block restructuring across your existing priority pages", "Wholesale rewriting of an entire large site in month one"],
+          ["New pages built for the prompts you're losing", "Video, podcast and creative production"],
+          ["Entity audit, `Organization` and `Person` schema, `sameAs` cleanup", "Getting you a Wikipedia page — that's editorial and not ours to promise"],
+          ["A frozen prompt panel of 40–80 questions, run monthly across three assistants", "Enterprise AI-monitoring tool licences, if you want one on top"],
+          ["Citation-share reporting with competitor comparison and misses", "Crawler access, CDN rules and Bing indexation — that's the sibling service"],
+          ["Digital PR aimed at unlinked mentions and third-party corroboration", "Paid placements on review sites or sponsored listings"]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "The guarantee, stated exactly",
+          "body": [
+            "On day one we freeze two numbers: your citation count across the agreed prompt panel, and your trailing-90-day qualified leads from organic search. If we haven't beaten both in 90 days, we keep working free until we do. Not a refund — unpaid work until the numbers clear. Three clients a month, because that risk doesn't scale.",
+            "What we will never promise is that ChatGPT mentions you for a given prompt. Model outputs aren't controllable, aren't stable, and aren't ranked in any sense anyone outside those companies can verify. An agency guaranteeing a mention is guaranteeing something it cannot deliver, which is the same trick as guaranteeing position one — just newer, so fewer founders have learned to spot it yet."
+          ]
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the difference between AEO and GEO?",
+      "a": "Mostly vocabulary. Answer engine optimisation came from the featured-snippet era and focuses on direct answers; generative engine optimisation is the newer term for being cited by generative systems. The practical work overlaps almost entirely. We use one name to avoid selling you the same service twice — see [AEO against GEO](/compare/aeo-vs-geo)."
+    },
+    {
+      "q": "Does AEO replace SEO?",
+      "a": "No, and be wary of anyone saying it does. Assistants retrieve from indexes built by crawlers, so pages that can't be found, crawled or trusted don't get cited either. AEO is a structural layer on top of working SEO. Without the foundation it's decoration on a page nobody retrieves."
+    },
+    {
+      "q": "How long before we show up in AI answers?",
+      "a": "Pages that already rank well and get restructured can start appearing within 4–10 weeks, because the retrieval layer already knows them. New pages and new entities take longer — three to six months is realistic. Assistants also change their retrieval behaviour without notice, which nobody can control or predict."
+    },
+    {
+      "q": "Can you guarantee we get mentioned in ChatGPT?",
+      "a": "No. Nobody can, and anyone who says otherwise is describing something they don't control. We guarantee movement in citation count against your own frozen prompt panel over 90 days, plus your organic lead baseline. If we miss it, we keep working free until we clear it."
+    },
+    {
+      "q": "Do AI citations actually send traffic?",
+      "a": "Some, and less than the equivalent ranking would. Many assistant answers resolve the question without a click. The realistic value is a mention in front of a buyer at the moment they're forming a shortlist — closer to PR than to search traffic. Budget for it on that basis, not on session counts."
+    },
+    {
+      "q": "Should we block AI crawlers to protect our content instead?",
+      "a": "That's a real strategic choice with a real cost: block the search-side crawlers and you remove yourself from citations entirely. Training crawlers are a separate question from retrieval crawlers, and the distinction matters. We've laid out both sides in [should you block AI crawlers](/journal/should-you-block-ai-crawlers)."
+    }
+  ],
+  "related": [
+    { "type": "compare", "slug": "aeo-vs-geo" },
+    { "type": "glossary", "slug": "answer-engine-optimization" },
+    { "type": "services", "slug": "ai-search-optimisation-services" },
+    { "type": "journal", "slug": "how-to-get-cited-by-ai-assistants" },
+    { "type": "answers", "slug": "how-do-i-get-my-brand-cited-in-chatgpt" },
+    { "type": "compare", "slug": "geo-vs-seo" }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "slug": "automotive",
+  "type": "seo-for",
+  "primaryKeyword": "seo for automotive companies",
+  "secondaryKeywords": [
+    "automotive seo india",
+    "seo for auto component manufacturers",
+    "car service centre seo",
+    "spare parts ecommerce seo",
+    "seo for ev companies india"
+  ],
+  "cluster": "manufacturing-and-trade",
+  "intent": "commercial",
+  "industry": "Automotive",
+  "h1": "SEO for automotive brands, from component specs to service bays",
+  "metaTitle": "Automotive SEO in India: Parts, Service, EV",
+  "metaDescription": "SEO for automotive companies in India. We handle part-number search, fitment data and service-centre local pages so buyers find the exact SKU or bay.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Automotive SEO in India is fitment search, not keyword search. Buyers type 'brake pad for 2018 Swift Dzire VDI' and leave the second the fitment looks uncertain. The work is a part-number and vehicle-variant architecture, branch-level service pages, and EV running-cost content. Three to six months to real movement.",
+  "takeaways": [
+    "Accurate fitment data outperforms any volume of blog content in this category. A parts site with 300 articles and a bad fitment table sells nothing from organic.",
+    "Part numbers are a search vertical of their own. Most Indian parts sites bury the number in a spec table and never rank for it.",
+    "If you run service centres, the biggest unclaimed demand isn't on your website at all — it's in the map pack, one branch at a time.",
+    "EV queries are about running cost and range anxiety, not badges. Answer with figures you can stand behind, and put a review date on anything quoting a subsidy."
+  ],
+  "sections": [
+    {
+      "h2": "The query is a part and a car, and both halves have to match",
+      "body": [
+        "Nobody buying a spare part searches the way a keyword tool suggests. They search `brake pad for 2018 Swift Dzire VDI` or `air filter Creta 1.5 petrol 2021`, because a facelift year or a variant code is the difference between a part that fits and a part that goes back in the courier bag.",
+        "That intent is one your blog cannot serve. An article called 'How to choose brake pads' will never satisfy someone who already knows what they want and needs to know whether yours fits their car. This is the rare category where a well-built database beats a well-written essay, and it's why so many parts catalogues with a busy blog still get almost no revenue from search."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The two-tap test",
+        "body": "Open your own site on a phone, pick a common consumable, and try to confirm it fits a 2019 Baleno Delta petrol. If it takes more than two taps, or the answer is a downloadable PDF catalogue, you have a conversion problem sitting in front of your ranking problem."
+      }
+    },
+    {
+      "h2": "Fitment architecture: which combinations earn a URL",
+      "body": [
+        "Model times year times variant times fuel times part category multiplies fast. Cover 40 models across ten model years, four variants and 60 part categories and you're looking at close to a million theoretical pages — a scaled-content risk and a [crawl budget](/glossary/crawl-budget) problem in the same breath. The answer isn't to build all of it, and it isn't to build none of it.",
+        "Pick the tier by real search demand, not by what the product database can generate."
+      ],
+      "table": {
+        "caption": "Which fitment page types earn indexation on an Indian parts catalogue.",
+        "head": ["Page type", "Example", "Index it?"],
+        "rows": [
+          [
+            "Part category × model",
+            "Brake pads for Maruti Swift",
+            "Yes. Genuine demand, and it has room to carry variant guidance."
+          ],
+          [
+            "Part category × model × generation or fuel",
+            "Brake pads, Swift Dzire diesel, post-facelift",
+            "Yes, where the generations genuinely take different parts. This tier converts."
+          ],
+          [
+            "Part category × model × every year and variant code",
+            "One separate page per variant, per year",
+            "No. Serve it as a filtered state of the tier above, with fitment confirmed in-page."
+          ],
+          [
+            "OEM part number and its cross-references",
+            "The number stamped on the component being replaced",
+            "Yes. One canonical page per number, with every equivalent listed on it."
+          ],
+          [
+            "Universal-fit consumables",
+            "Wiper blades by length, bulbs by socket type",
+            "Index by specification, not by car — that's how they're actually bought."
+          ]
+        ]
+      },
+      "bullets": [
+        "**A fitment page that only lists SKUs is thin.** Add what changed between generations, the size or torque spec, and the symptom that sends people looking in the first place.",
+        "**Don't let the filter widget mint URLs.** Every model-year-variant permutation exposed as a crawlable parameter is how a 4,000-SKU catalogue ends up serving several hundred thousand near-identical pages to Googlebot.",
+        "**Put the fitment answer above the fold**, written as a sentence a human can read, not locked inside an attachment."
+      ]
+    },
+    {
+      "h2": "Part numbers are a search vertical you're probably ignoring",
+      "body": [
+        "A large share of aftermarket demand starts with a number rather than a name. The mechanic reads it off the old component; the fleet buyer pastes it from a purchase order. Those queries are short, unambiguous and close to the transaction — and most Indian parts sites either hide the number three tabs deep or never publish it as text at all.",
+        "Cross-referencing is the part that pays. If your component replaces an OE number, publish both: your number, the OE equivalent, and the competing aftermarket numbers you're interchangeable with. One canonical page per number, linked from every product it applies to, so the page consolidates instead of splitting across a dozen near-duplicates.",
+        "Then mark it up properly. `Product` with `sku`, `mpn`, `brand` and `offers.price` in INR, plus `isAccessoryOrSparePartFor` pointing at the vehicles it fits. That last property is the one almost everybody skips, and it's the one that tells a machine what your fitment table tells a human."
+      ]
+    },
+    {
+      "h2": "You will not beat the marketplaces on the number alone",
+      "body": [
+        "For a bare part-number query, a large marketplace usually wins. It has more referring domains, more indexed listings, and the number appears across twenty of its pages. Budgeting to beat it head-on for `<number> price` is money spent finishing second.",
+        "What you can win is everything wrapped around the number: whether it's OE, OES or aftermarket, what the warranty actually covers, which assembly fails next, and whether there's an installer near the buyer. Marketplace pages are generated from a supplier feed. Yours doesn't have to be — and in parts, where a wrong fitment costs a week of downtime, buyers actively hunt for the source that sounds certain.",
+        "The general form of this argument sits in [SEO versus selling through marketplaces](/compare/seo-vs-marketplace-selling). In automotive it's sharper, because the cost of the wrong answer is higher."
+      ]
+    },
+    {
+      "h2": "One page per bay, not one page for the whole network",
+      "body": [
+        "If you run service centres, the largest unclaimed demand isn't on your website. It's in the map pack: `car service near me`, `<brand> service centre <locality>`, `clutch replacement cost <city>`. That traffic converts in days rather than quarters, which makes it the first thing worth fixing.",
+        "Every physical location needs its own Google Business Profile and its own page, and the two have to agree on name, address and phone down to the punctuation. A single network page with 22 branches behind a dropdown is one page competing in 22 local markets, which in practice means it competes in none of them. Our [local SEO work](/services/local-seo-services) on multi-branch networks starts here, before any content is commissioned."
+      ],
+      "bullets": [
+        "**Per-branch page** — address, hours, the services that branch actually performs, the manager's name, real photographs of that workshop rather than stock images of a different one.",
+        "**Service-cost content per city**, because labour rates differ between metros and the query almost always includes a price.",
+        "**Booking on the page**, not three clicks into a portal. In India a WhatsApp thread converts better than a form, and it's easier to staff.",
+        "**Reviews requested at handover, per location.** Reviews sitting on the head-office profile do nothing for the branch eight kilometres away."
+      ]
+    },
+    {
+      "h2": "EV changed the questions before it changed the market",
+      "body": [
+        "EV buyers research differently. Their searches are about running cost and anxiety, not badge and mileage: real-world range against certified range, charging time on a 15A socket versus a fast charger, cost per kilometre against petrol, battery warranty terms, what a home charger installation involves and who signs off on the wiring.",
+        "That's a content cluster where component makers, charger companies, fleets and dealers all have a legitimate claim to the answer. Answer with figures you can defend — your own tested numbers, or the certified figure clearly labelled as certified. The gap between those two is precisely what people are searching to find out, so pretending it doesn't exist loses you the reader you were trying to win."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Incentives expire. Your page doesn't.",
+        "body": "Central and state EV incentives, road-tax waivers and registration concessions change often. A page quoting a scheme that lapsed two years ago does more damage than a page that never mentioned one. If you publish subsidy content, put a named owner and a review date on the page itself."
+      }
+    },
+    {
+      "h2": "What we'd do first, and what it costs",
+      "body": [
+        "On a parts catalogue we spend month one on fitment architecture and crawl control before commissioning a single article, because content routed into a broken catalogue is money set on fire. Service networks get the reverse order — branch pages and profiles first, because that demand is already searching and already local.",
+        "Our SEO runs from ₹75,000/mo, with smaller sites from ₹40,000/mo, ex-GST and month-to-month after the first quarter. [What SEO costs in India](/cost/seo-cost-in-india) breaks down what changes the number. We freeze your trailing-90-day qualified leads from organic on day one; if we haven't beaten that baseline in 90 days we keep working free until we do. We never promise a ranking position, because nobody controls Google's index and anyone who says otherwise is selling you something else."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How is SEO for auto parts different from normal ecommerce SEO?",
+      "a": "The unit of demand is a part plus a vehicle, not a product name. Ranking depends on a clean fitment architecture — model, generation, fuel type, part category — and on publishing OEM part numbers and cross-references as text. Get that right and the catalogue you already own starts ranking without new content."
+    },
+    {
+      "q": "Should I build a landing page for every car model and variant?",
+      "a": "No. Build pages at the level where generations genuinely take different parts, and serve everything below that as a filtered state with the fitment confirmed in-page. Minting a URL for every year-variant combination creates hundreds of thousands of near-identical pages, which reads as scaled content and burns your crawl budget."
+    },
+    {
+      "q": "How do I compete with marketplaces on spare parts search?",
+      "a": "Not on the bare part number — they have more links and more indexed pages carrying that number. Compete on fitment certainty, OE versus aftermarket clarity, warranty terms, failure symptoms and installer availability. Those are pages a supplier feed can't generate, and they're what a buyer who can't afford a wrong part is looking for."
+    },
+    {
+      "q": "Do service centres need separate pages and Google profiles?",
+      "a": "Yes, one of each per physical location, with name, address and phone matching exactly. A network page with all branches in a dropdown competes in every local market and wins none. Branch pages plus verified profiles are usually the fastest-converting work on an automotive site."
+    },
+    {
+      "q": "How long does automotive SEO take to show results in India?",
+      "a": "Three to six months for competitive parts and model terms. Local service queries often move faster — four to eight weeks — because map-pack visibility depends on profile completeness and reviews more than on domain authority. Fitment fixes on an existing catalogue can also show up early, since the pages already exist."
+    },
+    {
+      "q": "What does automotive SEO cost?",
+      "a": "In India, roughly ₹40,000–₹2,50,000 a month depending on catalogue size, branch count and how much developer access the fitment fixes need. Ours starts at ₹75,000/mo, smaller sites from ₹40,000/mo, ex-GST, month-to-month after the first quarter, and you keep every asset if you leave."
+    }
+  ],
+  "related": [
+    { "type": "seo-for", "slug": "car-dealerships" },
+    { "type": "seo-for", "slug": "manufacturing" },
+    { "type": "services", "slug": "local-seo-services" },
+    { "type": "glossary", "slug": "crawl-budget" },
+    { "type": "compare", "slug": "seo-vs-marketplace-selling" },
+    { "type": "cost", "slug": "ecommerce-seo-cost" }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "slug": "orphan-page",
+  "type": "glossary",
+  "primaryKeyword": "orphan page",
+  "secondaryKeywords": [
+    "orphan pages seo",
+    "how to find orphan pages",
+    "pages with no internal links",
+    "orphan url",
+    "fix orphan pages"
+  ],
+  "cluster": "technical-seo",
+  "intent": "informational",
+  "h1": "Orphan page",
+  "metaTitle": "Orphan Page: What It Is and How to Find One",
+  "metaDescription": "An orphan page has no internal links pointing at it, so Google struggles to find it. Here's the crawl-plus-sitemap-plus-GSC method that surfaces them.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Orphan page",
+  "definition": "An orphan page is a page on your site that no other page links to, leaving it unreachable by following internal links and cut off from the internal link equity that helps it rank.",
+  "answer": "An orphan page is a live page with no internal links pointing at it. Nothing on your site leads there, so a crawler following links never arrives and the page inherits no internal authority. Finding them requires comparing a crawl against your sitemap and Search Console — a crawler alone can't do it.",
+  "takeaways": [
+    "A crawler can never find orphan pages by itself. It works by following links, and an orphan has none — the absence is the definition.",
+    "The method is a three-list diff: **crawl**, **sitemap**, **Search Console URLs**. Anything in lists two or three but missing from list one is an orphan.",
+    "Being in the sitemap means Google can find it. It doesn't mean the page has any internal context or authority, which is why orphans rank badly even when indexed.",
+    "Three outcomes only: link it, redirect it, or remove it. Leaving it is the fourth option and it's how you get here."
+  ],
+  "sections": [
+    {
+      "h2": "Why a crawler alone will never find them",
+      "body": [
+        "This trips up experienced people, so it's worth stating plainly. Every crawler works the same way: start at a seed URL, fetch it, extract the links, fetch those, repeat. It's a graph traversal.",
+        "An orphan page isn't in the graph. Nothing points at it, so the crawler never reaches it, and it can't appear in a report of pages the crawler reached. Running a crawl and finding no orphans proves nothing — it's structurally guaranteed.",
+        "So you bring in URLs from somewhere other than your link graph, then check which of them the crawl never touched."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Orphaned, not invisible",
+        "body": "A page in your XML sitemap is still discoverable by Google — it just arrives with no context. No anchor text describing it, no parent page establishing its topic, no share of internal [link equity](/glossary/link-equity). It gets indexed and then sits at position 47."
+      }
+    },
+    {
+      "h2": "The three-list method",
+      "body": [
+        "Build three lists of URLs from three independent sources, then compare them. Everything you need is free."
+      ],
+      "numbered": [
+        "**List A — the crawl.** Every page reachable by following internal links from your homepage.",
+        "**List B — the sitemap.** Fetch `/sitemap.xml` and its children. Your CMS generates this from the database, not from the link graph, which is exactly why it's useful.",
+        "**List C — Search Console.** Export the Performance report's Pages tab for 16 months, plus the Indexing → Pages report. URLs Google has actually seen, whatever your links say.",
+        "**List D — analytics and backlinks.** GA4 landing pages catch URLs that get email and ad traffic; a backlink tool catches URLs other sites link to. Both surface old campaign pages nobody remembers."
+      ],
+      "bullets": [
+        "Orphans are `(B ∪ C ∪ D) − A`. Paste every list into one column, dedupe, then flag anything absent from the crawl.",
+        "Screaming Frog does the diff for you: connect the Search Console and GA4 APIs, enable Crawl Linked XML Sitemaps, then run Crawl Analysis and open the Orphan URLs report. Filter out 404s, redirects and parameter variants first — you want live, indexable pages."
+      ]
+    },
+    {
+      "h2": "How pages get orphaned in the first place",
+      "body": [
+        "Nobody orphans a page deliberately. It's always a side effect, and the causes are the same across almost every site we audit."
+      ],
+      "bullets": [
+        "**Campaign landing pages.** A Diwali sale page linked only from an ad and a WhatsApp broadcast. The campaign ended, the page stayed.",
+        "**Deleted category pages.** A collection is removed and its products survive at their own URLs, reachable from nowhere. The single largest source on ecommerce sites.",
+        "**Blog pagination.** Posts reachable only through `/blog/page/12`. Google crawls deep pagination reluctantly, so old posts orphan themselves by ageing.",
+        "**Template and taxonomy changes.** Tag archives get noindexed, then tag links get pulled from the post template, and every post that was only linked from a tag loses its route in.",
+        "**Migrations.** A replatform maps the top 500 URLs and leaves the tail live, in the sitemap, and unlinked.",
+        "**Programmatic pages.** Generate 4,000 location pages, link 40 from the footer, and you've orphaned 3,960. See [programmatic SEO](/services/programmatic-seo-services) for the version that works."
+      ]
+    },
+    {
+      "h2": "Link it, redirect it, or remove it",
+      "body": [
+        "Every URL on the list takes one of three decisions. Make them page by page — a bulk rule here creates a different mess in six months.",
+        "**Link it** if the page has organic impressions, backlinks, or a genuine job to do. Put the link where a human would plausibly click it: the relevant category page, a related-posts block, a body-copy mention in a related article. A footer link counts for crawling and very little else.",
+        "**Redirect it** if a better version already exists. A 301 to the closest genuine equivalent consolidates the signals. Not to the homepage — Google treats an irrelevant redirect as a soft 404 and passes close to nothing.",
+        "**Remove it** if it's a dead campaign with no links and no impressions. Return a 410 and drop it from the sitemap. A tidy 300-page site beats a 900-page site where 600 pages are archaeological.",
+        "Then close the loop and find out why the internal linking failed. Orphans are almost always a template that stopped linking somewhere, and fixing the template stops the next fifty."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Ecommerce catalogues orphan themselves quarterly",
+        "body": "On Shopify a product stays live at `/products/handle` whether or not it belongs to any collection. Every re-merchandising exercise leaves products live, unlinked and slowly de-indexing. Above a few hundred SKUs, put this check on a quarterly calendar."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are orphan pages bad for SEO?",
+      "a": "They're wasted, more than harmful. An orphan can still be indexed via your sitemap, but it receives no internal link equity and no contextual anchor text, so it rarely ranks for anything competitive. At volume, a few hundred orphans also make your site look thinner and less organised than it is."
+    },
+    {
+      "q": "How do I find orphan pages for free?",
+      "a": "Export your sitemap URLs, export Search Console's Pages report, then run a crawl with the free Screaming Frog tier (500 URLs) or any crawler you have. Paste all three into a spreadsheet and flag anything present in the exports but absent from the crawl."
+    },
+    {
+      "q": "Will adding an orphan page to my sitemap fix it?",
+      "a": "It fixes discovery, not authority. Google will find and probably index the page, but it still arrives with no internal links describing it or passing signals to it. Sitemap inclusion is the minimum, not the fix — the fix is a real link from a relevant page."
+    },
+    {
+      "q": "Should I delete orphan pages?",
+      "a": "Only the ones with no impressions, no backlinks and no purpose. Check Search Console for the last 16 months before deleting anything — orphans that still get impressions are usually pages worth linking properly rather than removing."
+    },
+    {
+      "q": "Do noindexed pages count as orphans?",
+      "a": "Technically yes, practically no. If a page is deliberately kept out of the index — a thank-you page, an internal search result — the fact that nothing links to it isn't a problem. Filter your orphan list by indexable status before you start making decisions."
+    },
+    {
+      "q": "How often should I check for orphan pages?",
+      "a": "Quarterly for ecommerce with a changing catalogue, annually for a stable brochure site, and immediately after any migration, replatform or navigation redesign. Those three events create more orphans in a week than normal operations create in a year."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "internal-linking"
+    },
+    {
+      "type": "glossary",
+      "slug": "xml-sitemap"
+    },
+    {
+      "type": "glossary",
+      "slug": "crawl-budget"
+    },
+    {
+      "type": "services",
+      "slug": "seo-audit-services"
+    },
+    {
+      "type": "journal",
+      "slug": "internal-linking-beats-link-building"
+    },
+    {
+      "type": "seo-for",
+      "slug": "ecommerce"
+    }
+  ]
+}

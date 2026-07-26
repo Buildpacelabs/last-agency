@@ -1,0 +1,265 @@
+{
+  "slug": "when-to-update-old-content-instead-of-writing-new",
+  "type": "journal",
+  "primaryKeyword": "when to update old content for seo",
+  "secondaryKeywords": [
+    "content refresh strategy",
+    "should i rewrite old blog posts",
+    "content decay seo",
+    "updating blog posts for rankings",
+    "content pruning"
+  ],
+  "cluster": "seo-strategy",
+  "intent": "informational",
+  "h1": "Stop Writing New Posts. Your Best Wins Are in the Archive.",
+  "metaTitle": "When to Update Old Content Instead of Writing New",
+  "metaDescription": "Knowing when to update old content beats publishing more of it. The decay pattern, the refresh-consolidate-delete tree, and the thresholds we use.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Update an old page instead of writing a new one when it already earns impressions but sits between positions 5 and 25 — Search Console will show a slow slide in position with flat or falling clicks. Below roughly 50 impressions a month over 90 days, consolidate it into a stronger page or delete it.",
+  "takeaways": [
+    "Decay has a signature: **impressions holding, position sliding, clicks falling**. That page is the cheapest ranking gain on your site.",
+    "The decision is three-way, not two-way. Refresh, consolidate, or delete — and the third one is the option nobody uses.",
+    "Our default thresholds: refresh above ~50 impressions a month at positions 5–25; consolidate when two URLs split one intent; delete or redirect below the floor after 90 days.",
+    "A date change is not a refresh. Google's guidance on this is explicit, and a bumped date on unchanged content is closer to a lie than a tactic.",
+    "Recrawl takes days to weeks, position movement four to ten weeks after that. Judge a refresh at week eight, not week two."
+  ],
+  "sections": [
+    {
+      "h2": "Decay has a shape, and you can see it in one report",
+      "body": [
+        "Content doesn't die at once. It slides. A page that ranked third in 2023 sits sixth by mid-2024 and eleventh by the time anyone looks, and because the drop is gradual nobody ever has the meeting about it. Meanwhile the content calendar keeps producing new pages on the reasonable-sounding theory that more is more.",
+        "What makes decay worth attacking first is that the page has already done the hard part. Google has crawled it, indexed it, understood it, and decided it belongs in the results for a set of queries. Getting from position eleven to four is a smaller job than getting a new URL from nowhere to eleven, and it takes fewer hours.",
+        "Three distinct patterns, three different responses. The first job is telling them apart."
+      ],
+      "table": {
+        "caption": "Three decay signatures and what each one is telling you.",
+        "head": ["What you see in Search Console", "What it usually means", "Response"],
+        "rows": [
+          [
+            "Impressions steady, average position sliding, clicks falling",
+            "Competitors published something better. Your page is still relevant, just outgunned.",
+            "Refresh. Highest return of the three."
+          ],
+          [
+            "Impressions falling and position holding",
+            "Search demand itself shrank, or the SERP changed shape — an AI Overview or a new pack absorbed the clicks.",
+            "Check the live SERP before touching the page. Sometimes there's nothing to fix."
+          ],
+          [
+            "Position holding, impressions holding, clicks falling",
+            "A title and snippet problem, not a content problem.",
+            "Rewrite the title tag and meta description. An hour's work."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Look at the SERP before you look at the page",
+        "body": "Open the query in an incognito window before you diagnose anything. If the top three results are now video, or a forum thread, or the intent has shifted from informational to transactional, your page didn't get worse — the question changed. Rewriting it to be a better version of the wrong format is the most common wasted refresh we see."
+      }
+    },
+    {
+      "h2": "Pull the report properly. Most people pull it wrong.",
+      "body": [
+        "Everything here comes from [Google Search Console](/glossary/google-search-console), free, and takes about twenty minutes for a few hundred pages. The mistake almost everyone makes is looking at the default 3-month view, which shows you the present and hides the trend."
+      ],
+      "numbered": [
+        "Open **Search results**, set the date range to **Compare**, and pick the last 6 months against the previous 6 months. Trend is the whole point; a snapshot tells you nothing about decay.",
+        "Switch to the **Pages** tab and sort by the clicks difference column, ascending. The biggest losers are now at the top. This list is your work order.",
+        "For each candidate, click through and check the **Queries** tab filtered to that page. You need to know which query it's losing, not just that it's losing.",
+        "Record four numbers per page: impressions per month, average position, click-through rate, and whether it has any commercial role at all. That fourth one is a judgement call and it decides more than the other three.",
+        "Then, separately, filter to **positions 5–25** across the site. That band is where refreshes pay best: close enough that improvement is realistic, far enough that improvement is worth real clicks. Below position 25 you're usually looking at a page that never had a chance."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Don't use analytics for this",
+        "body": "GA4 tells you what happened to sessions. Search Console tells you what happened in the search results, which is the thing you can actually act on. A page can lose half its analytics traffic because a newsletter stopped linking to it, and nothing about its ranking has changed at all."
+      }
+    },
+    {
+      "h2": "The decision tree, with the thresholds we actually use",
+      "body": [
+        "Three outcomes, not two. The one everybody skips is delete, which is why most sites carry a few hundred pages that have never sent a lead and never will.",
+        "These are our defaults for a site publishing a handful of pages a month. They scale — a 40,000-page ecommerce catalogue needs a much higher impression floor, because 50 impressions a month across 40,000 URLs is noise. Treat them as a starting shape, not a law."
+      ],
+      "table": {
+        "caption": "Refresh, consolidate or delete — our default thresholds over a trailing 90 days.",
+        "head": ["Condition", "Decision", "Why"],
+        "rows": [
+          [
+            "50+ impressions/month, average position 5–25, page has a commercial or topical role",
+            "**Refresh**",
+            "Google already ranks it. Closing the gap is cheaper than starting a new URL from zero."
+          ],
+          [
+            "Two or more URLs ranking for the same query, trading places month to month",
+            "**Consolidate**",
+            "You're splitting authority and internal links between them. One merged page beats two halves."
+          ],
+          [
+            "50+ impressions/month but position 40+, and the intent doesn't match the page",
+            "**Rewrite to the intent, or delete**",
+            "Impressions without proximity usually means Google has filed it under a query you weren't targeting."
+          ],
+          [
+            "Under 50 impressions/month for 90 days, no links, no conversions, no topical role",
+            "**Delete or redirect**",
+            "It costs crawl attention and dilutes topical clarity while returning nothing."
+          ],
+          [
+            "Under 50 impressions/month but it has referring domains, or it converts",
+            "**Keep and improve**",
+            "Traffic isn't the only value a page has. A page with links is an asset regardless of its own rankings."
+          ],
+          [
+            "Position 1–4 and stable",
+            "**Leave it alone**",
+            "The most common self-inflicted ranking loss in SEO is rewriting a page that was already winning."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "The band that pays",
+        "body": "Positions 5–25 is where refresh work returns most. A page at 11 moving to 4 typically multiplies its clicks several times over, because click-through rate falls steeply with position and falls off a cliff past the first page. A page at 2 moving to 1 gains less than it risks."
+      }
+    },
+    {
+      "h2": "What a real refresh changes, and what a date bump doesn't",
+      "body": [
+        "The lazy version of this tactic is changing the published date, adding a paragraph, and hitting update. It doesn't work, and it isn't a grey area — Google's own guidance is clear that changing a date without meaningfully changing the content is not an update. It's also a small lie told to your readers, which is a strange thing to build a content strategy on.",
+        "A refresh that earns its hours does most of the following. It's usually two to four hours per page, which is a third of what a new page costs."
+      ],
+      "bullets": [
+        "**Re-check the intent against the live SERP.** If the top results are now comparison tables and yours is a 2,000-word essay, format is the finding, not word count.",
+        "**Add sections for the queries it already ranks 8–20 for.** Search Console tells you exactly which ones. These are queries Google has already associated with the page and you're currently answering badly.",
+        "**Cut the dead weight.** The 2022 tool that shut down, the screenshot of an interface that no longer exists, the intro paragraph that says nothing. Removing 400 words is a refresh.",
+        "**Update every number and every claim.** Prices, thresholds, product names, statutory limits. On an Indian audience, GST and compliance details go stale fastest and they're the ones a reader will catch.",
+        "**Rewire the internal links, in both directions.** Which newer pages should link to this one now, and which should it link to? A refresh that ignores this is half a job — see [internal linking beats link building](/journal/internal-linking-beats-link-building).",
+        "**Rewrite the title tag if CTR is below what the position should earn.** Sometimes this alone is the entire fix.",
+        "**Then update the date, honestly**, because the content genuinely changed."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Don't change the URL",
+        "body": "A refresh keeps the URL. Changing the slug to something \"more optimised\" means a redirect, a recrawl, and a temporary ranking wobble in exchange for a marginal keyword-in-URL gain that stopped mattering years ago. Keep the URL, change the page."
+      }
+    },
+    {
+      "h2": "Consolidation is the underused one",
+      "body": [
+        "Two pages targeting the same intent is the most common quiet problem on a site older than three years. Somebody wrote \"SEO pricing guide\" in 2022 and \"how much does SEO cost\" in 2024, nobody checked, and now Google alternates between them. Neither accumulates the internal links or the external links that one page would have. Both sit at position nine.",
+        "Consolidation means picking a winner and genuinely merging, not just redirecting. The order matters."
+      ],
+      "numbered": [
+        "**Pick the winner on links and history, not on which you prefer.** The page with referring domains and the longer indexed history usually wins, even if the other is better written.",
+        "**Move the genuinely unique material across.** If the losing page has three sections the winner doesn't, those sections move. A redirect from an emptied page transfers URL signals but throws away the content you paid for.",
+        "**301 the loser to the winner.** Same topic, closest match. Never to the homepage — Google commonly treats an irrelevant redirect as a soft 404, and you've gained nothing while losing the page.",
+        "**Fix every internal link that pointed at the old URL.** Leaving them to hop through a redirect works, but it wastes crawl and it's sloppy; a search-and-replace takes minutes.",
+        "**Check the merged page still reads as one argument.** Two stitched articles read like two stitched articles, and thin, repetitive merged pages are their own problem — more on that in [our post-mortem on keyword cannibalisation](/journal/a-post-mortem-on-keyword-cannibalization)."
+      ]
+    },
+    {
+      "h2": "Pruning without losing what the page was worth",
+      "body": [
+        "Deleting content feels wrong, which is why so few people do it and why so many sites carry 300 pages of dead weight. The reasoning is straightforward: a large volume of pages nobody visits and nothing links to makes it harder for a search engine to work out what your site is authoritative about, and spends crawl attention you'd rather go elsewhere.",
+        "Pruning done carelessly loses real value, though. Check what the page is worth **before** deciding how to remove it, because the method depends on the answer."
+      ],
+      "table": {
+        "caption": "How to remove a page, depending on what it's carrying.",
+        "head": ["The page has", "Do this", "Note"],
+        "rows": [
+          [
+            "Referring domains, but no traffic",
+            "301 to the closest relevant page",
+            "You're keeping the link value. Never delete a linked page outright."
+          ],
+          [
+            "No links, no traffic, no close relative",
+            "Let it 404, or serve a 410",
+            "410 signals a deliberate removal and tends to drop out of the index a little faster. Both are fine."
+          ],
+          [
+            "No links, no traffic, but a close relative exists",
+            "301 to the relative",
+            "Only if the topics genuinely match. A stretch redirect becomes a soft 404."
+          ],
+          [
+            "Value to existing customers but none to search",
+            "Keep it, add `noindex`",
+            "Removal from the index isn't removal from the site."
+          ],
+          [
+            "Seasonal or campaign value returning next year",
+            "Keep, `noindex` until it's live again",
+            "Deleting and recreating annually throws away the URL's history every time."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Export everything before you delete it.** URL, content, and its Search Console history. Reversing a bad pruning decision without a record is miserable.",
+        "**Prune in batches, and record the date.** If organic traffic moves in an unexpected direction over the following two months, you want to know exactly what changed and when.",
+        "**Remove pruned URLs from your XML sitemap.** A sitemap listing 404s is a small, avoidable signal of neglect.",
+        "**Don't prune during a migration or a core update.** Two changes at once means you'll never know which one caused what."
+      ]
+    },
+    {
+      "h2": "How long a refresh takes to show up",
+      "body": [
+        "The most common mistake after doing this work correctly is checking on Tuesday.",
+        "Google has to recrawl the page before anything changes. On a site it visits often, that's days. For a page four clicks deep on a site it visits rarely, several weeks. You can nudge it: submit the URL through URL Inspection — there's a small daily quota, so spend it on pages that matter — and keep your sitemap's `lastmod` accurate, because Google treats it as a hint when a site's dates are consistently honest.",
+        "Once recrawled, position movement typically appears over the following four to ten weeks. The range is wide for real reasons: query competitiveness, how much the page actually changed, and whether a core update lands mid-window.",
+        "So set the review date when you do the work. Week eight, not week two. And review the batch, not the page — single pages are noisy; twenty refreshed pages together tell you whether the approach works."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Track it as a cohort",
+        "body": "Tag every refreshed page with the date you refreshed it. Eight weeks later, compare that cohort's clicks and average position against the eight weeks before. That comparison survives a seasonal dip and a core update in a way that staring at one page's chart never does."
+      }
+    },
+    {
+      "h2": "The cadence we run, and why it isn't half your budget",
+      "body": [
+        "On an established site with a real archive, we spend roughly a third of monthly content hours on refresh and consolidation, and the rest on new pages. Not half, and not everything — because refreshing only works on ground you already hold, and a site that stops publishing eventually runs out of pages worth refreshing.",
+        "The exception is the first two months on an older site. There, refresh work often dominates, because six years of archive usually hides a dozen pages sitting in positions 5 to 15 that nobody has touched since publication. Those are faster wins than anything new we could write.",
+        "Practically: one refresh sprint a quarter, a decay report every month, and a pruning pass once a year. The annual pruning pass is the one clients resist and the one that most reliably makes a bloated site legible again. If you're wondering how much new content you actually need alongside it, [how many blog posts you actually need](/journal/how-many-blog-posts-you-actually-need) makes the case for a smaller number than you've been told.",
+        "This work sits inside our SEO retainer, from ₹75,000/mo, with smaller sites from ₹40,000/mo. And the promise attached to it is the same one attached to everything else we do: not a ranking position for a keyword, which nobody can honestly offer, but movement against your own frozen baseline — trailing-90-day qualified leads from organic search. Miss it in 90 days and we keep working free until we beat it."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How often should you update old blog posts?",
+      "a": "Run a decay report monthly and a refresh sprint quarterly. Individual pages don't need a schedule — they need a trigger. The trigger is a page holding impressions while its average position slides, which is the signature of a competitor publishing something better rather than of your page getting worse."
+    },
+    {
+      "q": "Does updating the publish date improve rankings?",
+      "a": "No. Google's guidance is explicit that changing a date without meaningfully changing the content isn't an update, and readers notice when a \"2026\" article references a tool that shut in 2023. Change the date only when the content genuinely changed — at which point it's honest and useful."
+    },
+    {
+      "q": "Should I delete old blog posts that get no traffic?",
+      "a": "Only after checking two things: does anything link to it, and does it convert? If it has referring domains, 301 it to the closest relevant page rather than deleting. If it has neither links nor traffic nor a topical role after 90 days, removing it makes your site easier for Google to characterise."
+    },
+    {
+      "q": "How long does it take for a content refresh to work?",
+      "a": "Recrawl takes days to a few weeks depending on how often Google visits your site, then position movement typically appears over four to ten weeks. Review at week eight, and review the whole batch of refreshed pages together — single pages are too noisy to read anything into."
+    },
+    {
+      "q": "Is it better to update old content or write new content?",
+      "a": "On an established site, start with updates. A page already ranking at position 11 has cleared crawling, indexing and relevance; moving it to position 4 costs two to four hours against roughly eight for a new page from zero. Once the archive's realistic wins are taken, new content is the only way forward."
+    },
+    {
+      "q": "What is content pruning in SEO?",
+      "a": "Removing or de-indexing pages that earn nothing — no traffic, no links, no conversions, no topical role. The point isn't tidiness. A large volume of dead pages makes it harder for a search engine to work out what your site is authoritative about, and spends crawl attention on URLs nobody wants."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "content-decay" },
+    { "type": "journal", "slug": "a-post-mortem-on-keyword-cannibalization" },
+    { "type": "answers", "slug": "what-is-keyword-cannibalization" },
+    { "type": "glossary", "slug": "thin-content" },
+    { "type": "journal", "slug": "how-many-blog-posts-you-actually-need" },
+    { "type": "services", "slug": "content-marketing-services" }
+  ]
+}

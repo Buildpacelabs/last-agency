@@ -1,0 +1,273 @@
+{
+  "slug": "ga4-vs-search-console",
+  "type": "compare",
+  "primaryKeyword": "ga4 vs google search console",
+  "secondaryKeywords": [
+    "why do ga4 and search console numbers differ",
+    "search console clicks vs ga4 sessions",
+    "which seo report to trust",
+    "ga4 organic traffic setup",
+    "search console data limits"
+  ],
+  "cluster": "metrics-and-tools",
+  "intent": "informational",
+  "h1": "GA4 vs Search Console: the numbers never match, and that's fine",
+  "metaTitle": "GA4 vs Search Console: Why Numbers Never Match",
+  "metaDescription": "GA4 vs Google Search Console numbers never match, by design. Here are the four causes of the gap, and which number belongs in your board deck.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "GA4 and Search Console measure different events on opposite sides of the click, so the numbers can't match. Search Console counts clicks on Google results, in Pacific time, with rare queries filtered out. GA4 counts sessions where a tag fired in the browser. A gap of 10–30% is ordinary; the direction of the gap is the diagnosis.",
+  "takeaways": [
+    "Search Console sits **before** the click. GA4 sits **after** it. Everything that happens in between — a bounce-back, a blocked tag, a declined consent banner — lands in the gap.",
+    "Four causes explain nearly every discrepancy: **click ≠ session**, **client-side loss**, **timezone**, and **filtering plus row limits**.",
+    "Search Console reports its days in Pacific time. For an IST business that's a 12.5-hour offset, which is why daily comparisons never reconcile and monthly ones nearly do.",
+    "Neither number belongs in a board deck. Quote qualified leads from organic, sourced from your CRM."
+  ],
+  "sections": [
+    {
+      "h2": "Two tools, two sides of the click",
+      "body": [
+        "Most reporting arguments about these two are really a category error. They aren't two measurements of the same thing that disagree — they're two measurements of different things that were never going to agree.",
+        "Search Console is Google's record of what happened on Google. It knows what was shown, what was clicked and where you sat when it happened. It has no idea what your site did afterwards — whether it loaded, whether it converted.",
+        "GA4 is your record of what happened on your site. It knows nothing about the search result. It knows a browser executed some JavaScript and sent an event, and it guesses where that browser came from using a referrer that increasingly isn't there."
+      ],
+      "table": {
+        "caption": "What each tool can and cannot see.",
+        "head": [
+          "",
+          "Search Console",
+          "GA4"
+        ],
+        "rows": [
+          [
+            "Measures",
+            "Impressions, clicks, position on Google Search",
+            "Sessions, users, events, conversions on your site"
+          ],
+          [
+            "Collected",
+            "Server-side, by Google",
+            "Client-side, by a tag in the visitor's browser"
+          ],
+          [
+            "Scope",
+            "Google Search only",
+            "Every source, including Bing, direct and referral"
+          ],
+          [
+            "Blocked by ad blockers",
+            "No",
+            "Yes, routinely"
+          ],
+          [
+            "Timezone",
+            "Pacific time, fixed",
+            "Whatever your property is set to"
+          ],
+          [
+            "History kept",
+            "16 months",
+            "14 months for user-level exploration data"
+          ],
+          [
+            "Query data",
+            "Yes — the only place it exists",
+            "No, not since Google stopped passing queries"
+          ],
+          [
+            "Conversion data",
+            "No",
+            "Yes, if you configured it"
+          ],
+          [
+            "Can your agency edit it",
+            "No",
+            "Yes — filters, channel groups, conversions"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The single most useful line in this page",
+        "body": "Search Console answers \"is Google sending us demand?\" GA4 answers \"what did that demand do?\" If you find yourself trying to make the two totals equal, you're asking one of them a question it can't hear."
+      }
+    },
+    {
+      "h2": "The four reasons the numbers differ",
+      "body": [
+        "In rough order of how much damage each does to a monthly report."
+      ],
+      "subs": [
+        {
+          "h3": "1. A click is not a session",
+          "body": [
+            "Different units, and the mismatch runs both ways. One click usually starts one session — but a visitor who clicks your result, reads, goes back to Google and clicks a different page of yours has produced two clicks and, quite possibly, one session, because GA4's session window is 30 minutes by default.",
+            "Search Console also collapses a repeated click on the same result into one. Going the other way, GA4's Organic Search channel includes Bing, DuckDuckGo and everything else, while Search Console only ever reports Google. Compare the two and you're comparing a bigger box to a smaller one."
+          ]
+        },
+        {
+          "h3": "2. Ad blockers, consent banners and the click that never loaded",
+          "body": [
+            "Search Console records the click the moment it happens. GA4 records nothing until a tag fires in the browser. Anything that stops the tag firing becomes a gap, always in the same direction: Search Console higher.",
+            "Three big causes: ad blockers and privacy browsers that never load the script, consent banners where the visitor declines or leaves first, and impatient users who tap back before a slow mobile page finishes. India's DPDP Act made consent a live design question here, so this gap has widened for legitimate reasons.",
+            "The fourth cause is dumber and more common: the tag isn't on every template. Product pages have it, the blog doesn't. Check per template, not sitewide."
+          ]
+        },
+        {
+          "h3": "3. Search Console runs on Pacific time",
+          "body": [
+            "Search Console groups performance data by day in Pacific time. GA4 uses whatever the property is set to. For an IST business that's a 12.5-hour offset, so roughly half of each Search Console \"day\" belongs to your previous calendar day.",
+            "Which is why daily comparisons look chaotic and monthly ones look almost sane — the error concentrates at boundaries. Compare full weeks or months, and stop trying to reconcile a Tuesday."
+          ]
+        },
+        {
+          "h3": "4. Filtered queries, sampling and the 1,000-row limit",
+          "body": [
+            "Search Console filters out rare queries for privacy. That's why your query rows never sum to the reported total, and no, nothing is broken: the totals are right, the itemised list is deliberately incomplete.",
+            "The interface also exports at most 1,000 rows per report. With thousands of ranking queries, a UI export is a top-1,000 sample being read as a census. The API returns far more with pagination, and the Looker Studio connector will pull more too.",
+            "On the GA4 side, standard reports are generally unsampled, but Explorations can sample above a quota, and high-cardinality dimensions get bundled into an \"(other)\" row that quietly eats your detail."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Which direction the gap runs, and what it means",
+      "body": [
+        "The size of the gap isn't the diagnostic. The direction is. Use this before escalating anything to your agency or your developer."
+      ],
+      "table": {
+        "caption": "Reading the discrepancy as a symptom.",
+        "head": [
+          "What you see",
+          "Most likely cause",
+          "What to do"
+        ],
+        "rows": [
+          [
+            "Search Console clicks 10–30% above GA4 organic sessions",
+            "Normal. Ad blockers, consent declines, bounced loads.",
+            "Nothing. Record the ratio and watch for changes."
+          ],
+          [
+            "Search Console clicks 40%+ above GA4 sessions",
+            "Tag missing on some templates, or consent blocking by default",
+            "Audit the tag per template. Check consent mode."
+          ],
+          [
+            "GA4 organic sessions above Search Console clicks",
+            "GA4 organic includes Bing and others, or you compared users to clicks",
+            "Filter GA4 to google / organic first."
+          ],
+          [
+            "Monthly totals close, daily totals wild",
+            "Timezone offset",
+            "Compare full weeks or months."
+          ],
+          [
+            "Query rows don't add up to the total",
+            "Privacy filtering of rare queries",
+            "Expected. Use totals, not the sum of rows."
+          ],
+          [
+            "The gap suddenly widened this month",
+            "A tag deployment broke, or the consent banner changed",
+            "Check the deploy log and CMP version before blaming SEO."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "How to set GA4 up so the comparison is at least fair",
+      "body": [
+        "Most reporting arguments dissolve once the setup is honest. Six things, once, then leave them alone."
+      ],
+      "numbered": [
+        "**Set the property timezone and never change it mid-year.** Changing it doesn't reprocess history, so you'd create a permanent seam in your own data.",
+        "**Filter to `google / organic`** whenever you compare to Search Console. GA4's Organic Search channel is broader by definition.",
+        "**Link Search Console to GA4** — and know the limit. The linked reports expose landing-page data, not query detail on every page.",
+        "**Configure consent properly instead of firing tags regardless.** The second approach isn't a data shortcut, it's a compliance problem with a data side effect.",
+        "**Exclude internal and bot traffic** with GA4's own filters, not a spreadsheet afterwards.",
+        "**Write down which tool owns which metric.** Clicks, impressions and position from Search Console; sessions, engagement and conversions from GA4. Nobody switches source mid-quarter because one number looks better."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The report-shopping tell",
+        "body": "If your agency quoted GA4 sessions in Q1 and Search Console clicks in Q2, ask why. Switching source when the trend turns is the most common way an SEO report stays green while the business gets quieter. We wrote the full checklist in [how to read an SEO report](/journal/how-to-read-an-seo-report)."
+      }
+    },
+    {
+      "h2": "Which number goes to the CFO",
+      "body": [
+        "Neither. That's the rule, and it survives every version of this argument.",
+        "A CFO doesn't need clicks or sessions. They need the count of qualified leads or orders from organic search, taken from your CRM, with a cost per lead attached. That number is denominated in something they already manage.",
+        "If you must add a traffic line for context, use **Search Console clicks**. It's the demand-side measurement, and your agency can't edit it — nobody adds a filter or redefines a channel group inside Search Console. GA4 is configurable, and configurable numbers shouldn't be the ones you're judged on.",
+        "Keep the framing straight: traffic is a leading indicator, leads are the outcome. Same reason our guarantee is written against a client's own trailing-90-day qualified organic leads, frozen on day one, rather than a ranking position. See [what SEO reporting covers](/services/seo-reporting-services) and [rankings versus organic traffic](/compare/keyword-rankings-vs-organic-traffic)."
+      ]
+    },
+    {
+      "h2": "The verdict, by question",
+      "body": [
+        "Asking whether Google is sending more demand — Search Console, always. It's the only source of query, impression and position data, and the one nobody on your team can quietly reshape.",
+        "Asking what visitors did after arriving, and what it was worth — GA4, always. Search Console has no visibility past the click.",
+        "Asking which to trust when they disagree: both, and stop comparing totals. Check the direction of the gap, record the ratio, escalate when the ratio changes."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why don't GA4 and Search Console numbers match?",
+      "a": "Because they measure different events on opposite sides of the click. Search Console counts clicks on Google results, server-side, in Pacific time, with rare queries filtered out. GA4 counts sessions where a tag actually fired in the visitor's browser. A gap of 10–30%, with Search Console higher, is ordinary rather than a fault."
+    },
+    {
+      "q": "Should Search Console clicks equal GA4 sessions?",
+      "a": "No, and they never will. A click and a session aren't the same unit — one visitor can generate two clicks and one session, or a click that never becomes a session at all because the tag was blocked. Also, GA4's Organic Search channel includes Bing and other engines while Search Console is Google only."
+    },
+    {
+      "q": "Which is more accurate, GA4 or Search Console?",
+      "a": "Each is accurate about its own thing. Search Console is the better record of what happened on Google, because it's collected server-side and can't be blocked. GA4 is the only record of what happened after the click. Accuracy isn't the useful question — scope is."
+    },
+    {
+      "q": "Why does Search Console show fewer queries than clicks?",
+      "a": "Google filters out rare queries for privacy, so the itemised query list is deliberately incomplete while the totals stay correct. On top of that, the Search Console interface exports at most 1,000 rows per report. Use the API or the Looker Studio connector if you need the long tail."
+    },
+    {
+      "q": "How do I fix a large gap between the two tools?",
+      "a": "Work through it in order: filter GA4 to google / organic, compare full months rather than days to neutralise the Pacific-time offset, then check whether your tag fires on every page template. If the gap is above 40% after all three, it's almost always a tag or consent problem rather than an SEO one."
+    },
+    {
+      "q": "What SEO number should I report to my board?",
+      "a": "Qualified leads or orders from organic search, taken from your CRM, against a baseline you froze before the work started. Add Search Console clicks as the demand-side context if you need a traffic line — it's the one number your agency can't configure."
+    }
+  ],
+  "versus": {
+    "a": "GA4",
+    "b": "Google Search Console",
+    "verdict": "When you need one traffic number for a board deck, quote Search Console clicks — it measures demand from Google and nobody on your team can reconfigure it; use GA4 only for what happened after the click, where Search Console is blind."
+  },
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-analytics-4"
+    },
+    {
+      "type": "glossary",
+      "slug": "impressions"
+    },
+    {
+      "type": "compare",
+      "slug": "keyword-rankings-vs-organic-traffic"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-read-an-seo-report"
+    },
+    {
+      "type": "services",
+      "slug": "seo-reporting-services"
+    }
+  ]
+}

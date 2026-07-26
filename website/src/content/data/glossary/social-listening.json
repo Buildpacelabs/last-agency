@@ -1,0 +1,117 @@
+{
+  "slug": "social-listening",
+  "type": "glossary",
+  "primaryKeyword": "social listening",
+  "secondaryKeywords": [
+    "social media monitoring",
+    "brand monitoring tools",
+    "sentiment analysis social",
+    "how to do social listening",
+    "social listening vs monitoring"
+  ],
+  "cluster": "social",
+  "intent": "informational",
+  "h1": "Social listening",
+  "metaTitle": "Social Listening: What It Is and How to Start",
+  "metaDescription": "Social listening tracks what people say about your brand and category online. What to monitor, free ways to do it, and how to act on what you find.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Social listening",
+  "definition": "Social listening is tracking what people say about your brand, competitors and category across public conversation, then acting on the pattern rather than the individual post.",
+  "answer": "Social listening is tracking what people say about your brand and category across public conversation, then acting on the pattern. Monitoring is the narrower half — replying to direct mentions. You can start with Google Alerts, Reddit and Quora searches and your own review pages for nothing, long before a ₹25,000-a-month tool is worth buying.",
+  "takeaways": [
+    "**Monitoring is inbox work. Listening is research.** Most agencies sell the first and invoice for the second.",
+    "The free stack covers most of what a small brand needs: alerts, Reddit, Quora, store reviews, Search Console.",
+    "In India the highest-signal channel is WhatsApp and sales calls, and no tool can crawl either. Log them manually.",
+    "The output of listening should be content decisions and product decisions, not a sentiment pie chart."
+  ],
+  "sections": [
+    {
+      "h2": "Listening versus monitoring",
+      "body": [
+        "The words get used interchangeably. They're different work with different outputs.",
+        "**Monitoring** is reactive and individual. Someone tagged you, complained, left a two-star review. You reply, resolve, close the loop. An operational task with a response-time target.",
+        "**Listening** is aggregate. It's reading a hundred conversations you weren't tagged in and noticing that thirty mention delivery time, or that everyone comparing you to a competitor uses the same word for the thing you do worse. Nobody replies to those. You act on them by changing something.",
+        "Monitoring is easy to sell — a mentions dashboard, a response-time chart. Listening needs someone to read things and form a view. Ask any agency quoting for it which one you're buying. If the monthly output is a sentiment percentage, you're buying monitoring."
+      ]
+    },
+    {
+      "h2": "What to actually track",
+      "body": [
+        "Four buckets. Most brands set up the first, skip the rest, then wonder why the exercise felt pointless."
+      ],
+      "bullets": [
+        "**Your brand** — the name, the misspellings, your handle, your founder, your products. A brand nobody can spell generates most of its mentions in a form your alerts miss.",
+        "**Your competitors** — their name with \"vs\", \"alternative\", \"review\", \"refund\", \"switched from\". That last one tells you why people leave them, in their own words.",
+        "**Your category** — the problem language people use before they know any brand exists. \"How do I get my GST filing done\" is a category conversation. Nobody in it has heard of you, and it's the most useful thing you'll read all month.",
+        "**Complaint language** — your brand next to \"worst\", \"refund\", \"not delivered\", \"scam\". Alert on these immediately; they're the ones that become a thread if nobody notices for four days."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The mention that's also a link",
+        "body": "Chase unlinked mentions on real publications separately. Someone wrote about you and didn't link; a polite email often fixes it, and it's the cheapest link acquisition available. See [brand mentions](/glossary/brand-mentions)."
+      }
+    },
+    {
+      "h2": "The free version, in an hour a week",
+      "body": [
+        "Paid platforms are good at scale — thousands of mentions a day, multiple markets, a team to read them. For a brand doing a few dozen mentions a month they're an expensive way to receive an email. Buy one when volume exceeds what a person can read, not before."
+      ],
+      "numbered": [
+        "**Google Alerts** for brand, misspellings, founder name and top three competitors. Brand as-it-happens, category weekly, or you'll mute them all by day nine.",
+        "**Reddit and Quora**, via their own search sorted by new, plus `site:reddit.com \"your brand\"` on Google. Reddit is where people say what they think; Quora's questions are a keyword list with the intent attached.",
+        "**Store and profile reviews** — Google Business Profile, Play Store, App Store, Zomato, Amazon. Sort by lowest rating. That's your product roadmap, written by people who paid for the privilege.",
+        "**YouTube comments** under competitor review and comparison videos, which are unusually honest.",
+        "**Search Console queries** — what people type before they arrive, and the only source here covering people who never posted. See [Google Search Console](/glossary/google-search-console).",
+        "**Your sales calls and WhatsApp threads.** In India this is the richest channel and the one no tool can crawl, because it's private. Have whoever handles enquiries log the objection verbatim once a week."
+      ]
+    },
+    {
+      "h2": "Turning what you hear into decisions",
+      "body": [
+        "Listening that ends in a report is a cost. Listening that ends in a decision is an asset. Three it should feed:",
+        "**Content.** Every question asked three times becomes a page, and the phrasing people used becomes the heading. Cheapest [content gap analysis](/glossary/content-gap-analysis) there is, and more reliable than keyword tools because you're reading intent rather than inferring it.",
+        "**Product and operations.** Three people asking for a size you don't stock is a purchasing decision. Fifteen complaints about a delivery window is a logistics decision. Neither belongs in a marketing report, which is why they get lost.",
+        "**Positioning.** When people describe you to each other they use different words than your website does. Theirs are usually better."
+      ]
+    },
+    {
+      "h2": "Handling a complaint thread in public",
+      "body": [
+        "The setup pays for itself the first time it catches something early. What you do next decides whether it stays small. Reply publicly, within hours, once, in the language of the original post. Own the fact rather than defending the process — \"that shouldn't have happened, here's what we're doing\" ends a thread; \"as per our policy\" extends it. Move to DM for order details, then return publicly with the resolution, because the thousand people reading never see the DM.",
+        "Two things not to do. Don't delete unless it genuinely breaches platform policy — deletion turns a complaint into a story, and someone always has the screenshot. And don't paste the same templated apology five times in one thread.",
+        "If the volume of complaints is the problem rather than the handling, that's an operations conversation and marketing can't fix it. We'd rather say so than sell you [review management](/services/review-management-services) as a way of burying it."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the difference between social listening and social monitoring?",
+      "a": "Monitoring is reactive and individual — replying to mentions, complaints and tags. Listening is aggregate and strategic — reading conversations you weren't tagged in to find patterns worth acting on. Monitoring is an operational task; listening should change what you build and what you publish."
+    },
+    {
+      "q": "Do I need a paid social listening tool?",
+      "a": "Not until your mention volume exceeds what one person can read. Below that, Google Alerts, Reddit and Quora search, your review pages and Search Console cover most of it for free. Buy a tool when you're missing things, not when you're starting out."
+    },
+    {
+      "q": "How do I do social listening for free?",
+      "a": "Google Alerts for brand, misspellings and competitors; Reddit and Quora search; Google Business Profile, Play Store and App Store reviews sorted worst-first; YouTube comments on competitor review videos; Search Console queries; and a weekly log of verbatim objections from your own sales calls."
+    },
+    {
+      "q": "What is sentiment analysis, and is it reliable?",
+      "a": "It's automated scoring of mentions as positive, negative or neutral. On Indian conversation it's shakier than vendors admit — sarcasm, Hinglish, code-switching and regional scripts all break it. Useful for spotting a sudden swing in volume; not useful as a number you report to a board."
+    },
+    {
+      "q": "How often should I check social listening?",
+      "a": "Complaint alerts, immediately. Brand mentions, daily. Category and competitor conversation, a proper read once a week for about an hour. The weekly read is where the value is, and it's the one that gets skipped when things are busy."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "brand-mentions" },
+    { "type": "glossary", "slug": "content-gap-analysis" },
+    { "type": "glossary", "slug": "user-generated-content" },
+    { "type": "glossary", "slug": "content-calendar" },
+    { "type": "services", "slug": "review-management-services" },
+    { "type": "journal", "slug": "what-content-actually-does-for-seo" }
+  ]
+}

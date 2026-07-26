@@ -1,0 +1,221 @@
+{
+  "slug": "why-we-only-take-three-clients-a-month",
+  "type": "journal",
+  "primaryKeyword": "why agencies should limit client intake",
+  "secondaryKeywords": [
+    "how many clients per seo account manager",
+    "agency capacity planning",
+    "boutique seo agency model",
+    "why agencies overload teams",
+    "seo agency client load"
+  ],
+  "cluster": "agency-economics",
+  "intent": "informational",
+  "h1": "Why We Only Take Three New Clients a Month",
+  "metaTitle": "Why We Only Take Three Clients a Month",
+  "metaDescription": "Agencies should cap client intake because attention doesn't scale. Here's the capacity arithmetic behind three a month, and what breaks at eight.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "We cap intake at three new clients a month because one strategist can genuinely hold five or six accounts in working memory. Past eight, the account becomes checklist delivery — the same three recommendations recur, nobody reads your Search Console, and a guarantee written against your baseline stops being honest.",
+  "takeaways": [
+    "The binding constraint isn't hours, it's **context** — holding your site architecture, keyword map and last three months of data in someone's head.",
+    "A strategist has around 120 usable hours a month. Real ownership of an account costs 18–20 of them. That's five or six accounts, not twelve.",
+    "Onboarding costs roughly double a steady-state month, which is why the cap is on *new* clients rather than total ones.",
+    "A cap costs us revenue we could invoice next week. That's the point — it's a constraint, not a scarcity tactic.",
+    "The guarantee only works with slack in the roster. Free months have to be delivered by somebody who isn't already at capacity."
+  ],
+  "sections": [
+    {
+      "h2": "Most agency scarcity is theatre. Ours is arithmetic.",
+      "body": [
+        "\"Limited slots available\" is one of the oldest tricks in professional services, right next to the countdown timer and the discount that expires on Friday. If an agency claims a cap and can't show you the maths behind the number, it's a sales tactic with a nice font.",
+        "So here's ours with the working shown, and you're welcome to check it against any agency you're talking to, including us. Three new clients a month is not a marketing position. It's the number that falls out of a capacity calculation, and if the calculation changes — we hire another senior, say — the number changes with it.",
+        "The short version: attention doesn't scale the way hours do. You can always find more hours by hiring. You cannot find more of the specific thing that makes SEO work, which is one person holding an entire site in their head well enough to notice when something's off."
+      ]
+    },
+    {
+      "h2": "The arithmetic: what one strategist can genuinely hold",
+      "body": [
+        "Start with the month. A full-time strategist has roughly 160 working hours in an Indian month. Take out internal reviews, hiring, sick days, the two hours a week of algorithm and industry reading that keeps them worth paying for, and you're left with something like 120 usable hours on client work.",
+        "Now the cost of one account. On a ₹75,000/mo engagement the strategist doesn't do all 42 planned hours — specialists do the technical work, the writing and the outreach. But the strategist's own share is heavier than the org chart suggests: 4 hours of planning and the monthly call, 3–4 hours reviewing what the team produced, 3 hours reading the data properly rather than skimming a dashboard, 2–3 hours of client comms, and 4–6 hours of the thing nobody schedules — thinking about the account when they're not in it.",
+        "That's 18–20 hours per account per month for genuine ownership. Divide 120 by 19 and you get six. Call it five to six accounts, because at exactly six there's no room for the month a client's site gets hacked or a migration goes sideways."
+      ],
+      "table": {
+        "caption": "What happens to strategist attention per account as a roster grows. Assumes ~120 usable hours a month.",
+        "head": [
+          "Accounts held",
+          "Hours per account",
+          "What the account actually gets"
+        ],
+        "rows": [
+          [
+            "4",
+            "~30 hrs",
+            "Over-serviced. Genuinely nice, and financially hard to justify unless the fees are large"
+          ],
+          [
+            "5–6",
+            "20–24 hrs",
+            "Real ownership. The strategist knows your site without opening a document"
+          ],
+          [
+            "8",
+            "~15 hrs",
+            "Slipping. Plans are still bespoke, but the reading gets shallow and QA is the first casualty"
+          ],
+          [
+            "10–12",
+            "10–12 hrs",
+            "Checklist delivery. Templates with your name in them and recommendations recycled from another account"
+          ],
+          [
+            "15+",
+            "under 8 hrs",
+            "Account management, not SEO. The strategist is coordinating output they haven't evaluated"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The number nobody volunteers",
+        "body": "Ask any agency how many accounts the specific person running yours currently holds. Not team size, not client count — that one person's load. A well-run firm answers with a number in under five seconds. Everyone else explains their pod structure for two minutes, which is the same answer in a longer format."
+      }
+    },
+    {
+      "h2": "Three a month is not three in total",
+      "body": [
+        "Worth clearing up, because it's the most common misreading. We onboard up to three new clients in a calendar month. The total roster is larger and is capped separately by how many senior people we have — five or six accounts each, per the arithmetic above.",
+        "The reason the intake cap exists on top of the roster cap is that onboarding is the expensive month. A first month runs roughly double the steady-state strategist load: the audit, the keyword map, the baseline freeze, access to Search Console and analytics and the CRM, the conversations with your developer, and the unglamorous archaeology of working out what the last agency did and why some of it needs reversing.",
+        "Three new accounts in one month therefore consumes most of the roster's spare capacity for that month. Four would mean either onboarding badly or quietly under-serving the existing clients — who, notably, didn't agree to fund our growth.",
+        "If that sounds like an odd thing to optimise for, consider the alternative from the existing client's side. Every agency you've been disappointed by was, at some point, an agency that took on more clients than it could hold. Nobody announces that month. You just notice the reports got shorter."
+      ]
+    },
+    {
+      "h2": "The failure signature of an overloaded account",
+      "body": [
+        "You usually can't see an agency's capacity planning. You can see its symptoms, and they're remarkably consistent. If four or more of these are true, your account is one of twelve and no amount of relationship warmth on the monthly call changes that."
+      ],
+      "bullets": [
+        "**The same three recommendations recur.** Improve internal linking, add more content, build more backlinks. True of every website ever built, which is why it's the default output when nobody has looked at yours.",
+        "**The report is a template with your name in it.** Identical structure, identical commentary verbs, and a narrative that would survive being pasted into another client's deck.",
+        "**Nobody references your last quarter.** A strategist who holds your account says \"this is the same drop we saw in March after the category consolidation.\" A strategist holding twelve says \"we'll look into it.\"",
+        "**Content briefs are keyword lists.** No angle, no point of view, no reference to what your sales team hears on calls. That's what a brief looks like when it's generated rather than considered.",
+        "**Questions take four days.** Not because anyone's rude — because your email is in a queue behind eleven others and none of them is on fire either.",
+        "**The person on the call asks what you sell.** In month five. It happens more than you'd think, and it's the clearest signal available.",
+        "**Nothing is ever removed from the plan.** Overloaded strategists add tasks because adding is faster than deciding. Deciding what to stop doing requires holding the whole account in your head."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "This is a systems problem, not a people problem",
+        "body": "The strategist on an overloaded account is usually competent and quietly miserable. They know the work is shallow. They also know that saying so gets them a conversation about efficiency. Almost every bad agency experience we hear about traces back to a capacity decision made in a management meeting the client was never in."
+      }
+    },
+    {
+      "h2": "A cap is a constraint on revenue, not a marketing line",
+      "body": [
+        "Here's the uncomfortable part, stated plainly: capping intake means declining money we could invoice next week. At ₹75,000/mo, every client we turn away is ₹9 lakh a year we don't earn. Over a year of saying no, that's not a rounding error for a firm our size.",
+        "The temptation to take the eleventh client is enormous, and it never presents itself as greed. It presents itself as a great fit, a founder you like, a category you know well, and a strategist who says they can handle it. They usually can — for two months. Then a migration lands, or a core update hits three accounts at once, and the thing that gets dropped is whichever client complains least.",
+        "So the cap is deliberately structural rather than a matter of discipline. Discipline fails under a good pitch on a slow month. A number written down in advance doesn't.",
+        "The other side of that trade is that we can't be cheap. A small roster means each client carries a real share of tools, overheads and the cost of sales — [the full cost stack is here](/journal/where-your-seo-retainer-money-actually-goes). Volume agencies genuinely do have a cost advantage, and we'd rather concede it than pretend our arithmetic is magically better than theirs."
+      ]
+    },
+    {
+      "h2": "How the cap makes the guarantee affordable",
+      "body": [
+        "This is the part that connects everything else. [Our SEO work](/seo) starts by freezing your trailing-90-day count of qualified leads from organic search on day one. If we haven't beaten that number in 90 days, we keep working free until we do. We never promise a specific ranking position for a specific keyword, because nobody controls Google's index and any agency claiming otherwise is describing a purchase, not a plan.",
+        "A guarantee like that is an insurance policy an agency writes against itself. And insurance requires reserves. In our case the reserve isn't cash — it's unallocated senior hours.",
+        "Think about what a free month actually costs. Somebody has to do the work, and the work costs the same whether or not it's invoiced. If every strategist is already holding twelve accounts, there are no spare hours to fund a free month. The agency has three options: deliver the free month badly, quietly stop honouring the clause, or write the guarantee so narrowly that it never triggers. All three happen, and the third is the most common — read any \"guaranteed results\" page carefully and you'll usually find the guarantee is against a metric the agency controls.",
+        "The cap is what makes ours payable. Five or six accounts per strategist leaves genuine slack in the month. That slack is the thing you're actually buying when you notice we're expensive."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The honest self-interest here",
+        "body": "A capped roster with a baseline guarantee makes client selection ruthless. We turn down businesses where organic search plainly isn't the right channel, because we'd be underwriting a bet we'd lose. If we tell you not to hire us, that's the arithmetic talking, and it's the most useful thing we can say on a first call."
+      }
+    },
+    {
+      "h2": "What the waitlist means for your start date",
+      "body": [
+        "Practically: if the month's three slots are taken, you start the following month. That's the whole mechanism. No deposit to hold a place, no priority tier, no urgency email on the 28th.",
+        "A four-week gap sounds like lost time and mostly isn't, because there's a specific list of things that are worth doing before an agency arrives — and doing them makes month one faster and cheaper regardless of who you hire."
+      ],
+      "numbered": [
+        "**Freeze your own baseline now.** Pull your trailing 90 days of qualified leads from organic search out of your CRM and write the number down somewhere you can't edit it later. [Here's how we do it.](/journal/how-to-set-an-seo-baseline) Any agency that starts without one is choosing to be unaccountable.",
+        "**Sort out access.** Search Console, GA4, your CMS, your Google Business Profile, DNS. Chasing a former agency for admin rights to a property they registered is the single most common two-week delay in onboarding.",
+        "**Find out who can deploy code, and how fast.** SEO recommendations are worthless until somebody with repo access ships them. If that's a fortnightly release train, we need to know before we plan month one.",
+        "**Write down what your sales team actually gets asked.** Twenty real questions from real buyers is worth more than any keyword tool's export, and it costs you an afternoon.",
+        "**Decide what a qualified lead is.** Not a form fill — a lead your sales team would be annoyed to lose. If you can't define it, no guarantee written against it means anything."
+      ]
+    },
+    {
+      "h2": "Ask any agency the same five questions",
+      "body": [
+        "None of this is proprietary. Run these on us and on whoever else is pitching — the answers are more informative than the case studies, and they take one call.",
+        "The two ratios worth computing yourself: total clients divided by senior delivery staff, and new clients onboarded last month divided by the same number. Under 6:1 on the first and you're dealing with a firm that can hold your account. Anything above 10:1 is a production line, which is fine if that's what you're buying and expensive if it isn't."
+      ],
+      "bullets": [
+        "**\"How many accounts does the person running mine hold today?\"** One number. Watch how long it takes.",
+        "**\"How many new clients did you onboard last month?\"** Compare it to team size. A five-person agency that signed six clients in July is going to be a different company in October.",
+        "**\"What happens to my account when you win a client three times my size?\"** The honest answer involves a trade-off. The dishonest one involves the word \"capacity\" and no numbers.",
+        "**\"Who specifically does the work, and will they be on this call in month six?\"** Pitch teams and delivery teams are different teams at most agencies. That's the complaint founders bring us more than any other.",
+        "**\"What are you turning down right now?\"** An agency with a real cap can name the category or the client profile it's declining. An agency without one has never had to think about it."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many clients should one SEO account manager handle?",
+      "a": "Five or six for genuine ownership, assuming multi-discipline retainers around ₹75,000 a month. Past eight, per-account attention drops below roughly fifteen hours and the work becomes coordination rather than strategy. Lighter accounts allow higher loads — a purely local ₹40,000 engagement needs less — but the ceiling is context, not hours."
+    },
+    {
+      "q": "Isn't a client cap just artificial scarcity?",
+      "a": "It is when there's no arithmetic behind it. Ask for the working: usable hours per strategist, hours needed per account, and current load. If a firm can't produce those three numbers, the cap is decoration. If it can, it's a constraint they're paying for in declined revenue every month."
+    },
+    {
+      "q": "What happens if all three slots are taken when I enquire?",
+      "a": "You get a start date for the following month, not a deposit request. We'd rather use the gap productively — freezing your own lead baseline, sorting analytics and CMS access, and working out who can deploy code. Those three tasks make the first month faster no matter which agency you eventually hire."
+    },
+    {
+      "q": "Does a small agency mean less capability than a big one?",
+      "a": "Less breadth, more depth. Large agencies genuinely win on tool cost spread across many accounts, on multi-market coverage, and on surviving a key person leaving. They lose on attention, and attention is what determines whether anyone notices your category pages stopped being indexed in March."
+    },
+    {
+      "q": "How do I tell if my current agency is overloaded?",
+      "a": "Four signs, any two of which should worry you: the same three recommendations every month, reports that would work for any client with the name swapped, no reference to your own history when something drops, and replies taking four days. None of these means anyone is lazy. They mean the roster is bigger than the team."
+    },
+    {
+      "q": "Why does the intake cap matter to the guarantee?",
+      "a": "Because a guarantee has to be funded. If we miss your baseline we keep working free until we beat it, and free work still costs the same hours. That's only payable if the roster has slack in it. At twelve accounts per strategist there is no slack, which is why most ranking guarantees are written narrowly enough to never trigger."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "how-many-clients-should-an-seo-agency-take"
+    },
+    {
+      "type": "journal",
+      "slug": "what-an-seo-guarantee-costs-the-agency"
+    },
+    {
+      "type": "journal",
+      "slug": "why-clients-fire-their-seo-agency-in-month-four"
+    },
+    {
+      "type": "compare",
+      "slug": "agency-vs-freelancer"
+    },
+    {
+      "type": "services",
+      "slug": "seo-retainer-plans"
+    },
+    {
+      "type": "answers",
+      "slug": "do-seo-agencies-guarantee-rankings"
+    },
+    {
+      "type": "journal",
+      "slug": "the-services-an-seo-agency-must-actually-offer"
+    }
+  ]
+}

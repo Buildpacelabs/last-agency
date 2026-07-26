@@ -1,0 +1,226 @@
+{
+  "slug": "how-much-do-backlinks-actually-matter",
+  "type": "journal",
+  "primaryKeyword": "how much do backlinks actually matter",
+  "secondaryKeywords": [
+    "are backlinks still important",
+    "backlinks vs content",
+    "do i need link building",
+    "backlink quality vs quantity",
+    "how many backlinks do i need"
+  ],
+  "cluster": "seo-strategy",
+  "intent": "informational",
+  "h1": "How Much Do Backlinks Actually Matter? Less Than You've Been Sold",
+  "metaTitle": "How Much Do Backlinks Actually Matter Now?",
+  "metaDescription": "Backlinks matter, but not the way link sellers claim. Here's when links move rankings, when they do nothing, and what we buy instead of link packages.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Backlinks are an amplifier, not a foundation. They raise how competitively your existing pages can rank — so on a 40-page site with no topical coverage, 50 new links change almost nothing. Links start paying once you have pages parked in positions 11–30 for queries that buy. Before that, coverage is the constraint.",
+  "takeaways": [
+    "A link makes a page you already have more competitive. If no page targets the query, there is nothing for the link to amplify.",
+    "**The threshold we use:** count your pages sitting in positions 11–30 for commercial queries. Twenty or more and links are your bottleneck. Three and they aren't.",
+    "A ₹2,000 guest post is a tax. At that price nobody is doing outreach, editing or curation — you're paying for a slot on a page that sells slots.",
+    "Digital PR is slower, more expensive per placement, and the only version of link building that also produces demand.",
+    "We don't report referring domain counts. We report placements with live URLs, and what happened to the specific pages we pointed them at."
+  ],
+  "sections": [
+    {
+      "h2": "Yes, links matter. No, they're probably not what's holding you back",
+      "body": [
+        "Let's settle the first part quickly, because the internet does this argument badly in both directions. Links are still a genuine ranking input. Google has been explicit that they're one signal among many rather than the dominant one they were a decade ago, and every credible practitioner sees the same thing in the field: a strong page with links outranks the identical page without them.",
+        "That's not the interesting question. The interesting question is what happens when you spend money on links, and the answer depends almost entirely on what your site already is.",
+        "Here's the framing we use with every client: **links are an amplifier, not a foundation**. An amplifier makes a signal louder. If there's no signal, turning it up produces nothing but noise and an invoice.",
+        "The signal, in this metaphor, is a page that genuinely addresses a query someone types. If that page doesn't exist, no quantity of links causes Google to rank you for it. Links don't create relevance. They adjust how competitively your existing relevance performs."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The one-line version",
+        "body": "Links raise the ceiling on pages you already have. Content raises the number of pages that have a ceiling. On most sites under 150 pages, the second number is the one that's too small."
+      }
+    },
+    {
+      "h2": "The arithmetic that makes the amplifier argument concrete",
+      "body": [
+        "Take a real shape we see constantly: a B2B services company with a 40-page site. Homepage, five service pages, an about page, a contact page, and roughly thirty blog posts written between 2021 and 2023 about industry trends.",
+        "Realistically that site can compete for maybe 40 to 120 query variants, and most of the blog posts target nothing commercial. Now spend ₹1,50,000 on fifty links. What have you bought? A slightly better chance on those same 40 pages, most of which are aimed at queries with no buying intent.",
+        "Spend the same ₹1,50,000 on thirty properly built pages instead — pages targeting the questions your buyers type in the four weeks before they choose a vendor — and you've added thirty new chances to rank. Each of which then benefits from whatever links the site already has, and from every link it earns later.",
+        "That's the whole argument. Links multiply; coverage is what they multiply. Multiplying a small number by three gives you a slightly larger small number.",
+        "The order matters because of compounding, too. Pages built in month two are earning by month nine. Links bought in month two amplify a site that had almost nothing to amplify, and you can't get those months back."
+      ],
+      "table": {
+        "caption": "The same ₹1,50,000, spent three ways on a 40-page site. Illustrative allocations at current Indian market rates, not a promise of outcomes.",
+        "head": ["Spend", "What you get", "What it changes"],
+        "rows": [
+          [
+            "50 links at ₹3,000 each",
+            "Placements on sites that sell placements. Mostly unread, mostly link-heavy pages.",
+            "Marginal. Most are discounted or ignored, and they point at pages that don't target buying queries."
+          ],
+          [
+            "30 pages at ₹5,000 each",
+            "Thirty new entries into the index, aimed at queries with commercial intent.",
+            "Thirty new chances to rank, each of which compounds and benefits from every future link."
+          ],
+          [
+            "6 digital PR pushes at ₹25,000 each",
+            "Real pitches to real publications, with a data angle or an expert quote.",
+            "A handful of editorial links, plus brand mentions, plus referral traffic — but only worth it once coverage exists."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The coverage threshold — how to tell when links become the bottleneck",
+      "body": [
+        "This is the part nobody gives you a test for, so here's ours. It takes about ten minutes in Google Search Console and you can run it yourself.",
+        "Filter to the last three months. Look at your pages by average position, and count how many sit in **positions 11 to 30** for queries with commercial intent — the ones where someone typing them could plausibly buy from you within a month.",
+        "That band is the waiting room. A page in positions 11–30 has already convinced Google it's relevant. It just hasn't convinced Google it's the most trustworthy option. That gap is precisely what links close.",
+        "So the reading is simple. If you have twenty or more commercial pages parked in the waiting room, links are your constraint and money spent on them will show up. If you have three, links aren't your constraint — you don't have enough pages in the running, and building more of them will produce far more than any link campaign.",
+        "Two things that skew the test, and you should correct for both. Strip out branded queries — of course you rank for your own name. And ignore informational pages sitting at position 12 for something like \"what is a canonical tag\"; ranking well for that is nice, but it isn't the thing paying salaries."
+      ],
+      "numbered": [
+        "**Under 5 commercial pages in positions 11–30:** you have a coverage problem. Build pages. Links can wait a quarter.",
+        "**5–20 pages in the band:** mixed. Keep building, and start earning links selectively, pointed at the two or three pages closest to the top ten.",
+        "**Over 20 pages in the band:** links are now the bottleneck, and this is where a real link budget earns its keep.",
+        "**Pages stuck at 4–9 for money terms:** the hardest and most valuable case. Here links, plus on-page and internal-link work, are usually the difference between a decent quarter and a very good one."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The free version of link building nobody does first",
+        "body": "Before buying a single external link, check your internal ones. Most sites have money pages with four internal links pointing at them and blog posts with forty. Fixing that costs nothing and often moves the same pages a paid campaign was going to target. We've argued this at length in [why internal linking beats link building](/journal/internal-linking-beats-link-building)."
+      }
+    },
+    {
+      "h2": "Why the ₹2,000 guest post is a tax, not an investment",
+      "body": [
+        "Do the arithmetic from the seller's side and the product explains itself.",
+        "A genuine editorial placement requires research to find the right outlet, a pitch worth reading, a relationship, an editor's time, and usually a rewrite. That's several hours of skilled work. At any honest Indian rate that's five figures, minimum. So what exactly is being delivered for ₹2,000?",
+        "A slot. On a site that exists to sell slots. The page will have thirty or forty outbound links to unrelated businesses — a dentist, a crypto exchange, a packers-and-movers firm, you. It gets no organic traffic of its own because it was never built for readers. And it sells the same slot to everyone who asks.",
+        "Google's link spam policies are explicit that links intended to manipulate rankings — including links paid for with money, goods or services — violate their guidelines, and the systems that detect them are built to neutralise the link's effect rather than always penalise the site. So the realistic best case for your ₹2,000 is that the link is quietly discounted to zero. You bought nothing. Repeat that fifty times and you've bought nothing fifty times, which is the tax.",
+        "The worse case is a pattern. Buy from the same networks everyone else buys from, at scale, with commercial anchor text, and you are building an identifiable footprint on a domain you own and your agency doesn't. Disavowing that later is weeks of work and it doesn't reverse the lost time.",
+        "The single most useful question to ask any agency selling links: **\"send me the last five placements you made for any client.\"** Open them. Do they read like something a person would want? Does the site have its own audience? Is your competitor already on the same page? Two minutes, and you'll know."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The quota problem",
+        "body": "\"20 links per month\" cannot be earned. Nobody wins twenty editorial placements a month for a small Indian business, at any budget. A monthly link quota in a contract is a written commitment to buy, and it's being written into your contract, not the agency's."
+      }
+    },
+    {
+      "h2": "What we buy instead: coverage that has a reason to exist",
+      "body": [
+        "The replacement for bought links isn't purity. It's building things journalists and practitioners have an actual reason to cite.",
+        "In India specifically there's a real opportunity here, because the supply of usable data is thin. Business and startup press — the national business dailies, the startup and tech outlets, the trade publications for your specific sector, the sector newsletters that founders in your category actually read — run a great deal of commentary and comparatively little original data. A company sitting on its own transaction, pricing or hiring data has something scarce.",
+        "We're describing what we pitch, not claiming placements we haven't made. Here's what tends to earn a response."
+      ],
+      "bullets": [
+        "**A number only you have.** Aggregate, anonymised data from your own operations — pricing shifts, delivery times, seasonal patterns, category demand. One clean chart with a defensible methodology beats a thousand-word opinion piece.",
+        "**A local or sector angle.** \"What happened to X in tier-2 cities\" is a story. \"Our thoughts on the future of X\" is not.",
+        "**A named human who can be quoted quickly.** Journalists work to deadlines. Being reachable in two hours beats being brilliant in two days.",
+        "**Reactive commentary.** Watching for journalist requests and regulatory or category news you can credibly comment on. Cheap, unglamorous, and the most reliable source of genuine links for a small company.",
+        "**Things that are useful on their own.** A calculator, a template, a properly maintained dataset. These earn links for years without a single pitch, which is the only link building that compounds while you sleep."
+      ],
+      "subs": [
+        {
+          "h3": "The links you can earn without a PR budget at all",
+          "bullets": [
+            "Supplier, partner and integration directories — most B2B companies are listed by fewer of their partners than they think.",
+            "Industry associations and chambers you already pay membership to.",
+            "Customers' own case studies and \"tools we use\" pages. Ask. It's free and people say yes more often than you'd expect.",
+            "Events you sponsor or speak at, where the listing page is usually indexable and permanent.",
+            "Local business and civic listings, if you have a physical location — these also feed your Google Business Profile consistency."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "How we report link work without counting domains",
+      "body": [
+        "Referring domain count is the metric that makes link reporting comfortable and useless. It goes up every month, it can be inflated by scraper sites and directories nobody asked for, and it tells you nothing about whether the pages you care about moved.",
+        "Domain Authority and Domain Rating have the same problem from the other end — they're third-party scores invented by tool vendors, not signals Google uses. Useful for triage, terrible as a KPI, and we've written about [why domain authority is a vanity metric](/journal/domain-authority-is-a-vanity-metric).",
+        "So the report we send looks like this instead."
+      ],
+      "table": {
+        "caption": "What we report on link work each month.",
+        "head": ["What we report", "Why this instead of a count"],
+        "rows": [
+          [
+            "Every placement, with its live URL",
+            "You can open it. If you'd be embarrassed to have your name on that page, so are we."
+          ],
+          [
+            "The angle behind each pitch, and how many pitches it took",
+            "Shows whether links were earned or bought. Ten pitches for two placements is honest work."
+          ],
+          [
+            "The specific target URLs we pointed links at",
+            "Links are aimed. If we can't say which page it was for, we didn't have a plan."
+          ],
+          [
+            "Position change on those target URLs, 30 and 90 days out",
+            "The only direct evidence the link did anything."
+          ],
+          [
+            "Referral sessions from each placement",
+            "A link that sends real people is worth more than the ranking effect, and it's the part quotas never deliver."
+          ],
+          [
+            "Branded search volume, quarter on quarter",
+            "Real coverage makes people search your name. Bought links never do."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "The test we hold ourselves to",
+        "body": "If a link would still be worth having when Google stopped counting links entirely — because it sends customers, or because being on that page is good for you — it was worth earning. If not, we didn't need it."
+      }
+    },
+    {
+      "h2": "When links genuinely are the whole game",
+      "body": [
+        "We've spent this article arguing that links are over-sold, so it's only fair to name the cases where they're the binding constraint and the budget should follow.",
+        "**Competitive commercial terms where everyone's content is already good.** In categories like insurance, loans, legal services or established SaaS, the top ten results all answer the query well. Content parity is table stakes and the difference is authority. Here links decide it.",
+        "**A new domain against long-established incumbents.** A two-year-old site competing with sites that have been publishing since 2010 has a real gap that content alone closes slowly. Links accelerate it, and digital PR is usually the only honest route.",
+        "**YMYL categories.** Where Google applies more scrutiny — health, finance, legal — third-party validation carries disproportionate weight, and being cited by credible sources is part of how you demonstrate you're a real organisation.",
+        "**A page that's stuck at 4–7 and won't move.** Everything on-page is right, intent matches, internal links are in place, and it still won't crack the top three. That's usually an authority gap, and it's the highest-return place to point a link.",
+        "In every one of those cases we'd still build coverage first, because the link budget is wasted on a page that doesn't exist. But once coverage is there, links are exactly where the next rupee goes. If you want the price ranges, we've broken them down in [what link building actually costs](/cost/link-building-cost)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are backlinks still important for SEO?",
+      "a": "Yes, but as one signal among many rather than the dominant one. They raise how competitively your existing pages can rank. What's changed is the return on buying them at scale — Google's spam systems are built to neutralise paid links, so most cheap placements are simply discounted to zero."
+    },
+    {
+      "q": "How many backlinks do I need to rank?",
+      "a": "There's no number, and anyone quoting one is selling a package. The useful test is comparative: look at the pages currently in the top five for your target query, see what's pointing at them, and ask whether your page is otherwise as good. If it isn't, links won't help."
+    },
+    {
+      "q": "Are cheap guest posts worth it?",
+      "a": "No. At ₹2,000 nobody is doing outreach, editing or curation, so you're buying a slot on a page that sells slots to everyone. Best case the link is discounted to zero and you bought nothing. Worst case you've built an identifiable paid-link footprint on a domain you own."
+    },
+    {
+      "q": "What matters more, backlinks or content?",
+      "a": "Content, until it doesn't. Content determines how many queries you can compete for at all; links determine how competitively you place on them. On a site under about 150 pages, coverage is almost always the binding constraint — links are amplifying something that's too small."
+    },
+    {
+      "q": "How do I know if links are what's holding my site back?",
+      "a": "Count the pages sitting in positions 11–30 for queries with commercial intent, excluding branded terms. Twenty or more and links are your bottleneck. Under five and you have a coverage problem — build pages first, because links have nothing to amplify yet."
+    },
+    {
+      "q": "What is digital PR and how is it different from link building?",
+      "a": "Digital PR earns coverage by giving publications something worth publishing — original data, a local angle, a quotable expert — rather than paying for placement. It costs more per link, lands less predictably, and produces referral traffic and brand searches that bought links never do."
+    }
+  ],
+  "related": [
+    { "type": "compare", "slug": "guest-posting-vs-digital-pr" },
+    { "type": "compare", "slug": "paid-links-vs-earned-links" },
+    { "type": "journal", "slug": "internal-linking-beats-link-building" },
+    { "type": "cost", "slug": "link-building-cost" },
+    { "type": "glossary", "slug": "referring-domain" },
+    { "type": "services", "slug": "digital-pr-services" }
+  ]
+}

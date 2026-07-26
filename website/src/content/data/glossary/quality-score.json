@@ -1,0 +1,123 @@
+{
+  "slug": "quality-score",
+  "type": "glossary",
+  "primaryKeyword": "quality score",
+  "secondaryKeywords": [
+    "google ads quality score",
+    "how to improve quality score",
+    "quality score components",
+    "ad relevance",
+    "landing page experience"
+  ],
+  "cluster": "paid",
+  "intent": "informational",
+  "h1": "Quality Score",
+  "metaTitle": "Quality Score: What It Is and How to Raise It",
+  "metaDescription": "Quality Score is Google Ads' 1-10 relevance rating. What a 4 versus an 8 does to a ₹1,00,000 budget, and why the landing page beats the ad copy.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Quality Score",
+  "definition": "Quality Score is Google Ads' 1–10 diagnostic estimate of how relevant your keyword, ad and landing page are compared with other advertisers competing for the same search.",
+  "answer": "Quality Score is a 1–10 diagnostic in Google Ads built from three parts: expected click-through rate, ad relevance and landing page experience. It feeds Ad Rank, so it changes what you pay per click. On the formula alone, moving from a 4 to an 8 halves your cost per click — which at ₹1,00,000 a month doubles your clicks.",
+  "takeaways": [
+    "Three components, and the one you control most directly — **landing page experience** — is the one almost nobody fixes.",
+    "The 1–10 number is a **diagnostic**, not the value used in the live auction. Google recalculates quality per query, in real time.",
+    "A blank Quality Score means the keyword hasn't had enough impressions yet. It isn't a zero.",
+    "Chasing 10s on low-volume keywords is a hobby. Fix the keywords carrying your spend."
+  ],
+  "sections": [
+    {
+      "h2": "The three components, and which one you control",
+      "body": [
+        "Google reports one number from 1 to 10, plus three component ratings that are each just Below average, Average or Above average. The three ratings are where the instruction lives — the composite number only tells you whether to care.",
+        "**Expected click-through rate** predicts how often your ad gets clicked for that keyword, normalised for position. Driven by ad copy and by how well the keyword matches what the searcher meant.",
+        "**Ad relevance** measures how closely your ad matches the intent behind the keyword. Below average here nearly always means one ad group is carrying keywords about three different things.",
+        "**Landing page experience** covers what happens after the click: relevance to the query, useful content, transparency about who you are, navigability, mobile load speed. This is the component with the widest gap between how much it matters and how much attention it gets — because fixing it means talking to whoever owns the website, and rewriting ad copy doesn't."
+      ]
+    },
+    {
+      "h2": "What the score is worth in rupees",
+      "body": [
+        "Actual cost per click on Google Search is, roughly, the Ad Rank of the advertiser below you divided by your Quality Score, plus a paisa. Hold the competitor constant at Ad Rank 160 and change only your score."
+      ],
+      "table": {
+        "caption": "Formula in isolation: same competitor below you, same ₹1,00,000 monthly budget.",
+        "head": ["Quality Score", "Actual CPC", "Clicks for ₹1,00,000"],
+        "rows": [
+          ["4", "₹40.00", "2,500"],
+          ["6", "₹26.67", "3,750"],
+          ["8", "₹20.00", "5,000"],
+          ["10", "₹16.00", "6,250"]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "This is arithmetic, not a promise",
+        "body": "In a live auction, raising your quality also changes who ranks below you and what they're prepared to pay, so the real-world swing is smaller and messier than this table. Use it to understand the direction and the scale of the lever — 2,500 clicks versus 5,000 clicks on the same budget — not to forecast a number for a board deck."
+      }
+    },
+    {
+      "h2": "The number you see is not the number being used",
+      "body": [
+        "The Quality Score in your keyword table is a **historical diagnostic**, rounded to a whole number and updated periodically. The auction computes quality fresh for every single search, factoring in the actual query, device, location and context.",
+        "So a keyword sitting at 7 can behave like a 9 on a tightly matched query and a 4 on a loose one. Broad match makes it worse: one keyword fired at dozens of intents, and you see the blended average.",
+        "Two rules follow. Optimise the three components, not the displayed number. And don't compare scores across accounts or industries — it's relative to other advertisers on the same keyword, so a 6 in insurance and a 6 in handicrafts describe different situations entirely."
+      ]
+    },
+    {
+      "h2": "Responsive search ads changed how ad relevance works",
+      "body": [
+        "Expanded text ads were retired in June 2022. Responsive search ads are now the only search ad you can build, and that quietly rewrote ad relevance.",
+        "You no longer write one ad and measure it. You supply up to 15 headlines and 4 descriptions and Google assembles combinations, so relevance is assessed across whatever it chooses to serve. A weak headline can get paired with your keyword on a query where it makes no sense, and you'll never see it happen.",
+        "In practice: pin your two or three non-negotiable headlines so the keyword or offer always appears, keep the rest genuinely varied rather than fifteen rewordings of one claim, and split ad groups by intent harder than you did in the ETA era. Ad Strength rates asset variety only — it is not Quality Score, despite sitting next to things that are."
+      ]
+    },
+    {
+      "h2": "Where to find it, and what to fix first",
+      "body": [
+        "Open a campaign, go to the search keywords table, then Columns — modify columns — Quality Score. Add all four columns plus their historical versions, which are the only way to see whether last month's fix did anything. A dash means the keyword hasn't accumulated enough impressions: no score, not a bad one.",
+        "Then sort by cost, descending, and work down. A keyword spending ₹22,000 a month at a Quality Score of 4 deserves a fortnight. The one spending ₹300 at a 3 deserves deleting.",
+        "Start with landing page experience, every time. It's the component most likely to be Below average, and unlike ad relevance it improves your [cost per click](/glossary/cost-per-click) and your cost per acquisition at once. Fast page, message matching the ad, one obvious action, real contact details, no popup inside three seconds. Not sophisticated — just work somebody has to schedule."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "How we handle it",
+        "body": "Landing page work sits inside our [performance marketing](/performance) engagements rather than being quoted as an extra, because an account with a broken landing page can't be optimised into profitability from the ad side. Pricing starts at ₹40,000/mo, media billed separately with no markup."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a good Quality Score?",
+      "a": "Seven and above is healthy for commercial keywords, and 8–10 is normal on brand terms where relevance is near-perfect. Anything at 4 or below on a keyword carrying real spend needs attention. Judge it relative to how much that keyword costs you, not against an industry benchmark that doesn't exist."
+    },
+    {
+      "q": "Does Quality Score directly lower my cost per click?",
+      "a": "Yes, through Ad Rank. Actual CPC on Search is roughly the Ad Rank of the ad below you divided by your Quality Score, so a higher score means the same position costs less. The exact saving depends on the live auction, but the direction is reliable and the effect is large."
+    },
+    {
+      "q": "How long does it take to improve Quality Score?",
+      "a": "Component ratings can shift within days once the keyword accumulates fresh impressions, but the composite number updates slowly and lags real improvements. Give a landing page change two to four weeks of meaningful traffic before deciding it didn't work."
+    },
+    {
+      "q": "Why is my Quality Score showing a dash?",
+      "a": "The keyword hasn't had enough impressions for Google to estimate reliably. New keywords, paused keywords and very low-volume terms all show a dash. It's an absence of data, not a low score, and it doesn't harm your auction position."
+    },
+    {
+      "q": "Does Quality Score exist on Meta ads?",
+      "a": "Not by that name. Meta uses quality ranking, engagement rate ranking and conversion rate ranking — three relative diagnostics comparing your ad to others competing for the same audience. Different mechanics, same underlying idea: relevant ads cost less."
+    },
+    {
+      "q": "Is Ad Strength the same as Quality Score?",
+      "a": "No. Ad Strength rates the variety and quantity of assets in a responsive search ad and is purely advisory. Quality Score estimates relevance and feeds Ad Rank, which changes your costs. You can run an Excellent Ad Strength ad with a mediocre Quality Score, and it happens constantly."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "cost-per-click" },
+    { "type": "glossary", "slug": "ppc" },
+    { "type": "glossary", "slug": "negative-keywords" },
+    { "type": "compare", "slug": "ppc-vs-seo" },
+    { "type": "services", "slug": "conversion-rate-optimisation-services" },
+    { "type": "journal", "slug": "why-indian-d2c-brands-overspend-on-ads" }
+  ]
+}

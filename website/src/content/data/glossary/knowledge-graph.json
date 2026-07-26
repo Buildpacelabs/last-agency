@@ -1,0 +1,112 @@
+{
+  "slug": "knowledge-graph",
+  "type": "glossary",
+  "primaryKeyword": "knowledge graph",
+  "secondaryKeywords": [
+    "google knowledge graph",
+    "knowledge panel",
+    "how to get a knowledge panel",
+    "entity in knowledge graph",
+    "knowledge graph seo"
+  ],
+  "cluster": "ai-search",
+  "intent": "informational",
+  "h1": "Knowledge Graph",
+  "metaTitle": "Knowledge Graph: What It Is and How to Get In",
+  "metaDescription": "The Knowledge Graph is Google's database of entities and how they connect. What an Indian SME actually needs before Google will build a panel.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Knowledge Graph",
+  "definition": "The Knowledge Graph is Google's database of entities — people, companies, places, products, concepts — and the verified relationships between them, which powers knowledge panels and much of Google's understanding of who you are.",
+  "answer": "The Knowledge Graph is Google's database of entities and how they connect: companies, people, products, places. A knowledge panel is just its visible output. You can't buy either. Google builds an entity when enough independent third-party sources agree on the same facts about you, and keeps it while those sources stay consistent.",
+  "takeaways": [
+    "**You cannot buy, submit or apply for a knowledge panel.** Anyone offering one is selling you a Google Business Profile, a Wikipedia edit that will be reverted, or nothing.",
+    "The Knowledge Graph is the database. The knowledge panel is the box on the right. Having the first doesn't guarantee the second.",
+    "Corroboration is the whole mechanism: multiple independent sources stating the same facts about the same entity.",
+    "Schema markup helps Google connect the dots. It does not create the dots."
+  ],
+  "sections": [
+    {
+      "h2": "What the Knowledge Graph stores, and what a panel is",
+      "body": [
+        "Google's index stores pages. The Knowledge Graph stores **things** — an entity for your company, an entity for your founder, entities for your city, your industry, your products — plus the relationships between them. Founded in, headquartered in, founder of, subsidiary of, competitor of.",
+        "That's why Google can answer \"who founded Infosys\" without ranking a page — it isn't matching text, it's reading a record. It's also why this matters beyond the visible panel: entity understanding feeds AI Overviews, AI Mode and assistant answers, all of which need to know that \"Last Agency\" is a marketing agency in India and not a phrase in a sentence.",
+        "The **knowledge panel** is the box on the right of desktop results when Google is confident enough to show what it knows. It's a symptom of graph presence, not the same thing. Plenty of businesses sit in the graph with no panel."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "A Business Profile panel is not a brand panel",
+        "body": "Search your business name and you may see a panel with your address, hours and reviews. That's your [Google Business Profile](/glossary/google-business-profile) rendering, and you get it by verifying a listing. The brand knowledge panel — the one with a description, founding date, founder and social links — is a different beast entirely and can't be claimed into existence."
+      }
+    },
+    {
+      "h2": "Why you can't buy a panel, and what Google needs instead",
+      "body": [
+        "There's no submission form because a panel is Google's assertion, not yours. Google will only assert something publicly when independent sources agree on it. One source — your own website — is a claim. Five sources saying the same thing is a fact Google is willing to repeat.",
+        "That word, **corroboration**, is the entire mechanism. Google is looking for the same entity described consistently, by parties with no stake in flattering you, across sources it already trusts. Which is why a beautifully marked-up About page changes nothing on its own, and why a founder profile in a real publication changes quite a lot."
+      ],
+      "bullets": [
+        "**Consistent naming.** \"Last Agency\" on the site, \"LastAgency\" on LinkedIn and \"Last Agency Pvt Ltd\" in a directory makes three weak entities instead of one strong one.",
+        "**Independent editorial coverage.** Trade press, industry publications, podcasts with show notes. It doesn't have to be national news — it has to be somebody other than you.",
+        "**Structured public reference data.** Wikidata is open to contribution and is a genuine graph input. Wikipedia has notability rules most SMEs don't meet.",
+        "**Verifiable existence.** For an Indian company: MCA registration and CIN, GSTIN on the site, a real registered address. Not ranking factors — evidence you're a legal entity.",
+        "**Owned profiles that are actually filled in.** LinkedIn, Crunchbase, YouTube, X, Instagram: complete, consistent, and linked to each other."
+      ]
+    },
+    {
+      "h2": "Organization schema and sameAs: useful, not sufficient",
+      "body": [
+        "Add `Organization` schema to your homepage with the legal name, logo, founding date, founders, address and contact points. Then add a `sameAs` array listing every official profile you own — LinkedIn, Crunchbase, YouTube, Instagram, X, Wikidata if you have an item.",
+        "That tells Google, in machine-readable form, that those scattered profiles belong to one entity. It's a routing instruction, not evidence. If the profiles are empty and nobody outside your marketing team has written your name, `sameAs` connects five weak signals into one weak signal.",
+        "Do it anyway — an hour's work, a prerequisite for the rest, and the same [schema markup](/glossary/schema-markup) foundation everything else needs. Just don't expect a panel by Tuesday."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The paid-Wikipedia trap",
+        "body": "There is a whole market selling Wikipedia pages to Indian SMEs for a few lakh rupees. Pages created this way get flagged, tagged for conflict of interest and deleted, and the deletion log becomes a permanent public record with your brand name on it. Wikidata is the legitimate structured-data route; Wikipedia requires genuine notability you either have or don't."
+      }
+    },
+    {
+      "h2": "Claiming and correcting a panel you already have",
+      "body": [
+        "If a panel exists you can claim it — which buys you the right to suggest changes, not to control the content. Search your brand, look for **Claim this knowledge panel**, and verify by proving you control an official property Google already links to the entity: a Search Console-verified site, or a verified YouTube or X profile.",
+        "Once verified you can suggest edits to the description, featured image and a few other fields. Google checks them against its sources and rejects anything the wider web doesn't support. When a panel says something wrong, the durable fix is upstream: correct the source, get the correction picked up, and the panel follows.",
+        "Anyone can use **Feedback** at the bottom of a panel to flag an error. It's slow and it's a black box, but it's the actual channel."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I get a knowledge panel for my business?",
+      "a": "You don't get one directly — you make it inevitable. Consistent naming everywhere, Organization schema with a sameAs array, complete official profiles, a Wikidata item, and independent third-party coverage that repeats the same facts. Then wait, because Google generates panels on its own schedule and small brands often wait quarters."
+    },
+    {
+      "q": "Is the Knowledge Graph the same as a knowledge panel?",
+      "a": "No. The Knowledge Graph is the underlying database of entities and relationships. The knowledge panel is one visible rendering of it in search results. You can be in the graph — and benefit from it in AI answers and entity matching — without ever seeing a panel."
+    },
+    {
+      "q": "Does schema markup put me in the Knowledge Graph?",
+      "a": "It helps Google connect and interpret information about you, but it doesn't create an entity by itself. Schema is your own testimony. The graph is built on corroboration from sources that aren't you. Mark up your site, then go earn the corroboration."
+    },
+    {
+      "q": "Can I edit my own Wikipedia page to get a panel?",
+      "a": "Don't. Wikipedia's conflict-of-interest rules are strictly enforced, self-created pages for non-notable companies are routinely deleted, and the deletion discussion stays publicly searchable under your brand name. Wikidata is the structured-data route that's genuinely open to contribution."
+    },
+    {
+      "q": "Why did my knowledge panel disappear?",
+      "a": "Usually because Google's confidence in the entity dropped — a source it relied on went offline, a Wikidata item was edited or merged, your site changed its stated name, or coverage went stale. Panels aren't permanent. Rebuild the consistency and they generally return."
+    },
+    {
+      "q": "Does the Knowledge Graph affect AI search results?",
+      "a": "Yes, meaningfully. Entity understanding is what lets a system know which \"Apollo\" or which agency you mean, and a well-formed entity is easier to name confidently in a generated answer. That's why entity work has quietly become more valuable, not less, as search became conversational."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "entity-seo" },
+    { "type": "glossary", "slug": "schema-markup" },
+    { "type": "glossary", "slug": "e-e-a-t" },
+    { "type": "services", "slug": "schema-markup-services" },
+    { "type": "services", "slug": "google-business-profile-optimisation" },
+    { "type": "journal", "slug": "how-to-get-cited-by-ai-assistants" }
+  ]
+}

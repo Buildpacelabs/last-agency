@@ -1,0 +1,309 @@
+{
+  "slug": "what-ai-overviews-did-to-your-organic-traffic",
+  "type": "journal",
+  "primaryKeyword": "ai overviews organic traffic drop",
+  "secondaryKeywords": [
+    "ai overviews ctr impact",
+    "zero click search 2026",
+    "google ai overview traffic loss",
+    "how to respond to ai overviews",
+    "clicks down impressions up"
+  ],
+  "cluster": "ai-search",
+  "intent": "informational",
+  "h1": "Your Impressions Are Up and Your Clicks Are Down. Here's Why.",
+  "metaTitle": "What AI Overviews Did to Your Organic Traffic",
+  "metaDescription": "AI Overviews cut clicks without cutting impressions. Here's what the published CTR studies really measured, and how to sort your own queries by damage.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "AI Overviews compress click-through rate without reducing impressions, so Search Console shows rising impressions and falling clicks at the same time. Published studies put the drop anywhere between roughly 15% and 60%, and that spread is mostly methodology rather than disagreement. Segment your own queries before changing anything — most sites lose clicks on a minority of them.",
+  "takeaways": [
+    "Impressions up, clicks down, position flat is the **signature**. If impressions fell too, that's a ranking problem wearing an AI costume.",
+    "The published CTR studies measured different keyword sets, in different countries, in different months of an unstable rollout. The 15–60% range is a range of methods.",
+    "Search Console does **not** break out AI Overview impressions. You cannot segment this from the data alone — you have to go and look at the results pages.",
+    "Sort queries into hit, safe, gained and lost-position. Only the first bucket deserves a content decision, and it's usually smaller than the panic suggests."
+  ],
+  "sections": [
+    {
+      "h2": "The signature: impressions up, clicks down, position unchanged",
+      "body": [
+        "The reason this arrives as confusion rather than as a clear signal is that it doesn't look like anything you've seen before. A penalty drops impressions. A core update drops position. A migration drops both on specific URLs. This does neither.",
+        "What you get instead is a chart where impressions keep climbing, average position is within half a point of where it was, and clicks are down a third. Every dashboard says you're fine and the business says you're not. Both are correct.",
+        "The mechanic is simple. Your listing still qualifies for the results page, so the impression still counts. It just sits below an answer box that resolved the question before the user reached you. [Zero-click search](/glossary/zero-click-search) isn't new — featured snippets and knowledge panels did this a decade ago — but the surface area is much larger now, and it covers query types that used to be reliably clicky."
+      ],
+      "table": {
+        "caption": "Reading the four patterns apart before you decide what to fix.",
+        "head": [
+          "Impressions",
+          "Average position",
+          "Clicks",
+          "Most likely cause"
+        ],
+        "rows": [
+          [
+            "Up or flat",
+            "Flat",
+            "Down",
+            "CTR compression — an answer box, AI Overview or other SERP feature above you"
+          ],
+          [
+            "Down",
+            "Down",
+            "Down",
+            "Ranking loss. Core update, competitor, or something you changed"
+          ],
+          [
+            "Down",
+            "Flat",
+            "Down",
+            "Falling search demand, or you lost a query set entirely"
+          ],
+          [
+            "Up",
+            "Down",
+            "Flat or up",
+            "You're ranking for more queries, worse. Usually a content sprawl problem"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The misdiagnosis that costs a quarter",
+        "body": "Row two is the one people report as an AI Overviews problem, because that's the story going round. It isn't. If your impressions fell, something stopped qualifying you for the results page — and rewriting pages to be more \"AI-friendly\" won't touch it."
+      }
+    },
+    {
+      "h2": "What the published studies actually measured",
+      "body": [
+        "There are real numbers here, from named organisations, and they're worth knowing precisely because the internet has flattened them into one scary statistic. They do not agree, and the disagreement is informative."
+      ],
+      "table": {
+        "caption": "Published measurement of AI Overview impact on organic clicks. Note what each one counted.",
+        "head": [
+          "Source",
+          "What was measured",
+          "Reported effect"
+        ],
+        "rows": [
+          [
+            "Ahrefs (March 2025)",
+            "Around 300,000 keywords, comparing CTR for the top-ranking page with and without an AI Overview present",
+            "Roughly 34.5% lower CTR for the number-one result when an AI Overview appeared"
+          ],
+          [
+            "Pew Research Center (July 2025)",
+            "Real browsing behaviour of a panel of US adults — did the person click any traditional result on that visit?",
+            "A result link clicked on 8% of visits with an AI summary, versus 15% without"
+          ],
+          [
+            "Amsive (2025)",
+            "Around 700,000 keywords, segmented by intent and by branded versus non-branded",
+            "A smaller average decline — mid-teens percent — with non-branded queries hit harder and some branded queries flat or up"
+          ],
+          [
+            "Seer Interactive (ongoing tracking)",
+            "Client-side CTR tracking on informational query sets, month over month",
+            "Declines approaching half on the query types most likely to trigger an overview"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "These are four different questions",
+        "body": "Ahrefs asked what happens to one page's CTR. Pew asked what a human does in a session. Amsive asked how the effect varies by intent. Seer asked what happens to a specific portfolio over time. Averaging them gives you a number that answers none of those questions, which is exactly what most summaries of this research do."
+      }
+    },
+    {
+      "h2": "Why the range runs from mid-teens to nearly two-thirds",
+      "body": [
+        "Four reasons, and none of them is that somebody got it wrong.",
+        "**Different keyword sets.** A study built on informational head terms will show catastrophe. A study built on a mixed commercial set will show a dent. Both are honest about their own sample and neither is about yours.",
+        "**Different denominators.** \"CTR of the top result\" and \"proportion of sessions containing any result click\" are not the same measurement and shouldn't be compared. Pew's 8%-versus-15% is a statement about human behaviour in a browser. Ahrefs' 34.5% is a statement about a position's performance.",
+        "**Different months of a moving interface.** AI Overview coverage has swung hard since launch in May 2024 — it contracted sharply after the early rollout embarrassments, then expanded again through 2025, and Google has changed how prominently source links appear inside the box more than once. A CTR figure measured in March 2025 describes an interface that no longer looks like that.",
+        "**Different countries.** Almost all the published work is US-first. India's results pages, query mix and language distribution are not the US's, and nobody has published a serious India-specific dataset on this. If you sell in India, treat every number above as directional rather than as your forecast."
+      ]
+    },
+    {
+      "h2": "The 2026 picture, and the part we won't pretend to know",
+      "body": [
+        "The panic peaked in mid-2025 and the numbers being quoted now are gentler. That's partly real and partly an artefact, and it's worth separating the two because a lot of people are selling the recovery.",
+        "What's genuinely observable: overview coverage is not a constant and never has been, Google has iterated the link treatment inside the box toward more visible sources, and query classes that briefly triggered an overview have stopped triggering one as the classifier gets tuned. All three push measured CTR back up without anyone doing anything to their site.",
+        "What's also real: some sites have recovered clicks by moving traffic sideways rather than back. Referrals from assistants — ChatGPT, Perplexity, Copilot — arrive with their own referrer strings and don't show up in Search Console at all. If you only watch Google organic, a genuine gain looks like a continued loss.",
+        "And here's the part we won't dress up. There is no peer-reviewed 2026 dataset showing a clean, quantified recovery, and we're not going to invent one to make this section land better. If a vendor quotes you a 2026 recovery figure with a decimal point, ask three questions: which keyword set, which country, which month. Without those, it's a vibe with a chart attached."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "Search Console will not tell you which queries triggered an overview",
+        "body": "Google folds AI Overview impressions and clicks into the standard Web search-type totals. There is no filter, no separate row, no API field. Any tool claiming to segment this for you is inferring it from a SERP scrape — which is fine, as long as you know that's what you're buying."
+      }
+    },
+    {
+      "h2": "Segment your own queries into four buckets",
+      "body": [
+        "This takes an afternoon and it replaces the entire argument you're currently having internally. Do it before you commission a single page.",
+        "Pull query-level data from Search Console for two comparable 90-day windows, year over year rather than quarter over quarter so seasonality doesn't do the talking. For every query with a meaningful impression count, compute the change in impressions, the change in CTR and the change in clicks. Then sort."
+      ],
+      "table": {
+        "caption": "Four buckets, and what each one is actually telling you.",
+        "head": [
+          "Bucket",
+          "The pattern",
+          "What it means",
+          "What to do"
+        ],
+        "rows": [
+          [
+            "Hit",
+            "Impressions flat or up, CTR down materially, clicks down",
+            "Something is answering above you. This is the real AI Overview bucket",
+            "Decide page by page: earn the citation, or rebuild the page around what a box can't contain"
+          ],
+          [
+            "Safe",
+            "Impressions and CTR both roughly flat",
+            "Nothing has happened. Most queries live here",
+            "Nothing. Resist the urge to optimise it anyway"
+          ],
+          [
+            "Gained",
+            "Clicks up, often CTR up too",
+            "Usually branded, transactional or local queries, or you simply rank better",
+            "Find out why and do more of it — this is where budget belongs"
+          ],
+          [
+            "Lost position",
+            "Impressions down, CTR roughly flat",
+            "A ranking problem. Not an AI problem, whatever the industry newsletters say",
+            "Diagnose normally: competitors, core update, technical, content decay"
+          ]
+        ]
+      },
+      "numbered": [
+        "Export both windows at query level. The Search Console UI caps rows, so use the API, Looker Studio or a bulk export for anything above a few thousand queries.",
+        "Filter to queries with at least 100 impressions in the earlier window. Below that, the CTR percentages are noise wearing a percentage sign.",
+        "Compute the three deltas and assign each query a bucket using the table above.",
+        "**Then go and look.** Take the top 20 queries in the Hit bucket and search them manually, from a clean browser, in the country you sell to. Record whether an overview actually appears. This is thirty minutes of unglamorous work and it is the only way to confirm the cause, because the data cannot tell you.",
+        "Total up clicks lost in the Hit bucket as a share of total organic clicks. That single percentage is the honest size of your problem, and it is very often smaller than the meeting assumed."
+      ]
+    },
+    {
+      "h2": "Which query types lose clicks first",
+      "body": [
+        "The pattern is consistent and it follows one rule: if the complete, correct answer fits in a paragraph and nothing needs to be bought, decided or logged into, the click was always fragile."
+      ],
+      "subs": [
+        {
+          "h3": "Loses clicks fastest",
+          "bullets": [
+            "**Definitional queries.** \"What is X\", \"X meaning\", \"X full form\". The box answers these completely and honestly.",
+            "**Short procedural queries.** \"How to add a canonical tag\" — four steps, done, no click.",
+            "**Simple comparisons.** \"X vs Y difference\" where the real answer is three bullets.",
+            "**Conversions, formulas, unit lookups.** These were always a losing battle; the box just finished it.",
+            "**Top-of-funnel listicles** whose value was aggregation. Aggregation is precisely what a generative answer does for free."
+          ]
+        },
+        {
+          "h3": "Holds up better",
+          "bullets": [
+            "**Commercial-investigation queries** where the user needs to judge a supplier, not read a definition. Nobody hires an agency from a summary.",
+            "**Branded queries.** The user has already chosen; they want your site.",
+            "**Transactional and local queries.** Price, availability, booking, a phone number, a map pin.",
+            "**Anything requiring a tool, a login, a calculator or a download.**",
+            "**Contested, current or opinionated questions.** A summary of a genuine disagreement is unsatisfying, and readers click through to find someone willing to actually say something."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The strategic read",
+        "body": "Everything in the first list is traffic you were monetising indirectly at best. Everything in the second list is traffic that pays. If your organic programme was built mostly on the first list, the AI Overview didn't cause your problem — it exposed it."
+      }
+    },
+    {
+      "h2": "What we'd change",
+      "body": [
+        "Five things, in the order we'd do them. None of them requires a new budget line with a three-letter acronym on it."
+      ],
+      "numbered": [
+        "**Re-baseline on leads, not sessions.** If your board metric is organic sessions, every future interface change will look like a crisis. Freeze trailing-90-day qualified organic leads instead. That number survives every redesign of the results page.",
+        "**Give the answer away at the top, then put something underneath it that a box can't hold.** You'll be summarised whether you cooperate or not, so cooperate — and then earn the click with the calculator, the real INR price, the template, the local detail or the opinion. A page whose entire value is the definition has no second act.",
+        "**Consolidate the thin definitional pages.** If you published forty \"what is\" pages to catch head terms, most of that traffic isn't coming back. Merge them into fewer, deeper pages that also serve the commercial query sitting next to them.",
+        "**Move budget toward the Gained bucket.** Bottom-funnel, comparison, pricing, and local pages. They were always worth more per click and now they're worth more per click *and* safer.",
+        "**Work on being citable and nameable.** Separate discipline, real mechanics, and we've written the page-level version of it in [how pages get picked up by ChatGPT and Perplexity](/journal/how-to-get-cited-by-ai-assistants)."
+      ]
+    },
+    {
+      "h2": "What we'd leave completely alone",
+      "body": [
+        "Half of the useful response here is refusing to do the things being sold to you this quarter."
+      ],
+      "bullets": [
+        "**Don't reflexively block AI crawlers.** It's a real decision with real trade-offs and it deserves more than a reflex — [we've argued both sides of it](/journal/should-you-block-ai-crawlers). Blocking is also easy to get wrong: the crawler that trains a model and the crawler that fetches a citation are frequently not the same bot.",
+        "**Don't add an `llms.txt` file and call it a strategy.** No major assistant has confirmed it uses one, and Google has said publicly that it doesn't.",
+        "**Don't delete pages that lost clicks but still earn links.** A page can lose its traffic and keep its job. Check referring domains before you press anything.",
+        "**Don't rewrite pages in the Lost-position bucket for AI.** They have an ordinary ranking problem and they need an ordinary diagnosis.",
+        "**Don't buy a GEO retainer before you've done the segmentation.** You'd be paying to solve a problem you haven't sized. We've been fairly blunt about which parts of that offer are real in [our piece on whether generative engine optimisation is a genuine discipline](/journal/is-generative-engine-optimization-real)."
+      ]
+    },
+    {
+      "h2": "The measurement change that outlives all of this",
+      "body": [
+        "The uncomfortable truth underneath the whole debate is that organic sessions were never the thing you were buying. They were a convenient proxy that happened to correlate with revenue for about twenty years. The correlation is what broke, not your SEO.",
+        "So the fix is structural rather than tactical. Pick a number that lives in your business rather than in Google's interface — qualified leads from organic, tracked in the CRM, attributed at source. Freeze it. Measure against the frozen version. When the results page changes shape again in 2028, and it will, that number will still mean exactly what it meant before.",
+        "It's how we run every engagement. We freeze your trailing-90-day organic lead count on day one and guarantee movement against it — miss it in 90 days and we keep working free until we beat it. We never promise a specific ranking position for a specific keyword, and we're even less willing to promise a position now, when the thing sitting above position one is a box that didn't exist three years ago. SEO runs from ₹75,000/mo, ₹40,000/mo for smaller sites, ex-GST, month-to-month after the first quarter. [What that buys is published in full](/journal/what-a-75000-rupee-seo-retainer-actually-buys), because the alternative is asking you to trust a number you can't check."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why are my Search Console impressions up but clicks down?",
+      "a": "Your listing still qualifies for the results page, so the impression counts, but something above it is answering the question — an AI Overview, a featured snippet or another SERP feature. Check average position too: if it's flat, this is CTR compression rather than a ranking loss, and the fixes are completely different."
+    },
+    {
+      "q": "How much traffic do AI Overviews actually cost?",
+      "a": "Published studies range from roughly 15% to nearly 60% CTR decline on affected queries, because they measured different keyword sets in different months. For your site, only your own segmentation answers it. Most sites find the affected bucket is a minority of queries and a smaller minority of revenue."
+    },
+    {
+      "q": "Can I see which queries triggered an AI Overview in Search Console?",
+      "a": "No. Google folds AI Overview impressions and clicks into the standard Web totals with no separate filter or API field. Third-party tools infer it by scraping results pages, which works reasonably well but is an inference. The cheapest reliable method is searching your top 20 affected queries manually."
+    },
+    {
+      "q": "Should I block Google from using my content in AI Overviews?",
+      "a": "You can suppress your text from the box using snippet controls like `nosnippet` or `max-snippet`, but the same controls also suppress your normal search snippet — and a listing with no snippet gets fewer clicks. It's a trade almost nobody should take without testing on a small page set first."
+    },
+    {
+      "q": "Is SEO still worth doing if AI answers the question?",
+      "a": "For definitional content, honestly, much less than it was. For commercial, comparison, local and branded queries, nothing has changed — people still have to choose a supplier, and they don't do that from a summary. The work shifts toward the queries with money attached, which is where it should have been."
+    },
+    {
+      "q": "Where does traffic from ChatGPT and Perplexity show up?",
+      "a": "As referral traffic with its own referrer, not as organic search. Build a channel group in GA4 for `chatgpt.com`, `perplexity.ai`, `copilot.microsoft.com` and `gemini.google.com`. Volumes are small compared with Google, but the visitors tend to arrive further along and convert at a noticeably better rate."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "ai-overviews"
+    },
+    {
+      "type": "glossary",
+      "slug": "zero-click-search"
+    },
+    {
+      "type": "answers",
+      "slug": "what-are-google-ai-overviews"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-get-cited-by-ai-assistants"
+    },
+    {
+      "type": "journal",
+      "slug": "is-generative-engine-optimization-real"
+    },
+    {
+      "type": "glossary",
+      "slug": "click-through-rate"
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "slug": "jewellery",
+  "type": "seo-for",
+  "primaryKeyword": "seo for jewellery brands",
+  "secondaryKeywords": [
+    "jewellery seo india",
+    "seo for jewellers",
+    "gold rate page seo",
+    "bridal jewellery keywords",
+    "jewellery product schema"
+  ],
+  "cluster": "ecommerce-and-d2c",
+  "intent": "commercial",
+  "industry": "Jewellery",
+  "h1": "SEO for jewellery brands where the price changes every morning",
+  "metaTitle": "SEO for Jewellery Brands: Rates and Rich Results",
+  "metaDescription": "SEO for jewellery brands in India. We keep product schema, making charges and daily gold rate pages accurate so your rich results show a real price.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Jewellery SEO in India runs into a problem no other category has: the price changes every morning. A ring's cost is metal weight times today's rate, plus making charges, plus stones, plus GST — and if your product schema doesn't move with the rate, Google shows a stale number and eventually stops showing one at all.",
+  "takeaways": [
+    "If the rate feed and the structured data update on different schedules, your rich results are wrong for part of every day. Fix the sync before chasing new rankings.",
+    "A gold rate page nobody maintains is worse than no gold rate page. It's a daily, public demonstration that your site is out of date.",
+    "Festive and bridal demand has a lead time. A Dhanteras page published in October has already missed the window it needed to rank for.",
+    "BIS hallmarking and HUID content isn't compliance filler. It's the trust evidence that makes an unfamiliar brand buyable online."
+  ],
+  "sections": [
+    {
+      "h2": "Your price changed at nine this morning. Your markup didn't.",
+      "body": [
+        "Almost every other ecommerce category sets a price and leaves it there for a season. Jewellery doesn't. The rate moves daily, sometimes sharply, and the displayed price of every gold product on your site is a calculation, not a stored value: metal weight times the day's rate, plus making charges, plus wastage where you charge it, plus stone value, plus GST.",
+        "Three of those four inputs move. When the front end recalculates and the structured data doesn't, you end up publishing two different prices on the same page — one for the shopper and an older one for the crawler. Google notices. A price mismatch between your markup and your page is a routine reason for product rich results to be dropped, and if you feed a shopping surface, it's a routine reason for items to be disapproved.",
+        "This is fixable, and it's usually a deployment problem rather than an SEO problem. But it has to be fixed first, because a rich result showing yesterday's price on today's page costs you the click and the trust in one go."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Check this today",
+        "body": "Open a gold product page, view source, and compare the `offers.price` in the JSON-LD with the price rendered on screen. Then check `priceValidUntil`. If the markup price is stale, or the validity date has already passed, you're publishing a contradiction on every product you sell."
+      }
+    },
+    {
+      "h2": "Product schema when the price is a formula",
+      "body": [
+        "You have three honest options, and the right one depends on how fast your build pipeline can move. Pick deliberately — the failure mode is picking none and letting the platform default decide."
+      ],
+      "table": {
+        "caption": "Structured data approaches for weight-and-rate pricing.",
+        "head": [
+          "Approach",
+          "When it fits",
+          "The trade"
+        ],
+        "rows": [
+          [
+            "Exact price, regenerated with the rate",
+            "Server-rendered pricing, rate updates that redeploy or revalidate markup in the same step",
+            "Best result. Requires the rate feed and the page cache to be genuinely coupled."
+          ],
+          [
+            "`priceSpecification` with a short `priceValidUntil`",
+            "Rates that update once daily at a known time",
+            "Honest and durable. Set the validity to the end of the rate day, not a year out."
+          ],
+          [
+            "Price range on the product, exact price only in the cart",
+            "Made-to-order, custom weight, high-value bridal sets",
+            "You lose the price rich result. You keep your credibility, which is worth more than the snippet."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Publish making charges as text**, per gram or as a percentage. It's the single most searched-for thing about a jeweller and the thing most sites hide until checkout.",
+        "**`aggregateRating` only from reviews you actually collected.** Borrowed or invented ratings are covered by Google's structured data spam policies, and a manual action strips rich results across the whole domain.",
+        "**Don't mark up a discount that isn't real.** Inflated strike-through pricing on gold is easy to disprove — the metal rate is public."
+      ]
+    },
+    {
+      "h2": "The gold rate page: a real asset, or a daily liability",
+      "body": [
+        "`gold rate today in Chennai`, `22 carat gold price Hyderabad`, `silver rate today` — this is enormous, repeating, daily demand, and it's one of the few genuinely evergreen traffic sources in the category. It's also the fastest way to look unreliable in public.",
+        "Rates differ by city, which is why the city-level pages exist at all. Build them only where you actually have a rate you can stand behind, and only where you have a reason to be found — the cities you sell in, not all 200 you could generate. A rate page for a city where you have no showroom and no feed is scaled content with no upside.",
+        "Structure them as one permanent URL per city and purity combination, updated automatically from your feed, with a visible timestamp. Add the seven-day and thirty-day movement, the current making-charge range, and a clear line explaining what the rate does and doesn't include. That last part is what stops it being a commodity page indistinguishable from forty others."
+      ],
+      "bullets": [
+        "**One URL per city, refreshed daily.** Never a dated URL. `/gold-rate-chennai` forever, not `/gold-rate-chennai-26-july-2026`.",
+        "**Show the timestamp and the source.** A page that says 'updated 09:30 today' outperforms one that just asserts a number.",
+        "**Link the rate page to the products it prices.** Traffic that lands on a rate page and leaves is a vanity metric; traffic that lands and clicks into a collection is a channel.",
+        "**Automate it or don't publish it.** If updating means someone editing a CMS field each morning, it will be wrong by the second week of the second month."
+      ]
+    },
+    {
+      "h2": "Two demand cycles, and the lead time nobody plans for",
+      "body": [
+        "Jewellery demand in India isn't a smooth line. It's festive — Akshaya Tritiya, Dhanteras and Diwali, plus regional peaks around Onam, Pongal and Durga Puja — and it's bridal, following wedding muhurat seasons that shift each year and differ by region.",
+        "The mistake is treating these as campaigns. A page published two weeks before Dhanteras is competing against pages that have held that URL for four years. Ranking for a seasonal peak takes lead time; six to ten weeks is a reasonable planning assumption for a page that already has some authority behind it, and considerably longer for a new one.",
+        "So keep one permanent URL per occasion and refresh it annually. The page accumulates links and history instead of resetting every year, and you spend the six weeks before the festival improving it rather than getting it indexed.",
+        "Bridal is the higher-value cluster and the more forgiving one, because the research window is months long. Bridal buyers search sets, budgets and specifics — `bridal necklace set under 2 lakh`, `temple jewellery for South Indian wedding`, `light weight bridal set` — which is a content problem more than a rate problem, and one where a jeweller who explains the trade-offs honestly beats a marketplace grid."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The annual URL rule",
+        "body": "One page per occasion, kept forever, updated each year. `/collections/dhanteras` beats `/dhanteras-offers-2026` every single time — the second one is an orphan by December and a redirect chain by the following Diwali."
+      }
+    },
+    {
+      "h2": "Hallmarking, HUID and the trust content that actually converts",
+      "body": [
+        "Buying gold from a website you don't recognise is an act of faith, and the objections are always the same: is it genuinely the purity claimed, what happens when I want to exchange it, and who do I go to if something is wrong. Answering those in public is both trust content and search content — people search these questions directly.",
+        "Hallmarking gives you concrete material to work with. BIS hallmarking of gold jewellery is mandatory across notified districts in India, and hallmarked pieces carry a six-digit alphanumeric HUID that a buyer can check themselves. Explaining what the mark contains, how to verify it, and what your own buy-back and exchange terms are does more for conversion than another product carousel.",
+        "This is also the [E-E-A-T](/glossary/e-e-a-t) argument in a category where it genuinely matters. Put your BIS registration details, showroom addresses, certification partners and exchange policy where both a buyer and a crawler can find them, and write the purity explainers under a named person rather than 'admin'."
+      ]
+    },
+    {
+      "h2": "Multi-store jewellers: one profile per showroom, not one per brand",
+      "body": [
+        "Jewellery is still overwhelmingly bought in person for anything above a certain ticket size, which makes the map pack the highest-value surface most jewellers under-work. `jewellery shop near me`, `gold showroom in <locality>`, `bridal jewellery <city>` are all local-pack queries first and organic queries second.",
+        "Each showroom needs its own Google Business Profile and its own store page — address, hours, the collections carried there, photographs of that showroom, the staff who run it, and a reviews stream of its own. A single store locator listing eleven branches ranks in none of their neighbourhoods.",
+        "That store page is also where the online and offline halves of the business connect. Show the stock or collection available at that branch, offer an appointment for bridal consultations, and give a phone number that reaches that showroom rather than a central call centre. The [local SEO mechanics](/services/local-seo-services) are the same as any multi-location retailer; the ticket size just makes them worth more."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What this costs, and what we guarantee",
+        "body": "Our SEO runs from ₹75,000/mo, smaller sites from ₹40,000/mo, ex-GST, month-to-month after the first quarter — [what SEO costs in India](/cost/seo-cost-in-india) covers what changes the number. We freeze your trailing-90-day qualified leads from organic on day one, including showroom appointment requests, and if we haven't beaten that baseline in 90 days we keep working free until we do. We don't promise ranking positions."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I handle product schema when gold prices change daily?",
+      "a": "Either regenerate the markup whenever the rate updates, or use a price specification with a `priceValidUntil` set to the end of that rate day. For made-to-order and bridal pieces, publish a price range instead. What you must not do is leave a stale exact price in the markup while the page shows a different one."
+    },
+    {
+      "q": "Are daily gold rate pages worth building?",
+      "a": "Yes, if they're automated and limited to cities you actually trade in. The demand is large and repeats daily. But a rate page updated by hand will be wrong within weeks, and a wrong rate page is a public demonstration that your site isn't maintained. Automate it or skip it."
+    },
+    {
+      "q": "When should I publish festive jewellery pages?",
+      "a": "Keep one permanent URL per occasion and refresh it every year rather than creating a new dated page each season. If you're starting from nothing, work backwards at least six to ten weeks from the festival, and longer on a new domain, because ranking for a peak requires the page to be indexed and established before demand arrives."
+    },
+    {
+      "q": "Does hallmarking content help SEO or is it just compliance?",
+      "a": "Both. Purity, hallmarking and HUID verification are things buyers search directly, so the pages earn traffic. They also answer the main objection to buying jewellery online from an unfamiliar brand, which is why they convert better than another collection page. Publish them under a named author with your BIS details visible."
+    },
+    {
+      "q": "How many Google Business Profiles should a multi-store jeweller have?",
+      "a": "One per showroom, each with its own page, photographs, phone number and review stream. A single store-locator page covering every branch competes in every neighbourhood and wins none of them. For jewellery, where most high-ticket purchases still finish in person, this is usually the fastest-returning work available."
+    },
+    {
+      "q": "How long does jewellery SEO take to work in India?",
+      "a": "Three to six months for competitive collection and bridal terms. Local showroom and rate-page visibility can move faster, often inside two months, because it depends more on profile completeness, reviews and update frequency than on link authority. Festive terms follow the calendar, not the retainer."
+    }
+  ],
+  "related": [
+    {
+      "type": "services",
+      "slug": "schema-markup-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "schema-markup"
+    },
+    {
+      "type": "seo-for",
+      "slug": "ecommerce"
+    },
+    {
+      "type": "services",
+      "slug": "local-seo-services"
+    },
+    {
+      "type": "cost",
+      "slug": "ecommerce-seo-cost"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-do-local-seo"
+    },
+    {
+      "type": "seo-for",
+      "slug": "subscription-boxes"
+    }
+  ]
+}

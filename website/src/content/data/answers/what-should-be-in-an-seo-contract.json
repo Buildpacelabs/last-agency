@@ -1,0 +1,205 @@
+{
+  "slug": "what-should-be-in-an-seo-contract",
+  "type": "answers",
+  "primaryKeyword": "what should be in an seo contract",
+  "secondaryKeywords": [
+    "seo contract terms",
+    "seo agreement checklist",
+    "how long should an seo contract be",
+    "seo contract lock in period"
+  ],
+  "cluster": "agency-selection",
+  "intent": "commercial",
+  "h1": "What belongs in an SEO contract before you sign",
+  "metaTitle": "What Should Be in an SEO Contract? Key Clauses",
+  "metaDescription": "Scope, baseline, account and content ownership, notice period, GST and TDS, and exit. Each clause, why it matters, and the wording to push back on.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "An SEO contract needs seven things: a defined scope with counts and quality criteria, a written baseline number, ownership of accounts and content assigned to you, a notice period you can actually use, clear GST and TDS treatment, a handover clause, and no auto-renewal. The ownership clause is the one that costs money when it's missing.",
+  "takeaways": [
+    "The fight you can't see coming is **ownership**. Search Console verification, the GA4 property, the Google Business Profile and the copyright in every article you paid for. All of it surfaces on the day you leave.",
+    "Under Indian copyright law, paying for content does **not** automatically transfer copyright to you. Assignment has to be in writing, and if you don't state a period it can default to five years.",
+    "\"Four blog posts a month\" is not a deliverable. Word count, brief, revision rounds and who approves are the deliverable.",
+    "A one-quarter initial term is reasonable — SEO can't be judged in 30 days. A twelve-month lock with a 90-day notice window is not."
+  ],
+  "sections": [
+    {
+      "h2": "What the contract is actually for",
+      "body": [
+        "Not to win a lawsuit. Almost nobody sues over a ₹75,000 monthly retainer — the legal cost dwarfs the dispute. The contract exists to force both sides to be specific before money changes hands, and to make the exit boring.",
+        "So the clauses worth arguing about aren't the indemnity boilerplate. They're the four or five places where a vague sentence today becomes a hostage situation in month fourteen. What follows isn't legal advice — have a lawyer read the final document, and your CA the tax clauses."
+      ]
+    },
+    {
+      "h2": "Scope: counts mean nothing without definitions",
+      "body": [
+        "Most SEO scopes are a list of nouns with numbers attached. \"4 blog posts. 10 backlinks. 1 technical audit. Monthly report.\" Every one of those is unfalsifiable as written, which is exactly why it's written that way. Make each line answer three questions: what does one unit look like, who decides it's acceptable, and what happens if it isn't."
+      ],
+      "table": {
+        "caption": "Turning a vague scope line into an enforceable one.",
+        "head": ["What proposals say", "What to ask for instead"],
+        "rows": [
+          [
+            "4 blog posts / month",
+            "4 articles, minimum 1,200 words, written to a brief we approve in advance, 2 revision rounds included, published only after our sign-off."
+          ],
+          [
+            "10 backlinks / month",
+            "A minimum of X placements on sites meeting agreed criteria, each disclosed with a live URL, no paid placements or private networks, and a written statement to that effect."
+          ],
+          [
+            "Technical audit",
+            "A crawl-based audit delivered once, plus a prioritised fix list with implementation specs, and a named owner for each item — us or you."
+          ],
+          [
+            "Monthly report",
+            "A report by the 7th covering the baseline metric, target-query impressions and positions, pages published, links placed with URLs, and what changed and why."
+          ],
+          [
+            "Ongoing optimisation",
+            "Delete this line. It means nothing and it's where scope goes to hide."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Also worth naming",
+        "body": "Who is on the account, by name and role. \"Senior resources will be allocated\" is a sentence that survives contact with reality for about six weeks."
+      }
+    },
+    {
+      "h2": "The baseline clause most contracts don't have",
+      "body": [
+        "This is the single clause that decides whether anyone can ever prove the engagement worked. Without it you'll spend month five arguing about a traffic chart, because traffic is easy to inflate and impossible to disprove.",
+        "Write down one number, how it's measured, and when it was frozen. Something that shows up in the business — qualified leads from organic search, or organic revenue — not sessions.",
+        "Wording along these lines does the job:"
+      ],
+      "bullets": [
+        "*\"The Baseline is the number of qualified leads attributed to organic search in [CRM], for the 90 days immediately preceding the Start Date, calculated on [date] and recorded in Schedule A.\"*",
+        "*\"Qualified means [definition agreed by both parties]. Attribution model: [last non-direct click]. Source of truth: [named system].\"*",
+        "*\"The Baseline is fixed for the term and may only be restated by written agreement of both parties.\"*"
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Watch what the baseline is made of",
+        "body": "If an agency wants the baseline measured in analytics sessions rather than CRM leads, ask why. Sessions can be moved by ranking for irrelevant queries. Leads can't. See [how to set an SEO baseline](/journal/how-to-set-an-seo-baseline)."
+      }
+    },
+    {
+      "h2": "Ownership: the fight that only surfaces at exit",
+      "body": [
+        "Everything here costs nothing to fix on day one and can cost you a quarter of lost work to fix on day four hundred. It's also the section agencies most often leave silent — usually because nobody thought about it, not out of malice. There are three separate ownership questions, and they have three different answers."
+      ],
+      "subs": [
+        {
+          "h3": "Accounts and properties",
+          "body": [
+            "The failure mode is that the agency creates everything under their own Google account, gives you a viewer seat, and takes the history with them. Insist on being the top-level owner of each property from creation, not \"granted access\"."
+          ],
+          "bullets": [
+            "**Google Search Console** verified on a DNS TXT record you control at your registrar. If verification runs through their tag manager container or an HTML file they uploaded, they hold the keys.",
+            "**Google Analytics 4** property inside an Analytics account owned by your company, with you as Administrator at both account and property level.",
+            "**Google Business Profile** with your company as **Primary Owner**, not Manager. Google enforces waiting periods on ownership transfer, so this must be right at the start.",
+            "**Google Tag Manager, Google Ads, Bing Webmaster, CMS, hosting, CDN and any plugin licences** — listed by name in a schedule, with your company as the account holder and the licence renewing on your card."
+          ]
+        },
+        {
+          "h3": "Content and copyright",
+          "body": [
+            "This one surprises people. Under the Indian Copyright Act, the first owner of a work is generally its author, and the employment exception applies to employees — not to an agency or a contractor. Paying an invoice is not an assignment. Assignment has to be in writing and signed.",
+            "There's a second trap: if the assignment doesn't state a period, the law can treat it as lasting five years, and if it doesn't state a territory, as covering India only. So the clause needs to say **worldwide, perpetual, irrevocable**, and it needs to cover drafts and unpublished work too. Ask your lawyer to confirm the current wording — this is the clause worth twenty minutes of a professional's time."
+          ]
+        },
+        {
+          "h3": "Links",
+          "body": [
+            "Nobody can transfer a backlink to you, so don't accept a clause that pretends otherwise. What you can require is disclosure: a running list of every placement with its live URL, the date, and the anchor text.",
+            "You also want a warranty that no paid links, private blog networks or link exchanges were used on your behalf, and an indemnity if a manual action results from something they did. The links stay wherever they are; the liability shouldn't be yours alone."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The rented-link problem",
+        "body": "Some agencies place links that only stay live while a monthly fee keeps being paid. Ask directly: are any placements on a recurring payment, and what happens to them when we stop? A link portfolio that evaporates 30 days after you leave was never a portfolio."
+      }
+    },
+    {
+      "h2": "Term, notice and the auto-renewal clause",
+      "body": [
+        "SEO genuinely can't be judged in 30 days, so an initial commitment is reasonable. One quarter is the honest length — long enough for a technical fix and a content cycle to show leading indicators, short enough that you're not funding a year of somebody else's learning. After that, month-to-month with 30 days' notice, which keeps an agency honest by making every month a renewal decision."
+      ],
+      "bullets": [
+        "**Push back on:** a 12-month minimum term, a 90-day notice window, or both together. Long lock-ins protect the agency's revenue forecast, not your results.",
+        "**Delete or cap auto-renewal.** If it renews automatically, require written notice to you 60 days before the renewal date, and make renewal opt-in rather than opt-out.",
+        "**Check where notice has to be served.** Some contracts require registered post to a specific address. An email to your account manager then isn't notice, and you'll find that out on the day it matters.",
+        "**Ask about conflicts.** Will they take on your direct competitor in the same city or category? Either accept it or write an exclusivity carve-out — but know the answer before you sign."
+      ]
+    },
+    {
+      "h2": "Money: GST, TDS and payment terms",
+      "body": [
+        "The commercial clauses are where Indian contracts differ most from the templates you'll find online, and where a two-line ambiguity becomes a month-one argument between two finance teams. Four things to nail down."
+      ],
+      "numbered": [
+        "**GST.** Marketing and advertising services attract 18% GST. State clearly whether quoted fees are inclusive or exclusive — \"₹75,000 per month, exclusive of GST\" removes the entire argument. If you're billing a foreign client or being billed from abroad, the place-of-supply treatment differs; get your CA to confirm.",
+        "**TDS.** Agree in writing which section applies, because the deduction differs meaningfully depending on how the service is characterised — Section 194C for contract work or 194J for professional and technical services, at different rates. Your CA and theirs should settle this before the first invoice, not after.",
+        "**Payment terms and the MSME rule.** If the agency is a registered micro or small enterprise, Indian law limits how long a buyer may take to pay, and delayed payment can attract interest and create an income-tax disallowance for the buyer. Ask whether they're MSME-registered and set terms accordingly, and confirm the current position with your accountant. Whatever the terms, keep the late-fee clause symmetrical — if they charge interest on late payment, the same clause should credit you for late delivery.",
+        "**Ad spend and pass-through costs.** If they're buying anything on your behalf — media, tools, placements, stock imagery — say who pays, whether there's a markup, and who holds the invoice. Our own answer is that ad spend is billed separately with zero media markup, and it's a fair thing to require of anyone."
+      ]
+    },
+    {
+      "h2": "Exit: work in progress and the handover list",
+      "body": [
+        "Write the exit clause while everyone still likes each other — it's the cheapest insurance in the document. It should say what you get, in what format, and by when: a fixed number of days from the termination date, not \"promptly\"."
+      ],
+      "bullets": [
+        "**Drafts and work in progress** delivered in editable source format, including briefs, outlines and half-finished articles you've already paid for.",
+        "**Placements secured but not yet published** still get delivered, or the fee for them is refunded.",
+        "**All credentials and account ownership transferred** within the stated window, with a written confirmation that their access has been removed.",
+        "**Data exports**: Search Console performance data (it only retains 16 months, so this matters), analytics history, rank tracking history, the full backlink list, and the redirect map.",
+        "**A no-sabotage clause** — no removal of published content, no deletion of redirects, no unpublishing of the Google Business Profile. It sounds paranoid until you've seen it happen.",
+        "**A short overlap period** where the outgoing team answers questions from the incoming one. Two weeks is usually enough."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What we do, since it's fair to ask",
+        "body": "SEO from ₹75,000/mo, smaller sites from ₹40,000/mo, ex-GST, ad spend billed separately at zero markup. One quarter minimum, then month-to-month with 30 days' notice, no auto-renewal, and you own every account and every asset from day one. The guarantee is movement against your own frozen 90-day organic lead baseline — never a ranking position — and if we miss it we keep working free until we beat it. If you're already mid-contract elsewhere, [how to leave an SEO agency cleanly](/answers/can-i-fire-my-seo-agency) covers the sequence."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long should an SEO contract be?",
+      "a": "One quarter as an initial term, then month-to-month with 30 days' notice. Three months is long enough for technical fixes and a content cycle to produce leading indicators, and short enough that you're not funding a year of someone else's learning. Twelve-month locks with 90-day notice windows protect the agency, not you."
+    },
+    {
+      "q": "Who owns the content an SEO agency writes for me?",
+      "a": "Not automatically you. Under Indian copyright law the author is generally the first owner, and the employment exception doesn't cover contractors or agencies. Assignment must be in writing and signed, and it should specify worldwide, perpetual and irrevocable — otherwise default periods and territories can apply. Have a lawyer check the clause."
+    },
+    {
+      "q": "What happens to my Google accounts if I leave my SEO agency?",
+      "a": "Whatever the setup allows. If they verified Search Console through their own tag container, or created the GA4 property in their Analytics account, or hold Primary Owner on your Google Business Profile, the history can leave with them. Fix it in the contract: you hold top-level ownership on every property from creation."
+    },
+    {
+      "q": "Should an SEO contract guarantee rankings?",
+      "a": "No, and walk away from one that does. Nobody controls Google's index, and Google's own guidelines warn against position guarantees. A guarantee against your own written baseline — trailing-90-day qualified organic leads, frozen before work starts — is a real commitment. A promised position is a sales device."
+    },
+    {
+      "q": "Is GST charged on SEO services in India?",
+      "a": "Yes, marketing and advertising services attract 18% GST. State explicitly whether quoted fees are inclusive or exclusive, and settle the TDS section — 194C or 194J — before the first invoice. Cross-border billing follows different place-of-supply rules, so have your CA confirm the treatment for your situation."
+    },
+    {
+      "q": "Can I ask for a termination clause in the first month?",
+      "a": "You can ask for anything, and a short good-faith exit is reasonable to request. Most agencies will resist a 30-day out inside the initial quarter, because month one is heavy audit and setup work they'd be funding for free. A fair middle ground: a defined kill-fee rather than a full quarter's commitment."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "can-i-fire-my-seo-agency" },
+    { "type": "journal", "slug": "how-to-set-an-seo-baseline" },
+    { "type": "compare", "slug": "retainer-vs-project" },
+    { "type": "answers", "slug": "what-questions-should-i-ask-an-seo-agency" },
+    { "type": "services", "slug": "seo-retainer-plans" },
+    { "type": "journal", "slug": "why-ranking-guarantees-are-a-lie" }
+  ]
+}

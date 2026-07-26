@@ -1,0 +1,273 @@
+{
+  "slug": "the-replatform-that-killed-your-traffic",
+  "type": "journal",
+  "primaryKeyword": "website migration seo traffic drop",
+  "secondaryKeywords": [
+    "site redesign lost rankings",
+    "seo migration checklist",
+    "replatform seo mistakes",
+    "redirect mapping seo",
+    "recover traffic after redesign"
+  ],
+  "cluster": "seo-strategy",
+  "intent": "informational",
+  "h1": "Anatomy of a Replatform That Wiped 60% off Organic Traffic",
+  "metaTitle": "The Replatform That Killed Your Organic Traffic",
+  "metaDescription": "A website migration SEO traffic drop is nearly always self-inflicted. Here are the four decisions that cause it, ranked by damage, and the fix for each.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "A website migration traffic drop is almost always four decisions made in the six weeks before launch: an incomplete redirect map, content shortened to suit the new design, a template that dropped internal links, and a robots or staging mistake. Ranked by damage, redirects cost the most. Recovery usually runs eight to sixteen weeks once fixes ship.",
+  "takeaways": [
+    "The redirect map is the expensive one. Everything else you can fix late; a backlink pointing at a URL you never redirected is **gone**.",
+    "Build the map from five sources, not one. The XML sitemap is a list of pages you *wanted* indexed — not a list of URLs with links, rankings or traffic.",
+    "The mistake nobody reports is **shortened copy**. Cut the paragraph and you delete every long-tail query that paragraph was matching, invisibly.",
+    "Crawl the old site and save the export before a single URL changes. It takes an afternoon and it's the difference between a post-mortem and a guess."
+  ],
+  "sections": [
+    {
+      "h2": "The fortnight after a bad launch, in order",
+      "body": [
+        "This is a composite, not a client. We don't publish anyone's numbers without permission, and the specific site doesn't matter anyway — migration failures repeat with the same handful of causes, in roughly the same order, on WordPress and Shopify and Webflow and whatever headless build your CTO is excited about.",
+        "What's worth knowing is the sequence, because the sequence is why these get escalated ten days too late. Nothing looks wrong on launch day. Google hasn't been round yet."
+      ],
+      "numbered": [
+        "**Day 0 — launch.** New URLs go live, traffic looks normal, and the migration gets marked done in the project tracker.",
+        "**Days 1–4 — the crawl arrives.** Googlebot re-crawls your most-crawled URLs first: homepage, main templates, anything with recent links. Those get re-evaluated within hours. The long tail can take weeks, which is why the damage arrives in instalments.",
+        "**Days 4–10 — rankings slide before traffic does.** Average position drifts on pages whose URL changed or whose word count halved. Search Console shows this before Analytics does, because impressions move before sessions.",
+        "**Days 10–21 — the floor.** Organic traffic bottoms out. This is normally when someone senior finally asks the question, about ten days after the data would have answered it.",
+        "**Weeks 4–6 — leads follow.** Organic leads lag organic traffic by roughly the length of your sales cycle. A B2B company often doesn't feel a June migration until August, and then blames August."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Migration or algorithm update?",
+        "body": "If the drop begins within 72 hours of your launch date and concentrates on URLs that changed, it's the migration. If it begins on a date Google announced and hits pages whose URLs didn't change at all, it's [a core update](/glossary/google-core-update). Confusing the two costs a month of fixing the wrong thing."
+      }
+    },
+    {
+      "h2": "Decision one — the redirect map built from the sitemap alone",
+      "body": [
+        "This is the most expensive mistake in the list, and it gets made the same way every single time. Someone exports the XML sitemap, maps those URLs to their new equivalents, ticks the box.",
+        "The sitemap is a list of pages you wanted indexed. It is not a list of URLs that have backlinks, rankings, impressions or traffic. Those four lists overlap with the sitemap and none of them is contained by it. An old site that's been through two previous redesigns will have hundreds of URLs earning links that nobody has looked at since 2019."
+      ],
+      "subs": [
+        {
+          "h3": "Build the map from five sources, deduplicated",
+          "bullets": [
+            "**The XML sitemap.** Fine as a starting point. Never as the whole thing.",
+            "**A full crawl of the live old site**, run before anything changes. Screaming Frog, Sitebulb, whatever you like — the tool is irrelevant, the timing isn't.",
+            "**Search Console, Pages export, full 16-month window.** Every URL that earned an impression. Sixteen months is all Google keeps, which is one more reason to export it before launch rather than after.",
+            "**Analytics landing pages, 24 months.** Catches URLs that convert but barely rank, which are usually your most valuable ones.",
+            "**A full backlink export.** Every URL with a referring domain — including URLs that have been 404ing for three years and are still holding links. Those are free rankings sitting on the floor."
+          ]
+        },
+        {
+          "h3": "The URL types teams forget",
+          "bullets": [
+            "Paginated URLs — `?page=2`, `/page/2/` — which often hold the crawl paths to your deep content.",
+            "Faceted and parameter URLs that genuinely rank, and old blog category, tag and author archives.",
+            "PDFs, spec sheets, price lists. They attract links and nobody maps them.",
+            "`hreflang` alternates and old AMP URLs.",
+            "Protocol and hostname variants: `http`, `www`, trailing slash, uppercase. Each is a distinct URL to a crawler.",
+            "Feed URLs (`/feed`, `/rss`) — heavily linked from aggregators, almost never in a redirect map."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Two rules people break under launch pressure",
+        "body": "Redirect each old URL to its closest equivalent, not to the homepage. Google treats a bulk redirect to the homepage as a soft 404, and a soft 404 passes nothing. And use a permanent redirect, not a temporary one — [301 versus 302 matters here](/compare/301-vs-302-redirect), because a 302 tells Google to keep indexing the old URL."
+      }
+    },
+    {
+      "h2": "Decision two — the copy got shorter because the design wanted it shorter",
+      "body": [
+        "Redesigns are run by designers, and designers are right about nearly everything except word count. The new hero is genuinely beautiful. It has room for eleven words. The old page had 1,400 words that happened to answer nine different questions, and eight of those questions no longer appear anywhere on the site.",
+        "Here's the mechanic that makes this invisible. A page ranks for far more queries than the one it was built for. Most established pages earn the bulk of their impressions from long-tail variants nobody on the team has ever tracked — the paragraph mentioning GST, the sentence about schools, the aside about Pune. Delete the paragraph and you delete the match. Rank tracking doesn't flag it because those queries were never in the rank tracker.",
+        "The fix isn't \"keep it long\". Word count doesn't rank; coverage does, and length is only a crude proxy for how many questions a page answers. So diff the coverage."
+      ],
+      "bullets": [
+        "Export top queries per URL from Search Console for every template you're redesigning.",
+        "For each query above a threshold you set — 50 impressions a month is a reasonable line — confirm the new copy still contains a passage that answers it.",
+        "Where it doesn't, either restore the passage or accept the loss in writing, so that nobody spends November investigating a decision made in August."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "Ten minutes per template",
+        "body": "The query-coverage check is the cheapest item on the entire pre-launch list and the one most often skipped, because it belongs to nobody. Design owns the layout, dev owns the build, and the person who understands what the old copy was earning is usually not in the launch meeting."
+      }
+    },
+    {
+      "h2": "Decision three — the new template quietly removed your internal links",
+      "body": [
+        "Old templates accumulate links the way a garage accumulates cable. Breadcrumbs, related-posts blocks, sidebar category lists, footer link farms somebody added in 2021, and years of in-body links added by whoever was writing that month. A clean new template has a nav, a footer with six items and a lot of whitespace.",
+        "That whitespace is where your internal link graph used to live. It isn't unusual for a page to go from thirty-odd internal links to under ten, sitewide, in one deployment.",
+        "Four things break at once, and none of them shows up as an error in any tool: crawl paths to deep pages, anchor-text signals, the distribution of link equity across the site, and the topical relationships that told Google your cluster pages belonged together. [Internal linking does more work than most link building](/journal/internal-linking-beats-link-building), which is exactly why removing it costs so much."
+      ],
+      "numbered": [
+        "Crawl the old site and the staging site. Export inlink count per URL from both.",
+        "Diff them. Any URL whose internal inlinks fall to zero is an orphan, and orphans get dropped from the index over time regardless of how good they are.",
+        "Diff crawl depth as well. A page that sat two clicks from the homepage and now sits five will be crawled less often and re-evaluated more slowly.",
+        "Check in-body links specifically. Moving from a rich-text CMS field to a headless build very often sanitises the HTML, and anchors go out with the sanitiser. The words survive; the links don't."
+      ]
+    },
+    {
+      "h2": "Decision four — robots.txt, noindex, or the staging site itself",
+      "body": [
+        "Four variants of the same class of error. They cause the most dramatic damage and the least durable damage, which is why they sit fourth rather than first — they're usually caught inside a week, and a week is survivable. Each one is checkable in about ninety seconds, and the reason they ship is that nobody was assigned those ninety seconds."
+      ],
+      "bullets": [
+        "**The staging `robots.txt` ships to production.** `Disallow: /` deployed with the rest of the build. Traffic goes to near-zero on a schedule set by Google's re-crawl rate.",
+        "**A global `noindex` inherited from staging config.** Worse than the robots.txt version, because robots.txt merely stops crawling while a `noindex` actively removes pages already in the index. It can also arrive as an `X-Robots-Tag` HTTP header, where nobody thinks to look because it isn't in the HTML.",
+        "**Canonicals hardcoded to the staging hostname.** Every page on your live site now tells Google the real version lives on a domain Google can't reach. Quietly catastrophic and very easy to miss on view-source unless you're specifically checking the hostname.",
+        "**Staging itself gets indexed.** No auth, no noindex, a stray link from a Jira ticket, and now a full duplicate of your site is competing with production. The fix is HTTP auth, not robots.txt — a disallowed URL can still be indexed if something links to it."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The first hour after launch, before anyone celebrates",
+        "body": "Load `/robots.txt` on the live domain. Run `curl -I` on three URLs and read the headers for `X-Robots-Tag`. View source on three templates and check the robots meta tag and the canonical hostname. Run one URL Inspection in Search Console. Four checks, under ten minutes, and they catch the entire fourth category."
+      }
+    },
+    {
+      "h2": "The four ranked by damage, and by how long they take to undo",
+      "body": [
+        "Ordering matters here because it's almost exactly the inverse of how much panic each one causes in the room."
+      ],
+      "table": {
+        "caption": "Migration failures ranked by lasting damage, not by how alarming they look on day one.",
+        "head": [
+          "Mistake",
+          "Why it ranks here",
+          "Time to undo once caught"
+        ],
+        "rows": [
+          [
+            "Incomplete redirect map",
+            "Discards link equity that took years to earn. For any URL whose backlinks you never found, the loss is permanent — the only route back is re-earning the links.",
+            "Hours to deploy, 4–12 weeks to reconsolidate"
+          ],
+          [
+            "Shortened content",
+            "Deletes long-tail query coverage that was never in anyone's rank tracker, so it stays invisible in reporting for months.",
+            "Days to rewrite, 4–8 weeks to recover"
+          ],
+          [
+            "Template stripped of internal links",
+            "Changes crawl depth and equity distribution across every page at once, and creates orphans that decay slowly.",
+            "1–2 weeks of template work, 4–8 weeks to settle"
+          ],
+          [
+            "robots.txt / noindex / staging",
+            "Severe while live and genuinely frightening, but almost always caught fast and fully reversible.",
+            "Minutes to fix, 1–3 weeks to re-index"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The uncomfortable version",
+        "body": "The robots.txt error is the one everybody fears and the one that does the least long-term harm. The redirect map is the one nobody audits and the one you will still be paying for next year."
+      }
+    },
+    {
+      "h2": "The pre-launch checklist that would have caught all four",
+      "body": [
+        "None of this is clever. All of it is boring, and the boring items are the ones that get dropped when the launch date slips and the scope doesn't."
+      ],
+      "numbered": [
+        "**Crawl the old site and save the export.** Before a single URL changes. URLs, titles, H1s, word counts, inlink counts, crawl depth, status codes. You cannot diff what you never recorded, and this is the most-skipped item on the list.",
+        "**Build the redirect map from five sources.** Sitemap, crawl, 16 months of Search Console, 24 months of analytics, full backlink export. Deduplicate and map to closest equivalents.",
+        "**Test every redirect against staging automatically.** Feed the old URL list to the staging host and assert two things: a 301, and a 200 at the destination in a single hop. Chains work, but every extra hop slows consolidation and gives someone a chance to break it later.",
+        "**Run the query-coverage diff per template.** Top Search Console queries per URL, checked against the new copy.",
+        "**Diff internal inlinks and crawl depth per URL.** Any URL falling to zero inlinks is a launch blocker, not a post-launch ticket, and nothing commercially important should move past three clicks from the homepage.",
+        "**Audit robots.txt, meta robots, `X-Robots-Tag`, canonicals and hreflang on staging**, with the production hostname substituted. Hardcoded staging hostnames are the single commonest cause of the fourth category.",
+        "**Put staging behind HTTP auth on day one of the build.** Not on the day before launch, when you'd have to find the pages already indexed.",
+        "**Set up analytics and Search Console before launch, not after.** New property if the domain changes, tags verified on every new template, and — the important part — your trailing-90-day organic sessions, conversions and leads exported and frozen.",
+        "**Pick a launch window that isn't your peak season and isn't a Friday.** Search doesn't care, but the humans who have to fix things at 9pm do."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Freeze the baseline outside the tool",
+        "body": "Export your trailing-90-day organic numbers to a spreadsheet and store it somewhere that isn't the analytics platform. If you end up arguing about the size of the drop three months later, you don't want to be arguing about a number inside a tool whose tagging also changed on launch day."
+      }
+    },
+    {
+      "h2": "What recovery actually looks like, and where it stops",
+      "body": [
+        "If all four fixes ship inside the first fortnight, most sites are back to pre-launch organic traffic in roughly eight to sixteen weeks. The range is wide because it's mostly a function of how often Google crawls you, and that varies enormously between a news site and a 40-page B2B brochure.",
+        "If the redirect map is still incomplete at month two, the honest forecast is \"some of it, eventually\". URLs whose backlinks you never mapped aren't recoverable by redirect, because you don't know they exist."
+      ],
+      "numbered": [
+        "**Weeks 1–2 after the fix.** Google re-crawls your most important URLs first. Impressions move before sessions, so watch Search Console rather than Analytics.",
+        "**Weeks 3–6.** Money pages reconsolidate as redirects are processed and the new URLs inherit the old ones' signals. Submit fresh sitemaps and run URL Inspection on your top 30 URLs to hurry the first pass. Beyond thirty, it's patience.",
+        "**Weeks 6–12.** The long tail returns last, because those URLs are crawled least often. This is the stage where people give up early and start rewriting pages that were about to recover on their own.",
+        "**Months 3–4.** Leads follow traffic, offset by your sales cycle."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Redirects don't rescue worse content",
+        "body": "If the old pages ranked partly because they were genuinely more useful than what replaced them, no amount of redirect hygiene brings that back. A fair number of \"migration recovery\" projects are really content projects wearing a technical hat, and it's cheaper to admit that in week two than in month five."
+      }
+    },
+    {
+      "h2": "Why the hour before launch is the most expensive hour in SEO",
+      "body": [
+        "We handle [site migration work](/services/site-migration-seo) inside a normal retainer — SEO runs from ₹75,000/mo, or ₹40,000/mo for smaller sites, ex-GST, month-to-month after the first quarter. We're not raising the price here to make a point about it.",
+        "We're raising it because a migration is the one piece of SEO where the entire return is decided before launch and can't be bought back afterwards at any price. Thin content, you can rewrite. Slow pages, you can speed up. A missing link, you can go and earn. A backlink pointing at a URL you never redirected is simply gone, and the person who linked to you five years ago is not going to update it because you replatformed.",
+        "On engagements generally we guarantee movement against your own frozen trailing-90-day organic lead count — miss it in 90 days and we keep working free until we beat it. We never promise a specific ranking position for a specific keyword, because nobody controls Google's index. Around a migration that frozen number does double duty: it's the guarantee, and it's the only honest way to answer \"how bad was it, really\" three months later, once everyone's memory has quietly improved.",
+        "If you're mid-build right now and you only do one thing after reading this, do the dull one. Crawl the old site and save the file. It costs an afternoon, it costs nothing to store, and it's the difference between a post-mortem and a shrug. And if traffic has already gone, [start by working out whether it was actually the migration](/answers/why-did-my-rankings-drop) before you spend a quarter fixing something that wasn't broken."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long does it take to recover from a website migration traffic drop?",
+      "a": "Eight to sixteen weeks for most sites, assuming the fixes ship within a fortnight of launch. The range is driven by how often Google crawls you — a site published daily recovers faster than a 40-page brochure site. Money pages come back first, the long tail last."
+    },
+    {
+      "q": "Should I redirect all old URLs to the homepage?",
+      "a": "No. Google treats bulk redirects to the homepage as soft 404s, which pass nothing. Map each old URL to its closest equivalent page. Where no equivalent exists, a genuine 404 is better than a misleading redirect — at least it's honest to both crawlers and humans."
+    },
+    {
+      "q": "Is losing traffic after a redesign normal?",
+      "a": "A small wobble in the first two to three weeks is normal while Google re-crawls and reconsolidates. A 30–60% drop that persists past week three is not normal — it's a specific, findable error, usually in the redirect map or a robots directive, and it is almost always fixable."
+    },
+    {
+      "q": "How do I tell whether the drop was the migration or a Google update?",
+      "a": "Two checks. Timing: does the decline start within 72 hours of your launch, or on a date Google announced? Scope: is it concentrated on URLs that changed, or spread across pages whose URLs are identical? Migration damage clusters on changed URLs. Update damage doesn't."
+    },
+    {
+      "q": "Do I need a new Search Console property after a migration?",
+      "a": "Only if the domain or protocol changes — then yes, add the new property, verify it, and use the Change of Address tool. If only the URL structure changed on the same domain, the existing property carries on. Either way, export your old data before launch: Search Console keeps 16 months."
+    },
+    {
+      "q": "Can I still recover if the old site is gone and I never crawled it?",
+      "a": "Partly. Rebuild the URL list from Search Console's 16-month export, analytics, your backlink tool, and the Wayback Machine's URL index. You'll miss some, but between those four sources you can usually reconstruct the URLs that carry the links, which is where most of the value sits."
+    }
+  ],
+  "related": [
+    {
+      "type": "services",
+      "slug": "site-migration-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "301-redirect"
+    },
+    {
+      "type": "compare",
+      "slug": "301-vs-302-redirect"
+    },
+    {
+      "type": "answers",
+      "slug": "why-did-my-rankings-drop"
+    },
+    {
+      "type": "glossary",
+      "slug": "internal-linking"
+    },
+    {
+      "type": "journal",
+      "slug": "internal-linking-beats-link-building"
+    }
+  ]
+}

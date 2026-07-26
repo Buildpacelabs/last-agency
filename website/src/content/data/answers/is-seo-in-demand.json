@@ -1,0 +1,171 @@
+{
+  "slug": "is-seo-in-demand",
+  "type": "answers",
+  "primaryKeyword": "is seo in demand",
+  "secondaryKeywords": [
+    "is there demand for seo jobs",
+    "seo job market 2026",
+    "are seo jobs growing",
+    "future demand for seo"
+  ],
+  "cluster": "seo-career",
+  "intent": "informational",
+  "h1": "Is SEO in demand in 2026? Depends which SEO",
+  "metaTitle": "Is SEO in Demand in 2026? A Split Answer",
+  "metaDescription": "Demand for junior content SEO has fallen hard while technical and AI-visibility roles sit open for months. Here's where the Indian job market really is.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Yes and no, and the split is the whole answer. Demand for junior, volume content SEO has fallen sharply because that tier automates cleanly. Demand for technical SEO, migrations, measurement and AI-visibility work has risen. In India the same senior technical roles stay posted for months while junior content roles collect hundreds of applicants.",
+  "takeaways": [
+    "\"Is SEO in demand?\" is the wrong question. **Which SEO** is the right one — the answer flips depending on the tier.",
+    "What automated first was the work with a checkable output and no judgement in it: briefs to drafts, meta tags at volume, outreach mail merges.",
+    "Technical SEO, measurement and AI visibility got harder to hire for, not easier.",
+    "The commodity freelance market took the worst hit. Specialist freelance work — migrations, rescue jobs, audits — didn't."
+  ],
+  "sections": [
+    {
+      "h2": "The one-word answer is useless, so here's the split",
+      "body": [
+        "Every \"is SEO in demand\" article gives one answer for a market containing at least seven separate labour pools, and those pools are moving in opposite directions. It's why the same person can read two articles and conclude SEO is booming and dying in the same week.",
+        "Here's the breakdown by tier. The directions are what you can observe yourself by watching postings and applicant counts on LinkedIn and Naukri over a few months — not a survey, and there's no clean public dataset for India."
+      ],
+      "table": {
+        "caption": "SEO roles by demand direction, and the reason behind each move.",
+        "head": ["Role tier", "Direction", "Why it's moving"],
+        "rows": [
+          [
+            "Junior content SEO / blog writer",
+            "Down, sharply",
+            "Brief in, draft out, with a checkable result. Precisely the shape a language model handles at near-zero marginal cost."
+          ],
+          [
+            "On-page executive at volume",
+            "Down",
+            "Title tags, meta descriptions and bulk internal links are rule-following on a spreadsheet. Absorbed into other roles or scripted."
+          ],
+          [
+            "Volume link outreach",
+            "Down",
+            "It was already mail merge with a personalisation field, and response rates fell as inboxes got better at filtering it."
+          ],
+          [
+            "Technical SEO",
+            "Up",
+            "JavaScript rendering, log files, migrations, Core Web Vitals. Requires reading code and holding your ground with engineers."
+          ],
+          [
+            "Analytics and measurement",
+            "Up",
+            "GA4 broke everyone's reporting habits, consent rules complicate collection, and server-side tracking became a real skill."
+          ],
+          [
+            "AI visibility / GEO",
+            "Up, from a small base",
+            "New surface, no settled playbook, and every marketing head is being asked what the company is doing about it."
+          ],
+          [
+            "Head of organic / SEO lead",
+            "Flat to up",
+            "Somebody still has to decide what not to do and defend the number in a budget meeting."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "What AI automated away first, and why that tier specifically",
+      "body": [
+        "The tasks that went first weren't the easy ones. They were the ones where the output can be checked against a rule. A meta description either fits the character count or it doesn't. A draft either covers the brief's subheadings or it doesn't.",
+        "Anything with that shape — clear input, checkable output, no judgement about what happens next — got cheap fast. The tasks that survived share one awkward property: you can't tell whether the answer is right without knowing the business, the site's history and what the last three attempts broke.",
+        "So \"AI killed SEO\" is a bad summary and \"AI removed the bottom two rungs of the ladder\" is an accurate one. Brutal at ground level, irrelevant at rung five. Anyone claiming the whole field is finished should read [why SEO isn't dead](/answers/is-seo-dead) first."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The trap for freshers",
+        "body": "The entry route that worked for a decade — get hired to write blog posts, learn SEO on the job — has narrowed considerably. If you're entering now, aim one tier higher than the job you can currently do and build proof for that tier instead."
+      }
+    },
+    {
+      "h2": "What got harder to hire for",
+      "body": [
+        "Ask anyone running an Indian agency what's hard to fill and the same answers come back. None are content roles."
+      ],
+      "bullets": [
+        "**Technical SEO with real depth.** Not \"knows what a canonical is\" — can read a log file, can explain why a React route isn't in the index, can plan a migration without losing 40% of traffic on go-live day.",
+        "**Measurement people.** Someone who can connect organic sessions to pipeline in a CRM rather than screenshotting a traffic graph. Rare, and disproportionately well paid because it's the only version of the work that survives a CFO's questions.",
+        "**AI visibility.** Whether a page gets cited inside an AI answer is a different problem from ranking tenth, and almost nobody has three years of experience in it because it hasn't existed for three years. See [what AI Overviews did to organic traffic](/journal/what-ai-overviews-did-to-your-organic-traffic) for the shape of the problem.",
+        "**People who can write a business case in rupees.** The SEO who can say \"this costs ₹4 lakh and here's the lead maths\" gets promoted past the one who produces prettier reports."
+      ]
+    },
+    {
+      "h2": "What Indian postings look like, city by city",
+      "body": [
+        "Demand isn't evenly spread, and the kind of SEO work available changes noticeably depending on where you're applying. This is about the composition of local employers, which is stable and checkable, rather than about counts."
+      ],
+      "bullets": [
+        "**Bengaluru** — the country's largest concentration of SaaS and product companies, so the work skews product-led: documentation, programmatic pages, global English audiences, and closer work with engineering than anywhere else.",
+        "**Delhi NCR (Gurugram, Noida)** — the densest agency market plus a lot of D2C and edtech. The most junior openings, and the largest applicant pile per opening.",
+        "**Mumbai** — media, BFSI, entertainment and D2C. More editorial and brand-adjacent SEO, more stakeholders, more approval layers.",
+        "**Pune and Hyderabad** — services and product engineering. Roles lean enterprise and technical, often supporting sites sold into other markets.",
+        "**Chennai and Coimbatore** — services, manufacturing and export-facing B2B, so more international lead-gen work than consumer content.",
+        "**Tier-2 delivery hubs (Indore, Jaipur, Kochi, Ahmedabad)** — outsourced execution for overseas clients. Lower pay, high volume, good early reps if you leave within two years.",
+        "**Remote roles billing overseas clients** — a separate pay band, and the most contested category here."
+      ]
+    },
+    {
+      "h2": "Freelance demand and employment demand are two different markets",
+      "body": [
+        "They're moving apart, and conflating them is why freelancers and employed SEOs describe completely different job markets to each other.",
+        "The commodity end of freelancing took the worst hit anywhere in the field. A small business paying a few thousand rupees a month for four blog posts now has a free tool that produces something they can't distinguish from what they were buying. That buyer is gone and isn't coming back.",
+        "The specialist end is fine, arguably better. A founder whose traffic halved after a replatform can't check the work themselves, can't afford to guess, and needs someone accountable in the room. That job isn't bought on price and can't be delegated to a prompt. The gap between the two freelance markets is now a canyon — which is why [SEO is a high-income skill](/answers/is-seo-a-high-income-skill) for some people and barely a living for others."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "How agency demand shows up",
+        "body": "Agencies feel demand as inbound briefs, not job posts. Enquiries for content packages softened; enquiries for technical rescue, migrations and AI visibility went the other way. We only take three clients a month, so we see the mix rather than the volume — but the mix has clearly shifted."
+      }
+    },
+    {
+      "h2": "The skills that keep you hireable through this",
+      "body": [
+        "If you're already in SEO and want to stay employable through the next few years, these are the additions that change which pile your CV lands in. None of them require a course."
+      ],
+      "numbered": [
+        "**Read a log file.** Logs show what Googlebot actually did rather than what a tool estimates. Few mid-level SEOs can do this, which is exactly why it's worth learning.",
+        "**Understand rendering.** Why a client-side route sometimes never gets indexed, what a headless render sees, when hydration matters. This separates technical SEOs from people who've read about technical SEO.",
+        "**Get comfortable with bulk data.** Search Console's UI hides most of your data. The BigQuery bulk export plus basic SQL turns it into a real answer about which pages are decaying.",
+        "**Learn what makes a page citable, not just rankable.** Clear claims, sourced numbers, structure a machine can lift. Start with [generative engine optimisation](/glossary/generative-engine-optimization) and treat everything you read about it as provisional, because it is.",
+        "**Learn to argue in money.** Sessions don't get budget approved. Leads and revenue do. It's the clearest dividing line between an SEO who stays an executive and one who ends up owning the channel and its budget."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Will SEO jobs still exist in five years?",
+      "a": "Almost certainly, but with a different shape. As long as people search — on Google, inside an AI assistant, on Amazon or YouTube — someone gets paid to make a business findable there. What changes is the mix of work: less writing to a template, more diagnosis, measurement and technical fixing."
+    },
+    {
+      "q": "Is SEO still a good career to start in 2026?",
+      "a": "It's a good career to start deliberately and a bad one to drift into. Entering as a general content writer is difficult now. Entering with a technical or measurement bias is genuinely open, because employers are struggling to fill those seats and there's no queue for them."
+    },
+    {
+      "q": "Which SEO specialism pays best in India?",
+      "a": "Broadly: technical SEO and measurement above content SEO, and anything that touches revenue attribution above anything that reports traffic. Freelancers billing overseas clients sit in a different band again, which has more to do with currency and client budget than with skill."
+    },
+    {
+      "q": "Has AI reduced the number of SEO jobs overall?",
+      "a": "It has reduced the number of junior execution roles and increased the number of problems worth hiring a senior person for. Net direction on total headcount isn't something anyone can honestly claim to know for India — there's no reliable public dataset. The composition shift is visible, though, and that's what matters for your choices."
+    },
+    {
+      "q": "Do businesses still hire SEO agencies, or are they using AI tools instead?",
+      "a": "Both, and often badly. Plenty of companies replaced their agency with a tool, published a lot of undifferentiated pages, and came back nine months later with a worse site. Tools handle production. They don't decide what to publish, notice a broken canonical, or take responsibility when leads fall."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "is-seo-a-good-career" },
+    { "type": "answers", "slug": "what-does-an-seo-specialist-do" },
+    { "type": "answers", "slug": "how-much-does-seo-pay" },
+    { "type": "glossary", "slug": "generative-engine-optimization" },
+    { "type": "journal", "slug": "future-of-seo-jobs-in-india" },
+    { "type": "compare", "slug": "geo-vs-seo" }
+  ]
+}

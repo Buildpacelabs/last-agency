@@ -1,0 +1,252 @@
+{
+  "slug": "seo-in-hindi-and-indian-languages",
+  "type": "journal",
+  "primaryKeyword": "regional language seo in india",
+  "secondaryKeywords": [
+    "hindi seo",
+    "multilingual seo india",
+    "vernacular content strategy",
+    "hreflang for indian languages",
+    "tamil telugu seo"
+  ],
+  "cluster": "india-market",
+  "intent": "informational",
+  "h1": "Regional Language SEO in India Is Mostly Empty. That's the Opportunity.",
+  "metaTitle": "Regional Language SEO in India: The Empty SERP",
+  "metaDescription": "Regional language SEO in India faces thin competition and thinner content. Here's how to choose which languages to build, and the translation trap.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Regional language SERPs in India are thin because almost nobody publishes properly in them — most in-language pages are machine translations of English ones, and they miss the phrases people actually type. Pick one language your category justifies, write in it natively rather than translating, and you can own a query set in weeks rather than quarters.",
+  "takeaways": [
+    "Thin competition can mean thin demand. The whole job is telling those two apart before you spend anything — and **in-language ads on the SERP** are the strongest signal that commercial demand exists.",
+    "Speaker counts are not search demand. A large share of Hindi speakers search in English or in Roman-script Hinglish, and that changes what you should build.",
+    "**Machine-translating your English pages is the failure mode**, not the shortcut. Google's spam policies name automated translation without human review as scaled content abuse.",
+    "The single most common technical wipeout: canonicalising the Hindi page to the English one. You've just told Google the Hindi page shouldn't exist, and it will agree.",
+    "One language done to 30 pages beats five languages done to six. Depth is what makes a corpus rank; breadth is what makes it look busy."
+  ],
+  "sections": [
+    {
+      "h2": "The empty SERP is a warning as much as an opening",
+      "body": [
+        "Search a commercial query in Devanagari — say a home loan question, or a query about a diagnostic test — and you'll often find something odd. Half the results are English pages. A couple are news sites. One is a machine-translated blog with sentences no human would say out loud. Almost nothing was written for that query by someone who wanted that customer.",
+        "That's a genuinely rare thing in 2026. In English, every commercial query in India has forty people fighting over it with real budgets. In Hindi, Marathi or Odia, most commercial queries have nobody serious in the fight at all.",
+        "Here's the part most vernacular pitches skip: an empty SERP has two possible causes, and they lead to opposite decisions. Either there's demand and no supply, which is the opportunity everyone talks about. Or there's no demand, because your buyers happen to be the bilingual segment who search in English even though they speak Marathi at home. Building for the second case is one of the more expensive mistakes available in Indian SEO, because it fails quietly for eight months before anyone admits it.",
+        "So this page is mostly a decision rule, then the technical setup, then the two things people get wrong. We're not going to tell you vernacular is the future. We're going to tell you how to find out whether it's your future."
+      ]
+    },
+    {
+      "h2": "Speakers are not searchers",
+      "body": [
+        "Start with scale, because it frames everything, then immediately stop trusting it.",
+        "The table below is the standard shortlist. Speaker figures are rounded Census 2011 numbers — fifteen years old, and the ordering matters more than the digits. The right-hand columns are our own qualitative read from working these SERPs, not a measured index, and you should verify them for your own category rather than taking our word for it."
+      ],
+      "table": {
+        "caption": "The ten largest Indian language markets. Speaker counts are rounded Census 2011 figures. Publishing depth is a qualitative read, not measured data — check your own category before committing budget.",
+        "head": ["Language", "Native speakers (approx.)", "Typical publishing depth", "Build it when"],
+        "rows": [
+          [
+            "Hindi",
+            "~53 crore",
+            "Mixed — English pages often rank for Devanagari queries in commercial categories",
+            "Your buyers are in UP, MP, Bihar, Rajasthan, Haryana, Jharkhand or Chhattisgarh and the purchase is high-consideration"
+          ],
+          [
+            "Bengali",
+            "~10 crore",
+            "Thin outside news and entertainment",
+            "You sell in West Bengal, or in Bangladesh — split those with `bn-IN` and `bn-BD`"
+          ],
+          [
+            "Marathi",
+            "~8 crore",
+            "Thin; government and news dominate",
+            "Maharashtra-only services, especially regulated or paperwork-heavy ones"
+          ],
+          [
+            "Telugu",
+            "~8 crore",
+            "Thin outside film and news",
+            "Andhra Pradesh and Telangana, where in-language consumption is strong"
+          ],
+          [
+            "Tamil",
+            "~7 crore",
+            "Better developed than most — real publisher competition exists",
+            "Tamil Nadu, plus Sri Lanka and Singapore diaspora if that's your market"
+          ],
+          [
+            "Gujarati",
+            "~5.5 crore",
+            "Very thin commercially",
+            "Gujarat SMB, trade and family-business categories"
+          ],
+          [
+            "Urdu",
+            "~5 crore",
+            "Thin; speech overlaps Hindi, the page does not",
+            "Rarely a standalone commercial build in India; consider it for Gulf markets"
+          ],
+          [
+            "Kannada",
+            "~4.5 crore",
+            "Thin",
+            "Karnataka outside Bengaluru's English-first core"
+          ],
+          [
+            "Odia",
+            "~3.7 crore",
+            "Very thin",
+            "Odisha-only services and government-adjacent categories"
+          ],
+          [
+            "Malayalam",
+            "~3.5 crore",
+            "More active than the speaker count suggests — high literacy, strong publishers",
+            "Kerala and the Gulf diaspora, where in-language reading is the norm"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The bilingual trap",
+        "body": "The single biggest error in vernacular planning is assuming speaker share equals search share. The person who speaks Kannada at home and works in English all day searches for enterprise software in English and for a school admission form in Kannada. Same person, different query, different language. Your category decides which one you meet."
+      }
+    },
+    {
+      "h2": "Five checks that decide whether your category justifies a language",
+      "body": [
+        "Run these in order and stop at the first one that fails. The whole sequence takes an afternoon and costs nothing."
+      ],
+      "numbered": [
+        "**Search Console first.** Filter your query report for non-Latin script, and separately for Roman-script Hindi. If you already have Devanagari impressions sitting at position 40, demand exists and you're losing it to someone worse than you. That's the cleanest buy signal there is.",
+        "**Look at the actual SERP for three target queries, in script.** If Google returns English pages, that's either no corpus (opportunity) or no demand (trap). Three things tell them apart: are there ads in that language, does the People Also Ask block render in that language, and is there an in-language YouTube result with real view counts. **Ads are the strongest signal** — advertisers only keep bidding where conversions happen.",
+        "**Ask sales what language the last twenty deals were closed in.** Not the language of your website. The language of the call. Sales knows this and is never asked.",
+        "**Apply the category test.** Vernacular search skews hard toward agriculture, loans and insurance, health and diagnostics, government schemes and exams, coaching and education, jobs, property resale, and anything involving a form somebody is nervous about filling in. It skews away from B2B SaaS, developer tools, enterprise services and anything bought by someone who spends their working day in English.",
+        "**Apply the budget test.** Can you commit to 25–40 pages in that language plus a native editor for twelve months? If not, don't start. Six translated pages won't rank, will absorb crawl budget and internal links, and will leave you concluding that vernacular doesn't work when what didn't work was six pages."
+      ]
+    },
+    {
+      "h2": "Translation, transliteration, and actually writing in the language",
+      "body": [
+        "Three different activities, routinely confused, with wildly different costs and outcomes."
+      ],
+      "subs": [
+        {
+          "h3": "Transliteration: the volume nobody plans for",
+          "body": [
+            "A very large share of Indian language search is typed in Roman script. \"ghar ka loan kaise le\". \"seo kya hai\". \"bijli bill kaise check kare\". The user thinks in Hindi and types in English letters, because switching to a Devanagari keyboard is friction most people won't accept.",
+            "This is usually the fastest win available and it needs no new site section. Target Roman-script Hindi queries on your existing English pages — in H2s, in the FAQ block, in the way you phrase a question before answering it. Google handles transliteration matching reasonably well, but it can't match a phrase that appears nowhere on your site.",
+            "Treat Hinglish as its own query set with its own research. It is not a subset of English and it is not a subset of Hindi."
+          ]
+        },
+        {
+          "h3": "Translation: where the money usually goes to die",
+          "body": [
+            "Run your English pages through a translation engine and you'll get grammatically fine Hindi that ranks for nothing, for one specific reason: translators pick the formal register, and people search in the spoken one.",
+            "The classic example is loans. A translator will render \"home loan\" as गृह ऋण, which is correct, formal, and not what anyone types. People search होम लोन — the English term written in Devanagari — because that's how they say it. Multiply that across every commercial term in your category and your translated page is a page about a subject nobody searches for.",
+            "There's a policy problem on top of the keyword problem. Google's spam policies name creating pages using automated translation without human review or curation as an example of scaled content abuse. A hundred auto-translated pages isn't a shortcut into a thin market; it's a risk applied to the domain you already rank with."
+          ]
+        },
+        {
+          "h3": "Writing in the language: research first, then write",
+          "body": [
+            "The only version that works, and it's a different workflow rather than a more expensive one.",
+            "Do keyword research in the target language with a native speaker, before anyone writes anything. Find out which English loanwords are used in Devanagari or Tamil script and which native terms are actually spoken. Then brief a writer who speaks the language daily, and have a native editor review for register — not for grammar, for whether it sounds like a person from that state.",
+            "Budget for that editing on top of writing. Rates vary sharply by language and by how technical the subject is, and translation-vendor per-word pricing does not apply to original writing. Get quotes rather than assuming."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The technical setup, and the canonical that deletes everything",
+      "body": [
+        "The technical side of Indian-language SEO is not hard. It is unforgiving, because two or three specific mistakes remove the pages from consideration entirely and produce no error message anywhere.",
+        "[Hreflang](/glossary/hreflang) is the annotation that tells Google these pages are alternates of each other rather than duplicates. Get it right once, in a template, and forget it."
+      ],
+      "bullets": [
+        "**Subfolders, not subdomains or parameters.** `/hi/`, `/ta/`, `/bn/`. You're one country with many languages, so a ccTLD split makes no sense, and subfolders inherit the authority your domain already has.",
+        "**A complete hreflang cluster.** Every version references every other version, including itself. Use `hi`, `ta`, `mr`, `bn` and so on if you don't split by country; add the region — `bn-BD`, `ta-LK` — only if you genuinely serve Bangladesh or Sri Lanka. Add `en-IN` and an `x-default`.",
+        "**Self-canonical every version.** This is the one that kills projects. A Hindi page whose canonical tag points at the English original is a Hindi page telling Google it is a duplicate. Google believes it. Six months of work never enters the index.",
+        "**Never auto-redirect by IP.** Googlebot crawls predominantly from US addresses. Bounce it to `/en/` and your `/hi/` pages may never be crawled at all. Offer a banner or a language switcher and let people choose.",
+        "**Set the page `lang` attribute to the right language** and keep each page single-language. English navigation wrapped around Hindi body copy confuses the classifier and reads as a translation exercise to the user, which it is.",
+        "**Use Roman transliterated slugs.** `/hi/home-loan-kaise-le/` survives being pasted into WhatsApp; a percent-encoded Devanagari URL indexes fine and then arrives at the customer as a wall of `%E0%A4`.",
+        "**Translate the metadata, the alt text, the schema `inLanguage` and the internal links.** A Hindi page whose only internal links point at English pages is a dead end for a reader and for a crawler.",
+        "**Give each language version its own place in the sitemap**, with hreflang annotations there too if you'd rather keep them out of the head."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Check this before you check anything else",
+        "body": "Open any regional-language page you already have, view source, and find the canonical tag. If it points anywhere other than that exact page, nothing else on this list matters. We've seen entire vernacular sections — dozens of pages, months of budget — sitting completely unindexed for this one reason."
+      }
+    },
+    {
+      "h2": "People search in Hindi differently from how they search in English",
+      "body": [
+        "Behaviour changes with the script, and it changes what a winning page looks like.",
+        "Voice input carries a much larger share of Indian language queries than English ones, for an entirely practical reason: typing Devanagari or Tamil needs a transliteration keyboard, and most people won't switch. So a large slice of vernacular search arrives as spoken sentences — longer, conversational, with a question word at the front and often a place name at the end."
+      ],
+      "bullets": [
+        "**Write question-shaped headings and answer them in the first two sentences.** Spoken queries want a spoken answer, and short sentences survive being read aloud by an assistant.",
+        "**Expect wider spelling variance.** There is no agreed Roman spelling for most Hindi words — kaise, kese, kaisay. Cover the common variants naturally in body copy and FAQs instead of fighting for one canonical form.",
+        "**Plan for YouTube as a competitor.** For how-to queries in Hindi, the strongest result is very often a video. If you can't win the page, win the video and put a proper transcript on your site.",
+        "**Local intent is heavier.** Vernacular queries carry a city or district name far more often, which means your regional pages and your [Google Business Profile](/glossary/google-business-profile) work together rather than separately.",
+        "**Forms are the drop-off point.** People happily read Hindi and then hit an English form with an English error message. If you're building the pages, build the form too."
+      ]
+    },
+    {
+      "h2": "What AI answers do to the vernacular case",
+      "body": [
+        "This is the part that's actually changing, and it pulls in two directions at once.",
+        "Assistants and AI Overviews answer in the language of the question while drawing on sources in any language. A user asking in Hindi can get an answer synthesised from your English page and translated on the fly. That's genuinely new, and it has one obvious consequence: if a model can translate your English page, a Hindi copy of that same page adds nothing the model needs. The traffic case for translated pages gets weaker every quarter.",
+        "The opposite move gets stronger at the same rate. Pages carrying information that doesn't exist in English at all — a state scheme's actual eligibility rules, district-level pricing, a regulation that only applies in Kerala, the twelve questions your Marathi-speaking customers actually ask on the phone — cannot be produced by translating anything, because the source isn't in the English corpus. That's the content that gets cited regardless of which language the question arrived in.",
+        "So the practical rule tightens rather than loosens: **if the page could have been produced by translating an English one, don't build it.** Build the pages that couldn't.",
+        "We'd add an honest hedge. Citation behaviour in AI answers is moving fast and nobody — including us — knows how it settles. Measure your own referrals and brand mentions rather than trusting anyone's framework, and read [what AI Overviews did to organic traffic](/journal/what-ai-overviews-did-to-your-organic-traffic) before you commit a year of budget to any theory about it."
+      ]
+    },
+    {
+      "h2": "What we'd actually build first",
+      "body": [
+        "If you've run the five checks and one language survived, here's the shape of the first twelve months. It's deliberately narrow.",
+        "One language. The one your last twenty deals were closed in. Not the biggest one, not the one with the best speaker count — the one your revenue already speaks.",
+        "Around 25–40 pages: one pillar page for the category, eight to twelve commercial or service pages, and fifteen to twenty-five question pages taken verbatim from sales call recordings. Question pages first if you're impatient, because they're the ones that rank fastest in an empty SERP.",
+        "A native editor on retainer rather than a translation vendor, subfolders with a clean hreflang cluster, self-canonicals, in-language internal linking between all of it, and a form that works in the same language as the page it sits on.",
+        "Then six months before you judge it, because you're building a corpus from zero and there's no existing authority to borrow. That's slower than most of our English work and we say so upfront.",
+        "Our SEO retainer runs from ₹75,000/mo, or ₹40,000 for smaller sites, and a vernacular build is a workstream inside it rather than a separate product — [full pricing is here](/pricing). The guarantee works the same way it always does: we freeze your trailing-90-day qualified organic leads on day one and keep working free past 90 days if we haven't beaten that number. We don't promise a ranking position in any language, because nobody controls Google's index in any language."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Hindi SEO worth it for my business?",
+      "a": "Check three things before deciding: whether you already get Devanagari impressions in Search Console, whether the in-language SERP shows ads (advertisers only bid where conversions happen), and what language your last twenty deals were closed in. High-consideration categories like loans, health, education and government-adjacent services usually justify it. B2B SaaS usually doesn't."
+    },
+    {
+      "q": "Should I translate my English pages into Hindi?",
+      "a": "No. Translators pick the formal register and people search in the spoken one — होम लोन gets typed, गृह ऋण doesn't. On top of that, Google's spam policies name automated translation without human review as scaled content abuse. Do keyword research in the target language first, then write in it."
+    },
+    {
+      "q": "What hreflang code should I use for Hindi?",
+      "a": "`hi` is enough if you only serve India. Use `hi-IN` if you also run other regional variants and want to be explicit. The rules that matter more: every version must reference every other version including itself, each version must canonical to itself, and you should include an `x-default`."
+    },
+    {
+      "q": "Do I need a separate domain for regional language pages?",
+      "a": "No. Use subfolders — `/hi/`, `/ta/` — on your existing domain. You're one country with many languages, so a country-code domain split makes no sense, and subfolders inherit the authority you've already built. Subdomains work but start colder, and URL parameters are the worst of the three."
+    },
+    {
+      "q": "Which Indian language should I start with?",
+      "a": "The one your revenue already speaks, not the one with the most speakers. Ask sales what language the last twenty deals were closed in. Then build 25–40 pages in that one language rather than six pages in five languages — depth is what ranks a corpus in a thin market, and breadth just looks busy."
+    },
+    {
+      "q": "Does AI search make regional language SEO pointless?",
+      "a": "It makes translated pages more pointless and original in-language pages more valuable. If an assistant can translate your English page on demand, a Hindi copy adds nothing. But a page carrying state-specific rules, local pricing or questions your customers actually ask can't be produced by translating anything, and that's what gets cited."
+    }
+  ],
+  "related": [
+    { "type": "compare", "slug": "english-vs-regional-language-seo" },
+    { "type": "glossary", "slug": "hreflang" },
+    { "type": "services", "slug": "international-seo-services" },
+    { "type": "journal", "slug": "local-seo-in-tier-2-india" },
+    { "type": "answers", "slug": "how-to-rank-on-google-in-india" },
+    { "type": "journal", "slug": "what-ai-overviews-did-to-your-organic-traffic" }
+  ]
+}

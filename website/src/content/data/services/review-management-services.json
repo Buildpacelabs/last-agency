@@ -1,0 +1,184 @@
+{
+  "slug": "review-management-services",
+  "type": "services",
+  "primaryKeyword": "online review management services",
+  "secondaryKeywords": [
+    "google review management service india",
+    "reputation management agency india",
+    "review generation service",
+    "review response service",
+    "review management cost india"
+  ],
+  "cluster": "local-seo",
+  "intent": "commercial",
+  "h1": "Reviews you earned, at a pace Google believes",
+  "metaTitle": "Online Review Management Services — No Bought Reviews",
+  "metaDescription": "Online review management that builds review velocity over WhatsApp and SMS. We never buy, gate or write your reviews. From ₹30,000 a month, ex-GST.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "priceFrom": "From ₹30,000 / mo",
+  "answer": "Review management means asking every real customer for a review at the right moment, replying to what comes back, and keeping the pace steady enough that Google doesn't flag it. We use timed WhatsApp and SMS requests, never gating and never bought reviews. From ₹30,000 a month, ex-GST.",
+  "takeaways": [
+    "**Velocity is a pattern, not a total.** Six reviews a month for a year looks like a business. Sixty in one week looks like a campaign, and Google's filters agree.",
+    "The request has to land after the moment of value, not at the billing counter. Timing changes reply rates more than the wording does.",
+    "**Gating is against Google's policy**, not just distasteful. So is paying, discounting or entering people into a draw for reviews.",
+    "The words customers use inside a review are visible to Google — it will pull a matching line out and show it under your listing when someone searches that phrase.",
+    "We draft every reply. Your team posts it from your account, in your voice, because a public apology written by a vendor reads like one."
+  ],
+  "sections": [
+    {
+      "h2": "Velocity is a pattern, and patterns are the thing Google reads",
+      "body": [
+        "Most review problems are not \"we don't have enough reviews\". They're \"we got 40 in the fortnight after somebody read a blog post about reviews, then nothing for eleven months\". That shape is worse than having few reviews, because it looks exactly like a purchased batch, and Google's spam systems treat it accordingly. Reviews get filtered, sometimes silently, and the profile becomes a candidate for a harder look.",
+        "The alternative isn't complicated, it's just boring: a small number every week, from people who actually bought something, forever. A dental clinic seeing 200 patients a month does not need a campaign. It needs a request that fires reliably after each appointment and a front desk that isn't scared of it.",
+        "So the first thing we build is the pipe, not the push. Once requests go out on their own, volume stops being a project and becomes a rate — and a rate is the only thing that compounds into [local ranking](/services/local-seo-services)."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The batch that gets you filtered",
+        "body": "Sixty reviews in a week, most from accounts with no photo and no review history, several posted from the same network. Every one of those signals is legible to Google. The reviews vanish, the rating snaps back, and you've spent money making your listing look suspicious."
+      }
+    },
+    {
+      "h2": "The request flow: who asks, when, and on which channel",
+      "body": [
+        "In India the channel question answers itself. WhatsApp gets opened; email mostly doesn't; SMS still works for a one-line link because it survives without an app. What actually moves the reply rate is timing — asking at the moment the customer feels the value, not the moment you feel the invoice.",
+        "We map that moment per business type, then wire the trigger to whatever system already knows it happened: the appointment tool, the POS, the job-completion tick in the field app, the delivery webhook."
+      ],
+      "table": {
+        "caption": "Where the moment of value actually sits, and when we send the request.",
+        "head": ["Business type", "The moment of value", "Channel and timing"],
+        "rows": [
+          [
+            "Clinic, dental practice or diagnostics lab",
+            "Report delivered or the follow-up consult finished — not the billing desk",
+            "WhatsApp two to four hours later, once they're home"
+          ],
+          [
+            "Restaurant, café or cloud kitchen",
+            "Bill settled and the table has left",
+            "SMS the next morning. Nobody reviews while waiting for change"
+          ],
+          [
+            "Home services — plumbing, packers, at-home salon",
+            "Customer signs off the job",
+            "WhatsApp the same evening, fired from the technician's completion tick"
+          ],
+          [
+            "D2C or ecommerce",
+            "Delivery plus a usage window — a week for skincare, a day for food",
+            "Email first, one WhatsApp nudge three days later, then stop"
+          ],
+          [
+            "B2B and professional services",
+            "First deliverable accepted, not the contract signature",
+            "A named human asks by email. No automation, no template"
+          ]
+        ]
+      },
+      "bullets": [
+        "**Commercial SMS in India has to be DLT-registered** — sender ID and template both approved before anything sends. We handle the registration paperwork; it takes days, not minutes, so it starts in week one.",
+        "**WhatsApp business messaging needs opt-in and an approved template.** A utility template tied to a completed transaction is the right category here. Marketing blasts are not.",
+        "**One link, straight to the review form.** Google gives every profile a short review link. It goes directly in the message — no landing page, no survey in front of it, no app download.",
+        "**One ask, one nudge, then silence.** Chasing a third time costs you the customer, not just the review."
+      ]
+    },
+    {
+      "h2": "Gating and paid reviews: the two fastest ways to lose a listing",
+      "body": [
+        "Review gating is the practice of surveying customers first and only sending the happy ones to Google. Plenty of Indian agencies still sell it as a feature, usually described as \"smart routing\" or \"feedback filtering\". Google's review policies prohibit selectively soliciting positive reviews or discouraging negative ones. It isn't a grey area, and the tooling that does it is easy to spot because the funnel is public.",
+        "Paying for reviews is worse, and that includes the softer versions: a discount for a five-star, a lucky draw entry, a free dessert on presentation of the posted review. Google prohibits incentivised reviews outright. India also now has a voluntary standard for online consumer reviews — IS 19000:2022, published by the Bureau of Indian Standards — which sets out how reviews should be collected and moderated. It isn't legally enforced, but it exists, and it's a useful thing to point at when somebody internally suggests buying a hundred reviews before a store launch.",
+        "We won't build either mechanism. If that's what you're shopping for, we're the wrong agency and the conversation is short."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What you can do instead of gating",
+        "body": "Ask everyone, and ask well. If a real slice of your customers is unhappy enough to say so publicly, no amount of routing fixes that — it's an operations problem wearing a marketing costume. The reviews are just the place it becomes visible."
+      }
+    },
+    {
+      "h2": "The words inside a review are doing ranking work",
+      "body": [
+        "Google reads review text, and it shows. Search for \"root canal in Indiranagar\" and under a listing you'll often see a line lifted from someone's review with the matching phrase in it. That's Google matching your customers' language to the searcher's language and using it as a justification for the result.",
+        "Nobody outside Google can tell you how much weight this carries, and anyone who quotes you a percentage is guessing. What we can say is that the match is real, visible in the results, and free.",
+        "So the request copy asks a question instead of begging for stars. \"What did you come in for, and how did it go?\" produces a review that names the service and the location. \"Please give us 5 stars\" produces the word \"good\". We never write the review, never suggest words to use, and never send a customer a draft — that's fabrication, and it's the thing that gets a whole profile's reviews wiped."
+      ]
+    },
+    {
+      "h2": "Negative reviews: the one-day rule, and what gets escalated",
+      "body": [
+        "Response rate is the part of reviews you fully control, which is why it's the part most businesses ignore. A bad review with a calm, specific reply from the owner reads better to the next customer than four unanswered good ones."
+      ],
+      "numbered": [
+        "**Monitoring flags it within a working hour**, across Google and whichever other platforms matter to you — Practo, Zomato, Justdial, an app store.",
+        "**We draft the reply within one working day.** Your team posts it from your account. We don't reply as you, for the same reason your lawyer doesn't sign your name.",
+        "**Every draft follows three rules**: name the specific thing that went wrong, no legal phrasing, and move it offline to a named person with a real number.",
+        "**Anything alleging harm, safety, data loss or legal exposure** goes to a named person on your side the same day, and gets no public reply until they clear it.",
+        "**Removal requests only where the review breaks Google's policy** — off-topic, spam, a competitor, an ex-employee, the wrong branch. A truthful bad review is not removable and we won't pretend to have a back channel."
+      ]
+    },
+    {
+      "h2": "What's included, what isn't, and what it costs",
+      "body": [
+        "Review management sits inside the Organic Social & Content retainer: ₹30,000, ₹50,000 or ₹70,000 a month, ex-GST. The tier is set by outlet count and monthly review volume — roughly up to three outlets, up to ten, and up to twenty-five, with anything larger scoped after we see the data. Month-to-month after the first quarter, 30 days' notice, and the flows, templates and platform access stay yours.",
+        "If you're already on [local SEO from ₹40,000/mo](/services/local-seo-services), the single-outlet request flow and response templates are in scope there. This page is what you buy when there are twelve outlets, three platforms and a staff rota that needs training."
+      ],
+      "table": {
+        "caption": "Review management scope — what we build and what we refuse.",
+        "head": ["Included", "Not included"],
+        "rows": [
+          ["Request flow built on WhatsApp and SMS, with DLT and template registration handled", "Buying, incentivising or discounting in exchange for reviews"],
+          ["Trigger wiring into your POS, appointment tool, field app or delivery webhook", "Gating, routing or any survey that filters unhappy customers out"],
+          ["Pacing rules so volume arrives as a rate, not a burst", "Writing reviews, or sending customers suggested wording"],
+          ["Request copy that prompts service and location language naturally", "Posting replies from your account — we draft, your team posts"],
+          ["Reply drafts inside one working day, negatives prioritised", "Getting a truthful negative review deleted"],
+          ["Monitoring across Google plus your two most relevant platforms", "App store review management — that sits in [ASO](/services/app-store-optimisation-services)"],
+          ["Policy-violation reporting and follow-through on removals", "Fixing the service problem the reviews are describing"],
+          ["Staff training: who asks, what they say, what they never say", "Any promised star rating or review count"]
+        ]
+      }
+    },
+    {
+      "h2": "The baseline we freeze, and what the guarantee covers",
+      "body": [
+        "Three numbers get frozen at kickoff, per outlet: review count over the trailing 90 days, average rating, and response rate. Every monthly report is read against those, not against a flattering week.",
+        "The company guarantee applies here as everywhere else. We freeze your trailing-90-day qualified leads from organic search on day one, and if we haven't beaten that number in 90 days we keep working free until we do. We never promise a specific ranking position, in the map pack or anywhere else, because the three local slots move with the searcher's location and nobody controls that.",
+        "One honest limit on rating. Review count and response rate are ours to move. Average rating is mostly yours — it's a measure of the service, and a working request flow simply makes it visible faster. If the experience is poor, better review management gets you an accurate low rating sooner. That's usually worth knowing, and it's occasionally the most valuable thing we do. What it costs, and how it sits next to the rest of local, is on the [local SEO cost page](/cost/local-seo-cost)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much do review management services cost in India?",
+      "a": "Ours run from ₹30,000 a month ex-GST inside the Organic Social & Content retainer, with ₹50,000 and ₹70,000 tiers for larger outlet counts. The wider market starts around ₹5,000–₹10,000 a month, which typically buys a review-request tool licence and nothing else. Tools don't train staff or draft replies."
+    },
+    {
+      "q": "Is it legal to ask customers for Google reviews?",
+      "a": "Yes. Google encourages asking, and even provides a short review link for it. What's prohibited is asking selectively — only requesting reviews from happy customers — and offering anything of value in exchange. Ask everybody, offer nothing, and you're inside the rules."
+    },
+    {
+      "q": "What is review gating and why does it matter?",
+      "a": "Gating means surveying customers first and routing only the positive ones to Google. It's still sold in India as \"feedback filtering\". Google's policies prohibit selectively soliciting positive reviews, and the funnel is publicly visible, so it's a poor risk for a temporary rating bump."
+    },
+    {
+      "q": "Can you remove a bad Google review?",
+      "a": "Only if it breaks Google's content policy — spam, off-topic, a competitor, an ex-employee, the wrong branch, or personal attacks. We file those and follow them up, and success is genuinely mixed. A truthful complaint from a real customer stays up. Answer it well instead."
+    },
+    {
+      "q": "How many reviews a month should we be getting?",
+      "a": "Enough that the graph looks like your business, not like a campaign. A useful rule: somewhere between two and ten percent of your monthly transactions, arriving steadily. What matters more than the number is that it never drops to zero for a quarter and never spikes tenfold in a week."
+    },
+    {
+      "q": "Do review keywords actually help local ranking?",
+      "a": "Review text is clearly read by Google — it surfaces matching lines from reviews underneath listings when the search phrase appears in them. How much weight it carries in ranking isn't published, and anyone quoting a figure is guessing. It costs nothing to ask a question that produces useful language, so we do."
+    }
+  ],
+  "related": [
+    { "type": "services", "slug": "google-business-profile-optimisation" },
+    { "type": "services", "slug": "local-seo-services" },
+    { "type": "glossary", "slug": "google-business-profile" },
+    { "type": "answers", "slug": "how-to-do-local-seo" },
+    { "type": "cost", "slug": "local-seo-cost" },
+    { "type": "seo-for", "slug": "dental-clinics" }
+  ]
+}

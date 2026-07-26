@@ -1,0 +1,133 @@
+{
+  "slug": "featured-snippet",
+  "type": "glossary",
+  "primaryKeyword": "featured snippet",
+  "secondaryKeywords": [
+    "position zero",
+    "how to get featured snippet",
+    "types of featured snippets",
+    "answer box google",
+    "featured snippet optimization"
+  ],
+  "cluster": "content",
+  "intent": "informational",
+  "h1": "Featured snippet",
+  "metaTitle": "Featured Snippet: What It Is and How to Win One",
+  "metaDescription": "A featured snippet is the answer box above the results. Here's the 40-60 word format that wins one, and what AI Overviews changed about the prize.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Featured snippet",
+  "definition": "A featured snippet is the boxed answer Google extracts from a ranking page and displays above the standard search results.",
+  "answer": "A featured snippet is the boxed answer Google pulls from a page and places above the normal results. You win one by answering the question directly in roughly 40 to 60 words, immediately below a heading that matches the question, with no preamble. AI Overviews now sit above snippets and take some of the clicks.",
+  "takeaways": [
+    "You have to already rank on page one to be eligible. Snippets are extracted from top results, not awarded separately.",
+    "The format is the tactic: question-shaped heading, then a self-contained 40-60 word answer, then the detail. No throat-clearing.",
+    "Four types — paragraph, list, table and video. The type is decided by the query, not by you.",
+    "Search Console has no featured snippet report. Everything you'll read about snippet tracking is a proxy, and the honest ones say so."
+  ],
+  "sections": [
+    {
+      "h2": "The four types, and what triggers each",
+      "body": [
+        "Google picks the snippet format from the shape of the question. You can't override it, but you can make sure your page contains the format the query wants — which is most of the work."
+      ],
+      "table": {
+        "caption": "Snippet types and the page structure each one is extracted from.",
+        "head": ["Type", "Queries that trigger it", "What Google extracts from"],
+        "rows": [
+          ["Paragraph", "What is, why does, who is, how long does", "A short block of prose directly under a matching heading"],
+          ["Numbered list", "How to, steps to, process for", "An ordered list, or headings Google can read as sequential steps"],
+          ["Bulleted list", "Best, types of, ways to, checklist", "An unordered list, or a set of short subheadings"],
+          ["Table", "Cost of, comparison, dimensions, rates", "An actual HTML table with a clean header row"],
+          ["Video", "How to, tutorial, demonstration", "A YouTube video with a timestamped moment matching the query"]
+        ]
+      }
+    },
+    {
+      "h2": "The format that wins the paragraph snippet",
+      "body": [
+        "Paragraph snippets are the most common and the easiest to design for. The recipe is boring, which is why so few pages follow it."
+      ],
+      "numbered": [
+        "Phrase the heading as the question, in the words people actually type. Not \"Understanding Retainer Pricing\" — \"How much does an SEO retainer cost in India?\"",
+        "Directly beneath it, answer the question in one paragraph of roughly 40 to 60 words. That's the observed crop length, not a published rule, but writing to it means you decide where the sentence ends rather than Google.",
+        "Make it self-contained. It will be lifted out of the page and read with no surrounding context, so it can't start with \"this\" or \"as we mentioned above\".",
+        "Include one concrete thing — a number, a range, a named process. \"It depends on your goals\" wins nothing.",
+        "Put the nuance, the caveats and the exceptions after the answer, not inside it. Hedging in the first paragraph is what disqualifies most pages.",
+        "Answer only that question in that block. A second question in the same paragraph makes the extract ambiguous."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "This site follows its own rule",
+        "body": "Every page here opens with a 40-60 word answer in a box before any preamble, including this one. It's written to be lifted. If it gets quoted somewhere without attribution, it still says something true and specific — which is the second reason to write that way."
+      }
+    },
+    {
+      "h2": "Which queries are worth targeting",
+      "body": [
+        "Snippets cluster on informational, long-tail and definitional queries — the ones with a single correct-ish answer. They're much rarer on commercial head terms, where Google would rather show ads, a local pack or a set of options.",
+        "Eligibility is the constraint people forget. Snippets are drawn from pages already ranking on the first page for that query, so \"how do I get a featured snippet for a keyword I rank #40 for\" has a boring answer: rank first, format second. The efficient targets are queries where you're already sitting in positions two to eight and someone else's badly formatted page holds the box."
+      ],
+      "bullets": [
+        "Pull your Search Console queries with average position between 2 and 10 and reasonable impressions.",
+        "Keep the ones phrased as questions, or that clearly imply one.",
+        "Search each one and look at what's in the box. If the current holder is a vague, padded paragraph, that's a cheap win.",
+        "Rewrite your page's relevant section into the format above. Change nothing else, so you can attribute the result."
+      ]
+    },
+    {
+      "h2": "AI Overviews changed what the prize is worth",
+      "body": [
+        "For years the snippet was called position zero and treated as the top prize. Now [AI Overviews](/glossary/ai-overviews) sit above it on a growing share of queries, including in India, synthesising several sources into one answer with citations off to the side.",
+        "Two honest consequences. First, winning a snippet on an informational query is worth fewer clicks than it was — the answer is being given twice before anyone scrolls. Second, the same formatting that wins snippets is what makes a page easy for a generative system to quote: direct answers, clean structure, facts attributable to a named source.",
+        "So the work doesn't change; the expected return does. Don't build a content plan on snippet counts. Build it on queries where someone who reads the answer still needs you afterwards — pricing, process, diagnosis, anything requiring judgement. We've written about the traffic side of this in [what AI Overviews did to organic traffic](/journal/what-ai-overviews-did-to-your-organic-traffic)."
+      ]
+    },
+    {
+      "h2": "How to tell whether you actually have one",
+      "body": [
+        "Search Console doesn't report featured snippets as a separate feature, so nobody has clean data on this. What you have are proxies, and it's worth being straight about their limits."
+      ],
+      "bullets": [
+        "**Average position pinned around 1.0** for a query, combined with a click-through rate that's oddly high or oddly low, usually means the box.",
+        "**A rank tracker with SERP feature detection** flags snippets per keyword. Useful for trends, unreliable on any single day, and it's checking one location and one device.",
+        "**Check it yourself** in an incognito window with the location set to your target city. Crude, and it's the only method that shows you what the box actually says.",
+        "**Watch clicks, not the flag.** A snippet that answers the question so completely that nobody clicks is not a win, however good it looks in a report. See [zero-click search](/glossary/zero-click-search)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I get a featured snippet?",
+      "a": "Rank on page one for the query first — snippets are extracted from top results. Then add a heading phrased as the question and answer it directly underneath in roughly 40 to 60 words, self-contained, with a concrete number or named process, and put all the caveats after that block rather than inside it."
+    },
+    {
+      "q": "Is a featured snippet the same as position zero?",
+      "a": "Position zero is the nickname for it, from when the box sat above the first organic result. The label is dated now that AI Overviews frequently appear above the snippet. Search Console still reports the underlying page at its organic position, usually 1."
+    },
+    {
+      "q": "How long should a featured snippet answer be?",
+      "a": "Around 40 to 60 words. That's the observed crop length rather than a rule Google publishes. Writing to it means you control where the answer ends; write 200 words and Google chooses the cut, usually mid-thought."
+    },
+    {
+      "q": "Do featured snippets still get clicks?",
+      "a": "Fewer than they used to, and it varies enormously by query. If the box fully answers the question, many people stop there. Snippets still pay on queries where the answer creates the next question — pricing, process, comparisons — which is where a content plan should be aimed anyway."
+    },
+    {
+      "q": "Can I stop Google showing my page as a featured snippet?",
+      "a": "Yes. The `nosnippet`, `max-snippet` and `data-nosnippet` directives control what Google can display. Most sites shouldn't use them — losing the box usually loses the visibility with it — but they exist for paywalled or licensed content."
+    },
+    {
+      "q": "Does winning a featured snippet help with AI Overviews?",
+      "a": "There's no confirmed mechanical link, but the same properties help both: a direct answer near the top, clean headings, structured lists and tables, and facts attributable to a named source. Formatting a page to be quotable serves both surfaces at once."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "ai-overviews" },
+    { "type": "glossary", "slug": "zero-click-search" },
+    { "type": "glossary", "slug": "click-through-rate" },
+    { "type": "compare", "slug": "aeo-vs-geo" },
+    { "type": "services", "slug": "aeo-geo-services" },
+    { "type": "journal", "slug": "what-ai-overviews-did-to-your-organic-traffic" }
+  ]
+}

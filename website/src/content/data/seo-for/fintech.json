@@ -1,0 +1,253 @@
+{
+  "slug": "fintech",
+  "type": "seo-for",
+  "primaryKeyword": "seo for fintech companies",
+  "secondaryKeywords": [
+    "fintech seo india",
+    "seo for lending apps",
+    "bfsi seo services",
+    "fintech content marketing india",
+    "rbi compliant content seo"
+  ],
+  "cluster": "saas-and-tech",
+  "intent": "commercial",
+  "industry": "Fintech",
+  "h1": "SEO for fintech, written by people who read the RBI circular",
+  "metaTitle": "SEO for Fintech: RBI-Safe Content That Ranks",
+  "metaDescription": "SEO for fintech companies in India. We publish YMYL-grade pages that name the regulated entity, cite RBI rules and rank for high-intent money queries.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Fintech SEO in India is content built to survive a compliance read. RBI's digital lending rules require the regulated entity behind an offer to be named upfront, and Google treats money pages as YMYL. So every ranking page carries the lender's name, the real cost of credit, and a credentialed author.",
+  "takeaways": [
+    "The rule that breaks most fintech content isn't a ranking factor. It's the requirement to **name the regulated entity** — the bank or NBFC actually lending — on the surface the borrower sees.",
+    "A landing page quoting **\"1.5% per month\"** is not quoting APR. Compliance will pull it, and a searcher comparing on APR will bounce off it.",
+    "Calculators earn more links than blog posts do, because personal-finance writers cite tools and ignore articles.",
+    "You will not outrank BankBazaar and Paisabazaar on `personal loan interest rates`. You can own everything attached to your own product name.",
+    "Under the DPDP Act, the marketing stack is now in scope. A PAN or mobile number sitting in a query string is a data problem, not an analytics quirk."
+  ],
+  "sections": [
+    {
+      "h2": "The disclosure that decides whether your page ships",
+      "body": [
+        "Most fintech SEO plans die in the same place. Not keyword research, not links — the moment legal reads the top twenty landing pages and finds that none of them say who is actually lending the money.",
+        "RBI's digital lending framework, published as guidelines in 2022 and consolidated into directions since, is built around one idea: the borrower must know which regulated entity they're dealing with, what the loan really costs, and what happens if they want out. An app that fronts credit without naming the bank or NBFC behind it is the exact arrangement the rules were written to stop.",
+        "That matters for SEO because search doesn't send anyone to your homepage. It sends them to the offer page. Whatever has to be disclosed has to be disclosed there."
+      ],
+      "table": {
+        "caption": "What a lending page has to carry before it's allowed to rank.",
+        "head": [
+          "Element",
+          "Why it's there",
+          "Where it usually goes wrong"
+        ],
+        "rows": [
+          [
+            "Name of the regulated entity",
+            "The bank or NBFC extending the credit must be disclosed upfront, on the app and the site",
+            "It sits in the footer in grey 10px type, on the homepage only — not on the page organic search actually lands on"
+          ],
+          [
+            "Key Fact Statement",
+            "The borrower gets an all-inclusive cost of credit before they commit",
+            "Marketing pages quote a flat monthly rate and link the KFS from a post-approval screen nobody indexes"
+          ],
+          [
+            "All-in cost, expressed as APR",
+            "Processing fee, insurance premium, penal charges and documentation all belong inside the number",
+            "\"Interest from 0.9%\" as an H1, with the fee schedule three clicks away"
+          ],
+          [
+            "Cooling-off window and grievance officer",
+            "Required disclosure, and the thing a worried searcher is looking for",
+            "Buried on a policy page with no internal links pointing at it"
+          ],
+          [
+            "Permissions the app requests",
+            "Data collection must be need-based and consented; contact lists and media are off limits",
+            "The app store listing and the privacy page describe two different apps"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Budget for the rewrite you haven't planned",
+        "body": "The first compliance pass on an existing fintech site usually sends between a third and a half of the money pages back for edits. That's not a failure — it's the cost of content that was written before anyone read the circular. Do it in month one, before you spend on links pointing at pages that will change."
+      }
+    },
+    {
+      "h2": "Google grades money pages roughly the way a regulator does",
+      "body": [
+        "Lending, investing, insurance and tax pages fall into what Google's own quality rater guidelines call YMYL — Your Money or Your Life. Rater guidelines don't rank anything directly. They describe what Google's systems are trained to approximate, which is close enough to matter.",
+        "The practical read: on a money query, a page with no named author, no corporate identity and no verifiable regulatory standing is competing against banks that have all three. That gap is usually easier to close than a link gap."
+      ],
+      "bullets": [
+        "**Name the author and their qualification.** A credit product explainer by a CA, a former underwriter or a risk analyst outranks the same copy under \"Team\". Link the byline to a real profile with a real history.",
+        "**Add a reviewer line where the author isn't the expert.** \"Written by X, reviewed by Y, [credential]\" is honest and it's the single cheapest [E-E-A-T](/glossary/e-e-a-t) fix on a fintech site.",
+        "**Publish your registration details as text, not an image.** Entity name, CIN, RBI or SEBI registration number, registered address, linked sitewide.",
+        "**Keep entity naming consistent.** If the app is one brand, the NBFC another and the holding company a third, say how they relate. Search engines resolve entities; ambiguity costs you."
+      ]
+    },
+    {
+      "h2": "Calculators earn the links your blog never will",
+      "body": [
+        "A well-built calculator is the best link asset in this category, and it isn't close. Personal-finance writers, forum answers and comparison pages cite tools because a tool is useful to their reader. They rarely cite an article that repeats what they already wrote.",
+        "It only works if the thing actually computes."
+      ],
+      "numbered": [
+        "**Server-render the page, compute client-side.** A calculator that only exists after a JavaScript bundle loads and a user clicks is a blank page to a crawler. Formula, worked example and explanation all belong in the HTML.",
+        "**Show the formula and the assumptions.** EMI calculators disagree because they treat processing fees and part-payments differently. Saying which convention you use is honest and is a reason to cite you.",
+        "**One URL per genuinely different calculation.** Home loan EMI, personal loan EMI and flat-to-reducing conversion are three tools. Twelve URLs varying only by a preset number are scaled content.",
+        "**Don't gate it.** An eligibility checker behind an OTP wall ranks for nothing. Ask for the phone number after you've shown the answer.",
+        "**Watch what the checker fires.** If it triggers a credit bureau enquiry, that needs its own explicit consent step with the purpose stated — not a Calculate button."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The flat rate trap, in one line",
+        "body": "A 12% flat rate on a 12-month loan is roughly a 21–22% reducing-balance APR, because you keep paying interest on principal you've already repaid. Publish a converter for exactly that. It ranks, it earns links, and it's the most useful thing a lender can tell a borrower."
+      }
+    },
+    {
+      "h2": "Comparison content a compliance officer will actually sign",
+      "body": [
+        "Comparison queries carry the most intent in the category. They are also where misleading-claim risk concentrates, because the whole format invites superlatives. The fix is boring and effective: compare on published, dated, sourced facts, and delete the adjectives."
+      ],
+      "table": {
+        "caption": "Phrases that get a fintech page pulled, and what to write instead.",
+        "head": [
+          "Don't publish",
+          "Why it's a problem",
+          "Write this"
+        ],
+        "rows": [
+          [
+            "\"Guaranteed loan approval\"",
+            "Approval is an underwriting decision. Guaranteeing it is a claim you can't honour",
+            "\"Decision within 24 hours on complete applications\""
+          ],
+          [
+            "\"0% interest, no hidden charges\"",
+            "Rarely zero once processing fee and insurance are counted, and \"no hidden charges\" is unverifiable",
+            "\"APR from X%, including a Y% processing fee. Full charge list below\""
+          ],
+          [
+            "\"RBI approved app\"",
+            "Registration is not approval or endorsement, and the regulator says so explicitly",
+            "\"Lending partner: [NBFC name], RBI registration number [number]\""
+          ],
+          [
+            "\"No credit check\"",
+            "Reads as evasion of underwriting norms even when the intent is thin-file lending",
+            "\"We lend to thin-file applicants. Here's what we assess instead of a bureau score\""
+          ],
+          [
+            "\"Assured returns\" beside a market-linked product",
+            "Market risk has to be stated, not softened",
+            "\"Returns for [period], not indicative of future performance\""
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Comparing rivals is allowed. Guessing isn't.",
+        "body": "You can put a competitor's published rate beside yours. Cite the page you took it from, stamp the date you checked, and re-check quarterly. A comparison table built on numbers somebody remembered is a misleading advertisement with a spreadsheet around it."
+      }
+    },
+    {
+      "h2": "DPDP changed what your marketing stack is allowed to collect",
+      "body": [
+        "The Digital Personal Data Protection Act, 2023 is law and its rules are phasing in. Most fintech teams read it as a product and infosec problem. It lands squarely on marketing too, because marketing is where personal data gets collected fastest and governed worst.",
+        "Three things break most often, and all three are fixable in a fortnight."
+      ],
+      "bullets": [
+        "**Personal data in URLs.** A funnel that puts a mobile number or PAN in a query string pushes it into analytics, ad platform reports, Search Console and potentially a search index. Move it to POST bodies and audit your parameterised URLs.",
+        "**Purpose creep.** Consent taken to process a loan application doesn't cover a cross-sell campaign six months later. The notice at the form has to itemise what you'll do with the data, and your CRM has to respect it.",
+        "**Third-party tags on regulated pages.** Session recorders and chat widgets capture whatever the user types into an application form. Mask the fields or take the tag off the funnel.",
+        "**Outbound follow-up.** Commercial SMS and voice in India run through the TRAI DLT regime with registered headers and templates. Route SEO leads through it properly or your sender ID gets blocked mid-campaign."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The rules are still settling",
+        "body": "DPDP compliance timelines have moved more than once, and the digital lending directions have been revised since 2022. Check the current text with your compliance team before you publish anything that quotes a specific obligation. An agency that tells you it knows the rule better than your compliance officer is selling you a risk, not a service."
+      }
+    },
+    {
+      "h2": "Where the rankable demand actually sits",
+      "body": [
+        "BankBazaar, Paisabazaar, ClearTax, the broker blogs and the bank content hubs own the head terms. They've had a decade and a link profile you won't match this year. Say that out loud in the first meeting and the plan gets sharper.",
+        "What's left is bigger than it looks, because almost nobody serves it well."
+      ],
+      "bullets": [
+        "**Your own product name.** `[Product] eligibility`, `[Product] foreclosure charges`. If an affiliate outranks you on demand you paid to create, you're paying a toll twice.",
+        "**Eligibility long tail.** Self-employed without ITR, gig workers, applicants with a settled account on their bureau report. Low volume, extreme intent, and only a lender can answer it truthfully.",
+        "**Process and post-sale queries.** Foreclosure, part-payment, NOC after closure, how to fix a wrong bureau entry. Aggregators skip these because they earn on new business.",
+        "**Regulatory explainers.** What a Key Fact Statement is, how penal charges differ from penal interest, what the cooling-off period means. You have the source knowledge; almost nobody writes it clearly.",
+        "**Segment pages that are genuinely different.** A page for doctors or self-employed applicants earns its URL only if the underwriting differs. If it doesn't, you've built a template farm."
+      ]
+    },
+    {
+      "h2": "What this costs, and what we'll commit to",
+      "body": [
+        "Our SEO runs from ₹75,000/mo, and from ₹40,000/mo for smaller sites. Ex-GST, month-to-month after the first quarter, 30 days' notice, and you keep every asset including drafts. Add organic social and it's ₹99,000/mo. Full numbers on [our pricing page](/pricing).",
+        "The guarantee is not a ranking promise, because nobody controls Google's index and anyone promising a position is either buying links or managing you toward a renewal. We freeze your trailing-90-day qualified leads from organic search on day one. If we haven't beaten that number in 90 days, we keep working free until we do.",
+        "The fintech caveat we raise before you sign: if your legal review runs three weeks a batch, 90 days is two publishing rounds and we'd rather agree a longer window upfront than take your money and miss. Same conversation we have with [insurance clients](/seo-for/insurance), for the same reason."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The honest timeline",
+        "body": "Three to six months to real movement on a competitive money keyword set. Six to twelve to compounding returns. Add roughly a month of compliance overhead that a D2C brand simply doesn't carry — and add more if your product is new and the domain is young."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do we have to name the lending NBFC on every landing page?",
+      "a": "On any page that presents a credit offer, yes — RBI's digital lending framework requires the regulated entity behind the loan to be disclosed upfront, and organic search delivers people to deep pages, not your homepage. A general education article explaining how personal loans work doesn't carry the same obligation."
+    },
+    {
+      "q": "Can a fintech rank against BankBazaar or Paisabazaar?",
+      "a": "Not on head comparison terms in the short run. They have a decade of topical depth and links there, plus paid placements above their own listings. Where you win is your own product name, eligibility long tail, post-sale process queries and regulatory explainers — smaller pools, far higher intent, far weaker competition."
+    },
+    {
+      "q": "Does AI-written content hurt a fintech site more than other sites?",
+      "a": "It's riskier, yes. Money pages are held to a higher quality bar, and a generated page tends to get the details wrong in exactly the places that matter — APR versus flat rate, current charge structures, what a regulation actually says. Use models for drafting scaffolding, not for the numbers."
+    },
+    {
+      "q": "How do we handle rate and charge changes across hundreds of pages?",
+      "a": "Store rates and fees as structured data in the CMS and render them into pages, rather than typing them into copy. One update then propagates everywhere. Hard-coded numbers in body text are how sites end up advertising a fee they stopped charging eighteen months ago."
+    },
+    {
+      "q": "Are eligibility checkers and calculators worth building for SEO?",
+      "a": "They're the strongest asset in the category. Tools attract citations from finance writers in a way articles don't, and they hold intent that blog posts leak. Build them server-rendered and ungated, show the formula, and keep any credit bureau enquiry behind its own explicit consent step."
+    },
+    {
+      "q": "How long before fintech SEO produces qualified leads?",
+      "a": "Three to six months for meaningful movement, plus roughly a month of compliance overhead. Impressions and average position on target queries should move within six to eight weeks. If they're flat at month three, the bottleneck is usually your approval queue rather than the plan."
+    }
+  ],
+  "related": [
+    {
+      "type": "seo-for",
+      "slug": "insurance"
+    },
+    {
+      "type": "seo-for",
+      "slug": "saas"
+    },
+    {
+      "type": "glossary",
+      "slug": "e-e-a-t"
+    },
+    {
+      "type": "services",
+      "slug": "content-marketing-services"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-cost-in-india"
+    },
+    {
+      "type": "journal",
+      "slug": "why-ranking-guarantees-are-a-lie"
+    }
+  ]
+}

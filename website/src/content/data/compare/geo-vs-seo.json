@@ -1,0 +1,261 @@
+{
+  "slug": "geo-vs-seo",
+  "type": "compare",
+  "primaryKeyword": "difference between geo and seo",
+  "secondaryKeywords": [
+    "geo vs seo",
+    "generative engine optimization meaning",
+    "how to rank in ai overviews",
+    "chatgpt citations for brands",
+    "geo services india"
+  ],
+  "cluster": "ai-search",
+  "intent": "informational",
+  "h1": "GEO vs SEO: what actually changes in the work",
+  "metaTitle": "GEO vs SEO: What Actually Changes in the Work",
+  "metaDescription": "The difference between GEO and SEO is smaller than the hype suggests. Here's what genuinely changes in the work, and the budget share worth moving now.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "GEO is SEO with a different scoring surface. Generative engines still retrieve from a search index, so crawling, content and links still decide whether you're eligible at all. What genuinely changes is format: self-contained answers, citable numbers, consistent entity data and comparison tables. Roughly 10–15% of a ₹75,000 retainer is worth reallocating.",
+  "takeaways": [
+    "Retrieval runs on an index. If you're not indexed and ranking somewhere in the top results, you're not in the citation pool — so GEO cannot replace SEO, only sit on top of it.",
+    "Four deliverables genuinely change: **answer-first formatting**, **original statistics**, **comparison tables**, **entity consistency**. Everything else is the same job with new vocabulary.",
+    "There is no reliable rank tracker for generative answers. Anyone selling you a precise AI share-of-voice number is modelling, not measuring.",
+    "Move **10–15%** of the retainer, not 50%. Defunding technical work and links to chase citations is how you lose both."
+  ],
+  "sections": [
+    {
+      "h2": "What generative engines actually cite, and why",
+      "body": [
+        "Strip the branding off AI Overviews, ChatGPT's browsing mode, Perplexity and Copilot and they share one shape: a query gets rewritten into several sub-queries, each hits a search index, a handful of pages come back, and the model writes an answer out of what it can extract from them. The citation is a receipt for that extraction.",
+        "That mechanic explains almost everything about which pages get picked. It isn't mystical and there's no new algorithm to reverse-engineer.",
+        "Cited pages share four properties: they were already retrievable for the sub-query, they hold a passage that answers it without the rest of the page, they say something specific enough to quote, and they name entities the model can resolve. A page ranking fifth that holds the answering paragraph beats the page ranking first that buries it."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The uncomfortable part",
+        "body": "Getting cited is not the same as getting a click. On informational queries you can win the citation and lose the visit. That's a real trade, and it's why the measurement section of this page matters more than the tactics section."
+      }
+    },
+    {
+      "h2": "The deliverables that change, and the ones that don't",
+      "body": [
+        "Most GEO pitches are a re-skin of an SEO scope of work. Here's the line-by-line, so you can see which parts you'd genuinely be paying extra for."
+      ],
+      "table": {
+        "caption": "Every common deliverable, and whether GEO actually changes it.",
+        "head": [
+          "Deliverable",
+          "Under SEO",
+          "Under GEO",
+          "Really different?"
+        ],
+        "rows": [
+          [
+            "Crawling and indexing",
+            "Required",
+            "Required — retrieval runs on the same index",
+            "No"
+          ],
+          [
+            "Keyword-mapped pages",
+            "The core of the plan",
+            "Still the core; queries are longer and more conversational",
+            "Barely"
+          ],
+          [
+            "Answer formatting",
+            "One snippet target near the top",
+            "A self-contained 40–60 word answer under every H2",
+            "**Yes**"
+          ],
+          [
+            "Original statistics",
+            "Useful for earning links",
+            "The most quotable unit there is — a model lifts a number and credits the source",
+            "**Yes**"
+          ],
+          [
+            "Comparison tables",
+            "Good for featured snippets",
+            "Rows get lifted close to verbatim on \"X vs Y\" questions",
+            "**Yes**"
+          ],
+          [
+            "Entity consistency",
+            "Rarely audited by anyone",
+            "Name, category, founders, location and pricing must agree everywhere",
+            "**Yes**"
+          ],
+          [
+            "Schema markup",
+            "Rich-result eligibility",
+            "Helps entity resolution. Not a citation switch, and nobody has shown it to be one",
+            "Partly"
+          ],
+          [
+            "Backlinks",
+            "Authority and discovery",
+            "Same, plus the unlinked brand mentions that build association",
+            "Partly"
+          ],
+          [
+            "Core Web Vitals",
+            "Ranking input and real UX",
+            "Almost irrelevant to a model reading extracted text",
+            "No — keep doing it"
+          ],
+          [
+            "`llms.txt`",
+            "Not applicable",
+            "Proposed, adopted by no major engine. Twenty minutes to add; expect nothing",
+            "No"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Entity consistency is the one genuinely new discipline",
+      "body": [
+        "The other three changes are formatting habits a good editor picks up in a week. Entity consistency is different work, and most teams have never done it.",
+        "A generative engine has to decide that the business named in a Bengaluru directory, the one quoted in a trade publication and the domain it just crawled are the same organisation. Everywhere your details disagree, that confidence drops — and a model unsure who you are will leave you out and cite someone unambiguous.",
+        "This is unglamorous audit work: one spreadsheet, every surface where your business is described, a column per fact that has to match."
+      ],
+      "bullets": [
+        "**Legal and trading name** — one form, everywhere. \"Pvt Ltd\" in some places and not others is a real ambiguity, not pedantry.",
+        "**Category description.** If your site says \"SEO agency\", LinkedIn says \"growth partner\" and a directory says \"web design company\", you've described three businesses.",
+        "**Founders and named people** — same spellings, same roles, on an about page with `sameAs` pointing at their real profiles.",
+        "**Location and service area** — one address format, and an explicit statement of where you work.",
+        "**Pricing and claims.** If your site says ₹75,000/mo and an old press piece says ₹25,000, the model can't tell which is current.",
+        "**Organization schema on the homepage**, with `sameAs` for every profile you control. The cheapest disambiguation signal available."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Where this bites hardest",
+        "body": "Businesses that rebranded, repriced or moved city in the last three years. The old facts are still sitting in directories and old coverage, and a model has no way to date them. Fixing that is often the highest-yield GEO work available, and it looks nothing like content marketing."
+      }
+    },
+    {
+      "h2": "How to measure this when no rank tracker covers it",
+      "body": [
+        "There's no rank tracker here, because there's no stable position-based result to track. Answers vary by user, session, phrasing and day. Three honest routes exist, each with a hole in it."
+      ],
+      "numbered": [
+        "**Search Console, read for the signature.** Google folds AI Overview impressions and clicks into the standard performance report rather than splitting them out, so you can't isolate them. What you can watch is the pattern: impressions holding or rising on informational queries while CTR falls. That's a pattern, not proof — say so when you report it.",
+        "**GA4 referrals from assistant hostnames.** Traffic from `chatgpt.com`, `perplexity.ai`, `copilot.microsoft.com` and `gemini.google.com` arrives as referral. Small volumes, usually high intent. Build a custom channel group so it stops hiding inside \"Referral\" or \"Unassigned\".",
+        "**A manual prompt log.** Fix a panel of 25–30 prompts a real buyer would type. Run them monthly, same day, logged out, same engines. Record whether you were cited, which page, and who else was in the answer. Tedious, a sample rather than a census, and still the most truthful number here."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The vendor test",
+        "body": "If an agency shows you a precise \"AI visibility score\" or a share-of-voice percentage, ask two questions: how many prompts is that sampled from, and were they run logged out? The answers are usually \"a few dozen\" and \"we're not sure\" — which is fine, as long as it's labelled as a sample instead of sold as a measurement."
+      }
+    },
+    {
+      "h2": "The share of a ₹75,000 retainer worth reallocating",
+      "body": [
+        "Here's our actual call, with the reasoning, because a number without reasoning is a guess in a nicer font. On a ₹75,000/month retainer we'd move roughly 10–15% of the effort — ₹8,000 to ₹11,000 worth of hours — and take it from specific places rather than shaving everything evenly."
+      ],
+      "table": {
+        "caption": "Where the reallocated hours come from, and where they go.",
+        "head": [
+          "Take it from",
+          "Move it to",
+          "Why"
+        ],
+        "rows": [
+          [
+            "One new article a month",
+            "Rewriting your top 20 existing pages into answer-first shape",
+            "Those pages already rank. Reformatting puts them in the retrieval pool now; a new article takes months to get there."
+          ],
+          [
+            "Generic outreach volume",
+            "Two or three digital-PR pieces built on a number only you can publish",
+            "An original statistic is the most citable asset you can own, and it earns links at the same time."
+          ],
+          [
+            "New time",
+            "One hour a month on the entity audit",
+            "Cheap, mostly one-off, and it decides whether a model is confident about who you are."
+          ],
+          [
+            "New time",
+            "One hour a month on the prompt log",
+            "Without it you have no idea whether any of the above worked."
+          ]
+        ]
+      },
+      "bullets": [
+        "**What we wouldn't defund:** technical health, indexing and links. Retrieval runs on an index. Fall out of it and you fall out of the answer.",
+        "**What we wouldn't buy:** a separate GEO retainer stacked on SEO. Same team, adjusted version of the same work. A second fee is a charge for vocabulary — our [AI search optimisation service](/services/ai-search-optimisation-services) sets out the real scope.",
+        "**When to move more than 15%:** research-heavy B2B, or categories where buyers ask assistants for shortlists. Move less if you sell an urgent local service."
+      ]
+    },
+    {
+      "h2": "The verdict, and what to do on Monday",
+      "body": [
+        "Forced to pick one, pick SEO — not out of caution, but because GEO without indexing and rankings is a scope of work with no distribution attached. Every generative surface reads from a search index, and the index doesn't care what you call your discipline.",
+        "If you already rank well and you're watching CTR erode on informational queries, that's the moment GEO earns its 15%. Reformat before you write more. Then publish one number nobody else has.",
+        "Monday's list: take your top 20 pages by impressions, add a 40–60 word answer under every H2, fix Organization schema and `sameAs`, start the prompt log. A week of work, covering most of what GEO means in practice. Longer argument in [is generative engine optimisation real](/journal/is-generative-engine-optimization-real)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the difference between GEO and SEO?",
+      "a": "SEO optimises for a ranked list of links. GEO optimises for a synthesised answer that cites a few sources. The plumbing is shared — generative engines retrieve from a search index — so the difference lands in formatting and entity clarity rather than in a separate discipline. Four deliverables genuinely change; the rest is the same work."
+    },
+    {
+      "q": "Does GEO replace SEO?",
+      "a": "No, and it can't. Generative engines retrieve candidates from a search index before writing anything. If you're not crawlable, indexed and ranking somewhere in the retrievable set, you're not in the citation pool at all. GEO is a layer on top of SEO, not a substitute for it."
+    },
+    {
+      "q": "How do I get cited by ChatGPT or AI Overviews?",
+      "a": "Rank for the sub-questions, then make the answer extractable. In practice: a self-contained 40–60 word answer under every H2, one specific number or definition worth quoting, a comparison table for \"X vs Y\" questions, and consistent entity data so the model knows who you are. There's no submission form and nobody can guarantee a citation."
+    },
+    {
+      "q": "Does llms.txt do anything?",
+      "a": "Not yet. It's a proposed convention for pointing language models at a clean version of your content, and no major engine has committed to reading it. Adding one costs about twenty minutes, so it's not a bad bet — just don't let anyone bill it as a GEO strategy."
+    },
+    {
+      "q": "How much of my SEO budget should go to GEO?",
+      "a": "Around 10–15% on a ₹75,000/month retainer, taken from article volume and generic outreach rather than from technical work or links. Research-heavy B2B categories can justify more. Urgent local services should spend less — those buyers aren't asking an assistant, they're tapping a phone number in the map pack."
+    },
+    {
+      "q": "Can I track my AI citations like keyword rankings?",
+      "a": "Not reliably. Answers vary by user, phrasing and day, and Google folds AI Overview data into its standard Search Console reports rather than separating it. The honest method is a fixed panel of 25–30 prompts run monthly, logged out, with the results recorded by hand. Treat it as a sample, never as a census."
+    }
+  ],
+  "versus": {
+    "a": "GEO (generative engine optimisation)",
+    "b": "SEO",
+    "verdict": "If you're choosing where the next rupee goes, put it in SEO — generative engines retrieve from a search index, so an unindexed page can't be cited; only once you're already ranking does moving 10–15% of the retainer into GEO formatting pay."
+  },
+  "related": [
+    {
+      "type": "compare",
+      "slug": "aeo-vs-geo"
+    },
+    {
+      "type": "glossary",
+      "slug": "generative-engine-optimization"
+    },
+    {
+      "type": "glossary",
+      "slug": "ai-overviews"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-get-cited-by-ai-assistants"
+    },
+    {
+      "type": "journal",
+      "slug": "what-ai-overviews-did-to-your-organic-traffic"
+    },
+    {
+      "type": "services",
+      "slug": "aeo-geo-services"
+    }
+  ]
+}

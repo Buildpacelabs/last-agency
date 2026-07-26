@@ -1,0 +1,134 @@
+{
+  "slug": "guest-posting",
+  "type": "glossary",
+  "primaryKeyword": "guest posting",
+  "secondaryKeywords": [
+    "guest post seo",
+    "guest blogging for backlinks",
+    "paid guest post india",
+    "guest posting sites",
+    "is guest posting still effective"
+  ],
+  "cluster": "off-page",
+  "intent": "commercial",
+  "h1": "Guest posting",
+  "metaTitle": "Guest Posting: What It Is and When It Works",
+  "metaDescription": "Guest posting means writing for another site for a link and an audience. Here is the six-point test that separates a real publication from a link farm.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Guest posting",
+  "definition": "Guest posting is writing an article for someone else's website, usually in exchange for a byline, an audience and a link back to your own site.",
+  "answer": "Guest posting is writing an article for another site in exchange for a byline, its audience and usually a link. Done editorially, on a publication with real readers, it still works. Done through the marketplaces filling Indian inboxes at ₹2,000–₹25,000 a placement, it's buying links with extra steps — and Google's spam policy says so directly.",
+  "takeaways": [
+    "The tactic isn't dead. The **industrial version** is — mass-produced articles on sites that exist to sell links.",
+    "One test cuts through everything: would you pitch this site if links didn't exist?",
+    "A \"write for us\" page quoting a price is not an editorial process. It's a rate card.",
+    "Google's policy is specific: large-scale article campaigns with keyword-rich anchors are link spam, and paid placements need `rel=\"sponsored\"`."
+  ],
+  "sections": [
+    {
+      "h2": "Genuine guest posting versus paid placement",
+      "body": [
+        "Two activities share one name, which is exactly why the name survived.",
+        "The genuine version: you have something to say, a publication your buyers read wants it, an editor edits it, and your byline links to your site because that's what bylines do. You pay in expertise. The link is a by-product of a real publishing transaction, and Google has no problem with it.",
+        "The industrial version: a broker emails a spreadsheet of 400 sites sorted by DR, you pay, an article you didn't write appears with your keyword as anchor text, and the same happens for eleven other buyers that week. Nobody reads it. Google's link spam policy names this pattern — large-scale article campaigns with keyword-rich links — as a scheme, and it's what most Indian proposals mean by \"guest posts\". Ask which one you're buying."
+      ]
+    },
+    {
+      "h2": "The six-point test for a real publication",
+      "body": [
+        "Five minutes per site, run before you agree to anything. It will kill most of the list a broker sends you, which is the point."
+      ],
+      "numbered": [
+        "**Does it get organic traffic from queries a human would search?** A site showing DR 55 and 300 monthly visits isn't a publication, it's inventory. This check alone eliminates most of the market.",
+        "**Is there a named editorial team?** A masthead, real bylines, writers with a professional history elsewhere. Author pages with stock photos and no surname are a tell.",
+        "**Does the \"write for us\" page quote a price?** A rate card for a link is the whole answer. Publications commission or accept pitches; they don't publish tariffs.",
+        "**Does every recent post carry an outbound commercial link?** Scan ten articles. A casino here, a packers-and-movers there, a SaaS tool after that — that's a marketplace.",
+        "**Is the category mix coherent?** Crypto, CBD, essay writing and B2B software in the same week isn't a beat. It's serving whoever paid.",
+        "**Would you pitch this site if links didn't exist?** If not, you're buying a link and should price it as one, risk included."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The DR trap",
+        "body": "Broker lists are sorted by [Domain Rating](/glossary/domain-rating) because DR responds to purchased links and traffic doesn't. That's why the inventory looks strong on the spreadsheet and empty when you open it. Sort their list by traffic instead and watch it shrink."
+      }
+    },
+    {
+      "h2": "What Indian guest post pricing actually buys",
+      "body": [
+        "Ranges quoted in this market, as observation rather than survey data — they shift constantly and depend on who's reselling whom.",
+        "**₹1,500–₹8,000:** generic sites with no audience, often carrying a hundred outbound commercial links. This tier buys a URL that exists. Google handles it by ignoring it.",
+        "**₹8,000–₹25,000:** better-looking sites, sometimes with modest traffic, still selling slots at volume. Rarely worth it as a ranking play.",
+        "**₹25,000–₹1,00,000+:** genuine Indian publications, sold as branded content by a sales team rather than a link broker. Often worth every rupee for audience and credibility — and frequently nofollowed, because reputable publishers apply the attribute to paid content as policy.",
+        "That last point catches people out. Paying a premium and then finding the link nofollowed feels like a con; it's the publisher following the rules while you bought on the wrong metric. Read [nofollow links](/glossary/nofollow-link) before you approve the invoice."
+      ]
+    },
+    {
+      "h2": "Google's position, stated plainly",
+      "body": [
+        "Google has never said guest posting is against the rules. It has said, in its spam policies and through its search advocates, that links passing ranking credit in exchange for payment are link schemes, and that large-scale article campaigns with keyword-rich anchors are spam. The compliant version is simple: mark the link `rel=\"sponsored\"`. Brokers resist because that removes the property you were charged for, and the resistance is your answer.",
+        "The realistic risk isn't a dramatic penalty. Google increasingly neutralises unnatural links rather than punishing the site receiving them, so the usual outcome of a ₹15,000 guest post is silence — money gone, ranking unmoved, no dashboard explaining why. The alternative is in [guest posting vs digital PR](/compare/guest-posting-vs-digital-pr)."
+      ]
+    },
+    {
+      "h2": "Measuring whether a placement did anything",
+      "body": [
+        "Most guest posting is never measured, which suits everyone selling it. Four checks, thirty days after publication:"
+      ],
+      "bullets": [
+        "**Is the page indexed?** Search the exact title. An unindexed article passes nothing and is invisible to everybody.",
+        "**Is the link followed, and still there?** View source, read the `rel` attribute, then check again at ninety days — rented links get removed once the invoice is old.",
+        "**Did anyone arrive?** Referral sessions in GA4 for that domain. Zero referrals from a \"high-traffic publication\" tells you what the estimate was worth."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The version worth doing",
+        "body": "Pick five publications your buyers genuinely read. Pitch something only you can write — your own operating data, a contrarian argument, a post-mortem. Expect four rejections. The one that lands beats forty marketplace posts."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is guest posting still effective for SEO in 2026?",
+      "a": "On real publications with real readers, yes — for the audience, the credibility and often the link. On marketplace sites sold by DR, no. Google's spam systems have got steadily better at ignoring links from sites that exist to sell them, and ignoring is the outcome you should expect."
+    },
+    {
+      "q": "Are paid guest posts against Google's guidelines?",
+      "a": "Paying for a link that passes ranking credit is a link scheme under Google's own policy. The compliant route is to mark the link rel=\"sponsored\". If a seller refuses that, they're selling you the violation rather than the placement, and the risk sits on your domain."
+    },
+    {
+      "q": "How much does a guest post cost in India?",
+      "a": "Marketplace placements are commonly pitched at ₹1,500–₹25,000. Genuine Indian publications sell branded content from ₹25,000 upward, usually through a sales team, and usually with a nofollowed link. The cheap tier is cheap because nobody reads it."
+    },
+    {
+      "q": "How do I find good guest posting sites?",
+      "a": "Don't start from a list of sites that accept guest posts — that list is, by definition, the sites that sell them. Start from the publications your customers already read, and from the sites linking to competitors who rank. Then run the six-point test on what's left."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "link-building-meaning"
+    },
+    {
+      "type": "glossary",
+      "slug": "nofollow-link"
+    },
+    {
+      "type": "glossary",
+      "slug": "domain-rating"
+    },
+    {
+      "type": "compare",
+      "slug": "guest-posting-vs-digital-pr"
+    },
+    {
+      "type": "cost",
+      "slug": "link-building-cost"
+    },
+    {
+      "type": "services",
+      "slug": "digital-pr-services"
+    }
+  ]
+}

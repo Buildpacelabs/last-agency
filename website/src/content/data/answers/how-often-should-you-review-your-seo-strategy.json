@@ -1,0 +1,155 @@
+{
+  "slug": "how-often-should-you-review-your-seo-strategy",
+  "type": "answers",
+  "primaryKeyword": "how often should you review your seo strategy",
+  "secondaryKeywords": [
+    "how often to update seo strategy",
+    "seo review frequency",
+    "when to change seo strategy",
+    "how often should businesses revisit seo"
+  ],
+  "cluster": "seo-measurement",
+  "intent": "informational",
+  "h1": "How often to revisit your SEO strategy",
+  "metaTitle": "How Often Should You Review Your SEO Strategy?",
+  "metaDescription": "How often should you review your SEO strategy? Weekly checks, monthly reviews, quarterly resets. Here's what belongs in each and when to reset early.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Review your SEO strategy on three cadences: a 15-minute weekly check for anything broken, a 60-minute monthly review of the numbers and the plan, and a half-day quarterly reset where priorities can actually change. Rewrite the strategy once a year. Changing direction more often than quarterly is what kills most SEO programmes.",
+  "takeaways": [
+    "The three meetings answer three different questions. Weekly: **is anything broken?** Monthly: **is the plan being executed?** Quarterly: **is the plan still right?**",
+    "Only the quarterly meeting is allowed to change priorities. Protecting that rule is the biggest single thing you can do for your results.",
+    "The monthly review needs the person who owns the number in the room. Four analysts and no decision-maker is a status update, not a review.",
+    "Reset early for four events only: a diagnosed drop, a replatform, a business pivot, or a budget change. Not for a bad week."
+  ],
+  "sections": [
+    {
+      "h2": "Three cadences, three different questions",
+      "body": [
+        "Most SEO programmes get reviewed either constantly or never. Constantly looks diligent and produces thrash. Never looks patient and produces twelve months of executing a plan that stopped making sense in March.",
+        "Split the review into three meetings that are deliberately not allowed to do each other's job. The weekly check catches breakage. The monthly review checks execution against the plan. The quarterly reset is the only forum where the plan itself is up for debate. Write that last rule down somewhere your team can point at, because it will be tested every month."
+      ],
+      "table": {
+        "caption": "Three SEO review cadences: what each one is for and who needs to be there.",
+        "head": ["Cadence", "Time", "Who's in it", "The question it answers", "Can it change the plan?"],
+        "rows": [
+          ["Weekly", "15 minutes", "Whoever runs SEO day to day. Solo is fine.", "Is anything broken?", "No — only fixes"],
+          ["Monthly", "60 minutes", "SEO owner, marketing lead, agency account lead", "Did we do what we said, and did it move?", "Tactics yes, priorities no"],
+          ["Quarterly", "Half a day", "Everyone above plus the person who owns revenue", "Is this still the right plan?", "Yes — this is the only one"],
+          ["Annually", "One working session", "Founder or CMO, SEO owner, agency lead", "Is the whole approach still right?", "Yes, including the agency"]
+        ]
+      }
+    },
+    {
+      "h2": "The weekly check: fifteen minutes, five things",
+      "body": [
+        "This is not a meeting. It's one person, one coffee, five browser tabs. You're looking for breakage, not insight — insight is the monthly meeting's job. Run it the same day each week so week-on-week comparisons mean something. Monday catches whatever a Friday deploy broke."
+      ],
+      "numbered": [
+        "**Search Console coverage and manual actions.** Any new errors, any sudden change in indexed pages, and — five seconds — is the Manual Actions report still empty?",
+        "**Clicks and impressions, last 7 days versus previous 7.** Cliffs, not wiggles. A 5% move is noise. A 40% move needs today, not the monthly meeting.",
+        "**Did anything ship?** Every template, redirect and navigation change goes in a dated log. That log saves you a week of guessing the next time something drops.",
+        "**Did we publish what was scheduled?** Yes or no. Content cadence slips a week at a time and nobody notices until the quarter is gone.",
+        "**Site up, fast and rendering?** Load the homepage and two money pages on mobile. Trivial until the quarter a chat widget adds two seconds to every page."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What the weekly check is not for",
+        "body": "Don't look at rankings weekly. Individual positions bounce for reasons unrelated to your work — personalisation, test rollouts, tracker location drift. Watching them weekly makes calm people anxious and anxious people interfere. Rankings are a monthly number."
+      }
+    },
+    {
+      "h2": "The monthly review: the agenda, and who has to be in the room",
+      "body": [
+        "Sixty minutes, same date each month, numbers circulated in advance so nobody spends twenty minutes reading. If your agency presents a deck live that you've never seen, you're being managed rather than reviewed.",
+        "Who must be there: whoever owns SEO day to day, the marketing lead, and the agency's account lead — the person who decides what gets worked on next month, not the person who assembles the report. If the decision-maker isn't there, cancel and rebook. A review that can't produce a decision is a status update wearing a suit.",
+        "The agenda is fixed, in this order, because the order stops the meeting drifting into whatever's most recent."
+      ],
+      "numbered": [
+        "**The number, versus baseline.** Qualified leads or revenue from organic against the frozen starting figure. Five minutes, and it goes first so everything after is judged against it.",
+        "**Leading indicators.** Impressions and average position for the target query set, indexed versus published pages, referring domains added. Ten minutes. These move before the number does.",
+        "**What shipped.** Pages published, technical fixes closed, links earned — against what was committed last month. Committed-versus-delivered is the most revealing slide in any agency report.",
+        "**What we learned.** Which pages beat or missed the forecast, and why. Fifteen minutes. Genuinely hard, and the part most agencies skip.",
+        "**Next month's commitments.** Named deliverables with dates. They become next month's slide three.",
+        "**Blockers.** Usually things the client owes — dev tickets, expert interviews, approvals. Be honest about who's holding up whom."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The rule that makes the monthly review work",
+        "body": "Tactics can change monthly. Priorities cannot. If the meeting ends with \"let's pause the technical work and do a link campaign instead\", you've just held a quarterly reset without the data or the people for one. Park it in the quarterly agenda and see if it still sounds good in eight weeks. It usually doesn't."
+      }
+    },
+    {
+      "h2": "The quarterly reset: the only meeting that can change direction",
+      "body": [
+        "Half a day, every three months, with the person who owns revenue in the room. This is the only forum where the plan is genuinely on trial — and it should be a real trial, not a ceremonial re-approval of what you were already doing.",
+        "Ninety days is the right interval because it's roughly how long SEO takes to answer a question. Shorter and you're reading noise; longer and you'll spend two quarters on a bet that was wrong in the first."
+      ],
+      "bullets": [
+        "**Re-rank the keyword and page priorities** against what actually converted last quarter, not what you assumed would. CRM data and sales calls beat search volume every time.",
+        "**Kill something.** A cluster that isn't working, a link tactic that isn't landing, a page type nobody reads. If nothing gets cut, you didn't hold a reset.",
+        "**Re-check the competitive set.** Who overtook you, on which queries, and what did they do? Quarterly is often enough to spot a pattern and rare enough that you don't chase one good week of theirs.",
+        "**Re-forecast.** Given three months of real data, what do the next two quarters look like? A forecast that never gets revised was never a forecast.",
+        "**Re-examine the budget split.** Technical eats 20–30% early and around 10% later. That freed capacity should go somewhere deliberate."
+      ]
+    },
+    {
+      "h2": "The annual rewrite: what gets questioned once a year",
+      "body": [
+        "Once a year, ask the questions that would be destabilising to ask more often. This is the meeting where a good agency argues against its own renewal if the honest answer points that way. Give each one a written answer, even when the answer is \"unchanged\"."
+      ],
+      "bullets": [
+        "**Is search still where our buyers are?** Categories move. If your pipeline shifted to LinkedIn, WhatsApp referrals or a marketplace, an excellent SEO plan is the wrong plan well executed.",
+        "**Is the channel mix right?** Organic, paid and social answer different problems. If organic compounds while paid stays flat, budget should follow — and say so out loud when it's the reverse. [Performance marketing](/performance) and [organic social](/social) exist for a reason.",
+        "**Is the site architecture still the right shape?** A year of publishing usually leaves a site that needs restructuring, not just more pages.",
+        "**Should this be in-house?** After a year you know the workload. Sometimes hiring genuinely wins — [what it costs to hire SEO talent in India](/journal/what-it-costs-to-hire-seo-talent-in-india) has the arithmetic.",
+        "**Is the agency still earning it?** Twelve months of monthly reviews should make this easy to answer. If it isn't easy, that's the answer."
+      ]
+    },
+    {
+      "h2": "Why changing your strategy every month destroys results",
+      "body": [
+        "This is the failure mode we're most often hired to clean up, and it's rarely caused by laziness. It's caused by attentive, impatient people doing their jobs.",
+        "SEO has a feedback delay of roughly six to twelve weeks between shipping something and knowing whether it worked. Change direction every month and you're changing before any of last month's work has reported back. You never learn anything, because you never let an experiment finish.",
+        "The compounding cost is worse. A content cluster works because thirty pages point at each other around one topic. Change topic every month and you get four half-clusters, none with enough depth or internal linking to rank. Same effort, a fraction of the result. Link building has the same shape — three consistent months beat one frantic month and two silent ones.",
+        "There's an incentive problem hiding here too. An agency that lets you redirect the work every month never has to be accountable for a plan; every month there's a fresh reason the last thing didn't get a chance. Comfortable for them, expensive for you.",
+        "Our version of the discipline: we freeze your trailing-90-day organic lead count on day one and don't touch it. If we haven't beaten it in 90 days, we keep working free until we do. That only works if the plan gets a full 90 days to run — which is exactly why the monthly meeting adjusts tactics and only the quarterly one changes the plan. The rest of it is on the [SEO service page](/seo)."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The four legitimate reasons to reset early",
+        "body": "A sustained ranking or traffic drop you've actually diagnosed. A replatform, migration or major site change. A real business pivot — new product, new market, new buyer. Or a budget change in either direction. Everything else waits for the quarter. \"A competitor published something good\" is not on this list."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How often should you update your SEO strategy?",
+      "a": "Re-prioritise quarterly and rewrite annually. Between those, review execution monthly and check for breakage weekly. The strategy itself — which audiences, which topics, which channels — should be stable for a full quarter at minimum, because SEO takes six to twelve weeks to tell you whether anything worked."
+    },
+    {
+      "q": "Is monthly SEO reporting enough?",
+      "a": "For reporting, yes. For catching problems, no. A de-indexing event, a bad deploy or a broken analytics tag can waste three weeks if the first person to notice is the monthly report. That's what the 15-minute weekly check is for — it exists to catch breakage, not to produce insight."
+    },
+    {
+      "q": "Who should attend an SEO review meeting?",
+      "a": "The person who owns SEO day to day, the marketing lead, and the agency's account lead — specifically the person who decides next month's work, not the one who assembles the deck. Add the person who owns revenue for the quarterly reset. If nobody in the room can make a decision, it isn't a review."
+    },
+    {
+      "q": "How long should you give an SEO strategy before changing it?",
+      "a": "Ninety days minimum, and six months for a competitive keyword set. Below 90 days you cannot distinguish a bad plan from a plan that hasn't finished being indexed and re-ranked yet. The exceptions are a diagnosed traffic drop, a migration, a business pivot or a budget change."
+    },
+    {
+      "q": "What should be on a monthly SEO report?",
+      "a": "The number against the frozen baseline first. Then leading indicators — impressions, average position for target queries, indexed versus published pages, new referring domains. Then committed-versus-delivered work, what you learned, next month's named commitments, and blockers. Anything that leads with traffic volume is hiding something."
+    }
+  ],
+  "related": [
+    { "type": "journal", "slug": "when-to-change-your-seo-strategy" },
+    { "type": "answers", "slug": "how-do-you-measure-seo-success" },
+    { "type": "journal", "slug": "how-to-read-an-seo-report" },
+    { "type": "services", "slug": "seo-reporting-services" },
+    { "type": "glossary", "slug": "google-search-console" },
+    { "type": "compare", "slug": "keyword-rankings-vs-organic-traffic" }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "slug": "why-performance-based-seo-pricing-breaks",
+  "type": "journal",
+  "primaryKeyword": "performance based seo pricing",
+  "secondaryKeywords": [
+    "pay for results seo",
+    "seo revenue share model",
+    "pay per ranking seo",
+    "commission based seo",
+    "seo pricing models"
+  ],
+  "cluster": "agency-economics",
+  "intent": "commercial",
+  "h1": "Why pay-for-results SEO pricing breaks in practice",
+  "metaTitle": "Why Performance-Based SEO Pricing Breaks",
+  "metaDescription": "Performance-based SEO pricing sounds fair and fails in practice. Attribution gaps, client-side blockers and cash flow break it. Here's what works.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Performance-based SEO pricing breaks on three mechanics: attribution can't credit organic across a multi-touch sale that takes months to close; the agency can't fix the client-side blockers that cap the result; and somebody has to fund six to nine months of salaries before the first payout arrives. It also quietly rewards brand terms and easy keywords.",
+  "takeaways": [
+    "Rev-share SEO fails on **measurement**, not on ethics. Nobody ever agrees on what organic search caused, and the disagreement starts around month five.",
+    "The agency controls perhaps half the outcome. Your dev queue, your pricing page and your sales team's callback time own the rest — and no pricing model has ever fixed that.",
+    "Deferred payment means the agency funds roughly **₹6–7 lakh of delivery cost per client** before earning anything. Only the very well capitalised and the very cheap can do it.",
+    "Risk reversal is the right instinct. Put it on the **fee** against a frozen baseline, not on a share of revenue nobody can attribute."
+  ],
+  "sections": [
+    {
+      "h2": "Why it sounds like the fairest deal in marketing",
+      "body": [
+        "Every founder who has paid twelve months of retainer for a flat line eventually asks the same thing: why don't you just take a cut of what you produce? It's a reasonable question. Good work earns more, bad work earns nothing, and the incentives look perfectly aligned on a whiteboard.",
+        "We're not arguing against risk reversal — we built our own offer around it. We're arguing that *revenue share* is the wrong instrument for SEO specifically. It works in affiliate marketing and in paid media for the same reason: attribution is clean and the feedback loop is days, not quarters.",
+        "SEO has neither. So the model doesn't collapse dramatically; it erodes, and by month seven you're in a dispute about numbers instead of a conversation about work. Here are the three mechanics that do the eroding."
+      ],
+      "table": {
+        "caption": "What each pricing model actually puts at risk, and where it breaks first.",
+        "head": ["Model", "What's at risk", "Where it breaks"],
+        "rows": [
+          [
+            "Flat retainer",
+            "Nothing, for the agency",
+            "You fund capacity whether or not it produces. Fine when they're honest, expensive when they coast."
+          ],
+          [
+            "Revenue share",
+            "The agency's whole fee, for 6–9 months",
+            "Attribution disputes, blockers the agency can't fix, and cash flow. Usually breaks around month five."
+          ],
+          [
+            "Pay per ranking",
+            "A per-keyword bounty",
+            "Rankings aren't revenue. You can win 40 positions on queries nobody with a credit card searches."
+          ],
+          [
+            "Pay per lead",
+            "Cost per delivered lead",
+            "Works only when both sides sign a definition of *qualified* before lead one arrives. Most disputes are definitional."
+          ],
+          [
+            "Fee at risk vs a frozen baseline",
+            "The agency's margin on one quarter",
+            "Needs a real CRM and real history. Doesn't work for a new site with no baseline to beat."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Break one: attribution can't survive a sale that takes nine months",
+      "body": [
+        "Revenue share requires a shared answer to *which revenue did SEO cause?* In a considered-purchase business that answer doesn't exist, and every tool you might use to produce it measures something narrower than the truth.",
+        "Take a normal path to purchase. Someone reads your comparison article on a work laptop in March. In May they see you mentioned in a WhatsApp group. In July they search your brand name, land on pricing, and fill in a form. In September procurement signs.",
+        "Now ask what your analytics recorded. GA4 gives you a lookback window measured in weeks — 30 days for acquisition, 90 for other conversions — and a five-month gap fits inside neither. Safari caps cookies written by JavaScript at seven days, so the March visit was forgotten before April. The conversion logs as direct or branded organic. Under a rev-share contract the agency that wrote the March article has no claim they can prove, and you have no reason to concede one."
+      ],
+      "bullets": [
+        "**Branded search is the biggest fight.** SEO creates brand searches downstream. You say brand demand was always yours; they say they built it. Both are partly right, so the clause gets settled by whoever is more tired.",
+        "**Dark social leaves no trace.** WhatsApp, Slack and forwarded links strip referrers and arrive as direct. In India that channel is not marginal — it's often how the decision actually spreads.",
+        "**The close happens in a CRM nobody connected.** Revenue sits in the CRM, touchpoints sit in analytics, and the join between them was never built.",
+        "**Last-click flatters the last thing you did.** Switch to data-driven and the model changes, so does the invoice. You're now paying an amount determined by a Google setting you can both edit."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The attribution clause is the whole contract",
+        "body": "In a rev-share SEO deal, most of the disputed money hangs on one paragraph defining attribution. If that paragraph is shorter than a page, one of you is going to feel robbed. Write it first, not last."
+      }
+    },
+    {
+      "h2": "Break two: the agency doesn't own half of the outcome",
+      "body": [
+        "Revenue share prices the agency as if they control the result. They don't. They control research, content, technical recommendations and link acquisition — and every one of those has to pass through something they can't touch.",
+        "This is what turns a friendly deal hostile. The agency's fee now depends on things the client is failing to do, so the agency starts chasing, and the client experiences that chasing as pressure rather than partnership."
+      ],
+      "table": {
+        "caption": "Common ceilings on an SEO result, and who actually controls them.",
+        "head": ["The blocker", "Who owns it", "What it does to a rev-share deal"],
+        "rows": [
+          [
+            "Technical fixes wait for a sprint slot",
+            "Client engineering",
+            "A four-hour fix takes six weeks. Three of those in a nine-month window halves the payout."
+          ],
+          [
+            "Legal or compliance review of content",
+            "Client legal",
+            "Publishing cadence collapses, nothing compounds. Nobody is at fault and everyone is furious."
+          ],
+          [
+            "Sales takes two days to call a lead back",
+            "Client sales",
+            "Organic leads convert worse purely from response time — and the agency is paid on the conversion."
+          ],
+          [
+            "Pricing, product fit, out-of-stock inventory",
+            "Client product",
+            "Traffic arrives and bounces. The agency delivered the demand and earns nothing from it."
+          ],
+          [
+            "A client-rendered app with no server rendering",
+            "Client engineering",
+            "Indexation is capped before any content work starts. Often invisible during the pitch."
+          ],
+          [
+            "No reviews, no citations, no reputation",
+            "Shared",
+            "Rankings arrive; clicks and trust don't. E-E-A-T isn't something an agency can install for you."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The honest version of this clause",
+        "body": "Any risk-shared contract needs a client-obligations section with dates: dev hours per month, approval turnaround, CRM access, a named decision-maker. Miss them and the risk-sharing pauses. Almost no rev-share proposal includes this, which tells you it was written to win a pitch rather than survive month six."
+      }
+    },
+    {
+      "h2": "Break three: somebody has to fund nine months of salaries",
+      "body": [
+        "This is the mechanic nobody raises in the sales call, and it decides who can offer the model at all.",
+        "Take a scope that would normally sell as a ₹75,000-a-month retainer. Most of that fee is delivery cost — writers, a technical SEO, an outreach lead, tool licences. Defer payment until performance arrives at month nine and the agency has funded roughly ₹6.75 lakh of work on one account before a rupee lands. Run ten and you're carrying near ₹65–70 lakh of working capital, on outcomes that depend on client dev queues you just read about.",
+        "There are exactly three ways to survive that, and all three are visible from outside once you know to look."
+      ],
+      "numbered": [
+        "**Be very well capitalised and price the risk.** That means 10–25% of attributed revenue, usually with a long tail. On a business doing ₹1 crore of attributed organic revenue in year two, 15% is ₹15 lakh a year against ₹9 lakh for a ₹75,000 retainer. Performance pricing isn't the cheap option — it's an insurance premium, priced like one.",
+        "**Cut delivery cost until the maths works.** The common route. Fewer hours, junior staff, templated content, bought links because links are the fastest lever and a nine-month payback needs a shortcut. You're now the client of a business that must gamble to get paid.",
+        "**Cherry-pick clients who were going to grow anyway.** The safest rev-share client is an established brand with existing demand and a clean site — which means the model is least available to exactly the businesses that most want it."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "Why the cheapest-looking model is usually the dearest",
+        "body": "Retainers are priced against cost. Performance deals are priced against risk. Once the SEO is working the risk is gone but the percentage isn't, which is why most rev-share arrangements get renegotiated or ended by the *client* in year two."
+      }
+    },
+    {
+      "h2": "The incentives it creates, none of which appear in the deck",
+      "body": [
+        "Pricing decides behaviour. Nobody has to be dishonest for a rev-share contract to steer the work somewhere you wouldn't have chosen. Watch what each of these does to the agency's payout and you can predict the roadmap before it's written."
+      ],
+      "numbered": [
+        "**Brand terms get optimised first.** They convert best and they're already yours. The fastest route to a payout is claiming revenue that was arriving regardless.",
+        "**Easy keywords beat valuable ones.** A 900-word article on a low-competition query ranks in eight weeks. The page that wins your most commercial term needs six months and three internal arguments. Guess which gets briefed.",
+        "**Technical work with no near-term payoff gets skipped.** Crawl traps, a decade of redirects, internal-link structure — all high-return, all invisible for a quarter. Deferred payment defunds exactly the work that compounds.",
+        "**Links get bought.** Earned digital PR is slow and fails often; a paid network delivers next Tuesday. When the agency's rent depends on month nine, the penalty risk lands on your domain, not theirs.",
+        "**Discounting and paid overlap creep in.** If attributed revenue is the metric, a promo or a last-click shift from paid moves the number without SEO improving at all.",
+        "**Losing accounts get quietly abandoned.** Your account is now a free option. Around month five, if it looks unwinnable, the rational move is to stop staffing it and keep the upside if it comes good anyway. No email announces this."
+      ]
+    },
+    {
+      "h2": "Where pay-for-performance genuinely does work",
+      "body": [
+        "Be fair to the model: there are real situations where it's the correct structure, and they share one feature. The gap between the work and the money is short and legible."
+      ],
+      "bullets": [
+        "**Single-session ecommerce with low consideration.** Search, land, buy in one session. Attribution is close to honest and the loop is days long.",
+        "**Pay-per-qualified-lead where the lead is the product.** Common in insurance, education and home services. Works only with a signed definition of *qualified* and an arbitration path using call recordings.",
+        "**Defined technical outcomes with a pass/fail test.** Recovering from a manual action, indexing 90% of a catalogue, hitting Core Web Vitals thresholds. Binary, verifiable, no attribution needed — the most underused version of performance pricing in this market.",
+        "**Affiliate and true partnership arrangements**, where the partner controls the site, the offer and the funnel. That's a media business, not an agency relationship, which is why it works there."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The pattern",
+        "body": "Performance pricing works wherever the outcome is measured in one session or one binary test. It breaks wherever the outcome takes six months, four touchpoints and two systems to observe. That's a measurement property, not a moral one."
+      }
+    },
+    {
+      "h2": "What we do instead: fee at risk against a frozen baseline",
+      "body": [
+        "The instinct behind rev-share is right — the agency should carry something. We just moved the risk from your revenue, which nobody can attribute, onto our fee, which nobody can dispute.",
+        "On day one we freeze your trailing-90-day count of qualified leads from organic search. Not traffic, not rankings, not attributed revenue — leads, in your CRM, with a definition we both sign. That number goes in the contract with its value beside it. If we haven't beaten it in 90 days, we keep working free until we do.",
+        "Look at what that avoids. No attribution argument, because we compare one CRM number to the same CRM number ninety days later. No nine-month funding hole, because the window is a quarter. No incentive to buy links, since a penalty in month four costs us the account and the free quarter. And no upside in claiming brand revenue we didn't create, because the baseline already contains whatever brand demand you had.",
+        "It costs us in a different currency: capacity. Three clients a month, because you can't carry a free-quarter liability across forty accounts. It also makes us decline work — new domains with no baseline, businesses with no CRM, sites behind a six-week release train. [What that guarantee costs us](/journal/what-an-seo-guarantee-costs-the-agency) walks the full ledger. SEO runs from ₹75,000/mo, ₹40,000 for smaller sites, ex-GST, month-to-month after the first quarter."
+      ]
+    },
+    {
+      "h2": "If you still want revenue share, structure it like this",
+      "body": [
+        "Some businesses genuinely should push for it — usually the ecommerce and lead-gen cases above. These seven clauses separate a deal that lasts from one that ends in a spreadsheet argument."
+      ],
+      "numbered": [
+        "**Put a floor fee under it**, enough to cover delivery cost — typically 40–60% of the equivalent retainer. No floor forces the agency to gamble, and you're holding the domain when the gamble lands.",
+        "**Measure in the CRM, not analytics.** One system, one field, one owner. Analytics informs the work; the CRM settles the invoice.",
+        "**Exclude brand terms and existing customers**, explicitly, by name. This clause alone prevents most disputes.",
+        "**Write the attribution model down in full** — model, lookback window, what counts as an assist — and agree neither side changes the setting unilaterally.",
+        "**Cap the upside and put a term on it.** Twenty-four months, or a multiple of the equivalent retainer. Otherwise you pay an insurance premium long after the risk has gone.",
+        "**Add client obligations with dates.** Dev hours, approval turnaround, CRM access, a named decision-maker. This protects you too — it stops your sprint board being blamed for thin work.",
+        "**Set a 90-day review with a clean exit for both sides.** By day 90 you'll know whether the measurement is holding. [How SEO agencies price their work](/answers/how-do-seo-agencies-price-their-work) and the [pricing models compared](/cost/seo-pricing-models) are worth reading before you sign any of it."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is performance-based SEO pricing a scam?",
+      "a": "No — it's a legitimate structure applied to the wrong problem most of the time. It works where attribution is clean and fast: single-session ecommerce, pay-per-qualified-lead, or a binary technical outcome like penalty recovery. It breaks where the sale takes months and four touchpoints, which describes most B2B and considered purchases."
+    },
+    {
+      "q": "Why won't good SEO agencies work on commission?",
+      "a": "Three practical reasons. They can't prove which revenue organic search caused. They don't control your dev queue, your approvals or your sales response time, all of which cap the result. And deferring nine months of salaries on outcomes they half control needs working capital most agencies don't have."
+    },
+    {
+      "q": "Is revenue-share SEO cheaper than a retainer?",
+      "a": "Rarely, past the first year. Performance deals are priced against risk, so the percentage stays after the risk has gone. At 15% of ₹1 crore in attributed organic revenue you pay ₹15 lakh a year where the equivalent retainer might be ₹9 lakh. You're buying insurance, and insurance has a premium."
+    },
+    {
+      "q": "What about paying per keyword ranking?",
+      "a": "Avoid it. Rankings aren't revenue, and per-ranking bounties reward whoever picks the easiest keyword list. An agency can collect on forty positions for queries no buyer ever types. If you want to pay for outcomes, pay for leads in your CRM or for a binary technical result you can verify yourself."
+    },
+    {
+      "q": "What's the difference between a rev-share and an SEO guarantee?",
+      "a": "A rev-share puts a slice of your revenue at risk and needs perfect attribution to settle. A baseline guarantee puts the agency's fee at risk against one number you both froze on day one — your trailing-90-day organic leads. Same alignment, no attribution argument, and a 90-day window instead of a nine-month one."
+    },
+    {
+      "q": "Can an agency guarantee a number one ranking instead?",
+      "a": "Nobody controls Google's index, so no honest agency guarantees a position, and Google's own guidance warns about it. A guarantee only means something measured against your own baseline, with a defined remedy and a date. Anything phrased as a promised position is a sales line, not a commitment."
+    }
+  ],
+  "related": [
+    { "type": "compare", "slug": "performance-based-seo-vs-retainer" },
+    { "type": "cost", "slug": "seo-pricing-models" },
+    { "type": "answers", "slug": "how-do-seo-agencies-price-their-work" },
+    { "type": "journal", "slug": "what-an-seo-guarantee-costs-the-agency" },
+    { "type": "answers", "slug": "do-seo-agencies-guarantee-rankings" },
+    { "type": "compare", "slug": "retainer-vs-project" }
+  ]
+}

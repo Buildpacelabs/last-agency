@@ -1,0 +1,166 @@
+{
+  "slug": "healthcare",
+  "type": "seo-for",
+  "primaryKeyword": "healthcare seo services india",
+  "secondaryKeywords": [
+    "seo for healthcare companies",
+    "medical seo india",
+    "healthcare seo agency",
+    "ymyl seo healthcare",
+    "seo for clinics india"
+  ],
+  "cluster": "healthcare-and-clinics",
+  "intent": "transactional",
+  "industry": "Healthcare",
+  "h1": "Healthcare SEO that survives Google's YMYL bar",
+  "metaTitle": "Healthcare SEO Services India: E-E-A-T First",
+  "metaDescription": "Healthcare SEO services in India built for YMYL rules: named doctor authorship, medical review sign-off and claims that survive Indian advertising law.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Healthcare SEO in India answers to two gatekeepers, not one. Google treats medical content as Your Money or Your Life and holds it to a higher evidence bar, while Indian medical advertising rules limit what a registered practitioner may claim. Pages need named clinical authorship, a visible review date, and defensible claims.",
+  "takeaways": [
+    "E-E-A-T is not a switch you can flip. It's how Google's raters describe what its systems try to approximate — you can't tick it, you can only make it obvious.",
+    "'Reviewed by our medical team' is worth nothing. The unit of trust is a named practitioner with a published registration number.",
+    "Compliant content and content Google rewards look almost identical: cautious, sourced, specific, non-promotional. The regulator and the algorithm are pointing the same way.",
+    "For a single-location clinic, the first ₹40,000 a month should probably go to local visibility, not articles."
+  ],
+  "sections": [
+    {
+      "h2": "Two gatekeepers, and the second one isn't Google",
+      "body": [
+        "Every other industry on this site answers to one referee. Healthcare answers to two, and they want different things.",
+        "Google's quality rater guidelines classify medical content as Your Money or Your Life — pages that could affect somebody's health, safety, financial stability or wellbeing — and its ranking systems are tuned to prefer demonstrable expertise on those queries. That's why broad core updates reshuffle health results harder than any other vertical. The August 2018 update the industry nicknamed 'Medic' is the famous example, but every core update since has moved health rankings around, and thin health content is usually what moves down.",
+        "The second referee is Indian medical advertising regulation, which limits what a registered practitioner may say in public about their own practice. A page can be technically flawless, clinically accurate, and still be a professional conduct problem. Most agencies selling healthcare SEO in India have never read the code they're writing against."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "E-E-A-T is a description, not a dial",
+        "body": "Experience, expertise, authoritativeness and trust are the vocabulary Google's human raters use when they score search quality. They aren't a ranking factor with a slider. What they do give you is a checklist of what to make visible on the page — see [E-E-A-T](/glossary/e-e-a-t) for the longer version."
+      }
+    },
+    {
+      "h2": "Named clinical authorship, done properly",
+      "body": [
+        "'Reviewed by our medical team' means nothing to a reader and less to a rater. The unit of trust in health content is a named human being whose credentials can be checked by a stranger in under a minute."
+      ],
+      "bullets": [
+        "**Full name, qualifications and specialty**, written the way they're registered rather than the way marketing would phrase them.",
+        "**State Medical Council or NMC registration number, published on the page.** It's public information and it's verifiable, which is the entire point of putting it there.",
+        "**A genuine author page** — affiliation, years in practice, procedures performed, hospital appointments, publications, conference talks. Not a sixty-word bio under a stock headshot.",
+        "**`Person` schema linking byline to author page**, with `sameAs` pointing at institutional profiles, PubMed, or professional listings. Machines need the connection stated explicitly.",
+        "**One author per page, never a department.** Committee bylines exist to distribute accountability and they read exactly that way."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The resourcing decision behind all of this",
+        "body": "This requires actual doctors to spend actual time. A clinic that won't give its consultants two hours a month cannot win YMYL search, and no volume of copywriting substitutes for a named reviewer. That's an operations decision, and it's worth making before you commission sixty articles rather than after."
+      }
+    },
+    {
+      "h2": "The medical review workflow",
+      "body": [
+        "Nothing clinical gets published without going through this. Six stages, and it's the difference between a health site that survives core updates and one that gets rebuilt every eighteen months."
+      ],
+      "table": {
+        "caption": "The review workflow we run on medical content.",
+        "head": ["Stage", "Owner", "Output"],
+        "rows": [
+          ["Brief", "SEO lead with the clinician", "Query, intent, scope, and an explicit list of claims the page will and won't make"],
+          ["Draft", "Medical writer", "Copy with sources cited inline — clinical guidelines, journals, government advisories"],
+          ["Clinical review", "Named registered practitioner", "Corrections plus sign-off on every clinical claim in the piece"],
+          ["Compliance pass", "Marketing lead", "Claims checked against advertising rules; testimonials and outcome promises removed"],
+          ["Publish", "Web team", "Visible 'Written by' and 'Medically reviewed by [name, registration no.] on [date]'"],
+          ["Re-review", "Clinician", "Scheduled at 12 months, sooner whenever guidance changes"]
+        ]
+      },
+      "bullets": [
+        "**Show the review date on the page**, not only inside the schema. It tells a reader the page is maintained and it forces you to actually maintain it.",
+        "**A stale stamp is worse than none.** 'Reviewed May 2021' on a page a patient reads in 2026 actively undermines the trust you were trying to signal.",
+        "**Keep the source list visible.** Health readers check. So do raters."
+      ]
+    },
+    {
+      "h2": "What Indian rules will not let you say",
+      "body": [
+        "This is the section your last agency skipped. Treat it as orientation, not legal advice — have a healthcare lawyer review your claim library once, and then again whenever you enter a new specialty."
+      ],
+      "bullets": [
+        "**Soliciting patients through advertising is restricted** for registered practitioners under the Indian Medical Council (Professional Conduct, Etiquette and Ethics) Regulations, 2002. Those remain the practical reference point: the NMC's 2023 replacement regulations were notified and then kept in abeyance. The safe posture is informational content rather than promotional claims about the practitioner.",
+        "**Patient testimonials** are the most common violation on Indian clinic websites. Treat them as high-risk, never as a substitute for clinical evidence, and never as the proof that carries a treatment page.",
+        "**Guaranteed outcomes and success rates** — 'we cure', '98% success', 'permanent results'. Even where a number is real and auditable, publishing it as a promise is the problem.",
+        "**The Drugs and Magic Remedies (Objectionable Advertisements) Act, 1954** prohibits advertising a cure for a scheduled list of conditions. It's old, it's still enforced, and it catches a great deal of wellness copy written by people who've never heard of it.",
+        "**Sex determination cannot be advertised at all** under the PCPNDT Act, 1994. Diagnostic centres fall foul of this through careless keyword targeting far more often than through intent.",
+        "**Before-and-after imagery and comparative claims** are the most contested grey area in aesthetics and cosmetic work. Documented consent, clinical context and disclaimers are the minimum, not automatically sufficient."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The regulator and the algorithm agree, for once",
+        "body": "Compliant medical content and content Google's systems reward look almost identical — cautious, sourced, specific, non-promotional, written by someone qualified. That's an unusual alignment and it's worth exploiting: writing for the code generally produces the page that ranks anyway."
+      }
+    },
+    {
+      "h2": "Schema that earns something on health pages",
+      "body": [
+        "Structured data will not rank a bad page. On health content it does two useful jobs: it states entity relationships that would otherwise have to be inferred, and it keeps you eligible for the handful of rich results still available in this space."
+      ],
+      "bullets": [
+        "**`MedicalWebPage`** on clinical content, with `reviewedBy` pointing at the reviewing practitioner and `lastReviewed` matching the date shown on the page.",
+        "**`Physician` and `MedicalOrganization`** on practitioner and clinic pages — address, specialties, accepted insurance, and `sameAs` to registrations and profiles.",
+        "**`FAQPage` is still worth implementing here.** Google restricted FAQ rich results in 2023 to well-known authoritative government and health sites. Health is one of the two categories that stayed eligible, which turns a commodity feature everywhere else into a structural advantage in this vertical.",
+        "**`MedicalCondition` and `MedicalProcedure`** where the page genuinely describes one, marked up with the same care you'd apply to the copy itself.",
+        "**Local business markup plus a properly maintained Google Business Profile per location** — which, for most clinics, matters more than everything above it on this list."
+      ]
+    },
+    {
+      "h2": "For most clinics, buy local visibility before content",
+      "body": [
+        "Here's the thing a content-selling agency won't tell a single-location clinic: your first ₹40,000 a month probably shouldn't go on articles at all."
+      ],
+      "numbered": [
+        "**Google Business Profile, taken seriously** — correct primary category, every service listed, real photographs, accurate hours, Q&A answered, and a review flow that runs continuously instead of in panicked bursts. For most clinics the map pack is the majority of the demand.",
+        "**Location pages that are genuinely different** — directions, parking, which consultants sit there on which days, which procedures are available at that site. Not the same four hundred words with the locality name swapped, which is scaled content and reads like it.",
+        "**One page per practitioner.** These rank for name searches, the highest-converting queries a clinic ever receives, and they're frequently the only thing standing between your consultant and a third-party directory listing.",
+        "**Then** condition and procedure content, once there's a reason to trust the site publishing it."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "When content comes first instead",
+        "body": "Scale changes the order. A hospital group across six cities, a diagnostics chain, a telehealth platform or an IVF network competes on national informational queries and needs the content engine from month one, because the local layer alone caps out early. See [SEO for hospitals](/seo-for/hospitals) and [SEO for dental clinics](/seo-for/dental-clinics) for how those split. Our SEO runs from ₹75,000/mo, single-clinic sites from ₹40,000/mo, and the number we commit to is your own trailing-90-day qualified enquiries from organic, frozen on day one — miss it in 90 days and we keep working free until we beat it. We don't promise ranking positions, and on YMYL queries anyone who does is guessing."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What makes healthcare SEO different from normal SEO?",
+      "a": "Two things. Google classifies medical content as Your Money or Your Life and holds it to a visibly higher evidence bar, so authorship and review provenance matter far more than elsewhere. And Indian medical advertising rules restrict what a registered practitioner may claim, which limits the copy before Google ever sees it."
+    },
+    {
+      "q": "Can a doctor or clinic advertise online in India?",
+      "a": "Informational content is generally acceptable; direct solicitation of patients is restricted under the Indian Medical Council (Professional Conduct, Etiquette and Ethics) Regulations, 2002, which remain the practical reference after the NMC's 2023 regulations were kept in abeyance. Get a healthcare lawyer to review your claim library — this page is orientation, not advice."
+    },
+    {
+      "q": "Do healthcare websites need a doctor to review every article?",
+      "a": "Every clinical article, yes, by a named registered practitioner whose registration number is published. It's the clearest available signal that the page has expertise behind it, and it's also the workflow that catches inaccurate claims before a patient acts on them."
+    },
+    {
+      "q": "How long does healthcare SEO take to work in India?",
+      "a": "Local visibility work — Google Business Profile, location and practitioner pages — often shows in six to ten weeks. National condition and procedure content on a YMYL topic typically takes six to twelve months, because trust signals accumulate slowly and the incumbents are hospital chains with decades of authority."
+    },
+    {
+      "q": "Should a clinic spend on content or on Google Business Profile first?",
+      "a": "Google Business Profile, location pages and practitioner pages first, for almost any single-location or few-location clinic. The map pack is where the demand is. Content-first makes sense for hospital groups, diagnostics chains, telehealth platforms and anyone competing on national informational queries."
+    },
+    {
+      "q": "How much do healthcare SEO services cost in India?",
+      "a": "Usually ₹40,000–₹2,50,000 a month, and medical content genuinely costs more to produce because a qualified clinician has to review it. Our SEO starts at ₹75,000/mo, with single-clinic sites from ₹40,000/mo, ex-GST and month-to-month after the first quarter."
+    }
+  ],
+  "related": [
+    { "type": "seo-for", "slug": "hospitals" },
+    { "type": "seo-for", "slug": "dental-clinics" },
+    { "type": "glossary", "slug": "e-e-a-t" },
+    { "type": "services", "slug": "local-seo-services" },
+    { "type": "glossary", "slug": "schema-markup" },
+    { "type": "answers", "slug": "what-is-local-seo" }
+  ]
+}

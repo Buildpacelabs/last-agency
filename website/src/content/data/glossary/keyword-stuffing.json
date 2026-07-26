@@ -1,0 +1,119 @@
+{
+  "slug": "keyword-stuffing",
+  "type": "glossary",
+  "primaryKeyword": "keyword stuffing",
+  "secondaryKeywords": [
+    "keyword density seo",
+    "over optimization penalty",
+    "keyword stuffing example",
+    "how many times to use a keyword",
+    "keyword stuffing penalty"
+  ],
+  "cluster": "on-page",
+  "intent": "informational",
+  "h1": "Keyword stuffing",
+  "metaTitle": "Keyword Stuffing: What It Is and Why It Fails",
+  "metaDescription": "Keyword stuffing is repeating a phrase unnaturally to force a ranking. There is no correct keyword density. Here is what it looks like and what to write.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Keyword stuffing",
+  "definition": "Keyword stuffing is the practice of repeating a target phrase, or padding a page with lists of keywords and city names, in an attempt to make a search engine rank it for those terms.",
+  "answer": "Keyword stuffing is cramming a target phrase into a page unnaturally — repeated in every paragraph, hidden in the footer, or listed as forty city names. Google's spam policies name it explicitly. There is no ideal keyword density, no correct percentage, and no version of this tactic that has worked since roughly 2012.",
+  "takeaways": [
+    "There is **no keyword density target**. Google has never published one; the numbers you've read came from plugin authors.",
+    "Google's spam policies name keyword stuffing directly, and the examples they give — city-name blocks, phone number lists — describe half the service pages on the Indian web.",
+    "A green light in Yoast or Rank Math means you satisfied a formula, not that the page answers the query.",
+    "The replacement isn't a lower density. It's covering the subject properly, in the words you'd use anyway."
+  ],
+  "sections": [
+    {
+      "h2": "The four shapes keyword stuffing takes",
+      "body": [
+        "Google's spam policies name keyword stuffing directly, and the examples are unusually specific: blocks of text listing cities and regions a page wants to rank for, lists of phone numbers with no supporting content, and a phrase repeated until the sentence stops making sense.",
+        "It rarely arrives as a deliberate decision. It arrives as a brief that said \"use the keyword 12 times\"."
+      ],
+      "bullets": [
+        "**Body repetition.** The exact phrase forced into every paragraph, at the cost of the sentence. You can hear it when you read the page aloud.",
+        "**Hidden text.** White text on a white background, text set to `font-size: 0`, or a block pushed off-screen with CSS. Google renders CSS now.",
+        "**Footer and sidebar keyword lists.** Forty links reading \"seo company mumbai\", \"seo company pune\", \"seo company thane\", stamped onto every page.",
+        "**Attribute stuffing.** Alt text written as a keyword string, filenames like `best-cheap-seo-agency-india.jpg`, and the meta keywords tag — which Google confirmed it ignores back in 2009."
+      ]
+    },
+    {
+      "h2": "There is no correct keyword density",
+      "body": [
+        "Ask ten SEO blogs for the right keyword density and you'll get ten numbers between 0.5% and 3%. None came from Google. Google has never published a density target, and the reason is mechanical: modern retrieval doesn't count string occurrences against a threshold. It scores how well a document covers a subject, using embeddings and entity relationships that don't care whether you typed the phrase four times or nine.",
+        "The number survives because a plugin prints it. Yoast and Rank Math divide occurrences by word count and turn the result into a traffic light. That's a readability heuristic written by a plugin author — never calibrated against Google's index, and computed by software with no access to the thing it claims to score."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The green light is not a ranking",
+        "body": "If you're rewriting a good sentence to make a plugin happy, you're optimising for the plugin. Founders regularly hand us copy that reads like a hostage note because somebody chased a green dot that no search engine can see."
+      }
+    },
+    {
+      "h2": "The Indian variant: city stuffing",
+      "body": [
+        "The most common version we see here isn't repetition inside a paragraph. It's geography. One service page, forty city names, either scattered through the copy (\"our packers and movers in Pune, Nashik, Nagpur and Thane\") or dumped into a footer block linking to forty near-identical URLs.",
+        "It looks efficient — one template, forty markets. It fails on two of Google's own policies at once: keyword stuffing covers the city block, and the doorway-pages rule covers URLs built for regions that funnel everyone to the same place. It's also [thin content](/glossary/thin-content), since the only difference between two of those pages is a find-and-replace.",
+        "The alternative is unglamorous. Build a city page only where you can say something true and specific — an address, named staff, the pin codes you serve. Otherwise write one strong page and let it cover the region. Where that line sits is in [programmatic SEO and scaled content](/journal/programmatic-seo-and-the-scaled-content-line)."
+      ]
+    },
+    {
+      "h2": "What to write instead",
+      "body": [
+        "Stop counting the string and list what a person searching that query needs settled. A page about link pricing needs numbers; a page about a penalty needs the recovery steps. Cover those and the phrase appears on its own, alongside the variants you'd have used anyway.",
+        "That's the practical end of [entity SEO](/glossary/entity-seo): search engines resolve a page to a subject and its related concepts, not to a string frequency. Five paragraphs naming the tools, the costs and the failure modes beat fifty repetitions of the head term."
+      ],
+      "numbered": [
+        "Read the page aloud. Repetition is audible long before it's measurable.",
+        "Check the footer and sidebar — that's where stuffing hides on templated sites, and it repeats sitewide.",
+        "Check alt text and image filenames. Alt text describes the image for someone who can't see it. That's the whole brief."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many times should I use a keyword on a page?",
+      "a": "There is no correct number, because no search engine publishes one. As a working ceiling, if repetition is noticeable when you read the page aloud, it's too much — that usually lands near once per hundred words. Coverage of the subject matters far more than frequency of the phrase."
+    },
+    {
+      "q": "Is keyword stuffing a penalty or just ignored?",
+      "a": "Both happen. Mild over-repetition is usually just discounted — the page ranks on its merits and the padding does nothing. Hidden text, doorway city blocks and machine-generated keyword pages can attract a manual action, which shows up in Search Console under Manual Actions and needs a reconsideration request."
+    },
+    {
+      "q": "Does Yoast's keyword density score matter?",
+      "a": "It's a heuristic written by the plugin's authors, not a signal Google reads. It's useful as a rough nudge if a page genuinely never mentions its subject. It is not useful as a target, and editing good copy to turn the dot green makes the page worse for the only audience that pays you."
+    },
+    {
+      "q": "Are city names in the footer keyword stuffing?",
+      "a": "If the block exists so search engines see the city names rather than so users can navigate, yes — Google's spam policy names exactly this pattern. A short list of the locations you genuinely serve is fine. Forty links to near-identical pages built by find-and-replace is not."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "on-page-seo-meaning"
+    },
+    {
+      "type": "glossary",
+      "slug": "thin-content"
+    },
+    {
+      "type": "glossary",
+      "slug": "entity-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "anchor-text"
+    },
+    {
+      "type": "compare",
+      "slug": "white-hat-vs-black-hat-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "programmatic-seo-and-the-scaled-content-line"
+    }
+  ]
+}

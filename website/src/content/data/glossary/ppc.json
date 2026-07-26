@@ -1,0 +1,130 @@
+{
+  "slug": "ppc",
+  "type": "glossary",
+  "primaryKeyword": "ppc",
+  "secondaryKeywords": [
+    "what is ppc marketing",
+    "pay per click meaning",
+    "ppc vs seo",
+    "how does ppc work",
+    "ppc advertising india"
+  ],
+  "cluster": "paid",
+  "intent": "informational",
+  "h1": "PPC (pay-per-click)",
+  "metaTitle": "PPC: What Pay-Per-Click Is and How It Works",
+  "metaDescription": "PPC means you pay only when someone clicks. The auction arithmetic that lets a rival outrank you on a lower bid, plus realistic Indian CPC bands.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "PPC (pay-per-click)",
+  "definition": "PPC is an advertising model in which the advertiser pays the platform only when someone clicks the ad, rather than paying for the ad being displayed.",
+  "answer": "PPC means pay-per-click: you're charged only when someone clicks, not when your ad appears. Placement is decided by an auction where your bid is multiplied by a quality rating, so a rival with better ads and a better landing page can outrank you while paying less. Indian search CPCs run roughly ₹10–₹500 by category.",
+  "takeaways": [
+    "The highest bidder does **not** automatically win. Ad Rank is bid multiplied by quality, and quality routinely beats money.",
+    "You almost never pay your maximum bid — the ad below you sets your price.",
+    "\"PPC\" is a billing model, not a channel. Search, Shopping, Meta, YouTube and LinkedIn all sell clicks, at wildly different prices and intents.",
+    "Under roughly ₹40,000–₹50,000 a month, most Indian search accounts never gather enough conversion data for automated bidding to work properly."
+  ],
+  "sections": [
+    {
+      "h2": "The auction, with the actual arithmetic",
+      "body": [
+        "Every time someone searches, Google runs an auction in the time it takes the page to load. Advertisers don't queue by bid. Each one gets an **Ad Rank**, and the ranks decide who shows and in what order.",
+        "Simplified, Ad Rank is your bid multiplied by your quality rating. (Google also weighs ad format, extensions and the search context, and applies rank thresholds — but bid × quality is the part you control and the part that explains most outcomes.) Here's what that does to two advertisers on the same keyword."
+      ],
+      "table": {
+        "caption": "Same keyword, same auction. B bids 40% less and wins.",
+        "head": ["", "Advertiser A", "Advertiser B"],
+        "rows": [
+          ["Maximum bid", "₹100", "₹60"],
+          ["Quality Score", "4", "9"],
+          ["Ad Rank (bid × quality)", "400", "540"],
+          ["Position", "Second", "First"],
+          ["What B actually pays per click", "—", "(400 ÷ 9) + ₹0.01 = **₹44.45**"]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "Read that last row again",
+        "body": "B bid ₹60, ranked above someone bidding ₹100, and paid ₹44.45. The gap isn't budget. It's a relevant ad pointing at a landing page that answers the query."
+      }
+    },
+    {
+      "h2": "Why the higher bidder loses",
+      "body": [
+        "Google's incentive isn't your bid, it's revenue per search — and an irrelevant ad nobody clicks earns nothing however high the bid. So the auction is weighted toward ads people will actually click.",
+        "That weighting is [Quality Score](/glossary/quality-score): a 1–10 diagnostic built from expected click-through rate, ad relevance and landing page experience. The live auction recalculates it per query, so the reported number is directional rather than exact.",
+        "The consequence founders miss: fixing your landing page is a bidding strategy. A page that loads fast, matches the ad's promise and makes the next step obvious lowers what every click costs."
+      ]
+    },
+    {
+      "h2": "Where PPC runs, and what a click means on each",
+      "body": [
+        "\"PPC\" gets used as a synonym for Google Ads. It isn't. It's a pricing model that shows up across very different surfaces with very different buyer intent."
+      ],
+      "bullets": [
+        "**Google Search** — someone typed a need. Highest intent, highest CPC, smallest volume.",
+        "**Google Shopping** — product listings against product queries. Feed quality does what ad copy does elsewhere. Brutal against marketplaces.",
+        "**Meta** — nobody was looking for you. Cheap clicks, interruption intent, creative does most of the work. Usually bought on impressions, reported back as an effective CPC.",
+        "**YouTube** — bought on views or impressions. Good for demand creation, poor for a same-week decision.",
+        "**LinkedIn** — the most expensive clicks in the market, justified only when one B2B deal is worth several lakhs.",
+        "**Amazon and Flipkart Ads** — clicks at the point of purchase on someone else's platform. Highest intent of all, and you're renting the customer."
+      ]
+    },
+    {
+      "h2": "What a click costs in India",
+      "body": [
+        "Broad bands, because a real CPC depends on category, city, match type, device and who else is bidding this week. Local services and retail clicks typically sit around ₹10–₹60. Healthcare, real estate and India-targeted B2B SaaS land roughly ₹40–₹300. Education, study abroad and BFSI are the expensive end, commonly ₹80–₹500 and above, because one conversion is worth so much that aggregators bid to the edge of their payout.",
+        "Directional bands, not a quote — pull your own from Keyword Planner with your real geography selected. [Cost per click](/glossary/cost-per-click) breaks them down by category properly.",
+        "Meta clicks in India are a fraction of search clicks, because you're buying attention rather than intent. Cheaper clicks are not cheaper customers, and that comparison misleads more founders than any other number in this business."
+      ]
+    },
+    {
+      "h2": "When PPC beats SEO, and when it's just a tax",
+      "body": [
+        "PPC wins when you need traffic this quarter, when you're testing an offer or a message before committing content budget to it, when demand is seasonal, or when the query is transactional and marketplaces have the organic results locked up. It's also the fastest honest way to find out whether anyone wants what you're selling.",
+        "It's a tax when your margins can't absorb the click cost, when the sales cycle is long enough that attribution collapses, when your landing page converts at under 1% and nobody's fixing it, or when the budget is too small for the platform to ever learn. Turn the ads off and the traffic stops the same day — that's the honest trade against [SEO](/seo), where nothing happens for months and then keeps happening.",
+        "We run performance marketing from ₹40,000/mo, with ad spend billed separately at zero media markup. [Full pricing is published](/pricing), including the bundle that pairs it with organic."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The markup question to ask any agency",
+        "body": "Ask whether they take a percentage of ad spend. If they do, their incentive is for your spend to go up, not for your cost per acquisition to come down. It's the single most common misalignment in Indian performance marketing and almost nobody raises it in the pitch."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What does PPC stand for?",
+      "a": "Pay-per-click. It's a billing model where the advertiser pays only when someone clicks the ad, rather than paying for impressions. It's used across Google Search, Shopping, Meta, LinkedIn, Amazon Ads and most other ad platforms, at very different prices."
+    },
+    {
+      "q": "How much should I budget for PPC in India?",
+      "a": "Enough that the platform can learn. For Google Search, roughly ₹40,000–₹50,000 a month is where automated bidding starts having enough conversion data to work with in most categories. Below that, use manual bidding on a tight keyword set and expect to do more of the thinking yourself."
+    },
+    {
+      "q": "Is PPC better than SEO?",
+      "a": "They answer different questions. PPC buys traffic now and stops when the card does; SEO takes three to six months and compounds. If you need pipeline this quarter, run ads. If you're building something that should still be generating leads in two years without a media budget, do both and let the ads fund the wait."
+    },
+    {
+      "q": "Why is my competitor above me when I bid more?",
+      "a": "Because Ad Rank is bid multiplied by quality, not bid alone. A rival with a more relevant ad and a better landing page can outrank you on a lower bid — and pay less per click while doing it. Raising the bid treats the symptom; fixing the landing page treats the cause."
+    },
+    {
+      "q": "Do I pay when someone sees my ad but doesn't click?",
+      "a": "Not on a pay-per-click basis, no. On Search you're charged only for clicks. On Meta and Display, inventory is often bought on a cost-per-thousand-impressions basis and then reported back to you as an effective CPC, so you are in effect paying for views."
+    },
+    {
+      "q": "Can I run PPC myself without an agency?",
+      "a": "For a small single-city campaign on a handful of keywords, genuinely yes — build a tight keyword list, write honest ads, add negatives weekly, and watch the search terms report. Agencies earn their fee where there are many campaigns, real budget at risk, and feeds or landing pages that need engineering."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "cost-per-click" },
+    { "type": "glossary", "slug": "quality-score" },
+    { "type": "glossary", "slug": "return-on-ad-spend" },
+    { "type": "compare", "slug": "ppc-vs-seo" },
+    { "type": "compare", "slug": "google-ads-vs-seo" },
+    { "type": "cost", "slug": "digital-marketing-agency-cost-india" }
+  ]
+}

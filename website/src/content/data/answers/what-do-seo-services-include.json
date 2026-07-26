@@ -1,0 +1,241 @@
+{
+  "slug": "what-do-seo-services-include",
+  "type": "answers",
+  "primaryKeyword": "what do seo services include",
+  "secondaryKeywords": [
+    "what does seo service include",
+    "what is included in seo services",
+    "seo scope of work",
+    "what does an seo package include"
+  ],
+  "cluster": "agency-mechanics",
+  "intent": "commercial",
+  "h1": "What's included in SEO services, line by line",
+  "metaTitle": "What Do SEO Services Include? Full Line Items",
+  "metaDescription": "What do SEO services include? The full line-item scope most contracts use, plus the six things — hosting, dev hours, ad spend — usually left out.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "SEO services normally include five contract line items: a technical audit and fix queue, keyword research and content briefs, published or optimised pages, link acquisition, and monthly reporting against an agreed number. They rarely include hosting, developer time, design, ad spend, tool licences or translation — you pay for those separately.",
+  "takeaways": [
+    "The inclusions are boring and standard. The **exclusions** are where budgets get blown, and they're almost never on the first page of the proposal.",
+    "Ask for volumes next to every line item. \"Content creation\" is not a deliverable; \"four published pages of 1,200+ words per month\" is.",
+    "Every analytics, search and advertising account should be created on **your** login, with the agency invited as a user. This is the cheapest mistake to avoid and the most expensive to undo.",
+    "The line that decides whether any of it works isn't in the SEO scope at all — it's who writes the code."
+  ],
+  "sections": [
+    {
+      "h2": "The inclusion list, as it should read in your contract",
+      "body": [
+        "Almost every legitimate SEO scope in India contains the same six line items. The difference between a ₹40,000 retainer and a ₹1,50,000 one isn't which items appear — it's the number next to each one.",
+        "Here's the standard list, with the volumes you'd reasonably expect on a ₹75,000/month engagement. If your proposal has the items but no volumes, that's the first thing to fix. For the money side of the same question, see [what sits inside a monthly SEO retainer](/answers/what-does-an-seo-retainer-include)."
+      ],
+      "table": {
+        "caption": "Standard SEO scope of work, with indicative monthly volumes at ₹75,000/mo.",
+        "head": ["Line item", "What it means in practice", "Typical monthly volume"],
+        "rows": [
+          [
+            "Technical audit and fix queue",
+            "A full crawl at kickoff, then a prioritised backlog of indexing, speed, redirect and schema fixes, reworked each month.",
+            "One audit up front, then 4–8 fixes"
+          ],
+          [
+            "Keyword research and mapping",
+            "A query list grouped by intent, with each query assigned to exactly one URL so your own pages stop competing.",
+            "One map up front, revised quarterly"
+          ],
+          [
+            "Content briefs and copy",
+            "Outline, target query, internal links, word count, sources — then the draft itself, if writing is in scope.",
+            "8–12 briefs, 4–8 pages published or rewritten"
+          ],
+          [
+            "On-page work",
+            "Titles, meta descriptions, headings, internal links and schema on the pages that already have a chance.",
+            "10–30 pages touched"
+          ],
+          [
+            "Link acquisition",
+            "Digital PR, expert commentary, partnerships, resource placements. Named sites, with URLs.",
+            "2–5 earned links"
+          ],
+          [
+            "Reporting",
+            "One report against one agreed number, plus what changed, why, and what happens next month.",
+            "One report, one call"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Ask for this as a table",
+        "body": "Any agency that has planned your account can produce this table in under an hour. If yours won't put volumes next to line items, you don't have a scope — you have an intention."
+      }
+    },
+    {
+      "h2": "What's excluded, and who ends up paying for it",
+      "body": [
+        "This is the half of the document nobody reads until month three. An SEO scope is defined as much by what sits outside it, and the items below are outside it at almost every agency in the country — including ours.",
+        "None of this is dishonest. Hosting isn't an SEO service. But if you budget ₹75,000 a month and assume it covers everything the site needs, you'll be surprised twice: once by the invoice and once by the fixes that never shipped."
+      ],
+      "table": {
+        "caption": "Common exclusions from an Indian SEO scope. Costs are indicative market ranges, not quotes — they move with your stack, traffic and vendor.",
+        "head": ["Excluded item", "Who pays", "Roughly what it costs you"],
+        "rows": [
+          [
+            "Web hosting, CDN, SSL",
+            "You",
+            "₹500 to ₹15,000+ a month depending on stack and traffic"
+          ],
+          [
+            "Developer hours to ship the fixes",
+            "You — your own team, or billed as extra agency hours",
+            "Internal capacity, or roughly ₹800–₹3,000/hr for agency dev time"
+          ],
+          [
+            "Design, illustration, custom graphics",
+            "You",
+            "Quoted per asset; almost always billed separately"
+          ],
+          [
+            "Ad spend on Google, Meta or LinkedIn",
+            "You, ideally billed directly by the platform",
+            "Whatever you set. Watch for a markup on top"
+          ],
+          [
+            "Tool licences (Ahrefs, Semrush, Screaming Frog)",
+            "The agency, on their own accounts",
+            "Their overhead. You should never be billed for a seat you can't log into"
+          ],
+          [
+            "Translation and regional-language copy",
+            "You",
+            "Quoted per language, per word — Hindi and Tamil pages are new pages, not variants"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The markup nobody mentions",
+        "body": "Some agencies run your ad spend through their own account and keep a percentage of it. Ask what that percentage is and get the answer in writing before you sign. We bill ad spend directly to you with zero media markup."
+      }
+    },
+    {
+      "h2": "Tool licences: who owns the login",
+      "body": [
+        "There are two kinds of account in an SEO engagement, and confusing them is the most expensive administrative error a founder can make.",
+        "Your accounts hold your history. The agency's accounts hold their working tools. Keep them separate and switching agencies costs a week. Mix them and it costs your data."
+      ],
+      "bullets": [
+        "**Yours, always.** Google Search Console, GA4, Google Business Profile, Tag Manager, your CMS, your ad accounts. Create them yourself and invite the agency as a user with the access they need.",
+        "**Theirs, always.** Ahrefs, Semrush, Screaming Frog, Sitebulb, rank trackers. Their licence, their cost, folded into the retainer. If an agency asks you to buy the seat, ask whether it survives the contract. Usually it doesn't.",
+        "**Exports beat logins.** Ask for a monthly CSV of rank data and the latest crawl. Those files are yours and they're readable in any tool you move to next.",
+        "**Write it down.** One line in the contract listing every property that sits on your accounts. It takes thirty seconds and settles the argument before it happens."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The account you don't own",
+        "body": "If an agency creates your Search Console property on their own login, your performance history leaves when they do — and Search Console only stores 16 months of it anyway. There is no recovery path. There is only starting again."
+      }
+    },
+    {
+      "h2": "Developer hours: the line that decides whether any of it ships",
+      "body": [
+        "Roughly a third of a good technical audit needs someone to write code. Template changes, redirect rules, rendering fixes, schema in the layout rather than pasted per page. The SEO scope specifies those fixes. It does not, by default, ship them.",
+        "There are exactly three arrangements, and one of them is the silent default."
+      ],
+      "numbered": [
+        "**Your developers ship it.** Cheapest and slowest. Works only if SEO tickets get standing sprint capacity rather than \"when we get a gap\".",
+        "**The agency ships it.** Fastest, and it needs staging access, a code review path and one person on your side authorised to approve a merge. Billed as extra hours in most contracts, including ours.",
+        "**Nobody ships it.** The audit becomes a PDF, the retainer gets judged a failure at month six, and the actual cause is sitting untouched on a Jira board. This is the default outcome, and it's why [technical SEO services](/services/technical-seo-services) should always be sold with a named owner for the fix queue."
+      ],
+      "bullets": [
+        "Put a number in the contract: hours of dev time per month, or a named internal owner with a stated share of sprint capacity.",
+        "Agree what happens to the timeline when those hours don't appear. \"We'll flag it\" is not a plan; \"the guarantee pauses\" is."
+      ]
+    },
+    {
+      "h2": "How the scope changes with site size",
+      "body": [
+        "The same six line items get very different weightings depending on how many URLs you have. A 30-page site being sold log-file analysis is being upsold. A 40,000-SKU catalogue being sold four blog posts a month is being underserved."
+      ],
+      "table": {
+        "caption": "How SEO scope shifts by site size.",
+        "head": ["Site size", "Where the hours go", "What gets added"],
+        "rows": [
+          [
+            "Under 50 pages",
+            "On-page and content. There's very little technical debt to find.",
+            "Google Business Profile, if you serve a location"
+          ],
+          [
+            "50–500 pages",
+            "Content velocity plus internal linking. [Keyword cannibalisation](/glossary/keyword-cannibalization) starts here.",
+            "A keyword-to-URL map that's actually enforced"
+          ],
+          [
+            "500–5,000 pages",
+            "Templates, faceted navigation, crawl budget, indexing rules.",
+            "Index bloat control and template-level schema"
+          ],
+          [
+            "5,000+ pages",
+            "Crawl efficiency, log files, migrations, QA before every release.",
+            "Dedicated technical hours and a pre-deploy SEO checklist"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Five lines to add before you sign anything",
+      "body": [
+        "None of these are unreasonable. All of them are easier to agree before money changes hands than after."
+      ],
+      "numbered": [
+        "**The number.** \"Success is measured as qualified organic leads, baselined at N on this date.\" One metric, one starting value, one date. Without it, nobody can prove anything moved.",
+        "**The volumes.** Not \"content creation\". Four published pages of 1,200+ words a month, briefs delivered five working days ahead, two to five earned links.",
+        "**The dev dependency.** Who writes the code, how many hours, and what happens when those hours don't materialise.",
+        "**Account ownership.** Every analytics, search and advertising property sits on your accounts, named in the contract.",
+        "**The exit.** Thirty days' notice, full handover of assets and exports, no clawback on content already published."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where we land on this",
+        "body": "Our SEO scope starts at ₹75,000/mo, and from ₹40,000 for smaller sites, all ex-GST. Month-to-month after the first quarter, thirty days' notice, and you keep every asset. Ad spend is billed separately with no markup. The full breakdown is on [our pricing page](/pricing)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does SEO include content writing?",
+      "a": "Sometimes. Many agencies quote content briefs only, and bill the writing separately per page. Check whether your scope says \"briefs\" or \"published pages\" — the gap between those two words is usually ₹15,000–₹40,000 a month for a normal publishing cadence."
+    },
+    {
+      "q": "Is web design or development included in SEO services?",
+      "a": "No. SEO specifies the change; someone still has to build it. Either your developers get standing capacity for SEO tickets, or you buy the hours from the agency. Agree which one before kickoff, because roughly a third of audit findings need code."
+    },
+    {
+      "q": "Do SEO services include Google Ads?",
+      "a": "No — that's paid search, a separate service with a separate budget. If an agency bundles them, check whether your ad spend is billed by Google directly or routed through the agency with a percentage taken off the top."
+    },
+    {
+      "q": "Who pays for SEO tools like Ahrefs and Semrush?",
+      "a": "The agency, out of their own overhead. You should never be billed for a licence seat you can't log into. What you should own are the accounts holding your data: Search Console, GA4, Business Profile, Tag Manager and your CMS."
+    },
+    {
+      "q": "What's usually excluded from an SEO package?",
+      "a": "Six things, consistently: hosting and infrastructure, developer hours, design work, ad spend, tool licences, and translation into other languages. None of them belong in an SEO scope, and all of them can stall the work if nobody has budgeted for them."
+    },
+    {
+      "q": "Should an SEO contract list monthly volumes?",
+      "a": "Yes, and the absence of them is the clearest early warning you'll get. \"Ongoing optimisation\" can mean forty hours or four. Numbers next to line items also make renegotiation honest later, because you can point at what did and didn't get delivered."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "what-does-an-seo-retainer-include" },
+    { "type": "cost", "slug": "seo-services-cost" },
+    { "type": "services", "slug": "technical-seo-services" },
+    { "type": "compare", "slug": "retainer-vs-project" },
+    { "type": "glossary", "slug": "keyword-cannibalization" },
+    { "type": "journal", "slug": "where-your-seo-retainer-money-actually-goes" }
+  ]
+}

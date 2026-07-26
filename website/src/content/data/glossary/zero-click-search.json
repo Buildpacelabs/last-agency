@@ -1,0 +1,121 @@
+{
+  "slug": "zero-click-search",
+  "type": "glossary",
+  "primaryKeyword": "zero click search",
+  "secondaryKeywords": [
+    "zero click searches meaning",
+    "no click search results",
+    "zero click seo strategy",
+    "google keeping traffic",
+    "zero click statistics"
+  ],
+  "cluster": "ai-search",
+  "intent": "informational",
+  "h1": "Zero-click search",
+  "metaTitle": "Zero-Click Search: What It Is and What to Do",
+  "metaDescription": "A zero-click search ends without anyone visiting a website, and most now do. Triage your Search Console queries before the exposed half evaporates.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Zero-click search",
+  "definition": "A zero-click search is a search that ends without the user clicking through to any website, because the answer appeared on the results page itself or the searcher refined the query and moved on.",
+  "answer": "A zero-click search ends without the user visiting any website — the answer sat on the results page, or they refined and gave up. SparkToro and Datos put the US rate near 58.5% of searches in 2024, up from roughly 50% in 2019. Not every keyword is equally exposed, so triage yours.",
+  "takeaways": [
+    "Zero-click isn't new and it isn't only AI. Weather, calculators, sports scores and [featured snippets](/glossary/featured-snippet) were eating clicks years before AI Overviews shipped.",
+    "The rate is an average across all queries. Your specific keyword list is either far more exposed or far less, and the average tells you nothing about which.",
+    "The triage that matters: **answerable in one line** versus **needs a page**. Move budget to the second pile before the first one disappears.",
+    "Impressions without clicks still carry brand value — just don't let anyone report them as performance."
+  ],
+  "sections": [
+    {
+      "h2": "What actually counts as a zero-click search",
+      "body": [
+        "Three different things get filed under the same label, and conflating them is how people end up panicking about the wrong number.",
+        "The first is a **satisfied** zero-click search: Google answered it on the page. Exchange rate, PIN code, opening hours, an AI Overview summarising something you'd have skimmed anyway. The second is a **redirected** one: the click went to a Google property — Maps, Flights, Shopping, YouTube — so it counts as a click for Google and nothing for you. The third is **abandonment**: the searcher didn't find what they wanted and reformulated or left.",
+        "Only the first two are structural. The third is often a ranking problem wearing a scary costume."
+      ]
+    },
+    {
+      "h2": "How the rate has moved since 2019",
+      "body": [
+        "There are two well-known public measurements, both from SparkToro, and it's worth quoting them precisely because they get misrepeated constantly.",
+        "In 2019, SparkToro's analysis with Jumpshot clickstream data put US zero-click searches at about 50.3%. In 2024, SparkToro's follow-up with Datos put the figure near 58.5% in the US and just under 60% in the EU. Both are clickstream panels of US and European desktop and mobile users — not India, not your industry, and not a Google-published statistic.",
+        "So the honest reading is: it was already about half before generative search existed, and it has climbed since. Anyone quoting a single dramatic percentage for \"the death of organic traffic\" is either citing one of these two studies badly or making it up."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The stat you'll see quoted is usually wrong",
+        "body": "Numbers between 60% and 80% circulate freely with no named source. If a proposal quotes one, ask which study and which year. If the agency can't answer, that tells you more about the agency than about zero-click search."
+      }
+    },
+    {
+      "h2": "Which query types resolve without a click",
+      "body": [
+        "Exposure isn't evenly spread. Sorting by query shape gets you 90% of the way to a plan."
+      ],
+      "table": {
+        "caption": "How exposed a query is to being answered without a click.",
+        "head": ["Query shape", "Example", "Exposure"],
+        "rows": [
+          ["Single-fact lookup", "\"gst rate on packaged food\"", "Very high — Google answers it directly"],
+          ["Definition", "\"what is a canonical tag\"", "High — snippet or AI summary covers it"],
+          ["Quick comparison", "\"da vs dr\"", "Medium — summary answers, detail still earns clicks"],
+          ["Research with stakes", "\"seo agency pricing india\"", "Low — buyers want to see who's saying it"],
+          ["Transactional", "\"book seo audit\"", "Very low — the click is the point"],
+          ["Tool, template or download", "\"seo audit checklist xlsx\"", "Very low — the asset is on your site"]
+        ]
+      }
+    },
+    {
+      "h2": "The triage: two piles, one afternoon",
+      "body": [
+        "Open Search Console, pull the last twelve months of queries, and export the top 200 by impressions. Then put every query into one of two piles.",
+        "**Pile one: answerable in a line.** Anyone can satisfy this query with a sentence, so Google will. These will keep generating impressions and steadily fewer clicks. You still want a page for them — they build [topical authority](/glossary/topical-authority) and they're what AI systems pull from — but stop forecasting traffic against them.",
+        "**Pile two: needs a page.** Comparisons where the reader wants to see reasoning. Pricing where they want to see who's committing to a number. Anything involving a decision they'll have to defend to someone else. These clicks are defensible because a summary can't finish the job.",
+        "Then move the budget. If 70% of your content plan sits in pile one, you're funding impressions. Rebalance toward pile two and toward pages that end in an action — a quote, a booking, a download. [What SEO costs in India](/cost/seo-cost-in-india) is a pile-two query. \"What is SEO\" is not."
+      ]
+    },
+    {
+      "h2": "What impressions without clicks are still worth",
+      "body": [
+        "Something, but not what a dashboard implies. If your brand name appears in the answer a buyer reads, that's the same mechanism as a billboard: unmeasurable, non-zero, and impossible to invoice against.",
+        "The proxy worth tracking is **branded search volume**. If impressions on unbranded queries are flat or falling while people searching your brand name is rising, the unbranded work is doing something even though the click count says otherwise. If both are flat, the work isn't landing and no amount of zero-click framing changes that.",
+        "This is also why our guarantee is written against qualified leads from organic, not traffic. Traffic is now a partly Google-controlled variable. Leads aren't."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The reporting fix",
+        "body": "Add branded search impressions as a standing line in your monthly report, next to organic leads. Two numbers, one chart. It's the cheapest defence against a zero-click argument being used to excuse a flat quarter."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What percentage of searches are zero-click?",
+      "a": "The most credible public figures come from SparkToro: about 50.3% of US searches in 2019 with Jumpshot data, and about 58.5% in 2024 with Datos data. Both are clickstream panels, not Google data, and neither is India-specific. Treat higher numbers quoted without a source as unverified."
+    },
+    {
+      "q": "Is zero-click search caused by AI Overviews?",
+      "a": "Partly, and lately more so — but the rate was already around half in 2019, before generative results existed. Weather boxes, calculators, knowledge panels, featured snippets and clicks going to Google Maps or YouTube did most of the early work. AI has accelerated a decade-old trend rather than starting one."
+    },
+    {
+      "q": "Should I stop writing definition and how-to content?",
+      "a": "No — write it, but stop forecasting traffic against it. That content is what gets you retrieved and cited in AI answers, and it establishes topical coverage. Just don't let it be the majority of your plan, and don't let it carry your lead targets."
+    },
+    {
+      "q": "How do I tell if a keyword is exposed before I invest in it?",
+      "a": "Search it yourself, signed out, from the location you sell to. If the top of the page fully answers it — snippet, AI summary, knowledge panel, Google's own module — the click is contested. If the page is ten links and no answer box, the click is still there for the taking."
+    },
+    {
+      "q": "Does ranking still matter if nobody clicks?",
+      "a": "Yes, because being on page one is what makes you eligible to be summarised or cited in the first place. The visibility didn't disappear, the click did. That's a reporting problem and a business-model problem, not a reason to stop ranking."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "ai-overviews" },
+    { "type": "glossary", "slug": "featured-snippet" },
+    { "type": "glossary", "slug": "impressions" },
+    { "type": "compare", "slug": "keyword-rankings-vs-organic-traffic" },
+    { "type": "journal", "slug": "what-ai-overviews-did-to-your-organic-traffic" },
+    { "type": "services", "slug": "seo-reporting-services" }
+  ]
+}

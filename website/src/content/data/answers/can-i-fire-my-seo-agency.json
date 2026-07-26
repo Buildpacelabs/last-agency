@@ -1,0 +1,218 @@
+{
+  "slug": "can-i-fire-my-seo-agency",
+  "type": "answers",
+  "primaryKeyword": "how to fire your seo agency",
+  "secondaryKeywords": [
+    "can i fire my seo agency",
+    "switching seo agencies",
+    "leaving an seo agency",
+    "how to change seo agency safely"
+  ],
+  "cluster": "agency-selection",
+  "intent": "informational",
+  "h1": "How to leave an SEO agency without losing your work",
+  "metaTitle": "How to Fire Your SEO Agency Without Damage",
+  "metaDescription": "Reclaim admin access before you give notice, not after. The handover list, the 30-day sequence, and what really causes rankings to fall in a switch.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Yes — but reclaim admin access before you give notice, not after. Verify Search Console yourself on a DNS record, get Administrator on GA4, start the Google Business Profile ownership transfer, and export your data. Then serve notice in writing. Doing it the other way round is how companies lose 16 months of history in an afternoon.",
+  "takeaways": [
+    "Almost every guide gets the order backwards. **Access first, notice second.** Once you've given notice, every request becomes a negotiation.",
+    "Google Search Console keeps **16 months** of performance data. Export it before you go, because you will want the comparison and you won't get it back.",
+    "The ranking drop people blame on \"the switch\" is usually four specific things, and three of them are preventable.",
+    "If schema, title tags or hreflang are injected through a tag manager container the agency owns, losing that container silently removes them from every page."
+  ],
+  "sections": [
+    {
+      "h2": "Yes, you can leave — the question is what you leave with",
+      "body": [
+        "Firing an SEO agency is not legally complicated. Read the contract, serve notice as it specifies, pay what's owed. That part takes an afternoon.",
+        "The expensive part is everything the agency is holding that you assumed was yours: the Search Console verification, the analytics property, the Google Business Profile, the tag manager container, the plugin licences renewing on somebody else's card, and — depending on what you signed — the copyright in every article you paid for.",
+        "None of that is usually malice. Agencies set things up under their own accounts because it's faster on day one, and then nobody revisits it. But the moment you give notice, the goodwill that would have made the fix trivial is gone, and a two-minute permissions change becomes an email thread.",
+        "So the runbook below is ordered by risk, not by chronology-of-feelings. Access first. Notice second."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Don't tell them first",
+        "body": "This isn't about being underhanded — you're only claiming ownership of accounts that should already be yours. But permissions requests made before notice get approved as routine admin. The same requests made after notice get read as a threat, and some of them take weeks."
+      }
+    },
+    {
+      "h2": "The two weeks before you give notice",
+      "body": [
+        "Work through this list in order. Most of it takes minutes; two items have enforced waiting periods, which is the whole reason to start early."
+      ],
+      "numbered": [
+        "**Read the contract first.** Find the notice window, the auto-renewal date, whether notice must be served in a specific way or to a specific address, and — critically — whether copyright in the content was assigned to you in writing. If it wasn't, you have a problem to solve before you leave, not after. See [what should be in an SEO contract](/answers/what-should-be-in-an-seo-contract).",
+        "**Audit who holds what.** Open every property and look at the user list: Search Console, GA4, Google Business Profile, Tag Manager, Google Ads, Bing Webmaster, the CMS, hosting, the CDN, your registrar. Write down who has the top-level role on each. This list is the whole job.",
+        "**Verify Search Console yourself, on DNS.** Add a TXT record at your own registrar and verify the domain property in an account your company controls. DNS verification can't be removed by anyone but you, which makes it the one method worth having. Do this even if you already have access — access granted by an owner can be revoked by that owner.",
+        "**Get Administrator on GA4 at account level, not just property level.** If the property lives inside the agency's Analytics account, you can't simply take it with you. Confirm where it sits now, and if it's theirs, set up your own account and property in parallel so the new data starts accruing somewhere you own.",
+        "**Start the Google Business Profile ownership transfer.** You want Primary Owner, not Manager. Google enforces waiting periods between adding someone and transferring primary ownership, and the request-access route takes days at minimum and isn't guaranteed. This is the item that most often runs past the notice date.",
+        "**Export everything.** Search Console performance data — all of it, every dimension, because only 16 months are retained. Analytics history. Rank tracking history. The full backlink list. The content calendar and briefs. The redirect map. Do it now while nobody's watching the clock.",
+        "**Check the tag manager container.** Find out what's being injected through it: schema, canonical tags, title rewrites, hreflang, tracking. If any SEO-relevant markup lives in a container you don't own, that markup disappears the day access does."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "One free win while you're in there",
+        "body": "GA4 offers a BigQuery export on the free tier. Turn it on before you leave and your raw event data starts landing somewhere the agency can never revoke. It costs almost nothing at small volumes and it's the only real insurance against losing analytics history."
+      }
+    },
+    {
+      "h2": "The handover list, in one place",
+      "body": [
+        "Send this as a schedule attached to the notice email, with a deadline. \"Please confirm transfer of the following by [date]\" is a far more effective sentence than \"please share access\"."
+      ],
+      "table": {
+        "caption": "What to demand at handover, and what happens if you don't get it.",
+        "head": [
+          "Asset",
+          "What you need",
+          "If you don't get it"
+        ],
+        "rows": [
+          [
+            "Search Console",
+            "Owner via your own DNS verification.",
+            "You lose 16 months of query data and can't diagnose the drop you're about to have."
+          ],
+          [
+            "GA4",
+            "Administrator at account and property level; BigQuery export enabled.",
+            "History stays with them. Year-on-year comparison becomes impossible."
+          ],
+          [
+            "Google Business Profile",
+            "Primary Owner transferred to your account.",
+            "Someone else can edit your hours, categories and photos, or unpublish you."
+          ],
+          [
+            "Tag Manager",
+            "Container ownership, plus a written list of every tag that touches SEO markup.",
+            "Schema, canonicals or hreflang can vanish silently. Rich results go with them."
+          ],
+          [
+            "CMS, hosting, CDN, registrar",
+            "Admin credentials, and their accounts removed.",
+            "You're one disgruntled ex-contractor away from an outage."
+          ],
+          [
+            "Plugin and tool licences",
+            "Licence keys transferred, or a list of what renews on their card and when.",
+            "Your SEO plugin quietly stops updating three months later."
+          ],
+          [
+            "Content and drafts",
+            "Editable source files for everything published and in progress, plus written copyright assignment if the contract lacks one.",
+            "In the worst case, a takedown demand for content you paid for."
+          ],
+          [
+            "Links",
+            "Full placement list with live URLs, and disclosure of any on recurring payment.",
+            "Rented links drop out over the following months and nobody knows why."
+          ],
+          [
+            "Redirects",
+            "The complete redirect map, wherever it lives — plugin, CDN, framework config.",
+            "A future site change reintroduces 404s that were fixed years ago."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "What actually causes the ranking drop during a switch",
+      "body": [
+        "\"Our rankings fell after we changed agencies\" is a common story, and it's rarely the switch itself. Four things cause almost all of it, and three are preventable."
+      ],
+      "bullets": [
+        "**Markup disappearing with the tag container.** If schema, canonical tags or meta rewrites were injected client-side through a container you lost, every page silently loses them. Preventable — check before you leave.",
+        "**Content coming down.** Either because copyright was never assigned, or because the site was on the agency's hosting and the migration dropped pages. Preventable — assign copyright, keep your own hosting.",
+        "**Rented links expiring.** Placements that only stay live while a monthly fee is paid start dropping 30 to 90 days after you stop paying. Not preventable at that point, but knowing about it changes how you read the graph. Ask for the list.",
+        "**The cadence gap.** Publishing and outreach stop for six to ten weeks while you hire, onboard and brief the new team. Nothing breaks — momentum just stops compounding, and it shows up two months later. This is the one that's genuinely worth planning around."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Measure before, not after",
+        "body": "On the day you serve notice, take a snapshot: indexed page count, current positions for your target queries, referring domain count, and the last full month of organic leads. Without it, every argument about what the switch cost you is a matter of opinion."
+      }
+    },
+    {
+      "h2": "Notice, the final invoice, and the overlap",
+      "body": [
+        "Serve notice in writing, in whatever form the contract specifies, and copy it to a second address so there's no question it was received. Keep it short and unemotional — you may need these people to be helpful for another month.",
+        "On money: resist the urge to withhold the final payment as a bargaining chip. It's the obvious move and it usually backfires, because the person who processes your account transfers is not the person who cares about your invoice. Better to write the handover schedule into the notice with a date, then pay on receipt. If something genuinely wasn't delivered — prepaid content, unspent link budget, a month billed in advance — raise it as a specific line item rather than a general standoff."
+      ],
+      "numbered": [
+        "**Days 1–15 after notice:** credentials and ownership transferred against the schedule. Chase weekly, in writing. Confirm each item as it lands rather than at the end.",
+        "**Days 15–30:** the new team onboards while the old one is still reachable. Two weeks of overlap is usually enough, and it's worth paying for even if the contract doesn't require it.",
+        "**Last day:** take the second snapshot. Confirm the outgoing team's access has been removed from every property — including the ones you forgot about, which is usually Bing Webmaster Tools and the registrar.",
+        "**Days 30–90:** monitor weekly. Watch indexed page count, 404s in Search Console, whether schema is still validating, whether tracking still fires, and whether referring domains are declining faster than usual.",
+        "**Don't rebuild everything at once.** A new agency's instinct is to redesign, re-architect and rewrite. Ask them to fix what's broken first and change nothing structural for 60 days, so you can tell the switch apart from the strategy."
+      ]
+    },
+    {
+      "h2": "Before you fire them, one honest check",
+      "body": [
+        "Some agencies deserve firing. Some are being asked to produce results from a scope nobody funded, on a site whose dev team hasn't shipped an SEO ticket in eight months, against a target that was never written down.",
+        "So ask two questions first. Was there ever an agreed baseline number, measured before work started? And has the client side actually done its part — approvals, dev time, subject-matter access? If the answer to either is no, the next agency will fail the same way, and you'll have paid for two onboardings to learn it. There's more on this in [how to tell if your SEO agency is doing a good job](/answers/how-do-i-know-if-my-seo-agency-is-doing-a-good-job).",
+        "If the answer to both is yes and the number still hasn't moved in six months, go. That's what the notice period is for.",
+        "For what it's worth, our whole arrangement is built to make this conversation short: one quarter minimum, then month-to-month with 30 days' notice, no auto-renewal, and you hold owner-level access on every account from day one. We guarantee movement against your own frozen 90-day baseline of qualified organic leads — never a ranking position — and if we miss it we keep working free until we beat it. The exit should be the easiest thing in the contract."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I fire my SEO agency mid-contract?",
+      "a": "It depends on what you signed. Most contracts allow termination with written notice — commonly 30 to 90 days — and some have an initial minimum term. Check the notice window, the auto-renewal date and how notice must be served. Some contracts require registered post, in which case an email isn't notice."
+    },
+    {
+      "q": "Should I get account access before or after giving notice?",
+      "a": "Before, always. Permissions requests made before notice get processed as routine admin; the same requests after notice get read as hostility and can take weeks. Google Business Profile ownership transfer has an enforced waiting period, so start it at least a week or two ahead."
+    },
+    {
+      "q": "Will my rankings drop if I change SEO agencies?",
+      "a": "Not from the switch itself. Drops come from four causes: markup lost with a tag manager container you didn't own, content removed or migrated badly, rented links expiring once payment stops, and a six-to-ten week gap in publishing while you onboard. The first three are preventable."
+    },
+    {
+      "q": "What should I ask my old agency to hand over?",
+      "a": "Ownership of Search Console, GA4, Google Business Profile, Tag Manager and Google Ads; CMS, hosting and registrar credentials; plugin licence keys; editable source files for all content including drafts; the full backlink list with live URLs; and the complete redirect map. Attach it as a dated schedule to the notice."
+    },
+    {
+      "q": "Can my old agency take down content they wrote for me?",
+      "a": "Potentially, if copyright was never assigned to you in writing. Under Indian law paying an invoice doesn't automatically transfer copyright from a contractor. Check your contract for a written, signed assignment specifying worldwide and perpetual terms. If it's missing, sort it out before you serve notice, not after."
+    },
+    {
+      "q": "How long should I overlap the old and new agencies?",
+      "a": "About two weeks. Long enough for the incoming team to ask questions of people who still remember why things were built the way they were, short enough that you're not paying twice for a month. Then ask the new team to change nothing structural for 60 days."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "journal",
+      "slug": "the-real-cost-of-switching-seo-agencies"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-i-know-if-my-seo-agency-is-doing-a-good-job"
+    },
+    {
+      "type": "journal",
+      "slug": "why-clients-fire-their-seo-agency-in-month-four"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "answers",
+      "slug": "what-are-the-red-flags-of-a-bad-seo-agency"
+    },
+    {
+      "type": "answers",
+      "slug": "why-are-seo-services-important"
+    }
+  ]
+}

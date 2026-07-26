@@ -1,0 +1,133 @@
+{
+  "slug": "impressions",
+  "type": "glossary",
+  "primaryKeyword": "impressions in search console",
+  "secondaryKeywords": [
+    "what are impressions seo",
+    "impressions vs clicks",
+    "google search console impressions",
+    "why impressions increased but not clicks",
+    "impression definition seo"
+  ],
+  "cluster": "analytics",
+  "intent": "informational",
+  "h1": "Impressions",
+  "metaTitle": "Impressions in Search Console, Explained",
+  "metaDescription": "An impression means your page appeared in results for a query. How Google counts them, and why rising impressions with flat clicks is normal at first.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Impression",
+  "definition": "An impression is recorded each time a link to your site appears in a search result that a user actually sees, whether or not they click it.",
+  "answer": "An impression means a link to your page appeared in search results a user saw. Impressions almost always move before clicks — a page entering at position 40 collects impressions and no clicks for weeks. That pattern is normal in months one and two. By month four, flat clicks with rising impressions is a problem.",
+  "takeaways": [
+    "An impression is counted when the result is **seen**, not merely returned. Page-two results only count if the user goes to page two.",
+    "Impressions are the earliest honest signal an SEO engagement produces — usually 4–6 weeks in.",
+    "Rising impressions with flat clicks is expected early and worrying late. The turn is around month three to four.",
+    "Never read impressions alone. Pair them with [average position](/glossary/average-position) or you'll misdiagnose every time."
+  ],
+  "sections": [
+    {
+      "h2": "What actually counts as an impression",
+      "body": [
+        "Google's rule is about visibility, not retrieval: a link counts as an impression when it appears in a result set the user views. That definition carries consequences most people never notice, and they explain most of the confusing numbers in the Performance report.",
+        "If your result sits on page two, nothing is recorded unless the user goes to page two. Same further down an infinite-scroll mobile SERP: no scroll, no impression. For carousels and image blocks, it registers when the item is scrolled into view.",
+        "One more catch: impressions count links, so a page appearing twice in one result set can register more than once. This is a diagnostic metric, not an audited one."
+      ],
+      "bullets": [
+        "**Seen, not returned.** Being in the index for a query isn't an impression.",
+        "**Page two onward only counts if visited.** So a page ranking 15th genuinely records fewer impressions than one ranking 9th, beyond what the position difference alone suggests.",
+        "**Location and personalisation apply.** Two people searching the same term don't necessarily both generate an impression for you."
+      ]
+    },
+    {
+      "h2": "Why impressions move first",
+      "body": [
+        "This is the most common question we get in month two, usually phrased with some alarm: *impressions are up 300% and clicks haven't moved.* Here's why that's the expected shape rather than a failure.",
+        "New and improved pages don't enter at position 4. They enter somewhere between 20 and 60 while Google works out what they are. At position 40 a page collects impressions from people scrolling deep and clicks from almost nobody — [click-through rate](/glossary/click-through-rate) at that depth rounds to zero.",
+        "The sequence is mechanical: pages get indexed, start appearing, appear for more query variants, climb, and only around the top ten does the click line detach from the floor. Impressions lead; clicks confirm.",
+        "Which makes them useful at exactly the point nothing else is: they show whether Google has accepted the work, weeks before revenue could respond. It's why the first honest read comes at day 90, not day 30 — see [what actually happens in the first 90 days](/journal/what-actually-happens-in-the-first-90-days)."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What good looks like at week six",
+        "body": "Impressions climbing, average position for target queries improving even if it's still in the twenties, indexed page count keeping pace with published page count, and clicks broadly flat. That's a healthy month two. Flat impressions at week six is the one that should worry you."
+      }
+    },
+    {
+      "h2": "When flat clicks stop being normal",
+      "body": [
+        "The pattern has an expiry date, and knowing when it expires is the difference between patience and being managed. Three problems produce the same symptom, and the [average position](/glossary/average-position) filter tells them apart in a minute."
+      ],
+      "table": {
+        "caption": "Rising impressions, flat clicks — the three diagnoses.",
+        "head": ["What you see when you filter", "What's happening", "What to do"],
+        "rows": [
+          [
+            "Average position improving, still 15+",
+            "Working as intended. The pages haven't arrived yet.",
+            "Wait. Recheck in a month."
+          ],
+          [
+            "Position stuck in the 30s–50s for three months",
+            "The pages aren't competitive for those queries",
+            "Audit intent match and page quality before publishing more."
+          ],
+          [
+            "Position in the top ten, CTR still poor",
+            "You're being seen and passed over",
+            "Rewrite titles and snippets, or check what feature sits above you."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Months 1–3:** rising impressions, flat clicks. Normal, expected, not worth a difficult conversation.",
+        "**Month 4:** if average position hasn't improved at all across your target queries, that's the moment to ask hard questions.",
+        "**Month 6:** if impressions are up and clicks are still flat with positions in the top twenty, the problem is intent match or snippet quality, not effort.",
+        "**Any month:** impressions rising while the query list drifts toward terms you don't sell is not progress. It's noise dressed as growth."
+      ]
+    },
+    {
+      "h2": "Read impressions with position, never alone",
+      "body": [
+        "Impressions can rise for two opposite reasons and the number alone can't tell you which. Either your pages are climbing for the queries you want, or you're appearing for a wider set you don't — often broad, irrelevant terms picked up as pages accumulate.",
+        "The second is a real hazard: it looks like growth on a chart and drags sitewide CTR down. Agencies reporting impressions without a query breakdown are reporting a number that can be inflated by publishing anything at all.",
+        "The fix is a habit, not a tool: whenever you look at impressions, filter to the queries in your plan. Twenty tracked queries, six-month window, impressions and average position side by side. If both improve on those twenty, the work is working, whatever the site total does.",
+        "It's also what we watch first on our own [SEO engagements](/seo) — not as the guarantee itself, which is measured in qualified leads against the client's own trailing-90-day baseline, but as early evidence the guarantee is on track before leads have had time to show up."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why are my impressions increasing but not my clicks?",
+      "a": "Usually because your pages are entering results at low positions where nobody scrolls. That's normal for the first two to three months. Filter to your target queries and check average position: if it's improving, wait. If it's been stuck in the 30s for a quarter, the pages aren't competitive."
+    },
+    {
+      "q": "What's the difference between impressions and clicks?",
+      "a": "An impression is your result being seen; a click is someone choosing it. Impressions measure whether Google will show you. Clicks measure whether people prefer you to the alternatives. They fail for different reasons, which is why they need to be diagnosed separately."
+    },
+    {
+      "q": "Do page-two results count as impressions?",
+      "a": "Only if the user actually goes to page two. Google counts an impression when the result is viewed, not when it's returned. That's why a page ranking 15th records disproportionately fewer impressions than one ranking 9th — most people never load the second page."
+    },
+    {
+      "q": "Are impressions a vanity metric?",
+      "a": "They are when reported without a query breakdown, because you can inflate them by publishing anything. Filtered to your planned target queries, they're the earliest reliable evidence an engagement is working — visible weeks before clicks and months before revenue."
+    },
+    {
+      "q": "How many impressions should a new page get?",
+      "a": "There's no benchmark worth quoting, because it depends entirely on query demand. The useful test is directional: a new page should be recording some impressions within two to four weeks of indexing. Zero impressions after a month means an indexing or relevance problem, not a patience problem."
+    },
+    {
+      "q": "Do impressions in Search Console match Google Analytics?",
+      "a": "They can't — GA4 has no concept of an impression, since it only sees people who arrived on your site. Search Console measures what happened in the results; GA4 measures what happened after the click. Comparing click counts between them will also show a gap for tracking reasons."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "average-position" },
+    { "type": "glossary", "slug": "click-through-rate" },
+    { "type": "glossary", "slug": "google-search-console" },
+    { "type": "compare", "slug": "ga4-vs-search-console" },
+    { "type": "journal", "slug": "how-to-read-an-seo-report" },
+    { "type": "journal", "slug": "what-actually-happens-in-the-first-90-days" }
+  ]
+}

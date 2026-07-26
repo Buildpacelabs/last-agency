@@ -1,0 +1,222 @@
+{
+  "slug": "what-is-an-seo-audit",
+  "type": "answers",
+  "primaryKeyword": "what is an seo audit",
+  "secondaryKeywords": [
+    "seo audit meaning",
+    "what does an seo audit cover",
+    "website seo audit",
+    "what is included in an seo audit"
+  ],
+  "cluster": "agency-mechanics",
+  "intent": "informational",
+  "h1": "What an SEO audit is and what a good one contains",
+  "metaTitle": "What Is an SEO Audit? Scope and Deliverable",
+  "metaDescription": "An SEO audit is a prioritised diagnosis of why your site underperforms. The scope, the deliverable format that separates real ones, and INR costs in India.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "An SEO audit is a prioritised diagnosis of why a site underperforms in search, covering technical health, content, links and user experience. A real one ends in a ranked fix list with impact and effort scored against each item — not a 90-page tool export. Standalone audits in India typically run ₹25,000–₹1,50,000.",
+  "takeaways": [
+    "Judge an audit by its **output format**, not its page count. A ranked list of twenty decisions beats a complete inventory of four hundred warnings.",
+    "A crawl is not an audit. The crawl is the raw material; the audit is somebody deciding what matters and in what order.",
+    "The hard part is prioritisation, and a bad audit quietly hands that job back to you.",
+    "Budget the implementation before you buy the diagnosis. An unimplemented audit is the most expensive PDF in marketing."
+  ],
+  "sections": [
+    {
+      "h2": "What an audit is, and what it isn't",
+      "body": [
+        "An audit answers one question: why isn't this site earning the search visibility it should? Everything in it exists to support that answer or to fix what's blocking it.",
+        "What it isn't is a crawl. Anyone can run a site through a crawler and export the warnings — the tool costs a few thousand rupees a month and the export takes twenty minutes. That output tells you a page has a missing meta description. It doesn't tell you whether that page should exist, whether it competes with three others, whether anyone searches for what it's about, or whether fixing it is worth a developer's afternoon.",
+        "The diagnosis is the product. The crawl is just the blood test."
+      ]
+    },
+    {
+      "h2": "The four sections a real audit contains",
+      "body": [
+        "Miss one of these and you have a partial diagnosis, which is often worse than none — it sends you fixing the wrong thing with confidence."
+      ],
+      "subs": [
+        {
+          "h3": "Technical",
+          "bullets": [
+            "Indexation reconciled: pages published versus pages indexed, with a reason for every gap.",
+            "Crawl paths, redirect chains, orphan pages, and anything blocked in `robots.txt` that shouldn't be.",
+            "Canonical logic across templates — the usual culprit on e-commerce and multi-region sites.",
+            "Rendering: does the content exist before JavaScript runs, and does that matter for your templates?",
+            "Core Web Vitals, per template rather than per page. Fixing one product page is meaningless if the template is the problem.",
+            "Schema that describes what the page actually is."
+          ]
+        },
+        {
+          "h3": "Content",
+          "bullets": [
+            "Which pages rank, which have decayed, and which never had a chance because nothing searches for their topic.",
+            "Cannibalisation — two or more pages competing for the same query, splitting signals and both underperforming.",
+            "Intent mismatch: a commercial page written like a blog, or a blog trying to sell.",
+            "Coverage gaps against the queries your buyers actually use, checked against what your sales team hears.",
+            "Pages that should be merged, redirected or deleted. A good audit recommends deletion, and a nervous one never does."
+          ]
+        },
+        {
+          "h3": "Links",
+          "bullets": [
+            "Referring domain profile: how many, from where, acquired how fast.",
+            "Anything that looks bought — footer links, sudden historic spikes, irrelevant foreign-language directories.",
+            "Lost links worth reclaiming, especially ones broken by a past migration.",
+            "Internal linking as a structure, not a count. Where does authority actually flow on your site, and does it reach the pages that sell?"
+          ]
+        },
+        {
+          "h3": "UX and conversion",
+          "bullets": [
+            "What happens after the click, because rankings that don't convert are an expensive hobby.",
+            "Mobile experience on a real mid-range Android over a mediocre connection, not a desktop emulator.",
+            "Whether the page answers the query it ranks for in the first screen.",
+            "Trust signals a buyer looks for and a crawler doesn't: pricing, contact details, a real address."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The deliverable format is the whole tell",
+      "body": [
+        "You can judge an audit's quality before reading a word of its findings, purely by its shape. Here's the translation table."
+      ],
+      "table": {
+        "caption": "How to read an SEO audit deliverable before you read its contents.",
+        "head": ["What you receive", "What it actually means"],
+        "rows": [
+          [
+            "A PDF of tool warnings, grouped by tool category",
+            "Nobody looked at your site. You bought a crawl you could have run yourself for a few thousand rupees."
+          ],
+          [
+            "Ninety pages with no ordering and no owner column",
+            "The prioritisation — the difficult, valuable part — has been handed back to you. That was the job."
+          ],
+          [
+            "A spreadsheet with impact, effort and owner on every row",
+            "Somebody made decisions and is prepared to be wrong in public. This is what you're paying for."
+          ],
+          [
+            "Twenty items, each naming a specific page and a specific change",
+            "Best case. Sharp and short beats complete and unusable, every time."
+          ],
+          [
+            "A findings call plus a working document your developers can pull tickets from",
+            "The audit stands a chance of being implemented, which is the only condition under which it has any value at all."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Ask for a sample before you pay",
+        "body": "Any agency that has done this work has a redacted audit they can show you. If the sample is a branded PDF of crawler screenshots, you now know what ₹75,000 buys there. Ask before the invoice, not after."
+      }
+    },
+    {
+      "h2": "How prioritisation actually works",
+      "body": [
+        "Every finding gets two scores and one name. Impact: what happens to search performance if we fix this? Effort: how many hours, and from whom? Owner: who has to actually do it — the agency, your developer, or your content team?",
+        "That third column is the one most audits leave out, and it's the reason so many findings never get implemented. The highest-impact item on a site is frequently the one that requires a template change your development team has already refused twice. Scoring it as \"high impact, low effort\" because it's a two-line CSS change is technically accurate and practically useless."
+      ],
+      "bullets": [
+        "**High impact, low effort** — do it this week. There are usually fewer of these than you'd like, and on a neglected site more than you'd expect.",
+        "**High impact, high effort** — this is your quarter. A migration fix, a template rebuild, killing three hundred thin pages.",
+        "**Low impact, low effort** — batch them. Fine to do, never worth discussing on a call.",
+        "**Low impact, high effort** — say so out loud and drop it. An audit that recommends everything has recommended nothing."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The sequencing rule",
+        "body": "Indexation and canonical problems come before content, always. Publishing onto a site that can't get its pages indexed properly is the most common way to waste a content budget in India."
+      }
+    },
+    {
+      "h2": "What a tool export cannot tell you",
+      "body": [
+        "This is the gap you're paying a human to cross. Tools are excellent at finding what's technically abnormal and completely blind to what's commercially wrong."
+      ],
+      "bullets": [
+        "**Whether a page should exist.** No crawler will tell you that four hundred location pages with rewritten paragraphs are scaled content Google will suppress.",
+        "**Whether two pages compete.** Cannibalisation needs query data plus judgement about which page deserves to win, and the answer is often the older, uglier one.",
+        "**Whether your content is about the thing people search.** A page can be technically flawless and answer a question nobody asks.",
+        "**Whether \"thin\" is thin.** A 250-word page that answers a question completely isn't thin. A 2,000-word page that never answers it is.",
+        "**Whether the error matters.** A 404 on a URL nothing links to is housekeeping. A 404 on a URL with fifteen referring domains is money on the floor.",
+        "**Which pages make you money.** No tool knows your margins, and prioritisation without that is guesswork with a spreadsheet."
+      ]
+    },
+    {
+      "h2": "How long a real audit takes, and what it costs in India",
+      "body": [
+        "Time first, because the timeline is a decent proxy for depth. A genuine audit is three to five working days of concentrated work on a small site, two to three weeks on a mid-sized one, and three to five weeks where log file analysis and multiple markets are involved. Anything delivered in 48 hours is a crawl with a cover page.",
+        "Add access delays on top. Search Console, GA4 and CMS access routinely take a week to arrive, and an audit written without Search Console data is an audit written blind."
+      ],
+      "table": {
+        "caption": "Typical standalone SEO audit pricing in India, ex-GST. Ranges reflect hours, not brand.",
+        "head": ["Site size", "Typical cost", "What drives the number"],
+        "rows": [
+          [
+            "Under ~100 URLs, one market",
+            "₹25,000–₹50,000",
+            "Few templates, one language, quick crawl. Mostly content and technical basics."
+          ],
+          [
+            "A few hundred to a few thousand URLs",
+            "₹50,000–₹1,00,000",
+            "More templates, real cannibalisation analysis, competitor gap work."
+          ],
+          [
+            "E-commerce or multi-market, 10,000+ URLs",
+            "₹1,00,000–₹3,00,000+",
+            "Crawl budget and log file analysis, faceted navigation, hreflang, stakeholder interviews."
+          ]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "Free audits are a different product",
+          "body": [
+            "A free audit isn't necessarily dishonest, but it is scoped to persuade rather than to be complete. It will reliably find the problems that the retainer being sold happens to solve. If you want an independent read, pay someone who isn't bidding on the work.",
+            "Our own audits sit inside the first month of an SEO engagement rather than being sold separately — engagements start at ₹75,000/mo, or ₹40,000 for smaller sites, with the numbers on [our pricing page](/pricing). If you'd rather buy the diagnosis on its own first, [our audit service](/services/seo-audit-services) explains what the deliverable looks like, and [why you'd need an audit at all](/answers/why-do-you-need-an-seo-audit) covers when it's worth the money."
+          ]
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long does an SEO audit take?",
+      "a": "Three to five working days of actual work for a small site, two to three weeks for a mid-sized one, and three to five weeks where log analysis or multiple markets are involved. Add roughly a week for access to Search Console, GA4 and the CMS to come through — that delay is usually the client's side."
+    },
+    {
+      "q": "How much does an SEO audit cost in India?",
+      "a": "Roughly ₹25,000–₹50,000 for a small site, ₹50,000–₹1,00,000 for a few thousand URLs, and ₹1,00,000–₹3,00,000 or more for large e-commerce and multi-market sites. It's priced in hours, so URL count, template count and number of markets move the number far more than the agency's brand does."
+    },
+    {
+      "q": "Is a free SEO audit worth anything?",
+      "a": "As a sales conversation, sometimes. As a diagnosis, rarely. A free audit is scoped to demonstrate a problem the seller can fix, and it's usually a crawler export with commentary. If you want a read you can act on independently, pay for one from someone who isn't pitching for the retainer."
+    },
+    {
+      "q": "What's the difference between an SEO audit and a technical audit?",
+      "a": "A technical audit covers crawling, indexing, rendering, speed and site architecture only. A full SEO audit adds content, links and conversion. Technical alone is the right purchase when you've just migrated or replatformed and know the content is fine. Otherwise you'll fix the plumbing and still not rank."
+    },
+    {
+      "q": "How often should you do an SEO audit?",
+      "a": "Full audits are event-driven rather than scheduled — a migration, a traffic drop, a change of agency. On an ongoing retainer, a monthly crawl and a quarterly deeper review replaces the need for one entirely. Buying a full audit annually out of habit usually funds a document nobody reads."
+    },
+    {
+      "q": "Can I do an SEO audit myself?",
+      "a": "The technical layer, largely yes. Search Console's indexing report, PageSpeed Insights and a trial crawler will surface most of it for a small site. What's hard to do alone is prioritisation and cannibalisation analysis, because both need judgement about which pages deserve to win and what your competitors have already earned."
+    }
+  ],
+  "related": [
+    { "type": "services", "slug": "seo-audit-services" },
+    { "type": "answers", "slug": "why-do-you-need-an-seo-audit" },
+    { "type": "journal", "slug": "what-an-seo-audit-should-actually-find" },
+    { "type": "journal", "slug": "why-free-seo-audits-are-sales-pitches" },
+    { "type": "glossary", "slug": "log-file-analysis" },
+    { "type": "compare", "slug": "technical-seo-vs-content-seo" }
+  ]
+}

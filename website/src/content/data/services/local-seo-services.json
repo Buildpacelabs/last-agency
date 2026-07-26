@@ -1,0 +1,196 @@
+{
+  "slug": "local-seo-services",
+  "type": "services",
+  "primaryKeyword": "local seo services",
+  "secondaryKeywords": [
+    "local seo agency india",
+    "local seo services cost india",
+    "google maps ranking service",
+    "multi location seo india",
+    "local seo packages india"
+  ],
+  "cluster": "local-seo",
+  "intent": "commercial",
+  "h1": "Getting found in the map pack, outlet by outlet",
+  "metaTitle": "Local SEO Services for Multi-Outlet Indian Brands",
+  "metaDescription": "Local SEO services for Indian multi-outlet brands. We track the map pack on a 20-point grid around each outlet and report calls, not impressions.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "priceFrom": "From ₹40,000 / mo",
+  "answer": "Local SEO gets your outlets into Google's three-result map pack for searches happening near them. We track it on a 20-point geo-grid drawn around each outlet rather than a single city-level rank, and we report calls and direction requests instead of impressions. From ₹40,000/mo for one outlet, GST extra.",
+  "takeaways": [
+    "A city-level rank is close to meaningless in local search. **Proximity changes the result**, so the only honest measurement is a grid of points around the outlet.",
+    "A clinic in Bandra can sit first at its own door and be invisible three kilometres away. One number hides that; twenty points show it.",
+    "Google ranks local results on relevance, distance and prominence. Only two of those are things you can work on.",
+    "We report calls, direction requests and WhatsApp taps. Impressions are a slide, not a result.",
+    "From ₹40,000/mo for a single outlet. Multi-outlet is quoted per band after scoping — 200 clean outlets cost less to run than 30 messy ones."
+  ],
+  "sections": [
+    {
+      "h2": "Why your city-level rank is a number that lies to you",
+      "body": [
+        "Google's local results are three things stacked: relevance (does this business match the query), distance (how far is it from the searcher or the place they named) and prominence (how well known is it, in reviews, citations, links and brand search). Google states those three openly. The second one is the reason a single rank number is worthless.",
+        "Run \"dentist near me\" from outside a clinic in Bandra West and it might be first. Run the same search from Khar, three kilometres away, and it can be nowhere — not because anything changed about the clinic, but because there are eleven dentists between you and it. Your agency's dashboard, checking once from a city centroid, reports position 2 and everyone feels fine.",
+        "So we don't measure that way. Around each outlet we plot 20 points, run the target searches from each of them, and record the rank per point. What you get back isn't a number, it's a shape — a map with the strong zone in the middle and the drop-off visible at the edges. When the shape grows month to month, you're winning. When it grows in one direction and shrinks in another, a competitor did something and we can tell you where."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What a 20-point grid actually is",
+        "body": "Twenty coordinates spread across a radius around the outlet — tight, roughly 1 km apart, in dense areas like central Mumbai or Bengaluru; wider, 3–5 km, in low-density catchments. Same queries, same time of day, every month. It's the same method the serious local tools use, and it's the only version of \"where do we rank\" that survives contact with reality."
+      }
+    },
+    {
+      "h2": "Reading the grid report: which ring tells you what",
+      "body": [
+        "Once you're looking at a grid instead of a number, the report becomes diagnostic. Where you're weak tells you what's broken."
+      ],
+      "table": {
+        "caption": "What each ring of the grid diagnoses, and the work it points to.",
+        "head": ["Distance from the outlet", "What weakness here means", "What we do about it"],
+        "rows": [
+          [
+            "At the door, 0–500 m",
+            "Something basic is wrong: category, verification, a duplicate listing, or a suspension you didn't notice.",
+            "Fix the primary category, verification and duplicates before anything else. Nothing else matters until this ring is green."
+          ],
+          [
+            "Neighbourhood, 500 m–2 km",
+            "Relevance isn't carrying you past the nearer competitor.",
+            "Primary and secondary categories, services list, the review language customers use, and the landing page the profile points at."
+          ],
+          [
+            "District, 2–5 km",
+            "Prominence. Google doesn't consider you well-known enough to justify the extra distance.",
+            "Review velocity and recency, local citations, links to the specific location page, and branded search demand."
+          ],
+          [
+            "City edge, 5 km+",
+            "Mostly brand. At this range distance is a heavy penalty and only reputation overcomes it.",
+            "This is where local SEO ends and ordinary [SEO](/seo) begins — organic rankings, PR and brand search do this work."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The metric your last agency probably showed you",
+        "body": "\"Search views: 41,200, up 18%.\" Impressions in Google Business Profile move with seasonality, category browsing and Google's own UI changes. They are not a result, and they are the number agencies reach for when calls are flat."
+      }
+    },
+    {
+      "h2": "Five outlets or two hundred: the data problem nobody wants",
+      "body": [
+        "Single-outlet local SEO is mostly craft. Multi-outlet local SEO is mostly data hygiene, and it's unglamorous enough that it's usually the thing nobody has done.",
+        "The work splits three ways."
+      ],
+      "subs": [
+        {
+          "h3": "One source of truth for NAP",
+          "body": [
+            "Name, address, phone — plus hours, category, and the landing page URL — for every outlet, in one sheet that somebody owns. Most chains we look at have three versions: one in the GBP dashboard, one on the website, one in a franchise operations file, and all three disagree about at least four outlets."
+          ],
+          "bullets": [
+            "Duplicate listing detection and suppression, which on older chains is often dozens of profiles created by individual managers.",
+            "Consistent formatting across citations and directories, because Google is matching entities, not strings.",
+            "A change process, so the next store manager who edits their own listing at 11pm doesn't undo six months of work."
+          ]
+        },
+        {
+          "h3": "Location pages that aren't clones",
+          "body": [
+            "One page per outlet, each with something only that outlet has: staff, parking, the nearest metro station, floor-level directions, its own reviews, its own photos. If your 60 location pages differ only by the city name in the H1, you've built the exact thing the [scaled content problem](/services/programmatic-seo-services) describes, and Google will index a fraction of them."
+          ]
+        },
+        {
+          "h3": "A store locator a crawler can use",
+          "body": [
+            "Every outlet needs a real, indexable URL that's linked from a crawlable locator. A JavaScript map with no underlying links is invisible, and it's the single most common reason a chain's location pages never get indexed at all. For chains above ten outlets, Google supports bulk location management, which makes this considerably less painful than the manual route."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The numbers we report: calls, directions, WhatsApp taps",
+      "body": [
+        "Local search converts differently from the rest of SEO. Someone finding a clinic doesn't fill in a form, they tap the call button. So the report is built from actions, per outlet, per month.",
+        "Two of those come from Google's own Business Profile performance data: calls, and direction requests. The third has to be built on your side. Google retired native chat on Business Profiles in 2024, so a WhatsApp tap is tracked as an event on your location page, wired into GA4 at setup. That's the number Indian clients care about most and it's the one most reports quietly omit, because it takes an hour of setup nobody billed for."
+      ],
+      "bullets": [
+        "**Calls per outlet**, month on month, with the seasonality noted so a Diwali dip doesn't get read as a failure.",
+        "**Direction requests** — the strongest intent signal in local, and the closest thing to a footfall proxy Google gives you.",
+        "**WhatsApp taps and website clicks** from the location page, tracked as GA4 events.",
+        "**Grid average rank** per outlet for the target query set, plus the shape change since last month.",
+        "**Review volume, rating and response rate** per outlet, because response rate is the one staff actually control.",
+        "**Outlets going backwards**, named. Averages across 40 branches hide the three that are dying."
+      ]
+    },
+    {
+      "h2": "What's included, what isn't, and what it costs",
+      "body": [
+        "From ₹40,000/mo for a single outlet, ex-GST. Multi-outlet programmes are quoted per band after scoping, and the honest reason we don't publish a per-outlet rate is that outlet count isn't what drives the work — data quality is. A 200-outlet chain with one clean feed and a franchise policy costs less to run than a 30-outlet chain with three conflicting spreadsheets and managers who edit their own listings.",
+        "What holds across every tier: month-to-month after the first quarter, 30 days' notice, no lock-in, and you keep every asset including the location pages and the profile access. The [full rate card](/pricing) covers where this sits against SEO and the bundles."
+      ],
+      "table": {
+        "caption": "Local SEO scope — included versus excluded, at every outlet count.",
+        "head": ["Included", "Not included"],
+        "rows": [
+          ["Google Business Profile setup, category, services and attribute work per outlet", "Buying reviews, or review gating that filters unhappy customers out"],
+          ["20-point geo-grid tracking per outlet, reported monthly", "Any promise of a map pack slot for a keyword"],
+          ["A written location page per outlet, not a cloned template", "Rebuilding your booking, ordering or POS system"],
+          ["NAP audit, duplicate suppression and citation cleanup", "Paid listing-submission packages — those buy noise"],
+          ["Review request flow, plus response templates your staff can actually use", "Replying to reviews as you; we draft, your team posts in your voice"],
+          ["Local schema, store locator fixes and internal linking", "Front-end development inside your site or app"],
+          ["Call, direction-request and WhatsApp-tap tracking wired into GA4", "Staffing the phone when the calls start arriving"],
+          ["Suspension and reinstatement handling if a profile goes down", "Creating listings for addresses where nobody works"]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Virtual offices get profiles killed",
+        "body": "Google requires a physical location with staff present during stated hours. Coworking desks, a friend's shop address, a residential flat used as a \"branch\" — all of these get profiles suspended, and reinstatement is slow and not guaranteed. If you ask us to list an outlet that doesn't physically exist, we'll say no. It's the fastest way to lose the listings that were working."
+      }
+    },
+    {
+      "h2": "What we guarantee on local, and what we won't",
+      "body": [
+        "Three numbers get frozen on day one, per outlet: your grid average rank for the agreed query set, your monthly calls, and your direction requests. The 90-day report is against those, not against a cherry-picked week.",
+        "The company guarantee applies as it does everywhere else — we freeze your trailing-90-day qualified leads from organic search at kickoff, and if we haven't beaten that number in 90 days we keep working free until we do. On a local engagement, \"qualified leads\" usually means calls and direction requests rather than form fills, and we agree the definition in writing before the baseline is set, because arguing about what counted is how these promises get wriggled out of.",
+        "What we will never promise is a map pack position. The three slots move with the searcher's location, their history, the time of day and Google's own experiments. Anyone guaranteeing you the top spot in the map pack is either unfamiliar with how local ranking works or counting on you not checking from outside your own office.",
+        "If most of your demand is city-wide rather than doorstep-level, local SEO may be the wrong instrument — read [local SEO versus national SEO](/compare/local-seo-vs-national-seo) before you commit a budget to it."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much do local SEO services cost in India?",
+      "a": "Ours start at ₹40,000/mo, ex-GST, for a single outlet. The wider market runs from about ₹10,000/mo for basic profile management up to ₹1,50,000+ for multi-city chains. Below roughly ₹15,000 a month you're buying listing updates and a report, which is fine if that's genuinely all you need — just don't expect grid movement from it."
+    },
+    {
+      "q": "How long does local SEO take to work?",
+      "a": "Faster than general SEO. Category and profile fixes can move the grid within two to four weeks, review velocity compounds over two to three months, and citation cleanup takes a quarter to fully settle. If nothing at all has moved on the grid by month three, something structural is wrong — usually a duplicate listing or a suspension nobody noticed."
+    },
+    {
+      "q": "Why does my ranking change depending on where I search from?",
+      "a": "Because distance is a direct ranking factor in local results. Google is answering \"which of these is near me and relevant\", so the same query returns different businesses from different points. This is exactly why a single reported rank is misleading and why we measure across 20 points around each outlet instead."
+    },
+    {
+      "q": "Do we need a separate page for every outlet?",
+      "a": "If you want each outlet ranking, yes — and each page needs something only that outlet has. Cloned pages differing by a city name get partially indexed at best. If you have five outlets in one city, the honest answer is sometimes fewer, better pages plus strong profiles, and we'll tell you which case you're in."
+    },
+    {
+      "q": "Can you guarantee a spot in the map pack?",
+      "a": "No, and neither can anyone else. The three slots vary by the searcher's exact location, time and history — there is no fixed position to guarantee. What we do guarantee is movement against your own frozen baseline: grid average rank, calls and direction requests, measured over 90 days."
+    },
+    {
+      "q": "What happens if a Google Business Profile gets suspended?",
+      "a": "We handle the reinstatement — evidence pack, appeal, and the follow-up, which is often several rounds. Timelines are unpredictable and outside anyone's control. The better answer is prevention: no virtual addresses, no keyword-stuffed business names, and a single controlled process for edits instead of every branch manager having dashboard access."
+    }
+  ],
+  "related": [
+    { "type": "compare", "slug": "local-seo-vs-national-seo" },
+    { "type": "cost", "slug": "local-seo-cost" },
+    { "type": "glossary", "slug": "google-business-profile" },
+    { "type": "answers", "slug": "how-to-do-local-seo" },
+    { "type": "services", "slug": "google-business-profile-optimisation" },
+    { "type": "journal", "slug": "local-seo-in-tier-2-india" }
+  ]
+}

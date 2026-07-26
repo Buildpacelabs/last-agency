@@ -1,0 +1,185 @@
+{
+  "slug": "301-vs-302-redirect",
+  "type": "compare",
+  "primaryKeyword": "301 vs 302 redirect",
+  "secondaryKeywords": [
+    "when to use 302 redirect",
+    "does 301 pass link equity",
+    "redirect chains seo",
+    "site migration redirect map",
+    "307 redirect meaning"
+  ],
+  "cluster": "technical-choices",
+  "intent": "informational",
+  "h1": "301 vs 302: when picking the wrong redirect actually costs you",
+  "metaTitle": "301 vs 302: When the Wrong Redirect Costs You",
+  "metaDescription": "301 vs 302 redirect matters far less to Google than to your browser cache and CDN. The mistake you can't take back, and the right code for each case.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "A 301 is permanent, a 302 is temporary, and Google treats both as canonicalisation signals that pass link equity. The real difference is client-side: browsers and CDNs cache a 301 aggressively and may never request the old URL again. A wrong 302 costs you a week. A wrong 301 can outlive the deploy.",
+  "takeaways": [
+    "Google works out your intent from behaviour over time. A 302 left in place for a year gets treated as permanent; a 301 you reverse in a fortnight gets treated as temporary.",
+    "**The damage isn't in Google's index — it's in your users' browsers.** A 301 without cache headers can be cached by a browser indefinitely, and you have no way to reach into it and undo it.",
+    "For maintenance, use `503` with `Retry-After`. Not a redirect. A redirect tells Google the page moved; a 503 tells it to come back.",
+    "During a migration, ship `Cache-Control: max-age=0` alongside every new 301 for the first week. It costs nothing and it buys you an escape hatch.",
+    "Redirect chains are the thing that actually breaks migrations. Google documents following around ten hops; you should be shipping one."
+  ],
+  "sections": [
+    {
+      "h2": "What each status code tells a browser and a crawler",
+      "body": [
+        "There are more than two redirects, and most teams only use two of them. The distinction that matters at the protocol level isn't permanent-versus-temporary — it's whether the request method survives the hop.",
+        "A 302 historically allowed clients to convert a POST into a GET. That's why 307 and 308 exist: they say the same thing about permanence, and they promise not to change the method."
+      ],
+      "table": {
+        "caption": "The redirect codes, what each says, and where each belongs.",
+        "head": ["Code", "Means", "Method preserved?", "Use it for"],
+        "rows": [
+          ["301 Moved Permanently", "This URL is gone for good; use the new one", "Not guaranteed", "Migrations, HTTPS, www consolidation, retired URLs"],
+          ["302 Found", "Temporarily elsewhere; keep asking for this URL", "Not guaranteed", "Campaigns, A/B tests, short-lived diversions"],
+          ["307 Temporary Redirect", "Same as 302, method and body preserved", "Yes", "Temporary redirects on POST endpoints and APIs"],
+          ["308 Permanent Redirect", "Same as 301, method and body preserved", "Yes", "Permanent redirects where method matters"],
+          ["303 See Other", "Go fetch this other thing with GET", "No, forced to GET", "Post-form-submission redirects"],
+          ["503 Service Unavailable", "Site is down, come back later", "n/a", "Planned maintenance — with a `Retry-After` header"]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "301 and 308 are interchangeable for SEO",
+        "body": "Google has said it handles 308 the same way it handles 301. Use whichever your stack produces by default. The choice that matters is permanent versus temporary, not which of the two permanent codes you pick."
+      }
+    },
+    {
+      "h2": "Why Google says the SEO difference is small",
+      "body": [
+        "Google's own line on this has been consistent for years: both 301 and 302 pass signals, and Google uses the code as an input to canonicalisation rather than as a binding instruction. A permanent redirect is a strong signal that the target should be the canonical URL. A temporary redirect is a weaker one.",
+        "Google also watches what you actually do. Leave a 302 in place for six months and it gets treated as permanent, because it plainly is. Ship a [301](/glossary/301-redirect) and reverse it two weeks later and Google treats the original as still live, because it plainly is.",
+        "So the fear that a 302 'loses link juice' is largely pre-2016 folklore. If your only concern is Google, the two codes are close to interchangeable, and the canonical tag on the destination is doing more work than either — [canonical vs noindex](/compare/canonical-vs-noindex) covers where that fits. That's the reassuring half of the answer. Here's the half that costs money."
+      ]
+    },
+    {
+      "h2": "The real damage path: a 301 you cannot take back",
+      "body": [
+        "A 301 is a permanent redirect, and browsers take that literally. In the absence of explicit caching headers, a browser is entitled to cache a permanent redirect and stop asking the origin server about that URL. Historically, browsers cached them for as long as they felt like — effectively forever from a user's point of view.",
+        "Think about what that means operationally. You ship a bad rule at 4pm on Friday: `/products/*` now 301s to `/shop/`. You catch it at 6pm and revert the server. The server is fine. Every visitor who touched a product page in those two hours still has a permanent redirect sitting in their browser cache, and their browser will not ask you again. You cannot purge it. You have no access to it. They see the wrong page until they clear their cache, which they will not do.",
+        "It gets worse if the fix is naive. The instinct is to redirect the wrong destination back to the original — `/shop/` 301s to `/products/`. For every affected browser that's now an infinite loop, and they see an error page instead of your store. The same problem exists one layer up at the CDN, except edge caches can be purged. That's why edge mistakes are recoverable and browser mistakes are not."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Ship this with every new 301 for the first week",
+        "body": "Send `Cache-Control: no-store` or `max-age=0` on the redirect response. Google doesn't care either way, browsers stop caching it permanently, and you keep the ability to reverse a bad rule. Turn it off once the redirect map has been live and correct for a week. This one line is the cheapest insurance in a migration."
+      },
+      "subs": [
+        {
+          "h3": "If you've already shipped a bad 301",
+          "body": [
+            "You have three options, and none of them are good. Make the destination serve the correct content, so cached users land somewhere useful. Or move the correct content to a genuinely new URL that no browser has a cached rule for, and link to that. Or wait, and accept the loss.",
+            "Do not build the reverse redirect. That's the loop, and it converts a subset of confused users into a subset of users who cannot reach your site at all."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Which code for maintenance, tests and campaigns",
+      "body": [
+        "Most wrong redirects come from treating 301 as the default for everything because someone read that it's better for SEO. Here's the decision, case by case."
+      ],
+      "table": {
+        "caption": "Pick by how likely you are to reverse the decision.",
+        "head": ["Situation", "Right answer", "Why"],
+        "rows": [
+          ["Site migration, URL restructure, HTTP to HTTPS", "**301** (or 308)", "The old URL is genuinely never coming back."],
+          ["Planned maintenance or a deploy window", "**503 + `Retry-After`**", "A redirect tells Google the page moved. It didn't. It's just down."],
+          ["A/B test sending some users to a variant", "**302**", "Temporary by definition. Google's own testing guidance says so."],
+          ["Vanity or campaign URL that will be reused", "**302 or 307**", "Next quarter it points somewhere else. Don't burn it permanently."],
+          ["Out-of-stock product coming back", "**Leave it at 200**", "301ing to a category kills a page that has links and rankings."],
+          ["Product discontinued forever", "**301** to the closest equivalent", "Not to the homepage — Google often treats that as a soft 404."],
+          ["Geo or language routing by IP", "**Neither — don't auto-redirect**", "Googlebot crawls mostly from one region. IP redirects can hide the rest of your site from it."],
+          ["Retired page with no equivalent", "**410 Gone**", "Honest, and it leaves the index faster than a 404."]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The out-of-stock trap for ecommerce",
+        "body": "Redirecting every out-of-stock SKU to its category is a habit that quietly deletes your long-tail rankings. The page earned those positions over months. Keep it live, say the item is unavailable, and offer alternatives on the page. Redirect only when it's never coming back."
+      }
+    },
+    {
+      "h2": "Redirect chains, hops, and the migration that goes sideways",
+      "body": [
+        "The most common technical failure in a replatform isn't the wrong code. It's the accumulation of hops. Old URL 301s to the 2021 structure, which 301s to the HTTPS version, which 301s to the trailing-slash version, which 301s to the new CMS path. Four hops, four chances to break, and a slow first byte for everyone clicking an old link.",
+        "Google documents following roughly ten redirect hops per crawl attempt before it reports an error. Browsers typically stop near twenty. Neither number is a budget — ship one hop. The discipline that gets you there is unglamorous, and it's most of what [site migration work](/services/site-migration-seo) actually is."
+      ],
+      "numbered": [
+        "**Crawl the old site before you touch anything.** Every indexed URL, every URL with a backlink, every URL with organic clicks in the last twelve months. That list is your redirect map, and there is no way to reconstruct it afterwards.",
+        "**Map to the closest equivalent page, one to one.** Bulk-redirecting a category to the homepage is the fastest way to lose the traffic you're trying to protect.",
+        "**Flatten the chains.** Every old URL should point directly at the final destination, not at an intermediate that redirects again. Re-crawl and fix until every source resolves in one hop.",
+        "**Update internal links to the new URLs.** Links pointing at redirects work, and they also broadcast that your own site doesn't know where its pages are.",
+        "**Keep the redirects for at least a year**, longer if the old URLs have real backlinks. There's no cost to leaving them in place and a real cost to removing them.",
+        "**Watch Search Console's page indexing report weekly for two months** for redirect errors and 'Page with redirect' appearing where it shouldn't."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The honest recovery timeline",
+        "body": "Even a clean migration usually shows a visible dip while Google re-crawls and re-consolidates signals — commonly four to twelve weeks, depending on site size and crawl rate. A migration with broken redirects doesn't dip and recover. It just dips. That's the difference [site migration work](/services/site-migration-seo) is actually buying."
+      }
+    },
+    {
+      "h2": "Your framework already picked for you",
+      "body": [
+        "Most redirect bugs aren't decisions. They're defaults nobody read. Worth knowing what your stack does when you don't specify a code."
+      ],
+      "bullets": [
+        "**Apache mod_alias** — `Redirect /old /new` issues a **302** unless you say otherwise. Use `Redirect 301` or `RedirectPermanent`.",
+        "**nginx** — `rewrite ... redirect` is a **302**; `rewrite ... permanent` is a **301**. `return 301` is explicit and clearer.",
+        "**Express** — `res.redirect(url)` defaults to **302**. Pass the status: `res.redirect(301, url)`.",
+        "**Next.js** — in `next.config.js`, `permanent: true` emits a **308** and `permanent: false` emits a **307**. Both preserve the method, both are correct, and 308 is the permanent one.",
+        "**WordPress redirect plugins** — usually default to **301**, which is why so many WordPress sites carry permanent redirects somebody meant to be temporary."
+      ],
+      "subs": [
+        {
+          "h3": "How to check what you actually shipped",
+          "body": [
+            "One command settles every argument in this article: `curl -sIL https://yoursite.com/old-page`, then read the chain of status codes. More than one 3xx before the 200 means you have a chain. A 301 where you meant a 302 means fix it now, while the cache population is still small.",
+            "Run it from a machine that has never visited the site. Your own browser is the least reliable witness you have, for exactly the reason this article is about."
+          ]
+        }
+      ]
+    }
+  ],
+  "versus": {
+    "a": "301 redirect",
+    "b": "302 redirect",
+    "verdict": "Use a 301 only when the old URL is never coming back — migrations, HTTPS, retired pages; for anything you might reverse inside a quarter, a campaign URL, an A/B test or a temporarily unavailable product, use a 302, because a wrong 302 costs you a week and a wrong 301 sits in your users' browser caches where you cannot reach it."
+  },
+  "faqs": [
+    {
+      "q": "Does a 301 redirect pass link equity?",
+      "a": "Yes, and so does a 302. Google has been clear that both pass signals and that it uses the status code as an input to choosing a canonical URL rather than as a hard rule. The old idea that 302s leak PageRank is a relic. What still matters is redirecting to a genuinely equivalent page rather than to the homepage."
+    },
+    {
+      "q": "When should I use a 302 instead of a 301?",
+      "a": "Whenever there is a realistic chance you'll reverse the decision: campaign and vanity URLs, A/B tests, temporary diversions, seasonal landing pages, and any redirect you're shipping in a hurry. A 302 is trivially reversible. A 301 gets cached by browsers and can't be recalled."
+    },
+    {
+      "q": "How do I undo a 301 redirect I shipped by mistake?",
+      "a": "On the server, immediately. In users' browsers, you often can't — a permanent redirect without cache headers may be cached indefinitely and their browser won't ask you again. Don't build a reverse redirect, because that creates a loop for those users. Either make the destination serve the right content, or publish at a fresh URL."
+    },
+    {
+      "q": "What should I use for site maintenance?",
+      "a": "A `503 Service Unavailable` with a `Retry-After` header, served to everyone including Googlebot. Redirecting to a maintenance page tells Google your pages moved, and if the maintenance runs long that can start affecting indexing. A 503 tells it to come back later, which is the truth."
+    },
+    {
+      "q": "How many redirect hops is too many?",
+      "a": "More than one. Google's documentation says it follows around ten hops per crawl attempt and browsers typically stop near twenty, but those are failure limits, not budgets. Every hop adds latency for users and a chance for something to break. Flatten the map so every old URL resolves to its final destination in a single hop."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "301-redirect" },
+    { "type": "glossary", "slug": "canonical-tag" },
+    { "type": "compare", "slug": "canonical-vs-noindex" },
+    { "type": "services", "slug": "site-migration-seo" },
+    { "type": "journal", "slug": "the-replatform-that-killed-your-traffic" },
+    { "type": "glossary", "slug": "404-error" }
+  ]
+}

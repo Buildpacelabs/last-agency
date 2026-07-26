@@ -1,0 +1,194 @@
+{
+  "slug": "domain-authority-is-a-vanity-metric",
+  "type": "journal",
+  "primaryKeyword": "is domain authority a vanity metric",
+  "secondaryKeywords": [
+    "does domain authority matter",
+    "da vs dr",
+    "third party seo metrics",
+    "domain rating accuracy",
+    "what google uses instead of da"
+  ],
+  "cluster": "opinion",
+  "intent": "informational",
+  "h1": "Domain Authority is a vendor's score, not Google's",
+  "metaTitle": "Domain Authority Is a Vanity Metric. Here's Why.",
+  "metaDescription": "Domain authority is a vanity metric invented by tool vendors, not Google. Here's why agencies still report it, and three numbers worth watching instead.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "In most reports, yes. Domain Authority is Moz's prediction of ranking ability, Domain Rating is Ahrefs' backlink-only score, and Google uses neither. Both are relative and logarithmic, so yours moves when other sites change. Report qualified organic leads, coverage of your commercial queries, and referring domains that send real clicks instead.",
+  "takeaways": [
+    "DA is Moz's model, DR is Ahrefs'. Both are trained on **their own link index** and predict something about search, but neither is a signal Google reads.",
+    "The scores are **relative and logarithmic**. Yours can fall while your traffic rises, because the curve is normalised against the strongest sites in the vendor's index.",
+    "Link sellers price inventory by DR, which creates a market for manufacturing DR cheaply. The metric funds the thing that corrupts the metric.",
+    "Three replacements, all tied to money: **qualified organic leads against a frozen baseline**, **position coverage on your commercial query set**, and **new referring domains that actually receive traffic**."
+  ],
+  "sections": [
+    {
+      "h2": "Who invented the score, and what it was built to do",
+      "body": [
+        "Domain Authority is Moz's. It's a 1–100 score produced by a machine-learning model trained on Moz's own link index, and its stated purpose is comparative: to predict how likely one domain is to rank relative to another. Moz has been consistent and public about the fact that Google doesn't use it.",
+        "Domain Rating is Ahrefs'. It's a 0–100 score computed from the backlink graph alone — how many unique domains link to you, weighted by their own DR, and divided across how many domains each of them links out to. It says nothing about your content, your relevance or your traffic. A site can hold a DR of 70 and rank for nothing.",
+        "Semrush has Authority Score, which blends link signals with estimated organic traffic and spam indicators. Majestic has Trust Flow and Citation Flow, which do something different again.",
+        "All four are useful instruments built by serious companies, and none of them is what you think it is when it appears on slide two of a monthly report. They're estimates of a proxy, computed from a partial crawl of the web, calibrated against each vendor's own index. They were built for comparing prospects at scale, not for grading an account."
+      ],
+      "table": {
+        "caption": "What the major third-party authority scores actually measure.",
+        "head": ["Score", "Vendor", "Computed from", "Scale behaviour"],
+        "rows": [
+          ["Domain Authority (DA)", "Moz", "A model trained on Moz's link index to predict relative ranking ability", "1–100, logarithmic, periodically recalibrated"],
+          ["Domain Rating (DR)", "Ahrefs", "Backlinks only: unique referring domains, weighted by their DR and their outbound domain count", "0–100, logarithmic, relative to the strongest site in the index"],
+          ["Authority Score", "Semrush", "Link signals plus estimated organic traffic and spam factors", "0–100, logarithmic"],
+          ["Trust Flow / Citation Flow", "Majestic", "Quality and quantity of links, scored separately", "0–100 each; the ratio between them is the interesting part"],
+          ["What Google publishes", "Google", "Nothing equivalent. Documentation that leaked in 2024 listed an attribute named siteAuthority, and Google has never confirmed what it does or whether it's used", "Not available to you at any price"]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The one-sentence version",
+        "body": "A third-party authority score is one company's estimate of how another company's algorithm might treat your links. It is a weather forecast, not the weather, and your monthly report should say so."
+      }
+    },
+    {
+      "h2": "Why your score moves in a month when your site didn't change",
+      "body": [
+        "This is the property that makes the number unusable as a progress metric, and almost nobody explains it in a client report.",
+        "Both DA and DR are **relative**. The scale is anchored to the strongest domains in the vendor's index, and everything else is placed underneath on a curve. If large sites gain links faster than you — and they always do — you slide down without losing a thing. You are being graded on a curve set by Wikipedia and Amazon.",
+        "They're also **logarithmic**. Going from 20 to 30 might take a few dozen decent links. Going from 70 to 80 can take thousands. So a report showing \"DA up 4 points this quarter\" means something entirely different at the bottom of the range than at the top, and nobody's report says which.",
+        "Then there's recalibration. Vendors re-train these models periodically, and when they do, scores shift across the whole web overnight. Moz has done this openly more than once. Your site got better or worse by four points while you were asleep, on a Tuesday, for reasons internal to a company in Seattle.",
+        "And finally, index coverage. The vendor only knows about links its own crawler found. Two tools will report different referring-domain counts for the same site on the same day, sometimes by a wide margin, because they crawled different portions of the web."
+      ],
+      "bullets": [
+        "**A single site-wide link inflates it.** One footer link from a large domain replicated across 40,000 of its pages is one referring domain, but the weighting can move a small site's score noticeably.",
+        "**Links to pages that no longer exist keep counting** until the vendor recrawls, which can take months.",
+        "**Disavowing does nothing to it.** Google's disavow file is invisible to third-party tools, so a cleaned-up profile still scores its old toxic links.",
+        "**The score can rise while traffic falls.** Nothing in DR knows whether your pages match search intent, and intent mismatch is a far more common cause of flat rankings than link shortage."
+      ]
+    },
+    {
+      "h2": "The circular bit: link sellers price by DR",
+      "body": [
+        "Here's where a harmless estimate turns into a market distortion.",
+        "Go to any link marketplace and the inventory is priced by the host site's third-party authority score. DR 30 costs a few thousand rupees. DR 60 costs several times that. DR 80 on something that looks like a real publication costs six figures. The score is the SKU.",
+        "Which creates an obvious business opportunity: manufacture the score cheaply and sell links off it. Because DR is computed from links alone, it can be raised without traffic, readers or editorial standards. Buy an expired domain that still has its old backlink profile, rebuild something on it, point a network of other sites at it, and you have DR 60 inventory in a few months. The site has no audience. It has a price.",
+        "So the metric prices the market for links, and the market for links exists to move the metric. You can raise DR by buying from people who raised their DR by buying. Nothing in that loop involves a customer, and Google's link spam systems have spent a decade learning to recognise exactly this shape.",
+        "This is the practical reason we don't use authority scores to choose link targets, and why [paid links and earned links](/compare/paid-links-vs-earned-links) aren't two flavours of the same thing. The question worth asking about a prospective link is whether the page it sits on gets read by anyone who might buy from you."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The test that costs nothing",
+        "body": "Before accepting any link placement, look up the host site's organic traffic and check whether its pages rank for anything. A domain with DR 65 and a few hundred monthly organic visits was built to be sold, not to be read. A link from it is at best worthless and at worst an entry in the wrong ledger on your domain."
+      }
+    },
+    {
+      "h2": "Why agencies keep putting it on slide two",
+      "body": [
+        "We should be fair about the commercial logic here, because it isn't only cynicism — it's the structure of monthly reporting under a slow-moving discipline.",
+        "SEO takes three to six months to produce anything a founder can feel. But the report is due every thirty days. And the agency needs something on that report that moved, because \"nothing has changed yet, which is expected\" is a true sentence that has ended a lot of retainers.",
+        "Authority scores are perfect for that job. They tick upward with routine link activity. They're a single number, so they need no explanation. They go on a line chart. They're produced by a tool the client can log into and verify. And crucially, they're not the client's revenue, so nobody has to explain why revenue didn't move.",
+        "The result is a report that is honest in every particular and misleading as a whole. The links were built. The score did rise. And the business is exactly where it was."
+      ],
+      "numbered": [
+        "**It moves monthly**, which is the only real requirement of a metric on a monthly report.",
+        "**It's the agency's own output**, since links are the deliverable, so the number measures effort rather than outcome.",
+        "**It's comparable to competitors**, which produces a satisfying slide with three bars on it, none of which correspond to anyone's sales.",
+        "**Nobody can be blamed for it.** If DA is up and leads are flat, the frame has already been set: the SEO is working, the market is difficult."
+      ]
+    },
+    {
+      "h2": "Three numbers to report instead",
+      "body": [
+        "Every one of these can be produced monthly, verified by you independently, and connected to money. Between them they cover the same ground authority scores pretend to cover, without the vendor in the middle."
+      ],
+      "subs": [
+        {
+          "h3": "1. Qualified organic leads against a frozen baseline",
+          "body": [
+            "One number, in your CRM, with a written definition of *qualified* that both sides signed before work started. The comparison is against your own trailing-90-day count on day one — not against a percentage, an industry benchmark or a competitor.",
+            "This is the whole reason we structure contracts the way we do. We freeze that number on day one and put it in the agreement. Miss it in 90 days and we keep working free until we beat it. It's also why we take three clients a month — you can't carry that liability across forty accounts. [How to set an SEO baseline](/journal/how-to-set-an-seo-baseline) covers the mechanics of freezing it properly, including what to do when your CRM hygiene is poor."
+          ]
+        },
+        {
+          "h3": "2. Position coverage on your commercial query set",
+          "body": [
+            "Agree a list of the queries a buyer types when they're ready to spend — pricing, comparison, *near me*, category and product terms. Fifty to two hundred is normal. Then report one number monthly: how many of them sit in positions one to ten, from Search Console, excluding brand.",
+            "This resists gaming in a way that average position doesn't, because the list was agreed in advance by someone who wasn't graded on it. It also moves earlier than leads do, which gives you a leading indicator without pretending it's the outcome."
+          ]
+        },
+        {
+          "h3": "3. New referring domains that actually receive traffic",
+          "body": [
+            "Keep counting links — they matter, and pretending otherwise is its own kind of dishonesty. Just count the ones that pass a floor: the linking site itself receives organic traffic and ranks for queries in a related space.",
+            "Report the count, the domains by name, and how many referral sessions each sent. A link that sends three real visitors a month is worth more than a DR 70 placement that has never sent anyone, because the first one proves a human read the page. [How much backlinks actually matter](/journal/how-much-do-backlinks-actually-matter) puts the weighting in context."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The test any metric has to pass",
+        "body": "Could this number go up for a full year while the business gets nothing? If yes, it belongs in the appendix, not on slide two. DA, DR, total sessions, impressions and keyword counts all fail that test. Qualified leads and commercial-query coverage don't."
+      }
+    },
+    {
+      "h2": "When a third-party score is genuinely useful",
+      "body": [
+        "We'd be overcorrecting if we told you to ignore these numbers entirely. We look at them. They're the right instrument for a narrow set of jobs, all of which share one feature: you're comparing many unknown sites quickly, and you don't need precision.",
+        "Used this way, the score is a coarse filter — a first pass before a human looks. That's what it was built for."
+      ],
+      "bullets": [
+        "**Triage at volume.** Screening 500 outreach prospects down to 80 worth reading. A rough score is a reasonable first cut when the alternative is reading 500 sites.",
+        "**Anomaly detection.** A DR 70 domain with almost no organic traffic is a strong signal that the profile was manufactured. Here the score is useful precisely because it disagrees with reality.",
+        "**Relative comparison at one moment.** Comparing two sites in the same index on the same day is the only comparison these scores were designed to support. Comparing your own score across a recalibration is not.",
+        "**Estimating a competitor you can't see inside.** You'll never have a rival's analytics. A link-graph estimate is better than nothing when you're sizing up how hard a market will be.",
+        "**Sanity-checking an inherited profile.** A sudden historical spike in referring domains usually means somebody bought links with your domain. The tools are good at surfacing that shape."
+      ]
+    },
+    {
+      "h2": "What to ask at your next monthly call",
+      "body": [
+        "If your report currently opens with an authority score, you don't need to fire anyone. You need to change what's on page one, and a decent agency will do that without complaint — plenty of them report DA only because no client has ever asked for something better.",
+        "Four sentences will do it."
+      ],
+      "numbered": [
+        "**\"What was our qualified organic lead count in the 90 days before we started, and what is it now?\"** If nobody wrote the first number down, that's the real finding, and it's fixable this month.",
+        "**\"Can we agree a list of commercial queries and report position coverage on it every month?\"** Agree the list together, freeze it, and only change it deliberately.",
+        "**\"Of the links built last quarter, how many host sites receive organic traffic, and how many sent us a click?\"** The gap between links built and links that exist as far as anyone else is concerned is often instructive.",
+        "**\"Move DA to the appendix.\"** Not deleted — it's a fine diagnostic and it costs nothing to keep. Just not the headline, because a number that can rise all year while the business gets nothing has no business leading a report. [How to read an SEO report](/journal/how-to-read-an-seo-report) covers the rest of the running order."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Google use Domain Authority?",
+      "a": "No. DA is Moz's own model, trained on Moz's own link index, and Moz says plainly that Google doesn't use it. Google has never published an equivalent public score. Documentation that leaked in 2024 listed an attribute called siteAuthority, but Google has never confirmed what it does — and you couldn't see it either way."
+    },
+    {
+      "q": "What's the difference between DA and DR?",
+      "a": "DA is Moz's machine-learning prediction of relative ranking ability, built from its link index. DR is Ahrefs' pure backlink calculation — referring domains weighted by their own DR and spread across their outbound links. DR knows nothing about content or traffic, which is why a DR 70 site can rank for nothing at all."
+    },
+    {
+      "q": "Why did my domain authority drop when I didn't do anything?",
+      "a": "Three usual causes. The score is relative, so you slide down when other sites gain links faster. The vendor periodically re-trains the model, which shifts scores across the whole web. Or their crawler recrawled and found links that had disappeared months earlier. None of these say anything about your rankings."
+    },
+    {
+      "q": "Should I buy links from high DA sites?",
+      "a": "No. Paid links are a link scheme under Google's policies, and DR-priced inventory is the market most optimised for manufacturing scores cheaply — expired domains rebuilt, networks pointing at each other, no readers anywhere. If you take one thing from the pricing, take this: a score you can buy is a score somebody else already bought."
+    },
+    {
+      "q": "Is domain authority completely useless then?",
+      "a": "Not useless, just misfiled. It's a decent coarse filter for triaging hundreds of unknown sites, a good anomaly detector when a high score sits next to no traffic, and a fair way to size up a competitor you can't see inside. It's a poor progress metric, which is exactly where most reports put it."
+    },
+    {
+      "q": "What should my SEO report lead with instead?",
+      "a": "Qualified organic leads against the baseline frozen on day one. Then how many of your agreed commercial queries sit in the top ten, non-brand, from Search Console. Then new referring domains that themselves receive organic traffic, named, with referral sessions. Everything else belongs in the appendix."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "what-is-domain-authority" },
+    { "type": "compare", "slug": "da-vs-dr" },
+    { "type": "glossary", "slug": "domain-rating" },
+    { "type": "journal", "slug": "how-much-do-backlinks-actually-matter" },
+    { "type": "compare", "slug": "paid-links-vs-earned-links" },
+    { "type": "journal", "slug": "how-to-read-an-seo-report" }
+  ]
+}

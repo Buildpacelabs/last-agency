@@ -1,0 +1,205 @@
+{
+  "slug": "app-store-optimisation-services",
+  "type": "services",
+  "primaryKeyword": "app store optimisation services",
+  "secondaryKeywords": [
+    "aso services india",
+    "play store optimisation service",
+    "app store keyword optimisation",
+    "aso agency india",
+    "app listing localisation india"
+  ],
+  "cluster": "off-google-search",
+  "intent": "commercial",
+  "h1": "Ranking in the Play Store, where India installs apps",
+  "metaTitle": "App Store Optimisation Services — Play Store First",
+  "metaDescription": "App store optimisation services built Play Store first, with listings localised into five Indian languages and keyword sets tied to real install data.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "priceFrom": "From ₹40,000 / mo",
+  "answer": "App store optimisation gets your app found in store search. For an India-first app that means Play Store first — Android runs roughly 95% of Indian smartphones. We work the title, short description, description, creatives and custom store listings in five Indian languages. From ₹40,000 a month.",
+  "takeaways": [
+    "**Play Store and App Store index completely different fields.** Play reads your full description; iOS ignores it and reads a hidden 100-character keyword field instead. One listing copied to both wastes half your keywords.",
+    "Custom store listings let you serve different Hindi, Tamil, Telugu, Marathi and Bengali listings to different audiences. Most ASO packages sold in India skip localisation entirely.",
+    "Ratings, review volume and **uninstall rate** are ranking inputs, not vanity metrics. A listing that over-promises ranks worse after the installs arrive.",
+    "We measure organic installs from store search, not a category rank screenshot. Category rank moves for reasons that have nothing to do with you."
+  ],
+  "sections": [
+    {
+      "h2": "Play Store first, and it isn't close",
+      "body": [
+        "Android runs the overwhelming majority of smartphones in India — around 95% by the standard mobile OS share trackers. If your users are Indian, the Play Store is not one of two channels. It's the channel, and the App Store is a smaller, wealthier annexe.",
+        "Most ASO advice online is written by people optimising for the US market, where the split is closer to even and iOS users spend more. Applying that playbook here produces a beautifully optimised iOS listing and a Play listing that was translated from it, which is exactly backwards.",
+        "So we start where the installs are. That doesn't mean ignoring iOS — if you monetise through subscriptions, the smaller iOS base often carries disproportionate revenue and deserves its own work. It means the Play listing gets built first and properly, rather than being a copy of something written for a different store with different rules."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "When iOS goes first instead",
+        "body": "Two cases. If your revenue is subscription-based and skews premium, iOS ARPU can justify leading there. And if you're chasing an international market — the Gulf, Singapore, Australia — the platform split changes completely. We check your own install and revenue data before deciding, rather than applying a rule."
+      }
+    },
+    {
+      "h2": "The fields that rank, and how the two stores differ",
+      "body": [
+        "This is the part that gets copied wrong most often. The two stores index different things, cap them at different lengths, and reward different writing.",
+        "Google Play indexes your long description, so it reads more like a web page — natural language, terms used the way users search them, no keyword stuffing because Play's policies treat repetitive keyword spam as a listing violation. Apple ignores the description for search entirely and reads a separate 100-character keyword field that users never see. Writing one listing and pasting it into both stores throws away the iOS keyword field and produces a Play description written like ad copy."
+      ],
+      "table": {
+        "caption": "Where each store looks for keywords, and what that means for the copy.",
+        "head": ["Field", "Google Play", "Apple App Store"],
+        "rows": [
+          [
+            "App name / title",
+            "30 characters, indexed, highest weight",
+            "30 characters, indexed, highest weight"
+          ],
+          [
+            "Subtitle",
+            "No equivalent",
+            "30 characters, indexed — the most under-used field on iOS"
+          ],
+          [
+            "Short description",
+            "80 characters, indexed, also the conversion hook above the fold",
+            "No equivalent (the promotional text is not indexed)"
+          ],
+          [
+            "Long description",
+            "4,000 characters, indexed — this is where the volume of your keyword set lives",
+            "Not indexed at all. It converts; it doesn't rank."
+          ],
+          [
+            "Keyword field",
+            "None",
+            "100 characters, hidden, comma-separated, no repeats needed"
+          ],
+          [
+            "Localisation",
+            "Per language, plus custom store listings targeted by country, language, install state or campaign",
+            "Per storefront and language, including additional Indian localisations"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Five languages, five listings, not five translations",
+      "body": [
+        "Play Console lets you publish localised listings per language, and separately lets you create custom store listings targeted at specific countries, install states, pre-registrants or ad campaigns. Almost nobody selling ASO in India uses either properly.",
+        "We build localised listings in Hindi, Tamil, Telugu, Marathi and Bengali as standard. Not machine translation of the English copy — separate keyword research per language, because the search terms genuinely differ. A user searching in Tamil script, a user searching the same concept transliterated into Latin characters, and a user searching in English are three different keyword sets, and Indian app users move between all three depending on the category.",
+        "The mechanical benefit is that a localised listing can rank for terms the English listing never will. The commercial benefit is conversion: a store listing in the language someone is thinking in converts better than the same listing in English, and install conversion rate feeds back into ranking."
+      ],
+      "bullets": [
+        "**Per-language keyword research**, including transliterated terms, not a translated version of the English set.",
+        "**Native-language descriptions** written to convert, not translated. We use native speakers per language.",
+        "**Localised screenshots** where the interface language matters — a screenshot showing English UI to a Tamil listing undercuts the whole exercise.",
+        "**Custom store listings** for specific segments: users acquired from paid campaigns, users in particular states, pre-registration audiences, and re-engagement of users who uninstalled."
+      ]
+    },
+    {
+      "h2": "Ratings, reviews and uninstalls are ranking inputs",
+      "body": [
+        "Store ranking isn't only about the text. Both stores factor in how users behave after they see the listing, and Google is explicit that app quality signals — including uninstall rate, crashes and ANRs surfaced in Android vitals — affect visibility.",
+        "This creates a trap that keyword-only ASO walks straight into. Write an aggressive listing, promise more than the app does, and installs go up while retention falls. Two months later you rank worse than when you started, and the agency is showing you a chart of the installs.",
+        "So this part of the work is unglamorous and it matters more than the keyword field. Prompting for reviews at the right moment using the in-app review API rather than a pop-up on launch. Replying to negative reviews, which the store surfaces and users read. Watching uninstall rate by acquisition source, because a paid campaign bringing in the wrong users damages organic ranking. And feeding the actual complaints back to your product team, which is often where the real fix lives."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "On buying installs and reviews",
+        "body": "It's still sold openly in India and it still breaks both stores' policies. Incentivised installs uninstall fast, which damages the exact signal you were trying to inflate, and review manipulation risks removal from the store. We won't do it, and if it's already in your history we'll tell you what it's costing you."
+      }
+    },
+    {
+      "h2": "What's included, and what isn't",
+      "body": [
+        "ASO overlaps with product, paid UA and brand. Here's where our edge sits."
+      ],
+      "table": {
+        "caption": "App store optimisation scope on a Last Agency retainer.",
+        "head": ["Area", "In scope", "Not in scope"],
+        "rows": [
+          [
+            "Keywords",
+            "Store-search keyword research per language and per store, competitor listing analysis, keyword set tied to install data in Play Console, monthly iteration",
+            "Web SEO for your marketing site. That's a separate [SEO retainer](/services/technical-seo-services), and most app businesses need both."
+          ],
+          [
+            "Listing copy",
+            "Title, short description, long description, iOS subtitle and keyword field, written per store and per language",
+            "Brand naming. If your app name is the problem, we'll say so — renaming is your call and a big one."
+          ],
+          [
+            "Creatives",
+            "Icon, feature graphic, screenshot sequence and preview video direction, plus store listing experiments to test them",
+            "Producing the video from scratch. We brief and direct; production is quoted separately."
+          ],
+          [
+            "Localisation",
+            "Hindi, Tamil, Telugu, Marathi and Bengali listings with native keyword research and copy",
+            "In-app localisation. Translating the listing but not the app produces a bad rating and a worse ranking."
+          ],
+          [
+            "Reviews and quality",
+            "Review prompt strategy, response templates and cadence, uninstall and rating analysis by source, Android vitals monitoring",
+            "Writing fake reviews or buying installs. Not negotiable."
+          ],
+          [
+            "Paid UA",
+            "Coordination — custom store listings mapped to campaigns, and organic lift measured against paid",
+            "Running the campaigns. That belongs with [performance marketing](/performance)."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Pricing, and the number the guarantee measures",
+      "body": [
+        "ASO runs monthly because store algorithms, competitors and your own install data all move monthly. A one-off listing rewrite is worth doing and it isn't ASO."
+      ],
+      "bullets": [
+        "**From ₹40,000 a month, ex-GST.** Play Store listing work, keyword iteration, review management, creative direction and monthly reporting for a single app in English plus two Indian languages.",
+        "**Five-language localisation and a parallel iOS listing** sit above that — scoped by language count and store count, since the work scales almost linearly with both.",
+        "**Bundled with [web SEO](/pricing)** where the app and the marketing site are the same funnel, which for most Indian app businesses they are. A user who finds you on Google and a user who finds you in Play search are the same person at different moments.",
+        "Month-to-month after the first quarter, 30 days' notice, and every asset stays yours — keyword sets, copy in every language, creative files, the lot."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "What we freeze on day one",
+        "body": "Organic installs attributed to store search in Play Console — not total installs, which paid campaigns inflate, and not category rank, which moves when a competitor runs a TV campaign. We freeze the trailing 90 days of that number. Miss it in 90 days and we keep working free until we beat it. We never promise a specific position for a specific search term, in a store or anywhere else."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much do ASO services cost in India?",
+      "a": "Agency ASO in India typically runs ₹25,000–₹1,50,000 a month depending on store count, language count and whether creative production is included. Ours starts at ₹40,000 a month ex-GST for Play Store work in English plus two Indian languages, with five-language and iOS scope quoted above that."
+    },
+    {
+      "q": "How long does ASO take to show results?",
+      "a": "Faster than web SEO. Keyword and metadata changes typically show movement in store search within two to four weeks, because store indexes update quickly and there's no equivalent of a backlink to earn. Ratings and retention effects take longer — usually a couple of months of install cohorts."
+    },
+    {
+      "q": "Should I optimise for the Play Store or the App Store first?",
+      "a": "For an India-first app, Play Store, and it isn't a close call — Android runs roughly 95% of Indian smartphones. Lead with iOS only if your revenue is subscription-based and skews premium, or if your growth market is somewhere with a different platform split."
+    },
+    {
+      "q": "Does translating my app listing into Indian languages actually help?",
+      "a": "Yes, in two ways. A localised listing can rank for search terms the English one never will, and it converts better for users who think in that language. Install conversion rate feeds back into ranking, so the two effects compound. Translate the listing without localising the app, though, and your ratings suffer."
+    },
+    {
+      "q": "Is ASO the same as SEO?",
+      "a": "Same idea, different index. Both are about being findable in a search box you don't control. The mechanics differ completely: no backlinks, no crawling, faster feedback loops, and behavioural signals like uninstall rate carrying weight that has no clean web equivalent."
+    },
+    {
+      "q": "Can you guarantee a top position in Play Store search?",
+      "a": "No. We never promise a specific position in any search index, including app stores. What we commit to is movement against your own frozen baseline — trailing-90-day organic installs from store search. Miss it in 90 days and we keep working free until we beat it."
+    }
+  ],
+  "related": [
+    { "type": "compare", "slug": "seo-vs-aso" },
+    { "type": "services", "slug": "youtube-seo-services" },
+    { "type": "services", "slug": "instagram-seo-services" },
+    { "type": "glossary", "slug": "conversion-rate" },
+    { "type": "journal", "slug": "seo-in-hindi-and-indian-languages" },
+    { "type": "answers", "slug": "how-to-rank-on-google-in-india" }
+  ]
+}

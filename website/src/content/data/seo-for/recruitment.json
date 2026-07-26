@@ -1,0 +1,196 @@
+{
+  "slug": "recruitment",
+  "type": "seo-for",
+  "primaryKeyword": "seo for recruitment agencies",
+  "secondaryKeywords": [
+    "recruitment agency seo india",
+    "seo for hiring firms",
+    "job board seo",
+    "candidate attraction seo",
+    "executive search seo"
+  ],
+  "cluster": "professional-services",
+  "intent": "commercial",
+  "industry": "Recruitment agencies",
+  "h1": "SEO for recruitment agencies that need both sides of the market",
+  "metaTitle": "SEO for Recruitment Agencies: Two Audiences",
+  "metaDescription": "SEO for recruitment agencies in India. Split the site so job seekers and hiring managers get a path, and keep job pages indexed and cleanly expired.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "A recruitment agency has to serve two audiences from one domain, and the job listings that serve one of them expire every few weeks. Get the split wrong and hiring managers land in a job search. Handle expiry wrong and you accumulate thousands of stale or dead URLs that quietly drag the whole site down.",
+  "takeaways": [
+    "Two audiences, two paths, from the first screen. `Hire talent` and `Find a job` as distinct entry points — ambiguity sends your buyer into a candidate funnel.",
+    "**Expired job pages are the defining technical problem in this industry.** Leaving them live and indexed breaks Google's own job posting guidance; redirecting them all to the homepage creates soft 404s. Neither is what most agencies do, because most do nothing.",
+    "Don't fight the big job boards on `jobs in bangalore`. Take `role plus city plus qualifier` — the long tail where a specialist agency has a genuine content advantage.",
+    "A salary guide built from your own placement data, with the sample size and method stated, is the most linkable asset a recruitment agency can publish. Invented numbers are worse than none.",
+    "Report candidate and employer traffic separately or your dashboard will show growth every month while job orders stay flat."
+  ],
+  "sections": [
+    {
+      "h2": "Two audiences, one domain, and the split that has to happen first",
+      "body": [
+        "A recruitment agency sells to employers and recruits from candidates, and the two groups want opposite things from the same website. Employers want to know your sectors, your process, your fee model and your time-to-fill. Candidates want jobs, salary information and a way to send a CV.",
+        "Volume is wildly asymmetric. Candidate queries in India are enormous; employer queries are a rounding error next to them. Build one undifferentiated site and candidate content takes the internal linking, the crawl budget and Google's topical read of the domain, leaving your employer pages in a corner nobody visits.",
+        "Unlike a [staffing firm](/seo-for/staffing), you can't simply give up the candidate side — a recruitment agency's inventory is people, and organic candidate flow has real value. So the answer isn't removal. It's a clean structural separation."
+      ],
+      "numbered": [
+        "**Two entry points above the fold.** 'Hire talent' and 'Find a job', visually equal, from the homepage and from every template. This single change fixes more misrouted enquiries than any keyword work.",
+        "**Two directory trees.** `/employers/` and `/jobs/`, with distinct navigation. Cross-linking between the two should be deliberate and minimal, not automatic.",
+        "**Two content programmes.** Hiring guides, salary benchmarks and market reports on the employer side. Interview preparation, CV advice and role explainers on the candidate side. Don't mix them in one blog.",
+        "**Two conversion definitions in analytics.** Employer enquiries and candidate applications, counted separately, with one headline number that only counts the first. Our note on [setting an SEO baseline](/journal/how-to-set-an-seo-baseline) explains why this has to be settled before work starts.",
+        "**One brand, one domain.** Resist the urge to spin the job board onto a subdomain unless it's a genuinely separate product. You'd be splitting authority to solve a problem that navigation and measurement solve better."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The report that flatters everybody",
+        "body": "An agency showing you total organic sessions on a recruitment site is showing you candidate volume. It will rise reliably and mean nothing commercially. Insist on employer-section sessions and employer enquiries as the headline, with candidate metrics reported separately as a delivery input."
+      }
+    },
+    {
+      "h2": "The expiry trap: what to do with a job page after the role closes",
+      "body": [
+        "This is the problem unique to recruitment, and the one most agencies never address. You publish 60 roles a month, each live for four to eight weeks. Within a year you have several thousand URLs, most of them dead, all of them once indexed.",
+        "Two failure modes dominate. The first is doing nothing: expired jobs stay live and indexed, so a candidate clicks through from Google and applies for a role filled in March. Google's job posting documentation is explicit that expired postings must be removed. The second is over-correcting — redirecting every closed job to the homepage or the jobs index, which Google reads as a soft 404 pattern and which helps nobody who lands on it.",
+        "The documented options are narrower than people assume, and any of them is fine as long as you actually pick one."
+      ],
+      "table": {
+        "caption": "Handling an expired job posting, and what each choice costs you.",
+        "head": ["Approach", "Verdict", "Notes"],
+        "rows": [
+          [
+            "Return 410 Gone (or 404) for the URL",
+            "Correct and cleanest",
+            "The role is genuinely gone. Google handles this well. Remove it from the sitemap at the same time."
+          ],
+          [
+            "Keep the page, remove the JobPosting markup, mark it clearly closed",
+            "Correct, and useful",
+            "Works when the page has links or traffic worth keeping. The page must visibly say the role is closed and offer similar live roles."
+          ],
+          [
+            "Set `validThrough` to a past date",
+            "Correct",
+            "The documented way to signal expiry when you keep the URL. Do it on the day, not in a monthly cleanup."
+          ],
+          [
+            "301 to a genuinely relevant live page",
+            "Acceptable, with care",
+            "Redirecting a closed Java developer role to the live Java developer category is reasonable. Redirecting it to the homepage is not."
+          ],
+          [
+            "Leave it live and indexed",
+            "Don't",
+            "Against Google's job posting guidance, wastes crawl on dead pages, and produces applications for roles that closed months ago."
+          ],
+          [
+            "Bulk 301 everything to `/jobs/`",
+            "Don't",
+            "Reads as a soft 404 pattern and helps nobody. The scale of it is what makes it a site-wide signal rather than a page-level one."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Automate it or it won't happen",
+        "body": "Expiry handling fails because it's manual. Wire it into the ATS: when a role closes, the status change should set `validThrough`, drop the URL from the job sitemap, and either serve 410 or flip the page to a closed state. A quarterly cleanup by an intern is not a process, it's a backlog."
+      }
+    },
+    {
+      "h2": "JobPosting schema, and what it does and doesn't get you",
+      "body": [
+        "Structured data on job pages is worth doing properly and is routinely half-implemented. Google's job experience reads `JobPosting` markup, and the required properties are the entry ticket — title, description, `datePosted`, `hiringOrganization`, `jobLocation`, and `validThrough` for anything with an end date.",
+        "Two things before you budget for it. This surface has changed more than once and varies by country, so check the current documentation and your own Search Console job posting report rather than a blog post from three years ago. And the markup must describe a real, currently open role: marking up an expired posting, or a page that isn't a job at all, is the kind of mismatch that draws a structured data manual action."
+      ],
+      "bullets": [
+        "**Use the real employer as `hiringOrganization` where you're permitted to name them.** Where the client is confidential, be accurate about what you can say rather than inventing a placeholder that misrepresents the role.",
+        "**Include salary as `baseSalary` when you have it**, with the currency and the period. A range is fine. In Indian recruitment this is the single most common missing property and the one candidates filter on.",
+        "**Set `jobLocationType` correctly for remote roles** and don't fake a city to catch location searches. It's a misrepresentation and it produces applications you'll have to reject.",
+        "**Keep a separate job sitemap** so you can see that section's indexing behaviour without it hiding inside the site-wide numbers.",
+        "**Don't mark up a category or listing page as a `JobPosting`.** One posting, one page, one markup block.",
+        "**Check the Search Console job posting report weekly.** Errors arrive in bulk because the pages are generated in bulk, and one template bug takes out the whole section."
+      ]
+    },
+    {
+      "h2": "Where a specialist agency beats the job boards",
+      "body": [
+        "You are not going to outrank the large job boards for `jobs in bangalore` or `software engineer jobs`. They have the domain strength, the inventory and a decade of brand search. Attempting it burns a year.",
+        "What they do badly is depth on a narrow slice. A board optimises for breadth across every function in every city. A specialist agency can write the page that actually answers one specific search — and there are far more of those searches than there are head terms."
+      ],
+      "bullets": [
+        "**Role plus city plus qualifier.** `clinical research associate jobs in ahmedabad`, `plant HR manager jobs in coimbatore`, `SAP FICO consultant jobs pune`. Thin on the boards, winnable with a genuine page.",
+        "**Employer-side long tail**, which is the higher-value half: `recruitment agency for pharma in hyderabad`, `executive search firm for CFO roles india`, `hiring partner for GCC ramp up bangalore`.",
+        "**Role explainer content.** What a role actually does, what the career ladder looks like, what qualifications matter. Boards list; they don't explain.",
+        "**Sector market reports.** Hiring trends in a function you genuinely place in, written from what you see across your own client base and clearly labelled as your observation rather than presented as research you didn't do.",
+        "**Interview content for your specific sectors** — what a BFSI collections interview covers, what a GCC technical loop looks like. Generic interview tips are saturated; sector-specific ones aren't."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Where programmatic pages stop being useful",
+        "body": "Generating `<role> jobs in <city>` for 40 roles across 60 cities gives you 2,400 pages, most of them empty most of the time. A page that lists zero live roles is a bad result, and thousands of them is the scaled-content pattern Google demotes at domain level. Generate a page only where you have live inventory or genuine, non-templated content — see [programmatic SEO and the scaled content line](/journal/programmatic-seo-and-the-scaled-content-line)."
+      }
+    },
+    {
+      "h2": "Salary guides: the one asset worth building properly",
+      "body": [
+        "Salary data is the most-linked content type in recruitment, in every market. Journalists cite it, candidates share it, and hiring managers use it in internal budget arguments — exactly the moment you want your name in front of them.",
+        "It's also where the industry does its most casual inventing: numbers assembled from three other salary guides and a guess, published under a confident title. Beyond the honesty problem, an unsourced guide is trivially challenged, and the challenge is what people remember. You have real data — the offers you've made, the compensation you've negotiated, the ranges your clients budget. Publish that, and publish its limits."
+      ],
+      "bullets": [
+        "**State the sample.** How many placements or offers, over what period, in which sectors and cities. A guide built on 180 placements in one function is more credible than a national guide built on nothing.",
+        "**Give ranges, not points**, and say what moves a candidate within the range — years, product exposure, tier of the previous employer, notice period.",
+        "**Segment by city.** Compensation for the same role differs substantially between metros and tier-2 cities, and a national average serves nobody.",
+        "**Date it and repeat it annually.** The second edition is what makes it an asset; a one-off guide from 2024 becomes a liability.",
+        "**Where you're extrapolating, say so.** 'We placed 12 roles in this band, so treat it as indicative' is more persuasive than false precision, and it's the only version you can defend.",
+        "**Keep it on one permanent URL** updated each year, rather than a new page per edition that splits the links you spent a year earning."
+      ]
+    },
+    {
+      "h2": "Executive search, brand defence, and what we guarantee",
+      "body": [
+        "If you do retained executive search, the calculation changes again. Query volume is tiny — a handful of people a month search `retained executive search firm india` — and the decision runs on reputation and network. SEO's job is narrower and still worth doing: hold the function and sector queries, and make sure that when a board member searches your firm's name, your own pages answer them rather than a stale directory listing.",
+        "Brand defence matters more than it sounds. Candidates search `<your firm> reviews` and `<your firm> genuine or fake` before sending a CV, because recruitment has a fraud problem in India and people are right to check. A clear page on how you work — that you never charge candidates a fee, what your process is, how to verify a genuine approach from your team — protects your candidate flow and your brand at once.",
+        "Our SEO starts at ₹75,000 a month, with smaller regional firms from ₹40,000, ex-GST and month-to-month after the first quarter. Recruitment usually sits above the entry point because the technical work on the job section — expiry automation, schema, sitemaps — runs alongside the employer-side content programme. Full numbers on [pricing](/pricing).",
+        "The baseline we freeze on day one is your trailing-90-day count of qualified employer enquiries from organic search: new job orders and genuine client enquiries in your CRM. Not sessions, and not candidate applications, both of which we could double in six weeks without earning you a rupee. Miss it in 90 days and we keep working free until we beat it. We never promise a specific ranking position, because nobody controls Google's index. Three clients a month is what makes that a real commitment."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "What moves first",
+        "body": "Technical work on the job section — expiry handling, schema fixes, sitemap hygiene — often shows in Search Console within four to eight weeks, because you're cleaning up pages Google already crawls. Employer-side commercial queries take six to twelve months. If your first quarter shows technical recovery and flat employer enquiries, that's the expected shape, not a failure."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What should we do with job pages after the role is filled?",
+      "a": "Pick one documented approach and automate it. Return 410 or 404 and drop the URL from the sitemap; or keep the page, set `validThrough` to a past date, remove or update the markup and clearly mark it closed with links to similar live roles. What you must not do is leave it live and indexed, or bulk-redirect everything to the homepage."
+    },
+    {
+      "q": "Do mass 404s from expired jobs hurt a recruitment website?",
+      "a": "A 404 for a genuinely gone page is normal and Google handles it. The damage comes from the surrounding mess: expired jobs left live, dead URLs still in your sitemap, internal links pointing at them, and mass redirects to irrelevant pages that read as soft 404s. Clean expiry is the fix, not avoiding 404s."
+    },
+    {
+      "q": "Should a recruitment agency separate candidate and employer sections?",
+      "a": "Yes — two entry points from the first screen, two directory trees, two content programmes and two conversion definitions in analytics. Keep both on one domain so you don't split authority. The separation is about navigation, internal linking and measurement, not about hosting."
+    },
+    {
+      "q": "Can a recruitment agency outrank Naukri or LinkedIn for job searches?",
+      "a": "Not for head terms like 'jobs in Bangalore' — those belong to sites with far stronger domains and much larger inventory. You win the narrow slice: role plus city plus qualifier, sector-specific role explainers, and the employer-side queries the boards don't serve at all, which are worth more per visit anyway."
+    },
+    {
+      "q": "Is JobPosting schema still worth implementing?",
+      "a": "Yes, if the roles are real, currently open and correctly expired. Get the required properties right, include salary where you have it, keep a separate job sitemap, and watch the Search Console job posting report weekly because template bugs hit the whole section at once. Check the current documentation — this surface has changed and varies by country."
+    },
+    {
+      "q": "How should we build a salary guide without inventing numbers?",
+      "a": "Use your own placement and offer data, state the sample size, period, sectors and cities it covers, give ranges rather than points, and say plainly where you're extrapolating. A narrow guide built on 180 real placements is more credible and more linkable than a national guide assembled from other people's guides."
+    }
+  ],
+  "related": [
+    { "type": "seo-for", "slug": "staffing" },
+    { "type": "seo-for", "slug": "hr-tech" },
+    { "type": "services", "slug": "schema-markup-services" },
+    { "type": "services", "slug": "programmatic-seo-services" },
+    { "type": "glossary", "slug": "schema-markup" },
+    { "type": "journal", "slug": "programmatic-seo-and-the-scaled-content-line" }
+  ]
+}

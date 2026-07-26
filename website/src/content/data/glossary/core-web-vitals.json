@@ -1,0 +1,132 @@
+{
+  "slug": "core-web-vitals",
+  "type": "glossary",
+  "primaryKeyword": "core web vitals",
+  "secondaryKeywords": [
+    "core web vitals 2026",
+    "page experience signals",
+    "field data vs lab data",
+    "core web vitals report",
+    "do core web vitals affect ranking"
+  ],
+  "cluster": "technical-seo",
+  "intent": "informational",
+  "h1": "Core Web Vitals",
+  "metaTitle": "Core Web Vitals: LCP, INP and CLS Explained",
+  "metaDescription": "Core Web Vitals are Google's three page-experience metrics: LCP, INP and CLS. Here are the thresholds and what they mean on an Indian mobile network.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Core Web Vitals",
+  "definition": "Core Web Vitals are the three page-experience metrics Google measures from real Chrome users: Largest Contentful Paint, Interaction to Next Paint and Cumulative Layout Shift.",
+  "answer": "Core Web Vitals are three metrics Google collects from real Chrome users: Largest Contentful Paint (loading), Interaction to Next Paint (responsiveness) and Cumulative Layout Shift (visual stability). A URL passes only when the 75th percentile of real visits hits the good threshold on all three — not when your laptop does.",
+  "takeaways": [
+    "LCP under 2.5s, INP under 200ms, CLS under 0.1. All three, at the 75th percentile, over a rolling 28 days.",
+    "INP replaced First Input Delay in March 2024. If your reporting still shows FID, it's out of date.",
+    "The PageSpeed Insights score is **lab data**. Rankings use **field data** from real users. They routinely disagree.",
+    "The 75th percentile means one visitor in four can have a worse experience than your threshold and you still pass — and it means your fastest quarter is irrelevant."
+  ],
+  "sections": [
+    {
+      "h2": "Three metrics, three thresholds",
+      "body": [
+        "Each answers a question a visitor asks without thinking: has it loaded, does it respond, does it stop moving."
+      ],
+      "table": {
+        "caption": "The current Core Web Vitals thresholds, measured at the 75th percentile.",
+        "head": ["Metric", "What it measures", "Good", "Poor"],
+        "rows": [
+          [
+            "**LCP** — Largest Contentful Paint",
+            "How long until the biggest visible element — usually a hero image or headline — renders.",
+            "≤ 2.5s",
+            "> 4.0s"
+          ],
+          [
+            "**INP** — Interaction to Next Paint",
+            "How long the page takes to visibly respond to a tap, across every interaction in the visit.",
+            "≤ 200ms",
+            "> 500ms"
+          ],
+          [
+            "**CLS** — Cumulative Layout Shift",
+            "How much the layout jumps while loading. A ratio, not a time.",
+            "≤ 0.1",
+            "> 0.25"
+          ]
+        ]
+      },
+      "bullets": [
+        "Anything between good and poor is **Needs improvement**, which counts as not passing. You pass only if **all three** land in the good band.",
+        "INP superseded First Input Delay in March 2024. FID measured only the delay before the first interaction; INP measures full response time across the whole visit — harder, and fairer.",
+        "CLS annoys users most and costs least to fix: reserve height for images, ads and embeds, and stop injecting banners above content that's already rendered.",
+        "Each metric has its own page — [LCP](/glossary/largest-contentful-paint), [INP](/glossary/interaction-to-next-paint) and [CLS](/glossary/cumulative-layout-shift) — with causes and fixes."
+      ]
+    },
+    {
+      "h2": "The 75th percentile rule, and why your score lies",
+      "body": [
+        "Google doesn't measure your site on a test machine. It uses the Chrome User Experience Report — **CrUX** — real measurements from real Chrome users on real devices and networks, over a rolling 28-day window. Your assessment is the **75th percentile** of that distribution: the value three-quarters of visits came in under.",
+        "So a page passes LCP when 75% of real visits rendered the main content within 2.5 seconds. Your fastest quarter contributes nothing; your slowest quarter is allowed to be terrible. Everything hinges on the visitor at the three-quarter mark.",
+        "Compare that to PageSpeed Insights. The big 0-to-100 number is the Lighthouse score — **lab data**: one simulated load on a throttled mid-tier mobile profile. Useful for debugging, and not what Google uses for ranking. The field data sits above it, and with enough traffic that section is the only one that counts.",
+        "A 95 in the lab and a fail in the field is an ordinary result. So is the reverse."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Not enough data is not a pass",
+        "body": "CrUX needs enough traffic to report a URL. Low-traffic pages fall back to origin-level data or show nothing. \"No data available\" doesn't mean you're fine — it means you're judged on the aggregate of every other page, so a slow template elsewhere drags you with it."
+      }
+    },
+    {
+      "h2": "Why an Indian site fails on a network its founder never uses",
+      "body": [
+        "Here's the concrete version, and it's why this gets misdiagnosed so often in India.",
+        "You check the site in a Bangalore office on fibre, on a recent iPhone, everything warm in cache. It renders instantly. PageSpeed Insights says 92. You conclude speed isn't your problem.",
+        "Your 75th-percentile visitor is on a three-year-old Android in Indore, on a connection that's fine for video and bad for a page shipping 2MB of JavaScript, with an ad script and three tracking pixels queued ahead of your hero image. Their LCP can sit past four seconds on a page that renders in under two on your desk — and theirs is the experience Google records, not yours.",
+        "The gap is widest for the sites that most need to close it: ecommerce and D2C brands whose buyers sit across tier-2 and tier-3 cities on mid-range phones. If your traffic skews mobile and wide, assume the field data is worse than anything you can reproduce locally."
+      ]
+    },
+    {
+      "h2": "How much this actually affects rankings",
+      "body": [
+        "Less than the tooling implies. Core Web Vitals are a real ranking input, but a small one — closest to a tiebreaker between results of comparable relevance. A fast page about the wrong thing does not outrank a slow page about the right thing.",
+        "Which is why we won't sell a Core Web Vitals project to a site whose real problem is four thin pages and no links. Fixing CLS on a page nobody can find is theatre.",
+        "The genuine case here is commercial, not algorithmic. Slow pages lose people before the page finishes arriving, and on mobile checkout that loss compounds at every step. That's revenue you can measure without arguing about ranking weights.",
+        "Where to look: the **Core Web Vitals report** in Search Console groups URLs by template and shows which page type fails, split by mobile and desktop. Mobile is where failures live and mobile is what gets indexed, so start there. Then run PageSpeed Insights on one URL per failing group — one diagnosis per template, not per page. Red across a whole page type is [Core Web Vitals work](/services/core-web-vitals-optimisation), usually a rendering and asset problem rather than a hosting one."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do Core Web Vitals affect rankings?",
+      "a": "Yes, but modestly. They're a page-experience input that acts more like a tiebreaker between comparable results than a lever. Relevance, content quality and links dominate. Fix vitals for conversion and for the pages that already rank — not as a substitute for having something worth ranking."
+    },
+    {
+      "q": "What are the Core Web Vitals thresholds?",
+      "a": "LCP at or under 2.5 seconds, INP at or under 200 milliseconds, CLS at or under 0.1 — each measured at the 75th percentile of real user visits over 28 days. All three must pass. LCP over 4 seconds, INP over 500ms or CLS over 0.25 counts as poor."
+    },
+    {
+      "q": "What's the difference between field data and lab data?",
+      "a": "Field data comes from real Chrome users on your site over a rolling 28 days and is what Google uses. Lab data is a single simulated load on a throttled device, which is what the PageSpeed Insights score reflects. Lab data is for debugging; field data is for judging."
+    },
+    {
+      "q": "Why does my PageSpeed score differ from Search Console?",
+      "a": "Because they're measuring different things. The PageSpeed score is a lab simulation of one load. Search Console reports the 75th percentile of real visits across your actual audience's devices and networks. If your users are on slower connections than your test machine, the two will always disagree."
+    },
+    {
+      "q": "Did INP replace FID?",
+      "a": "Yes, in March 2024. FID only measured the delay before the browser began processing the first interaction, which flattered most sites. INP measures how long the page takes to visibly respond across all interactions in a visit — a stricter and considerably more useful metric."
+    },
+    {
+      "q": "How long do Core Web Vitals take to improve after a fix?",
+      "a": "Deploy the fix and the underlying experience changes immediately, but CrUX uses a rolling 28-day window, so the reported number moves gradually and takes about four weeks to fully reflect the change. Don't judge a fix after a week — you're looking at mostly pre-fix data."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "largest-contentful-paint" },
+    { "type": "glossary", "slug": "interaction-to-next-paint" },
+    { "type": "glossary", "slug": "cumulative-layout-shift" },
+    { "type": "services", "slug": "core-web-vitals-optimisation" },
+    { "type": "compare", "slug": "nextjs-vs-wordpress-seo" },
+    { "type": "journal", "slug": "what-an-seo-audit-should-actually-find" }
+  ]
+}

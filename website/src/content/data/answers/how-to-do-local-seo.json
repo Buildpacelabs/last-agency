@@ -1,0 +1,204 @@
+{
+  "slug": "how-to-do-local-seo",
+  "type": "answers",
+  "primaryKeyword": "how to do local seo",
+  "secondaryKeywords": [
+    "local seo step by step",
+    "how to rank in the map pack",
+    "local seo checklist india",
+    "how to improve local rankings"
+  ],
+  "cluster": "seo-howto",
+  "intent": "informational",
+  "h1": "Local SEO, step by step, for an Indian business",
+  "metaTitle": "How to Do Local SEO for an Indian Business",
+  "metaDescription": "How to do local seo in India: Google Business Profile setup, the citation sites that exist here, review velocity, and locality pages that aren't spam.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Local SEO means ranking in two places at once: Google's map pack and the ordinary blue links below it. In India that means a fully completed Google Business Profile with the right primary category, listings on Justdial, Sulekha and IndiaMART where relevant, steady reviews you actually reply to, and locality pages with something true on them.",
+  "takeaways": [
+    "Google says the map pack is decided by **relevance, distance and prominence**. You can influence two of the three. Distance you cannot.",
+    "Your **primary category** is the single most consequential field in the whole profile. Get it wrong and nothing else compensates.",
+    "There is no single map-pack 'rank'. Results change with the searcher's coordinates, so any tool reporting one number is averaging away the thing you care about.",
+    "Locality pages work when they contain something only someone who has been there could write. Otherwise they're doorway pages, which Google names explicitly."
+  ],
+  "sections": [
+    {
+      "h2": "Local SEO is two rankings, not one",
+      "body": [
+        "Search 'dentist near me' in any Indian city and you get two different things stacked on one page: a map with three businesses pinned to it, and beneath that the usual list of websites. They're ranked by different systems, and most local SEO advice collapses them into one.",
+        "The map pack is decided largely by your Google Business Profile. Google has publicly described three inputs: relevance, or how well your profile matches the query; distance from the searcher; and prominence, meaning how well known you are, which folds in reviews, citations and your website's own authority. The blue links beneath are ordinary SEO with a local twist — your site needs pages worth ranking for 'dentist in Koramangala', not a homepage that mentions Bangalore in the footer.",
+        "You need both. The map pack gets the phone call. The organic result gets the person comparing three clinics before deciding, and that's usually the higher-value one."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The factor you can't fix",
+        "body": "Distance is the input you have no control over. If your competitor's clinic is 400 metres from where most of your customers are standing and yours is four kilometres away, you will lose some searches no matter what you do. Local SEO widens the radius you can win in. It doesn't move your shop."
+      }
+    },
+    {
+      "h2": "Google Business Profile: the fields that actually move the pack",
+      "body": [
+        "Most Indian profiles are half-filled: a name, a phone number, one photo from 2019. Completing the profile properly is a two-hour job and it's the biggest single change available to a local business.",
+        "In rough order of impact:"
+      ],
+      "bullets": [
+        "**Primary category.** The most consequential field in the profile. 'Dentist' and 'Dental clinic' surface for different queries. Look at which category the businesses already ranking in your area have chosen, then pick the one that describes what you mainly do — not the one that sounds most impressive.",
+        "**Secondary categories**, but sparingly. Add the services you genuinely provide. Adding twelve loosely related ones blurs your relevance rather than widening it.",
+        "**Services and products**, written out individually with short descriptions. This is free text Google reads, and almost nobody fills it in.",
+        "**Hours, including holiday hours.** Diwali, Holi and regional holidays matter here — a profile showing 'Open' when you're shut generates one-star reviews about nothing to do with your work.",
+        "**Photos, taken recently, of the actual place.** Exterior with signage and the street, interior, staff, work you've done. Stock images are visible from orbit.",
+        "**Questions and answers.** You're allowed to post a question and answer it yourself. Seed the five things customers ask on every call.",
+        "**The website link, tagged with UTM parameters**, so you can separate profile traffic from the rest of your organic traffic in GA4."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Don't stuff the business name",
+        "body": "'Sharma Dental — Best Dentist in Andheri West, Root Canal, Implants' violates Google's naming guidelines. It sometimes works for a while, which is why it's everywhere. It's also reportable by any competitor through Google's redressal process, and the correction can take the profile down with it. Use the name on your signage."
+      }
+    },
+    {
+      "h2": "Citations that actually exist in India",
+      "body": [
+        "A citation is any place your business name, address and phone number appear online. Consistency matters more than count — the same spelling, the same abbreviations, the same phone format everywhere. Pick one canonical version of your address before you start, and use it exactly.",
+        "Ignore the imported American checklists. These are the ones that exist here and, more importantly, that Indian buyers use."
+      ],
+      "table": {
+        "caption": "Where an Indian business should be listed, and what each listing is genuinely for.",
+        "head": ["Where to list", "Worth it for", "What it actually does"],
+        "rows": [
+          [
+            "Google Business Profile",
+            "Every local business",
+            "Decides the map pack. Everything else on this table is supporting cast."
+          ],
+          [
+            "Justdial",
+            "Clinics, retail, home services, professional services",
+            "Still a real discovery channel in India, not just a citation — people search it directly and calls arrive through it."
+          ],
+          [
+            "Sulekha",
+            "Home services, tutors, event vendors, repairs",
+            "Runs on a paid lead model. Treat it as a paid channel that happens to also be a citation, and judge it on cost per lead."
+          ],
+          [
+            "IndiaMART and TradeIndia",
+            "B2B, manufacturers, wholesalers, exporters",
+            "Not a map-pack signal, but genuine buyer demand. Indian procurement searches start here more often than on Google."
+          ],
+          [
+            "Bing Places and Apple Business Connect",
+            "Every local business",
+            "Free, about ten minutes each. Apple Maps is the default for iPhone users and Siri answers from it."
+          ],
+          [
+            "Facebook and Instagram business profiles",
+            "Anything consumer-facing",
+            "Real people check hours and addresses here, and these profiles often outrank thin directory pages for your brand name."
+          ],
+          [
+            "Vertical platforms (Practo, Zomato, Swiggy, Urban Company, 99acres, MagicBricks)",
+            "Whichever one your sector lives on",
+            "Where your buyers already are. One well-managed vertical listing beats fifty generic directories."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Reviews: velocity, language, and the reply nobody bothers writing",
+      "body": [
+        "Review count and average rating feed the prominence side of the map pack, and they decide whether someone calls you or the clinic next door. The mechanics are simple and almost everyone gets the rhythm wrong.",
+        "Velocity beats volume. Forty reviews in one week after two silent years reads as a campaign — to Google's filters and to any customer reading the dates. A handful every week, indefinitely, is what a working business looks like."
+      ],
+      "bullets": [
+        "**Ask at the moment of delivery**, not by email three weeks later. The short Google review link over WhatsApp, sent while the customer is still on the premises, converts several times better than anything else most Indian businesses try.",
+        "**Put a QR code at the counter or on the invoice.** Removes every step between the intention and the review.",
+        "**Reply to every review in the language it was written in.** If someone writes in Hindi, Tamil or Marathi, reply in that language. Replies are public, permanent, and read by the next person deciding.",
+        "**Reply to the bad ones first, factually, without arguing.** A calm reply to a one-star review persuades more readers than the review damaged.",
+        "**Never buy reviews.** They get filtered in batches, and the batch often takes genuine reviews with it. You also can't undo the pattern once it's in the profile's history."
+      ]
+    },
+    {
+      "h2": "Locality pages that aren't doorway spam",
+      "body": [
+        "The temptation with local SEO is to generate one page per locality from a template: swap 'Bandra' for 'Andheri', publish 40 URLs, wait. Google's guidelines name this pattern directly as doorway pages, and it's one of the few things that can pull down a small site quickly.",
+        "The test is uncomfortable and it works: **could this page have been written by someone who has never been to that area?** If yes, it's a doorway page regardless of what you call it."
+      ],
+      "bullets": [
+        "Name the landmarks, junctions and metro stations people actually use to describe where you are — not the ones on the postal address.",
+        "State your real travel or delivery radius from that point, in minutes, honestly.",
+        "Use prices, timings and availability that are specific to that area if they differ. If they don't differ, say so rather than inventing a difference.",
+        "Include photos taken there and reviews from customers in that area.",
+        "If you don't have premises in the locality, write that plainly: 'we serve Whitefield from our Indiranagar studio, typically 40 minutes each way.' Honest and still useful beats fabricated and thin.",
+        "Ten locality pages you'd defend beat sixty you wouldn't. Read [local SEO versus national SEO](/compare/local-seo-vs-national-seo) if you're deciding how wide to go."
+      ]
+    },
+    {
+      "h2": "Multi-outlet businesses: one profile per door",
+      "body": [
+        "Chains, clinics with branches and franchise operators get this wrong in a consistent way — one profile, one page, all the branches listed on it. That structure can only ever rank in one pin's radius.",
+        "The correct shape is boring and it works:"
+      ],
+      "numbered": [
+        "**One Google Business Profile per physical location**, each with its own address and, where possible, its own local phone number. Ten or more locations can be managed in bulk through location groups.",
+        "**One page on your website per location**, and the profile's website link points at that page — not at your homepage. This is the single most common fix on multi-outlet sites.",
+        "**A store locator page** that links to every location page, so none of them are orphaned.",
+        "**`LocalBusiness` schema on each location page** with that outlet's address, hours and phone number, matching the profile exactly.",
+        "**Service-area businesses hide the address** and set a service radius instead. If you have no premises customers can visit, listing a fake storefront is the fastest route to a suspended profile."
+      ]
+    },
+    {
+      "h2": "Tracking: your ranking depends on where the phone is",
+      "body": [
+        "Here's the part that breaks most local SEO reporting. Map pack results are computed from the searcher's coordinates. There is no single rank for 'dentist in Pune' — there's a different result at every point on the map, and a business can be first at its own doorstep and invisible three kilometres away.",
+        "So a report claiming 'you rank #2 for dentist in Pune' is either averaging across locations or measuring from one arbitrary point, usually the city centre. Neither tells you whether the person two neighbourhoods over can find you."
+      ],
+      "bullets": [
+        "**Use a grid tool.** Local Falcon, BrightLocal and similar tools sample your position across a grid of coordinates and return a heat map. Watching that map expand is the real measure of progress.",
+        "**Read the Business Profile performance report** for calls, direction requests, messages and website clicks — plus the actual searches people used to find you, which is free keyword research nobody reads.",
+        "**Track calls, not sessions.** Calls and direction requests are the local metrics that pay.",
+        "**Compare like for like.** Local demand is seasonal and weather-driven in ways national SEO isn't. Compare this June to last June, not to May."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What this costs to run properly",
+        "body": "Doing local SEO seriously is a monthly habit, not a project — reviews, photos, posts, new locality pages, listing fixes. See [what local SEO costs](/cost/local-seo-cost) for real numbers. If you'd rather it were someone else's habit, our [SEO retainer](/seo) starts at ₹75,000/mo, with smaller local sites from ₹40,000."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long does local SEO take to work in India?",
+      "a": "Profile completion and category fixes can show up in the map pack within two to four weeks, because Google re-evaluates profiles quickly. Review-driven prominence and locality pages take longer — three to six months for a competitive category in a metro. Less contested categories in tier-2 cities often move faster, simply because fewer competitors have bothered."
+    },
+    {
+      "q": "Do I need a website if I have a Google Business Profile?",
+      "a": "You can rank in the map pack without one, and plenty of businesses do. You'll cap your prominence, lose every organic result below the map, and have nowhere to answer the questions that decide a considered purchase. A profile gets you the call; a site wins the person who's comparing three options first."
+    },
+    {
+      "q": "Is Justdial still worth listing on?",
+      "a": "As a free listing, yes — it's consistent NAP data and Indian users do still search it directly. As a paid lead package, judge it purely on cost per qualified lead and compare against what the same monthly spend does in search ads. Treat those as two separate decisions, because they are."
+    },
+    {
+      "q": "How do I rank in the map pack outside my immediate area?",
+      "a": "You expand the radius rather than move the pin. More and steadier reviews, a complete and specific profile, consistent citations, and pages on your site that genuinely address the neighbouring areas all widen the zone where Google considers you a reasonable answer. Nothing makes distance stop mattering."
+    },
+    {
+      "q": "Should I create a page for every locality I serve?",
+      "a": "Only for the ones where you can write something true and specific. A page naming real landmarks, real travel times and real customers is a genuine page. The same paragraph with the area name swapped is a doorway page, which Google's guidelines call out by name, and it puts the rest of your site at risk."
+    },
+    {
+      "q": "How many Google reviews do I need?",
+      "a": "There's no threshold that switches anything on, and anyone quoting one is guessing. What matters is being credible against the businesses you're competing with in that pin's radius — so compare your count and recency against the three currently in the pack, and keep a steady weekly trickle rather than chasing a number."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "google-business-profile" },
+    { "type": "glossary", "slug": "local-citations" },
+    { "type": "services", "slug": "local-seo-services" },
+    { "type": "compare", "slug": "local-seo-vs-national-seo" },
+    { "type": "cost", "slug": "local-seo-cost" },
+    { "type": "journal", "slug": "local-seo-in-tier-2-india" }
+  ]
+}

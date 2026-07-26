@@ -1,0 +1,191 @@
+{
+  "slug": "what-are-google-ai-overviews",
+  "type": "answers",
+  "primaryKeyword": "what are google ai overviews",
+  "secondaryKeywords": [
+    "ai overview google",
+    "how do ai overviews work",
+    "ai overviews impact on traffic",
+    "google sge explained"
+  ],
+  "cluster": "seo-ai",
+  "intent": "informational",
+  "h1": "Google AI Overviews and what they did to your traffic",
+  "metaTitle": "What Are Google AI Overviews? Traffic Impact",
+  "metaDescription": "Google AI Overviews explained: the measured click data, the 2026 stabilisation, which query types lost the most, and how to size your own exposure.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Google AI Overviews are AI-written summaries that sit above the normal search results and cite a handful of sources. Pew Research Center found people clicked a traditional result on 8% of visits where one appeared, versus 15% where none did. The loss is concentrated in informational queries, not commercial ones.",
+  "takeaways": [
+    "The only click figure worth quoting comes from Pew Research Center's 2025 browsing study: **8% versus 15%**. Everything larger circulating in agency decks is modelled, not measured.",
+    "The decline was a **one-time reset on informational queries**, not a slope. Once those queries were absorbed, most sites stopped falling — which is what people mean by the 2026 rebound.",
+    "Your exposure is a function of your query mix, not an industry average. A pricing-page-heavy site barely noticed. A definitions blog lost half its clicks.",
+    "Cited sources are drawn almost entirely from pages already ranking on page one. Ranking is still the entry fee."
+  ],
+  "sections": [
+    {
+      "h2": "What sets one off",
+      "body": [
+        "Google generates an AI Overview when its systems judge a synthesised paragraph more useful than ten links. That judgement is fairly predictable once you've watched a few hundred SERPs.",
+        "It also withholds them. Clear buying intent, navigational queries, some health, finance and legal topics, breaking news, and anything too ambiguous to summarise safely tend to get the classic results page."
+      ],
+      "bullets": [
+        "**Definitional queries** — what is X, what does Y mean. Worst hit by a distance, because the summary genuinely is the whole answer.",
+        "**Procedural queries** — how to do something in a few steps, where a numbered list finishes the job.",
+        "**Comparative queries** — X versus Y, types of Z, where an Overview can assemble a table from three sources.",
+        "**Long conversational phrasing** — the sentence-shaped queries people picked up from talking to assistants.",
+        "**Rarely** — brand names, product purchases, phone numbers, addresses, or anything where clicking through is obviously the point."
+      ]
+    },
+    {
+      "h2": "The click damage, using the one number that holds up",
+      "body": [
+        "The strongest public evidence is Pew Research Center's 2025 analysis of real Google users' browsing behaviour. On visits to a results page containing an AI summary, users clicked a traditional result on **8%** of visits. Without a summary, **15%**. Roughly half the clicks, measured by watching what people did rather than modelling what they might do.",
+        "Coverage — how often an Overview appears at all — is where published numbers stop agreeing, and the disagreement is honest rather than sloppy. Trackers report anywhere from a fifth of queries to nearly half, and both can be true, because it depends entirely on which keyword set was sampled, in which country, on which device. Treat any confident percentage as a fact about somebody's keyword list, not about the web. The number that matters is yours, and you already have the data to calculate it."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The number to hold",
+        "body": "Pew Research Center, 2025: a traditional result was clicked on 8% of visits where an AI summary appeared, against 15% where none did. Use this one. The bigger, unsourced figures in agency pitch decks are almost always extrapolations from a small keyword sample."
+      }
+    },
+    {
+      "h2": "The 2026 stabilisation, and why it isn't a recovery",
+      "body": [
+        "Through 2024 and into 2025, publishers watched informational traffic fall off a cliff and assumed it would keep falling. It largely didn't. The common shape in the Search Console accounts we look at is a sharp drop, then a flat line, and sometimes a partial climb back — the thing people now call a rebound.",
+        "Three ordinary mechanics explain most of it, and none of them is Google reversing course. The drop was a **one-time reset**, not a slope: once the queries an Overview can fully answer were absorbed, there was nothing left to absorb, and what remains are queries a paragraph can't finish. The sites that visibly recovered **changed their mix**, swapping definitional articles for pricing, comparison and product pages — a different set of pages doing the work, which looks identical on a traffic chart. And **impressions kept growing** while clicks fell, so some of the apparent 2026 improvement is just the comparison period settling.",
+        "Nobody has published a methodologically sound figure for the size of the rebound. If an agency quotes you one to a decimal place, ask where it came from."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The trap in the rebound story",
+        "body": "\"Traffic came back\" is often \"we replaced dead informational pages with commercial ones\" — a real fix, but a completely different claim. If your recovery is real, your leads recovered too. If only sessions recovered, check which pages they landed on before you celebrate."
+      }
+    },
+    {
+      "h2": "Work out your own exposure before you panic",
+      "body": [
+        "Averages hide the shape of this. The loss isn't spread across your site — it's concentrated in one kind of page. If that's what your content plan is built on, the industry average badly understates your problem. If it isn't, you may have lost almost nothing.",
+        "Open Search Console, set the range to the last 16 months, export the Queries report, and sort into these buckets. The middle column is the filter that finds each one."
+      ],
+      "table": {
+        "caption": "Sorting your own queries into exposure buckets using Search Console filters.",
+        "head": ["Bucket", "How to find it in Search Console", "Exposure"],
+        "rows": [
+          [
+            "Definitional",
+            "Query contains: what is, meaning, definition, explained",
+            "Severe — assume the click is gone"
+          ],
+          [
+            "Procedural",
+            "Query contains: how to, steps, guide, tutorial",
+            "Severe on simple tasks, moderate on complex ones"
+          ],
+          [
+            "Comparative",
+            "Query contains: vs, versus, difference, best, types of",
+            "High, unless you publish original testing"
+          ],
+          [
+            "Commercial / pricing",
+            "Query contains: cost, price, pricing, charges, quote",
+            "Moderate — Google is cautious with money queries"
+          ],
+          [
+            "Local",
+            "Query contains: near me, or a city name",
+            "Low — the map pack still owns this"
+          ],
+          [
+            "Brand and navigational",
+            "Query contains your brand name",
+            "Low — largely untouched"
+          ],
+          [
+            "Transactional",
+            "Query contains: buy, order, book, demo, download",
+            "Low — this is where the remaining clicks pooled"
+          ]
+        ]
+      },
+      "bullets": [
+        "Add up the clicks in the top three buckets as a share of your total. That percentage is your real exposure.",
+        "Under 20%, this is a rounding error and you should stop reading about it. Over 60%, your content strategy needs a rewrite, not a tweak."
+      ]
+    },
+    {
+      "h2": "How Google picks the sources it cites",
+      "body": [
+        "This is the reassuring part, and it gets buried under the panic. The links inside an AI Overview come overwhelmingly from pages already visible for that query — page-one organic results, plus the occasional deeper page carrying a passage that answers a sub-question the summary needed.",
+        "So the work hasn't changed as much as the vocabulary has. Ranking well is still the entry requirement. What's added is making passages liftable: a clean 40-to-60-word answer under a question-shaped heading, comparisons in a real table, numbers attributed to a named source rather than to \"studies\". That craft picked up the name [answer engine optimization](/glossary/answer-engine-optimization), but it's mostly good technical writing with a citation habit.",
+        "There's no mechanism to bid, pay or apply for citation. Guaranteed AI Overview placement is the guaranteed-rankings trick in newer packaging."
+      ]
+    },
+    {
+      "h2": "What to change on informational pages",
+      "body": [
+        "The wrong response is to stop publishing. The right one is to stop publishing pages whose only job was collecting a click that no longer arrives, and move that budget to pages that still need a click to complete. On the retainers we run, that has meant five changes:"
+      ],
+      "numbered": [
+        "**Stop forecasting traffic from definitional pages.** Keep the good ones — they earn citations and build [topical authority](/glossary/topical-authority) — but budget them as brand assets, not traffic.",
+        "**Add the thing a paragraph can't carry.** A calculator, a template, a real price, a walkthrough with screenshots. Summaries restate facts; they can't hand over a spreadsheet.",
+        "**Front-load a citable answer.** One tight paragraph under the heading, written to be lifted. If you're going to be quoted, be quoted accurately and by name.",
+        "**Rebalance the calendar toward buying intent.** Pricing, comparison with original data, location and product pages. That's where the clicks pooled.",
+        "**Report leads, not sessions.** A 30% fall in informational traffic with flat enquiries isn't a bad quarter — it's the same business minus an audience that was never going to buy."
+      ]
+    },
+    {
+      "h2": "How to track AI Overview presence for your own queries",
+      "body": [
+        "Google folds Overview clicks and impressions into the standard Search Console Performance report with no breakout. You can't isolate them. Anyone showing you a precise AI Overview traffic report is showing you a model of a number Google doesn't publish — and honest reporting says so out loud.",
+        "You can triangulate, which is enough to make decisions:"
+      ],
+      "bullets": [
+        "**Track click-through rate at stable positions.** If a query sat at position 3 all year and its CTR halved, something above it is eating the click.",
+        "**Use a rank tracker that flags SERP features.** Most major trackers now record whether an Overview appeared for a keyword on a given day, and whether you were cited. That flag is the closest thing to direct measurement available.",
+        "**Spot-check manually, logged out.** Presence varies by country, device and account. Your own logged-in results don't represent your market.",
+        "**Watch impressions and clicks separately, by bucket.** Rising impressions with falling clicks is the Overview signature. Falling impressions is a ranking problem and a completely different fix."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "How we handle it in reporting",
+        "body": "Our guarantee is written against qualified organic leads frozen on day one, not traffic — traffic was already fragile before any of this, after a decade of [zero-click search](/glossary/zero-click-search). It also means we can't hide an Overview problem behind a session count. See [how the SEO retainer works](/seo)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much traffic do Google AI Overviews actually cost you?",
+      "a": "Pew Research Center's 2025 study found users clicked a traditional result on 8% of visits where an AI summary appeared, against 15% where none did — roughly half. Your own loss depends almost entirely on how much of your traffic comes from definitional and how-to queries versus commercial ones."
+    },
+    {
+      "q": "Did traffic recover in 2026?",
+      "a": "For many sites it stabilised rather than recovered. The drop was a one-time reset on queries an AI answer can fully satisfy, so once those were absorbed the decline stopped. Sites that look like they bounced back usually changed their content mix toward commercial pages. No credible public dataset sizes the rebound precisely."
+    },
+    {
+      "q": "How do I get cited in an AI Overview?",
+      "a": "Rank on page one for the query first — citations are drawn almost entirely from pages already visible. Then make passages extractable: a 40 to 60 word direct answer under a question-shaped heading, comparisons in tables, figures attributed to named sources. There is no way to pay for or apply for placement."
+    },
+    {
+      "q": "Can I block my site from appearing in AI Overviews?",
+      "a": "Only bluntly. The `nosnippet` and `max-snippet` robots directives limit how your content is used in overviews, but they also strip your ordinary search snippet, which costs more clicks than it saves for almost every commercial site. Blocking Google-Extended affects Gemini training, not Overviews in Search."
+    },
+    {
+      "q": "Does Search Console report AI Overview clicks separately?",
+      "a": "No. Those clicks and impressions sit inside the standard Performance report with no breakout. The practical workaround is comparing click-through rate at stable positions over time, split by query type, and using a rank tracker's SERP-feature flag to see where Overviews appear."
+    },
+    {
+      "q": "Is SEO still worth doing with AI Overviews on most queries?",
+      "a": "Yes, with a changed target. Pricing, comparison, local, transactional and brand queries still send clicks, and being cited inside an Overview still puts your name in front of a buyer. What's finished is publishing definitional articles purely to collect traffic volume."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "ai-overviews" },
+    { "type": "journal", "slug": "what-ai-overviews-did-to-your-organic-traffic" },
+    { "type": "compare", "slug": "geo-vs-seo" },
+    { "type": "answers", "slug": "will-seo-be-replaced-by-ai" },
+    { "type": "services", "slug": "ai-search-optimisation-services" },
+    { "type": "glossary", "slug": "zero-click-search" }
+  ]
+}

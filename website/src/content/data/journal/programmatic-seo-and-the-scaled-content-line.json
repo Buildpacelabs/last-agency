@@ -1,0 +1,199 @@
+{
+  "slug": "programmatic-seo-and-the-scaled-content-line",
+  "type": "journal",
+  "primaryKeyword": "programmatic seo risk",
+  "secondaryKeywords": [
+    "scaled content abuse",
+    "is programmatic seo safe",
+    "google spam policy content",
+    "template pages seo penalty",
+    "mass page generation seo"
+  ],
+  "cluster": "seo-strategy",
+  "intent": "informational",
+  "h1": "Programmatic SEO is fine until it isn't. Here's the line.",
+  "metaTitle": "Programmatic SEO and the Scaled Content Line",
+  "metaDescription": "Programmatic SEO risk is real but misunderstood. The line isn't page count — it's whether each page carries something nobody else has. Here's the test.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Programmatic SEO is legitimate when every generated page carries data, utility or judgement that exists nowhere else. Google's scaled content abuse policy targets pages made in bulk to catch rankings without helping anyone — it doesn't target page count or automation. Five hundred pages built on real differences are fine. Fifty built on find-and-replace aren't.",
+  "takeaways": [
+    "Google's policy is about **purpose and value**, not volume or tooling. It applies whether pages were written by a model, a template or a room full of interns.",
+    "Four tests: **unique data**, **unique utility**, **editorial review**, **honest intent**. Fail any one and the page set is a liability, not an asset.",
+    "City and industry pages are the most abused format on the Indian web. The test: could three sentences on that page be false about the next city? If not, don't publish it.",
+    "Reviewing 500 pages at 20 minutes each is **roughly 167 hours** — a month of full-time editing. Almost nobody budgets it, which is exactly why the format has a bad name.",
+    "This site is about 500 URLs. We'll show you the rules it's held to, and you should hold us to them."
+  ],
+  "sections": [
+    {
+      "h2": "What Google's policy actually says, and what people think it says",
+      "body": [
+        "The common reading is that Google penalises mass-produced pages, so programmatic SEO is risky and templated page sets are a gamble. That's a misreading of a policy that is unusually clear for once.",
+        "Google's spam policies name **scaled content abuse**: producing many pages whose primary purpose is to manipulate search rankings rather than help people. The clause that matters is the one about method — it applies regardless of how the pages were made. Automated, hand-written, or a model with a human pressing publish. The judgement is on why the pages exist and whether anybody is better off for them, not on whether a script was involved.",
+        "That reframes the risk completely. A hand-written 400-page blog where every post rewords the same advice is in scope. A generated 5,000-page set where each page reports live pricing you collect yourself is not. Volume is not the crime. Sameness with intent to catch traffic is.",
+        "The practical consequence is that you cannot make a templated page set safe by writing it slower. You make it safe by making each page carry something. That is a content problem, not a compliance problem, and it costs more than most people planning a programmatic build have budgeted."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where the confusion comes from",
+        "body": "Google tightened this area in 2024, adding scaled content abuse alongside site reputation abuse and expired domain abuse. Coverage at the time collapsed all three into \"Google is coming for AI content\", which was never what the policy said. Read the spam policies themselves — they're short, and they're written in plain English."
+      }
+    },
+    {
+      "h2": "The four-part test",
+      "body": [
+        "Here's the test we run before we build any templated page set, ours or a client's. Every page in the set has to pass all four. Three out of four is a fail, because the missing one is always the expensive one.",
+        "Run it on a sample of five pages, chosen at random rather than the five you're proud of."
+      ],
+      "table": {
+        "caption": "The four-part legitimacy test for a templated page set.",
+        "head": ["Test", "The question", "It fails when"],
+        "rows": [
+          [
+            "Unique data",
+            "Does this page state at least one fact that appears on no other page of ours, and that's hard to find elsewhere?",
+            "The only differences between two pages are a place name, an industry noun and a swapped adjective."
+          ],
+          [
+            "Unique utility",
+            "Is there a reason a person would want this page rather than the parent page it was spun from?",
+            "The reader would have been better served by one page with a filter or a table on it."
+          ],
+          [
+            "Editorial review",
+            "Did a named human read this page before it went live, with the authority to kill it?",
+            "Nobody can name the reviewer, or the reviewer has never rejected a page."
+          ],
+          [
+            "Honest intent",
+            "Would we open this page in a sales meeting with the buyer it targets?",
+            "The page exists to catch a query and push a click, and everyone involved knows it."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Unique data is the hard one, and it's the one that decides everything else.** If you can't source a per-page fact, you don't have a programmatic project — you have a find-and-replace with a content calendar attached.",
+        "**Editorial review is the cheap one to fake.** A kill rate of zero is not a passing grade; it's evidence the filter isn't switched on.",
+        "**Honest intent sounds soft and isn't.** It's the only test that catches a page set which technically passes the other three and still reads as a trap."
+      ]
+    },
+    {
+      "h2": "City and industry pages: the hardest case to defend",
+      "body": [
+        "Location and industry landing pages are the most abused format on the Indian web, and it isn't close. Open ten agency sites and you'll find the same page fifty times with the city swapped, each one promising \"SEO services in [city] tailored to local businesses\". Nobody reads them. They exist because somebody once ranked with them in 2016.",
+        "They can be legitimate. The bar is specific and it's checkable: **write three sentences about that city or industry that would be false about the next one.** Not colour, not \"a vibrant business hub\" — statements a local would nod at.",
+        "Some are easy because the fact is real. Bengaluru genuinely is India's largest software employment cluster, and SaaS companies there are competing for global English-language queries rather than local ones. Surat's economy really does run on textiles and diamond processing, which means export buyers and B2B trade queries rather than consumer search. Kochi is a genuine spice and seafood export centre. Jaipur's search demand splits between gems and jewellery manufacturing and inbound tourism. Those are pages worth writing, because the SEO advice that follows is genuinely different in each case.",
+        "And when there's nothing true and specific to say about a city, the honest move is to write fewer pages. One page listing the cities you serve beats forty pages that all say the same thing, and it converts about as well, because nobody was choosing you on the strength of a swapped place name anyway."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The five-minute audit",
+        "body": "Open two of your city pages side by side and diff them. If more than about 80% of the words are identical, you don't have two pages — you have one page and a duplicate that's costing you crawl attention and, eventually, credibility. The same test works on industry pages, product pages and \"alternatives to X\" pages."
+      }
+    },
+    {
+      "h2": "The editorial review step, and its arithmetic",
+      "body": [
+        "This is where programmatic projects actually die, and it's not a strategy failure. It's a budgeting one.",
+        "Take a 500-page build. A real review — read the page, check the per-page facts are correct, check it doesn't duplicate a sibling, check the internal links land somewhere sensible, kill it if it's empty — takes about twenty minutes a page once you're in a rhythm. That's roughly **167 hours**. A month of somebody's full-time attention, on top of the build itself.",
+        "Most programmatic plans budget zero for this, because the pitch for programmatic SEO is that pages are nearly free. The generation is nearly free. The review isn't, and the review is the entire difference between a page set that earns its URLs and one that gets classified with the spam.",
+        "There's a cheaper version that still works: review 100% of the template and the data pipeline, then sample-review pages at a rate you can sustain — say one in ten, chosen at random — with the rule that a failed sample sends the whole batch back. That's how manufacturing quality control works, and it works here for the same reason. What doesn't work is publishing 500 pages nobody has read and calling the sitemap a strategy.",
+        "Whichever version you pick, track the kill rate. If your editor has never sent a page back, the editor is a rubber stamp and you've spent the money without buying the protection."
+      ]
+    },
+    {
+      "h2": "Sameness is the crime, and it compounds",
+      "body": [
+        "Search engines have been clustering near-identical documents since long before anyone said \"programmatic\". When a crawler finds forty pages that are 90% the same, it does the sensible thing: it picks one, treats the rest as duplicates, and gradually spends less crawl attention on the pattern. You don't get a warning. You get a slow decline in how much of your site gets looked at.",
+        "Then it compounds. Forty near-identical pages targeting forty near-identical queries is [keyword cannibalization](/glossary/keyword-cannibalization) at industrial scale — every page in the set is competing with its siblings, so no single URL ever accumulates enough signal to hold a position. We wrote a [post-mortem on how four pages do this](/journal/a-post-mortem-on-keyword-cannibalization); the same mechanism with four hundred pages is not four hundred times worse, it's categorically different, because at that scale it becomes a statement about what your whole site is.",
+        "Which is the part founders underestimate. A handful of thin pages is a local problem. A few thousand of them is a site-level assessment, and site-level assessments drag down the pages that were fine. That's why we treat the decision to go programmatic as an architecture decision, not a content-volume decision."
+      ],
+      "bullets": [
+        "**The diff test.** Two pages, side by side, 80%+ identical words: one page.",
+        "**The impressions test.** Twelve months after launch, what share of the set has earned a single impression? A healthy programmatic set has a long tail of small numbers, not a cliff of zeroes.",
+        "**The link test.** Has anything in the set ever been linked to by someone who wasn't paid? Not required, but it's a strong signal that the pages are useful to somebody."
+      ]
+    },
+    {
+      "h2": "How we hold our own 500-page build to the test",
+      "body": [
+        "This site is around 500 URLs across answers, glossary terms, journal pieces, comparisons, service pages, cost pages, city pages and industry pages. We'd be hypocrites to write the section above and not show our own working.",
+        "Every page here has a written **angle** and a **must-cover list** agreed before a word gets drafted — the specific reason this URL exists and can't be folded into its neighbour. Where a page couldn't be given one, it got cut from the plan rather than filled with padding. Our prices are published in rupees, with the actual numbers: SEO from ₹75,000/mo, smaller sites from ₹40,000, and the rest on [our pricing page](/pricing). The guarantee is stated with its conditions attached every single time, because a guarantee without conditions is marketing.",
+        "The city pages get the three-sentence test, and we've written fewer of them than the plan originally called for because some cities didn't survive it. The industry pages get the same treatment. Where we couldn't say something true and specific, we wrote less.",
+        "None of that makes us immune, and here's the honest bit: at 500 URLs, some pages will be better than others, and the weakest ones are the ones that drag. If you read three of our city pages back to back and they read the same, we've failed our own test. Tell us, and we'll either fix the page or delete it. That's the standard we're asking you to apply to any agency pitching you a programmatic build, including this one."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What we won't build",
+        "body": "We don't build \"best SEO agency in [city]\" list pages that rank other agencies, and we don't build pages targeting another company's brand name. They rank badly, they read as parasitic, and they invite trademark complaints. If a programmatic plan's biggest page type is other people's brand names, that's the plan telling you what it is."
+      }
+    },
+    {
+      "h2": "If you already have four thousand templated pages",
+      "body": [
+        "Most people asking about programmatic risk aren't planning a build. They've inherited one, traffic has flattened or fallen, and they want to know whether the pages are the cause. Here's the triage, in order.",
+        "Do not start by deleting. Start by measuring."
+      ],
+      "numbered": [
+        "**Export 12 months of impressions per URL from Search Console.** Segment into three buckets: earning (regular impressions and clicks), dormant (impressions, no clicks), dead (no impressions at all).",
+        "**Look at the size of the dead bucket.** On a badly built set it's usually the majority, and you'll know within an hour of opening the export. That number is your problem statement and it's more persuasive to a board than any argument you could write.",
+        "**Deal with the dead set properly.** Noindex or remove. Do not 301 four thousand URLs at the home page — an irrelevant redirect is treated as a soft 404 and buys you nothing but a slower crawl.",
+        "**Rebuild the top decile with real data.** Take the pages that earn impressions and give them the thing the template couldn't: genuine per-page facts, a reason to exist, a human edit. Prove the format can work on ten pages before you re-run it on a thousand.",
+        "**Slow the publishing down while this happens.** Adding pages during a quality cleanup means Google is re-assessing a site that's still changing shape, which extends the read.",
+        "**Budget in months.** Site-level quality assessments don't reverse the week after a cleanup. Recovery is usually measured in core update cycles, and nobody outside Google can promise you a date."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The recovery nobody warns you about",
+        "body": "A sitewide quality problem isn't a per-URL penalty you can lift by fixing one page. It's an assessment of the whole domain, so the fix has to be visible across the whole domain before anything moves. That's why cleanups take quarters, and why \"we'll just add unique intros\" is not a plan."
+      }
+    },
+    {
+      "h2": "When programmatic is genuinely the right call",
+      "body": [
+        "None of the above is an argument against the format. Some of the most useful pages on the internet are generated — flight routes, pincode lookups, currency pairs, \"is this domain available\", live price comparisons. They pass all four tests easily, because the data is the product and it genuinely differs on every URL.",
+        "The shape that works looks like this. You have a data source nobody else has, or one that's expensive to assemble. Each row of that data answers a question a real person types. The template exists to present the row, not to pad it out to 800 words for a word-count target. And somebody owns the pipeline, so when the data goes stale the pages get updated instead of quietly becoming wrong.",
+        "If that's your situation, build it, and build it big — [programmatic SEO done properly](/services/programmatic-seo-services) is one of the few things in this discipline with genuine compounding returns. If it isn't your situation, the honest alternative is a smaller, better set. [How many pages you actually need](/journal/how-many-blog-posts-you-actually-need) is usually a smaller number than the deck suggests, and pages you don't publish cost nothing to maintain."
+      ],
+      "bullets": [
+        "**Good candidates:** structured data you own or collect, real inventory, comparisons between things that genuinely differ, calculators, availability and pricing that changes.",
+        "**Bad candidates:** \"[service] in [city]\", \"[service] for [industry]\" with no local or industry substance, spun listicles, and anything where the variable is only an adjective.",
+        "**The tell either way:** if you removed the templated intro and outro, would the page still be worth reading? If yes, publish. If no, you were publishing the intro."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is programmatic SEO against Google's guidelines?",
+      "a": "No. Google's scaled content abuse policy targets pages produced in bulk primarily to catch rankings rather than help people, and it explicitly applies regardless of whether the pages were automated or hand-written. A templated page set with genuine per-page data and utility is fine. A find-and-replace with a sitemap isn't."
+    },
+    {
+      "q": "How many pages is too many for one site?",
+      "a": "There's no number. Sites with millions of pages rank perfectly well when each page carries information that exists nowhere else. Sites with 300 pages get suppressed when those pages are near-duplicates. The question isn't how many pages you have — it's how many of them a reader would be worse off without."
+    },
+    {
+      "q": "Will Google penalise my city or location landing pages?",
+      "a": "Only if they're the same page with the place name swapped. Run the three-sentence test: write three statements about that city's market that would be false about the next one. If you can't, publish one service-area page instead of forty near-identical ones — you lose nothing and you stop carrying the risk."
+    },
+    {
+      "q": "Can AI write programmatic pages safely?",
+      "a": "The tool isn't what's assessed — the output is. Generated text fails on specificity: it hedges, repeats the consensus and invents figures when the data is missing. It's usable for structuring a page around facts you supply and verify. It is not usable as the source of the facts, and unverified generated numbers are a legal risk as well as an SEO one."
+    },
+    {
+      "q": "How do I know if my templated pages are hurting the rest of my site?",
+      "a": "Pull 12 months of impressions per URL. If most of the templated set has never earned a single impression, that's a large share of your site producing nothing, and site-level quality assessments consider the whole domain. Fix or remove the dead set before you conclude the format doesn't work."
+    },
+    {
+      "q": "What's the difference between programmatic SEO and scaled content abuse?",
+      "a": "Purpose and value. Programmatic SEO uses a template to present data that genuinely differs on every page — routes, prices, availability, real local specifics. Scaled content abuse uses a template to manufacture the appearance of coverage. Same tooling, opposite intent, and a search engine can tell the difference at scale."
+    }
+  ],
+  "related": [
+    { "type": "services", "slug": "programmatic-seo-services" },
+    { "type": "glossary", "slug": "thin-content" },
+    { "type": "answers", "slug": "does-ai-content-hurt-seo" },
+    { "type": "journal", "slug": "how-many-blog-posts-you-actually-need" },
+    { "type": "glossary", "slug": "keyword-cannibalization" },
+    { "type": "cost", "slug": "content-writing-cost-india" }
+  ]
+}

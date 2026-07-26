@@ -1,0 +1,221 @@
+{
+  "slug": "how-long-does-it-take-for-seo-to-work",
+  "type": "answers",
+  "primaryKeyword": "how long does it take for seo to work",
+  "secondaryKeywords": [
+    "how long does seo take to show results",
+    "when will seo start working",
+    "seo results timeline",
+    "how many months for seo results"
+  ],
+  "cluster": "agency-mechanics",
+  "intent": "informational",
+  "h1": "How long SEO takes to work, honestly",
+  "metaTitle": "How Long Does It Take for SEO to Work?",
+  "metaDescription": "How long does SEO take to work? Six to twelve weeks for first movement — but your starting condition changes the clock far more than your agency does.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "SEO usually shows first movement in impressions within 6 to 12 weeks, traffic you'd notice on a chart by month four to six, and revenue you'd defend in a board meeting between month six and twelve. Your starting condition — domain age, technical debt, indexing speed — moves those numbers more than your choice of agency does.",
+  "takeaways": [
+    "There isn't one timeline. A six-month-old domain, a neglected eight-year-old site and a freshly migrated site run on three different clocks.",
+    "The **neglected old site is usually fastest**. The authority is already earned; the pages are just broken.",
+    "A new domain is slowest, and not because of a mythical sandbox — it's because nothing links to it and Google has no reason to crawl it often.",
+    "Indexing lag sets the floor. A page Google hasn't crawled cannot rank at any budget, and no amount of retainer fixes that."
+  ],
+  "sections": [
+    {
+      "h2": "Three milestones, three very different windows",
+      "body": [
+        "\"Does SEO work yet\" is three separate questions that get collapsed into one, which is why the answers you find online range from six weeks to two years. Separate them and the ranges tighten considerably.",
+        "These windows assume consistent work — four to eight substantial pages a month, technical fixes actually deployed, and links accumulating slowly. Stop any of the three and the clock resets rather than pauses."
+      ],
+      "table": {
+        "caption": "What \"working\" means at each stage, and when to expect it.",
+        "head": [
+          "Milestone",
+          "What it looks like",
+          "Typical window"
+        ],
+        "rows": [
+          [
+            "First movement",
+            "Impressions and average position rising for your target queries in Search Console. Rarely visible in traffic yet.",
+            "6–12 weeks"
+          ],
+          [
+            "Traffic you'd notice",
+            "Non-brand organic clicks up enough to see on a monthly chart without squinting.",
+            "Month 4–6"
+          ],
+          [
+            "Revenue you'd defend",
+            "Qualified organic leads or organic revenue clearly above the baseline you froze on day one.",
+            "Month 6–12"
+          ],
+          [
+            "Compounding",
+            "New pages rank in days instead of months, because the domain has earned the right to be crawled quickly.",
+            "Month 9–18"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The window that gets quoted at you",
+        "body": "\"Three to six months\" is the industry's standard answer because it's the average of wildly different cases. Ask an agency to tell you which of the three clocks below your site is on. If they can't, they haven't looked at your site."
+      }
+    },
+    {
+      "h2": "Your starting condition changes the answer more than your agency does",
+      "body": [
+        "Two companies can hire the same team, buy the same retainer and see results four months apart. The difference is almost never effort. It's what was there on day one."
+      ],
+      "table": {
+        "caption": "How the same SEO work plays out from four different starting points.",
+        "head": [
+          "Starting condition",
+          "What's already working for you",
+          "What slows you down",
+          "First movement"
+        ],
+        "rows": [
+          [
+            "New domain, ~6 months old",
+            "Nothing to undo. You can build clean architecture from scratch.",
+            "No referring domains, infrequent crawling, no historical query data to learn from.",
+            "3–5 months"
+          ],
+          [
+            "8-year-old site, neglected",
+            "Existing links, established crawl frequency, pages already indexed and historically ranking.",
+            "Technical debt, decayed content, pages competing with each other.",
+            "4–8 weeks"
+          ],
+          [
+            "Recently migrated site",
+            "Everything above — if the redirects were mapped properly.",
+            "Lost link equity, 404s on old URLs, conflicting signals from two URL sets.",
+            "6–10 weeks to recover"
+          ],
+          [
+            "E-commerce, 40,000+ URLs",
+            "Volume and transactional intent that other sites would kill for.",
+            "Crawl budget spent on faceted duplicates before it reaches the pages that sell.",
+            "2–4 months, indexation first"
+          ]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "The six-month-old domain: slowest, and not because of a sandbox",
+          "body": [
+            "There's no timer counting down on new domains. What actually happens is more mundane: nothing links to you, so Google discovers your pages slowly and revisits them rarely. You publish, and the page sits uncrawled for a week. You update it, and the update takes another week to register.",
+            "That lag compounds across every iteration, and iteration is how SEO works. Expect three to five months before you see reliable movement, and spend that time on two things: a small number of pages that are genuinely the best answer available, and the first ten real referring domains. Volume before authority is the classic new-domain mistake."
+          ]
+        },
+        {
+          "h3": "The neglected eight-year-old site: usually the fastest money in SEO",
+          "body": [
+            "This is the most common brief we see and the most satisfying to work on. The site ranked once. Somebody replatformed, or the marketing lead left, or the blog stopped in 2023. The links are still there. The crawl frequency is still there. The pages are just broken, cannibalising each other, or slowly rotting.",
+            "On sites like this, four to eight weeks to visible movement is normal, and the first wins usually come from fixing and merging rather than writing. It also means the fastest gains land before any new content ships — which makes the month-two report look suspiciously good and the month-five report look flat. That's the shape of the work, not a failure."
+          ]
+        },
+        {
+          "h3": "The migrated site: recovery first, growth second",
+          "body": [
+            "After a migration you're running two projects: getting back what you lost, then growing. Conflating them is how agencies claim credit for recovery and how clients get disappointed at month six.",
+            "Recovery typically takes six to ten weeks once the redirect map is corrected, because Google has to recrawl and reassign the old signals. Only after that does the normal clock start. If you migrated and never fully recovered, read [what a replatform does to your traffic](/journal/the-replatform-that-killed-your-traffic) before you buy anything else."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Why technical debt delays everything downstream",
+      "body": [
+        "Technical SEO rarely wins rankings on its own. What it does is set a ceiling on everything else, which means unfixed debt doesn't slow you down by 10% — it caps you.",
+        "A slow page still ranks; a `noindex` left on staging rules doesn't rank at all. Two pages fighting over the same query don't rank half as well each, they split the signals and both underperform a single stronger page. A JavaScript-rendered page that needs a second crawl pass to reveal its content simply enters the index later than an equivalent server-rendered one.",
+        "This is why competent agencies front-load the unglamorous work in weeks two to six, and why a site with heavy debt should expect the first two months of a retainer to produce very little visible. If your quote skips straight to content, ask what the crawl found. If nobody crawled, nobody knows."
+      ]
+    },
+    {
+      "h2": "Indexing lag and crawl budget: the floor nobody controls",
+      "body": [
+        "Every page goes through the same pipeline: discovery, crawl, render, index, rank. Each step has a queue, and you influence the queue without controlling it. This is the single most under-explained reason SEO feels slow.",
+        "Sitemaps and internal links speed up discovery. They do not buy priority. On a low-authority domain, a new page can wait days to weeks for its first crawl, then wait again for rendering if the content only appears after JavaScript runs. Multiply that by the three or four revisions a page usually needs and you've spent a month before the page has had a fair chance."
+      ],
+      "bullets": [
+        "**Crawl budget is a real constraint above roughly ten thousand URLs.** Below that it's almost never your bottleneck, whatever the proposal says.",
+        "**Faceted navigation and filter parameters** are how e-commerce sites burn their budget on URLs that will never rank.",
+        "**Internal links from pages that get crawled often** are the cheapest way to get a new page discovered — usually faster than resubmitting a sitemap.",
+        "**A page removed from the index recovers slowly**, even after the cause is fixed. Prevention is genuinely cheaper here."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "A useful sanity check",
+        "body": "Compare published pages to indexed pages in Search Console every month. If you publish twenty and six get indexed, more content is the wrong purchase — you have a discovery or a quality problem, and buying volume makes it worse."
+      }
+    },
+    {
+      "h2": "What we measure at day 90 instead of rankings",
+      "body": [
+        "Rankings are a terrible progress metric in the first quarter. They're volatile, they differ by location and device, and a chart of \"average position\" across every query you accidentally rank for can improve while your business gets nothing.",
+        "So the number we freeze on day one is the trailing 90 days of qualified leads from organic search, agreed in writing before anything changes. If we haven't beaten it in 90 days, we keep working free until we do. We never promise a specific position for a specific keyword — nobody controls Google's index, and an agency that claims otherwise is either guessing or buying links. The full mechanics are on [our SEO page](/seo), and the pricing is on [the pricing page](/pricing).",
+        "Between now and then, four things genuinely speed the clock up, and none of them are the agency working harder."
+      ],
+      "numbered": [
+        "**Shorten the dev queue.** A fix list that waits eight weeks for deployment costs you eight weeks of the ninety.",
+        "**Approve content faster than you think is reasonable.** Two-week approval cycles halve your publishing cadence.",
+        "**Pick queries you can actually win this year**, not the head term your competitor spent four years earning.",
+        "**Fix cannibalisation before adding pages.** Consolidating two mediocre pages into one strong one often moves faster than publishing a third."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does SEO take so long compared to ads?",
+      "a": "Ads buy placement instantly and stop the moment you stop paying. SEO earns placement, and earning requires Google to crawl your pages, evaluate them against competitors that have been there for years, and see corroborating signals like links. That evaluation loop runs in weeks, not minutes — but it doesn't switch off when the invoice does."
+    },
+    {
+      "q": "Can SEO work in one month?",
+      "a": "Occasionally, on an established site where the fix is technical — an accidental noindex, a broken redirect from a migration, a canonical pointing at the wrong page. Those are recoveries of traffic you already earned. Genuinely new rankings for competitive queries in 30 days almost always mean bought links, and that bill arrives later."
+    },
+    {
+      "q": "Does a new website take longer to rank?",
+      "a": "Yes, typically three to five months to first movement rather than four to eight weeks. It isn't a penalty on new domains — it's that nothing links to you yet, so you're crawled infrequently and each revision takes longer to register. The fix is a small number of excellent pages plus the first ten genuine referring domains."
+    },
+    {
+      "q": "How do I know SEO is working before traffic moves?",
+      "a": "Watch impressions and average position for your specific target queries in Search Console, plus indexed page count against published page count and referring domains per month. These move four to eight weeks before clicks do. Flat impressions at month three is the earliest reliable warning that something is wrong."
+    },
+    {
+      "q": "How long until SEO pays for itself?",
+      "a": "Most engagements reach break-even between month six and month twelve, and the variable is your deal size more than your traffic. A business closing ₹5,00,000 contracts needs a handful of extra leads to justify a ₹75,000 monthly retainer; a business selling ₹800 products needs a different volume entirely, and should model that before signing."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-happens-in-the-first-90-days-with-an-seo-agency"
+    },
+    {
+      "type": "glossary",
+      "slug": "indexing"
+    },
+    {
+      "type": "glossary",
+      "slug": "crawl-budget"
+    },
+    {
+      "type": "cost",
+      "slug": "is-seo-worth-the-money"
+    },
+    {
+      "type": "compare",
+      "slug": "ppc-vs-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "the-replatform-that-killed-your-traffic"
+    }
+  ]
+}

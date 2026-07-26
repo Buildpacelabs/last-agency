@@ -1,0 +1,180 @@
+{
+  "slug": "does-ai-content-hurt-seo",
+  "type": "answers",
+  "primaryKeyword": "does ai content hurt seo",
+  "secondaryKeywords": [
+    "is ai generated content bad for seo",
+    "can google detect ai content",
+    "ai content google penalty",
+    "should i use ai for seo content"
+  ],
+  "cluster": "seo-ai",
+  "intent": "informational",
+  "h1": "Does AI-written content hurt your rankings?",
+  "metaTitle": "Does AI Content Hurt SEO? What Google Does",
+  "metaDescription": "Does AI content hurt SEO? Google targets scaled low-value pages, not AI itself. Here's where the line sits, how sites cross it, and how to stay clear.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Not by itself. Google's stated position is that it rewards helpful content regardless of how it was produced, and its spam policies target scaled content abuse — mass-produced pages made mainly to rank rather than to help. The risk isn't the tool. It's publishing volume nobody would miss.",
+  "takeaways": [
+    "The policy that matters is **scaled content abuse**, added to Google's spam policies in March 2024. It applies to automated, human and mixed production identically.",
+    "Detection is a distraction. Google doesn't need to prove a page was written by a machine to demote a page that's worthless.",
+    "The reliable test: could a model have written this accurately without reading your page? If yes, it adds nothing to the index.",
+    "The real constraint on publishing isn't how fast you can generate. It's how fast you can edit and stand behind what goes out."
+  ],
+  "sections": [
+    {
+      "h2": "What Google's policy actually says",
+      "body": [
+        "Two published positions do all the work here, and most of the panic comes from having read neither.",
+        "In February 2023 Google published guidance on AI-generated content stating that its focus is the quality of content rather than how it was produced, and that using automation to generate content primarily to manipulate rankings is what breaks the rules. Appropriate use of AI was explicitly not called a violation.",
+        "In March 2024 Google updated its spam policies and introduced **scaled content abuse**, replacing the older \"spammy automatically-generated content\" policy. The important detail is in the wording: the policy covers pages generated at scale primarily to manipulate rankings, and it applies regardless of whether the content was produced by automation, by humans, or by a combination of both. Google closed the loophole in both directions at once — you can't launder spam by having a person paraphrase it, and you don't get penalised for using a model to draft something good.",
+        "So the question \"does AI content hurt SEO\" is the wrong question. The right one is: does this page exist because someone needed it, or because a keyword existed?"
+      ]
+    },
+    {
+      "h2": "Where the line actually sits",
+      "body": [
+        "Two sites can use the identical model and land on opposite sides of the policy. What separates them isn't the tool — it's six observable properties of the output."
+      ],
+      "table": {
+        "caption": "The same tooling, two different outcomes.",
+        "head": ["What to look at", "AI assistance (fine)", "Scaled content abuse (not fine)"],
+        "rows": [
+          [
+            "Why the page exists",
+            "A real question a customer asks, that you can answer better than anyone",
+            "A keyword appeared in a tool with volume attached"
+          ],
+          [
+            "Volume and cadence",
+            "Bounded by what a person can edit and stand behind",
+            "Bounded by generation cost, which is nearly zero"
+          ],
+          [
+            "What's on the page that isn't elsewhere",
+            "Your data, prices, tests, screenshots, first-hand account",
+            "A rearrangement of the top five results"
+          ],
+          [
+            "Difference between pages",
+            "Genuinely different subject matter",
+            "The same template with a city, industry or keyword swapped"
+          ],
+          [
+            "Who is accountable",
+            "A named person who checked the facts",
+            "Nobody, and the byline is invented"
+          ],
+          [
+            "What happens if it's deleted",
+            "Someone notices and complains",
+            "Nothing"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The programmatic trap",
+        "body": "Programmatic pages aren't automatically abuse — a page per city built on genuinely different local data is legitimate, and always was. A page per city built on the same 600 words with the city name replaced is the textbook example of what the policy targets. The difference is whether the variable data is real. We've taken that apart in [programmatic SEO and the scaled content line](/journal/programmatic-seo-and-the-scaled-content-line)."
+      }
+    },
+    {
+      "h2": "Detection is the wrong thing to worry about",
+      "body": [
+        "The most common question is whether Google can tell. It's the wrong worry, for two reasons.",
+        "First, the commercial AI detectors are unreliable in both directions. They flag human writing as machine-written, especially non-native English, and they miss lightly edited machine output. Building a policy around a tool that can't do its job is a bad plan whichever side you're on.",
+        "Second, and more importantly: Google doesn't need to know. The signals that identify a low-value page are visible without any classifier — thin coverage, near-duplicate siblings, no original information, no evidence anybody with expertise touched it, a publishing spike from nothing to 200 pages in a month, and users who bounce back to the results. A page that's worth keeping survives all of those tests no matter what wrote the first draft. A page that isn't fails them all no matter who typed it.",
+        "The practical takeaway: stop optimising to pass a detector. Optimise for the page being worth the click, and the detector question becomes irrelevant."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The test that replaces the detector",
+        "body": "Could a language model have written your page accurately without reading your page? If yes, the index already contains that information and yours adds nothing. If no — because it holds your prices, your numbers, your method — you're fine, regardless of what drafted it."
+      }
+    },
+    {
+      "h2": "Where AI-assisted content ranks perfectly well",
+      "body": [
+        "This part gets underplayed by people selling fear. There are whole categories where machine-drafted content is not only safe but sensible, because the value of the page was never in the prose."
+      ],
+      "bullets": [
+        "**Product and category descriptions at scale**, where each page carries genuinely different specifications, prices and availability. The specs are the value; the sentences around them are packaging.",
+        "**Translation and localisation** of content that was already good. Especially useful across Indian languages, where quality freelance capacity is thin and slow.",
+        "**Documentation and support content**, drafted from a real changelog or a real support ticket, then checked by someone who knows the product.",
+        "**Structured reference pages** — comparison tables, specification pages, FAQ blocks — where the facts come from your own database.",
+        "**First drafts of pages built around original material.** You supply the test results, the pricing logic, the case detail. The model does the connective tissue and an editor does the rest.",
+        "**Summarising your own reports** into a public-facing version. The data is yours; the summarising is clerical."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The pattern across all six",
+        "body": "In every safe case the value sits in structured facts you own, and the model is handling the sentences around them. Where the value was supposed to be in the thinking, a draft is a starting point and nothing more — the split is set out in [what ChatGPT can and can't do for SEO](/answers/can-chatgpt-do-seo)."
+      }
+    },
+    {
+      "h2": "The editorial process that keeps you on the safe side",
+      "body": [
+        "Seven rules. They're not about AI — they're about publishing standards that happen to make the AI question moot."
+      ],
+      "numbered": [
+        "**A named person owns every page and their name is on it.** Not a stock-photo persona. Accountability is both an E-E-A-T signal and the thing that stops rubbish shipping.",
+        "**Verify every fact and open every citation.** Fabricated-but-plausible references are the classic model failure, and a made-up statistic on your site is a credibility problem long before it's a ranking one.",
+        "**Add something the model couldn't have.** Your numbers, your prices, a screenshot, a decision you regret. If nothing on the page qualifies, that's your answer about whether to publish it.",
+        "**Set cadence by editorial capacity, not generation capacity.** If one editor can properly stand behind six pages a month, six is your number. This single rule prevents almost every scaled-content problem.",
+        "**Check for near-duplicates before you publish.** Ask whether an existing page should have been updated instead. Two pages competing for one query is a self-inflicted wound.",
+        "**Prune as often as you publish.** Deleting or consolidating pages that never earned anything is usually more profitable than adding more, and models will never suggest it.",
+        "**Review at 90 days against real data.** Impressions, clicks and whether anyone converted. Pages that did nothing get improved, merged or removed — not left to accumulate."
+      ]
+    },
+    {
+      "h2": "What actually happens when a site gets hit",
+      "body": [
+        "Two very different things get called a penalty, and knowing which one you have determines whether there's a route back.",
+        "A **manual action** is a human reviewer applying a sanction. It appears in Search Console under Manual Actions, it names the reason, and there's a reconsideration request process once you've fixed the problem. It's unpleasant but legible: you know what happened and you know when it's resolved.",
+        "An **algorithmic demotion** is the far more common outcome and there's no notification at all. Traffic falls across a whole section rather than a single page, usually around a core or spam update. Google's own guidance on core updates is blunt about this: there's no single fix, improvements need to be substantive, and recovery may not come until a subsequent update — which can be months away, and isn't guaranteed.",
+        "The recovery work is rarely subtle. It's mass removal or consolidation of pages that shouldn't have been published, rewriting the survivors so they carry something real, and then waiting. Sites that try to fix it by publishing better content on top of the old pile generally don't recover, because the pile is the problem. That asymmetry is the actual argument for restraint: producing 400 thin pages takes a weekend, and undoing them takes two quarters.",
+        "It's also why we cap what we take on. Every page we publish for a client is edited and approved by a person, which puts a hard ceiling on volume and is priced accordingly — SEO from ₹75,000/mo, smaller sites from ₹40,000/mo, ex-GST. We don't promise a ranking position; we freeze your trailing-90-day organic lead count on day one and keep working free past 90 days if we haven't beaten it. See [how the guarantee works](/seo)."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The honest risk summary",
+        "body": "Using AI to draft twelve well-edited pages a year carrying your own information: no meaningful risk. Using it to publish 200 pages a month of competent-sounding nothing: a real risk, with a slow and uncertain recovery. The tool is the same in both. The judgement isn't."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can Google detect AI-generated content?",
+      "a": "Google has never claimed to run a reliable AI detector, and it doesn't need one. The signals that identify a low-value page — thin coverage, near-duplicate siblings, no original information, a sudden publishing spike — are visible without knowing what wrote it. Third-party detectors are unreliable in both directions and shouldn't drive your process."
+    },
+    {
+      "q": "Will Google penalise my site for using AI to write content?",
+      "a": "Not for the tool. Google's published guidance says quality matters more than production method, and its scaled content abuse policy explicitly applies to automated, human and mixed production alike. What gets acted on is mass-produced pages made mainly to rank rather than to help."
+    },
+    {
+      "q": "How much AI content is too much?",
+      "a": "There's no page count that triggers anything. The practical limit is editorial: publish only what a named person has verified and would defend. If your publishing rate exceeds your editing rate, you've crossed into the territory the policy is written for, whatever the absolute number is."
+    },
+    {
+      "q": "Do I need to disclose that content was AI-assisted?",
+      "a": "Google doesn't require an AI disclosure label. It does say author information should be accurate, so inventing a human byline for machine-written content is the actual problem. Many publishers disclose anyway for reader trust, which is a reasonable call in journalism and less relevant on a services page."
+    },
+    {
+      "q": "Can AI-written content rank on the first page?",
+      "a": "Yes, and plenty already does. Ranking systems evaluate the page, not the production method. Edited drafts carrying original data, real prices or first-hand experience compete normally. Unedited output that restates the existing top results tends to rank briefly and then decay, because it never had a reason to exist."
+    },
+    {
+      "q": "How do I recover if AI content has already hurt my rankings?",
+      "a": "First check Search Console for a manual action — if there is one, fix and file a reconsideration request. If not, it's algorithmic: consolidate or remove the pages that shouldn't have shipped, rewrite the survivors so each carries something original, and expect months rather than weeks. Publishing more on top of the pile doesn't work."
+    }
+  ],
+  "related": [
+    { "type": "journal", "slug": "does-ai-written-content-still-rank" },
+    { "type": "journal", "slug": "programmatic-seo-and-the-scaled-content-line" },
+    { "type": "glossary", "slug": "thin-content" },
+    { "type": "glossary", "slug": "e-e-a-t" },
+    { "type": "answers", "slug": "can-chatgpt-do-seo" },
+    { "type": "services", "slug": "content-marketing-services" }
+  ]
+}

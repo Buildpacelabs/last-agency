@@ -1,0 +1,246 @@
+{
+  "slug": "b2b-seo-vs-b2c-seo",
+  "type": "compare",
+  "primaryKeyword": "b2b seo vs b2c seo",
+  "secondaryKeywords": [
+    "b2b seo strategy india",
+    "b2c seo tactics",
+    "low volume high intent keywords",
+    "b2b saas seo",
+    "seo for long sales cycles"
+  ],
+  "cluster": "seo-disciplines",
+  "intent": "informational",
+  "h1": "B2B vs B2C SEO: why 40 searches a month can beat 40,000",
+  "metaTitle": "B2B vs B2C SEO: Why Low-Volume Keywords Win",
+  "metaDescription": "B2B SEO vs B2C SEO inverts the keyword maths. Forty searches a month can be worth ₹8 lakh in B2B. Here's how to pick keywords on either side.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "In B2B, a keyword with 40 monthly searches can outearn one with 40,000, because deal size does the multiplying. At an ₹8 lakh contract value, a handful of demo requests a year beats thousands of ₹1,200 orders. Deal size and sales-cycle length, not search volume, should pick your keywords.",
+  "takeaways": [
+    "Search volume is an input, not the answer. **Volume × click-through × conversion × deal value × close rate** is the answer, and B2B wins that equation with tiny numbers.",
+    "The B2B keyword nobody competes for is usually the one your buyer types on the day they've got budget approval.",
+    "A six-month sales cycle breaks GA4 attribution by default. Fix the CRM, not the analytics.",
+    "B2B sites need **fewer, deeper** pages. Forty real buying queries, not four thousand blog posts."
+  ],
+  "sections": [
+    {
+      "h2": "The formula, and the two inputs everyone leaves out",
+      "body": [
+        "Most keyword research stops at volume and difficulty. Two columns, sorted descending, and the plan writes itself. Fast, tidy, and in B2B wrong almost every time.",
+        "The revenue a keyword can produce is a chain of five multipliers, and volume is only the first:",
+        "**Monthly searches → click-through at your realistic position → conversion to a genuine next step → close rate → deal value.**",
+        "Volume gets the attention because it's the only one a tool hands you. The last two decide the outcome, and they live in your CRM. Multiply properly and the hierarchy flips: a 40-search query with a 5% demo rate and an ₹8 lakh contract value beats a 40,000-search head term with a 0.8% order rate and a ₹1,200 basket — not slightly, by a multiple."
+      ]
+    },
+    {
+      "h2": "The worked example: 40 searches versus 40,000",
+      "body": [
+        "A model, not a case study. Every assumption is stated so you can swap in your own — the point is the shape, not these figures. Left column: a B2B software company with an ₹8 lakh average contract value, targeting a narrow bottom-funnel query. Right column: a D2C brand with a ₹1,200 average order value, targeting a category head term."
+      ],
+      "table": {
+        "caption": "A modelled comparison. Swap in your own conversion and close rates — the shape holds.",
+        "head": [
+          "Step",
+          "B2B keyword — 40 searches/mo",
+          "B2C keyword — 40,000 searches/mo"
+        ],
+        "rows": [
+          [
+            "Monthly searches",
+            "40",
+            "40,000"
+          ],
+          [
+            "Realistic CTR at position 1–3",
+            "~30%. Narrow query, few ads, little competition.",
+            "~12%. AI Overviews, shopping units, ads and People Also Ask take the screen before your listing."
+          ],
+          [
+            "Clicks per month",
+            "12",
+            "4,800"
+          ],
+          [
+            "Conversion to a real next step",
+            "5% to a demo request — only a buyer types this query.",
+            "0.8% to an order — a head term is mostly research intent, not purchase intent."
+          ],
+          [
+            "Per month",
+            "0.6 demos",
+            "38 orders"
+          ],
+          [
+            "Per year",
+            "≈7 demos",
+            "≈460 orders"
+          ],
+          [
+            "Close rate",
+            "25% of demos become customers",
+            "n/a — the order is the sale"
+          ],
+          [
+            "Annual revenue",
+            "≈1.8 deals × ₹8,00,000 = **₹14.4 lakh**",
+            "460 × ₹1,200 = **₹5.5 lakh**"
+          ],
+          [
+            "Gross profit at typical margins",
+            "~80% software margin ≈ **₹11.5 lakh**",
+            "~35% D2C margin ≈ **₹1.9 lakh**"
+          ],
+          [
+            "Difficulty to rank",
+            "Low. Almost nobody writes for a 40-search query.",
+            "High. The whole category is fighting for it, some of them for a decade."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "Read the last row again",
+        "body": "The B2B keyword produces roughly six times the gross profit and is dramatically easier to rank for. Nobody competes for it because keyword tools sort by volume — exactly the wrong sort order for a business with a large deal size."
+      }
+    },
+    {
+      "h2": "Why the B2B number is fragile, and what to do about it",
+      "body": [
+        "Honesty check, because that table is more precarious than it looks.",
+        "1.8 deals a year means the real outcome is one deal or two. One either way moves the ₹14.4 lakh figure by ₹8 lakh — the entire variance of the model sitting inside a single sales conversation. Three consequences follow, and they're the difference between a plan that survives a board meeting and one that doesn't."
+      ],
+      "bullets": [
+        "**Never build a B2B case on one keyword.** Build it on 30–50 buying queries. Individually each is noise; collectively they're a forecast. The maths only stabilises at portfolio level.",
+        "**Model the pessimistic case out loud.** Present ₹14.4 lakh and deliver one deal and you've missed by half. Present a range — one to three deals — and you were right either way.",
+        "**Treat close rate as a shared number.** If sales closes 10% instead of 25%, SEO didn't underperform; the model did. Agree it with the sales lead before anyone publishes a projection."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The projection trap",
+        "body": "Any agency can produce a B2B revenue forecast that looks enormous, because the deal-size multiplier does the work and nobody checks the close rate. Ask what close rate the model assumes and where it came from. If it came from the agency rather than your CRM, the forecast is decoration."
+      }
+    },
+    {
+      "h2": "Content formats that actually convert on each side",
+      "body": [
+        "The inverted maths changes what you build, not just what you target. B2B and B2C reward almost opposite formats, and the commonest failure is a B2B company running a B2C content plan because that's what the blog templates assume."
+      ],
+      "subs": [
+        {
+          "h3": "B2B: bottom-funnel first, awareness later",
+          "body": [
+            "Build the pages a buyer reads when they already have a problem and a budget. Low volume, hard to write well, almost no competition."
+          ],
+          "bullets": [
+            "**\"X vs Y\" comparison pages**, including against competitors. Your buyer runs that search whether or not you show up. Someone owns the page; it may as well be you, honestly written.",
+            "**\"Alternatives to X\" pages** for whatever your buyer is currently stuck with.",
+            "**Pricing pages that contain prices.** Hiding the number costs more qualified traffic than it protects.",
+            "**Integration and compatibility pages** — \"does it work with Tally\", \"SAP integration\". Tiny volume, near-perfect intent.",
+            "**Security, compliance and procurement content.** The person who kills the deal sits in legal or IT.",
+            "**Calculators and templates** that make the reader input their own numbers. Nothing qualifies a lead like arithmetic about their own business."
+          ]
+        },
+        {
+          "h3": "B2C: coverage, freshness and proof",
+          "body": [
+            "Breadth and conversion rate. Volume genuinely matters here, because the deal size can't carry a thin funnel."
+          ],
+          "bullets": [
+            "**Category and product pages that are the destination**, not a thin gateway to a PDP.",
+            "**\"Best X under ₹Y\" and buying guides** — high commercial intent, and the price filter qualifies for you.",
+            "**Specification, size, ingredient and material explainers.** They win the long tail and quietly reduce returns.",
+            "**Review-rich pages.** Real user content is a conversion lever and a source of long-tail coverage you'd never think to write.",
+            "**Freshness.** A B2C category page from 2023 loses to one updated last month, in a way B2B pages simply don't."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Attribution across a six-month B2B cycle",
+      "body": [
+        "This is where B2B SEO gets killed in board meetings — not because it didn't work, but because nobody could prove it did.",
+        "A six-month cycle means somebody reads your comparison page in January on a work laptop, forgets you, gets budget in April, searches your brand directly, and converts in June from another device. Default GA4 attribution calls that **direct**, and the page that did the work gets nothing. Fix it in the CRM, not the analytics — no configuration makes a tool built for single-device paths see a six-month committee decision."
+      ],
+      "numbered": [
+        "**Stamp landing page and referrer onto every form submission** as hidden fields, pushed into the CRM record. Survives cookie expiry, device switching and incognito.",
+        "**Add a self-reported \"how did you first hear about us\" field.** Imperfect, and still the most useful attribution data most B2B companies have.",
+        "**Measure organic pipeline, not revenue,** for the first two quarters. Revenue lags too far to steer with; pipeline says the same thing four months earlier.",
+        "**Set the baseline before anything starts.** Freeze trailing-90-day qualified organic leads. Without it, month seven becomes an argument about whose dashboard is right — and it's exactly what our guarantee measures against: beat your own frozen baseline in 90 days or we keep working free until we do. See [how to set an SEO baseline](/journal/how-to-set-an-seo-baseline).",
+        "**Track first-touch separately from last.** In B2B the first touch is the informational page and the last is your brand name. Last-touch-only reporting concludes that SEO's job is ranking for your own company name."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The 90-day read for a 180-day cycle",
+        "body": "You can still judge a B2B engagement at 90 days, just not on revenue. Look at impressions for your buying queries, rankings for the bottom-funnel cluster, and qualified leads. Revenue at day 90 on a six-month cycle is a question about deals that started before the agency did."
+      }
+    },
+    {
+      "h2": "Why B2B sites need fewer pages, built deeper",
+      "body": [
+        "The last inversion, and the one most agencies get backwards because page-count contracts are easier to sell.",
+        "A B2C site can justify thousands of URLs — every product, category and filter with real demand behind it. A B2B site usually has a few hundred addressable queries, perhaps 40 of them genuinely commercial. Publishing 400 posts against 40 real queries doesn't cover more ground; it creates [keyword cannibalisation](/glossary/keyword-cannibalization), splits internal links across near-duplicates, and starves the pages meant to win.",
+        "B2B pages also serve more than one reader. The champion wants to know it fixes their problem. Their manager wants the price. IT wants the security page. Procurement wants contract terms. A 700-word post serves one of those people; a proper page serves all four, which is why it takes three days rather than three hours.",
+        "The rule: if you can't name the buying question a page answers and the person who asks it, don't build it. In B2C that leaves you with an empty site. In B2B it leaves you with the only pages that were going to earn anything.",
+        "We run [SEO from ₹75,000/mo](/pricing), and on B2B accounts that buys fewer pages than clients expect and considerably more work per page. [SEO for SaaS](/seo-for/saas) and [SEO for B2B](/seo-for/b2b) go deeper on what that looks like month to month."
+      ]
+    }
+  ],
+  "versus": {
+    "a": "B2B SEO",
+    "b": "B2C SEO",
+    "verdict": "If your average deal is over ₹2 lakh, ignore search volume almost entirely and build for the forty-search buying queries nobody else bothers with; if you're selling a ₹1,200 product, volume and category coverage are the whole game and low-volume keywords will starve you."
+  },
+  "faqs": [
+    {
+      "q": "What's the main difference between B2B and B2C SEO?",
+      "a": "The keyword-selection maths inverts. B2C needs volume because the deal size is small, so coverage and category breadth win. B2B has a large deal size doing the multiplying, so a 40-search query typed only by buyers with budget can outearn a 40,000-search head term by several times, and it's far easier to rank for."
+    },
+    {
+      "q": "Are low-volume keywords really worth targeting in B2B?",
+      "a": "Yes, provided you build a cluster of them rather than betting on one. Individually a 40-search keyword is statistical noise. Thirty to fifty of them together is a forecast, and because volume-sorted keyword tools ignore them, competition is usually a fraction of what you'd face on a head term."
+    },
+    {
+      "q": "How long does B2B SEO take to show revenue?",
+      "a": "Add your sales cycle to the SEO timeline. If rankings take three to six months and your cycle is six months, revenue lands somewhere around month nine to twelve. Pipeline shows up four months earlier than revenue, which is why B2B engagements should be steered on pipeline, not closed deals."
+    },
+    {
+      "q": "Why does GA4 undercount B2B organic conversions?",
+      "a": "A six-month, multi-device, multi-person decision breaks the assumptions analytics tools are built on. The visitor who read your comparison page in January converts in June via a direct brand search from a different device, and GA4 credits direct. Fix it by stamping the landing page onto form submissions and pushing it to your CRM."
+    },
+    {
+      "q": "Should a B2B company write blog posts at all?",
+      "a": "After the bottom-funnel pages exist, not before. Comparison pages, alternatives pages, pricing, integrations and procurement content earn first because they're read by people with budget. Awareness content builds the top of the funnel, but it's the second phase — most B2B sites do it first and wonder why nothing converts."
+    },
+    {
+      "q": "How many pages does a B2B site actually need?",
+      "a": "Far fewer than most content plans assume. The commercially useful query set for a typical B2B product is often under a hundred, of which perhaps 40 are genuinely bottom-funnel. Publishing 400 posts against that creates cannibalisation and splits internal links across pages competing with each other."
+    }
+  ],
+  "related": [
+    {
+      "type": "seo-for",
+      "slug": "saas"
+    },
+    {
+      "type": "seo-for",
+      "slug": "b2b"
+    },
+    {
+      "type": "glossary",
+      "slug": "search-intent"
+    },
+    {
+      "type": "compare",
+      "slug": "local-seo-vs-national-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "cost",
+      "slug": "saas-seo-cost"
+    }
+  ]
+}

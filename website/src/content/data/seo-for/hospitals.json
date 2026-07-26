@@ -1,0 +1,201 @@
+{
+  "slug": "hospitals",
+  "type": "seo-for",
+  "primaryKeyword": "seo for hospitals",
+  "secondaryKeywords": [
+    "hospital seo services india",
+    "multi specialty hospital seo",
+    "seo for hospital chains",
+    "hospital website seo",
+    "department page seo"
+  ],
+  "cluster": "healthcare-and-clinics",
+  "intent": "commercial",
+  "industry": "Hospitals",
+  "h1": "SEO for hospitals with 40 departments and one tired homepage",
+  "metaTitle": "SEO for Hospitals: Fix the Department Page Mess",
+  "metaDescription": "SEO for hospitals with many specialities and branches. We rebuild department, doctor and location pages so your own units stop competing with each other.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Hospital SEO is mostly an architecture problem. A multi-speciality group typically runs near-identical cardiology copy on a dozen URLs across three cities, so Google picks one and the rest go nowhere. Fix the department-versus-branch URL structure first, give every doctor a real profile page, and claim one Google Business Profile per location.",
+  "takeaways": [
+    "Your competitor isn't the hospital down the road. It's the eleven other cardiology URLs on your own domain.",
+    "A department page and a branch page answer different queries. A **department-at-branch** page answers the one that actually books an appointment — but only build it where that department genuinely operates.",
+    "Doctor profiles are the most under-built asset in Indian hospital marketing. Patients search the name on the referral slip, and right now Practo usually wins that search.",
+    "Emergency and near-me queries are decided by proximity, not by copy. What you can win is the decision made ten seconds later: which entrance, which insurer, which number.",
+    "The first two months of a hospital engagement are architecture and redirects. That's not us stalling — it's the only work that makes the rest possible."
+  ],
+  "sections": [
+    {
+      "h2": "Why twelve cardiology pages rank worse than one",
+      "body": [
+        "A hospital website is rarely planned. It accretes. The Whitefield unit launched with its own microsite, the Kolkata unit got a subfolder, someone built a landing page for a heart camp in 2019, and nobody ever deleted it. Three years later you have twelve URLs that all open with some version of 'our cardiology department offers advanced care by experienced specialists'.",
+        "Google's job at that point is to pick one. It does, quietly, and it often picks the wrong one — the URL with the fewest internal links, or the oldest one, or the one that got into your sitemap twice. Your best cardiology page sits at position 34 because your worst one is holding the slot.",
+        "The tell is in Search Console. Filter the Performance report to a single query, switch to the Pages tab, set the range to sixteen months. If four URLs split the impressions and the ranking URL changes month to month, you don't have a content problem — you have [keyword cannibalisation](/glossary/keyword-cannibalization). Writing a thirteenth cardiology page makes it worse."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The audit finding nobody wants",
+        "body": "On most hospital groups we look at, the single highest-return action in month one is deleting or merging pages, not publishing them. Marketing teams are measured on output, so this recommendation lands badly. It's still correct."
+      }
+    },
+    {
+      "h2": "Department, branch, and department-at-branch",
+      "body": [
+        "There are five page types worth having, and one rule governing all of them: a URL exists if a patient can search for exactly that thing, and you can answer it better than a generic page could. Everything else is a redirect."
+      ],
+      "table": {
+        "caption": "URL architecture for a multi-branch, multi-speciality hospital group.",
+        "head": ["URL pattern", "What it should own", "What kills it"],
+        "rows": [
+          [
+            "`/specialities/cardiology`",
+            "Group-level and informational demand — what the department does, conditions treated, technology, the consultant list across all branches.",
+            "Cloning the same 600 words onto every branch's version of the page."
+          ],
+          [
+            "`/hospitals/whitefield`",
+            "The branch name, `hospital in whitefield`, directions, visiting hours, floor guide, insurers accepted.",
+            "A stub with an address, a map embed and nothing a human needs."
+          ],
+          [
+            "`/hospitals/whitefield/cardiology`",
+            "The query that books an appointment: `cardiologist in whitefield`, `angioplasty in bangalore`. Named doctors, OPD days, that branch's cath lab, that branch's phone number.",
+            "Generating every branch × department combination whether or not the service exists there."
+          ],
+          [
+            "`/doctors/dr-<name>`",
+            "The doctor's own name, plus `best cardiologist in <city>` over time.",
+            "A headshot, a degree string and a booking button."
+          ],
+          [
+            "`/treatments/angioplasty`",
+            "Procedure, cost-range, recovery and 'is it safe' queries — the research stage, months before the appointment.",
+            "Folding it into the department page because it felt tidier."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Don't multiply the matrix",
+        "body": "Forty departments across four branches is 160 possible pages. Publish the ones that are true — where that department has its own consultants, timings and equipment at that address — and redirect the rest to the department page. Auto-generating the full grid is textbook scaled content abuse, and Google has a policy with that exact name."
+      }
+    },
+    {
+      "h2": "Doctor profiles are the asset you already own and never built",
+      "body": [
+        "Patients search doctor names. A GP writes 'Dr Ramesh, cardiology' on a referral slip, and the patient types it into Google in the car park. If your page for that doctor is a photo and a qualification line, you'll rank for the name barely, and lose the click to a directory listing or to a hospital he left in 2021.",
+        "A doctor profile is an entity page. It's the one place where verifiable, first-hand credentials live, and it does more for a hospital's overall trust signals than any amount of blog content about the importance of heart health."
+      ],
+      "bullets": [
+        "**Registration number and the issuing state medical council.** Public, checkable, and the strongest single trust element on the page.",
+        "**Procedures actually performed**, in the words patients use as well as the clinical ones — 'bypass surgery (CABG)', not just CABG.",
+        "**OPD days and timings per branch**, because a consultant who sits at two units generates two different local searches.",
+        "**Languages spoken.** In a Chennai or Hyderabad hospital this is a real filter, and almost nobody publishes it.",
+        "**Fellowships, publications and talks**, linked to the source rather than asserted.",
+        "**`Physician` schema** tied by `@id` to the branch's `Hospital` node, so the doctor, the department and the address resolve as one connected entity rather than three loose pages."
+      ],
+      "subs": [
+        {
+          "h3": "Where the compliance line sits",
+          "body": [
+            "Medical council conduct rules in India restrict a registered practitioner from soliciting patients or advertising themselves, and the Drugs and Magic Remedies (Objectionable Advertisements) Act, 1954 separately bans claims of cure for a listed set of conditions. The safe side of that line is factual and checkable: qualifications, registration, procedures, timings, outcomes you can evidence. 'India's finest oncologist' is not on that side.",
+            "Get your medical superintendent or compliance lead to sign off one profile template. After that the other 200 profiles are a data-entry exercise, not a legal review each time."
+          ]
+        },
+        {
+          "h3": "When a doctor leaves",
+          "body": [
+            "Deleting the page is the wrong move — the name keeps getting searched for years, and a 404 hands that search to a competitor. Keep a short, accurate page stating the doctor no longer consults at your hospital, and link it to the department and to the consultants now taking those cases."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "One profile per building — and the department exception",
+      "body": [
+        "One Google Business Profile per physical location. Hospitals break this constantly: three profiles for one building because radiology, marketing and a vendor from 2018 each created one. Duplicates split your reviews, split your photos, and send half your direction requests to a listing nobody monitors. Finding and merging them is usually week one.",
+        "Google's guidelines do allow a department inside a hospital to hold its own profile, but the conditions are narrow — a separate public entrance, a distinct category, and its own staff or manager. A cardiology OPD behind the main reception is not a separate listing. An attached fertility centre with its own door, its own phone line and its own front desk usually is."
+      ],
+      "bullets": [
+        "**Primary category is the biggest lever on the profile.** 'Hospital', 'General Hospital', 'Private Hospital' and 'Children's Hospital' do not surface for the same searches. Pick deliberately, then add secondaries.",
+        "**Hours must show 24 hours for emergency** where that's true, with department OPD hours handled on the site rather than in the hours field.",
+        "**Appointment link points at the branch's booking page**, not the group homepage. Every extra click costs you a booking.",
+        "**Photos of the entrance, the reception desk and the casualty door.** People navigating an unfamiliar hospital at 2am genuinely use these.",
+        "**Seed the Q&A** with the fifteen questions your call centre answers thirty times a day — parking, attendant policy, cashless insurers, visiting hours."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Reviews, handled carefully",
+        "body": "Ask, don't incentivise — Google removes incentivised reviews and can suspend a profile. And never mention a patient's condition, treatment or visit details in a public reply, however positive the review. 'Thank you, we're glad the angioplasty went well' is a privacy problem with a smile on it. See [review management](/services/review-management-services)."
+      }
+    },
+    {
+      "h2": "Emergency and near-me: you can't out-write proximity",
+      "body": [
+        "'Hospital near me' is settled largely by distance. There's no content strategy that beats being closer, and any agency selling you one is selling you a story. What you can win is the decision made ten seconds after that search, and those decisions are researched surprisingly carefully even in an emergency.",
+        "Two page types earn their keep here and almost no Indian hospital builds them properly."
+      ],
+      "numbered": [
+        "**A per-branch emergency page.** Ambulance number as a click-to-call link at the top, the casualty entrance described from the road ('gate 2, left of the main ramp'), which specialities have on-call cover overnight, and where to park. Written for someone reading it one-handed.",
+        "**An empanelment page per branch.** Every insurer and TPA you accept for cashless, with a date stamp. `cashless hospital <insurer> <city>` is a real, high-intent query pattern, and the answer usually sits in a PDF nobody can crawl."
+      ],
+      "subs": [
+        {
+          "h3": "The calls are the conversion, so track the calls",
+          "body": [
+            "Hospital organic traffic converts on the phone, not the form. If your reporting only counts form fills, you're measuring maybe a third of what SEO produced and undercharging yourself internally for it.",
+            "Use a call-tracking number on the website, but keep your real reception line listed as an additional number on the Google profile so your citations across directories still match. A tracked number that contradicts every other listing of your hospital costs you more than the data is worth."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "What this costs, and what we actually guarantee",
+      "body": [
+        "Our [SEO work](/seo) starts at ₹75,000 a month, and smaller sites from ₹40,000. A single-branch nursing home can sit at the lower end. A group with three cities, forty departments and a CMS from 2016 cannot — the first two months are architecture, redirect mapping and template work, and that's engineering time before it's marketing time. [What SEO costs in India](/cost/seo-cost-in-india) breaks down what changes the number.",
+        "The baseline we freeze on day one isn't traffic. For a hospital it's the trailing-90-day count of qualified enquiries from organic search — appointment requests plus tracked calls over sixty seconds, with internal and vendor calls stripped out. We agree that definition in writing before anyone touches the CMS, because a metric defined after the fact is a metric designed to be met.",
+        "Miss that baseline in 90 days and we keep working free until we beat it. We never promise a position for a keyword — nobody controls Google's index, and a hospital promising cures gets in trouble for the same reason an agency promising rankings should. We take three clients a month, which is the only honest reason we can carry that risk at all."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "Two different timelines",
+        "body": "Architecture and cannibalisation fixes often show movement in four to eight weeks, because the demand already exists and you're just pointing it at one URL. New department and treatment pages take three to six months. Any proposal that quotes one timeline for both hasn't read your site."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should each hospital branch have its own website or a subfolder?",
+      "a": "A subfolder, almost always. Separate domains or subdomains split your link equity and force you to earn authority three or four times over. The exception is a genuinely separate brand — a standalone fertility or oncology centre with its own name, its own consultants and its own marketing. Otherwise use /hospitals/<branch>/."
+    },
+    {
+      "q": "How long does hospital SEO take to show results?",
+      "a": "Fixing cannibalisation and redirects often moves rankings in four to eight weeks, because you're consolidating demand you already had. New department, treatment and doctor pages take three to six months to mature, and competitive city-level speciality terms take longer than that. Anyone quoting 30 days is quoting a different problem."
+    },
+    {
+      "q": "Can hospitals in India advertise online without breaking medical council rules?",
+      "a": "Institutions have more room than individual practitioners, but the safe standard is the same: factual, checkable content — qualifications, registration numbers, services, timings, insurers accepted. Avoid superlatives, guaranteed outcomes and any claim of cure for conditions listed under the Drugs and Magic Remedies Act, 1954. Have your compliance lead approve the templates once."
+    },
+    {
+      "q": "Can a hospital department have its own Google Business Profile?",
+      "a": "Sometimes. Google's guidelines allow a department its own profile if it has a separate public entrance, a distinct category, and its own staff or manager. An attached IVF or cancer centre with its own door and phone line usually qualifies. A cardiology OPD behind the main reception does not, and creating one risks a suspension."
+    },
+    {
+      "q": "What's the biggest SEO mistake hospital marketing teams make?",
+      "a": "Publishing more. When rankings stall, the reflex is to commission another twenty articles about the importance of regular check-ups. On a large hospital site the actual constraint is almost always duplicate department pages, orphaned campaign landing pages and a broken internal link structure. Fix the plumbing before you turn the tap up."
+    },
+    {
+      "q": "How much does hospital SEO cost in India?",
+      "a": "Our SEO starts at ₹75,000 a month, with smaller single-location sites from ₹40,000, ex-GST. Multi-branch groups sit above the entry point because the first phase is engineering-heavy. Month-to-month after the first quarter, 30 days' notice, and you keep every asset if you leave."
+    }
+  ],
+  "related": [
+    { "type": "seo-for", "slug": "healthcare" },
+    { "type": "seo-for", "slug": "dental-clinics" },
+    { "type": "services", "slug": "local-seo-services" },
+    { "type": "glossary", "slug": "keyword-cannibalization" },
+    { "type": "journal", "slug": "a-post-mortem-on-keyword-cannibalization" },
+    { "type": "cost", "slug": "local-seo-cost" }
+  ]
+}

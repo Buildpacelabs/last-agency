@@ -1,0 +1,138 @@
+{
+  "slug": "local-citations",
+  "type": "glossary",
+  "primaryKeyword": "local citations",
+  "secondaryKeywords": [
+    "nap consistency",
+    "business directory listings india",
+    "citation building seo",
+    "what is a citation in local seo",
+    "justdial sulekha listings seo"
+  ],
+  "cluster": "off-page",
+  "intent": "informational",
+  "h1": "Local citations",
+  "metaTitle": "Local Citations: What They Are and Which Matter",
+  "metaDescription": "A local citation is any online mention of your name, address and phone. Here's which Indian directories are worth claiming and what NAP mismatches cost.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Local citation",
+  "definition": "A local citation is any online mention of your business name, address and phone number, whether or not it links to your website.",
+  "answer": "A local citation is any online mention of your business name, address and phone number — a directory listing, a profile page, an association roster. Consistency is the point: when your details appear five different ways across JustDial, IndiaMART and your own footer, you split the signal you were trying to build.",
+  "takeaways": [
+    "Two kinds: **structured** (directory listings with fields) and **unstructured** (a mention inside an article or a forum post). Both count; only the first is something you can go and fix.",
+    "Formatting differences in a phone number are the smallest version of this problem. Different numbers, an old address and a forgotten duplicate listing are the expensive version.",
+    "Ten to fifteen listings that Indian buyers actually use beat 500 submissions to directories with no readers.",
+    "Audit before you build. Most businesses already have citations they've forgotten, and half of them are wrong."
+  ],
+  "sections": [
+    {
+      "h2": "Structured and unstructured citations",
+      "body": [
+        "A **structured** citation is a listing on a site with fields for it: JustDial, IndiaMART, Practo, your Google Business Profile, Bing Places, an industry association's member directory. Name in one box, address in another, phone in a third. Machine-readable and easy to audit.",
+        "An **unstructured** citation is your business named inside ordinary content — a news article that mentions your clinic and the road it's on, a Reddit thread naming your restaurant, a blog listing five cafés in Indiranagar. No fields, no form, no way to edit it. These frequently carry more weight, because nobody self-submits them.",
+        "Both feed the prominence half of local ranking, and both help Google confirm that the business it has a record of and the business your website describes are the same organisation. Your [Google Business Profile](/glossary/google-business-profile) is the anchor all of them are being checked against."
+      ]
+    },
+    {
+      "h2": "NAP consistency, and the phone number question",
+      "body": [
+        "NAP stands for name, address, phone. The citation industry has spent a decade telling Indian businesses that a difference in punctuation will sink their rankings. Here's the honest ranking of severity, worst first.",
+        "The five-format problem is real but mild. Modern matching normalises punctuation and country codes reasonably well — a landline written five ways is unlikely to be what's holding you back."
+      ],
+      "table": {
+        "caption": "The same Mumbai landline, written five ways across five listings.",
+        "head": ["Where it appears", "How it's written"],
+        "rows": [
+          ["Website footer", "+91 22 4000 1234"],
+          ["Google Business Profile", "022 4000 1234"],
+          ["JustDial", "02240001234"],
+          ["IndiaMART", "+91-22-40001234"],
+          ["An abandoned Facebook page", "(022) 4000-1234"]
+        ]
+      },
+      "bullets": [
+        "**Worst: a different number entirely.** A call-tracking number on one listing and the real line on another gives Google two businesses to reconcile, and gives customers a dead ring.",
+        "**Bad: an old address.** You moved in 2023 and eleven directories still hold the 2019 address. That's a genuine conflict about where you are, which is a distance signal.",
+        "**Bad: a duplicate listing.** Two profiles for one business split reviews, split links and compete with each other. Report duplicates rather than editing both.",
+        "**Bad: a name that isn't your name.** \"Sharma Dental Clinic — Best Implants Bangalore\" is keyword stuffing in a business name field, it violates Google's guidelines, and any competitor can report it in about forty seconds.",
+        "**Mild: formatting.** Fix it when you're in there anyway. Don't buy a package to solve it."
+      ]
+    },
+    {
+      "h2": "The Indian directories actually worth claiming",
+      "body": [
+        "The list that matters is short, and it's mostly determined by where your buyers already look rather than by anything Google publishes. A restaurant's most valuable listing isn't a directory at all — it's Zomato, because that's where the decision happens."
+      ],
+      "table": {
+        "caption": "Where an Indian business should actually be listed, by type.",
+        "head": ["Business type", "Listings people actually use"],
+        "rows": [
+          ["Any business", "Google Business Profile, Bing Places, Apple Business Connect, JustDial, your own contact page"],
+          ["Restaurants and cafés", "Zomato, Swiggy, Google, Magicpin"],
+          ["Clinics, doctors, dentists", "Practo, Google, plus the hospital or chain profile if you consult there"],
+          ["Manufacturers, exporters, B2B suppliers", "IndiaMART, TradeIndia, Google, relevant trade association directories"],
+          ["Home services and repairs", "Urban Company where eligible, Sulekha, JustDial, Google"],
+          ["Real estate", "99acres, MagicBricks, Housing.com, Google"],
+          ["Coaching and education", "Google, Sulekha, subject-specific portals your students already compare on"]
+        ]
+      },
+      "bullets": [
+        "Add your industry body, your chamber of commerce, and any supplier or partner site that publishes a dealer locator. These are unglamorous, permanent and hard for competitors to copy.",
+        "Skip anything whose homepage is a submission form. If the site exists to collect listings rather than to serve readers, the listing is worth what you'd expect."
+      ]
+    },
+    {
+      "h2": "Auditing what's out there, and why bulk packages underperform",
+      "body": [
+        "Before building anything, find what already exists. Almost every business over three years old has listings created by a former agency, an intern, a franchise partner or the owner's cousin — and nobody remembers the logins."
+      ],
+      "numbered": [
+        "Search your exact business name in quotes. Then search your phone number on its own. Then search your **old** address. That third search is where the surprises live.",
+        "List every result in a sheet with the URL, the details shown, and whether you can claim it.",
+        "Claim and correct the top ten to fifteen. Report duplicates on Google rather than editing both copies.",
+        "Fix your own site first — footer, contact page and schema should all state one version of the truth, because that's the source everything else gets checked against.",
+        "Re-run the same three searches every six months. Listings drift back, particularly on aggregator sites that repopulate from old data."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Why the ₹3,000 citation package underperforms",
+        "body": "It creates new listings on sites with no users, often with a slightly different business name than the one you already use, which adds conflicts rather than resolving them. And it can't do the two things that would actually help: claim the listings you've lost access to, and remove the duplicate holding your old address. That work is manual, it's dull, and it's the part being skipped. See what honest [local SEO](/services/local-seo-services) covers and what [it costs](/cost/local-seo-cost)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do local citations still matter for SEO?",
+      "a": "They matter less than they did a decade ago and more than sceptics claim. Their main job now is corroboration — confirming your business is real, is where you say it is, and does what you say it does. Consistent details across a dozen used directories is the goal, not volume."
+    },
+    {
+      "q": "How many citations does a local business need?",
+      "a": "Ten to fifteen that people actually use, plus any industry-specific one your buyers compare on. After that the returns flatten hard. A dentist listed properly on Google and Practo is in better shape than one listed badly on 400 general directories."
+    },
+    {
+      "q": "Does inconsistent NAP formatting really hurt rankings?",
+      "a": "Formatting differences — spaces, dashes, country codes — are handled reasonably well by modern matching. Genuinely conflicting information does hurt: a different phone number, a stale address, a duplicate listing, or a business name padded with keywords. Fix those first and worry about punctuation last."
+    },
+    {
+      "q": "Is JustDial worth paying for?",
+      "a": "Claiming and correcting your free JustDial listing is worth doing for anyone. Their paid lead packages are an advertising decision, not an SEO one — judge them on cost per qualified enquiry against your other channels, and don't let anyone tell you the paid tier improves your Google ranking."
+    },
+    {
+      "q": "What do I do about a duplicate listing I can't access?",
+      "a": "On Google, use the \"Suggest an edit\" and duplicate reporting flow rather than creating a third listing. On other directories, look for a claim link and verify by phone to the number listed — which is often why it's worth keeping the old number redirected while you clean up."
+    },
+    {
+      "q": "Do citations need to link to my website?",
+      "a": "No. A citation counts as a mention of your name, address and phone whether or not it carries a link. A link is a bonus and on most directories it's nofollowed anyway. The value is corroboration and, on the good directories, actual customers."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "google-business-profile" },
+    { "type": "glossary", "slug": "brand-mentions" },
+    { "type": "compare", "slug": "local-seo-vs-national-seo" },
+    { "type": "services", "slug": "local-seo-services" },
+    { "type": "cost", "slug": "local-seo-cost" },
+    { "type": "journal", "slug": "local-seo-in-tier-2-india" }
+  ]
+}

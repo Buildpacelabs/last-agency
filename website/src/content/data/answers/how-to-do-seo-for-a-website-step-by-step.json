@@ -1,0 +1,165 @@
+{
+  "slug": "how-to-do-seo-for-a-website-step-by-step",
+  "type": "answers",
+  "primaryKeyword": "how to do seo for website step-by-step",
+  "secondaryKeywords": [
+    "how to do seo for website",
+    "how can i seo my website",
+    "step by step seo guide",
+    "seo checklist for a website"
+  ],
+  "cluster": "seo-howto",
+  "intent": "informational",
+  "h1": "Step-by-step SEO for a website you already have",
+  "metaTitle": "How to Do SEO for a Website, Step by Step",
+  "metaDescription": "How to do seo for website pages you already own: fourteen numbered steps, each with the test that proves the step worked before you move to the next.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Do SEO on an existing website in fourteen steps: instrument it, crawl it, fix what blocks indexing, map keywords to the URLs you already have, rewrite titles and headings, then wire up internal links. Each step has a test that proves it worked. Budget six to ten weeks part-time.",
+  "takeaways": [
+    "Every step here comes with a **verification test**. A step you can't verify is a step you're taking on faith.",
+    "Order matters. You can't map keywords to pages Google can't see, and you can't judge a title rewrite that predates your analytics.",
+    "Steps 1 to 10 cost nothing but time. The paid tools only start earning their fee at step 11.",
+    "Nothing here produces a same-week result. Titles move click-through in 4–6 weeks; content and links take 6–12."
+  ],
+  "sections": [
+    {
+      "h2": "A step without a test is a step you can't trust",
+      "body": [
+        "Most SEO guides hand you a list of things to do. Almost none tell you how to check that the thing worked. So people tick fourteen boxes, wait three months, see nothing, and conclude SEO doesn't work for their business.",
+        "Every step below comes with a verification test — something you can look at, usually within minutes to a few days, that proves the change actually landed. If the test fails, you fix the step. You don't move on and hope.",
+        "This is written for a site that already exists: a few dozen to a few hundred pages, some traffic, no systematic SEO work done. If you're starting from a blank domain the order is identical, but steps 8 to 10 take longer, because you have fewer existing pages to map against."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Do them in order",
+        "body": "The sequence isn't decoration. You can't assign keywords to pages until you know which pages Google can see, and you can't tell whether a title rewrite worked if analytics went in afterwards. Jumping ahead is the most common reason a DIY SEO project produces nothing."
+      }
+    },
+    {
+      "h2": "Steps 1–3: instrument the site before you touch anything",
+      "body": [
+        "You cannot prove a single claim on this page without measurement in place first. This is a two-to-three-hour job and it has to happen before any optimisation."
+      ],
+      "numbered": [
+        "**Verify Google Search Console as a domain property**, not just a URL prefix. Domain verification takes one DNS TXT record and covers every subdomain and protocol at once, which stops you from measuring half your site by accident. **Test:** the Pages report returns a non-zero indexed count within 48 hours.",
+        "**Install GA4 and mark your real conversions as key events** — form submits, calls, WhatsApp clicks, checkout. Traffic is not a conversion, and a setup that only counts sessions will flatter every change you make. **Test:** submit your own form, then find that event in GA4 Realtime inside a minute.",
+        "**Freeze a baseline.** One line in a document: today's date, plus the trailing 90 days of organic sessions, organic conversions and indexed page count. **Test:** the number exists somewhere with a date attached. That's the entire test, and most sites fail it."
+      ]
+    },
+    {
+      "h2": "Steps 4–7: crawl the site, then triage what comes back",
+      "body": [
+        "A crawler walks your site the way a search engine does and reports what's broken. Screaming Frog's free tier handles 500 URLs, which covers most small sites outright. Search Console's own Pages report covers the indexing side for free at any size."
+      ],
+      "numbered": [
+        "**Crawl the whole site.** Screaming Frog, Sitebulb or the site audit in Ahrefs or Semrush — any of them. Let it finish. **Test:** the crawler's URL count sits within roughly 10% of your CMS page count. A large gap means the crawler couldn't reach some pages, which usually means Google can't either.",
+        "**Triage by blast radius, not by issue count.** Fix anything that stops indexing first: accidental `noindex` tags, `robots.txt` blocks, canonicals pointing at the wrong URL, 5xx errors. Then 404s that have inbound links. Cosmetic warnings last, and some of them never. **Test:** the 'blocked' and 'excluded by noindex' buckets in Search Console's Pages report shrink at the next crawl.",
+        "**Publish and submit an XML sitemap** containing only canonical, indexable, 200-status URLs. A sitemap stuffed with redirects and dead pages teaches Google to trust the file less. **Test:** Search Console marks the sitemap Success and the discovered-URL count matches what's in the file.",
+        "**Flatten the redirect chains.** Every extra hop wastes crawl time and confuses which URL is canonical. **Test:** re-crawl, and every 301 reaches a 200 in a single hop with the chain report empty."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The trap at step 5",
+        "body": "Crawl tools rank issues by count, which puts 900 missing alt attributes above one `noindex` on your pricing page. Sort by consequence instead: can Google reach it, can Google index it, can Google understand it — in that order."
+      }
+    },
+    {
+      "h2": "Steps 8–10: map keywords to the URLs you already own",
+      "body": [
+        "This is the step nearly everyone skips, and the one that makes everything after it work. You're not hunting for new keywords yet. You're deciding which existing page is supposed to rank for what — because if you don't decide, Google decides, and it frequently picks the wrong page."
+      ],
+      "numbered": [
+        "**Export your Search Console query-by-page data** for the last 12 months. Every URL with any impressions at all already has a demonstrated topic. Read the data before you theorise about what your pages are 'about'. **Test:** you can name the intended target query for every page pulling more than 100 impressions a month.",
+        "**Build a one-row-per-URL map**: URL, target query, current average position, the intent behind that query, and what the page still needs. One page per intent, no exceptions. **Test:** no query appears twice in the target column. Duplicates are [keyword cannibalization](/glossary/keyword-cannibalization), and they usually cost you both pages rather than just one.",
+        "**Only now go looking for gaps.** Queries you don't cover, questions your sales calls keep repeating, comparisons your buyers make — see [how to do keyword research](/answers/how-to-do-keyword-research) for the method. **Test:** every new keyword you add has either an existing URL assigned to it or a line in a content plan with a date next to it."
+      ]
+    },
+    {
+      "h2": "Steps 11–12: rewrite titles and headings for the SERP, not the CMS",
+      "body": [
+        "A title tag is an advertisement sitting in a list of ten near-identical advertisements. Most titles are written for the admin panel — 'Services | Company Name' — and they perform accordingly."
+      ],
+      "numbered": [
+        "**Rewrite title tags** to lead with the target query, land near 55–60 characters so Google doesn't truncate them, and say something the other nine results on the page don't. Meta descriptions don't affect ranking, but they do affect whether anyone clicks. **Test:** four to six weeks later, compare that page's click-through rate in Search Console against the equivalent period before. Position flat and CTR up means the title did the work, not luck.",
+        "**Fix the heading structure.** One H1 that states the page's actual job. H2s that read as real sub-questions someone would type. H3s only where they genuinely nest. Never style body text as a heading because it looked better. **Test:** read only the headings, top to bottom. If they don't summarise the page on their own, they're decoration rather than structure."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Change one thing at a time",
+        "body": "Rewrite the title, the intro and the internal links in the same week and you'll never know which one moved. One variable per page per four-week cycle, with the change date written down. It feels slow. It's the only way you learn anything you can repeat."
+      }
+    },
+    {
+      "h2": "Steps 13–14: internal links, and the pages nobody links to",
+      "body": [
+        "Internal links are the only ranking input you control completely. No outreach, no budget, no waiting on a journalist to reply. They're also the cheapest step on this list and routinely the most productive on a site that's been publishing for a few years."
+      ],
+      "numbered": [
+        "**Link from your strongest pages to your most important ones**, with anchor text that describes the destination rather than saying 'read more'. Your homepage, your best-performing article and your main service page hold the most internal weight — spend it deliberately instead of letting the template spend it on your privacy policy. **Test:** in the crawler's internal-link report, every priority URL has at least three internal links pointing at it from three different pages.",
+        "**Find and fix orphan pages** — URLs with zero internal links pointing at them. Almost every site older than two years has some, usually from an old campaign or a CMS migration. An [orphan page](/glossary/orphan-page) can be perfectly indexed and still be invisible. **Test:** the orphan report is empty, or every URL remaining on it is one you've consciously decided not to link."
+      ]
+    },
+    {
+      "h2": "How long the whole thing takes, and what to do when a test fails",
+      "body": [
+        "Realistic timings for one person working part-time on a site of 50 to 200 pages. Bigger sites scale the crawl and mapping phases, not the instrumentation."
+      ],
+      "table": {
+        "caption": "Time per phase for a 50–200 page site, one person, working part-time.",
+        "head": ["Steps", "Phase", "Realistic time"],
+        "rows": [
+          ["1–3", "Instrumentation and baseline", "2–3 hours, once"],
+          ["4–7", "Crawl and technical triage", "1–2 weeks"],
+          ["8–10", "Keyword-to-URL mapping", "1–2 weeks"],
+          ["11–12", "Titles and heading structure", "1–2 weeks, then ongoing"],
+          ["13–14", "Internal links and orphans", "3–5 days"]
+        ]
+      },
+      "bullets": [
+        "**When a test fails, stop.** A failed test at step 5 means part of your site still can't be indexed. Every hour spent on titles at step 11 is then spent on pages that cannot rank at all.",
+        "**Re-run the tests quarterly.** Sites decay. A redeploy reinstates a `noindex`, a plugin update breaks the sitemap, a new blog category orphans forty posts.",
+        "**Expect lag.** Technical fixes surface as indexing changes in 2–4 weeks. Titles move click-through in 4–6. Content and internal linking take 6–12 weeks to settle. Anyone quoting faster is describing a different site."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where this stops being a DIY job",
+        "body": "Fourteen steps is a weekend of reading and about a month of work. It stops being DIY when the fixes need engineering time you can't get, or when the queries you want are contested enough that content volume becomes the constraint. That's roughly where our [SEO retainer](/seo) picks up — from ₹75,000/mo, smaller sites from ₹40,000."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I do SEO for my own website without an agency?",
+      "a": "For steps 1 to 14 on a small site, genuinely yes. The first ten cost nothing but time and free tools. Agencies earn their fee when the work becomes continuous, when fixes need developer capacity, or when the keywords you want are contested enough that one person publishing occasionally can't keep pace."
+    },
+    {
+      "q": "How long before this step-by-step process shows results?",
+      "a": "Indexing changes appear in 2–4 weeks, click-through improvements from title rewrites in 4–6 weeks, and ranking movement from content and internal linking in 6–12 weeks. Meaningful lead movement on a competitive keyword set takes three to six months. That's the honest spread, and it varies with how broken the site was to begin with."
+    },
+    {
+      "q": "Which tools do I actually need?",
+      "a": "Google Search Console and GA4, both free, are non-negotiable. A crawler — Screaming Frog is free up to 500 URLs — covers steps 4 to 7 and 13 to 14. A paid keyword tool helps at step 10 but you can get surprisingly far with Search Console's own query data plus Google's autocomplete."
+    },
+    {
+      "q": "What do I do if a verification test fails?",
+      "a": "Don't advance to the next step. A failed test means the change didn't land, and every subsequent step is built on it. Re-read what the test measures, check whether you're looking at the right property or the right date range, then fix the underlying issue and re-test before moving on."
+    },
+    {
+      "q": "Do I have to follow all fourteen steps in order?",
+      "a": "The phases have to stay in order because each depends on the one before. Within a phase you can reorder freely. The one sequence you genuinely cannot break is instrumentation before everything else — without a baseline you can measure activity but never improvement."
+    },
+    {
+      "q": "Is this different for an ecommerce site?",
+      "a": "The steps are the same; the volume isn't. Ecommerce adds faceted navigation, out-of-stock URLs and product variants, which means steps 4 to 7 balloon and canonical handling becomes the main event. The keyword mapping in steps 8 to 10 also shifts from pages to templates, since you're mapping categories rather than individual articles."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "xml-sitemap" },
+    { "type": "glossary", "slug": "orphan-page" },
+    { "type": "answers", "slug": "how-to-do-keyword-research" },
+    { "type": "services", "slug": "seo-audit-services" },
+    { "type": "journal", "slug": "what-an-seo-audit-should-actually-find" },
+    { "type": "compare", "slug": "technical-seo-vs-content-seo" }
+  ]
+}

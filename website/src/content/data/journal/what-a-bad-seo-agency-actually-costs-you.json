@@ -1,0 +1,316 @@
+{
+  "slug": "what-a-bad-seo-agency-actually-costs-you",
+  "type": "journal",
+  "primaryKeyword": "cost of a bad seo agency",
+  "secondaryKeywords": [
+    "how much does bad seo cost",
+    "seo damage repair cost",
+    "recovering from a bad seo agency",
+    "cost of fixing bad seo",
+    "bad seo agency india"
+  ],
+  "cluster": "client-education",
+  "intent": "commercial",
+  "h1": "What a Bad SEO Agency Actually Costs You, in Rupees and Months",
+  "metaTitle": "The Cost of a Bad SEO Agency, in Rupees and Months",
+  "metaDescription": "The cost of a bad SEO agency is never just the retainer. Price the link cleanup, the rewrite, the manual action and the lost quarters before you decide.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Rarely just the retainer. On a mid-size Indian site, cleaning up after a bad SEO agency runs roughly ₹3,50,000–₹4,00,000 of new money and six to eleven months of elapsed time — link audit and disavow, content triage, a reconsideration request, then waiting for recrawl. The largest line never gets invoiced: two quarters of compounding you don't get back.",
+  "takeaways": [
+    "The retainer you already paid is the number founders mourn. It's usually the **smallest** line on the real bill.",
+    "Deleting bad pages is cheaper and more effective than rewriting them, and almost nobody wants to hear it — you paid for those pages.",
+    "A **manual action** gives you a queue and a fix. An algorithmic demotion gives you neither, and Google's own guidance says recovery may wait for a later core update.",
+    "Reclaim Search Console ownership, the disavow file and 16 months of query data **before** you give notice. After notice, you're negotiating for your own data."
+  ],
+  "sections": [
+    {
+      "h2": "The retainer is the smallest number on the bill",
+      "body": [
+        "When a founder tells us they wasted a year with an agency, the number they quote is the retainer. Twelve months at ₹45,000 is ₹5,40,000, and that's the figure that stings because it appeared on a bank statement every month.",
+        "It's the wrong number to be angry about. Money already spent doesn't decide anything. What decides your next twelve months is the repair bill, and the repair bill is a separate, larger, entirely unbudgeted thing that arrives after you've already decided you're done spending on SEO.",
+        "So this page prices the wreckage instead of warning you about it. Every figure below is modelled at ₹1,200 an hour delivery cost and ₹11,000 for one fully loaded, publish-ready 1,500-word article — the same numbers we use in [what content writing costs in India](/cost/content-writing-cost-india). They're a model of a typical mid-size Indian site, not a client's invoice. Your damage will differ. The structure of the bill won't.",
+        "One thing worth saying up front: not every bad agency does damage. Plenty just do nothing, competently, for a year. That's cheaper and in some ways worse, because there's nothing to point at. The lines below apply when the agency was actively doing the wrong work — bought links, scaled pages, a migration nobody checked."
+      ]
+    },
+    {
+      "h2": "Line one: the link cleanup, and why the disavow is the cheap part",
+      "body": [
+        "Start with the backlink profile, because it's the failure mode with the longest tail. A site that bought links for a year typically shows up with something like 600 referring domains, most of them acquired in three or four suspicious vertical spikes.",
+        "Here's what cleaning that up actually takes."
+      ],
+      "table": {
+        "caption": "Modelled link cleanup on a site with ~600 referring domains, at ₹1,200/hour.",
+        "head": [
+          "Task",
+          "Time",
+          "Cost"
+        ],
+        "rows": [
+          [
+            "Export and dedupe referring domains from two backlink indexes plus Search Console",
+            "3 hrs",
+            "₹3,600"
+          ],
+          [
+            "Classify 600 domains — traffic, outbound link volume, whether the site exists for readers or for sellers",
+            "20–30 hrs",
+            "₹24,000 – ₹36,000"
+          ],
+          [
+            "Removal outreach on the worst tier, where roughly one in five ever replies",
+            "8–12 hrs",
+            "₹9,600 – ₹14,400"
+          ],
+          [
+            "Build and submit the disavow file, then monitor across recrawls",
+            "4 hrs",
+            "₹4,800"
+          ],
+          [
+            "Backlink index seat for the month",
+            "—",
+            "₹8,000 – ₹12,000"
+          ],
+          [
+            "**Total**",
+            "**35–49 hrs**",
+            "**₹50,000 – ₹70,800**"
+          ]
+        ]
+      },
+      "bullets": [
+        "**The disavow file is four hours of the job.** The twenty-five hours of classification before it is what you're paying for, and it's the part cheap cleanup vendors skip — which is how sites end up disavowing links that were fine.",
+        "**A disavow doesn't act on a schedule you control.** Google processes those URLs as it recrawls them, which is months for a long tail of low-quality domains. Nothing happens in week two.",
+        "**Google's own position is that most sites never need a disavow at all.** Use it when there's a manual action, or when you know money changed hands for links. Reaching for it out of anxiety is how you cut off links that were helping."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Get the existing disavow file first",
+        "body": "If the agency already submitted one, it lives in the Search Console account that submitted it. Lose that account and you lose the record of what was disavowed — and you get to rebuild it from zero, guessing. Download it before you say a word about leaving."
+      }
+    },
+    {
+      "h2": "Line two: ninety pages you now have to delete, redirect or rewrite",
+      "body": [
+        "The second failure mode is volume. An agency under pressure to show output publishes pages — spun, templated, AI-drafted and unedited, or simply written to a keyword with nothing behind it. Take a site with 140 published pages where 90 fall into that bucket.",
+        "The instinct is to rewrite all 90. That's the expensive answer and usually the wrong one. Pages get triaged into three piles, and the piles have very different costs."
+      ],
+      "table": {
+        "caption": "Modelled content triage on 90 scaled pages, at ₹11,000 per fully loaded rewrite.",
+        "head": [
+          "Decision",
+          "Pages",
+          "Cost",
+          "Why"
+        ],
+        "rows": [
+          [
+            "Delete or noindex outright",
+            "36",
+            "₹7,200",
+            "Six hours of mapping. No traffic, no links, no reason to exist. Cheapest line on the page."
+          ],
+          [
+            "Consolidate into fewer, better pages with 301s",
+            "32 → 12",
+            "₹55,000 – ₹65,000",
+            "Redirect mapping plus real merge writing. Fixes cannibalisation as a side effect."
+          ],
+          [
+            "Rewrite properly, because the query matters",
+            "22",
+            "₹2,42,000",
+            "22 × ₹11,000, all in — brief, draft, expert input, edit, on-page."
+          ],
+          [
+            "**Total**",
+            "**90**",
+            "**₹3,04,200 – ₹3,14,200**",
+            "**4–7 months at a sane 5–6 pages a month**"
+          ]
+        ]
+      },
+      "bullets": [
+        "**Deleting is the line founders fight hardest.** You paid for those pages, so removing them feels like admitting the loss twice. Do it anyway — a large body of thin pages is a sitewide quality signal, not ninety independent ones.",
+        "**Group by cohort, not by page.** Sort by who wrote it and in which month. Bad content is almost always uniform within a cohort, which turns ninety judgement calls into four.",
+        "**Don't rush it back out.** Rewriting 90 pages in six weeks reproduces the original problem with better grammar. Five or six real pages a month is the honest cadence."
+      ]
+    },
+    {
+      "h2": "Line three: the manual action, and the queue you can't jump",
+      "body": [
+        "Open Search Console and check the Manual actions report. What you see there changes your timeline by two quarters, so check it before you plan anything.",
+        "**If there's a manual action**, you have something rare in SEO: a named problem, a stated cause and a human review process. Fix the cause fully, document what you did, and file a reconsideration request. Google's guidance is that these reviews take several days to a few weeks, and partial matches against one section are more common than sitewide penalties. Writing the request properly is four to eight hours, so ₹5,000–₹10,000 — and budget for one rejection, because cosmetic cleanups get rejected and a second attempt costs the same again.",
+        "**If the report is empty**, you have an algorithmic demotion, and that's the more expensive outcome despite costing nothing to file. There's no ticket, no reviewer and no queue. Google's documentation is explicit that a site affected by a core update may not recover until a subsequent update runs, and broad core updates come a handful of times a year. So the honest recovery window after your fixes ship is one to two quarters of waiting, not days.",
+        "That's the line item nobody quotes you: the wait. It has no invoice and it's frequently the biggest cost in the whole exercise. If you want the mechanics of how the damage happened in the first place, [an agency can absolutely hurt your site](/answers/can-an-seo-agency-hurt-your-website) covers the six routes it takes."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Check the redirects before you assume a penalty",
+        "body": "A large share of \"we got penalised\" cases are a broken migration — redirect chains, 302s where 301s belong, or a whole section quietly left on noindex. That damage is reversible in days rather than quarters, and it costs a fraction of a link cleanup. Rule it out first; it's twenty minutes of crawling."
+      }
+    },
+    {
+      "h2": "Line four: the two quarters nobody invoices you for",
+      "body": [
+        "Now the part that doesn't fit on an invoice, which is why it gets left out of the decision.",
+        "In our model, roughly ₹3,52,000 of that ₹5,40,000 retainer bought content — 32 articles at ₹11,000 fully loaded — and most of it is now getting deleted. That money isn't additive to the repair bill; it was already inside the retainer. But it reframes what you paid for: not a year of mediocre progress, a year of manufacturing liabilities.",
+        "The compounding loss is worse and harder to look at. A page doesn't reach a stable position for three to six months after it's published. So eight wasted months aren't eight months behind a competitor who did the work — they're eight months plus the ramp you now have to serve again from a standing start. Call it three to four quarters of real-world lag on your best queries.",
+        "We won't put a rupee figure on the demand you didn't capture, because we'd be inventing it. You can, in about four minutes, and it's the number worth taking to the meeting: pull your closed-won rate and average deal value from the CRM, multiply by the qualified organic leads your baseline was producing each month, and multiply that by the months lost. If your organic baseline was zero, this line is genuinely zero — which is itself useful, because it means the compounding argument doesn't apply to you and the repair math gets simpler."
+      ]
+    },
+    {
+      "h2": "Add it up",
+      "body": [
+        "One table, one model, clearly labelled. This is a mid-size Indian site with a bought-link profile and a scaled-content problem, not anyone's actual bill."
+      ],
+      "table": {
+        "caption": "Modelled total exposure after twelve months with a bad SEO agency. Illustrative, not a client engagement.",
+        "head": [
+          "Line",
+          "Rupees",
+          "Elapsed time"
+        ],
+        "rows": [
+          [
+            "Retainer already paid — 12 × ₹45,000",
+            "₹5,40,000",
+            "12 months, gone"
+          ],
+          [
+            "…of which content that now gets deleted or rewritten",
+            "≈ ₹3,52,000",
+            "already inside the line above, not additive"
+          ],
+          [
+            "Link audit, classification, outreach, disavow",
+            "₹50,000 – ₹70,800",
+            "2–4 weeks of work"
+          ],
+          [
+            "Content triage — delete 36, consolidate 32, rewrite 22",
+            "₹3,04,200 – ₹3,14,200",
+            "4–7 months"
+          ],
+          [
+            "Reconsideration request, plus one rejection and a resubmission",
+            "₹10,000 – ₹20,000",
+            "days to weeks per review"
+          ],
+          [
+            "Waiting for recrawl, reprocessing and the next core update",
+            "₹0",
+            "1–2 quarters"
+          ],
+          [
+            "**New money to repair**",
+            "**₹3,64,200 – ₹4,05,000**",
+            "**6–11 months**"
+          ],
+          [
+            "**Total exposure including the wasted year**",
+            "**₹9,04,200 – ₹9,45,000**",
+            "**up to two years start to finish**"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "The comparison that matters",
+        "body": "₹3,64,000–₹4,05,000 of repair is roughly five months of a ₹75,000 retainer spent producing nothing new. That's the real price of the cheap agency: not the discount you took, but the five months of a good one you now have to spend standing still."
+      }
+    },
+    {
+      "h2": "Repair or restart: a decision you can make in twenty minutes",
+      "body": [
+        "Founders reach for a rebuild — new site, new domain, fresh start — because it feels decisive. It's usually the most expensive option available. Five checks settle it."
+      ],
+      "numbered": [
+        "**Count the index against the keepers.** Compare indexed pages in Search Console with pages you'd defend to a customer. If more than 70% of the index is scaled junk, budget for pruning, not rewriting. Pruning is a tenth of the cost and does more.",
+        "**Read the Manual actions report.** A manual action means a fix and a queue. An empty report means a longer, quieter wait. Same work either way — very different promise to your board about timing.",
+        "**Plot referring domains by month.** A vertical spike is bought. A slope is earned. If there's a genuine earned base underneath the spikes, repair — you'd be discarding the only asset on the site that took real time to build.",
+        "**Do not move to a new domain to escape link damage.** You lose the domain age, every ranking that still works and every earned link. And if you 301 the old domain across, you've generally carried the problem with you. The rare exception is a domain with no legitimate history worth keeping at all.",
+        "**Sequence the fixes by reversibility.** Technical and redirect damage first — days, cheap, and it unblocks measurement. Then content triage. Links last, because that's the line with the longest lag and you want the rest of the site clean before you ask for a review."
+      ]
+    },
+    {
+      "h2": "What to take before you give notice",
+      "body": [
+        "This is the section we wish more founders read a week earlier. Once you give notice, every item below becomes a negotiation, and you'll be conducting it while also trying to hire a replacement. Do it in this order, quietly, this week.",
+        "Then give notice. It reads cynical written down. Do it anyway — the cost of being wrong in the other direction is asymmetric and permanent."
+      ],
+      "numbered": [
+        "**Search Console ownership**, via a DNS TXT record on your own domain. Delegated user access dies with the agency's Google account. A domain property you verified yourself doesn't.",
+        "**Sixteen months of Search Console performance data**, exported. That's the full retention window and it does not come back. It is also the only honest record of what your traffic looked like before and after the damage.",
+        "**GA4 administrator rights**, and confirmation that the property sits in an Analytics account you control rather than the agency's.",
+        "**The disavow file.** See above. It's the single most reconstructible-from-nothing item on this list, and reconstructing it costs ₹25,000 of classification work.",
+        "**The link placement list** — URLs, dates, contacts, and which ones money was paid for. Ask in writing. A refusal is an answer.",
+        "**Content source files** — drafts, briefs, images, spreadsheets. Not just what's published, because you'll want the briefs to see what they were even aiming at.",
+        "**The redirect map** and any server-level rules they added. Migrations get re-broken by people who never knew a rule existed.",
+        "**Rank tracking history**, exported to CSV. It lives on a tool seat that gets cancelled, and it takes your before-and-after with it."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "How we scope a repair",
+        "body": "We quote cleanup work separately from the retainer, because a cleanup has a finish line and a retainer doesn't. Worth knowing the awkward part too: a wrecked site's trailing-90-day organic lead baseline is already depressed, which makes our 90-day guarantee easier for us to beat. You're being measured against a floor, not a fair number — ask any agency quoting you a guarantee mid-wreck how they handle that. Our retainer is from ₹75,000/mo, and smaller sites from ₹40,000/mo, with the full breakdown on [pricing](/pricing)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much does it cost to fix bad SEO in India?",
+      "a": "On a mid-size site with bought links and scaled content, budget roughly ₹3,50,000–₹4,00,000 of new money: ₹50,000–₹70,000 for link audit and disavow, around ₹3,00,000 for content triage, and ₹10,000–₹20,000 for reconsideration requests. Simpler damage — a broken migration, bad redirects — can be under ₹50,000."
+    },
+    {
+      "q": "How long does it take to recover from a bad SEO agency?",
+      "a": "Six to eleven months of work, plus waiting. Redirect and technical damage reverses in days. Content triage runs four to seven months at a sane cadence. Link damage is slowest, because a disavow only takes effect as Google recrawls, and an algorithmic demotion may not lift until a later core update."
+    },
+    {
+      "q": "Should I start a new website after a bad SEO agency?",
+      "a": "Almost never. A new domain throws away domain age, every ranking that still works and every earned link, and redirecting the old domain across usually carries the problem with it. The exception is a domain with no legitimate history worth keeping — which is rarer than the panic suggests."
+    },
+    {
+      "q": "Do I need to disavow links after leaving a bad agency?",
+      "a": "Only if you have a manual action, or you know links were bought. Google's position is that most sites never need one. The expensive part isn't the file — it's the twenty-five-odd hours of classifying 600 domains, and skipping that is how sites disavow links that were helping them."
+    },
+    {
+      "q": "What should I get from my SEO agency before I fire them?",
+      "a": "Search Console ownership via your own DNS record, sixteen months of exported performance data, GA4 administrator rights, the current disavow file, the link placement list with contacts, content source files, the redirect map, and rank tracking history. Collect all of it before you give notice, not after."
+    },
+    {
+      "q": "Is a cheap SEO agency ever worth the risk?",
+      "a": "A cheap agency that does too little wastes your retainer. A cheap agency that does the wrong things costs three to five times the retainer to undo. The price signal that matters isn't the monthly fee — it's where the links come from and how many pages a month they promise to publish."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "can-an-seo-agency-hurt-your-website"
+    },
+    {
+      "type": "answers",
+      "slug": "what-are-the-red-flags-of-a-bad-seo-agency"
+    },
+    {
+      "type": "services",
+      "slug": "penalty-recovery-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "toxic-backlinks"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-agency-cost"
+    },
+    {
+      "type": "journal",
+      "slug": "the-real-cost-of-switching-seo-agencies"
+    },
+    {
+      "type": "journal",
+      "slug": "the-one-question-worth-asking-an-seo-agency"
+    }
+  ]
+}

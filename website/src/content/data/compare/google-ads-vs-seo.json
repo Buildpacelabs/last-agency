@@ -1,0 +1,267 @@
+{
+  "slug": "google-ads-vs-seo",
+  "type": "compare",
+  "primaryKeyword": "difference between google ads and seo",
+  "secondaryKeywords": [
+    "google ads vs seo",
+    "seo or google ads which is better",
+    "google ads vs seo cost",
+    "is google ads better than seo",
+    "google ads and seo together"
+  ],
+  "cluster": "paid-vs-organic",
+  "intent": "commercial",
+  "h1": "Google Ads vs SEO: the same ₹1 lakh, tracked for 12 months",
+  "metaTitle": "Google Ads vs SEO: The Same ₹1 Lakh, 12 Months",
+  "metaDescription": "The difference between Google Ads and SEO shows up over 12 months. We model ₹1,00,000 a month through both and show where every rupee actually lands.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Google Ads charges per click at a price the auction sets; SEO charges a flat retainer regardless of clicks. Put ₹1,00,000 a month through each for a year and Ads wins on cumulative leads until roughly month nine, after which SEO overtakes it and keeps pulling away while the invoice stays the same.",
+  "takeaways": [
+    "Your real CPC isn't your bid. Ad Rank folds in Quality Score, so a better landing page can cut what you pay for the same position.",
+    "Modelled on one ₹1,00,000/mo budget, Ads out-produces SEO every month until about **month six**, and stays ahead on cumulative leads until about **month nine**.",
+    "Pause Ads and lead flow drops the same day. Pause SEO and nothing happens for weeks, which is exactly why it gets under-funded.",
+    "Performance Max will happily buy clicks on queries you already rank first for, then bill you for traffic you were getting free. Exclude your brand."
+  ],
+  "versus": {
+    "a": "Google Ads",
+    "b": "SEO",
+    "verdict": "If you need leads inside the next two quarters or have under nine months of runway, put the ₹1 lakh into Google Ads; if you'll still be trading in 18 months, SEO returns more from the same budget."
+  },
+  "sections": [
+    {
+      "h2": "How the auction actually sets your price",
+      "body": [
+        "Most founders assume they pay their bid. You don't. Google ranks ads by Ad Rank, which combines your bid, your ad quality, the context of the search, and the expected impact of your assets. Then it charges you roughly the minimum needed to hold your position against the advertiser below you. Two consequences follow, and both are worth money.",
+        "First, a competitor with a better landing page can outrank you while bidding less. Second, improving [Quality Score](/glossary/quality-score) lowers what you pay for the position you already have. Google doesn't publish the exact discount curve, so treat this as directional rather than arithmetic — but the effect is real and it's the single most under-worked lever in most Indian ad accounts.",
+        "Quality Score is scored 1–10 and built from three things: expected click-through rate, ad relevance, and landing page experience. All three are things an SEO team already works on. That overlap is why running the two disciplines in separate silos costs you money in both."
+      ],
+      "bullets": [
+        "**Expected CTR** — largely a copy and match-type problem. Tight ad groups beat broad ones.",
+        "**Ad relevance** — does the ad text contain the query language? Same discipline as writing a title tag.",
+        "**Landing page experience** — load speed, mobile rendering, and whether the page answers the query. Identical to technical SEO work.",
+        "**Auction context** — device, location, time of day, and who else showed up. You don't control this one, which is why CPL drifts even when nothing in your account changed."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The overlap is the argument for doing both",
+        "body": "Fixing Core Web Vitals lifts landing page experience, which lifts Quality Score, which cuts your effective CPC. The same technical work is billed once and pays into two channels. Very few agencies scope it that way."
+      }
+    },
+    {
+      "h2": "One ₹1,00,000 budget, twelve months, two routes",
+      "body": [
+        "Below is a model, not a case study. We have not run this exact budget for a named client and we're not going to pretend we did. What follows is arithmetic with its assumptions on the table, so you can swap in your own numbers and watch the crossover move.",
+        "**Ads route:** ₹40,000/mo management, ₹60,000/mo media at a ₹120 average CPC. That's 500 clicks a month. At a 3% landing page conversion rate, 15 leads a month, stable from month one. **SEO route:** ₹75,000/mo retainer plus ₹25,000/mo of content production, with lead flow starting near zero and compounding — the shape every honest SEO forecast has."
+      ],
+      "table": {
+        "caption": "Modelled outcome of ₹1,00,000/mo through each channel. Assumptions stated above; change them and the crossover moves.",
+        "head": [
+          "Checkpoint",
+          "Ads: leads to date",
+          "Ads: cumulative CPL",
+          "SEO: leads to date",
+          "SEO: cumulative CPL"
+        ],
+        "rows": [
+          [
+            "Month 3 · ₹3,00,000 spent",
+            "45",
+            "₹6,667",
+            "7",
+            "₹42,857"
+          ],
+          [
+            "Month 6 · ₹6,00,000 spent",
+            "90",
+            "₹6,667",
+            "50",
+            "₹12,000"
+          ],
+          [
+            "Month 9 · ₹9,00,000 spent",
+            "135",
+            "₹6,667",
+            "153",
+            "₹5,882"
+          ],
+          [
+            "Month 12 · ₹12,00,000 spent",
+            "180",
+            "₹6,667",
+            "327",
+            "₹3,670"
+          ],
+          [
+            "Month 12 · that month alone",
+            "15 leads",
+            "₹6,667",
+            "66 leads",
+            "₹1,515"
+          ]
+        ]
+      },
+      "bullets": [
+        "**Month six is the monthly crossover.** SEO produces more leads that month than Ads does.",
+        "**Month nine is the cumulative crossover.** Everything spent, divided by every lead received, finally favours SEO.",
+        "**Month twelve is where the argument stops being close.** Same invoice, four times the monthly output. That gap widens in year two because the retainer doesn't.",
+        "**The honest caveat:** if your close rate on paid leads is higher than on organic — common in high-consideration B2B — the crossover slides later. Model leads-to-revenue, not leads."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The month-four cancellation",
+        "body": "Look at the month-three row. A ₹42,857 cost per lead is a genuinely terrible number, and it's also completely normal. Founders who judge SEO at that checkpoint cancel, having paid for all of the cost and none of the return. If you can't commit to nine months, don't start."
+      }
+    },
+    {
+      "h2": "Day one after you pause the ads",
+      "body": [
+        "Turn Google Ads off on a Monday and by Tuesday your lead volume is down by whatever share paid was contributing. There's no decay curve. That's the defining property of rented traffic, and it's why paid-only businesses are structurally fragile — your customer acquisition is a subscription you can never cancel.",
+        "There is a residue, and it's smaller than people hope. Remarketing audiences keep working for a few weeks until they age out. Brand searches created by past impressions keep arriving for a month or two, then fade. Anyone who saw an ad and bookmarked you still converts. None of that replaces the flow.",
+        "Turn SEO off and the opposite failure mode appears: nothing happens. Traffic holds for weeks, drifts for months, and the real damage lands two quarters later when competitors have published past you and your pages have quietly decayed. It's the same reason nobody notices a dropped baseline until renewal — see [how to read an SEO report](/journal/how-to-read-an-seo-report)."
+      ]
+    },
+    {
+      "h2": "Performance Max is buying clicks you already own",
+      "body": [
+        "Performance Max runs one campaign across Search, Shopping, YouTube, Display, Discover, Gmail and Maps, with Google deciding the split. It works. It also has a specific, expensive habit: it will serve on branded queries where you already rank first organically, then report those conversions as paid.",
+        "The person searching your company name was going to click you anyway. Now you pay for the click, and the paid conversion report looks excellent because branded traffic converts brilliantly. Your blended cost per acquisition looks fine. Your incremental cost per acquisition is much worse, and nothing in the default reporting shows you the difference."
+      ],
+      "numbered": [
+        "**Add brand exclusions.** Account-level brand exclusion lists exist for Performance Max. Use them, then check monthly that they're still applied.",
+        "**Segment brand and non-brand reporting separately.** Never look at a blended CPA that mixes your own name with cold demand.",
+        "**Run a geo or time-based holdout.** Pause branded paid coverage in one region for two weeks and watch organic clicks in Search Console. Whatever organic picks up was never incremental.",
+        "**Compare against Search Console, not the Ads UI.** The two systems count differently and only one of them wants you spending more."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The question to put to your ads manager",
+        "body": "\"What share of last month's paid conversions came from queries containing our brand name?\" If the answer is over a third and you already rank first for those queries, you're paying for traffic you own."
+      }
+    },
+    {
+      "h2": "Three cases where Google Ads is the only sane choice",
+      "body": [
+        "SEO is our business and we still tell founders to fund ads first in these three situations. If any of them describes you, the twelve-month model above is irrelevant."
+      ],
+      "subs": [
+        {
+          "h3": "1. Your runway is shorter than your payback",
+          "body": [
+            "Under nine months of cash means SEO is a bet you won't be around to collect. Ads convert budget into pipeline this fortnight. Buy the time first, then buy the compounding."
+          ]
+        },
+        {
+          "h3": "2. The SERP has no organic real estate worth winning",
+          "body": [
+            "Some queries are dominated by aggregators, marketplaces, Google's own units and four ad slots before a single organic result appears. Search your top three money keywords on a phone and scroll. If organic position one is below the fold on mobile, ranking there is worth a fraction of what a tool's traffic estimate claims."
+          ]
+        },
+        {
+          "h3": "3. You're validating a product, a price or a new city",
+          "body": [
+            "Ads buy you 200 real conversations in three weeks. Nothing else does that. Use them to find out whether the demand exists at all before you commit twelve months of content to a category that turns out to be a rounding error."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Where the ₹1 lakh actually lands",
+      "body": [
+        "Two channels, two very different invoice structures — and the structure changes the agency's incentives, which is the bit worth reading carefully.",
+        "On ads, a percentage-of-spend fee rewards your agency for spending more, whether or not it's profitable. We don't charge that way. Performance marketing runs at **₹40,000 / ₹75,000 / ₹1,50,000 per month** by tier, with ad spend billed separately and **zero media markup**, so nobody at our end earns anything by talking you into a bigger budget.",
+        "On SEO we start at **₹75,000/mo**, with smaller sites from **₹40,000/mo**. If you want both plus organic social, the Own Everything Stack is **₹1,75,000/mo**. All ex-GST, month-to-month after the first quarter, 30 days' notice, and you keep every asset. Full breakdown on [our pricing page](/pricing) and the [performance marketing service](/performance)."
+      ],
+      "table": {
+        "caption": "How ₹1,00,000 a month splits on each route.",
+        "head": [
+          "Route",
+          "Fee",
+          "Working budget",
+          "What the fee buys"
+        ],
+        "rows": [
+          [
+            "Google Ads",
+            "₹40,000 management",
+            "₹60,000 media, zero markup",
+            "Account structure, bidding, creative, landing pages, negative keyword hygiene"
+          ],
+          [
+            "SEO",
+            "₹75,000 retainer",
+            "₹25,000 content production",
+            "Technical fixes, content strategy, links, reporting against a frozen baseline"
+          ],
+          [
+            "Both, under-funded",
+            "Split across two teams",
+            "Neither reaches critical mass",
+            "A very well-documented lack of progress"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The guarantee, stated properly",
+        "body": "We freeze your trailing-90-day qualified organic leads on day one. If we haven't beaten that number in 90 days, we keep working free until we do. We never promise a specific ranking position for a specific keyword — nobody controls Google's index, and any agency that says otherwise is selling you a disclaimer."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Google Ads better than SEO?",
+      "a": "For the first six months of a ₹1,00,000 monthly budget, yes — Ads produces leads from week one while SEO produces almost none. Past roughly month nine the position reverses and keeps reversing, because the retainer stays flat while organic output compounds. Your runway decides which half of that timeline you live in."
+    },
+    {
+      "q": "Does Google Ads spend improve organic rankings?",
+      "a": "No. Ad spend is not a ranking factor and Google has stated this repeatedly. The indirect effects are real though: ads create brand searches, brand searches create clicks and mentions, and the search terms report shows which queries genuinely convert. Useful, but downstream — not a shortcut into the index."
+    },
+    {
+      "q": "Should I run Google Ads on keywords I already rank first for?",
+      "a": "Usually only on your own brand name, and only to stop competitors buying that click. For non-brand queries where you hold position one, paid coverage often just buys traffic you'd get free. Test it: pause paid on those terms for two weeks and check whether total clicks actually fall."
+    },
+    {
+      "q": "What is a good cost per lead from Google Ads in India?",
+      "a": "It varies by category more than by skill. Local services frequently land between ₹500 and ₹3,000; B2B SaaS and lending often sit between ₹4,000 and ₹20,000. The useful benchmark isn't an industry average, it's your own close rate and contract value — a ₹15,000 lead is cheap if you close one in four at ₹5 lakh."
+    },
+    {
+      "q": "Can Performance Max replace SEO?",
+      "a": "No, and the reporting makes it look closer than it is. Performance Max frequently serves against branded queries you already rank for, then books those conversions as paid wins. Exclude your brand, then compare incremental conversions rather than the blended number the interface shows by default."
+    },
+    {
+      "q": "How much should I budget before Google Ads data is reliable?",
+      "a": "Enough clicks to see a pattern, which usually means at least 30 to 50 conversions before you trust a cost-per-lead figure. At a ₹4,000 CPL that's ₹1,20,000 to ₹2,00,000 of spend. Below that you're reading noise, and most premature account restructures are exactly that."
+    }
+  ],
+  "related": [
+    {
+      "type": "compare",
+      "slug": "ppc-vs-seo"
+    },
+    {
+      "type": "compare",
+      "slug": "seo-vs-sem"
+    },
+    {
+      "type": "glossary",
+      "slug": "quality-score"
+    },
+    {
+      "type": "glossary",
+      "slug": "return-on-ad-spend"
+    },
+    {
+      "type": "cost",
+      "slug": "digital-marketing-agency-cost-india"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "compare",
+      "slug": "organic-vs-inorganic-seo"
+    }
+  ]
+}

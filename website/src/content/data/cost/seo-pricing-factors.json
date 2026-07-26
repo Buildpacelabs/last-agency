@@ -1,0 +1,200 @@
+{
+  "slug": "seo-pricing-factors",
+  "type": "cost",
+  "primaryKeyword": "what affects seo pricing",
+  "secondaryKeywords": [
+    "factors affecting seo cost",
+    "why is seo so expensive",
+    "why do seo quotes vary so much",
+    "what makes seo cost more",
+    "how to compare seo quotes"
+  ],
+  "cluster": "pricing-models",
+  "intent": "informational",
+  "h1": "Why two SEO quotes for the same site differ by ₹2 lakh",
+  "metaTitle": "What Affects SEO Pricing? 7 Variables, Each Priced",
+  "metaDescription": "What affects SEO pricing? Seven variables move a quote. We attach a rupee swing to each one so you can build your own number before an agency sends theirs.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Seven variables move an SEO quote: site size and CMS access, competition tier, content velocity, link ambition, languages, catalogue complexity, and reporting load. Each carries a rupee swing. Start from a ₹40,000 base for a small single-language site, add the ones that apply, and you can predict your own quote within roughly 20%.",
+  "takeaways": [
+    "A quote is a base plus deltas, not a mystery. **₹40,000 base, then add.** Site size and CMS access is the largest single lever, worth −₹10,000 to +₹40,000 on its own.",
+    "The biggest cost driver is not how big your site is. It's how many templates it has and whether we can ship a change without joining your sprint queue.",
+    "YMYL categories — health, finance, legal — cost more because you're funding a credentialed reviewer's time as well as a writer's. That's a real cost, not a surcharge.",
+    "Two quotes are only comparable once you've priced the same three add-ons with both agencies. The deltas expose the real rate card faster than any deck."
+  ],
+  "sections": [
+    {
+      "h2": "Build the quote yourself: one base, seven deltas",
+      "body": [
+        "Founders assume SEO quotes vary because agencies are guessing. Mostly they aren't. They're pricing different amounts of work and describing it with the same three words, which produces two numbers ₹2 lakh apart for what looks like the same site.",
+        "So build the number yourself before anyone sends you one. Start from a **₹40,000/mo base**: a single-language site under 40 pages, one city's worth of competition, CMS admin access in your gift, two content pieces a month, one stakeholder. That's the cheapest configuration where a competent generalist genuinely covers the work.",
+        "Then add the seven things that make your site harder than that one. These aren't survey figures — nobody has surveyed this honestly. They're what the extra work costs at Indian delivery rates. Your agency's numbers will differ; the direction and rough size won't."
+      ]
+    },
+    {
+      "h2": "The seven variables, each with a rupee swing",
+      "body": [
+        "Every line below changes the number of specialist hours your site needs each month. The swing is the monthly difference between the easy end and the hard end, ex-GST."
+      ],
+      "table": {
+        "caption": "Seven variables that move an Indian SEO quote, with the monthly rupee swing each carries. Ex-GST.",
+        "head": ["Variable", "The easy end", "The expensive end", "Monthly swing"],
+        "rows": [
+          [
+            "Site size and CMS access",
+            "Under 40 pages, one or two templates, you have admin access",
+            "1,000+ URLs, a locked CMS, changes queued behind a fortnightly dev sprint",
+            "−₹10,000 to +₹40,000"
+          ],
+          [
+            "Competition tier",
+            "One city, service business, competing with local firms",
+            "National keyword set, or YMYL — health, finance, legal",
+            "+₹0 to +₹40,000"
+          ],
+          [
+            "Content velocity",
+            "Two researched pieces a month",
+            "Ten to twelve a month with subject-matter interviews",
+            "+₹8,000 to ₹15,000 per extra piece"
+          ],
+          [
+            "Link and digital PR ambition",
+            "Citation clean-up and profile hygiene only",
+            "A funded digital PR programme with original data",
+            "+₹20,000 to +₹60,000"
+          ],
+          [
+            "Languages and markets",
+            "English, India only",
+            "Hindi plus two regional languages, or three country versions with hreflang",
+            "+₹15,000 per additional language"
+          ],
+          [
+            "Catalogue and template complexity",
+            "50 URLs from one template",
+            "10,000+ SKUs with faceted navigation generating parameter URLs",
+            "+₹25,000 past 10,000 SKUs"
+          ],
+          [
+            "Reporting, attribution and stakeholders",
+            "One founder, one dashboard, one call",
+            "CRM attribution, three stakeholders, a board slide, a QBR",
+            "+₹5,000 to +₹15,000"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "A worked assembly",
+        "body": "A 300-page D2C site, national competition, six articles a month, adding Hindi, with an in-house developer we can brief directly: ₹40,000 base + ₹20,000 size + ₹25,000 national + ₹32,000 (four extra articles at ₹8,000) + ₹15,000 Hindi − ₹10,000 dev access = **₹1,22,000/mo**. Now go read your quote and find where it disagrees."
+      }
+    },
+    {
+      "h2": "Site size and CMS access is the biggest lever, and it isn't close",
+      "body": [
+        "The number of pages on your site matters less than founders expect. The number of **templates** matters enormously. A 1,000-product store built from one product template and one category template can be cheaper to fix than a 60-page site where every page was hand-built by a different freelancer since 2019.",
+        "Templates mean a fix ships once and lands everywhere. Bespoke pages mean a fix ships sixty times. Price follows the second number."
+      ],
+      "subs": [
+        {
+          "h3": "The −₹10,000: you can hand us the keys",
+          "body": [
+            "If we have CMS admin access and can push a title tag, a canonical or a schema block ourselves, we don't bill for the waiting. If every change queues behind a checkout bug in your developer's backlog, a three-hour fix becomes a six-week negotiation and somebody has to be paid to run it.",
+            "That discount is genuinely available. Ask any agency what their quote drops to if you hand over staging access and a named developer to ping. If the number doesn't move, they'd already priced you as easy."
+          ]
+        },
+        {
+          "h3": "The +₹40,000: locked stack, legacy URLs, no staging",
+          "body": [
+            "Enterprise CMS platforms with change-control boards, a checkout nobody dares touch, redirect rules only one contractor understands, and no staging environment to test on. Every recommendation now needs documentation, a ticket, a QA pass and a rollback plan.",
+            "None of that is SEO work. All of it is billable, and the agency that priced it in is the one being honest with you."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Competition tier: local pack, national, or YMYL",
+      "body": [
+        "The same 40 pages cost wildly different amounts depending on who else wants those queries. This is the variable clients underestimate most, because from the inside every market feels competitive.",
+        "Three tiers, and the jump between the second and third is the expensive one."
+      ],
+      "bullets": [
+        "**Local, +₹0.** You're competing with eight to fifteen businesses in one city and a map pack. Relevance, a correct Google Business Profile, real reviews and a decent services page get you most of the way. Links matter far less than founders fear.",
+        "**National, +₹25,000.** Now you're up against aggregators, marketplaces and publishers with a decade of accumulated links. You need genuine content depth, internal architecture that concentrates authority, and a link programme that's actually funded rather than aspirational.",
+        "**YMYL, +₹40,000.** Health, finance, legal, insurance. Google applies stricter quality expectations to pages that can affect someone's money or wellbeing, and the practical consequence is a second cost centre: a credentialed reviewer. You're paying a doctor, a CA or a lawyer to read and sign content before it ships. That's not a markup, it's a salary line.",
+        "**The one nobody quotes: a competitor who publishes weekly.** If two rivals ship four pieces a month each, matching them is the floor, not the ambition. Check their sitemap dates before you set your budget."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Beware the agency that doesn't ask",
+        "body": "If nobody on the sales call asked which competitors outrank you today, the quote was generated from your revenue, not your site. That happens more often than the industry admits, and it's the single most reliable sign you're being priced as a wallet rather than a problem."
+      }
+    },
+    {
+      "h2": "Content velocity, and what each extra piece a month adds",
+      "body": [
+        "Content is usually 40–50% of an SEO retainer, so it's the line that moves a quote fastest. A researched 1,200–1,800 word page — real brief, real search-intent analysis, an editor, internal links wired in — costs **₹8,000 to ₹15,000** depending on how hard the subject is to get right. Technical, medical and financial topics sit at the top of that range, because the writer has to be credible as well as fluent.",
+        "Going from two pieces a month to six is therefore ₹32,000–₹60,000 of extra monthly cost. Any quote that adds four pieces for ₹10,000 is quietly changing what a piece means.",
+        "The ceiling on velocity is almost never the agency. It's your review capacity. Twelve pieces a month with nobody internally checking them produces twelve pages of plausible, unverified, faintly wrong content — precisely the profile Google's helpful-content systems demote. If you can approve four a month, buy four."
+      ]
+    },
+    {
+      "h2": "How to compare two quotes that look nothing alike",
+      "body": [
+        "Once you have two proposals in front of you, normalise them before you compare rupees. Five steps, about forty minutes of work, and it usually reveals that the cheap quote is cheap for a stated reason."
+      ],
+      "numbered": [
+        "**Convert both to hours by role.** Ask each agency for a monthly split: strategist hours, technical hours, writer hours, outreach hours. One that has planned the work answers in a day. One that hasn't will explain that they don't think in hours.",
+        "**Count deliverables with numbers, not nouns.** \"Content optimisation\" and \"four rewritten service pages with new internal linking\" are not the same promise, even when they cost the same.",
+        "**Price the same three add-ons with both.** One extra article a month, a second language, and migration support. The deltas expose each agency's real rate card in a way the headline number never will.",
+        "**Separate one-off from recurring.** Many quotes bundle the month-one audit into the retainer; others bill ₹75,000 for it separately in month one. Compare year-one totals, not month-one totals.",
+        "**Add GST and contract length last.** ₹60,000/mo on a twelve-month lock-in is a ₹7,20,000 decision. ₹75,000/mo month-to-month is a ₹75,000 decision. The cheaper monthly number is frequently the larger commitment, and the proposal will never put it that way."
+      ]
+    },
+    {
+      "h2": "Where we land, and what does not change our price",
+      "body": [
+        "Our SEO runs from **₹75,000/mo**, with smaller sites from **₹40,000/mo**. Organic Social & Content is ₹30,000, ₹50,000 or ₹70,000 a month. Performance Marketing is ₹40,000, ₹75,000 or ₹1,50,000 a month. Bundles: SEO plus social ₹99,000/mo, social plus performance ₹75,000/mo, all three ₹1,75,000/mo. All ex-GST, ad spend billed separately with zero media markup.",
+        "Three things that genuinely change our number: catalogue size, language count and whether your developers can move. Three things that don't: how urgently you need it, how much you just raised, and how well the first call went. Urgency pricing is a tax on panic and we'd rather not build a business on it.",
+        "What we sell instead of a promise about position: on day one we freeze your trailing-90-day count of qualified leads from organic search. Miss that number in 90 days and we keep working free until we beat it. We never guarantee a specific ranking for a specific keyword, because nobody controls Google's index and anyone claiming otherwise is selling a coin flip.",
+        "If you want the same numbers arranged differently, [what SEO costs in India](/cost/seo-cost-in-india) breaks them down by site size, [ecommerce SEO priced by SKU count](/cost/ecommerce-seo-cost) handles catalogues, and [our pricing page](/pricing) has the current card."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is SEO so expensive in India compared to a freelancer?",
+      "a": "Because four disciplines cost four salaries. Technical, content, links and analysis are genuinely different skills, and one person rarely holds all four. A freelancer at ₹25,000 a month is one of those skills, applied part-time. That's often the right purchase — it just isn't the same purchase."
+    },
+    {
+      "q": "What is the single biggest factor in SEO pricing?",
+      "a": "Site and template complexity, combined with whether the agency can ship changes itself. A locked CMS with a queued dev team can add ₹40,000 a month in coordination alone, while giving an agency staging access and a named developer to brief can take ₹10,000 straight off a quote."
+    },
+    {
+      "q": "Do SEO agencies charge more for competitive industries?",
+      "a": "Yes, and they should. National and YMYL categories need more content depth, more link investment and — in health, finance and legal — a credentialed reviewer signing off before publication. That reviewer is a real salary line, typically worth around ₹40,000 a month against a local-market baseline."
+    },
+    {
+      "q": "Should I pick the cheapest SEO quote?",
+      "a": "Only after you've converted both to hours by role. Cheap quotes are usually cheap for a stated reason — fewer content pieces, no link work, no technical implementation — and that reason is often in the proposal, just on page nine. Compare year-one totals with GST and notice period included."
+    },
+    {
+      "q": "Does GST get added to SEO pricing in India?",
+      "a": "Almost always. Agencies quote ex-GST and invoice 18% on top, so a ₹75,000 retainer bills at ₹88,500. If you're GST-registered you claim it as input credit, which makes it a cash-flow cost rather than a real one — but it belongs in the budget from day one."
+    },
+    {
+      "q": "How much should content velocity cost per article?",
+      "a": "₹8,000 to ₹15,000 for a genuinely researched 1,200–1,800 word page with a brief, an editor and internal links. Below ₹5,000 you're buying assembled text. Above ₹15,000 you're usually buying an expert interview or a credentialed reviewer, which is worth it in technical and YMYL categories."
+    }
+  ],
+  "related": [
+    { "type": "cost", "slug": "seo-agency-fees-breakdown" },
+    { "type": "cost", "slug": "seo-cost-in-india" },
+    { "type": "answers", "slug": "why-is-seo-so-expensive" },
+    { "type": "cost", "slug": "seo-services-cost" },
+    { "type": "journal", "slug": "where-your-seo-retainer-money-actually-goes" },
+    { "type": "services", "slug": "seo-retainer-plans" }
+  ]
+}

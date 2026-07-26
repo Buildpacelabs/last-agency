@@ -1,0 +1,259 @@
+{
+  "slug": "schema-markup-services",
+  "type": "services",
+  "primaryKeyword": "schema markup services",
+  "secondaryKeywords": [
+    "structured data implementation service india",
+    "schema markup agency india",
+    "json ld implementation service",
+    "rich results setup service",
+    "product schema implementation"
+  ],
+  "cluster": "technical-seo",
+  "intent": "commercial",
+  "h1": "Structured data, written properly and validated",
+  "metaTitle": "Schema Markup Services — Validated JSON-LD, Shipped",
+  "metaDescription": "Schema markup services delivered as validated JSON-LD in your repo, with an entity graph so Google reads your brand as one resolved organisation.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "priceFrom": "From ₹75,000 / mo",
+  "answer": "Schema markup services add structured data — usually JSON-LD — to your pages so search engines and AI assistants can read what your business is, sells and publishes. We build one connected entity graph with @id references and sameAs links, validate it, then monitor rich results in Search Console. Included in our SEO retainer from ₹75,000 a month.",
+  "takeaways": [
+    "A plugin that drops an unconnected FAQ block on every page is not structured data. It's decoration that validates.",
+    "The point of `@id` and `sameAs` is **entity resolution** — telling Google that the Organization on your homepage, the Person writing your articles and the Product on your PDP are the same three things everywhere they appear.",
+    "Schema doesn't lift rankings on its own. Google has said as much. It changes how your result looks and how confidently a machine can describe you, which are different, valuable things.",
+    "Several schema types that agencies still sell no longer produce anything. FAQ rich results were cut back to a narrow set of sites in 2023, HowTo was retired, and the sitelinks search box was removed in late 2024."
+  ],
+  "sections": [
+    {
+      "h2": "Scattered snippets versus a resolved organisation",
+      "body": [
+        "Open the source of most Indian websites that claim to have schema and you'll find the same thing: a plugin-generated `WebPage` block, an `Organization` block on the homepage only, and an `FAQPage` block on forty pages that all point at nothing. Every one of them validates. None of them connect.",
+        "The machine reading that sees forty unrelated documents. It can't tell that the company named in the homepage `Organization` block is the same company selling the product two clicks away, or that the author byline on your blog belongs to a person with credentials worth weighting.",
+        "The fix is structural rather than cosmetic. Every entity gets a stable `@id` — a canonical URI it is referred to by from everywhere else. Your `Product` references the `Organization` as its brand by `@id`. Your `Article` references the `Person` as its author by `@id`. The `Organization` carries `sameAs` links to the LinkedIn page, the Crunchbase entry, the Wikidata item if one exists. One graph, resolvable from any entry point.",
+        "That's the difference between telling Google forty facts and telling it one coherent thing forty times."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The plugin check that takes two minutes",
+        "body": "Paste any product or article page into Google's Rich Results Test and read the parsed output. If nothing on the page references anything else by @id, you have snippets, not a graph — regardless of how many green ticks the plugin dashboard shows you."
+      }
+    },
+    {
+      "h2": "The graph we build, and in what order",
+      "body": [
+        "Four entity types do most of the work for an Indian business. We build them in this order because each one anchors the next."
+      ],
+      "numbered": [
+        "**Organization**, once, at a stable `@id` on the homepage. Legal name, logo, address, contact points, and `sameAs` pointing at every profile you genuinely control — LinkedIn, Instagram, YouTube, your Google Business Profile URL, your Crunchbase or Zauba entry. This is the anchor everything else hangs off.",
+        "**Person**, for founders and authors, at their own stable `@id`. `jobTitle`, `worksFor` referencing the Organization, `sameAs` to their LinkedIn and any speaking or publication profiles. This is what makes an author byline mean something rather than being a name in a grey box.",
+        "**Product or Service**, referencing the Organization as `brand` or `provider`. For ecommerce this carries `offers`, price, currency, availability and `aggregateRating` — but only where those things are visibly on the page and honest.",
+        "**WebSite, WebPage and BreadcrumbList**, wiring the pages together and giving every page an `isPartOf` relationship back to the site. Breadcrumbs are unglamorous and they're one of the few markups that still visibly changes a mobile result in India."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Local businesses and multi-location brands",
+        "body": "If you have physical locations, `LocalBusiness` (or the right subtype — `Dentist`, `Restaurant`, `LegalService`) per location, each with its own `@id` and each linked to the parent Organization as a `department` or `subOrganization`. Getting the hierarchy right is what stops eleven clinics reading as eleven unrelated companies."
+      }
+    },
+    {
+      "h2": "Which schema types still earn something in India",
+      "body": [
+        "This list moves. Google deprecates markup types more often than agencies update their proposals, so here's where things actually stand — and which ones we'll decline to bill you for."
+      ],
+      "table": {
+        "caption": "Structured data types by what they currently produce in Indian search results.",
+        "head": [
+          "Type",
+          "What it does today",
+          "Worth implementing?"
+        ],
+        "rows": [
+          [
+            "Product / Offer / Review",
+            "Price, availability, star ratings and merchant listings in results and in Shopping surfaces",
+            "Yes — the highest-return markup for any ecommerce site"
+          ],
+          [
+            "BreadcrumbList",
+            "Replaces the raw URL in the result with a readable path, especially on mobile",
+            "Yes — cheap, stable, visible"
+          ],
+          [
+            "Organization / LocalBusiness",
+            "Feeds knowledge panels, logo display and business information",
+            "Yes — this is the anchor for everything else"
+          ],
+          [
+            "Article / NewsArticle",
+            "Eligibility for Top Stories and richer article presentation; carries the author entity",
+            "Yes, for anything published with a byline"
+          ],
+          [
+            "Video",
+            "Video thumbnails and key-moment links in results",
+            "Yes, if you publish video on your own pages"
+          ],
+          [
+            "Event, Recipe, JobPosting, Course",
+            "Genuine dedicated result formats, but only if you're actually one of these",
+            "Yes, where the business genuinely fits"
+          ],
+          [
+            "FAQPage",
+            "Rich results were restricted in 2023 to a narrow set of government and health sites",
+            "Rarely for the snippet — still useful as machine-readable Q&A"
+          ],
+          [
+            "HowTo",
+            "Retired. Produces nothing in search results",
+            "No"
+          ],
+          [
+            "Sitelinks SearchBox",
+            "Removed in late 2024",
+            "No"
+          ],
+          [
+            "Speakable",
+            "Limited availability, narrow use",
+            "No, for almost everyone"
+          ]
+        ]
+      },
+      "bullets": [
+        "We won't mark up content that isn't visible on the page. It's a policy violation with a delayed fuse, and manual actions arrive months after the person who installed the plugin has left.",
+        "We won't put `aggregateRating` on a page with no real reviews. It's the single most common structured-data manual action we're asked to clean up."
+      ]
+    },
+    {
+      "h2": "How it ships, validated, and how you know it stayed shipped",
+      "body": [
+        "Delivery is the part that separates a schema project from a schema document. Ours goes into your codebase or your CMS, not into a PDF appendix.",
+        "For a Next.js, React or custom stack we raise pull requests that add JSON-LD as template-level components, so the markup generates from your real data rather than being hand-pasted per page. Your team reviews and merges — we don't hold merge rights on your production branch, and you should be wary of any agency that asks for them. For WordPress, Shopify, Webflow or Framer we implement directly, usually through the theme or a header injection rather than a plugin, because plugins go stale and overwrite each other.",
+        "Then three checks, every time. The Schema Markup Validator for syntax and vocabulary correctness. Google's Rich Results Test for eligibility, which is a different question. And Search Console's Enhancements reports for what Google actually did with it once crawled — which is the only one that counts, and the one that takes two to four weeks to populate.",
+        "After launch it goes on the pre-deploy checklist. Schema breaks silently: a template refactor drops a field, a plugin update rewrites the block, a price format changes and every Product item on the site starts erroring. We monitor the Enhancements reports monthly and it's part of [our technical SEO work](/services/technical-seo-services) from then on."
+      ]
+    },
+    {
+      "h2": "Schema and AI assistants — the honest version",
+      "body": [
+        "This is where the industry is currently overselling, so let's be precise about what's known.",
+        "**What's true:** structured data makes an entity machine-readable and unambiguous. AI Overviews and AI Mode are built on Google's index and Google's entity understanding, and structured data is one of the inputs to that understanding. A resolved organisation with `sameAs` links pointing at corroborating profiles is easier for any system to describe correctly than a name in a `<h1>`.",
+        "**What isn't confirmed:** that adding schema causes an LLM to cite you. No major assistant publishes structured data as a ranking or citation input, and nobody selling \"AI schema optimisation\" has evidence they aren't showing you. If they had a controlled test, they'd publish it.",
+        "So we implement it because entity clarity is durable and cheap, not because we can promise a citation. If AI visibility is the actual goal, the bigger levers are corroborating mentions on sites machines already trust, and pages that answer the question directly — which is what [our AEO and GEO work](/services/aeo-geo-services) covers."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Schema is not a ranking factor",
+        "body": "Google has stated this repeatedly. Structured data changes how a result is presented and how well your entity is understood. If a page ranks eleventh, schema will not make it rank fourth — it may make the eleventh result look better, which is worth something and is not the same thing."
+      }
+    },
+    {
+      "h2": "What's included, what isn't, and what it costs",
+      "body": [
+        "Schema is a line inside our SEO retainer rather than a product with its own invoice. A schema-only engagement genuinely finishes — the graph gets built in three to five weeks and then it's maintenance, and an agency still billing you monthly for it in month six is inventing work."
+      ],
+      "table": {
+        "caption": "Schema markup scope on a Last Agency SEO retainer.",
+        "head": [
+          "Area",
+          "Included",
+          "Not included"
+        ],
+        "rows": [
+          [
+            "Design",
+            "Entity graph across Organization, Person, Product/Service, Article, LocalBusiness, Breadcrumb — with @id references and sameAs",
+            "Marking up entities you can't evidence. If the Person has no public footprint, sameAs points nowhere and adds nothing."
+          ],
+          [
+            "Build",
+            "JSON-LD written as template components, delivered as pull requests, or implemented directly in WordPress, Shopify, Webflow and Framer",
+            "Rebuilding your templates or migrating your CMS. We add markup to what exists."
+          ],
+          [
+            "Data",
+            "Mapping markup fields to your real product feed, CMS fields and business data so it generates rather than being pasted",
+            "Cleaning your product catalogue. If prices and stock are wrong in the source, correct markup publishes wrong facts faster."
+          ],
+          [
+            "Validation",
+            "Schema Markup Validator, Rich Results Test, and Search Console Enhancements monitoring monthly",
+            "Guaranteed rich result display. Google decides what it shows, and it declines eligible pages routinely."
+          ],
+          [
+            "Maintenance",
+            "Pre-deploy regression checks, error triage when Enhancements reports flag something, updates when Google deprecates a type",
+            "Perpetual monthly billing for a finished graph. When the work is done we say so in the report."
+          ],
+          [
+            "Pricing",
+            "Included in the SEO retainer — from ₹75,000/mo, or ₹40,000/mo for smaller sites, ex-GST. See [pricing](/pricing).",
+            "A published one-off price. Scope runs from a single Organization block to a 400-SKU product graph; we quote after the audit rather than name a number we'd have to walk back."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "What the 90-day guarantee measures here",
+      "body": [
+        "Same guarantee as every engagement: on day one we freeze your **trailing-90-day count of qualified leads from organic search**, in writing, before anyone touches the site. Miss it in 90 days and we keep working free until we beat it. We never promise a specific ranking position for a specific keyword — nobody controls Google's index, and an agency guaranteeing position one is either buying links or counting on you not to check.",
+        "For schema work specifically we freeze a second set of numbers, because they move first and they're the honest early read: **valid items and error counts per Enhancements report**, **the share of priority URLs with rich result eligibility**, and **rich result impressions in the Search Console performance report**. Those should shift within two to four weeks of the markup being crawled.",
+        "If eligibility rises and clicks don't, the markup worked and the page didn't. That's a content problem, and we'd rather name it in week six than keep pointing at a green validation screen in month five."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does schema markup improve rankings?",
+      "a": "Not directly, and Google has said so repeatedly. Structured data changes how your result is presented and how well machines understand your entity. Those can lift click-through rate and make you easier to describe correctly, which are real gains — but a page ranking eleventh won't move to fourth because you added JSON-LD."
+    },
+    {
+      "q": "Is a schema plugin enough, or do I need it hand-built?",
+      "a": "A plugin gets you valid, disconnected blocks — fine for a simple brochure site. It won't build an entity graph, because it doesn't know that your homepage Organization and your product's brand are the same thing. If you sell products, publish under bylines, or have multiple locations, the connections are the whole value."
+    },
+    {
+      "q": "How much do schema markup services cost in India?",
+      "a": "One-off structured data projects in India typically run ₹15,000–₹1,50,000 depending on template count and catalogue size. We include schema in our SEO retainer from ₹75,000/mo (₹40,000/mo for smaller sites) and scope standalone builds after an audit, because a 400-SKU graph and a single Organization block aren't the same job."
+    },
+    {
+      "q": "Will schema markup get my brand cited by ChatGPT or AI Overviews?",
+      "a": "Nobody has proven that, and we won't claim it. Structured data makes your entity unambiguous to any machine reading your site, which plausibly helps. But no major assistant publishes schema as a citation input. Treat anyone promising AI citations from markup alone as selling a theory."
+    },
+    {
+      "q": "Should I still add FAQ schema in 2026?",
+      "a": "For rich results, mostly no — Google restricted FAQ rich results in 2023 to a narrow set of government and health sites. As machine-readable question-and-answer content on a page that genuinely has an FAQ, it still has value. Just don't pay anyone for the snippet you won't get."
+    },
+    {
+      "q": "How long until schema shows up in Search Console?",
+      "a": "Two to four weeks after the markup is crawled, typically. Enhancements reports populate as Google processes pages, so a large site fills in gradually rather than all at once. If nothing appears after four weeks, the markup usually isn't reaching Googlebot — a rendering problem, not a schema problem."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "schema-markup"
+    },
+    {
+      "type": "glossary",
+      "slug": "knowledge-graph"
+    },
+    {
+      "type": "services",
+      "slug": "aeo-geo-services"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "compare",
+      "slug": "aeo-vs-geo"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-i-get-my-brand-cited-in-chatgpt"
+    }
+  ]
+}

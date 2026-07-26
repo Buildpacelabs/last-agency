@@ -1,0 +1,211 @@
+{
+  "slug": "how-does-seo-work-on-google",
+  "type": "answers",
+  "primaryKeyword": "how does seo work on google",
+  "secondaryKeywords": [
+    "how does google rank websites",
+    "how google search works for seo",
+    "google ranking process",
+    "how does google decide rankings"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "How Google specifically decides what to rank",
+  "metaTitle": "How Does SEO Work on Google? Inside Ranking",
+  "metaDescription": "How does seo work on google specifically? What Googlebot, index selection, core ranking systems and AI Overviews each do, and what you can influence.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "On Google, four systems decide your fate. Googlebot crawls, the indexing system picks which URL to store and which canonical to keep, core ranking systems order candidates for each individual query, and the results layer — including AI Overviews — decides what's actually visible. You influence the first three directly and the fourth only indirectly.",
+  "takeaways": [
+    "Crawl budget has two halves in Google's own documentation: **capacity** (what your server can take) and **demand** (how much Google wants your URLs). Most sites under a few thousand URLs never hit either limit.",
+    "Your `rel=canonical` is a hint. Google picks the canonical and tells you which one it chose in URL Inspection. When those two disagree, Google won.",
+    "Core updates aren't penalties. They're broad re-evaluations, which feels identical from the invoice side but needs a completely different response.",
+    "There are places where Google's public statements and the available evidence don't line up. Knowing which ones stops you buying services built on a leaked attribute name."
+  ],
+  "sections": [
+    {
+      "h2": "The four Google systems that decide your fate",
+      "body": [
+        "Generic SEO advice talks about 'search engines'. Google is the one that pays your bills in India, and it's specific enough to be worth naming its parts. Each system responds to different inputs, and each one shows you a different report when it goes wrong."
+      ],
+      "table": {
+        "caption": "What each Google system does, and how much of it you actually control.",
+        "head": [
+          "System",
+          "Its job",
+          "What you can influence",
+          "Where you see it"
+        ],
+        "rows": [
+          [
+            "Googlebot",
+            "Fetches URLs on a schedule set by demand and by what your server can handle",
+            "Server speed, robots.txt, internal links, sitemap hygiene, total URL count",
+            "Settings → Crawl stats"
+          ],
+          [
+            "Indexing",
+            "Decides whether to store a page and which URL represents a set of duplicates",
+            "Content quality, duplication, canonical tags, noindex, parameter handling",
+            "Pages report; URL Inspection → Google-selected canonical"
+          ],
+          [
+            "Core ranking systems",
+            "Score and order candidate pages for each individual query",
+            "Relevance, depth, links, page experience, freshness where the query wants it",
+            "Performance report, by query"
+          ],
+          [
+            "The results layer",
+            "Assembles the visible page — packs, features, ads and AI Overviews",
+            "Almost nothing directly. Indirectly, by being a strong candidate and being quotable",
+            "Falling CTR at a flat average position"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Googlebot: crawl capacity and crawl demand",
+      "body": [
+        "Google's documentation splits crawling into two constraints, and the distinction is genuinely useful because you fix them differently.",
+        "**Crawl capacity** is how much fetching your server tolerates before responses slow down or start erroring. Googlebot watches response times and error rates and backs off when your site struggles. Slow hosting and intermittent 5xx responses cost you crawling directly.",
+        "**Crawl demand** is how much Google wants your URLs — driven by their popularity and how stale Google's stored copy has become. A page nobody links to on a site nobody visits generates very little demand, which is why new pages on new sites sit undiscovered.",
+        "Google states plainly that sites with fewer than a few thousand URLs generally don't need to worry about crawl budget. If you run a 90-page site and pages aren't getting fetched, the cause is discovery or server errors, not budget. Budget becomes real on ecommerce with faceted navigation, on calendars, and anywhere session parameters multiply URLs into the millions."
+      ],
+      "bullets": [
+        "Watch the 5xx rate and average response time in Crawl stats. Both directly reduce how much Google fetches.",
+        "Block parameter junk in `robots.txt` rather than noindexing it — a URL has to be crawled before Google can see a noindex, so noindex costs crawl budget while robots.txt saves it.",
+        "Keep sitemaps to canonical, indexable URLs only.",
+        "Count your indexable URLs before deciding which camp you're in. Most sites guess, and most guess wrong in the same direction."
+      ]
+    },
+    {
+      "h2": "Index selection: Google picks the canonical, you only suggest",
+      "body": [
+        "This one surprises people who've been doing SEO for years. `rel=canonical` is a hint. Google evaluates it alongside internal linking patterns, redirects, sitemap inclusion, HTTPS preference and content similarity, then makes its own call.",
+        "URL Inspection shows both values: the user-declared canonical and the Google-selected canonical. When they differ, Google disagreed with you and your page is alive but invisible — it exists, it's just folded into a sibling that shows instead.",
+        "That's the first thing to check for any page that 'ranks nowhere' despite being well written and well linked. It's a two-minute check that explains a startling number of mysteries, and the fix is either consolidating the pages properly or making them genuinely different from each other. [Canonical tags](/glossary/canonical-tag) get used as a duct tape for content duplication, and duct tape is exactly what Google is deciding to ignore."
+      ]
+    },
+    {
+      "h2": "Core ranking systems, and what a core update actually does",
+      "body": [
+        "Google publishes a list of its ranking systems, which is more transparency than it gets credit for. The named ones worth knowing: link analysis descended from PageRank, RankBrain and neural matching (working out what a query means when nobody uses those exact words), passage ranking, the reviews system, freshness systems, deduplication, site diversity, and spam systems including SpamBrain and link spam detection.",
+        "One structural change matters more than the rest. The helpful content system used to be a separate site-wide classifier you could see arrive and leave. With the March 2024 core update, Google folded those signals into core ranking. A site-wide quality judgement now lives inside the core systems rather than sitting on top as a bolt-on you could wait out.",
+        "A core update is a broad re-evaluation, not a punishment. Google's post-update guidance is consistent and famously unhelpful — make good content — but the observable pattern is that sites lose ground because a better answer exists, not because one technical fault was detected. Which means the recovery play is content and relevance, not a frantic hunt for a checkbox you missed."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Check this before you panic about an update",
+        "body": "Search Console → Manual actions. If it's empty, nothing was done to you personally. What happened is that the whole set of candidates for your queries got re-scored. Diagnose by query and by page — which specific URLs lost which specific queries — not by the date on a tracking tool's update calendar."
+      }
+    },
+    {
+      "h2": "How AI Overviews choose who to cite",
+      "body": [
+        "AI Overviews are generated by Gemini models grounded in Google's existing search index. They aren't a separate crawler reading the open web for each question. The summary is written from pages the index already holds, and the citations come from that retrieval.",
+        "A question also gets decomposed into related sub-questions, each retrieving its own candidates. That's the mechanism behind the most common confusion here — a page getting cited for a question it never targeted, because it was the strongest candidate for one sub-question buried inside a bigger one.",
+        "So the practical work is unglamorous and familiar. Be indexed. Be a strong candidate for the specific sub-questions, not just the head term. Write answers as short, self-contained paragraphs that survive being lifted away from the three paragraphs around them. Keep numbers, prices and specifics in text rather than in an image or a PDF.",
+        "And the honest caveat: Google has not published selection criteria, citation sets shift between sessions and users, and nobody has a verified method to guarantee a citation. If someone is selling you one, they're selling a guess. See [GEO versus SEO](/compare/geo-vs-seo) for what's actually different about optimising for this layer."
+      ]
+    },
+    {
+      "h2": "What Google says publicly versus what the evidence shows",
+      "body": [
+        "Google's public communication is a mix of genuine documentation and careful positioning, and knowing which is which stops you buying services built on the gap between them."
+      ],
+      "table": {
+        "caption": "Public statements, available evidence, and the sensible response to each.",
+        "head": [
+          "What Google says",
+          "What the evidence suggests",
+          "What to do about it"
+        ],
+        "rows": [
+          [
+            "There's no single site-wide authority score",
+            "Reference documentation exposed in the May 2024 Search content warehouse leak listed site-level attributes, and site-level patterns are visible in practice",
+            "Build a site that's coherently about one thing. Don't buy a third-party authority number as a KPI."
+          ],
+          [
+            "Clicks aren't used as a ranking signal",
+            "Testimony and exhibits in the US antitrust proceedings described click-based systems used within ranking",
+            "Don't chase clicks with misleading titles. Do make your snippet an honest, specific promise."
+          ],
+          [
+            "Crawl budget isn't a concern for most sites",
+            "Broadly true under a few thousand URLs. False the moment faceted navigation multiplies your URL count",
+            "Count your indexable URLs, then decide which sentence applies to you."
+          ],
+          [
+            "Core updates aren't penalties",
+            "Accurate — but a broad re-evaluation is indistinguishable from a penalty when you're reading the revenue chart",
+            "Diagnose by query and page, not by update date."
+          ],
+          [
+            "AI Overviews send higher-quality clicks",
+            "Independent panel data shows fewer clicks overall. Nobody has published data on their quality, so both claims can be true at once",
+            "Measure clicks and enquiries on your own site rather than accepting anyone's framing, ours included."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "About that leak",
+        "body": "The 2024 disclosure was API reference documentation, not the ranking algorithm. It tells you what Google stores, not how anything is weighted or whether a given attribute is even used in ranking. Treating that attribute list as a checklist is how a generation of new agency services got invented in a fortnight."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How does Google decide which websites rank first?",
+      "a": "For each query, Google assembles a set of candidate pages from its index and orders them using core ranking systems — relevance to what the query means, link and authority signals, page experience, freshness where the query needs it, and location. The ordering is computed per query, not stored per page."
+    },
+    {
+      "q": "How often does Googlebot crawl a website?",
+      "a": "It varies enormously and Google sets the pace, based on crawl demand (how much it wants your pages) and crawl capacity (what your server can take). A frequently updated, well-linked site can be crawled many times a day; a new site with no links may see specific URLs fetched once a month or less."
+    },
+    {
+      "q": "Why did Google choose a different canonical than the one I set?",
+      "a": "Because rel=canonical is a hint, not an instruction. Google weighs it against internal linking, redirects, sitemap inclusion and content similarity. If your two pages are near-identical and the other one has stronger internal links, Google will pick that one and your declared canonical loses."
+    },
+    {
+      "q": "What should I do after a Google core update hits my site?",
+      "a": "Check Manual actions first — if it's empty, nothing was aimed at you. Then compare query-level and page-level data from before and after to find exactly what lost what. Resist rewriting everything. Broad re-evaluations reward a better answer, and a panicked site-wide edit removes the evidence you'd need to diagnose it."
+    },
+    {
+      "q": "Can you optimise specifically for Google's AI Overviews?",
+      "a": "Only indirectly, and honestly so. Overviews are grounded in Google's search index, so being retrievable and being a strong candidate for the sub-questions is the requirement. Clear, self-contained answers with specifics in text help. Nobody can guarantee a citation, because Google hasn't published how sources are chosen."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "how-does-seo-work"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-core-update"
+    },
+    {
+      "type": "glossary",
+      "slug": "ai-overviews"
+    },
+    {
+      "type": "answers",
+      "slug": "what-are-google-ranking-factors"
+    },
+    {
+      "type": "glossary",
+      "slug": "canonical-tag"
+    },
+    {
+      "type": "compare",
+      "slug": "geo-vs-seo"
+    },
+    {
+      "type": "answers",
+      "slug": "does-web-hosting-affect-seo"
+    }
+  ]
+}

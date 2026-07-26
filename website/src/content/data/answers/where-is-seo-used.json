@@ -1,0 +1,217 @@
+{
+  "slug": "where-is-seo-used",
+  "type": "answers",
+  "primaryKeyword": "where seo is used",
+  "secondaryKeywords": [
+    "where is seo used",
+    "where is seo applied",
+    "which industries use seo",
+    "where does seo apply"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "Where SEO is used beyond Google",
+  "metaTitle": "Where Is SEO Used? Beyond Google Search",
+  "metaDescription": "SEO is used on eight ranking surfaces, not one: Google, Maps, YouTube, Amazon, app stores, social search and AI assistants. Here's what transfers.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "SEO is used anywhere a search box ranks results: Google web search and Maps, YouTube, Amazon and Flipkart, the Play Store and App Store, Instagram and Pinterest, vertical sites like Practo and Zomato, and now AI assistants. The signals differ — YouTube ranks watch time, Amazon ranks sales velocity — but keyword research transfers to all of them.",
+  "takeaways": [
+    "Eight surfaces rank content. Most businesses optimise for one and are invisible on the other seven.",
+    "**Keyword research and intent matching transfer everywhere.** Backlinks, domain authority and Core Web Vitals transfer almost nowhere.",
+    "On marketplaces and app stores, the ranking signal is commercial performance — conversion rate, sales velocity, retention. You can't write your way past a bad conversion rate.",
+    "Pick the surface where your buyer already searches. For a diagnostic lab that's Maps and Practo, not YouTube."
+  ],
+  "sections": [
+    {
+      "h2": "The eight places people actually search",
+      "body": [
+        "\"SEO\" got its name when there was one search engine worth optimising for. That stopped being true a decade ago. Today a buyer researching a ₹40,000 purchase might start in an AI assistant, sanity-check on YouTube, compare on Amazon, and only touch Google to find your address.",
+        "Each of these surfaces runs its own ranking system with its own inputs. Here's the honest map."
+      ],
+      "table": {
+        "caption": "Eight ranking surfaces, what each one actually ranks on, and what carries over from classic SEO.",
+        "head": [
+          "Surface",
+          "What it ranks on",
+          "Transfers from Google SEO",
+          "Useless there"
+        ],
+        "rows": [
+          [
+            "Google web search",
+            "Relevance, content quality, links, technical health",
+            "All of it",
+            "—"
+          ],
+          [
+            "Google Maps / local pack",
+            "Relevance, distance, prominence",
+            "Keyword research, reviews, citations, schema",
+            "Blog volume, most link building"
+          ],
+          [
+            "YouTube",
+            "Query match plus watch time, retention and CTR",
+            "Keyword research, title and thumbnail testing",
+            "Backlinks, domain authority, site speed"
+          ],
+          [
+            "Amazon / Flipkart",
+            "Keyword match plus conversion rate and sales velocity",
+            "Keyword research, title structure, image quality",
+            "Links, technical SEO, content depth"
+          ],
+          [
+            "Play Store / App Store",
+            "Title and keyword fields plus installs, ratings, retention",
+            "Keyword research, competitor gap analysis",
+            "Links, crawling, page speed"
+          ],
+          [
+            "Instagram / Pinterest search",
+            "Captions, alt text, handle, engagement, recency",
+            "Keyword research, intent matching",
+            "Links, schema, sitemaps"
+          ],
+          [
+            "Vertical sites (Practo, Zomato, IndiaMART)",
+            "Profile completeness, reviews, response rate, paid tier",
+            "Review generation, category selection",
+            "Almost everything else"
+          ],
+          [
+            "AI assistants and answer engines",
+            "Retrieval from an index plus brand associations in training data",
+            "Crawlability, clear structure, existing search visibility",
+            "Keyword density, exact-match anchors"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Google web search and Maps are two different products in one box",
+      "body": [
+        "The single most common mistake in Indian SEO is treating the map pack as a bonus that falls out of good website SEO. It doesn't. Google states its local ranking factors plainly: relevance, distance and prominence. Two of those three have nothing to do with your website.",
+        "Distance is the one you cannot argue with. If your clinic is in Salt Lake and someone searches from Behala, no amount of content fixes that gap — which is why multi-location businesses need a real page and a real Business Profile per location, not one page listing eleven branches.",
+        "Prominence comes from reviews, citations, category selection and the volume of people who click through and call. A ₹75,000 blog programme moves none of it. Thirty honest reviews and a correctly categorised profile move all of it. That's the whole argument for [treating local SEO as separate work](/answers/what-is-local-seo)."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Quick test",
+        "body": "Search your main service plus your city on a phone, logged out, with location on. If you're in the map pack but not the blue links, your local signals are fine and your site is weak. If it's the reverse, your Business Profile is the gap."
+      }
+    },
+    {
+      "h2": "YouTube ranks watch time, not links",
+      "body": [
+        "YouTube is the second-largest search destination in India and its ranking system is closer to a recommendation engine than to Google's. It matches your title, description and transcript to the query, then ranks the matches by how well people actually watch them — click-through rate on the thumbnail, average view duration, and whether the session continues.",
+        "That flips the work. On a website, a thin page can still rank if the domain is strong. On YouTube there is no domain strength to hide behind. A video with a 22% average view duration will lose to a video with 58%, whatever the channel size.",
+        "What does transfer: keyword research. The demand data you already have tells you which how-to queries are worth a video. What doesn't transfer: everything you know about links, crawling and page speed. Nobody has ever ranked a video by building backlinks to it."
+      ],
+      "bullets": [
+        "**Title and thumbnail** carry the CTR. Treat them like an ad headline, because that's what they are.",
+        "**The first 30 seconds** carry retention. Cut the intro.",
+        "**Transcripts get indexed** — say the query out loud in the video, not just in the description.",
+        "**Descriptions and chapters** help both YouTube search and Google's video results, which are a separate entry point worth its own tracking."
+      ]
+    },
+    {
+      "h2": "On Amazon and Flipkart, the ranking signal is money",
+      "body": [
+        "Marketplace search looks like SEO and behaves like merchandising. The keyword layer is real — your title, bullets and backend search terms decide which queries you're eligible for. But eligibility is where the similarity ends. Ranking inside that eligible set is driven by commercial performance: conversion rate, sales velocity, review count and rating, price competitiveness, and fulfilment reliability.",
+        "The practical consequence is uncomfortable. If your listing converts at 4% and the competitor above you converts at 11%, you do not have a copywriting problem to solve with better keywords. You have a price, image, review or delivery problem, and the algorithm has already worked that out.",
+        "Same logic on Flipkart, Myntra, Nykaa and IndiaMART. Anyone selling you \"marketplace SEO\" that consists only of keyword-stuffing the title is selling you a tenth of the work."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "A pricing tell",
+        "body": "Agencies routinely bundle Amazon listing optimisation into a website SEO retainer without adding hours. They're different disciplines with different people. If it appears on the scope with no separate line item and no separate metric, it isn't being done."
+      }
+    },
+    {
+      "h2": "App store search is a discipline with its own name",
+      "body": [
+        "App store optimisation is old enough to have its own acronym, and it deserves it. Roughly speaking, the Play Store indexes your full description while the App Store leans on a title, a subtitle and a dedicated keyword field with a tight character limit. Both then rank on performance: install volume and velocity, rating, review sentiment, uninstall rate and retention.",
+        "Retention is the signal most teams miss. An app that ranks well and then gets deleted in week one will slide, because the store is optimising for its own users, not for your download count. You cannot fix a retention problem in the metadata.",
+        "The overlap with web SEO is keyword research and competitor gap analysis. The rest — crawling, links, speed, schema — has no equivalent. If you're deciding where to spend, [the comparison between SEO and ASO](/compare/seo-vs-aso) is the one to read."
+      ]
+    },
+    {
+      "h2": "AI assistants are a retrieval surface, not a ranking surface",
+      "body": [
+        "ChatGPT, Perplexity, Gemini and Google's AI Overviews all answer questions, but none of them return a ranked list in the traditional sense. They retrieve a handful of sources, synthesise an answer, and cite some of what they used. Being cited is the win. Being ranked fourth is meaningless if nothing below the answer gets read.",
+        "What we can say with confidence about getting cited, based on how these systems fetch content: the page has to be crawlable by the assistant's crawler, it has to answer the specific question in a lifted-out paragraph rather than burying it at 800 words, and the brand generally has to already be visible in conventional search — most of these systems retrieve from a search index rather than browsing the open web from scratch.",
+        "What we can't say with confidence is anything precise about weighting. Nobody outside those companies has the ranking documentation, and anyone quoting you an exact recipe for AI citations is guessing with a straight face. The honest framing is in our page on [generative engine optimisation](/answers/what-is-generative-engine-optimization)."
+      ]
+    },
+    {
+      "h2": "What transfers, what doesn't, and where to start",
+      "body": [
+        "Strip it back and three things move between every surface on this list."
+      ],
+      "numbered": [
+        "**Demand research.** Knowing what people type, in what volume, with what intent. This is the portable asset. It works on Google, YouTube, Amazon and the Play Store with almost no translation.",
+        "**Intent matching.** Whatever the platform, the winner is the result that answers the query rather than the one that mentions it most. Every one of these systems has been optimising against keyword stuffing for years.",
+        "**Titles and first lines.** Every surface truncates. Every surface ranks partly on whether people click. The first 60 characters do disproportionate work everywhere."
+      ],
+      "bullets": [
+        "**Doesn't transfer:** backlinks, domain authority, sitemaps, canonical tags, Core Web Vitals. These are properties of an open web that marketplaces and app stores simply don't have.",
+        "**Where to start:** the surface where your buyer already searches, not the one that's fashionable. Home services and clinics live on Maps. D2C lives on marketplaces and Instagram. B2B and SaaS live on Google and, increasingly, in AI answers.",
+        "**How to decide:** pull your last 50 closed deals and ask each one where they first looked. It's a cheaper research method than any tool and it's usually more accurate."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is SEO only for Google?",
+      "a": "No. Any system that ranks or retrieves content has an optimisation layer — YouTube, Amazon, Flipkart, the Play Store, App Store, Instagram, Pinterest, vertical directories like Practo and JustDial, and AI assistants. Google is the largest, which is why the term stuck, but it's one of eight surfaces most Indian businesses appear on."
+    },
+    {
+      "q": "Which industries use SEO the most?",
+      "a": "Anything with a considered purchase and a searchable problem: healthcare, legal, real estate, SaaS, education, home services, travel and B2B manufacturing. The common factor isn't the industry, it's whether buyers research before they buy. If they call the first number they see, paid and local matter more than content."
+    },
+    {
+      "q": "Does SEO work on social media?",
+      "a": "Instagram, Pinterest, LinkedIn and YouTube all run internal search that indexes text — captions, alt text, handles, bios, transcripts. So keyword choice genuinely matters there. What doesn't carry over is the off-page half of SEO: no links, no domain authority, no crawl budget. Engagement and recency do that job instead."
+    },
+    {
+      "q": "Do backlinks help on Amazon or the Play Store?",
+      "a": "Not as a ranking signal. External links can drive traffic that converts, and conversions do help you rank on both. But there's no link graph inside a marketplace or an app store, so link building as a tactic has no direct effect. Reviews, conversion rate and retention do that work."
+    },
+    {
+      "q": "Should I optimise for AI assistants instead of Google?",
+      "a": "Instead of, no. As well as, yes — and mostly with the same work. Assistants retrieve from search indexes, so conventional visibility is still the entry ticket. The additions are being crawlable by AI crawlers, answering questions in liftable paragraphs, and building enough brand presence that the model associates your name with your category."
+    }
+  ],
+  "related": [
+    {
+      "type": "compare",
+      "slug": "seo-vs-aso"
+    },
+    {
+      "type": "compare",
+      "slug": "geo-vs-seo"
+    },
+    {
+      "type": "services",
+      "slug": "app-store-optimisation-services"
+    },
+    {
+      "type": "services",
+      "slug": "youtube-seo-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "generative-engine-optimization"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-local-seo"
+    },
+    {
+      "type": "answers",
+      "slug": "why-is-seo-important"
+    }
+  ]
+}

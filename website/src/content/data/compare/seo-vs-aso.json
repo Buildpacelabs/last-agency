@@ -1,0 +1,166 @@
+{
+  "slug": "seo-vs-aso",
+  "type": "compare",
+  "primaryKeyword": "seo vs aso",
+  "secondaryKeywords": [
+    "difference between seo and aso",
+    "app store optimization vs seo",
+    "aso for indian apps",
+    "do i need a website if i have an app",
+    "play store ranking factors"
+  ],
+  "cluster": "channel-mix",
+  "intent": "informational",
+  "h1": "SEO vs ASO: where app installs actually come from",
+  "metaTitle": "SEO vs ASO: Where App Installs Really Come From",
+  "metaDescription": "SEO vs ASO decides where installs come from. ASO wins store search, SEO wins the \"is this app safe\" query. Here's how to fund both without waste.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "ASO wins the search that happens inside the Play Store — someone types a category word and picks an icon. SEO wins everything either side of it: is this app safe, how do I cancel, why won't it install. Fund ASO for the install, fund SEO for the trust check that comes first.",
+  "takeaways": [
+    "Store search and Google search get **different queries from the same person**. The store gets \"expense tracker\". Google gets \"is Expensely safe\" and \"how do I cancel Expensely\".",
+    "Play indexes your **title (30 chars), short description (80) and full description (4,000)** as ranking text. There's no hidden keyword field like Apple's.",
+    "An unanswered support query on Google becomes a one-star review on Play. Bad SEO **damages your ASO** on a two-week delay.",
+    "Ratings are country-scoped in India and recent ratings count more than old ones — which makes review operations an ongoing job, not a launch task."
+  ],
+  "sections": [
+    {
+      "h2": "The same user runs two different searches",
+      "body": [
+        "Nobody installs an app the way the funnel diagram says they do. The real sequence, for anything that touches money or personal data, goes: see the app somewhere, open Google, decide whether it's a scam, *then* open the Play Store and install.",
+        "That middle step is invisible in your install attribution and it is entirely outside the store. Play can't rank a page explaining your refund policy. Google can, and if you haven't written that page, Google will rank somebody else's opinion of your refund policy instead.",
+        "So the split isn't \"ASO for apps, SEO for websites\". It's ASO for the install, SEO for the decision to install and every question after it."
+      ],
+      "table": {
+        "caption": "What the user is actually asking, and which channel answers it.",
+        "head": ["The query", "Where it's typed", "What wins it"],
+        "rows": [
+          ["\"expense tracker app\"", "Play Store search", "**ASO** — title, short description, icon, screenshots, install velocity"],
+          ["\"best expense tracker app India\"", "Google", "**SEO** — a category page, usually somebody else's right now"],
+          ["\"is <app> safe\"", "Google", "**SEO** — a privacy and security page on your own domain"],
+          ["\"how to cancel <app> subscription\"", "Google", "**SEO** — a support page, or a one-star review if you don't have one"],
+          ["\"<app> not working\"", "Google, then Play reviews", "**Both** — a status page absorbs the anger before it hits your rating"],
+          ["\"<app> vs <competitor>\"", "Google", "**SEO** — write it before the competitor does"],
+          ["Nothing. They tapped an ad.", "Your Play listing", "**ASO** — the listing is the landing page and its conversion rate is the whole game"]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The loop most teams miss",
+        "body": "A user who can't find your cancellation instructions on Google writes a one-star review saying they couldn't cancel. Play weights recent ratings more heavily than old ones. Your SEO gap now sits in your ASO score for months."
+      }
+    },
+    {
+      "h2": "What actually ranks an app in the Indian Play Store",
+      "body": [
+        "Play works differently from Apple's App Store, and the difference matters in an Android-dominant market like India. Apple gives you a hidden 100-character keyword field. Play doesn't — it reads your visible copy. Every keyword you want has to survive as readable English (or Hindi, or Tamil) inside text a human will see."
+      ],
+      "bullets": [
+        "**Title — 30 characters.** The single heaviest text field. \"Khatabook\" plus one category word beats a clever tagline every time.",
+        "**Short description — 80 characters.** Indexed, and it's the line that decides whether someone taps *Read more*. Treat it as a meta description with a conversion job.",
+        "**Full description — 4,000 characters.** Indexed. Stuff it and it reads like spam to the human, which costs you the install you just won.",
+        "**Install velocity and retention.** Recent installs matter more than lifetime installs, and installs that survive seven days matter more than installs that don't. This is why bought installs decay instead of compounding.",
+        "**Ratings and review volume, country-scoped.** Play shows Indian users the Indian rating. A 4.6 in the US does nothing for you in Bengaluru.",
+        "**Android vitals.** Crash rate and ANR rate are quality thresholds inside Play Console, and apps that breach them can lose store visibility. On entry-level Android hardware in India, this is a real ranking problem, not a hygiene metric.",
+        "**Download size.** Data and storage are still a live constraint outside the metros. A 40 MB app converts better than a 180 MB one at the same rank.",
+        "**Localised listings.** Play lets you publish store listings per language. Hindi, Tamil, Telugu, Marathi and Bengali listings are the cheapest ASO work available to most Indian apps and almost nobody does them."
+      ]
+    },
+    {
+      "h2": "The queries your store listing can never answer",
+      "body": [
+        "A Play listing has one job: convert a visitor into an install. It's a terrible place to answer a worried question, because it has no room, no structure and no credibility with a sceptical reader.",
+        "In India this bites hardest in fintech, lending, health and anything with a subscription. \"Is this loan app RBI registered\" is a query pattern with real volume and real consequences, and the answer needs to live on a page you control with your registration details on it. Same for \"how to delete my account\", \"customer care number\", and the refund questions.",
+        "Check what currently ranks for your own brand plus those words. If it's a Quora thread from 2023 and a competitor's comparison page, you've found your SEO backlog. That's usually eight to fifteen pages of support and trust content, and it's the fastest-returning content most app companies can commission."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Cheapest test available",
+        "body": "Type your app name plus \"safe\", \"cancel\", \"refund\" and \"customer care\" into Google. Whatever ranks in the top three is currently your brand's answer, whether you wrote it or not."
+      }
+    },
+    {
+      "h2": "Where the two channels actually connect",
+      "body": [
+        "The old Firebase App Indexing API, which surfaced in-app content directly in Google results, has been retired. What's left is simpler and more useful.",
+        "**Android App Links** are verified HTTPS deep links: you host an `assetlinks.json` file at `/.well-known/assetlinks.json` on your domain, declare the app fingerprint, and any matching URL opens in the app instead of the browser for users who already have it. That turns every ranking support page into a re-engagement surface for existing users and a landing page for everyone else.",
+        "The second connection is duller and more valuable. Your Play listing itself ranks in Google for branded queries — often above your own site. That's fine for \"<app> download\". It's actively bad for \"<app> refund\", because the listing sends a frustrated user straight to the review box.",
+        "So the technical work is: verify app links, make sure your support pages are indexable and fast, and make sure the pages that answer complaints outrank the store listing for complaint queries."
+      ]
+    },
+    {
+      "h2": "Splitting a ₹75,000/month app growth budget",
+      "body": [
+        "This is the allocation we'd argue for on a consumer app in India that's past launch and has real users. It isn't a formula — it's a starting split we'd expect to change by month three once you can see which queries convert."
+      ],
+      "table": {
+        "caption": "A ₹75,000/month split across ASO and SEO for a post-launch Indian consumer app. Ad spend is separate.",
+        "head": ["Work", "Monthly share", "What it buys"],
+        "rows": [
+          ["Trust and support content", "₹25,000", "8–15 pages: safety, privacy, cancellation, refunds, account deletion, troubleshooting"],
+          ["Store listing and creative testing", "₹15,000", "Title and description iteration, screenshot and icon A/B tests in Play Console"],
+          ["Category and comparison content", "₹15,000", "\"Best X app in India\", \"<app> vs <competitor>\", use-case pages"],
+          ["Review and rating operations", "₹10,000", "Prompt timing, review responses, feeding complaint themes back to product"],
+          ["Technical and measurement", "₹10,000", "App Links verification, schema, Core Web Vitals, Search Console and Play Console reporting"]
+        ]
+      },
+      "bullets": [
+        "Everything above the ₹25,000 line is SEO work. It's roughly half the budget, and it's the half that keeps working when you turn ads off.",
+        "Our SEO retainers start at ₹75,000/mo, with smaller sites from ₹40,000 — see [what we charge and why](/pricing). Store-side work sits in [app store optimisation](/services/app-store-optimisation-services).",
+        "Paid install spend is billed separately at zero markup. Bought installs that don't retain will drag your Play visibility down, so we'd rather you spent less on them."
+      ]
+    },
+    {
+      "h2": "The verdict: which one to fund first",
+      "body": [
+        "If you're pre-launch or immediately post-launch, fund ASO. You have no brand queries to defend, no reviews to manage and no support backlog. The store listing is the entire product experience for a stranger, and a bad short description costs you more installs in a week than a content programme will earn you in a quarter.",
+        "The moment either of two things happens, SEO becomes the better rupee. First: your paid installs stop retaining, which means the problem is trust or fit, not reach. Second: a query like \"is <app> safe\" or \"<app> scam\" starts returning something you didn't write. At that point you are paying to send users to Google to read a stranger's opinion of you.",
+        "Most Indian consumer apps we look at are over-indexed on ASO and paid installs and have no owned answer to a single trust query. That's the gap worth closing, and it's the one the store can't close for you. If you'd rather see how the two compare against paid channels generally, [SEO versus social media](/compare/seo-vs-social-media) covers the same trade-off for a different mix."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "How we'd measure it",
+        "body": "Not installs. Freeze your trailing-90-day qualified installs from organic and branded search on day one, and measure against that number. We guarantee movement against your own baseline in 90 days or we keep working free until we beat it — never a specific ranking position, because nobody controls Google's index or Play's."
+      }
+    }
+  ],
+  "versus": {
+    "a": "SEO",
+    "b": "ASO",
+    "verdict": "Fund ASO first if you're pre-launch and installs are the only number you have; switch the marginal rupee to SEO the moment a \"is this app safe\" or \"how do I cancel\" query returns a page you didn't write."
+  },
+  "faqs": [
+    {
+      "q": "Do I need a website if I already have an app?",
+      "a": "Yes, and not for marketing copy. You need it for the questions the Play listing can't hold: safety, privacy, cancellation, refunds, account deletion and troubleshooting. Those get searched on Google by people deciding whether to install, and by people about to leave you a one-star review."
+    },
+    {
+      "q": "What's the actual difference between SEO and ASO?",
+      "a": "Same discipline, different index. ASO optimises your listing for search inside the Play Store or App Store — title, descriptions, screenshots, ratings, install velocity. SEO optimises pages for Google. The user is often the same person, twenty minutes apart, asking two different questions."
+    },
+    {
+      "q": "What are the main Play Store ranking factors in India?",
+      "a": "Title, short description and full description text — Play indexes all three because there's no hidden keyword field. Then install velocity, seven-day retention, uninstall rate, country-scoped ratings with recent reviews weighted more heavily, Android vitals like crash and ANR rate, and download size, which matters more on entry-level Android hardware."
+    },
+    {
+      "q": "Does ranking on Google help my app rank on the Play Store?",
+      "a": "Not directly — they're separate indexes. Indirectly, yes: web pages that answer complaints keep those complaints out of your reviews, and better recent ratings do feed Play visibility. That's the loop worth building rather than any imagined ranking transfer."
+    },
+    {
+      "q": "How much should I spend on ASO versus SEO?",
+      "a": "On a ₹75,000/month programme for a post-launch Indian consumer app, we'd argue for roughly half on owned web content and technical work, and half on store listing iteration, creative testing and review operations. Pre-launch, tilt almost everything to the store. Paid install spend sits outside that number."
+    },
+    {
+      "q": "Are app deep links still worth setting up?",
+      "a": "Yes. The old Firebase App Indexing API is gone, but Android App Links still work — host `assetlinks.json` at `/.well-known/assetlinks.json`, verify your fingerprint, and matching URLs open in the app for users who have it. Every ranking support page then doubles as a re-engagement surface."
+    }
+  ],
+  "related": [
+    { "type": "services", "slug": "app-store-optimisation-services" },
+    { "type": "compare", "slug": "seo-vs-social-media" },
+    { "type": "seo-for", "slug": "marketplaces" },
+    { "type": "cost", "slug": "seo-cost-in-india" },
+    { "type": "glossary", "slug": "search-intent" },
+    { "type": "journal", "slug": "what-a-75000-rupee-seo-retainer-actually-buys" }
+  ]
+}

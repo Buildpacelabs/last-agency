@@ -1,0 +1,292 @@
+{
+  "slug": "how-to-set-an-seo-baseline",
+  "type": "journal",
+  "primaryKeyword": "how to set an seo baseline",
+  "secondaryKeywords": [
+    "seo benchmark before starting",
+    "measuring seo progress from baseline",
+    "seo starting metrics",
+    "pre engagement seo audit data",
+    "seasonality seo measurement"
+  ],
+  "cluster": "client-education",
+  "intent": "informational",
+  "h1": "Set the Baseline Before You Start, or You'll Argue About It Later",
+  "metaTitle": "How to Set an SEO Baseline You Can Defend",
+  "metaDescription": "Freeze six numbers before SEO work starts: which metrics to use, what trailing window is honest, how to handle Diwali, and what voids a baseline.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "An SEO baseline is a frozen snapshot of six numbers — qualified organic leads, non-brand clicks and impressions, distinct ranking queries, indexed pages, referring domains and organic conversion rate — taken across the trailing 90 days before any work begins, with seasonality documented and both sides signing the figure. Without it, month six becomes a debate about feelings.",
+  "takeaways": [
+    "Freeze **six numbers**, not one. A single headline metric can be explained away; six moving together can't.",
+    "The window has to be chosen before anyone knows which window is convenient. Trailing 90 days, ending the day before kickoff, with 24 months of context attached.",
+    "Indian seasonality moves. Diwali can land anywhere from mid-October to mid-November, and the fiscal year ends 31 March — both distort a 90-day comparison badly.",
+    "Write down what would **invalidate** the baseline before work starts. A migration resets it. A Google core update never does — that's the risk the agency is paid to carry."
+  ],
+  "sections": [
+    {
+      "h2": "Every month-six argument is really an argument about month zero",
+      "body": [
+        "The conversation goes the same way every time. Month six, a room with a founder, a marketing lead and an agency. Somebody says traffic is up. Somebody else says it doesn't feel like anything changed. A chart appears. Then a second chart with a different date range, and the meeting quietly becomes a negotiation about which chart is real.",
+        "Nobody in that room is lying. They're arguing because nobody wrote the number down on day one, so both sides are now free to reach for whichever comparison flatters them. The agency picks the month before the last core update. The client remembers a good week in March that probably didn't happen. Six months of work gets judged on rhetoric.",
+        "A baseline is the cheapest insurance in the whole engagement. It takes one week, costs nothing, and it's the only reason a difficult month-six conversation stays a conversation about the work instead of a conversation about the reporting. We do it before any billable work happens, and we'd tell you to do it even if you were hiring someone else."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Who this is for",
+        "body": "Set one whether or not your contract has a guarantee attached. If you're about to hire, set it before you sign. If you're already six weeks in, set it today using the 90 days before kickoff — the data is still there, and a late-but-honest baseline beats none."
+      }
+    },
+    {
+      "h2": "The six numbers worth freezing",
+      "body": [
+        "One number is too easy to argue about, and twenty numbers means nobody reads any of them. Six is the point where the picture stops being deniable — because the six fail in different directions, and the pattern between them tells you what's actually happening.",
+        "Each of these lives in a system somebody already owns. None of them requires a new tool."
+      ],
+      "table": {
+        "caption": "The six metrics to freeze before any SEO work starts.",
+        "head": [
+          "The number",
+          "Where it lives",
+          "Why it's on the list"
+        ],
+        "rows": [
+          [
+            "Qualified leads from organic search, trailing 90 days",
+            "Your CRM, using your existing source field and your existing definition of qualified.",
+            "The only one that pays salaries. It's also the one the whole engagement should be judged on, which is why it gets frozen first."
+          ],
+          [
+            "Non-brand organic clicks and impressions",
+            "Search Console, with a regex query filter excluding every brand spelling.",
+            "Brand search flatters everybody. Strip it out and you're left with the part SEO can actually claim."
+          ],
+          [
+            "Distinct non-brand queries earning at least one click",
+            "Search Console, same date range, counted as a number.",
+            "Measures breadth. A site that wins one lucky page looks identical to a site earning topical trust until you count queries."
+          ],
+          [
+            "Indexed pages versus published pages",
+            "Search Console's Pages report against your CMS page count.",
+            "If 40% of your pages aren't indexed, more content isn't the fix and no amount of writing will prove otherwise later."
+          ],
+          [
+            "Referring domains",
+            "Any backlink tool, exported on the day, with the file kept.",
+            "Links move slowly and honestly. It's also the number that exposes a bought-link spike months after somebody bought them."
+          ],
+          [
+            "Organic session-to-enquiry conversion rate",
+            "GA4 or your CRM, whichever your team already trusts.",
+            "Separates a traffic problem from a page problem. Without it, flat leads and rising traffic is an unsolvable argument."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Don't freeze average position.** It falls while a site is winning, because new long-tail queries enter at position 40 and drag the average down. It's the worst number on most reports and it's on most reports.",
+        "**Don't freeze domain authority or domain rating.** They're third-party estimates of Google's opinion, recalculated whenever the vendor changes their model. You can't hold anyone to a number a vendor can revise.",
+        "**Don't freeze total sessions.** Paid, direct, referral and a bot or two are all in there. Organic-only, non-brand, or it isn't measuring the work.",
+        "**Do keep the raw exports.** CSV files, dated, in a shared folder both sides can open. A number in a slide is an assertion. A number with its export attached is evidence."
+      ]
+    },
+    {
+      "h2": "Picking a window nobody can accuse you of choosing",
+      "body": [
+        "The window is where baselines get quietly rigged, usually without anybody intending to. An agency that picks the trailing quarter containing a two-week site outage has set itself an easy target. A client who picks their best-ever quarter has made the guarantee unwinnable. Both look reasonable at the time and both poison month six.",
+        "Five rules that make the choice defensible, and all of them work because they remove discretion from whoever benefits."
+      ],
+      "numbered": [
+        "**Trailing 90 days, ending the day before kickoff.** Not the last full calendar quarter, which can be four months stale by the time anyone signs. Not a hand-picked stretch. The 90 days immediately behind you.",
+        "**Attach 24 months of monthly context.** The baseline is 90 days; the sanity check is two years. Export monthly organic leads and non-brand clicks for 24 months and put the chart next to the figure. It takes ten minutes and it catches every distortion in this article.",
+        "**Compare the window against your own 12-month median month.** If the baseline period sits far above or far below that median, you've caught seasonality, an outage or a campaign. Say which, in the document.",
+        "**Name the known distortions before you agree the number.** The fortnight the contact form was broken. The LinkedIn post that went unusually wide. The month sales stopped answering the phone because two people quit. Both sides list what they know, in writing, before the number is fixed.",
+        "**Fix the definitions at the same moment as the number.** What counts as a qualified lead, which brand terms are in the regex, how a lead gets tagged organic. A number without its definitions isn't a baseline, it's a screenshot."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The cherry-pick runs both ways",
+        "body": "Everyone assumes the agency is the one gaming the window. In practice we've had as many conversations where the client wanted their strongest quarter used as the baseline, which turns a fair guarantee into a trap. Naming the direction of the distortion out loud is what makes the document honest — not who wrote it."
+      }
+    },
+    {
+      "h2": "The Indian calendar problem, and why generic advice gets it wrong",
+      "body": [
+        "Most baseline advice is written for markets where the year is roughly flat. Indian demand isn't, and the two largest distortions don't sit still on the calendar — they move.",
+        "The festive block, roughly Navratri through Diwali, is the biggest retail and D2C demand window of the Indian year. It's set by a lunisolar calendar, so Diwali can land anywhere from mid-October to mid-November depending on the year. An October–December baseline can therefore contain the entire festive peak one year and part of it the next. Compare those two windows as though they're equivalent and you've credited or blamed SEO for a calendar.",
+        "The second is the financial year. India's fiscal year ends on 31 March, which pulls B2B procurement, budget-flush purchasing and renewal decisions into January–March, then empties April while new budgets clear approval. A B2B business that freezes a baseline across January–March and gets measured across April–June is being asked to beat its best quarter using its worst one. That's not a hard target. It's an impossible one, and it will end the relationship in month four for reasons that have nothing to do with the work.",
+        "Other patterns worth checking in your own data rather than taking on trust from a list like this: education demand tracking board results and admission cycles across roughly April to July, wedding-linked categories concentrating between November and February, and monsoon suppressing construction, travel and outdoor categories across much of the country from June to September. None are universal. All are visible in twenty minutes of your own Search Console history, which is the only version that matters."
+      ],
+      "bullets": [
+        "**If the window is materially off your median**, pick one of three fixes and write down which: shift the window to a neutral quarter, keep the window but make year-on-year the real test, or measure a rolling 90-day figure against the same 90 days last year.",
+        "**Year-on-year is the honest instrument for seasonal businesses.** Comparing this Diwali to last Diwali removes the calendar entirely. It costs you speed — you can't read it in 90 days — which is exactly why some businesses shouldn't buy a 90-day guarantee at all.",
+        "**Watch the festive date drift explicitly.** If Diwali moved by three weeks between the baseline year and the measurement year, note the shift beside the number so nobody has to rediscover it in an argument.",
+        "**Regional variation is real.** A brand selling into Kerala, Bengal and Punjab is looking at three different peak calendars. If your traffic splits sharply by state, split the sanity check too."
+      ]
+    },
+    {
+      "h2": "The baseline document, and why both sides sign it",
+      "body": [
+        "A baseline that lives in somebody's head is not a baseline. Neither is one that lives in a kickoff deck nobody opens again. It needs to be a single page, dated, with two names at the bottom, and it needs to exist before the first invoice.",
+        "Ours runs to about 400 words. Here's everything that has to be on it."
+      ],
+      "numbered": [
+        "**The source of truth for each number**, named as a specific system. \"The CRM\" is not a name. \"HubSpot, Deals object, Lead Source = Organic Search\" is.",
+        "**The definition of a qualified lead**, one paragraph, with two examples of what counts and two of what doesn't. If sales already uses disqualification reason codes, adopt those instead of inventing a parallel vocabulary.",
+        "**The channel attribution rule.** First-touch or last-touch, UTM conventions, the hidden form field, and how phone and WhatsApp enquiries get captured — because in most Indian service businesses a meaningful share of organic leads arrive that way and attribution loses all of them by default.",
+        "**The brand regex**, written out in full, frozen. An agency that adds terms to the brand filter later can manufacture non-brand growth. One that removes terms can make it vanish.",
+        "**The window, as two dates**, plus the 24-month context chart as an attachment.",
+        "**The six numbers, as six figures**, with the raw export filenames listed next to them.",
+        "**The documented distortions and exclusions.** Outages, campaigns, the TV spend planned for month two, existing customers re-enquiring, internal test submissions, job applications.",
+        "**A named arbiter on each side** — one person, not a department — who settles edge cases monthly without it becoming a renegotiation.",
+        "**The date and two signatures.** This is the part people skip and it's the part that does the work. A signed page changes what month six can be about."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "One page, not a data warehouse",
+        "body": "The temptation is to instrument everything before starting. Resist it. Six numbers, their definitions and two signatures beats a beautiful dashboard nobody agreed the meaning of. You can add instrumentation in month two; you cannot add a baseline in month six."
+      }
+    },
+    {
+      "h2": "What invalidates a baseline, and what only annotates it",
+      "body": [
+        "This is the section most agreements never write, and it's the one that decides whether month six is calm. Some events genuinely break the comparison. Most don't — they just need a note on the chart. Deciding which is which after the event is how both sides end up feeling cheated, so decide now, in advance, when neither of you knows who it will favour."
+      ],
+      "table": {
+        "caption": "Events that reset an SEO baseline versus events that only need annotating.",
+        "head": [
+          "What happened",
+          "Verdict",
+          "What to do about it"
+        ],
+        "rows": [
+          [
+            "Domain migration, replatform or rebrand",
+            "Resets it",
+            "Agree a 6–8 week settling period, then re-baseline. Measuring across a migration measures the migration."
+          ],
+          [
+            "CRM change, or a change to the attribution model",
+            "Resets it",
+            "Rebuild the identical definition in the new system, restate the historical figure both ways, and note the gap before switching."
+          ],
+          [
+            "A Google core update lands mid-engagement",
+            "Annotate. Never resets it.",
+            "This is the risk the agency is paid to carry. Mark the date, explain the effect, keep the number exactly where it was."
+          ],
+          [
+            "Client launches a large paid, TV or PR campaign",
+            "Annotate",
+            "Brand search will rise and drag organic with it. Report brand and non-brand separately so nobody accidentally claims the lift."
+          ],
+          [
+            "The enquiry form or checkout changes",
+            "Annotate, unless it changes what counts as a lead",
+            "If a two-field form becomes an eight-field form, volume and quality both move. Restate the definition rather than the number."
+          ],
+          [
+            "Sales response time collapses, or the sales team turns over",
+            "Annotate",
+            "Lead volume is unchanged; conversion isn't. Keep tracking both so the argument stays factual."
+          ],
+          [
+            "A product line launches or gets discontinued",
+            "Annotate — reset only if it's most of the revenue",
+            "Split the number by line before deciding. Usually the split shows it's smaller than it feels."
+          ],
+          [
+            "Seasonality you already documented",
+            "Neither",
+            "Nothing. That's precisely what documenting it was for."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The clause that voids everything",
+        "body": "Watch for guarantee terms that void the whole commitment if the client misses any single obligation. Reasonable terms name specific, measurable client duties — approval turnaround, dev hours, CRM access. Unreasonable ones give the agency an exit any time you're two days late on a draft, and you'll only find out when you try to claim."
+      }
+    },
+    {
+      "h2": "Setting one for yourself in an afternoon",
+      "body": [
+        "If you're not hiring anybody, or you're already mid-engagement with an agency that never did this, you can build the whole thing yourself in about two hours. It's worth doing before your next quarterly review rather than after it."
+      ],
+      "numbered": [
+        "**Export 24 months of monthly organic leads from your CRM.** Filter to organic source only. Put it in a sheet and look at the shape before you look at any total.",
+        "**Build the brand regex** and save it as a Search Console view. Every spelling of your name, the domain, common misspellings, the founder's name if people search it. Export 24 months of non-brand clicks and impressions alongside the lead data.",
+        "**Count distinct non-brand queries with at least one click** for the trailing 90 days. One number. Write it down.",
+        "**Compare indexed pages to published pages.** Search Console's Pages report against your CMS count. If the gap is large, that's your next quarter, whatever anybody's content plan says.",
+        "**Export referring domains** from whichever backlink tool you have access to, and keep the file rather than a screenshot.",
+        "**Calculate organic session-to-enquiry conversion** for the same 90 days, and write down how you calculated it.",
+        "**Write the definitions page and send it to your agency.** Ask them to confirm it in writing. What they say next is more informative than any audit they'll ever send you — a good agency will improve it; a nervous one will explain why measurement is complicated."
+      ]
+    },
+    {
+      "h2": "What we freeze, and what we'll never promise",
+      "body": [
+        "We spend the first week of every engagement on this and we don't bill for the delivery work until it's signed. It has cost us clients who wanted us writing in week one, and it has saved every relationship that later hit a hard quarter.",
+        "The number we commit against is one of the six: your trailing-90-day count of qualified leads from organic search, frozen on day one with its definitions attached. If we haven't beaten it within 90 days, we keep working free until we do. Not a ranking position, ever — nobody controls Google's index, and a promised position is a promise about somebody else's system. [What an SEO guarantee costs the agency](/journal/what-an-seo-guarantee-costs-the-agency) explains why that commitment caps us at three new clients a month.",
+        "The other five numbers go on the monthly report next to the frozen figures, because the headline number alone can't tell you why anything moved. That reporting shape is covered in [how to judge your SEO agency's performance](/journal/how-to-judge-your-seo-agencys-performance), which works fine as a checklist against an agency that isn't us.",
+        "SEO runs from ₹75,000 a month, and from ₹40,000 for smaller sites, ex-GST. Month-to-month after the first quarter, 30 days' notice, and you keep every asset including the baseline document if you leave. [The guarantee in full](/seo), and [what SEO actually costs in India](/cost/seo-cost-in-india) if you want the arithmetic before the call."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is an SEO baseline?",
+      "a": "A frozen snapshot of your search performance taken immediately before work begins, used as the comparison point for everything that follows. A workable one covers six numbers — qualified organic leads, non-brand clicks and impressions, distinct ranking queries, indexed pages, referring domains and organic conversion rate — across the trailing 90 days, with definitions attached and both sides signing."
+    },
+    {
+      "q": "How long should the baseline window be?",
+      "a": "Trailing 90 days ending the day before kickoff, with 24 months of monthly context attached as a sanity check. Ninety days is long enough to smooth ordinary noise and short enough to still describe your current business. The 24-month chart is what catches seasonality, outages and campaigns before anyone commits to the figure."
+    },
+    {
+      "q": "How do I handle seasonality when setting a baseline?",
+      "a": "Compare the proposed window against your own 12-month median month. If it sits far above or below, pick a fix and record it: shift to a neutral quarter, make year-on-year the real test, or measure a rolling 90 days against the same 90 days last year. In India, watch the festive block and the 31 March fiscal year-end especially."
+    },
+    {
+      "q": "Should I freeze keyword rankings as part of the baseline?",
+      "a": "No. Average position falls while a site is winning, because new long-tail queries enter at low positions and pull the average down. Third-party rank trackers sample one location and one device that no real user sees. Freeze non-brand clicks, impressions and distinct query count instead — they measure the same thing without the distortion."
+    },
+    {
+      "q": "What if my business is too new to have a baseline?",
+      "a": "Then measure differently and say so. A domain with zero organic leads has nothing meaningful to beat, so a 90-day baseline guarantee is theatre in the agency's favour. New sites should run a normal engagement with honest six-to-twelve-month expectations, freeze a baseline once there's real data, and measure leading indicators until then."
+    },
+    {
+      "q": "Can an agency change the baseline mid-engagement?",
+      "a": "Only for events you both agreed in advance would reset it — a migration, a replatform, or a change of CRM or attribution model. A Google core update never resets it; that's the risk the agency is paid to carry. Write the reset conditions into the document on day one, while neither side knows who they'll favour."
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "how-to-judge-your-seo-agencys-performance"
+    },
+    {
+      "type": "journal",
+      "slug": "what-an-seo-guarantee-costs-the-agency"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-you-measure-seo-success"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "services",
+      "slug": "analytics-setup-services"
+    },
+    {
+      "type": "journal",
+      "slug": "what-working-with-an-seo-agency-actually-feels-like"
+    }
+  ]
+}

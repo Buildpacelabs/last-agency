@@ -1,0 +1,110 @@
+{
+  "slug": "thin-content",
+  "type": "glossary",
+  "primaryKeyword": "thin content",
+  "secondaryKeywords": [
+    "what is thin content",
+    "thin content penalty",
+    "low value pages seo",
+    "doorway pages",
+    "scaled content abuse"
+  ],
+  "cluster": "content",
+  "intent": "informational",
+  "h1": "Thin content",
+  "metaTitle": "Thin Content: What It Is and How to Fix It",
+  "metaDescription": "Thin content is a page that adds nothing a reader couldn't get elsewhere. Word count isn't the test. Here's the real test, and how to fix pages at scale.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Thin content",
+  "definition": "Thin content is any page that offers little or no value beyond what a reader could already get from the results around it, regardless of how many words are on it.",
+  "answer": "Thin content is a page that adds nothing a searcher couldn't get elsewhere. Word count isn't the test — a 200-word answer can be excellent and a 2,000-word city page can be worthless. Google's spam policies target it directly under scaled content abuse and doorway pages, both of which are site-wide risks, not page-level ones.",
+  "takeaways": [
+    "The test: **if this page vanished, would the searcher lose anything?** If not, it's thin at any length.",
+    "Google's scaled content abuse policy is method-agnostic — it's about the output, not the tooling.",
+    "Two hundred city pages where only the city name changes is exactly what that policy describes.",
+    "The fix is usually consolidation. Ten useful pages beat two hundred permutations."
+  ],
+  "sections": [
+    {
+      "h2": "Word count is the wrong measure",
+      "body": [
+        "The \"minimum 1,500 words\" rule is folklore. It survives because it's easy to check and easy to bill for. A page answering \"what is a 301 redirect\" in 180 words, correctly, is a good page. Padding it to 1,500 makes it worse and slower.",
+        "The real question is comparative: **against the pages currently ranking for this query, does mine give the searcher something they'd otherwise miss?** Original data, first-hand experience, real prices, a clearer explanation, a decision they can act on. If the honest answer is \"nothing, it's a rearrangement of the top three results\", the page is thin, and length won't change that.",
+        "It's also why AI-drafted content isn't automatically thin and human writing isn't automatically fine. A human on their fortieth paraphrase of a competitor's blog post is producing thin content by hand."
+      ]
+    },
+    {
+      "h2": "Scaled content abuse, in Google's own words",
+      "body": [
+        "In March 2024 Google rewrote its spam policies, replacing \"spammy automatically-generated content\" with **scaled content abuse**. The old wording could be argued around by saying a human touched the page. The new one targets generating many pages primarily to manipulate rankings rather than to help people — by automation, by humans, or by both.",
+        "That moved the line. Under the old wording an agency could produce 200 templated pages with a writer filling blanks and claim compliance. Now that's the exact behaviour described. Enforcement is rarely a dramatic manual penalty either — most sites see something quieter: pages dropping out of the index, crawl attention shrinking, good pages losing ground alongside the thin ones."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "It's a site-wide risk, not a page-wide one",
+        "body": "Thin pages don't just fail on their own — a large block of them changes what Google thinks your site is for. You can lose rankings on genuinely good pages because of pages you forgot you published."
+      }
+    },
+    {
+      "h2": "The 200 city pages problem, which is also the doorway problem",
+      "body": [
+        "Here's the version you'll actually be sold. Landing pages for every city you serve: \"SEO services in Pune\", \"SEO services in Nashik\", on to two hundred. One template, the city name swapped in six places, sometimes a landmark name-dropped. It's cheap to produce, the deliverable looks enormous on an invoice, and it occasionally works for a few months — which is why it keeps getting sold. Then a spam update lands and the whole folder goes.",
+        "Google's older doorway policy describes the same thing from another angle: a page built to catch a query variation and funnel the visitor elsewhere. The test is what happens after the click. If fifty location pages all say \"we serve [city], contact us\" and push to one form, the reader gained nothing by landing on the city version.",
+        "We run city pages ourselves, so let's be straight about the line. A city page earns its URL when it carries something true and specific that couldn't appear on any other city's page — the real competitive picture there, local search behaviour, pricing that reflects what businesses in that market actually pay. If we can't write that, we don't publish it. A [local SEO](/compare/local-seo-vs-national-seo) page that helps someone in Kochi decide is a destination; the same page with \"Kochi\" swapped for \"Kollam\" is a doorway.",
+        "Same test for service permutations: \"affordable SEO services\", \"best SEO services\" and \"professional SEO services\" as three URLs is one page and two [cannibalisation](/glossary/keyword-cannibalization) problems."
+      ]
+    },
+    {
+      "h2": "Fixing it: consolidate, improve, or cut",
+      "body": [
+        "The remedy is the same however the thin pages got there. Inventory every URL, decide one of three things about each, and act in a single release."
+      ],
+      "numbered": [
+        "**Consolidate.** Merge near-duplicates into one strong page and 301 the rest to it. Four thin service variants become one page that ranks for all four.",
+        "**Improve.** Keep pages where you can genuinely add something — real prices, real local detail, real experience. Rewrite them properly or don't keep them.",
+        "**Cut.** Remove pages with no traffic, no links and no purpose. Return 410 for dead URLs; 301 only where a real successor exists.",
+        "**Change the commissioning rule.** Noindex is a holding move, not a fix. If nothing changes about how pages get approved, you'll rebuild the same folder within a year."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The one-line test to hand your agency",
+        "body": "Point at any page in the proposal and ask: what's on this that couldn't be on the other 199? If the answer takes more than five seconds, you're buying scaled content abuse."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many words does a page need to avoid being thin?",
+      "a": "There's no number, and any agency that quotes one is measuring the wrong thing. A 180-word definition that answers the query completely is fine. A 2,000-word page that restates the top three results is thin. The test is what the page adds, not how long it takes to say it."
+    },
+    {
+      "q": "Is AI-written content automatically thin content?",
+      "a": "No. Google's stated position is that it judges content by quality and usefulness, not by how it was produced. AI-generated pages produced at volume to fill a keyword list are scaled content abuse. A well-researched piece drafted with AI assistance and carrying real information isn't."
+    },
+    {
+      "q": "Is there an actual thin content penalty?",
+      "a": "There are two paths. A manual action for thin content or doorway pages appears in Search Console and requires a reconsideration request. More common is algorithmic suppression, which never announces itself — pages fall out of the index, crawl frequency drops, and nothing appears in your dashboard."
+    },
+    {
+      "q": "Are city or location landing pages always thin?",
+      "a": "Only when they're identical. A location page carrying real market detail, local pricing and genuine reasons a business there would care is a legitimate page. A template with the city name swapped in is the textbook example of what the policy targets. The difference is entirely in the content."
+    },
+    {
+      "q": "Should I delete thin pages or improve them?",
+      "a": "Improve the ones tied to something commercially real and consolidate the rest. Deleting is right when a page has no traffic, no links and no purpose. If you're deciding between merging and deleting, merging is safer — it preserves whatever link equity the URL collected."
+    },
+    {
+      "q": "How long does recovery take after removing thin content?",
+      "a": "For an algorithmic suppression, weeks to months — Google has to recrawl the changed pages and reassess the site, and the reassessment often waits on a core update. A manual action can lift faster once a reconsideration request is accepted, but only if the cleanup is genuinely complete."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "content-decay" },
+    { "type": "glossary", "slug": "keyword-cannibalization" },
+    { "type": "journal", "slug": "programmatic-seo-and-the-scaled-content-line" },
+    { "type": "services", "slug": "programmatic-seo-services" },
+    { "type": "services", "slug": "penalty-recovery-services" },
+    { "type": "compare", "slug": "local-seo-vs-national-seo" }
+  ]
+}

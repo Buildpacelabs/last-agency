@@ -1,0 +1,202 @@
+{
+  "slug": "how-hard-is-it-to-get-into-an-seo-career",
+  "type": "answers",
+  "primaryKeyword": "how hard is it to get into seo career",
+  "secondaryKeywords": [
+    "how to get an seo job with no experience",
+    "how to start an seo career",
+    "seo entry level jobs india",
+    "breaking into seo"
+  ],
+  "cluster": "seo-career",
+  "intent": "informational",
+  "h1": "How to get your first SEO job with no experience",
+  "metaTitle": "How Hard Is It to Get Into an SEO Career?",
+  "metaDescription": "Getting into SEO with no experience is hard for one reason: proof, not credentials. Here's the 90-day portfolio project that gets you interviews.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Getting into SEO is easy to attempt and hard to prove. There's no licence, no degree gate, and thousands of applicants carrying the same free certificate. What gets a junior interviewed in India is a documented 90-day project on a real domain: a frozen baseline, a dated change log, and one number that moved.",
+  "takeaways": [
+    "The barrier isn't knowledge. It's **evidence you've touched a live site** and can explain what happened next.",
+    "A domain costs under ₹1,200 a year and Search Console is free. Three months of honest work beats a stack of certificates.",
+    "Screenshot the empty Search Console graph on day one — the most valuable thing you'll produce all quarter.",
+    "For a first job, agency usually beats in-house: five to ten sites in eighteen months instead of one."
+  ],
+  "sections": [
+    {
+      "h2": "The bar isn't high — it's just not the one you're preparing for",
+      "body": [
+        "SEO has no licence, no mandatory degree and no regulator. That's why it looks easy to enter and why it's crowded at the bottom — anyone with a laptop can call themselves an SEO on Monday morning, and plenty do.",
+        "So hiring managers stopped screening on credentials years ago. They screen for evidence that you've touched a live site, watched something change, and formed an opinion about why. That's the real barrier, and almost nobody preparing for an SEO job is preparing for it. They're preparing for a quiz.",
+        "The evidence is cheap to produce honestly. A domain costs under ₹1,200 for year one, Search Console is free, Screaming Frog crawls 500 URLs free. Ninety days on a site you own beats a CV listing two years of editing other people's meta descriptions."
+      ]
+    },
+    {
+      "h2": "Why certificates don't get interviews",
+      "body": [
+        "Certificates test recall. The job tests judgement on incomplete data, usually while someone senior asks why traffic fell. Different muscles, and every interviewer knows it. There's a supply problem too: the well-known certifications are free and untimed, so a very large number of CVs carry them. A credential everybody has isn't a differentiator — it's a formatting choice."
+      ],
+      "bullets": [
+        "**They're not wrong, they're weightless.** Nobody holds a certificate against you. It just doesn't answer the only question in the room: what have you shipped?",
+        "**They teach a stable version of an unstable subject.** Course material gets written once and updated slowly. The index changes every week.",
+        "**They can't record failure.** No certificate contains the time you deindexed a section with one bad `robots.txt` rule. Interviewers want that story more than your score."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The six-second scan",
+        "body": "A junior opening at a decent Indian agency pulls a stack of near-identical CVs. The first pass hunts for one thing: a link to something you built and can talk about. A certificate list doesn't survive it. A URL does."
+      }
+    },
+    {
+      "h2": "The 90-day portfolio project, specified",
+      "body": [
+        "Here is the project. It's deliberately small, deliberately real and deliberately measurable. Do not build a fake site for a fake business: interviewers can tell within thirty seconds, and there's nothing to measure anyway."
+      ],
+      "numbered": [
+        "**Week 0 — pick a subject you can write about without lying.** A hobby, your hometown, a niche you know cold. Fifteen pages of real detail, and you'll quit anything you don't care about by week five.",
+        "**Buy a domain and put it on anything that renders fast.** Roughly ₹700–₹1,200 for year one. The stack barely matters; the render speed does.",
+        "**Install Search Console on day one, then screenshot the empty graph.** That screenshot is your baseline. Without it you can only claim. With it you can prove.",
+        "**Choose one head query and eight to twelve long-tail queries around it.** Pick a set where the top ten holds at least two weak results — an old forum thread, a 2017 post, a listicle that never answers the question.",
+        "**Ship 12–15 pages over eight weeks: one pillar, the rest a cluster.** Wire them together with [internal linking](/glossary/internal-linking), so you can explain it from having done it.",
+        "**Keep a dated change log in a public doc.** One line per change: what you did, why, what you expected. This habit alone separates you from everyone else applying that week.",
+        "**On day 90, write it up — including what didn't work.** The pages that never indexed. The query you never cracked."
+      ]
+    },
+    {
+      "h2": "Documenting it so a hiring manager believes you",
+      "body": [
+        "Most portfolio write-ups fail identically: a rising line graph with no labels, dates or named query. That reads as decoration, and experienced interviewers stop there. Publish yours on the site itself — it doubles as proof you can structure a page."
+      ],
+      "bullets": [
+        "**Name the query.** If the interviewer can't type it into Google and check, it isn't proof.",
+        "**Show the baseline and the date you froze it.** \"0 impressions in March to 1,400 in June across nine queries\" beats \"grew traffic substantially\" by a distance.",
+        "**Use Search Console screenshots, not third-party exports.** One is first-party data, the other is a model.",
+        "**Include one clear failure and what you did about it.** Not humility theatre — diagnosis is the skill being hired.",
+        "**One page plus the change log.** Nobody reads twelve slides from a candidate."
+      ]
+    },
+    {
+      "h2": "Where entry-level SEO jobs actually get posted in India",
+      "body": [
+        "Few good junior seats are advertised well. Big-board listings are real but heavily contested, and better roles often fill through narrower channels before they're posted."
+      ],
+      "bullets": [
+        "**LinkedIn**, filtered to \"SEO Executive\", \"SEO Analyst\" and \"Digital Marketing Executive\" — the last one hides a lot of real SEO work under a vaguer title.",
+        "**Naukri and Internshala.** Internshala is the honest fresher route: most Indian agencies hire from their own intern pool.",
+        "**Agency careers pages, directly.** List thirty agencies in your city and check monthly. Many never post anywhere else.",
+        "**Marketing communities** on Slack, Discord, WhatsApp and X. Junior roles circulate there days early, and a referral skips the six-second scan.",
+        "**Your own change log, in public.** Post the weekly update. Tag nobody. People who hire juniors read this stuff, because almost nobody produces it."
+      ]
+    },
+    {
+      "h2": "Agency first, in-house first, or intern first",
+      "body": [
+        "This matters more than which certificate you took, because it decides how many reps you get in your first two years. SEO judgement is pattern recognition, and patterns need volume."
+      ],
+      "table": {
+        "caption": "Entry routes into SEO in India, and the trade each one makes.",
+        "head": [
+          "Route",
+          "What it gives a beginner",
+          "What it costs you"
+        ],
+        "rows": [
+          [
+            "Agency",
+            "Five to ten sites in eighteen months across several verticals, plus seniors to copy in real time.",
+            "Little control over what ships, billable-hour pressure, and some shops park juniors on reporting forever."
+          ],
+          [
+            "In-house",
+            "One site you can genuinely change, stakeholder exposure, a short line to revenue.",
+            "One stack, one vertical, and nobody to correct you if the company's SEO is immature."
+          ],
+          [
+            "Internship",
+            "The cheapest door in — Indian agencies convert interns constantly.",
+            "Low or unpaid for three to six months, and teaching quality varies wildly by shop."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "If you're choosing blind",
+        "body": "Take the agency job. A year of being tired and underpaid buys the ability to diagnose a site in an afternoon, which is what makes the second job pay properly. Read [what an SEO specialist actually does day to day](/answers/what-does-an-seo-specialist-do) first."
+      }
+    },
+    {
+      "h2": "What interviewers actually test",
+      "body": [
+        "Junior interviews are more predictable than candidates expect. Five questions do nearly all the filtering, and each tests sequence of thought rather than facts."
+      ],
+      "numbered": [
+        "**\"Organic traffic dropped 40% last month. What do you check first?\"** They want a diagnostic order — tracking, indexation, a core update, a redirect, a competitor. \"I'd check Search Console\" isn't an answer; saying what you'd look at inside it is.",
+        "**\"What's the difference between a canonical and a noindex?\"** Simple, and it catches a startling number of people. One consolidates signals between duplicates; the other removes a page from the index. Know [what a canonical tag does](/glossary/canonical-tag) precisely, not approximately.",
+        "**\"What would you do in your first 30 days on a site you've never seen?\"** Crawl it, read Search Console, find pages with impressions but no clicks, fix those first. Ambition in month one is a red flag; sequencing isn't.",
+        "**\"Tell me about something you got wrong.\"** If you have nothing, you've never shipped. The change log solves this permanently.",
+        "**\"Show me something you've worked on.\"** This is the whole interview. Everything above is warm-up."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "Realistic timeline",
+        "body": "Standing start to first paid SEO role: three to six months if you build and document a real project, considerably longer if you collect courses instead. The gap between those paths is almost entirely a public URL."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need a degree to get an SEO job in India?",
+      "a": "No. There's no degree requirement and no professional body. Plenty of good Indian SEOs came from English literature, commerce, journalism or support roles. What employers screen for is a site you've worked on and can explain — a degree affects the first CV filter at large companies and almost nothing after that."
+    },
+    {
+      "q": "How long does it realistically take to get a first SEO job?",
+      "a": "Three to six months of consistent effort if you're building and publishing a real project alongside applying. Longer if you're only studying, because study produces no artefact to show. The month you publish a documented project is usually the month your reply rate changes."
+    },
+    {
+      "q": "Are free SEO certificates worth doing at all?",
+      "a": "Do them, quickly, and stop treating them as the plan. They give you vocabulary and a rough map, which is genuinely useful in week one. They just don't differentiate you, because they're free, untimed and on thousands of other CVs. Spend the saved time on the portfolio project instead."
+    },
+    {
+      "q": "Should I take an unpaid or very low-paid SEO internship?",
+      "a": "Only with a time limit and a clear scope. Three to six months at a shop that lets you touch live sites is a fair trade for the reps. An indefinite unpaid internship where you only build reports is not — you'll leave with the same empty portfolio you arrived with."
+    },
+    {
+      "q": "What salary should an SEO fresher expect in India?",
+      "a": "Advertised fresher bands at Indian agencies commonly sit around ₹15,000–₹30,000 a month, with product companies and roles serving overseas clients paying more. Treat that as a wide band rather than a benchmark: city, employer type and whether you bill in rupees or dollars move it more than experience does at this stage."
+    },
+    {
+      "q": "Is it too late to enter SEO now that AI writes content?",
+      "a": "It's a bad time to enter as a volume content writer and a reasonable time to enter as someone who can diagnose, measure and fix. The tasks that got automated first were the ones with a checkable output and no judgement in them. Aim past that tier deliberately."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-does-an-seo-specialist-do"
+    },
+    {
+      "type": "answers",
+      "slug": "is-seo-in-demand"
+    },
+    {
+      "type": "answers",
+      "slug": "where-can-i-learn-seo-for-free"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "journal",
+      "slug": "future-of-seo-jobs-in-india"
+    },
+    {
+      "type": "compare",
+      "slug": "technical-seo-vs-content-seo"
+    },
+    {
+      "type": "answers",
+      "slug": "is-seo-higher-than-ceo"
+    }
+  ]
+}

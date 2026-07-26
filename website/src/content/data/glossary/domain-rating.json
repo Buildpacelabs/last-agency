@@ -1,0 +1,143 @@
+{
+  "slug": "domain-rating",
+  "type": "glossary",
+  "primaryKeyword": "domain rating",
+  "secondaryKeywords": [
+    "dr score ahrefs",
+    "what is dr in seo",
+    "domain rating vs domain authority",
+    "how to increase domain rating",
+    "good dr score"
+  ],
+  "cluster": "off-page",
+  "intent": "informational",
+  "h1": "Domain Rating (DR)",
+  "metaTitle": "Domain Rating (DR): What Ahrefs Is Measuring",
+  "metaDescription": "Domain Rating is Ahrefs' 0-100 score built purely on backlinks. It ignores traffic entirely, which is exactly what makes it cheap for a vendor to inflate.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Domain Rating (DR)",
+  "definition": "Domain Rating is Ahrefs' 0-100 score measuring the strength of a website's backlink profile, calculated only from followed links between domains.",
+  "answer": "Domain Rating is Ahrefs' 0–100 score for the strength of a site's backlink profile. It's calculated purely from followed links — it ignores content, traffic, rankings and relevance entirely. That single design choice is why a site with 200 bought links can show DR 45 while ranking for nothing at all.",
+  "takeaways": [
+    "DR is **links only**. No traffic, no content quality, no relevance. It was never meant to describe anything else.",
+    "DR and DA disagree constantly because they're different models built on different crawls. That's expected, not a bug in either.",
+    "Because DR counts referring domains weighted by their own DR, it can be moved cheaply. Traffic can't.",
+    "Always read DR next to organic traffic. High DR plus near-zero traffic is the signature of a link shop."
+  ],
+  "sections": [
+    {
+      "h2": "What DR measures — and the four things it ignores",
+      "body": [
+        "Ahrefs calculates Domain Rating from its own link graph. Roughly: a domain's DR rises with the number of unique domains linking to it, each weighted by that linking domain's own DR and divided across how many domains it links out to. Only followed links count. The scale is 0–100 and logarithmic, so the top end is thin and crowded at the bottom.",
+        "That's the whole model. Here's what it deliberately doesn't look at, which is the part people forget:"
+      ],
+      "bullets": [
+        "**Traffic.** A domain with no visitors can carry a high DR. Ahrefs reports traffic separately, in a different column, and that separation is the single most useful thing about the tool.",
+        "**Content quality.** DR has never read a page on your site.",
+        "**Relevance.** A link from a Bangalore fintech blog and a link from a Belarusian coupon site count the same way, adjusted only for their DR.",
+        "**Nofollow links.** Excluded from the calculation, which means a profile full of legitimate press mentions from publications that nofollow outbound links will show a lower DR than its real-world standing."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "DR is a domain score, UR is the page one",
+        "body": "Ahrefs also publishes URL Rating for individual pages. For deciding whether a specific article can rank, UR and the page's own links are more informative than the domain number sitting above them."
+      }
+    },
+    {
+      "h2": "Why DR and DA disagree",
+      "body": [
+        "Founders send us screenshots of this constantly: DR 38, DA 21, and a fair question about which is right. Neither. They're two companies guessing at the same unknowable thing by different methods.",
+        "[Domain Authority](/glossary/domain-authority) is Moz's machine-learning prediction of ranking likelihood, trained on Moz's sampled results, so it absorbs some non-link signal indirectly. DR is a direct calculation over Ahrefs' link graph — closer to arithmetic than prediction. On top of that, the two companies run separate crawlers, so they don't even agree on which links exist. Two formulas over two datasets produce two numbers. The full comparison is in [DA vs DR](/compare/da-vs-dr)."
+      ]
+    },
+    {
+      "h2": "The mechanic that makes DR cheap to inflate",
+      "body": [
+        "This part explains an entire industry. DR responds to one input: followed links from distinct domains, weighted by their DR. Nothing in the formula asks whether those domains have readers, whether the link is relevant, or whether anyone clicked it.",
+        "So moving DR costs whatever followed links from mid-DR domains cost. In India that market is well developed, well priced, and sitting in your inbox this morning. A site can be assembled to DR 40-something in a few months on purchased placements alone, then resold as premium inventory to founders who've been told DR is what matters. The loop is circular — buy links to raise DR, so you can sell links priced on DR — and nobody in it is optimising for a search result. Meanwhile Google's spam systems increasingly neutralise unnatural links rather than penalise the target, so your money buys nothing, silently."
+      ],
+      "table": {
+        "caption": "Reading DR against traffic before you agree to a placement.",
+        "head": [
+          "DR",
+          "Ahrefs organic traffic",
+          "What it probably is"
+        ],
+        "rows": [
+          [
+            "50+",
+            "Under a few hundred a month",
+            "A link shop, or a dead site living off old links. Skip it."
+          ],
+          [
+            "50+",
+            "Substantial, from queries a human would search",
+            "A real publication. Expensive, hard to get into, worth it."
+          ],
+          [
+            "20–35",
+            "Modest but real, on-topic",
+            "A genuine niche site. Often the best value link you'll earn."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Use DR as a filter, never as a target",
+      "body": [
+        "DR has one legitimate job: sorting a long prospect list quickly. If you've pulled 400 outreach targets, filtering out everything under DR 10 removes the obvious junk in one click and costs you nothing worth having. Filters are fine.",
+        "Setting \"reach DR 50\" as an objective is different. It's a number in a vendor's tool that no customer will ever see, it responds to purchasable inputs, and it can climb for a full quarter while your qualified leads sit exactly where they started. Our own reporting runs the other way: we freeze your trailing-90-day qualified leads from organic search on day one and measure against that. Miss it in 90 days and we keep working free until we beat it. No tool score is part of that promise — see [how our SEO work is structured](/seo)."
+      ],
+      "bullets": [
+        "**Do** open the traffic column next to it, every single time.",
+        "**Don't** accept DR growth as a KPI, a milestone, or a reason to renew.",
+        "**Don't** pay a premium for DR without checking whether the site ranks for anything in your country."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a good DR score?",
+      "a": "There's no absolute answer — it depends entirely on your market. Check the DR of the sites ranking for your target queries and read yours against theirs. A DR 25 site can dominate a niche where the incumbents are all in the twenties, and be invisible in one where they're all above 60."
+    },
+    {
+      "q": "How is Domain Rating calculated?",
+      "a": "From Ahrefs' link graph: the number of unique domains linking to you, each weighted by its own DR and divided by how many domains it links out to. Only followed links count. Content, traffic, rankings and relevance play no part in the calculation."
+    },
+    {
+      "q": "Does Google use Domain Rating?",
+      "a": "No. DR is Ahrefs' proprietary metric, calculated from Ahrefs' own crawl of the web. Google has no access to it and no reason to use it. The same is true of Moz's Domain Authority and every other third-party authority score."
+    },
+    {
+      "q": "Why is a site's DR high but its traffic zero?",
+      "a": "Because DR doesn't look at traffic. High DR with no traffic usually means links were bought at scale, or the site was once real and has since been abandoned or deindexed. Either way it's a placement to decline, whatever the seller is charging."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "domain-authority"
+    },
+    {
+      "type": "glossary",
+      "slug": "backlink-profile"
+    },
+    {
+      "type": "glossary",
+      "slug": "referring-domain"
+    },
+    {
+      "type": "compare",
+      "slug": "da-vs-dr"
+    },
+    {
+      "type": "compare",
+      "slug": "ahrefs-vs-semrush"
+    },
+    {
+      "type": "journal",
+      "slug": "domain-authority-is-a-vanity-metric"
+    }
+  ]
+}

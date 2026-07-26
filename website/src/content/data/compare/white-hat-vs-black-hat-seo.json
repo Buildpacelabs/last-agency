@@ -1,0 +1,208 @@
+{
+  "slug": "white-hat-vs-black-hat-seo",
+  "type": "compare",
+  "primaryKeyword": "white hat vs black hat seo",
+  "secondaryKeywords": [
+    "grey hat seo meaning",
+    "black hat seo techniques to avoid",
+    "google manual action recovery",
+    "pbn links risk",
+    "is buying backlinks safe"
+  ],
+  "cluster": "seo-disciplines",
+  "intent": "informational",
+  "h1": "White hat vs black hat SEO: and the grey stuff quietly being sold",
+  "metaTitle": "White Hat vs Black Hat SEO: What Agencies Hide",
+  "metaDescription": "White hat vs black hat SEO, plus the grey tactics Indian agencies quietly sell. How long PBNs and ₹500 guest posts last before a manual action.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "White hat SEO earns rankings with work Google would approve of if it read your invoice. Black hat manipulates the index — bought links, cloaking, doorway pages. Grey is where most Indian retainers actually live: ₹500 guest posts, private blog networks, expired-domain redirects. Grey usually works, right up until an update lands.",
+  "takeaways": [
+    "Almost nobody sells you black hat. They sell you **grey**, described in white-hat language, and the line only becomes visible in the invoice.",
+    "The single most useful question you can ask an agency: *where does a link come from, and would you show me the site?* Hesitation is the answer.",
+    "An algorithmic demotion has **no reconsideration request**. There is no button. You just get less traffic and no explanation.",
+    "Recovery from a link-based manual action is mostly labour — weeks of auditing, outreach and documentation — and it doesn't reliably restore where you were."
+  ],
+  "sections": [
+    {
+      "h2": "The line, in three sentences",
+      "body": [
+        "**White hat** means you'd be comfortable if Google read your whole workflow. You build pages people want, you earn links because someone chose to cite you, and every technical fix makes the site better for a human.",
+        "**Black hat** means manipulating the index rather than serving the searcher: cloaking, doorway pages, hidden text, hacked-site links, generated content at industrial scale. Google's spam policies name most of these directly — this isn't folklore, it's published.",
+        "**Grey** is the interesting one — everything Google would classify as manipulative but hasn't caught at your scale. It isn't a category in Google's documentation; it's a commercial category, the space where an agency charges white-hat prices for black-hat mechanics and calls it \"outreach\". And grey works, which is why it sells. The question was never whether it works. It's how long, and what happens on the day it stops."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The one-question test",
+        "body": "\"Show me three sites where you'd place a link for my account.\" A white-hat operator opens a tab. A grey one talks about \"publisher relationships\" and \"confidentiality\". Ten seconds, and you know more than the proposal will tell you."
+      }
+    },
+    {
+      "h2": "The five grey tactics sold inside Indian retainers",
+      "body": [
+        "These five account for most link spend in the ₹25,000–₹1,00,000/month bracket. All are sold in white-hat vocabulary; none is described honestly in a proposal. The survival column is reasoned from how each gets detected, not measured — read the next section before treating it as a promise."
+      ],
+      "table": {
+        "caption": "Grey tactics, what you're told, and what they actually are.",
+        "head": ["Tactic", "How it's sold", "What it actually is", "How long it tends to hold"],
+        "rows": [
+          [
+            "₹500–₹2,000 guest posts",
+            "\"Guest posting on niche blogs\"",
+            "A link farm with a WordPress theme. Dozens of posts a week across unrelated topics, no readers.",
+            "Months, not years. These sites get deindexed in batches, and your link dies with the host."
+          ],
+          [
+            "Private blog networks (PBNs)",
+            "\"Our own publisher network\"",
+            "Expired domains bought for their old link equity, refilled with cheap content, pointing at whoever pays this month.",
+            "Until the network is identified — detection is network-wide, so every client loses at once."
+          ],
+          [
+            "Expired-domain 301 redirects",
+            "\"Domain acquisition\"",
+            "Redirecting a dead domain's links at yours. A relevant acquisition is legitimate; an unrelated one is link laundering.",
+            "Often survives by being ignored rather than by working — irrelevant redirected authority gets discounted, not punished."
+          ],
+          [
+            "Paid niche edits / link insertions",
+            "\"Contextual placements on aged posts\"",
+            "Paying a site owner to slip your link into a three-year-old post. Money changed hands for a link. That's a paid link.",
+            "Longest-lived of the five, and therefore the hardest sold. Still against Google's link spam policy."
+          ],
+          [
+            "Mass generated content at volume",
+            "\"Programmatic SEO\"",
+            "Thousands of near-identical pages with one variable swapped. Google's spam policies name **scaled content abuse**.",
+            "One core or spam update. The hit is site-wide — good pages go down with the bad."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The pricing tell",
+        "body": "Real digital PR — a data story, an expert quote, a genuine placement — takes hours of a skilled person's time. If a proposal quotes 20 links a month at ₹75,000 total, the arithmetic tells you what kind of links those are. Nobody earns 20 real ones for ₹3,750 each."
+      }
+    },
+    {
+      "h2": "Why \"survival window\" is an estimate, not a measurement",
+      "body": [
+        "We could give you confident half-lives for each tactic. They'd look authoritative and they'd be invented, so we won't.",
+        "Google doesn't publish detection dates, and sites that get hit rarely announce it — when they do, they blame an update rather than the links they bought. The same tactic also behaves differently depending on share: 5 paid links inside 400 organic ones is a rounding error; 400 inside 420 is your whole profile. So the honest framing is mechanical, not statistical:"
+      ],
+      "numbered": [
+        "**Is the footprint shared?** PBNs and link farms serve many clients from one set of infrastructure. When they're found, everybody on them is found — shared footprints fail all at once.",
+        "**Does it leave a pattern in your profile?** Jumping from 12 referring domains to 300 in a month is a shape, and shapes are what detection looks for. Slow accumulation from varied sources is invisible because it resembles what it's imitating.",
+        "**Does anyone benefit from reporting it?** Competitors report link networks. So do ex-employees, and the outreach agencies whose emails you ignored. The bigger you get, the more people have a reason to look."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The failure mode nobody warns you about",
+        "body": "Most grey-hat damage isn't a manual action. It's an algorithmic demotion: traffic drops, no notification arrives, there's no reconsideration request to file, and nobody at Google will tell you why. A manual action is at least a diagnosis. The algorithmic version is a silent decline you'll spend six months guessing about."
+      }
+    },
+    {
+      "h2": "How to audit a backlink profile you inherited",
+      "body": [
+        "If you've changed agencies, or taken over a site somebody else built, the links pointing at you are now your problem. Do this before spending anything on new ones. You'll need Search Console, plus one link tool for the historical view — Search Console shows a sample and won't tell you when a link appeared."
+      ],
+      "numbered": [
+        "**Check for a manual action first.** Search Console → Security & Manual Actions. Ten seconds. If a notice is sitting there, skip to the next section.",
+        "**Sort referring domains by first-seen date.** Look for cliffs. A month where 200 domains appeared is a purchase, and it'll line up with an invoice if you go looking.",
+        "**Read the anchor text distribution.** Natural profiles are dominated by brand names, bare URLs and junk like \"click here\". If 40% of anchors are exact-match commercial phrases, somebody bought them and wasn't subtle.",
+        "**Open twenty linking pages by hand.** Not a tool score — actually open them. Real audience? Written for a person? Your link sitting beside a payday loan site? You'll know in a minute.",
+        "**Check the linking sites are indexed.** Search `site:thatdomain.com`. A link farm that's already been deindexed passes you nothing and tells you plenty about who built your profile.",
+        "**Only then consider disavowing.** It's a blunt instrument and Google advises against casual use — most sites never need it. Reach for it on a manual action, or a large purchase you can clearly identify. See [toxic backlinks](/glossary/toxic-backlinks) for what qualifies."
+      ]
+    },
+    {
+      "h2": "What manual action recovery actually costs and takes",
+      "body": [
+        "If Search Console shows a manual action for unnatural links, the work is less dramatic than people expect and far more tedious. The process itself is documented and free: fix the problem, file a reconsideration request, wait for a human at Google to review it. The cost is entirely labour, and the labour is dull."
+      ],
+      "table": {
+        "caption": "The realistic shape of a link-based manual action recovery. Timelines vary widely with profile size.",
+        "head": ["Stage", "What it involves", "Rough effort"],
+        "rows": [
+          [
+            "Full link audit",
+            "Every referring domain classified by hand. Tools sort, they can't judge.",
+            "The biggest block. A few thousand domains is genuinely weeks of work."
+          ],
+          [
+            "Removal outreach",
+            "Emailing site owners. Response rates are poor and some will ask for money to remove a link.",
+            "2–4 weeks of low-yield chasing, and Google wants the attempt documented."
+          ],
+          [
+            "Disavow file",
+            "Everything you couldn't get removed, uploaded at domain level.",
+            "A day, once the audit is done properly."
+          ],
+          [
+            "Reconsideration request",
+            "A written account of what happened, what you removed and disavowed, and what changes so it doesn't recur.",
+            "Reviewed by a person. Days to a few weeks, and a rejection means another round."
+          ],
+          [
+            "Rebuilding",
+            "Earning the authority you faked, this time for real.",
+            "Months. The longest part, and the one nobody budgets for."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "The bill you can't see",
+        "body": "The recovery invoice isn't the real cost. The real cost is two or three quarters of pipeline that don't happen while you're doing it — and recovery gets you to a clean slate, not back to where the fake links had you. You pay twice for one ranking."
+      }
+    },
+    {
+      "h2": "The trade nobody states out loud",
+      "body": [
+        "Grey hat is a loan. Rankings now, payment later, at an interest rate nobody quotes and on a date you don't choose. If you're flipping a site in eighteen months, the maths might work. For everyone else it doesn't, because the payment falls due at the worst moment — nobody's PBN gets deindexed during a quiet quarter. It happens the week before a funding round, or the month you hired the sales team the traffic was meant to feed.",
+        "The white-hat argument isn't moral. Earned links keep working when the agency leaves, when Google updates, and when someone audits your profile in due diligence. Bought links are rented. See [paid links vs earned links](/compare/paid-links-vs-earned-links) and [guest posting vs digital PR](/compare/guest-posting-vs-digital-pr).",
+        "We run [SEO from ₹75,000/mo](/pricing) and we don't buy links — not out of sainthood, but because we guarantee movement against your own frozen 90-day organic lead baseline, and we'd rather not stake that on someone else's network staying undetected. Miss it in 90 days and we work free until we beat it. You can only promise that if the links are yours to keep."
+      ]
+    }
+  ],
+  "versus": {
+    "a": "White hat SEO",
+    "b": "Black hat SEO",
+    "verdict": "If you intend to still own this domain in three years, white hat is the only defensible choice — grey and black buy rented rankings at an interest rate you don't learn until the eviction notice arrives, and it always arrives in the worst quarter."
+  },
+  "faqs": [
+    {
+      "q": "Is buying backlinks safe in 2026?",
+      "a": "It's against Google's link spam policy, so \"safe\" only ever means \"undetected so far\". Paid niche edits currently survive longest because they're hard to distinguish from editorial links at small volumes. That's not safety — it's a bet on detection lagging, and detection has never stopped improving."
+    },
+    {
+      "q": "What is grey hat SEO, exactly?",
+      "a": "It isn't a category Google recognises. Grey hat is a commercial term for tactics Google would classify as manipulative but hasn't caught at your scale yet — bought guest posts, PBN links, link insertions. The word exists so agencies can sell manipulation without saying the word."
+    },
+    {
+      "q": "How do I know if my agency is using PBNs?",
+      "a": "Ask to see three sites where they'd place a link. Then open the sites they name: check whether real people read them, whether the topics are wildly unrelated to each other, and whether the domain is indexed in Google at all. \"Our private network\" as an answer is the answer."
+    },
+    {
+      "q": "How long does manual action recovery take?",
+      "a": "The audit and outreach are the slow parts — weeks for a profile with thousands of referring domains. Google's review of a reconsideration request typically takes days to a few weeks, and rejections mean another round. Rebuilding the lost authority afterwards takes months, and that's the part nobody budgets for."
+    },
+    {
+      "q": "Can I recover from an algorithmic demotion the same way?",
+      "a": "No, and this is the important difference. There's no notification, no reconsideration request and no confirmation you've fixed it. You clean up, improve the site genuinely, and wait for a future update to re-evaluate you. Many sites never fully return."
+    },
+    {
+      "q": "Are cheap guest posts always bad?",
+      "a": "The price tells you the model. A site charging ₹500 to publish anything isn't editing, isn't curating and doesn't have readers — so the link carries no real endorsement. It may not get you penalised, but it almost certainly does nothing, which makes it the worst kind of spend: risky and useless."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "toxic-backlinks" },
+    { "type": "glossary", "slug": "backlink-profile" },
+    { "type": "compare", "slug": "paid-links-vs-earned-links" },
+    { "type": "compare", "slug": "guest-posting-vs-digital-pr" },
+    { "type": "services", "slug": "penalty-recovery-services" },
+    { "type": "journal", "slug": "how-much-do-backlinks-actually-matter" }
+  ]
+}

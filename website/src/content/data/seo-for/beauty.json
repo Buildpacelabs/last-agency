@@ -1,0 +1,232 @@
+{
+  "slug": "beauty",
+  "type": "seo-for",
+  "primaryKeyword": "seo for beauty brands",
+  "secondaryKeywords": [
+    "beauty seo india",
+    "skincare seo services",
+    "cosmetics ecommerce seo",
+    "ingredient content seo",
+    "seo for skincare brands india"
+  ],
+  "cluster": "ecommerce-and-d2c",
+  "intent": "commercial",
+  "industry": "Beauty",
+  "h1": "SEO for beauty brands: ingredients first, product second",
+  "metaTitle": "SEO for Beauty Brands: Ingredient-Led Content",
+  "metaDescription": "SEO for beauty brands in India. We rank ingredient, concern and routine content that feeds product pages, with claims your regulatory team can defend.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Beauty demand in India is ingredient and concern demand: 'niacinamide for open pores', 'sunscreen for oily skin without white cast'. Product pages almost never rank for those queries because the intent is informational. You rank with a concern-to-ingredient-to-routine cluster, written in claim language the Cosmetics Rules allow, then route that traffic to products.",
+  "takeaways": [
+    "Your product page will not rank for `niacinamide for open pores`. The SERP for that query wants an explainer, and it will keep wanting one.",
+    "The claim you want to write is often a **drug** claim under Indian rules. 'Cures acne' and 'reduces the appearance of blemishes' are legally different sentences.",
+    "Skin type and concern deserve indexable pages. Shade codes almost never do — build the filter policy on demand, not on database convenience.",
+    "A named dermatologist reviewer with a visible registration number does more for a skincare page than another 500 words."
+  ],
+  "sections": [
+    {
+      "h2": "Your product page will never rank for 'niacinamide for open pores'",
+      "body": [
+        "Search that query in India and look at what actually holds the results: explainers, dermatologist videos, forum threads, comparison articles. What you will not see is a product detail page, because Google has correctly worked out that someone typing it wants to understand a problem, not buy a bottle in the next ninety seconds.",
+        "This is the single most common misdiagnosis in Indian beauty SEO. A brand builds a beautiful PDP, targets the ingredient query, gets nowhere, and concludes SEO doesn't work for beauty. What actually happened is an intent mismatch — the page was right, the query was wrong for it.",
+        "The demand is real and it's large. Indian skincare search is dominated by concerns rather than categories: open pores, pigmentation on the cheeks, acne marks that won't fade, dandruff, hair fall, oily skin in humidity, and the sunscreen question that everyone asks — which one doesn't leave a white cast on Indian skin tones. Each of those is a cluster, and each cluster ends at a product."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The routing rule",
+        "body": "Informational pages earn the ranking. Product pages take the money. If a concern article links only to other articles, it's a magazine. Every explainer should point at one collection and one or two specific products with descriptive anchor text — never 'shop now'."
+      }
+    },
+    {
+      "h2": "The cluster: concern, then ingredient, then routine, then product",
+      "body": [
+        "Build it in that order, because that's the order a buyer moves through. Someone notices a problem, learns which ingredient addresses it, works out where it sits in a routine, then chooses a product. A site organised by product range instead of by concern is asking the customer to translate."
+      ],
+      "table": {
+        "caption": "Cluster architecture for an Indian skincare or cosmetics brand.",
+        "head": [
+          "Layer",
+          "Example page",
+          "Job it does"
+        ],
+        "rows": [
+          [
+            "Concern hub",
+            "Open pores: what causes them and what actually helps",
+            "Captures the widest informational demand and links down to everything below"
+          ],
+          [
+            "Ingredient page",
+            "Niacinamide: what it does, what percentage, what not to pair it with",
+            "Ranks for ingredient queries and gets cited by other sites and AI answers"
+          ],
+          [
+            "Routine page",
+            "Morning routine for oily skin in Indian humidity",
+            "Sequencing and layering — the question people ask after they've picked ingredients"
+          ],
+          [
+            "Collection",
+            "Serums for open pores",
+            "The commercial page that the three layers above all link into"
+          ],
+          [
+            "Product detail page",
+            "The specific serum, with concentration, texture, and who it isn't for",
+            "Converts, and ranks for brand plus product searches"
+          ]
+        ]
+      },
+      "bullets": [
+        "**Write the percentage and the pairing.** 'Niacinamide' is a topic; '5% niacinamide, and why layering it with a strong acid the same night irritates some people' is a page worth linking to.",
+        "**Say who a product isn't for.** It's the fastest way to sound like a formulator rather than a brochure, and it reduces returns.",
+        "**One page per ingredient, not one per product containing it.** Otherwise you build a cannibalisation problem out of your own catalogue."
+      ]
+    },
+    {
+      "h2": "Write the claim your regulatory reviewer can defend",
+      "body": [
+        "This is the section that separates beauty SEO from every other ecommerce category, and it's where a lot of Indian content teams are quietly exposed. Cosmetics in India are regulated under the Drugs and Cosmetics Act and the Cosmetics Rules, 2020, administered by CDSCO. Advertising claims also sit under the Central Consumer Protection Authority's guidelines on misleading advertisements and endorsements, and under the ASCI code.",
+        "The practical line is this: a cosmetic can claim to clean, beautify, alter appearance. Claim that a product treats, cures or prevents a disease and you have described a drug, which needs a different licence entirely. Acne, eczema and fungal infections are diseases. 'Blemishes', 'the appearance of uneven texture' and 'the look of dullness' are appearance.",
+        "None of that stops you writing well. It changes which verb you use, and it means your SEO brief and your regulatory review have to happen in the same document rather than six weeks apart."
+      ],
+      "table": {
+        "caption": "Claim rewrites that keep the page rankable and defensible.",
+        "head": [
+          "Don't publish",
+          "Publish instead",
+          "Why"
+        ],
+        "rows": [
+          [
+            "Cures acne",
+            "Formulated for acne-prone skin; helps reduce the look of blemishes",
+            "Curing a condition is a drug claim, not a cosmetic one"
+          ],
+          [
+            "Removes pigmentation permanently",
+            "Helps visibly even out skin tone with regular use",
+            "Permanence is unprovable and 'removes' implies treatment"
+          ],
+          [
+            "Dermatologically proven to work",
+            "Dermatologist-tested, with the test named and dated on the page",
+            "'Proven' needs a study you can produce; 'tested' needs a test you actually ran"
+          ],
+          [
+            "100% chemical-free, non-toxic",
+            "Free from added sulphates and parabens — with the full INCI list published",
+            "Chemical-free is meaningless and toxicity claims invite challenge"
+          ],
+          [
+            "Best sunscreen in India",
+            "SPF and PA rating as tested, with the method and lab named",
+            "Superlatives are the most commonly challenged claim format in Indian advertising"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The expensive version of this mistake",
+        "body": "The risk isn't a ranking drop. It's a claim that has to be pulled from 200 pages at once, which means 200 pages losing their content and their rankings in the same week. Get the claim language right before you scale the cluster, not after."
+      }
+    },
+    {
+      "h2": "Which filters deserve a URL: skin type yes, shade code no",
+      "body": [
+        "Beauty catalogues generate filters enthusiastically — skin type, concern, SPF level, finish, shade, size, price. Left to the platform, every combination becomes a crawlable URL, and Googlebot spends its budget on `?shade=214&sort=price` while your new ingredient pages sit undiscovered. This is a [crawl budget](/glossary/crawl-budget) problem before it's a content problem.",
+        "The test is search demand, not database structure. Does anyone type this?"
+      ],
+      "bullets": [
+        "**Skin type and concern — index.** 'Serum for oily skin', 'moisturiser for dry skin', 'face wash for acne-prone skin' are among the highest-volume commercial queries in the category. These deserve static URLs with their own copy, not filter states.",
+        "**SPF level — index selectively.** 'SPF 50 sunscreen' has real demand. 'SPF 30 PA+++ gel texture matte finish' does not.",
+        "**Shade and finish — usually don't.** Foundation shade codes have close to zero search volume. What does have volume is the descriptive question: 'foundation shade for wheatish skin', 'undertone test'. Build that as a shade-finder guide, not as 40 indexable shade URLs.",
+        "**Price bands and sort orders — block them.** Pure crawl waste with nothing to rank for.",
+        "**Never `noindex` and `disallow` the same URL.** Google can't read a `noindex` on a page it isn't permitted to fetch, so it lingers as a URL-only result. Pick one instruction."
+      ]
+    },
+    {
+      "h2": "A named dermatologist, or don't publish it",
+      "body": [
+        "Skincare content addressing conditions sits close enough to health information that credibility is a ranking input, not a nicety. Google's quality guidance treats content that could affect wellbeing more strictly, and beauty content routinely crosses that line the moment it mentions acne, pigmentation or hair loss.",
+        "The practical response is unfashionably simple. Put a real person's name on the page, with a real bio page, real qualifications, and links to profiles that exist elsewhere. Where a dermatologist has reviewed the content, say so with their name, qualification, registration number and the date of review — on the page, visible, not only in the markup.",
+        "This is also the [E-E-A-T](/glossary/e-e-a-t) argument at its most literal. Two pages can contain the same information; the one with a named reviewer and a review date is the one a human trusts and the one that gets cited. And citation is increasingly how beauty brands appear in AI answers, where the assistant is picking a source rather than a shopping result."
+      ],
+      "bullets": [
+        "**Author bio pages that link outward** to genuine profiles — a clinic, a medical council listing, a conference talk. `sameAs` on a `Person` entity is only useful if the destinations are real.",
+        "**A visible review date, and a real review cadence.** A 2023 review date on a 2026 page tells the reader exactly how much attention it gets.",
+        "**Don't claim a reviewer you don't have.** Inventing a dermatologist is fraud dressed as content strategy, and in a small professional community it is trivially checkable."
+      ]
+    },
+    {
+      "h2": "Reviews, UGC and before-afters: where the line sits",
+      "body": [
+        "Reviews are the most valuable content beauty brands own and the easiest to get wrong. Three separate rule sets apply, and all three are enforceable in India.",
+        "Google's structured data policies allow `aggregateRating` only from reviews genuinely collected about the product — not borrowed, not written in-house. A manual action here strips rich results across the entire domain, not just the offending page. The Central Consumer Protection Authority's endorsement guidelines require disclosure of any material connection between a brand and someone endorsing it, which covers seeded influencer content and paid reviews. And BIS published a standard for online consumer reviews setting out how collection and moderation should work — voluntary, but a sensible template for a policy you can defend.",
+        "Before-and-after imagery is the sharpest edge. Used for appearance claims with honest, unretouched, same-lighting photography and a stated timeframe, it's persuasive and legitimate. Used to imply a product treated a medical condition, it becomes the visual version of a drug claim, and for certain conditions Indian advertising law is stricter still. If your legal review would flinch at the sentence, don't publish the photograph that says it silently."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What we do first, and what it costs",
+        "body": "On a beauty site we agree the claim vocabulary with your regulatory reviewer before commissioning a single article, then build two concern clusters end to end rather than forty pages of thin ingredient stubs. Our SEO runs from ₹75,000/mo, smaller sites from ₹40,000/mo, ex-GST, month-to-month after the first quarter — see [what SEO costs in India](/cost/seo-cost-in-india). We freeze your trailing-90-day qualified leads or orders from organic on day one, and if we haven't beaten that in 90 days we keep working free until we do. We never promise a ranking position."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why don't my product pages rank for ingredient searches?",
+      "a": "Because the intent is informational. Someone searching 'niacinamide for open pores' wants to understand the problem, and Google serves explainers, videos and forum threads accordingly. Build the concern and ingredient pages to win that query, then link them into the collection and product pages that convert."
+    },
+    {
+      "q": "What claims can a cosmetics brand legally make in India?",
+      "a": "Cosmetics may claim to clean, beautify and alter appearance. Claiming to treat, cure or prevent a condition describes a drug and needs a different licence under the Drugs and Cosmetics Act and Cosmetics Rules, 2020. 'Helps reduce the look of blemishes' is a cosmetic claim; 'cures acne' is not. Advertising also sits under CCPA guidelines and the ASCI code."
+    },
+    {
+      "q": "Should shade and filter pages be indexed?",
+      "a": "Skin type, concern and headline SPF filters should be static indexable pages with their own copy, because people search them. Individual shade codes, finishes, price bands and sort orders should not — there's no demand and they generate enormous crawl waste. Build a shade-finder guide instead of forty shade URLs."
+    },
+    {
+      "q": "Does a dermatologist reviewer actually help rankings?",
+      "a": "It helps the credibility signals that support rankings for health-adjacent content, and it demonstrably helps conversion and citation. Put the reviewer's name, qualification, registration number and review date on the page, with a real bio that links to profiles that exist. Never invent one — it's checkable and it's fraud."
+    },
+    {
+      "q": "Can I use before-and-after photos on a skincare site?",
+      "a": "For appearance claims, yes, if the images are unretouched, shot in comparable lighting, and labelled with a real timeframe. If they imply the product treated a medical condition, they carry the same problem as a written drug claim. Test them against the sentence you'd be willing to publish in words."
+    },
+    {
+      "q": "How long does beauty SEO take to work in India?",
+      "a": "Three to six months for concern and ingredient clusters to establish, with early movement in impressions inside six to eight weeks. Ingredient pages compound well because other sites and AI assistants cite them. Competitive category terms against marketplaces and large retailers take considerably longer."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "e-e-a-t"
+    },
+    {
+      "type": "seo-for",
+      "slug": "d2c-brands"
+    },
+    {
+      "type": "seo-for",
+      "slug": "wellness"
+    },
+    {
+      "type": "services",
+      "slug": "content-marketing-services"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-do-seo-for-an-ecommerce-website"
+    },
+    {
+      "type": "cost",
+      "slug": "ecommerce-seo-cost"
+    },
+    {
+      "type": "seo-for",
+      "slug": "subscription-boxes"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "slug": "does-topical-authority-actually-exist",
+  "type": "journal",
+  "primaryKeyword": "does topical authority exist",
+  "secondaryKeywords": [
+    "topical authority seo",
+    "is topical authority real",
+    "content clusters seo",
+    "site authority ranking factor",
+    "topical relevance google"
+  ],
+  "cluster": "seo-strategy",
+  "intent": "informational",
+  "h1": "Topical authority isn't a score. It's still the right instruction.",
+  "metaTitle": "Does Topical Authority Actually Exist?",
+  "metaDescription": "Topical authority isn't a metric Google stores, but the behaviour it describes still works. What to build instead, and what to stop reporting on.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Topical authority isn't a score Google stores, and no tool can measure it — every topical authority number you've been shown is a vendor's model of its own crawl. The behaviour the term describes does work: covering a subject completely wins more of the query set than covering it partly. Build the coverage, ignore the score.",
+  "takeaways": [
+    "There are **two claims** hiding in one phrase. One is a stored metric nobody can see. The other is a coverage behaviour anyone can observe. Only the second one is worth acting on.",
+    "Any tool showing you a topical authority score is measuring **its own index against its own topic model**. When the tool re-crawls, your score moves and nothing about your site changed.",
+    "Coverage works for four unmystical reasons: more entry points, denser internal linking, clearer context for Google's own clustering, and readers who've already read three of your pages.",
+    "Our rule: cover roughly **70–80% of the distinct questions** in a decision at adequate depth before you spend on 3,000-word deep dives. Depth in an uncovered cluster has nothing pointing at it.",
+    "Report **share of your mapped query set earning impressions** instead. It's free, it's from Search Console, and unlike an authority score it can be wrong in a way you can act on."
+  ],
+  "sections": [
+    {
+      "h2": "Two different claims are hiding inside one phrase",
+      "body": [
+        "\"Topical authority\" gets used to mean two things that have almost nothing to do with each other, and the argument about whether it exists is really an argument about which one you meant.",
+        "**Claim A:** Google computes and stores a per-site, per-topic authority value, and your job is to raise it. This is the version that gets sold — with a number attached, on a dashboard, next to a gauge.",
+        "**Claim B:** sites that cover a subject thoroughly tend to rank better across that subject than sites that cover it in fragments. This is the version practitioners observe.",
+        "Claim A is unproven, unmeasurable from outside, and probably the wrong mental model even if something like it exists internally. Claim B is observable, mechanically explicable, and the correct instruction. The reason this matters isn't philosophical: teams that chase Claim A buy tools and report scores, and teams that act on Claim B write the missing pages. Only one of those two produces rankings."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The short answer",
+        "body": "Does topical authority exist? Not as a number you can find, measure or optimise directly. Yes as a description of what happens when you stop publishing fragments and start finishing subjects. Treat the phrase as an instruction, never as a metric."
+      }
+    },
+    {
+      "h2": "Why no tool can measure topical authority",
+      "body": [
+        "Here's what actually happens when a tool shows you a topical authority score, and it's worth understanding because the mechanics explain exactly how much the number is worth.",
+        "The tool crawls what it can reach of the web — a large sample, never the whole thing, and never the same sample as Google's index. It builds its own topic model, grouping keywords into subjects using its own clustering. It looks at which of those keywords your domain ranks for in its own rank-tracking data. Then it produces a number that says, in effect: *relative to the other sites in our index, and according to our idea of what this topic contains, you cover this much of it.*",
+        "That's a legitimate thing to compute. It just isn't a measurement of anything inside Google. It's a measurement of the vendor. And the tell is easy to spot — when a tool expands its index or updates its clustering model, scores across every site it tracks shift, and not one of those sites published anything.",
+        "It gets worse for reporting. Two tools will give the same site two different topical authority scores for the same subject, because they disagree about what the subject contains. If two instruments disagree and there's no reference standard to check them against, you don't have a measurement. You have two opinions with decimal places, which is how [domain authority became a vanity metric](/journal/domain-authority-is-a-vanity-metric) as well."
+      ],
+      "bullets": [
+        "**Google exposes no such field.** Search Console gives you impressions, clicks, position and coverage. There is no authority number in there, for any topic, at any level.",
+        "**Internal signals aren't the same as a dial you can turn.** Google's leaked Content Warehouse API documentation in 2024 included field names suggesting site-level focus and authority concepts. Nobody outside Google knows whether they're used in ranking, how they're weighted, or whether the version in those documents is the version in production. Field names in documentation are not a metric you can optimise.",
+        "**\"Our score went up\" is not evidence.** If the score moved and your rankings didn't, the score moved for reasons that have nothing to do with your business.",
+        "**Beware any agency reporting on a metric it also sells you the ability to raise.** That's a closed loop with no customer in it."
+      ]
+    },
+    {
+      "h2": "What coverage actually buys, mechanically",
+      "body": [
+        "Strip the mysticism out and the coverage effect has four ordinary explanations. None of them requires Google to store an authority number, which is precisely why the behaviour works whether or not Claim A is true.",
+        "This is the argument for clusters that survives the debate."
+      ],
+      "numbered": [
+        "**Arithmetic.** A decision contains a finite set of queries. Cover 15 of them and you can win at most 15. Cover 45 and you can win 45. Most \"topical authority\" gains are this, and it's the least interesting explanation, which is why nobody sells it.",
+        "**Internal linking density.** A cluster of 30 pages can point 15 relevant internal links at your commercial page, with anchor text that describes what it's for. A page sitting alone gets two links from a nav. Internal links are a real, controllable signal and coverage is what creates the supply of them.",
+        "**Context for Google's own clustering.** Search engines work out what a site and a page are about partly from the company they keep. Thirty pages about one subject make the subject of the site unambiguous. Thirty pages about thirty unrelated things make every one of them a harder classification problem.",
+        "**Links arrive at the wrong pages, and that's fine.** Nobody links to your pricing page. People link to the page that explained something clearly. Coverage gives you pages worth linking to, and internal linking moves some of that value where it pays.",
+        "**Human sequencing.** A buyer who has read three of your pages reads the fourth differently. This one never appears in a ranking-factor list and it closes more deals than the other four combined."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The unglamorous version",
+        "body": "Most of what gets attributed to topical authority is: you published pages for queries you previously had no page for, and now you rank for some of them. That's not a mystery signal. That's coverage, and it's the reason the instruction is right even though the metric is fiction."
+      }
+    },
+    {
+      "h2": "How much of a topic to cover before depth pays",
+      "body": [
+        "The practical question isn't whether coverage works. It's the order of operations — breadth first or depth first — and getting it wrong wastes a lot of money.",
+        "Our rule: **go broad first, at adequate depth, until you've covered roughly 70–80% of the distinct questions inside the decision. Then go deep, and only on the pages closest to money.** That's an operating rule from planning content programmes, not a number Google publishes, and we'd rather label it than dress it up.",
+        "The reasoning is mechanical. A 3,000-word deep dive published into an uncovered cluster has nothing pointing at it, no sibling pages to establish what the site is about, and no internal path a crawler can follow into it. The same page published after the cluster exists inherits 12 internal links on day one. Same words, very different outcome — and the difference isn't the writing.",
+        "The other half of the rule is defining the topic honestly. \"The topic\" is not your industry. It's the decision your buyer is making. Someone hiring an SEO agency needs to know what agencies do, what it costs, how long it takes, how to tell good from bad, what happens if it doesn't work, and whether to hire in-house instead. That's a finite list — [we put a count on it](/journal/how-many-blog-posts-you-actually-need) — and it's a list you can finish. \"SEO\" as a topic is infinite, and trying to cover it is how a content budget disappears without a single commercial page ranking."
+      ],
+      "table": {
+        "caption": "Order of operations for a cluster, and what each stage is for.",
+        "head": ["Stage", "What you publish", "What you're buying"],
+        "rows": [
+          [
+            "0–30% covered",
+            "The money questions: cost, comparison against the obvious alternative, the standing objection",
+            "Something that pays back inside the first two quarters, so the programme survives a budget review."
+          ],
+          [
+            "30–70% covered",
+            "The rest of the decision, at honest working depth — 1,000–1,500 words that finish the question",
+            "Breadth. Entry points. The internal link supply for everything after this."
+          ],
+          [
+            "70–80% covered",
+            "The remaining gaps, plus definitions that feed links into the set",
+            "The point at which the cluster starts behaving like one thing rather than a pile of posts."
+          ],
+          [
+            "Past 80%",
+            "Depth on the three or four pages nearest the money, and refreshes of anything ranking 8–20",
+            "Position. Depth here converts rankings you already half-have; depth before here mostly doesn't."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Cluster planning without a keyword-stuffed hub page",
+      "body": [
+        "The standard cluster advice produces a specific artefact: a 4,000-word \"ultimate guide\" hub that nobody finishes reading, stuffed with the head term, linking out to twenty child pages that link back. It's a table of contents wearing a costume.",
+        "It doesn't work well, and the reason is simple — it isn't a document anyone wanted. A [pillar page](/glossary/pillar-page) has to earn its own query on its own merits. If the only reason it exists is to be the hub, it will rank like a page that exists to be a hub.",
+        "What we build instead: a hub that fully answers one real query, with links out placed where a reader would actually want more detail rather than gathered in a block at the bottom. Every child page links back once, in context, with anchor text describing the hub's query rather than the keyword you wish you ranked for. And the [topic cluster](/glossary/topic-cluster) is defined by the decision, not by a keyword tool's grouping — because the tool groups on wording and your buyer groups on what they're trying to work out."
+      ],
+      "bullets": [
+        "**The hub must be readable end to end.** If you wouldn't send it to a prospect, it isn't a hub, it's a sitemap.",
+        "**Link out where the question arises**, not from a \"related reading\" box. Inline links get clicked; boxes get scrolled past.",
+        "**One link back per child, in context.** Twenty children each linking back three times looks exactly like what it is.",
+        "**Anchor text describes the destination**, not the term you're chasing. Repeating the head term twenty times across a cluster is keyword stuffing with extra steps.",
+        "**No page joins the cluster without its own query.** A page written purely to make the cluster bigger is padding, and padding is what pulls the average down."
+      ]
+    },
+    {
+      "h2": "What to report instead of an authority score",
+      "body": [
+        "If you kill the score, you need something in its place, because \"we're building authority\" is not a status update anyone can act on. These four all come from tools you already pay for or already have free.",
+        "The test for a good metric is that it can be wrong in a way that changes what you do next month. Authority scores fail that test — they only ever go up slowly or sideways, and neither outcome implies an action."
+      ],
+      "table": {
+        "caption": "Replacements for the metrics that can't be checked.",
+        "head": ["Stop reporting", "Report instead", "Where it comes from"],
+        "rows": [
+          [
+            "Topical authority score",
+            "Share of your mapped query set earning any impressions",
+            "Search Console query export, matched against your keyword map."
+          ],
+          [
+            "Domain Authority / Domain Rating",
+            "Net new referring domains per month, and where from",
+            "Any link tool. Judge the sources, not the number."
+          ],
+          [
+            "\"Keywords ranked for\"",
+            "Mapped queries in the top 10, as a percentage of the cluster",
+            "Search Console average position, filtered to the cluster."
+          ],
+          [
+            "Sessions and traffic",
+            "Qualified leads from organic search",
+            "Your CRM, not your analytics. It's the only one that pays salaries."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The reporting trap",
+        "body": "An authority score is popular in agency decks precisely because it moves slowly, upward, and can't be falsified. That makes it an excellent way to fill month four of a retainer where nothing else has happened. If your report leads with a score no client can verify, ask what the mapped query numbers look like instead."
+      }
+    },
+    {
+      "h2": "Where the coverage argument breaks",
+      "body": [
+        "Coverage isn't a universal answer, and pretending otherwise is how agencies justify another twelve articles when twelve articles aren't the problem. Three situations where it fails.",
+        "**No links at all.** Coverage helps you compete within the set of sites Google considers credible for a subject. It doesn't get you into that set from nothing, especially in money-and-health categories where the bar for credibility is higher. If your competitors have hundreds of referring domains and you have four, publishing another thirty pages doesn't close that gap — it just gives you thirty pages ranking on page four instead of five.",
+        "**No demand.** You can cover a subject perfectly and win nothing if nobody searches for it. Coverage of a decision people make is valuable; coverage of a subject you find interesting is a hobby. Check impressions on your existing pages before you extend the map.",
+        "**Coverage as a cover story.** \"Building topical authority\" is a convenient explanation for a plan that's just publishing volume. The honest version has a defined end point: a map, a count, a finish line. If the plan can't tell you how many pages complete the cluster, it isn't a coverage plan, it's a subscription."
+      ],
+      "bullets": [
+        "**Diagnostic 1 — indexed versus published.** If Google has indexed 31 of your 80 pages, coverage is not the constraint and page 81 won't help.",
+        "**Diagnostic 2 — pages stuck past 50 with good content.** That's an authority and links problem. More articles won't fix it, and this is the single most common way a year of retainer disappears.",
+        "**Diagnostic 3 — pages at 8–20.** Cheapest wins on the site. Refresh one before you commission three."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is topical authority a Google ranking factor?",
+      "a": "Not as a named, stored score you can see or optimise. Google exposes nothing like it in Search Console, and any external number is a vendor's model of its own index. What is real is the pattern the phrase describes: sites covering a subject completely tend to rank better across it, for reasons that don't need a secret metric."
+    },
+    {
+      "q": "How do you measure topical authority then?",
+      "a": "You don't measure it — you measure coverage. Build a keyword map of every distinct question inside your buying decision, then report what share of those queries earn impressions and what share sit in the top 10. Both come free from Search Console, and unlike an authority score they tell you what to write next."
+    },
+    {
+      "q": "How many articles do I need to build topical authority in a subject?",
+      "a": "Enough to cover the decision, which is usually 30 to 60 pages for a considered B2B purchase and far fewer for a simple local service. It's a finite list, not a quota. Cover roughly 70–80% of it at working depth before spending on long-form deep dives, or the deep pages have nothing pointing at them."
+    },
+    {
+      "q": "Do content clusters still work in 2026?",
+      "a": "The behaviour works — covering a decision, linking the pages together, giving each one a real query. The ritual around it often doesn't: 4,000-word hub pages that exist only to be hubs, and child pages written to hit a cluster count. Keep the coverage and the internal linking, drop the ceremony."
+    },
+    {
+      "q": "Can a small site outrank a bigger one on topical authority?",
+      "a": "Within a narrow subject, frequently yes — a 40-page site that finishes one decision can beat a 4,000-page site that touches it in passing. Across a broad subject, rarely, because breadth at that scale usually comes with a link profile you can't match by writing. Pick the narrow subject."
+    },
+    {
+      "q": "Should I remove off-topic pages to improve topical relevance?",
+      "a": "Remove pages that earn nothing and serve nobody — that's worth doing regardless of relevance theory. Don't delete pages that bring in customers because they sit outside your main subject. The gain from a tidier topic profile is speculative; the loss from deleting a page that converts is not."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "topical-authority" },
+    { "type": "glossary", "slug": "topic-cluster" },
+    { "type": "glossary", "slug": "pillar-page" },
+    { "type": "journal", "slug": "domain-authority-is-a-vanity-metric" },
+    { "type": "answers", "slug": "what-is-domain-authority" },
+    { "type": "compare", "slug": "da-vs-dr" }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "slug": "keyword-rankings-vs-organic-traffic",
+  "type": "compare",
+  "primaryKeyword": "keyword rankings vs organic traffic",
+  "secondaryKeywords": [
+    "rankings up but traffic down",
+    "what seo metrics matter",
+    "how to measure seo success",
+    "ai overviews traffic loss",
+    "seo kpis for agencies"
+  ],
+  "cluster": "metrics-and-tools",
+  "intent": "informational",
+  "h1": "Rankings vs traffic: which one should you hold an agency to?",
+  "metaTitle": "Rankings vs Traffic: What to Hold an Agency To",
+  "metaDescription": "Keyword rankings and organic traffic can move in opposite directions. The three causes, and the reporting clause to put in your agency contract instead.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Rankings and organic traffic diverge for three reasons: AI Overviews and SERP features pushing organic clicks down the page, ranking for keywords with the wrong intent, and falling demand for the terms you track. Hold an agency to non-brand organic clicks and qualified leads against a frozen baseline — never to average position.",
+  "takeaways": [
+    "A rankings report can improve every month while the business receives nothing. That's not fraud; it's a metric that stopped describing reality around 2024.",
+    "**Position 3 on a SERP with an AI Overview, four ads and a People Also Ask block** can sit lower on the screen than position 8 did five years ago. The rank number didn't change. The screen did.",
+    "Search Console's average position is impressions-weighted, so it gets *worse* when you start ranking for more things. Read it as a diagnostic, never as a score.",
+    "The clause to write into your retainer is one sentence long and it names a business number, a source system and a frozen date.",
+    "Our guarantee is measured against your own trailing-90-day organic lead count, not against a keyword position. No agency controls Google's index."
+  ],
+  "sections": [
+    {
+      "h2": "Rankings, clicks and leads: what each number actually measures",
+      "body": [
+        "These three get used interchangeably in agency reports, and they measure completely different things. One of them is a proxy for a proxy.",
+        "Read the last column first. It's the reason most SEO reporting feels reassuring and changes nothing."
+      ],
+      "table": {
+        "caption": "The three numbers that appear in SEO reports, and what each one hides.",
+        "head": ["Metric", "What it tells you", "What it hides", "Use it for"],
+        "rows": [
+          [
+            "Keyword rankings",
+            "Where a crawler in a chosen location saw your URL on a chosen device",
+            "Whether that position is above the fold, whether anyone clicks it, whether the query means anything commercially",
+            "Diagnosis only"
+          ],
+          [
+            "Organic traffic (sessions)",
+            "How many visits arrived from search",
+            "Brand vs non-brand mix, bot traffic, and whether the visitors wanted to buy anything",
+            "A monthly health check, split by brand"
+          ],
+          [
+            "Non-brand organic clicks",
+            "Real humans who found you without already knowing your name",
+            "Query quality — you can win clicks on terms that never convert",
+            "The best single leading indicator"
+          ],
+          [
+            "Qualified organic leads",
+            "Whether the work produced business",
+            "Nothing much. It lags by weeks and it's noisy at low volume",
+            "The contract"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Where the numbers live",
+        "body": "Clicks, impressions and position come from Search Console. Sessions come from GA4. They will never agree, and that's expected — they count different events at different moments. [GA4 vs Search Console](/compare/ga4-vs-search-console) explains which to believe for which question."
+      }
+    },
+    {
+      "h2": "Three reasons rankings rise while clicks fall",
+      "body": [
+        "This is the specific failure that makes founders distrust SEO. The deck is green, the graph is up and to the right, and the enquiry inbox is unchanged. Almost always it's one of these three, and often two at once."
+      ],
+      "numbered": [
+        "**The SERP got taller.** An [AI Overview](/glossary/ai-overviews), a shopping carousel, a video pack, four ads and a People Also Ask block can all sit above the first organic result. Your position 3 now sits further down the physical page than position 8 used to. Nothing you did caused it and nothing you do fixes it — you can only change which queries you chase.",
+        "**The query answers itself.** Definitional queries — 'what is domain authority', 'GST rate on services' — increasingly resolve on the results page. You still rank; there's nothing left to click. These are also the easiest queries to rank for, which is why weak content plans are full of them.",
+        "**You ranked for terms nobody with a budget searches.** The plan chased winnable keywords instead of buying keywords. Position 1 for 'seo kya hota hai' and position 40 for 'seo agency for saas' is a report that improves while revenue doesn't.",
+        "**Or demand simply fell** — seasonality, a cooling category, a competitor's brand absorbing generic search. Check impressions before you blame anyone. If impressions dropped alongside clicks, the SERP didn't change. The market did."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The rank tracker is lying to you slightly",
+        "body": "Rank trackers query from a chosen city, on a chosen device, logged out. Your buyers are logged in, on mobile, in a different suburb, with a search history. A one-position 'improvement' in a tracker is inside the noise band. Don't let anyone bill it as progress."
+      }
+    },
+    {
+      "h2": "Click-through decay above the fold",
+      "body": [
+        "Every agency has seen a CTR-by-position chart. Treat all of them with suspicion. Published curves are averages across query types, countries and years, and the spread between a navigational query and a commercial one is enormous — the average describes neither.",
+        "What is safe to say is directional and mechanical: clicks concentrate hard at the top, they fall off a cliff below the visible screen, and the organic screen has shrunk every year since rich results arrived. On a mobile SERP in India with an AI Overview and two ads, the first organic link can take two full scrolls to reach.",
+        "So measure your own curve instead of importing someone else's. Export twelve months of Search Console data, exclude brand queries — their CTR is wildly higher and will distort any average — and group by position band. That's the only CTR curve that describes your market."
+      ],
+      "bullets": [
+        "**Watch CTR at a stable position.** If position held at 4 and CTR halved, the SERP changed above you. That's the cleanest evidence you'll get.",
+        "**A page stuck at position 5 with a below-band CTR** is worth a title rewrite before it's worth a link campaign."
+      ]
+    },
+    {
+      "h2": "The mirror trap: position gets worse, the business gets better",
+      "body": [
+        "Here's the inverse failure, and it gets good agencies fired. [Average position](/glossary/average-position) in Search Console is weighted by impressions across every query you appear for. Publish thirty pages, start showing at position 40 for four hundred new long-tail queries, and your site-wide average drops several points while clicks, leads and revenue all rise. The client sees a decline. The work is fine. The chart is the wrong chart.",
+        "So never report a site-wide average position — report position for the tracked keyword set agreed in the plan, with clicks and impressions separately. A dashboard that leads with one site-wide average was chosen because it moves, not because it means anything."
+      ]
+    },
+    {
+      "h2": "Pick keywords by intent, not by how easy they are to rank",
+      "body": [
+        "The root cause of the rankings-up-traffic-flat pattern is keyword selection made under the wrong constraint. When an agency is measured on rankings, the rational move is to chase terms that are easy to rank for. Easy usually means low competition, and low competition usually means nobody with a budget is searching it. So sort the list by what the searcher is trying to do, not by difficulty score."
+      ],
+      "table": {
+        "caption": "Sort the keyword plan by intent before you sort it by difficulty.",
+        "head": ["Intent", "Example", "What it's worth", "Report it as"],
+        "rows": [
+          ["Transactional", "'seo agency pricing india'", "Highest. Short path to a conversation.", "Leads"],
+          ["Commercial comparison", "'ahrefs vs semrush'", "High. Buyer is shortlisting.", "Leads, with a lag"],
+          ["Problem-aware", "'why did my organic traffic drop'", "Medium. Builds the list, converts later.", "Assisted conversions"],
+          ["Definitional", "'what is a canonical tag'", "Low, and shrinking as AI answers absorb it.", "Impressions, and be honest about it"]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "A plan of 80% definitional keywords is a plan to lose",
+        "body": "It will produce a beautiful rankings report and no pipeline. If most of your target list is 'what is' and 'how to', ask your agency which of those terms a person with a purchase order would type."
+      }
+    },
+    {
+      "h2": "The reporting clause to write into your retainer",
+      "body": [
+        "Most SEO contracts specify deliverables — articles, links, hours — and leave the measurement to a monthly dashboard nobody agreed on in advance. That's how you end up arguing about which chart counts in month seven.",
+        "Fix it before signing, in about four lines. You don't need a lawyer for this; you need both parties to write down the same number."
+      ],
+      "numbered": [
+        "**Name the metric.** 'Qualified leads from organic search' — with 'qualified' defined in the contract, in plain words, agreed by both sides.",
+        "**Name the system.** The CRM, not analytics. Analytics measures sessions; your CRM measures people your sales team spoke to.",
+        "**Freeze the baseline and the date.** The trailing 90 days before work starts, recorded as a number in the document. Not 'we'll pull it later'.",
+        "**Demote rankings and traffic in writing.** State that keyword positions and sessions are reported as diagnostics, not as deliverables, and that neither constitutes performance under the agreement.",
+        "**Fix the keyword list.** Changes to the tracked keyword set require written agreement from both sides. This single line prevents the oldest trick in agency reporting — quietly swapping the losers out."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "A clause you can copy",
+        "body": "\"Performance is measured as qualified leads attributed to organic search in [CRM], against a baseline of [N] leads for the 90 days ending [date]. Keyword positions and session counts are reported monthly as diagnostics and do not constitute performance. The tracked keyword set may be amended only by written agreement of both parties.\""
+      }
+    },
+    {
+      "h2": "How a baseline guarantee should actually be measured",
+      "body": [
+        "Any agency can guarantee a ranking if the keyword is obscure enough. Nobody can guarantee a position on a term that matters, because nobody controls Google's index — and Google's own guidance warns you off anyone who says otherwise.",
+        "A guarantee against your own baseline is a different thing, and it's the only honest form. We freeze your trailing-90-day qualified organic lead count on day one. If we haven't beaten it in 90 days, we keep working free until we do. It's also why we take three clients a month — that risk doesn't scale, and any agency offering it to everyone hasn't priced it.",
+        "For it to mean anything, four things have to be nailed down first. Get these wrong and the guarantee is decorative."
+      ],
+      "bullets": [
+        "**Brand and non-brand, separated.** If brand search sits in the baseline, a PR spike or a TV ad can 'win' the guarantee for an agency that did nothing.",
+        "**Seasonality, handled.** For a business with a real seasonal shape — tax filing, wedding season, admissions — compare against the same 90 days last year as well as the trailing 90, and say which one governs.",
+        "**A definition of 'qualified' a salesperson recognises.** Not a form fill. Not a newsletter signup. A person your team would call.",
+        "**The baseline never resets.** If it can be renegotiated mid-term, it isn't a baseline."
+      ],
+      "subs": [
+        {
+          "h3": "What to do if your current agency reports on rankings only",
+          "body": [
+            "Ask for one report: non-brand organic clicks, monthly, for the last twelve months, straight out of Search Console with no styling. Then ask for lead counts from the CRM over the same period, side by side.",
+            "If both lines are flat while the rankings deck is green, you now know what you're paying for. Read [how to set an SEO baseline](/journal/how-to-set-an-seo-baseline) before you have that conversation, so you can propose the fix rather than just the complaint."
+          ]
+        }
+      ]
+    }
+  ],
+  "versus": {
+    "a": "Keyword rankings",
+    "b": "Organic traffic",
+    "verdict": "For a monthly agency review, traffic wins — specifically non-brand organic clicks in Search Console — because rankings can climb every month while the business receives nothing; keep rankings purely as the diagnostic that explains why clicks moved, and hold the contract itself to qualified leads against a frozen baseline."
+  },
+  "faqs": [
+    {
+      "q": "Why are my rankings up but my traffic down?",
+      "a": "Usually one of three things. The SERP grew taller, so an AI Overview, ads and rich results now sit above your improved position. Or the queries you rank for resolve on the results page, leaving nothing to click. Or you gained ground on terms with no commercial demand. Check impressions first — if those fell too, demand dropped rather than your visibility."
+    },
+    {
+      "q": "Should my SEO agency report on rankings at all?",
+      "a": "Yes, as a diagnostic. Position data explains why clicks moved and where a page is stuck. What it should never be is the headline number or the definition of success in the contract, because it can improve indefinitely without producing a single enquiry."
+    },
+    {
+      "q": "Why did my average position get worse when traffic went up?",
+      "a": "Search Console's average position is weighted by impressions across every query you appear for. New pages that start ranking at position 40 for hundreds of long-tail queries pull the site-wide average down even as clicks and leads rise. Report position only for your agreed keyword set, never site-wide."
+    },
+    {
+      "q": "What is a good organic click-through rate?",
+      "a": "There isn't a universal answer, and any published CTR-by-position curve is an average across query types and countries that will not describe your market. Export twelve months of Search Console data, exclude brand queries, and build your own curve by position band. That's the only benchmark worth comparing against."
+    },
+    {
+      "q": "Can an agency guarantee first-page rankings?",
+      "a": "Not honestly. Nobody controls Google's index, and position guarantees are a long-standing warning sign in Google's own guidance. What can be guaranteed is movement against a number that belongs to you — your trailing-90-day qualified organic leads, frozen and written into the contract on day one."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "average-position" },
+    { "type": "glossary", "slug": "ai-overviews" },
+    { "type": "compare", "slug": "ga4-vs-search-console" },
+    { "type": "journal", "slug": "how-to-set-an-seo-baseline" },
+    { "type": "journal", "slug": "what-ai-overviews-did-to-your-organic-traffic" },
+    { "type": "services", "slug": "seo-reporting-services" }
+  ]
+}

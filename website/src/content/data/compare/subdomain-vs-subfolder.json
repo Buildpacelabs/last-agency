@@ -1,0 +1,189 @@
+{
+  "slug": "subdomain-vs-subfolder",
+  "type": "compare",
+  "primaryKeyword": "subdomain vs subfolder for seo",
+  "secondaryKeywords": [
+    "should my blog be on a subdomain",
+    "blog.example.com vs example.com/blog",
+    "subdirectory seo authority",
+    "help centre subdomain seo",
+    "migrating subdomain to subfolder"
+  ],
+  "cluster": "technical-choices",
+  "intent": "informational",
+  "h1": "Subdomain vs subfolder: where the blog should actually live",
+  "metaTitle": "Subdomain vs Subfolder: Where to Put Your Blog",
+  "metaDescription": "Subdomain vs subfolder for SEO: use a subfolder unless one of two things is true. Plus what it costs in rupees to fix the choice a year later.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Put it in a subfolder. Google evaluates quality partly at host level, so a subdomain starts colder and consolidates authority more slowly than `/blog`. Two exceptions justify a subdomain: content you can't editorially control, and a business unit you might sell. Fixing the choice later runs roughly ₹60,000–₹2,50,000 in dev time.",
+  "takeaways": [
+    "Google says it can handle both. That's true and it isn't the point — the point is that everything *else* in your setup, from internal linking to reporting, is easier on one host.",
+    "The two defensible exceptions are **risk quarantine** (user-generated content, whitelabel, anything you don't edit) and **a unit you might sell or spin out**.",
+    "Most subdomain decisions weren't decisions. Zendesk, Intercom and several CMS platforms only offer subdomain mapping, so the stack chose and nobody argued.",
+    "A reverse proxy gets you `/blog` while keeping the vendor's tool — at the cost of caching complexity, canonical rewriting and one more thing that can break.",
+    "Fixing it later means a full site move: a redirect map, template rewrites, and **four to twelve weeks of visible volatility** while Google re-consolidates."
+  ],
+  "sections": [
+    {
+      "h2": "How Google actually treats a subdomain",
+      "body": [
+        "Google's public position hasn't changed in a decade: it can crawl and rank either, and you should use whichever your team can maintain. That's honest advice and it gets quoted as though it settles the argument. It doesn't, because the question isn't whether Google *can* handle a subdomain — it's what happens by default when you use one.",
+        "Two mechanics matter. Google computes some quality and spam signals at host level as well as page level, so a brand-new `blog.example.com` doesn't inherit `example.com`'s track record — it accumulates its own, which on a domain with years of history is a real handicap for the first several months. And a URL-prefix property in Search Console covers one host only. A DNS-verified domain property does aggregate subdomains, so this is solvable, but most teams set up a URL-prefix property years ago and now run two reports that never quite reconcile.",
+        "The old trick this used to enable is dead, incidentally. Google's site reputation abuse policy, introduced in 2024, applies to third-party content on your domain whether it sits on a subdomain or in a subfolder. You can't park low-quality partner content in `/deals` and borrow the domain's authority. The location was never the loophole."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What the subfolder actually buys",
+        "body": "Not a magic authority transfer. What it buys is that your nav, footer and body links all sit on one host by default, your sitemap is one file, your reporting is one property, and nobody has to remember to wire the two together. Most of the SEO advantage of a subfolder is really an [internal linking](/glossary/internal-linking) advantage that teams get for free instead of having to engineer."
+      }
+    },
+    {
+      "h2": "The comparison, honestly",
+      "body": [
+        "Set the SEO argument aside for a moment and compare them on the things you'll actually feel."
+      ],
+      "table": {
+        "caption": "example.com/blog vs blog.example.com, on the criteria that matter day to day.",
+        "head": ["Criterion", "Subfolder (`/blog`)", "Subdomain (`blog.`)"],
+        "rows": [
+          ["Starting authority", "Inherits the host's history immediately", "Builds its own; slower for the first months"],
+          ["Search Console", "One property, one report", "Separate URL-prefix property, or a DNS domain property to aggregate"],
+          ["Internal linking", "Natural — same nav, same footer, same templates", "Works, but somebody has to build it deliberately"],
+          ["Hosting complexity", "Higher — one host must route two apps", "Lower — point a CNAME and you're done"],
+          ["Vendor tools (helpdesk, docs)", "Usually needs a reverse proxy", "Usually the only option offered"],
+          ["Risk isolation", "None — bad content sits on your main host", "Real — separate host, separate cookie scope"],
+          ["Selling or spinning it out later", "Painful", "Straightforward"],
+          ["Cost to change your mind", "Low", "**₹60,000–₹2,50,000 plus weeks of volatility**"]
+        ]
+      }
+    },
+    {
+      "h2": "The two cases where a subdomain is still correct",
+      "body": [
+        "The default is a subfolder and it isn't close. But two situations genuinely justify the extra host, and in both of them the reason has nothing to do with rankings."
+      ],
+      "subs": [
+        {
+          "h3": "1. You can't editorially control the content",
+          "body": [
+            "User-generated forums, a community, a jobs board fed by an API, review pages, a whitelabel app your customers configure themselves, a legacy microsite from an acquisition. Anything where thin, spammy or plain wrong pages can appear without anyone at your company approving them. On your main host, its quality problems become your quality problems. On a subdomain you get a firebreak — imperfect, because Google knows the hosts are related, but real.",
+            "The security argument is stronger than the SEO one. A stored XSS in a UGC section on your main host can reach cookies scoped to that host; on a separate subdomain with correctly scoped cookies, it can't. If your security team has an opinion here, defer to it."
+          ]
+        },
+        {
+          "h3": "2. It's a separate business, not a separate section",
+          "body": [
+            "A product line you might sell. A joint venture. A brand with its own name, its own audience and its own marketing team who will not accept a shared publishing calendar. A regulated arm that needs its own legal entity and its own footer.",
+            "The test is simple: could this thing plausibly be a different company in three years? If yes, the subdomain saves you a migration later. If no — and for a blog, a help centre, a careers page or a pricing calculator the answer is always no — the subdomain is a cost with no offsetting benefit."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Not a valid reason: \"the dev team said it's easier\"",
+        "body": "It is easier. A CNAME takes five minutes and a path-based route takes an afternoon of proxy configuration. That afternoon is genuinely cheaper than the migration you'll pay for in two years. Have the argument now, while it costs one meeting."
+      }
+    },
+    {
+      "h2": "When your stack picks for you",
+      "body": [
+        "Most subdomains in the wild aren't strategy. They're the only option the vendor offered, chosen by whoever set the tool up on a Tuesday.",
+        "The common forced choices, roughly in the order we run into them:"
+      ],
+      "bullets": [
+        "**Helpdesk and knowledge base tools** — Zendesk, Intercom and most of the category support custom-domain mapping only at a subdomain like `support.yoursite.com`. If you want `/help`, you're proxying.",
+        "**Hosted CMS on a separate stack from your app** — a WordPress blog beside a Next.js product site, or a marketing site beside a Rails app. Same host means one of them has to route the other.",
+        "**Ecommerce platforms** — a hosted storefront generally won't proxy an arbitrary external app at a path on your storefront domain. Capabilities vary by plan and change often, so check current documentation, not a forum post from 2021. Related: [WordPress vs Shopify for SEO](/compare/wordpress-vs-shopify-seo).",
+        "**Docs and developer portals** — most map to a subdomain by default; several support subdirectory setups on higher tiers.",
+        "**Status pages** — leave them on a subdomain. Genuinely. The entire point is that they stay up when your main host doesn't."
+      ],
+      "body2": []
+    },
+    {
+      "h2": "Reverse proxy: the middle path, and its bill",
+      "body": [
+        "If the vendor only offers a subdomain and you want a subfolder, you put a proxy in front. Requests to `example.com/blog/*` hit your edge, which fetches from the vendor's origin and returns the response under your host. Google sees one site. You keep the tool.",
+        "It's a solved pattern — nginx `proxy_pass`, a Cloudflare Worker, a Vercel rewrite, a CloudFront behaviour. It's also the configuration most often quietly broken in an audit, because the failure modes are invisible until you read the HTML on the wire. Get these five right, or the proxy is worse than the subdomain you were avoiding."
+      ],
+      "numbered": [
+        "**Rewrite the canonical tags.** The vendor's pages will emit canonicals pointing at their origin. If you don't rewrite them, you've built a proxy that tells Google to index the subdomain anyway. This is the most common failure and it wastes the entire exercise.",
+        "**Rewrite absolute URLs in the HTML.** Internal links, sitemap references, `og:url`, RSS. Anything hard-coded to the origin host.",
+        "**Serve one sitemap.** The proxied section's URLs need to appear under your host, in your sitemap, or Google discovers them the slow way.",
+        "**Set caching deliberately at the edge.** You're now the cache for someone else's app. Get the TTLs wrong and you'll serve stale help articles for a week.",
+        "**Handle the origin going down.** The proxy makes the vendor's uptime your uptime, on your main domain. Decide in advance what `/blog` returns when the origin 502s — and make sure it isn't a redirect. A cached bad [301](/compare/301-vs-302-redirect) during an outage is a two-problem day."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Check the terms before you build it",
+        "body": "Some SaaS vendors restrict proxying their hosted product under your domain, or gate subdirectory hosting behind a higher plan. Read the agreement before you spend a fortnight on edge configuration. Finding out afterwards is an expensive way to learn."
+      }
+    },
+    {
+      "h2": "What it costs to fix later, in rupees",
+      "body": [
+        "Moving a subdomain into a subfolder is a site move and Google treats it as one. Done properly it works. It just isn't free and it isn't fast.",
+        "Here's our estimate with the arithmetic shown, because a number without its workings is useless. Indian dev and technical SEO time typically bills between ₹1,200 and ₹4,000 an hour depending on seniority and city. Multiply by the hours below and adjust for your own rate."
+      ],
+      "table": {
+        "caption": "Our estimate for moving a 200-page blog from a subdomain to a subfolder. Larger sites and multilingual sites scale up from here.",
+        "head": ["Work", "Typical hours", "Notes"],
+        "rows": [
+          ["Crawl and build the redirect map", "4–10", "Every indexed URL, every URL with backlinks or clicks in the last 12 months"],
+          ["Routing or proxy configuration", "6–20", "The wide range is stack-dependent; a proxy is the expensive end"],
+          ["Template, nav and internal link rewrites", "6–15", "Every hard-coded absolute URL, including in old post bodies"],
+          ["Canonicals, sitemaps, hreflang, robots.txt", "4–8", "Where migrations most often go wrong silently"],
+          ["Search Console and analytics reconfiguration", "2–4", "New property, annotations, goal and channel checks"],
+          ["QA, crawl verification, chain flattening", "8–16", "Every source URL must resolve in exactly one hop"],
+          ["Post-launch monitoring, 8 weeks", "8–20", "Weekly index coverage and click comparison against baseline"],
+          ["**Total**", "**38–93 hours**", "**≈ ₹60,000–₹2,50,000 at Indian rates**"]
+        ]
+      },
+      "bullets": [
+        "**Add four to twelve weeks of volatility.** Google has to re-crawl every URL and re-consolidate signals onto the new host. A clean move dips and recovers; a move with broken redirects dips and stays down. [What happens when a replatform kills your traffic](/journal/the-replatform-that-killed-your-traffic) is the same failure with a different trigger.",
+        "**Keep the redirects forever.** Old backlinks keep sending traffic for years. There's no cost to leaving the rules in place and a real cost to removing them.",
+        "**Don't do it during your peak season.** Obvious, routinely ignored, and the most expensive scheduling mistake in [site migration work](/services/site-migration-seo)."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "When the migration isn't worth it",
+        "body": "If the subdomain has years of history, real backlinks and a stable traffic line, and the only argument for moving is theoretical authority consolidation, leave it alone. The migration cost and the volatility are certain; the upside isn't. Move it when you're already rebuilding the site for another reason, and the marginal cost is a fraction of the numbers above."
+      }
+    }
+  ],
+  "versus": {
+    "a": "Subdomain (blog.example.com)",
+    "b": "Subfolder (example.com/blog)",
+    "verdict": "For a blog, help centre, careers page or resource library on a company site, use the subfolder — reserve the subdomain for content you can't editorially control, such as user-generated pages or a whitelabel app, or for a business unit you could plausibly sell in three years."
+  },
+  "faqs": [
+    {
+      "q": "Is a subfolder better than a subdomain for SEO?",
+      "a": "For a blog or help centre on a company site, yes. Google can rank either, but a subdomain starts without the parent host's track record and needs its own internal linking, its own Search Console setup and its own reporting. The subfolder gives you all of that for free, which is most of the practical advantage."
+    },
+    {
+      "q": "Should my blog be on a subdomain or a subfolder?",
+      "a": "A subfolder, unless your platform physically prevents it. A blog is not a separate business — it exists to support the main site, its links should flow into your product and service pages, and its performance should appear in the same report. There is no version of a company blog that benefits from living on its own host."
+    },
+    {
+      "q": "Does Google treat subdomains as separate websites?",
+      "a": "Partly. Google computes some quality and spam signals at host level, and a URL-prefix Search Console property covers only one host. A DNS-verified domain property does aggregate subdomains. Google's own line is that it handles both, which is true — the practical differences show up in your setup, not in its crawler."
+    },
+    {
+      "q": "What does it cost to move a blog from a subdomain to a subfolder?",
+      "a": "For a roughly 200-page blog, our estimate is 38 to 93 hours of combined dev and technical SEO time, which at typical Indian rates of ₹1,200–₹4,000 an hour lands between about ₹60,000 and ₹2,50,000. Budget four to twelve weeks of ranking volatility alongside it, and don't schedule it near your peak season."
+    },
+    {
+      "q": "Can I use a reverse proxy to get a subfolder with a hosted tool?",
+      "a": "Yes, and it's the standard answer when a helpdesk or docs vendor only offers subdomain mapping. The catch is that you must rewrite the vendor's canonical tags and absolute URLs, serve the pages in your own sitemap, manage edge caching, and accept that the vendor's uptime is now your main domain's uptime. Check their terms first."
+    }
+  ],
+  "related": [
+    { "type": "services", "slug": "site-migration-seo" },
+    { "type": "compare", "slug": "301-vs-302-redirect" },
+    { "type": "glossary", "slug": "internal-linking" },
+    { "type": "journal", "slug": "the-replatform-that-killed-your-traffic" },
+    { "type": "compare", "slug": "nextjs-vs-wordpress-seo" },
+    { "type": "compare", "slug": "wordpress-vs-shopify-seo" }
+  ]
+}

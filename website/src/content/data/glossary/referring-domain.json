@@ -1,0 +1,120 @@
+{
+  "slug": "referring-domain",
+  "type": "glossary",
+  "primaryKeyword": "referring domain",
+  "secondaryKeywords": [
+    "referring domains vs backlinks",
+    "unique linking domains",
+    "what counts as a referring domain",
+    "referring domain growth",
+    "linking root domains"
+  ],
+  "cluster": "off-page",
+  "intent": "informational",
+  "h1": "Referring domain",
+  "metaTitle": "Referring Domain: What It Is and Why It Counts",
+  "metaDescription": "A referring domain is one unique website linking to you, however many links it sends. Here's the one-minute ratio check that exposes an inflated report.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Referring domain",
+  "definition": "A referring domain is a single unique website that links to yours, counted once no matter how many individual backlinks it sends.",
+  "answer": "A referring domain is one unique website that links to you, no matter how many individual links it sends. Twenty links from one blog count as one referring domain. It's the honest version of a link count, which is exactly why most link reports lead with backlinks instead.",
+  "takeaways": [
+    "**Backlinks** count links. **Referring domains** count websites. The first number can be inflated by a single page template; the second can't.",
+    "Divide backlinks by referring domains. Low single digits is ordinary. A ratio in the dozens means a footer, a sidebar or a blogroll is doing your counting for you.",
+    "New referring domains per month — with the list attached — is the only link metric worth putting in a report.",
+    "Compare your domain count against the three sites that actually beat you on your money keywords, not against the biggest brand in the category."
+  ],
+  "sections": [
+    {
+      "h2": "One number counts links, the other counts websites",
+      "body": [
+        "Every link tool gives you two headline figures. **Backlinks** is the count of individual links pointing at your site. **Referring domains** is the count of distinct websites those links come from. The second number is smaller, slower to move, and much harder to fake.",
+        "The gap between them is where link reports go to hide. A single WordPress theme that drops your link into the footer of a 4,000-page site produces 4,000 backlinks and one referring domain. Search engines work that out immediately — sitewide template links have been consolidated for years, and the ten-thousandth copy of the same link is worth nothing extra. Your monthly report frequently doesn't make the same adjustment."
+      ],
+      "table": {
+        "caption": "Three illustrative profiles that look very different once you count websites instead of links.",
+        "head": ["Backlinks", "Referring domains", "Ratio", "What it usually is"],
+        "rows": [
+          ["4,120", "12", "343:1", "A sitewide footer or blogroll link. One relationship, repeated on every page."],
+          ["380", "210", "1.8:1", "Ordinary editorial linking. Most sites link once, a few link twice."],
+          ["1,900", "60", "32:1", "A handful of large sites linking repeatedly — sometimes genuine syndication, sometimes a paid network."]
+        ]
+      }
+    },
+    {
+      "h2": "The ratio check, in about a minute",
+      "body": [
+        "You don't need a paid tool to do this, and you don't need to be technical. You need two numbers and a calculator."
+      ],
+      "numbered": [
+        "Open your link tool of choice, or the free **Links** report in Google Search Console, and note two figures: total backlinks and total referring domains.",
+        "Divide backlinks by referring domains. That's your ratio.",
+        "Under roughly 5:1, stop worrying. Sites naturally accumulate a few links from the same domain — an author page, a category archive, a second article that references the first.",
+        "Above roughly 10:1, sort your backlinks by linking domain and look at the largest one. If a single site accounts for more than a quarter of your total links, you've found your explanation.",
+        "Check where those links sit on the page. Footer, sidebar and blogroll placements are template links. They're not fraud, they're just one vote wearing a thousand costumes."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The free version",
+        "body": "Search Console's Links report shows your top linking sites and how many links each one sends. It's less complete than a paid crawler and it lags, but it is Google's own view of your profile — and it's more than enough to run the ratio."
+      }
+    },
+    {
+      "h2": "Where the inflated ratios come from",
+      "body": [
+        "Not every high ratio is a scam. Most of them are ordinary web plumbing that a report chose not to explain."
+      ],
+      "bullets": [
+        "**Footer credits.** \"Website by X\" on every page of a client's site. Entirely legitimate, and worth exactly one referring domain.",
+        "**Blogroll and partner sidebars.** Same mechanic, usually a worse neighbourhood.",
+        "**Syndicated content.** One article republished across a group's network of titles. Real coverage, one publisher.",
+        "**Widgets and badges.** Award badges, \"as featured in\" strips, embedded calculators. Google has been warning about keyword-stuffed widget links for over a decade.",
+        "**Paid networks.** The version sold by the thousand, usually on the same few hosting ranges. See [paid links vs earned links](/compare/paid-links-vs-earned-links) for what happens when the network gets deindexed and your profile deflates overnight."
+      ]
+    },
+    {
+      "h2": "Growth, and the only competitor comparison worth making",
+      "body": [
+        "A referring domain total tells you nothing on its own. The rate of change tells you almost everything. Pull the number on the first of every month and keep the list of new domains beside it.",
+        "What counts as a good pace depends entirely on your category and your budget — a fintech blog publishing data nobody else has will outpace a plumbing company by an order of magnitude, and neither is doing anything wrong. What's diagnosable is the shape. Steady single- or double-digit gains, month after month, look like work. A flat line for two months followed by 400 domains in one week looks like a purchase.",
+        "Then the comparison. Don't benchmark against the largest brand in your market — benchmark against the three or four sites that actually outrank you for the keywords you care about. Pull each one's referring domain count, then look at the overlap: domains linking to all three of them and none to you. That list is the honest brief for a [link building programme](/services/link-building-services), and it's a great deal more useful than a target number."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The report line that means nothing",
+        "body": "\"Backlinks: +2,400 this month\" is a sentence with no information in it. Ask for new referring domains, with the list. If the list is forty sites you've never heard of, all created in the same quarter, you've bought a cleanup job — see [toxic backlinks](/glossary/toxic-backlinks)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are referring domains more important than backlinks?",
+      "a": "For judging a link profile, yes. Referring domains count unique websites, so one site can only vote once no matter how many pages it links from. Total backlinks can be inflated a thousandfold by a single footer link, which makes it the number weak reports lead with."
+    },
+    {
+      "q": "What's a good backlink-to-referring-domain ratio?",
+      "a": "Low single digits is unremarkable — most sites that link to you will do it once or twice. Above about 10:1 it's worth opening the list and finding the domain responsible. There's no penalty for a high ratio in itself; it just means your headline backlink number is describing far fewer relationships than it appears to."
+    },
+    {
+      "q": "How many referring domains do I need to rank?",
+      "a": "There's no threshold, and anyone quoting one is guessing. The useful version of the question is comparative: how many do the sites currently ranking for your specific keywords have, and which domains link to them but not to you. That gap is answerable in an afternoon."
+    },
+    {
+      "q": "Do extra links from the same website help at all?",
+      "a": "A little, and with sharply diminishing returns. A second editorial link from a publication that already covered you carries some value — it's a fresh endorsement in a new context. The two-thousandth copy of a footer link carries none, which is the whole reason the two metrics exist separately."
+    },
+    {
+      "q": "Does Google Search Console show referring domains?",
+      "a": "Yes, in the Links report under \"Top linking sites\". It lists domains alongside how many links each sends and how many of your pages they point at, which is everything you need for the ratio check. It's incomplete compared with a commercial index, but it's free and it's Google's own data."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "backlink-profile" },
+    { "type": "glossary", "slug": "toxic-backlinks" },
+    { "type": "compare", "slug": "paid-links-vs-earned-links" },
+    { "type": "services", "slug": "link-building-services" },
+    { "type": "journal", "slug": "how-much-do-backlinks-actually-matter" },
+    { "type": "cost", "slug": "link-building-cost" }
+  ]
+}

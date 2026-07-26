@@ -1,0 +1,212 @@
+{
+  "slug": "why-free-seo-audits-are-sales-pitches",
+  "type": "journal",
+  "primaryKeyword": "are free seo audits worth it",
+  "secondaryKeywords": [
+    "free seo audit tool accuracy",
+    "seo audit sales tactic",
+    "automated seo audit report",
+    "should i trust a free audit",
+    "seo audit cost"
+  ],
+  "cluster": "opinion",
+  "intent": "informational",
+  "h1": "The free SEO audit in your inbox took nine seconds to make",
+  "metaTitle": "Are Free SEO Audits Worth Anything?",
+  "metaDescription": "Free SEO audits are worth about what you paid, because most are automated crawls with alarming colours. Here's how to spot one built as a sales pitch.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Rarely. Most free audits are an automated crawl poured into a template: missing meta descriptions, missing alt text, a lab speed score, and a red count of \"critical\" errors. None of it touches the reason your commercial pages don't rank. A real audit takes 25–60 hours of a competent human's attention, which is precisely why it isn't free.",
+  "takeaways": [
+    "The findings are identical on every site because the crawler is identical. Missing meta descriptions, thin alt text, H1 counts and a lab speed score are the four horsemen of the generated audit.",
+    "**Severity colouring is a sales instrument.** \"247 critical errors\" is usually one template problem multiplied across 247 URLs, and fixing it is a single change.",
+    "An automated crawl has no access to your Search Console, your CRM or your margins — so it cannot say which page loses you money, which is the only question worth auditing.",
+    "Priced honestly at Indian agency rates of ₹1,500–₹8,000 an hour, a real audit lands somewhere between **₹40,000 and ₹2,50,000**. Free ones cost the sender nothing, which is the entire point."
+  ],
+  "sections": [
+    {
+      "h2": "What actually happened when you entered your URL",
+      "body": [
+        "A crawler fetched some number of your pages — often capped at 100 or 500 on the free tier. It compared each one against a fixed rule list written years ago. It scored a single URL, usually your homepage, against a lab-simulated performance test. Then a template merged the counts into a PDF with your logo pulled off your own site and somebody's headshot on the last page.",
+        "The machine time is seconds. The human time was spent once, building the template, and is now amortised across every prospect in the country. That's not a criticism of automation — a crawler is a genuinely useful instrument, and we run one on every account. It's a criticism of what gets sent afterwards, which is a document engineered to make a founder anxious enough to take a call.",
+        "The tell is universality. Run three competitors through the same tool and you'll get three near-identical reports, because the rule list doesn't know what any of the businesses sell. An audit that would read the same for a dental clinic in Kochi and a B2B SaaS firm in Bangalore has not audited anything."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The five-second version of this article",
+        "body": "Open the audit. Count how many findings mention a specific page of yours by URL and explain what it costs you. If the answer is zero, close it. Everything else in the document is a count of rule violations, and rule violations are not a diagnosis."
+      }
+    },
+    {
+      "h2": "The seven findings that appear in every generated audit",
+      "body": [
+        "These are the standard contents. Not one is invented — the crawler genuinely found them. The problem is that the ones that are easiest to detect automatically are the ones that matter least, and the report is sorted by detectability rather than by consequence."
+      ],
+      "table": {
+        "caption": "What the generated audit flags, and what it's actually worth.",
+        "head": ["The finding", "What the tool measured", "What it's actually worth"],
+        "rows": [
+          [
+            "Missing or duplicate meta descriptions",
+            "The description tag is absent or repeated across URLs",
+            "Almost nothing directly. Google has said the meta description isn't a ranking factor and rewrites it whenever it thinks a passage from the page suits the query better. Worth writing on your top 20 commercial pages for click-through rate. Worth nothing on page 340 of a blog archive."
+          ],
+          [
+            "Images missing alt text",
+            "img tags with no alt attribute",
+            "Genuinely matters for accessibility and image search. Almost never the reason a page doesn't rank. Alt text on your decorative background pattern is worth precisely zero."
+          ],
+          [
+            "Performance score of 43/100",
+            "A lab test of one URL on a throttled mobile connection",
+            "A simulation, not your users. Google's Core Web Vitals assessment uses field data from real Chrome visits. Your lab score can be red while your field data passes, and the reverse. Check the field numbers before you panic."
+          ],
+          [
+            "Multiple H1 tags / missing H1",
+            "Count of h1 elements per page",
+            "Google has said repeatedly that multiple H1s are fine and it works out page structure regardless. A missing H1 on a template is worth fixing for clarity; it is not a ranking emergency."
+          ],
+          [
+            "Low word count / thin content",
+            "Pages under an arbitrary threshold, often 300 words",
+            "Word count isn't a ranking factor. A 180-word page that answers the query completely outranks a padded 1,500-word one. This flag fires on your contact page, your login page and every category page you have."
+          ],
+          [
+            "Broken links: 247 found",
+            "URLs returning 4xx, including ones the crawler generated itself",
+            "Worth checking, frequently inflated. Faceted navigation, calendar widgets and tracking parameters produce thousands of phantom URLs. The real question is whether any broken link sits on a page that earns money."
+          ],
+          [
+            "Your domain authority is only 24",
+            "A third-party vendor's score from their own link index",
+            "A vendor's estimate, not a Google metric. It moves when the vendor recalibrates and when competitors gain links. [Why the score is a vanity metric](/journal/domain-authority-is-a-vanity-metric) covers the mechanics."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Severity colouring is a sales instrument, not a diagnosis",
+      "body": [
+        "The most effective part of a generated audit isn't the findings. It's the arithmetic of alarm around them.",
+        "A rule violation on a template applies to every page built from that template. Miss an alt attribute in your product card component and a 900-page catalogue produces 900 errors from one component. The report renders that as \"900 critical issues\" in red, with a downward-trending score beside it. The fix is one line of code and about forty minutes of somebody's Tuesday.",
+        "Meanwhile the thing that's genuinely capping the account — say, four category pages competing for the same query so none of them ranks, or a checkout that discourages the traffic you already have — produces zero errors, because no crawler has an opinion about your commercial strategy.",
+        "So the document inverts the priority order. It shouts about the cheap and silent about the expensive, and it does that consistently enough that you should assume it's designed rather than accidental."
+      ],
+      "bullets": [
+        "**Divide by the template.** Ask how many distinct root causes produced the error count. It's usually between three and eight, regardless of whether the headline number is 40 or 4,000.",
+        "**Score labels are arbitrary.** \"Your SEO health is 38/100\" has no external referent. Different tools score the same site 30 points apart because they weight their own rule lists differently.",
+        "**Urgency language is a tell.** *Critical*, *urgent*, *losing traffic every day*, *competitors are ahead*. A real audit says what a fix is worth and roughly when. A sales asset says you're bleeding.",
+        "**Check for a deadline.** \"This audit is valid for 7 days\" is not a property of technical SEO."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The most expensive free audit",
+        "body": "The version that ends with an urgent recommendation to buy links, \"boost authority\" or purchase a package of guest posts. That's the tactic most likely to earn a manual action on your domain, and the penalty lands on your business, not on the agency that sold it. Cheap outbound audits and paid-link programmes very often come from the same operation."
+      }
+    },
+    {
+      "h2": "What a crawler structurally cannot see",
+      "body": [
+        "This is the part that decides whether a document is an audit or a screenshot. Everything below requires access, judgement, or both — and none of it can be produced by a stranger's tool pointed at your homepage."
+      ],
+      "numbered": [
+        "**Your Search Console data.** Which queries you already get impressions for and don't get clicks for is the fastest route to revenue on almost any established site. It's also private. Any audit produced without you granting access has not looked at a single query you actually rank for.",
+        "**Which pages make money.** A crawler treats your pricing page and your 2019 blog post about office diwali decorations as equal citizens. You don't. Prioritising by revenue requires knowing your margins and your sales cycle.",
+        "**Search intent.** Whether your page deserves to rank for its target query is a judgement about what the current top ten are doing and why. No rule list encodes that, and it changes as the SERP changes.",
+        "**Competitive position.** The useful question isn't \"is this page good\" but \"is this page better than the four pages currently beating it, on the dimensions this query rewards\". That's manual work, per query, and it's most of what we actually do.",
+        "**Cannibalisation and internal-link structure.** Four pages targeting one query, orphan pages nothing links to, a nav that pushes all authority to your careers page. Some crawlers hint at this; interpreting it requires knowing what the business intends to sell."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The uncomfortable ratio",
+        "body": "On a typical established site, the technical findings a free crawler produces account for a small share of what's limiting organic revenue. The rest sits in intent, competitive gap, internal linking and page-level commercial fit — all of which need a human, your analytics, and several hours. That ratio is why the free version can be generated and the real one can't."
+      }
+    },
+    {
+      "h2": "What a real audit costs, in hours and rupees",
+      "body": [
+        "Price an audit the way you'd price any professional work: hours multiplied by a rate. Agency and consultant rates in India run roughly ₹1,500–₹8,000 an hour depending on seniority and city, and a proper audit of an established site takes 25–60 hours. That arithmetic puts a real audit somewhere between ₹40,000 and ₹2,50,000, and the spread is mostly about site size and how many systems have to be untangled.",
+        "Here's roughly where those hours go, because it's the fastest way to see what the free version skipped."
+      ],
+      "table": {
+        "caption": "Where the hours go in a paid audit of a mid-size site.",
+        "head": ["Work", "Typical hours", "What it produces"],
+        "rows": [
+          ["Crawl, log-file and index coverage analysis", "4–8", "What Google can reach, what it chose not to index, and where crawl budget is going"],
+          ["Search Console and analytics forensics", "5–10", "Queries with impressions and no clicks, pages that decayed, the drop nobody investigated"],
+          ["Keyword and intent mapping against real pages", "6–12", "Which page should own which query, and the ones nobody owns"],
+          ["Competitive gap on your commercial terms", "4–8", "Why the current top five beat you, query by query, in specifics"],
+          ["Content and cannibalisation review", "4–10", "Pages to merge, redirect, rewrite or delete — with the list, not the principle"],
+          ["Backlink profile and risk check", "2–5", "Whether anything in your history is a liability, and where authority actually sits"],
+          ["Prioritisation, effort estimates and write-up", "4–8", "A sequenced plan with owners, not a list of violations"]
+        ]
+      },
+      "bullets": [
+        "**Ask for the deliverable format before you pay.** A ranked list of fixes with effort estimates and expected consequences beats a 60-page PDF every time.",
+        "**Ask who does it.** An audit is the most seniority-dependent thing an agency sells. A junior with a crawler produces the free version at a paid price.",
+        "**Ask whether implementation is included.** Frequently it isn't, and a beautiful audit nobody implements is the most common way this money gets wasted. [What an SEO audit should actually find](/journal/what-an-seo-audit-should-actually-find) goes through the output in detail."
+      ]
+    },
+    {
+      "h2": "Five questions that reveal an audit was generated",
+      "body": [
+        "Send these to whoever mailed you the PDF. They take a minute to write and the replies sort the field completely."
+      ],
+      "numbered": [
+        "**\"Which single finding here would you fix first, and what do you think it's worth in leads?\"** A generated audit has no answer, because the tool ranked by severity label, not by consequence.",
+        "**\"Did you look at my Search Console?\"** They didn't — you never granted access. Watch how the answer is phrased. \"We used third-party data\" means estimated traffic, which is a model, not your numbers.",
+        "**\"Is the speed score lab or field data?\"** Anyone who knows the difference will answer in four words. Anyone who doesn't shouldn't be advising you on Core Web Vitals.",
+        "**\"How many separate root causes produced these 247 errors?\"** A human who read the crawl knows. A template doesn't.",
+        "**\"Which of my pages should rank for [your most commercial query], and what's beating it today?\"** This is the whole job in one question, and it cannot be answered by any tool without a person looking at the SERP."
+      ]
+    },
+    {
+      "h2": "How we use a free check, and what we won't send you",
+      "body": [
+        "We're not going to pretend we do no work before a contract. We do — nobody sensible quotes a retainer blind, and a pitch with no diagnosis in it is just a personality test.",
+        "What we do is a bounded pre-call check: crawl the site, look at what's indexed, check the field-data Core Web Vitals, look at who's winning your three most commercial queries and why, and — if you're willing to share read-only Search Console access — look at where you're already getting impressions and losing clicks. That's typically an hour or two. We tell you the single biggest thing capping the account on the call, whether or not you hire us, because a finding we can't explain in one sentence isn't a finding we understand yet.",
+        "What we won't send is a 40-page PDF with your logo on it and a red gauge on page two. It costs us nothing to produce and it's worth what it costs. It would also imply we'd done work we hadn't.",
+        "A real audit is billed work. On our side it lands in the first weeks of the retainer — SEO runs from ₹75,000/mo, ₹40,000 for smaller sites, ex-GST, with the first month weighted heavily toward audit and baseline setting. That baseline is the point: we freeze your trailing-90-day count of qualified leads from organic search on day one, and if we haven't beaten it in 90 days we keep working free until we do. It's why we take three clients a month. See [what our audit work covers](/services/seo-audit-services), or [what SEO costs in India](/cost/seo-cost-in-india) if you're still calibrating budgets."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "When a free audit is genuinely worth running",
+        "body": "Run one yourself, on your own site, with your own tool. Free crawlers are useful diagnostics in the hands of the person who owns the business context — you know which of the 900 flagged pages actually matters. The problem was never the crawler. It was the stranger who attached a sales sequence to its output."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are free SEO audits worth anything?",
+      "a": "As a first look, a little. As a diagnosis, no. They report what a crawler can detect automatically — missing meta descriptions, alt text, a lab speed score — and those are the findings that matter least. Nothing in a free audit can tell you which page is losing you money, because the tool has no access to your Search Console or your CRM."
+    },
+    {
+      "q": "How much does a real SEO audit cost in India?",
+      "a": "Roughly ₹40,000 to ₹2,50,000, and the range is honest arithmetic rather than vagueness: 25–60 hours of work at Indian agency rates of ₹1,500–₹8,000 an hour. Site size, platform and how much history has to be untangled decide where you land in that band."
+    },
+    {
+      "q": "My audit says I have 247 critical errors. Should I be worried?",
+      "a": "Ask how many separate root causes produced them. A single missing attribute in one template generates one error per page, so 247 errors is often three or four fixes. The count is a multiplication, and it's presented in red because red books calls."
+    },
+    {
+      "q": "Do meta descriptions and alt text affect rankings?",
+      "a": "Meta descriptions aren't a ranking factor — Google has said so, and it rewrites them when it thinks another passage suits the query better. They do affect click-through, so they're worth writing on your commercial pages. Alt text matters for accessibility and image search, rarely for text rankings."
+    },
+    {
+      "q": "Why is my PageSpeed score red when the site feels fast?",
+      "a": "Because the score is a lab simulation of one URL on a throttled mobile connection, not a measurement of your users. Google's Core Web Vitals assessment uses field data from real Chrome sessions. Check the field numbers first; a red lab score with passing field data is not an emergency."
+    },
+    {
+      "q": "Should I let an agency run a free audit before hiring them?",
+      "a": "Yes, but judge it on specificity. A useful pre-sales check names your pages, names the queries you're losing, and says what to fix first and why. A useless one has your logo pasted on a template. Ask which single finding they'd fix first and what it's worth — that question is unanswerable from a generated report."
+    }
+  ],
+  "related": [
+    { "type": "journal", "slug": "what-an-seo-audit-should-actually-find" },
+    { "type": "services", "slug": "seo-audit-services" },
+    { "type": "answers", "slug": "what-is-an-seo-audit" },
+    { "type": "answers", "slug": "why-do-you-need-an-seo-audit" },
+    { "type": "glossary", "slug": "core-web-vitals" },
+    { "type": "journal", "slug": "domain-authority-is-a-vanity-metric" }
+  ]
+}

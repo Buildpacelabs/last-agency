@@ -1,0 +1,140 @@
+{
+  "slug": "negative-keywords",
+  "type": "glossary",
+  "primaryKeyword": "negative keywords",
+  "secondaryKeywords": [
+    "negative keyword list",
+    "how to add negative keywords",
+    "negative keyword match types",
+    "search terms report",
+    "wasted ad spend"
+  ],
+  "cluster": "paid",
+  "intent": "informational",
+  "h1": "Negative keywords",
+  "metaTitle": "Negative Keywords: What They Are, Plus a Starter List",
+  "metaDescription": "Negative keywords stop ads showing for queries you don't want. A ready starter list for Indian advertisers and the weekly routine that grows it.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Negative keywords",
+  "definition": "A negative keyword is an instruction to an ad platform not to show your ad for searches containing a specified word or phrase.",
+  "answer": "Negative keywords stop your ads showing for searches you don't want to pay for. In India that means blocking free, jobs, salary, vacancy, course, pdf and \"near me\" on national campaigns before your first rupee goes out. Then you mine the search terms report weekly, because Google keeps finding new ways to spend your budget.",
+  "takeaways": [
+    "Negative keywords **exclude**, they don't include. They cannot make a good query cheaper — they only stop a bad one costing you.",
+    "The one quirk that catches everyone: negatives have historically not matched close variants, so \"job\" doesn't necessarily block \"jobs\".",
+    "India-specific waste is predictable: job seekers, students, free-seekers and marketplace shoppers. Block them on day one.",
+    "Google withholds low-volume search terms, so some of your spend is invisible. Negatives are rolling maintenance, not a one-off cleanup."
+  ],
+  "sections": [
+    {
+      "h2": "How a negative keyword actually works",
+      "body": [
+        "Google checks each query against your keywords to see whether you're eligible, and against your negatives to see whether you're disqualified. One match on the negative side and your ad never enters the auction.",
+        "Which explains what people misunderstand. A negative can't lower a bid or improve a position — it only removes you. And because removal happens pre-auction, the impression never occurs, so negatives protect your click-through rate and through it your [Quality Score](/glossary/quality-score)."
+      ]
+    },
+    {
+      "h2": "Negative match types and their one dangerous quirk",
+      "body": [
+        "Negatives have their own match types, and they don't behave like the positive ones."
+      ],
+      "bullets": [
+        "**Negative broad** — blocks only if **every** word appears, in any order. `free trial` blocks \"free software trial\" but not \"free demo\". Narrower than people assume.",
+        "**Negative phrase** — blocks queries containing those words in order. `free trial` blocks \"best free trial software\" but not \"trial for free\".",
+        "**Negative exact** — blocks that precise query, nothing else. For when one search is expensive and its neighbours are valuable.",
+        "**The quirk:** unlike positive keywords, negatives have historically not matched close variants. Plurals and misspellings aren't covered, so `job` may not block `jobs`. Google has been changing this — check current documentation, and add the plural meanwhile."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Phrase is the sensible default",
+        "body": "Exact is too narrow for the long tail; broad is easy to misjudge and strangles reach when stacked. Start in phrase, move terms out when you have a reason."
+      }
+    },
+    {
+      "h2": "A starter negative list for Indian advertisers",
+      "body": [
+        "Add these at account level before your first campaign goes live, then delete anything that's genuinely part of what you sell. If you run free trials, keep \"free\". If you're a training institute, \"course\" is your entire business."
+      ],
+      "table": {
+        "caption": "A day-one negative keyword list for Indian search campaigns. Prune it against your own offer.",
+        "head": ["Group", "Terms", "Why"],
+        "rows": [
+          ["No-budget", "free, freeware, no cost, muft, cheapest", "Converts near zero unless free is your model"],
+          ["Job seekers", "jobs, job, vacancy, vacancies, hiring, recruitment, salary, internship, naukri, resume, fresher", "Huge query volume in India, zero commercial intent"],
+          ["Learners, not buyers", "course, courses, training, certification, tutorial, how to, kya hai, meaning, syllabus, notes", "They want to do it themselves"],
+          ["Asset hunters", "pdf, ppt, download, template, sample, format, images, torrent, crack", "They came for a file, not a quote"],
+          ["Marketplace, second-hand", "used, second hand, olx, quikr, amazon, flipkart, refurbished, wholesale", "The click ends at someone else's checkout"],
+          ["Support and complaints", "complaint, scam, fraud, customer care number, track order", "Support traffic on a sales budget"],
+          ["Wrong geography", "near me (national campaigns), cities you can't serve", "Pulls local intent a national page can't satisfy"]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Don't block your own customers",
+        "body": "\"Cheap\" and \"price\" get blanket-blocked constantly. If you are the affordable option, those are your best queries. Every list online, including this one, needs editing against your offer first."
+      }
+    },
+    {
+      "h2": "The weekly search terms routine",
+      "body": [
+        "Twenty minutes a week. On a ₹1,00,000 budget, cutting 10% of waste is ₹10,000 — a better hourly rate than most things you'll do that morning."
+      ],
+      "numbered": [
+        "Open the **search terms report** for the last 7–14 days and sort by cost, highest first. Not impressions — what you paid.",
+        "Give each term one of three fates: **keep**, **negative**, or **promote** to its own keyword and ad.",
+        "Block the pattern, not the term. If \"salary\" showed up once, block the whole job-seeker family.",
+        "Check Shopping and Performance Max separately — they leak differently and people forget they exist.",
+        "Quarterly, review what you've blocked. A negative added eighteen months ago may be excluding a product you launched since."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "You can't ever fully clean it",
+        "body": "Google withholds low-volume search terms for privacy, so a share of your spend sits against queries you will never see. Negatives are continuous drainage, not a one-time fix — which is why this is a weekly job, not a launch task."
+      }
+    },
+    {
+      "h2": "Account, campaign or ad group?",
+      "body": [
+        "Put each negative at the highest level where it's universally true, and no higher.",
+        "**Account level** — never relevant to any campaign you'll run: job seekers, complaints, file hunters. Powerful and slightly dangerous, since one careless entry quietly suppresses a campaign you launch six months from now.",
+        "**Campaign level** — where most of the work happens, via shared lists applied to several campaigns at once. Build one universal-junk list and one per product line. Performance Max now accepts campaign-level negatives too; if you last checked in 2023, that answer has changed.",
+        "**Ad group level** — for steering, not blocking. With separate ad groups for \"running shoes\" and \"running shoes for women\", add \"women\" as a negative in the first so the query lands in the second. Routing, not excluding — the only job ad group negatives are right for.",
+        "Our [performance marketing](/performance) runs from ₹40,000/mo, media billed separately with no markup — [pricing here](/pricing)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many negative keywords should I have?",
+      "a": "As many as your search terms report justifies, and no more. A young account might start with 50–100 from a starter list; a mature one commonly runs into the thousands. Volume isn't the goal — a hundred well-chosen negatives beat a thousand copied from a blog post that didn't know your business."
+    },
+    {
+      "q": "Do negative keywords match plurals and misspellings?",
+      "a": "Historically no — that's the biggest difference from positive keywords, and it catches almost everyone. Google has been adjusting this behaviour, so verify against current documentation. Until you're sure, add plurals, common misspellings and Hinglish spellings as separate entries."
+    },
+    {
+      "q": "Can negative keywords hurt my campaign?",
+      "a": "Yes, if you over-apply them. Stacked broad negatives can exclude far more than intended, and blocking a term that's genuinely part of your offer costs you your best traffic. Review what's blocked every quarter, especially after you launch anything new."
+    },
+    {
+      "q": "Where do I add negative keywords in Google Ads?",
+      "a": "Campaign or ad group: open the campaign, go to Audiences, keywords and content, then Search keywords, then the Negative keywords tab. Shared lists live under Tools, Shared library, Negative keyword lists. Account-level negatives sit in account settings."
+    },
+    {
+      "q": "Do negative keywords work on Performance Max?",
+      "a": "Yes. Account-level negative keyword lists apply, and campaign-level negatives are now supported on Performance Max too. Check its search terms data separately from your Search campaigns, because PMax finds queries a keyword-based campaign never would."
+    },
+    {
+      "q": "Why do I still see irrelevant search terms after adding negatives?",
+      "a": "Three usual causes: the negative was added at ad group level when the traffic came through a different ad group, the match type was narrower than the query, or the report is showing terms from before the negative went live. Check the date range before you conclude it's broken."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "keyword-match-types" },
+    { "type": "glossary", "slug": "cost-per-click" },
+    { "type": "glossary", "slug": "quality-score" },
+    { "type": "compare", "slug": "ppc-vs-seo" },
+    { "type": "services", "slug": "analytics-setup-services" },
+    { "type": "journal", "slug": "why-indian-d2c-brands-overspend-on-ads" }
+  ]
+}

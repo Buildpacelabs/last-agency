@@ -1,0 +1,205 @@
+{
+  "slug": "what-is-a-good-organic-traffic-growth-rate",
+  "type": "answers",
+  "primaryKeyword": "what is a good organic traffic growth rate",
+  "secondaryKeywords": [
+    "normal seo growth rate",
+    "how fast should organic traffic grow",
+    "monthly organic traffic benchmark",
+    "seo growth expectations"
+  ],
+  "cluster": "seo-measurement",
+  "intent": "informational",
+  "h1": "What a normal month of organic growth looks like",
+  "metaTitle": "What Is a Good Organic Traffic Growth Rate?",
+  "metaDescription": "What is a good organic traffic growth rate? It depends on site age and category. Here are the bands, plus the noise floor below which nothing is real.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "There's no single good rate. A neglected site with existing authority can add 20–50% in two quarters because it's recovering; a brand-new domain shows almost nothing for three months; a mature site at its category ceiling grows 10–25% a year. On a small site, anything inside ±15% month on month is noise.",
+  "takeaways": [
+    "Ask which of four situations you're in before you ask what good looks like. Recovery, creation and defence have completely different growth curves.",
+    "**Percentage growth flatters a small base.** Forty sessions to sixty is fifty per cent and worth nothing.",
+    "Below the noise floor, no number means anything. Trailing 90-day windows and year-on-year comparisons are the only honest units.",
+    "A stalled quarter has a specific signature in Search Console. Flat impressions, flat query count and flat index coverage together mean nothing shipped or nothing worked."
+  ],
+  "sections": [
+    {
+      "h2": "Why one percentage is always the wrong answer",
+      "body": [
+        "Somebody will tell you good SEO growth is ten per cent a month. Ask them ten per cent of what, from what starting point, in which category, and the number falls apart. Ten per cent on 200 sessions is twenty visitors. Ten per cent on 200,000 is a great year for a large team.",
+        "Worse, the same percentage means opposite things depending on your situation. Twenty per cent in a quarter is disappointing on a five-year-old site that hasn't been touched since 2021 — that site should be recovering faster than that, because the authority already exists and the fixes just release it. Twenty per cent in a quarter on a site that already ranks first for its category terms is a genuinely good outcome, because the only remaining growth is in queries you've never served.",
+        "So the useful question isn't \"what's a good growth rate\". It's \"which of these four situations am I in, and what does normal look like there\"."
+      ]
+    },
+    {
+      "h2": "Growth bands by the kind of site you actually have",
+      "body": [
+        "These are planning bands. They come from how indexing, recovery and link acquisition behave, not from a published study, and any of them can be beaten or missed for legitimate reasons. Use them to set expectations before work starts — that's when they're worth the most and cost the least."
+      ],
+      "table": {
+        "caption": "What normal organic growth looks like by site situation.",
+        "head": ["Your situation", "Months 1–3", "Months 4–12", "How to judge it"],
+        "rows": [
+          [
+            "Brand-new domain, under 200 sessions a month",
+            "Close to nothing. Pages get indexed, impressions appear, sessions barely move",
+            "Percentages look spectacular off a tiny base — 5x is common when the base was 60",
+            "Judge on indexed pages and impressions. Sessions are a vanity chart at this size."
+          ],
+          [
+            "Neglected site with real authority — five years old, stale content, technical debt",
+            "10–25% as technical fixes release pages Google already knew about",
+            "40–100% across the year is realistic",
+            "The fastest returns available anywhere. You're recovering, not creating."
+          ],
+          [
+            "Steady mid-size site, 1,000–10,000 sessions a month",
+            "0–10%, mostly setup and the first content shipping",
+            "5–15% a month in a good stretch; 40–100% over twelve months",
+            "Compare trailing 90-day windows. Single months tell you almost nothing."
+          ],
+          [
+            "Mature site that already owns its head terms",
+            "Flat, and that's fine",
+            "10–25% a year",
+            "New growth has to come from new categories, cities or languages. Optimising the same pages won't produce it."
+          ],
+          [
+            "Site hit by a core update or a bad migration",
+            "Often negative while the diagnosis happens",
+            "Recovery arrives in steps, not a curve, and sometimes not at all",
+            "Measure against pre-drop levels, never against last month."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Category demand sets the ceiling",
+        "body": "If total search volume for your category is shrinking — and several are, as AI answers absorb informational queries — holding flat is a gain in share. Check your head terms in Google Trends before you decide a flat quarter is your agency's fault. You can outgrow your competitors and still lose traffic."
+      }
+    },
+    {
+      "h2": "Percentage growth flatters a small base",
+      "body": [
+        "Forty sessions to sixty is a fifty per cent increase and worth precisely nothing. It'll still appear on a slide with an upward arrow, because percentages are how small numbers get made to look like progress.",
+        "The compounding maths gives it away. Twenty per cent month on month sustained for a year is roughly nine times your starting traffic. Nobody sustains that except off a base so small it doesn't matter — which is exactly the case where the percentage gets quoted."
+      ],
+      "bullets": [
+        "Always show the absolute number next to the percentage. \"+50% (20 sessions)\" is honest; \"+50%\" is a sales technique.",
+        "Use trailing 90-day totals against the previous 90 days. Monthly comparisons on anything under 10,000 sessions are mostly weather.",
+        "Measure non-brand clicks, not total sessions. Brand search grows from ads and PR, and counting it as organic growth overstates the work every time.",
+        "Once you're past the first two quarters, switch to year-on-year for the same month. It removes seasonality and month length in one move.",
+        "Growth in leads matters more than growth in sessions, and the two frequently disagree. Keep both in front of you — the [SEO KPIs worth reporting](/answers/what-are-seo-kpis) covers which ones."
+      ]
+    },
+    {
+      "h2": "The noise floor: movement too small to mean anything",
+      "body": [
+        "Before you can call a quarter good or bad, you need to know how much your numbers move when nothing at all happens. That amount is larger than most people assume, and on small sites it's larger than the effect you're trying to detect."
+      ],
+      "numbered": [
+        "**Month length.** February has 28 days and January has 31. That's a 10% swing before a single ranking changes, and it shows up every year as a February crisis.",
+        "**Holidays and long weekends.** B2B traffic collapses around festival weeks and picks up the following Monday. A month with two long weekends is not a bad month.",
+        "**A single query wobbling.** One mid-volume keyword moving between position eight and position four can swing a small site's clicks by double digits on its own.",
+        "**Search Console anonymises rare queries**, so low-volume data is systematically incomplete. The gap between clicks in Search Console and sessions in analytics is normal, not a tracking bug.",
+        "**Bot and crawler traffic.** If your filtering isn't tight, crawlers — including the newer AI ones — will inflate analytics without a single human reading anything."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Working noise floors",
+        "body": "Under 1,000 organic sessions a month, treat anything inside ±15% month on month as noise. Between 1,000 and 10,000, ±10%. Above that, ±5%. These are working rules of thumb — they reflect how much one query's movement can swing a given base — but adopting any explicit floor beats the alternative, which is reacting to every wiggle in the chart."
+      }
+    },
+    {
+      "h2": "Strip seasonality out before anyone starts arguing",
+      "body": [
+        "Almost every Indian business has a shape to its year, and almost every panicked mid-contract strategy review happens at the bottom of it. Ten minutes of checking saves a quarter of thrashing.",
+        "The cheapest method: compare the same month to the same month last year rather than to last month. The second cheapest: pull your three head terms into Google Trends and see whether category demand fell alongside you. If demand dropped 25% and you dropped 20%, you gained share in a bad month — which is a genuinely good result that a month-on-month chart will present as failure."
+      ],
+      "bullets": [
+        "**Retail and D2C** — the festive stretch from Navratri to Diwali dominates the year, and everything after it looks like a crash.",
+        "**Financial products, insurance and tax services** — January to March, driven by the fiscal year end.",
+        "**Edtech and education** — admissions and counselling cycles around board results, not calendar quarters.",
+        "**Travel and outdoor** — monsoon reshapes demand regionally, and it doesn't arrive on the same date every year.",
+        "**Jewellery, apparel, venues, photography** — wedding season, which moves with the calendar and won't line up neatly with your reporting periods."
+      ]
+    },
+    {
+      "h2": "What a genuinely stalled quarter looks like",
+      "body": [
+        "A slow quarter and a stalled one look identical on a sessions chart. They look completely different in Search Console, which is why the conversation should happen there and not in a slide deck.",
+        "Open the performance report, set it to the last six months, and check impressions, total queries and index coverage together. The combination tells you which problem you have."
+      ],
+      "table": {
+        "caption": "Reading a flat quarter in Search Console.",
+        "head": ["What you see", "Most likely cause", "The question to ask"],
+        "rows": [
+          [
+            "Impressions flat, query count flat, indexed pages flat",
+            "Nothing shipped, or what shipped never got indexed",
+            "What went live in the last 60 days, and is every page of it indexed?"
+          ],
+          [
+            "Impressions up, clicks flat",
+            "You're ranking on page two, or AI answers are absorbing the click",
+            "Which queries gained impressions, and what position are we sitting at?"
+          ],
+          [
+            "Clicks down, average position stable",
+            "The results page changed shape, or it's seasonal",
+            "How does this month compare to the same month last year?"
+          ],
+          [
+            "Impressions, clicks and position all down together",
+            "A core update, a technical regression, or competitors overtaking",
+            "What date did the drop start, and what changed on the site that week?"
+          ],
+          [
+            "Everything up, leads flat",
+            "You're winning queries your buyers don't search",
+            "Which pages produce these clicks, and would a paying customer type that?"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The growth you should refuse to celebrate",
+        "body": "One irrelevant query going viral, a scraper hammering a URL, or a TV campaign pushing brand searches through the organic channel will all produce a beautiful month. None of them is SEO working. If a spike doesn't come with a matching rise in non-brand clicks and qualified leads, take it out of the report rather than into the board pack. More on separating the two in [how to measure SEO success](/answers/how-do-you-measure-seo-success)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a realistic monthly organic traffic growth rate?",
+      "a": "For a mid-size site between 1,000 and 10,000 sessions, 5–15% a month during a productive stretch, which usually works out at 40–100% over twelve months. New domains show almost nothing for three months. Mature sites that already own their head terms grow 10–25% a year and that's a good outcome."
+    },
+    {
+      "q": "Is 10% month-on-month organic growth good?",
+      "a": "It depends entirely on the base. Ten per cent of 200 sessions is twenty people and probably inside the noise floor. Ten per cent of 50,000 is excellent and difficult to sustain. Always publish the absolute number alongside the percentage, or the percentage is doing the arguing for you."
+    },
+    {
+      "q": "How much traffic movement counts as noise?",
+      "a": "As a working rule: under 1,000 sessions a month, anything within ±15% month on month is noise. Between 1,000 and 10,000, ±10%. Above that, ±5%. Month length, holidays and a single keyword wobbling between positions account for most of it before any real change happens."
+    },
+    {
+      "q": "How do I tell a slow quarter from a stalled one?",
+      "a": "Look at impressions, distinct query count and index coverage together in Search Console. Slow means impressions and query count are rising while clicks lag. Stalled means all three are flat — which almost always means nothing shipped, or what shipped never got indexed. That's a conversation with your agency, not a chart problem."
+    },
+    {
+      "q": "Should organic traffic grow every single month?",
+      "a": "No, and expecting it to produces bad decisions. Seasonality, algorithm updates and month length all create down months on healthy sites. Judge on trailing 90-day windows and year-on-year comparisons for the same month. Three consecutive flat quarters is a real problem; one flat month is a Tuesday."
+    },
+    {
+      "q": "Why did my organic traffic fall while my rankings stayed the same?",
+      "a": "Usually the results page changed rather than your position. An AI answer, a shopping block or an expanded People Also Ask box pushes the first organic result further down and takes clicks with it. Seasonality is the other common cause. Check the same month last year before assuming anything broke."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "how-long-does-it-take-for-seo-to-work" },
+    { "type": "answers", "slug": "how-do-you-measure-seo-success" },
+    { "type": "glossary", "slug": "organic-traffic" },
+    { "type": "compare", "slug": "keyword-rankings-vs-organic-traffic" },
+    { "type": "journal", "slug": "how-to-read-an-seo-report" },
+    { "type": "glossary", "slug": "google-core-update" }
+  ]
+}

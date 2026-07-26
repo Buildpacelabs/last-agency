@@ -1,0 +1,188 @@
+{
+  "slug": "rajkot",
+  "type": "seo-agency",
+  "primaryKeyword": "seo services in rajkot",
+  "secondaryKeywords": [
+    "seo company in rajkot",
+    "seo agency rajkot",
+    "casting manufacturer seo",
+    "machine tools marketing india",
+    "b2b seo saurashtra"
+  ],
+  "cluster": "city-india-manufacturing",
+  "intent": "commercial",
+  "h1": "SEO in Rajkot for castings, machine tools and pumps",
+  "metaTitle": "SEO Services in Rajkot: Castings, Tools, Submersibles",
+  "metaDescription": "Rajkot's OEM buyers search by grade and tolerance, then want a drawing. We build spec pages and CAD downloads that rank, on a 90-day baseline guarantee.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "city": {
+    "name": "Rajkot",
+    "region": "Gujarat",
+    "country": "India"
+  },
+  "answer": "Rajkot's buyers are sourcing engineers, not browsers. They search a material grade, a pump rating or a tolerance class, scan a spec table, then want a drawing. So in Rajkot, one page per grade with a real spec table and a downloadable STEP file outranks a year of blog posts. That's the whole strategy.",
+  "takeaways": [
+    "The query is `FG 260 grey iron casting manufacturer`, not `best foundry in Gujarat`. Build pages for the first one.",
+    "A downloadable STEP file or 2D drawing is both a conversion asset and a link asset. Almost nobody in the Rajkot belt publishes one.",
+    "Gating the drawing behind a form kills the ranking. A crawler can't fill in your form.",
+    "You don't leave IndiaMART. You stop letting it outrank you for your own products."
+  ],
+  "sections": [
+    {
+      "h2": "What a sourcing engineer actually types",
+      "body": [
+        "Rajkot's engineering belt — Aji and Metoda GIDC, the Shapar–Veraval stretch, the older workshop clusters inside the city — sells castings, forgings, machine tools, bearings, diesel engines, pumps and auto components. Almost none of it is bought by someone browsing.",
+        "The person searching is a purchase engineer or a proprietor with a drawing already open on the other monitor. They search the specification, because the specification is the only thing that narrows the field. Which means the keyword research that matters here has nothing to do with search volume — most of these terms show as low or no volume in every tool you'll be shown in a pitch deck, and they are still the terms that close orders."
+      ],
+      "table": {
+        "caption": "How Rajkot B2B search actually reads, and what the landing page must contain.",
+        "head": [
+          "What they search",
+          "What they are checking",
+          "What the page needs"
+        ],
+        "rows": [
+          [
+            "A material grade — grey iron FG 200 / FG 260, ductile SG 500/7, an ASTM or EN equivalent",
+            "Whether you pour that grade at all",
+            "A page per grade, with chemistry, mechanical properties and the equivalent designations"
+          ],
+          [
+            "A tolerance or process class — ISO 8062 casting tolerance grades, general machining tolerance per ISO 2768",
+            "Whether you can hold it, and whether you machine in-house",
+            "Stated achievable tolerance ranges, machining capability, inspection equipment"
+          ],
+          [
+            "A component plus a rating — a V4 borewell submersible at a given head and discharge, a lathe by swing and centre distance",
+            "Fit against their requirement",
+            "A model table with every rating, filterable, one row per SKU"
+          ],
+          [
+            "Your part number, or a competitor's",
+            "Cross-reference and interchangeability",
+            "A cross-reference page. These rank easily and convert unusually well"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Ignore the volume column",
+        "body": "An agency that filters your Rajkot keyword list by search volume will delete every term that matters. Forty searches a month for a specific casting grade is a better commercial asset than four thousand searches for \"manufacturing company in Gujarat\"."
+      }
+    },
+    {
+      "h2": "The page template that works, and the one that doesn't",
+      "body": [
+        "Most Rajkot manufacturer sites have the same architecture: a Products page listing eleven categories, each linking to a 120-word description and a gallery. That structure cannot rank for specifications, because the specifications aren't on it.",
+        "The replacement is one page per meaningfully distinct thing you sell — per grade, per model, per process — with the data in an HTML table rather than in a photograph of a table. That last part is not a detail. A large share of manufacturer sites in this belt publish their entire spec sheet as a scanned image, and to a search engine that page is blank."
+      ],
+      "bullets": [
+        "**Spec table in HTML.** It is readable, it can win a featured snippet, and it can carry Product schema. An image cannot do any of those things. [Schema markup](/glossary/schema-markup) on a spec page is one of the cheapest wins available here.",
+        "**Application context under the table.** Which industries use this grade, what fails when you pick the wrong one. This is where the page earns its ranking, because every competitor stops at the table.",
+        "**A real capability page.** Machine list, tonnage, furnace capacity, moulding line, inspection equipment, monthly capacity, certifications with numbers and dates.",
+        "**Photographs of your actual shop floor.** Stock imagery of a generic foundry tells a buyer you're a trader. Half of Rajkot's buyers are specifically trying to work out whether you're a trader."
+      ]
+    },
+    {
+      "h2": "CAD downloads are the asset nobody in the belt publishes",
+      "body": [
+        "Ask a design engineer what makes a supplier's website useful and the answer is almost always the same: give me the model. A published STEP file lets them drop your part straight into their assembly. That is a purchasing decision made before they have spoken to you.",
+        "It is also the single best link asset a Rajkot manufacturer can build. Engineering forums, distributor sites, procurement portals and educational pages link to downloadable models and drawings because they're useful. They do not link to your Diwali greeting post.",
+        "Two mechanics decide whether it works for search as well as for sales. First, the drawing must not sit behind a form — a crawler cannot complete a form, so a gated file contributes nothing to rankings and, in practice, loses you the engineer who was only evaluating. Second, the file should be a download from a real HTML page, not the destination itself. Google will index a PDF, but a PDF is a dead end: no internal links out, no schema, no analytics worth reading."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "A workable compromise on gating",
+        "body": "Publish the full spec and the 2D PDF openly. Ask for an email only for the native CAD or a custom drawing. You keep the ranking and the crawl path, and you still capture the buyer who is genuinely designing you in."
+      }
+    },
+    {
+      "h2": "The IndiaMART problem, stated honestly",
+      "body": [
+        "Nearly every Rajkot manufacturer we talk to has the same complaint and the same dependency. Their IndiaMART or TradeIndia listing outranks their own website for their own products, so the leads arrive rented, shared with four competitors, and priced by the platform.",
+        "The advice to \"get off IndiaMART\" is bad advice. The leads are real and the platform costs less than most alternatives. The actual goal is narrower: stop being outranked on the queries you should own — your brand name, your part numbers, your specific grades and models — while keeping the platform for discovery you can't reach otherwise.",
+        "That happens by publishing pages the platform structurally cannot: real spec depth, downloadable drawings, cross-reference tables, application guidance. A directory listing is a template with your name in it. It can never out-detail you on your own product, which is exactly why detail is the lever."
+      ],
+      "numbered": [
+        "Search your own top ten products in an incognito window and write down who ranks. This takes twenty minutes and it is usually the most persuasive document in the project.",
+        "Build the spec page for each of those ten, published, unblocked, with the table in text.",
+        "Point your platform listings at those pages where the platform allows an outbound link.",
+        "Measure enquiries by source, in your CRM, not in analytics. Platform leads and organic leads close at very different rates and you want that number."
+      ]
+    },
+    {
+      "h2": "Exports, and the buyer who has never heard of Saurashtra",
+      "body": [
+        "Rajkot ships castings, pumps, bearings and machine tools to the Gulf, Africa, Southeast Asia and beyond. That buyer searches in English, by standard, and has no reason to know Rajkot exists — which is why targeting *manufacturer in Rajkot* as an export keyword is a waste of a page.",
+        "What that buyer searches is *ductile iron casting supplier India*, an ASTM designation, a container quantity, or a certification. What they check before enquiring is whether you can document compliance, whether the site loads at a reasonable speed from a slow overseas connection, and whether there's a human contact route in a time zone they can use.",
+        "It's worth being straight about competition. For pumps specifically, Coimbatore's cluster is larger and better established online, and on generic pump terms you're unlikely to win a head-on fight — see [Coimbatore](/seo-agency/coimbatore) for how that market behaves. The winnable ground is the specific: a rating, a duty condition, an application, a cross-reference. That's covered further in [SEO for exporters](/seo-for/exporters)."
+      ]
+    },
+    {
+      "h2": "Gujarati search, for the half of Rajkot that sells locally",
+      "body": [
+        "Rajkot isn't only an engineering town. It has a large gold jewellery manufacturing trade, a busy retail and services economy, and a consumer market that searches very differently from its factories.",
+        "Consumer and service queries in Rajkot lean Gujarati and, more often, transliterated Gujarati typed on an English keyboard. Local clinics, showrooms, tuition classes and restaurants benefit from Gujarati pages and Gujarati reviews on their Google Business Profile — reviews in the language your customers speak influence which queries you surface for.",
+        "The split is clean and worth stating plainly: if you sell to a factory, write English and write specifications. If you sell to a household, write Gujarati and write for the map pack. Firms doing both need two content tracks, not one blended one — and blending them is the most common reason a Rajkot site ranks for nothing in particular."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Pricing and the promise",
+        "body": "We run SEO from ₹75,000/mo, or ₹40,000/mo for smaller sites, ex-GST, month-to-month after the first quarter. We never promise a ranking position. We freeze your trailing-90-day qualified leads from organic on day one and guarantee we beat that number in 90 days, or we work free until we do. Details on [what SEO costs in India](/cost/seo-cost-in-india)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does SEO work for a Rajkot manufacturer with no search volume?",
+      "a": "Yes, and low volume is the point. Specification queries show as 10–50 searches a month in most tools, but a single one can be a sourcing engineer with a recurring order. Judge these pages on enquiries and enquiry quality, never on traffic. A page that brings four qualified RFQs a quarter has paid for itself."
+    },
+    {
+      "q": "Should I put my CAD files behind a lead form?",
+      "a": "Not the spec and not the 2D PDF — a crawler can't fill in a form, so gated content contributes nothing to rankings, and engineers evaluating options simply leave. Gate the native CAD or a custom drawing if you must. You keep the ranking and still capture the serious buyer."
+    },
+    {
+      "q": "How long does B2B SEO take to produce enquiries in Rajkot?",
+      "a": "Specification pages often rank faster than consumer content because competition is thin — sometimes six to ten weeks. Enquiry volume lags further, because industrial buying cycles are long and the person who downloads your drawing may not raise a PO for a quarter. Plan on three to six months to a fair read."
+    },
+    {
+      "q": "Can SEO replace my IndiaMART subscription?",
+      "a": "Eventually it can reduce your dependency; we wouldn't promise it replaces it. The realistic goal for the first year is to own the queries you should already own — brand, part numbers, grades, models — so the platform stops intercepting demand that was looking for you specifically. Keep the platform for the rest."
+    },
+    {
+      "q": "Do I need a Gujarati version of my whole website?",
+      "a": "Almost certainly not. Mirror-translating an entire site is expensive and usually produces stiff, obviously translated pages. Build Gujarati pages only where Gujarati buyers search — local retail and consumer services. Export and B2B pages stay in English, because that's the language your buyers use."
+    }
+  ],
+  "related": [
+    {
+      "type": "seo-for",
+      "slug": "manufacturing"
+    },
+    {
+      "type": "seo-for",
+      "slug": "exporters"
+    },
+    {
+      "type": "glossary",
+      "slug": "schema-markup"
+    },
+    {
+      "type": "compare",
+      "slug": "b2b-seo-vs-b2c-seo"
+    },
+    {
+      "type": "services",
+      "slug": "international-seo-services"
+    },
+    {
+      "type": "seo-agency",
+      "slug": "coimbatore"
+    },
+    {
+      "type": "seo-agency",
+      "slug": "vadodara"
+    }
+  ]
+}

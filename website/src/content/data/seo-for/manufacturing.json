@@ -1,0 +1,255 @@
+{
+  "slug": "manufacturing",
+  "type": "seo-for",
+  "primaryKeyword": "seo for manufacturing companies",
+  "secondaryKeywords": [
+    "manufacturing seo india",
+    "industrial seo services india",
+    "seo for factories",
+    "b2b manufacturer seo",
+    "rfq lead generation seo"
+  ],
+  "cluster": "manufacturing-and-trade",
+  "intent": "commercial",
+  "industry": "Manufacturing",
+  "h1": "SEO for manufacturers who keep losing page one to IndiaMART",
+  "metaTitle": "SEO for Manufacturing Companies: Beat Directories",
+  "metaDescription": "SEO for manufacturing companies in India. Build spec-level product pages that outrank directory listings and send RFQs straight to your own sales team.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Manufacturers lose page one to IndiaMART, TradeIndia and Justdial, not to rival factories. Directories win because they publish thousands of query-matched listing pages on very strong domains. You take those slots back with spec-level pages — grade, tolerance, standard, certification, drawing — because that's the one thing a listing can't hold.",
+  "takeaways": [
+    "Your SERP competitor is a marketplace, not a competitor factory. Plan against the marketplace's weakness, which is **depth per part**.",
+    "A directory enquiry is resold to several sellers. A direct enquiry is exclusive. That difference is the entire business case for this work.",
+    "Spec tables locked inside a PDF catalogue are invisible. Get the numbers into HTML and keep the PDF as a download.",
+    "CAD files — STEP, DXF, IGES — are the strongest asset an industrial site can publish. A designer who drops your part into their assembly has half-specified you already.",
+    "Publish a response-time target only if you'll hit it. A stated four hours and an actual three days costs you more than saying nothing."
+  ],
+  "sections": [
+    {
+      "h2": "The company outranking you doesn't own a factory",
+      "body": [
+        "Search any product you make, with the word supplier or manufacturer after it. Count the organic results before you find a company that actually makes something. On most Indian industrial queries you'll get through four or five results first — IndiaMART, TradeIndia, Justdial, ExportersIndia — and above them, ads bought by the same platforms.",
+        "They're not outranking you because their content is better. They're outranking you on three structural advantages. Two decades of accumulated domain strength and links. A page for practically every product-and-city combination anyone has ever searched. And a listing format that happens to match a commercial query exactly — the searcher wanted a list of suppliers, and a list of suppliers is what a directory is.",
+        "You are not going to beat that on broad terms this year. What you can do is take the queries directories are structurally bad at, which is anything requiring real engineering detail."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "What the directory channel actually costs",
+        "body": "One buyer enquiry on a marketplace gets distributed to several sellers, so you're bidding against your own competitors on a lead you didn't originate. You pay annually for the placement, you don't own the buyer relationship, and if you stop paying, the demand doesn't come with you. Organic RFQs land in your inbox alone and keep arriving after the invoice stops."
+      }
+    },
+    {
+      "h2": "Where a listing page can't follow you",
+      "body": [
+        "A marketplace listing carries a company name, a product name, a price band and a contact button. It cannot carry a chemical composition table, a tolerance stack, an equivalent-standards chart or a downloadable STEP file. That's the gap, and it's where the buying decision actually happens."
+      ],
+      "table": {
+        "caption": "Which industrial queries are winnable, and with what.",
+        "head": [
+          "Query type",
+          "Who wins today",
+          "What takes the slot"
+        ],
+        "rows": [
+          [
+            "Broad product plus supplier — \"ss 316l pipe supplier\"",
+            "Directories, comfortably",
+            "Hard and slow. Worth a hub page, not a campaign"
+          ],
+          [
+            "Spec query — \"astm a312 tp316l sch 40 dimensions\"",
+            "Nobody, or a foreign mill's PDF",
+            "A dimension table in HTML: OD, wall thickness, weight per metre, tolerance, standard"
+          ],
+          [
+            "Certification query — \"iatf 16949 machining supplier india\"",
+            "Thin listing pages",
+            "A capability page carrying the certificate number, issuing body, scope and expiry"
+          ],
+          [
+            "Application query — \"gasket material for 200°C steam service\"",
+            "Forums and foreign distributors",
+            "A selection guide with a material comparison chart and the failure modes"
+          ],
+          [
+            "CAD query — \"step file [component type]\"",
+            "Overseas catalogue sites",
+            "Downloadable STEP, DXF and IGES per part, on a crawlable page"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Three page templates cover most of a catalogue",
+      "body": [
+        "Industrial catalogues look infinite until you sort them. Almost everything a manufacturer sells fits one of three page shapes, and each shape has a fixed list of what has to be on it before it's worth publishing."
+      ],
+      "subs": [
+        {
+          "h3": "Grade and material pages",
+          "bullets": [
+            "Chemical composition and mechanical properties as tables, in HTML text.",
+            "Equivalent standards across systems — IS, ASTM, EN, DIN, JIS. Buyers arrive holding whichever name their drawing uses.",
+            "Available sizes, forms and finishes, with what you stock versus what you make to order.",
+            "Typical applications, and one honest line on what the grade is wrong for. That line converts better than the rest of the page."
+          ]
+        },
+        {
+          "h3": "Process and capability pages",
+          "bullets": [
+            "The machine list with real numbers: bed size, axis count, bar capacity, maximum part weight, table swing.",
+            "Achievable tolerance and surface finish, stated as a range with the conditions attached.",
+            "Batch sizes you actually want, and the lead time from drawing to first article.",
+            "Which steps are in-house and which are outsourced. Procurement asks this on every call, so answer it before the call."
+          ]
+        },
+        {
+          "h3": "Application and industry pages",
+          "bullets": [
+            "The problem the buyer's engineer is solving, in their vocabulary — not yours.",
+            "The specification that follows from it, and the certification the sector demands.",
+            "Which of your parts serve it, linked. This is where the internal linking work earns its keep.",
+            "Sector-specific documentation you can supply: material traceability, PPAP, validation records."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Get the catalogue out of the PDF",
+      "body": [
+        "The single most common technical failure on Indian manufacturing sites: the entire product data lives in a downloadable catalogue, and the website is eight pages of adjectives around a download button. Google can index a PDF, but it ranks poorly for specific queries, can't be internally linked with any precision, and converts badly because there's no enquiry path on page 47.",
+        "Rebuild the catalogue as HTML pages and keep the PDF as a supplementary download beside them. Same content, hugely different outcome — and a side benefit is that your sales team stops emailing a 40MB file to every prospect."
+      ],
+      "numbered": [
+        "**Never put a spec table inside an image.** A JPEG of a dimension chart is invisible to search and unusable on a phone. Mark it up as a real table.",
+        "**Don't gate the datasheet.** The engineer who won't fill in a form is often the person writing your part number into the drawing. Gate the quote, not the data.",
+        "**Publish CAD downloads per part** — STEP for assembly, DXF for sheet metal, IGES where it's still asked for. A part embedded in a customer's design is the strongest position you can hold.",
+        "**Add Product schema with specification properties** so the numbers are machine-readable. Worth reading [our note on schema markup](/glossary/schema-markup) before your developer improvises it.",
+        "**Give every part number its own URL** — but only where the page carries genuinely different data. Twelve thousand near-identical pages is the exact pattern Google's [scaled content policy](/journal/programmatic-seo-and-the-scaled-content-line) targets, and industrial catalogues are a common offender."
+      ]
+    },
+    {
+      "h2": "Certifications do double duty",
+      "body": [
+        "Certifications are the closest thing manufacturing has to a ranking cheat code, because they're simultaneously a trust signal for the buyer and a query in their own right. Procurement teams filter by them. Engineers search for them. And almost nobody publishes them properly.",
+        "The common mistake is a scanned certificate PDF on an \"Our Certifications\" page with no text around it. A scan is an image. Put the details on the page as text: standard, certificate number, issuing body, scope statement and validity period."
+      ],
+      "bullets": [
+        "**Sector standards are searched directly:** IATF 16949 for automotive, AS9100 for aerospace, ISO 13485 for medical devices, API monogram and ASME stamps for oil and gas, ATEX or IECEx for hazardous areas.",
+        "**Market access marks matter for export enquiries:** CE and UKCA, UL listing, BIS or ISI licence for the domestic market, RoHS and REACH declarations.",
+        "**Material and test documentation is a query too:** EN 10204 3.1 and 3.2 mill test certificates, NABL-accredited lab reports, PPAP submission levels.",
+        "**Scope is the part buyers check.** An ISO 9001 certificate covering only your Pune unit shouldn't be presented as covering all three plants. Publish the scope line verbatim.",
+        "**Diarise expiry.** An expired certificate on a live page is worse than no page, and it's the first thing a serious buyer's audit team will find."
+      ]
+    },
+    {
+      "h2": "The RFQ form is the product",
+      "body": [
+        "All this work ends at one form, and most industrial enquiry forms are designed by someone who has never quoted a job. They ask for company size and how you heard about us, then give the buyer a single free-text box for a part that has fourteen relevant parameters.",
+        "Design the form the way your estimator thinks. A complete RFQ that can be quoted the same day is worth several times a vague one that starts a three-email clarification loop."
+      ],
+      "table": {
+        "caption": "What to ask, and what to stop asking.",
+        "head": [
+          "Ask this",
+          "Why",
+          "Drop this"
+        ],
+        "rows": [
+          [
+            "Drawing or file upload, with STEP and PDF accepted",
+            "It's the fastest route to a quotable enquiry",
+            "\"Company size\" and \"How did you hear about us\""
+          ],
+          [
+            "Material or grade, tolerance, finish",
+            "Determines whether you can quote at all",
+            "Job title and department"
+          ],
+          [
+            "Quantity for this order and annual volume",
+            "Changes the price by more than anything else on the form",
+            "\"Budget range\", which industrial buyers will not answer honestly"
+          ],
+          [
+            "Delivery location, and Incoterm if it's an export enquiry",
+            "Freight and duty are half the landed cost conversation",
+            "A required phone field that blocks first-time overseas buyers"
+          ],
+          [
+            "Target date for first article",
+            "Tells sales which enquiries to answer first",
+            "Anything you won't read before replying"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Response time is a ranking factor for the buyer, not for Google",
+        "body": "A buyer sending five RFQs generally shortlists whoever comes back first with a real number and a real question. If you publish \"we respond within 4 working hours\", route the form to a named person with a phone alert and mean it. If you can't staff that, publish nothing — an unmet promise on the page is a worse first impression than silence."
+      }
+    },
+    {
+      "h2": "What we'd do first, and what we commit to",
+      "body": [
+        "For a manufacturer with a brochure site, month one is unglamorous: get the catalogue out of PDFs, publish spec tables for your top twenty products, put the certification details in text, and rebuild the RFQ form. That work alone usually recovers ground before a single link is earned.",
+        "Then extend by page template rather than by volume — a batch of grade pages, check indexation after eight weeks, extend if they held. If 25 of 30 are indexed and gathering impressions, the template works. If half sit unindexed, publishing another hundred makes it worse, not better.",
+        "Our SEO runs from ₹75,000/mo, and from ₹40,000/mo for smaller sites. Ex-GST, month-to-month after the first quarter, 30 days' notice, and you keep every asset — the spec pages, the schema, the CAD library structure, all of it. Full numbers on [our pricing page](/pricing).",
+        "We don't promise a ranking position. We freeze your trailing-90-day qualified enquiries from organic search on day one, and if we haven't beaten that number in 90 days we keep working free until we do. If most of your demand is export-side, read [the exporter version of this page](/seo-for/exporters) too — the technical work is different enough to matter."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can a manufacturer really outrank IndiaMART?",
+      "a": "Not on broad terms like \"pipe supplier in India\" — that's a two-decade domain with millions of listing pages. On specification, grade, standard, certification and application queries you can beat them consistently, because a listing format can't hold that detail. Those queries have lower volume and far higher intent."
+    },
+    {
+      "q": "Should we leave IndiaMART if organic starts working?",
+      "a": "Not immediately. Run both, tag the sources separately, and compare cost per qualified RFQ over two quarters. The honest case for organic isn't that the directory is useless — it's that a directory lead is shared with your competitors and stops the day you stop paying, while organic pages keep producing."
+    },
+    {
+      "q": "Is a PDF catalogue enough for SEO?",
+      "a": "No. PDFs get indexed but rank poorly for specific queries, can't be internally linked with precision, and have no enquiry path inside them. Publish the specifications as HTML pages and offer the PDF as a download beside them. It's usually the single biggest change on an industrial site."
+    },
+    {
+      "q": "How many product pages should a manufacturer publish?",
+      "a": "As many as you have genuinely distinct data for, and not one more. If two pages differ only by a part number in the heading, they should be one page with a table. Publish in batches, check indexation after eight weeks, and extend only if the batch held."
+    },
+    {
+      "q": "Do industrial buyers actually search Google, or is it all relationships?",
+      "a": "Both, in sequence. Repeat business is relationships. New vendor discovery — a new material, a second source, a plant in a different region — starts in search and often ends before you're contacted, when your spec page either answered the engineer's question or didn't."
+    },
+    {
+      "q": "How long does SEO take for a manufacturing company?",
+      "a": "Spec and grade pages on an established domain often show impressions inside eight to twelve weeks because competition on precise technical queries is thin. Broad category and city terms take six to twelve months, and some directory-dominated terms won't come at all. Sequence the work accordingly."
+    }
+  ],
+  "related": [
+    {
+      "type": "seo-for",
+      "slug": "exporters"
+    },
+    {
+      "type": "seo-for",
+      "slug": "b2b"
+    },
+    {
+      "type": "compare",
+      "slug": "b2b-seo-vs-b2c-seo"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "schema-markup"
+    },
+    {
+      "type": "journal",
+      "slug": "programmatic-seo-and-the-scaled-content-line"
+    }
+  ]
+}

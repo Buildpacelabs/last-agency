@@ -1,0 +1,234 @@
+{
+  "slug": "aeo-vs-geo",
+  "type": "compare",
+  "primaryKeyword": "aeo vs geo",
+  "secondaryKeywords": [
+    "answer engine optimization meaning",
+    "aeo vs geo vs seo",
+    "featured snippet optimisation",
+    "voice search optimisation india",
+    "ai overview optimisation"
+  ],
+  "cluster": "ai-search",
+  "intent": "informational",
+  "h1": "AEO vs GEO: two acronyms, mostly one workstream",
+  "metaTitle": "AEO vs GEO: Two Acronyms, One Workstream",
+  "metaDescription": "AEO vs GEO are two acronyms for mostly one workstream. Here's the honest split between answer engines and generative engines, and the tactics for each.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "AEO targets answer engines that extract one passage — featured snippets, voice results, knowledge panels. GEO targets generative engines that synthesise several sources and cite them — AI Overviews, ChatGPT, Perplexity. The real difference is extraction versus synthesis. By our estimate three-quarters of the underlying work is identical.",
+  "takeaways": [
+    "**Extraction versus synthesis** is the only distinction that changes what you do. One engine lifts your paragraph; the other rewrites four paragraphs into one and credits you in a footnote.",
+    "The overlap is large enough that a separate AEO retainer and a separate GEO retainer is a billing decision, not a strategic one.",
+    "Google restricted FAQ rich results in 2023 and dropped HowTo, so half the schema advice on this topic is years out of date.",
+    "A zero-click answer can still pay — but only through branded search and direct traffic, which means you measure it in aggregate or not at all."
+  ],
+  "sections": [
+    {
+      "h2": "Answer engines and generative engines, defined properly",
+      "body": [
+        "Both terms describe something that answers a searcher instead of listing links. That's where the similarity ends, and the vocabulary has been muddled mostly by people selling packages named after it.",
+        "An **answer engine** extracts. It picks one source, lifts a passage close to verbatim, and shows it as the answer — featured snippets, the line a voice assistant reads aloud, a knowledge panel fact. One winner, unambiguous attribution.",
+        "A **generative engine** synthesises. It retrieves several documents, writes new prose from them and cites some sources: AI Overviews, AI Mode, ChatGPT with search, Perplexity, Copilot. Several winners, the model's wording, and your sentence may be paraphrased past recognition with your domain in a citation chip."
+      ],
+      "table": {
+        "caption": "Answer engines and generative engines, side by side.",
+        "head": [
+          "",
+          "Answer engines (AEO)",
+          "Generative engines (GEO)"
+        ],
+        "rows": [
+          [
+            "Surfaces",
+            "Featured snippets, People Also Ask, knowledge panels, voice",
+            "AI Overviews, AI Mode, ChatGPT, Perplexity, Copilot"
+          ],
+          [
+            "Mechanism",
+            "Extract one passage from one page",
+            "Retrieve several pages, synthesise, cite a few"
+          ],
+          [
+            "Winners per query",
+            "Usually one",
+            "Typically three to eight sources"
+          ],
+          [
+            "What it rewards",
+            "A precise, self-contained passage in the expected format",
+            "Being specific and consistently attributable everywhere"
+          ],
+          [
+            "Wording shown",
+            "Yours, near-verbatim",
+            "The model's, paraphrased"
+          ],
+          [
+            "How you verify it",
+            "Search the query and look. Repeatable.",
+            "Run a prompt panel and log it. Varies by session."
+          ],
+          [
+            "Click behaviour",
+            "Often zero-click, sometimes a strong click",
+            "Often zero-click, lower volume, higher intent"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Extraction versus synthesis: the one difference that changes the work",
+      "body": [
+        "Optimising for extraction is a formatting problem with a right answer. The engine wants a block it can lift: a definition sentence, a 40–60 word paragraph, a numbered list, a table with clean headers. Give it that shape and you're eligible. Bury the answer in paragraph four and you're not.",
+        "Optimising for synthesis is a credibility problem. The model isn't lifting your paragraph, it's deciding whether to reference you while writing its own. That leans on whether your claims are specific and whether they agree with what it read elsewhere.",
+        "So AEO rewards being **first and cleanest on one page**. GEO rewards being **consistent and specific across your whole footprint** — site, profiles, press, other people's pages about you. One is an editing standard. The other is closer to reputation management with a schema file attached."
+      ]
+    },
+    {
+      "h2": "The tactics unique to each, and the overlap nobody sells you",
+      "body": [
+        "The overlap list is the longest one, which is exactly why paying for both separately is a bad idea. The three-quarters figure up top is our estimate from doing the work, not a measured statistic."
+      ],
+      "subs": [
+        {
+          "h3": "Unique to AEO",
+          "bullets": [
+            "**Match the snippet format to the query type.** Definitions get a paragraph, \"how to\" gets an ordered list, \"X vs Y\" gets a table. Guess wrong and you lose a snippet you'd otherwise win.",
+            "**Question-shaped H2s** with the answer immediately underneath, no runway.",
+            "**Steal-back audits.** Find queries where you rank top five but someone else holds the snippet, then rewrite the passage to beat theirs. Almost nobody does it.",
+            "**Conversational phrasing** for voice, which reads full sentences aloud and clips around 30 words."
+          ]
+        },
+        {
+          "h3": "Unique to GEO",
+          "bullets": [
+            "**Entity consistency** across your site, profiles and third-party coverage — same name, category, founders, claims.",
+            "**Original numbers you can publish.** A model will quote a statistic and credit its source. It has nothing to quote from a page of adjectives.",
+            "**Off-site presence.** Being described accurately on pages you don't own affects synthesis in a way it never affected a snippet.",
+            "**Prompt-panel monitoring**, because there's no result page to check."
+          ]
+        },
+        {
+          "h3": "The overlap — where most of the value sits",
+          "bullets": [
+            "A self-contained 40–60 word answer under every heading. Feeds extraction and synthesis equally.",
+            "Clear H2/H3 hierarchy, so passages have obvious boundaries.",
+            "Comparison tables with real values instead of ticks and crosses.",
+            "Specificity — named numbers, named ranges, named trade-offs. Vagueness is unquotable in both systems.",
+            "Being crawlable, indexed and ranking, which is why [neither replaces SEO](/compare/geo-vs-seo).",
+            "Dated updates, so the engine knows which conflicting claim is current."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The structured data that helps both, and the schema that stopped working",
+      "body": [
+        "Schema advice on this topic ages badly. In 2023 Google restricted FAQ rich results to well-known government and health sites and removed HowTo rich results. Marking up FAQs is still worth doing — it labels question-and-answer pairs cleanly — but if someone sells FAQ schema on the promise of extra SERP real estate, that promise expired.",
+        "What still earns its keep is the structured data that resolves entities and describes the document."
+      ],
+      "bullets": [
+        "**Organization** with `sameAs` pointing at every profile you control. The cheapest disambiguation signal there is.",
+        "**Article** or **BlogPosting** with a real `author` object, `datePublished` and `dateModified`. Dates settle contradictions.",
+        "**Product**, **Service** and **Offer** where the prices and terms match what's on the page.",
+        "**BreadcrumbList**, which tells a machine where the page sits in your structure.",
+        "**FAQPage** — useful as labelling. Don't expect rich results outside the narrow categories Google kept.",
+        "**Speakable** — news publishers only. Skip it unless that's you."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Schema is not a ranking switch",
+        "body": "Google has been consistent that structured data affects eligibility for features, not ranking. Any pitch that treats a schema audit as an AI visibility strategy is charging you for markup and hoping you don't ask what changed."
+      }
+    },
+    {
+      "h2": "Why a zero-click answer still produces revenue",
+      "body": [
+        "The standard objection: if the engine answers the question, why would anyone visit? Sometimes they won't. That doesn't mean the answer earned nothing.",
+        "Three routes carry value without a click. A local searcher taps the call button straight from the result. A researcher sees your name cited three times in a fortnight, then searches your brand directly. And a buyer builds a shortlist from an assistant's answer, where being named at all is the whole prize.",
+        "The caveat is attribution. None of this produces a tidy conversion path, and anyone handing you a revenue figure for zero-click has invented it. What you can do is watch the aggregate."
+      ],
+      "numbered": [
+        "**Branded query impressions in Search Console**, over 90-day windows. If people meet you in answers, your name gets searched more.",
+        "**Direct and branded organic sessions** in GA4 — same logic, other side of the click.",
+        "**\"How did you hear about us?\"** as free text on your enquiry form. Crude, and the only place an assistant ever gets named out loud.",
+        "**Calls from the map pack** for local businesses, where zero-click is the successful outcome rather than a failure."
+      ]
+    },
+    {
+      "h2": "How to report on both without inventing a metric",
+      "body": [
+        "Three sources exist. Each is honest about something and blind to something else. Report all three, label the blind spots, refuse to blend them.",
+        "Search Console covers extraction reliably — you can check whether you hold a snippet, and impressions and position are real measurements. What it won't give you is an AI Overview split; Google folds that into the standard report. You can see the signature but not isolate it.",
+        "GA4 covers the assistant referrals — `chatgpt.com`, `perplexity.ai`, `copilot.microsoft.com`, `gemini.google.com`. Small numbers, good intent. Give them a channel group so they stop hiding in \"Referral\".",
+        "A manual prompt panel covers generative visibility: 25–30 prompts a real buyer would type, run monthly, logged out, same day each month, recorded by hand. It's a sample, not a census, and saying so is what separates a report from a sales deck. Our [AEO and GEO service](/services/aeo-geo-services) runs exactly this."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The number to refuse",
+        "body": "A single \"AI visibility score\" out of 100. There is no denominator. Ask what it's a percentage of and watch the answer arrive in three paragraphs."
+      }
+    },
+    {
+      "h2": "The verdict, by situation",
+      "body": [
+        "Local or transactional — clinic, salon, trade, restaurant — do AEO and skip GEO for now. Snippets and voice results sit beside a call button, and [zero-click](/glossary/zero-click-search) is a win in your category rather than a loss.",
+        "If you sell something researched — B2B software, professional services, high-ticket healthcare — GEO earns the extra work, because a place on the shortlist an assistant produces beats a snippet on a definition query. Everyone else runs them as one workstream: two acronyms, one editor, one invoice."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the difference between AEO and GEO?",
+      "a": "AEO optimises for answer engines that extract one passage from one page — featured snippets, voice answers, knowledge panels. GEO optimises for generative engines that synthesise several sources and cite them, like AI Overviews and ChatGPT. Extraction rewards clean formatting on a single page; synthesis rewards being specific and consistent across your whole footprint."
+    },
+    {
+      "q": "Is AEO the same as SEO?",
+      "a": "It's a subset. AEO is the part of SEO concerned with winning the extracted answer rather than the blue link, and it depends entirely on already ranking — engines pull snippets from pages in the top results. If you're not on page one for the query, no amount of answer formatting will get you the snippet."
+    },
+    {
+      "q": "Should I hire separate AEO and GEO services?",
+      "a": "No. By our estimate around three-quarters of the underlying work is identical: answer-first formatting, clear heading structure, comparison tables, specificity and technical health. Paying two retainers for one workstream is a billing outcome, not a strategy. Ask any vendor to show you the scope documents side by side."
+    },
+    {
+      "q": "Does FAQ schema still help with AI answers?",
+      "a": "It still labels question-and-answer pairs cleanly, which helps anything parsing your page. What it no longer does is earn rich results — Google restricted FAQ rich results to well-known government and health sites in 2023 and removed HowTo. Add the markup, but don't buy it as a visibility tactic."
+    },
+    {
+      "q": "How do I measure zero-click value?",
+      "a": "In aggregate only. Track branded query impressions in Search Console over 90-day windows, direct and branded organic sessions in GA4, calls from your Google Business Profile, and a free-text \"how did you hear about us\" field on your enquiry form. Anyone quoting you a precise revenue figure for zero-click has fabricated it."
+    }
+  ],
+  "versus": {
+    "a": "AEO (answer engine optimisation)",
+    "b": "GEO (generative engine optimisation)",
+    "verdict": "A local or transactional business should spend its effort on AEO, where a snippet sits beside a call button and zero-click is the successful outcome; GEO only earns the extra work once your buyers build a shortlist before they contact anyone."
+  },
+  "related": [
+    {
+      "type": "compare",
+      "slug": "geo-vs-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "answer-engine-optimization"
+    },
+    {
+      "type": "glossary",
+      "slug": "featured-snippet"
+    },
+    {
+      "type": "glossary",
+      "slug": "zero-click-search"
+    },
+    {
+      "type": "services",
+      "slug": "aeo-geo-services"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-get-cited-by-ai-assistants"
+    }
+  ]
+}

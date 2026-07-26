@@ -1,0 +1,210 @@
+{
+  "slug": "what-are-backlinks",
+  "type": "answers",
+  "primaryKeyword": "what are backlinks",
+  "secondaryKeywords": [
+    "backlinks meaning",
+    "what is a backlink in seo",
+    "types of backlinks",
+    "what counts as a backlink"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "What backlinks are, and which ones actually count",
+  "metaTitle": "What Are Backlinks? And Which Ones Count",
+  "metaDescription": "What are backlinks? Links from other sites to yours — and most pass nothing at all. Here's the discount curve that decides which links move rankings.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "A backlink is a link from another website to yours. Google treats it as a vote, but the votes are weighted enormously unevenly — by the linking site's authority, the link's placement, its rel attribute and whether a human editor chose to add it. On most sites, the large majority of backlinks pass nothing at all.",
+  "takeaways": [
+    "Backlink counts are the most inflated number in SEO. **Referring domains** is the number that means something; total links is mostly duplication.",
+    "A sitewide footer link across 40,000 pages is far closer to one link than to 40,000.",
+    "`nofollow` became a hint rather than a rule in 2020, so nofollowed links aren't worthless — they're unpredictable.",
+    "How many links a page needs is answerable: look at what the pages currently ranking have, and match the median."
+  ],
+  "sections": [
+    {
+      "h2": "The definition, and the two parts that matter",
+      "body": [
+        "A backlink — also called an inbound link — is any hyperlink on another website that points at a page on yours. That's the whole definition. The interesting part is what Google does with it.",
+        "The original idea was simple: if lots of pages link to a document, the document is probably worth reading, and links from important pages should count more than links from unimportant ones. That's PageRank, it's Google's own patent, and in one form or another it's still running.",
+        "Two components of any link carry meaning. The **source** — which site, which page, how trusted, how relevant to your topic. And the **anchor text** — the visible words the link is wrapped around, which tell Google what the destination page is about. A link from a respected industry publication reading \"SEO pricing in India\" says something specific. A link from a scraped directory reading \"click here\" says almost nothing, twice over."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Anchor text, in one line",
+        "body": "Descriptive anchors help. Identical commercial anchors repeated across hundreds of links look manufactured, because natural linking produces messy anchors — brand names, bare URLs, \"this article\", and the occasional \"here\". Messy is the signature of real."
+      }
+    },
+    {
+      "h2": "The four rel attributes and what each one signals",
+      "body": [
+        "Every link carries an instruction to search engines in its `rel` attribute, or carries none at all. The rules changed in 2019 and a lot of advice still hasn't caught up."
+      ],
+      "table": {
+        "caption": "Link rel attributes and how Google treats each one.",
+        "head": [
+          "Attribute",
+          "Where you find it",
+          "What Google does with it"
+        ],
+        "rows": [
+          [
+            "**dofollow** (no attribute)",
+            "Editorial links in articles, resource pages, genuine citations.",
+            "Passes ranking signals. This is the link everyone means when they say \"backlink\"."
+          ],
+          [
+            "`rel=\"nofollow\"`",
+            "Wikipedia, many news sites, forums, most social platforms.",
+            "Since March 2020, treated as a **hint** — Google may use it for crawling and ranking, or ignore it. Unpredictable, not worthless."
+          ],
+          [
+            "`rel=\"sponsored\"`",
+            "Paid placements, affiliate links, advertorials.",
+            "A declaration that money changed hands. Passes no ranking credit, and declaring it is what keeps you compliant."
+          ],
+          [
+            "`rel=\"ugc\"`",
+            "Blog comments, forum posts, user profiles.",
+            "Marks the link as reader-submitted rather than editorial. Discounted accordingly."
+          ]
+        ]
+      },
+      "bullets": [
+        "The practical read: chasing dofollow links exclusively is a strategy from 2015. A profile with zero nofollowed links looks manufactured, because real brands get mentioned on platforms that nofollow by default.",
+        "The full comparison lives in [dofollow versus nofollow](/compare/dofollow-vs-nofollow), including what each is worth in practice."
+      ]
+    },
+    {
+      "h2": "The discount curve: where a link's value goes to die",
+      "body": [
+        "This is the part nobody selling links wants discussed. A backlink's value is discounted — sometimes to zero — by a stack of factors that have nothing to do with whether the link exists. Here's roughly where the value drains out, worst first."
+      ],
+      "bullets": [
+        "**Sitewide footer and sidebar links.** Repeated across every page of a site, so they inflate your total link count enormously. Google collapses them; the practical value sits closer to a single link than to thousands. This is how agencies produce \"we built you 12,000 backlinks\" reports from four placements.",
+        "**Links on pages nobody links to.** A link's power comes from the linking page's own authority. A brand-new page on a strong domain that no one has linked to yet passes very little, regardless of the domain's rating.",
+        "**Links on pages Google hasn't indexed.** If the page isn't in the index, the link isn't being counted. A surprising share of purchased guest posts sit on unindexed pages, which is why they're cheap.",
+        "**Generic directory listings.** Unmoderated \"submit your business\" directories exist to sell links. Google has been discounting them since roughly 2012.",
+        "**Blog comment and forum signature links.** Nearly always `ugc` or `nofollow`, and pattern-obvious at scale.",
+        "**Paid links that don't declare themselves.** These violate Google's link spam policies. Google's systems now largely neutralise them, which means you paid for nothing — the more expensive failure mode than being penalised, because nothing visibly breaks.",
+        "**Private blog networks.** Sites built to sell links to each other. They work until the network is identified, and then everything they touched loses its value at once."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "\"1,000 backlinks for ₹4,999\"",
+        "body": "These exist in volume in the Indian market and they're not fraud in the legal sense — you do receive 1,000 links. They're just links from the categories above, worth nothing individually and pattern-obvious collectively. The money is gone; the risk of cleanup work later isn't."
+      }
+    },
+    {
+      "h2": "Editorial, placed and bought",
+      "body": [
+        "Every link falls into one of three categories based on how it came to exist. This is the classification that predicts value best, and it's the one that never appears on a link-building invoice."
+      ],
+      "table": {
+        "caption": "The three ways a link comes into existence, and what each is worth.",
+        "head": [
+          "Type",
+          "How it happened",
+          "Realistic value"
+        ],
+        "rows": [
+          [
+            "**Editorial**",
+            "A writer found your page useful and cited it, unprompted.",
+            "The highest, by a distance. Also the hardest to manufacture, which is exactly why it works."
+          ],
+          [
+            "**Placed**",
+            "You pitched — digital PR, an expert quote, original data, a partnership. A human editor said yes.",
+            "Genuinely valuable. Most legitimate agency link work lives here."
+          ],
+          [
+            "**Bought**",
+            "You paid a site or a broker for placement, undeclared.",
+            "Against Google's policies. Increasingly neutralised, meaning you paid for a link that does nothing."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The line between placed and bought is thin",
+        "body": "Paying a publication for editorial coverage is buying. Paying a PR team to pitch, where the publication decides independently, is placing. Ask any vendor which side of that line their inventory sits on — the length of the pause is the answer. [Paid links versus earned links](/compare/paid-links-vs-earned-links) works through the grey area properly."
+      }
+    },
+    {
+      "h2": "How many links a page actually needs",
+      "body": [
+        "The honest answer is that it depends entirely on the query, and the honest method takes ten minutes rather than a guess.",
+        "Search your target keyword. Take the pages ranking in positions one to five — the specific pages, not the domains. Check how many referring domains each of those *pages* has. The median of those five is roughly your target. Not the domain totals, which are dominated by a homepage's history and tell you nothing about what this page needed."
+      ],
+      "numbered": [
+        "**Long-tail informational queries** frequently need zero external links. A well-structured page with good internal linking, on a site with any history, competes fine.",
+        "**Body-term service pages** in a competitive Indian vertical typically need somewhere between a handful and a few dozen genuinely independent referring domains — and this is where most link budgets should go.",
+        "**National head terms** in finance, insurance, travel or e-commerce need hundreds, built over years, alongside a brand people already recognise. If your budget is ₹40,000/month, this isn't the fight to pick this year.",
+        "**If the top five have fewer referring domains than you do** and still outrank you, your problem isn't links. It's relevance, format or intent — and buying more links is the expensive way to avoid finding that out."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The number that matters",
+        "body": "Track **referring domains**, not backlinks. One link each from 40 different real websites beats 4,000 links from one. Most reporting shows the big number because the big number is easier to sell — see [what a healthy backlink profile looks like](/answers/what-is-a-backlink-profile) for the ratios worth auditing."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What counts as a good backlink?",
+      "a": "One from a site with genuine traffic and reputation, on a page relevant to yours, placed by a human editor who thought your page was worth citing, with anchor text that describes what you actually do. Miss any of those and the link still exists — it just does less than the invoice implies."
+    },
+    {
+      "q": "Do nofollow links help SEO?",
+      "a": "Sometimes. Google has treated nofollow as a hint rather than a directive since 2020, so it may or may not count them. Beyond ranking, nofollowed links from Wikipedia, news sites and big platforms still send referral traffic and make the profile look natural, which matters."
+    },
+    {
+      "q": "Are backlinks from Indian directories worth anything?",
+      "a": "Business directories with real editorial standards and real traffic, sometimes. The bulk-submission directories sold in packages, no — they've been discounted for over a decade. A better use of the same money is getting listed accurately in the industry associations and local bodies your sector actually uses."
+    },
+    {
+      "q": "Can backlinks hurt my website?",
+      "a": "Usually they're neutralised rather than punished — Google's link spam systems nullify unnatural links instead of penalising the target, partly so competitors can't attack you. The real risk is a manual action, which comes with a Search Console notice and usually follows a pattern you built deliberately."
+    },
+    {
+      "q": "How do I get backlinks for a new website?",
+      "a": "Publish something worth citing — original data, a genuinely useful tool, a strong opinion with your name on it — then tell the specific people who'd care. Slower than buying, and it's the only version that still works. Suppliers, customers, associations and local press are the realistic first ten."
+    },
+    {
+      "q": "What's the difference between backlinks and internal links?",
+      "a": "A backlink comes from another domain and acts as third-party endorsement. An internal link comes from your own site and controls how authority and crawl attention distribute across your pages. Internal links are fully under your control, which makes them the cheaper win most sites skip."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "backlink"
+    },
+    {
+      "type": "compare",
+      "slug": "dofollow-vs-nofollow"
+    },
+    {
+      "type": "compare",
+      "slug": "paid-links-vs-earned-links"
+    },
+    {
+      "type": "cost",
+      "slug": "link-building-cost"
+    },
+    {
+      "type": "journal",
+      "slug": "how-much-do-backlinks-actually-matter"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-a-backlink-profile"
+    },
+    {
+      "type": "answers",
+      "slug": "why-is-seo-important"
+    }
+  ]
+}

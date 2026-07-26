@@ -1,0 +1,244 @@
+{
+  "slug": "seo-vs-marketplace-selling",
+  "type": "compare",
+  "primaryKeyword": "seo vs marketplace selling",
+  "secondaryKeywords": [
+    "own website vs marketplace for d2c",
+    "marketplace commission vs seo cost",
+    "should i sell on my own site or a marketplace",
+    "d2c website traffic india",
+    "marketplace dependency risk"
+  ],
+  "cluster": "channel-mix",
+  "intent": "commercial",
+  "h1": "SEO vs marketplace selling: the break-even GMV",
+  "metaTitle": "SEO vs Marketplaces: Finding Your Break-Even GMV",
+  "metaDescription": "SEO vs marketplace selling is a commission question. Marketplaces take 15-30% of every order, forever. Here's the monthly GMV where owning traffic wins.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "A marketplace takes 15–30% of every order, forever, and the bill grows as you do. A ₹75,000/month SEO retainer is fixed. The naive break-even sits at ₹2.5–5 lakh of monthly GMV moved to your own site. Once you re-buy shipping, payments and returns, the honest number is ₹3.75–15 lakh.",
+  "takeaways": [
+    "Commission is a **variable cost that scales with success**. A retainer is a fixed cost that doesn't. That's the entire argument, and it only flips above a certain GMV.",
+    "Your real take rate is not on the rate card. It's **last month's settlement report divided by last month's GMV** — and it's usually 4–8 points higher than you think.",
+    "You only save the part of the commission you don't have to buy again. Payments, shipping and returns come back onto your P&L the moment the order does.",
+    "The marketplace keeps the customer. No email, no phone, no repeat-purchase list, no honest LTV number."
+  ],
+  "sections": [
+    {
+      "h2": "Commission isn't a fee, it's a lease on your own demand",
+      "body": [
+        "Here's the shape of the problem. In year one you do ₹40 lakh on Amazon and pay roughly ₹9 lakh in fees. In year three you do ₹4 crore and pay ₹90 lakh. Nothing about the service improved. The rate didn't change. You just got bigger, and the invoice grew with you.",
+        "A ₹75,000/month SEO retainer costs ₹9 lakh a year whether you do ₹40 lakh or ₹4 crore. That's the whole comparison in one line. Below a certain GMV the marketplace is obviously cheaper, and above it, obviously not.",
+        "The mistake founders make is running this on the rate card instead of the settlement report, and forgetting that some of what they pay buys real work — warehousing, delivery, payment collection, returns handling and, above all, a stranger's willingness to enter their card details."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The fee that isn't in the fee",
+        "body": "On-platform ad spend. Sponsored Products is now close to mandatory for visibility in competitive Indian categories, and it sits entirely outside the commission. Add it to your take rate before you compare anything, or you'll understate the marketplace's true cost by several points."
+      }
+    },
+    {
+      "h2": "Work out your real take rate before you compare anything",
+      "body": [
+        "Don't estimate this. Download last month's settlement report, add every deduction, divide by GMV, and use that number. Category rate cards change every few months in India and almost nobody's actual rate matches the one they quote from memory."
+      ],
+      "table": {
+        "caption": "What comes out of a typical Indian marketplace settlement, and where it goes.",
+        "head": [
+          "Deduction",
+          "Charged on",
+          "Comes back to you if you sell direct?"
+        ],
+        "rows": [
+          [
+            "Referral / commission fee",
+            "% of item price, by category",
+            "**Yes — this is the real saving.** Fashion, beauty and jewellery sit at the top of the band; electronics and appliances at the bottom."
+          ],
+          [
+            "Closing / fixed fee",
+            "Flat, per order, banded by value",
+            "Yes"
+          ],
+          [
+            "Weight handling / shipping",
+            "Weight and zone",
+            "No — you now pay a courier aggregator instead"
+          ],
+          [
+            "Fulfilment and storage",
+            "Per unit, if you use marketplace warehousing",
+            "No — a 3PL, or you do it yourself"
+          ],
+          [
+            "Payment collection / COD fee",
+            "Per order",
+            "No — a payment gateway charges roughly 2%"
+          ],
+          [
+            "Returns and RTO handling",
+            "Per return",
+            "No, and it usually gets worse first"
+          ],
+          [
+            "GST on all of the above",
+            "18% on the fees",
+            "Applies either way"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The break-even GMV, honestly",
+      "body": [
+        "Take the ₹75,000/month retainer as the fixed cost. Ask how much GMV has to move to your own site before the commission you stopped paying covers it.",
+        "The naive version divides the retainer by the take rate. The honest version subtracts the costs you re-buy the second the order lands on your own site: payment gateway around 2%, logistics 4–8% depending on weight and average order value, returns and RTO 2–6% in COD-heavy categories, plus your Shopify or WooCommerce stack. Call it ten points. Substitute your own numbers, because ten points is a midpoint, not a law."
+      ],
+      "table": {
+        "caption": "Monthly GMV your own site must do for a ₹75,000/mo SEO retainer to pay for itself. Own-site GMV, not total GMV.",
+        "head": [
+          "All-in marketplace take",
+          "Naive break-even",
+          "Costs you re-buy",
+          "Honest break-even"
+        ],
+        "rows": [
+          [
+            "15% — electronics, large appliances, staples",
+            "₹5,00,000 / mo",
+            "~10 points",
+            "**₹15,00,000 / mo**"
+          ],
+          [
+            "22% — home, personal care, accessories",
+            "₹3,41,000 / mo",
+            "~10 points",
+            "**₹6,25,000 / mo**"
+          ],
+          [
+            "30% — fashion, beauty, jewellery",
+            "₹2,50,000 / mo",
+            "~10 points",
+            "**₹3,75,000 / mo**"
+          ]
+        ]
+      },
+      "bullets": [
+        "**Low-commission categories should mostly stay on the marketplace.** At 15% and ten points of re-bought cost you need ₹15 lakh a month of direct GMV before the retainer washes its face. If your site does ₹1 lakh today, that's a fifteen-fold move and probably not the best use of ₹9 lakh a year.",
+        "**High-commission categories are where owning traffic pays.** At 30%, ₹3.75 lakh a month of direct GMV covers the retainer — a realistic 9–12 month target for a brand already doing ₹1–1.5 lakh direct.",
+        "**Neither number counts the second-order effects**, and they're the good ones: repeat purchase without paying commission twice, real LTV, an email and WhatsApp list, and price control."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The months you lose",
+        "body": "SEO is fixed cost with a lag. You'll pay the retainer for three to six months before direct GMV moves meaningfully. Budget for the loss-making quarter honestly or you'll cancel in month four, which is when most of this work starts to compound. [What ecommerce SEO costs](/cost/ecommerce-seo-cost) sets out the full spend."
+      }
+    },
+    {
+      "h2": "The thing the commission never buys you: the customer",
+      "body": [
+        "Marketplaces mask customer contact details and their policies prohibit using order data to pull buyers off-platform. You get a masked email or none at all, a delivery address, and nothing you can market to.",
+        "So you can't calculate real repeat rate, build a WhatsApp flow, launch a new SKU to existing buyers, or run a proper cohort analysis. A customer who buys from you six times over three years pays the marketplace six times.",
+        "The strategic version is worse. If a marketplace reprices your category, reorders its search results, launches a private label against you, or suspends your account over a metric dispute, revenue goes to zero on a Tuesday and you have no list to email about it. That's the ordinary operating reality of building on rented land."
+      ]
+    },
+    {
+      "h2": "Why the marketplace outranks your own product page",
+      "body": [
+        "Search for your own bestseller. There's a decent chance Amazon or Flipkart sits above your product page, sometimes with a discount you didn't authorise. Three mechanics cause this, and only one of them is your fault.",
+        "First, domain authority. A marketplace has accumulated links for two decades; your product page launched last March. Second, duplication — most brands paste identical copy onto both listings, so Google picks the stronger domain and treats yours as the copy. Third, structured data: marketplace listings carry price, stock, review and shipping schema that feeds rich results and free product listings, while a lot of D2C themes ship with none of it.",
+        "You will usually win your own brand name, and if you don't, that's a fixable technical problem rather than a competitive one. What you'll rarely win is the head term — \"running shoes\" belongs to the marketplaces and you shouldn't spend money contesting it."
+      ],
+      "bullets": [
+        "**Win instead:** \"best running shoes for flat feet India\", \"cotton vs linen kurta for summer\", \"hair serum for hard water\". Marketplaces have SKU grids, not answers.",
+        "**Own the comparison pages** where your brand is one of the options. If you don't write them, an affiliate site will and it'll rank you third.",
+        "**Write different copy on your own product pages** than the copy you feed the marketplace catalogue. Same product, different page, different job.",
+        "**Fix the structured data** — product, offer, rating and shipping schema on every page. A one-off build, not a monthly cost. [SEO for D2C brands](/seo-for/d2c-brands) covers what else it includes."
+      ]
+    },
+    {
+      "h2": "A 12-month plan to shift the mix",
+      "body": [
+        "Nobody sensible leaves the marketplace. The target is a mix you control — moving from something like 90/10 to 60/40 across a year, while total GMV keeps growing. Going to zero marketplace almost always shrinks the business."
+      ],
+      "numbered": [
+        "**Months 1–2 — measure honestly.** Real take rate from the settlement report. Direct-site GMV today. Trailing-90-day organic revenue, frozen as your baseline. Fix product schema, site speed and the checkout leaks before you buy a single new visitor.",
+        "**Months 2–4 — own your brand queries.** Brand plus \"review\", \"price\", \"offers\", \"vs\", \"discount code\". These are the cheapest wins available and they're currently sending your own customers to a page that takes 30% of the order.",
+        "**Months 3–7 — build the buying-guide layer.** Ten to twenty problem-led pages answering the question a shopper asks *before* they know which SKU they want. Marketplaces structurally cannot compete here.",
+        "**Months 5–9 — category and collection pages.** Not a SKU grid with 40 words of copy. A page that explains the category, links to the guides and converts. Most D2C category pages are thin content wearing a filter bar.",
+        "**Months 8–12 — retention economics.** Email and WhatsApp flows on customers you now own, reorder mechanics, and first-party reviews so your own pages carry ratings.",
+        "**Month 12 — re-run the maths.** Direct GMV × take rate versus the retainer. If it hasn't cleared the honest break-even for your band, either the category is wrong for this or the execution was."
+      ]
+    },
+    {
+      "h2": "The verdict",
+      "body": [
+        "If your category commission is under about 18% and your own site does under ₹2 lakh a month, stay on the marketplace and put the ₹75,000 into on-platform ads and better listings. The break-even is too far away to justify a fixed cost the business hasn't earned yet.",
+        "If your all-in take is 25% or more — fashion, beauty, jewellery, accessories — and you're doing over ₹1 lakh a month direct already, owning traffic is the cheaper channel within a year and it keeps getting cheaper. At that rate you're handing over ₹25–30 lakh on every ₹1 crore of GMV, forever, and the retainer stops growing the day you sign it.",
+        "The genuine reason to do this isn't the commission, though. It's that a marketplace-only brand has no customer list, no pricing power and no answer for the Tuesday the algorithm changes. The commission is just the number that makes the argument legible to a CFO. [Our SEO pricing](/pricing) starts at ₹75,000/mo, and we freeze your trailing-90-day organic revenue on day one — beat that baseline in 90 days or we keep working free until we do. Never a promised ranking position; nobody controls Google's index."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Don't run this on gross margin",
+        "body": "Founders compare commission to gross margin and conclude the marketplace eats everything. Compare it to contribution margin after re-bought logistics, payments and returns. The gap is usually 8–16 points narrower than the pitch deck says."
+      }
+    }
+  ],
+  "versus": {
+    "a": "SEO on your own site",
+    "b": "Marketplace selling",
+    "verdict": "In a 25–30% commission category with over ₹1 lakh a month of direct GMV already, a ₹75,000 SEO retainer is cheaper than the commission inside a year — below 18% commission and under ₹2 lakh direct, keep the marketplace and spend the money on listings and on-platform ads."
+  },
+  "faqs": [
+    {
+      "q": "What commission do Indian marketplaces actually charge?",
+      "a": "Referral fees vary by category — low single digits on some electronics, north of 20% in fashion, beauty and jewellery. Then closing fees, weight handling, fulfilment, payment collection and 18% GST on all of it. All-in take lands 15–30% for most D2C categories. Read your settlement report rather than the rate card."
+    },
+    {
+      "q": "At what GMV does SEO beat marketplace commission?",
+      "a": "Against a ₹75,000/month retainer: roughly ₹15 lakh of monthly own-site GMV at a 15% take, ₹6.25 lakh at 22%, and ₹3.75 lakh at 30% — after subtracting about ten points for the payments, logistics and returns costs you take back on. The naive figures without that subtraction are ₹5 lakh, ₹3.41 lakh and ₹2.5 lakh."
+    },
+    {
+      "q": "Why does Amazon rank above my own product page?",
+      "a": "Twenty years of accumulated links, identical product copy that makes your page look like the duplicate, and full product schema feeding rich results. You should still win your own brand name; if you don't, that's a technical problem. Head terms like \"running shoes\" aren't worth contesting."
+    },
+    {
+      "q": "What customer data do I lose on a marketplace?",
+      "a": "Effectively all of it. Contact details are masked, using order data to pull buyers off-platform breaches policy, and every reorder is a fresh commission. You can't build a list, can't measure real LTV, and can't launch a new SKU to people who already bought from you."
+    },
+    {
+      "q": "How long before my own site sells enough to matter?",
+      "a": "Brand queries move in 6–10 weeks. Buying-guide and category traffic takes three to six months to build and six to twelve to compound into revenue. Budget for a loss-making first quarter — cancelling in month four is the single most common way this spend gets wasted."
+    }
+  ],
+  "related": [
+    {
+      "type": "seo-for",
+      "slug": "d2c-brands"
+    },
+    {
+      "type": "seo-for",
+      "slug": "ecommerce"
+    },
+    {
+      "type": "cost",
+      "slug": "ecommerce-seo-cost"
+    },
+    {
+      "type": "compare",
+      "slug": "wordpress-vs-shopify-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "why-indian-d2c-brands-overspend-on-ads"
+    },
+    {
+      "type": "glossary",
+      "slug": "thin-content"
+    },
+    {
+      "type": "compare",
+      "slug": "seo-vs-email-marketing"
+    }
+  ]
+}

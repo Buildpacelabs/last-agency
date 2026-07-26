@@ -1,0 +1,165 @@
+{
+  "slug": "answer-engine-optimization",
+  "type": "glossary",
+  "primaryKeyword": "answer engine optimization",
+  "secondaryKeywords": [
+    "aeo meaning",
+    "aeo vs geo",
+    "answer engine optimisation seo",
+    "optimising for ai overviews",
+    "voice search optimization"
+  ],
+  "cluster": "ai-search",
+  "intent": "commercial",
+  "h1": "Answer Engine Optimization (AEO)",
+  "metaTitle": "Answer Engine Optimization (AEO), Explained",
+  "metaDescription": "Answer engine optimization is structuring content so answer engines quote it. Here's how AEO differs from GEO and which formats get lifted verbatim.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Answer engine optimization (AEO)",
+  "definition": "Answer engine optimization is the practice of structuring content so that answer engines can lift a correct, self-contained answer straight out of it.",
+  "answer": "Answer engine optimization is formatting content so an answer engine can lift a clean answer from it: a 40 to 60 word direct response under a question-shaped heading, backed by a table or a list. AEO is the on-page craft. GEO is the wider job of being retrieved and cited at all. Most sites need both.",
+  "takeaways": [
+    "AEO is a **formatting discipline**. GEO is a **visibility discipline**. Arguing about the boundary is a waste of a meeting.",
+    "The unit that gets quoted is a **40 to 60 word self-contained paragraph** sitting directly under the question it answers.",
+    "Question-shaped headings work because they match the shape of the query. This is old featured-snippet craft, still undefeated.",
+    "Schema helps machines parse you. It no longer buys you FAQ rich results on an ordinary commercial site — Google restricted those in 2023."
+  ],
+  "sections": [
+    {
+      "h2": "AEO versus GEO, settled in one paragraph",
+      "body": [
+        "AEO is about the answer: shaping a passage so a machine can extract it correctly and completely. GEO is about the source: getting your domain into the retrieval set in the first place, through rankings, authority and third-party presence. AEO without GEO is a beautifully formatted page nobody retrieves. GEO without AEO is a retrieved page whose answer is too tangled to quote, so the model quotes a competitor instead. The full split is laid out in [AEO vs GEO](/compare/aeo-vs-geo); the practical answer is that they are two halves of one workflow and the vocabulary war is a marketing artefact.",
+        "Worth noting that neither is new in spirit. Optimising for the [featured snippet](/glossary/featured-snippet) demanded exactly this discipline from 2015 onward. What changed is the consequence: a snippet still showed your link prominently, whereas an answer engine may resolve the query and never show a list at all."
+      ]
+    },
+    {
+      "h2": "The formats that actually get quoted",
+      "body": [
+        "Some content shapes survive extraction. Others don't, no matter how good the writing. This ranking reflects how the underlying systems chunk and rank passages, and it holds equally for Google's snippets and for assistant answers."
+      ],
+      "table": {
+        "caption": "Content shapes ranked by how readily an answer engine can lift them.",
+        "head": [
+          "Format",
+          "Why it works",
+          "Best used for"
+        ],
+        "rows": [
+          [
+            "40–60 word direct answer",
+            "Fits a snippet box and an answer paragraph without truncation",
+            "The definition or the direct response"
+          ],
+          [
+            "Comparison table",
+            "Rows and columns survive extraction with meaning intact",
+            "X vs Y, pricing tiers, feature splits"
+          ],
+          [
+            "Numbered steps",
+            "Ordered structure is unambiguous to a parser",
+            "Processes, setup instructions, protocols"
+          ],
+          [
+            "Short bulleted list",
+            "Discrete facts with no dependency on surrounding prose",
+            "Types, requirements, red flags"
+          ],
+          [
+            "Long narrative prose",
+            "Chunks badly; meaning depends on earlier paragraphs",
+            "Opinion and argument — valuable, rarely quoted"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The pronoun test",
+        "body": "Read any paragraph you want quoted with the paragraph above it deleted. If it opens with 'This means' or 'It also', it fails — the machine will lift it without the context and produce a sentence about nothing. Name the subject in the first clause, every time."
+      }
+    },
+    {
+      "h2": "Question-shaped headings and definition-first openings",
+      "body": [
+        "Two habits do most of the work, and both are unglamorous.",
+        "First, write headings as the question a person would actually type. `How much does SEO cost in India?` outperforms `Pricing considerations` because it matches the query surface rather than an internal content plan. It also gives the extraction step an obvious boundary: the question is the key, the paragraph beneath it is the value.",
+        "Second, answer before you explain. Put the complete answer in the first sentence under the heading, then earn the reader's remaining attention with the nuance. Journalists call this the inverted pyramid, it predates search engines by a century, and it happens to be exactly what a retrieval system needs.",
+        "This costs you the dramatic build-up. That's the trade: content that withholds its answer to keep people scrolling is content that answer engines skip."
+      ],
+      "bullets": [
+        "**One question per heading.** Compound headings produce compound answers that get truncated.",
+        "**Repeat the subject in the answer.** 'Bounce rate is…' not 'It is…'.",
+        "**Include the qualifier that makes it true.** A currency, a country, a date, a range.",
+        "**Put the number in the sentence**, not in a graphic. Images are not extractable text."
+      ]
+    },
+    {
+      "h2": "Structured data helps parsing, not ranking",
+      "body": [
+        "[Schema markup](/glossary/schema-markup) tells a machine what a page's parts are — this block is a question, this is its answer, this is a price, this is an author. That's genuinely useful for extraction, and it's cheap to add.",
+        "What it does not do is buy visibility. In 2023 Google restricted FAQ rich results to well-known government and health sites and removed HowTo rich results entirely. Plenty of agencies still sell FAQ schema on the promise of those extra SERP lines, which have not been available to an ordinary commercial site for years.",
+        "Add `FAQPage`, `Article`, `Organization`, `Product` and `BreadcrumbList` because they describe your content accurately and cost an afternoon. Don't add them expecting a ranking change, and be suspicious of an invoice line that implies one."
+      ]
+    },
+    {
+      "h2": "Measuring whether you're being quoted",
+      "body": [
+        "Search Console will show you featured snippet performance indirectly — a page holding position one with an unusually high impression count and a low click-through rate is often being quoted rather than clicked. That gap is the cost of being the answer, and it's the honest reason [zero-click search](/glossary/zero-click-search) matters to your forecast.",
+        "For assistants there's no report at all, so you sample: a fixed list of buyer-realistic questions, run monthly, logging whether your answer appears and whether you're named. Crude, repeatable, and considerably better than assuming."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the difference between AEO and SEO?",
+      "a": "SEO gets the page ranked. AEO shapes what's on the page so a machine can extract a correct answer from it. In practice AEO is a subset of on-page SEO that got its own name once answer engines started resolving queries without sending a click."
+    },
+    {
+      "q": "Is AEO the same as GEO?",
+      "a": "Not quite, though they're used interchangeably. AEO is the on-page formatting craft — question headings, short self-contained answers, tables. GEO is the broader work of being retrieved and cited at all, including off-site presence and authority. You need both, and no client has ever benefited from the distinction being argued at length."
+    },
+    {
+      "q": "Does FAQ schema still get rich results?",
+      "a": "Only for well-known government and health sites. Google restricted FAQ rich results in 2023 and dropped HowTo results entirely. FAQ schema is still worth adding because it labels your content clearly for parsers — just not because it will add lines to your search listing."
+    },
+    {
+      "q": "How long should an answer paragraph be?",
+      "a": "Forty to sixty words. Long enough to be complete and self-contained, short enough to fit a snippet box or an answer paragraph without being cut. Write it so it makes sense with every surrounding sentence deleted, because that's exactly how it will be used."
+    },
+    {
+      "q": "Does AEO reduce my traffic?",
+      "a": "It can, and pretending otherwise is dishonest. Being quoted sometimes satisfies the query without a click. The counter-argument is that the alternative is a competitor being quoted instead, and that brand presence inside answers still shapes shortlists. Shift your effort toward queries that need a page to complete, like pricing, comparison and local intent."
+    },
+    {
+      "q": "Which content should I not bother optimising for answer engines?",
+      "a": "Opinion pieces, case narratives and anything whose value is the argument rather than the fact. Those earn links, trust and shortlist position — they just don't get quoted, and formatting them into bullet points to chase extraction ruins what made them worth reading."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "generative-engine-optimization"
+    },
+    {
+      "type": "compare",
+      "slug": "aeo-vs-geo"
+    },
+    {
+      "type": "glossary",
+      "slug": "featured-snippet"
+    },
+    {
+      "type": "glossary",
+      "slug": "schema-markup"
+    },
+    {
+      "type": "services",
+      "slug": "ai-search-optimisation-services"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-get-cited-by-ai-assistants"
+    }
+  ]
+}

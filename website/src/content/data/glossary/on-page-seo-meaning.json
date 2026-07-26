@@ -1,0 +1,127 @@
+{
+  "slug": "on-page-seo-meaning",
+  "type": "glossary",
+  "primaryKeyword": "on page seo",
+  "secondaryKeywords": [
+    "on page seo meaning",
+    "what is on page optimization",
+    "on page seo checklist",
+    "on page vs off page seo",
+    "on page seo factors"
+  ],
+  "cluster": "on-page",
+  "intent": "informational",
+  "h1": "On-page SEO",
+  "metaTitle": "On-Page SEO: What It Covers, in Plain English",
+  "metaDescription": "On-page SEO is everything you control on the page itself: content, headings, links and markup. Here's the 12-point checklist we run before writing a word.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "On-page SEO",
+  "definition": "On-page SEO is the work you do on a page itself — its content, headings, links, URL and markup — as distinct from your server setup or the links other sites give you.",
+  "answer": "On-page SEO is everything you control on the page itself: the content, the title and headings, the internal links, the URL and the markup. It excludes technical SEO (crawling, speed, indexing) and off-page SEO (other people's links). It's the cheapest of the three to fix and the fastest to show movement.",
+  "takeaways": [
+    "The boundary between on-page and technical is fuzzy, and it only matters for one reason: **who fixes it**.",
+    "Order beats effort. Doing the twelve steps out of sequence is how people rewrite a page that was never going to rank for that query anyway.",
+    "The single biggest on-page win is almost never a tag. It's fixing a page that answers the wrong question.",
+    "On-page work can't rescue a page Google can't crawl, and it can't outrun a market where everyone else has links and you have none."
+  ],
+  "sections": [
+    {
+      "h2": "Where on-page ends and technical begins",
+      "body": [
+        "People argue about this boundary far more than it deserves. A title tag is on-page. Page speed is technical. `robots.txt` is technical. Schema is both, depending on who you ask.",
+        "The distinction earns its keep for one reason: staffing. On-page is an editor's job, technical is a developer's job, off-page is an outreach job. Three people, three calendars — and misfiling a task means it sits in the wrong queue for a month."
+      ],
+      "table": {
+        "caption": "The three buckets, and who actually does the work.",
+        "head": ["Bucket", "Examples", "Who owns it"],
+        "rows": [
+          ["On-page", "Content, title, headings, internal links, URL, alt text, page-level schema", "Editor or content lead"],
+          ["Technical", "Crawling, indexing, site speed, Core Web Vitals, redirects, sitemaps, rendering", "Developer"],
+          ["Off-page", "Earned links, digital PR, brand mentions, citations, reviews", "Outreach or PR"]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "On-page has a ceiling",
+        "body": "Perfect on-page work on a page Google can't crawl does nothing. Perfect on-page work in a market where the top ten all have hundreds of referring domains and you have four also does very little. It's the cheapest lever, not an unlimited one. Read [on-page vs off-page SEO](/compare/onpage-vs-offpage-seo) before you decide it's all you need."
+      }
+    },
+    {
+      "h2": "The 12-point checklist, in the order we actually run it",
+      "body": [
+        "The order is the value here. Most checklists list twelve things alphabetically; running them in the wrong sequence means you polish tags on a page whose premise was wrong. Steps 1 to 3 happen before anyone writes a sentence."
+      ],
+      "numbered": [
+        "**Confirm the intent behind the query.** Search it, look at what ranks. If the results are all comparison pages and you planned a service page, you've already lost — see [search intent](/glossary/search-intent).",
+        "**Check nothing on the site already targets it.** Filter the query in Search Console. If an existing page has impressions, update it rather than build a rival — that's where [keyword cannibalization](/glossary/keyword-cannibalization) starts.",
+        "**Set the [URL slug](/glossary/url-slug) before publishing.** Lowercase, hyphenated, three to five words. Changing it later costs more than getting it right now.",
+        "**Write the [H1](/glossary/h1-tag) for the reader who already clicked** — plain language, one per page.",
+        "**Build the heading outline before the prose.** H2s as real sub-questions, H3s nested properly, no skipped levels. If the outline doesn't hold, the article won't either.",
+        "**Write the body to answer the question fully**, including the sub-questions the ranking pages forgot. Topic coverage beats keyword repetition.",
+        "**Add the specifics.** Numbers, ranges, prices, timeframes. Real figures outperform \"it varies\" every time, because figures are what gets quoted.",
+        "**Write the [title tag](/glossary/title-tag) last**, to pixel width, front-loading the query wording. Last means it describes what you actually wrote.",
+        "**Write the meta description for the query**, not the company — or leave it blank on long-tail pages and let Google pick per query.",
+        "**[Alt text](/glossary/alt-text) on every meaningful image**, empty `alt=\"\"` on the decorative ones.",
+        "**Add three to eight contextual links out**, and link into the new page from two or three pages that already rank. See [internal linking](/glossary/internal-linking).",
+        "**Add the schema type that matches the page** — Article, FAQPage, Product, BreadcrumbList. Only mark up what's visibly there."
+      ]
+    },
+    {
+      "h2": "Which on-page changes move rankings fastest",
+      "body": [
+        "Not all twelve are equal. If you have one afternoon and a page stuck on page two, this is the order of expected return — and it's very different from the order most checklists imply."
+      ],
+      "bullets": [
+        "**Fixing an intent mismatch.** Rewriting a page that answers a different question than the searcher asked produces the largest single jumps we see. It also requires admitting the original page was wrong.",
+        "**Adding internal links into a page that had none.** Often moves a page several positions within weeks, and costs half an hour.",
+        "**Covering the sub-topics the page skipped.** Not more words — more of the specific questions the top results answer and yours doesn't.",
+        "**Merging two cannibalising pages.** Slower, but it raises a ceiling rather than nudging a position.",
+        "**Rewriting the title tag** on a page already between positions 5 and 15. Improves clicks first, relevance second.",
+        "**Everything else.** Alt text tweaks, keyword density, URL changes. Hygiene, not levers. Do them because the page should be well built, not because you expect a jump."
+      ]
+    },
+    {
+      "h2": "How often to re-optimise a page",
+      "body": [
+        "Pages decay. Competitors publish better versions, facts go stale, the query itself shifts. That's [content decay](/glossary/content-decay), and it's normal rather than a failure.",
+        "A workable cadence: review any page that has lost roughly a fifth of its clicks quarter-on-quarter, plus your top twenty pages by impressions once a quarter regardless. Everything else waits until the data says otherwise.",
+        "The rule that saves the most pain: **don't touch a page that's climbing.** Rewriting mid-ascent resets whatever Google was working out, and you'll spend six weeks getting back to where you were. Wait for the plateau — the full case is in [when to update old content instead of writing new](/journal/when-to-update-old-content-instead-of-writing-new)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is on-page SEO in simple terms?",
+      "a": "Everything on the page that you control — the words, the headings, the title, the internal links, the URL, the image descriptions and the markup. If you can change it by editing the page, it's on-page. If you need a developer or another website's permission, it isn't."
+    },
+    {
+      "q": "What's the difference between on-page and off-page SEO?",
+      "a": "On-page is what's on your page. Off-page is what other sites say about you — links, mentions, citations, reviews. On-page is cheap, fast and entirely within your control. Off-page is slow, expensive and requires someone else to agree with you."
+    },
+    {
+      "q": "Is content part of on-page SEO?",
+      "a": "It's the largest part of it, and the part most checklists reduce to a bullet about keyword placement. The content either answers the query better than the ten results above you or it doesn't, and no arrangement of tags fixes the second case."
+    },
+    {
+      "q": "How long does on-page SEO take to show results?",
+      "a": "On an established site, four to eight weeks for Google to recrawl and reassess a changed page. Intent fixes and internal linking often show earlier. On a new site with little authority, the on-page work is necessary but the timeline is governed by other things."
+    },
+    {
+      "q": "Can I do on-page SEO myself?",
+      "a": "Yes, genuinely. The twelve steps above need judgement and a couple of hours per page, not tooling or budget. Agencies earn their fee on the parts that need continuous effort across many pages at once, and on the off-page work you can't do alone."
+    },
+    {
+      "q": "How often should I update my pages?",
+      "a": "Review the top twenty pages by impressions each quarter, plus anything that's lost roughly a fifth of its clicks quarter-on-quarter. Leave climbing pages alone — editing them mid-ascent resets the assessment Google was already making."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "title-tag" },
+    { "type": "glossary", "slug": "internal-linking" },
+    { "type": "glossary", "slug": "search-intent" },
+    { "type": "compare", "slug": "onpage-vs-offpage-seo" },
+    { "type": "services", "slug": "on-page-seo-services" },
+    { "type": "journal", "slug": "when-to-update-old-content-instead-of-writing-new" }
+  ]
+}

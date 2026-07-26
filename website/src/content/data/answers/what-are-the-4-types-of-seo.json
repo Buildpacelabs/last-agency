@@ -1,0 +1,233 @@
+{
+  "slug": "what-are-the-4-types-of-seo",
+  "type": "answers",
+  "primaryKeyword": "what are the 4 types of seo",
+  "secondaryKeywords": [
+    "what are the types of seo",
+    "4 types of seo",
+    "types of seo explained",
+    "how many types of seo are there"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "The four types of SEO and what each one fixes",
+  "metaTitle": "What Are the 4 Types of SEO? Each Explained",
+  "metaDescription": "The 4 types of SEO are on-page, off-page, technical and local. Here's the symptom each one cures, how long each takes, and which to start with.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "The four types of SEO are on-page, off-page, technical and local. On-page matches your page to a query, off-page earns the authority to win it, technical makes sure Google can fetch and store the page at all, and local decides whether you appear in the map pack. Each cures a different symptom.",
+  "takeaways": [
+    "Don't learn the four types — diagnose with them. Each one cures a specific, recognisable symptom.",
+    "Technical goes first. There's no point earning links to a page Google can't index.",
+    "Off-page is the slowest of the four by a wide margin: three to nine months before it shows.",
+    "Lists claiming five, six or nine types are usually splitting content SEO out of on-page, or naming a context — ecommerce, international — rather than a type."
+  ],
+  "sections": [
+    {
+      "h2": "The four types, and the symptom each one cures",
+      "body": [
+        "Most explanations of this hand you four definitions and leave you no better able to decide what to do on Monday. So here they are sorted by symptom instead. Find the row that describes your site and you've found what to buy first."
+      ],
+      "table": {
+        "caption": "The four types of SEO, matched to the problem each one solves.",
+        "head": [
+          "Type",
+          "What it covers",
+          "The symptom it cures",
+          "Time to effect"
+        ],
+        "rows": [
+          [
+            "**Technical SEO**",
+            "Crawling, indexing, rendering, speed, redirects, canonicals, structured data",
+            "You publish and Google never shows it — or traffic fell after a redesign",
+            "Days to 8 weeks"
+          ],
+          [
+            "**On-page SEO**",
+            "Query-to-page matching, titles, headings, body copy, internal links, intent",
+            "You sit on page two for terms you should own, or the wrong page ranks",
+            "4–12 weeks"
+          ],
+          [
+            "**Off-page SEO**",
+            "Links, digital PR, brand mentions, citations, reputation",
+            "You lose to thinner pages on competitive commercial terms",
+            "3–9 months"
+          ],
+          [
+            "**Local SEO**",
+            "Google Business Profile, reviews, citations, location pages, proximity",
+            "You're absent from the map pack while a competitor two streets away isn't",
+            "2–8 weeks"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Only three of the four apply to most sites",
+        "body": "Local SEO only matters if you serve customers from a physical location or a defined service area. A SaaS company selling nationwide can ignore it almost entirely — and plenty pay for it anyway because it was in the package."
+      }
+    },
+    {
+      "h2": "What each type actually involves",
+      "body": [
+        "Definitions, in the order you should usually tackle them rather than the order the acronym lists suggest."
+      ],
+      "subs": [
+        {
+          "h3": "Technical SEO — can the machine get to it and keep it?",
+          "body": [
+            "Everything about whether a search engine can fetch your page, render it, understand its structure, and decide it's worth storing. It's the least glamorous of the four and routinely the highest-return, because it removes a ceiling rather than adding a point."
+          ],
+          "bullets": [
+            "Crawl and index diagnosis — the `robots.txt` rule, the stray `noindex`, the canonical pointing somewhere silly.",
+            "Rendering: whether your content exists before JavaScript runs, or only after.",
+            "Speed and [Core Web Vitals](/glossary/core-web-vitals), which matter most on mobile and on slower Indian networks.",
+            "Redirects, chains, 404s, duplicate URL variants — the debris every site accumulates.",
+            "Schema markup so facts are stated rather than inferred.",
+            "Migrations. The single largest traffic risk any site takes, and the one most often handled by whoever built the theme."
+          ]
+        },
+        {
+          "h3": "On-page SEO — does this page answer this query?",
+          "body": [
+            "Making one specific page the obvious answer to one specific query. Less about keyword placement than people think, more about intent: what did the searcher want, and does this page give it to them in the format they wanted it in?"
+          ],
+          "bullets": [
+            "One primary query per page. Two pages chasing the same one is [keyword cannibalisation](/glossary/keyword-cannibalization) and it costs you both.",
+            "Titles and H1s that use the searcher's phrasing, not your internal jargon.",
+            "Content that matches the format the results page is already rewarding — if the top ten are all comparison tables, an essay won't win.",
+            "Internal links with real anchor text. The cheapest ranking work available and almost nobody does it properly.",
+            "First-hand substance: prices, numbers, screenshots, things only someone who did the work would know."
+          ]
+        },
+        {
+          "h3": "Off-page SEO — does anyone else vouch for you?",
+          "body": [
+            "Everything that happens away from your site and still affects your rankings. Overwhelmingly links, plus brand mentions and, for local businesses, citations.",
+            "It's the slowest of the four and the only one you can't do unilaterally, which is precisely why it works as a signal — you can't award it to yourself."
+          ],
+          "bullets": [
+            "Digital PR: original data, expert commentary, a founder with an opinion journalists will quote.",
+            "Genuine partnerships, supplier and customer pages, industry bodies, sponsorships.",
+            "Unlinked brand mentions, which increasingly matter for how AI systems corroborate who you are.",
+            "What to avoid: bought links, private blog networks, and \"guest posts\" on sites publishing forty articles a day about every industry on earth. See [paid links vs earned links](/compare/paid-links-vs-earned-links)."
+          ]
+        },
+        {
+          "h3": "Local SEO — are you close enough and trusted enough?",
+          "body": [
+            "A separate ranking system, not a subset of the others. The map pack is decided largely on relevance, distance and prominence — and distance is the one you can't optimise, which is why local SEO has a hard geographic ceiling.",
+            "For a clinic, a restaurant, a gym or a showroom, this is usually the first three types put together in terms of value."
+          ],
+          "bullets": [
+            "A completely filled Google Business Profile: categories, hours, services, photos, Q&A.",
+            "Reviews arriving steadily, and answered. Fifty reviews in one week and none since reads exactly as badly as it sounds.",
+            "Consistent name, address and phone number across directories.",
+            "One real page per location and per service, not one page listing forty cities."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Which one to start with",
+      "body": [
+        "The order matters more than the effort, because each stage removes a constraint on the next. Technical, then on-page, then local if you have a location, then off-page. Links pointed at a page Google can't index do nothing. Both mistakes are common and both are expensive."
+      ],
+      "numbered": [
+        "**Technical first, always.** Even a two-week diagnosis. You're checking whether there's a ceiling before you spend money pushing against it.",
+        "**On-page second.** Fix the pages that already rank on page two before writing new ones — those are the cheapest wins on any site and the first thing a competent agency will look at.",
+        "**Local third, if it applies.** The map pack often produces enquiries within weeks, which makes it the fastest visible return for a physical business.",
+        "**Off-page last, and continuously.** Start it once the pages worth linking to exist. Earning links to a thin page is money spent making a weak thing marginally less weak."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The packaged-service trap",
+        "body": "Most agency packages sell all four types every month at a fixed ratio, regardless of what your site needs. If your problem is that nothing is indexed, paying for four blog posts and five links a month for six months will not touch it. Ask which type your budget is going to this quarter and why."
+      }
+    },
+    {
+      "h2": "Why some lists say five, six or nine types",
+      "body": [
+        "You'll find lists with more, and they're not wrong so much as counting different things. Three patterns explain almost all of them."
+      ],
+      "bullets": [
+        "**Content SEO split out from on-page.** Reasonable — writing new content and optimising existing pages are different activities — but they answer the same question, so most people fold them together.",
+        "**Contexts named as types.** Ecommerce SEO, SaaS SEO, international SEO, enterprise SEO. These aren't new disciplines; they're the same four applied to a situation with its own constraints. Ecommerce SEO is mostly technical work on faceted navigation plus on-page work on category pages.",
+        "**Newer surfaces.** [Generative engine optimisation](/glossary/generative-engine-optimization), answer engine optimisation, AI search visibility. Genuinely new work, but it runs on the same crawl-index-retrieve pipeline, and the pages AI systems cite are largely pages that already rank. It's a fifth surface, not a fifth type.",
+        "**\"White hat\" and \"black hat\"** get listed as types occasionally. They're not types, they're methods — a description of whether the work will survive the next Google update. See white hat vs black hat SEO."
+      ]
+    },
+    {
+      "h2": "How to work out which type you need this quarter",
+      "body": [
+        "Five checks, all free, roughly an hour of work. Whichever one comes back worst is where your next rupee should go."
+      ],
+      "numbered": [
+        "**Search Console → Indexing → Pages.** Big \"not indexed\" bucket? Technical.",
+        "**Filter Search Console to positions 11–20.** A long list of decent queries stuck on page two? On-page — those pages need rewriting, not replacing.",
+        "**Look at who outranks you for your best commercial term.** If their page is worse than yours but their site is referenced everywhere, that's off-page and it'll take months.",
+        "**Search your main service plus your city on a phone, logged out.** Absent from the map pack? Local, and it's the fastest of the four to fix.",
+        "**Compare branded to non-branded organic clicks.** If nearly everything is your own name, you're not being found by anyone new — usually on-page and off-page together."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "How we scope it",
+        "body": "All four types sit in one scope with us, weighted to whatever the diagnosis says — from ₹75,000/mo, smaller sites from ₹40,000, ex-GST. We freeze your trailing-90-day qualified organic leads on day one, and if we haven't beaten that in 90 days we keep working free until we do. No promised ranking positions, ever. [How it works](/seo) · [pricing](/pricing)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Which type of SEO is most important?",
+      "a": "Technical, in the sense that it caps everything else — an unindexed page cannot rank no matter how good it is. But once the plumbing works, on-page usually produces the fastest visible return, and off-page decides who wins genuinely competitive commercial terms. Importance depends on which one is currently broken."
+    },
+    {
+      "q": "What's the difference between on-page and off-page SEO?",
+      "a": "On-page is everything you control on your own site — content, titles, headings, internal links, intent match. Off-page is everything that happens elsewhere and still affects you, mainly links and mentions from other sites. On-page decides whether you're relevant; off-page decides whether you're chosen over equally relevant competitors."
+    },
+    {
+      "q": "Is local SEO a separate type or part of on-page SEO?",
+      "a": "Separate, because it runs on a different ranking system. The map pack weighs relevance, distance and prominence, and it draws heavily on your Google Business Profile rather than your website. A business can rank well in the map pack with a weak site, and rank well organically while being invisible locally."
+    },
+    {
+      "q": "How long does each type of SEO take to show results?",
+      "a": "Technical fixes can show in days to eight weeks because you're removing a block rather than building something. On-page changes typically show in four to twelve weeks. Local can move in two to eight weeks. Off-page is the slow one — three to nine months, because links have to be earned and then re-evaluated."
+    },
+    {
+      "q": "Do I need all four types of SEO?",
+      "a": "You need technical and on-page always. Off-page becomes necessary the moment your target queries are commercially contested, which is most of them. Local only applies if customers come from a place — a shop, a clinic, a service area. Paying for all four in fixed monthly proportions is how budgets get wasted."
+    },
+    {
+      "q": "Where does content SEO fit among the four types?",
+      "a": "Inside on-page. Some lists split it out because writing new content and optimising existing pages feel like different jobs, and staffing-wise they are. Functionally they answer the same question: does this page match what the searcher wanted, in the format they wanted it in?"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "which-type-of-seo-is-best"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-local-seo"
+    },
+    {
+      "type": "compare",
+      "slug": "onpage-vs-offpage-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "off-page-seo-meaning"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-pricing-factors"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "slug": "what-is-keyword-cannibalization",
+  "type": "answers",
+  "primaryKeyword": "cannibalization in seo",
+  "secondaryKeywords": [
+    "keyword cannibalization",
+    "what is keyword cannibalisation",
+    "how to fix keyword cannibalization",
+    "signs of cannibalization"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "Keyword cannibalisation: how to detect it and fix it",
+  "metaTitle": "Cannibalization in SEO: Detect It and Fix It",
+  "metaDescription": "Cannibalization in SEO happens when two pages chase one query and both lose. Here's how to detect it in Search Console, and the four ways to resolve it.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Keyword cannibalisation is when two or more pages on your site compete for the same query, so Google keeps swapping which one it shows and neither ranks as well as one strong page would. You detect it in Search Console by filtering to a single query and watching the URL flip between weeks.",
+  "takeaways": [
+    "The symptom is **URL flipping**: Google showing a different page of yours for the same query across weeks, with an unstable average position.",
+    "Two of your pages ranking is often fine. Cannibalisation is specifically when a *deliberate* target query goes to the *wrong* URL and both underperform.",
+    "Four fixes, in ascending order of risk: **differentiate, canonical, merge and redirect, noindex**.",
+    "Noindex is the riskiest of the four because it consolidates nothing — the page's signals go nowhere.",
+    "It's over-diagnosed. Merging two mediocre pages gives you one mediocre page."
+  ],
+  "sections": [
+    {
+      "h2": "What cannibalisation actually is",
+      "body": [
+        "Google picks one page per site for most queries. When you have several pages that could plausibly answer the same query, it has to choose, and the signals telling it which to choose are split — your links, your anchor text and your relevance are spread across the candidates instead of concentrated on one.",
+        "The result is a page that ranks in position 11 when a consolidated version would rank in position 6. Nothing is broken and nothing is penalised. You're just competing with yourself and paying for it in positions.",
+        "The word makes it sound dramatic. Usually it's mundane: a service page and a blog post written eighteen months apart by people who never spoke, both aimed at the same buyer, both half-answering the question."
+      ],
+      "bullets": [
+        "**It is not a penalty.** Google has no cannibalisation filter. This is a signal-dilution problem, not an enforcement action.",
+        "**It is not caused by repeating a keyword** across your site. Mentioning a phrase on twenty pages is normal. Building twenty pages *about* that phrase is the problem.",
+        "**It is most common on sites over about 100 pages** that publish without a keyword map, and on ecommerce sites where categories and filter pages overlap."
+      ]
+    },
+    {
+      "h2": "The detection method: URL flipping in Search Console",
+      "body": [
+        "Ignore the tools that offer a \"cannibalisation report\". Most of them flag any query where two URLs got an impression, which describes half a healthy site. The reliable method uses Search Console and takes about five minutes per query."
+      ],
+      "numbered": [
+        "Open **Performance → Search results** and set the date range to the last 12 months so you have enough weeks to see a pattern.",
+        "Add a **Query filter** set to the exact target query. Everything from here on is that one query.",
+        "Switch to the **Pages** tab. This lists every URL of yours that earned an impression for that query. One URL with the overwhelming majority of impressions is healthy. Two or three with comparable shares is your first flag.",
+        "Now check for flipping. Keep the query filter, add a **Page filter** for URL A, and look at the average position line across the year. Then swap the page filter to URL B and do the same.",
+        "**Read the two lines together.** If A holds position while B sits far behind, that's fine — one page owns it. If A and B take turns, one climbing as the other falls, Google is switching between them. That's cannibalisation.",
+        "Confirm with the **Compare** function: set two date ranges three months apart, filter to the query, and see whether the top URL changed. A changed winner with no content changes in between is the clearest evidence there is."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The faster route on a big site",
+        "body": "Export query-by-page-by-date from the Search Console API into a sheet, then count distinct URLs per query per week. Any query with more than one URL in more than a few weeks goes on the review list. It's the same test, run once across everything instead of query by query."
+      }
+    },
+    {
+      "h2": "When two of your pages ranking is completely fine",
+      "body": [
+        "This is where most cannibalisation audits go wrong. Multiple URLs appearing for one query is normal, common and often good. Before you merge anything, check whether you actually have a problem."
+      ],
+      "bullets": [
+        "**Different intents behind the same words.** An explainer about SEO costs and a pricing page can both surface for cost-related queries and serve different people. Both convert, in different ways. Leave them.",
+        "**Head term and long tail.** Your pillar page owns the broad query, a detailed post owns a specific variant. That's a working [topic cluster](/glossary/topic-cluster), not a conflict.",
+        "**Brand queries.** Google routinely shows several pages from one site for a brand search, sometimes as sitelinks. That's coverage.",
+        "**The 'wrong' page ranks but converts better.** If a blog post outranks your service page for a commercial query and produces more enquiries than the service page ever did, the ranking is not the problem. Fix the service page's copy instead of demoting the post.",
+        "**Impressions are trivially small.** A query with 40 annual impressions doesn't justify a merge, a redirect and a regression risk."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The test that matters",
+        "body": "Cannibalisation is worth fixing when three things are true at once: the query is one you deliberately target, the URL Google shows is not the one you want, and the position is worse than the site can support. Two out of three is not enough."
+      }
+    },
+    {
+      "h2": "Four fixes, ranked by risk to existing traffic",
+      "body": [
+        "Once you've confirmed a real conflict, there are four ways out. They're listed here from safest to most destructive, which is also the order you should consider them in — most people reach straight for the merge and lose traffic they didn't need to lose."
+      ],
+      "table": {
+        "caption": "The four resolutions, from lowest to highest risk.",
+        "head": ["Fix", "What it does", "Risk to existing traffic", "Right when"],
+        "rows": [
+          [
+            "1. Differentiate",
+            "Rewrite titles, H1s, openings and internal anchors so each page targets a distinct intent. Nothing deleted, nothing redirected.",
+            "None — fully reversible",
+            "The pages cover genuinely different intents but were written as if they didn't."
+          ],
+          [
+            "2. Canonical the loser to the winner",
+            "Both URLs stay live for users; ranking signals consolidate on one.",
+            "Low to medium — the loser's own long-tail traffic goes",
+            "The pages are near-duplicates but both need to remain reachable."
+          ],
+          [
+            "3. Merge and 301",
+            "Combine the best of both into one URL, redirect the other permanently.",
+            "Medium — biggest upside, and hard to walk back",
+            "The pages say the same thing and only one deserves to exist."
+          ],
+          [
+            "4. Noindex the loser",
+            "Removes it from the index. Passes nothing anywhere.",
+            "Highest — the page's signals are simply discarded",
+            "Users need the page, search never should. A filter view, an ads landing page, a thin variant."
+          ]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "Why differentiate goes first",
+          "body": [
+            "It's free, it's reversible, and it frequently reveals that you never had a duplication problem — you had two pages with near-identical titles and openings that happened to cover different ground. Rewriting the title, the H1, the first hundred words and every internal anchor pointing at each page fixes a surprising number of cases in an afternoon.",
+            "It fails when the pages genuinely duplicate each other. If you can't articulate two different jobs for them, move down the list."
+          ]
+        },
+        {
+          "h3": "Why noindex goes last",
+          "body": [
+            "Noindex removes a page from the index and consolidates nothing. Whatever links, age and relevance that URL had accumulated go nowhere — unlike a canonical or a 301, which pass them to the survivor. Using noindex on a page with real history is the most expensive mistake in this list, and the most common.",
+            "The one case where it's correct: the page must exist for humans but must never compete. See [canonical vs noindex](/compare/canonical-vs-noindex) for the full decision."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The honest caveat: it's over-diagnosed",
+      "body": [
+        "A lot of what gets reported as cannibalisation is just two pages both being mediocre. Merging two thin pages does not produce one strong page — it produces one thin page with a redirect pointing at it, and the position doesn't move.",
+        "Before you merge anything, ask what the merged page will do that neither page does now. If the answer is \"be longer\", stop. The problem isn't overlap, it's that neither page is good enough to rank, and consolidating two weak pages doesn't create strength.",
+        "The other frequent misdiagnosis is a ranking drop blamed on cannibalisation when the real cause is a core update, a lost link or a competitor publishing something better. Check the date the position changed against Google's update history before you restructure a section of the site around a theory.",
+        "And one operational rule: never resolve cannibalisation by deleting a page and letting it 404. If a URL has to go, redirect it. A 404 discards everything the page earned, for no benefit over a redirect that costs nothing."
+      ]
+    },
+    {
+      "h2": "Preventing it with a keyword map",
+      "body": [
+        "Detection and fixing are both cleanup. The version of this problem you actually want is the one that never happens, and it's prevented by a single document.",
+        "A keyword-to-URL map assigns every target query exactly one owning page. Before anyone commissions an article, they check it. If the query has an owner, the brief becomes \"improve the existing page\" rather than \"write a new one\" — which is where roughly all cannibalisation gets created. The map also gives every internal link a single correct destination and anchor, so your own linking stops splitting the vote. The build process is set out in [keyword-to-URL mapping](/answers/what-are-canonical-keywords).",
+        "Run a quarterly check alongside it: pull your top 50 target queries from Search Console, count distinct URLs earning impressions for each, and review anything with more than one. Fifteen minutes a quarter, and it catches conflicts while they're still cheap to fix."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "What to measure after a fix",
+        "body": "Filter Search Console to the query, watch average position and clicks for 4–8 weeks, and confirm the URL has stopped flipping. On a merge, also watch the redirected URL's old queries — if a chunk of long-tail traffic vanished, the merged page is missing content the old one had."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I know if I have keyword cannibalisation?",
+      "a": "Filter Search Console to one target query, switch to the Pages tab, and see how many of your URLs earn impressions. Then chart average position for each of them over 12 months. If two URLs trade places across weeks and neither settles, Google is switching between them."
+    },
+    {
+      "q": "Is keyword cannibalisation a Google penalty?",
+      "a": "No. There's no cannibalisation filter and nothing is being punished. It's signal dilution — your links, anchors and relevance are split across several pages instead of concentrated on one, so the page Google picks ranks lower than a consolidated version would."
+    },
+    {
+      "q": "Should I always merge cannibalising pages?",
+      "a": "No, and merging is the third of four options for a reason. Try differentiating first: rewrite the titles, H1s, openings and internal anchors so each page targets a distinct intent. Merge only when the pages genuinely say the same thing and only one deserves to exist."
+    },
+    {
+      "q": "Can two pages from my site rank for the same keyword without it being a problem?",
+      "a": "Regularly, yes. A pillar page owning the head term while a detailed post owns a variant is a working topic cluster. So is an explainer and a commercial page surfacing for the same words with different intents. It's only a problem when a deliberate target goes to the wrong URL and underperforms."
+    },
+    {
+      "q": "What's the difference between cannibalisation and duplicate content?",
+      "a": "Duplicate content is the same text at more than one address, fixed with canonical tags or redirects. Cannibalisation is different pages covering the same topic and intent, which is an editorial problem. A canonical tag can resolve a duplicate; it can't fix two genuinely different pages chasing one query."
+    },
+    {
+      "q": "How long after fixing cannibalisation should I see results?",
+      "a": "Four to eight weeks for the consolidated page's average position to settle, assuming Google recrawls promptly. Watch for the URL flipping to stop first — that happens before the position improves, and it's the earliest confirmation the fix landed."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "keyword-cannibalization" },
+    { "type": "answers", "slug": "what-are-canonical-keywords" },
+    { "type": "journal", "slug": "a-post-mortem-on-keyword-cannibalization" },
+    { "type": "compare", "slug": "canonical-vs-noindex" },
+    { "type": "answers", "slug": "what-is-a-canonical-tag-in-seo" },
+    { "type": "glossary", "slug": "thin-content" }
+  ]
+}

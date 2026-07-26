@@ -1,0 +1,288 @@
+{
+  "slug": "how-to-read-an-seo-report",
+  "type": "journal",
+  "primaryKeyword": "how to read an seo report",
+  "secondaryKeywords": [
+    "seo report metrics explained",
+    "understanding seo reports",
+    "monthly seo report review",
+    "what to look for in an seo report",
+    "seo dashboard interpretation"
+  ],
+  "cluster": "client-education",
+  "intent": "informational",
+  "h1": "How to Read an SEO Report in Ten Minutes Without Being Fooled",
+  "metaTitle": "How to Read an SEO Report Without Being Fooled",
+  "metaDescription": "Read an SEO report in ten minutes: check the comparison window, split brand from non-brand, then find the shipped work. The rest is just decoration.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Read an SEO report in this order: what it's compared against, then non-brand organic clicks with your brand terms filtered out, then the log of work actually shipped and live. That takes ten minutes. Everything else — rank screenshots, keyword totals, impression charts — is decoration, and often deliberate decoration.",
+  "takeaways": [
+    "Three checks, in sequence: **the comparison window**, **non-brand demand**, **shipped work**. Ten minutes, once a month.",
+    "The comparison window is the most-abused element on any report. If it changed since last month, that's your first question.",
+    "Four presentation tricks account for most flattering charts: **rebased axes**, **brand traffic left in**, **impressions in the headline**, and **keyword-count totals**.",
+    "A work log with one column is a to-do list. A work log with two — recommended and live — is a report.",
+    "Two questions on the call do more than any slide: what are we compared against, and what shipped that a user could see?"
+  ],
+  "sections": [
+    {
+      "h2": "Read it backwards from how it was written",
+      "body": [
+        "A monthly SEO report is a document with an author who has an interest in how you feel at the end of it. That's not an accusation of fraud — it's how every professional services deck in every industry works. But it means the running order is chosen, and it's chosen to open strong.",
+        "So don't read it front to back. Read it in the order that gets you to the truth fastest, which is roughly the reverse. This takes ten minutes and it works on any report from any agency, in any format, including the ones that arrive as a 34-slide PDF at 11pm on the last day of the month.",
+        "This page is about reading the document you were handed. If you want the scorecard for judging the engagement as a whole — the three numbers that actually decide whether to renew — that's [how to judge your SEO agency's performance](/journal/how-to-judge-your-seo-agencys-performance). Different job, same discipline."
+      ],
+      "numbered": [
+        "**Minutes 1–2 — the comparison.** Find what this month is being measured against, and check that it's the same thing as last month.",
+        "**Minutes 3–5 — the non-brand number.** Find organic clicks with your own brand stripped out. If it isn't in the report, that's the finding.",
+        "**Minutes 6–8 — the work log.** Find what actually went live. Not what was recommended, audited, analysed or planned.",
+        "**Minutes 9–10 — write down two questions** for the call. They're at the end of this article, and they're always the same two."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Do it before the call, not during",
+        "body": "Ten minutes alone with the PDF is worth an hour on a call, because on the call you're being walked through it in the author's order at the author's pace. Read it cold, arrive with two questions, and the meeting becomes useful."
+      }
+    },
+    {
+      "h2": "Check one — what is this compared against, and who picked the window?",
+      "body": [
+        "Every number in an SEO report is a comparison. Nothing means anything on its own — 12,400 organic clicks is neither good nor bad until you know what it was before. Which makes the choice of comparison window the most powerful single lever available to whoever built the deck, and the least examined.",
+        "There are four common windows and they can tell four different stories about the same month. Month-over-month is noisy and seasonal. Same month last year removes seasonality but rewards a site that was broken a year ago. Rolling three-month averages are the most honest for a slow channel and the least dramatic. \"Since we started\" is the most flattering and the least informative, because it includes every fix made in month one on a site that had never been touched.",
+        "The rule is simple: pick the window at kickoff, write it into the engagement notes, and never change it. A report where the comparison window moves between months is not a report, it's an argument being constructed.",
+        "Seasonality is the specific trap in India. March is financial year end and it distorts B2B enquiry volume. The festive window from Navratri to Diwali distorts retail and D2C. Exam and admission cycles distort edtech. May and June distort travel. If your agency compares October to September in a retail business and calls it a 40% improvement, they've discovered Diwali."
+      ],
+      "bullets": [
+        "**Is the frozen baseline printed on the page?** The number your engagement is actually judged against should appear next to the headline figure every month, so nobody has to remember it.",
+        "**Is the window the same as last month's report?** Open last month's PDF. Thirty seconds.",
+        "**Does the report acknowledge seasonality at all?** An agency that flags \"this month is inflated by the festive period\" before you notice is an agency worth keeping.",
+        "**Are you being compared to a month you were broken?** A recovery from a botched migration is real work, but it is not growth, and it should be labelled as recovery."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The moving-window tell",
+        "body": "If last month's report compared month-over-month and this month's compares year-over-year, look at what month-over-month would have shown. In our experience that switch happens for exactly one reason, and it isn't methodological rigour."
+      }
+    },
+    {
+      "h2": "Check two — is your own brand doing the work?",
+      "body": [
+        "The chart on page one of most SEO reports is total organic sessions. Total organic sessions include everybody who typed your company name into Google, which includes everybody your ads, your PR, your founder's LinkedIn posts, your existing customers and your sales team sent there.",
+        "None of that came from SEO. In a weak engagement it is the only thing holding the line up.",
+        "You want the same chart with brand queries removed. The proper method — a regex query filter in Search Console, frozen at kickoff so nobody can edit the term list mid-engagement — is set out step by step in the scorecard article linked above, and it takes about four minutes to build once.",
+        "But there's a twenty-second version you can do inside the report itself, without opening anything. Find the top-queries table — almost every report has one, usually around slide nine. Look at row one. If your brand name is sitting at the top carrying a large share of total clicks, then the headline chart is substantially a picture of your brand marketing, and the SEO contribution is whatever's left underneath it.",
+        "Then check the direction of travel separately. Brand up and non-brand flat means your other channels are working and SEO isn't. Non-brand up and brand flat is what a healthy SEO engagement actually looks like in month four. Both up is either a very good quarter or a PR hit that lifted both, and it's worth knowing which."
+      ]
+    },
+    {
+      "h2": "Check three — find the work, and insist on two columns",
+      "body": [
+        "This is the check almost nobody performs, and it's the one that predicts next quarter.",
+        "Somewhere in the report there should be a log of what was done. Not a summary — a log, with dates and links. And it needs two distinct statuses, because the gap between them is where most engagements quietly fail: **recommended** and **live in production**.",
+        "On a typical report, a meaningful share of technical items have been recommended for months and are sitting in a developer's queue behind a payments integration. That's frequently the client's fault rather than the agency's, which is exactly why it needs to be visible. Somebody has to count it, because it is usually the reason the other numbers haven't moved.",
+        "Here's the shape. The rows are illustrative; the format is the point."
+      ],
+      "table": {
+        "caption": "What a monthly work log should look like. Illustrative rows — the columns are what matter.",
+        "head": [
+          "Date",
+          "Item",
+          "Type",
+          "Status",
+          "Verifiable where"
+        ],
+        "rows": [
+          [
+            "04 Jun",
+            "Category page copy and internal links, top 3 collections",
+            "Content",
+            "Live",
+            "Three URLs, listed"
+          ],
+          [
+            "11 Jun",
+            "Redirect chain cleanup, 38 URLs",
+            "Technical",
+            "Live",
+            "Deployed, confirmed in re-crawl"
+          ],
+          [
+            "18 Jun",
+            "Product schema across 240 product pages",
+            "Technical",
+            "Approved — waiting in client dev queue, 11 days",
+            "Ticket reference, owner named"
+          ],
+          [
+            "26 Jun",
+            "Data-led PR pitch, sourcing story",
+            "Links",
+            "Pitched to 14, 2 placements live",
+            "Two live URLs with the link visible"
+          ],
+          [
+            "30 Jun",
+            "Refresh of 4 decaying pages",
+            "Content",
+            "2 live, 2 awaiting client subject-matter review",
+            "URLs for the live two, names for the other two"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "\"Optimised\" is not a unit of work",
+        "body": "If the log says \"optimised 24 pages\", ask what changed on each one. A title tag rewrite and a full content rebuild are both \"optimisation\" and one of them takes forty minutes. Vague verbs in a work log are how a light month gets the same word count as a heavy one."
+      }
+    },
+    {
+      "h2": "Four tricks that make a flat month look like a good one",
+      "body": [
+        "These aren't rare and they aren't always deliberate. Reporting tools ship with several of them switched on by default, which is how a well-meaning account manager ends up presenting a misleading chart in good faith. Either way, the check takes seconds once you know what you're looking at."
+      ],
+      "table": {
+        "caption": "The four presentation patterns that flatter a flat month, and how to check each in seconds.",
+        "head": [
+          "The trick",
+          "How it looks",
+          "The ten-second check"
+        ],
+        "rows": [
+          [
+            "Rebased or truncated axis",
+            "A line climbing like a cliff face. The y-axis starts at 4,200 rather than zero, or two series share a chart on two different scales.",
+            "Read the axis labels and do the division yourself. A move from 4,240 to 4,390 is 3.5%, not the 60% the shape implies."
+          ],
+          [
+            "Brand traffic left in",
+            "A single \"Organic Sessions\" or \"Organic Traffic\" line, unsegmented, opening the deck.",
+            "Find the top-queries table. If your brand is row one with a large share of clicks, the chart is mostly measuring your other marketing."
+          ],
+          [
+            "Impressions in the headline",
+            "\"Impressions up 41%\" in large type. Clicks appear later in smaller type, or don't appear.",
+            "Divide clicks by impressions. If impressions rose and clicks didn't, click-through rate fell — you're appearing for queries you can't win. See what [impressions](/glossary/impressions) actually count."
+          ],
+          [
+            "Keyword-count totals",
+            "\"Now ranking for 4,812 keywords, up 900 this month.\"",
+            "Ask for position bands. \"Ranking\" includes position 98. Ask how many sit in the top ten, how many of those are brand, and how many convert."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Cumulative charts.** Total pages published, total links earned, total keywords tracked. A cumulative line only ever goes up, including in a month where nothing happened. Ask for the monthly increment.",
+        "**Percentages on tiny bases.** Three leads to five is \"+67%\". It's also two leads. Any percentage should be printed with its absolute numbers beside it.",
+        "**Rank-tracker screenshots.** Ten hand-picked keywords, all green, chosen after the month ended. Technically accurate, structurally meaningless.",
+        "**\"Traffic value\" in rupees or dollars.** A number derived by multiplying your rankings by advertising cost-per-click. It describes what your traffic would hypothetically cost if you bought it on a channel you aren't buying it on. It is not revenue and it should never appear near a renewal conversation.",
+        "**Domain authority charts.** A third-party tool's estimate of your site, presented as though Google uses it. Google doesn't.",
+        "**Slide count as evidence.** Thirty-four slides of activity is not more work than six slides of results. Frequently it's less."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The pattern that matters most",
+        "body": "Impressions rising while clicks stay flat is the most common misleading chart in SEO reporting, and it has a real cause: your pages are entering results for queries where you rank at position 40 and nobody clicks. It looks like momentum on a chart and it is momentum in the wrong direction if it persists past three months."
+      }
+    },
+    {
+      "h2": "The two questions to ask on the call",
+      "body": [
+        "You now have ten minutes of preparation and a call to spend. Two questions do almost all the work, and they're the same two every month.",
+        "**\"What number are we being compared against, and what was it on the day we started?\"** This tests whether measurement is honest. A good agency answers instantly with a figure, because it's printed on their own first slide. A weak one reaches for context, explains that SEO is a long-term channel, and describes several other numbers that are up. The reaching is the answer. If nobody ever wrote the starting number down, that's a bigger problem than any chart in the deck — [how to set an SEO baseline](/journal/how-to-set-an-seo-baseline) covers fixing it, and it's worth doing even in month seven.",
+        "**\"What shipped this month that a user could actually see, and what's stuck — on whose side?\"** This tests capacity and finds the bottleneck. The second half of the question is the important half, because it invites the agency to tell you that *you* are the problem. Most won't volunteer it: telling a paying client their dev queue is killing the engagement is an uncomfortable conversation, and the polite alternative is to say nothing and let the report look thin.",
+        "From month six there's a third worth adding: **\"what would you do differently with the same budget?\"** An agency that produces a specific answer in two days has been thinking. An agency that produces a deck about realigning on strategy has told you what the next quarter is going to look like."
+      ]
+    },
+    {
+      "h2": "What belongs in a report, and what's padding",
+      "body": [
+        "Reports have grown because length reads as effort. It doesn't. A six-page report that survives the three checks is worth more than thirty slides that don't."
+      ],
+      "subs": [
+        {
+          "h3": "Belongs",
+          "bullets": [
+            "The frozen baseline, printed beside the current figure, every single month.",
+            "Non-brand organic clicks and impressions, on the same fixed comparison window as last month.",
+            "Qualified leads from organic, taken from your CRM rather than an analytics event, as a trailing three-month average.",
+            "The work log, with recommended and live as separate statuses and client-side blockers named.",
+            "Next month's plan, in specifics — which pages, which fixes, which pitches.",
+            "Anything they changed their mind about, and why. This is the rarest item on the list and the most valuable."
+          ]
+        },
+        {
+          "h3": "Padding",
+          "bullets": [
+            "Rank-tracker screenshots as the headline evidence.",
+            "\"Traffic value\" and domain authority charts.",
+            "Total keywords ranked, without position bands.",
+            "Crawl-error counts with no indication of which ones mattered.",
+            "Competitor charts that show competitors doing worse without saying why you'd care.",
+            "A recap of what SEO is. You bought it eight months ago."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "A bad month reported honestly beats a good month reported vaguely",
+      "body": [
+        "SEO has bad months. A core update lands, a competitor ships something better, a migration goes sideways, a page that carried a third of your organic leads gets outranked by a marketplace. That's the channel. It isn't evidence of incompetence.",
+        "What is evidence of something is how the bad month arrives. An agency that opens the report with \"non-brand clicks fell 9%, here's what we think happened, here's what we're changing\" is an agency doing the job. An agency whose reports are uniformly positive across eleven months in a channel this volatile is not managing your SEO — they're managing your mood, and eventually those two things point in opposite directions.",
+        "Our own report is short on purpose. Page one is the three numbers with the frozen baseline printed next to them. Page two is the work log with the two status columns, including whatever's stuck on the client's side with the number of days it's been sitting there. Page three is next month and anything we got wrong. There's no rank-tracker screenshot, which occasionally disappoints people in month two and stops disappointing them by month seven.",
+        "We can report that way because of what sits underneath it: we freeze your trailing-90-day count of qualified organic leads on day one and guarantee movement against that number — never a ranking position, because nobody controls Google's index. Miss it in 90 days and we keep working free until we beat it. It's also why we cap new clients at three a month. [The guarantee](/seo), and what a proper reporting setup involves in [SEO reporting services](/services/seo-reporting-services)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What should be in a monthly SEO report?",
+      "a": "Six things: the frozen baseline printed beside the current figure, non-brand organic clicks on a fixed comparison window, qualified organic leads from your CRM, a work log with recommended and live as separate columns, next month's specific plan, and anything the agency changed their mind about. Everything else is optional."
+    },
+    {
+      "q": "How do I know if my SEO report is misleading?",
+      "a": "Check four things. Does the y-axis start at zero? Is brand traffic segmented out? Is the headline number impressions rather than clicks? Does \"keywords ranked\" come with position bands? Each check takes seconds, and a report that fails three of four is a report designed to be skimmed rather than read."
+    },
+    {
+      "q": "Why do SEO reports show impressions instead of clicks?",
+      "a": "Because impressions are the easiest number in SEO to increase. A single page can enter results for thousands of queries at position 40 and add impressions while generating no clicks at all. Rising impressions with flat clicks means your click-through rate is falling, which is not progress after month three."
+    },
+    {
+      "q": "Is 'traffic value' a real metric?",
+      "a": "No. It multiplies your organic rankings by advertising cost-per-click to estimate what the same traffic would cost on a channel you aren't buying. It's a tool output, not revenue, and it inflates whenever CPCs in your category rise. Treat it as decoration and never let it near a renewal decision."
+    },
+    {
+      "q": "How long should an SEO report be?",
+      "a": "Short enough that every page has a job. Six pages that survive the baseline check, the brand-segmentation check and the shipped-work check are worth more than thirty slides of activity. Length is often inversely correlated with the strength of the month being described."
+    },
+    {
+      "q": "What questions should I ask on the monthly SEO call?",
+      "a": "Two. What number are we compared against and what was it on day one? And what shipped this month that a user could see, plus what's stuck and on whose side? From month six, add a third: what would you do differently with the same budget?"
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "how-to-judge-your-seo-agencys-performance"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "glossary",
+      "slug": "impressions"
+    },
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "answers",
+      "slug": "what-are-seo-kpis"
+    },
+    {
+      "type": "services",
+      "slug": "seo-reporting-services"
+    }
+  ]
+}

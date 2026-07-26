@@ -1,0 +1,150 @@
+{
+  "slug": "long-tail-keywords",
+  "type": "glossary",
+  "primaryKeyword": "long tail keywords",
+  "secondaryKeywords": [
+    "what are long tail keywords",
+    "long tail keyword examples",
+    "long tail vs short tail",
+    "how to find long tail keywords",
+    "long tail keyword strategy"
+  ],
+  "cluster": "content",
+  "intent": "informational",
+  "h1": "Long-tail keywords",
+  "metaTitle": "Long-Tail Keywords: What They Are, Why Use Them",
+  "metaDescription": "A long-tail keyword is a longer, more specific query with less competition. How to find them in India, and why they convert better than head terms do.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Long-tail keyword",
+  "definition": "A long-tail keyword is a specific, low-volume search query that sits in the long flat part of the search demand curve, where most individual queries are rare but the total is enormous.",
+  "answer": "A long-tail keyword is a specific, low-volume query — \"seo agency for d2c brand in bangalore\" rather than \"seo agency\". Individually they're rare. Collectively they're most of all search. They're easier to rank for, they convert far better because the searcher has already narrowed their problem, and they're what people type into AI assistants.",
+  "takeaways": [
+    "The name refers to the **demand curve**, not the word count. Long-tail means rare and specific, not long.",
+    "A head term brings visitors. A long-tail term brings someone who has already described their problem to you.",
+    "Most tools report Indian long-tail volumes as zero or 10. That's a reporting limit, not an absence of demand.",
+    "Conversational AI and voice queries are long-tail by default. This category is growing, not shrinking."
+  ],
+  "sections": [
+    {
+      "h2": "The demand curve, and where the money actually sits",
+      "body": [
+        "Plot every query against how often it's typed and you get a very short, very tall head and a tail that goes on almost forever. A handful of queries get enormous volume; millions get a handful each. In aggregate the tail is the majority of all search — a large share of daily Google queries have never been searched before, which is why it never runs out.",
+        "The point isn't that the tail is big. It's that the tail is where people describe their actual situation. \"Seo agency\" tells you nothing about who's typing. Add four words and you know their business model, market and stage."
+      ]
+    },
+    {
+      "h2": "One worked example: the same business, two queries",
+      "body": [
+        "Take a Bangalore D2C skincare brand looking for an agency — the two ends of the same demand curve."
+      ],
+      "table": {
+        "caption": "Head term versus long-tail: what actually changes.",
+        "head": ["", "\"seo agency\"", "\"seo agency for d2c brand in bangalore\""],
+        "rows": [
+          [
+            "Monthly volume",
+            "Thousands across India",
+            "Often reported as 0–10 by tools. Real demand exists; the tool just can't measure it."
+          ],
+          [
+            "Who's typing",
+            "Students, job-seekers, agency staff, curious founders",
+            "A founder or marketing lead with a budget and a shortlist"
+          ],
+          [
+            "What's ranking",
+            "National directories, listicles, agencies with years of link equity",
+            "A handful of agency pages, some of them not even D2C-focused"
+          ],
+          [
+            "Realistic time to rank",
+            "12+ months, with sustained link work, if at all",
+            "Weeks to a few months on a decent domain"
+          ],
+          [
+            "What a click is worth",
+            "Very little. Most of it never becomes an enquiry.",
+            "High. The query is a qualification form the searcher filled in voluntarily."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "The maths founders miss",
+        "body": "Thirty long-tail pages each pulling twenty visits a month is 600 visits — indistinguishable from a head term on a traffic chart, but the thirty pages send people who've already told you what they need. That's the whole argument, and it's why we build clusters instead of chasing one big keyword."
+      }
+    },
+    {
+      "h2": "Specificity is the point, not length",
+      "body": [
+        "\"How to do search engine optimisation for my business website\" is eleven words and still head intent — vague, broad, competing with every beginner's guide on the internet. \"Ecommerce seo cost india\" is four words and squarely long-tail: rare, specific, typed by someone with a decision to make.",
+        "So drop the word-count heuristic. The test is whether the query narrows the field: does it name an industry, city, business model, price bracket, constraint or comparison? Each cuts both competition and ambiguity.",
+        "Specificity also buys a matchable format. Broad queries have mixed [search intent](/glossary/search-intent) and Google hedges. Specific queries have one obvious answer shape, so you know what to build."
+      ],
+      "bullets": [
+        "**Industry:** \"seo for dental clinics\" instead of \"local seo\"",
+        "**Geography:** \"seo agency in kochi\" instead of \"seo agency\"",
+        "**Business model:** \"b2b saas seo\" instead of \"saas marketing\"",
+        "**Constraint:** \"seo for a site with no blog\", \"cheapest seo package india\"",
+        "**Comparison:** \"agency vs freelancer for seo\" — see [agency vs freelancer](/compare/agency-vs-freelancer)"
+      ]
+    },
+    {
+      "h2": "Where to find yours, without paying for a tool",
+      "body": [
+        "The best source is your own Search Console, because it lists real queries real people used to reach you — not modelled estimates. Everything else is a supplement."
+      ],
+      "numbered": [
+        "**Search Console, Queries tab, six-month window.** Sort by [impressions](/glossary/impressions) and read past the first fifty rows. The long-tail lives at the bottom of that list, and about a third of it will be phrasing you'd never have written yourself.",
+        "**Google autocomplete.** Type your head term plus each letter, a to z. Then type it as a question — \"how much does\", \"which\", \"is\". Free, live, and drawn from actual query logs.",
+        "**People Also Ask.** Expand two levels deep. Each expansion pulls fresh questions clustered around the same topic.",
+        "**Your inbox and sales calls.** The exact words a prospect uses in a WhatsApp enquiry are long-tail queries written by hand. This is the source everyone has and nobody mines.",
+        "**Reddit, Quora and industry forums.** People ask questions there in full sentences, which is precisely the shape of a long-tail query."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Why zero-volume queries are worth building for",
+        "body": "Keyword tools round down and, without ad spend in the account, Google's Keyword Planner reports wide buckets rather than numbers. In India that's worse — demand splits across English, Hinglish and regional transliterations, so each variant looks tiny. A query showing \"0\" that three of your prospects typed last quarter is not a query with no demand."
+      }
+    },
+    {
+      "h2": "Long-tail is how AI and voice search work",
+      "body": [
+        "Nobody speaks in head terms. Ask an assistant out loud and you get a full sentence with context attached — \"which seo agency in bangalore works with skincare brands\". Typed into a chat assistant it's longer still.",
+        "Same shape as a long-tail query, which makes pages built for specific questions the easiest for these systems to use. An answer engine looking for a passage to cite wants a page that addresses the exact question, not a broad guide that covers it in paragraph nine.",
+        "So structure pages with each question in its own clearly headed, self-contained answer. Good for readers, good for featured snippets, and exactly what a citation-hungry model needs — more in [answer engine optimization](/glossary/answer-engine-optimization)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many words makes a keyword long-tail?",
+      "a": "There's no threshold, and word count is the wrong test. Long-tail refers to a query's position on the search demand curve — rare and specific. A four-word query can be long-tail and an eleven-word one can be broad. Ask whether the query narrows the field, not how long it is."
+    },
+    {
+      "q": "Do long-tail keywords really convert better?",
+      "a": "Generally, yes, and the reason is structural rather than magical: someone typing a specific query has already done part of their own qualification. They've named their industry, city or constraint. Broad queries collect everyone, including people who will never buy anything."
+    },
+    {
+      "q": "Should I target keywords with zero search volume?",
+      "a": "Often, yes. Tools round low volumes to zero, and Keyword Planner shows wide ranges without ad spend in the account. In India, demand also fragments across English and regional phrasings. If your customers say it, it's real — the tool just can't count that low."
+    },
+    {
+      "q": "How many long-tail pages do I need?",
+      "a": "Fewer than the number a keyword export will suggest. Build the ones you can genuinely make useful, cluster them around a strong pillar page, and link them properly. Publishing a hundred near-identical variants to cover a list is how sites end up with [thin content](/glossary/thin-content)."
+    },
+    {
+      "q": "Can one page rank for many long-tail keywords?",
+      "a": "Yes, and it should. A page built around one clear question typically picks up dozens of phrasings of that question. That's why grouping by intent rather than by keyword string matters — one well-built page covers a whole family of variants without needing a URL each."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "keyword-research-meaning" },
+    { "type": "glossary", "slug": "search-intent" },
+    { "type": "glossary", "slug": "answer-engine-optimization" },
+    { "type": "compare", "slug": "local-seo-vs-national-seo" },
+    { "type": "services", "slug": "keyword-research-services" },
+    { "type": "seo-for", "slug": "d2c-brands" }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "slug": "anchor-text",
+  "type": "glossary",
+  "primaryKeyword": "anchor text",
+  "secondaryKeywords": [
+    "anchor text seo",
+    "exact match anchor text",
+    "anchor text ratio",
+    "types of anchor text",
+    "branded anchor text"
+  ],
+  "cluster": "on-page",
+  "intent": "informational",
+  "h1": "Anchor text",
+  "metaTitle": "Anchor Text: What It Is and How to Choose It",
+  "metaDescription": "Anchor text is the clickable wording in a link, and it tells Google what the target page covers. Learn the five types, exact-match risk and audit steps.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Anchor text",
+  "definition": "Anchor text is the visible, clickable wording of a hyperlink, which tells readers and search engines what the linked page is about.",
+  "answer": "Anchor text is the clickable wording of a link, and it's one of the strongest signals Google has about what the target page covers. The rules split: you can be deliberate and descriptive with your own internal anchors, but a skewed exact-match ratio on inbound external links is one of the clearest paid-link fingerprints there is.",
+  "takeaways": [
+    "Internal anchors: be deliberate. You own both ends and nobody is auditing your own site for manipulation.",
+    "External anchors: you shouldn't control them, and a profile that looks controlled is the tell.",
+    "Natural link profiles skew heavily **branded** and **naked URL**, because that's how people actually cite things.",
+    "\"Click here\" and \"read more\" throw away the signal and make the page harder to use with a screen reader."
+  ],
+  "sections": [
+    {
+      "h2": "The five types, and where each belongs",
+      "body": [
+        "Every link on the web uses one of these. The types aren't rules — they're a way of describing the shape of a link profile so you can tell whether yours looks like something that happened or something that was bought."
+      ],
+      "table": {
+        "caption": "Anchor text types, with an example pointing at a page about SEO pricing.",
+        "head": ["Type", "Example", "Where it belongs"],
+        "rows": [
+          ["Exact match", "seo cost in india", "Internal links, sparingly. Rare and unremarkable in a natural inbound profile."],
+          ["Partial match", "what agencies charge for SEO in India", "The workhorse for internal links. Descriptive without being mechanical."],
+          ["Branded", "Last Agency", "The largest slice of most healthy inbound profiles. People cite companies by name."],
+          ["Naked URL", "lastagencyhere.com/cost/seo-cost-in-india", "Forums, comments, press. Common and completely normal in real citations."],
+          ["Generic", "click here, this page, read more", "Almost nowhere. It's a wasted signal and a poor experience."]
+        ]
+      }
+    },
+    {
+      "h2": "Internal anchors: be deliberate, and vary them",
+      "body": [
+        "This is the half everyone under-uses. Your own [internal links](/glossary/internal-linking) are the only links on the internet where you choose the destination, the surrounding paragraph and the wording — and there is nothing manipulative about describing your own page accurately.",
+        "So describe it accurately. If a page is about what SEO costs in India, link to it with wording a human would use to refer to it. Don't link to it as \"here\". Don't link to it forty times with the identical five-word phrase either — variety across your internal anchors helps you cover more of the ways people phrase the same query, and it stops the copy reading like it was generated from a template.",
+        "One useful discipline: write the sentence first, then decide which part of it becomes the link. If you find yourself bending a sentence around a keyword, the link doesn't belong there."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "\"Read more\" is worse than you think",
+        "body": "Screen reader users often navigate by pulling up a list of every link on the page. A page with eleven links all reading \"read more\" produces a list of eleven identical entries and no way to tell them apart. It's an accessibility failure and a wasted relevance signal in the same two words."
+      }
+    },
+    {
+      "h2": "External anchors: the ratio is the fingerprint",
+      "body": [
+        "Here's the uncomfortable part. In a genuinely earned link profile, you don't pick the anchor text — the person linking to you does. And people, left alone, overwhelmingly cite you by your brand name or by pasting the URL. Occasionally they'll describe what they're linking to. Almost nobody spontaneously writes \"best seo agency in bangalore\" as a sentence fragment inside their article.",
+        "So when a domain's inbound anchors are dominated by exact-match commercial phrases, the profile isn't describing how people talk about that site. It's describing what somebody paid for. That's the signal — not any single link, but the shape of the whole distribution.",
+        "There is no published safe percentage, and anyone quoting you a precise threshold is guessing. The question worth asking is qualitative: **does my anchor spread look like people citing me, or like people selling me?** If your top inbound anchor is a commercial keyword rather than your brand name, you already know the answer. The distinction between [paid links and earned links](/compare/paid-links-vs-earned-links) is exactly this, made visible."
+      ]
+    },
+    {
+      "h2": "Auditing your inbound anchor spread",
+      "body": [
+        "Half an hour with any backlink tool, once a quarter. You're not looking for individual bad links; you're looking for a pattern that doesn't match how humans cite things."
+      ],
+      "numbered": [
+        "Export your referring domains with their anchor text. Group into the five types above.",
+        "Rank the anchors by number of **referring domains**, not number of links — one site linking 300 times is one opinion.",
+        "Look at the top ten anchors. If branded and naked URL aren't near the top, something is off.",
+        "Take any repeated exact-match commercial anchor and open three of the linking pages. Ask whether a real person wrote that sentence, and whether the site also links out to gambling, loans and hair transplants in the same breath.",
+        "Check the timeline. A sudden cluster of keyword-rich anchors appearing in one month, from unrelated sites, is the classic pattern of a previous agency's \"link package\".",
+        "Only then consider a disavow. Google has said most sites never need one, and a careless disavow file does more damage than the links did. Read [toxic backlinks](/glossary/toxic-backlinks) before you touch it."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "If you inherited this",
+        "body": "A skewed anchor profile from an agency you fired two years ago is a real problem but rarely an emergency. The usual fix is dilution — earn enough genuine branded and editorial links that the old cluster stops being the dominant shape — rather than mass disavowal."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is exact match anchor text?",
+      "a": "Anchor text that matches the target page's keyword word for word — linking to a page about SEO pricing with the anchor \"seo pricing\". It's fine occasionally and normal on internal links. As the dominant pattern in an inbound profile, it looks bought."
+    },
+    {
+      "q": "What's a safe anchor text ratio?",
+      "a": "Nobody outside Google knows, and any specific percentage you're quoted is invented. The useful test is shape, not maths: healthy profiles skew toward branded and naked-URL anchors because that's how people cite things. If a commercial keyword is your top anchor, that's the flag."
+    },
+    {
+      "q": "Does anchor text still matter in 2026?",
+      "a": "Yes. It remains one of the clearest signals about what a linked page covers, and Google's documentation still describes it that way. What's changed is that manipulating it at scale is far easier to detect than it was fifteen years ago."
+    },
+    {
+      "q": "Can I use the same anchor text for multiple internal links?",
+      "a": "You can, and it won't hurt you. But varying the wording across your internal links covers more query phrasings for the same target page, which is free coverage you're otherwise leaving on the table."
+    },
+    {
+      "q": "Should I ask people to use specific anchor text when they link to me?",
+      "a": "Asking a publisher to link with a specific commercial keyword is where guest posting starts drifting into paid-link territory. Asking them to link to the right page, or to spell your brand name correctly, is entirely reasonable. The line is whether you're specifying the wording or the destination."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "internal-linking" },
+    { "type": "glossary", "slug": "backlink-profile" },
+    { "type": "glossary", "slug": "toxic-backlinks" },
+    { "type": "compare", "slug": "paid-links-vs-earned-links" },
+    { "type": "compare", "slug": "dofollow-vs-nofollow" },
+    { "type": "services", "slug": "link-building-services" }
+  ]
+}

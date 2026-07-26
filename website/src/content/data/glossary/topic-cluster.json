@@ -1,0 +1,124 @@
+{
+  "slug": "topic-cluster",
+  "type": "glossary",
+  "primaryKeyword": "topic cluster",
+  "secondaryKeywords": [
+    "topic cluster model",
+    "content clusters seo",
+    "hub and spoke content",
+    "how to build topic clusters",
+    "cluster content strategy"
+  ],
+  "cluster": "content",
+  "intent": "informational",
+  "h1": "Topic cluster",
+  "metaTitle": "Topic Cluster: What It Is and How to Plan One",
+  "metaDescription": "A topic cluster is one pillar page plus the pages that link to it. Here's how to plan a 12-page cluster where no two pages fight for the same query.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Topic cluster",
+  "definition": "A topic cluster is a group of pages covering one subject — a broad pillar page plus supporting pages that each own a distinct slice of it, all linked together.",
+  "answer": "A topic cluster is one pillar page plus the supporting pages that link to it, each covering a distinct slice of the topic. The planning step that decides whether it works is assigning exactly one search intent per page before anyone writes. Do that badly and the siblings compete with each other for the same query.",
+  "takeaways": [
+    "Clusters don't fail during writing. They fail in the plan, when two pages are given the same job and nobody notices until both stop ranking.",
+    "One page, one intent. Write the intent next to the title in the plan, in a sentence describing the person searching.",
+    "Six to fifteen pages is a workable cluster. Under six it's a page with links; over twenty it's usually two clusters pretending to be one.",
+    "Publish two or three commercial spokes before the pillar, so the pillar has something real to link to on the day it goes live."
+  ],
+  "sections": [
+    {
+      "h2": "The structure, in one paragraph",
+      "body": [
+        "One [pillar page](/glossary/pillar-page) covers the topic broadly and links out to every supporting page. Each supporting page — a spoke — covers one narrow slice properly, and links back up to the pillar. That's the whole model. Hub and spoke, borrowed from airline route maps, which is a better metaphor than it sounds: the hub exists so the spokes connect.",
+        "What the structure buys you is threefold. Each page gets to match one query type precisely instead of hedging. Internal links concentrate rather than scatter. And a search engine reading the cluster sees a site that covers the subject rather than a site that once wrote about it — which is the practical route to [topical authority](/glossary/topical-authority)."
+      ]
+    },
+    {
+      "h2": "The planning step everyone skips",
+      "body": [
+        "Most cluster plans are a list of twelve titles. Titles aren't a plan, because two titles can describe the same search. \"Dental implant cost\" and \"Are dental implants worth the money\" look like different articles and are frequently the same query with different words on it.",
+        "So write the intent, not the title. One sentence per page, describing the person typing and what they need to leave with. If two sentences describe the same person in the same moment, you have eleven pages, not twelve. Do this before a single brief goes out and you've prevented the expensive version of the problem.",
+        "Here's what a real one looks like — a Bangalore dental clinic building out implants."
+      ],
+      "table": {
+        "caption": "A 12-page implant cluster, with one distinct intent per page.",
+        "head": ["Page", "The intent it owns"],
+        "rows": [
+          ["Dental implants in Bangalore (pillar)", "Broad commercial — someone choosing where to get it done"],
+          ["What is a dental implant", "Informational — first-time researcher, no vocabulary yet"],
+          ["Dental implant cost in Bangalore", "Commercial investigation — comparing prices before enquiring"],
+          ["Single tooth implant", "Product-specific — one missing tooth, wants that case explained"],
+          ["Full mouth implants and All-on-4", "Product-specific — complete restoration, much higher value"],
+          ["Implants vs bridges", "Comparison — deciding between two treatments a dentist offered"],
+          ["Implants vs dentures", "Comparison — older patient, entirely different objections"],
+          ["The implant procedure, step by step", "Reassurance — anxious patient wanting the sequence and the timeline"],
+          ["Recovery and aftercare", "Post-decision — already booked, searching at 11pm"],
+          ["Am I a candidate for implants?", "Qualification — bone density, diabetes, smoking, age"],
+          ["Implant cost, insurance and EMI in India", "Financial objection — can afford it monthly, not upfront"],
+          ["Implant brands and materials", "Technical comparison — informed buyer checking what you use"]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The two-page test",
+        "body": "Read any two intent sentences side by side and ask: would the same person, in the same moment, be satisfied by either page? If yes, merge them now. Merging in a spreadsheet costs five minutes. Merging after publishing costs a redirect, a rewrite and three months of both pages underperforming."
+      }
+    },
+    {
+      "h2": "The linking pattern",
+      "body": [
+        "Links are what convert twelve files into a cluster. The pattern is simple enough to hand to a writer as a rule."
+      ],
+      "numbered": [
+        "**Every spoke links up to the pillar, once,** with a consistent anchor. That's the vote that says which page is the hub.",
+        "**The pillar links down to every spoke,** from the section that summarises it, using the spoke's own subject as the anchor — \"implant recovery timeline\", not \"dental implants\".",
+        "**Spokes link sideways only where a reader would actually want it.** Cost to EMI, yes. Cost to recovery, no.",
+        "**Never link two spokes that compete for the same query family.** If you find yourself wanting to, that's the two-page test failing late.",
+        "**Fix the anchors when you consolidate.** Redirecting a merged page and leaving forty internal links pointing at the old URL wastes the consolidation you just paid for."
+      ]
+    },
+    {
+      "h2": "Size, order, and why this stops cannibalisation",
+      "body": [
+        "Six to fifteen pages is the workable range. Fewer than six and the pillar has nothing to route to. More than twenty and it's usually two subjects sharing a folder — split it, and give each half its own hub.",
+        "On order, we go against the common advice. Most plans build the pillar first, which produces a hub page linking to nothing for six weeks. Build two or three of the clearly commercial spokes first — the cost page, the main comparison, the highest-value treatment — then the pillar, then the informational spokes. The commercial pages pay for the rest of the cluster while it's being built, and the pillar launches into a cluster that already exists.",
+        "The cannibalisation argument is the real reason to do any of this. When two of your pages target one query, Google has to choose. It alternates between them, neither settles, your internal links split across both, and any external link you earn lands on whichever one the writer happened to find. One intent per page removes the choice entirely — see [keyword cannibalisation](/glossary/keyword-cannibalization) for what the alternative costs, and [our post-mortem](/journal/a-post-mortem-on-keyword-cannibalization) for what unwinding it looks like.",
+        "The cluster also fails quietly if nobody owns it after launch. Six months in, someone writes a new post that overlaps with page four, because the plan lives in a spreadsheet nobody opens. Put the intent sentence in the CMS next to the page, where the next writer will actually see it."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many pages should a topic cluster have?",
+      "a": "Six to fifteen in most cases. The number should come from how many distinct buyer intents exist in the topic, not from a content quota. Fewer than six and a pillar isn't earning its place; more than twenty usually means you're looking at two clusters that should be split and given separate hubs."
+    },
+    {
+      "q": "Do topic clusters still work in 2026?",
+      "a": "The linking structure and the discipline of one intent per page still work, because both are about clarity rather than a loophole. What no longer works is treating cluster count as the goal and publishing thin pages to complete a map — that's the behaviour Google's scaled content abuse policy targets."
+    },
+    {
+      "q": "Should I write the pillar page first?",
+      "a": "We'd publish two or three commercial spokes first, then the pillar, then the rest. A pillar that goes live linking to nothing is a hub with no routes, and the commercial pages start earning while the cluster is still being built. Either order works; publishing the pillar alone and stopping does not."
+    },
+    {
+      "q": "How do topic clusters prevent keyword cannibalisation?",
+      "a": "By assigning each query family to exactly one page before anything is written, so Google never has to choose between two of your URLs. Cannibalisation is almost always a planning failure that surfaces months later as two pages swapping positions and neither one settling."
+    },
+    {
+      "q": "What's the difference between a topic cluster and topical authority?",
+      "a": "A topic cluster is a structure — one pillar, several spokes, a defined linking pattern. Topical authority describes the outcome of covering a subject completely and credibly. Clusters are how you build towards it; they're not the same thing, and one well-built cluster doesn't make you an authority on the whole category."
+    },
+    {
+      "q": "How long before a topic cluster starts ranking?",
+      "a": "Individual long-tail spokes often pick up impressions within four to eight weeks. The pillar and the competitive commercial pages take longer, typically three to six months, and longer again on a site with a weak link profile. The compounding effect — new pages ranking faster than earlier ones — shows up across quarters."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "pillar-page" },
+    { "type": "glossary", "slug": "search-intent" },
+    { "type": "glossary", "slug": "keyword-cannibalization" },
+    { "type": "journal", "slug": "a-post-mortem-on-keyword-cannibalization" },
+    { "type": "journal", "slug": "how-many-blog-posts-you-actually-need" },
+    { "type": "services", "slug": "keyword-research-services" }
+  ]
+}

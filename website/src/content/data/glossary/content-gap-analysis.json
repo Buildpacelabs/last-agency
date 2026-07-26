@@ -1,0 +1,142 @@
+{
+  "slug": "content-gap-analysis",
+  "type": "glossary",
+  "primaryKeyword": "content gap analysis",
+  "secondaryKeywords": [
+    "keyword gap analysis",
+    "competitor content gap",
+    "how to find content gaps",
+    "content gap tool",
+    "content opportunity analysis"
+  ],
+  "cluster": "content",
+  "intent": "informational",
+  "h1": "Content gap analysis",
+  "metaTitle": "Content Gap Analysis: How to Run One Free",
+  "metaDescription": "A content gap analysis finds the queries competitors rank for and you don't. Here's the free Search Console method, and how to prioritise what it turns up.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Content gap analysis",
+  "definition": "A content gap analysis is the process of finding search queries your buyers use that your site either doesn't cover, covers badly, or covers in the wrong format.",
+  "answer": "A content gap analysis compares the queries your competitors rank for against the ones you rank for, then decides which missing or under-performing pages are worth building. You can run a usable version for free using Search Console impressions plus manual SERP checks — no ₹20,000-a-month tool subscription required to start.",
+  "takeaways": [
+    "A gap is one of three things: **no page**, **a weak page**, or **a page aimed at the wrong intent**. Each needs a different fix.",
+    "Search Console already lists your gaps. Queries with impressions and zero clicks are pages that exist but aren't good enough.",
+    "Paid gap tools are faster, not smarter. Buy one when the manual version is your bottleneck, not before.",
+    "Sort gaps by who's searching, not by how many. Fifty searches from buyers beats five thousand from students."
+  ],
+  "sections": [
+    {
+      "h2": "A gap is one of three things, and they need different fixes",
+      "body": [
+        "Most people hear \"content gap\" and picture a blank space — a topic nobody on your site has covered. That's one kind, and usually the least interesting. The other two are already on your site, quietly failing.",
+        "Sort every gap into one of these three before deciding what to do. It takes a minute and saves you writing a new article when the fix was a rewrite."
+      ],
+      "bullets": [
+        "**Missing page.** Nothing on your site addresses the query at all. Cheapest to spot, most expensive to fix, because it means writing something new.",
+        "**Weak page.** You have a page, it appears in results, nobody clicks or nobody stays. Impressions with no clicks is the fingerprint. Usually the highest-return fix in the whole exercise.",
+        "**Wrong intent.** You wrote a 2,000-word guide for a query where Google only ranks product pages. The page can be excellent and still be capped. See [search intent](/glossary/search-intent) for how to check before you write."
+      ]
+    },
+    {
+      "h2": "The free method: Search Console queries with impressions and no clicks",
+      "body": [
+        "Search Console is the best gap tool you own and the one nobody opens. It reports queries where Google already considered you — a far better shortlist than a competitor's keyword export, because it's filtered by what Google thinks you're relevant for.",
+        "Here's the sequence. It takes about forty minutes the first time."
+      ],
+      "numbered": [
+        "Open the Performance report, set the date range to the last 6 months, and switch to the **Queries** tab.",
+        "Sort by impressions, descending. Scan for rows with meaningful impressions and a click count of zero or near-zero.",
+        "For each one, add a query filter and check the average position. Position 8–20 means a weak page. Position 30+ usually means Google has matched a page that was never meant for that query.",
+        "Click through to the **Pages** tab with the query filter still applied. Google will tell you which URL it's ranking. Half the time you'll be surprised — and that surprise is the finding.",
+        "Log the query, the URL Google chose, the position, and which of the three gap types it is. A spreadsheet is enough."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Why zero-click impressions matter more than missing pages",
+        "body": "A query where you already show up at position 11 is a page Google has accepted. Getting it to position 5 is normally weeks of work. Ranking a page that doesn't exist yet is months. Fix the near-misses first."
+      }
+    },
+    {
+      "h2": "Manual SERP sampling, for the queries you don't rank for at all",
+      "body": [
+        "Search Console can't show queries you've never appeared for. That's where competitors come in, and it needs thirty minutes and an incognito window, not a paid crawler.",
+        "Pick your four closest competitors — not the national giants, the ones you actually lose deals to."
+      ],
+      "numbered": [
+        "Open each competitor's blog index, resources hub and services menu. List every topic they cover that you don't. Their navigation is their content strategy, published.",
+        "Take your ten highest-value commercial queries and search each one in incognito, with location set to your target city. Note who ranks in the top five and what format the page takes.",
+        "Read the People Also Ask box on each. Expand two levels. Those are real questions Google has clustered around your topic, straight from the source.",
+        "Check whether an AI Overview appears. If it does, note which sites it cites — that's the shortlist of pages you're competing against for the citation, not just the ranking."
+      ]
+    },
+    {
+      "h2": "Prioritise by money, then set the publishing order",
+      "body": [
+        "You'll finish with more gaps than you can fill in a year. Normal, and the list is worthless until it's ordered. Order by commercial value, not volume — [volume estimates in India](/glossary/keyword-research-meaning) are unreliable anyway, and 60 searches from purchase-ready buyers beat 6,000 from people writing college assignments.",
+        "Score each gap on three things: how close the searcher is to buying, how hard the current top five look to beat, and whether you can build the page well with what you have. Anything scoring badly on all three probably never gets written, which is fine."
+      ],
+      "table": {
+        "caption": "How we order a gap list before it becomes a publishing calendar.",
+        "head": ["Gap type", "The question that decides priority", "Where it usually lands"],
+        "rows": [
+          [
+            "Weak page, position 8–20, commercial query",
+            "Can a rewrite plus internal links move this into the top five?",
+            "First. Fastest return in the list."
+          ],
+          [
+            "Wrong intent on an existing page",
+            "Does the current SERP want a different format entirely?",
+            "Early. Often a restructure, not a rewrite."
+          ],
+          [
+            "Missing page, commercial query",
+            "Would someone searching this be ready to talk to us?",
+            "Next. Build the pillar first, clusters after."
+          ],
+          [
+            "Missing page, informational query",
+            "Does this support a commercial page through internal linking?",
+            "Only if it feeds a [topic cluster](/glossary/topic-cluster)."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Before you buy the tool stack",
+        "body": "Ahrefs and Semrush both do this faster and both cost real money — see [Ahrefs vs Semrush](/compare/ahrefs-vs-semrush). Run the manual version once first. If the bottleneck turns out to be writing the pages rather than finding them, a subscription just gives you a longer list you still can't publish."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I do a content gap analysis without paid tools?",
+      "a": "Yes, and for a site under about 200 pages the free version is close to as good. Search Console gives you every query you already appear for, incognito searches give you the competitor picture, and People Also Ask gives you the sub-questions. You lose speed, not accuracy."
+    },
+    {
+      "q": "What's the difference between a content gap and a keyword gap?",
+      "a": "A keyword gap is a list of queries competitors rank for and you don't. A content gap is what you decide to do about it. The keyword export is the raw material; the analysis is deciding which gaps are worth pages and in what order."
+    },
+    {
+      "q": "How often should I run one?",
+      "a": "Once properly, then a light refresh every quarter. The full exercise is a big lift and the answer doesn't change much month to month. Quarterly, re-check the zero-click queries — that list shifts as pages age and competitors publish."
+    },
+    {
+      "q": "Should I write a page for every gap I find?",
+      "a": "No, and this is where most gap analyses go wrong. Publishing 60 mediocre pages because a tool listed 60 gaps is how sites end up with thin content. Write the ones where you can genuinely say something better than what's ranking now."
+    },
+    {
+      "q": "What if my competitors rank for queries my buyers don't actually search?",
+      "a": "That happens constantly, especially with agencies chasing traffic rather than leads. Judge every gap against your own buyer, not against a competitor's traffic chart. Someone else's ranking is evidence a page exists, not evidence it earns anything."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "search-intent" },
+    { "type": "glossary", "slug": "keyword-research-meaning" },
+    { "type": "glossary", "slug": "topic-cluster" },
+    { "type": "services", "slug": "keyword-research-services" },
+    { "type": "compare", "slug": "ahrefs-vs-semrush" },
+    { "type": "journal", "slug": "how-many-blog-posts-you-actually-need" }
+  ]
+}

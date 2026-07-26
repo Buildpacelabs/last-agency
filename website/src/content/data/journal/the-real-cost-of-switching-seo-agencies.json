@@ -1,0 +1,260 @@
+{
+  "slug": "the-real-cost-of-switching-seo-agencies",
+  "type": "journal",
+  "primaryKeyword": "cost of switching seo agencies",
+  "secondaryKeywords": [
+    "changing seo agency",
+    "seo agency transition",
+    "should i fire my seo agency",
+    "switching seo providers risk",
+    "seo handover checklist"
+  ],
+  "cluster": "agency-economics",
+  "intent": "commercial",
+  "h1": "The real cost of switching SEO agencies is about ten weeks",
+  "metaTitle": "The Real Cost of Switching SEO Agencies: 10 Weeks",
+  "metaDescription": "Switching SEO agencies costs about ten weeks of stalled work, not one notice period. Where the weeks go, and the handover that cuts the gap to four.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Switching SEO agencies costs roughly ten weeks of stalled work, not just the notice period: 30 days' notice while nothing ships, three to six weeks of selection, then two to four weeks of ramp and re-auditing you already paid for once. A planned handover compresses that gap to about four weeks.",
+  "takeaways": [
+    "The invoice you stop paying is the smallest number in this decision. The expensive number is **weeks where nothing gets published, fixed or pitched**.",
+    "Ask for every asset **before** you give notice. The day you hand it in, your account moves to whoever covers leavers, and goodwill has a short half-life.",
+    "A new agency will freeze a fresh baseline at the bottom of your dip, which flatters their first quarter and hides the ground you lost. Freeze **two** baselines instead.",
+    "If the blocker is your own dev queue or your own missing lead definition, switching imports the problem at full price."
+  ],
+  "sections": [
+    {
+      "h2": "The notice period is the cheapest part of leaving",
+      "body": [
+        "Founders costing out an agency switch count one thing: the 30 days of notice they'll pay for work they won't get. Thirty days at ₹75,000 is ₹75,000. Annoying, survivable, roughly what people budget for.",
+        "That isn't the cost. The cost is the gap — the stretch of calendar where no content ships, no technical ticket gets raised, no outreach goes out, and the pages you published four months ago stop being reinforced by anything new. On most engagements that gap runs eight to twelve weeks, and about half of it happens before you've given notice at all.",
+        "SEO punishes a pause harder than any other channel. Paid media stops and restarts the same day; you lose the spend, not the position. Organic compounds, so the gap costs you the work you didn't buy *and* the compounding it would have started. A quarter of silence shows up two quarters later, by which point everyone has forgotten why."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The number that matters",
+        "body": "Not the retainer you're cancelling. Count the weeks between your last shipped deliverable and your next one. On an unmanaged switch that's routinely ten. On a planned one it's four."
+      }
+    },
+    {
+      "h2": "Where the ten weeks actually go",
+      "body": [
+        "Break the gap into stages and it stops looking like bad luck. Every stage is predictable, and three of the five are compressible if you sequence them properly."
+      ],
+      "table": {
+        "caption": "The stages of an agency switch, how long each takes, and where the time is recoverable.",
+        "head": ["Stage", "Typical elapsed time", "What's happening", "Can you compress it?"],
+        "rows": [
+          [
+            "Quiet disengagement",
+            "2–6 weeks, uncounted",
+            "You've stopped trusting the work but haven't said so. You approve slower, they push less, the cadence dies without anyone announcing it.",
+            "Yes — pure waste. Set a decision date and hold it."
+          ],
+          [
+            "Notice period",
+            "30 days",
+            "Full fee, almost nothing shipped. Nobody starts a three-month content programme in their final month.",
+            "Partly. Run your search *during* notice, never after."
+          ],
+          [
+            "Selection and contracting",
+            "3–6 weeks",
+            "Shortlist, calls, proposals, references, MSA. Longer with procurement or a security review.",
+            "Yes — overlap it entirely with the notice period."
+          ],
+          [
+            "New agency ramp",
+            "2–4 weeks",
+            "Access, tooling, a fresh crawl, a re-audit of what the last agency already audited, keyword remap.",
+            "Partly — a proper handover pack roughly halves it."
+          ],
+          [
+            "First work actually live",
+            "Week 8–12 from the decision",
+            "First articles published, technical tickets in a sprint, outreach restarted.",
+            "No. This is the floor; everything above decides how early you reach it."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Notice and selection can run in parallel.** They almost never do, because nobody wants to interview replacements while pretending everything's fine. That overlap alone is worth three to six weeks.",
+        "**The re-audit is the most infuriating line.** You pay a second agency to rediscover the same redirect chains, because the first agency's findings live in a PDF nobody can act on.",
+        "**Link and PR work restarts from zero.** Outreach relationships belong to the person who built them, and placements in flight tend to die on your notice date."
+      ]
+    },
+    {
+      "h2": "Get these eleven things out before you give notice",
+      "body": [
+        "This decides whether your gap is four weeks or twelve, and it has to happen while you're still a paying client. The day you give notice, your account moves — formally or otherwise — to whoever covers leavers. Requests that took a day start taking a week. Nobody is being malicious; they're just no longer paid to care.",
+        "Ask for all of it as routine housekeeping. A decent agency hands it over without blinking, and one that stalls has just answered your question about whether to leave."
+      ],
+      "numbered": [
+        "**Ownership** of Search Console, GA4, Business Profile, Google Ads and Bing Webmaster Tools. Check you're the *owner*, not a delegated user. A property verified through their tag can leave with them.",
+        "**Everything in their tenancy**: Looker Studio dashboards, the Tag Manager container, call-tracking numbers, form integrations.",
+        "**The keyword map as a spreadsheet**, not a slide. URL, target query, current position, intent, status — in cells you can sort.",
+        "**The full link ledger**: every placement, with live URL, anchor text, date, contact, and whether money changed hands. If they won't say which were paid, assume all of them were.",
+        "**Redirect maps and server or edge rules.** A migration redirect map is the most expensive document to reconstruct.",
+        "**Unpublished drafts, briefs and outlines.** You paid for those.",
+        "**Access to anything they built in their own account** — a staging site, a microsite, a landing-page builder. This is where assets go missing.",
+        "**Schema, template changes and code** their developers shipped, plus a note on where it lives.",
+        "**Raw data exports.** Search Console only holds 16 months in the interface — export the full history before it rolls off, and your rank tracker with it.",
+        "**Names and roles of everyone who touched the account.** You'll learn who to poach, and whether the work was done by the people who pitched.",
+        "**A written note on anything unresolved** — a pending disavow, a half-finished migration, a manual action."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The tenancy trap",
+        "body": "If your dashboards, tracking numbers, content calendar and rank data all live in accounts the agency owns, you're not switching agencies — you're rebuilding your measurement from scratch while blind. Check ownership this week, not on your way out."
+      }
+    },
+    {
+      "h2": "Why re-baselining quietly ruins your before-and-after",
+      "body": [
+        "Here's the part nobody warns you about, and it costs more than a month's fee: the new agency will set their baseline on the day they start.",
+        "Think about when that day is. After your old agency spent two months coasting, after 30 days of notice where nothing shipped, after six weeks of your own disengagement. Your trailing-90-day organic lead count is sitting at the bottom of a trough you helped dig. Any competent agency beats that number, because recovering ground you already had is easier than taking new ground.",
+        "A second distortion runs the other way. Content published in the outgoing agency's final months hasn't matured — pages typically take three to six months to settle. Those wins land in the new agency's first quarterly report. None of this is fraud; it's what happens when measurement starts at a convenient moment. The fix takes twenty minutes."
+      ],
+      "bullets": [
+        "**Freeze two baselines.** One at handover, one from your best 90-day window in the previous twelve months. Judge quarter one against the first, year one against the second.",
+        "**Tag inherited pages.** Mark every URL that existed before the switch, so any report can separate what they built from what they inherited.",
+        "**Compare year-on-year.** That strips out both the trough and most of your seasonality.",
+        "**Write the lead definition down before day one.** If the old agency counted every form fill and the new one counts sales-accepted leads, your before-and-after compares two different things. [Setting an SEO baseline](/journal/how-to-set-an-seo-baseline) is the same exercise, done once, for both."
+      ]
+    },
+    {
+      "h2": "When ten weeks is worth paying, and when you're about to waste them",
+      "body": [
+        "Switching is sometimes obviously correct. It's also close to a coin flip — half the founders describing a broken agency are describing a broken brief, a stalled dev queue, or month four."
+      ],
+      "subs": [
+        {
+          "h3": "Switch. The ten weeks buy you something.",
+          "bullets": [
+            "**Nobody ever wrote down a baseline.** No agreed number means no possible proof of value in either direction. There's nothing to salvage.",
+            "**You can't name the person doing the work**, and asking produces a shuffle rather than a name.",
+            "**The link profile has bought placements in it.** That's not a performance problem, it's a liability on your domain. Get the ledger, then get out.",
+            "**Two consecutive quarters of flat impressions** on your target queries. Impressions move first, usually inside four to eight weeks.",
+            "**Reporting leads with traffic** and goes vague on leads. Traffic is easy to inflate with queries that will never buy from you.",
+            "**They can't explain a ranking drop** — not the exact cause, but the diagnostic path. 'Google updated something' is guessing with your money."
+          ]
+        },
+        {
+          "h3": "Don't switch. You'll import the problem.",
+          "bullets": [
+            "**It's month three or four and you're impatient.** The most common wasted switch there is. See [why clients fire their agency in month four](/journal/why-clients-fire-their-seo-agency-in-month-four).",
+            "**The recommendations are good and nothing gets deployed.** That's your dev queue. A new agency inherits the same backlog plus ten weeks of ramp.",
+            "**You never defined a qualified lead.** They optimised for what you asked to see, which was traffic.",
+            "**Your approvals take three weeks.** No agency runs a cadence through that loop, and the next one won't either.",
+            "**You want the same service for ₹30,000.** You'll get a smaller, different service wearing the same name.",
+            "**You haven't had the direct conversation.** One honest 45-minute call with the person doing the work fixes more accounts than a switch does."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The four-week handover, in order",
+      "body": [
+        "This is the sequence that turns a ten-week gap into a four-week one. The trick is entirely in the ordering: everything that can happen while you're still under contract, happens while you're still under contract."
+      ],
+      "subs": [
+        {
+          "h3": "Weeks minus-4 to minus-2 — before anyone knows",
+          "bullets": [
+            "Collect the eleven assets above as routine housekeeping. Say nothing about leaving.",
+            "Verify account ownership yourself, in the settings, rather than by asking.",
+            "Export 16 months of Search Console data and your full rank history.",
+            "Write your two baselines down, dated, in a document with your name on it."
+          ]
+        },
+        {
+          "h3": "Weeks minus-2 to zero — run the search in the dark",
+          "bullets": [
+            "Shortlist three agencies, not eight. You're buying speed, and eight proposals costs a fortnight.",
+            "Give each the same brief: two baselines, your lead definition, your dev-queue reality, three problems in a sentence each.",
+            "Ask for their first-30-days plan as a deliverable. That plan is what compresses their ramp.",
+            "Get the contract signature-ready before you give notice."
+          ]
+        },
+        {
+          "h3": "Notice day, and the 30 days after",
+          "bullets": [
+            "Give notice in writing with a handover request attached and a date on it. Ten working days is reasonable.",
+            "Ask for a recorded 60-minute handover call between the two agencies. The good ones agree, and it's worth a fortnight of ramp.",
+            "Don't cancel tool access on day one — you want rank history and crawl data still collecting.",
+            "Keep publishing anything already drafted. An approved queue is the cheapest way to cover a gap."
+          ]
+        },
+        {
+          "h3": "New agency, week one",
+          "bullets": [
+            "Access on day one, not day nine. Chase it — this is the most common two-week slip.",
+            "They confirm your two baselines in writing rather than setting their own.",
+            "They ship something small and real inside a fortnight. Momentum is easier to keep than to restart."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Five clauses that make the next exit cheaper",
+      "body": [
+        "You're about to sign a new contract. This is the only moment you'll have real negotiating power over how the *next* switch goes, and almost nobody uses it."
+      ],
+      "numbered": [
+        "**Asset ownership on termination.** Every account, dashboard, document, draft and dataset is yours, in your tenancy, from day one. Not 'transferred on request'.",
+        "**A handover obligation with a clock on it.** The full pack delivered within ten working days of notice, at no extra fee.",
+        "**Thirty days' notice, no auto-renewing annual term.** Twelve-month lock-ins protect the agency's revenue forecast. They have never protected a client's results.",
+        "**Named delivery people, and notification if they change.** A silent swap to a junior is the most common quality drop in this industry, and it's invisible without this clause.",
+        "**The metric and the baseline, written into scope.** One number, defined, with today's value beside it. [What belongs in an SEO contract](/answers/what-should-be-in-an-seo-contract) covers the rest of the paperwork."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The reciprocity test",
+        "body": "Watch how an agency reacts to the handover clause in the pitch. Anyone confident in the work agrees immediately — they're not planning to lose you, and if they do they'd rather leave cleanly. Hesitation tells you exactly what leaving them will feel like."
+      }
+    },
+    {
+      "h2": "How we take over an account, and what we tell switchers",
+      "body": [
+        "Roughly half our conversations start with somebody leaving someone else, so the first ten working days are a fixed sequence: access and ownership, a full crawl, a link audit looking specifically for paid placements, a keyword map rebuilt from your closed deals rather than from search volume, and both baselines agreed in writing before we touch anything.",
+        "We freeze two numbers. Your trailing-90-day count of qualified leads from organic search on day one, and your best 90-day window from the previous twelve months. The guarantee runs against the first — beat it inside 90 days or we keep working free until we do — but we report against both, because the second is the honest measure of whether you're actually ahead of where you were before all this started.",
+        "Two honest caveats for switchers. If your site carries a manual action or bought placements, the first quarter is cleanup, and we'd scope that as a recovery project rather than pretend a 90-day lead guarantee is fair to either side. And if you're leaving because nothing your last agency recommended ever got deployed, we'll say so on the first call — we'd be walking into the same queue, and ten weeks of your money would buy a nicer-looking standstill. [Our pricing is published](/pricing), so you can do the arithmetic first."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long does it take to switch SEO agencies?",
+      "a": "Eight to twelve weeks from decision to first shipped work if you run the stages in sequence, and about four if you overlap your search with the notice period and collect the handover assets before giving notice. The floor is roughly four weeks — any new agency genuinely needs a fortnight of access, crawling and planning."
+    },
+    {
+      "q": "Will I lose rankings if I change SEO agencies?",
+      "a": "Not immediately. You lose momentum first and rankings follow one to two quarters later, because pages stop being reinforced by new content and new links. That lag is why switch damage gets blamed on the incoming agency rather than the gap that preceded them."
+    },
+    {
+      "q": "What should I ask my old SEO agency for before I leave?",
+      "a": "Account ownership, the full link ledger with anchor text and whether placements were paid, the keyword map as a spreadsheet, redirect maps, unpublished drafts, and 16 months of Search Console exports. Ask before you give notice — response times collapse afterwards, and nobody is obliged to be helpful once they're not being paid."
+    },
+    {
+      "q": "Should I fire my SEO agency at month four?",
+      "a": "Usually not. Months one and two are audit and fixes, month three is when content starts landing, and compounding tends to begin around month six. Check leading indicators instead: flat impressions on your target queries at month four is a real signal. Rising impressions with traffic lagging means you're early, not wrong."
+    },
+    {
+      "q": "Can the new agency use my old agency's baseline?",
+      "a": "They should, and most won't offer. A baseline set on their start date sits at the bottom of your switching trough, which flatters their first quarter. Freeze two numbers — the trailing 90 days at handover and your best 90-day window from the past year — and insist both appear in every report."
+    },
+    {
+      "q": "Is it cheaper to fix the relationship than to switch?",
+      "a": "Almost always, if the problem is speed, communication or a missing lead definition. Switching costs about ten weeks of stalled compounding on top of the fees. If the problem is bought links, no baseline, or an agency that can't name who does your work, no conversation fixes that and the ten weeks are worth paying."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "can-i-fire-my-seo-agency" },
+    { "type": "answers", "slug": "what-should-be-in-an-seo-contract" },
+    { "type": "journal", "slug": "why-clients-fire-their-seo-agency-in-month-four" },
+    { "type": "journal", "slug": "how-to-set-an-seo-baseline" },
+    { "type": "compare", "slug": "retainer-vs-project" },
+    { "type": "services", "slug": "seo-audit-services" }
+  ]
+}

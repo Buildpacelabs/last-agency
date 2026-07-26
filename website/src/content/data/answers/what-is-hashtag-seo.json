@@ -1,0 +1,174 @@
+{
+  "slug": "what-is-hashtag-seo",
+  "type": "answers",
+  "primaryKeyword": "hashtag seo",
+  "secondaryKeywords": [
+    "what is hashtag seo",
+    "do hashtags help seo",
+    "hashtag strategy for search",
+    "hashtags vs keywords"
+  ],
+  "cluster": "seo-howto",
+  "intent": "informational",
+  "h1": "Hashtag SEO: what hashtags do and don't do for search",
+  "metaTitle": "Hashtag SEO: What Hashtags Really Do",
+  "metaDescription": "Hashtag seo is mostly a misnomer. Hashtags do nothing for Google rankings and far less than they used to on social. Here's where they still earn a place.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Hashtag SEO is mostly a misnomer. Hashtags have no effect on Google rankings — Google ignores the # fragment in a URL and reads a hashtag in text as an ordinary word. On social platforms they've been demoted from a discovery engine to a topic label, useful for campaigns and categorisation rather than reach.",
+  "takeaways": [
+    "There is no hashtag index in web search. **Nothing you do with hashtags changes where your website ranks on Google.**",
+    "The confusion is real but misplaced: search inside social apps genuinely matters now. Hashtags just aren't the mechanism any more — the words are.",
+    "Instagram removed hashtag following. LinkedIn wound its hashtag feeds down. X's own leadership has publicly dismissed them.",
+    "Three uses survive: branded campaign tags, live event tags, and genuine community tags. Everything else is decoration you're paying for in caption space."
+  ],
+  "sections": [
+    {
+      "h2": "Hashtag SEO isn't a thing, and here's the precise reason",
+      "body": [
+        "Start with the claim itself, because it's usually left vague. 'Hashtag SEO' implies hashtags influence search engine rankings. They don't, and the reason is mechanical rather than a matter of opinion.",
+        "A `#` in a URL is a fragment identifier. It points a browser at a location within a page. Google treats `example.com/page` and `example.com/page#section` as the same URL and generally ignores everything after the hash. You cannot create a hashtag page on your website that Google will treat as its own destination just by using the character.",
+        "A hashtag inside your page copy — `#seotips` in a paragraph — is read as text. There's no separate weighting, no hashtag index, no hashtag landing pages in web search. Google has topic understanding, and it derives that from the words, the links and the structure of the page, not from a symbol you typed in front of a word.",
+        "So if a proposal offers 'hashtag optimisation' as part of your SEO, ask which search engine ranks hashtags. There isn't an answer."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The line that should end a sales call",
+        "body": "\"We'll optimise your hashtags to improve your Google rankings.\" These are two unrelated systems joined by the word 'search'. Anyone selling them as one thing either doesn't know how either works, or is counting on you not knowing."
+      }
+    },
+    {
+      "h2": "Why the idea persists — and the part of it that's true",
+      "body": [
+        "The confusion isn't stupid. It comes from a real shift that got attached to the wrong mechanism.",
+        "Search inside social apps has become genuinely important. Plenty of people now look for a restaurant, a salon, a photographer or a product on Instagram or TikTok before they'd think to open Google. That's a real change in behaviour, and it deserves real attention.",
+        "But when those platforms rebuilt their search, they moved away from hashtags and towards text. Instagram matches queries against the words in captions, names and bios. TikTok reads on-screen text and transcribes speech. The tag is now one weak signal among several strong ones, and the strong ones are all just writing.",
+        "So the useful version of 'hashtag SEO' is: optimise for social search. The out-of-date version is: stack thirty tags at the bottom of a caption. See [how Instagram search actually ranks posts](/answers/how-to-do-seo-on-instagram) for what that looks like in practice."
+      ]
+    },
+    {
+      "h2": "Hashtags on Instagram today",
+      "body": [
+        "Instagram is where hashtags mattered most and where they've fallen furthest. The ability to follow a hashtag has been removed, which took away the mechanism that let a post travel to people who'd subscribed to a topic. Instagram's own leadership has said, more than once and fairly bluntly, that adding hashtags does not increase reach.",
+        "What remains is categorisation. A relevant tag helps the platform place your post in a topic, and a smaller number of people still browse tag pages. Neither of those justifies a thirty-tag block.",
+        "The practical position, if you want one:"
+      ],
+      "bullets": [
+        "**Three to five, all genuinely relevant.** Thirty is the ceiling, not the recommendation.",
+        "**Prefer specific over enormous.** A tag with 40 million posts is a room you'll never be seen in. One with 8,000 is a room you could own.",
+        "**Put the keyword in the caption as a word, not only as a tag.** The caption is text the platform reads. The tag is a label.",
+        "**Skip the irrelevant volume tags entirely.** Tagging a photo of your café with a trending cricket hashtag reaches nobody who wants coffee, and teaches the platform that your account is about something it isn't."
+      ]
+    },
+    {
+      "h2": "Every platform has a different answer",
+      "body": [
+        "This is where blanket advice does the most damage, because the same tactic ranges from mildly useful to actively counterproductive depending on where you post it."
+      ],
+      "table": {
+        "caption": "What hashtags currently do on each platform, and a sensible number per post.",
+        "head": ["Platform", "What hashtags do now", "Sensible number"],
+        "rows": [
+          [
+            "Google / web search",
+            "Nothing. No hashtag index, no ranking effect, and the # in a URL is ignored as a fragment.",
+            "Zero"
+          ],
+          [
+            "Instagram",
+            "Topic labelling. Following was removed and reach benefits are minimal. Captions and on-screen text carry the weight.",
+            "3–5, all relevant"
+          ],
+          [
+            "LinkedIn",
+            "Wound down. Hashtag feeds and following have been de-emphasised; the feed reads topic from your text and your network.",
+            "0–3, if any"
+          ],
+          [
+            "X",
+            "Still a working search filter, but the platform's own leadership has publicly dismissed their necessity for distribution.",
+            "0–2, mainly for live events"
+          ],
+          [
+            "YouTube",
+            "Real and visible — the first few appear above the video title and there are browsable hashtag pages. Exceed 15 in a description and YouTube ignores all of them.",
+            "3–5, never over 15"
+          ],
+          [
+            "TikTok",
+            "Still meaningful for topic classification, and TikTok's search surface is genuinely used as a search engine.",
+            "3–5, specific"
+          ],
+          [
+            "Threads",
+            "One topic tag per post by design, which tells you everything about where the format is heading.",
+            "1"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "What replaced them: text the machines can actually read",
+      "body": [
+        "Every platform that de-emphasised hashtags replaced them with something better, and the something is always the same thing — your own words, in the places the system can read.",
+        "That's genuinely good news, because it's the same discipline that works in web search. Say what the thing is, in the language your buyer uses, in the first line rather than the last."
+      ],
+      "bullets": [
+        "**Captions and descriptions.** The first sentence does most of the work, on every platform, for both the algorithm and the human.",
+        "**On-screen text in video.** Legible to the platform and to the majority watching with sound off.",
+        "**Spoken words.** Auto-transcription means what you say in a Reel or a Short is now text the platform holds.",
+        "**Profile fields.** Display name, bio, category, handle. Static, searchable, and edited once a year at most.",
+        "**Alt text and file names.** Small, cheap, mostly skipped."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The one-question test",
+        "body": "Before adding a hashtag, ask: would a real person plausibly tap this to see more posts like mine? If yes, it's a tag. If no, it's decoration occupying the space where a sentence could have gone — and the sentence is what gets read."
+      }
+    },
+    {
+      "h2": "Where hashtags still genuinely earn their place",
+      "body": [
+        "None of this makes hashtags useless. It makes them a specific tool for specific jobs, rather than a growth mechanism. Three jobs survive comfortably.",
+        "First, **branded campaign tags**. If you're collecting customer photos, running a competition, or want one place where everything from a launch lives, a unique tag does that better than anything else. Nobody's searching it — you're using it as a bucket.",
+        "Second, **live event tags**. Conferences, cricket, weddings, product launches: a crowd coordinating in real time around a shared string is exactly the behaviour hashtags were invented for, and it still works.",
+        "Third, **genuine community tags** — the niche ones with real culture behind them, where the people in that tag actually check it. These exist in fitness, in art, in book communities, in regional-language communities across India. You'll know them because you're in them. You cannot research your way into one from a spreadsheet.",
+        "Everything else is habit. And habit costs you: the caption space, the visual clutter, and the credibility hit from a post that ends in twenty-eight tags nobody will read. Where hashtags fit against actual search work is covered in [SEO versus social media](/compare/seo-vs-social-media)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do hashtags help SEO?",
+      "a": "Not for Google or any web search engine. There's no hashtag index in web search, and the # character in a URL is treated as a fragment and ignored. Hashtags affect discovery inside social platforms only, and even there their influence has fallen sharply as those platforms moved to matching on text instead."
+    },
+    {
+      "q": "Should I put hashtags on my website's blog posts?",
+      "a": "No. They do nothing for ranking and they make the copy look like a social caption. If you want topical grouping on your site, use real category or tag pages with their own URLs, proper internal links and enough content to justify indexing — and be honest about whether they earn their place before you create fifty."
+    },
+    {
+      "q": "How many hashtags should I use on Instagram?",
+      "a": "Three to five relevant ones. The technical cap is thirty, which is where the old advice came from, but Instagram removed hashtag following and its leadership has said stacking tags doesn't increase reach. The caption text does more for discovery than the tag block below it."
+    },
+    {
+      "q": "Are hashtags dead on LinkedIn?",
+      "a": "Close to it as a discovery mechanism. LinkedIn has wound down hashtag following and hashtag feeds, and the feed now works out topic from your text and your network. One to three at most, if you use them at all — they're no longer the reason a post travels."
+    },
+    {
+      "q": "What's the difference between a hashtag and a keyword?",
+      "a": "A keyword is a phrase people type into a search box, which systems match against the text of your content. A hashtag is an explicit label you attach to a post, which only works inside the platform where you attached it. Keywords work across search and social; hashtags work in one app and don't leave it."
+    },
+    {
+      "q": "Do hashtags work on YouTube?",
+      "a": "More than anywhere else, actually. The first few hashtags in a description appear above the video title, and hashtag pages are browsable. There's a hard rule worth knowing: use more than 15 in a description and YouTube ignores all of them, so restraint is enforced rather than optional."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "hashtags" },
+    { "type": "glossary", "slug": "instagram-seo" },
+    { "type": "answers", "slug": "how-to-do-seo-on-instagram" },
+    { "type": "services", "slug": "instagram-seo-services" },
+    { "type": "compare", "slug": "seo-vs-social-media" },
+    { "type": "journal", "slug": "what-content-actually-does-for-seo" }
+  ]
+}

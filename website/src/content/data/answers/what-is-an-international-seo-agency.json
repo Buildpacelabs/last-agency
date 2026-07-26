@@ -1,0 +1,277 @@
+{
+  "slug": "what-is-an-international-seo-agency",
+  "type": "answers",
+  "primaryKeyword": "what is an international seo agency",
+  "secondaryKeywords": [
+    "international seo agency",
+    "what does international seo involve",
+    "global seo agency",
+    "multi country seo"
+  ],
+  "cluster": "agency-mechanics",
+  "intent": "commercial",
+  "h1": "What an international SEO agency handles that a domestic one doesn't",
+  "metaTitle": "What Is an International SEO Agency? Scope & Cost",
+  "metaDescription": "What is an international SEO agency? One that owns hreflang, country targeting and per-market keyword research. Here's the extra work and the extra cost.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "An international SEO agency runs search visibility in more than one country at once: hreflang and country targeting, a URL structure that separates markets, keyword research redone per market, and links earned from local domains. Expect it to add roughly 30–60% to a single-market retainer, almost all of it in content and links.",
+  "takeaways": [
+    "Translation is the smallest part. The expensive parts are **per-market keyword research** and **local links**.",
+    "Subdirectories beat ccTLDs for most Indian companies going abroad — one domain's authority is worth more than three fresh ones.",
+    "hreflang doesn't rank a page. It swaps which version of a page gets shown, and it fails silently when the return links are missing.",
+    "Your best-converting Indian query is often a different query in Chicago, with a different competitor set and a different page shape winning it."
+  ],
+  "sections": [
+    {
+      "h2": "Three things make SEO international, and translation isn't one of them",
+      "body": [
+        "Most companies decide they need an international SEO agency the day they translate the site. They usually needed one about six months earlier — around the time the first US enquiry landed and nobody could explain where it came from.",
+        "Here's what actually moves a programme from domestic to international."
+      ],
+      "bullets": [
+        "**You sell in a market where you don't rank.** Different index, different competitors, different SERP features. Your Indian rankings tell you nothing about your position in Dubai.",
+        "**One site serves several countries.** Google now has to work out which page belongs to which audience. Left alone, it guesses, and it often guesses your home market.",
+        "**Currency, delivery, or legal terms differ by market.** A single page can't carry three prices honestly. A buyer who lands on the wrong one leaves."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The domestic agency isn't bad at this. It just doesn't own it.",
+        "body": "A good Indian agency can write strong content and earn strong links. What it typically doesn't own is the layer underneath — the signals that tell Google which version of a page belongs in which country's results, and the research that admits your Indian keyword list is simply wrong in Chicago."
+      }
+    },
+    {
+      "h2": "hreflang and country targeting, without the hand-waving",
+      "body": [
+        "`hreflang` is an annotation that says: this page has an equivalent for a different language or region, here it is. You can put it in the HTML head, in HTTP headers, or in the XML sitemap. Google treats it as a signal for which version to serve — not as a ranking boost. That distinction is where most of the confusion lives.",
+        "It also has to be reciprocal. If your UAE page points at the Indian page and the Indian page doesn't point back, the pair can be ignored entirely. There's no red warning anywhere in your CMS when this happens. The full attribute mechanics live in our [hreflang glossary entry](/glossary/hreflang)."
+      ],
+      "table": {
+        "caption": "What actually tells Google which country a page is for.",
+        "head": [
+          "Signal",
+          "How strong",
+          "What it does in practice"
+        ],
+        "rows": [
+          [
+            "Country-code domain (`.ae`, `.co.uk`)",
+            "Strongest",
+            "Hard-codes the market. Also hard to undo, and it splits your authority across domains."
+          ],
+          [
+            "hreflang annotations",
+            "Moderate — a hint, not a command",
+            "Swaps which version is shown to whom. Doesn't rank a page that wasn't going to rank."
+          ],
+          [
+            "Local links and local mentions",
+            "Strong",
+            "A `.co.uk` publication linking to you is a country signal and an authority signal at the same time."
+          ],
+          [
+            "Server or CDN location",
+            "Weak now",
+            "Mattered a decade ago. Speed still matters everywhere, location barely does."
+          ],
+          [
+            "Currency, address, phone format, spelling",
+            "Weak alone, strong together",
+            "Users read these long before Google does. They fix bounce rate, which fixes everything downstream."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The two hreflang bugs we find most often",
+        "body": "Missing return links, and invalid region codes. The code for the United Kingdom is `en-gb`, not `en-uk` — `uk` isn't a valid ISO 3166 country code, and Google discards the annotation without telling you. Search Console's old country-targeting setting is gone too, so structure and annotations now carry the whole job."
+      }
+    },
+    {
+      "h2": "ccTLD, subfolder or subdomain — you pick this once",
+      "body": [
+        "This is the one decision that's genuinely expensive to reverse. Everything else in an international programme can be adjusted month to month. Your URL structure can't."
+      ],
+      "table": {
+        "caption": "The three international URL structures and what each one costs you.",
+        "head": [
+          "Structure",
+          "Example",
+          "Best when",
+          "The cost"
+        ],
+        "rows": [
+          [
+            "Subdirectory",
+            "`site.com/en-ae/`",
+            "You have one domain with real history and want every market to inherit it.",
+            "All markets share one domain's fate. A bad migration or a penalty hits everything at once."
+          ],
+          [
+            "Subdomain",
+            "`ae.site.com`",
+            "Separate stacks or separate teams that need to ship independently.",
+            "Authority passes less predictably than a folder. You're partly starting again per market."
+          ],
+          [
+            "ccTLD",
+            "`site.ae`",
+            "The market is a real revenue line and local trust visibly closes deals.",
+            "A brand-new domain with zero history, plus per-country registration rules, hosting and renewals."
+          ]
+        ]
+      },
+      "bullets": [
+        "For most Indian companies selling abroad, **subdirectories win**. You own one domain that's been earning links for years and three markets that haven't.",
+        "Buying three ccTLDs on day one means three sites starting from nothing while you pay for four. That's a decision for a market with its own P&L, not for a pitch deck.",
+        "If you inherited a ccTLD sprawl from a previous agency, consolidating is a migration — plan it as one. [Subdomain vs subfolder](/compare/subdomain-vs-subfolder) covers the trade-off in more depth."
+      ]
+    },
+    {
+      "h2": "Why your Indian keyword list stops working in Chicago",
+      "body": [
+        "This is the part that gets skipped, and it's the part that decides whether the whole programme works. A keyword list is a map of how one market phrases its problem. Cross a border and the phrasing changes, the competitor set changes, and the kind of page Google rewards changes with them.",
+        "Four things break in predictable ways."
+      ],
+      "numbered": [
+        "**Spelling.** India and the UK lean to `-ise` and `-our`; the US uses `-ize` and `-or`. \"Optimisation\" and \"optimization\" are different queries with different volumes, and Google won't always merge them for you.",
+        "**Vocabulary.** A chartered accountant in India is a CPA in the US. A flat is an apartment. A CV is a résumé. Nobody in Ohio searches in lakhs. Every one of those is a page that ranks or doesn't.",
+        "**Competitive depth.** The head terms in a US market are usually contested by companies with far bigger content budgets than yours. The winnable set is longer, more specific and more problem-shaped — which means a different content plan, not a translated one.",
+        "**Language mix inside a market.** In the UAE, business-to-business search runs largely in English while a great deal of consumer search runs in Arabic. The split follows the category more than the country, so you research it per category rather than assuming."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The five-minute test before you sign anything",
+        "body": "Take your ten best-converting Indian queries. Run them against a US or UK SERP. Read the top five results properly. If none of them look like a page you'd have written, your list needs redoing from that market's search results — not translating from this one."
+      }
+    },
+    {
+      "h2": "Links don't cross borders on their own",
+      "body": [
+        "A link profile that's ninety percent `.in` tells Google you're an Indian company. It also tells a British procurement manager the same thing, faster than your About page does. Neither is a problem until you're trying to rank against companies whose links are all local.",
+        "Foreign link acquisition is slower and costs more per link, for reasons that are mechanical rather than mysterious. You have no existing relationships in that market. Your outreach lands at the wrong hour. Your domain and your email signature both read as foreign. And the local trade bodies, review sites and directories that carry weight in each market are different sets — Companies House and Trustpilot presence matter in the UK, industry association listings matter in the US, and local business directories carry unusual weight across the Gulf.",
+        "What genuinely works is a local hook: data about that market, a spokesperson who can take a call in that timezone, commentary on something that market is already arguing about. What doesn't work is a \"UK guest post package\" — priced per link, delivered in a week, and almost always the same resold network wearing a different domain."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Ask where the links come from. Then ask again.",
+        "body": "\"Our UK network\" is the same answer as \"our network\", which is the same answer as \"a private blog network\". If an agency can name the publications, the writers and the angle, the links are real. If the answer is a volume and a price, you're buying a future penalty in a market you can't easily monitor."
+      }
+    },
+    {
+      "h2": "What international scope actually adds to the retainer",
+      "body": [
+        "The cost doesn't scale with the number of countries on your map. It scales with the number of markets that need their own content and their own links. Once you separate those two things, the pricing stops being mysterious."
+      ],
+      "table": {
+        "caption": "Which international workstreams scale per market and which don't.",
+        "head": [
+          "Workstream",
+          "Scales with markets?",
+          "Why"
+        ],
+        "rows": [
+          [
+            "Technical setup — structure, hreflang, templates",
+            "Mostly one-time",
+            "You build the framework once, then extend it. Market four costs far less than market two."
+          ],
+          [
+            "Keyword and intent research",
+            "Yes, per market",
+            "You're researching a different index with a different competitor set. There is no shortcut here."
+          ],
+          [
+            "Content",
+            "Yes, per market",
+            "Localisation isn't translation. Prices, examples, regulations and proof points all change."
+          ],
+          [
+            "Links and digital PR",
+            "Yes — and it's the expensive one",
+            "New market, no relationships, lower reply rates. Cost per earned link is simply higher."
+          ],
+          [
+            "Reporting and strategy",
+            "Slightly",
+            "One more segment to read, not one more programme to run."
+          ]
+        ]
+      },
+      "bullets": [
+        "That arithmetic is where the **30–60% uplift** comes from: two of the five workstreams roughly double per market, one barely moves, and one is close to fixed. It's a planning range, not a price list — your actual number depends on how many markets need original content.",
+        "We run [SEO from ₹75,000/mo](/seo), with smaller single-market sites from ₹40,000. A real two- or three-market programme doesn't fit the ₹40,000 tier — not because of the price list, but because content and link volume genuinely multiplies.",
+        "The guarantee doesn't change across borders. We freeze your trailing-90-day qualified leads from organic search on day one and beat that number in 90 days, or we keep working free until we do. We don't promise a position in a foreign SERP, because nobody controls one."
+      ]
+    },
+    {
+      "h2": "Five questions that separate a real international team from a translated one",
+      "body": [
+        "Ask these in the pitch. The first two take a competent team ten seconds each and an unprepared one about two minutes of hedging."
+      ],
+      "numbered": [
+        "\"Show me an hreflang implementation you shipped. Which markets, and where did you put the annotations — head, headers or sitemap?\"",
+        "\"Will you research US keywords from my existing list, or from US search results?\" Only one of those answers is right.",
+        "\"Name three UK publications you'd target for us, and the angle you'd pitch them.\"",
+        "\"Subfolder or ccTLD for us specifically, and what happens to our existing domain authority either way?\"",
+        "\"What's the baseline number per market, and when do we read it?\" Markets mature at different speeds — one blended number hides the market that's failing."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is international SEO just translating my website?",
+      "a": "No, and treating it that way is the most common expensive mistake. Translation gets the words across; it doesn't fix which page Google serves to which country, doesn't rebuild your keyword list from that market's search results, and doesn't earn you a single local link. Translation is maybe a fifth of the work."
+    },
+    {
+      "q": "Do I need a separate website for each country?",
+      "a": "Usually not. For most Indian companies selling abroad, country subdirectories on your existing domain are the better call — every market inherits authority you've already earned. Separate country domains make sense when a market is a genuine revenue line with its own team, not when it's an experiment."
+    },
+    {
+      "q": "Does hreflang improve rankings?",
+      "a": "It doesn't. hreflang decides which version of a page gets shown to which audience — it swaps, it doesn't lift. If a page wasn't going to rank in the US, correct hreflang won't change that. What it does prevent is your Indian page outranking your US page in the US, which is a real and common problem."
+    },
+    {
+      "q": "Can an Indian SEO agency rank a site in the US or UK?",
+      "a": "Yes, and plenty do. The technical and content work is location-independent. The part that needs genuine care is link acquisition and market research, where being outside the market is a real handicap you solve with local angles, local data and timezone-aware outreach rather than by pretending it isn't there."
+    },
+    {
+      "q": "How long does international SEO take to work?",
+      "a": "Longer than domestic, and per market. Three to six months for movement in a market where you have some existing brand presence; longer where you're starting from zero links and zero mentions. The technical fixes land fastest — sometimes recovering traffic Google was already sending to the wrong country's page."
+    },
+    {
+      "q": "What does an international SEO agency cost in India?",
+      "a": "Plan on roughly 30–60% more than a comparable single-market retainer, driven almost entirely by content and links multiplying per market. Our SEO starts at ₹75,000/mo, and a genuine multi-market programme sits above that. Ask any agency to break the quote down per market rather than quoting one blended figure."
+    }
+  ],
+  "related": [
+    {
+      "type": "services",
+      "slug": "international-seo-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "hreflang"
+    },
+    {
+      "type": "compare",
+      "slug": "subdomain-vs-subfolder"
+    },
+    {
+      "type": "compare",
+      "slug": "indian-seo-agency-vs-international-agency"
+    },
+    {
+      "type": "journal",
+      "slug": "indian-agencies-serving-global-clients"
+    },
+    {
+      "type": "seo-agency",
+      "slug": "dubai"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-seo-services-work"
+    }
+  ]
+}

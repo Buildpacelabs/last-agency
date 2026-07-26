@@ -1,0 +1,129 @@
+{
+  "slug": "crawl-budget",
+  "type": "glossary",
+  "primaryKeyword": "crawl budget",
+  "secondaryKeywords": [
+    "crawl budget seo",
+    "crawl rate limit",
+    "crawl demand",
+    "crawl budget optimization",
+    "does crawl budget matter"
+  ],
+  "cluster": "technical-seo",
+  "intent": "informational",
+  "h1": "Crawl budget",
+  "metaTitle": "Crawl Budget: What It Is and Who Needs to Care",
+  "metaDescription": "Crawl budget is how many URLs Googlebot will fetch from your site. Most sites under 10,000 pages don't have a problem — here's how to tell if yours does.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Crawl budget",
+  "definition": "Crawl budget is the number of URLs Googlebot is willing and able to fetch from a site in a given period, set by what your server can handle and how much Google wants your pages.",
+  "answer": "Crawl budget is how many URLs Googlebot will fetch from your site in a given period. It's the product of two things: how hard Google can push your server without breaking it, and how much Google wants your content. Google's own guidance says most sites under 10,000 pages never need to think about it.",
+  "takeaways": [
+    "Two components: **crawl rate limit** (what your server tolerates) and **crawl demand** (what Google wants). Only one of them is yours to fix quickly.",
+    "Google aims this guidance at sites over a million pages, or over 10,000 pages changing daily. Below that, a crawl problem is almost always a different problem wearing a costume.",
+    "The two real cases: a very large catalogue, and a filter system generating URLs faster than Google can fetch them.",
+    "`noindex` does **not** save crawl budget — Google has to crawl the page to read the tag."
+  ],
+  "sections": [
+    {
+      "h2": "You probably don't have a crawl budget problem",
+      "body": [
+        "This term gets used to explain traffic drops far more often than it actually explains them. Before spending a week on it, check whether it applies to you at all.",
+        "Google's own large-site guidance draws the line clearly: it's written for sites over a million unique pages whose content changes weekly, or sites over about 10,000 unique pages whose content changes daily. On everyone else Google is close to dismissive — if your pages are typically crawled the same day you publish them, this isn't your issue.",
+        "A 120-page services site whose new pages sit unindexed does not have a crawl budget problem. It has an [indexing](/glossary/indexing) problem, an internal linking problem, or a content-quality problem. Chase those first.",
+        "It matters because crawl budget work is invisible and slow — an excellent place to hide for three months. If someone hands you a crawl budget plan for a small site, ask what the page count is."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The honest test",
+        "body": "Publish a page, link it from your homepage, watch how long Googlebot takes to fetch it. Same day or next means Google has spare capacity, and whatever's wrong isn't budget."
+      }
+    },
+    {
+      "h2": "Rate limit and demand — the two halves",
+      "body": [
+        "Crawl budget isn't a number Google assigns. It's what falls out of two independent constraints.",
+        "**Crawl rate limit** is the ceiling Google imposes to avoid hammering your server. If response times climb or you return 5xx errors, Googlebot backs off automatically. It's server engineering, and it's the half you can move quickly — a slow origin is the commonest reason a large site gets under-crawled.",
+        "**Crawl demand** is how much Google wants your URLs. It rises with links and genuine change frequency, and falls for URLs Google has learned are stale or duplicated. Earned over months, not configured.",
+        "The consequence: you can lift your crawl rate by fixing a slow server in a fortnight. You cannot conjure demand for 300,000 near-identical filter URLs, because Google has already decided those aren't worth its time — and it's right."
+      ]
+    },
+    {
+      "h2": "The two situations where it's genuinely real",
+      "body": [
+        "Both are common in Indian ecommerce, and both are structural rather than incremental."
+      ],
+      "subs": [
+        {
+          "h3": "A catalogue over roughly 10,000 URLs",
+          "body": [
+            "A marketplace or large D2C catalogue with tens of thousands of SKUs, plus variants and paginated category pages, genuinely can outgrow the attention Google gives it. The symptoms are specific: new products taking weeks to appear, deep pagination never fetched, a Crawl Stats graph flat while your URL count climbs.",
+            "The fix is triage, not more sitemaps. Decide which URLs deserve to exist, consolidate the rest, and keep the ones that matter two or three clicks from the homepage. That's most of what [ecommerce SEO](/services/ecommerce-seo-services) is on a big catalogue."
+          ]
+        },
+        {
+          "h3": "Faceted navigation generating infinite URLs",
+          "body": [
+            "This one surprises people, because it happens quietly. Take a jewellery collection page with five filters: metal (6 options), stone (9), price band (5), occasion (7), sort order (4). Every combination is a distinct URL — 6 × 9 × 5 × 7 × 4 = 7,560 URLs from one collection page. Across 40 collections, 302,400 URLs, for a catalogue holding maybe 2,000 real products.",
+            "Googlebot finds these, because your own filter links point at them. It spends real crawl capacity on combinations no human has ever requested while your new arrivals queue. Add an unbounded date parameter and the space becomes literally infinite.",
+            "The fix is to stop generating the links: block the parameter patterns in [robots.txt](/glossary/robots-txt), keep a small set of genuinely useful filter combinations as real pages, and render the rest without producing a linked URL."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "What actually frees crawl budget",
+      "body": [
+        "Open Search Console, Settings, **Crawl stats**. Take three numbers: total crawl requests over time, average response time, and the discovery-versus-refresh split. A high response time is the fastest fix available. A refresh-heavy split means Google is re-reading old pages instead of finding new ones.",
+        "Then, in rough order of return:"
+      ],
+      "bullets": [
+        "**Cut server response time.** Googlebot's rate limit responds directly, and unlike everything else here it works within days.",
+        "**Block infinite spaces in robots.txt** — filter combinations, sort orders, internal search, calendar pages.",
+        "**Kill redirect chains.** Every hop is a separate fetch. See [301 redirect](/glossary/301-redirect).",
+        "**Keep `lastmod` honest** so Google can skip what hasn't changed. Fake dates train it to ignore your sitemap.",
+        "**Consolidate thin duplicates.** Fewer, better URLs is the only structural fix that helps everything else too."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The one that doesn't work",
+        "body": "Adding `noindex` to 200,000 filter URLs saves nothing. Google fetches each page to see the tag, so you pay the full crawl cost and get an empty index in return. Robots.txt saves the fetch; noindex saves the index entry. Not interchangeable."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does crawl budget matter for small sites?",
+      "a": "Almost never. Google's own guidance targets sites over a million pages, or over 10,000 pages changing daily. If your new pages get crawled within a day or two, you have spare capacity and your problem is somewhere else — usually indexing quality or internal linking."
+    },
+    {
+      "q": "How do I check my crawl budget?",
+      "a": "Search Console, Settings, Crawl stats. Look at total crawl requests over 90 days, average response time, and the discovery-versus-refresh split. Compare crawl requests against your URL count — that ratio tells you more than any single number."
+    },
+    {
+      "q": "Does noindex save crawl budget?",
+      "a": "No. Googlebot must fetch the page to read the noindex tag, so the crawl cost is paid in full. Over time Google may crawl noindexed pages less often, but if the goal is to stop the fetch, robots.txt is the tool."
+    },
+    {
+      "q": "Do 404s waste crawl budget?",
+      "a": "A little, and it's rarely worth worrying about. Google re-checks 404s occasionally in case they come back, then tapers off. Thousands of them signal a structural problem worth fixing, but a few hundred clean 404s are normal on any site with history."
+    },
+    {
+      "q": "Does site speed affect crawl budget?",
+      "a": "Server response time does, directly. A fast origin lets Googlebot raise its request rate; a slow or error-prone one makes it back off. Front-end rendering speed matters for users and Core Web Vitals, but it's the server's time-to-first-byte that governs crawl rate."
+    },
+    {
+      "q": "Will more backlinks increase crawl budget?",
+      "a": "They increase crawl demand, which is the half you can't configure. Links from frequently-crawled sites genuinely bring Googlebot around more often. That's a slow lever, not a fix for a filter system generating 300,000 URLs."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "indexing" },
+    { "type": "glossary", "slug": "robots-txt" },
+    { "type": "glossary", "slug": "log-file-analysis" },
+    { "type": "glossary", "slug": "xml-sitemap" },
+    { "type": "services", "slug": "ecommerce-seo-services" },
+    { "type": "journal", "slug": "programmatic-seo-and-the-scaled-content-line" }
+  ]
+}

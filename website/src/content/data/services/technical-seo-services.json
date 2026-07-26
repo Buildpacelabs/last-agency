@@ -1,0 +1,198 @@
+{
+  "slug": "technical-seo-services",
+  "type": "services",
+  "primaryKeyword": "technical seo services",
+  "secondaryKeywords": [
+    "technical seo agency india",
+    "technical seo company",
+    "javascript seo services",
+    "crawl budget optimisation service",
+    "technical seo services cost india",
+    "technical seo fixes for developers"
+  ],
+  "cluster": "technical-seo",
+  "intent": "commercial",
+  "h1": "Technical SEO that ends with fixes in production",
+  "metaTitle": "Technical SEO Services — Fixes, Not Filings",
+  "metaDescription": "Technical SEO services for Indian sites: we diagnose crawl, index and render faults, then ship the fixes ourselves. From ₹75,000 a month, no lock-in.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "priceFrom": "From ₹75,000 / mo",
+  "answer": "Technical SEO services fix the crawl, index and render faults that cap everything else on your site — redirect chains, blocked resources, JavaScript that hides content, slow templates, broken canonicals. We diagnose from server logs, Search Console and the rendered DOM, then ship the fix ourselves as a pull request or a CMS edit. From ₹75,000 a month.",
+  "takeaways": [
+    "A fix counts as done when it's **live in production and re-crawled** — not when it lands in a spreadsheet with a red cell next to it.",
+    "Diagnosis runs off three sources: server logs, Search Console, and the rendered DOM. Crawling tools come fourth, because a crawler tells you what a crawler sees.",
+    "₹75,000/mo funds technical work running alongside content and links. The ₹40,000 small-site tier keeps the same standard of evidence and drops the throughput.",
+    "Technical SEO removes a ceiling. It doesn't create demand. A perfectly crawlable site with nothing worth ranking still ranks for nothing."
+  ],
+  "sections": [
+    {
+      "h2": "A fix isn't a fix until it's live and re-crawled",
+      "body": [
+        "Most technical SEO in India ends the same way. A 200-row spreadsheet, colour-coded by priority, emailed to a dev team that already has a sprint. Six months later the agency is still reporting on the same 200 rows, now with a slightly different chart. Nobody lied. Nothing shipped either.",
+        "We close a technical item only when the change is live on production, the URL has been re-crawled, and the new status is confirmed in Search Console or a fresh crawl. Anything short of that stays open on the board with a name against it — ours or yours, whichever is actually blocking.",
+        "That changes what you're buying. Not a diagnosis. Pull requests, CMS edits, tag-manager containers, redirect maps and robots directives that land — plus the conversation with your developer about why the change is safe to merge, which is frequently the slow and expensive part."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The question that separates the field",
+        "body": "Ask any technical SEO agency what percentage of last quarter's recommendations reached production. If nobody tracks that number, they're accountable for a document, not an outcome. It's a fair question and it takes ten seconds to answer honestly."
+      }
+    },
+    {
+      "h2": "How we find what's actually broken",
+      "body": [
+        "Three sources, in this order. A crawling tool is the fourth, and it's a sanity check rather than evidence — it reports what a crawler sees on the day you ran it, not what Google did over the last month."
+      ],
+      "subs": [
+        {
+          "h3": "Server logs — what Googlebot actually did",
+          "body": [
+            "Thirty days of raw access logs tell you which URLs Googlebot requested, how often, what status codes it got back, and how much of your crawl allowance went to faceted junk, dead parameters or a staging subdomain nobody switched off. On sites past a few thousand URLs, this is usually where the real problem is hiding.",
+            "Most Indian hosting stacks can export these. If yours genuinely can't, we say so in week one instead of pretending a crawl is a substitute."
+          ]
+        },
+        {
+          "h3": "Search Console — what Google decided",
+          "body": [
+            "Page indexing reports, the Crawl Stats report, and URL Inspection run across your priority set. This is where \"Discovered — currently not indexed\" turns up, which almost always means a quality or internal-linking problem wearing a technical costume. Adding a sitemap does not fix it."
+          ]
+        },
+        {
+          "h3": "The rendered DOM — what Google sees after JavaScript",
+          "body": [
+            "We diff the raw HTML against the rendered output for every template. On React, Vue and Next.js builds this is where body copy, internal links and canonical tags quietly go missing. A page that looks perfect in your browser can hand Googlebot an empty shell, and no amount of keyword work survives that."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "How a fix reaches production",
+      "body": [
+        "The mechanics matter more than the methodology, so here they are in the order they happen."
+      ],
+      "numbered": [
+        "**Access first.** Repo read access or a CMS editor login, Search Console ownership, GA4, and a named developer we can message. No access, no shipping — and we say that before you sign rather than in month two.",
+        "**Small, reviewable changes.** We raise pull requests against a branch, one concern per PR, with the reasoning in the description. Your team reviews and merges. We don't hold merge rights on your production repo, and you should be wary of an agency that asks for them.",
+        "**CMS and tag-manager work we do directly.** Titles, canonicals, robots directives, schema, redirect rules, hreflang. On WordPress, Shopify, Webflow or Framer most of this needs no developer at all.",
+        "**Deploy, then verify.** Re-crawl the affected URLs, re-inspect in Search Console, confirm the status actually changed. Before and after, with dates.",
+        "**Close the ticket with that date on it.** Every monthly report opens with what shipped, not with what was recommended."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "If you don't have a developer",
+        "body": "Plenty of our clients don't. We work directly in WordPress, Shopify, Webflow and Framer, and we'll hand your host a finished redirect map as a single file. On a custom stack with no engineering time available, technical SEO moves at the speed of whoever can deploy — we scope for that honestly rather than promising a timeline you can't staff."
+      }
+    },
+    {
+      "h2": "What's included, and what isn't",
+      "body": [
+        "Scope arguments happen in month three. Here's ours in month zero."
+      ],
+      "table": {
+        "caption": "Technical SEO scope on a Last Agency retainer.",
+        "head": ["Area", "In scope", "Not in scope"],
+        "rows": [
+          [
+            "Crawl and index",
+            "Log analysis, crawl allowance, robots.txt, sitemaps, canonicals, parameter handling, index bloat cleanup, redirect chains",
+            "Paid indexing services and forced-submission tools. They don't work, and the ones that appear to are renting you someone else's crawl."
+          ],
+          [
+            "Rendering",
+            "Raw-versus-rendered diffs per template, SSR and ISR recommendations, hydration faults, lazy-loaded content and links",
+            "Rewriting your front-end framework. We advise; your engineers own the architecture and always should."
+          ],
+          [
+            "Speed and Core Web Vitals",
+            "LCP, INP and CLS diagnosis, image and font strategy, third-party script audit, template-level fixes",
+            "Server migrations, CDN contracts and infrastructure procurement. We'll write the spec, you buy the hardware."
+          ],
+          [
+            "Structured data",
+            "Schema design, implementation, validation, rich result monitoring in Search Console",
+            "Marking up content that isn't visible on the page. That's a manual action with a delay fuse."
+          ],
+          [
+            "Migrations and redirects",
+            "Redirect maps, pre-launch QA, post-launch monitoring, recovery of what slipped",
+            "Running the replatform itself. That's a separate scope with its own timeline."
+          ],
+          [
+            "Content and links",
+            "Template-level input, internal linking structure, hreflang, pagination logic",
+            "Writing the articles or earning the links. Different disciplines, different budget lines, both needed."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "₹75,000 a month, and what the ₹40,000 tier drops",
+      "body": [
+        "We don't sell technical SEO as a standalone retainer. A technical-only engagement runs out of genuine work somewhere around month four and then keeps invoicing, which is how agencies end up inventing tasks. It's one of four disciplines inside an SEO retainer instead."
+      ],
+      "bullets": [
+        "**From ₹75,000/mo, ex-GST.** Full diagnosis across weeks one to three, then continuous technical work running alongside content and links. Roughly 20–30% of hours up front while the backlog clears, settling near 10% after. Pull requests, CMS work, monitoring and regression checks before your deploys, all included.",
+        "**From ₹40,000/mo for smaller sites.** Same diagnosis, same standard of evidence, less throughput. Sensible for sites under about 50 URLs on a mainstream CMS. What it drops: monthly log-file monitoring, pull-request work against a custom repo, and multi-template rendering audits.",
+        "**A one-off diagnosis with no retainer** is [our fixed-scope SEO audit](/services/seo-audit-services) — ₹40,000, ten working days, and the whole fee credited back if you start a retainer within 60 days.",
+        "Month-to-month after the first quarter, 30 days' notice, and every artefact is yours whatever happens: crawl files, redirect maps, schema, documentation, dashboards. Full rate card on [our pricing page](/pricing)."
+      ]
+    },
+    {
+      "h2": "What the 90-day guarantee covers here",
+      "body": [
+        "Same guarantee as every engagement we run, and it's worth being precise about its edges.",
+        "On day one we freeze your **trailing-90-day count of qualified leads from organic search**. That number goes in writing before anyone touches the site. If we haven't beaten it in 90 days, we keep working free until we do.",
+        "We never promise a specific ranking position for a specific keyword. Nobody controls Google's index, and an agency guaranteeing position one is either buying links or counting on you not to check.",
+        "For technical work we freeze a second set of numbers alongside it, because these move first and they're the honest early read: indexed pages against submitted pages, error and warning counts in Search Console, average daily crawl requests, and the share of priority URLs passing Core Web Vitals. Those should shift inside four to six weeks. If they haven't, the plan is wrong, and we'd rather find that out in week six than in month five."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The thing technical SEO can't promise",
+        "body": "Fixing crawl and render faults removes a ceiling. If your ceiling was already higher than your demand, the fix shows up as better indexing and a flat revenue line. We'd rather tell you that during the audit than after the third invoice."
+      }
+    },
+    {
+      "h2": "Where technical SEO stops",
+      "body": [
+        "There's a point in most engagements — usually month three or four — where the technical backlog is genuinely clear and the graph is still flat. This is the moment a lot of agencies start inventing work.",
+        "What's actually happened is that the constraint moved. A fast, crawlable, correctly structured site ranks for exactly as much as its content deserves and not a rupee more. If you have twelve pages and your competitor has four hundred covering every question a buyer asks before they buy, no amount of schema closes that gap.",
+        "From there the budget belongs to [content](/services/content-marketing-services) and [earned links](/services/link-building-services), with technical work dropping back to maintenance: monitoring, pre-deploy regression checks, and the occasional migration. Our reports say so out loud when it happens. It isn't a popular thing to put in writing, but it's considerably cheaper for you than the alternative."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much do technical SEO services cost in India?",
+      "a": "Standalone technical retainers in India typically run ₹25,000–₹1,50,000 a month. We fold technical work into an SEO retainer from ₹75,000/mo, with smaller sites from ₹40,000/mo, ex-GST. A one-off diagnosis without a retainer is our fixed ₹40,000 audit, delivered in ten working days."
+    },
+    {
+      "q": "Will you make changes to my website yourself or just recommend them?",
+      "a": "Both. We raise pull requests against your repo for developer-owned changes and make CMS, schema and tag-manager edits directly. We never hold merge rights on your production branch — your team always approves what goes live."
+    },
+    {
+      "q": "How long does technical SEO take to show results?",
+      "a": "Diagnostic numbers move first: indexed page counts, crawl requests and Search Console error counts usually shift inside four to six weeks of a fix shipping. Traffic and leads follow over three to six months, and only if the pages being crawled are worth ranking in the first place."
+    },
+    {
+      "q": "Do I need technical SEO if my site is new and built on Next.js?",
+      "a": "Often yes, and for a specific reason. Modern frameworks make rendering faults easy to ship without noticing — client-side-only content, links that only exist after hydration, canonicals set in JavaScript. A raw-versus-rendered diff on each template takes an hour and settles the question."
+    },
+    {
+      "q": "Can technical SEO fix a traffic drop after a site migration?",
+      "a": "Frequently, yes, and it's some of the highest-return work there is because the demand already existed. Redirect maps, recovered internal links, restored canonicals and re-indexation typically bring back a large share of what was lost. Recovery gets harder the longer the broken state has been crawled."
+    },
+    {
+      "q": "What's the difference between a technical SEO audit and a technical SEO retainer?",
+      "a": "The audit is a diagnosis — a fixed ₹40,000 project that tells you what's wrong and what it'll cost to fix. The retainer is the treatment, where the fixes actually ship and get verified. An audit with no capacity behind it is a document, and documents don't get crawled."
+    }
+  ],
+  "related": [
+    { "type": "services", "slug": "seo-audit-services" },
+    { "type": "glossary", "slug": "javascript-seo" },
+    { "type": "glossary", "slug": "crawl-budget" },
+    { "type": "compare", "slug": "technical-seo-vs-content-seo" },
+    { "type": "answers", "slug": "why-is-my-page-not-indexed-on-google" },
+    { "type": "journal", "slug": "the-replatform-that-killed-your-traffic" }
+  ]
+}

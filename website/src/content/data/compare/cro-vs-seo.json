@@ -1,0 +1,269 @@
+{
+  "slug": "cro-vs-seo",
+  "type": "compare",
+  "primaryKeyword": "cro vs seo",
+  "secondaryKeywords": [
+    "seo vs cro which first",
+    "conversion rate optimisation vs seo",
+    "should i do cro or seo",
+    "cro and seo together",
+    "cro budget split"
+  ],
+  "cluster": "channel-mix",
+  "intent": "commercial",
+  "h1": "CRO vs SEO: the 3,000-session rule",
+  "metaTitle": "CRO vs SEO: The 3,000-Session Rule",
+  "metaDescription": "CRO vs SEO is really a traffic question. Below 3,000 organic sessions a month your tests cannot reach significance. Here is the full sequencing rule.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Below roughly 3,000 organic sessions a month, fund SEO and skip testing entirely — your A/B tests can't reach statistical significance, so you'd be reading noise. Between 3,000 and 15,000, ship the CRO fixes that need no test. Above 15,000 sessions a month, a real testing programme starts paying for itself.",
+  "takeaways": [
+    "CRO multiplies traffic; SEO creates it. A multiplier applied to almost nothing returns almost nothing.",
+    "At a 2% conversion rate and 3,000 sessions a month, the smallest lift you could detect in a month is around **+70% relative**. Real CRO wins are 5–20%. That's the whole argument.",
+    "Plenty of conversion work needs no test at all — form fields, page speed, a visible phone number, WhatsApp on mobile. Ship those at any traffic level.",
+    "CRO can break rankings quietly: anti-flicker scripts wreck LCP, and 'cleaning up' a page usually deletes the copy that was matching the query."
+  ],
+  "versus": {
+    "a": "CRO",
+    "b": "SEO",
+    "verdict": "Under 3,000 organic sessions a month, put the entire budget into SEO and ship only the known-good conversion fixes; once you're past 15,000 sessions, move roughly 40% of it into a real testing programme."
+  },
+  "sections": [
+    {
+      "h2": "One of these adds and the other multiplies",
+      "body": [
+        "SEO adds sessions. CRO multiplies whatever share of them converts. Written as arithmetic the sequencing answers itself: doubling a conversion rate on 800 monthly sessions gets you a handful more enquiries; doubling sessions at a mediocre conversion rate gets you considerably more than that.",
+        "The reason the question gets asked at all is that CRO sounds cheaper and faster. It's neither, at low volume. The cost of a test isn't the tool licence — it's the eight weeks you spend waiting for a result that never arrives because the sample never got big enough. Meanwhile the SEO work you deferred has an eight-week head start it will never get back."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The exception worth naming",
+        "body": "If you already get decent traffic and your site is genuinely broken at checkout or enquiry — a form that fails on mobile, a payment step that drops half its users — fix that first. That isn't CRO. That's a bug, and bugs jump the queue."
+      }
+    },
+    {
+      "h2": "The maths: why tests need volume",
+      "body": [
+        "A/B testing is a statistical procedure, and statistics have a minimum input size. The standard approximation for comparing two conversion rates at 80% power and 95% two-sided confidence is roughly **n ≈ 15.7 × p(1−p) / δ²** per variant, where p is your current conversion rate and δ is the absolute improvement you want to detect.",
+        "Run that with a 2% baseline conversion rate and an even 50/50 traffic split, and you get the table below. The last column is the honest verdict at each level."
+      ],
+      "table": {
+        "caption": "Smallest detectable lift at a 2% baseline conversion rate, 50/50 split, 80% power, 95% confidence. One month of traffic per test.",
+        "head": [
+          "Organic sessions / month",
+          "Sessions per variant",
+          "Smallest lift you could detect in one month",
+          "Verdict"
+        ],
+        "rows": [
+          [
+            "1,000",
+            "500",
+            "about +124% relative",
+            "Don't test. Nothing realistic is detectable."
+          ],
+          [
+            "3,000",
+            "1,500",
+            "about +72% relative",
+            "Only redesign-scale changes. Copy tests are noise."
+          ],
+          [
+            "8,000",
+            "4,000",
+            "about +44% relative",
+            "Still too coarse for anything subtle."
+          ],
+          [
+            "15,000",
+            "7,500",
+            "about +32% in a month, about +18% over a quarter",
+            "A real testing programme becomes possible."
+          ],
+          [
+            "40,000",
+            "20,000",
+            "about +20% relative in a month",
+            "Test continuously. This is where CRO earns a line item."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Typical CRO wins are 5% to 20% relative.** Compare that against the third column. At 3,000 sessions you can only detect changes roughly four times larger than the wins you're likely to get.",
+        "**A higher baseline conversion rate helps a lot.** At 5% conversion instead of 2%, detecting a 20% relative lift needs roughly two and a half times fewer sessions per variant. High-intent B2B pages can test earlier than blog traffic can.",
+        "**Running the test longer isn't free.** Sample accumulates, but so does seasonality, so does the temptation to peek early, and every week the test runs is a week the page can't be improved.",
+        "**Peeking is the real killer.** Checking daily and stopping when the variant is ahead manufactures winners out of pure noise. Fix the sample size before you start, then don't look."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The tool will show you a winner anyway",
+        "body": "Most testing platforms will display a leading variant and a confidence figure from day three. It's arithmetic on an under-powered sample, and it is how businesses end up rolling out changes that measurably hurt them. Calculate the required sample before the test runs, or don't run one."
+      }
+    },
+    {
+      "h2": "The two thresholds, stated plainly",
+      "body": [
+        "Three bands, three different answers. Find yours in Google Analytics 4 — organic sessions, last full month, landing pages that can actually convert. Not total sessions across the whole site."
+      ],
+      "subs": [
+        {
+          "h3": "Under 3,000 organic sessions a month — SEO only",
+          "body": [
+            "Every rupee goes to organic. Ship the untested conversion fixes from the next section because they're known-good and cost nothing to reason about, but run zero experiments. There is no sample size at which your results would mean anything."
+          ]
+        },
+        {
+          "h3": "3,000 to 15,000 — SEO first, CRO as judgement not testing",
+          "body": [
+            "Add analytics you can trust, session recordings, and a heatmap if you like. Use them to find obvious breakage, not to declare winners. One redesign-scale change per quarter, measured over a full quarter, is about the limit of what's honest at this volume.",
+            "This is also the band where most Indian D2C and B2B sites actually sit, and where most of them are sold a testing retainer they cannot use."
+          ]
+        },
+        {
+          "h3": "Above 15,000 — a testing programme earns its budget",
+          "body": [
+            "Now you can run a test a month on your highest-traffic template and get readable results inside a quarter. Prioritise templates over individual pages: one product page layout change applies to every product page, which is how you get sample size without waiting."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The conversion wins that need no test at all",
+      "body": [
+        "None of these require statistical significance because none of them are hypotheses. They're either broken or they're not. Ship them at any traffic level, on any budget, this week."
+      ],
+      "numbered": [
+        "**Cut form fields to what you'll actually use in the first call.** Name, one contact method, one qualifying question. Every extra field is a reason to leave.",
+        "**Put a tappable phone number and WhatsApp in the mobile header.** In India a large share of buyers would rather message than fill a form. Making them choose your preferred channel costs you enquiries.",
+        "**Publish pricing, or publish a range.** A price band with an explanation beats \"contact us for a quote\" for every buyer except the ones you didn't want anyway.",
+        "**Fix mobile page speed.** Slow pages lose conversions and rankings simultaneously — it's one of the very few changes that pays into both accounts.",
+        "**Delete the homepage carousel.** People see slide one and nothing else. Pick the message you'd have put on slide one and commit to it.",
+        "**Make the primary action obvious above the fold on a phone.** Not the only action. The obvious one.",
+        "**Add the trust markers you actually have** — real client logos with permission, genuine reviews, real team photos. Never invent one. A fake testimonial is a legal problem, not a conversion tactic."
+      ]
+    },
+    {
+      "h2": "How a CRO change quietly kills your rankings",
+      "body": [
+        "This is the part that gets skipped when the two disciplines sit with different teams. Conversion work touches exactly the things search engines read, and the damage takes weeks to surface — long after the test was declared a win.",
+        "We've seen more organic declines caused by a well-intentioned redesign than by any algorithm update. The pattern is always the same: conversions up 12% in the test, organic sessions down 30% two months later, and nobody connects the two because the test window closed in between."
+      ],
+      "bullets": [
+        "**Anti-flicker snippets destroy LCP.** Client-side testing tools hide the page until the variant loads. That's a deliberate render delay on your most important Core Web Vitals metric, applied to every visitor including the ones you're trying to rank for.",
+        "**\"Cleaning up\" a page deletes the copy that ranked it.** The 600 words a designer wants to cut are frequently the 600 words matching the query. Move them, restructure them, put them below the fold — don't delete them.",
+        "**Redirect-based split tests need 302s, not 301s,** and the variant needs a canonical pointing at the original. Get this wrong and you hand Google two indexable versions of the same page.",
+        "**Nav simplification cuts internal links.** Those links were distributing authority to deep pages. Trimming the menu from 30 links to 8 can orphan a lot of URLs at once.",
+        "**Personalisation that varies by user agent risks cloaking.** If Googlebot systematically sees a different page from your users, you have a policy problem, not a testing problem.",
+        "**Gating content behind a form removes indexable text.** The gated version ranks for nothing, so the traffic you were converting stops arriving."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "One rule that prevents most of this",
+        "body": "Any conversion change that touches copy, URLs, navigation or page-load behaviour gets reviewed by whoever owns organic before it ships. Not after the test wins. Before it goes live. That review takes twenty minutes and routinely saves a quarter of traffic."
+      }
+    },
+    {
+      "h2": "Budget split at ₹75,000 and ₹1,75,000 a month",
+      "body": [
+        "Splits, not principles. These assume search is your primary acquisition channel and that the conversion work is scoped as a real deliverable rather than a line in someone's retainer they'll get to eventually."
+      ],
+      "table": {
+        "caption": "How to split a monthly budget between organic and conversion work by traffic level.",
+        "head": [
+          "Monthly budget",
+          "Organic sessions",
+          "SEO share",
+          "CRO share",
+          "What the CRO money buys"
+        ],
+        "rows": [
+          [
+            "₹40,000–₹75,000",
+            "Under 3,000",
+            "100%",
+            "0%",
+            "The untested checklist above. No tools, no tests."
+          ],
+          [
+            "₹75,000–₹1,25,000",
+            "3,000–15,000",
+            "~80%",
+            "~20%",
+            "Clean analytics, session recordings, one structural change per quarter."
+          ],
+          [
+            "₹1,25,000–₹1,75,000",
+            "15,000–40,000",
+            "~65%",
+            "~35%",
+            "A monthly test on your highest-traffic template, plus dev hours to ship winners."
+          ],
+          [
+            "₹1,75,000+",
+            "40,000+",
+            "~60%",
+            "~40%",
+            "Continuous testing, dedicated dev capacity, template-level experiments."
+          ]
+        ]
+      },
+      "bullets": [
+        "Our SEO starts at **₹75,000/mo**, with smaller sites from **₹40,000/mo**. If you want SEO, organic social and performance marketing together, the Own Everything Stack is **₹1,75,000/mo**. All ex-GST, month-to-month after the first quarter, and you keep every asset.",
+        "Conversion work is scoped separately, because pretending it's free inside an SEO retainer is how it ends up not happening. See [conversion rate optimisation](/services/conversion-rate-optimisation-services) and [our pricing](/pricing).",
+        "Whichever split you choose, the number we're accountable for doesn't change: your trailing-90-day qualified organic leads, frozen on day one. Beat it in 90 days or we keep working free until we do. That's [how the guarantee works](/seo), and it's why sequencing matters to us as much as it does to you."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I do CRO or SEO first?",
+      "a": "SEO first, in almost every case under 3,000 organic sessions a month, because your tests can't reach significance at that volume. The exception is a genuinely broken conversion path — a form failing on mobile, a checkout dropping users. That's a bug fix, it needs no test, and it goes first."
+    },
+    {
+      "q": "How much traffic do I need to run an A/B test?",
+      "a": "It depends on your baseline conversion rate and the size of the lift you want to detect. At 2% conversion and a 50/50 split, detecting a realistic 20% relative improvement needs roughly 19,000 sessions per variant — around 38,000 sessions in total. That's why small sites can't test meaningfully."
+    },
+    {
+      "q": "Can CRO hurt SEO?",
+      "a": "Yes, and it usually happens by accident. Anti-flicker scripts delay rendering and damage Core Web Vitals. Design cleanups delete the copy that was matching queries. Navigation simplification removes internal links. Have whoever owns organic review any change touching copy, URLs, navigation or load behaviour before it ships."
+    },
+    {
+      "q": "What conversion improvements can I make without testing?",
+      "a": "Cut form fields to what you'll use on the first call, add a tappable phone number and WhatsApp on mobile, publish a price range, fix mobile speed, delete the carousel, and show real proof you actually have. None of these are hypotheses — they're either done or they're not."
+    },
+    {
+      "q": "Is it worth paying an agency for CRO under 15,000 sessions?",
+      "a": "For testing, no. For a one-off audit and a fixes backlog, sometimes — a good reviewer will find breakage you've stopped seeing. Just be clear you're buying judgement, not experiments, and don't pay a monthly testing retainer against traffic that can't support tests."
+    },
+    {
+      "q": "How long should an A/B test run?",
+      "a": "Long enough to hit the sample size you calculated before starting, and at minimum two full weeks so you capture both weekday and weekend behaviour. Don't stop early because a variant is ahead — checking daily and stopping on a lead manufactures winners that don't survive rollout."
+    }
+  ],
+  "related": [
+    {
+      "type": "services",
+      "slug": "conversion-rate-optimisation-services"
+    },
+    {
+      "type": "compare",
+      "slug": "keyword-rankings-vs-organic-traffic"
+    },
+    {
+      "type": "glossary",
+      "slug": "conversion-rate"
+    },
+    {
+      "type": "glossary",
+      "slug": "core-web-vitals"
+    },
+    {
+      "type": "cost",
+      "slug": "is-seo-worth-the-money"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    }
+  ]
+}

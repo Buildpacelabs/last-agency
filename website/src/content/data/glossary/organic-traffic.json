@@ -1,0 +1,156 @@
+{
+  "slug": "organic-traffic",
+  "type": "glossary",
+  "primaryKeyword": "organic traffic",
+  "secondaryKeywords": [
+    "what is organic traffic",
+    "organic vs direct traffic",
+    "how to increase organic traffic",
+    "organic search meaning",
+    "organic traffic vs paid traffic"
+  ],
+  "cluster": "analytics",
+  "intent": "informational",
+  "h1": "Organic traffic",
+  "metaTitle": "Organic Traffic: What Counts and What Doesn't",
+  "metaDescription": "Organic traffic is visits from unpaid search. Branded queries, dark traffic and AI referrals all distort the number — here's how to read it honestly.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Organic traffic",
+  "definition": "Organic traffic is the visits that arrive from unpaid search results, as distinct from ads, direct visits, referrals and social.",
+  "answer": "Organic traffic is visits arriving from unpaid search results. In GA4 it's the Organic Search channel, assigned from the referring source and medium. The raw number tells you very little on its own: branded queries, dark traffic misfiled as direct, and AI assistant referrals all distort it. Split branded from non-branded first.",
+  "takeaways": [
+    "GA4 assigns organic by matching the referrer against Google's list of known search engines. Anything it doesn't recognise lands in **direct** or **referral**.",
+    "Branded search is the number that fools founders. If you ran ads or a launch, your organic **growth** may be brand demand you already paid for.",
+    "**Direct traffic is a shrug**, not a channel. A large slice of it is misattributed organic and social.",
+    "Traffic without revenue per session attached is a vanity metric with good PR."
+  ],
+  "sections": [
+    {
+      "h2": "What actually counts as organic",
+      "body": [
+        "GA4 puts a session in the Organic Search channel when the referrer matches its list of known search engines and the medium is `organic`. Google, Bing, DuckDuckGo, Yahoo, Yandex and a long tail of others qualify. That's the whole rule.",
+        "Three things people expect to be organic and aren't: clicks on your own Google Ads (those are Paid Search), clicks from a Google Business Profile listing (usually direct or referral depending on setup), and clicks from an AI assistant (referral, and often nothing at all). Only the first is obvious."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The UTM own-goal",
+        "body": "Tagging your own internal or email links with UTM parameters that include `utm_medium=organic` will rewrite the channel and quietly corrupt months of reporting. If a channel report changed shape overnight and nothing else did, check who added UTMs to what."
+      }
+    },
+    {
+      "h2": "Branded versus non-branded: the split that changes the story",
+      "body": [
+        "This is the one that costs founders the most money. Organic traffic rose 40% this quarter, everyone congratulates the SEO retainer, and the entire increase is people typing the company name into Google after seeing an ad or a founder's LinkedIn post.",
+        "Branded search is demand you generated somewhere else, arriving through the cheapest possible door. It's a fine thing to have. It is not evidence that SEO worked, because those people were going to find you anyway.",
+        "GA4 can't tell you the difference — it has no query data. [Google Search Console](/glossary/google-search-console) can. Filter the Performance report's query dimension by a regex covering your brand name and its common misspellings, then look at both halves separately."
+      ],
+      "table": {
+        "caption": "How to read the two halves once you've split them.",
+        "head": [
+          "Pattern",
+          "What it usually means"
+        ],
+        "rows": [
+          [
+            "Branded up, non-branded flat",
+            "Marketing worked. SEO hasn't yet."
+          ],
+          [
+            "Non-branded up, branded flat",
+            "SEO is working. This is the number to hold an agency to."
+          ],
+          [
+            "Both up",
+            "Healthy. Check whether non-branded is growing as a share."
+          ],
+          [
+            "Branded down, non-branded up",
+            "Rankings improving while brand demand cools — worth a hard look at the wider marketing spend."
+          ],
+          [
+            "Both down after a core update",
+            "See how to diagnose a [Google core update](/glossary/google-core-update) properly."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Dark traffic, and why direct is a lie",
+      "body": [
+        "Direct is meant to mean someone typed your URL or used a bookmark. In practice it's the bin GA4 uses whenever the referrer is missing, and a lot of things strip referrers.",
+        "On most Indian sites the largest sources of misattributed direct are WhatsApp and other messaging apps, because links shared in chat frequently arrive with no referrer at all. If your direct traffic is enormous and your brand is small, that's the explanation."
+      ],
+      "bullets": [
+        "**Links shared in WhatsApp, Slack, Telegram and email clients** — commonly no referrer.",
+        "**In-app browsers** — Instagram and LinkedIn taps behave inconsistently across versions.",
+        "**PDFs and desktop documents** — a link in a shared deck has no referrer to send.",
+        "**Secure-to-insecure hops** — still happens on older setups and drops the referrer entirely.",
+        "**Aggressive privacy tooling and ad blockers** — a growing share, and it will not shrink."
+      ]
+    },
+    {
+      "h2": "Where AI assistants land, and where they don't",
+      "body": [
+        "Traffic from ChatGPT, Perplexity, Claude or Gemini arrives as **referral**, not organic, because the referrer is the assistant's own domain. Volumes are still modest for most Indian sites, but the visitors tend to arrive further down the funnel — they read the summary first and clicked deliberately.",
+        "Two blind spots are worth knowing about. Clicks from [AI Overviews](/glossary/ai-overviews) inside Google are folded into normal Search Console totals with no separate breakout. And answers that cite you without anyone clicking produce no traffic at all — the citation happened, the visit didn't.",
+        "If you want to track it, build a custom channel group that pulls the known assistant hostnames into their own bucket. Do it now, while volumes are small, so the trend line exists later."
+      ]
+    },
+    {
+      "h2": "Revenue per session beats raw traffic, every time",
+      "body": [
+        "Traffic is the easiest metric on the internet to inflate. Publish forty articles about topics adjacent to your business and the line goes up while the bank balance doesn't. This is the mechanism behind most disappointing SEO retainers, and it isn't fraud — the traffic is real, it just doesn't buy anything.",
+        "Divide organic revenue, or organic qualified leads, by organic sessions. Track that ratio monthly. A retainer that grows sessions while that ratio falls is producing an expensive audience, not a channel. It's also why [rankings and traffic are the wrong scoreboard](/compare/keyword-rankings-vs-organic-traffic), and why our own guarantee is written against qualified organic leads frozen on day one rather than against traffic."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the difference between organic and direct traffic?",
+      "a": "Organic arrives with a search engine as the referrer. Direct arrives with no referrer at all — a typed URL, a bookmark, or more often a link shared in WhatsApp or a PDF that stripped the referrer. Treat a large direct number as unattributed traffic rather than as brand loyalty."
+    },
+    {
+      "q": "Is organic traffic free?",
+      "a": "The click is free; the ranking isn't. You pay in content, technical work, links and time, typically ₹40,000 to ₹1,50,000 a month in India depending on competition. The difference from ads is that the asset keeps working after you stop paying, and the cost per visit falls over time rather than rising."
+    },
+    {
+      "q": "How do I separate branded from non-branded organic traffic?",
+      "a": "In Search Console's Performance report, filter queries with a regex containing your brand name and its misspellings, then invert the filter for the non-branded half. GA4 can't do this because it has no query data. Track the non-branded half as the real SEO number."
+    },
+    {
+      "q": "Does traffic from ChatGPT count as organic?",
+      "a": "Not in GA4's default channel grouping — it lands in referral, because the referrer is the assistant's domain. You can build a custom channel group to isolate AI assistants. Worth setting up early, while the volumes are small enough that the trend line still means something later."
+    },
+    {
+      "q": "How much organic traffic is good?",
+      "a": "The wrong question. A local clinic converting 300 organic visits a month into 40 appointments is outperforming a blog with 60,000 visits and no enquiries. Judge organic traffic by qualified leads or revenue per session, and set the target against your own trailing 90 days."
+    }
+  ],
+  "related": [
+    {
+      "type": "compare",
+      "slug": "keyword-rankings-vs-organic-traffic"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "glossary",
+      "slug": "conversion-rate"
+    },
+    {
+      "type": "glossary",
+      "slug": "ai-overviews"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "cost",
+      "slug": "is-seo-worth-the-money"
+    }
+  ]
+}

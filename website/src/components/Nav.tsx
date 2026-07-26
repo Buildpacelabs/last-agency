@@ -9,6 +9,7 @@ const LINKS = [
   { href: '/social', label: 'Social' },
   { href: '/performance', label: 'Performance' },
   { href: '/pricing', label: 'Pricing' },
+  { href: '/answers', label: 'Answers' },
 ];
 
 export function Nav(): JSX.Element {

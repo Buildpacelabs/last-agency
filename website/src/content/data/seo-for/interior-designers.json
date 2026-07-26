@@ -1,0 +1,169 @@
+{
+  "slug": "interior-designers",
+  "type": "seo-for",
+  "primaryKeyword": "seo for interior designers",
+  "secondaryKeywords": [
+    "interior design seo india",
+    "seo for interior design firms",
+    "interior designer near me ranking",
+    "project portfolio seo",
+    "seo for modular kitchen brands"
+  ],
+  "cluster": "property-and-build",
+  "intent": "commercial",
+  "industry": "Interior design",
+  "h1": "SEO for interior designers whose portfolio Google cannot see",
+  "metaTitle": "SEO for Interior Designers: Portfolios That Rank",
+  "metaDescription": "SEO for interior designers in India. We turn invisible portfolios into project pages with budgets, timelines and locality detail that win enquiries.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Most interior design sites are a JavaScript gallery with a contact form. Google renders the homepage, finds almost no text, and ranks the practice for its own name and nothing else. The fix is a page per project carrying budget band, timeline, locality, scope and materials — words a search engine can actually read.",
+  "takeaways": [
+    "Two hundred finished projects rank for nothing if the gallery renders client-side with no headings, no captions and no alt text.",
+    "**Budget is the query.** `2 BHK interior design cost in Bengaluru` has volume and intent; `bespoke living spaces` has neither.",
+    "A project page needs numbers on it: carpet area, budget band, weeks to handover, locality. Photos alone are decoration, not content.",
+    "Pinterest and Instagram are where people discover a look. Google is where they decide to hire someone. Stop asking one channel to do the other's job.",
+    "Publishing your minimum project size costs you a few enquiries and saves you a hundred wasted calls."
+  ],
+  "sections": [
+    {
+      "h2": "Two hundred projects, zero indexable words",
+      "body": [
+        "Design practices buy beautiful websites. Full-bleed hero video, a masonry grid that fades in as you scroll, a lightbox that opens each project into a slideshow. It looks like the work. It also has, in a lot of cases, fewer than 150 words of real text on the entire site.",
+        "Take one minute and check yours. Open a project page, disable JavaScript in your browser, and reload. Then run the same URL through the URL Inspection tool in Search Console and read the rendered HTML Google actually stored. If the answer is a `<div id=\"root\">` and a couple of nav links, you now know why the enquiries all come from Instagram.",
+        "This is not a content problem. It's a [JavaScript SEO](/glossary/javascript-seo) problem, and it's fixable without redesigning anything."
+      ],
+      "table": {
+        "caption": "What the client sees, what the crawler gets, and the fix.",
+        "head": ["On screen", "In the rendered HTML", "What to change"],
+        "rows": [
+          [
+            "A scrolling grid of 40 projects",
+            "An empty container that populates after a client-side fetch",
+            "Server-render or statically generate the grid. Every project tile should be a real `<a>` with real text before any script runs."
+          ],
+          [
+            "A lightbox slideshow per project",
+            "Images only, no headings, no captions, no crawlable URL per project",
+            "Give every project its own indexable URL with an H1, 300–600 words and captions under the images."
+          ],
+          [
+            "A gorgeous 6 MB hero image",
+            "A page that fails Core Web Vitals on a mid-range Android",
+            "WebP or AVIF, responsive `srcset`, correct dimensions, and stop lazy-loading the image that is already on screen."
+          ],
+          [
+            "Infinite scroll on the portfolio",
+            "Google sees the first eight projects and stops",
+            "Paginate with real linked URLs, or link every project from a sitemap page. Infinite scroll is a discovery dead end."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The redesign that deleted the traffic",
+        "body": "The most expensive thing a design practice does to its own site is move platforms without a redirect map. Every project URL changes, nothing 301s, and the small amount of ranking you'd earned resets to zero. If a rebuild is coming, map the old URLs to the new ones before launch — not in the panic week after."
+      }
+    },
+    {
+      "h2": "What a project page says that a photograph can't",
+      "body": [
+        "A photo tells a prospect whether they like your taste. It doesn't tell them whether they can afford you, how long it took, or whether you've ever worked in a building like theirs. Those three questions decide the enquiry.",
+        "So write the project up. Six hundred words per project, published once, working for years."
+      ],
+      "bullets": [
+        "**Carpet area and configuration** — `1,250 sq ft, 3 BHK, Prestige Falcon City, Kanakapura Road`. That sentence alone matches dozens of long-tail searches.",
+        "**Budget band, stated as a band.** \"Executed in the ₹18–22 lakh range, excluding appliances.\" You don't have to publish the invoice. You do have to publish the order of magnitude.",
+        "**Timeline in weeks**, from design sign-off to handover, and one honest sentence about what delayed it. Nobody believes the project that finished on schedule.",
+        "**Scope**, explicitly: what you did and what the client's contractor did. False-ceiling, civil, modular, loose furniture, styling.",
+        "**Materials and brands used** — laminate ranges, hardware, stone, lighting. These are searched by name, and specifying them is genuine expertise on display.",
+        "**The constraint you solved.** A structural beam, a north-facing living room, a client who wouldn't give up the piano. This is the part AI-written competitor copy cannot fake."
+      ]
+    },
+    {
+      "h2": "The cost query is the biggest one, and the big platforms own it",
+      "body": [
+        "`2 BHK interior design cost in Bengaluru`, `modular kitchen price in Pune`, `full home interior cost 3 BHK` — this is where the volume sits, and the results are dominated by Livspace, HomeLane, Design Cafe and the rest, because they publish cost pages and independent practices publish moodboards.",
+        "You will not beat those domains on the national head term. You can beat them on the version with a city, a locality, a builder's project name or a specific finish level attached, because they generate those from a template and you can write them from a site you've actually handed over.",
+        "The page that works has a structure, not a paragraph: a table of budget bands by configuration and finish level, an as-of date, a clear list of what's excluded (appliances, civil work, GST, electrical rework), and links to two of your own projects that landed in each band. That last part is the bit the platforms can't copy."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Date-stamp the numbers",
+        "body": "Plywood, laminate and hardware prices move. A cost page with no date on it is a credibility problem within a year and a stale-content problem within two. Put \"Prices as of July 2026\" at the top and diarise a refresh every six months — an outdated number does more damage than a missing one."
+      }
+    },
+    {
+      "h2": "Images that are fast, crawlable, and named like a human named them",
+      "body": [
+        "Interior design is one of the few categories where Google Images sends genuinely useful traffic, because people search visually and then click through to find who made it. Most design sites are invisible there for reasons that take an afternoon to fix."
+      ],
+      "numbered": [
+        "**Rename the files before upload.** `walnut-veneer-tv-unit-3bhk-whitefield.jpg`, not `DSC_4471.jpg`. The photographer isn't going to do it; someone on your team has to.",
+        "**Write [alt text](/glossary/alt-text) that describes the image**, including room, material and style. It's an accessibility requirement first and a ranking signal second, and keyword-stuffing it fails at both.",
+        "**Add captions under the images.** Captions get read by people at roughly twice the rate of body copy and they give the crawler surrounding context.",
+        "**Serve modern formats at real dimensions.** A 4,000px wide JPEG scaled down in CSS is the most common Core Web Vitals failure on design sites.",
+        "**Submit an image sitemap** if your gallery loads images through a script. It's the cheapest way to get 500 photographs discovered."
+      ]
+    },
+    {
+      "h2": "Pinterest and Instagram discover. Search captures.",
+      "body": [
+        "Most practices we talk to have a healthy Instagram and no idea where their enquiries come from. The two channels do different jobs and it's worth being blunt about which.",
+        "Pinterest and Instagram are where someone forms an opinion about what they want their house to look like. That happens months before they're ready to spend. Search is where they act — `interior designer in HSR Layout`, `interior design cost 3 bhk`, `<your firm name> reviews`. Someone who saw your work on Instagram in March will search your name in July, and if that search returns a slow homepage and no project detail, the discovery was wasted.",
+        "Practically: repost every project to social, but publish it on your own site first and link back. Put UTM parameters on the link in your bio so you can see which posts produce sessions. And accept that social proves taste while the website proves competence — the enquiry needs both."
+      ]
+    },
+    {
+      "h2": "Filter the enquiries you don't want",
+      "body": [
+        "The complaint we hear most from design firms isn't \"we get no enquiries\". It's \"we get thirty enquiries a month and four are real\". SEO makes that worse before it makes it better, because ranking for cost queries brings in everyone including the person with ₹3 lakh and a four-bedroom brief.",
+        "Qualification belongs on the page, not on the phone call.",
+        "State a minimum project value — \"we take full-home projects from ₹15 lakh\" — near the top of the contact page and on every cost page. Make budget band a required dropdown on the enquiry form, with the lowest option set above the number you'd decline. Say which cities and localities you actually travel to. And publish your process with a fee stage attached, so the person filling the form already knows what a design fee is before they speak to you.",
+        "You'll get fewer enquiries and a better week."
+      ]
+    },
+    {
+      "h2": "Budget, timeline and what we guarantee",
+      "body": [
+        "Our SEO starts at ₹75,000 a month, with smaller sites from ₹40,000, ex-GST. Design practices often sit at the lower end for the first quarter because the first quarter is mostly [technical SEO work](/services/technical-seo-services) — making the portfolio crawlable, fixing image weight, building project URLs — rather than volume publishing. Full numbers are on [pricing](/pricing).",
+        "The honest timeline: locality and project-name long tail moves inside 90 days because almost nobody is competing properly on it. City-level cost queries against the large platforms take six to twelve months and sometimes aren't worth chasing at all — we'll tell you which of yours fall in that bucket before you spend on them.",
+        "We freeze your trailing-90-day count of qualified enquiries from organic search on day one, defined against your own budget threshold rather than raw form volume. Miss it in 90 days and we keep working free until we beat it. We never promise a specific ranking position, because nobody controls Google's index. Three clients a month, which is why we can carry that risk at all."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does my interior design website get no traffic despite great photos?",
+      "a": "Almost always because the gallery renders through JavaScript and the crawler stores a near-empty page. Disable JavaScript, reload a project page, and see what survives. If it's blank, no amount of new photography helps — the fix is server-rendered project pages with headings, captions and body text."
+    },
+    {
+      "q": "Should each project get its own page?",
+      "a": "Yes, if the project has something to say — carpet area, budget band, timeline, locality, materials, a constraint you solved. A page per project with 500–600 real words is an asset. Forty identical pages carrying three photos each are thin content and will drag the whole site."
+    },
+    {
+      "q": "Can an independent designer outrank Livspace or HomeLane?",
+      "a": "Not on national head terms like 'home interior design' — those domains have too much authority. You can beat them on locality, builder-project and finish-level variants, because they generate those pages from a template and you can write them from a handover you actually did."
+    },
+    {
+      "q": "Should I publish my interior design prices?",
+      "a": "Publish bands and a clear exclusion list rather than a rate card. Budget searches carry the most commercial intent in this category, and a page with real bands and an as-of date ranks for them. It also filters out the enquiries that were never going to close."
+    },
+    {
+      "q": "Is Instagram enough for an interior design practice?",
+      "a": "It's enough for discovery and useless for capture. People find a look on Instagram months before they're ready to spend, then search your name or their requirement when they are. If that search lands on a slow, textless site, the discovery is wasted."
+    },
+    {
+      "q": "How long does SEO take for an interior design firm?",
+      "a": "Technical fixes to a JavaScript-heavy portfolio can produce indexing gains within weeks, since pages that were invisible become visible. Locality and project long tail typically moves in 90 days. Competitive city-level cost queries take six to twelve months, and against the big platforms sometimes longer than they're worth."
+    }
+  ],
+  "related": [
+    { "type": "seo-for", "slug": "architects" },
+    { "type": "seo-for", "slug": "real-estate" },
+    { "type": "glossary", "slug": "javascript-seo" },
+    { "type": "glossary", "slug": "alt-text" },
+    { "type": "services", "slug": "technical-seo-services" },
+    { "type": "cost", "slug": "local-seo-cost" }
+  ]
+}

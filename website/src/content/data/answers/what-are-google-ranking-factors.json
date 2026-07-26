@@ -1,0 +1,243 @@
+{
+  "slug": "what-are-google-ranking-factors",
+  "type": "answers",
+  "primaryKeyword": "what are the ranking factors in seo",
+  "secondaryKeywords": [
+    "google ranking factors",
+    "what are seo ranking factors",
+    "most important ranking factors",
+    "how many ranking factors does google have"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "Ranking factors that hold up under testing",
+  "metaTitle": "What Are the Ranking Factors in SEO? 3 Tiers",
+  "metaDescription": "What are the ranking factors in SEO that actually hold up? Sorted into confirmed signals, strong correlations and folklore — plus why 200 is a myth.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Google has never published a ranking factor list. What exists is three tiers of evidence: signals Google has confirmed publicly, factors that correlate strongly but were never confirmed, and folklore that survives because it's easy to sell. Sorting any claim into those tiers is more useful than memorising a list of two hundred.",
+  "takeaways": [
+    "The famous \"200 ranking factors\" figure came from a Google talking point in the 2000s. No list was ever published, and modern ranking is machine-learned, which makes \"factor\" the wrong unit.",
+    "Tier 1 — confirmed — is short and boring: relevance, quality signals, links, usability, context. It's also where nearly all the return is.",
+    "Tier 2 is where honest people disagree. Treat it as a working hypothesis, not doctrine.",
+    "Tier 3 includes several things agencies still charge for. Keyword density and Domain Authority are the two that cost Indian SMBs the most money."
+  ],
+  "sections": [
+    {
+      "h2": "Three tiers of evidence, and why sorting matters",
+      "body": [
+        "Ask five SEOs what the ranking factors are and you'll get five confident, different lists. Not because SEO is unknowable — because the field mixes three very different classes of claim and prints them in the same font.",
+        "Sort every claim into one of these tiers before acting on it. A ten-second habit that saves entire quarters."
+      ],
+      "table": {
+        "caption": "Three tiers of ranking-factor evidence, and how much weight each deserves.",
+        "head": [
+          "Tier",
+          "What it means",
+          "How to treat it"
+        ],
+        "rows": [
+          [
+            "**1 — Confirmed**",
+            "Google has said publicly, in documentation or from a named spokesperson, that it uses it.",
+            "Build around it. This is where the budget goes."
+          ],
+          [
+            "**2 — Correlated**",
+            "Testing shows a consistent relationship. Google hasn't confirmed a direct signal.",
+            "Work on it as a hypothesis. Don't restructure a business around it."
+          ],
+          [
+            "**3 — Folklore**",
+            "Repeated widely, often denied by Google, frequently sold as a service.",
+            "Ignore, and refuse to pay for it."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "One caveat that applies to the whole page",
+        "body": "\"Confirmed\" means Google said so. Google's public statements are carefully worded and occasionally sit awkwardly against material that surfaced in the US antitrust proceedings. Tier 1 is the best evidence available, not the whole truth — and nobody outside Google has the whole truth."
+      }
+    },
+    {
+      "h2": "Tier 1 — what Google has actually confirmed",
+      "body": [
+        "Google's own \"How Search works\" documentation groups its systems into five buckets: the meaning of your query, the relevance of pages, the quality of content, the usability of pages, and context such as location and settings. Public, stable, and a better mental model than any list.",
+        "Underneath it, these specific things have been confirmed at one point or another."
+      ],
+      "bullets": [
+        "**Relevance of content to the query.** The oldest and largest. Google matches meaning, not strings — which is why synonyms do the work keyword repetition used to.",
+        "**Links from other sites.** PageRank is Google's own patent and links have been confirmed repeatedly. What changed is weight, not existence. See [where links still decide rankings](/answers/why-are-backlinks-important-for-seo).",
+        "**Page experience**, including [Core Web Vitals](/glossary/core-web-vitals) and HTTPS. Google describes these as a tiebreaker between comparable pages, not a way to overtake better content.",
+        "**Mobile usability.** Google indexes the mobile version of your site. Content missing on mobile is missing from the index.",
+        "**Helpful, people-first content.** Now part of the core ranking systems rather than a separate update, aimed squarely at pages written for search engines.",
+        "**Spam systems.** SpamBrain and the link spam systems are confirmed and documented, and mostly neutralise bad signals rather than punish sites.",
+        "**Freshness and context.** Freshness applies on queries that deserve it — news and definitions are treated very differently. Context means country, language and location. Two people typing the same words have always seen different results."
+      ]
+    },
+    {
+      "h2": "Tier 2 — strong signal, never confirmed",
+      "body": [
+        "This is where competent SEOs live and where honest ones hedge. Everything here shows up consistently in testing, but Google either declines to confirm a direct signal or describes it as a byproduct of something else."
+      ],
+      "subs": [
+        {
+          "h3": "Topical authority and site-level quality",
+          "body": [
+            "Sites that cover a subject comprehensively tend to rank better across it than sites with one strong page. Google's line is that ranking happens at page level with some site-level signals. Either way the advice is the same: build clusters, not orphans."
+          ]
+        },
+        {
+          "h3": "E-E-A-T",
+          "body": [
+            "Experience, expertise, authoritativeness and trust come from Google's Search Quality Rater Guidelines, which are real and public. Raters don't directly influence rankings — they evaluate the systems. So [E-E-A-T](/glossary/e-e-a-t) describes what the algorithm aims at rather than a dial you turn. Still worth doing."
+          ]
+        },
+        {
+          "h3": "Click and engagement behaviour",
+          "body": [
+            "Google's long-standing public position is that clicks aren't a direct ranking factor. Testimony from the US antitrust case described click-based systems used in ranking. Both are on the record. The safe reading: satisfying the click matters, gaming CTR with bots doesn't."
+          ]
+        },
+        {
+          "h3": "Internal linking and site structure",
+          "body": [
+            "Not formally listed as a factor, yet one of the fastest levers on a mid-size site — it changes what gets crawled, what gets indexed and how authority distributes. Cheaper and faster than a link campaign, which is the argument in [internal linking beats link building](/journal/internal-linking-beats-link-building)."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Tier 3 — the folklore that won't die",
+      "body": [
+        "Several of these are still sold as line items on Indian SEO proposals. If one appears on yours, ask what evidence supports it and watch the answer arrive."
+      ],
+      "bullets": [
+        "**Keyword density.** There is no target percentage and there never was one. Writing to a density figure produces pages that read like they were written to a density figure.",
+        "**Domain Authority and Domain Rating.** Third-party metrics from Moz and Ahrefs that approximate link strength. Google doesn't see or use them. Useful for comparing two link profiles, useless as a goal — see [why DA is a vanity metric](/journal/domain-authority-is-a-vanity-metric).",
+        "**The meta keywords tag.** Google confirmed it ignores this in 2009. It's still on plugin checklists.",
+        "**Bounce rate from Google Analytics.** Google has said it doesn't use Analytics data for ranking. Bounce rate is a business metric, not a search signal.",
+        "**Word count.** No ideal length exists. Long pages often rank because thorough answers need length, not because length is rewarded.",
+        "**Social shares as a direct factor.** Google has said they aren't one. Social drives distribution, which earns links, which are a factor. The chain matters, the shortcut doesn't.",
+        "**Submitting your site to 500 search engines.** A 1998 service still invoiced in 2026.",
+        "**LSI keywords.** Latent semantic indexing is a real 1980s technique Google has said it doesn't use. Related terms matter; the named service doesn't."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The proposal test",
+        "body": "If a proposal promises to raise your Domain Authority to 40 as a deliverable, it's optimising a vendor's metric instead of your revenue. DA can be raised with links that do nothing for rankings, which is exactly why it gets promised."
+      }
+    },
+    {
+      "h2": "Where the \"200 ranking factors\" number came from",
+      "body": [
+        "From Google itself, in the 2000s, as a rough figure used in talks to convey that ranking was complicated. It was never a list, and Google dropped the number for good reason: ranking now runs on machine-learned systems where one \"factor\" may have hundreds of variants, may apply only to certain query types, and may not be separable from the rest.",
+        "So a page titled \"the 200 ranking factors, updated for 2026\" is repackaging a two-decade-old talking point. It ranks because people search for it.",
+        "The reframing that helps: stop counting factors, start asking what problem Google is solving on this specific query. Most ranking questions answer themselves at that point."
+      ]
+    },
+    {
+      "h2": "The mix changes with the query",
+      "body": [
+        "This is what makes universal lists useless. Google weights signals differently across query classes and has said so. Optimising a local clinic page the way you'd optimise a national SaaS page is a category error, not a tactical one."
+      ],
+      "table": {
+        "caption": "How the dominant signals shift across query types.",
+        "head": [
+          "Query type",
+          "What dominates",
+          "What barely matters"
+        ],
+        "rows": [
+          [
+            "Local — \"dentist near me\"",
+            "Proximity, Google Business Profile completeness, reviews.",
+            "Your blog. Your backlink count, mostly."
+          ],
+          [
+            "YMYL — health, finance, legal",
+            "Trust signals, author credentials, publisher reputation, accuracy.",
+            "Clever formatting. Publishing speed."
+          ],
+          [
+            "News and trending",
+            "Freshness, publisher authority, indexing speed.",
+            "Long-form depth. Link equity built last year."
+          ],
+          [
+            "Product and transactional",
+            "Merchant signals, structured data, reviews, price and availability.",
+            "Word count. Thought pieces."
+          ],
+          [
+            "Informational long tail",
+            "Direct answer quality, topical coverage, internal links.",
+            "Domain-level authority. External links, often entirely."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "What to do with all this",
+        "body": "Pick your ten most valuable queries. For each, look at what the top five have in common and what your page lacks. That comparison beats any factor list, because it's the only version that accounts for your specific competition — and it's the first thing we do in [an SEO audit](/services/seo-audit-services)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many ranking factors does Google have?",
+      "a": "Nobody outside Google knows, including the people selling you the list. The \"200\" figure traces back to a Google talking point from the 2000s and was never an itemised list. Ranking today is machine-learned and query-dependent, so a single count isn't a meaningful thing to ask for."
+    },
+    {
+      "q": "What is the single most important ranking factor?",
+      "a": "Relevance — whether your page actually answers the query better than the alternatives. Everything else is a modifier on that. If you want a second, it's whether the page can be crawled and indexed at all, because an unindexed page has no ranking to discuss."
+    },
+    {
+      "q": "Are Core Web Vitals a ranking factor?",
+      "a": "Yes, confirmed, and smaller than the tooling implies. Google has described page experience as a tiebreaker between comparable pages. Going from terrible to acceptable is worth doing. Going from good to perfect is usually somebody's dashboard hobby."
+    },
+    {
+      "q": "Does Domain Authority affect Google rankings?",
+      "a": "No. DA is a Moz metric and DR is an Ahrefs metric — both are third-party estimates of link strength that Google neither sees nor uses. They're fine for comparing two sites at a glance and wrong as a target, because both can be inflated by links that change nothing."
+    },
+    {
+      "q": "Do ranking factors change with every Google update?",
+      "a": "The weights shift, the fundamentals rarely do. Core updates typically reassess what counts as helpful and trustworthy rather than introducing new mechanics. If a site loses traffic to a core update, the answer is almost never a technical setting you can flip back."
+    },
+    {
+      "q": "Is AI-generated content a negative ranking factor?",
+      "a": "Not by itself. Google's stated position is that it rewards quality regardless of how content was produced, and penalises content mass-produced primarily to game search. In practice, unedited AI output tends to fail on originality and first-hand experience, which are the things being assessed."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "e-e-a-t"
+    },
+    {
+      "type": "glossary",
+      "slug": "core-web-vitals"
+    },
+    {
+      "type": "journal",
+      "slug": "domain-authority-is-a-vanity-metric"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-domain-authority"
+    },
+    {
+      "type": "compare",
+      "slug": "da-vs-dr"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-core-update"
+    },
+    {
+      "type": "answers",
+      "slug": "where-is-seo-used"
+    }
+  ]
+}

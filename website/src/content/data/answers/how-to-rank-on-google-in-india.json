@@ -1,0 +1,195 @@
+{
+  "slug": "how-to-rank-on-google-in-india",
+  "type": "answers",
+  "primaryKeyword": "how to rank on google in india",
+  "secondaryKeywords": [
+    "how to rank higher on google india",
+    "google ranking india tips",
+    "rank website in india",
+    "seo for indian audience"
+  ],
+  "cluster": "seo-howto",
+  "intent": "informational",
+  "h1": "What it takes to rank on Google in India",
+  "metaTitle": "How to Rank on Google in India: What Differs",
+  "metaDescription": "How to rank on Google in India: mobile-first buyers on slow networks, Hinglish queries and marketplaces holding page one. What each one changes tactically.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "The algorithm is the same in India; the users and the results page aren't. Ranking here means surviving a ₹12,000 Android on a congested network, matching Hinglish and transliterated queries, publishing prices when your competitors hide them, and choosing queries where Amazon, Justdial and the aggregators are structurally weak.",
+  "takeaways": [
+    "Your Core Web Vitals are scored on **your visitors' phones**, not your laptop. In India that's a mid-range Android on a busy tower.",
+    "Your Search Console query report already contains Hinglish. Most sites never look, and never use the words their buyers type.",
+    "On a large share of Indian commercial queries, page one belongs to aggregators. Pick the queries where a templated aggregator page has nothing useful to say.",
+    "Regional language SEO pays where the buying decision genuinely happens in that language. Machine-translating 400 pages produces 400 pages nobody can maintain."
+  ],
+  "sections": [
+    {
+      "h2": "The ranking factors don't change. Four other things do.",
+      "body": [
+        "There is no India-specific algorithm. Crawling, indexing, relevance, links and page experience work the way they work everywhere, and anyone selling you a secret local method is selling you nothing.",
+        "What changes is everything around the algorithm: the device your visitor holds, the language they type in, who already occupies the results page, and what they mean when they search. Four realities, and each one forces a specific tactical change. Ignore them and you'll run a technically correct strategy that quietly loses."
+      ]
+    },
+    {
+      "h2": "Reality one: your buyers type Hinglish",
+      "body": [
+        "A large share of Indian search happens in Latin script but not in English. \"AC service charges kitna\", \"sasta laptop under 40000\", \"gst return kaise file kare\", \"iphone ka price\". Google handles the common transliterations well enough, and badly enough that it matters.",
+        "The practical move costs an hour. Open Search Console, export twelve months of queries, and filter for the giveaways — kitna, kaise, sasta, kya, ka price, wala, near me. You are almost certainly already picking up impressions on phrasings that appear nowhere on your site, which means you're ranking on Google's guess rather than your own copy."
+      ],
+      "bullets": [
+        "Write the phrasing into FAQs and body copy where it reads naturally. One FAQ that says \"kitna kharcha aata hai\" alongside \"what does it cost\" is honest; a page stuffed with forty transliterations is a spam pattern.",
+        "Do not build a separate page per transliteration. That's the textbook doorway-page setup and Google classifies it as scaled content abuse.",
+        "Check Google autocomplete and the People Also Ask box from an Indian IP, on mobile. The suggestions differ from what you see on a desktop in an office VPN.",
+        "Remember that the same page usually has to serve both scripts. Your buyer types Hinglish and reads English."
+      ]
+    },
+    {
+      "h2": "Reality two: the median visitor is on a cheap Android and a busy tower",
+      "body": [
+        "Core Web Vitals are scored from field data — real Chrome users on real devices, not your lab test. So an Indian audience on mid-range Android handsets drags your numbers down even when your laptop reports a near-perfect score. The thresholds themselves are public: LCP under 2.5 seconds, INP under 200 milliseconds, CLS under 0.1, measured at the 75th percentile.",
+        "INP is where most Indian sites fail, because it measures responsiveness, and responsiveness is where cheap processors and heavy JavaScript collide. A hero carousel, a chat widget, three tag manager containers and a review popup will pass on an iPhone and stutter on the phone your customer actually owns."
+      ],
+      "numbered": [
+        "Test on a throttled connection with a mid-tier device profile, not on office wifi. If you've never seen your own site load badly, you don't know what you're shipping.",
+        "Cut JavaScript before you optimise images. Images are a bandwidth problem; scripts are a CPU problem, and CPU is the scarce resource on a ₹12,000 phone.",
+        "Serve images in modern formats at the size they're displayed, and reserve their space in the layout so nothing jumps.",
+        "Audit your third-party tags quarterly. Most sites are carrying scripts for tools nobody has logged into in a year.",
+        "Serve from close to your users — Indian hosting or a CDN with Indian points of presence — because time to first byte is the part no front-end fix can rescue."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Speed is a small ranking factor and a large revenue one",
+        "body": "Page experience is a tiebreaker, not a lever — a fast bad page still loses to a slow relevant one. The reason to fix [Core Web Vitals](/glossary/core-web-vitals) is that people on patchy networks abandon slow pages, and abandoned pages don't convert regardless of where they rank."
+      }
+    },
+    {
+      "h2": "Reality three: page one is already occupied",
+      "body": [
+        "Search almost any Indian commercial query and count how many results belong to businesses like yours. Frequently the answer is one, or none. Marketplaces and vertical aggregators hold the rest, backed by two decades of links and inventory you cannot match this year.",
+        "Fighting them head-on is a way to burn a year. Their weakness is structural: a templated aggregator page cannot hold an opinion, cannot compare its own listings honestly, and rarely goes deeper than the fields in its database. That's the ground worth taking."
+      ],
+      "table": {
+        "caption": "Who typically holds page one by category, and where the opening is.",
+        "head": ["Category", "Who usually holds page one", "Where the opening is"],
+        "rows": [
+          [
+            "Retail and D2C",
+            "Amazon, Flipkart, Meesho, Myntra, Nykaa",
+            "Comparisons, buying guides, sizing, care, compatibility, spare parts"
+          ],
+          [
+            "Home and local services",
+            "Justdial, Sulekha, Urban Company",
+            "Neighbourhood-level pages, published pricing, the map pack"
+          ],
+          [
+            "Real estate",
+            "99acres, MagicBricks, Housing",
+            "Locality and project depth, RERA specifics, what living there is actually like"
+          ],
+          [
+            "Healthcare",
+            "Practo and the large hospital chains",
+            "Condition and procedure explainers with a named, credentialed author"
+          ],
+          [
+            "Finance and insurance",
+            "Policybazaar, BankBazaar, Paisabazaar",
+            "Narrow eligibility, documentation and process questions comparison tables skip"
+          ],
+          [
+            "Travel",
+            "MakeMyTrip, Goibibo, the global OTAs",
+            "Route, season and itinerary guides written by someone who went"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The query you should stop bidding your hopes on",
+        "body": "If a single-word category term returns six aggregators and two national brands, that term is not your first-year target. Take the three-and-four-word versions with intent attached, win those, and revisit the head term when you have the links to survive there."
+      }
+    },
+    {
+      "h2": "Reality four: price is the intent",
+      "body": [
+        "Indian searchers attach money to almost every commercial query — price, cost, charges, fees, kitna, EMI, offer, under 20000. That isn't price sensitivity as a stereotype; it's a market where most sellers hide the number, so buyers have learned to make finding it the first job.",
+        "Which hands you an easy advantage. A page that names a range beats a page that says \"contact us for a customised quote\", every time, on both ranking and conversion. You'll get fewer enquiries and more of them will be real.",
+        "We run our own business this way — [our pricing](/pricing) is on the site with the numbers on it — and the enquiries that arrive have already accepted the price. For higher-ticket categories, say what the EMI or instalment position is on the page rather than burying it in checkout."
+      ],
+      "bullets": [
+        "Publish a range with the variables that move it. \"₹40,000–₹1,20,000 depending on catalogue size and how much technical debt is in the way\" is more useful than a single fake number.",
+        "Answer the price question in the first 60 words. That's the part a featured snippet or an AI answer lifts.",
+        "If you sell products, mark the price up in structured data so it shows in the result — but only if the same number is visible on the page.",
+        "Compare honestly against the cheaper option, including when the cheaper option is right for the reader. That's the page they bookmark."
+      ]
+    },
+    {
+      "h2": "Should you publish in Hindi or a regional language?",
+      "body": [
+        "This is the decision most often made emotionally and most expensive to reverse. The test is not whether your audience speaks the language. It's whether the buying decision happens in it.",
+        "A Bengaluru SaaS founder buying developer tooling researches in English regardless of what they speak at home. A family choosing a coaching institute in Patna, a farmer comparing pump sets, a patient reading about a procedure — those decisions frequently happen in the mother tongue, and English pages simply aren't in the running."
+      ],
+      "bullets": [
+        "**Worth it** when the category is consumer, tier-2 and beyond, and emotionally weighted: health, education, agriculture, government process, local services, devotional and wellness.",
+        "**Usually not worth it** for B2B software, enterprise services and metro-focused premium D2C, where the buyer's professional vocabulary is English anyway.",
+        "**Mechanically**: one URL per language in a subfolder, hreflang pairs in both directions plus x-default, and a human translator who knows the category vocabulary. Machine translation gets the grammar close and the terminology wrong.",
+        "**The commitment is ongoing.** A translated site is two sites to maintain. Translating 400 pages once and abandoning them is worse than never starting.",
+        "**The cheap half-measure** that often outperforms: stay in English, but let your FAQs and body copy carry the Hinglish phrases your buyers actually type. We break the trade-off down in [English versus regional-language SEO](/compare/english-vs-regional-language-seo)."
+      ]
+    },
+    {
+      "h2": "The local pack when you operate in six cities",
+      "body": [
+        "Multi-city businesses lose local search for boring reasons: one Google Business Profile covering four branches, city pages generated by find-and-replace, and reviews nobody asks for.",
+        "Proximity is the strongest signal in the map pack, and you cannot argue with it. A clinic in Whitefield will not appear for someone standing in Indiranagar. Build for the areas you can genuinely serve, and stop measuring yourself against a city-wide average that nobody's phone actually shows."
+      ],
+      "numbered": [
+        "One profile per staffed physical location, with a real address and real hours. Virtual offices and coworking mailboxes get suspended, and reinstatement takes weeks you can't afford.",
+        "If you travel to customers, set it up as a service-area business, hide the address and draw the radius honestly.",
+        "One page per location with genuinely different content — the team who work there, photos of that building, parking, landmarks, timings, local pricing. Templated city pages with the name swapped are exactly the pattern Google demotes.",
+        "Keep name, address and phone identical across your site, Google, Justdial, Apple Maps and every citation. Mismatches are the most common cause of a profile that never surfaces.",
+        "Ask for reviews steadily, from the counter or by SMS after service. Forty reviews in one week reads as a purchase; four a week for a year reads as a business. The full sequence is in [how to do local SEO](/answers/how-to-do-local-seo)."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "What this costs to do properly",
+        "body": "A multi-city local programme in India generally runs ₹40,000–₹1,50,000 a month depending on how many locations and how competitive the category is. Our own SEO work starts at ₹75,000/mo, with smaller sites from ₹40,000 — see [what SEO costs in India](/cost/seo-cost-in-india) for the full picture."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Google's algorithm different in India?",
+      "a": "No. The ranking systems are global. What differs is the results page — which aggregators occupy it — plus the devices, the languages and the price-led intent of Indian searchers. Anyone selling an India-specific algorithm hack is selling nothing."
+    },
+    {
+      "q": "Do I need a Hindi version of my website to rank in India?",
+      "a": "Only if your buyer decides in Hindi. Consumer categories in tier-2 and tier-3 cities, healthcare, education, agriculture and government-adjacent services often justify it. B2B software and metro premium brands usually don't. Start by checking whether Hindi queries already appear in your Search Console report."
+    },
+    {
+      "q": "How do I compete with Amazon and Flipkart on Google?",
+      "a": "Not on product and brand queries — they have the authority and the review volume. Compete where a templated marketplace page has nothing to say: comparisons, buying guides tied to Indian conditions, narrow long-tail categories, post-purchase content, and your own brand terms."
+    },
+    {
+      "q": "Does website speed really affect rankings in India?",
+      "a": "It's a genuine but small ranking factor, and a large revenue one. Core Web Vitals are measured from real users' devices, so an Indian audience on mid-range Android phones will score you lower than your laptop test suggests. INP is where most sites fail, and heavy JavaScript is usually why."
+    },
+    {
+      "q": "How long does it take to rank a new website in India?",
+      "a": "Three to six months for real movement on a competitive keyword set, six to twelve for compounding returns. Timelines depend far more on how contested your category is than on the country. Local service queries move faster; anything an aggregator dominates takes longer."
+    },
+    {
+      "q": "Should I target city keywords like 'SEO agency in Mumbai'?",
+      "a": "Only if you have a genuine presence or a real service relationship with that city, and only if you can write a page that's actually about that city. A page that swaps the city name into the same 600 words is the scaled-content pattern Google demotes, and it drags the rest of the site with it."
+    }
+  ],
+  "related": [
+    { "type": "cost", "slug": "seo-cost-in-india" },
+    { "type": "compare", "slug": "english-vs-regional-language-seo" },
+    { "type": "journal", "slug": "seo-in-hindi-and-indian-languages" },
+    { "type": "glossary", "slug": "core-web-vitals" },
+    { "type": "answers", "slug": "how-to-do-local-seo" },
+    { "type": "services", "slug": "core-web-vitals-optimisation" }
+  ]
+}

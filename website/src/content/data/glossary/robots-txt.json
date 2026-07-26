@@ -1,0 +1,120 @@
+{
+  "slug": "robots-txt",
+  "type": "glossary",
+  "primaryKeyword": "robots.txt",
+  "secondaryKeywords": [
+    "robots txt file seo",
+    "disallow robots txt",
+    "robots.txt example",
+    "how to create robots.txt",
+    "robots txt vs noindex"
+  ],
+  "cluster": "technical-seo",
+  "intent": "informational",
+  "h1": "Robots.txt",
+  "metaTitle": "Robots.txt: What It Does and What It Doesn't",
+  "metaDescription": "Robots.txt tells crawlers where they may go. It controls crawling, not indexing — and that one distinction breaks a surprising number of live sites.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Robots.txt",
+  "definition": "Robots.txt is a plain-text file at the root of a domain that tells crawlers which URL paths they are allowed to request.",
+  "answer": "Robots.txt is a text file at `https://yourdomain.com/robots.txt` that tells crawlers which paths they may fetch. It controls crawling, not indexing — a blocked URL can still appear in Google if other sites link to it. It's also public, advisory, and the fastest way to delete your own traffic.",
+  "takeaways": [
+    "One file, at the root, per protocol and hostname. `example.com/robots.txt` doesn't cover `blog.example.com`.",
+    "Blocking a URL stops the fetch, not the listing. To keep a page out of the index, use `noindex` — and leave the page crawlable so Google can read it.",
+    "Never block your CSS and JavaScript. Google renders pages; blocking assets makes it render a broken one.",
+    "The single most expensive line in SEO is a staging `Disallow: /` that shipped to production."
+  ],
+  "sections": [
+    {
+      "h2": "The one line that has killed more traffic than any algorithm update",
+      "body": [
+        "A developer sets up staging and, sensibly, adds a robots.txt reading `User-agent: *` and `Disallow: /` so Google never indexes the half-built site. Then staging gets promoted to production. The file comes with it.",
+        "Nothing breaks. The site loads, the forms work, analytics keeps reporting. Over the following days Googlebot stops fetching pages; over the following weeks the site drains out of the results. By the time anyone connects the traffic graph to a deploy three weeks earlier, recovery is a month of re-crawling.",
+        "It's the most common catastrophic technical SEO failure there is, and entirely preventable. Two habits fix it: check `yourdomain.com/robots.txt` after every infrastructure deploy, and turn on Search Console email alerts so a crawl collapse reaches you in days rather than quarters."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Do this before you finish reading",
+        "body": "Open `https://yourdomain.com/robots.txt` right now. If you see `Disallow: /` under `User-agent: *`, that's your entire SEO problem and it's a one-line fix. Eleven seconds, and we've found it live on commercial sites more than once."
+      }
+    },
+    {
+      "h2": "Syntax: four directives, and where the file lives",
+      "body": [
+        "The file sits at the root of the host — `https://example.com/robots.txt`, not `/blog/robots.txt`. It applies per protocol, hostname and port, so a subdomain needs its own. It's plain text, publicly readable, and advisory: well-behaved crawlers obey it, scrapers ignore it. Never use it to hide anything sensitive — you're publishing a map of what you'd rather nobody looked at.",
+        "Four directives do almost all the work."
+      ],
+      "table": {
+        "caption": "A starter robots.txt for a typical Next.js or WordPress site.",
+        "head": ["Line", "What it does"],
+        "rows": [
+          ["`User-agent: *`", "Everything below applies to all crawlers until the next User-agent line."],
+          ["`Allow: /`", "Permits the whole site. Redundant, but it makes intent obvious to whoever reads this next."],
+          ["`Disallow: /api/`", "Blocks internal endpoints returning JSON nobody should index."],
+          ["`Disallow: /cart`", "Blocks cart, checkout and account paths. No search value, and they spawn session URLs."],
+          ["`Disallow: /*?s=`", "Blocks internal search results. `*` matches anything — this is what stops a search box becoming an infinite URL space."],
+          ["`Sitemap: https://example.com/sitemap.xml`", "Absolute URL, one line per sitemap. How crawlers that never see Search Console find it."]
+        ]
+      },
+      "bullets": [
+        "**Specificity beats order.** Where an `Allow` and a `Disallow` both match, Google follows the more specific rule, not the first.",
+        "**`Disallow:` with nothing after it allows everything.** `Disallow: /` blocks everything. One character apart, opposite outcomes.",
+        "**Don't block `/wp-content/`, `/_next/` or your CSS and JS.** Google renders your pages. Block the assets and it renders one with no layout, no content and no reason to rank.",
+        "**On Next.js, generate it** — `app/robots.ts` returning a `MetadataRoute.Robots` object keeps the file in version control."
+      ]
+    },
+    {
+      "h2": "Crawling is not indexing — the distinction that trips everyone",
+      "body": [
+        "Robots.txt controls whether a crawler may **request** a URL. It says nothing about whether that URL may appear in results. Different systems, and confusing them causes two opposite failures.",
+        "**Blocked but still listed.** If other sites link to a blocked URL, Google can index the URL without ever fetching it. You get a result with a bare URL and no description — Google states outright it has no information about the page. Blocking made it worse.",
+        "**A noindex that never gets read.** Someone adds `noindex` and blocks the page in robots.txt for good measure. Googlebot can't fetch it, so it never sees the tag, so the page stays indexed indefinitely. The two directives cancel each other out.",
+        "The rule: to keep a page out of the index, allow the crawl and use [noindex](/glossary/noindex). To save crawl capacity on patterns you never want fetched, block in robots.txt and accept a few may still be listed. Use both on one URL and you get neither."
+      ]
+    },
+    {
+      "h2": "AI crawlers, and testing what you wrote",
+      "body": [
+        "Robots.txt is now where you decide who reads your content for something other than search. The agents worth knowing: `GPTBot` (OpenAI), `ClaudeBot` (Anthropic), `PerplexityBot`, `CCBot` (Common Crawl, which feeds many training sets) and `Bytespider`. Each takes its own `User-agent` block.",
+        "`Google-Extended` gets misread most often. It controls whether your content is used for Google's generative AI products. It does **not** affect Googlebot, indexing or rankings. Blocking it costs nothing in search and costs you presence in answers — a business call rather than a technical one, argued both ways in [should you block AI crawlers](/journal/should-you-block-ai-crawlers).",
+        "Then test. Search Console's robots.txt report shows the file Google last fetched and any parsing errors — worth checking, because a file returning a 500 is treated very differently from one returning 404. For one URL, use URL Inspection's live test.",
+        "What no report tells you is whether the rule you wrote was the rule you meant. If a crawl collapse brought you here, that's [technical SEO work](/services/technical-seo-services) — a days-long job, not a months-long one."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What happens if I don't have a robots.txt file?",
+      "a": "Nothing bad. A missing file returns 404 and crawlers treat that as permission to crawl everything. Most small sites genuinely don't need one. What you must avoid is a file that returns a 5xx server error — Google may treat repeated server errors as a signal to stop crawling entirely."
+    },
+    {
+      "q": "Is robots.txt or noindex better for keeping a page out of Google?",
+      "a": "Noindex, every time. Robots.txt blocks the fetch but a linked URL can still be listed without a description. Noindex removes the page properly — but only if the page stays crawlable, so never use both on the same URL."
+    },
+    {
+      "q": "Can I block ChatGPT and other AI crawlers with robots.txt?",
+      "a": "You can ask. Add a `User-agent: GPTBot` block with `Disallow: /`, and the same for ClaudeBot, PerplexityBot and CCBot. Compliance is voluntary — the major operators publish their tokens and honour them, but robots.txt has never been enforceable."
+    },
+    {
+      "q": "Does blocking a page in robots.txt remove it from search results?",
+      "a": "Not reliably, and not quickly. Google may keep showing the URL with no description if other pages link to it. For genuine removal, use the Removals tool in Search Console for the urgent case, then noindex on a crawlable page for the permanent one."
+    },
+    {
+      "q": "Should robots.txt list my sitemap?",
+      "a": "Yes. It's one line and it's the only way crawlers without access to your Search Console account find your sitemap. Use the absolute URL, and add a separate Sitemap line for each sitemap index file you publish."
+    },
+    {
+      "q": "Do subdomains need their own robots.txt?",
+      "a": "Yes. The file applies to one protocol and hostname only, so `blog.example.com` and `shop.example.com` each need their own. This catches out plenty of teams whose blog sits on a subdomain nobody ever configured."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "noindex" },
+    { "type": "glossary", "slug": "crawl-budget" },
+    { "type": "glossary", "slug": "xml-sitemap" },
+    { "type": "glossary", "slug": "indexing" },
+    { "type": "services", "slug": "technical-seo-services" },
+    { "type": "journal", "slug": "should-you-block-ai-crawlers" }
+  ]
+}

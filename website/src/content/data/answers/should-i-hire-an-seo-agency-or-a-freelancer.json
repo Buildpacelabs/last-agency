@@ -1,0 +1,186 @@
+{
+  "slug": "should-i-hire-an-seo-agency-or-a-freelancer",
+  "type": "answers",
+  "primaryKeyword": "should i hire an seo agency or a freelancer",
+  "secondaryKeywords": [
+    "freelance seo vs agency",
+    "is a freelance seo consultant enough",
+    "seo freelancer cost india",
+    "hiring seo help for a small team"
+  ],
+  "cluster": "agency-selection",
+  "intent": "commercial",
+  "h1": "SEO agency or freelancer: which one fits your site",
+  "metaTitle": "Should I Hire an SEO Agency or a Freelancer?",
+  "metaDescription": "Decide on continuity, not price. Here's the page count, dev dependency and approval load at which one person stops being able to hold your account.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Decide on continuity, not price. A good freelancer beats a cheap agency below roughly ₹40,000 a month, on a site under about 200 pages, where you already have someone internal briefing and approving. Above that — more pages, dev dependencies, compliance sign-off, or link work at volume — one person becomes the bottleneck and then the single point of failure.",
+  "takeaways": [
+    "The real question isn't \"who's better\". It's **what breaks if this person disappears for six weeks** — because at some point they will.",
+    "One full-time freelancer has roughly **120–140 billable hours a month across every client**. Most serve four to eight. Do the division before you sign.",
+    "SEO needs four disciplines: technical, content, links, analytics. Almost nobody is genuinely strong in all four. Ask which one they're weakest at — good freelancers answer in under three seconds.",
+    "Three situations where the freelancer is the better hire, and none of them is \"they were cheaper\"."
+  ],
+  "sections": [
+    {
+      "h2": "Price is the wrong axis to decide on",
+      "body": [
+        "Almost every version of this article compares hourly rates and calls it analysis. It isn't. Rates tell you what an hour costs, not whether the hours you're buying add up to a functioning SEO programme.",
+        "Here's what actually goes wrong. A founder hires a capable freelancer at ₹25,000–₹50,000 a month, gets four good months, and then the freelancer takes a full-time offer, or gets ill, or quietly picks up two more clients and your account becomes the one that slips. Nothing was wrong with the work. The arrangement just had no redundancy in it, and nobody priced that.",
+        "So run the decision on continuity risk. Three variables settle it: how much throughput you need, how many disciplines it touches, and who holds the context when the person holding it stops."
+      ]
+    },
+    {
+      "h2": "Where one person's ceiling actually sits",
+      "body": [
+        "A full-time freelancer has somewhere around 120–140 genuinely billable hours in a month once you subtract sales, admin, invoicing and the hours nobody pays for. Most freelancers carry four to eight clients. That puts a typical account somewhere between 15 and 40 hours a month.",
+        "Fifteen to forty hours sounds like a lot until you price the work in it."
+      ],
+      "table": {
+        "caption": "What one person can actually deliver in a month, by hours available.",
+        "head": ["Hours on your account", "What genuinely fits", "What quietly doesn't"],
+        "rows": [
+          [
+            "8–15 / month",
+            "On-page fixes, one or two researched articles, monthly reporting.",
+            "Technical audits, outreach, anything needing dev coordination."
+          ],
+          [
+            "20–30 / month",
+            "Three to four articles with real research, a rolling technical fix list, basic link outreach.",
+            "Two of those three at full quality. Something gets thin."
+          ],
+          [
+            "40+ / month",
+            "Content on cadence plus technical plus outreach — if the person is genuinely senior.",
+            "Migrations, structured data at scale, digital PR, multi-language work."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Page count is the cleanest proxy.** Under roughly 200 URLs on a stable stack, one person can hold the whole site in their head. Past about 1,000 URLs — or with faceted navigation, user-generated pages, or multiple languages — crawl and index management alone becomes a standing job.",
+        "**Ticket throughput is the second.** If every change needs a Jira ticket and a sprint slot, your SEO throughput is set by your dev team, not your SEO person. A freelancer with no repo access can only recommend; someone still has to fight for the sprint.",
+        "**Approval load is the one people forget.** In finance, healthcare, legal or anything regulated, each article costs three to five review rounds. One person handling both the writing and the chasing becomes a queue with legs."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Ask for the client count, in a number",
+        "body": "\"How many clients are you carrying right now, and how many hours a month is mine?\" A freelancer worth hiring gives you both numbers immediately and will tell you when they're full. One who won't name a number is already overbooked."
+      }
+    },
+    {
+      "h2": "Bus factor: the risk nobody puts in the proposal",
+      "body": [
+        "Bus factor is the number of people who'd have to vanish before the work stops. With a freelancer it's one. That's not a criticism of freelancers — it's arithmetic.",
+        "What it costs in practice: two weeks' leave means two weeks of nothing. Illness means the same. A better offer means all the context — why that page was rewritten, which redirect was deliberate, who at the client approves what — leaves in someone's head, and rebuilding it takes a new person four to eight weeks even if they're excellent.",
+        "Agencies have their own version of this problem. Account leads churn, and the person who won the pitch is frequently not the person doing the work. The difference is that the account survives the departure: there are documents, a second pair of hands, and someone whose job it is to notice when a month goes quiet. Whether that's true of a specific agency is a fair question to ask in the pitch."
+      ],
+      "bullets": [
+        "**Ask a freelancer:** who covers your accounts if you're out for three weeks? A good answer names a person. An honest answer is \"nobody, so here's how I'd hand over.\"",
+        "**Ask an agency:** who specifically will run this account, and what happens if they leave? Watch what the room does next.",
+        "**Ask both:** where does the documentation live, and will I have access to it while you're working, not just at the end?"
+      ]
+    },
+    {
+      "h2": "Four disciplines, one person",
+      "body": [
+        "SEO is four jobs that happen to share a name: technical, content, links, and measurement. Individuals specialise, because specialising is how you get good.",
+        "That means the honest way to read a freelancer's CV is to work out which of the four they came from, and then check whether your site's actual constraint is in that column. A brilliant technical SEO on a site whose problem is that nobody has written anything useful in three years will produce a beautiful audit and no leads.",
+        "The reverse mistake is more common and more expensive: hiring a content-first freelancer for a site that's blocking its own money pages in `robots.txt`."
+      ],
+      "numbered": [
+        "**Find your constraint first.** Is the site not indexed properly, not written about, not linked to, or not measured? One of those is usually obviously worse than the others.",
+        "**Match the hire to the constraint**, not to the general category \"SEO\".",
+        "**Ask the candidate which discipline they're weakest at.** People who are genuinely good answer instantly and without embarrassment. Hedging here is the tell.",
+        "**Check whether the constraint changes in six months.** Technical problems get fixed and stay fixed. Content and links are continuous. A one-off constraint suits a freelancer; a continuous one suits a team."
+      ]
+    },
+    {
+      "h2": "Three situations where the freelancer is the right hire",
+      "body": [
+        "None of these is \"they quoted less\". Each is a structural reason a single person genuinely fits better."
+      ],
+      "subs": [
+        {
+          "h3": "1. Your budget is genuinely under ₹40,000 a month",
+          "body": [
+            "At that level you're choosing between a good freelancer's full attention and an agency's leftover attention, and the freelancer wins that comparison nearly every time. An agency taking a ₹15,000 client is servicing it with whoever has a gap in their afternoon."
+          ]
+        },
+        {
+          "h3": "2. The work has a definition and an end",
+          "body": [
+            "A technical audit. A migration plan. A penalty diagnosis. An information architecture rebuild. Finite, specialist, and better done by one senior person who owns the whole picture than by a pod handing pieces around. Agencies are built for cadence; individuals are excellent at defined problems."
+          ]
+        },
+        {
+          "h3": "3. You already have an internal owner",
+          "body": [
+            "If someone inside your company writes the briefs, chases approvals, gets dev tickets into the sprint and holds the number, then you need hands, not a brain. That's the ideal freelancer arrangement — and it's also the point at which the [in-house versus agency question](/answers/should-i-hire-an-seo-agency-or-do-it-in-house) becomes the more useful one to answer."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The hybrid nobody pitches you",
+        "body": "One senior freelancer for strategy and technical, plus a separate writer you brief directly, plus a tool subscription you own. Cheaper than an agency, more redundant than one person, and you keep every credential. It only works if someone internal runs it."
+      }
+    },
+    {
+      "h2": "The four questions that decide it",
+      "body": [
+        "Answer these honestly and the choice usually makes itself. If three of the four point the same way, go that way."
+      ],
+      "numbered": [
+        "**What breaks if this person is unavailable for six weeks?** If the answer is \"everything stops and we lose the context\", you're buying single-point-of-failure risk. Price it or remove it.",
+        "**How many of the four disciplines does the next twelve months actually need?** One, and you want a specialist. Three or four, and you want a team — or several specialists and someone to coordinate them, which is an agency with extra steps.",
+        "**Who inside my company owns the number?** If nobody does, an agency at least brings its own reporting discipline. A freelancer with no internal counterpart drifts, and neither side notices for a quarter.",
+        "**What throughput do I actually need — pages, fixes and links per month?** Write the number down. Then check it against the hours table above. Most disappointment in this decision is a throughput expectation nobody wrote down."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Whichever you pick, fix the baseline first",
+        "body": "Write down your trailing-90-day count of qualified leads from organic search before anyone starts. Without it, neither a freelancer nor an agency can prove they did anything, and you'll be arguing about traffic charts in month five."
+      }
+    },
+    {
+      "h2": "Where we fit, and where we'd tell you not to hire us",
+      "body": [
+        "We run SEO from ₹75,000/mo, with smaller sites from ₹40,000/mo, ex-GST, month-to-month after the first quarter. If your budget is under ₹40,000, we'll say so and point you at a freelancer — a cheap version of us would just be a worse version of the person you can hire directly.",
+        "We take three clients a month, which is a capacity limit rather than a marketing line: we guarantee movement against your own frozen 90-day baseline of qualified organic leads, and you can't carry that risk at volume. Miss it in 90 days and we keep working free until we beat it. We never guarantee a ranking position.",
+        "If you want the fuller side-by-side, there's [agency versus freelancer](/compare/agency-vs-freelancer) and, for the specific case of a senior individual on strategy, [SEO consultant versus SEO agency](/compare/seo-consultant-vs-seo-agency)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much does a freelance SEO cost in India?",
+      "a": "Rates vary widely by seniority and city, but monthly retainers commonly land between ₹15,000 and ₹60,000, with senior consultants charging more and often billing by project or day rate instead. Treat that as the band of quotes you'll see rather than a survey. Always convert it into hours-on-your-account before comparing."
+    },
+    {
+      "q": "Is a freelance SEO consultant enough for a small business?",
+      "a": "Often yes. A single-location business on a site under about 200 pages, with one clear constraint and someone internal who can approve things quickly, is well served by one good person. It stops being enough when page count, dev dependency or compliance review outgrow what one person can hold."
+    },
+    {
+      "q": "What's the biggest risk of hiring an SEO freelancer?",
+      "a": "Continuity. One person means one point of failure: leave, illness, a better offer, or simply taking on two more clients and quietly deprioritising you. The context lives in their head, and rebuilding it costs a new person four to eight weeks. Agree a handover format up front, not at the end."
+    },
+    {
+      "q": "Can I hire a freelancer and an agency at the same time?",
+      "a": "Yes, and it works when the split is clean — one owns technical and strategy, the other owns content production, and someone internal owns the number. It fails when both are told to \"do SEO\", because they'll duplicate work, contradict each other on architecture, and blame each other in month four."
+    },
+    {
+      "q": "How do I check a freelancer's capacity before hiring?",
+      "a": "Ask two questions with numeric answers: how many clients are you carrying right now, and how many hours a month will mine get? Then check the hours against the throughput you need. Anyone unwilling to give you a number is already at capacity and hoping you won't notice."
+    }
+  ],
+  "related": [
+    { "type": "compare", "slug": "agency-vs-freelancer" },
+    { "type": "compare", "slug": "seo-consultant-vs-seo-agency" },
+    { "type": "answers", "slug": "should-i-hire-an-seo-agency-or-do-it-in-house" },
+    { "type": "cost", "slug": "seo-cost-for-small-business" },
+    { "type": "journal", "slug": "choosing-an-seo-agency-for-your-stage" },
+    { "type": "services", "slug": "seo-consulting" }
+  ]
+}

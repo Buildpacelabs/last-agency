@@ -1,0 +1,221 @@
+{
+  "slug": "how-does-seo-work",
+  "type": "answers",
+  "primaryKeyword": "how does seo work",
+  "secondaryKeywords": [
+    "how seo works",
+    "how does seo actually work",
+    "seo process explained",
+    "how do search engines rank pages"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "How SEO works, from crawl to click",
+  "metaTitle": "How Does SEO Work? Crawl to Click Explained",
+  "metaDescription": "How does seo work? Follow one URL from discovery to crawl to index to ranking to click, and find the exact gate where your own pages are dropping out.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "SEO works by getting a URL through five gates. Google has to discover it, crawl it, decide it's worth indexing, retrieve it as a candidate for a query, then rank it well enough to earn the click. The gate most sites fail is the third: indexing is a decision Google makes, not a default.",
+  "takeaways": [
+    "A page can fail at five different points, and the fix at each one is completely different. Diagnosing which gate you're stuck at is most of the job.",
+    "**Indexed is not automatic.** Google fetches a page and then decides whether to keep it. 'Crawled – currently not indexed' is a verdict, not a queue.",
+    "Ranking happens per query, not per page. The same URL can be third for one phrase and sixtieth for its near-synonym.",
+    "You can run this whole funnel on your own site in about twenty minutes with Search Console and your CRM."
+  ],
+  "sections": [
+    {
+      "h2": "The pipeline, and where a page dies at each stage",
+      "body": [
+        "SEO gets described as a bundle of tactics — keywords, links, speed, content. That's a list of ingredients, not an explanation. The explanation is a pipeline, and every tactic exists to get a URL through one specific stage of it.",
+        "Here's the whole thing on one screen. Find the row where your pages stop, and you've found what to work on."
+      ],
+      "table": {
+        "caption": "One URL, five gates, and the failure mode at each.",
+        "head": [
+          "Stage",
+          "What Google is doing",
+          "What kills a page here",
+          "Where you see it"
+        ],
+        "rows": [
+          [
+            "Discovery",
+            "Learning the URL exists — from a sitemap, an internal link, or a link on someone else's site",
+            "Orphan pages; URLs reachable only through a filter, a search box or an infinite scroll",
+            "Sitemaps report; 'Discovered – currently not indexed'"
+          ],
+          [
+            "Crawl",
+            "Fetching the URL, subject to how much Google wants it and how much your server can take",
+            "robots.txt blocks; 5xx errors; slow responses; millions of faceted URLs eating the budget",
+            "Settings → Crawl stats; server logs"
+          ],
+          [
+            "Render",
+            "Running the JavaScript to see the page a browser would see",
+            "Content injected client-side that never appears; blocked JS or CSS files",
+            "URL Inspection → Test live URL → rendered HTML"
+          ],
+          [
+            "Index",
+            "Deciding whether to store the page, and which URL of a duplicate set to keep",
+            "Thin or duplicate content; a stray noindex; a canonical pointing elsewhere",
+            "Pages report; Google-selected canonical"
+          ],
+          [
+            "Retrieve and rank",
+            "Pulling candidate pages for one specific query and ordering them",
+            "No topical match; not enough authority; a better answer already exists",
+            "Performance report, filtered by query"
+          ],
+          [
+            "Snippet and click",
+            "Assembling the visible result — your title, description, and everything around you",
+            "A rewritten or truncated title; an AI Overview or pack above you; the wrong intent",
+            "CTR measured against your own average at that position"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Getting found and fetched",
+      "body": [
+        "The first three gates are mechanical. Nothing about content quality matters yet — Google either can reach the page or it can't."
+      ],
+      "subs": [
+        {
+          "h3": "Discovery — the URL has to be reachable",
+          "body": [
+            "A sitemap is a hint, not a guarantee. The strongest discovery signal is an internal link from a page Google already crawls often, which is why a new page linked from your home page gets picked up in hours and the same page linked from nowhere can sit unfound for weeks."
+          ],
+          "bullets": [
+            "Every page you want ranked should be within three clicks of the home page.",
+            "Nothing important should be reachable only through a JavaScript event, a search box or a filter with no crawlable URL.",
+            "Keep the sitemap clean: no 404s, no redirected URLs, no noindexed pages. A sitemap full of junk teaches Google to trust it less."
+          ]
+        },
+        {
+          "h3": "Crawl — Google decides how much of your site is worth fetching",
+          "body": [
+            "Two things set the pace. Capacity: how much your server can take before responses slow down, which Google backs off from automatically. And demand: how much Google actually wants your pages, based on popularity and how stale it thinks its copy is.",
+            "Google's own documentation says most sites under a few thousand URLs never need to think about crawl budget. If you run a 90-page services site with a crawl problem, the problem is server errors or discovery, not budget. Where budget genuinely bites is ecommerce with faceted navigation, calendars and session parameters — millions of URLs, all thin, all being fetched."
+          ]
+        },
+        {
+          "h3": "Render — Googlebot has to see what a user sees",
+          "body": [
+            "Google does render JavaScript, but rendering is queued and expensive, so it can happen days after the initial fetch. Content that only exists after a client-side data fetch may be seen late, partially, or not at all.",
+            "The safe rule: anything that needs to rank should be in the HTML the server returns. Everything else is a bet on the rendering queue."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Indexing is a decision, not a formality",
+      "body": [
+        "This is where most sites quietly lose. Google fetched the page, looked at it, and chose not to keep it. There's no penalty, no message, no manual action — just a status in the Pages report that most people never open.",
+        "The three statuses that matter mean genuinely different things, and treating them the same is how quarters get wasted."
+      ],
+      "bullets": [
+        "**Discovered – currently not indexed.** Google knows about the URL and hasn't fetched it. That's a crawl demand or capacity signal. More internal links, faster server responses, fewer junk URLs.",
+        "**Crawled – currently not indexed.** Google fetched it and passed. That's a quality or duplication verdict on that specific page. Rewriting it can fix it; publishing more pages never will.",
+        "**Duplicate, Google chose a different canonical.** You have near-identical pages. Google folded yours into a sibling. Consolidate them or make them genuinely distinct.",
+        "For the full diagnostic, see [why Google won't index your page](/answers/why-is-my-page-not-indexed-on-google)."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The most expensive habit in Indian SMB SEO",
+        "body": "Commissioning more content while the index rate sits at 40%. You're paying to fill a bucket with a hole in it, and the monthly report will show pages published rather than pages indexed — which is exactly why nobody notices for six months."
+      }
+    },
+    {
+      "h2": "Ranking happens per query, not per page",
+      "body": [
+        "The index isn't a leaderboard. There is no stored number that says your page is 'seventh'. For each individual query, Google assembles a set of candidate pages and orders them, and that ordering is computed for that query, on that device, in that location.",
+        "This is why a page can be third for one phrase and sixtieth for its near-synonym, and why 'we rank seventh' is a meaningless sentence without naming the query, the device and the city.",
+        "What the ordering broadly responds to:"
+      ],
+      "bullets": [
+        "**Relevance to what the query means**, not just which words it contains. Google has been matching meaning rather than strings for years, which is why keyword density stopped being a real thing.",
+        "**Authority signals, links prominent among them.** Links from sites that are themselves trusted, on topics related to yours.",
+        "**Whether the page delivers the format the query wants.** A query that wants a price list and gets an essay loses even when the essay is better written.",
+        "**Freshness, but only where the query needs it.** Google treats 'cricket score' and 'what is a canonical tag' very differently.",
+        "**Location and language.** For anything with local intent, two users in different cities are looking at different results entirely."
+      ]
+    },
+    {
+      "h2": "The snippet, the click, and the part you don't control",
+      "body": [
+        "Ranking well and being clicked are separate achievements. Google rewrites titles when it decides yours doesn't match the query, and it treats your meta description as a suggestion it's free to ignore in favour of text pulled from the page.",
+        "Meanwhile the results page around you keeps changing. An AI Overview, a video carousel, a local pack or a set of shopping results can push you far down the visible screen without your average position moving at all. That combination — flat position, falling clicks — is one of the most common and most confusing patterns in Search Console, and it usually isn't your fault.",
+        "What you can do about it is narrow but real: make the title an honest, specific promise that matches the query, put the answer high enough on the page to be lifted, and check your CTR against your own site's average at the same position band rather than against a chart from someone else's data."
+      ]
+    },
+    {
+      "h2": "Run the funnel on your own site",
+      "body": [
+        "Twenty minutes, no tools beyond Search Console and your CRM. Do it before you buy anything."
+      ],
+      "numbered": [
+        "Count the pages you've published that are meant to rank. Exclude tag archives, filters and pagination.",
+        "Search Console → Pages → the **Indexed** count.",
+        "Performance → last 3 months → Pages tab. Count URLs with at least one impression.",
+        "Same view: count URLs with at least one click.",
+        "In your CRM, count enquiries attributed to organic search over the same window."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Reading your own numbers",
+        "body": "Say you get 240 → 180 → 96 → 41 → 3. Those are made-up figures, but the shape is common and every drop points somewhere specific. 240 to 180 is an indexing problem. 180 to 96 is targeting — you wrote pages nobody searches for. 96 to 41 is snippets and position. 41 to 3 is the offer on the page, which isn't an SEO problem at all. Fix the biggest drop first, and see [what SEO covers](/answers/what-does-seo-include) if you're not sure who owns that fix."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How does SEO work in simple terms?",
+      "a": "Google has to find your page, fetch it, decide it's worth storing, pick it as a candidate when someone searches, and then rank it high enough to be clicked. SEO is the work of getting a URL through all five of those steps. Most sites fail at step three."
+    },
+    {
+      "q": "How long does it take for SEO to start working?",
+      "a": "Indexing changes show up in days to three weeks. Title and on-page changes move within two to six weeks. A new page reaching its natural position usually takes two to four months, and authority-driven gains take six to twelve. Anything faster is either an uncompetitive query or a story."
+    },
+    {
+      "q": "Why is my page not showing on Google even though it's published?",
+      "a": "Almost always indexing. Open Search Console's Pages report and check the status for that URL. 'Discovered – currently not indexed' means Google hasn't fetched it and needs better internal linking or a faster server. 'Crawled – currently not indexed' means Google fetched it and chose not to keep it."
+    },
+    {
+      "q": "Do I need backlinks for SEO to work?",
+      "a": "Not to get indexed, and not to rank in low-competition or local queries. You do need them to break past a plateau at positions five to fifteen against established sites — that ceiling is an authority ceiling, and no amount of on-page work moves it."
+    },
+    {
+      "q": "Does Google use my JavaScript content for ranking?",
+      "a": "It can, but rendering is queued and can lag the initial crawl by days. Anything that needs to rank — headings, body copy, links, structured data — is safer in the HTML your server returns. Test any page you're unsure about with URL Inspection's live test and read the rendered HTML."
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "how-does-seo-work-on-google"
+    },
+    {
+      "type": "glossary",
+      "slug": "indexing"
+    },
+    {
+      "type": "glossary",
+      "slug": "crawl-budget"
+    },
+    {
+      "type": "answers",
+      "slug": "why-is-my-page-not-indexed-on-google"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "compare",
+      "slug": "technical-seo-vs-content-seo"
+    }
+  ]
+}

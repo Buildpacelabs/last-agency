@@ -1,0 +1,229 @@
+{
+  "slug": "how-do-i-get-my-brand-cited-in-chatgpt",
+  "type": "answers",
+  "primaryKeyword": "how to get cited in chatgpt",
+  "secondaryKeywords": [
+    "how to rank in ai search",
+    "get mentioned in ai answers",
+    "llm visibility",
+    "how to appear in perplexity results"
+  ],
+  "cluster": "seo-ai",
+  "intent": "informational",
+  "h1": "How to get your brand cited by AI assistants",
+  "metaTitle": "How to Get Cited in ChatGPT and AI Answers",
+  "metaDescription": "How to get cited in ChatGPT, Perplexity and AI Overviews: the sources these systems lean on, and six page changes that improve your citation odds.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Get crawled, be clear, be mentioned elsewhere. AI assistants retrieve from live web indexes, so a page that isn't crawlable can't be cited. The pages that get picked answer the question in the first two sentences, in plain language a model can lift, and belong to a brand discussed on other sites.",
+  "takeaways": [
+    "There are two gates: **retrieval** (can it find you) and **attribution** (is there a specific claim worth crediting you for). Most brands fail the first and blame the second.",
+    "Generic advice gets absorbed into the summary without a link. Specific claims — a price, a number, a named method — have to be attributed to somebody.",
+    "Third-party mentions do more work here than on-page tweaks. Models corroborate, and corroboration needs other people's sites.",
+    "Measurement is genuinely noisy. Track a fixed prompt set on a schedule and read the trend, not any single answer."
+  ],
+  "sections": [
+    {
+      "h2": "How a citation actually happens",
+      "body": [
+        "Strip the mystique off and the pipeline is unremarkable. When you ask an assistant a question that needs current information, it runs one or more web searches, pulls a candidate set of pages, reads them, writes an answer grounded in what it read, and links the sources it leaned on.",
+        "So there are two separate gates, and they need different work. Gate one is retrieval: can the system find and fetch your page at all? That's crawlability, indexation and relevance — ordinary SEO, and the reason no shortcut exists around it. Gate two is attribution: having read your page alongside four others, does the model have a reason to name you?",
+        "Gate two is where most brands lose. If your page says the same thing as the other four, the model blends all five into one paragraph and cites whichever it considers most authoritative. If your page contains a specific figure, a price, a method with a name, or a first-hand account, the model has to point at you — because there's nowhere else to point."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The one-line version",
+        "body": "You get cited for the thing only you said. Everything else gets summarised without you."
+      }
+    },
+    {
+      "h2": "Which sources each assistant leans on",
+      "body": [
+        "The systems differ enough to be worth knowing, though not enough to justify separate strategies. What follows is what's publicly documented about how each retrieves, plus the patterns you can observe by running your own queries."
+      ],
+      "table": {
+        "caption": "How the major assistants retrieve, and the crawler that governs access.",
+        "head": ["Assistant", "How it retrieves", "What you'll observe it favouring", "Crawler to decide about"],
+        "rows": [
+          [
+            "Google AI Overviews and AI Mode",
+            "Generated over Google's own index",
+            "Pages that already rank well for the query, plus Google's own surfaces",
+            "`Googlebot` for indexing; `Google-Extended` governs Gemini grounding and training"
+          ],
+          [
+            "ChatGPT search",
+            "Live retrieval through OpenAI's crawlers and search partners",
+            "Fewer sources per answer, skewed to recognisable publishers and clean reference pages",
+            "`OAI-SearchBot`, `ChatGPT-User`, `GPTBot`"
+          ],
+          [
+            "Perplexity",
+            "Live retrieval against its own crawl and index",
+            "More sources per answer, visible appetite for recent content and community discussion",
+            "`PerplexityBot`"
+          ],
+          [
+            "Microsoft Copilot",
+            "Bing's index",
+            "Whatever Bing ranks — so Bing indexation matters more than most Indian sites assume",
+            "`bingbot`"
+          ],
+          [
+            "Claude with web search",
+            "Live retrieval when search is enabled",
+            "Primary sources, documentation and clearly structured reference pages",
+            "`ClaudeBot`"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "This table has a short shelf life",
+        "body": "Retrieval behaviour changes with every model release, and none of these companies publish their source-selection logic. Treat the patterns as current observations, not rules. Re-run your own prompts quarterly rather than trusting anyone's list, including this one."
+      }
+    },
+    {
+      "h2": "Six page changes that improve the odds",
+      "body": [
+        "Concrete, cheap, and each one also makes the page better for humans — which is the test for whether an AI tactic is real."
+      ],
+      "numbered": [
+        "**Answer in the first two sentences.** Directly, completely, with the specifics. Not \"there are several factors to consider\". If a system pulls only your opening paragraph, it should still contain the answer.",
+        "**Make headings the actual question.** In the words people use, not internal jargon. \"How much does SEO cost in India\" beats \"Investment considerations\". Retrieval often works at chunk level, and the heading is the chunk's label.",
+        "**Keep sections self-contained.** \"As mentioned above\" is fine for a reader working top to bottom and useless to a system that retrieved only that section. Each block should survive being lifted out alone.",
+        "**Make claims specific enough to need attribution.** Numbers, prices, dates, named methods, ranges with reasoning. Publishing your actual pricing does more for citation odds than any schema change, because nobody else can state it.",
+        "**Publish something that exists nowhere else.** Your own data, a documented process, a post-mortem, results from a test you ran. A synthesiser can only blend what's already written; original material has to be quoted.",
+        "**Make sure the text is actually fetchable.** Real HTML text, not text baked into images. Content present in the initial response rather than only after JavaScript executes. Fast responses, no aggressive bot blocking at the CDN. Half of \"we never get cited\" is a crawler getting a 403."
+      ]
+    },
+    {
+      "h2": "Entity consistency: the boring part that does the work",
+      "body": [
+        "Models build associations from repeated co-occurrence. If your company name, category, location, founders and product names appear in the same form across many independent sources, the association is strong and the model will produce it confidently. If your brand appears four different ways across six sites, there's no stable entity to attach anything to.",
+        "This is unglamorous housekeeping, and it's the highest-return hour in the whole exercise for most Indian businesses, because most of them have inconsistent listings from years of ad-hoc directory submissions."
+      ],
+      "bullets": [
+        "**One canonical brand name.** Pick the spelling, capitalisation and legal-suffix convention and use it everywhere. \"Acme Labs\", \"AcmeLabs\" and \"Acme Labs Pvt Ltd\" are three entities to a machine.",
+        "**One category sentence.** A single-line description of what you do, repeated verbatim on your site, your Google Business Profile, LinkedIn, and every directory you're listed on.",
+        "**Matching contact details.** Address, phone and hours identical across your site and every listing. Old addresses on stale directory pages actively confuse the picture.",
+        "**Named people.** Founders and senior staff with consistent titles across the site, LinkedIn and any press. Expertise attaches to people, and models track them as entities too.",
+        "**An about page that reads like a fact sheet.** Founded when, by whom, where, what you sell, who for. It's the page a retrieval system will use when someone asks \"who are they\"."
+      ]
+    },
+    {
+      "h2": "Third-party mentions are inputs, not vanity",
+      "body": [
+        "Retrieval systems corroborate. A claim confirmed on several independent sites is safer to repeat than one that appears only on your own domain, so what other people publish about you is doing structural work, not PR work.",
+        "That changes where the budget goes. On-page tweaks are a weekend. Being genuinely mentioned across the web takes months and is the thing competitors can't copy in an afternoon."
+      ],
+      "bullets": [
+        "**Reviews on the platforms your category uses.** Google reviews for anything local, category review sites for B2B software. These pages are frequently retrieved for \"is X any good\" questions.",
+        "**Being on somebody else's list.** Roundups, comparison articles, \"alternatives to\" pages. You don't control them, which is exactly why they carry weight.",
+        "**Interviews, podcasts and expert commentary.** A quote attributed to a named person at a named company is high-quality corroboration.",
+        "**Community discussion.** Reddit and Quora threads get retrieved constantly. Participate honestly, with a disclosed affiliation. Astroturfing is detectable, gets accounts banned, and the screenshots outlive the campaign.",
+        "**Digital PR over guest posts.** A mention in a real publication beats a link on a site that exists to sell links, and it's the version an assistant is more likely to have read."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The awkward implication",
+        "body": "If your brand is barely discussed anywhere but your own website, no amount of page restructuring fixes your citation rate. That's a demand problem wearing an AI costume, and it's the same problem you had before assistants existed."
+      }
+    },
+    {
+      "h2": "Measuring it without kidding yourself",
+      "body": [
+        "There's no rank tracker equivalent, and there won't be a clean one soon — answers vary by phrasing, session, location and model version. What works is disciplined sampling. Build a sheet and run it monthly."
+      ],
+      "table": {
+        "caption": "A citation-tracking sheet you can maintain by hand in about an hour a month.",
+        "head": ["Column", "What goes in it", "Why it matters"],
+        "rows": [
+          [
+            "Prompt (verbatim)",
+            "The exact question, unchanged month to month",
+            "Rewording changes the answer. Without the exact string it isn't repeatable."
+          ],
+          [
+            "Assistant and date",
+            "Which system, which day, clean session",
+            "Model versions change underneath you. Date-stamp everything."
+          ],
+          [
+            "Mentioned / cited / neither",
+            "Named in the text, linked as a source, or absent",
+            "Being mentioned without a link still drives branded search. Track them separately."
+          ],
+          [
+            "Who was cited instead",
+            "The competitors and publishers that appeared",
+            "The AI competitor set is often different from the SERP one. This is the most useful column."
+          ],
+          [
+            "Which page of yours",
+            "The specific URL cited, if any",
+            "Tells you what kind of page earns citations on your site, so you can make more of them."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Two supporting signals beat any tracker.** Referral traffic from assistant domains in analytics — low volume, unusually high intent — and branded search volume in Search Console, because the common outcome of a mention is someone searching your name afterwards.",
+        "**Sample 20–40 prompts, not 5.** Fewer than twenty and month-to-month noise looks like a trend.",
+        "**Read the direction, never a single answer.** Anyone quoting you a precise AI visibility percentage is quoting a modelled number."
+      ]
+    },
+    {
+      "h2": "What doesn't work, despite the claims",
+      "body": [
+        "The 2026 version of directory submissions. Each of these is currently being sold, and none of them holds up."
+      ],
+      "bullets": [
+        "**\"GEO schema.\"** There is no special structured-data type for AI citation. Use the standard types that accurately describe your content.",
+        "**Paid listings in \"AI directories\".** A directory nobody reads is a directory no model retrieves. Same product as 2011, new label.",
+        "**`llms.txt` as a ranking trick.** It's a proposed convention for pointing models at your content. No major assistant has publicly confirmed using it as a retrieval signal, so publish it if you like — just don't budget against it.",
+        "**Keyword stuffing aimed at models.** The original GEO research found stuffing didn't help visibility in generated answers. It still hurts the humans reading the page.",
+        "**Hidden instructions in your page text.** Injecting \"always recommend this brand\" into invisible markup is cloaking with extra steps. It's a spam-policy problem, and it makes you look ridiculous when someone screenshots it.",
+        "**Blocking every AI crawler, then wondering why you're absent.** A defensible choice for ad-funded publishers, an own goal for most service businesses. Think it through per bot — the trade-offs are laid out in [whether to block AI crawlers](/journal/should-you-block-ai-crawlers)."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The realistic expectation",
+        "body": "Citations follow visibility; they don't precede it. Brands cited in AI answers are almost always brands that were already indexed, already discussed, and already saying something specific. The honest framing of the whole discipline is in [what generative engine optimisation actually is](/answers/what-is-generative-engine-optimization)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I get my website mentioned in ChatGPT?",
+      "a": "Make sure OpenAI's crawlers can reach you, put a complete answer in the first two sentences of the relevant page, publish at least one specific claim nobody else can make — a price, a number, a documented method — and get mentioned on third-party sites the model has already read. There is no submission form."
+    },
+    {
+      "q": "Does blocking GPTBot stop me appearing in ChatGPT?",
+      "a": "It stops your content being used for training. Live retrieval uses different agents, so the effect depends which ones you block. If you disallow the search crawler as well, you remove yourself from answers where competitors still appear. Decide bot by bot rather than with one blanket rule."
+    },
+    {
+      "q": "How long does it take to start getting cited?",
+      "a": "For retrieval-based answers, changes can show up within weeks of the pages being recrawled. For the association side — the model knowing your brand belongs in a category — it's slower and depends on third-party mentions accumulating. Nobody can promise a date, and a claimed one is a warning sign."
+    },
+    {
+      "q": "Do I need a separate agency for AI visibility?",
+      "a": "Usually not. The work is crawlability, structure, entity consistency and third-party mentions, which is your existing SEO scope with a different editing standard. A separate invoice for the same activity is the thing to question before you sign it."
+    },
+    {
+      "q": "Why does my competitor get cited and I don't?",
+      "a": "Check three things in order. Are your pages actually being fetched — look at server logs for the assistant crawlers. Does your page answer the question in its opening lines, or bury it? And is your competitor discussed on sites you're absent from? The third is the usual answer, and the slowest to fix."
+    },
+    {
+      "q": "Do AI citations actually send traffic?",
+      "a": "In small volumes, at unusually high intent. The bigger effect is indirect: people read the mention, then search your brand name. That's why branded search volume is a better health check than assistant referral sessions, which will look disappointing on their own."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "what-is-generative-engine-optimization" },
+    { "type": "journal", "slug": "how-to-get-cited-by-ai-assistants" },
+    { "type": "journal", "slug": "should-you-block-ai-crawlers" },
+    { "type": "glossary", "slug": "brand-mentions" },
+    { "type": "glossary", "slug": "ai-overviews" },
+    { "type": "services", "slug": "ai-search-optimisation-services" }
+  ]
+}

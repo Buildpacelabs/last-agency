@@ -1,0 +1,169 @@
+{
+  "slug": "404-error",
+  "type": "glossary",
+  "primaryKeyword": "404 error",
+  "secondaryKeywords": [
+    "404 not found seo",
+    "soft 404",
+    "410 vs 404",
+    "do 404 errors hurt seo",
+    "custom 404 page"
+  ],
+  "cluster": "technical-seo",
+  "intent": "informational",
+  "h1": "404 error",
+  "metaTitle": "404 Error: What It Means and How to Handle It",
+  "metaDescription": "A 404 error means the URL doesn't exist, and it isn't a penalty. Here's how to decide which 404s to redirect, which to restore, and which to simply leave.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "404 error",
+  "definition": "A 404 error is the HTTP status code a server returns when the requested URL does not exist on that server.",
+  "answer": "A 404 error is the HTTP status a server returns when a URL doesn't exist. It is not a penalty and it doesn't drag down the rest of your site — Google expects dead URLs on any site with history. The only 404s worth acting on are the ones with backlinks or recent organic traffic.",
+  "takeaways": [
+    "404s are normal. A site with 3,000 clean 404s can rank perfectly well; the count on its own means nothing.",
+    "**Triage rule:** redirect a 404 only if it has backlinks or had organic traffic. Otherwise leave it.",
+    "A **soft 404** — a not-found page returning 200 — is the version that actually causes problems.",
+    "410 is marginally faster than 404 at getting a URL dropped. Marginally. It isn't worth a project."
+  ],
+  "sections": [
+    {
+      "h2": "A 404 is not a penalty",
+      "body": [
+        "This misconception is worth killing first, because it drives a lot of pointless work. Google has been explicit for years that 404s are normal and don't harm the ranking of your other pages. Products get discontinued. Campaigns end. Somebody mistypes a URL. A site live for six years reporting zero 404s is either brand new or lying about its status codes.",
+        "What a large count sometimes indicates is a structural fault — a migration that dropped a URL pattern, an export that broke every product link. That's worth investigating. The number is a symptom you check, not a score you optimise.",
+        "An audit tool flagging \"3,000 broken URLs\" in red is selling urgency. Open the list, sort by backlinks. Usually eleven of them matter."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The one that does hurt",
+        "body": "Internal links pointing at 404s are a real problem — not the status code, but the wasted crawl and the users walking into walls. Fix those. External sites linking to your dead pages are a different question, answered below."
+      }
+    },
+    {
+      "h2": "404 vs soft 404 vs 410",
+      "body": [
+        "Three ways to say a page is gone, and only two of them are honest."
+      ],
+      "table": {
+        "caption": "The three not-found states and what Google does with each.",
+        "head": ["State", "What the server returns", "What Google does"],
+        "rows": [
+          [
+            "**404 Not Found**",
+            "404 status, with or without a helpful page",
+            "Drops the URL from the index over time, re-checks occasionally in case it returns."
+          ],
+          [
+            "**410 Gone**",
+            "410 status — permanently removed, deliberately",
+            "Same outcome, marginally faster, and Google re-checks less often."
+          ],
+          [
+            "**Soft 404**",
+            "200 OK on a page that says the content is missing",
+            "Flags it as a soft 404, refuses to index it, and keeps crawling it because it looks alive."
+          ]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "Why soft 404s are the genuine problem",
+          "body": [
+            "A soft 404 is a lie your server tells. The page returns 200 — \"here is your content\" — and the content is the words \"page not found\". Google can't tell from the status code that the URL is dead, so it keeps fetching it. On a large site that's real crawl capacity spent on nothing.",
+            "Two common causes: single-page apps that route client-side and serve 200 for every path, and CMS setups where a deleted item quietly lands on an empty category listing. Both look fine in a browser and both are wrong at the protocol level. Check with `curl -I` — the browser won't tell you.",
+            "Google also applies the label to redirects landing somewhere irrelevant, which is why mass-redirecting old URLs to the homepage doesn't work. See [301 redirect](/glossary/301-redirect)."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The triage rule",
+      "body": [
+        "Don't redirect 404s as a policy. Redirect the ones carrying something worth keeping. Everything else stays a 404, and that's the correct outcome rather than a compromise."
+      ],
+      "table": {
+        "caption": "What to do with each kind of 404.",
+        "head": ["The dead URL", "Action"],
+        "rows": [
+          [
+            "Has external backlinks",
+            "301 to the closest equivalent. This is why redirect maps exist — you're recovering an asset someone else gave you."
+          ],
+          [
+            "Had organic traffic in the last 12 months",
+            "Restore the page if the content still holds. Redirect if something replaced it."
+          ],
+          [
+            "Discontinued product with a successor",
+            "301 to the successor, or the category if there isn't one."
+          ],
+          [
+            "Discontinued product with nothing similar",
+            "404 or 410. A useful not-found page beats a redirect that doesn't answer the request."
+          ],
+          [
+            "Expired campaign, event or job listing",
+            "404, with a link to the current equivalent."
+          ],
+          [
+            "URL that never existed — typos, scraped junk, `/wp-login.php` on a Next.js site",
+            "Leave it. Nothing to fix."
+          ]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "Finding the ones that matter",
+          "bullets": [
+            "**Search Console, Page Indexing, \"Not found (404)\".** Google's own list of dead URLs it has crawled.",
+            "**Your backlink tool's broken-pages view.** Ahrefs, Semrush and Moz all filter dead URLs by referring domains. Sort descending, stop after the first page.",
+            "**Analytics, last 12 months, filtered to your 404 page title.** What people are still trying to reach.",
+            "**Server logs.** The only source catching URLs nobody links to but bots keep requesting. See [log file analysis](/glossary/log-file-analysis)."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Building a 404 page worth landing on",
+      "body": [
+        "The page must return a 404 status code. That's the non-negotiable part, and the part frameworks get wrong. Everything after it is user experience — a real cost, since a dead end is a lost visitor who had already decided to come to you.",
+        "Say what happened in plain language. Offer the search box. Link your three or four most useful pages, not a sitemap dump. Skip the automated \"related pages\" widget unless it's genuinely accurate; a bad guess is worse than an honest dead end.",
+        "And check the status code after every deploy, in the same breath as checking [robots.txt](/glossary/robots-txt). `curl -I https://yoursite.com/a-url-that-does-not-exist` should return `HTTP/2 404`. If it returns 200, your framework is serving a shell and every mistyped URL on the internet is now an indexable page on your site."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do 404 errors hurt SEO?",
+      "a": "Not directly. Google treats dead URLs as normal and they don't drag down your other pages. What costs you is a 404 that used to earn links or traffic, and internal links pointing at pages that no longer exist. The count itself is not a ranking factor."
+    },
+    {
+      "q": "Should I redirect all my 404s?",
+      "a": "No. Redirect the ones with backlinks or recent organic traffic to their closest equivalent. Redirecting everything else — especially to the homepage — gets treated as a soft 404, so you get the work without the benefit."
+    },
+    {
+      "q": "What's the difference between 404 and 410?",
+      "a": "404 means not found; 410 means deliberately and permanently gone. Google drops 410s slightly faster and re-checks them less often. The practical difference is small enough that it's rarely worth engineering time — use 410 when your platform makes it easy."
+    },
+    {
+      "q": "What is a soft 404 in Search Console?",
+      "a": "A URL that returns a 200 status but whose content reads as missing or empty. Google won't index it and keeps crawling it because the status says it's alive. Fix it by returning a real 404, or by putting real content on the page."
+    },
+    {
+      "q": "How many 404s is too many?",
+      "a": "There's no threshold. A site with 3,000 clean 404s and no internal links pointing at them is fine. What matters is whether the pattern indicates something broke — a whole URL family disappearing at once is worth investigating; a long tail of old campaign URLs isn't."
+    },
+    {
+      "q": "Does a custom 404 page help SEO?",
+      "a": "It helps retention, not rankings. A visitor who finds a search box and three relevant links is a visitor you might keep. Just make sure the page still returns a 404 status — a pretty custom page returning 200 is a soft 404 with better typography."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "301-redirect" },
+    { "type": "glossary", "slug": "broken-links" },
+    { "type": "glossary", "slug": "backlink-profile" },
+    { "type": "glossary", "slug": "log-file-analysis" },
+    { "type": "services", "slug": "site-migration-seo" },
+    { "type": "journal", "slug": "what-an-seo-audit-should-actually-find" }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "slug": "engagement-rate",
+  "type": "glossary",
+  "primaryKeyword": "engagement rate",
+  "secondaryKeywords": [
+    "engagement rate formula",
+    "what is a good engagement rate",
+    "engagement rate by reach",
+    "instagram engagement rate india",
+    "how to calculate engagement rate"
+  ],
+  "cluster": "social",
+  "intent": "informational",
+  "h1": "Engagement rate",
+  "metaTitle": "Engagement Rate: The Formula and the Catch",
+  "metaDescription": "Engagement rate measures interactions against reach or followers. The two formulas, which one your agency should report, and how the number gets inflated.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Engagement rate",
+  "definition": "Engagement rate is the share of an audience that interacted with a post, calculated as interactions divided by either reach or follower count.",
+  "answer": "Engagement rate is interactions divided by an audience number. Which audience number you pick changes the answer entirely: a post with 300 interactions that reached 3,000 people from a 10,000-follower account is 10% by reach and 3% by followers. Both are true. Pick one, write it down, and never switch mid-report.",
+  "takeaways": [
+    "**By reach and by followers are different metrics.** On the same post they can differ by a factor of three or more.",
+    "Reach is the smaller denominator for most accounts, so reach-based engagement always reads better. That's arithmetic, not performance.",
+    "Saves and sends are worth more than likes, both to the platform and to you.",
+    "If engagement rate rose while reach fell, nothing improved. The denominator shrank."
+  ],
+  "sections": [
+    {
+      "h2": "The two formulas, and the gap between them",
+      "body": [
+        "Two calculations are in common use and there's no industry rule about which to publish. That ambiguity is the whole problem.",
+        "**By reach** = interactions ÷ accounts reached × 100. **By followers** = interactions ÷ follower count × 100. A third variant divides by impressions, which always reads lowest because one person generates several.",
+        "Run one post through all three. A 10,000-follower account publishes a reel. It reaches 3,000 accounts, generates 4,200 impressions and 300 interactions. By followers that's 3%. By reach it's 10%. Nothing about the post changed between those two sentences."
+      ],
+      "table": {
+        "caption": "One post, three formulas, three very different headlines.",
+        "head": ["Formula", "Denominator", "Result"],
+        "rows": [
+          ["By followers", "10,000 followers", "3.0%"],
+          ["By impressions", "4,200 impressions", "7.1%"],
+          ["By reach", "3,000 accounts reached", "10.0%"]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The reporting trick to watch for",
+        "body": "Reach-based engagement rate rises when reach falls. If your monthly report shows engagement rate up and reach down, the agency didn't improve anything — fewer people saw the post, so a higher percentage of them engaged. Always read the two numbers together."
+      }
+    },
+    {
+      "h2": "Which interactions to count",
+      "body": [
+        "Platforms count different things, which is why one post shows different engagement in Instagram Insights, in a scheduling tool and in your agency's deck. Fix your own list and apply it everywhere.",
+        "Count likes, comments, saves and shares. Those four require a decision from a human. Track profile visits and link clicks separately as intent signals; folding them in inflates the number and makes it incomparable with anyone else's.",
+        "Weight them the way the platforms do. A save means someone wants to return to this. A send means they put their own credibility behind it in someone else's inbox — Instagram's leadership has said publicly that sends per reach is the signal they'd watch above all others. Likes are the cheapest action and the easiest to buy, which is exactly why they dominate the reports nobody trusts."
+      ]
+    },
+    {
+      "h2": "What a good engagement rate looks like",
+      "body": [
+        "The honest version is less satisfying than a benchmark table. We haven't run a study, so we won't quote one as if we had. What we can describe is a pattern that holds, and why.",
+        "Engagement rate falls as accounts grow. A 4,000-follower account has an audience that chose it deliberately; a 400,000-follower account accumulated one over years, most of whom scroll past. By-follower rates in the mid single digits are achievable under about 10,000 followers, land nearer one to three percent between 10,000 and 100,000, and often sit under one percent past that. Directional shapes, not measurements.",
+        "Category matters more than country. A jewellery brand and a B2B logistics company are not on the same scale and never will be. The only benchmark worth defending is your own: take your last 30 posts, calculate both rates, use the median as your line."
+      ]
+    },
+    {
+      "h2": "How the number gets inflated",
+      "body": [
+        "Engagement rate is the most gameable metric in social media, which is why it's the one most often presented as proof of anything."
+      ],
+      "bullets": [
+        "**Denominator choice.** Reporting by reach without saying so. The single most common one, and usually not malicious — just convenient.",
+        "**Giveaways.** \"Tag three friends\" produces a spike of comments from people who want a free hamper and will never buy. It also leaves you with followers who depress every future post's rate.",
+        "**Engagement pods.** Groups who like and comment on each other's posts on a schedule. Detectable by comments that arrive in a burst within minutes and say nothing about the content.",
+        "**Bought engagement.** Cheap, common, and visible in the mismatch between comment quality and comment volume.",
+        "**Mixing formats.** Stories, reels and static posts behave completely differently. Averaging them produces a number that describes nothing."
+      ]
+    },
+    {
+      "h2": "The standard worth holding your agency to",
+      "body": [
+        "Ask for both rates side by side on every report, with reach printed next to them so nobody can hide a fall. Ask for saves and sends as absolute counts. Ask for formats separated.",
+        "Then ask the question engagement rate never answers on its own: how many enquiries came from this. Engagement is a leading indicator of distribution, not demand. A post can carry 12% and sell nothing; a boring carousel at 1.4% can fill a week of calls. That's why we report social alongside the business number rather than instead of it — see [how we run organic social](/social) and [how to read a marketing report](/journal/how-to-read-an-seo-report).",
+        "Comparing creators rather than your own posts? Same maths, stronger incentive to inflate. [Influencer marketing](/glossary/influencer-marketing-meaning) covers spotting a bought audience."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a good engagement rate on Instagram in India?",
+      "a": "There's no single honest number, and anyone quoting one is quoting a sample you can't see. The reliable pattern: smaller accounts run higher, and category swings it further than geography. Build your own benchmark from the median of your last 30 posts and measure against that."
+    },
+    {
+      "q": "Should engagement rate be calculated by reach or by followers?",
+      "a": "Report both. By reach tells you whether the content worked for the people who saw it. By followers tells you whether your audience is still paying attention. Reporting only by reach is how a shrinking account produces improving-looking numbers."
+    },
+    {
+      "q": "Why did my engagement rate go up when my reach went down?",
+      "a": "Because reach is the denominator. Fewer people saw the post, and the ones who did were your most engaged followers, so a higher share of them interacted. This is a maths artefact, not an improvement — which is exactly why reach belongs on the same line of the report."
+    },
+    {
+      "q": "Do saves count as engagement?",
+      "a": "Yes, and they're among the most valuable interactions you can get. A save means someone intends to return to the post. Sends matter even more, because sharing something puts the sender's own judgement on the line. Both are harder to fake than a like."
+    },
+    {
+      "q": "Does a high engagement rate mean more sales?",
+      "a": "Not reliably. Engagement measures whether content held attention, not whether it created demand. Giveaway posts routinely produce the highest engagement and the worst commercial outcome in the same month. Track enquiries and revenue separately, and treat engagement as a distribution signal."
+    }
+  ],
+  "related": [
+    { "type": "glossary", "slug": "instagram-seo" },
+    { "type": "glossary", "slug": "hashtags" },
+    { "type": "glossary", "slug": "influencer-marketing-meaning" },
+    { "type": "glossary", "slug": "conversion-rate" },
+    { "type": "compare", "slug": "organic-social-vs-paid-social" },
+    { "type": "journal", "slug": "how-to-read-an-seo-report" }
+  ]
+}

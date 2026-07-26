@@ -1,0 +1,159 @@
+{
+  "slug": "is-seo-part-of-digital-marketing",
+  "type": "answers",
+  "primaryKeyword": "is seo part of digital marketing",
+  "secondaryKeywords": [
+    "is seo digital marketing",
+    "does digital marketing include seo",
+    "seo vs digital marketing",
+    "is seo a subset of digital marketing"
+  ],
+  "cluster": "seo-basics",
+  "intent": "informational",
+  "h1": "Is SEO part of digital marketing, or its own thing?",
+  "metaTitle": "Is SEO Part of Digital Marketing? Sort Of",
+  "metaDescription": "Is SEO part of digital marketing? Technically yes, but a third of it lives in your codebase. Here's why that split decides whether your SEO works.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Yes — SEO is a channel inside digital marketing, alongside paid search, social, email and content. But roughly a third of the work lives in your codebase, not your marketing plan. That's why SEO owned entirely by marketing stalls: the fixes it needs sit in a developer's backlog nobody in marketing controls.",
+  "takeaways": [
+    "The textbook classification is right and almost useless. SEO is a marketing channel with an engineering dependency.",
+    "**The failure mode is always the same:** strategy approved, tickets written, tickets never shipped. Twelve months later, the content is fine and the site still can't rank.",
+    "Fix it with a standing engineering allocation, not with better nagging. One ring-fenced developer day per sprint beats any amount of escalation.",
+    "If your SEO job description doesn't mention working with engineers, you're hiring someone who cannot do half the job."
+  ],
+  "sections": [
+    {
+      "h2": "The textbook answer, and where it stops being useful",
+      "body": [
+        "Open any digital marketing syllabus in India and you'll find the same diagram: digital marketing as the parent, with SEO, paid search, social, email, content, affiliate and influencer as children. By that definition the question is settled. SEO is a subset. Every certification, every agency org chart and every job portal category agrees.",
+        "The classification is correct. It is also the reason a lot of SEO budgets get spent badly.",
+        "Because when you file SEO under marketing, you inherit a set of assumptions that come with marketing: it's executed by marketers, it's measured monthly, it's funded from opex, and it can be delivered without asking anyone outside the department. Three of those four are wrong for SEO, and the fourth one is the expensive one."
+      ]
+    },
+    {
+      "h2": "The half that is unambiguously marketing",
+      "body": [
+        "Plenty of SEO looks and behaves exactly like the rest of marketing, and marketers should own all of it."
+      ],
+      "bullets": [
+        "**Demand research** — what your buyers actually type, in what volume, at what stage. This is market research with a keyword tool attached.",
+        "**Intent and messaging** — deciding what a page has to say to convert someone searching that phrase.",
+        "**Content production** — briefs, writing, editing, subject-matter interviews, publishing cadence.",
+        "**Digital PR and links** — pitching stories, building relationships with publications, producing something worth citing.",
+        "**Conversion** — what happens after the click, which is where most organic traffic quietly dies.",
+        "**Reporting** — tying organic sessions to pipeline, and arguing for budget on that basis."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Roughly the split",
+        "body": "On a typical engagement, about two-thirds of the hours land in this marketing half and about a third in the engineering half. The ratio is worse — more engineering — on large e-commerce sites, JavaScript-heavy apps and anything that has been through a replatform."
+      }
+    },
+    {
+      "h2": "The half that lives in the repo",
+      "body": [
+        "Now the part the org chart hides. This work is indistinguishable from front-end and platform engineering, because that's what it is.",
+        "Canonical logic isn't written on a page, it's written into a template. Schema isn't a field in your CMS, it's a component. Pagination and faceted navigation on a category listing generate URLs by the thousand, and whether those get indexed is a routing decision. Interaction to Next Paint, one of the three [Core Web Vitals](/glossary/core-web-vitals), is largely a JavaScript execution problem — you cannot brief your way out of a bloated bundle.",
+        "None of that can be done by a marketer with CMS access. It needs a pull request, a review, a QA pass and a deploy. Which means it needs somebody's sprint capacity, which means it needs to beat a feature ticket in a prioritisation meeting nobody in marketing attends. The [split between technical and content SEO](/compare/technical-seo-vs-content-seo) is really a split between two different budget owners."
+      ]
+    },
+    {
+      "h2": "The dev-backlog failure, which is what actually goes wrong",
+      "body": [
+        "Here's the sequence, and it's remarkably consistent across companies of every size.",
+        "An agency or an in-house hire runs an audit. It surfaces forty issues, of which maybe twelve genuinely matter. Those twelve become tickets. The tickets go into the engineering backlog with no revenue number attached, because nobody can say what fixing a canonical tag is worth in rupees. Product prioritises by roadmap value. The tickets sit.",
+        "Meanwhile the content half of the programme runs on schedule, because it doesn't need anyone's permission. Articles ship every week onto a site that renders client-side, has 4,000 parameter URLs competing with each other, and takes 2.8 seconds to return the first byte. Nine months later the report shows a lot of published pages and very little organic revenue, and everyone concludes SEO doesn't work for this business.",
+        "SEO worked fine. The organisation shipped one half of it. This is the single most common reason a competent agency produces a disappointing result, and it is almost never diagnosed as an org problem — it gets diagnosed as an agency problem, and the agency gets replaced with another one who writes the same twelve tickets."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Check this before you blame the agency",
+        "body": "Pull the technical recommendations from month one and count how many are live. If it's under half at month six, the constraint is your deploy pipeline, not the strategy. Changing agency will reproduce the exact same result at the same price."
+      }
+    },
+    {
+      "h2": "What the misclassification does to budgets, reporting lines and job specs",
+      "body": [
+        "Filing SEO as pure marketing has three downstream consequences, and they compound."
+      ],
+      "table": {
+        "caption": "Where SEO sits in the org, and what tends to happen as a result.",
+        "head": ["Reporting line", "What it gets right", "What it breaks"],
+        "rows": [
+          [
+            "Under performance marketing",
+            "Strong measurement discipline, real conversion focus",
+            "Judged on monthly CAC against a channel with a six-month lag. Loses every quarterly budget review to paid."
+          ],
+          [
+            "Under content or brand",
+            "Publishing cadence is reliable, quality is usually decent",
+            "Zero engineering access. Technical debt accumulates invisibly for years."
+          ],
+          [
+            "Under product or engineering",
+            "Technical fixes actually ship",
+            "Content and link work starve. SEO becomes a site-health function, not a demand channel."
+          ],
+          [
+            "Split with no clear owner",
+            "Nothing",
+            "Everyone assumes someone else booked the sprint time. Nobody did."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Budget:** the SEO line covers strategy and content. There is no line covering the engineering capacity to implement it, so implementation is assumed to be free. It is not free; it's just billed to someone else's headcount, which is why it never gets scheduled.",
+        "**Measurement:** a channel that pays back over six to twelve months, reviewed on the same monthly cycle as a paid campaign that pays back in a week, will always look like the weaker investment on the day of the meeting.",
+        "**Hiring:** scan Indian SEO job listings and you'll see the pattern — long tool lists, content and social duties bolted on, and no mention of working with a development team, reading a deploy log, or writing acceptance criteria. That job description hires someone who can do the marketing half and is structurally unable to do the rest."
+      ]
+    },
+    {
+      "h2": "Three arrangements that actually work",
+      "body": [
+        "You don't need to re-org. You need one of these three, and the cheapest one is usually enough."
+      ],
+      "numbered": [
+        "**Marketing owns SEO, engineering ring-fences capacity.** One developer day per sprint, permanently allocated, no negotiation required per ticket. This is the highest-return structural change most companies can make and it costs a tenth of a headcount. The SEO lead brings a prioritised queue; the developer works down it.",
+        "**Strategy in marketing, technical SEO embedded in the platform team.** Works well above roughly 50 engineers, where there's enough web-platform work to justify a dedicated person. The risk is drift — the two halves stop talking, and you get beautifully fast pages that target nothing.",
+        "**Founder owns it, agency writes tickets directly.** For companies under about 30 people this is genuinely the best version. The agency writes tickets with acceptance criteria straight into your tracker and the founder settles priority in one conversation. No committee, no translation layer. It's how most of our engagements run — see [how we work on SEO](/seo)."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The arrangement that never works",
+        "body": "SEO owned by a content team with no engineering access and no escalation path. It produces the highest volume of published output and the lowest return of any structure we see. Volume is the symptom: it's the only lever that team has."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is SEO a part of digital marketing or a separate field?",
+      "a": "Formally it's a channel within digital marketing, and every syllabus and org chart places it there. Practically it's a hybrid: about two-thirds marketing work and one-third front-end engineering. Treating it as purely one or the other is what causes most failed SEO programmes."
+    },
+    {
+      "q": "What's the difference between SEO and digital marketing?",
+      "a": "Digital marketing is the whole set of paid and organic channels — search, social, email, display, affiliate, content. SEO is one of them: earning visibility in organic search results without paying for placement. Every SEO is a digital marketer; most digital marketers can't do the technical half of SEO."
+    },
+    {
+      "q": "Can you do digital marketing without SEO?",
+      "a": "Yes, and plenty of businesses do — paid social and paid search alone can build a company. It's more expensive per lead over time, because you rent the traffic and stop the moment you stop paying. SEO compounds and paid doesn't, which is the entire argument for running both."
+    },
+    {
+      "q": "Who should SEO report to in a company?",
+      "a": "Marketing, in almost every case — but with a standing, non-negotiable allocation of engineering time attached. Reporting line matters less than deploy access. An SEO lead who reports to the CMO and can get code shipped will outperform one who reports to the CTO and can't get content approved."
+    },
+    {
+      "q": "Do I need a developer to do SEO?",
+      "a": "For a small WordPress or Shopify site, mostly no — plugins and theme settings cover the common cases. For anything custom, headless, JavaScript-rendered, or with a large filtered catalogue, absolutely yes. The bigger and more custom your site, the more of your SEO is a code change rather than a content change."
+    }
+  ],
+  "related": [
+    { "type": "compare", "slug": "technical-seo-vs-content-seo" },
+    { "type": "answers", "slug": "what-is-seo-in-digital-marketing" },
+    { "type": "answers", "slug": "who-is-responsible-for-seo-in-a-company" },
+    { "type": "journal", "slug": "when-to-bring-seo-in-house" },
+    { "type": "services", "slug": "technical-seo-services" },
+    { "type": "glossary", "slug": "core-web-vitals" }
+  ]
+}

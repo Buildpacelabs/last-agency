@@ -1,0 +1,214 @@
+{
+  "slug": "site-migration-seo",
+  "type": "services",
+  "primaryKeyword": "site migration seo services",
+  "secondaryKeywords": [
+    "website migration seo agency india",
+    "seo for website redesign",
+    "replatform seo service",
+    "domain migration seo",
+    "redirect mapping service"
+  ],
+  "cluster": "technical-seo",
+  "intent": "commercial",
+  "h1": "Move the site. Keep the rankings.",
+  "metaTitle": "Site Migration SEO Services — Keep Your Rankings",
+  "metaDescription": "Site migration SEO with a pre-launch freeze checklist, a full redirect map and 60 days of post-launch cover. Bring us in before you pick a platform.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "priceFrom": "From ₹75,000 / project",
+  "answer": "Site migration SEO protects the rankings you already have when you replatform, redesign or change domain. It runs as a fixed-fee project: a signed pre-launch checklist, a complete old-to-new redirect map, launch-day verification, and 60 days of monitoring afterwards. From ₹75,000, ex-GST, scoped before you pick a platform.",
+  "takeaways": [
+    "The cheapest hour of a migration is the one spent **before the platform is chosen**. The most expensive is the one spent three weeks after launch.",
+    "A redirect map is not a spreadsheet of your top 50 pages. It's every indexed URL, every parameter variant, every paginated series, every PDF.",
+    "The most common cause of catastrophic migration loss is not a missing redirect. It's **staging's noindex tag shipping to production**.",
+    "We guarantee parity against your pre-launch baseline — with one honest caveat, in section six."
+  ],
+  "sections": [
+    {
+      "h2": "Call us before the platform decision, not after the launch date",
+      "body": [
+        "Almost every migration we're asked to rescue arrives the same way. The site went live on a Thursday. By the following Wednesday organic traffic is down 60% and everyone is very calm on the call in a way that suggests nobody is calm.",
+        "By then the options are narrow. The old site is gone, the old URL list exists only in Search Console and archive tools, and the redesign changed the content as well as the addresses — so nobody can separate what the redirects broke from what the copywriter removed.",
+        "The version that works starts six to eight weeks before launch, ideally before the platform is signed. Some choices are genuinely hard to undo: a headless build with client-side-only rendering, a CMS that can't hold arbitrary redirect rules, a URL structure the platform imposes on you. Those get decided in a procurement meeting nobody invites an SEO to."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Three questions before you sign the platform contract",
+        "body": "Can it serve arbitrary 301s at scale — tens of thousands of rules, not a plugin with a 500-row cap? Can we control the URL structure, or does it force /products/ and /collections/ on us? And does it render meaningful HTML on the server? A no to any of these adds cost to every month after launch, not just launch week."
+      }
+    },
+    {
+      "h2": "The pre-launch freeze checklist, and who signs it",
+      "body": [
+        "We produce one document. It lists every check that has to pass before the new site is allowed to go live, and it has three signature lines: us, your developer or dev shop, and you.",
+        "The signature isn't ceremony. It's the thing that stops the conversation where a launch date slips towards a Friday evening and somebody decides the redirect QA can happen next week. If the checklist isn't signed, we say so in writing and the decision to launch anyway becomes an explicit one rather than an accidental one."
+      ],
+      "numbered": [
+        "**The old URL list is complete.** Pulled from Search Console, analytics, the live sitemap, a full crawl, and 30 days of server logs. Logs matter — they surface URLs Google still crawls that no internal link points to any more.",
+        "**Every URL is mapped.** One row, one destination, or an explicit decision to let it 404 or 410. Nothing is unassigned.",
+        "**Staging directives are removed.** The `noindex` tag and the blanket `robots.txt` disallow that protected staging must not travel with the build. This is the single most expensive line on the checklist.",
+        "**Templates preserve on-page signals.** Titles, H1s, body copy, structured data, canonicals and internal links carry over or change deliberately, with the change documented.",
+        "**Analytics and Search Console are ready.** New property verified, sitemaps prepared, GA4 and tag manager tested against the new templates, annotations set for launch day.",
+        "**A rollback plan exists.** Who reverts, how long it takes, and at what threshold we call it. Agreeing that at 2am on launch night is not agreeing it."
+      ]
+    },
+    {
+      "h2": "Redirect mapping when the URL list runs to 40,000 rows",
+      "body": [
+        "Mapping the top 200 pages by traffic is straightforward and is not the job. The long tail is where the equity sits, and it's where the tedium lives.",
+        "We map at scale using pattern rules where the structure is consistent, then hand-map the exceptions — and there are always exceptions. A one-to-one match is always preferred over a redirect to a category page, and a redirect to a category page is always preferred over dumping everything on the homepage. Google treats a mass redirect to an irrelevant page as a soft 404, so that shortcut throws away exactly what you're trying to keep."
+      ],
+      "bullets": [
+        "**Parameter URLs.** Faceted filters, sort orders, session IDs, tracking parameters. Some get redirected, some get canonicalised, some should have been blocked years ago.",
+        "**Paginated series.** Page 2 through page 40 of a listing hold internal link equity and often rank. They need destinations, not a bulk redirect to page 1.",
+        "**Media and documents.** PDFs, spec sheets, images with inbound links. Routinely forgotten and routinely the source of a lost backlink.",
+        "**Legacy redirects.** Chaining new rules onto the last migration's rules creates three-hop routes that leak. We flatten every chain to a single hop.",
+        "**Uppercase, trailing slashes and www.** Duplicate variants that were quietly resolving before and stop resolving after.",
+        "**hreflang clusters**, if you run them. Every alternate reference has to be rewritten in the same release or the whole cluster breaks."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "On the Change of Address tool",
+        "body": "It applies to a domain-to-domain move only. It does nothing for an HTTP-to-HTTPS switch, a subdomain-to-subfolder consolidation, or a URL restructure on the same domain. Those rely entirely on your redirects being right, which is why we don't treat the tool as a safety net."
+      }
+    },
+    {
+      "h2": "Launch day and the week after",
+      "body": [
+        "Launch day is verification, not celebration. We crawl the complete old URL list against the live site within the first hours and check the actual status codes, because a redirect rule that works in staging and a redirect rule that works behind a CDN are two different claims.",
+        "Then we watch the server logs, because they tell us what Googlebot is really doing while Search Console is still catching up. Week one is when problems are still cheap: a redirect loop found on day two costs an hour, and the same loop found in week five has been crawled a few thousand times."
+      ],
+      "numbered": [
+        "**Hours 0–6.** Full crawl of the old URL list, status code audit, robots.txt and `noindex` check on production, sitemap submission, canonical spot-checks across every template.",
+        "**Days 1–7.** Daily log review, 404 monitoring, Search Console coverage and crawl stats, rankings tracked daily instead of weekly, redirect chains flattened as they surface.",
+        "**Weeks 2–8.** Weekly review as Google reprocesses the site. Internal link repair, sitemap cleanup, index bloat cleared, and the honest read on what moved and why."
+      ]
+    },
+    {
+      "h2": "What's included, and what isn't",
+      "body": [
+        "This is a defined project with a defined edge. Here it is."
+      ],
+      "table": {
+        "caption": "Site migration SEO scope, and where the boundary sits.",
+        "head": [
+          "Area",
+          "In scope",
+          "Not in scope"
+        ],
+        "rows": [
+          [
+            "Planning",
+            "Platform and URL structure review, risk assessment, the signed pre-launch checklist, timeline input",
+            "Choosing your platform for you. We tell you what each option costs in SEO terms; the commercial call is yours."
+          ],
+          [
+            "Redirect map",
+            "Complete old-to-new mapping from logs, crawl, sitemap and Search Console, pattern rules plus hand-mapped exceptions, chain flattening, delivered as a file your team can deploy",
+            "Writing your server config or CDN rules on a stack we've been given no access to. Give us access and we'll do it."
+          ],
+          [
+            "Templates",
+            "On-page signal parity audit, structured data, canonicals, internal linking, pagination, hreflang, rendering checks",
+            "Building the new site. We review and specify; your developers build."
+          ],
+          [
+            "Launch",
+            "Launch-day crawl and verification, log monitoring, Search Console and analytics setup, rollback trigger definition",
+            "Deploying the release. We don't push your production build and you shouldn't want us to."
+          ],
+          [
+            "60-day cover",
+            "Weekly monitoring, fault triage, redirect corrections, index recovery, a written close-out report",
+            "New content, new pages or link building. Different discipline, different budget line."
+          ],
+          [
+            "Content",
+            "Flagging pages whose removal or rewrite will cost rankings, before launch",
+            "Writing the replacement copy. That belongs in a [content engagement](/services/content-marketing-services)."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Fixed fee, and the 60-day window",
+      "body": [
+        "Migrations are priced as a fixed project, not hourly. Hourly billing on a migration rewards the agency for a launch that goes badly, which is a strange thing to design into a contract."
+      ],
+      "bullets": [
+        "**From ₹75,000** for sites under roughly 500 indexed URLs on a mainstream CMS. Ex-GST.",
+        "**₹1,50,000** for roughly 500 to 5,000 URLs, or any move that changes domain as well as platform.",
+        "**Above 5,000 URLs, or multi-domain and multi-language moves**, we quote after a scoping call rather than publish a number we'd have to renegotiate. Faceted ecommerce and hreflang clusters are genuinely different work.",
+        "**The 60-day cover window** starts at launch and is included in all three. It's 60 rather than 30 because Google typically takes four to eight weeks to reprocess a mid-size site — a 30-day window would close just before the honest read arrives.",
+        "If you're already on an [SEO retainer](/pricing) with us, migration cover is folded into the retainer rather than billed separately."
+      ]
+    },
+    {
+      "h2": "What we guarantee on a migration — and the caveat we say out loud",
+      "body": [
+        "Before launch we freeze a baseline: organic sessions, organic qualified leads, indexed page count, and ranking positions for your tracked keyword set, all averaged over the 90 days before the move.",
+        "We commit to parity against that baseline within 60 days of launch. If we're short, we keep working free until we get there. As always, we never promise a specific ranking position — nobody controls Google's index, and an agency promising position one during a replatform is guessing loudly.",
+        "Now the caveat, because it decides whether the guarantee means anything. **Parity is only measurable if the migration is a migration.** If the same release also removes 200 pages and rewrites the copy on every service page, we're no longer measuring a technical move — we're measuring a content decision wearing a migration's clothes.",
+        "When that happens we say so before launch, document which changes carry ranking risk, and scope the guarantee to the URLs whose content genuinely carries over. It's a narrower promise, and it's the only version that's true. You can check the arithmetic against [your own baseline](/journal/how-to-set-an-seo-baseline) at any point."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The rescue job costs more",
+        "body": "Post-launch recovery is a different engagement with worse odds. The old site is gone, the URL list has to be reconstructed from archives, and the broken state has been crawled for weeks. We take these jobs, and we'd rather you never needed one."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How much traffic will I lose during a site migration?",
+      "a": "A well-executed migration typically shows a short dip of a few weeks while Google reprocesses the site, then returns to baseline. A badly executed one can lose half your organic traffic and take six months to recover. The difference is almost entirely redirect completeness and whether staging directives shipped to production."
+    },
+    {
+      "q": "When should I bring in an SEO for a website redesign?",
+      "a": "Before the platform is chosen, and at minimum six to eight weeks before launch. The decisions that cost the most — URL structure, rendering approach, whether the platform can serve redirects at scale — get made early and are expensive to reverse once the build is underway."
+    },
+    {
+      "q": "How long do I need to keep the redirects in place?",
+      "a": "Permanently, in practice. Google will drop most old URLs from its index within months, but external links to them last for years and every one of those is equity you paid for. Removing redirects at the one-year mark is a common and entirely self-inflicted traffic loss."
+    },
+    {
+      "q": "Do I need site migration SEO if the URLs aren't changing?",
+      "a": "Often yes. A replatform with identical URLs can still change rendering, page speed, internal linking, structured data and title logic — all of which move rankings. The redirect map gets easier. Nothing else does."
+    },
+    {
+      "q": "What does site migration SEO cost in India?",
+      "a": "Ours starts at ₹75,000 ex-GST for sites under about 500 URLs, ₹1,50,000 for mid-size or domain-change moves, and a scoped quote above 5,000 URLs. Hourly pricing on migrations is worth avoiding — it pays the agency more when the launch goes badly."
+    },
+    {
+      "q": "Can you fix a migration that already went wrong?",
+      "a": "Usually a substantial part of it, and it's high-return work because the demand already existed. We reconstruct the old URL list from archives, logs and backlink data, rebuild the redirect map, and recover the internal linking. Recovery gets harder the longer the broken state has been crawled."
+    }
+  ],
+  "related": [
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "journal",
+      "slug": "the-replatform-that-killed-your-traffic"
+    },
+    {
+      "type": "glossary",
+      "slug": "301-redirect"
+    },
+    {
+      "type": "compare",
+      "slug": "301-vs-302-redirect"
+    },
+    {
+      "type": "answers",
+      "slug": "why-did-my-rankings-drop"
+    },
+    {
+      "type": "services",
+      "slug": "penalty-recovery-services"
+    }
+  ]
+}

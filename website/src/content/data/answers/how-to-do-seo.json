@@ -1,0 +1,198 @@
+{
+  "slug": "how-to-do-seo",
+  "type": "answers",
+  "primaryKeyword": "how to do seo",
+  "secondaryKeywords": [
+    "how to seo",
+    "how can i do seo",
+    "how do i do seo",
+    "how do you do seo",
+    "how to create seo"
+  ],
+  "cluster": "seo-howto",
+  "intent": "informational",
+  "h1": "How to do SEO: the order that actually works",
+  "metaTitle": "How to Do SEO: The Correct Order of Work",
+  "metaDescription": "How to do SEO without wasting six months: the correct order of work, from indexability to intent to authority, and what to deliberately skip early.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "answer": "Do SEO in this order: make your pages fetchable and indexable, fix intent on the pages you already have, then fill the obvious content gaps, then build authority. Most people reverse it — publishing content and chasing links before the site can be indexed — and lose the first two quarters to work that couldn't pay.",
+  "takeaways": [
+    "SEO is a sequence, not a checklist. Every step's output is the next step's input, which is why doing them out of order wastes the money rather than just delaying the result.",
+    "**Improving a page that already gets impressions is roughly ten times cheaper than ranking a new one.** Almost all first-quarter movement comes from here.",
+    "Links come last because links amplify. Before there's a page worth linking to, outreach has nothing to pitch.",
+    "Nine things are worth deliberately skipping in the first 90 days. Most 'SEO checklists' put half of them in week one."
+  ],
+  "sections": [
+    {
+      "h2": "Why the order matters more than the checklist",
+      "body": [
+        "There are perhaps forty things you can do to a website to make it rank better, and you'll find all forty on any SEO blog. The list isn't scarce. Sequence is.",
+        "Two mistakes account for most wasted SEO budgets in India, and both are ordering mistakes rather than competence mistakes.",
+        "**Content before indexability.** You commission thirty articles and publish them onto a site where the template renders client-side, or canonicals point at a paginated parent, or 4,000 filter URLs are eating the crawl budget. Publishing doesn't fail loudly — pages go live, the CMS says success, the invoice gets paid. You find out in month five that eleven of the thirty were ever indexed.",
+        "**Links before content.** Three months earning links to a homepage and a blog that answers no commercial question. The authority arrives and has nowhere useful to flow. Links amplify pages; they don't originate demand.",
+        "The order below exists because each stage produces what the next stage needs. Indexation data tells you which existing pages are viable. Intent work tells you which gaps are real rather than theoretical. Gap work tells you what's finally worth pointing a link at."
+      ]
+    },
+    {
+      "h2": "Step one: make your pages fetchable and indexable (weeks 1–3)",
+      "body": [
+        "Nothing else on this page matters until this is true. A page that Google can't fetch, render or index cannot rank, regardless of how good it is. This stage is unglamorous, takes two to three weeks, and is where an audit earns its fee."
+      ],
+      "numbered": [
+        "**Confirm Googlebot sees your content.** Search Console → URL Inspection → Test live URL → View crawled page. Read the rendered HTML. If your body copy isn't there, you have a JavaScript rendering problem and it's now the only item on your list.",
+        "**Count indexed against published.** If you have 400 URLs and 120 indexed, find out why before you publish page 401. `Blocked by robots.txt` and `Excluded by noindex` are configuration mistakes; `Crawled – currently not indexed` is Google saying the page isn't worth its space.",
+        "**Check robots.txt and your sitemap.** The sitemap should contain only canonical, indexable, 200-status URLs. Most are a full URL dump including redirects and noindexed pages, which teaches Google to trust it less.",
+        "**Clean the redirects.** Chains, loops, and 301s that land on 404s.",
+        "**Fix the templates, not the pages.** Duplicate titles, missing H1s, canonical logic and schema all live in the template. Fixing one page teaches you what's wrong; fixing the template fixes a thousand.",
+        "**Measure server response time.** An average above 800ms in crawl stats is a hosting problem capping everything downstream."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What 'done' looks like",
+        "body": "Every page you actually care about is indexed, you know your indexed-to-published ratio, and the exclusion reasons in Search Console are ones you chose rather than ones you discovered. That's the gate. [What an audit should actually find](/journal/what-an-seo-audit-should-actually-find) goes deeper."
+      }
+    },
+    {
+      "h2": "Step two: fix intent on the pages you already have (weeks 2–6)",
+      "body": [
+        "The step almost everyone skips, and the one that produces the first quarter's results. You already have pages Google considers relevant. It just doesn't consider them best.",
+        "Open Search Console, take the last three months, sort queries by impressions. Look for pages sitting between positions 8 and 25 with real impressions and poor click-through. Google is telling you in writing which pages it's prepared to rank higher.",
+        "For each one, do the thing most people don't: **open the results page and look at what's winning.** If the top ten are comparison tables and yours is a 1,200-word essay, you don't have a word-count problem, you have a format mismatch, and adding keywords won't fix it."
+      ],
+      "bullets": [
+        "**Answer the query in the first 100 words.** Then expand. Helps readers, featured snippets and AI answers at once.",
+        "**Rewrite the title in the language of the query**, not the language of your product team.",
+        "**Merge cannibalising pages.** Two mediocre pages on one query beat each other up. One good page beats them both.",
+        "**Add the People Also Ask sub-questions** — a free map of what your answer is missing.",
+        "**Link to it internally** from your strongest pages, with descriptive anchor text."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "Why this is the cheapest work you'll ever do",
+        "body": "An existing page has history, internal links and accumulated trust. A new page starts from zero. Improving what already ranks at position 12 is dramatically cheaper than ranking something new — which is why a serious agency spends month two editing rather than writing."
+      }
+    },
+    {
+      "h2": "Step three: fill the gaps that obviously exist (weeks 4–12)",
+      "body": [
+        "Only now does new content make sense, because now you know what you cover and what converts. Build in this priority order — and notice the blog is third.",
+        "**Commercial pages you simply don't have.** Pricing. One page per service, not one page listing eight. Comparison pages. Location pages if you have locations. Boring to write, and they carry most of the revenue. Most Indian sites have twelve blog posts and no pricing page, which is precisely backwards.",
+        "**The questions your sales team answers every week.** Sit on a call, listen for twenty minutes, write down every objection. Each is a page with proven commercial [search intent](/glossary/search-intent) behind it, and nobody has to guess whether it matters.",
+        "**Competitor gaps you could plausibly win.** Filter hard. A query where three national brands with 5,000 referring domains hold the top three is not a gap, it's a wall.",
+        "Then build in clusters, not scatter. One pillar and four to six supporting pages on a single topic, internally linked, beats twenty unrelated posts every time. Four solid pieces a month for a year beats forty in one quarter and silence after."
+      ]
+    },
+    {
+      "h2": "Step four: authority and links (month 3 onward)",
+      "body": [
+        "Links come last for one reason: they amplify what exists. Point authority at a site with nothing worth reading and you've paid for reach into an empty room.",
+        "When you start, work outward from what you already own — it's free, fast, and it's what agencies skip because it doesn't look like work on a report."
+      ],
+      "numbered": [
+        "**Reclaim.** Unlinked brand mentions, links that used to point at you and now hit a 404, links lost in a past migration. Pure recovery, no pitching.",
+        "**Relationships you already have.** Customers, suppliers, distributors, associations, event pages, partners. A supplier listing you as an authorised dealer beats most guest posts and takes one email.",
+        "**Earned.** Original data from your own operations, commentary journalists can quote, a genuinely useful free tool. Slow, expensive, and the only kind that compounds.",
+        "**Internal links, continuously.** Often the fastest ranking gain available on a site over about 100 pages, and the one nobody bills for. [Internal linking beats link building](/journal/internal-linking-beats-link-building) more often than the industry admits."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "What to refuse",
+        "body": "Packages promising 50 links a month, anything described as \"our network\", rented subfolders on big publisher sites, and expired-domain placements. Google names all of these in its spam policies. The cheap version and the real version look identical on a report and only one survives an update."
+      }
+    },
+    {
+      "h2": "Nine things to deliberately skip in the first 90 days",
+      "body": [
+        "Each of these sits near the top of some SEO checklist. Each is a distraction in your first quarter, and the discipline to leave them alone is worth more than the discipline to do them."
+      ],
+      "bullets": [
+        "**A disavow file.** Not unless you have an actual manual action. It's a loaded gun aimed at your own backlink profile.",
+        "**Chasing 100/100 on PageSpeed.** Get inside the \"good\" Core Web Vitals thresholds and stop. The last twenty points cost more than the first eighty.",
+        "**Programmatic page generation.** Thousands of templated pages before one format has proved it converts is how a site earns a scaled-content problem.",
+        "**Rebuilding the website.** Unless the rendering test failed outright, a replatform in month one delays everything by a quarter and adds risk you don't need yet.",
+        "**Hreflang and multi-language.** Only once one language works. Two broken languages isn't progress.",
+        "**Guest posting at volume.** Costs money, produces links Google discounts, and steals attention from step two where the returns are.",
+        "**Head terms you cannot win.** \"SEO services\" is a vanity row on a report. Track the queries in your plan.",
+        "**Full schema coverage.** Organisation, LocalBusiness and Product are worth doing. Everything else can wait.",
+        "**Changing your domain.** Whatever the reason, do it after you understand your baseline, never before."
+      ]
+    },
+    {
+      "h2": "The 90-day sequence on one page",
+      "body": [
+        "Take the shape rather than the tactics. Tactics change every year. The dependency order hasn't changed in a decade."
+      ],
+      "table": {
+        "caption": "A realistic first-quarter sequence, with the finish line for each stage.",
+        "head": ["Weeks", "Focus", "What 'done' means"],
+        "rows": [
+          [
+            "1–3",
+            "Crawl, render, index. Baseline capture.",
+            "Money pages indexed, exclusion reasons understood, trailing-90-day lead count frozen."
+          ],
+          [
+            "2–6",
+            "Intent and format fixes on existing pages.",
+            "Every page at position 8–25 with real impressions has been rewritten or merged."
+          ],
+          [
+            "4–12",
+            "Fill commercial gaps, then one topic cluster.",
+            "Pricing, service and comparison pages live. Pillar plus four to six supporting pages published and interlinked."
+          ],
+          [
+            "8–12",
+            "Reclamation and relationship links. Internal linking pass.",
+            "Lost and broken links recovered, existing relationships asked, internal links wired to money pages."
+          ],
+          [
+            "Day 90",
+            "Honest read against the baseline.",
+            "Impressions and average position moved on the tracked set. First organic leads attributable in the CRM."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The number you measure",
+        "body": "Freeze your trailing-90-day count of qualified leads from organic search on day one, before anything ships. Everything above is judged against that one figure. It's also the number our own guarantee is written against — see [how we work](/seo)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I do SEO myself?",
+      "a": "For a small local business, genuinely yes. Get your Google Business Profile right, make sure your pages are indexed, write honestly about what you sell, and ask customers for reviews. That covers most of it. Agencies earn their fee in competitive markets where the work is continuous and needs four specialisms running at once."
+    },
+    {
+      "q": "How long does it take to do SEO properly?",
+      "a": "The first stage takes two to three weeks. Meaningful movement on a competitive query set takes three to six months, and compounding returns six to twelve. Anyone quoting faster is either working on a much easier problem than yours or buying links. There's no version where month one produces revenue."
+    },
+    {
+      "q": "What's the first thing I should do for SEO?",
+      "a": "Open Search Console and compare how many pages you've published with how many are indexed, then read the exclusion reasons. It takes ten minutes and it's the only way to know whether your problem is content, configuration or authority. Everything else is guessing until you've done it."
+    },
+    {
+      "q": "Do I need keyword research before I start?",
+      "a": "You need it before step three, not before step one. Fixing indexation doesn't require a keyword list. And your first source of keyword data shouldn't be a tool anyway — it should be the queries Search Console already shows you impressions for, plus the objections your sales team hears every week."
+    },
+    {
+      "q": "How many blog posts do I need to rank?",
+      "a": "Wrong question, and it's the one that sells the most content packages. A cluster of one pillar and four to six genuinely useful supporting pages, properly interlinked, beats fifty scattered posts. Volume without structure produces pages that compete with each other and get crawled less over time."
+    },
+    {
+      "q": "Should I hire an agency or learn SEO myself?",
+      "a": "Learn enough to judge one either way. Below roughly ₹40,000 a month, a good freelancer or a capable in-house marketer usually beats a cheap agency, because a cheap agency at that price is one junior splitting time across nine accounts. Above it, the range of four specialisms starts to justify the fee."
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "how-to-do-seo-for-a-website-step-by-step" },
+    { "type": "glossary", "slug": "search-intent" },
+    { "type": "services", "slug": "seo-audit-services" },
+    { "type": "journal", "slug": "internal-linking-beats-link-building" },
+    { "type": "answers", "slug": "how-to-do-keyword-research" },
+    { "type": "compare", "slug": "technical-seo-vs-content-seo" }
+  ]
+}

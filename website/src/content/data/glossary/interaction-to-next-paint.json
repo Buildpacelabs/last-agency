@@ -1,0 +1,159 @@
+{
+  "slug": "interaction-to-next-paint",
+  "type": "glossary",
+  "primaryKeyword": "interaction to next paint",
+  "secondaryKeywords": [
+    "inp metric",
+    "inp vs fid",
+    "how to improve inp",
+    "inp 200ms",
+    "what causes high inp"
+  ],
+  "cluster": "technical-seo",
+  "intent": "informational",
+  "h1": "Interaction to Next Paint (INP)",
+  "metaTitle": "Interaction to Next Paint (INP), Explained",
+  "metaDescription": "Interaction to Next Paint measures how fast your page answers a tap. Target is under 200ms. Third-party tags and chat widgets do most of the damage.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "term": "Interaction to Next Paint (INP)",
+  "definition": "Interaction to Next Paint is the Core Web Vital that measures how long a page takes to visibly respond after a user taps, clicks or types — reported as roughly the worst interaction across the whole visit.",
+  "answer": "Interaction to Next Paint measures the delay between a user tapping something and the screen visibly changing. Under 200 milliseconds is good, over 500 is poor, measured at the 75th percentile of real visits. It replaced First Input Delay in March 2024 and it is much harder to pass.",
+  "takeaways": [
+    "INP replaced First Input Delay in **March 2024**. FID measured the delay before your handler ran, once. INP measures every interaction, all the way to the paint.",
+    "**Under 200ms** is good. Between 200 and 500 needs work. Over 500 is poor.",
+    "The offenders are nearly always third-party: tag manager containers, live chat, review apps, exit-intent popups, session recorders.",
+    "You cannot debug INP from a lab score. It needs real interactions from real users on real Android phones."
+  ],
+  "sections": [
+    {
+      "h2": "Why INP is stricter than the metric it replaced",
+      "body": [
+        "First Input Delay measured only the wait before your event handler started running, and only for the first interaction of the visit. Almost everything passed it, which is a decent sign a metric isn't telling you much.",
+        "INP measures the whole thing: input delay, the handler running, then the browser painting the result — for every click, tap and keypress in the visit, reporting roughly the worst. A page that opens fast and then locks up when someone taps the size chart now fails, correctly. That's three places for the delay to hide, and which one it is changes the fix entirely."
+      ],
+      "table": {
+        "caption": "The three phases of an INP measurement.",
+        "head": [
+          "Phase",
+          "What it is",
+          "Typical cause"
+        ],
+        "rows": [
+          [
+            "Input delay",
+            "The tap lands while the main thread is busy doing something else.",
+            "A third-party script running a long task at exactly the wrong moment."
+          ],
+          [
+            "Processing time",
+            "Your event handler running.",
+            "Heavy work in the handler — DOM queries, big loops, synchronous storage reads."
+          ],
+          [
+            "Presentation delay",
+            "The browser recalculating layout and painting the new frame.",
+            "Enormous DOM, expensive CSS, layout thrash inside the handler."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The scripts that actually break INP on Indian sites",
+      "body": [
+        "In audits, the pattern repeats with depressing consistency. The site's own JavaScript is fine. Then marketing added things, one tag at a time, each of which seemed free.",
+        "Anything blocking the main thread for more than 50ms is a long task, and long tasks are where INP dies. The usual cast, in rough order of damage:"
+      ],
+      "bullets": [
+        "**A Tag Manager container with a dozen tags** — GA4, Meta pixel, Google Ads, LinkedIn, Hotjar, Clarity, two affiliate pixels and something nobody remembers adding. Each is main-thread work.",
+        "**Live chat widgets** — Tawk.to, Intercom, WhatsApp buttons. They pull in a whole app to render one bubble, early, because someone wanted it \"always available\".",
+        "**Exit-intent and offer popups** — they bind mousemove and scroll listeners on load, then do work on every event.",
+        "**Shopify review apps** — Judge.me, Loox and friends re-render star widgets per product card across a whole collection page.",
+        "**Session recording and heatmaps** — Hotjar and Clarity record continuously. That's the trade you're making."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The Diwali sale stack",
+        "body": "The worst INP scores arrive in October, when a countdown timer, a spin-the-wheel popup, a sticky offer bar and a fresh set of remarketing pixels all ship in the same week. Nobody connects the metric to the sale, so it never gets rolled back."
+      }
+    },
+    {
+      "h2": "Fixing it: load order, then handler work",
+      "body": [
+        "You rarely need to delete third-party scripts. You need to stop them competing with the user for the main thread during the first few seconds, which is when people interact."
+      ],
+      "numbered": [
+        "**Audit the container first.** List every tag firing on All Pages. Half usually belong to a campaign that ended. Delete those before engineering anything.",
+        "**Move the rest off the critical path.** Fire non-essential tags on Window Loaded, scroll depth or a timer instead of Page View. Analytics that starts three seconds late still counts the session.",
+        "**Delay chat and popups until interaction.** Load the widget on scroll, on hover, or when the page goes idle. Nobody opens live chat in the first 400 milliseconds.",
+        "**Break up your own long tasks.** If a handler does real work, yield mid-way — `await scheduler.yield()` where supported, `setTimeout` where it isn't — so the tap can paint first.",
+        "**Paint first, compute second.** Show the accordion opening or the button state changing, then fire the tracking call. Users judge the paint, not the payload."
+      ]
+    },
+    {
+      "h2": "How to measure it honestly",
+      "body": [
+        "Lab tools can't measure INP properly, because nobody is clicking anything. PageSpeed Insights gives you Total Blocking Time as a lab proxy — useful for direction, useless as proof.",
+        "The real measurement is field data: Search Console's Core Web Vitals report and the field section of PageSpeed Insights, both from real Chrome users at the 75th percentile. To name the guilty script, install the `web-vitals` library's attribution build — it reports which element was interacted with and what ran during the delay.",
+        "Throttle honestly while debugging. Set Chrome's CPU throttling to 4x or 6x, because a large share of Indian traffic arrives on mid-range Android hardware, not the MacBook the site was built on. Then check the same URLs for [LCP](/glossary/largest-contentful-paint) and [CLS](/glossary/cumulative-layout-shift) — third-party scripts usually damage all three at once, so one clean-up pays three times."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "One rolling month, always",
+        "body": "Field data runs on a 28-day rolling window. Ship the fix, then wait — judging a Core Web Vitals fix after five days is how good work gets reverted."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a good INP score?",
+      "a": "Under 200 milliseconds is good, 200 to 500 needs work, and over 500 is poor. Google assesses it at the 75th percentile of real visits, so a quarter of your users can be worse than the threshold and you still pass."
+    },
+    {
+      "q": "What's the difference between INP and FID?",
+      "a": "FID measured only the input delay of the first interaction in a visit. INP measures the full round trip — delay, handler, paint — across every interaction, then reports roughly the worst. INP became a Core Web Vital in March 2024 and FID was retired."
+    },
+    {
+      "q": "Why did my INP get worse without a code change?",
+      "a": "Someone added a tag. Tag manager changes ship without a deploy, which is exactly why they escape review. Check the container's version history against the date the metric moved — it's the first place to look and it's right more often than not."
+    },
+    {
+      "q": "Can I fix INP without removing my tracking?",
+      "a": "Usually yes. Most of the damage comes from load timing, not from the tags existing. Delaying non-essential tags to a window-load or scroll trigger keeps the data and returns the main thread to the user during the seconds that get measured."
+    },
+    {
+      "q": "Does INP affect rankings?",
+      "a": "It's one of Google's page experience signals, which act as a tiebreaker rather than a primary factor. The stronger argument is commercial: a checkout that takes 700ms to acknowledge a tap gets tapped again, and double-taps on a payment button are their own kind of problem."
+    },
+    {
+      "q": "Why does PageSpeed Insights show no INP data for my page?",
+      "a": "Field data needs enough real Chrome traffic to report on. Low-traffic URLs fall back to origin-level data or show nothing at all. Use your own real-user monitoring, or judge the template by a higher-traffic page that uses it."
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "core-web-vitals"
+    },
+    {
+      "type": "glossary",
+      "slug": "largest-contentful-paint"
+    },
+    {
+      "type": "glossary",
+      "slug": "cumulative-layout-shift"
+    },
+    {
+      "type": "services",
+      "slug": "core-web-vitals-optimisation"
+    },
+    {
+      "type": "compare",
+      "slug": "wordpress-vs-shopify-seo"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    }
+  ]
+}

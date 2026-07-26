@@ -1,0 +1,170 @@
+{
+  "slug": "programmatic-seo-services",
+  "type": "services",
+  "primaryKeyword": "programmatic seo services",
+  "secondaryKeywords": [
+    "programmatic seo agency",
+    "seo at scale service",
+    "template landing pages seo",
+    "programmatic seo india",
+    "data driven seo pages service"
+  ],
+  "cluster": "content-seo",
+  "intent": "commercial",
+  "h1": "Thousands of pages, only when the data earns them",
+  "metaTitle": "Programmatic SEO Services Without the Spam Risk",
+  "metaDescription": "Programmatic SEO services for sites with real data. We validate demand, ship a 50-page pilot first, and stop before scaled content hurts the whole domain.",
+  "updated": "2026-07-26",
+  "published": "2026-07-26",
+  "priceFrom": "From ₹75,000 / mo",
+  "answer": "Programmatic SEO generates pages from a dataset — one per city, per integration, per model, per route. It works only when each page holds data a human actually wants. We ship a 50-page pilot first, agree kill criteria in writing, and refuse to scale until it indexes and converts. From ₹75,000/mo.",
+  "takeaways": [
+    "Three tests before we generate anything: **unique data per page**, **real query demand**, and **a reason a human would stay**. Fail one and we don't build it.",
+    "A 50-page pilot ships first. Kill criteria are agreed in writing before a line of template code exists.",
+    "Google's scaled content abuse policy is a **sitewide** judgement, not a per-page one. Thin generated pages can drag down the pages that were working.",
+    "The pilot happens inside the retainer. There's no separate build fee — but your engineers' time to expose the data is your cost, and we'll estimate it in hours before we start.",
+    "We guarantee indexation rate and movement against your frozen baseline. We never guarantee a ranking position for a generated page."
+  ],
+  "sections": [
+    {
+      "h2": "The three tests a template has to pass",
+      "body": [
+        "Programmatic SEO has one genuinely great use case and about forty terrible ones. The great one: you hold structured data answering a query pattern people really search, and no human could reasonably write 4,000 pages by hand. Marketplaces, travel, real estate, integration directories, price comparison, job boards, anything with inventory.",
+        "The terrible ones all look identical from the outside — a spreadsheet, a template, and a number in a deck. Before we build anything, a template clears three tests, in this order, because each one is cheaper to fail than the next."
+      ],
+      "numbered": [
+        "**Unique data per page.** Cover the row, not the template. If the only difference between page 412 and page 413 is a swapped city name in three sentences, you haven't built 500 pages — you've built one page 500 times, and the index will treat it that way. The test is blunt: strip the template out and see what's left. Under roughly 40% of the page, it fails.",
+        "**Real query demand, per row.** Not the head term — the actual permutation. We sample 30–50 rows across the full range, including the tail at the bottom. Templates usually pass on the first twenty rows and collapse by row 500, which is the whole problem: the tail is where the page volume lives, and it's where the demand doesn't.",
+        "**A reason a human would stay.** The page has to answer the query on its own, without a form or a signup. If visitors bounce in four seconds because it's a stub wrapped around a CTA, Google works that out from the behaviour of everyone who lands there. This test kills the most proposals and it's the one clients argue about most."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The row-500 problem",
+        "body": "Almost every programmatic plan is validated on its best rows. \"SEO agency in Mumbai\" has demand; \"SEO agency in [tier-4 town]\" has none, and there are 300 of those. Generate the full set anyway and you've published 300 pages with no demand, no traffic and no purpose. Cap the set at the point where demand runs out. That point always arrives earlier than the spreadsheet suggests."
+      }
+    },
+    {
+      "h2": "The 50-page pilot, and the numbers that kill it",
+      "body": [
+        "Nobody gets to bulk-generate on day one, including us. We build the template properly, publish 50 pages spread across the range — best rows, middle rows and deliberately weak rows — and then we wait, because the index is the only opinion that counts.",
+        "The kill criteria go in writing before the pilot ships. That matters: agreeing thresholds after you've seen disappointing data is how projects get rationalised into existence."
+      ],
+      "bullets": [
+        "**Under 60% indexed at day 45** — stop. Google is choosing not to store these pages. More of them will not change its mind.",
+        "**Indexed but zero impressions on more than 70% of pages at day 60** — the demand test was wrong. Cut the tail, keep the head, don't scale.",
+        "**Impressions arriving but almost no clicks across the set** — usually an intent mismatch rather than a title problem. Fix the template before multiplying it by a hundred.",
+        "**Engaged sessions well below your site's own median** — the pages don't hold anyone. This is the test three, failed in public.",
+        "**Any manual action, or a sitewide drop that starts after publication** — revert immediately, noindex the set, and we sit down and work out what we got wrong."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What passing looks like",
+        "body": "Around 80% or better of the pilot indexed by day 45, impressions on the majority of the set by day 60, and engagement on the generated pages that's at least in the neighbourhood of your normal pages. Hit that and scaling is a mechanical decision rather than a hopeful one."
+      }
+    },
+    {
+      "h2": "Where scaled content abuse starts",
+      "body": [
+        "Google's spam policies name this directly. Scaled content abuse is described as creating many pages primarily to manipulate rankings rather than to help users — and Google is explicit that it makes no difference whether automation, humans, or a combination produced them. The method isn't the offence. The absence of value is.",
+        "Two consequences founders routinely miss. First, \"a human edited it\" is not a defence; someone lightly rewriting 3,000 templated stubs is exactly the behaviour described. Second, and more expensive: this is a sitewide judgement. When a domain gets classified this way, the pages quietly earning you leads for four years go down with the generated ones. That asymmetry is the entire reason we pilot instead of launch.",
+        "The line, in practice, sits at intent. Would this page exist if search engines didn't? If the answer needs a paragraph, it wouldn't. Longer argument in [programmatic SEO and the scaled content line](/journal/programmatic-seo-and-the-scaled-content-line)."
+      ],
+      "subs": [
+        {
+          "h3": "Patterns we'll refuse to build",
+          "bullets": [
+            "City pages for locations you don't serve, with an address you don't have.",
+            "\"[Competitor] alternative\" pages generated across a scraped list, with no real comparison in them.",
+            "Spun variations of the same 600 words with synonyms swapped by a model.",
+            "Question pages generated from an autocomplete scrape, each answering in two sentences.",
+            "Anything where the dataset belongs to somebody else and we'd be republishing it."
+          ]
+        },
+        {
+          "h3": "Patterns that usually work",
+          "bullets": [
+            "Inventory or catalogue pages where the data genuinely differs per row and updates over time.",
+            "Integration and compatibility pages, when each one documents real behaviour rather than asserting it.",
+            "Comparison pages built from specifications you actually hold, with the numbers on the page.",
+            "Location pages where a real outlet, real staff and real reviews exist — that's local SEO with a template, not programmatic filler."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "What's included, and what isn't",
+      "body": [
+        "Programmatic work sits inside the SEO retainer from ₹75,000/mo, ex-GST. There's no separate build fee — the pilot and the template work are part of the engagement, which also means we're not incentivised to ship 5,000 pages to justify a project invoice."
+      ],
+      "table": {
+        "caption": "Programmatic SEO scope — what the retainer covers and what it doesn't.",
+        "head": ["Included", "Not included"],
+        "rows": [
+          ["Demand validation across the full row set before anything is generated", "Building a dataset you don't already have"],
+          ["Template design: what varies per page, what each page has to prove", "Scraping or licensing a third party's data on your behalf"],
+          ["The 50-page pilot, published, indexed and measured", "Bulk generation on day one because the deck promised 5,000 pages"],
+          ["Internal linking architecture, sitemap segmentation, index management", "Front-end engineering inside your application"],
+          ["Kill criteria agreed in writing before the pilot ships", "Continuing after the kill criteria trigger"],
+          ["Monthly index-coverage and per-cluster performance reporting", "Any promise of a ranking position for a generated page"],
+          ["Pruning and noindexing the rows that never earned their place", "Pages we judge likely to trip scaled content abuse — we'll decline"]
+        ]
+      }
+    },
+    {
+      "h2": "What it costs, and who does the data work",
+      "body": [
+        "The retainer starts at ₹75,000/mo and covers strategy, template, pilot, measurement and ongoing maintenance. What sits outside it is engineering time on your side: exposing the data, wiring the template into your CMS or app, and keeping the feed fresh. We estimate that in hours before anything starts — usually a week or two of one developer for a first build, less if the data already sits behind an API.",
+        "Maintenance is the line nobody budgets for and everybody needs. A programmatic set isn't a launch, it's a system: rows go stale, inventory disappears, pages 404. Ongoing work means index monitoring, pruning dead rows, refreshing the template as the SERP shifts, and expanding only where demand appears.",
+        "The full rate card sits on the [pricing page](/pricing). If your foundation is the problem — crawl budget burnt on faceted URLs, a slow render path, duplicate canonicals — fix that with [technical SEO](/services/technical-seo-services) first. Publishing 2,000 new URLs onto a site Google already struggles to crawl turns one problem into two."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Crawl budget is finite and you're about to spend it",
+        "body": "Adding thousands of URLs changes how Google allocates crawling across your whole site. If a large share of them are low value, you've diverted crawl away from the pages that make money. This is the failure mode that shows up as \"our main pages started slipping\" three months after a programmatic launch, and it's rarely connected back to the cause."
+      }
+    },
+    {
+      "h2": "What we guarantee on a programmatic build",
+      "body": [
+        "Two things, both measurable, both frozen on day one.",
+        "First, **indexation rate on the pilot**. We commit to a target — normally 80% of the 50 pages indexed by day 45 — and if we miss it, we don't invoice for scaling work we haven't earned the right to do. That's the honest version of a programmatic guarantee, because indexation is the one part of this we can actually influence through template quality, internal linking and sitemap hygiene.",
+        "Second, the company guarantee: your trailing-90-day qualified leads from organic search, frozen at kickoff. Beat it within 90 days or we keep working free until we do. It's the same promise on every [SEO engagement](/seo), and it's why we only take three clients a month — you can't carry that risk at volume, and you certainly can't carry it while publishing thousands of pages you haven't validated.",
+        "What we won't guarantee: a position for any generated page, a page count, or a traffic number. A page count is the easiest promise in this discipline to keep and the most likely to cost you the domain."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is programmatic SEO against Google's guidelines?",
+      "a": "Generating pages isn't. Generating pages with no value in order to rank is — Google's spam policies call it scaled content abuse and state clearly that it applies regardless of whether automation, humans, or both produced the pages. The distinction is whether each page gives a visitor something the others don't."
+    },
+    {
+      "q": "How many programmatic pages should we publish?",
+      "a": "As many rows as have genuine search demand and genuine data, and not one more. That number is almost always smaller than the spreadsheet — a 5,000-row dataset frequently supports 400 to 900 worthwhile pages. We cap the set at the point demand runs out and revisit it quarterly as the tail shifts."
+    },
+    {
+      "q": "How long does a programmatic SEO project take?",
+      "a": "Roughly two to three weeks for validation and template design, then the 50-page pilot publishes and we wait 45 to 60 days for the index to have an opinion. Scaling after that is fast — days, not months. Total time to a meaningful traffic contribution is usually four to six months, same as most SEO."
+    },
+    {
+      "q": "Can we use AI to write the unique part of each page?",
+      "a": "For summarising structured data you already hold into a readable sentence, yes — that's formatting, not fabrication. For generating the substance of the page, no. If the differentiating content is model output rather than your data, you've failed test one and added a fluency layer over an empty page, which is precisely what the policy describes."
+    },
+    {
+      "q": "What happens if the pilot fails?",
+      "a": "We stop, and we say so in writing. The 50 pages get pruned or noindexed, the retainer moves to whichever lever the audit ranked second, and you've spent about six weeks finding out — rather than a year and a domain-wide problem. Roughly speaking, we expect a meaningful share of proposals not to survive the three tests."
+    },
+    {
+      "q": "Do programmatic pages hurt the rest of my site?",
+      "a": "They can. Two mechanisms: crawl budget diverted from pages that earn money, and sitewide quality assessment, which is judged across the domain rather than page by page. Both are why we pilot. If you already have a large thin-page set live, the first job is pruning it, not adding to it."
+    }
+  ],
+  "related": [
+    { "type": "journal", "slug": "programmatic-seo-and-the-scaled-content-line" },
+    { "type": "glossary", "slug": "thin-content" },
+    { "type": "answers", "slug": "does-ai-content-hurt-seo" },
+    { "type": "services", "slug": "technical-seo-services" },
+    { "type": "compare", "slug": "technical-seo-vs-content-seo" },
+    { "type": "cost", "slug": "seo-cost-in-india" }
+  ]
+}
