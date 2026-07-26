@@ -1,7 +1,9 @@
 import type { MetadataRoute } from 'next';
 import { SITE_URL as BASE } from '@/lib/site';
 
-const LASTMOD = new Date('2026-07-23');
+// Bump when page content or canonical URLs change — crawlers use this to
+// decide recrawl priority. Last change: canonical host moved to lastagencyhere.com.
+const LASTMOD = new Date('2026-07-26');
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes: { path: string; priority: number }[] = [
