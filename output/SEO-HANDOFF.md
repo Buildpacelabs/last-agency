@@ -1,56 +1,67 @@
 # SEO Build — Handoff & Manual Steps
 
-Everything below is either **something only you can do** (credentials, DNS, business
-decisions) or **something to run after the next deploy**.
+Status as of 27 July 2026.
+
+## ✅ Shipped and confirmed live
+
+- **500 pages deployed.** 979,054 words. Validator: 0 errors, 0 near-duplicates.
+- **Search Console URL-prefix property `https://lastagencyhere.com/` is VERIFIED**
+  (auto-verified via both HTML file and HTML tag).
+- **Both sitemaps submitted.** `/sitemap.xml` reports **Success — 513 pages discovered**.
+  `/sitemaps/index.xml` submitted and processing.
+- **Indexing requested** on `/answers`.
+- **Manual actions: no issues detected. Security issues: none.**
+- All 500 URLs, `robots.txt`, `llms.txt`, `favicon.ico`, manifest and per-page OG images
+  returning 200 in production.
 
 ---
 
-## 🛑 1. BLOCKER — Add the Google Search Console DNS record
+## 🛑 1. REMAINING BLOCKER — the Domain-property DNS record
 
-Both Search Console properties are already created and waiting on this one record.
+The URL-prefix property is verified and already collecting data, so this is no longer
+urgent — but the Domain property is strictly better and is still pending.
 
-**Where:** Hostinger (your nameservers are `artemis.dns-parking.com` /
-`hermes.dns-parking.com`, so DNS lives at Hostinger, *not* Vercel).
+**Why bother, given URL-prefix already works:** the Domain property covers every
+subdomain and both protocols in one place. URL-prefix covers `https://lastagencyhere.com/`
+and nothing else — so if you ever add `blog.lastagencyhere.com` or `in.lastagencyhere.com`,
+it reports nothing for them and you won't notice.
 
-`hPanel → Domains → lastagencyhere.com → DNS / Nameservers → Manage DNS records`
+### Exact steps (Hostinger)
 
-**Add this record:**
+Your nameservers are `artemis.dns-parking.com` / `hermes.dns-parking.com`, which means DNS
+is managed at **Hostinger**, not Vercel and not your registrar's generic panel.
 
-| Field | Value |
-|---|---|
-| Type | `TXT` |
-| Name / Host | `@` |
-| TTL | `3600` (or leave default) |
-| Value / Content | `google-site-verification=WG2SVhxFsNHSvhSz5mvjOxMVXJshxJnYCuD4MqlBFr0` |
+1. Go to **https://hpanel.hostinger.com** and sign in.
+2. Top menu → **Domains**.
+3. Find **lastagencyhere.com** in the list → click **Manage**.
+4. In the left sidebar of that domain, click **DNS / Nameservers**.
+5. Scroll to the **Manage DNS records** section (below "Nameservers").
+6. In the **Add new record** row, set:
 
-> Do **not** replace your existing SPF TXT record (`v=spf1 include:_spf.mail.hostinger.com ~all`).
-> A domain can hold multiple TXT records — add a second one, don't overwrite the first.
-> Losing SPF will send your outbound email to spam.
+   | Field | Value |
+   |---|---|
+   | **Type** | `TXT` |
+   | **Name** | `@` |
+   | **TXT value** | `google-site-verification=WG2SVhxFsNHSvhSz5mvjOxMVXJshxJnYCuD4MqlBFr0` |
+   | **TTL** | leave the default (14400) |
 
-Once it's live (usually 5–30 minutes), verify with:
+7. Click **Add Record**.
 
-```bash
-dig +short lastagencyhere.com TXT | grep google-site-verification
-```
+> ⚠️ **Do not touch the existing TXT record** that reads
+> `v=spf1 include:_spf.mail.hostinger.com ~all`. That's your email SPF record. A domain
+> can hold many TXT records — you are *adding* a second one, not editing the first.
+> Overwriting SPF sends your outbound email to spam.
 
-Then tell me and I'll finish verification in Search Console.
+8. Wait 5–30 minutes, then confirm from a terminal:
 
-**Why the domain property matters:** it covers every subdomain and both protocols in one
-place. The URL-prefix property only covers `https://lastagencyhere.com/` exactly, which
-means a future `blog.` or `in.` subdomain would silently report nothing.
+   ```bash
+   dig +short lastagencyhere.com TXT | grep google-site-verification
+   ```
 
----
+   You want to see the `google-site-verification=WG2SV...` line **and** the `v=spf1` line.
 
-## 🛑 2. DECISION — Deploy approval
-
-The site builds clean locally but **nothing has been pushed**. Everything so far is local
-commits-in-waiting on `main`.
-
-Deploying means: `git push origin main` → Vercel auto-builds → live.
-
-Nothing in Search Console can complete until the new pages are actually live — the meta
-verification tag, `robots.txt`, the sitemaps and all the new URLs only exist locally right
-now. Say the word and I'll commit and push.
+9. Tell me it's live and I'll finish verification in Search Console. (Or do it yourself:
+   Search Console → *Already started? finish verification* → `lastagencyhere.com` → VERIFY.)
 
 ---
 
@@ -139,28 +150,22 @@ reporting). Config goes in `~/.config/claude-seo/google-api.json`.
 
 ---
 
-## ▶️ 7. AFTER THE NEXT DEPLOY — run these
+## ▶️ 7. RETRY IN A FEW HOURS — IndexNow
 
-Once the site is live with the new content:
+IndexNow rejected the first submission with `SiteVerificationNotCompleted` — its crawler
+hadn't fetched the key file yet, because the file went live minutes earlier. The key is
+serving correctly (`text/plain`, correct contents), so this resolves itself. Retry:
 
 ```bash
-cd website
-
-# 1. Confirm the sitemaps are serving
-curl -s https://lastagencyhere.com/sitemap.xml | grep -c '<loc>'
-curl -s https://lastagencyhere.com/sitemaps/index.xml
-
-# 2. Push everything to Bing / Yandex / Copilot's index
-./scripts/submit-indexnow.sh
+cd website && ./scripts/submit-indexnow.sh
 ```
 
-Then I'll drive Search Console to:
+Expect `"ok": true` with 513 URLs submitted to Bing, Yandex, Naver, Seznam and Yep.
+Google does not participate in IndexNow — Google discovery is already handled by the
+submitted sitemap.
 
-- Finish verification on both properties
-- Submit `/sitemap.xml` **and** all eight section sitemaps (so coverage is reported
-  per content family instead of as one undifferentiated number)
-- Request indexing on the priority URLs
-- Set the international targeting and check for manual actions
+Re-run this script after any future deploy that adds or materially changes pages. Don't
+re-run it on unchanged URLs; that reads as spam to the receiving engines.
 
 ---
 
