@@ -4,7 +4,7 @@
    metadata. Rich components live in src/components.
    ========================================================================= */
 
-export const SITE_URL = 'https://lastagency.com';
+export const SITE_URL = 'https://lastagencyhere.com';
 export const WA_NUMBER = '919315776817';
 export const WA_HERO =
   'https://wa.me/919315776817?text=Hi%20Last%20Agency%20%E2%80%94%20I%20want%20to%20rank.%20Send%20me%20the%20details.';

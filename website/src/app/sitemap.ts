@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
+import { SITE_URL as BASE } from '@/lib/site';
 
-const BASE = 'https://lastagency.com';
 const LASTMOD = new Date('2026-07-23');
 
 export default function sitemap(): MetadataRoute.Sitemap {
