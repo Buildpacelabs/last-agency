@@ -648,7 +648,7 @@ a:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
 }
 
 /* ---- 1.3 Responsive ----------------------------------------------------- */
-@media (max-width: 760px) {
+@media (max-width: 860px) {
   .lies,
   .bonuses,
   .proof,
@@ -789,11 +789,18 @@ a:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
 .art-body { max-width: 72ch; }
 .art-sec { scroll-margin-top: 84px; }
 .art-sec + .art-sec { margin-top: 46px; }
+/* Sentence case, not caps. A section heading in an 1,100-word article is a
+   signpost, not a billboard — and three lines of Arial Black uppercase is
+   exhausting to read past. The brand guide agrees: all-caps is reserved for
+   short anchors and CTAs. The display face stays, so the voice doesn't. */
 .art-sec > h2 {
   font-family: var(--disp);
-  font-size: clamp(23px, 3.2vw, 33px);
-  text-transform: uppercase; letter-spacing: -.015em; line-height: 1.05;
+  font-size: clamp(21px, 2.7vw, 29px);
+  text-transform: none;
+  letter-spacing: -.02em;
+  line-height: 1.14;
   text-wrap: balance;
+  max-width: 24ch;
   padding-bottom: 12px;
   border-bottom: 3px solid var(--red);
   margin-bottom: 18px;
@@ -894,38 +901,147 @@ a:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
 }
 .rl-title {
   display: block; font-family: var(--disp); font-size: 17px;
-  text-transform: uppercase; line-height: 1.1; letter-spacing: -.01em; margin-bottom: 6px;
+  text-transform: none;              /* matches the article H2 treatment — these
+                                        titles are full sentences, not anchors */
+  line-height: 1.18; letter-spacing: -.015em; margin-bottom: 6px;
 }
 .rl-desc { display: block; font-size: 13.5px; line-height: 1.5; opacity: .78; }
 
-/* ---- 8.8 Hub pages ------------------------------------------------------ */
-.hub-group + .hub-group { margin-top: 46px; }
-.hub-group-h {
-  display: flex; align-items: center; gap: 12px;
-  font-family: var(--disp); font-size: clamp(20px, 2.8vw, 28px);
-  text-transform: uppercase; letter-spacing: -.015em;
-  padding-bottom: 10px; border-bottom: 3px solid var(--red);
+/* ---- 8.8 Hub index -------------------------------------------------------
+   A hub with 150 entries is a lookup, not a gallery. Someone arrives from
+   Google with a question already in their head, so the page is built as an
+   index: a filter, jump links, and rows. Cards were giving 150 items equal
+   visual weight, which is the same as giving none of them any.
+   ------------------------------------------------------------------------- */
+
+.hub-head { padding: 36px 0 34px; }
+.hub-h1 {
+  font-family: var(--disp);
+  font-size: clamp(30px, 4.4vw, 50px);
+  text-transform: uppercase;
+  letter-spacing: -.02em;
+  line-height: 1;
+  text-wrap: balance;
+  max-width: 18ch;
+  margin: 10px 0 0;
 }
-.hub-count {
-  font-family: var(--mono); font-size: 12px; font-weight: 700;
-  background: var(--red); color: var(--cream);
-  padding: 3px 9px; letter-spacing: .04em;
+.hub-intro {
+  margin-top: 14px;
+  max-width: 58ch;                 /* was full-bleed; ~120 chars per line is unreadable */
+  font-size: 16.5px;
+  line-height: 1.62;
+  color: var(--cream-dim);
 }
-.hub-list { margin-top: 18px; display: grid; gap: 12px; }
-@media (min-width: 760px) { .hub-list { grid-template-columns: 1fr 1fr; } }
-.hub-list a {
-  display: block; height: 100%;
-  border: 3px solid var(--cream-dim); background: var(--ink-2);
-  padding: 14px 16px;
-  transition: border-color .15s cubic-bezier(.65,0,.35,1), transform .15s cubic-bezier(.65,0,.35,1);
+
+.hub-body { padding: 0 0 64px; }
+
+/* ---- Controls ---- */
+.hb-controls {
+  display: flex; flex-wrap: wrap; align-items: flex-end; gap: 14px 20px;
+  padding-bottom: 18px;
+  border-bottom: 3px solid var(--red);
 }
-.hub-list a:hover { border-color: var(--red); transform: translateX(3px); }
-.hl-title {
-  display: block; font-size: 16px; font-weight: 800;
-  line-height: 1.3; color: var(--cream); margin-bottom: 5px;
+.hb-filter { flex: 1 1 320px; min-width: 0; }
+.hb-label {
+  display: block;
+  font-family: var(--mono); font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .16em;
+  color: var(--red); margin-bottom: 8px;
 }
-.hub-list a:hover .hl-title { color: var(--yellow); }
-.hl-desc { display: block; font-size: 13px; line-height: 1.5; color: var(--cream-dim); opacity: .8; }
+.hb-input {
+  width: 100%;
+  background: var(--ink-2);
+  border: 3px solid var(--cream-dim);
+  color: var(--cream);
+  font-family: var(--sans); font-size: 16px;
+  padding: 12px 14px;
+  border-radius: 0;
+  -webkit-appearance: none;
+  transition: border-color .12s cubic-bezier(.65,0,.35,1);
+}
+.hb-input::placeholder { color: var(--cream-dim); opacity: .5; }
+.hb-input:focus-visible { border-color: var(--yellow); outline: 3px solid var(--yellow); outline-offset: 2px; }
+.hb-count {
+  font-family: var(--mono); font-size: 12px; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--cream-dim); opacity: .75;
+  padding-bottom: 12px; white-space: nowrap;
+}
+
+/* ---- Jump chips ---- */
+.hb-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.hb-chips a {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--mono); font-size: 11.5px;
+  text-transform: uppercase; letter-spacing: .08em;
+  color: var(--cream-dim);
+  border: 2px solid #3a2f24;
+  padding: 6px 10px;
+  transition: border-color .12s cubic-bezier(.65,0,.35,1), color .12s cubic-bezier(.65,0,.35,1);
+}
+.hb-chips a:hover, .hb-chips a:focus-visible { color: var(--yellow); border-color: var(--red); }
+.hb-chips a span { color: var(--red); font-weight: 700; }
+
+/* ---- Groups ---- */
+.hb-group { margin-top: 44px; scroll-margin-top: 84px; }
+.hb-group-h {
+  display: flex; align-items: baseline; gap: 10px;
+  font-family: var(--mono);          /* quieter than the display face — these are
+                                        signposts, not headlines competing with H1 */
+  font-size: 12px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .18em;
+  color: var(--red);
+  padding-bottom: 10px;
+  border-bottom: 1px solid #3a2f24;
+}
+.hb-group-n { color: var(--cream-dim); opacity: .6; letter-spacing: .06em; }
+
+/* ---- Rows ---- */
+.hb-list { margin-top: 4px; display: grid; }
+@media (min-width: 860px) { .hb-list { grid-template-columns: 1fr 1fr; column-gap: 40px; } }
+
+.hb-list a {
+  display: flex; align-items: baseline; gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(247,239,224,.10);
+  color: var(--cream);
+  transition: color .12s cubic-bezier(.65,0,.35,1);
+}
+.hb-list a:hover, .hb-list a:focus-visible { color: var(--yellow); }
+.hb-title { font-size: 16px; line-height: 1.45; flex: 1; text-wrap: pretty; }
+.hb-go {
+  font-family: var(--disp); color: var(--red);
+  opacity: 0; transform: translateX(-4px);
+  transition: opacity .12s cubic-bezier(.65,0,.35,1), transform .12s cubic-bezier(.65,0,.35,1);
+}
+.hb-list a:hover .hb-go, .hb-list a:focus-visible .hb-go { opacity: 1; transform: translateX(0); }
+
+/* Journal keeps descriptions — an essay title doesn't say what it argues.
+   Rows here vary in height, so the divider moves to the <li> and the <a>
+   fills it. Otherwise a one-line title next to a two-line one leaves the
+   rules misaligned across the two columns. */
+.hb-list.rich { grid-template-columns: 1fr; }
+@media (min-width: 860px) { .hb-list.rich { grid-template-columns: 1fr 1fr; column-gap: 40px; } }
+.hb-list.rich li {
+  display: flex;
+  border-bottom: 1px solid rgba(247,239,224,.10);
+}
+.hb-list.rich a {
+  flex-wrap: wrap; align-content: flex-start;
+  width: 100%; padding: 16px 0 18px;
+  border-bottom: 0;
+}
+.hb-list.rich .hb-title { flex: 1 1 100%; font-weight: 700; }
+.hb-desc {
+  flex: 1 1 100%;
+  margin-top: 6px;
+  font-size: 13.5px; line-height: 1.55;
+  color: var(--cream-dim); opacity: .72;
+}
+
+.hb-empty {
+  margin-top: 34px; font-size: 16px; color: var(--cream-dim);
+}
+.hb-empty a { color: var(--yellow); text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---- 8.9 Reduced motion ------------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {

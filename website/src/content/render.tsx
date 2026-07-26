@@ -6,7 +6,8 @@ import { JsonLd } from '@/components/JsonLd';
 import { ArticleShell } from '@/components/ArticleShell';
 import { FinalCta } from '@/components/FinalCta';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
-import { getPage, getPages, getSlugs, groupByCluster, resolveRelated } from './loader';
+import { HubBrowser } from '@/components/HubBrowser';
+import { getPage, getPages, getSlugs, resolveRelated } from './loader';
 import { pageHref, TYPE_LABEL, TYPE_PATH, type ContentPage, type PageType } from './types';
 import {
   articleNode,
@@ -37,17 +38,52 @@ type FamilyConfig = {
   serviceType?: string;
   /** Human label for a cluster id, when we can do better than the raw slug. */
   clusterLabel?: (cluster: string) => string;
+  /** Noun used in the hub filter label: "Find a <noun>". */
+  filterNoun: string;
 };
 
 /** Families whose pages are genuinely articles, not commercial landing pages. */
 const EDITORIAL = new Set<PageType>(['answers', 'journal', 'compare', 'glossary']);
 
+/**
+ * Families whose hub shows a description under each row. Only the journal —
+ * an essay title doesn't tell you what the essay argues. Everywhere else the
+ * title is the label, and repeating the meta description under 150 rows buries
+ * the page in grey text nobody reads.
+ */
+const RICH = new Set<PageType>(['journal']);
+
+/** Terms that must not be sentence-cased — "Seo Ai" reads as a typo. */
+const ACRONYMS = new Set([
+  'seo', 'ai', 'ppc', 'cro', 'sem', 'aeo', 'geo', 'roi', 'ux', 'cms', 'api',
+  'b2b', 'b2c', 'd2c', 'saas', 'gcc', 'ncr', 'mmr', 'uk', 'usa', 'apac', 'ivf',
+  'hr', 'gbp', 'ga4', 'gsc', 'da', 'dr', 'faq', 'pr', 'crm', 'llm',
+]);
+
 function titleCase(slug: string): string {
   return slug
     .split('-')
-    .map((w) => (w.length <= 2 ? w : w[0].toUpperCase() + w.slice(1)))
+    .map((w) => (ACRONYMS.has(w) ? w.toUpperCase() : w[0].toUpperCase() + w.slice(1)))
     .join(' ');
 }
+
+/**
+ * City clusters are grouped by market economics, not geography alone, so the
+ * raw ids ("city-india-mmr") mean something to us and nothing to a visitor.
+ */
+const CITY_GROUPS: Record<string, string> = {
+  'city-india-metro': 'India — metros',
+  'city-india-ncr': 'Delhi NCR',
+  'city-india-mmr': 'Mumbai region',
+  'city-india-manufacturing': 'India — manufacturing & export hubs',
+  'city-india-south': 'South India',
+  'city-india-north-central': 'North & central India',
+  'city-india-emerging': 'Emerging Indian cities',
+  'city-gcc': 'Gulf',
+  'city-apac': 'Asia-Pacific',
+  'city-uk-ireland': 'UK & Ireland',
+  'city-north-america': 'North America',
+};
 
 export const FAMILY: Record<PageType, FamilyConfig> = {
   answers: {
@@ -59,6 +95,7 @@ export const FAMILY: Record<PageType, FamilyConfig> = {
       'Direct answers to the questions founders ask about SEO agencies: how they work, what they cost, what they include, and how to tell a good one from an expensive one.',
     eyebrow: 'Answered straight',
     answerLabel: 'The short answer',
+    filterNoun: 'question',
   },
   glossary: {
     hubH1: 'The SEO glossary, in plain English.',
@@ -70,6 +107,7 @@ export const FAMILY: Record<PageType, FamilyConfig> = {
     eyebrow: 'SEO glossary',
     answerLabel: 'Definition',
     clusterLabel: (c) => titleCase(c),
+    filterNoun: 'term',
   },
   journal: {
     hubH1: 'The journal.',
@@ -80,6 +118,7 @@ export const FAMILY: Record<PageType, FamilyConfig> = {
       'Opinionated long-form on SEO, agency economics and the Indian search market. What retainers really buy, why ranking guarantees are a lie, and what AI search actually breaks.',
     eyebrow: 'Journal',
     answerLabel: 'The argument, in short',
+    filterNoun: 'piece',
   },
   compare: {
     hubH1: 'X vs Y, with an actual recommendation.',
@@ -90,6 +129,7 @@ export const FAMILY: Record<PageType, FamilyConfig> = {
       'Head-to-head marketing comparisons that end in a real recommendation: SEO vs PPC, agency vs in-house, agency vs freelancer, and more — with budgets in INR.',
     eyebrow: 'Head to head',
     answerLabel: 'The verdict',
+    filterNoun: 'comparison',
   },
   services: {
     hubH1: 'What we actually do.',
@@ -100,6 +140,7 @@ export const FAMILY: Record<PageType, FamilyConfig> = {
       'Every SEO and growth service Last Agency runs: what is included, what it costs in INR, who it suits, and exactly what the beat-your-baseline guarantee covers.',
     eyebrow: 'Service',
     answerLabel: 'What this is',
+    filterNoun: 'service',
     serviceType: 'Search engine optimization',
   },
   cost: {
@@ -111,6 +152,7 @@ export const FAMILY: Record<PageType, FamilyConfig> = {
       'What SEO actually costs in India: agency retainers, freelancer rates, per-service pricing and what moves the number. Real INR bands, published, no call required.',
     eyebrow: 'Pricing',
     answerLabel: 'The number',
+    filterNoun: 'price',
   },
   'seo-agency': {
     hubH1: 'SEO, city by city.',
@@ -121,6 +163,8 @@ export const FAMILY: Record<PageType, FamilyConfig> = {
       'SEO agency coverage city by city: the industries that dominate each market, the queries that convert there, and a realistic monthly budget in local terms.',
     eyebrow: 'By city',
     answerLabel: 'The short answer',
+    filterNoun: 'city',
+    clusterLabel: (c) => CITY_GROUPS[c] ?? titleCase(c),
     serviceType: 'Search engine optimization',
   },
   'seo-for': {
@@ -132,6 +176,7 @@ export const FAMILY: Record<PageType, FamilyConfig> = {
       'Industry-specific SEO: what actually ranks for SaaS, ecommerce, healthcare, real estate, exporters and more — and where the generic playbook fails each one.',
     eyebrow: 'By industry',
     answerLabel: 'The short answer',
+    filterNoun: 'industry',
     serviceType: 'Search engine optimization',
   },
 };
@@ -228,7 +273,6 @@ export function hubMetadata(type: PageType): Metadata {
 export function HubPage({ type }: { type: PageType }): JSX.Element {
   const cfg = FAMILY[type];
   const pages = getPages(type);
-  const groups = groupByCluster(type);
   const crumbs = [
     { name: 'Home', path: '/' },
     { name: TYPE_LABEL[type], path: TYPE_PATH[type] },
@@ -255,41 +299,34 @@ export function HubPage({ type }: { type: PageType }): JSX.Element {
         ]}
       />
 
-      <header className="band-ink art-head">
+      <header className="band-ink hub-head">
         <div className="wrap">
           <Breadcrumbs items={crumbs} />
-          <h1 className="art-h1">{cfg.hubH1}</h1>
-          <p className="sub">{cfg.hubIntro}</p>
-          <p className="art-meta">
-            {pages.length} page{pages.length === 1 ? '' : 's'} · updated continuously
-          </p>
+          <h1 className="hub-h1">{cfg.hubH1}</h1>
+          <p className="hub-intro">{cfg.hubIntro}</p>
         </div>
       </header>
 
-      <div className="band-ink pad">
+      <div className="band-ink hub-body">
         <div className="wrap">
-          {groups.map((g) => (
-            <section className="hub-group" key={g.cluster} aria-labelledby={`c-${g.cluster}`}>
-              <h2 className="hub-group-h" id={`c-${g.cluster}`}>
-                {cfg.clusterLabel ? cfg.clusterLabel(g.cluster) : titleCase(g.cluster)}
-                <span className="hub-count">{g.pages.length}</span>
-              </h2>
-              <ul className="hub-list">
-                {g.pages.map((p) => (
-                  <li key={p.slug}>
-                    <Link href={pageHref(p.type, p.slug)}>
-                      <span className="hl-title">{p.h1}</span>
-                      <span className="hl-desc">{p.metaDescription}</span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ))}
-
-          {groups.length === 0 ? (
-            <p className="sub">Nothing published here yet. Check back shortly.</p>
-          ) : null}
+          {pages.length ? (
+            <HubBrowser
+              items={pages.map((p) => ({
+                slug: p.slug,
+                href: pageHref(p.type, p.slug),
+                title: p.h1,
+                description: p.metaDescription,
+                cluster: p.cluster,
+                clusterLabel: cfg.clusterLabel
+                  ? cfg.clusterLabel(p.cluster)
+                  : titleCase(p.cluster),
+              }))}
+              showDescriptions={RICH.has(type)}
+              noun={cfg.filterNoun}
+            />
+          ) : (
+            <p className="hub-intro">Nothing published here yet. Check back shortly.</p>
+          )}
         </div>
       </div>
 
