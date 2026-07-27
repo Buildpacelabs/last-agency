@@ -6,7 +6,7 @@ import { PlainPage, type PlainSection } from '@/components/PlainPage';
 export const metadata: Metadata = {
   title: { absolute: 'Privacy Policy — Last Agency' },
   description:
-    'What lastagencyhere.com collects, which is almost nothing. No analytics, no advertising pixels, no cookies set by us. Here is exactly what happens to your data.',
+    'What lastagencyhere.com collects, which is almost nothing. Cookieless analytics, no advertising pixels, no cross-site tracking. Here is exactly what happens to your data.',
   alternates: { canonical: '/privacy' },
 };
 
@@ -16,15 +16,17 @@ const SECTIONS: PlainSection[] = [
   {
     h2: 'The short version',
     body: [
-      'This website runs no analytics, no advertising pixels and no third-party trackers, and sets no cookies of its own. We do not know who you are while you read it, and we cannot build a profile of you from it.',
+      'This website sets no cookies, runs no advertising pixels and carries no third-party trackers. It does run privacy-preserving, cookieless analytics so we can see how many people read a page — that measurement uses no persistent identifier and cannot follow you across sites. We do not know who you are while you read this, and we cannot build a profile of you from it.',
       'The only personal data we ever receive is what you deliberately send us — by messaging us on WhatsApp or booking a call. Everything below is the detail behind those two sentences.',
     ],
   },
   {
     h2: 'What this website collects',
     body: [
-      'Nothing, directly. There is no analytics package, no tag manager, no advertising pixel and no session-recording tool installed on this site. No cookie is set by lastagencyhere.com, which is why you have not been asked to consent to one.',
-      'The site is hosted on Vercel. Like every web host, Vercel processes standard server request logs — IP address, timestamp, requested URL, user agent — for the purpose of serving the page and protecting the service from abuse. We do not use those logs for marketing, and we do not combine them with anything else.',
+      'Aggregate page statistics, and nothing that identifies you. We use Vercel Web Analytics and Vercel Speed Insights. Both are cookieless: they record which page was viewed, roughly where in the world the request came from, the device type, the referring site, and how fast the page loaded for you. Vercel derives a visitor identifier by hashing request data and rotates it every 24 hours, so it cannot be used to recognise you tomorrow, or on any other website.',
+      'There is no tag manager, no advertising pixel, no remarketing tag and no session-recording tool on this site. No cookie is set by lastagencyhere.com, which is why you have not been asked to consent to one.',
+      'We use this for two things: knowing which of our articles are actually useful, and knowing when a page has become slow. That is the whole purpose.',
+      'The site is hosted on Vercel. Like every web host, Vercel processes standard server request logs — IP address, timestamp, requested URL, user agent — to serve the page and protect the service from abuse. We do not use those logs for marketing, and we do not combine them with anything else.',
     ],
   },
   {
@@ -43,7 +45,7 @@ const SECTIONS: PlainSection[] = [
   {
     h2: 'Processors we rely on',
     bullets: [
-      '**Vercel** — hosting and content delivery. Processes server request logs.',
+      '**Vercel** — hosting, content delivery, and the cookieless Web Analytics and Speed Insights described above. Also processes server request logs.',
       '**Cal.com** — appointment booking. Processes the name, email and notes you enter when booking.',
       '**WhatsApp (Meta)** — messaging. Processes the conversation and your phone number.',
       '**Google Search Console** — reports aggregated, anonymised search performance for this site. It does not identify individual visitors and we cannot use it to.',
@@ -52,7 +54,7 @@ const SECTIONS: PlainSection[] = [
   {
     h2: 'Your rights',
     body: [
-      "You can ask us what personal data we hold about you, ask us to correct it, or ask us to delete it. Message us on WhatsApp and we will action it. Because we hold so little, this is usually a short conversation.",
+      "You can ask us what personal data we hold about you, ask us to correct it, or ask us to delete it. Message us on WhatsApp and we will action it. Because we hold so little, this is usually a short conversation — and note the analytics above hold nothing tied to you, so there is nothing there to retrieve or erase.",
       'Data you sent through WhatsApp or Cal.com also sits with those providers under their own policies, and requests about their copies have to go to them — we can only act on ours.',
     ],
   },
@@ -65,7 +67,7 @@ const SECTIONS: PlainSection[] = [
   {
     h2: 'Changes to this policy',
     body: [
-      `This policy was last updated on ${UPDATED}. If we add analytics or any other tracking to this site, we will update this page before it goes live and change the date above.`,
+      `This policy was last updated on ${UPDATED}. If we ever add cookies, advertising pixels or tracking that could identify you, we will update this page before it goes live and change the date above.`,
       `Questions about any of this: [message us on WhatsApp](${WA_HERO}) or [book a call](${CAL_LINK}).`,
     ],
   },
@@ -96,7 +98,7 @@ export default function PrivacyPage(): JSX.Element {
       <PlainPage
         eyebrow={`Last updated ${UPDATED}`}
         h1="Privacy policy"
-        lede="This site runs no analytics, sets no cookies of its own and has no advertising pixels. The only personal data we get is what you send us on WhatsApp or when you book a call."
+        lede="This site sets no cookies, runs no advertising pixels and does no cross-site tracking. Our analytics are cookieless and anonymous. The only personal data we get is what you send us on WhatsApp or when you book a call."
         crumbs={[
           { name: 'Home', path: '/' },
           { name: 'Privacy', path: '/privacy' },

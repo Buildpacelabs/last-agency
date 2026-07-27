@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 import { Marquee } from '@/components/Marquee';
 import { Nav } from '@/components/Nav';
@@ -61,6 +63,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }):
           {children}
         </main>
         <Footer />
+        {/* Both are cookieless and collect no personally identifying data, which
+            is what lets /privacy keep saying this site sets no cookies. Analytics
+            gives the traffic denominator; Speed Insights reports real-user Core
+            Web Vitals — including INP, which cannot be derived from lab traces
+            and which Search Console will not show until CrUX has enough samples.
+            Both are inert until enabled in the Vercel project dashboard. */}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
