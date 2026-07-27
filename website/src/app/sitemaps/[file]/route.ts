@@ -1,6 +1,7 @@
 import { SITE_URL as BASE } from '@/lib/site';
 import { getPages } from '@/content/loader';
 import { pageHref, PAGE_TYPES, TYPE_PATH, type PageType } from '@/content/types';
+import { STATIC_ROUTES, STATIC_LASTMOD } from '../../sitemap';
 
 /* =========================================================================
    Per-section sitemaps: /sitemaps/answers.xml, /sitemaps/glossary.xml, …
@@ -41,8 +42,17 @@ function sectionLastmod(type: PageType): string {
   return dates.length ? dates.sort().at(-1)! : '2026-07-26';
 }
 
+/** The commercial pages, as their own section. */
+function coreEntries(): { loc: string; lastmod: string }[] {
+  return STATIC_ROUTES.map((r) => ({ loc: `${BASE}${r.path}`, lastmod: STATIC_LASTMOD }));
+}
+
 export function generateStaticParams(): { file: string }[] {
-  return [{ file: 'index.xml' }, ...PAGE_TYPES.map((t) => ({ file: `${t}.xml` }))];
+  return [
+    { file: 'index.xml' },
+    { file: 'core.xml' },
+    ...PAGE_TYPES.map((t) => ({ file: `${t}.xml` })),
+  ];
 }
 
 export function GET(_req: Request, { params }: { params: { file: string } }): Response {
@@ -53,14 +63,19 @@ export function GET(_req: Request, { params }: { params: { file: string } }): Re
 
   if (params.file === 'index.xml') {
     return new Response(
-      sitemapIndex(
-        PAGE_TYPES.map((t) => ({
+      sitemapIndex([
+        { loc: `${BASE}/sitemaps/core.xml`, lastmod: STATIC_LASTMOD },
+        ...PAGE_TYPES.map((t) => ({
           loc: `${BASE}/sitemaps/${t}.xml`,
           lastmod: sectionLastmod(t),
-        }))
-      ),
+        })),
+      ]),
       { headers }
     );
+  }
+
+  if (params.file === 'core.xml') {
+    return new Response(urlset(coreEntries()), { headers });
   }
 
   const type = params.file.replace(/\.xml$/, '') as PageType;

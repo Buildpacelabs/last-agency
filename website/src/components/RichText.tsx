@@ -39,7 +39,15 @@ function renderToken(tok: string, key: number): JSX.Element | string {
   }
 
   if (tok.startsWith('**')) {
-    return <strong key={key}>{tok.slice(2, -2)}</strong>;
+    // Recurse: authors write **bold with `code` in it** and **[a bold link](/x)**.
+    // Returning the inner text raw printed the literal backticks and brackets to
+    // the page. `RichText` is a hoisted declaration, so the forward reference is
+    // resolved by the time this runs.
+    return (
+      <strong key={key}>
+        <RichText text={tok.slice(2, -2)} />
+      </strong>
+    );
   }
 
   if (tok.startsWith('`')) {

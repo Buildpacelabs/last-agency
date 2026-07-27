@@ -24,8 +24,8 @@ export function articleNode(page: ContentPage): Record<string, unknown> {
     isPartOf: { '@id': `${SITE_URL}/#website` },
     url,
     mainEntityOfPage: url,
-    headline: page.h1.slice(0, 110),
-    name: page.h1,
+    headline: plain(page.h1).slice(0, 110),
+    name: plain(page.h1),
     description: page.metaDescription,
     abstract: plain(page.answer),
     inLanguage: 'en-IN',
@@ -35,7 +35,7 @@ export function articleNode(page: ContentPage): Record<string, unknown> {
     publisher: ORG_REF,
     // Section headings double as a machine-readable outline. Answer engines use
     // these to pull the right fragment rather than the whole page.
-    articleSection: page.sections.map((s) => s.h2),
+    articleSection: page.sections.map((s) => plain(s.h2)),
     keywords: [page.primaryKeyword, ...page.secondaryKeywords].join(', '),
     image: `${SITE_URL}/opengraph-image`,
   };
@@ -49,7 +49,7 @@ export function faqNodeFor(page: ContentPage): Record<string, unknown> | null {
     '@id': `${url}#faq`,
     mainEntity: page.faqs.map((f) => ({
       '@type': 'Question',
-      name: f.q,
+      name: plain(f.q),
       acceptedAnswer: { '@type': 'Answer', text: plain(f.a) },
     })),
   };
@@ -73,7 +73,7 @@ export function definedTermNode(page: ContentPage): Record<string, unknown> | nu
   return {
     '@type': 'DefinedTerm',
     '@id': `${url}#term`,
-    name: page.term ?? page.h1,
+    name: page.term ?? plain(page.h1),
     description: plain(page.definition ?? page.answer),
     url,
     inDefinedTermSet: {
@@ -96,7 +96,12 @@ export function speakableFor(page: ContentPage): Record<string, unknown> {
     url: `${SITE_URL}${pageHref(page.type, page.slug)}`,
     name: page.metaTitle,
     isPartOf: { '@id': `${SITE_URL}/#website` },
-    primaryImageOfPage: `${SITE_URL}/opengraph-image`,
+    primaryImageOfPage: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/opengraph-image`,
+      width: 1200,
+      height: 630,
+    },
     speakable: {
       '@type': 'SpeakableSpecification',
       cssSelector: ['.art-h1', '.art-answer'],
@@ -111,12 +116,22 @@ export function serviceFor(page: ContentPage, serviceType: string): Record<strin
   return {
     '@type': 'Service',
     '@id': `${url}#service`,
-    name: page.h1,
+    // The service's name, not the page's headline. `page.h1` put
+    // "London SEO: pick a niche, not a city" in the name field.
+    name: page.city
+      ? `SEO services in ${page.city.name}`
+      : page.industry
+        ? `SEO services for ${page.industry}`
+        : plain(page.h1),
     serviceType,
     description: page.metaDescription,
     provider: ORG_REF,
     areaServed: page.city
-      ? { '@type': 'City', name: page.city.name, containedInPlace: page.city.country }
+      ? {
+          '@type': 'City',
+          name: page.city.name,
+          containedInPlace: { '@type': 'Country', name: page.city.country },
+        }
       : 'IN',
     audience: page.industry ? { '@type': 'Audience', audienceType: page.industry } : undefined,
     url,
@@ -138,7 +153,7 @@ export function itemListFor(
       '@type': 'ListItem',
       position: i + 1,
       url: `${SITE_URL}${pageHref(p.type, p.slug)}`,
-      name: p.h1,
+      name: plain(p.h1),
     })),
   };
 }

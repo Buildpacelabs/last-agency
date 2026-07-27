@@ -22,7 +22,10 @@ export type HubItem = {
   slug: string;
   href: string;
   title: string;
+  /** Shown only on families where `showDescriptions` is set; '' elsewhere. */
   description: string;
+  /** Compact search surface — the page's own target keywords. */
+  keywords: string;
   cluster: string;
   clusterLabel: string;
 };
@@ -45,6 +48,7 @@ export function HubBrowser({
       ? items.filter(
           (i) =>
             i.title.toLowerCase().includes(needle) ||
+            i.keywords.toLowerCase().includes(needle) ||
             i.description.toLowerCase().includes(needle) ||
             i.clusterLabel.toLowerCase().includes(needle)
         )
@@ -111,7 +115,11 @@ export function HubBrowser({
           <ul className={`hb-list${showDescriptions ? ' rich' : ''}`}>
             {g.items.map((i) => (
               <li key={i.href}>
-                <Link href={i.href}>
+                {/* prefetch={false}: 150 rows in the viewport meant 150 full-page
+                    RSC prefetches — 1.85 MB, most of the page's bytes, on an
+                    audience largely browsing on metered mobile data. Next still
+                    prefetches on hover and touchstart, so a click is still instant. */}
+                <Link href={i.href} prefetch={false}>
                   <span className="hb-title">{i.title}</span>
                   {showDescriptions ? <span className="hb-desc">{i.description}</span> : null}
                   <span className="hb-go" aria-hidden="true">

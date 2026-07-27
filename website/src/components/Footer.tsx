@@ -18,6 +18,13 @@ const SERVICES = [
   { href: '/pricing', label: 'Pricing' },
 ];
 
+const COMPANY = [
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
+  { href: '/privacy', label: 'Privacy' },
+  { href: '/terms', label: 'Terms' },
+];
+
 export function Footer(): JSX.Element {
   const counts = countByType();
 
@@ -58,6 +65,19 @@ export function Footer(): JSX.Element {
                   {TYPE_LABEL[t]}
                   {counts[t] ? <span className="foot-n">{counts[t]}</span> : null}
                 </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <nav className="foot-col" aria-labelledby="f-co">
+          <p className="foot-h" id="f-co">
+            Company
+          </p>
+          <ul>
+            {COMPANY.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href}>{l.label}</Link>
               </li>
             ))}
           </ul>

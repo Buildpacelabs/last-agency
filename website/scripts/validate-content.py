@@ -31,7 +31,7 @@ import json
 import pathlib
 import re
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "src" / "content" / "data"
@@ -244,6 +244,102 @@ def main() -> int:
         for r in page.get("related", []) or []:
             if f"/{r.get('type')}/{r.get('slug')}" not in known_routes:
                 warns.append(f"{rel}: related -> {r.get('type')}/{r.get('slug')} does not exist")
+
+    # ---- Pass 2b: markup only where the renderer parses it ---------------
+    # ArticleShell runs plain() over headings, table headers, captions and
+    # callout titles, because a link inside an <h2> breaks the TOC anchor. So
+    # inline markup in those fields is silently stripped rather than rendered —
+    # the author wrote a link that will never exist. Catch it at authoring time.
+    MARKUP = re.compile(r"(\[[^\]\n]+\]\([^)\s]+\)|\*\*[^*\n]+\*\*|`[^`\n]+`)")
+    for page in pages:
+        rel = page["_rel"]
+        flat: list[tuple[str, str]] = []
+        for s in page.get("sections", []) or []:
+            flat.append(("sections[].h2", s.get("h2", "")))
+            t_ = s.get("table")
+            if t_:
+                flat.append(("table.caption", t_.get("caption", "") or ""))
+                flat += [("table.head[]", h) for h in (t_.get("head") or [])]
+            c_ = s.get("callout")
+            if c_:
+                flat.append(("callout.title", c_.get("title", "") or ""))
+            for sub in s.get("subs", []) or []:
+                flat.append(("subs[].h3", sub.get("h3", "")))
+        flat.append(("h1", page.get("h1", "")))
+        for field, text in flat:
+            if isinstance(text, str) and MARKUP.search(text):
+                # A warning, not an error: plain() strips it cleanly, so the page
+                # still reads correctly. What's lost is the author's intended
+                # code/link styling — worth knowing, not worth failing a build.
+                warns.append(
+                    f"{rel}: inline markup in '{field}' is stripped, not rendered — "
+                    f"…{MARKUP.search(text).group(0)[:40]}…"
+                )
+
+    # ---- Pass 2c: rendered title length ---------------------------------
+    # detailMetadata uses title.absolute, so the rendered <title> is exactly
+    # metaTitle. This asserts the comment in layout.tsx and reality agree.
+    for page in pages:
+        if len(page.get("metaTitle", "")) > 60:
+            errors.append(f"{page['_rel']}: rendered <title> exceeds 60 chars")
+
+    # ---- Pass 2d: keyword collisions -------------------------------------
+    # Two pages chasing one query split their own signal. A page must not
+    # declare another page's primaryKeyword as one of its secondaries, and no
+    # two pages may share a primaryKeyword.
+    by_pk: dict[str, list[str]] = defaultdict(list)
+    for page in pages:
+        by_pk[page.get("primaryKeyword", "").strip().lower()].append(page["_rel"])
+    for kw, owners in by_pk.items():
+        if kw and len(owners) > 1:
+            errors.append(f"primaryKeyword '{kw}' claimed by {len(owners)}: {', '.join(owners)}")
+    for page in pages:
+        mine = page.get("primaryKeyword", "").strip().lower()
+        for s in page.get("secondaryKeywords", []) or []:
+            owner = by_pk.get(s.strip().lower())
+            if owner and owner[0] != page["_rel"] and s.strip().lower() != mine:
+                warns.append(
+                    f"{page['_rel']}: secondary '{s}' is {owner[0]}'s primaryKeyword"
+                )
+
+    # ---- Pass 2e: every page must earn a rendered inbound link -----------
+    # Computed the way resolveRelated() actually resolves — declared refs first,
+    # capped at RELATED_TARGET, then cluster top-up. Checking raw `related`
+    # arrays is what hid the bug where the cap silently dropped 133 links.
+    RELATED_TARGET = 8
+    by_key = {f"{p['type']}/{p['slug']}": p for p in pages}
+    by_cluster_all: dict[str, list[dict]] = defaultdict(list)
+    for p in pages:
+        by_cluster_all[p.get("cluster", "")].append(p)
+
+    inbound: Counter[str] = Counter()
+    for p in pages:
+        self_key = f"{p['type']}/{p['slug']}"
+        seen = {self_key}
+        out: list[str] = []
+        for r in p.get("related", []) or []:
+            k = f"{r.get('type')}/{r.get('slug')}"
+            if k in seen or k not in by_key:
+                continue
+            seen.add(k)
+            out.append(k)
+            if len(out) >= RELATED_TARGET:
+                break
+        if len(out) < RELATED_TARGET:
+            for sib in by_cluster_all[p.get("cluster", "")][: RELATED_TARGET * 2]:
+                k = f"{sib['type']}/{sib['slug']}"
+                if k in seen:
+                    continue
+                seen.add(k)
+                out.append(k)
+                if len(out) >= RELATED_TARGET:
+                    break
+        for k in out:
+            inbound[k] += 1
+
+    orphans = [f"{p['type']}/{p['slug']}" for p in pages if inbound[f"{p['type']}/{p['slug']}"] == 0]
+    for o in orphans:
+        errors.append(f"{o}: zero rendered editorial inbound links")
 
     # ---- Pass 3: near-duplicate siblings -------------------------------
     by_cluster: dict[str, list[dict]] = defaultdict(list)

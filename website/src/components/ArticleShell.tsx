@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { RichText } from '@/components/RichText';
+import { RichText, plain } from '@/components/RichText';
 import { Breadcrumbs, type Crumb } from '@/components/Breadcrumbs';
 import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
@@ -14,7 +14,9 @@ function SectionBlock({ section }: { section: Section }): JSX.Element {
   const id = section.id ?? anchorId(section.h2);
   return (
     <section className="art-sec" id={id} aria-labelledby={`${id}-h`}>
-      <h2 id={`${id}-h`}>{section.h2}</h2>
+      {/* Headings get plain(), not RichText — a link inside an <h2> is invalid
+          nesting for the TOC anchor, and the same string feeds anchorId(). */}
+      <h2 id={`${id}-h`}>{plain(section.h2)}</h2>
 
       {section.body?.map((p, i) => (
         <p key={i}>
@@ -45,12 +47,12 @@ function SectionBlock({ section }: { section: Section }): JSX.Element {
       {section.table ? (
         <div className="art-table-wrap">
           <table className="art-table">
-            {section.table.caption ? <caption>{section.table.caption}</caption> : null}
+            {section.table.caption ? <caption>{plain(section.table.caption)}</caption> : null}
             <thead>
               <tr>
                 {section.table.head.map((h, i) => (
                   <th key={i} scope="col">
-                    {h}
+                    {plain(h)}
                   </th>
                 ))}
               </tr>
@@ -78,7 +80,7 @@ function SectionBlock({ section }: { section: Section }): JSX.Element {
 
       {section.callout ? (
         <aside className={`art-callout ${section.callout.kind}`}>
-          {section.callout.title ? <strong>{section.callout.title}</strong> : null}
+          {section.callout.title ? <strong>{plain(section.callout.title)}</strong> : null}
           <p>
             <RichText text={section.callout.body} />
           </p>
@@ -89,7 +91,7 @@ function SectionBlock({ section }: { section: Section }): JSX.Element {
         const sid = anchorId(sub.h3);
         return (
           <div className="art-sub" key={i}>
-            <h3 id={sid}>{sub.h3}</h3>
+            <h3 id={sid}>{plain(sub.h3)}</h3>
             {sub.body?.map((p, j) => (
               <p key={j}>
                 <RichText text={p} />
@@ -124,7 +126,7 @@ export function ArticleShell({
   eyebrow?: string;
   answerLabel?: string;
 }): JSX.Element {
-  const toc = page.sections.map((s) => ({ id: s.id ?? anchorId(s.h2), label: s.h2 }));
+  const toc = page.sections.map((s) => ({ id: s.id ?? anchorId(s.h2), label: plain(s.h2) }));
   const updated = new Date(`${page.updated}T00:00:00Z`).toLocaleDateString('en-IN', {
     day: 'numeric',
     month: 'long',
@@ -138,7 +140,7 @@ export function ArticleShell({
         <div className="wrap">
           <Breadcrumbs items={crumbs} />
           {eyebrow ? <p className="eyebrow eyebrow-red">{eyebrow}</p> : null}
-          <h1 className="art-h1">{page.h1}</h1>
+          <h1 className="art-h1">{plain(page.h1)}</h1>
 
           <div className="art-answer">
             <span className="art-answer-label">{answerLabel}</span>
@@ -215,11 +217,11 @@ export function ArticleShell({
             <ul className="art-related">
               {related.map((r) => (
                 <li key={`${r.type}/${r.slug}`}>
-                  <Link href={pageHref(r.type, r.slug)}>
-                    <span className="rl-kind">{TYPE_LABEL[r.type]}</span>
-                    <span className="rl-title">{r.h1}</span>
-                    <span className="rl-desc">{r.metaDescription}</span>
+                  <span className="rl-kind">{TYPE_LABEL[r.type]}</span>
+                  <Link href={pageHref(r.type, r.slug)} className="rl-title">
+                    {plain(r.h1)}
                   </Link>
+                  <span className="rl-desc">{r.metaDescription}</span>
                 </li>
               ))}
             </ul>

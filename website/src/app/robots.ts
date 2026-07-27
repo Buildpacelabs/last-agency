@@ -43,9 +43,12 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        // Query-string variants of real pages produce duplicate URLs with no
-        // unique content. Canonicals already handle it; this saves crawl budget.
-        disallow: ['/*?*utm_', '/*?*fbclid', '/*?*gclid'],
+        // Deliberately no `disallow` for utm_/fbclid/gclid variants. Blocking
+        // them stops Googlebot fetching the URL at all, so it never reads the
+        // self-canonical that would fold the tracked URL back into the clean
+        // one — the first newsletter or shared link this site earns would fail
+        // to consolidate. 513 static sub-second pages have no crawl budget
+        // problem worth trading that against.
       },
       ...AI_AGENTS.map((ua) => ({ userAgent: ua, allow: '/' })),
     ],

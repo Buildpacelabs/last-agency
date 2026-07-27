@@ -18,14 +18,21 @@ import { pageHref, PAGE_TYPES, TYPE_PATH } from '@/content/types';
    ========================================================================= */
 
 // Marketing pages change when we edit them, not when content ships.
-const STATIC_LASTMOD = '2026-07-26';
+export const STATIC_LASTMOD = '2026-07-26';
 
-const STATIC_ROUTES: { path: string; priority: number; freq: 'weekly' | 'monthly' }[] = [
+/** The commercial pages. Exported so /sitemaps/core.xml covers them too — a
+ *  sitemap index that omits the pages that earn money reports coverage for
+ *  everything except the part you care about. */
+export const STATIC_ROUTES: { path: string; priority: number; freq: 'weekly' | 'monthly' }[] = [
   { path: '/', priority: 1.0, freq: 'weekly' },
   { path: '/seo', priority: 0.9, freq: 'monthly' },
   { path: '/social', priority: 0.9, freq: 'monthly' },
   { path: '/performance', priority: 0.9, freq: 'monthly' },
   { path: '/pricing', priority: 0.9, freq: 'monthly' },
+  { path: '/about', priority: 0.7, freq: 'monthly' },
+  { path: '/contact', priority: 0.7, freq: 'monthly' },
+  { path: '/privacy', priority: 0.3, freq: 'monthly' },
+  { path: '/terms', priority: 0.3, freq: 'monthly' },
 ];
 
 /** Priority band per content family — highest for money pages. */

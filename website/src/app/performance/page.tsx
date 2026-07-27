@@ -6,9 +6,9 @@ import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
 
 export const metadata: Metadata = {
-  title: 'Performance Marketing, Run Like Our Own Money',
+  title: { absolute: 'Google Ads & Meta Ads Agency in India — Flat Fee, No Markup' },
   description:
-    'Full-funnel Meta and Google ads on a flat fee with zero media markup. Beat your agreed baseline in 90 days or the fee is free. From ₹40,000/mo.',
+    'Performance marketing agency in India running Google Ads and Meta ads on a flat fee with zero media markup. Beat your baseline in 90 days or the fee is free.',
   alternates: { canonical: '/performance' },
 };
 
@@ -50,13 +50,13 @@ export default function PerformancePage(): JSX.Element {
         <div className="wrap">
           <span className="sticker">⚡ Performance marketing</span>
           <h1>
-            Paid media, run like{' '}
+            Google Ads and Meta ads, run like{' '}
             <span className="u">it's our own money.</span>
           </h1>
           <p className="sub">
             We don't push buttons and bill you. We architect the funnel, produce the creative, own the
-            tracking and the landing page — flat fee, zero media markup — and put our money on the
-            result: <span className="y">beat baseline or the fee's free.</span>
+            tracking and the landing page — a flat rupee fee from ₹40,000 a month, zero media markup —
+            and put our money on the result: <span className="y">beat baseline or the fee's free.</span>
           </p>
           <div className="cta-row">
             <a className="btn btn-lg btn-red" href="#book">

@@ -6,9 +6,9 @@ import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
 
 export const metadata: Metadata = {
-  title: 'Organic Social & Content That Ranks',
+  title: { absolute: 'Social Media Marketing Agency in India — From ₹30k/mo' },
   description:
-    'Reels, carousels and SEO blogs produced from one pipeline — social that grows your following and your Google rankings together. From ₹30,000/mo.',
+    'Social media marketing and content production from one Indian pipeline — reels, carousels and SEO blogs that grow your following and rankings. From ₹30,000/mo.',
   alternates: { canonical: '/social' },
 };
 
@@ -50,13 +50,14 @@ export default function SocialPage(): JSX.Element {
         <div className="wrap">
           <span className="sticker">⚡ Organic social + content</span>
           <h1>
-            Content that <span className="u">ranks</span>. And grows a feed. From{' '}
+            Social media marketing that <span className="u">ranks</span>. And grows a feed. From{' '}
             <span className="r">one line.</span>
           </h1>
           <p className="sub">
             Most social agencies make you supply the video and post into the void. We produce every
-            reel end-to-end and wire each piece to double as a search asset — so followers and Google
-            traffic <span className="y">compound together.</span>
+            reel ourselves and wire each piece to double as a search asset — so followers and Google
+            traffic <span className="y">compound together.</span> Produced in India, priced in rupees,
+            from ₹30,000 a month.
           </p>
           <div className="cta-row">
             <a className="btn btn-lg btn-red" href="#book">

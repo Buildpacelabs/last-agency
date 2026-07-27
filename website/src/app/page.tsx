@@ -55,10 +55,13 @@ const LIES: { q: string; a: React.ReactNode }[] = [
   },
 ];
 
+/* Every number here is verifiable by a visitor without taking our word for it:
+   count the library, read the pricing page, read the guarantee. We do not publish
+   client results we cannot attribute. */
 const STATS: { big: string; lab: string }[] = [
-  { big: '+312%', lab: 'Avg organic leads / 6 mo' },
-  { big: '3.4×', lab: 'Blended ROAS on paid media' },
   { big: '0', lab: 'Clients on lock-in contracts' },
+  { big: '500', lab: 'Pages published, nothing gated' },
+  { big: '90', lab: 'Days to beat your baseline, or you stop paying' },
 ];
 
 export default function HomePage(): JSX.Element {
@@ -87,12 +90,7 @@ export default function HomePage(): JSX.Element {
               WhatsApp us instead
             </a>
           </div>
-          <p className="trust">
-            <span className="stars" role="img" aria-label="5 out of 5 stars">
-              ★★★★★
-            </span>{' '}
-            · Trusted by founders who got burned before · No contracts · No jargon
-          </p>
+          <p className="trust">Every price published · No contracts · No jargon</p>
         </div>
       </header>
 
@@ -168,9 +166,9 @@ export default function HomePage(): JSX.Element {
       {/* Proof */}
       <section className="band-ink pad" aria-labelledby="proof-h">
         <div className="wrap">
-          <p className="eyebrow eyebrow-red">Receipts, not promises</p>
+          <p className="eyebrow eyebrow-red">Checkable, not claimed</p>
           <h2 className="sec-h" id="proof-h">
-            What the system does.
+            What you can check before you call.
           </h2>
           <div className="proof">
             {STATS.map((s, i) => (
@@ -180,9 +178,6 @@ export default function HomePage(): JSX.Element {
               </div>
             ))}
           </div>
-          <p className="foot-note">
-            * Illustrative aggregate — swap for your real case-study numbers before going live.
-          </p>
         </div>
       </section>
 
@@ -197,11 +192,10 @@ export default function HomePage(): JSX.Element {
             A "beat it or it's free" guarantee only works if we go deep on a few. We take three new
             clients a month — then the doors close.
           </p>
-          <div className="slots">
-            <span className="slot gone">Slot 1 — Taken</span>
-            <span className="slot gone">Slot 2 — Taken</span>
-            <span className="slot open">Slot 3 — Open ●</span>
-          </div>
+          <p className="micro">
+            If the month is full we will tell you on the call and give you a start date, not a
+            deposit request.
+          </p>
         </div>
       </section>
 

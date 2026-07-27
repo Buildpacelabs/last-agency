@@ -7,19 +7,19 @@ import { FinalCta } from '@/components/FinalCta';
 import { ContentTeaser } from '@/components/ContentTeaser';
 
 export const metadata: Metadata = {
-  title: "SEO That Ranks — or It's Free",
+  title: { absolute: "SEO Services in India — Rank or It's Free | Last Agency" },
   description:
-    'Six SEO engines — technical, content, digital PR, programmatic and AEO — for one price. Beat your organic baseline in 90 days or we work free.',
+    'Technical SEO, link building, local SEO, content and AEO from one Indian SEO agency, one price. Beat your organic baseline in 90 days or we work free.',
   alternates: { canonical: '/seo' },
 };
 
 const ENGINES: { name: string; desc: string; val: string }[] = [
-  { name: 'Technical + Performance Overhaul', desc: 'Crawl, schema, Core Web Vitals, speed — a foundation that ranks.', val: '₹80,000' },
-  { name: 'Content & Topic-Cluster Engine', desc: 'Pillar pages, clusters, refreshes, blogs on a fixed cadence.', val: '₹1,20,000' },
-  { name: 'Digital PR + Backlink Machine', desc: 'Linkable assets & authority links that actually move DR.', val: '₹1,50,000' },
-  { name: 'pSEO + Internal Link Architecture', desc: 'Programmatic pages that scale, wired together to compound.', val: '₹90,000' },
-  { name: 'AEO / GEO Future-Proofing', desc: 'Get cited by AI answers & generative search, not just Google.', val: '₹60,000' },
-  { name: 'Live Dashboard + Strategy Calls', desc: 'One screen: leads from search. Real humans on call.', val: '₹40,000' },
+  { name: 'Technical SEO + Core Web Vitals', desc: 'Crawl, schema, Core Web Vitals, speed — a foundation that ranks.', val: '₹80,000' },
+  { name: 'SEO Content & Topic Clusters', desc: 'Pillar pages, clusters, refreshes, blogs on a fixed cadence.', val: '₹1,20,000' },
+  { name: 'Link Building & Digital PR', desc: 'Linkable assets & authority links that actually move DR.', val: '₹1,50,000' },
+  { name: 'Programmatic SEO & Internal Links', desc: 'Programmatic pages that scale, wired together to compound.', val: '₹90,000' },
+  { name: 'AEO & Generative Engine Optimisation', desc: 'Get cited by AI answers & generative search, not just Google.', val: '₹60,000' },
+  { name: 'Local SEO, Reporting & Strategy Calls', desc: 'One screen: leads from search. Real humans on call.', val: '₹40,000' },
 ];
 
 const VEQ: { dir: 'up' | 'down'; arrow: string; label: string; body: string }[] = [
@@ -91,12 +91,7 @@ export default function SeoPage(): JSX.Element {
               WhatsApp us instead
             </a>
           </div>
-          <p className="trust">
-            <span className="stars" role="img" aria-label="5 out of 5 stars">
-              ★★★★★
-            </span>{' '}
-            · Trusted by founders who got burned before · No contracts · No jargon
-          </p>
+          <p className="trust">Every price published · No contracts · No jargon</p>
         </div>
       </header>
 
@@ -105,7 +100,8 @@ export default function SeoPage(): JSX.Element {
         <div className="wrap">
           <p className="eyebrow eyebrow-ink">The Grand Slam Offer</p>
           <h2 className="sec-h" id="offer-h">
-            Everything you need to own search. Stacked into one system.
+            Every SEO service you need — technical SEO, content, link building, local SEO,
+            programmatic SEO and AEO — in one system.
           </h2>
 
           <div className="offer-card">

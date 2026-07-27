@@ -7,6 +7,7 @@ import { ArticleShell } from '@/components/ArticleShell';
 import { FinalCta } from '@/components/FinalCta';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { HubBrowser } from '@/components/HubBrowser';
+import { plain } from '@/components/RichText';
 import { getPage, getPages, getSlugs, resolveRelated } from './loader';
 import { pageHref, TYPE_LABEL, TYPE_PATH, type ContentPage, type PageType } from './types';
 import {
@@ -192,7 +193,10 @@ export function detailMetadata(type: PageType, slug: string): Metadata {
   if (!page) return {};
   const path = pageHref(type, slug);
   return {
-    title: page.metaTitle,
+    // `absolute` opts out of the root layout's "%s — Last Agency" template.
+    // metaTitle is already written to a 60-character budget; the 14-character
+    // suffix pushed 168 of 500 titles past it and truncated them in the SERP.
+    title: { absolute: page.metaTitle },
     description: page.metaDescription,
     keywords: [page.primaryKeyword, ...page.secondaryKeywords].slice(0, 12),
     alternates: { canonical: path },
@@ -204,7 +208,14 @@ export function detailMetadata(type: PageType, slug: string): Metadata {
       publishedTime: `${page.published ?? page.updated}T09:00:00+05:30`,
       modifiedTime: `${page.updated}T09:00:00+05:30`,
     },
-    twitter: { title: page.metaTitle, description: page.metaDescription },
+    // Next replaces the parent `twitter` object rather than deep-merging it, so
+    // omitting `card` here downgraded every content page to a small summary and
+    // threw away the 1200x630 image the build already generates.
+    twitter: {
+      card: 'summary_large_image',
+      title: page.metaTitle,
+      description: page.metaDescription,
+    },
   };
 }
 
@@ -259,7 +270,7 @@ export function DetailPage({ type, slug }: { type: PageType; slug: string }): JS
 export function hubMetadata(type: PageType): Metadata {
   const cfg = FAMILY[type];
   return {
-    title: cfg.hubMetaTitle,
+    title: { absolute: cfg.hubMetaTitle },
     description: cfg.hubMetaDescription,
     alternates: { canonical: TYPE_PATH[type] },
     openGraph: {
@@ -314,8 +325,13 @@ export function HubPage({ type }: { type: PageType }): JSX.Element {
               items={pages.map((p) => ({
                 slug: p.slug,
                 href: pageHref(p.type, p.slug),
-                title: p.h1,
-                description: p.metaDescription,
+                title: plain(p.h1),
+                // Only the journal renders descriptions. Serialising all 500 of
+                // them into every hub's flight payload cost ~92 KB that no hub
+                // but one ever displayed. The filter searches `keywords` instead,
+                // which is both smaller and a better match surface.
+                description: RICH.has(type) ? p.metaDescription : '',
+                keywords: [p.primaryKeyword, ...p.secondaryKeywords.slice(0, 3)].join(' '),
                 cluster: p.cluster,
                 clusterLabel: cfg.clusterLabel
                   ? cfg.clusterLabel(p.cluster)

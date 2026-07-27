@@ -433,22 +433,26 @@ export function serviceNode(opts: {
   path: string;
   offer: { low: string; high?: string; count?: number };
 }): Record<string, unknown> {
-  const offers =
-    opts.offer.high
-      ? {
-          '@type': 'AggregateOffer',
-          priceCurrency: 'INR',
-          lowPrice: opts.offer.low,
-          highPrice: opts.offer.high,
-          offerCount: opts.offer.count ?? 3,
-          url: `${SITE_URL}${opts.path}`,
-        }
-      : {
-          '@type': 'Offer',
-          price: opts.offer.low,
-          priceCurrency: 'INR',
-          url: `${SITE_URL}${opts.path}`,
-        };
+  // Always AggregateOffer with lowPrice. These are monthly retainers quoted as a
+  // floor ("from ₹75,000/mo"); a bare `price` asserts an exact one-off charge,
+  // which is both a different number and a different billing model to what the
+  // page says. UnitPriceSpecification carries the "per month" that `price` cannot.
+  const offers = {
+    '@type': 'AggregateOffer',
+    priceCurrency: 'INR',
+    lowPrice: opts.offer.low,
+    ...(opts.offer.high ? { highPrice: opts.offer.high } : {}),
+    offerCount: opts.offer.count ?? 3,
+    url: `${SITE_URL}${opts.path}`,
+    priceSpecification: {
+      '@type': 'UnitPriceSpecification',
+      priceCurrency: 'INR',
+      price: opts.offer.low,
+      unitCode: 'MON',
+      unitText: 'month',
+      valueAddedTaxIncluded: false,
+    },
+  };
   return {
     '@type': 'Service',
     '@id': `${SITE_URL}${opts.id}`,
@@ -492,7 +496,9 @@ export const SEO_SERVICE = serviceNode({
   description:
     'Six SEO engines — technical, content, digital PR, programmatic SEO, AEO/GEO and live reporting — stacked into one performance-guaranteed system.',
   path: '/seo',
-  offer: { low: '75000' },
+  // The page states two figures: ₹75k/mo for the full six-engine system and
+  // "plans from ₹40k for smaller sites". lowPrice is the floor, so it's ₹40k.
+  offer: { low: '40000', high: '75000' },
 });
 
 export const SOCIAL_SERVICE = serviceNode({

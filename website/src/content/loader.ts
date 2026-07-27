@@ -155,7 +155,7 @@ export function clusterSiblings(page: ContentPage, limit = 6): ContentPage[] {
  * content that doesn't exist yet, then top up from the cluster so every page
  * ships with a usable set of onward links.
  */
-export function resolveRelated(page: ContentPage, target = 6): ContentPage[] {
+export function resolveRelated(page: ContentPage, target = 8): ContentPage[] {
   const seen = new Set([`${page.type}/${page.slug}`]);
   const out: ContentPage[] = [];
 
@@ -166,15 +166,21 @@ export function resolveRelated(page: ContentPage, target = 6): ContentPage[] {
     if (!found) continue;
     seen.add(key);
     out.push(found);
-    if (out.length >= target) return out;
+    // `break`, not `return` — a page that declares its full quota of refs still
+    // needs to fall through, and an author-declared ref is worth more than a
+    // cluster sibling. This cap silently deleted 133 declared links when it was
+    // 6, which was the entire reason 67 pages had no editorial inbound links.
+    if (out.length >= target) break;
   }
 
-  for (const sib of clusterSiblings(page, target * 2)) {
-    const key = `${sib.type}/${sib.slug}`;
-    if (seen.has(key)) continue;
-    seen.add(key);
-    out.push(sib);
-    if (out.length >= target) break;
+  if (out.length < target) {
+    for (const sib of clusterSiblings(page, target * 2)) {
+      const key = `${sib.type}/${sib.slug}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      out.push(sib);
+      if (out.length >= target) break;
+    }
   }
 
   return out;
