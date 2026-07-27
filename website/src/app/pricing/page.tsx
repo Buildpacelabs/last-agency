@@ -16,7 +16,7 @@ import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
 
 export const metadata: Metadata = {
-  title: { absolute: 'SEO & Digital Marketing Pricing in India — ₹30k–₹1.5L/mo' },
+  title: { absolute: 'SEO & Digital Marketing Pricing in India — ₹30k–₹1.75L/mo' },
   description:
     'Transparent monthly pricing for SEO, organic social and paid media — ex-GST, no lock-in. Bundle two or three services and save up to 21% off.',
   alternates: { canonical: '/pricing' },
@@ -46,7 +46,7 @@ export default function PricingPage(): JSX.Element {
             SEO and digital marketing pricing, <span className="u">published in full.</span>
           </h1>
           <p className="sub">
-            Every service is month-to-month, ex-GST, no lock-in — ₹30,000 to ₹1,50,000 a month
+            Every service is month-to-month, ex-GST, no lock-in — ₹30,000 to ₹1,75,000 a month
             depending on scope. Run more than one and the bundle beats buying à la carte, because one
             shared pipeline <span className="y">costs us less to deliver.</span>
           </p>

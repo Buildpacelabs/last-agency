@@ -199,16 +199,22 @@ export default function HomePage(): JSX.Element {
         </div>
       </section>
 
+      {/* The homepage is the only URL on this domain with any authority, so these
+          six links are the most valuable internal links we have. They previously
+          pointed at pages we cannot win — /glossary/backlink shares a SERP with
+          Wikipedia, Moz, Ahrefs and Semrush. These six sit on SERPs with no
+          authority competitor at all, and they serve the buyer who is mid-purchase
+          or mid-breakup with an agency. */}
       <ContentTeaser
         eyebrow="No pitch, no gate, no email required"
         title="Everything we know, published."
         prefer={[
-          { type: 'answers', slug: 'how-do-seo-agencies-work' },
-          { type: 'cost', slug: 'seo-cost-in-india' },
-          { type: 'compare', slug: 'ppc-vs-seo' },
-          { type: 'compare', slug: 'agency-vs-in-house' },
-          { type: 'answers', slug: 'how-to-choose-an-seo-agency' },
-          { type: 'glossary', slug: 'backlink' },
+          { type: 'answers', slug: 'can-i-fire-my-seo-agency' },
+          { type: 'answers', slug: 'how-to-compare-seo-proposals' },
+          { type: 'journal', slug: 'how-to-set-an-seo-baseline' },
+          { type: 'compare', slug: 'retainer-vs-project' },
+          { type: 'journal', slug: 'local-seo-in-tier-2-india' },
+          { type: 'cost', slug: 'seo-cost-in-kolkata' },
         ]}
         fill={['answers', 'cost', 'compare', 'glossary', 'journal']}
       />
