@@ -6,7 +6,7 @@ import { Marquee } from '@/components/Marquee';
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
-import { ORG_NODE, WEBSITE_NODE, SITE_URL } from '@/lib/site';
+import { ORG_NODE, WEBSITE_NODE, PERSON_NODES, SITE_URL } from '@/lib/site';
 
 // Both fields are length-budgeted for the SERP: title <= 60 chars rendered,
 // description 120-155. The previous pair ran 76 and 195, so Google was
@@ -55,7 +55,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }):
         <a href="#main" className="skip-link">
           Skip to content
         </a>
-        <JsonLd graph={[ORG_NODE, WEBSITE_NODE]} />
+        {/* PERSON_NODES ships site-wide because ORG_NODE references them via
+            @id. Emitting the reference without the node would leave a dangling
+            @id on every page that isn't /about, which is the most common silent
+            way a structured-data graph stops resolving. */}
+        <JsonLd graph={[ORG_NODE, WEBSITE_NODE, ...PERSON_NODES]} />
         <Marquee />
         <Nav />
         <main id="main">

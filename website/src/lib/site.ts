@@ -362,6 +362,40 @@ export const PRICING_FAQ: Faq[] = [
  * from elsewhere. Left out rather than guessed: a sameAs pointing at a profile
  * we don't control is worse than no sameAs at all.
  */
+/* --- People -------------------------------------------------------------
+   Real, named, and linked to profiles we control. This is the single biggest
+   trust gap the site had: a business quoting six-figure retainers with no
+   human attached to it.
+
+   Roles are described the way the team describes itself. `sameAs` carries
+   personal profiles and belongs on the Person nodes — the Organization's own
+   `sameAs` stays empty until there is a company page to point at, because a
+   personal profile is not an organisational one. */
+export const PEOPLE = [
+  {
+    name: 'Aryan Singh',
+    role: 'Director',
+    does: 'the commercial side',
+    linkedin: 'https://www.linkedin.com/in/aryan-singh-9987a11b7/',
+  },
+  {
+    name: 'Priyanshu Semwal',
+    role: 'CTO',
+    does: 'the technical side',
+    linkedin: 'https://www.linkedin.com/in/semwalpriyanshu/',
+  },
+] as const;
+
+export const PERSON_NODES = PEOPLE.map((p) => ({
+  '@type': 'Person',
+  '@id': `${SITE_URL}/about#${p.name.toLowerCase().replace(/\s+/g, '-')}`,
+  name: p.name,
+  jobTitle: p.role,
+  worksFor: { '@id': `${SITE_URL}/#org` },
+  url: `${SITE_URL}/about`,
+  sameAs: [p.linkedin],
+}));
+
 export const ORG_NODE = {
   '@type': 'Organization',
   '@id': `${SITE_URL}/#org`,
@@ -414,6 +448,16 @@ export const ORG_NODE = {
       availableLanguage: ['en', 'hi'],
     },
   ],
+  // Named people, by reference. Resolving an organisation to real humans is
+  // one of the three inputs Google uses to establish an entity, and it is the
+  // one this site was missing entirely.
+  employee: PEOPLE.map((p) => ({
+    '@id': `${SITE_URL}/about#${p.name.toLowerCase().replace(/\s+/g, '-')}`,
+  })),
+  // A plain URL, not an @id reference. ORG_NODE ships on all 517 pages, but the
+  // /about#webpage node exists on exactly one of them — referencing it by @id
+  // would leave a dangling pointer on the other 516.
+  mainEntityOfPage: `${SITE_URL}/about`,
 };
 
 export const WEBSITE_NODE = {

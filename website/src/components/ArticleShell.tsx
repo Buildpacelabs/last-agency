@@ -149,8 +149,12 @@ export function ArticleShell({
             </p>
           </div>
 
+          {/* The byline stays a team byline — attributing 500 pages to one named
+              person would be a false authorship claim. But it now resolves to
+              real, named, verifiable people instead of an anonymous brand. */}
           <p className="art-meta">
-            Updated {updated} · Written by the Last Agency team ·{' '}
+            Updated {updated} · Written by{' '}
+            <Link href="/about">the Last Agency team</Link> ·{' '}
             <Link href="/pricing">See what SEO actually costs</Link>
           </p>
         </div>

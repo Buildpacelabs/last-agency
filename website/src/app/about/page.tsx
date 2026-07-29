@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { SITE_URL, ORG_NODE, breadcrumbNode } from '@/lib/site';
+import { SITE_URL, ORG_NODE, PEOPLE, breadcrumbNode } from '@/lib/site';
 import { JsonLd } from '@/components/JsonLd';
 import { PlainPage, type PlainSection } from '@/components/PlainPage';
 
@@ -16,6 +16,17 @@ const SECTIONS: PlainSection[] = [
     body: [
       'We run three things — search, organic social and paid media — as one system off one shared pipeline, rather than as three vendors who each blame the other two. A keyword brief becomes a landing page, a reel script and a paid ad angle, because researching the demand once and using it three times is cheaper than researching it three times.',
       'Most brands arrive having already bolted three agencies together. The failure mode is never that any one of them is incompetent. It is that nobody owns the number, so every monthly report is a defence of that channel rather than an account of the business.',
+    ],
+  },
+  {
+    h2: 'Who you are actually dealing with',
+    body: [
+      `We are a small team working remotely from India. Two people run it: **${PEOPLE[0].name}**, who runs ${PEOPLE[0].does}, and **${PEOPLE[1].name}**, who owns ${PEOPLE[1].does}. Their profiles are linked below, and one of them is on the call you book — not a salesperson who hands you to someone else afterwards.`,
+      'That is the whole org chart. It is also why we cap intake at three new clients a month: there is no bench to hide a struggling account behind, so the roster has to stay small enough that we can actually run it.',
+    ],
+    bullets: [
+      `[${PEOPLE[0].name} — ${PEOPLE[0].role}](${PEOPLE[0].linkedin})`,
+      `[${PEOPLE[1].name} — ${PEOPLE[1].role}](${PEOPLE[1].linkedin})`,
     ],
   },
   {
@@ -61,6 +72,7 @@ const SECTIONS: PlainSection[] = [
     h2: 'How to reach us',
     body: [
       'The fastest route is WhatsApp or a booked call — both are on the [contact page](/contact). Every price we charge is published on the [pricing page](/pricing), so you can qualify us out before you speak to anyone.',
+      'Whoever picks up is one of the two people named above.',
     ],
   },
 ];
@@ -91,7 +103,7 @@ export default function AboutPage(): JSX.Element {
       <PlainPage
         eyebrow="About"
         h1="The last agency you'll ever hire — and why we say that"
-        lede="Last Agency runs SEO, organic social and paid media as one system for Indian brands. Published pricing, no lock-in, a performance guarantee, and a cap of three new clients a month."
+        lede="Last Agency runs SEO, organic social and paid media as one system for Indian brands. Two people run it, both named below. Published pricing, no lock-in, a performance guarantee, and a cap of three new clients a month."
         crumbs={[
           { name: 'Home', path: '/' },
           { name: 'About', path: '/about' },
