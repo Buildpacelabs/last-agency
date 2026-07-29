@@ -1,0 +1,519 @@
+# Existing coverage — all 500 published pages
+
+Every page currently live, by family. `pk` is its target query.
+
+## answers (150)
+- `are-seo-courses-worth-it` — pk: **are seo courses worth it** — cluster: seo-career
+- `can-an-seo-agency-hurt-your-website` — pk: **can an seo agency hurt your website** — cluster: agency-mechanics
+- `can-chatgpt-do-seo` — pk: **can chatgpt do seo** — cluster: seo-ai
+- `can-i-fire-my-seo-agency` — pk: **how to fire your seo agency** — cluster: agency-selection
+- `digital-marketing-courses-near-me` — pk: **digital marketing course near me** — cluster: digital-marketing-basics
+- `digital-marketing-tips` — pk: **tips for digital marketing** — cluster: digital-marketing-basics
+- `do-seo-agencies-guarantee-rankings` — pk: **do seo agencies guarantee rankings** — cluster: agency-mechanics
+- `do-small-businesses-need-an-seo-agency` — pk: **do small businesses need an seo agency** — cluster: agency-selection
+- `does-ai-content-hurt-seo` — pk: **does ai content hurt seo** — cluster: seo-ai
+- `does-web-hosting-affect-seo` — pk: **does web hosting affect seo** — cluster: seo-basics
+- `how-can-an-seo-agency-help-my-business` — pk: **how can an seo agency help your business** — cluster: agency-mechanics
+- `how-do-i-get-my-brand-cited-in-chatgpt` — pk: **how to get cited in chatgpt** — cluster: seo-ai
+- `how-do-i-know-if-my-seo-agency-is-doing-a-good-job` — pk: **how do i know if my seo agency is doing a good job** — cluster: agency-selection
+- `how-do-seo-agencies-get-backlinks` — pk: **how do seo agencies get backlinks** — cluster: agency-mechanics
+- `how-do-seo-agencies-price-their-work` — pk: **how do seo agencies price their work** — cluster: agency-cost
+- `how-do-seo-agencies-work` — pk: **how do seo agencies work** — cluster: agency-mechanics
+- `how-do-seo-services-work` — pk: **how do seo services work** — cluster: agency-mechanics
+- `how-do-you-measure-seo-success` — pk: **how do you measure seo success** — cluster: seo-measurement
+- `how-does-a-digital-marketing-agency-work` — pk: **how does digital marketing agency work** — cluster: agency-mechanics
+- `how-does-seo-work` — pk: **how does seo work** — cluster: seo-basics
+- `how-does-seo-work-in-digital-marketing` — pk: **how does seo work in digital marketing** — cluster: seo-basics
+- `how-does-seo-work-on-google` — pk: **how does seo work on google** — cluster: seo-basics
+- `how-hard-is-it-to-get-into-an-seo-career` — pk: **how hard is it to get into seo career** — cluster: seo-career
+- `how-long-does-it-take-for-seo-to-work` — pk: **how long does it take for seo to work** — cluster: agency-mechanics
+- `how-many-clients-should-an-seo-agency-take` — pk: **how many clients should an seo agency take** — cluster: agency-selection
+- `how-many-seo-agencies-are-there-in-the-world` — pk: **how many seo agencies are there in the world** — cluster: agency-mechanics
+- `how-much-does-an-seo-agency-cost` — pk: **why do seo agencies quote different prices** — cluster: agency-cost
+- `how-much-does-seo-cost-in-india` — pk: **how much does seo cost in india** — cluster: agency-cost
+- `how-much-does-seo-cost-in-kolkata` — pk: **what is the cost of seo in kolkata** — cluster: agency-cost
+- `how-much-does-seo-cost-per-month` — pk: **how much does seo cost per month** — cluster: agency-cost
+- `how-much-does-seo-pay` — pk: **how much does seo pay** — cluster: seo-career
+- `how-often-should-you-review-your-seo-strategy` — pk: **how often should you review your seo strategy** — cluster: seo-measurement
+- `how-to-answer-have-you-worked-on-seo-in-an-interview` — pk: **have you worked on seo** — cluster: seo-career
+- `how-to-choose-an-seo-agency` — pk: **how to choose seo agency** — cluster: agency-selection
+- `how-to-compare-seo-proposals` — pk: **how to compare seo proposals** — cluster: agency-cost
+- `how-to-do-digital-marketing` — pk: **how to do digital marketing** — cluster: digital-marketing-basics
+- `how-to-do-keyword-research` — pk: **how to do keyword research** — cluster: seo-howto
+- `how-to-do-local-seo` — pk: **how to do local seo** — cluster: seo-howto
+- `how-to-do-seo` — pk: **how to do seo** — cluster: seo-howto
+- `how-to-do-seo-for-a-website-step-by-step` — pk: **how to do seo for website step-by-step** — cluster: seo-howto
+- `how-to-do-seo-for-an-ecommerce-website` — pk: **how to do seo for ecommerce website** — cluster: seo-howto
+- `how-to-do-seo-on-instagram` — pk: **how to do seo on instagram** — cluster: seo-howto
+- `how-to-earn-money-from-digital-marketing` — pk: **how can i earn from digital marketing** — cluster: digital-marketing-basics
+- `how-to-find-a-digital-marketing-agency-near-me` — pk: **digital marketing agency near me** — cluster: agency-selection
+- `how-to-fix-broken-links-in-seo` — pk: **how to fix broken links in seo** — cluster: seo-howto
+- `how-to-get-backlinks-for-a-new-website` — pk: **how to get backlinks for a new website** — cluster: seo-howto
+- `how-to-improve-seo` — pk: **how to improve seo** — cluster: seo-howto
+- `how-to-learn-digital-marketing` — pk: **how can i learn digital marketing** — cluster: digital-marketing-basics
+- `how-to-rank-on-google-in-india` — pk: **how to rank on google in india** — cluster: seo-howto
+- `how-to-reduce-seo-costs` — pk: **how to reduce seo costs** — cluster: agency-cost
+- `how-to-start-a-career-in-digital-marketing` — pk: **how can i start digital marketing** — cluster: digital-marketing-basics
+- `how-to-start-a-digital-marketing-agency` — pk: **how to start digital agency** — cluster: agency-mechanics
+- `how-to-start-a-marketing-agency` — pk: **how to start a marketing agency** — cluster: agency-mechanics
+- `how-to-start-an-seo-agency` — pk: **how to start seo agency** — cluster: agency-mechanics
+- `internal-linking-best-practices` — pk: **internal linking best practices** — cluster: seo-basics
+- `is-cheap-seo-worth-it` — pk: **is cheap seo worth it** — cluster: agency-cost
+- `is-seo-a-good-career` — pk: **is seo a good career** — cluster: seo-career
+- `is-seo-a-high-income-skill` — pk: **is seo a high income skill** — cluster: seo-career
+- `is-seo-a-high-paying-skill` — pk: **is seo a high paying skill** — cluster: seo-career
+- `is-seo-a-one-time-cost` — pk: **is seo a one time cost** — cluster: agency-cost
+- `is-seo-a-stressful-job` — pk: **is seo a stressful job** — cluster: seo-career
+- `is-seo-an-it-job` — pk: **is seo an it job** — cluster: seo-career
+- `is-seo-an-it-skill` — pk: **is seo an it skill** — cluster: seo-career
+- `is-seo-dead` — pk: **is seo dead** — cluster: seo-basics
+- `is-seo-difficult-to-learn` — pk: **is seo difficult to learn** — cluster: seo-career
+- `is-seo-higher-than-ceo` — pk: **is seo higher than ceo** — cluster: seo-career
+- `is-seo-in-demand` — pk: **is seo in demand** — cluster: seo-career
+- `is-seo-part-of-digital-marketing` — pk: **is seo part of digital marketing** — cluster: seo-basics
+- `is-seo-worth-it` — pk: **is seo worth it** — cluster: agency-cost
+- `is-there-scope-in-digital-marketing` — pk: **is there scope in digital marketing** — cluster: digital-marketing-basics
+- `seo-tips-for-beginners` — pk: **tips for seo** — cluster: seo-howto
+- `should-i-hire-an-seo-agency-or-a-freelancer` — pk: **should i hire an seo agency or a freelancer** — cluster: agency-selection
+- `should-i-hire-an-seo-agency-or-do-it-in-house` — pk: **in house seo vs agency** — cluster: agency-selection
+- `social-media-marketing-tips` — pk: **tips for social media marketing** — cluster: digital-marketing-basics
+- `what-are-backlinks` — pk: **what are backlinks** — cluster: seo-basics
+- `what-are-canonical-keywords` — pk: **canonical keywords** — cluster: seo-basics
+- `what-are-digital-marketing-services` — pk: **what are the digital marketing services** — cluster: digital-marketing-basics
+- `what-are-digital-marketing-tools` — pk: **what are the digital marketing tools** — cluster: digital-marketing-basics
+- `what-are-google-ai-overviews` — pk: **what are google ai overviews** — cluster: seo-ai
+- `what-are-google-ranking-factors` — pk: **what are the ranking factors in seo** — cluster: seo-basics
+- `what-are-keywords-in-seo` — pk: **what are the keywords in seo** — cluster: seo-basics
+- `what-are-seo-kpis` — pk: **seo kpis** — cluster: seo-measurement
+- `what-are-seo-services` — pk: **what are seo services** — cluster: agency-mechanics
+- `what-are-seo-tools` — pk: **what are the seo tools** — cluster: seo-howto
+- `what-are-the-4-types-of-seo` — pk: **what are the 4 types of seo** — cluster: seo-basics
+- `what-are-the-benefits-of-digital-marketing` — pk: **what are the benefits of digital marketing** — cluster: digital-marketing-basics
+- `what-are-the-red-flags-of-a-bad-seo-agency` — pk: **seo agency red flags** — cluster: agency-selection
+- `what-are-the-types-of-digital-marketing` — pk: **what are the types of digital marketing** — cluster: digital-marketing-basics
+- `what-do-seo-services-include` — pk: **what do seo services include** — cluster: agency-mechanics
+- `what-does-a-digital-agency-do` — pk: **what does a digital agency do** — cluster: agency-mechanics
+- `what-does-an-seo-agency-do` — pk: **what does an seo agency do** — cluster: agency-mechanics
+- `what-does-an-seo-manager-do` — pk: **who is a seo manager** — cluster: agency-mechanics
+- `what-does-an-seo-retainer-include` — pk: **what does an seo retainer include** — cluster: agency-mechanics
+- `what-does-an-seo-specialist-do` — pk: **what does seo specialist do** — cluster: seo-career
+- `what-does-seo-include` — pk: **what does seo include** — cluster: seo-basics
+- `what-happens-in-the-first-90-days-with-an-seo-agency` — pk: **what happens in the first 90 days with an seo agency** — cluster: agency-mechanics
+- `what-happens-when-you-stop-doing-seo` — pk: **what happens when you stop doing seo** — cluster: agency-mechanics
+- `what-is-a-backlink-profile` — pk: **how to analyse a backlink profile** — cluster: seo-basics
+- `what-is-a-canonical-tag-in-seo` — pk: **canonical tag in seo** — cluster: seo-basics
+- `what-is-a-digital-agency` — pk: **what does digital agency mean** — cluster: agency-mechanics
+- `what-is-a-digital-marketing-agency` — pk: **what is digital marketing agency** — cluster: agency-mechanics
+- `what-is-a-good-organic-traffic-growth-rate` — pk: **what is a good organic traffic growth rate** — cluster: seo-measurement
+- `what-is-a-good-seo-budget-for-a-small-business` — pk: **seo budget for small business** — cluster: agency-cost
+- `what-is-a-local-seo-agency` — pk: **what is a local seo agency** — cluster: agency-mechanics
+- `what-is-an-ai-seo-agency` — pk: **what is an ai seo agency** — cluster: agency-mechanics
+- `what-is-an-international-seo-agency` — pk: **what is an international seo agency** — cluster: agency-mechanics
+- `what-is-an-seo-agency` — pk: **what is an seo agency** — cluster: agency-mechanics
+- `what-is-an-seo-agent` — pk: **what is seo agent** — cluster: agency-mechanics
+- `what-is-an-seo-audit` — pk: **what is an seo audit** — cluster: agency-mechanics
+- `what-is-an-seo-consultant` — pk: **what is an seo consultant** — cluster: agency-mechanics
+- `what-is-domain-authority` — pk: **what is a good domain authority score** — cluster: seo-basics
+- `what-is-generative-engine-optimization` — pk: **is generative engine optimization worth it** — cluster: seo-ai
+- `what-is-hashtag-seo` — pk: **hashtag seo** — cluster: seo-howto
+- `what-is-keyword-cannibalization` — pk: **cannibalization in seo** — cluster: seo-basics
+- `what-is-local-seo` — pk: **what is local seo** — cluster: seo-basics
+- `what-is-seo` — pk: **what is seo** — cluster: seo-basics
+- `what-is-seo-in-digital-marketing` — pk: **what is seo in digital marketing** — cluster: seo-basics
+- `what-is-seo-marketing` — pk: **what is seo marketing** — cluster: seo-basics
+- `what-is-the-best-seo-agency` — pk: **what is the best seo agency** — cluster: agency-selection
+- `what-is-the-roi-of-seo` — pk: **seo roi** — cluster: agency-cost
+- `what-is-the-salary-of-seo-in-india` — pk: **what is the salary of seo in india** — cluster: seo-career
+- `what-questions-should-i-ask-an-seo-agency` — pk: **what questions should i ask an seo agency** — cluster: agency-selection
+- `what-should-be-in-an-seo-contract` — pk: **what should be in an seo contract** — cluster: agency-selection
+- `where-can-i-learn-seo-for-free` — pk: **where can i learn seo for free** — cluster: seo-career
+- `where-is-seo-used` — pk: **where seo is used** — cluster: seo-basics
+- `where-to-do-seo` — pk: **where to do seo** — cluster: seo-howto
+- `where-to-find-keywords-for-seo` — pk: **where to find keywords for seo** — cluster: seo-howto
+- `which-is-the-best-seo-agency-in-dubai` — pk: **which is the best seo agency in dubai** — cluster: agency-selection
+- `which-is-the-best-seo-agency-in-india` — pk: **which is the best seo company in india** — cluster: agency-selection
+- `which-is-the-best-seo-service-in-kolkata` — pk: **which is the best seo service in kolkata** — cluster: agency-selection
+- `which-seo-company-is-best` — pk: **which seo company is best** — cluster: agency-selection
+- `which-seo-tool-is-best` — pk: **which seo tool is best** — cluster: seo-howto
+- `which-type-of-seo-is-best` — pk: **which type of seo is best** — cluster: seo-basics
+- `who-is-responsible-for-seo-in-a-company` — pk: **who is seo in a company** — cluster: agency-mechanics
+- `who-is-the-best-seo-agency` — pk: **who is the best seo agency** — cluster: agency-selection
+- `who-is-the-best-seo-agency-in-melbourne` — pk: **who is the best seo agency in melbourne** — cluster: agency-selection
+- `who-is-the-best-seo-expert-in-india` — pk: **who is the best seo expert in india** — cluster: agency-selection
+- `who-is-the-seo-king-of-india` — pk: **who is the seo king of india** — cluster: agency-selection
+- `why-are-backlinks-important-for-seo` — pk: **why backlinks are important in seo** — cluster: seo-basics
+- `why-are-seo-services-important` — pk: **why seo services are important** — cluster: agency-selection
+- `why-did-my-rankings-drop` — pk: **why did my rankings drop** — cluster: seo-measurement
+- `why-do-you-need-an-seo-audit` — pk: **why seo audit** — cluster: agency-mechanics
+- `why-hire-a-digital-agency` — pk: **why digital agency** — cluster: agency-mechanics
+- `why-hire-an-seo-agency` — pk: **why hire seo agency** — cluster: agency-selection
+- `why-is-my-page-not-indexed-on-google` — pk: **why is my page not indexed** — cluster: seo-basics
+- `why-is-seo-important` — pk: **why is seo important** — cluster: seo-basics
+- `why-is-seo-important-in-digital-marketing` — pk: **why is seo important in digital marketing** — cluster: seo-basics
+- `why-is-seo-so-expensive` — pk: **why is seo so expensive** — cluster: agency-cost
+- `will-seo-be-replaced-by-ai` — pk: **will seo be replaced by ai** — cluster: seo-ai
+- `will-seo-exist-in-5-years` — pk: **will seo exist in 5 years** — cluster: seo-ai
+
+## compare (40)
+- `301-vs-302-redirect` — pk: **301 vs 302 redirect** — cluster: technical-choices
+- `aeo-vs-geo` — pk: **aeo vs geo** — cluster: ai-search
+- `agency-vs-freelancer` — pk: **seo agency vs freelancer** — cluster: how-to-buy
+- `agency-vs-in-house` — pk: **seo agency vs in-house team** — cluster: how-to-buy
+- `ahrefs-vs-semrush` — pk: **ahrefs vs semrush** — cluster: metrics-and-tools
+- `ai-seo-tools-vs-seo-agency` — pk: **ai seo tools vs seo agency** — cluster: how-to-buy
+- `b2b-seo-vs-b2c-seo` — pk: **b2b seo vs b2c seo** — cluster: seo-disciplines
+- `canonical-vs-noindex` — pk: **canonical vs noindex** — cluster: technical-choices
+- `cro-vs-seo` — pk: **cro vs seo** — cluster: channel-mix
+- `da-vs-dr` — pk: **difference between da and dr in seo** — cluster: metrics-and-tools
+- `dofollow-vs-nofollow` — pk: **dofollow vs nofollow links** — cluster: link-building
+- `english-vs-regional-language-seo` — pk: **english seo vs regional language seo** — cluster: seo-disciplines
+- `ga4-vs-search-console` — pk: **ga4 vs google search console** — cluster: metrics-and-tools
+- `geo-vs-seo` — pk: **difference between geo and seo** — cluster: ai-search
+- `google-ads-vs-seo` — pk: **difference between google ads and seo** — cluster: paid-vs-organic
+- `google-business-profile-vs-website` — pk: **google business profile vs website** — cluster: local-discovery
+- `guest-posting-vs-digital-pr` — pk: **guest posting vs digital pr** — cluster: link-building
+- `indian-seo-agency-vs-international-agency` — pk: **indian seo agency vs international seo agency** — cluster: how-to-buy
+- `keyword-rankings-vs-organic-traffic` — pk: **keyword rankings vs organic traffic** — cluster: metrics-and-tools
+- `local-seo-vs-national-seo` — pk: **local seo vs national seo** — cluster: local-discovery
+- `nextjs-vs-wordpress-seo` — pk: **next.js vs wordpress for seo** — cluster: platform-choice
+- `onpage-vs-offpage-seo` — pk: **on page vs off page seo** — cluster: seo-disciplines
+- `organic-social-vs-paid-social` — pk: **organic social vs paid social** — cluster: channel-mix
+- `organic-vs-inorganic-seo` — pk: **difference between organic and inorganic seo** — cluster: paid-vs-organic
+- `paid-links-vs-earned-links` — pk: **paid links vs earned links** — cluster: link-building
+- `performance-based-seo-vs-retainer` — pk: **performance based seo vs monthly retainer** — cluster: how-to-buy
+- `ppc-vs-seo` — pk: **difference between ppc and seo** — cluster: paid-vs-organic
+- `retainer-vs-project` — pk: **seo retainer vs project based pricing** — cluster: how-to-buy
+- `seo-consultant-vs-seo-agency` — pk: **seo consultant vs seo agency** — cluster: how-to-buy
+- `seo-vs-aso` — pk: **seo vs aso** — cluster: channel-mix
+- `seo-vs-content-marketing` — pk: **seo vs content marketing** — cluster: channel-mix
+- `seo-vs-email-marketing` — pk: **seo vs email marketing** — cluster: channel-mix
+- `seo-vs-influencer-marketing` — pk: **seo vs influencer marketing** — cluster: channel-mix
+- `seo-vs-marketplace-selling` — pk: **seo vs marketplace selling** — cluster: channel-mix
+- `seo-vs-sem` — pk: **seo vs sem** — cluster: paid-vs-organic
+- `seo-vs-social-media` — pk: **seo vs social media marketing** — cluster: channel-mix
+- `subdomain-vs-subfolder` — pk: **subdomain vs subfolder for seo** — cluster: technical-choices
+- `technical-seo-vs-content-seo` — pk: **technical seo vs content seo** — cluster: seo-disciplines
+- `white-hat-vs-black-hat-seo` — pk: **white hat vs black hat seo** — cluster: seo-disciplines
+- `wordpress-vs-shopify-seo` — pk: **wordpress vs shopify seo** — cluster: platform-choice
+
+## cost (20)
+- `cheapest-digital-marketing-agency` — pk: **cheapest digital marketing agency** — cluster: cheap-vs-real-seo
+- `content-writing-cost-india` — pk: **content writing cost in india** — cluster: cost-by-deliverable
+- `digital-marketing-agency-cost-india` — pk: **digital marketing agency cost in india** — cluster: india-pricing
+- `ecommerce-seo-cost` — pk: **seo cost for ecommerce** — cluster: cost-by-business-type
+- `hourly-vs-monthly-seo-pricing` — pk: **hourly vs monthly seo pricing** — cluster: pricing-models
+- `is-seo-free-or-paid` — pk: **does seo cost money** — cluster: cheap-vs-real-seo
+- `is-seo-worth-the-money` — pk: **is seo worth the money** — cluster: seo-roi
+- `link-building-cost` — pk: **link building cost** — cluster: cost-by-deliverable
+- `local-seo-cost` — pk: **local seo cost** — cluster: cost-by-business-type
+- `lowest-price-of-seo` — pk: **what is the lowest price of seo** — cluster: cheap-vs-real-seo
+- `saas-seo-cost` — pk: **seo cost for saas** — cluster: cost-by-business-type
+- `seo-agency-cost` — pk: **how much does an seo agency cost** — cluster: seo-pricing-benchmarks
+- `seo-agency-fees-breakdown` — pk: **what do seo companies charge** — cluster: seo-pricing-benchmarks
+- `seo-cost-for-small-business` — pk: **seo cost for small business** — cluster: cost-by-business-type
+- `seo-cost-in-india` — pk: **seo cost in india** — cluster: india-pricing
+- `seo-cost-in-kolkata` — pk: **seo cost in kolkata** — cluster: india-pricing
+- `seo-pricing-factors` — pk: **what affects seo pricing** — cluster: pricing-models
+- `seo-pricing-models` — pk: **seo pricing models** — cluster: pricing-models
+- `seo-services-cost` — pk: **how much do seo services cost** — cluster: seo-pricing-benchmarks
+- `total-cost-of-seo` — pk: **cost of seo** — cluster: seo-pricing-benchmarks
+
+## glossary (90)
+- `301-redirect` — pk: **301 redirect** — cluster: technical-seo
+- `404-error` — pk: **404 error** — cluster: technical-seo
+- `ai-overviews` — pk: **ai overviews** — cluster: ai-search
+- `ai-visibility` — pk: **ai visibility** — cluster: ai-search
+- `alt-text` — pk: **alt text** — cluster: on-page
+- `anchor-text` — pk: **anchor text** — cluster: on-page
+- `answer-engine-optimization` — pk: **answer engine optimization** — cluster: ai-search
+- `average-position` — pk: **average position** — cluster: analytics
+- `backlink` — pk: **backlink** — cluster: off-page
+- `backlink-profile` — pk: **backlink profile** — cluster: off-page
+- `bounce-rate` — pk: **bounce rate** — cluster: analytics
+- `brand-mentions` — pk: **brand mentions seo** — cluster: ai-search
+- `breadcrumb-navigation` — pk: **breadcrumb navigation** — cluster: on-page
+- `broken-links` — pk: **broken links** — cluster: technical-seo
+- `canonical-tag` — pk: **canonical tag** — cluster: technical-seo
+- `canonicalization` — pk: **canonicalization in seo** — cluster: technical-seo
+- `click-through-rate` — pk: **click through rate** — cluster: analytics
+- `content-calendar` — pk: **content calendar** — cluster: social
+- `content-decay` — pk: **content decay** — cluster: content
+- `content-gap-analysis` — pk: **content gap analysis** — cluster: content
+- `conversion-rate` — pk: **conversion rate** — cluster: analytics
+- `core-web-vitals` — pk: **core web vitals** — cluster: technical-seo
+- `cost-per-click` — pk: **cost per click** — cluster: paid
+- `crawl-budget` — pk: **crawl budget** — cluster: technical-seo
+- `cumulative-layout-shift` — pk: **cumulative layout shift** — cluster: technical-seo
+- `domain-authority` — pk: **domain authority** — cluster: off-page
+- `domain-rating` — pk: **domain rating** — cluster: off-page
+- `e-e-a-t` — pk: **e-e-a-t** — cluster: content
+- `engagement-rate` — pk: **engagement rate** — cluster: social
+- `entity-seo` — pk: **entity seo** — cluster: content
+- `featured-snippet` — pk: **featured snippet** — cluster: content
+- `generative-engine-optimization` — pk: **generative engine optimization** — cluster: ai-search
+- `google-ai-mode` — pk: **google ai mode** — cluster: ai-search
+- `google-analytics-4` — pk: **google analytics 4** — cluster: analytics
+- `google-business-profile` — pk: **google business profile** — cluster: off-page
+- `google-core-update` — pk: **google core update** — cluster: analytics
+- `google-search-console` — pk: **google search console** — cluster: analytics
+- `guest-posting` — pk: **guest posting** — cluster: off-page
+- `h1-tag` — pk: **h1 tag** — cluster: on-page
+- `hashtags` — pk: **hashtags** — cluster: social
+- `hreflang` — pk: **hreflang** — cluster: technical-seo
+- `impressions` — pk: **impressions in search console** — cluster: analytics
+- `indexing` — pk: **indexing in seo** — cluster: technical-seo
+- `influencer-marketing-meaning` — pk: **influencer marketing** — cluster: social
+- `instagram-seo` — pk: **instagram seo** — cluster: social
+- `interaction-to-next-paint` — pk: **interaction to next paint** — cluster: technical-seo
+- `internal-linking` — pk: **internal linking** — cluster: on-page
+- `javascript-seo` — pk: **javascript seo** — cluster: technical-seo
+- `keyword-cannibalization` — pk: **keyword cannibalization** — cluster: on-page
+- `keyword-match-types` — pk: **keyword match types** — cluster: paid
+- `keyword-research-meaning` — pk: **keyword research** — cluster: content
+- `keyword-stuffing` — pk: **keyword stuffing** — cluster: on-page
+- `knowledge-graph` — pk: **knowledge graph** — cluster: ai-search
+- `largest-contentful-paint` — pk: **largest contentful paint** — cluster: technical-seo
+- `link-building-meaning` — pk: **link building** — cluster: off-page
+- `link-equity` — pk: **link equity** — cluster: off-page
+- `llms-txt` — pk: **llms.txt** — cluster: ai-search
+- `local-citations` — pk: **local citations** — cluster: off-page
+- `log-file-analysis` — pk: **log file analysis** — cluster: technical-seo
+- `long-tail-keywords` — pk: **long tail keywords** — cluster: content
+- `meta-description` — pk: **meta description** — cluster: on-page
+- `mobile-first-indexing` — pk: **mobile first indexing** — cluster: technical-seo
+- `negative-keywords` — pk: **negative keywords** — cluster: paid
+- `nofollow-link` — pk: **nofollow link** — cluster: off-page
+- `noindex` — pk: **noindex** — cluster: technical-seo
+- `off-page-seo-meaning` — pk: **off page seo** — cluster: off-page
+- `on-page-seo-meaning` — pk: **on page seo** — cluster: on-page
+- `organic-traffic` — pk: **organic traffic** — cluster: analytics
+- `orphan-page` — pk: **orphan page** — cluster: technical-seo
+- `pillar-page` — pk: **pillar page** — cluster: content
+- `ppc` — pk: **ppc** — cluster: paid
+- `quality-score` — pk: **quality score** — cluster: paid
+- `referring-domain` — pk: **referring domain** — cluster: off-page
+- `retargeting` — pk: **retargeting** — cluster: paid
+- `return-on-ad-spend` — pk: **roas** — cluster: paid
+- `robots-txt` — pk: **robots.txt** — cluster: technical-seo
+- `schema-markup` — pk: **schema markup** — cluster: technical-seo
+- `search-intent` — pk: **search intent** — cluster: content
+- `serp` — pk: **serp** — cluster: analytics
+- `social-listening` — pk: **social listening** — cluster: social
+- `thin-content` — pk: **thin content** — cluster: content
+- `title-tag` — pk: **title tag** — cluster: on-page
+- `topic-cluster` — pk: **topic cluster** — cluster: content
+- `topical-authority` — pk: **topical authority** — cluster: content
+- `toxic-backlinks` — pk: **toxic backlinks** — cluster: off-page
+- `url-slug` — pk: **url slug** — cluster: on-page
+- `user-generated-content` — pk: **user generated content** — cluster: social
+- `utm-parameters` — pk: **utm parameters** — cluster: paid
+- `xml-sitemap` — pk: **xml sitemap** — cluster: technical-seo
+- `zero-click-search` — pk: **zero click search** — cluster: ai-search
+
+## journal (60)
+- `a-post-mortem-on-keyword-cannibalization` — pk: **how keyword cannibalization kills traffic** — cluster: seo-strategy
+- `choosing-an-seo-agency-for-your-stage` — pk: **choosing an seo agency for your business stage** — cluster: client-education
+- `does-ai-written-content-still-rank` — pk: **does ai generated content rank on google** — cluster: ai-search
+- `does-every-business-need-an-seo-agency` — pk: **does my business need an seo agency** — cluster: agency-economics
+- `does-topical-authority-actually-exist` — pk: **does topical authority exist** — cluster: seo-strategy
+- `domain-authority-is-a-vanity-metric` — pk: **is domain authority a vanity metric** — cluster: opinion
+- `explaining-seo-to-someone-who-hates-marketing` — pk: **how to explain seo in simple terms** — cluster: client-education
+- `future-of-seo-jobs-in-india` — pk: **future of seo jobs in india** — cluster: ai-search
+- `how-many-blog-posts-you-actually-need` — pk: **how many blog posts do you need for seo** — cluster: seo-strategy
+- `how-much-can-seo-really-grow-a-business` — pk: **how much can seo grow a business** — cluster: agency-economics
+- `how-much-do-backlinks-actually-matter` — pk: **how much do backlinks actually matter** — cluster: seo-strategy
+- `how-seo-agencies-will-change-by-2030` — pk: **future of seo agencies** — cluster: ai-search
+- `how-to-get-cited-by-ai-assistants` — pk: **how to get cited by ai assistants** — cluster: ai-search
+- `how-to-judge-your-seo-agencys-performance` — pk: **how to measure seo agency performance** — cluster: client-education
+- `how-to-read-an-seo-report` — pk: **how to read an seo report** — cluster: client-education
+- `how-to-set-an-seo-baseline` — pk: **how to set an seo baseline** — cluster: client-education
+- `indian-agencies-serving-global-clients` — pk: **indian seo agencies for international clients** — cluster: india-market
+- `inside-the-indian-seo-agency-market` — pk: **indian seo agency market** — cluster: india-market
+- `internal-linking-beats-link-building` — pk: **internal linking vs link building** — cluster: seo-strategy
+- `is-generative-engine-optimization-real` — pk: **is generative engine optimization real** — cluster: ai-search
+- `is-seo-worth-the-cost` — pk: **is seo worth the cost** — cluster: agency-economics
+- `is-your-agency-outsourcing-your-seo` — pk: **is your seo agency outsourcing your work** — cluster: agency-economics
+- `local-seo-in-tier-2-india` — pk: **local seo for tier 2 cities in india** — cluster: india-market
+- `our-favourite-seo-play-and-why-it-works` — pk: **most effective seo strategy** — cluster: seo-strategy
+- `programmatic-seo-and-the-scaled-content-line` — pk: **programmatic seo risk** — cluster: seo-strategy
+- `seo-in-hindi-and-indian-languages` — pk: **regional language seo in india** — cluster: india-market
+- `should-you-block-ai-crawlers` — pk: **should you block ai crawlers** — cluster: ai-search
+- `the-best-seo-advice-we-give-every-client` — pk: **best seo advice** — cluster: opinion
+- `the-biggest-misconception-about-seo-agencies` — pk: **biggest misconception about seo agencies** — cluster: opinion
+- `the-most-innovative-seo-tactic-is-usually-old` — pk: **innovative seo tactics** — cluster: opinion
+- `the-one-question-worth-asking-an-seo-agency` — pk: **one question to ask an seo agency** — cluster: client-education
+- `the-questions-clients-regret-not-asking-us` — pk: **questions clients regret not asking their seo agency** — cluster: client-education
+- `the-real-cost-of-switching-seo-agencies` — pk: **cost of switching seo agencies** — cluster: agency-economics
+- `the-replatform-that-killed-your-traffic` — pk: **website migration seo traffic drop** — cluster: seo-strategy
+- `the-services-an-seo-agency-must-actually-offer` — pk: **essential seo agency services** — cluster: agency-economics
+- `what-a-75000-rupee-seo-retainer-actually-buys` — pk: **what does an seo retainer actually pay for** — cluster: agency-economics
+- `what-a-bad-seo-agency-actually-costs-you` — pk: **cost of a bad seo agency** — cluster: client-education
+- `what-a-realistic-best-case-seo-outcome-looks-like` — pk: **realistic best case seo results** — cluster: opinion
+- `what-actually-happens-in-the-first-90-days` — pk: **first 90 days with an seo agency** — cluster: client-education
+- `what-ai-overviews-did-to-your-organic-traffic` — pk: **ai overviews organic traffic drop** — cluster: ai-search
+- `what-an-seo-audit-should-actually-find` — pk: **what an seo audit should find** — cluster: seo-strategy
+- `what-an-seo-guarantee-costs-the-agency` — pk: **how an seo guarantee works** — cluster: agency-economics
+- `what-clients-have-to-do-for-seo-to-work` — pk: **what clients need to do for seo to work** — cluster: client-education
+- `what-content-actually-does-for-seo` — pk: **role of content in seo strategy** — cluster: seo-strategy
+- `what-it-costs-to-hire-seo-talent-in-india` — pk: **cost of hiring an seo specialist in india** — cluster: india-market
+- `what-surprised-us-about-how-seo-agencies-operate` — pk: **how seo agencies actually operate** — cluster: agency-economics
+- `what-working-with-an-seo-agency-actually-feels-like` — pk: **what it's like working with an seo agency** — cluster: client-education
+- `when-to-bring-seo-in-house` — pk: **when to hire an in-house seo** — cluster: client-education
+- `when-to-change-your-seo-strategy` — pk: **when to change your seo strategy** — cluster: client-education
+- `when-to-update-old-content-instead-of-writing-new` — pk: **when to update old content for seo** — cluster: seo-strategy
+- `where-your-seo-retainer-money-actually-goes` — pk: **where does seo retainer money go** — cluster: agency-economics
+- `why-best-seo-agency-lists-are-paid` — pk: **are best seo agency lists paid** — cluster: opinion
+- `why-clients-fire-their-seo-agency-in-month-four` — pk: **why clients fire their seo agency** — cluster: agency-economics
+- `why-free-seo-audits-are-sales-pitches` — pk: **are free seo audits worth it** — cluster: opinion
+- `why-indian-d2c-brands-overspend-on-ads` — pk: **why indian d2c brands overspend on paid ads** — cluster: india-market
+- `why-performance-based-seo-pricing-breaks` — pk: **performance based seo pricing** — cluster: agency-economics
+- `why-ranking-guarantees-are-a-lie` — pk: **why seo ranking guarantees are a lie** — cluster: opinion
+- `why-seo-case-studies-mislead` — pk: **are seo case studies reliable** — cluster: opinion
+- `why-seo-costs-less-in-india` — pk: **why seo costs less in india** — cluster: india-market
+- `why-we-only-take-three-clients-a-month` — pk: **why agencies should limit client intake** — cluster: agency-economics
+
+## seo-agency (60)
+- `abu-dhabi` — pk: **seo agency in abu dhabi** — cluster: city-gcc
+- `agra` — pk: **seo company in agra** — cluster: city-india-manufacturing
+- `ahmedabad` — pk: **seo company in ahmedabad** — cluster: city-india-metro
+- `amritsar` — pk: **seo company in amritsar** — cluster: city-india-north-central
+- `auckland` — pk: **seo agency in auckland** — cluster: city-apac
+- `bangalore` — pk: **seo agency in bangalore** — cluster: city-india-metro
+- `bhopal` — pk: **seo agency in bhopal** — cluster: city-india-north-central
+- `bhubaneswar` — pk: **seo agency in bhubaneswar** — cluster: city-india-emerging
+- `birmingham` — pk: **seo agency in birmingham** — cluster: city-uk-ireland
+- `chandigarh` — pk: **seo company in chandigarh** — cluster: city-india-north-central
+- `chennai` — pk: **seo company in chennai** — cluster: city-india-metro
+- `coimbatore` — pk: **seo services in coimbatore** — cluster: city-india-manufacturing
+- `dehradun` — pk: **seo company in dehradun** — cluster: city-india-north-central
+- `delhi` — pk: **seo services in delhi** — cluster: city-india-metro
+- `doha` — pk: **seo agency in doha** — cluster: city-gcc
+- `dubai` — pk: **seo agency in dubai** — cluster: city-gcc
+- `dublin` — pk: **seo agency in dublin** — cluster: city-uk-ireland
+- `faridabad` — pk: **seo company in faridabad** — cluster: city-india-ncr
+- `ghaziabad` — pk: **seo services in ghaziabad** — cluster: city-india-ncr
+- `gurgaon` — pk: **seo agency in gurgaon** — cluster: city-india-ncr
+- `guwahati` — pk: **seo company in guwahati** — cluster: city-india-emerging
+- `hyderabad` — pk: **seo agency in hyderabad** — cluster: city-india-metro
+- `indore` — pk: **seo agency in indore** — cluster: city-india-emerging
+- `jaipur` — pk: **seo services in jaipur** — cluster: city-india-north-central
+- `jodhpur` — pk: **seo services in jodhpur** — cluster: city-india-north-central
+- `kochi` — pk: **seo company in kochi** — cluster: city-india-south
+- `kolkata` — pk: **seo services in kolkata** — cluster: city-india-metro
+- `kuala-lumpur` — pk: **seo agency in kuala lumpur** — cluster: city-apac
+- `london` — pk: **seo agency in london** — cluster: city-uk-ireland
+- `lucknow` — pk: **seo company in lucknow** — cluster: city-india-north-central
+- `ludhiana` — pk: **seo services in ludhiana** — cluster: city-india-manufacturing
+- `madurai` — pk: **seo services in madurai** — cluster: city-india-south
+- `manchester` — pk: **seo agency in manchester** — cluster: city-uk-ireland
+- `mangalore` — pk: **seo company in mangalore** — cluster: city-india-south
+- `melbourne` — pk: **seo agency in melbourne** — cluster: city-apac
+- `mohali` — pk: **seo agency in mohali** — cluster: city-india-north-central
+- `mumbai` — pk: **seo company in mumbai** — cluster: city-india-metro
+- `mysore` — pk: **seo services in mysore** — cluster: city-india-south
+- `nagpur` — pk: **seo company in nagpur** — cluster: city-india-emerging
+- `nashik` — pk: **seo company in nashik** — cluster: city-india-manufacturing
+- `navi-mumbai` — pk: **seo company in navi mumbai** — cluster: city-india-mmr
+- `new-york` — pk: **seo agency in new york** — cluster: city-north-america
+- `noida` — pk: **seo company in noida** — cluster: city-india-ncr
+- `patna` — pk: **seo company in patna** — cluster: city-india-north-central
+- `pune` — pk: **seo agency in pune** — cluster: city-india-metro
+- `raipur` — pk: **seo services in raipur** — cluster: city-india-emerging
+- `rajkot` — pk: **seo services in rajkot** — cluster: city-india-manufacturing
+- `ranchi` — pk: **seo company in ranchi** — cluster: city-india-emerging
+- `riyadh` — pk: **seo agency in riyadh** — cluster: city-gcc
+- `singapore` — pk: **seo agency in singapore** — cluster: city-apac
+- `surat` — pk: **seo agency in surat** — cluster: city-india-manufacturing
+- `sydney` — pk: **seo agency in sydney** — cluster: city-apac
+- `thane` — pk: **seo services in thane** — cluster: city-india-mmr
+- `thiruvananthapuram` — pk: **seo company in thiruvananthapuram** — cluster: city-india-south
+- `toronto` — pk: **seo agency in toronto** — cluster: city-north-america
+- `trichy` — pk: **seo company in trichy** — cluster: city-india-south
+- `vadodara` — pk: **seo company in vadodara** — cluster: city-india-manufacturing
+- `varanasi` — pk: **seo services in varanasi** — cluster: city-india-north-central
+- `vijayawada` — pk: **seo company in vijayawada** — cluster: city-india-south
+- `visakhapatnam` — pk: **seo company in visakhapatnam** — cluster: city-india-south
+
+## seo-for (50)
+- `architects` — pk: **seo for architects** — cluster: property-and-build
+- `automotive` — pk: **seo for automotive companies** — cluster: manufacturing-and-trade
+- `ayurveda` — pk: **seo for ayurvedic brands** — cluster: wellness-and-ayurveda
+- `b2b` — pk: **b2b seo services india** — cluster: saas-and-tech
+- `beauty` — pk: **seo for beauty brands** — cluster: ecommerce-and-d2c
+- `car-dealerships` — pk: **seo for car dealerships** — cluster: manufacturing-and-trade
+- `chartered-accountants` — pk: **seo for chartered accountants** — cluster: professional-services
+- `cloud-kitchens` — pk: **seo for cloud kitchens** — cluster: travel-and-hospitality
+- `coaching-institutes` — pk: **seo for coaching institutes** — cluster: education-and-nonprofit
+- `construction` — pk: **seo for construction companies** — cluster: property-and-build
+- `cosmetic-surgery` — pk: **seo for cosmetic surgery clinics** — cluster: healthcare-and-clinics
+- `d2c-brands` — pk: **seo for d2c brands** — cluster: ecommerce-and-d2c
+- `dental-clinics` — pk: **seo for dental clinics** — cluster: healthcare-and-clinics
+- `diagnostics-labs` — pk: **seo for diagnostic labs** — cluster: healthcare-and-clinics
+- `ecommerce` — pk: **ecommerce seo india** — cluster: ecommerce-and-d2c
+- `edtech` — pk: **seo for edtech companies** — cluster: saas-and-tech
+- `event-management` — pk: **seo for event management companies** — cluster: travel-and-hospitality
+- `exporters` — pk: **seo for exporters** — cluster: manufacturing-and-trade
+- `fashion` — pk: **seo for fashion brands** — cluster: ecommerce-and-d2c
+- `fintech` — pk: **seo for fintech companies** — cluster: saas-and-tech
+- `gyms` — pk: **seo for gyms** — cluster: wellness-and-ayurveda
+- `healthcare` — pk: **healthcare seo services india** — cluster: healthcare-and-clinics
+- `home-services` — pk: **seo for home services businesses** — cluster: local-services
+- `hospitals` — pk: **seo for hospitals** — cluster: healthcare-and-clinics
+- `hotels` — pk: **hotel seo services india** — cluster: travel-and-hospitality
+- `hr-tech` — pk: **seo for hr tech companies** — cluster: saas-and-tech
+- `insurance` — pk: **seo for insurance companies** — cluster: professional-services
+- `interior-designers` — pk: **seo for interior designers** — cluster: property-and-build
+- `ivf-clinics` — pk: **seo for ivf clinics** — cluster: healthcare-and-clinics
+- `jewellery` — pk: **seo for jewellery brands** — cluster: ecommerce-and-d2c
+- `law-firms` — pk: **seo for law firms in india** — cluster: professional-services
+- `logistics` — pk: **seo for logistics companies** — cluster: manufacturing-and-trade
+- `manufacturing` — pk: **seo for manufacturing companies** — cluster: manufacturing-and-trade
+- `marketplaces` — pk: **seo for marketplaces** — cluster: saas-and-tech
+- `nonprofits` — pk: **seo for nonprofits** — cluster: education-and-nonprofit
+- `packers-and-movers` — pk: **seo for packers and movers** — cluster: local-services
+- `pet-care` — pk: **seo for pet care brands** — cluster: local-services
+- `photography` — pk: **seo for photographers** — cluster: local-services
+- `preschools` — pk: **seo for preschools** — cluster: education-and-nonprofit
+- `real-estate` — pk: **real estate seo services india** — cluster: property-and-build
+- `recruitment` — pk: **seo for recruitment agencies** — cluster: professional-services
+- `restaurants` — pk: **seo for restaurants** — cluster: travel-and-hospitality
+- `saas` — pk: **seo for saas companies** — cluster: saas-and-tech
+- `salons-and-spas` — pk: **seo for salons and spas** — cluster: wellness-and-ayurveda
+- `solar` — pk: **seo for solar companies** — cluster: property-and-build
+- `staffing` — pk: **seo for staffing companies** — cluster: professional-services
+- `subscription-boxes` — pk: **seo for subscription box brands** — cluster: ecommerce-and-d2c
+- `travel-agencies` — pk: **seo for travel agencies** — cluster: travel-and-hospitality
+- `universities` — pk: **seo for universities** — cluster: education-and-nonprofit
+- `wellness` — pk: **seo for wellness brands** — cluster: wellness-and-ayurveda
+
+## services (30)
+- `aeo-geo-services` — pk: **answer engine optimisation services** — cluster: ai-search
+- `ai-search-optimisation-services` — pk: **ai search optimisation services** — cluster: ai-search
+- `analytics-setup-services` — pk: **ga4 analytics setup services** — cluster: conversion-analytics
+- `app-store-optimisation-services` — pk: **app store optimisation services** — cluster: off-google-search
+- `content-marketing-services` — pk: **content marketing services** — cluster: content-seo
+- `conversion-rate-optimisation-services` — pk: **conversion rate optimisation services** — cluster: conversion-analytics
+- `core-web-vitals-optimisation` — pk: **core web vitals optimisation service** — cluster: technical-seo
+- `digital-pr-services` — pk: **digital pr services** — cluster: authority-seo
+- `ecommerce-seo-services` — pk: **ecommerce seo services** — cluster: vertical-seo
+- `google-business-profile-optimisation` — pk: **google business profile optimisation service** — cluster: local-seo
+- `instagram-seo-services` — pk: **instagram seo services** — cluster: off-google-search
+- `international-seo-services` — pk: **international seo services** — cluster: vertical-seo
+- `keyword-research-services` — pk: **keyword research services** — cluster: content-seo
+- `link-building-services` — pk: **link building services** — cluster: authority-seo
+- `linkedin-seo-services` — pk: **linkedin seo services** — cluster: off-google-search
+- `local-seo-services` — pk: **local seo services** — cluster: local-seo
+- `off-page-seo-services` — pk: **off page seo services** — cluster: authority-seo
+- `on-page-seo-services` — pk: **on page seo services** — cluster: content-seo
+- `penalty-recovery-services` — pk: **google penalty recovery services** — cluster: technical-seo
+- `programmatic-seo-services` — pk: **programmatic seo services** — cluster: content-seo
+- `review-management-services` — pk: **online review management services** — cluster: local-seo
+- `saas-seo-services` — pk: **saas seo services** — cluster: vertical-seo
+- `schema-markup-services` — pk: **schema markup services** — cluster: technical-seo
+- `seo-audit-services` — pk: **seo audit services** — cluster: technical-seo
+- `seo-consulting` — pk: **seo consulting services** — cluster: engagement-models
+- `seo-reporting-services` — pk: **seo reporting services** — cluster: conversion-analytics
+- `seo-retainer-plans` — pk: **monthly seo retainer** — cluster: engagement-models
+- `site-migration-seo` — pk: **site migration seo services** — cluster: technical-seo
+- `technical-seo-services` — pk: **technical seo services** — cluster: technical-seo
+- `youtube-seo-services` — pk: **youtube seo services** — cluster: off-google-search

@@ -245,6 +245,31 @@ def main() -> int:
             if f"/{r.get('type')}/{r.get('slug')}" not in known_routes:
                 warns.append(f"{rel}: related -> {r.get('type')}/{r.get('slug')} does not exist")
 
+    # ---- Pass 2a2: nothing may link forward in time ----------------------
+    # Pages can carry a future `published` date; the loader withholds them until
+    # it arrives. So an in-body link from a live page to a not-yet-published one
+    # is a 404 for everyone until that date. `related` refs are safe — the
+    # resolver drops targets it can't find — so those are only a warning.
+    pub = {f"/{p['type']}/{p['slug']}": (p.get("published") or p["updated"]) for p in pages}
+    for page in pages:
+        rel = page["_rel"]
+        mine = page.get("published") or page["updated"]
+        for _label, href in LINK_RE.findall(page["_body"]):
+            target = href.split("#")[0].rstrip("/") or "/"
+            theirs = pub.get(target)
+            if theirs and theirs > mine:
+                errors.append(
+                    f"{rel} (publishes {mine}): body links to {target}, "
+                    f"which does not publish until {theirs} — 404 until then"
+                )
+        for r in page.get("related", []) or []:
+            theirs = pub.get(f"/{r.get('type')}/{r.get('slug')}")
+            if theirs and theirs > mine:
+                warns.append(
+                    f"{rel}: related -> {r.get('type')}/{r.get('slug')} "
+                    f"publishes later ({theirs}); it will be dropped until then"
+                )
+
     # ---- Pass 2b: markup only where the renderer parses it ---------------
     # ArticleShell runs plain() over headings, table headers, captions and
     # callout titles, because a link inside an <h2> breaks the TOC anchor. So

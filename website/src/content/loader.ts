@@ -127,7 +127,33 @@ function readType(type: PageType): ContentPage[] {
       return page;
     });
 
-  return pages.sort((a, b) => a.slug.localeCompare(b.slug));
+  return pages.filter(isPublished).sort((a, b) => a.slug.localeCompare(b.slug));
+}
+
+/**
+ * An editorial schedule, not a trick.
+ *
+ * A page with a future `published` date is written and committed but does not
+ * render, does not enter the sitemap, and cannot be linked to — it simply is not
+ * part of the site until its date arrives. That lets a batch of pages be authored
+ * in one pass and go live over weeks, which is what a publication normally does
+ * and what a same-day dump of hundreds of URLs conspicuously is not.
+ *
+ * The date is honest either way: whenever the page appears, `datePublished` says
+ * the day it actually appeared.
+ *
+ * Because the site is statically generated, a future-dated page needs a build on
+ * or after its date to appear. `.github/workflows/publish-scheduled.yml` runs
+ * daily and triggers one only when something is genuinely due.
+ *
+ * Override with PUBLISH_ALL=1 to build every page regardless of date.
+ */
+function isPublished(page: ContentPage): boolean {
+  if (process.env.PUBLISH_ALL === '1') return true;
+  const date = page.published ?? page.updated;
+  // Compared as YYYY-MM-DD strings, which sort lexicographically and sidestep
+  // every timezone question. The build's own clock decides the boundary.
+  return date <= new Date().toISOString().slice(0, 10);
 }
 
 /* --- Cache (module scope: one read per build process) --------------------- */

@@ -1,0 +1,47 @@
+name: Publish scheduled pages
+
+# The site is statically generated, so a page carrying a future `published` date
+# only appears once a build runs on or after that date. This checks each morning
+# whether anything is due and triggers a deploy only when something actually is —
+# so the commit history records real publications rather than daily noise.
+
+on:
+  schedule:
+    # 03:30 UTC = 09:00 IST, every day.
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Deploy even if nothing is scheduled for today'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Is anything due today?
+        id: due
+        run: |
+          if python3 website/scripts/due-today.py; then
+            echo "due=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "due=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Trigger a deploy
+        if: steps.due.outputs.due == 'true' || inputs.force
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "Publish pages scheduled for $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Nothing to do
+        if: steps.due.outputs.due == 'false' && !inputs.force
+        run: echo "No pages scheduled for today. Skipping deploy."
