@@ -199,7 +199,7 @@ export function ArticleShell({
       {page.sources?.length ? (
         <section className="band-ink pad-sm" aria-labelledby="art-src-h">
           <div className="wrap">
-            <h2 className="art-tldr-h" id="art-src-h">
+            <h2 className="art-src-h" id="art-src-h">
               Sources
             </h2>
             <ol className="art-sources">

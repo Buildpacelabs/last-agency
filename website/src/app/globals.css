@@ -1096,8 +1096,17 @@ a:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
    property on the Article node — a page that shows its evidence is the whole
    difference between this library and the cost guides it competes with, none
    of which cite anything at all. */
+/* A quiet label, not a headline. This is apparatus supporting the argument
+   above it, and it should read as a footnote rack rather than compete with the
+   article's own H2s. (It previously reused .art-tldr-h, which is ink-coloured
+   for the cream band and rendered invisible on this dark one.) */
+.art-src-h {
+  font-family: var(--mono); font-size: 12px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .16em;
+  color: var(--cream-dim);
+}
 .art-sources {
-  margin-top: 18px; max-width: 62ch;
+  margin-top: 14px; max-width: 62ch;
   display: grid; gap: 0; list-style: none; counter-reset: src;
 }
 .art-sources li {
