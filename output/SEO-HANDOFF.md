@@ -98,6 +98,24 @@ cd website && python3 scripts/validate-content.py --strict
 
 ---
 
+## 🔎 Bing Webmaster Tools — live
+
+Property `lastagencyhere.com` connected via Google Search Console import (the import also pulls in
+`buildspacelabs.com`, so check the site picker is on the right one).
+
+| | |
+|---|---|
+| `/sitemap.xml` | **Success — 517 URLs** |
+| `/sitemaps/index.xml` | **Success — 9 child sitemaps** |
+| Errors / warnings | 0 / 0 |
+| Site Scan | "Full crawl 29 Jul 2026" queued, 600 pages; results emailed |
+
+Bing gives you two reports Google doesn't: **Backlinks** (your earliest read on whether any
+link-building is landing) and **AI Performance**. Both need ~48 hours to populate. Bing also
+matters more than its traffic share suggests, because Copilot answers are built on its index.
+
+---
+
 ## 🛑 Blocked on you — ranked by ranking impact per unit of effort
 
 ### 1. A LinkedIn company page, and post under your own name weekly
@@ -106,14 +124,17 @@ no `sameAs`, no address, no named author, no external mention anywhere. For an I
 also where the first real referral traffic and first genuine links come from. **Send me the URL and I'll
 wire it into `sameAs`.**
 
-### 2. A business email on the domain
-e.g. `hello@lastagencyhere.com`, monitored. There isn't one anywhere in the codebase. Unlocks a proper
-`/contact`, `Organization.email`, and the single most common way a journalist or directory reaches you.
+### ~~2. A business email on the domain~~ — DONE
+`info@lastagencyhere.com`, live in `Organization.email`, the sales ContactPoint, and as crawlable
+text on `/contact`, `/privacy` and `/terms`. MX, SPF and DMARC verified before publishing.
 
-### 3. A named author with a real bio
-All 500 pages say "Written by the Last Agency team". Google's helpful-content guidance is explicit that
-credentialed named authors outperform anonymous brand bylines. One real person with a LinkedIn URL is
-enough. A fictional persona is not.
+### ~~3. Named people~~ — DONE
+`/about` names Aryan Singh and Priyanshu Semwal with linked LinkedIn profiles and Person schema
+(`jobTitle`, `worksFor`, `sameAs`). The 500-page byline links to `/about` rather than attributing
+every page to one person, which would be a false authorship claim.
+
+**Still worth having:** a short bio and a photo each, and confirmation that the roles carried over
+from BuildspaceLabs are right for Last Agency too.
 
 ### 4. Registered business address
 Unlocks `PostalAddress`, a Google Business Profile, and eventually map-pack visibility for "seo agency
