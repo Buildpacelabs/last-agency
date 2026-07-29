@@ -14,6 +14,28 @@ import { anchorId, pageHref, type ContentPage } from './types';
 
 const ORG_REF = { '@id': `${SITE_URL}/#org` };
 
+/**
+ * Primary sources, machine-readable. This is the property that lets an answer
+ * engine see the page is evidenced rather than asserted.
+ *
+ * Emitted on the WebPage node as well as the Article node, because only the
+ * four editorial families get an Article — the commercial pages carry Service
+ * + WebPage, and their sources would otherwise be visible to a reader but
+ * invisible to a machine.
+ */
+function citationsFor(page: ContentPage): Record<string, unknown> {
+  if (!page.sources?.length) return {};
+  return {
+    citation: page.sources.map((s) => ({
+      '@type': 'CreativeWork',
+      name: s.title,
+      url: s.url,
+      publisher: { '@type': 'Organization', name: s.publisher },
+      ...(s.date ? { datePublished: s.date } : {}),
+    })),
+  };
+}
+
 export function articleNode(page: ContentPage): Record<string, unknown> {
   const url = `${SITE_URL}${pageHref(page.type, page.slug)}`;
   const published = page.published ?? page.updated;
@@ -38,19 +60,7 @@ export function articleNode(page: ContentPage): Record<string, unknown> {
     articleSection: page.sections.map((s) => plain(s.h2)),
     keywords: [page.primaryKeyword, ...page.secondaryKeywords].join(', '),
     image: `${SITE_URL}/opengraph-image`,
-    // Primary sources, machine-readable. This is the property that lets an
-    // answer engine see the page is evidenced rather than asserted.
-    ...(page.sources?.length
-      ? {
-          citation: page.sources.map((s) => ({
-            '@type': 'CreativeWork',
-            name: s.title,
-            url: s.url,
-            publisher: { '@type': 'Organization', name: s.publisher },
-            ...(s.date ? { datePublished: s.date } : {}),
-          })),
-        }
-      : {}),
+    ...citationsFor(page),
   };
 }
 
@@ -120,6 +130,7 @@ export function speakableFor(page: ContentPage): Record<string, unknown> {
       cssSelector: ['.art-h1', '.art-answer'],
     },
     dateModified: `${page.updated}T09:00:00+05:30`,
+    ...citationsFor(page),
   };
 }
 
