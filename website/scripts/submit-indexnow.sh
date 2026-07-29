@@ -7,10 +7,13 @@
 # answers are built on the Bing index, and AI citation is something we sell.
 #
 # Run it after any deploy that adds or materially changes pages:
-#     ./scripts/submit-indexnow.sh
+#     ./scripts/submit-indexnow.sh                    # everything in the sitemap
+#     ./scripts/submit-indexnow.sh urls.txt           # only the URLs in that file
+#     git ... | ./scripts/submit-indexnow.sh -        # or read them from stdin
 #
-# Re-submitting unchanged URLs is pointless and looks like spam. Only run this
-# when something actually shipped.
+# Re-submitting unchanged URLs is pointless and looks like spam, so prefer the
+# subset form on any deploy that touched a handful of pages rather than all of
+# them. Paths may be absolute URLs or site-relative (/glossary/hreflang).
 
 set -euo pipefail
 
@@ -27,11 +30,26 @@ if ! curl -sf "$KEY_LOCATION" | grep -q "$KEY"; then
   exit 1
 fi
 
-echo "==> Collecting URLs from the sitemap"
-curl -sf "https://${HOST}/sitemap.xml" \
-  | grep -oE '<loc>[^<]+</loc>' \
-  | sed -e 's|<loc>||' -e 's|</loc>||' \
-  > "$TMP"
+SOURCE="${1:-}"
+if [ -z "$SOURCE" ]; then
+  echo "==> Collecting URLs from the sitemap"
+  curl -sf "https://${HOST}/sitemap.xml" \
+    | grep -oE '<loc>[^<]+</loc>' \
+    | sed -e 's|<loc>||' -e 's|</loc>||' \
+    > "$TMP"
+else
+  if [ "$SOURCE" = "-" ]; then
+    echo "==> Reading URLs from stdin" >&2
+    cat
+  else
+    echo "==> Reading URLs from $SOURCE" >&2
+    cat "$SOURCE"
+  fi \
+    | sed -e 's|[[:space:]]*$||' \
+    | grep -v '^$' \
+    | sed -e "s|^/|https://${HOST}/|" \
+    > "$TMP"
+fi
 
 COUNT=$(wc -l < "$TMP" | tr -d ' ')
 echo "    $COUNT URLs"
