@@ -25,9 +25,20 @@ rationing on a three-week-old domain, not a defect.
 Nine URLs were pushed to the priority crawl queue today (daily quota exhausted):
 `/glossary` `/journal` `/pricing` `/seo` `/services` `/cost` `/seo-agency` `/seo-for`.
 
-**Update, 29 July.** Indexation is moving. Confirmed indexed: `/`, `/compare`, `/social`,
-`/performance`, and four of the twelve Tier-1 buyer pages. All three sitemaps now Success and
-agreeing at 517.
+**Update, 29 July.** Indexation has turned around. Everything was *"Discovered – currently not
+indexed"* 48 hours ago. Confirmed **indexed** now:
+
+| | |
+|---|---|
+| Money pages | `/`, `/social`, `/performance` |
+| Hubs | `/glossary` (90 children), `/journal` (60), `/compare` (40), `/seo-agency` (60) |
+| Tier-1 buyer pages | 4 of the 5 checked |
+
+Breadcrumb structured data validates on every one. All three sitemaps Success, agreeing at 517.
+The indexing requests placed on 27 July are what moved the hubs — worth continuing daily.
+
+Analytics: **both live.** Web Analytics needed a redeploy after being enabled in the dashboard —
+enabling it does not retrofit the `/_vercel/insights` route onto an existing deployment.
 
 `/social` and `/performance` were briefly flagged *"Duplicate without user-selected canonical"*
 with Google picking an unrelated third-party domain as canonical. A live test proved both pages
