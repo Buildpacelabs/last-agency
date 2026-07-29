@@ -196,6 +196,30 @@ export function ArticleShell({
         </div>
       </div>
 
+      {page.sources?.length ? (
+        <section className="band-ink pad-sm" aria-labelledby="art-src-h">
+          <div className="wrap">
+            <h2 className="art-tldr-h" id="art-src-h">
+              Sources
+            </h2>
+            <ol className="art-sources">
+              {page.sources.map((s) => (
+                <li key={s.url}>
+                  <a href={s.url} target="_blank" rel="noopener noreferrer">
+                    {s.title}
+                  </a>
+                  <span className="src-meta">
+                    {s.publisher}
+                    {s.date ? ` · ${s.date}` : ''}
+                  </span>
+                </li>
+              ))}
+            </ol>
+            <p className="src-note">Every source above was checked on {updated}.</p>
+          </div>
+        </section>
+      ) : null}
+
       {page.faqs?.length ? (
         <section className="band-ink pad" aria-labelledby="art-faq-h">
           <div className="wrap" style={{ textAlign: 'center' }}>

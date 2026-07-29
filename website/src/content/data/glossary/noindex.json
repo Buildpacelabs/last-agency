@@ -30,7 +30,7 @@
       "h2": "The conflict we find in almost every audit",
       "body": [
         "Someone adds `noindex` to a set of pages — internal search results, filtered listings, an old campaign directory. Later, someone else notices Google crawling thousands of those URLs and adds a `Disallow` to `robots.txt`. Both changes look correct alone. Together they break.",
-        "The mechanic: `robots.txt` controls crawling, the meta robots tag controls indexing, and the tag lives inside the page. Block the crawl and Google never fetches the HTML, so it never reads the noindex. The URL stays in the index — usually stripped of its description — and can sit there a long time.",
+        "The mechanic: `robots.txt` controls crawling, the meta robots tag controls indexing, and the tag lives inside the page. Block the crawl and Google never fetches the HTML, so it [never reads the noindex](https://developers.google.com/search/docs/crawling-indexing/block-indexing). The URL stays in the index — usually stripped of its description — and can sit there a long time.",
         "The fix is counter-intuitive and always the same: **remove the robots.txt block**. Let Google crawl the pages, read the noindex, and drop them. Add the disallow back afterwards if crawl waste still worries you."
       ],
       "callout": {
@@ -129,6 +129,44 @@
     {
       "q": "How do I noindex a PDF?",
       "a": "You can't use a meta tag, because a PDF has no HTML head. Set an `X-Robots-Tag: noindex` HTTP header on the file — in Nginx or Apache config, or at your CDN, usually matched by file extension or directory path."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Block Search indexing with noindex",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Robots meta tag, data-nosnippet, and X-Robots-Tag specifications",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag",
+      "date": "2026-03-24"
+    },
+    {
+      "title": "Introduction to robots.txt",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "How to specify a canonical URL with rel=\"canonical\" and other methods",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "Understand the JavaScript SEO basics",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics",
+      "date": "2026-03-04"
+    },
+    {
+      "title": "Pagination, incremental page loading, and their impact on Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/specialty/ecommerce/pagination-and-incremental-page-loading",
+      "date": "2025-12-10"
     }
   ],
   "related": [

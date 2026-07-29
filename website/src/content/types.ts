@@ -58,6 +58,17 @@ export type Section = {
 
 export type Faq = { q: string; a: string };
 
+/** A primary source backing a claim on the page. */
+export type Source = {
+  /** The document's own title, not a description of it. */
+  title: string;
+  /** Who published it — "Google Search Central", "arXiv", "W3C". */
+  publisher: string;
+  url: string;
+  /** ISO date (YYYY-MM-DD) the source was published or last revised, if stated. */
+  date?: string;
+};
+
 /** A cross-link to another programmatic page. */
 export type RelatedRef = {
   type: PageType;
@@ -98,6 +109,16 @@ export type ContentPage = {
   sections: Section[];
   faqs?: Faq[];
   related?: RelatedRef[];
+
+  /**
+   * Named, dated, linked primary sources, rendered as a visible block and
+   * emitted as `citation` on the Article node.
+   *
+   * Every entry must be a real URL that was fetched and confirmed to say what
+   * we claim it says. A fabricated citation is worse than none on a site whose
+   * whole argument is that it tells the truth about SEO.
+   */
+  sources?: Source[];
 
   /* --- Type-specific extras --- */
   /** glossary: the term as a noun, for DefinedTerm schema. */

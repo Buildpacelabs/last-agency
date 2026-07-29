@@ -92,7 +92,7 @@
       "body": [
         "**Chains** accumulate without anyone deciding to create them. You move to https, then to a new URL structure, then rename a category — three years later one old URL takes four hops. Google follows up to around ten, so it usually still works, but each hop is a separate fetch, a separate round trip on a phone, and a separate chance for someone to delete the middle rule. Point old URLs straight at their final destination.",
         "**Loops** are simpler and worse: A points to B, B back to A, nothing resolves. Usually two rules written by two people — a CDN rule and an application rule. Test the whole set after any redirect change.",
-        "**The homepage trap** is the expensive one. Faced with 800 old URLs and a deadline, someone writes a catch-all sending everything to `/`. It feels tidy and it deletes the value. Google treats a redirect to an irrelevant page as a **soft 404** — the destination doesn't answer the request, so nothing transfers. You've done the work of a migration and got the outcome of a mass deletion. That's the pattern behind most of [the replatform that killed your traffic](/journal/the-replatform-that-killed-your-traffic)."
+        "**The homepage trap** is the expensive one. Faced with 800 old URLs and a deadline, someone writes a catch-all sending everything to `/`. It feels tidy and it deletes the value. Google [treats a redirect to an irrelevant page](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes) as a **soft 404** — the destination doesn't answer the request, so nothing transfers. You've done the work of a migration and got the outcome of a mass deletion. That's the pattern behind most of [the replatform that killed your traffic](/journal/the-replatform-that-killed-your-traffic)."
       ],
       "callout": {
         "kind": "warn",
@@ -133,6 +133,31 @@
     {
       "q": "How do I set up a 301 redirect?",
       "a": "At the server or CDN, ideally. Apache uses `.htaccess`, nginx uses a `return 301` rule, Next.js has a `redirects()` block in `next.config.js`, and WordPress has redirect plugins with a UI. Avoid meta-refresh and JavaScript redirects — they're slower and invisible to crawlers that don't render."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Redirects and Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+      "date": "2026-04-14"
+    },
+    {
+      "title": "How to move a site",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+      "date": "2026-06-17"
+    },
+    {
+      "title": "How to specify a canonical URL with rel=\"canonical\" and other methods",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "RFC 9110: HTTP Semantics",
+      "publisher": "IETF",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html"
     }
   ],
   "related": [

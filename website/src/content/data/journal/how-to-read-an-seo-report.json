@@ -181,7 +181,7 @@
       "callout": {
         "kind": "stat",
         "title": "The pattern that matters most",
-        "body": "Impressions rising while clicks stay flat is the most common misleading chart in SEO reporting, and it has a real cause: your pages are entering results for queries where you rank at position 40 and nobody clicks. It looks like momentum on a chart and it is momentum in the wrong direction if it persists past three months."
+        "body": "An impression only counts [how many times your site appeared in Search results](https://support.google.com/webmasters/answer/7576553), so impressions rising while clicks stay flat is the most common misleading chart in SEO reporting, and it has a real cause: your pages are entering results for queries where you rank at position 40 and nobody clicks. It looks like momentum on a chart and it is momentum in the wrong direction if it persists past three months."
       }
     },
     {
@@ -257,6 +257,19 @@
     {
       "q": "What questions should I ask on the monthly SEO call?",
       "a": "Two. What number are we compared against and what was it on day one? And what shipped this month that a user could see, plus what's stuck and on whose side? From month six, add a third: what would you do differently with the same budget?"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Performance report (Search results): Overview and basic setup",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7576553"
+    },
+    {
+      "title": "Google Search's core updates and your website",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/updates/core-updates",
+      "date": "2025-12-10"
     }
   ],
   "related": [

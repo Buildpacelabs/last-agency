@@ -52,7 +52,7 @@
     {
       "h2": "Why Google says the SEO difference is small",
       "body": [
-        "Google's own line on this has been consistent for years: both 301 and 302 pass signals, and Google uses the code as an input to canonicalisation rather than as a binding instruction. A permanent redirect is a strong signal that the target should be the canonical URL. A temporary redirect is a weaker one.",
+        "Google's own line on this has been consistent for years: both 301 and 302 pass signals, and Google uses the code as an input to canonicalisation rather than as a binding instruction. A permanent redirect is [a strong signal that the redirect target should be canonical](https://developers.google.com/search/docs/crawling-indexing/301-redirects). A temporary redirect is a weaker one.",
         "Google also watches what you actually do. Leave a 302 in place for six months and it gets treated as permanent, because it plainly is. Ship a [301](/glossary/301-redirect) and reverse it two weeks later and Google treats the original as still live, because it plainly is.",
         "So the fear that a 302 'loses link juice' is largely pre-2016 folklore. If your only concern is Google, the two codes are close to interchangeable, and the canonical tag on the destination is doing more work than either — [canonical vs noindex](/compare/canonical-vs-noindex) covers where that fits. That's the reassuring half of the answer. Here's the half that costs money."
       ]
@@ -172,6 +172,37 @@
     {
       "q": "How many redirect hops is too many?",
       "a": "More than one. Google's documentation says it follows around ten hops per crawl attempt and browsers typically stop near twenty, but those are failure limits, not budgets. Every hop adds latency for users and a chance for something to break. Flatten the map so every old URL resolves to its final destination in a single hop."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Redirects and Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+      "date": "2026-04-14"
+    },
+    {
+      "title": "How to move a site",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+      "date": "2026-06-17"
+    },
+    {
+      "title": "How to specify a canonical URL with rel=\"canonical\" and other methods",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "Temporarily pause or disable a website",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/pause-online-business",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "RFC 9110: HTTP Semantics",
+      "publisher": "IETF",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html"
     }
   ],
   "related": [

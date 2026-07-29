@@ -27,7 +27,7 @@
     {
       "h2": "One question sorts every SEO job",
       "body": [
-        "Ask whether the work has a natural finish line. A migration finishes the day the redirects are live and the index has settled. An audit finishes when the document lands. Content, links and competitive rankings never finish — the moment you stop, someone else publishes and you slide.",
+        "Ask whether the work has a natural finish line. A migration finishes the day the redirects are live and [the index has settled](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes). An audit finishes when the document lands. Content, links and competitive rankings never finish — the moment you stop, someone else publishes and you slide.",
         "That's the whole framework. Everything else — hourly rates, packages, tiers — is a billing preference layered on top of it. If you get the shape wrong you either pay monthly for work that ended in week six, or you buy a one-off project for a problem that needed two years of pressure.",
         "It also explains the two most common regrets founders bring us. \"We paid ₹35,000 a month for eighteen months and nothing changed\" is usually a project sold as a retainer. \"We bought an audit and nothing changed\" is usually a retainer's worth of work sold as a project."
       ]
@@ -141,6 +141,32 @@
     {
       "q": "What stops scope creep on an SEO retainer?",
       "a": "A named baseline scope in the contract — pages per month, link targets, people assigned — plus a written re-quote trigger at roughly 15% scope change, a pause clause for when your side blocks delivery, and a diarised quarterly re-scope call. Ten minutes of drafting prevents most month-seven arguments."
+    }
+  ],
+  "sources": [
+    {
+      "title": "How to move a site",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+      "date": "2026-06-17"
+    },
+    {
+      "title": "Redirects and Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+      "date": "2026-04-14"
+    },
+    {
+      "title": "Introduction to structured data markup in Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Google Search's core updates and your website",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/updates/core-updates",
+      "date": "2025-12-10"
     }
   ],
   "related": [

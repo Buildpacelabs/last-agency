@@ -69,7 +69,7 @@
     {
       "h2": "The reciprocity rule, and how it fails silently",
       "body": [
-        "The rule that breaks most implementations: **every page in a set must reference every other page in the set, including itself.** If `/in/pricing` claims `/us/pricing` as its US alternate but `/us/pricing` says nothing back, Google treats the claim as unverified and may ignore the annotation entirely.",
+        "The rule that breaks most implementations: **every page in a set must reference every other page in the set, including itself.** If `/in/pricing` claims `/us/pricing` as its US alternate but `/us/pricing` says nothing back, Google treats the claim as unverified and [may ignore the annotation entirely](https://developers.google.com/search/docs/specialty/international/localized-versions).",
         "That's deliberate — without it, anyone could point hreflang at a competitor's page. The cost is that a three-page set has nine link elements to keep in sync, and a five-language site with 200 pages has five thousand. This is a template job, generated from data, never maintained by hand.",
         "The failure has no error state. Nothing goes red. Your pages stay indexed and keep ranking; they just get served to the wrong country, and you find out from a support ticket asking why the site quoted rupees to someone in Dallas."
       ],
@@ -113,6 +113,31 @@
     {
       "q": "How do I check hreflang errors without Search Console?",
       "a": "You need a crawler. Search Console removed the International Targeting report in 2022 and never replaced it. Screaming Frog, Sitebulb and Ahrefs all validate reciprocity and code syntax — run one after every template change, not once at launch."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tell Google about localized versions of your page",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+      "date": "2025-12-22"
+    },
+    {
+      "title": "Managing multi-regional and multilingual sites",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "How to specify a canonical URL with rel=\"canonical\" and other methods",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "RFC 5646: Tags for Identifying Languages",
+      "publisher": "IETF",
+      "url": "https://www.rfc-editor.org/rfc/rfc5646.html"
     }
   ],
   "related": [

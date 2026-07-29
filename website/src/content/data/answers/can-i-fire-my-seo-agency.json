@@ -47,7 +47,7 @@
         "**Audit who holds what.** Open every property and look at the user list: Search Console, GA4, Google Business Profile, Tag Manager, Google Ads, Bing Webmaster, the CMS, hosting, the CDN, your registrar. Write down who has the top-level role on each. This list is the whole job.",
         "**Verify Search Console yourself, on DNS.** Add a TXT record at your own registrar and verify the domain property in an account your company controls. DNS verification can't be removed by anyone but you, which makes it the one method worth having. Do this even if you already have access — access granted by an owner can be revoked by that owner.",
         "**Get Administrator on GA4 at account level, not just property level.** If the property lives inside the agency's Analytics account, you can't simply take it with you. Confirm where it sits now, and if it's theirs, set up your own account and property in parallel so the new data starts accruing somewhere you own.",
-        "**Start the Google Business Profile ownership transfer.** You want Primary Owner, not Manager. Google enforces waiting periods between adding someone and transferring primary ownership, and the request-access route takes days at minimum and isn't guaranteed. This is the item that most often runs past the notice date.",
+        "**Start the Google Business Profile ownership transfer.** You want Primary Owner, not Manager. [Google enforces waiting periods](https://support.google.com/business/answer/3403100) between adding someone and transferring primary ownership, and the request-access route takes days at minimum and isn't guaranteed. This is the item that most often runs past the notice date.",
         "**Export everything.** Search Console performance data — all of it, every dimension, because only 16 months are retained. Analytics history. Rank tracking history. The full backlink list. The content calendar and briefs. The redirect map. Do it now while nobody's watching the clock.",
         "**Check the tag manager container.** Find out what's being injected through it: schema, canonical tags, title rewrites, hreflang, tracking. If any SEO-relevant markup lives in a container you don't own, that markup disappears the day access does."
       ],
@@ -183,6 +183,34 @@
     {
       "q": "How long should I overlap the old and new agencies?",
       "a": "About two weeks. Long enough for the incoming team to ask questions of people who still remember why things were built the way they were, short enough that you're not paying twice for a month. Then ask the new team to change nothing structural for 60 days."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Managing owners, users, and permissions",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7687615"
+    },
+    {
+      "title": "Verify your site ownership",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9008080"
+    },
+    {
+      "title": "Manage your Business Profile owners & managers",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/3403100"
+    },
+    {
+      "title": "BigQuery Export",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9358801"
+    },
+    {
+      "title": "Do you need an SEO?",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo",
+      "date": "2026-06-05"
     }
   ],
   "related": [

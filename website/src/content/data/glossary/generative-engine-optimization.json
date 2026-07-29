@@ -28,7 +28,7 @@
     {
       "h2": "Where the term came from",
       "body": [
-        "GEO was coined in a 2023 research paper titled **GEO: Generative Engine Optimization**, from researchers at Princeton, Georgia Tech, the Allen Institute for AI and IIT Delhi. They tested how editing a page changed its visibility inside generative answers, and found that adding citations, direct quotations and statistics tended to improve how often and how prominently a source was used — while classic keyword stuffing did not.",
+        "GEO was coined in a 2023 research paper titled **[GEO: Generative Engine Optimization](https://arxiv.org/abs/2311.09735)**, from researchers at Princeton, Georgia Tech, the Allen Institute for AI and IIT Delhi. They tested how editing a page changed its visibility inside generative answers, and found that adding citations, direct quotations and statistics tended to improve how often and how prominently a source was used — while classic keyword stuffing did not.",
         "That's the honest provenance. It is a research direction with early empirical support, not a mature discipline with settled best practice. Treat anyone claiming a proven GEO playbook with the scepticism you'd apply to a proven playbook for a search engine that launched last year."
       ]
     },
@@ -108,6 +108,32 @@
     {
       "q": "Can I track GEO results the way I track rankings?",
       "a": "Not reliably. Generative answers are non-deterministic, so the same prompt can cite different sources minutes apart. The practical substitute is a fixed panel of buyer-realistic prompts, run on a schedule, logging appearance rate — plus referral traffic from assistant domains as a secondary signal."
+    }
+  ],
+  "sources": [
+    {
+      "title": "GEO: Generative Engine Optimization",
+      "publisher": "arXiv",
+      "url": "https://arxiv.org/abs/2311.09735",
+      "date": "2023-11-16"
+    },
+    {
+      "title": "AI features and your website",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "List of Google's common crawlers",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers",
+      "date": "2026-07-14"
+    },
+    {
+      "title": "Introduction to robots.txt",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "date": "2025-12-10"
     }
   ],
   "related": [

@@ -184,7 +184,7 @@
       "numbered": [
         "**No hours or headcount anywhere.** Not necessarily bad — some agencies genuinely price by output. But then the output must be specified: how many pages, how many fixes, how many placements.",
         "**Content counted in articles, not in researched articles.** A 700-word AI-assembled post and a 1,500-word piece with a subject-matter interview both count as \"1 blog\". One of them ranks. See [content writing cost in India](/cost/content-writing-cost-india).",
-        "**Links quoted per placement.** Per-placement pricing means bought placements, because earned ones can't be guaranteed to a schedule. We bill link work by hours for exactly this reason.",
+        "**Links quoted per placement.** Per-placement pricing means [bought placements](https://developers.google.com/search/docs/essentials/spam-policies), because earned ones can't be guaranteed to a schedule. We bill link work by hours for exactly this reason.",
         "**No line for reporting or analysis.** If nobody's paid to interpret the data, you'll receive a dashboard export and a cheerful summary, which is how twelve months disappear.",
         "**\"Plus taxes as applicable.\"** Add 18% before you compare it to anything."
       ]
@@ -214,6 +214,38 @@
     {
       "q": "Is a higher SEO retainer always better?",
       "a": "No. Past roughly ₹1,50,000 a month, coordination starts absorbing the increase — more people means more handoffs. Buy the band that matches your site's complexity, not the one that sounds serious. A 25-page services site cannot usefully spend ₹3,00,000 a month."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Spam policies for Google web search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "date": "2026-05-15"
+    },
+    {
+      "title": "Do you need an SEO?",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo",
+      "date": "2026-06-05"
+    },
+    {
+      "title": "Web Vitals",
+      "publisher": "web.dev",
+      "url": "https://web.dev/articles/vitals",
+      "date": "2024-10-31"
+    },
+    {
+      "title": "How to specify a canonical URL with rel=\"canonical\" and other methods",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "Get started with Search Console",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/monitor-debug/search-console-start",
+      "date": "2025-12-10"
     }
   ],
   "related": [

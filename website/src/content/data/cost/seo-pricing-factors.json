@@ -123,7 +123,7 @@
       "bullets": [
         "**Local, +₹0.** You're competing with eight to fifteen businesses in one city and a map pack. Relevance, a correct Google Business Profile, real reviews and a decent services page get you most of the way. Links matter far less than founders fear.",
         "**National, +₹25,000.** Now you're up against aggregators, marketplaces and publishers with a decade of accumulated links. You need genuine content depth, internal architecture that concentrates authority, and a link programme that's actually funded rather than aspirational.",
-        "**YMYL, +₹40,000.** Health, finance, legal, insurance. Google applies stricter quality expectations to pages that can affect someone's money or wellbeing, and the practical consequence is a second cost centre: a credentialed reviewer. You're paying a doctor, a CA or a lawyer to read and sign content before it ships. That's not a markup, it's a salary line.",
+        "**YMYL, +₹40,000.** Health, finance, legal, insurance. [Google applies stricter quality expectations to pages that can affect someone's money or wellbeing](https://developers.google.com/search/docs/fundamentals/creating-helpful-content), and the practical consequence is a second cost centre: a credentialed reviewer. You're paying a doctor, a CA or a lawyer to read and sign content before it ships. That's not a markup, it's a salary line.",
         "**The one nobody quotes: a competitor who publishes weekly.** If two rivals ship four pieces a month each, matching them is the floor, not the ambition. Check their sitemap dates before you set your budget."
       ],
       "callout": {
@@ -187,6 +187,38 @@
     {
       "q": "How much should content velocity cost per article?",
       "a": "₹8,000 to ₹15,000 for a genuinely researched 1,200–1,800 word page with a brief, an editor and internal links. Below ₹5,000 you're buying assembled text. Above ₹15,000 you're usually buying an expert interview or a credentialed reviewer, which is worth it in technical and YMYL categories."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Creating helpful, reliable, people-first content",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Optimize your crawl budget",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/large-site-managing-crawl-budget",
+      "date": "2026-07-22"
+    },
+    {
+      "title": "Managing crawling of faceted navigation URLs",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/crawling-managing-faceted-navigation",
+      "date": "2025-12-18"
+    },
+    {
+      "title": "Tell Google about localized versions of your page",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+      "date": "2025-12-22"
+    },
+    {
+      "title": "How to specify a canonical URL with rel=\"canonical\" and other methods",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "date": "2026-07-10"
     }
   ],
   "related": [

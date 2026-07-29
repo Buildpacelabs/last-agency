@@ -100,7 +100,7 @@
         "In practice the same handful of mistakes account for nearly every JavaScript indexing problem we're called in for."
       ],
       "bullets": [
-        "**Links that aren't links.** `<div onClick={() => router.push('/product/123')}>` renders no `href`, so Google finds no link and the destination is discovered only via your sitemap, with no anchor text. Next.js's `<Link>` emits a real anchor; hand-rolled click handlers don't.",
+        "**Links that aren't links.** `<div onClick={() => router.push('/product/123')}>` renders no `href`, so [Google finds no link](https://developers.google.com/search/docs/crawling-indexing/links-crawlable) and the destination is discovered only via your sitemap, with no anchor text. Next.js's `<Link>` emits a real anchor; hand-rolled click handlers don't.",
         "**Metadata set after mount.** A title written in a `useEffect` is absent from the first response and absent for every non-rendering consumer. Emit it server-side.",
         "**`ssr: false` on something that matters.** Right for a map widget, wrong for your product description — it removes the content from the HTML entirely.",
         "**Content behind an interaction.** Tabs and accordions are fine when the content is already in the DOM. When the click triggers a fetch, it doesn't exist for a crawler at all."
@@ -139,6 +139,38 @@
     {
       "q": "Do AI crawlers execute JavaScript?",
       "a": "Mostly not. GPTBot, ClaudeBot, PerplexityBot and similar generally take the raw HTML response. If your content only exists after hydration, you're invisible to that entire class of traffic — which is a newer and stronger argument for server rendering than Google ever was."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Understand the JavaScript SEO basics",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics",
+      "date": "2026-03-04"
+    },
+    {
+      "title": "Fix Search-related JavaScript problems",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/fix-search-javascript",
+      "date": "2025-12-18"
+    },
+    {
+      "title": "Link best practices for Google",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Rendering on the Web",
+      "publisher": "web.dev",
+      "url": "https://web.dev/articles/rendering-on-the-web",
+      "date": "2026-01-05"
+    },
+    {
+      "title": "Fix lazy-loaded content",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/lazy-loading",
+      "date": "2025-12-10"
     }
   ],
   "related": [

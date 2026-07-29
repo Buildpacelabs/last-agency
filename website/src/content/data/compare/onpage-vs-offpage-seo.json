@@ -82,7 +82,7 @@
         "**One URL per intent.** If Google can't decide which of your pages to rank, an external link just makes it indecisive with more force.",
         "**Commercial pages sit three clicks or fewer from the homepage** and are linked from your strongest content. If they're buried, external authority never reaches them.",
         "**Pages with impressions have a click-through rate you'd accept.** If Google is already showing you and nobody clicks, the problem is your title's promise, not your authority.",
-        "**Core Web Vitals are green on your main templates** — LCP at or under 2.5 seconds, INP at or under 200 milliseconds, CLS at or under 0.1, on real mobile users. Not a lab score."
+        "**Core Web Vitals are green on your main templates** — [LCP at or under 2.5 seconds, INP at or under 200 milliseconds, CLS at or under 0.1](https://web.dev/articles/vitals), on real mobile users. Not a lab score."
       ]
     },
     {
@@ -146,6 +146,44 @@
     {
       "q": "What are the most important on-page factors?",
       "a": "In the order they actually pay off: being indexed at all, having one page per intent, matching the format the results page rewards, internal linking that reaches your commercial pages, and titles that earn the click. Speed and schema matter, but they rarely rank ahead of those five."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Search Engine Optimization (SEO) Starter Guide",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Web Vitals",
+      "publisher": "web.dev",
+      "url": "https://web.dev/articles/vitals",
+      "date": "2024-10-31"
+    },
+    {
+      "title": "Creating helpful, reliable, people-first content",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Spam policies for Google web search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "date": "2026-05-15"
+    },
+    {
+      "title": "Qualify your outbound links to Google",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Do you need an SEO?",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo",
+      "date": "2026-06-05"
     }
   ],
   "related": [

@@ -29,7 +29,7 @@
     {
       "h2": "What Google indexes now, and why it changed",
       "body": [
-        "Google started shifting sites to mobile-first indexing in 2018 and finished the job by mid-2024. Googlebot Smartphone crawls the page, the mobile rendering is what gets indexed, and ranking decisions are made on that version.",
+        "Google started shifting sites to mobile-first indexing in 2018 and finished the job by mid-2024. Googlebot Smartphone crawls the page, and [the mobile version is what Google uses for indexing and ranking](https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing).",
         "The reasoning was never subtle: most searches happen on phones, and in India that isn't a majority so much as an overwhelming default — a large share of the country's internet users have only ever browsed on an Android phone over mobile data.",
         "The practical translation is short. Whatever your mobile page contains is what your site contains. Everything else is decoration for the desktop minority."
       ],
@@ -131,6 +131,32 @@
     {
       "q": "Does mobile-first indexing mean speed matters more?",
       "a": "It means speed is measured on mobile, which is a harsher test. Your Core Web Vitals field data is dominated by phones on mobile networks, so a fast desktop experience doesn't rescue a slow mobile one. The two things are separate signals but they fail together."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mobile site and mobile-first indexing best practices",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Fix lazy-loaded content",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/lazy-loading",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "List of Google's common crawlers",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers",
+      "date": "2026-07-14"
+    },
+    {
+      "title": "Understand the JavaScript SEO basics",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics",
+      "date": "2026-03-04"
     }
   ],
   "related": [

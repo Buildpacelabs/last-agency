@@ -79,7 +79,7 @@
         ]
       },
       "bullets": [
-        "Google's guidance: TTFB should eat no more than roughly 40% of your LCP budget, and load delay should be near zero. If TTFB alone is 1.8 seconds you have 0.7 left for everything else, and compression won't get you there."
+        "[Google's guidance](https://web.dev/articles/optimize-lcp): TTFB should eat no more than roughly 40% of your LCP budget, and load delay should be near zero. If TTFB alone is 1.8 seconds you have 0.7 left for everything else, and compression won't get you there."
       ]
     },
     {
@@ -133,6 +133,37 @@
     {
       "q": "How long before an LCP fix shows up in Search Console?",
       "a": "Roughly a month. Field data in Search Console and PageSpeed Insights runs on a 28-day rolling window, so a fix deployed today only fully replaces the old data four weeks later. Watch your lab numbers and real-user monitoring in the meantime."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Largest Contentful Paint (LCP)",
+      "publisher": "web.dev",
+      "url": "https://web.dev/articles/lcp",
+      "date": "2025-09-04"
+    },
+    {
+      "title": "Optimize Largest Contentful Paint",
+      "publisher": "web.dev",
+      "url": "https://web.dev/articles/optimize-lcp",
+      "date": "2025-03-31"
+    },
+    {
+      "title": "Time to First Byte (TTFB)",
+      "publisher": "web.dev",
+      "url": "https://web.dev/articles/ttfb",
+      "date": "2025-11-18"
+    },
+    {
+      "title": "Understanding Core Web Vitals and Google search results",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/core-web-vitals",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Core Web Vitals report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9205520"
     }
   ],
   "related": [

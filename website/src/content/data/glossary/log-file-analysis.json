@@ -83,7 +83,7 @@
       "h2": "Verify Googlebot before you believe it",
       "body": [
         "The user-agent string is self-declared text. Anyone can send it, and plenty of scrapers do, precisely because sites whitelist Googlebot.",
-        "The check is two DNS lookups. Reverse-resolve the IP — the hostname must end in `googlebot.com` or `google.com`. Then forward-resolve that hostname and confirm it returns the same IP. Anything that fails either step isn't Google. For a million-line file, match against the crawler IP ranges Google publishes as JSON instead.",
+        "The check is [two DNS lookups](https://developers.google.com/search/docs/crawling-indexing/verifying-googlebot). Reverse-resolve the IP — the hostname must end in `googlebot.com` or `google.com`. Then forward-resolve that hostname and confirm it returns the same IP. Anything that fails either step isn't Google. For a million-line file, match against the crawler IP ranges Google publishes as JSON instead.",
         "Do it before analysing anything, or you'll spend a morning worrying about crawl budget burned by a scraper in Frankfurt."
       ]
     },
@@ -131,6 +131,37 @@
     {
       "q": "Do AI crawlers show up in server logs?",
       "a": "Yes, and increasingly loudly. GPTBot, ClaudeBot, PerplexityBot and others identify themselves in the user-agent string, so your logs are the only place you can measure how much of your bandwidth they use and which sections they read most."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Verify requests from Google crawlers and fetchers",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/verifying-googlebot",
+      "date": "2026-03-20"
+    },
+    {
+      "title": "List of Google's common crawlers",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers",
+      "date": "2026-07-14"
+    },
+    {
+      "title": "Crawl Stats report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9679690"
+    },
+    {
+      "title": "Managing crawling of faceted navigation URLs",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/crawling-managing-faceted-navigation",
+      "date": "2025-12-18"
+    },
+    {
+      "title": "Optimize your crawl budget",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/large-site-managing-crawl-budget",
+      "date": "2026-07-22"
     }
   ],
   "related": [

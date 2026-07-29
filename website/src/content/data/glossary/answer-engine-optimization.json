@@ -98,7 +98,7 @@
       "h2": "Structured data helps parsing, not ranking",
       "body": [
         "[Schema markup](/glossary/schema-markup) tells a machine what a page's parts are — this block is a question, this is its answer, this is a price, this is an author. That's genuinely useful for extraction, and it's cheap to add.",
-        "What it does not do is buy visibility. In 2023 Google restricted FAQ rich results to well-known government and health sites and removed HowTo rich results entirely. Plenty of agencies still sell FAQ schema on the promise of those extra SERP lines, which have not been available to an ordinary commercial site for years.",
+        "What it does not do is buy visibility. In 2023 Google [restricted FAQ rich results](https://developers.google.com/search/updates) to well-known government and health sites and removed HowTo rich results entirely. Plenty of agencies still sell FAQ schema on the promise of those extra SERP lines, which have not been available to an ordinary commercial site for years.",
         "Add `FAQPage`, `Article`, `Organization`, `Product` and `BreadcrumbList` because they describe your content accurately and cost an afternoon. Don't add them expecting a ranking change, and be suspicious of an invoice line that implies one."
       ]
     },
@@ -134,6 +134,31 @@
     {
       "q": "Which content should I not bother optimising for answer engines?",
       "a": "Opinion pieces, case narratives and anything whose value is the argument rather than the fact. Those earn links, trust and shortlist position — they just don't get quoted, and formatting them into bullet points to chase extraction ruins what made them worth reading."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Latest documentation updates",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/updates"
+    },
+    {
+      "title": "Featured snippets and your website",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/featured-snippets",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Introduction to structured data markup in Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "AI features and your website",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features",
+      "date": "2025-12-10"
     }
   ],
   "related": [

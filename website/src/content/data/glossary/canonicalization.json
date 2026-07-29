@@ -91,7 +91,7 @@
         "You rarely see canonicalization problems as an error message. You see them as things quietly not working."
       ],
       "bullets": [
-        "**Duplicate without user-selected canonical** in the Page Indexing report — Google found copies and you didn't declare a preference.",
+        "**[Duplicate without user-selected canonical](https://support.google.com/webmasters/answer/7440203)** in the Page Indexing report — Google found copies and you didn't declare a preference.",
         "**Duplicate, Google chose different canonical than user** — you declared one and Google disagreed. Your other signals are contradicting your tag.",
         "**Two of your own URLs appearing for the same query** in the Performance report, each with a fraction of the impressions. That's one page's authority cut in half.",
         "**Indexed page count higher than your published page count.** If you have 180 pages and Google reports 420 indexed URLs, the extra 240 are variants."
@@ -127,6 +127,37 @@
     {
       "q": "Should I redirect or canonical near-duplicate product pages?",
       "a": "If both need to stay reachable for shoppers, canonical. If one is genuinely redundant, redirect and remove it. The test is whether a user would ever need to land on the duplicate — if not, it shouldn't exist."
+    }
+  ],
+  "sources": [
+    {
+      "title": "What is canonicalization",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/canonicalization",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "How to specify a canonical URL with rel=\"canonical\" and other methods",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "Redirects and Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+      "date": "2026-04-14"
+    },
+    {
+      "title": "Introduction to robots.txt",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Page indexing report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7440203"
     }
   ],
   "related": [

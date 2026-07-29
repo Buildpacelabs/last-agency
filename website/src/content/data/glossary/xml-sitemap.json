@@ -32,7 +32,7 @@
         "A sitemap tells search engines a URL exists and roughly when it last changed. That's the whole job. It helps most where discovery is genuinely hard — a large site, a new site with few external links, pages buried deep in pagination.",
         "It helps least on a small, well-linked site. If your 60 pages are all two clicks from the homepage, Google was going to find them anyway. The sitemap still earns its place, but as an instrument rather than a discovery tool.",
         "The constraints are fixed: **50,000 URLs or 50MB uncompressed per file**, whichever you hit first. Exceed either and you split into multiple files and publish a **sitemap index** — a sitemap of sitemaps, itself capped at 50,000 files. Gzip is allowed; the 50MB ceiling applies uncompressed.",
-        "Two tags in the spec are dead weight. Google has said plainly it ignores `<priority>` and `<changefreq>`. Setting every page to priority 1.0 tells a reviewer only that whoever configured your plugin didn't read the docs."
+        "Two tags in the spec are dead weight. Google has said plainly it [ignores `<priority>` and `<changefreq>`](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap). Setting every page to priority 1.0 tells a reviewer only that whoever configured your plugin didn't read the docs."
       ]
     },
     {
@@ -132,6 +132,42 @@
     {
       "q": "Why does Search Console say discovered URLs but not indexed?",
       "a": "Because those are different stages. Discovered means Google read the file and knows the URLs exist. Indexed means it chose to store them. To see the second number, open the Page Indexing report and filter by that sitemap."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Build and submit a sitemap",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+      "date": "2026-07-08"
+    },
+    {
+      "title": "Learn about sitemaps",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Manage your sitemaps with a sitemap index file",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/large-sitemaps",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "sitemaps.org - Protocol",
+      "publisher": "sitemaps.org",
+      "url": "https://www.sitemaps.org/protocol.html"
+    },
+    {
+      "title": "Page indexing report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7440203"
+    },
+    {
+      "title": "Spam policies for Google web search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "date": "2026-05-15"
     }
   ],
   "related": [

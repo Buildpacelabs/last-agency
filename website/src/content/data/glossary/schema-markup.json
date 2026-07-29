@@ -110,7 +110,7 @@
       "body": [
         "Most CMSs already emit some of this: a decent WordPress SEO plugin covers Organization, Article and Breadcrumb, and Shopify themes usually ship Product schema. Check what you have before adding a plugin that leaves you with two conflicting Organization blocks on one page. On a custom Next.js build, generate the JSON-LD server-side so it exists in the raw HTML.",
         "Then validate. Google's **Rich Results Test** tells you whether a page qualifies for a search feature; **validator.schema.org** tells you whether the markup is valid at all. Search Console's Enhancements reports catch errors at scale — that's where you find 400 products that lost their price field in a theme update.",
-        "One rule overrides the rest: the markup must match what a human sees on the page. Marking up a price nobody can find, or reviews that don't exist, is exactly what manual actions are for."
+        "One rule overrides the rest: [the markup must match what a human sees on the page](https://developers.google.com/search/docs/appearance/structured-data/sd-policies). Marking up a price nobody can find, or reviews that don't exist, is exactly what manual actions are for."
       ]
     }
   ],
@@ -138,6 +138,37 @@
     {
       "q": "Does schema help with AI search and AI Overviews?",
       "a": "It helps machines identify you, which is a precondition for being cited. Organization markup with consistent `sameAs` links makes entity resolution easy. It's not a switch that gets you into AI answers — but ambiguity about who you are reliably keeps you out."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Introduction to structured data markup in Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Structured data markup that Google Search supports",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/search-gallery",
+      "date": "2026-06-15"
+    },
+    {
+      "title": "General structured data guidelines",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/sd-policies",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "Organization (Organization) structured data",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/organization",
+      "date": "2026-04-15"
+    },
+    {
+      "title": "Organization",
+      "publisher": "Schema.org",
+      "url": "https://schema.org/Organization"
     }
   ],
   "related": [

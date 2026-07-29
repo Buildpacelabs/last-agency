@@ -30,7 +30,7 @@
       "h2": "You probably don't have a crawl budget problem",
       "body": [
         "This term gets used to explain traffic drops far more often than it actually explains them. Before spending a week on it, check whether it applies to you at all.",
-        "Google's own large-site guidance draws the line clearly: it's written for sites over a million unique pages whose content changes weekly, or sites over about 10,000 unique pages whose content changes daily. On everyone else Google is close to dismissive — if your pages are typically crawled the same day you publish them, this isn't your issue.",
+        "[Google's own large-site guidance](https://developers.google.com/crawling/docs/crawl-budget) draws the line clearly: it's written for sites over a million unique pages whose content changes weekly, or sites over about 10,000 unique pages whose content changes daily. On everyone else Google is close to dismissive — if your pages are typically crawled the same day you publish them, this isn't your issue.",
         "A 120-page services site whose new pages sit unindexed does not have a crawl budget problem. It has an [indexing](/glossary/indexing) problem, an internal linking problem, or a content-quality problem. Chase those first.",
         "It matters because crawl budget work is invisible and slow — an excellent place to hide for three months. If someone hands you a crawl budget plan for a small site, ask what the page count is."
       ],
@@ -116,6 +116,43 @@
     {
       "q": "Will more backlinks increase crawl budget?",
       "a": "They increase crawl demand, which is the half you can't configure. Links from frequently-crawled sites genuinely bring Googlebot around more often. That's a slow lever, not a fix for a filter system generating 300,000 URLs."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Optimize your crawl budget",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/crawling/docs/crawl-budget",
+      "date": "2026-07-22"
+    },
+    {
+      "title": "Managing crawling of faceted navigation URLs",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/crawling/docs/faceted-navigation",
+      "date": "2025-12-18"
+    },
+    {
+      "title": "Crawl Stats report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9679690"
+    },
+    {
+      "title": "Introduction to robots.txt",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Build and submit a sitemap",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+      "date": "2026-07-08"
+    },
+    {
+      "title": "Block Search indexing with noindex",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "date": "2025-12-10"
     }
   ],
   "related": [

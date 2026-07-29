@@ -133,7 +133,7 @@
       "h2": "A baseline guarantee is not a ranking guarantee",
       "body": [
         "These get lumped together, and they're opposites.",
-        "A **ranking guarantee** is a promise about a system the agency doesn't control. The index changes without notice, competitors move, and a core update can reorder page one overnight — which is why Google's own guidance warns against agencies promising specific positions. Anyone offering one is either hedging with keywords so obscure the promise is trivial, or planning to buy the position and hand you the consequences.",
+        "A **ranking guarantee** is a promise about a system the agency doesn't control. The index changes without notice, competitors move, and a core update can reorder page one overnight — which is why [Google's own guidance warns against agencies promising specific positions](https://developers.google.com/search/docs/fundamentals/do-i-need-seo). Anyone offering one is either hedging with keywords so obscure the promise is trivial, or planning to buy the position and hand you the consequences.",
         "A **baseline guarantee** is a promise about a number you both measured before anything started. Ours: on day one we freeze your trailing-90-day count of qualified leads from organic search. Written down, agreed, before anyone touches the site. If we haven't beaten that number in 90 days, we keep working free until we do.",
         "The structural difference matters more than the wording. Because the metric is leads and not rank, the spam shortcut doesn't help us — network links produce no enquiries, so they'd cost us the time they bought. And because carrying that risk is expensive, we cap intake at three new clients a month. An agency offering the same promise at volume either isn't honouring it or has written an exit into the clause.",
         "Here's the part that's on you. A baseline guarantee is worthless if you can't attribute a lead to organic search. If your CRM doesn't record lead source, or enquiries arrive by phone with nobody logging where the caller came from, week one goes on fixing that before any promise gets made. We won't guarantee against a number we can't measure, and neither should anyone else."
@@ -194,6 +194,37 @@
     {
       "q": "Which pricing model gives the client the most protection?",
       "a": "A retainer with a written baseline, a short notice period and full asset ownership. It funds continuous work properly, gives the agency something to be accountable to, and lets you leave without losing the content, links and data you paid for."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Do you need an SEO?",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo",
+      "date": "2026-06-05"
+    },
+    {
+      "title": "Spam policies for Google web search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "date": "2026-05-15"
+    },
+    {
+      "title": "Disavow links to your site",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/2648487"
+    },
+    {
+      "title": "How to move a site",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+      "date": "2026-06-17"
+    },
+    {
+      "title": "Google Search Essentials",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials",
+      "date": "2025-12-10"
     }
   ],
   "related": [

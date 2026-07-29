@@ -38,6 +38,19 @@ export function articleNode(page: ContentPage): Record<string, unknown> {
     articleSection: page.sections.map((s) => plain(s.h2)),
     keywords: [page.primaryKeyword, ...page.secondaryKeywords].join(', '),
     image: `${SITE_URL}/opengraph-image`,
+    // Primary sources, machine-readable. This is the property that lets an
+    // answer engine see the page is evidenced rather than asserted.
+    ...(page.sources?.length
+      ? {
+          citation: page.sources.map((s) => ({
+            '@type': 'CreativeWork',
+            name: s.title,
+            url: s.url,
+            publisher: { '@type': 'Organization', name: s.publisher },
+            ...(s.date ? { datePublished: s.date } : {}),
+          })),
+        }
+      : {}),
   };
 }
 

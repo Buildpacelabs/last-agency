@@ -85,7 +85,7 @@
     {
       "h2": "Why Google ignores your canonical, and how to check",
       "body": [
-        "Google calls rel=canonical a hint. It weighs your declared canonical against internal links, sitemap entries, redirects, hreflang and which version users see more of. When those disagree with the tag, the tag loses.",
+        "[Google calls rel=canonical a hint](https://developers.google.com/search/docs/crawling-indexing/canonicalization). It weighs your declared canonical against internal links, sitemap entries, redirects, hreflang and which version users see more of. When those disagree with the tag, the tag loses.",
         "So stop reading the HTML and read Search Console. Open URL Inspection, paste the URL, and look at two fields: **User-declared canonical** (what your tag says) and **Google-selected canonical** (what Google decided). When they differ, Google has told you plainly that it doesn't believe you.",
         "In the Page Indexing report, the same disagreement shows up as **Duplicate, Google chose different canonical than user**. That's not an error to dismiss — it's a list of pages you thought were indexed and aren't.",
         "The fix is almost never a better tag. It's making every other signal agree: link internally to the canonical URL only, list only the canonical URL in your [XML sitemap](/glossary/xml-sitemap), and make sure the canonical target returns a 200 rather than redirecting."
@@ -112,6 +112,42 @@
     {
       "q": "Why does Search Console show a different canonical from mine?",
       "a": "Because your other signals contradict your tag. Usually internal links point at the non-canonical version, or the sitemap lists both, or the canonical target redirects. Fix the contradiction rather than re-writing the tag — Google is telling you which signal it trusts more."
+    }
+  ],
+  "sources": [
+    {
+      "title": "How to specify a canonical URL with rel=\"canonical\" and other methods",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "What is canonicalization",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/canonicalization",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "Block Search indexing with noindex",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "URL Inspection tool",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9012289"
+    },
+    {
+      "title": "Page indexing report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7440203"
+    },
+    {
+      "title": "Redirects and Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+      "date": "2026-04-14"
     }
   ],
   "related": [

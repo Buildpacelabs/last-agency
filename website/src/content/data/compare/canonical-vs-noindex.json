@@ -101,7 +101,7 @@
       "h2": "Why canonical plus noindex on one page breaks",
       "body": [
         "It's a common pattern in CMS plugins and it looks tidy: mark the duplicate `noindex` *and* point its canonical at the original. Both instincts are reasonable. Together they're contradictory.",
-        "The canonical says: *this page and that page are one thing, treat them as a unit, consolidate them.* The noindex says: *drop this page from search.* If Google honours the canonical and treats the two URLs as one entity, the noindex arguably applies to the merged entity. Google has warned about exactly this for years, and while the behaviour isn't deterministic, the downside is asymmetric.",
+        "The canonical says: *this page and that page are one thing, treat them as a unit, consolidate them.* The noindex says: *drop this page from search.* If Google honours the canonical and treats the two URLs as one entity, the noindex arguably applies to the merged entity. Google has [warned about exactly this](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls) for years, and while the behaviour isn't deterministic, the downside is asymmetric.",
         "You get one of three outcomes. Google ignores the canonical and deindexes the duplicate — fine, but the canonical was pointless. Google ignores the noindex and consolidates — fine, but the noindex was pointless. Or Google deindexes the target page you were trying to protect. Two are wasted work; one is a real loss. The rule is one directive per URL.",
         "There's a related trap in `noindex, follow`. It works initially, but a page Google keeps out of the index gets crawled less over time and its outgoing links stop helping discovery. If a page exists mainly to pass internal links deeper into the site, noindexing it is a slow way to orphan whatever sat behind it."
       ]
@@ -176,6 +176,44 @@
     {
       "q": "Does a noindex page still pass link equity?",
       "a": "Initially, if it's set to noindex, follow. Over time Google crawls a persistently noindexed page less often, and its outgoing links stop doing much for discovery. Don't rely on a noindexed page as a hub that funnels internal links deeper into the site — you'll slowly orphan whatever sits behind it."
+    }
+  ],
+  "sources": [
+    {
+      "title": "How to specify a canonical URL with rel=\"canonical\" and other methods",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "Block Search indexing with noindex",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Introduction to robots.txt",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Pagination, incremental page loading, and their impact on Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/specialty/ecommerce/pagination-and-incremental-page-loading",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Managing crawling of faceted navigation URLs",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/crawling-managing-faceted-navigation",
+      "date": "2025-12-18"
+    },
+    {
+      "title": "Spam policies for Google web search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "date": "2026-05-15"
     }
   ],
   "related": [

@@ -276,6 +276,44 @@ def main() -> int:
                     f"…{MARKUP.search(text).group(0)[:40]}…"
                 )
 
+    # ---- Pass 2b2: sources ----------------------------------------------
+    # Shape, plus two things the renderer can't catch: a source cited on many
+    # pages at once (usually a sign of boilerplate rather than evidence), and
+    # a page citing the same URL twice.
+    src_pages: dict[str, set[str]] = defaultdict(set)
+    for page in pages:
+        rel = page["_rel"]
+        srcs = page.get("sources")
+        if srcs is None:
+            continue
+        if not isinstance(srcs, list):
+            errors.append(f"{rel}: 'sources' must be an array")
+            continue
+        seen_urls: set[str] = set()
+        for i, s in enumerate(srcs):
+            where = f"{rel}: sources[{i}]"
+            if not isinstance(s, dict):
+                errors.append(f"{where}: not an object")
+                continue
+            for k in ("title", "publisher", "url"):
+                if not isinstance(s.get(k), str) or not s[k].strip():
+                    errors.append(f"{where}: missing '{k}'")
+            url = s.get("url", "")
+            if isinstance(url, str) and url:
+                if not url.startswith("https://"):
+                    errors.append(f"{where}: url must be absolute https — {url}")
+                if url in seen_urls:
+                    errors.append(f"{where}: duplicate url on the same page — {url}")
+                seen_urls.add(url)
+                src_pages[url].add(rel)
+            d = s.get("date")
+            if d is not None and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(d)):
+                errors.append(f"{where}: 'date' must be YYYY-MM-DD, got '{d}'")
+
+    for url, users in sorted(src_pages.items()):
+        if len(users) > 12:
+            warns.append(f"source cited on {len(users)} pages — boilerplate? {url}")
+
     # ---- Pass 2c: rendered title length ---------------------------------
     # detailMetadata uses title.absolute, so the rendered <title> is exactly
     # metaTitle. This asserts the comment in layout.tsx and reality agree.

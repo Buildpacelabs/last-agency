@@ -47,14 +47,35 @@
       ],
       "table": {
         "caption": "A starter robots.txt for a typical Next.js or WordPress site.",
-        "head": ["Line", "What it does"],
+        "head": [
+          "Line",
+          "What it does"
+        ],
         "rows": [
-          ["`User-agent: *`", "Everything below applies to all crawlers until the next User-agent line."],
-          ["`Allow: /`", "Permits the whole site. Redundant, but it makes intent obvious to whoever reads this next."],
-          ["`Disallow: /api/`", "Blocks internal endpoints returning JSON nobody should index."],
-          ["`Disallow: /cart`", "Blocks cart, checkout and account paths. No search value, and they spawn session URLs."],
-          ["`Disallow: /*?s=`", "Blocks internal search results. `*` matches anything — this is what stops a search box becoming an infinite URL space."],
-          ["`Sitemap: https://example.com/sitemap.xml`", "Absolute URL, one line per sitemap. How crawlers that never see Search Console find it."]
+          [
+            "`User-agent: *`",
+            "Everything below applies to all crawlers until the next User-agent line."
+          ],
+          [
+            "`Allow: /`",
+            "Permits the whole site. Redundant, but it makes intent obvious to whoever reads this next."
+          ],
+          [
+            "`Disallow: /api/`",
+            "Blocks internal endpoints returning JSON nobody should index."
+          ],
+          [
+            "`Disallow: /cart`",
+            "Blocks cart, checkout and account paths. No search value, and they spawn session URLs."
+          ],
+          [
+            "`Disallow: /*?s=`",
+            "Blocks internal search results. `*` matches anything — this is what stops a search box becoming an infinite URL space."
+          ],
+          [
+            "`Sitemap: https://example.com/sitemap.xml`",
+            "Absolute URL, one line per sitemap. How crawlers that never see Search Console find it."
+          ]
         ]
       },
       "bullets": [
@@ -68,7 +89,7 @@
       "h2": "Crawling is not indexing — the distinction that trips everyone",
       "body": [
         "Robots.txt controls whether a crawler may **request** a URL. It says nothing about whether that URL may appear in results. Different systems, and confusing them causes two opposite failures.",
-        "**Blocked but still listed.** If other sites link to a blocked URL, Google can index the URL without ever fetching it. You get a result with a bare URL and no description — Google states outright it has no information about the page. Blocking made it worse.",
+        "**Blocked but still listed.** If other sites link to a blocked URL, Google can [index the URL without ever fetching it](https://developers.google.com/search/docs/crawling-indexing/robots/intro). You get a result with a bare URL and no description — Google states outright it has no information about the page. Blocking made it worse.",
         "**A noindex that never gets read.** Someone adds `noindex` and blocks the page in robots.txt for good measure. Googlebot can't fetch it, so it never sees the tag, so the page stays indexed indefinitely. The two directives cancel each other out.",
         "The rule: to keep a page out of the index, allow the crawl and use [noindex](/glossary/noindex). To save crawl capacity on patterns you never want fetched, block in robots.txt and accept a few may still be listed. Use both on one URL and you get neither."
       ]
@@ -109,12 +130,67 @@
       "a": "Yes. The file applies to one protocol and hostname only, so `blog.example.com` and `shop.example.com` each need their own. This catches out plenty of teams whose blog sits on a subdomain nobody ever configured."
     }
   ],
+  "sources": [
+    {
+      "title": "Introduction to robots.txt",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "How to write and submit a robots.txt file",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/crawling/docs/robots-txt/create-robots-txt",
+      "date": "2025-11-21"
+    },
+    {
+      "title": "How Google interprets the robots.txt specification",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec",
+      "date": "2026-07-08"
+    },
+    {
+      "title": "Block Search indexing with noindex",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "List of Google's common crawlers",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+      "date": "2026-07-14"
+    },
+    {
+      "title": "RFC 9309: Robots Exclusion Protocol",
+      "publisher": "IETF",
+      "url": "https://www.rfc-editor.org/rfc/rfc9309.html"
+    }
+  ],
   "related": [
-    { "type": "glossary", "slug": "noindex" },
-    { "type": "glossary", "slug": "crawl-budget" },
-    { "type": "glossary", "slug": "xml-sitemap" },
-    { "type": "glossary", "slug": "indexing" },
-    { "type": "services", "slug": "technical-seo-services" },
-    { "type": "journal", "slug": "should-you-block-ai-crawlers" }
+    {
+      "type": "glossary",
+      "slug": "noindex"
+    },
+    {
+      "type": "glossary",
+      "slug": "crawl-budget"
+    },
+    {
+      "type": "glossary",
+      "slug": "xml-sitemap"
+    },
+    {
+      "type": "glossary",
+      "slug": "indexing"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "journal",
+      "slug": "should-you-block-ai-crawlers"
+    }
   ]
 }

@@ -29,7 +29,7 @@
     {
       "h2": "Accessibility is the job. Search is the side effect.",
       "body": [
-        "The `alt` attribute exists so that a non-text element has a text equivalent. WCAG's first success criterion — 1.1.1, Non-text Content — is exactly this requirement, and it predates anyone caring about image search. A blind user browsing your product page hears the alt text where a sighted user sees the photo. If the alt says `img_4471_final_v2`, that user learns nothing.",
+        "The `alt` attribute exists so that a non-text element has a text equivalent. WCAG's first success criterion — [1.1.1, Non-text Content](https://www.w3.org/TR/WCAG22/#non-text-content) — is exactly this requirement, and it predates anyone caring about image search. A blind user browsing your product page hears the alt text where a sighted user sees the photo. If the alt says `img_4471_final_v2`, that user learns nothing.",
         "In India this has weight beyond good manners. The Rights of Persons with Disabilities Act, 2016 requires accessibility standards for services, and the government's own web guidelines are built on WCAG. If you sell to government or large enterprises, accessibility conformance shows up in procurement questionnaires.",
         "Search engines read the same attribute because it's the most reliable plain-language description of an image on the page. Useful for image search, mildly useful as page context, and not a ranking lever you can pull hard."
       ]
@@ -103,6 +103,38 @@
     {
       "q": "Does Instagram alt text matter?",
       "a": "It matters for accessibility, and it's one of the few text fields attached to an image post. Instagram generates its own description automatically, so writing custom alt text in the advanced settings replaces a machine guess with an accurate one."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+      "publisher": "W3C",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "date": "2024-12-12"
+    },
+    {
+      "title": "Decorative Images",
+      "publisher": "W3C Web Accessibility Initiative (WAI)",
+      "url": "https://www.w3.org/WAI/tutorials/images/decorative/",
+      "date": "2019-07-27"
+    },
+    {
+      "title": "An alt Decision Tree",
+      "publisher": "W3C Web Accessibility Initiative (WAI)",
+      "url": "https://www.w3.org/WAI/tutorials/images/decision-tree/",
+      "date": "2024-05-13"
+    },
+    {
+      "title": "Google image SEO best practices",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/google-images",
+      "date": "2026-03-02"
+    },
+    {
+      "title": "HTML Standard — 4.8.4 Images",
+      "publisher": "WHATWG",
+      "url": "https://html.spec.whatwg.org/multipage/images.html",
+      "date": "2026-07-20"
     }
   ],
   "related": [

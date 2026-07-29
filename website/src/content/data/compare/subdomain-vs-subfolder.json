@@ -29,7 +29,7 @@
       "h2": "How Google actually treats a subdomain",
       "body": [
         "Google's public position hasn't changed in a decade: it can crawl and rank either, and you should use whichever your team can maintain. That's honest advice and it gets quoted as though it settles the argument. It doesn't, because the question isn't whether Google *can* handle a subdomain — it's what happens by default when you use one.",
-        "Two mechanics matter. Google computes some quality and spam signals at host level as well as page level, so a brand-new `blog.example.com` doesn't inherit `example.com`'s track record — it accumulates its own, which on a domain with years of history is a real handicap for the first several months. And a URL-prefix property in Search Console covers one host only. A DNS-verified domain property does aggregate subdomains, so this is solvable, but most teams set up a URL-prefix property years ago and now run two reports that never quite reconcile.",
+        "Two mechanics matter. Google computes some quality and spam signals at host level as well as page level, so a brand-new `blog.example.com` doesn't inherit `example.com`'s track record — it accumulates its own, which on a domain with years of history is a real handicap for the first several months. And a [URL-prefix property in Search Console covers one host only](https://support.google.com/webmasters/answer/34592). A DNS-verified domain property does aggregate subdomains, so this is solvable, but most teams set up a URL-prefix property years ago and now run two reports that never quite reconcile.",
         "The old trick this used to enable is dead, incidentally. Google's site reputation abuse policy, introduced in 2024, applies to third-party content on your domain whether it sits on a subdomain or in a subfolder. You can't park low-quality partner content in `/deals` and borrow the domain's authority. The location was never the loophole."
       ],
       "callout": {
@@ -176,6 +176,37 @@
     {
       "q": "Can I use a reverse proxy to get a subfolder with a hosted tool?",
       "a": "Yes, and it's the standard answer when a helpdesk or docs vendor only offers subdomain mapping. The catch is that you must rewrite the vendor's canonical tags and absolute URLs, serve the pages in your own sitemap, manage edge caching, and accept that the vendor's uptime is now your main domain's uptime. Check their terms first."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Add a website or platform property to Search Console",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/34592"
+    },
+    {
+      "title": "How to move a site",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+      "date": "2026-06-17"
+    },
+    {
+      "title": "Spam policies for Google web search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "date": "2026-05-15"
+    },
+    {
+      "title": "How to specify a canonical URL with rel=\"canonical\" and other methods",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "Redirects and Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+      "date": "2026-04-14"
     }
   ],
   "related": [

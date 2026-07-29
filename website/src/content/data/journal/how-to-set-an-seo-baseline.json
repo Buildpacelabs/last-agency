@@ -84,7 +84,7 @@
         ]
       },
       "bullets": [
-        "**Don't freeze average position.** It falls while a site is winning, because new long-tail queries enter at position 40 and drag the average down. It's the worst number on most reports and it's on most reports.",
+        "**Don't freeze average position.** It's [the average position of your topmost result](https://support.google.com/webmasters/answer/7576553), and it falls while a site is winning, because new long-tail queries enter at position 40 and drag the average down. It's the worst number on most reports and it's on most reports.",
         "**Don't freeze domain authority or domain rating.** They're third-party estimates of Google's opinion, recalculated whenever the vendor changes their model. You can't hold anyone to a number a vendor can revise.",
         "**Don't freeze total sessions.** Paid, direct, referral and a bot or two are all in there. Organic-only, non-brand, or it isn't measuring the work.",
         "**Do keep the raw exports.** CSV files, dated, in a shared folder both sides can open. A number in a slide is an assertion. A number with its export attached is evidence."
@@ -257,6 +257,29 @@
     {
       "q": "Can an agency change the baseline mid-engagement?",
       "a": "Only for events you both agreed in advance would reset it — a migration, a replatform, or a change of CRM or attribution model. A Google core update never resets it; that's the risk the agency is paid to carry. Write the reset conditions into the document on day one, while neither side knows who they'll favour."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Performance report (Search results): Overview and basic setup",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7576553"
+    },
+    {
+      "title": "Page indexing report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7440203"
+    },
+    {
+      "title": "Google Search's core updates and your website",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/updates/core-updates",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Data retention",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/7667196"
     }
   ],
   "related": [

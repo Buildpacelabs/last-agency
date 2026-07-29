@@ -107,7 +107,7 @@
     {
       "h2": "The risk you inherit when you buy links",
       "body": [
-        "Google's spam policies name link spam directly: buying or selling links that pass ranking signals, exchanging goods or services for links, and large-scale automated link creation. Disclosure with `rel=\"sponsored\"` or `rel=\"nofollow\"` keeps you compliant, and simultaneously removes the ranking benefit you paid for. That trade-off is the whole story of paid links.",
+        "[Google's spam policies name link spam directly](https://developers.google.com/search/docs/essentials/spam-policies): buying or selling links that pass ranking signals, exchanging goods or services for links, and large-scale automated link creation. Disclosure with `rel=\"sponsored\"` or `rel=\"nofollow\"` keeps you compliant, and simultaneously removes the ranking benefit you paid for. That trade-off is the whole story of paid links.",
         "The practical risk in 2026 is rarely a dramatic manual penalty. It's quieter: the links get algorithmically discounted, your rankings don't move, and you spend nine months believing SEO doesn't work for your category. You paid for a signal that was neutralised on arrival.",
         "The second risk is the cleanup. When a site does pick up a manual action for unnatural links, disavowing and removing them is slow, unglamorous work — and it's charged at the same hourly rate the outreach would have been."
       ],
@@ -161,6 +161,32 @@
     {
       "q": "Do cheap backlinks actually hurt my site?",
       "a": "Usually they just do nothing, which costs you the fee plus the months you spent waiting. Real damage — a manual action for unnatural links — happens at scale or with obvious footprints. The recovery work is slower and more expensive than the links ever were."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Spam policies for Google web search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "date": "2026-05-15"
+    },
+    {
+      "title": "Qualify your outbound links to Google",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Google Search Essentials",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Creating helpful, reliable, people-first content",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "date": "2025-12-10"
     }
   ],
   "related": [

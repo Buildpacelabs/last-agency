@@ -88,7 +88,7 @@
     {
       "h2": "How much this actually affects rankings",
       "body": [
-        "Less than the tooling implies. Core Web Vitals are a real ranking input, but a small one — closest to a tiebreaker between results of comparable relevance. A fast page about the wrong thing does not outrank a slow page about the right thing.",
+        "Less than the tooling implies. Core Web Vitals are [a real ranking input, but a small one](https://developers.google.com/search/docs/appearance/page-experience) — closest to a tiebreaker between results of comparable relevance. A fast page about the wrong thing does not outrank a slow page about the right thing.",
         "Which is why we won't sell a Core Web Vitals project to a site whose real problem is four thin pages and no links. Fixing CLS on a page nobody can find is theatre.",
         "The genuine case here is commercial, not algorithmic. Slow pages lose people before the page finishes arriving, and on mobile checkout that loss compounds at every step. That's revenue you can measure without arguing about ranking weights.",
         "Where to look: the **Core Web Vitals report** in Search Console groups URLs by template and shows which page type fails, split by mobile and desktop. Mobile is where failures live and mobile is what gets indexed, so start there. Then run PageSpeed Insights on one URL per failing group — one diagnosis per template, not per page. Red across a whole page type is [Core Web Vitals work](/services/core-web-vitals-optimisation), usually a rendering and asset problem rather than a hosting one."
@@ -119,6 +119,37 @@
     {
       "q": "How long do Core Web Vitals take to improve after a fix?",
       "a": "Deploy the fix and the underlying experience changes immediately, but CrUX uses a rolling 28-day window, so the reported number moves gradually and takes about four weeks to fully reflect the change. Don't judge a fix after a week — you're looking at mostly pre-fix data."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Web Vitals",
+      "publisher": "web.dev",
+      "url": "https://web.dev/articles/vitals",
+      "date": "2024-10-31"
+    },
+    {
+      "title": "Understanding Core Web Vitals and Google search results",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/core-web-vitals",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Understanding page experience in Google Search results",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/page-experience",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Interaction to Next Paint becomes a Core Web Vital on March 12",
+      "publisher": "web.dev",
+      "url": "https://web.dev/blog/inp-cwv-march-12",
+      "date": "2024-01-31"
+    },
+    {
+      "title": "Core Web Vitals report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9205520"
     }
   ],
   "related": [

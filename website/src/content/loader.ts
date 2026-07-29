@@ -72,6 +72,28 @@ function validate(page: unknown, file: string): ContentPage {
     const c = s.callout as Record<string, unknown> | undefined;
     if (c !== undefined && !c.body) throw new Error(`${where}: "callout" needs "body"`);
   });
+
+  // Sources are the page's evidence. A malformed or relative one is a broken
+  // citation on a site whose argument is that it shows its working, so fail the
+  // build rather than render it.
+  if (p.sources !== undefined) {
+    if (!Array.isArray(p.sources)) throw new Error(`[content] ${file}: "sources" must be an array`);
+    (p.sources as Record<string, unknown>[]).forEach((s, i) => {
+      const where = `${file}: sources[${i}]`;
+      if (!s || typeof s !== 'object') throw new Error(`${where}: not an object`);
+      for (const k of ['title', 'publisher', 'url'] as const) {
+        if (typeof s[k] !== 'string' || !(s[k] as string).trim()) {
+          throw new Error(`${where}: missing "${k}"`);
+        }
+      }
+      if (!/^https:\/\//.test(s.url as string)) {
+        throw new Error(`${where}: url must be absolute https, got "${String(s.url)}"`);
+      }
+      if (s.date !== undefined && !/^\d{4}-\d{2}-\d{2}$/.test(String(s.date))) {
+        throw new Error(`${where}: "date" must be YYYY-MM-DD, got "${String(s.date)}"`);
+      }
+    });
+  }
   return {
     ...(p as unknown as ContentPage),
     secondaryKeywords: Array.isArray(p.secondaryKeywords) ? (p.secondaryKeywords as string[]) : [],

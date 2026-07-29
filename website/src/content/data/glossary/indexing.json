@@ -31,7 +31,7 @@
       "body": [
         "People use \"crawled\" and \"indexed\" interchangeably. Google doesn't, and the distinction is where most diagnosis happens.",
         "**Crawling** is Googlebot requesting your URL and receiving the HTML. **Rendering** is Google running the page's JavaScript in a headless browser to see what the content becomes. **Indexing** is Google deciding to store the result, extract its meaning, and make it eligible to appear.",
-        "Each step fails on its own. Robots.txt blocks the crawl. A client-rendered template starves the render. And a page that crawls and renders perfectly can still be refused at the index because Google judged it duplicated, thin, or not worth the storage. That last one carries no error message, which is why founders find it maddening."
+        "Each step fails on its own. Robots.txt blocks the crawl. A client-rendered template starves the render. And a page that crawls and renders perfectly can still be [refused at the index](https://developers.google.com/search/docs/fundamentals/how-search-works) because Google judged it duplicated, thin, or not worth the storage. That last one carries no error message, which is why founders find it maddening."
       ],
       "callout": {
         "kind": "note",
@@ -146,6 +146,42 @@
     {
       "q": "Is noindex the same as not indexed?",
       "a": "No. Noindex is your explicit instruction to keep a page out. \"Not indexed\" in Search Console usually means Google decided on its own. Check the status label — Excluded by 'noindex' tag is yours; Crawled — currently not indexed is Google's."
+    }
+  ],
+  "sources": [
+    {
+      "title": "In-depth guide to how Google Search works",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/how-search-works",
+      "date": "2025-12-18"
+    },
+    {
+      "title": "Page indexing report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7440203"
+    },
+    {
+      "title": "URL Inspection tool",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9012289"
+    },
+    {
+      "title": "Understand the JavaScript SEO basics",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics",
+      "date": "2026-03-04"
+    },
+    {
+      "title": "How to specify a canonical URL with rel=\"canonical\" and other methods",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "Learn about sitemaps",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",
+      "date": "2025-12-10"
     }
   ],
   "related": [
