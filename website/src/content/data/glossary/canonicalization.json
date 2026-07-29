@@ -14,7 +14,7 @@
   "h1": "Canonicalization",
   "metaTitle": "Canonicalization in SEO, Explained Simply",
   "metaDescription": "Canonicalization is how Google picks one URL when several serve the same page. Here are the four duplicate patterns that split rankings, and the fix order.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "term": "Canonicalization",
   "definition": "Canonicalization is the process of choosing a single representative URL when several different URLs serve the same or near-identical content.",
@@ -34,7 +34,11 @@
       ],
       "table": {
         "caption": "The four duplicate patterns, where they come from, and what fixes them.",
-        "head": ["Pattern", "Typical cause", "The fix"],
+        "head": [
+          "Pattern",
+          "Typical cause",
+          "The fix"
+        ],
         "rows": [
           [
             "http and https both respond",
@@ -161,11 +165,29 @@
     }
   ],
   "related": [
-    { "type": "glossary", "slug": "canonical-tag" },
-    { "type": "glossary", "slug": "301-redirect" },
-    { "type": "glossary", "slug": "keyword-cannibalization" },
-    { "type": "services", "slug": "seo-audit-services" },
-    { "type": "compare", "slug": "subdomain-vs-subfolder" },
-    { "type": "journal", "slug": "what-an-seo-audit-should-actually-find" }
+    {
+      "type": "glossary",
+      "slug": "canonical-tag"
+    },
+    {
+      "type": "glossary",
+      "slug": "301-redirect"
+    },
+    {
+      "type": "glossary",
+      "slug": "keyword-cannibalization"
+    },
+    {
+      "type": "services",
+      "slug": "seo-audit-services"
+    },
+    {
+      "type": "compare",
+      "slug": "subdomain-vs-subfolder"
+    },
+    {
+      "type": "journal",
+      "slug": "what-an-seo-audit-should-actually-find"
+    }
   ]
 }

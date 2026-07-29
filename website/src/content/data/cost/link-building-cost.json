@@ -14,7 +14,7 @@
   "h1": "Link building cost in India: the ₹500 link versus the ₹25,000 link",
   "metaTitle": "Link Building Cost in India: What a Backlink Costs",
   "metaDescription": "Link building costs ₹500 to ₹25,000 a link in India. Here is what each tier really is, why one earned link costs ₹18,000, and why we never price per link.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "answer": "Backlinks in India are sold from ₹500 to ₹25,000 each. Below roughly ₹5,000 you're buying a placement on a site built to sell placements. One genuinely earned link costs about ₹18,000 once you count the asset, the prospecting and the thirty pitches that produced it — which is why a ₹75,000 retainer funds one or two a month, not twenty.",
   "takeaways": [
@@ -31,7 +31,11 @@
       ],
       "table": {
         "caption": "Backlink price bands in the Indian market and what sits behind each one.",
-        "head": ["Price per link", "What it actually is", "What Google does with it"],
+        "head": [
+          "Price per link",
+          "What it actually is",
+          "What Google does with it"
+        ],
         "rows": [
           [
             "₹300 – ₹800",
@@ -73,15 +77,47 @@
       ],
       "table": {
         "caption": "Fully loaded cost of one earned link, modelled at ₹1,200/hour delivery cost.",
-        "head": ["Line", "Time", "Cost"],
+        "head": [
+          "Line",
+          "Time",
+          "Cost"
+        ],
         "rows": [
-          ["Asset you pitch — data cut, survey, tool or expert POV, amortised across the campaign", "—", "₹4,000"],
-          ["Prospecting and list building, qualifying real sites", "2 hrs", "₹2,400"],
-          ["Thirty personalised pitches at ~12 minutes each", "6 hrs", "₹7,200"],
-          ["Follow-ups, negotiation, supplying quotes and images", "2 hrs", "₹2,400"],
-          ["Tools — backlink index, email finder, outreach seat, amortised", "—", "₹1,500"],
-          ["QA, tracking the placement, reporting", "0.5 hr", "₹600"],
-          ["**Total for one live, earned link**", "**10.5 hrs**", "**≈ ₹18,100**"]
+          [
+            "Asset you pitch — data cut, survey, tool or expert POV, amortised across the campaign",
+            "—",
+            "₹4,000"
+          ],
+          [
+            "Prospecting and list building, qualifying real sites",
+            "2 hrs",
+            "₹2,400"
+          ],
+          [
+            "Thirty personalised pitches at ~12 minutes each",
+            "6 hrs",
+            "₹7,200"
+          ],
+          [
+            "Follow-ups, negotiation, supplying quotes and images",
+            "2 hrs",
+            "₹2,400"
+          ],
+          [
+            "Tools — backlink index, email finder, outreach seat, amortised",
+            "—",
+            "₹1,500"
+          ],
+          [
+            "QA, tracking the placement, reporting",
+            "0.5 hr",
+            "₹600"
+          ],
+          [
+            "**Total for one live, earned link**",
+            "**10.5 hrs**",
+            "**≈ ₹18,100**"
+          ]
         ]
       },
       "callout": {
@@ -190,11 +226,29 @@
     }
   ],
   "related": [
-    { "type": "services", "slug": "link-building-services" },
-    { "type": "services", "slug": "digital-pr-services" },
-    { "type": "compare", "slug": "paid-links-vs-earned-links" },
-    { "type": "compare", "slug": "guest-posting-vs-digital-pr" },
-    { "type": "glossary", "slug": "toxic-backlinks" },
-    { "type": "answers", "slug": "how-do-seo-agencies-get-backlinks" }
+    {
+      "type": "services",
+      "slug": "link-building-services"
+    },
+    {
+      "type": "services",
+      "slug": "digital-pr-services"
+    },
+    {
+      "type": "compare",
+      "slug": "paid-links-vs-earned-links"
+    },
+    {
+      "type": "compare",
+      "slug": "guest-posting-vs-digital-pr"
+    },
+    {
+      "type": "glossary",
+      "slug": "toxic-backlinks"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-seo-agencies-get-backlinks"
+    }
   ]
 }

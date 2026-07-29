@@ -14,7 +14,7 @@
   "h1": "Hourly, monthly or project: which SEO pricing wins for you",
   "metaTitle": "Hourly vs Monthly vs Project SEO Pricing: Pick One",
   "metaDescription": "Hourly vs monthly SEO pricing is settled by hour count. At ₹2,500 an hour a retainer wins past 30 hours a month. Here's the break-even, plus three cases.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "answer": "Hourly SEO in India runs ₹1,500–₹6,000 an hour depending on seniority. At a typical ₹2,500 mid-rate, a ₹75,000 monthly retainer breaks even at 30 hours. Need fewer than 30 hours a month and hourly is genuinely cheaper. Need more — which most sites past 50 pages do — and the retainer wins.",
   "takeaways": [
@@ -44,7 +44,12 @@
       ],
       "table": {
         "caption": "Indian SEO hourly rates by seniority, ex-GST, and the hours at which a ₹75,000 retainer becomes cheaper.",
-        "head": ["Who you're buying", "Typical hourly", "Worth paying hourly for", "Break-even vs ₹75,000/mo"],
+        "head": [
+          "Who you're buying",
+          "Typical hourly",
+          "Worth paying hourly for",
+          "Break-even vs ₹75,000/mo"
+        ],
         "rows": [
           [
             "Junior executive, 0–2 years",
@@ -85,7 +90,13 @@
       ],
       "table": {
         "caption": "The same three pieces of SEO work, priced hourly and priced as a retainer or project. Ex-GST.",
-        "head": ["Scenario", "Hours needed", "Hourly at ₹2,500", "Retainer or project", "Which wins"],
+        "head": [
+          "Scenario",
+          "Hours needed",
+          "Hourly at ₹2,500",
+          "Retainer or project",
+          "Which wins"
+        ],
         "rows": [
           [
             "Technical audit only, 60-page site, no implementation",
@@ -207,11 +218,29 @@
     }
   ],
   "related": [
-    { "type": "compare", "slug": "retainer-vs-project" },
-    { "type": "cost", "slug": "seo-pricing-models" },
-    { "type": "cost", "slug": "seo-agency-cost" },
-    { "type": "compare", "slug": "seo-consultant-vs-seo-agency" },
-    { "type": "services", "slug": "seo-consulting" },
-    { "type": "journal", "slug": "why-performance-based-seo-pricing-breaks" }
+    {
+      "type": "compare",
+      "slug": "retainer-vs-project"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-pricing-models"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-agency-cost"
+    },
+    {
+      "type": "compare",
+      "slug": "seo-consultant-vs-seo-agency"
+    },
+    {
+      "type": "services",
+      "slug": "seo-consulting"
+    },
+    {
+      "type": "journal",
+      "slug": "why-performance-based-seo-pricing-breaks"
+    }
   ]
 }

@@ -14,7 +14,7 @@
   "h1": "Hreflang",
   "metaTitle": "Hreflang: Language and Country Tags Explained",
   "metaDescription": "Hreflang tells Google which language and country version of a page to show. Use en-IN, not en-india, and keep every tag reciprocal or it fails silently.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "term": "Hreflang",
   "definition": "Hreflang is an annotation that tells search engines which language and regional version of a page to show a given searcher.",
@@ -141,12 +141,33 @@
     }
   ],
   "related": [
-    { "type": "glossary", "slug": "canonical-tag" },
-    { "type": "glossary", "slug": "xml-sitemap" },
-    { "type": "services", "slug": "international-seo-services" },
-    { "type": "compare", "slug": "indian-seo-agency-vs-international-agency" },
-    { "type": "compare", "slug": "english-vs-regional-language-seo" },
-    { "type": "journal", "slug": "indian-agencies-serving-global-clients" },
-    { "type": "seo-agency", "slug": "dubai" }
+    {
+      "type": "glossary",
+      "slug": "canonical-tag"
+    },
+    {
+      "type": "glossary",
+      "slug": "xml-sitemap"
+    },
+    {
+      "type": "services",
+      "slug": "international-seo-services"
+    },
+    {
+      "type": "compare",
+      "slug": "indian-seo-agency-vs-international-agency"
+    },
+    {
+      "type": "compare",
+      "slug": "english-vs-regional-language-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "indian-agencies-serving-global-clients"
+    },
+    {
+      "type": "seo-agency",
+      "slug": "dubai"
+    }
   ]
 }

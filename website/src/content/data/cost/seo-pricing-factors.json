@@ -14,7 +14,7 @@
   "h1": "Why two SEO quotes for the same site differ by ₹2 lakh",
   "metaTitle": "What Affects SEO Pricing? 7 Variables, Each Priced",
   "metaDescription": "What affects SEO pricing? Seven variables move a quote. We attach a rupee swing to each one so you can build your own number before an agency sends theirs.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "answer": "Seven variables move an SEO quote: site size and CMS access, competition tier, content velocity, link ambition, languages, catalogue complexity, and reporting load. Each carries a rupee swing. Start from a ₹40,000 base for a small single-language site, add the ones that apply, and you can predict your own quote within roughly 20%.",
   "takeaways": [
@@ -39,7 +39,12 @@
       ],
       "table": {
         "caption": "Seven variables that move an Indian SEO quote, with the monthly rupee swing each carries. Ex-GST.",
-        "head": ["Variable", "The easy end", "The expensive end", "Monthly swing"],
+        "head": [
+          "Variable",
+          "The easy end",
+          "The expensive end",
+          "Monthly swing"
+        ],
         "rows": [
           [
             "Site size and CMS access",
@@ -222,11 +227,29 @@
     }
   ],
   "related": [
-    { "type": "cost", "slug": "seo-agency-fees-breakdown" },
-    { "type": "cost", "slug": "seo-cost-in-india" },
-    { "type": "answers", "slug": "why-is-seo-so-expensive" },
-    { "type": "cost", "slug": "seo-services-cost" },
-    { "type": "journal", "slug": "where-your-seo-retainer-money-actually-goes" },
-    { "type": "services", "slug": "seo-retainer-plans" }
+    {
+      "type": "cost",
+      "slug": "seo-agency-fees-breakdown"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-cost-in-india"
+    },
+    {
+      "type": "answers",
+      "slug": "why-is-seo-so-expensive"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-services-cost"
+    },
+    {
+      "type": "journal",
+      "slug": "where-your-seo-retainer-money-actually-goes"
+    },
+    {
+      "type": "services",
+      "slug": "seo-retainer-plans"
+    }
   ]
 }

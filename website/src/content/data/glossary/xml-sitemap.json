@@ -14,7 +14,7 @@
   "h1": "XML sitemap",
   "metaTitle": "XML Sitemap: What It Is and How to Build One",
   "metaDescription": "An XML sitemap lists the URLs you want Google to find. Learn the 50,000-URL limit, honest lastmod dates, and how to turn a sitemap into a diagnostic.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "term": "XML sitemap",
   "definition": "An XML sitemap is a machine-readable file listing the URLs on a site that you want search engines to know about, along with optional metadata such as when each URL last changed.",
@@ -44,7 +44,10 @@
       ],
       "table": {
         "caption": "What a low indexed ratio in a single sitemap is telling you.",
-        "head": ["Sitemap", "A low ratio here usually means"],
+        "head": [
+          "Sitemap",
+          "A low ratio here usually means"
+        ],
         "rows": [
           [
             "Core service or product pages",
@@ -171,11 +174,29 @@
     }
   ],
   "related": [
-    { "type": "glossary", "slug": "indexing" },
-    { "type": "glossary", "slug": "robots-txt" },
-    { "type": "glossary", "slug": "google-search-console" },
-    { "type": "compare", "slug": "nextjs-vs-wordpress-seo" },
-    { "type": "services", "slug": "technical-seo-services" },
-    { "type": "journal", "slug": "programmatic-seo-and-the-scaled-content-line" }
+    {
+      "type": "glossary",
+      "slug": "indexing"
+    },
+    {
+      "type": "glossary",
+      "slug": "robots-txt"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "compare",
+      "slug": "nextjs-vs-wordpress-seo"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "journal",
+      "slug": "programmatic-seo-and-the-scaled-content-line"
+    }
   ]
 }

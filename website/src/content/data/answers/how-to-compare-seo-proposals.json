@@ -13,7 +13,7 @@
   "h1": "How to compare three SEO proposals that look nothing alike",
   "metaTitle": "How to Compare SEO Proposals That Look Different",
   "metaDescription": "How to compare SEO proposals: turn vague deliverables into hours, put every quote on one sheet, score eight weighted criteria, spot the disqualifier.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "answer": "Convert every proposal into hours before you compare anything. Phrases like \"unlimited keywords\" and \"20 backlinks a month\" aren't units — turn them into working hours, divide by the fee to get a blended rate, then score all three against eight weighted criteria. Any proposal with no baseline is disqualified.",
   "takeaways": [
@@ -43,7 +43,11 @@
       ],
       "table": {
         "caption": "Converting proposal language into working hours.",
-        "head": ["What the proposal says", "What it usually means", "Hours to assume"],
+        "head": [
+          "What the proposal says",
+          "What it usually means",
+          "Hours to assume"
+        ],
         "rows": [
           [
             "\"Unlimited keywords\"",
@@ -91,15 +95,55 @@
       ],
       "table": {
         "caption": "The same three proposals, normalised.",
-        "head": ["Line", "A — ₹25,000", "B — ₹95,000", "C — ₹75,000"],
+        "head": [
+          "Line",
+          "A — ₹25,000",
+          "B — ₹95,000",
+          "C — ₹75,000"
+        ],
         "rows": [
-          ["Implied working hours", "140–300 (as written)", "55–70", "45–60 (stated)"],
-          ["Blended rate per hour", "₹80–₹180 — impossible", "₹1,350–₹1,700", "₹1,250–₹1,650"],
-          ["Content", "8 posts, writer unnamed", "4 articles, editor named", "4 articles, brief + edit itemised"],
-          ["Links", "30/mo, source unstated", "\"Digital PR\", no samples", "Sample of last 20 placements"],
-          ["Technical", "Audit only, fixes excluded", "Retained, dev not included", "Retained, dev sprint scoped"],
-          ["Baseline", "None", "None", "Trailing-90-day organic leads"],
-          ["Contract", "6-month lock-in", "12-month lock-in", "Monthly after quarter one"]
+          [
+            "Implied working hours",
+            "140–300 (as written)",
+            "55–70",
+            "45–60 (stated)"
+          ],
+          [
+            "Blended rate per hour",
+            "₹80–₹180 — impossible",
+            "₹1,350–₹1,700",
+            "₹1,250–₹1,650"
+          ],
+          [
+            "Content",
+            "8 posts, writer unnamed",
+            "4 articles, editor named",
+            "4 articles, brief + edit itemised"
+          ],
+          [
+            "Links",
+            "30/mo, source unstated",
+            "\"Digital PR\", no samples",
+            "Sample of last 20 placements"
+          ],
+          [
+            "Technical",
+            "Audit only, fixes excluded",
+            "Retained, dev not included",
+            "Retained, dev sprint scoped"
+          ],
+          [
+            "Baseline",
+            "None",
+            "None",
+            "Trailing-90-day organic leads"
+          ],
+          [
+            "Contract",
+            "6-month lock-in",
+            "12-month lock-in",
+            "Monthly after quarter one"
+          ]
         ]
       }
     },
@@ -110,7 +154,12 @@
       ],
       "table": {
         "caption": "Eight weighted criteria for scoring an SEO proposal.",
-        "head": ["Criterion", "Weight", "A 5 looks like", "A 1 looks like"],
+        "head": [
+          "Criterion",
+          "Weight",
+          "A 5 looks like",
+          "A 1 looks like"
+        ],
         "rows": [
           [
             "The measured number and its baseline",
@@ -243,11 +292,29 @@
     }
   ],
   "related": [
-    { "type": "answers", "slug": "what-should-be-in-an-seo-contract" },
-    { "type": "answers", "slug": "what-questions-should-i-ask-an-seo-agency" },
-    { "type": "cost", "slug": "seo-agency-fees-breakdown" },
-    { "type": "compare", "slug": "retainer-vs-project" },
-    { "type": "journal", "slug": "why-free-seo-audits-are-sales-pitches" },
-    { "type": "glossary", "slug": "domain-authority" }
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "answers",
+      "slug": "what-questions-should-i-ask-an-seo-agency"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-agency-fees-breakdown"
+    },
+    {
+      "type": "compare",
+      "slug": "retainer-vs-project"
+    },
+    {
+      "type": "journal",
+      "slug": "why-free-seo-audits-are-sales-pitches"
+    },
+    {
+      "type": "glossary",
+      "slug": "domain-authority"
+    }
   ]
 }

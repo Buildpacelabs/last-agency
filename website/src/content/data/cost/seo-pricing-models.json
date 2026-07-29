@@ -14,7 +14,7 @@
   "h1": "The five ways agencies price SEO, and who carries the risk",
   "metaTitle": "SEO Pricing Models: 5 Structures, One Real Question",
   "metaDescription": "Five SEO pricing models exist: retainer, hourly, project, per-deliverable and performance. Here is the INR range for each and who absorbs the risk in each.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "answer": "SEO is priced five ways: monthly retainer (₹25,000–₹3,00,000), hourly (₹1,500–₹8,000), fixed-scope project (₹50,000–₹6,00,000), per-deliverable rate cards, and performance-based. They differ in one thing that matters — who absorbs the loss when month four is flat. Retainers put that on you. Performance deals put it on the agency, and change how the agency behaves.",
   "takeaways": [
@@ -32,7 +32,12 @@
       ],
       "table": {
         "caption": "SEO pricing models in India: typical rates, and who absorbs the loss when results are slow.",
-        "head": ["Model", "Typical INR range", "Who eats the downside", "Fits best"],
+        "head": [
+          "Model",
+          "Typical INR range",
+          "Who eats the downside",
+          "Fits best"
+        ],
         "rows": [
           [
             "Monthly retainer",
@@ -228,11 +233,29 @@
     }
   ],
   "related": [
-    { "type": "compare", "slug": "performance-based-seo-vs-retainer" },
-    { "type": "compare", "slug": "retainer-vs-project" },
-    { "type": "cost", "slug": "hourly-vs-monthly-seo-pricing" },
-    { "type": "cost", "slug": "seo-agency-cost" },
-    { "type": "journal", "slug": "why-performance-based-seo-pricing-breaks" },
-    { "type": "answers", "slug": "do-seo-agencies-guarantee-rankings" }
+    {
+      "type": "compare",
+      "slug": "performance-based-seo-vs-retainer"
+    },
+    {
+      "type": "compare",
+      "slug": "retainer-vs-project"
+    },
+    {
+      "type": "cost",
+      "slug": "hourly-vs-monthly-seo-pricing"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-agency-cost"
+    },
+    {
+      "type": "journal",
+      "slug": "why-performance-based-seo-pricing-breaks"
+    },
+    {
+      "type": "answers",
+      "slug": "do-seo-agencies-guarantee-rankings"
+    }
   ]
 }

@@ -14,7 +14,7 @@
   "h1": "301 redirect",
   "metaTitle": "301 Redirect: When to Use It and When Not To",
   "metaDescription": "A 301 redirect permanently sends one URL to another and passes its ranking signals. Here's the migration map, the chain trap, and how long to keep them.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "term": "301 redirect",
   "definition": "A 301 redirect is an HTTP status code that permanently sends a request for one URL to a different URL and passes the original URL's ranking signals to the destination.",
@@ -33,7 +33,11 @@
       ],
       "table": {
         "caption": "The redirect codes you'll actually use.",
-        "head": ["Code", "Meaning", "Use it for"],
+        "head": [
+          "Code",
+          "Meaning",
+          "Use it for"
+        ],
         "rows": [
           [
             "**301** Moved Permanently",
@@ -161,11 +165,29 @@
     }
   ],
   "related": [
-    { "type": "compare", "slug": "301-vs-302-redirect" },
-    { "type": "glossary", "slug": "404-error" },
-    { "type": "glossary", "slug": "canonicalization" },
-    { "type": "glossary", "slug": "link-equity" },
-    { "type": "services", "slug": "site-migration-seo" },
-    { "type": "journal", "slug": "the-replatform-that-killed-your-traffic" }
+    {
+      "type": "compare",
+      "slug": "301-vs-302-redirect"
+    },
+    {
+      "type": "glossary",
+      "slug": "404-error"
+    },
+    {
+      "type": "glossary",
+      "slug": "canonicalization"
+    },
+    {
+      "type": "glossary",
+      "slug": "link-equity"
+    },
+    {
+      "type": "services",
+      "slug": "site-migration-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "the-replatform-that-killed-your-traffic"
+    }
   ]
 }

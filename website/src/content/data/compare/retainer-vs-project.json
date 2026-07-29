@@ -14,7 +14,7 @@
   "h1": "SEO retainer vs project pricing: match the model to the work",
   "metaTitle": "SEO Retainer vs Project: Match Model to Work",
   "metaDescription": "SEO retainer vs project based pricing should follow the shape of the work. Migrations and audits are projects. Rankings are a retainer. Here's the line.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "answer": "Buy a project when the work has a natural end date — an audit, a migration, a tracking rebuild. Buy a retainer when the work is a compounding cadence — content, links, competitive rankings. Fixed-scope SEO projects in India typically run ₹25,000–₹5,00,000; useful retainers start around ₹40,000 a month.",
   "takeaways": [
@@ -39,17 +39,67 @@
       ],
       "table": {
         "caption": "Nine common SEO jobs, sorted by whether the work has a natural end date.",
-        "head": ["The job", "Model", "Why", "Typical India range"],
+        "head": [
+          "The job",
+          "Model",
+          "Why",
+          "Typical India range"
+        ],
         "rows": [
-          ["Technical SEO audit", "Project", "It ends when the document lands. Re-auditing monthly is theatre.", "₹25,000–₹1,50,000"],
-          ["Site migration or replatform", "Project", "Hard start, hard finish, and a 4–8 week index-settling tail.", "₹75,000–₹5,00,000"],
-          ["Analytics and conversion tracking rebuild", "Project", "Once GA4 and the CRM agree on what a lead is, it's done.", "₹20,000–₹75,000"],
-          ["Schema markup rollout", "Project", "Ship it once per template, then it maintains itself.", "₹15,000–₹75,000"],
-          ["Google Business Profile setup and citation cleanup", "Project", "The cleanup is finite. Reviews and posts afterwards are not.", "₹15,000–₹50,000"],
-          ["Content at cadence", "Retainer", "Stop publishing and the competitor who didn't stop takes the slot.", "Part of a monthly fee"],
-          ["Link earning and digital PR", "Retainer", "Relationships and coverage compound. One month buys almost nothing.", "Part of a monthly fee"],
-          ["Competing for a national keyword set", "Retainer", "There is no version of this with a finish line.", "₹75,000+/mo"],
-          ["Penalty or core-update recovery", "Hybrid", "Diagnosis and cleanup are a project. Rebuilding trust is a retainer.", "Project + 3–6 month tail"]
+          [
+            "Technical SEO audit",
+            "Project",
+            "It ends when the document lands. Re-auditing monthly is theatre.",
+            "₹25,000–₹1,50,000"
+          ],
+          [
+            "Site migration or replatform",
+            "Project",
+            "Hard start, hard finish, and a 4–8 week index-settling tail.",
+            "₹75,000–₹5,00,000"
+          ],
+          [
+            "Analytics and conversion tracking rebuild",
+            "Project",
+            "Once GA4 and the CRM agree on what a lead is, it's done.",
+            "₹20,000–₹75,000"
+          ],
+          [
+            "Schema markup rollout",
+            "Project",
+            "Ship it once per template, then it maintains itself.",
+            "₹15,000–₹75,000"
+          ],
+          [
+            "Google Business Profile setup and citation cleanup",
+            "Project",
+            "The cleanup is finite. Reviews and posts afterwards are not.",
+            "₹15,000–₹50,000"
+          ],
+          [
+            "Content at cadence",
+            "Retainer",
+            "Stop publishing and the competitor who didn't stop takes the slot.",
+            "Part of a monthly fee"
+          ],
+          [
+            "Link earning and digital PR",
+            "Retainer",
+            "Relationships and coverage compound. One month buys almost nothing.",
+            "Part of a monthly fee"
+          ],
+          [
+            "Competing for a national keyword set",
+            "Retainer",
+            "There is no version of this with a finish line.",
+            "₹75,000+/mo"
+          ],
+          [
+            "Penalty or core-update recovery",
+            "Hybrid",
+            "Diagnosis and cleanup are a project. Rebuilding trust is a retainer.",
+            "Project + 3–6 month tail"
+          ]
         ]
       },
       "callout": {
@@ -170,11 +220,29 @@
     }
   ],
   "related": [
-    { "type": "compare", "slug": "performance-based-seo-vs-retainer" },
-    { "type": "cost", "slug": "seo-pricing-models" },
-    { "type": "cost", "slug": "hourly-vs-monthly-seo-pricing" },
-    { "type": "services", "slug": "seo-retainer-plans" },
-    { "type": "journal", "slug": "what-a-75000-rupee-seo-retainer-actually-buys" },
-    { "type": "answers", "slug": "how-do-seo-agencies-work" }
+    {
+      "type": "compare",
+      "slug": "performance-based-seo-vs-retainer"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-pricing-models"
+    },
+    {
+      "type": "cost",
+      "slug": "hourly-vs-monthly-seo-pricing"
+    },
+    {
+      "type": "services",
+      "slug": "seo-retainer-plans"
+    },
+    {
+      "type": "journal",
+      "slug": "what-a-75000-rupee-seo-retainer-actually-buys"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-seo-agencies-work"
+    }
   ]
 }

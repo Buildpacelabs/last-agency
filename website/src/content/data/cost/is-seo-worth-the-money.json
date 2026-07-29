@@ -14,7 +14,7 @@
   "h1": "Is SEO worth the money? Do this maths before you sign anything",
   "metaTitle": "Is SEO Worth the Money? The Payback Maths in INR",
   "metaDescription": "Is SEO worth the money? At ₹75,000 a month it must return about ₹9 lakh a year. Here is the break-even maths, plus three businesses we tell to skip SEO.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "answer": "SEO is worth it when your gross profit from organic beats the fee, and the fee is bigger than it looks: ₹75,000 a month is ₹9,00,000 a year. Divide that by your gross margin to get the organic revenue you need. At 60% margin that's ₹15 lakh. If that number looks impossible, don't buy SEO.",
   "takeaways": [
@@ -50,13 +50,55 @@
       ],
       "table": {
         "caption": "Break-even requirement for a ₹75,000/month SEO retainer (₹9,00,000/year) by business shape.",
-        "head": ["Business", "Order value", "Gross margin", "Close rate", "Organic revenue needed", "Enquiries or orders / month"],
+        "head": [
+          "Business",
+          "Order value",
+          "Gross margin",
+          "Close rate",
+          "Organic revenue needed",
+          "Enquiries or orders / month"
+        ],
         "rows": [
-          ["D2C skincare brand", "₹1,800", "55%", "Checkout", "₹16.4 lakh", "76 orders"],
-          ["B2B SaaS, annual contract", "₹1,20,000", "80%", "20%", "₹11.3 lakh", "4 qualified leads"],
-          ["Dental clinic", "₹18,000", "60%", "40%", "₹15.0 lakh", "17 enquiries"],
-          ["Interior design studio", "₹8,00,000", "25%", "15%", "₹36.0 lakh", "3 enquiries"],
-          ["Packers and movers", "₹12,000", "35%", "25%", "₹25.7 lakh", "71 enquiries"]
+          [
+            "D2C skincare brand",
+            "₹1,800",
+            "55%",
+            "Checkout",
+            "₹16.4 lakh",
+            "76 orders"
+          ],
+          [
+            "B2B SaaS, annual contract",
+            "₹1,20,000",
+            "80%",
+            "20%",
+            "₹11.3 lakh",
+            "4 qualified leads"
+          ],
+          [
+            "Dental clinic",
+            "₹18,000",
+            "60%",
+            "40%",
+            "₹15.0 lakh",
+            "17 enquiries"
+          ],
+          [
+            "Interior design studio",
+            "₹8,00,000",
+            "25%",
+            "15%",
+            "₹36.0 lakh",
+            "3 enquiries"
+          ],
+          [
+            "Packers and movers",
+            "₹12,000",
+            "35%",
+            "25%",
+            "₹25.7 lakh",
+            "71 enquiries"
+          ]
         ]
       },
       "callout": {
@@ -73,12 +115,37 @@
       ],
       "table": {
         "caption": "Modelled cash position over 12 months on a ₹75,000/month retainer.",
-        "head": ["Quarter", "Cumulative fees", "Organic gross profit that quarter", "Cumulative position"],
+        "head": [
+          "Quarter",
+          "Cumulative fees",
+          "Organic gross profit that quarter",
+          "Cumulative position"
+        ],
         "rows": [
-          ["Q1 (months 1–3)", "₹2,25,000", "₹25,000", "−₹2,00,000"],
-          ["Q2 (months 4–6)", "₹4,50,000", "₹1,25,000", "−₹3,00,000"],
-          ["Q3 (months 7–9)", "₹6,75,000", "₹2,75,000", "−₹2,50,000"],
-          ["Q4 (months 10–12)", "₹9,00,000", "₹4,75,000", "₹0"]
+          [
+            "Q1 (months 1–3)",
+            "₹2,25,000",
+            "₹25,000",
+            "−₹2,00,000"
+          ],
+          [
+            "Q2 (months 4–6)",
+            "₹4,50,000",
+            "₹1,25,000",
+            "−₹3,00,000"
+          ],
+          [
+            "Q3 (months 7–9)",
+            "₹6,75,000",
+            "₹2,75,000",
+            "−₹2,50,000"
+          ],
+          [
+            "Q4 (months 10–12)",
+            "₹9,00,000",
+            "₹4,75,000",
+            "₹0"
+          ]
         ]
       },
       "bullets": [
@@ -193,11 +260,29 @@
     }
   ],
   "related": [
-    { "type": "cost", "slug": "total-cost-of-seo" },
-    { "type": "cost", "slug": "seo-agency-cost" },
-    { "type": "compare", "slug": "google-ads-vs-seo" },
-    { "type": "journal", "slug": "is-seo-worth-the-cost" },
-    { "type": "answers", "slug": "what-is-the-roi-of-seo" },
-    { "type": "answers", "slug": "is-cheap-seo-worth-it" }
+    {
+      "type": "cost",
+      "slug": "total-cost-of-seo"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-agency-cost"
+    },
+    {
+      "type": "compare",
+      "slug": "google-ads-vs-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "is-seo-worth-the-cost"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-the-roi-of-seo"
+    },
+    {
+      "type": "answers",
+      "slug": "is-cheap-seo-worth-it"
+    }
   ]
 }

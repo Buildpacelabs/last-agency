@@ -14,7 +14,7 @@
   "h1": "Indexing",
   "metaTitle": "Indexing in SEO: How Pages Get Into Google",
   "metaDescription": "Indexing is Google storing your page so it can rank. Here's the crawl-render-index path, and what each Page Indexing status means you should do this week.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "term": "Indexing",
   "definition": "Indexing is the step where a search engine stores and organises a page it has already crawled, making that page eligible to appear in results.",
@@ -46,7 +46,11 @@
       ],
       "table": {
         "caption": "Page Indexing statuses and what to do about each.",
-        "head": ["Status", "What it means", "What to do this week"],
+        "head": [
+          "Status",
+          "What it means",
+          "What to do this week"
+        ],
         "rows": [
           [
             "Discovered — currently not indexed",
@@ -185,11 +189,29 @@
     }
   ],
   "related": [
-    { "type": "glossary", "slug": "crawl-budget" },
-    { "type": "glossary", "slug": "noindex" },
-    { "type": "glossary", "slug": "google-search-console" },
-    { "type": "glossary", "slug": "thin-content" },
-    { "type": "services", "slug": "technical-seo-services" },
-    { "type": "journal", "slug": "when-to-update-old-content-instead-of-writing-new" }
+    {
+      "type": "glossary",
+      "slug": "crawl-budget"
+    },
+    {
+      "type": "glossary",
+      "slug": "noindex"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "glossary",
+      "slug": "thin-content"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "journal",
+      "slug": "when-to-update-old-content-instead-of-writing-new"
+    }
   ]
 }

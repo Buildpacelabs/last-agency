@@ -14,7 +14,7 @@
   "h1": "301 vs 302: when picking the wrong redirect actually costs you",
   "metaTitle": "301 vs 302: When the Wrong Redirect Costs You",
   "metaDescription": "301 vs 302 redirect matters far less to Google than to your browser cache and CDN. The mistake you can't take back, and the right code for each case.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "answer": "A 301 is permanent, a 302 is temporary, and Google treats both as canonicalisation signals that pass link equity. The real difference is client-side: browsers and CDNs cache a 301 aggressively and may never request the old URL again. A wrong 302 costs you a week. A wrong 301 can outlive the deploy.",
   "takeaways": [
@@ -33,14 +33,49 @@
       ],
       "table": {
         "caption": "The redirect codes, what each says, and where each belongs.",
-        "head": ["Code", "Means", "Method preserved?", "Use it for"],
+        "head": [
+          "Code",
+          "Means",
+          "Method preserved?",
+          "Use it for"
+        ],
         "rows": [
-          ["301 Moved Permanently", "This URL is gone for good; use the new one", "Not guaranteed", "Migrations, HTTPS, www consolidation, retired URLs"],
-          ["302 Found", "Temporarily elsewhere; keep asking for this URL", "Not guaranteed", "Campaigns, A/B tests, short-lived diversions"],
-          ["307 Temporary Redirect", "Same as 302, method and body preserved", "Yes", "Temporary redirects on POST endpoints and APIs"],
-          ["308 Permanent Redirect", "Same as 301, method and body preserved", "Yes", "Permanent redirects where method matters"],
-          ["303 See Other", "Go fetch this other thing with GET", "No, forced to GET", "Post-form-submission redirects"],
-          ["503 Service Unavailable", "Site is down, come back later", "n/a", "Planned maintenance — with a `Retry-After` header"]
+          [
+            "301 Moved Permanently",
+            "This URL is gone for good; use the new one",
+            "Not guaranteed",
+            "Migrations, HTTPS, www consolidation, retired URLs"
+          ],
+          [
+            "302 Found",
+            "Temporarily elsewhere; keep asking for this URL",
+            "Not guaranteed",
+            "Campaigns, A/B tests, short-lived diversions"
+          ],
+          [
+            "307 Temporary Redirect",
+            "Same as 302, method and body preserved",
+            "Yes",
+            "Temporary redirects on POST endpoints and APIs"
+          ],
+          [
+            "308 Permanent Redirect",
+            "Same as 301, method and body preserved",
+            "Yes",
+            "Permanent redirects where method matters"
+          ],
+          [
+            "303 See Other",
+            "Go fetch this other thing with GET",
+            "No, forced to GET",
+            "Post-form-submission redirects"
+          ],
+          [
+            "503 Service Unavailable",
+            "Site is down, come back later",
+            "n/a",
+            "Planned maintenance — with a `Retry-After` header"
+          ]
         ]
       },
       "callout": {
@@ -86,16 +121,52 @@
       ],
       "table": {
         "caption": "Pick by how likely you are to reverse the decision.",
-        "head": ["Situation", "Right answer", "Why"],
+        "head": [
+          "Situation",
+          "Right answer",
+          "Why"
+        ],
         "rows": [
-          ["Site migration, URL restructure, HTTP to HTTPS", "**301** (or 308)", "The old URL is genuinely never coming back."],
-          ["Planned maintenance or a deploy window", "**503 + `Retry-After`**", "A redirect tells Google the page moved. It didn't. It's just down."],
-          ["A/B test sending some users to a variant", "**302**", "Temporary by definition. Google's own testing guidance says so."],
-          ["Vanity or campaign URL that will be reused", "**302 or 307**", "Next quarter it points somewhere else. Don't burn it permanently."],
-          ["Out-of-stock product coming back", "**Leave it at 200**", "301ing to a category kills a page that has links and rankings."],
-          ["Product discontinued forever", "**301** to the closest equivalent", "Not to the homepage — Google often treats that as a soft 404."],
-          ["Geo or language routing by IP", "**Neither — don't auto-redirect**", "Googlebot crawls mostly from one region. IP redirects can hide the rest of your site from it."],
-          ["Retired page with no equivalent", "**410 Gone**", "Honest, and it leaves the index faster than a 404."]
+          [
+            "Site migration, URL restructure, HTTP to HTTPS",
+            "**301** (or 308)",
+            "The old URL is genuinely never coming back."
+          ],
+          [
+            "Planned maintenance or a deploy window",
+            "**503 + `Retry-After`**",
+            "A redirect tells Google the page moved. It didn't. It's just down."
+          ],
+          [
+            "A/B test sending some users to a variant",
+            "**302**",
+            "Temporary by definition. Google's own testing guidance says so."
+          ],
+          [
+            "Vanity or campaign URL that will be reused",
+            "**302 or 307**",
+            "Next quarter it points somewhere else. Don't burn it permanently."
+          ],
+          [
+            "Out-of-stock product coming back",
+            "**Leave it at 200**",
+            "301ing to a category kills a page that has links and rankings."
+          ],
+          [
+            "Product discontinued forever",
+            "**301** to the closest equivalent",
+            "Not to the homepage — Google often treats that as a soft 404."
+          ],
+          [
+            "Geo or language routing by IP",
+            "**Neither — don't auto-redirect**",
+            "Googlebot crawls mostly from one region. IP redirects can hide the rest of your site from it."
+          ],
+          [
+            "Retired page with no equivalent",
+            "**410 Gone**",
+            "Honest, and it leaves the index faster than a 404."
+          ]
         ]
       },
       "callout": {
@@ -206,11 +277,29 @@
     }
   ],
   "related": [
-    { "type": "glossary", "slug": "301-redirect" },
-    { "type": "glossary", "slug": "canonical-tag" },
-    { "type": "compare", "slug": "canonical-vs-noindex" },
-    { "type": "services", "slug": "site-migration-seo" },
-    { "type": "journal", "slug": "the-replatform-that-killed-your-traffic" },
-    { "type": "glossary", "slug": "404-error" }
+    {
+      "type": "glossary",
+      "slug": "301-redirect"
+    },
+    {
+      "type": "glossary",
+      "slug": "canonical-tag"
+    },
+    {
+      "type": "compare",
+      "slug": "canonical-vs-noindex"
+    },
+    {
+      "type": "services",
+      "slug": "site-migration-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "the-replatform-that-killed-your-traffic"
+    },
+    {
+      "type": "glossary",
+      "slug": "404-error"
+    }
   ]
 }

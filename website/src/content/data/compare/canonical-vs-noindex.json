@@ -14,7 +14,7 @@
   "h1": "Canonical vs noindex: a decision table for five real cases",
   "metaTitle": "Canonical vs Noindex: A 5-Case Decision Table",
   "metaDescription": "Canonical vs noindex, settled with a decision table for the five duplicate content cases Indian ecommerce sites hit — plus why you must never combine them.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "answer": "A canonical tag is a hint that two URLs are the same page and their signals should merge. A noindex is a directive that removes a page from search entirely. Use canonical for duplicates you want consolidated, noindex for pages that shouldn't be findable, and never both on the same URL.",
   "takeaways": [
@@ -33,15 +33,47 @@
       ],
       "table": {
         "caption": "Canonical vs noindex: two different tools for two different problems.",
-        "head": ["", "rel=canonical", "meta robots noindex"],
+        "head": [
+          "",
+          "rel=canonical",
+          "meta robots noindex"
+        ],
         "rows": [
-          ["What it says", "\"This other URL is the real version of this page\"", "\"Do not show this page in search results\""],
-          ["Binding?", "A hint. Google may pick a different canonical.", "A directive. Google honours it."],
-          ["Where it goes", "`<link rel=\"canonical\">` in `<head>`, or an HTTP header", "`<meta name=\"robots\" content=\"noindex\">`, or `X-Robots-Tag`"],
-          ["Effect on link signals", "Consolidates them onto the target URL", "Discards them over time"],
-          ["Page stays crawlable?", "Yes, and it must", "Yes, and it must — or Google never sees the tag"],
-          ["Reversible", "On the next crawl", "Yes, but re-indexing takes weeks"],
-          ["Use when", "Two URLs are genuinely the same page", "The page is fine for humans, wrong for search"]
+          [
+            "What it says",
+            "\"This other URL is the real version of this page\"",
+            "\"Do not show this page in search results\""
+          ],
+          [
+            "Binding?",
+            "A hint. Google may pick a different canonical.",
+            "A directive. Google honours it."
+          ],
+          [
+            "Where it goes",
+            "`<link rel=\"canonical\">` in `<head>`, or an HTTP header",
+            "`<meta name=\"robots\" content=\"noindex\">`, or `X-Robots-Tag`"
+          ],
+          [
+            "Effect on link signals",
+            "Consolidates them onto the target URL",
+            "Discards them over time"
+          ],
+          [
+            "Page stays crawlable?",
+            "Yes, and it must",
+            "Yes, and it must — or Google never sees the tag"
+          ],
+          [
+            "Reversible",
+            "On the next crawl",
+            "Yes, but re-indexing takes weeks"
+          ],
+          [
+            "Use when",
+            "Two URLs are genuinely the same page",
+            "The page is fine for humans, wrong for search"
+          ]
         ]
       },
       "callout": {
@@ -57,7 +89,11 @@
       ],
       "table": {
         "caption": "Five real cases, and the exact directive for each.",
-        "head": ["Case", "What to ship", "Why"],
+        "head": [
+          "Case",
+          "What to ship",
+          "Why"
+        ],
         "rows": [
           [
             "**1. Faceted filters** — `/sarees?colour=red&size=m&sort=price`",
@@ -217,11 +253,29 @@
     }
   ],
   "related": [
-    { "type": "glossary", "slug": "canonical-tag" },
-    { "type": "glossary", "slug": "noindex" },
-    { "type": "glossary", "slug": "canonicalization" },
-    { "type": "compare", "slug": "301-vs-302-redirect" },
-    { "type": "services", "slug": "technical-seo-services" },
-    { "type": "journal", "slug": "a-post-mortem-on-keyword-cannibalization" }
+    {
+      "type": "glossary",
+      "slug": "canonical-tag"
+    },
+    {
+      "type": "glossary",
+      "slug": "noindex"
+    },
+    {
+      "type": "glossary",
+      "slug": "canonicalization"
+    },
+    {
+      "type": "compare",
+      "slug": "301-vs-302-redirect"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "journal",
+      "slug": "a-post-mortem-on-keyword-cannibalization"
+    }
   ]
 }

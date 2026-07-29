@@ -14,7 +14,7 @@
   "h1": "E-E-A-T",
   "metaTitle": "E-E-A-T: What Google Actually Means by It",
   "metaDescription": "E-E-A-T means experience, expertise, authoritativeness and trust. It isn't a score. Here's what raters look for and a 20-minute fix for any page.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "term": "E-E-A-T",
   "definition": "E-E-A-T is the experience, expertise, authoritativeness and trust framework Google's human quality raters use to judge whether a page deserves to be shown.",
@@ -34,12 +34,32 @@
       ],
       "table": {
         "caption": "The four letters, and what each one looks like when it's actually present.",
-        "head": ["Letter", "What it asks", "What it looks like on the page"],
+        "head": [
+          "Letter",
+          "What it asks",
+          "What it looks like on the page"
+        ],
         "rows": [
-          ["Experience (added 2022)", "Has this person actually done the thing?", "First-hand detail: what you ran, what broke, a screenshot of your own dashboard, dates, the part that went wrong."],
-          ["Expertise", "Does the author know the subject?", "A named author with a bio and a verifiable track record. Not \"Admin\", not \"Team\"."],
-          ["Authoritativeness", "Is this site a recognised source on this topic?", "Other credible sites citing you, a coherent body of work on the subject, third-party coverage that isn't a press release."],
-          ["Trust", "Can a reader safely act on this?", "Real address and phone, clear pricing, refund and privacy policies, sources cited, nothing hidden until checkout."]
+          [
+            "Experience (added 2022)",
+            "Has this person actually done the thing?",
+            "First-hand detail: what you ran, what broke, a screenshot of your own dashboard, dates, the part that went wrong."
+          ],
+          [
+            "Expertise",
+            "Does the author know the subject?",
+            "A named author with a bio and a verifiable track record. Not \"Admin\", not \"Team\"."
+          ],
+          [
+            "Authoritativeness",
+            "Is this site a recognised source on this topic?",
+            "Other credible sites citing you, a coherent body of work on the subject, third-party coverage that isn't a press release."
+          ],
+          [
+            "Trust",
+            "Can a reader safely act on this?",
+            "Real address and phone, clear pricing, refund and privacy policies, sources cited, nothing hidden until checkout."
+          ]
         ]
       }
     },
@@ -126,12 +146,33 @@
     }
   ],
   "related": [
-    { "type": "glossary", "slug": "thin-content" },
-    { "type": "glossary", "slug": "google-core-update" },
-    { "type": "glossary", "slug": "topical-authority" },
-    { "type": "journal", "slug": "does-ai-written-content-still-rank" },
-    { "type": "services", "slug": "content-marketing-services" },
-    { "type": "seo-for", "slug": "healthcare" },
-    { "type": "seo-for", "slug": "ivf-clinics" }
+    {
+      "type": "glossary",
+      "slug": "thin-content"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-core-update"
+    },
+    {
+      "type": "glossary",
+      "slug": "topical-authority"
+    },
+    {
+      "type": "journal",
+      "slug": "does-ai-written-content-still-rank"
+    },
+    {
+      "type": "services",
+      "slug": "content-marketing-services"
+    },
+    {
+      "type": "seo-for",
+      "slug": "healthcare"
+    },
+    {
+      "type": "seo-for",
+      "slug": "ivf-clinics"
+    }
   ]
 }

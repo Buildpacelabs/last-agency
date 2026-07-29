@@ -14,7 +14,7 @@
   "h1": "Canonical tag",
   "metaTitle": "Canonical Tag: What It Is and How to Use It",
   "metaDescription": "A canonical tag tells Google which URL is the original. Here's the exact syntax, the three ways it breaks on Indian stores, and how to check your own.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "term": "Canonical tag",
   "definition": "A canonical tag is a line of HTML in a page's head that tells search engines which URL is the preferred version when several URLs serve the same content.",
@@ -63,14 +63,35 @@
       ],
       "table": {
         "caption": "Which one to reach for.",
-        "head": ["Situation", "Use"],
+        "head": [
+          "Situation",
+          "Use"
+        ],
         "rows": [
-          ["Product reachable through two category paths", "Canonical — users need both paths to work"],
-          ["Tracking parameters on shared links", "Canonical — you can't stop people adding them"],
-          ["Printer-friendly or AMP variant", "Canonical to the main version"],
-          ["Old URL after a rename or migration", "301 — nobody should land on the old one again"],
-          ["http and www duplicates", "301 at the server, then a self-referencing canonical"],
-          ["Two pages competing for one keyword", "Neither — merge them, then 301"]
+          [
+            "Product reachable through two category paths",
+            "Canonical — users need both paths to work"
+          ],
+          [
+            "Tracking parameters on shared links",
+            "Canonical — you can't stop people adding them"
+          ],
+          [
+            "Printer-friendly or AMP variant",
+            "Canonical to the main version"
+          ],
+          [
+            "Old URL after a rename or migration",
+            "301 — nobody should land on the old one again"
+          ],
+          [
+            "http and www duplicates",
+            "301 at the server, then a self-referencing canonical"
+          ],
+          [
+            "Two pages competing for one keyword",
+            "Neither — merge them, then 301"
+          ]
         ]
       },
       "subs": [
@@ -151,11 +172,29 @@
     }
   ],
   "related": [
-    { "type": "glossary", "slug": "canonicalization" },
-    { "type": "compare", "slug": "canonical-vs-noindex" },
-    { "type": "glossary", "slug": "noindex" },
-    { "type": "compare", "slug": "wordpress-vs-shopify-seo" },
-    { "type": "services", "slug": "technical-seo-services" },
-    { "type": "journal", "slug": "a-post-mortem-on-keyword-cannibalization" }
+    {
+      "type": "glossary",
+      "slug": "canonicalization"
+    },
+    {
+      "type": "compare",
+      "slug": "canonical-vs-noindex"
+    },
+    {
+      "type": "glossary",
+      "slug": "noindex"
+    },
+    {
+      "type": "compare",
+      "slug": "wordpress-vs-shopify-seo"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "journal",
+      "slug": "a-post-mortem-on-keyword-cannibalization"
+    }
   ]
 }

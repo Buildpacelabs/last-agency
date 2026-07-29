@@ -14,7 +14,7 @@
   "h1": "Crawl budget",
   "metaTitle": "Crawl Budget: What It Is and Who Needs to Care",
   "metaDescription": "Crawl budget is how many URLs Googlebot will fetch from your site. Most sites under 10,000 pages don't have a problem — here's how to tell if yours does.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "term": "Crawl budget",
   "definition": "Crawl budget is the number of URLs Googlebot is willing and able to fetch from a site in a given period, set by what your server can handle and how much Google wants your pages.",
@@ -156,12 +156,33 @@
     }
   ],
   "related": [
-    { "type": "glossary", "slug": "indexing" },
-    { "type": "glossary", "slug": "robots-txt" },
-    { "type": "glossary", "slug": "log-file-analysis" },
-    { "type": "glossary", "slug": "xml-sitemap" },
-    { "type": "services", "slug": "ecommerce-seo-services" },
-    { "type": "journal", "slug": "programmatic-seo-and-the-scaled-content-line" },
-    { "type": "seo-for", "slug": "ecommerce" }
+    {
+      "type": "glossary",
+      "slug": "indexing"
+    },
+    {
+      "type": "glossary",
+      "slug": "robots-txt"
+    },
+    {
+      "type": "glossary",
+      "slug": "log-file-analysis"
+    },
+    {
+      "type": "glossary",
+      "slug": "xml-sitemap"
+    },
+    {
+      "type": "services",
+      "slug": "ecommerce-seo-services"
+    },
+    {
+      "type": "journal",
+      "slug": "programmatic-seo-and-the-scaled-content-line"
+    },
+    {
+      "type": "seo-for",
+      "slug": "ecommerce"
+    }
   ]
 }

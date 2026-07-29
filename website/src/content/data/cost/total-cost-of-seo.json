@@ -14,7 +14,7 @@
   "h1": "The real cost of SEO across 12 months, not just the retainer",
   "metaTitle": "The True Cost of SEO: A 12-Month INR Budget",
   "metaDescription": "The cost of SEO is bigger than the retainer. Here's a 12-month INR budget with developer hours, your own review time, tools and asset production added in.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "answer": "A ₹75,000/month SEO retainer costs about ₹1,06,000 a month once you add developer hours, your own review time, tools you keep paying for and asset production. Over twelve months that's roughly ₹12,80,000 against ₹9,00,000 of agency fees — a 42% gap nobody puts in the proposal.",
   "takeaways": [
@@ -39,15 +39,71 @@
       ],
       "table": {
         "caption": "Twelve-month SEO budget for a mid-size Indian site, ex-GST. Quarterly, in INR.",
-        "head": ["Cost line", "Q1", "Q2", "Q3", "Q4", "Year"],
+        "head": [
+          "Cost line",
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Year"
+        ],
         "rows": [
-          ["Agency retainer (₹75,000/mo)", "2,25,000", "2,25,000", "2,25,000", "2,25,000", "9,00,000"],
-          ["Developer hours (~75 hrs @ ₹1,200)", "48,000", "18,000", "12,000", "12,000", "90,000"],
-          ["Your team's briefing and review time", "45,000", "39,000", "30,000", "30,000", "1,44,000"],
-          ["Tools you still pay for", "18,000", "18,000", "18,000", "18,000", "72,000"],
-          ["Asset production (design, images, video)", "24,000", "18,000", "15,000", "15,000", "72,000"],
-          ["**Quarterly total**", "**3,60,000**", "**3,18,000**", "**3,00,000**", "**3,00,000**", "**12,78,000**"],
-          ["Effective monthly cost", "1,20,000", "1,06,000", "1,00,000", "1,00,000", "**~1,06,500**"]
+          [
+            "Agency retainer (₹75,000/mo)",
+            "2,25,000",
+            "2,25,000",
+            "2,25,000",
+            "2,25,000",
+            "9,00,000"
+          ],
+          [
+            "Developer hours (~75 hrs @ ₹1,200)",
+            "48,000",
+            "18,000",
+            "12,000",
+            "12,000",
+            "90,000"
+          ],
+          [
+            "Your team's briefing and review time",
+            "45,000",
+            "39,000",
+            "30,000",
+            "30,000",
+            "1,44,000"
+          ],
+          [
+            "Tools you still pay for",
+            "18,000",
+            "18,000",
+            "18,000",
+            "18,000",
+            "72,000"
+          ],
+          [
+            "Asset production (design, images, video)",
+            "24,000",
+            "18,000",
+            "15,000",
+            "15,000",
+            "72,000"
+          ],
+          [
+            "**Quarterly total**",
+            "**3,60,000**",
+            "**3,18,000**",
+            "**3,00,000**",
+            "**3,00,000**",
+            "**12,78,000**"
+          ],
+          [
+            "Effective monthly cost",
+            "1,20,000",
+            "1,06,000",
+            "1,00,000",
+            "1,00,000",
+            "**~1,06,500**"
+          ]
         ]
       },
       "callout": {
@@ -168,11 +224,29 @@
     }
   ],
   "related": [
-    { "type": "cost", "slug": "seo-agency-cost" },
-    { "type": "cost", "slug": "is-seo-worth-the-money" },
-    { "type": "cost", "slug": "seo-services-cost" },
-    { "type": "journal", "slug": "what-clients-have-to-do-for-seo-to-work" },
-    { "type": "journal", "slug": "the-real-cost-of-switching-seo-agencies" },
-    { "type": "compare", "slug": "agency-vs-in-house" }
+    {
+      "type": "cost",
+      "slug": "seo-agency-cost"
+    },
+    {
+      "type": "cost",
+      "slug": "is-seo-worth-the-money"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-services-cost"
+    },
+    {
+      "type": "journal",
+      "slug": "what-clients-have-to-do-for-seo-to-work"
+    },
+    {
+      "type": "journal",
+      "slug": "the-real-cost-of-switching-seo-agencies"
+    },
+    {
+      "type": "compare",
+      "slug": "agency-vs-in-house"
+    }
   ]
 }

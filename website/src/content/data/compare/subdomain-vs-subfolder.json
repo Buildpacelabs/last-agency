@@ -14,7 +14,7 @@
   "h1": "Subdomain vs subfolder: where the blog should actually live",
   "metaTitle": "Subdomain vs Subfolder: Where to Put Your Blog",
   "metaDescription": "Subdomain vs subfolder for SEO: use a subfolder unless one of two things is true. Plus what it costs in rupees to fix the choice a year later.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "answer": "Put it in a subfolder. Google evaluates quality partly at host level, so a subdomain starts colder and consolidates authority more slowly than `/blog`. Two exceptions justify a subdomain: content you can't editorially control, and a business unit you might sell. Fixing the choice later runs roughly ₹60,000–₹2,50,000 in dev time.",
   "takeaways": [
@@ -45,16 +45,52 @@
       ],
       "table": {
         "caption": "example.com/blog vs blog.example.com, on the criteria that matter day to day.",
-        "head": ["Criterion", "Subfolder (`/blog`)", "Subdomain (`blog.`)"],
+        "head": [
+          "Criterion",
+          "Subfolder (`/blog`)",
+          "Subdomain (`blog.`)"
+        ],
         "rows": [
-          ["Starting authority", "Inherits the host's history immediately", "Builds its own; slower for the first months"],
-          ["Search Console", "One property, one report", "Separate URL-prefix property, or a DNS domain property to aggregate"],
-          ["Internal linking", "Natural — same nav, same footer, same templates", "Works, but somebody has to build it deliberately"],
-          ["Hosting complexity", "Higher — one host must route two apps", "Lower — point a CNAME and you're done"],
-          ["Vendor tools (helpdesk, docs)", "Usually needs a reverse proxy", "Usually the only option offered"],
-          ["Risk isolation", "None — bad content sits on your main host", "Real — separate host, separate cookie scope"],
-          ["Selling or spinning it out later", "Painful", "Straightforward"],
-          ["Cost to change your mind", "Low", "**₹60,000–₹2,50,000 plus weeks of volatility**"]
+          [
+            "Starting authority",
+            "Inherits the host's history immediately",
+            "Builds its own; slower for the first months"
+          ],
+          [
+            "Search Console",
+            "One property, one report",
+            "Separate URL-prefix property, or a DNS domain property to aggregate"
+          ],
+          [
+            "Internal linking",
+            "Natural — same nav, same footer, same templates",
+            "Works, but somebody has to build it deliberately"
+          ],
+          [
+            "Hosting complexity",
+            "Higher — one host must route two apps",
+            "Lower — point a CNAME and you're done"
+          ],
+          [
+            "Vendor tools (helpdesk, docs)",
+            "Usually needs a reverse proxy",
+            "Usually the only option offered"
+          ],
+          [
+            "Risk isolation",
+            "None — bad content sits on your main host",
+            "Real — separate host, separate cookie scope"
+          ],
+          [
+            "Selling or spinning it out later",
+            "Painful",
+            "Straightforward"
+          ],
+          [
+            "Cost to change your mind",
+            "Low",
+            "**₹60,000–₹2,50,000 plus weeks of volatility**"
+          ]
         ]
       }
     },
@@ -127,16 +163,52 @@
       ],
       "table": {
         "caption": "Our estimate for moving a 200-page blog from a subdomain to a subfolder. Larger sites and multilingual sites scale up from here.",
-        "head": ["Work", "Typical hours", "Notes"],
+        "head": [
+          "Work",
+          "Typical hours",
+          "Notes"
+        ],
         "rows": [
-          ["Crawl and build the redirect map", "4–10", "Every indexed URL, every URL with backlinks or clicks in the last 12 months"],
-          ["Routing or proxy configuration", "6–20", "The wide range is stack-dependent; a proxy is the expensive end"],
-          ["Template, nav and internal link rewrites", "6–15", "Every hard-coded absolute URL, including in old post bodies"],
-          ["Canonicals, sitemaps, hreflang, robots.txt", "4–8", "Where migrations most often go wrong silently"],
-          ["Search Console and analytics reconfiguration", "2–4", "New property, annotations, goal and channel checks"],
-          ["QA, crawl verification, chain flattening", "8–16", "Every source URL must resolve in exactly one hop"],
-          ["Post-launch monitoring, 8 weeks", "8–20", "Weekly index coverage and click comparison against baseline"],
-          ["**Total**", "**38–93 hours**", "**≈ ₹60,000–₹2,50,000 at Indian rates**"]
+          [
+            "Crawl and build the redirect map",
+            "4–10",
+            "Every indexed URL, every URL with backlinks or clicks in the last 12 months"
+          ],
+          [
+            "Routing or proxy configuration",
+            "6–20",
+            "The wide range is stack-dependent; a proxy is the expensive end"
+          ],
+          [
+            "Template, nav and internal link rewrites",
+            "6–15",
+            "Every hard-coded absolute URL, including in old post bodies"
+          ],
+          [
+            "Canonicals, sitemaps, hreflang, robots.txt",
+            "4–8",
+            "Where migrations most often go wrong silently"
+          ],
+          [
+            "Search Console and analytics reconfiguration",
+            "2–4",
+            "New property, annotations, goal and channel checks"
+          ],
+          [
+            "QA, crawl verification, chain flattening",
+            "8–16",
+            "Every source URL must resolve in exactly one hop"
+          ],
+          [
+            "Post-launch monitoring, 8 weeks",
+            "8–20",
+            "Weekly index coverage and click comparison against baseline"
+          ],
+          [
+            "**Total**",
+            "**38–93 hours**",
+            "**≈ ₹60,000–₹2,50,000 at Indian rates**"
+          ]
         ]
       },
       "bullets": [
@@ -210,11 +282,29 @@
     }
   ],
   "related": [
-    { "type": "services", "slug": "site-migration-seo" },
-    { "type": "compare", "slug": "301-vs-302-redirect" },
-    { "type": "glossary", "slug": "internal-linking" },
-    { "type": "journal", "slug": "the-replatform-that-killed-your-traffic" },
-    { "type": "compare", "slug": "nextjs-vs-wordpress-seo" },
-    { "type": "compare", "slug": "wordpress-vs-shopify-seo" }
+    {
+      "type": "services",
+      "slug": "site-migration-seo"
+    },
+    {
+      "type": "compare",
+      "slug": "301-vs-302-redirect"
+    },
+    {
+      "type": "glossary",
+      "slug": "internal-linking"
+    },
+    {
+      "type": "journal",
+      "slug": "the-replatform-that-killed-your-traffic"
+    },
+    {
+      "type": "compare",
+      "slug": "nextjs-vs-wordpress-seo"
+    },
+    {
+      "type": "compare",
+      "slug": "wordpress-vs-shopify-seo"
+    }
   ]
 }

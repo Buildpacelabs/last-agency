@@ -14,7 +14,7 @@
   "h1": "Core Web Vitals",
   "metaTitle": "Core Web Vitals: LCP, INP and CLS Explained",
   "metaDescription": "Core Web Vitals are Google's three page-experience metrics: LCP, INP and CLS. Here are the thresholds and what they mean on an Indian mobile network.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "term": "Core Web Vitals",
   "definition": "Core Web Vitals are the three page-experience metrics Google measures from real Chrome users: Largest Contentful Paint, Interaction to Next Paint and Cumulative Layout Shift.",
@@ -33,7 +33,12 @@
       ],
       "table": {
         "caption": "The current Core Web Vitals thresholds, measured at the 75th percentile.",
-        "head": ["Metric", "What it measures", "Good", "Poor"],
+        "head": [
+          "Metric",
+          "What it measures",
+          "Good",
+          "Poor"
+        ],
         "rows": [
           [
             "**LCP** — Largest Contentful Paint",
@@ -153,11 +158,29 @@
     }
   ],
   "related": [
-    { "type": "glossary", "slug": "largest-contentful-paint" },
-    { "type": "glossary", "slug": "interaction-to-next-paint" },
-    { "type": "glossary", "slug": "cumulative-layout-shift" },
-    { "type": "services", "slug": "core-web-vitals-optimisation" },
-    { "type": "compare", "slug": "nextjs-vs-wordpress-seo" },
-    { "type": "journal", "slug": "what-an-seo-audit-should-actually-find" }
+    {
+      "type": "glossary",
+      "slug": "largest-contentful-paint"
+    },
+    {
+      "type": "glossary",
+      "slug": "interaction-to-next-paint"
+    },
+    {
+      "type": "glossary",
+      "slug": "cumulative-layout-shift"
+    },
+    {
+      "type": "services",
+      "slug": "core-web-vitals-optimisation"
+    },
+    {
+      "type": "compare",
+      "slug": "nextjs-vs-wordpress-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "what-an-seo-audit-should-actually-find"
+    }
   ]
 }

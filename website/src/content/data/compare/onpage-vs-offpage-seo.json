@@ -14,7 +14,7 @@
   "h1": "On-page vs off-page SEO: what the first 60 days should look like",
   "metaTitle": "On-Page vs Off-Page SEO: The First 60 Days",
   "metaDescription": "On page vs off page SEO is a sequencing question, not a ranking of importance. Spend the first 60 days on-page, then earn links. Here's the order.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "answer": "On-page SEO is everything you control on your own site — structure, content, internal links, speed. Off-page is what other sites say about you, mostly links. Neither wins the argument; sequence does. Spend the first 60 days on-page, because a link pointing at a badly structured site spends most of its value on nothing.",
   "takeaways": [
@@ -32,18 +32,73 @@
       ],
       "table": {
         "caption": "Where each common SEO job sits, and how quickly it responds.",
-        "head": ["The job", "Side", "Who has to act", "Time to effect"],
+        "head": [
+          "The job",
+          "Side",
+          "Who has to act",
+          "Time to effect"
+        ],
         "rows": [
-          ["Title tags, H1s, intent match", "On-page", "You", "Days to weeks"],
-          ["Internal linking and site structure", "On-page", "You", "2–6 weeks"],
-          ["Content depth and coverage", "On-page", "You", "4–12 weeks"],
-          ["Indexability: robots, canonicals, noindex, redirects", "On-page (technical)", "Your developers", "Days to weeks"],
-          ["Core Web Vitals and page speed", "On-page (technical)", "Your developers", "Weeks"],
-          ["Schema markup", "On-page (technical)", "Your developers", "Weeks"],
-          ["Backlinks from other sites", "Off-page", "Someone else's editor", "3–12 months"],
-          ["Digital PR and unlinked brand mentions", "Off-page", "Journalists", "Months"],
-          ["Reviews and Google Business Profile signals", "Off-page", "Your customers", "Ongoing"],
-          ["Being cited by AI assistants", "Both", "You, then everyone else", "Months"]
+          [
+            "Title tags, H1s, intent match",
+            "On-page",
+            "You",
+            "Days to weeks"
+          ],
+          [
+            "Internal linking and site structure",
+            "On-page",
+            "You",
+            "2–6 weeks"
+          ],
+          [
+            "Content depth and coverage",
+            "On-page",
+            "You",
+            "4–12 weeks"
+          ],
+          [
+            "Indexability: robots, canonicals, noindex, redirects",
+            "On-page (technical)",
+            "Your developers",
+            "Days to weeks"
+          ],
+          [
+            "Core Web Vitals and page speed",
+            "On-page (technical)",
+            "Your developers",
+            "Weeks"
+          ],
+          [
+            "Schema markup",
+            "On-page (technical)",
+            "Your developers",
+            "Weeks"
+          ],
+          [
+            "Backlinks from other sites",
+            "Off-page",
+            "Someone else's editor",
+            "3–12 months"
+          ],
+          [
+            "Digital PR and unlinked brand mentions",
+            "Off-page",
+            "Journalists",
+            "Months"
+          ],
+          [
+            "Reviews and Google Business Profile signals",
+            "Off-page",
+            "Your customers",
+            "Ongoing"
+          ],
+          [
+            "Being cited by AI assistants",
+            "Both",
+            "You, then everyone else",
+            "Months"
+          ]
         ]
       },
       "callout": {
@@ -187,11 +242,29 @@
     }
   ],
   "related": [
-    { "type": "glossary", "slug": "on-page-seo-meaning" },
-    { "type": "glossary", "slug": "off-page-seo-meaning" },
-    { "type": "compare", "slug": "technical-seo-vs-content-seo" },
-    { "type": "journal", "slug": "internal-linking-beats-link-building" },
-    { "type": "services", "slug": "link-building-services" },
-    { "type": "cost", "slug": "link-building-cost" }
+    {
+      "type": "glossary",
+      "slug": "on-page-seo-meaning"
+    },
+    {
+      "type": "glossary",
+      "slug": "off-page-seo-meaning"
+    },
+    {
+      "type": "compare",
+      "slug": "technical-seo-vs-content-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "internal-linking-beats-link-building"
+    },
+    {
+      "type": "services",
+      "slug": "link-building-services"
+    },
+    {
+      "type": "cost",
+      "slug": "link-building-cost"
+    }
   ]
 }
