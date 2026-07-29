@@ -14,6 +14,7 @@ import {
 import { JsonLd } from '@/components/JsonLd';
 import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
+import { ContentTeaser } from '@/components/ContentTeaser';
 
 export const metadata: Metadata = {
   title: { absolute: 'SEO & Digital Marketing Pricing in India — ₹30k–₹1.75L/mo' },
@@ -142,6 +143,20 @@ export default function PricingPage(): JSX.Element {
         </div>
         <FaqList items={PRICING_FAQ} />
       </section>
+
+      <ContentTeaser
+        eyebrow="Every number we know, published"
+        title="What this actually costs, in detail."
+        band="band-ink"
+        prefer={[
+          { type: 'cost', slug: 'seo-cost-in-india' },
+          { type: 'cost', slug: 'seo-pricing-models' },
+          { type: 'cost', slug: 'seo-pricing-factors' },
+          { type: 'cost', slug: 'is-seo-worth-the-money' },
+          { type: 'answers', slug: 'how-to-compare-seo-proposals' },
+          { type: 'compare', slug: 'retainer-vs-project' },
+        ]}
+      />
 
       <FinalCta
         eyebrow="Pick a plan, or ask us"

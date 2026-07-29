@@ -59,14 +59,15 @@ export function ContentTeaser({
   if (!picked.length) return null;
 
   const hubs = [...new Set(picked.map((p) => p.type))];
+  // Derived, not hardcoded — a page may render two teasers, and duplicate ids
+  // break both the aria-labelledby association and HTML validity.
+  const headingId = `teaser-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
 
   return (
-    <section className={`${band} pad`} aria-labelledby="teaser-h">
+    <section className={`${band} pad`} aria-labelledby={headingId}>
       <div className="wrap">
-        <p className={`eyebrow ${band === 'band-cream' ? 'eyebrow-red' : 'eyebrow-red'}`}>
-          {eyebrow}
-        </p>
-        <h2 className="sec-h" id="teaser-h">
+        <p className="eyebrow eyebrow-red">{eyebrow}</p>
+        <h2 className="sec-h" id={headingId}>
           {title}
         </h2>
         <ul className="hub-list" style={{ marginTop: 24 }}>

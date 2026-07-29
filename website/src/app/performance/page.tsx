@@ -4,6 +4,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { TierCard } from '@/components/TierCard';
 import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
+import { ContentTeaser } from '@/components/ContentTeaser';
 
 export const metadata: Metadata = {
   title: { absolute: 'Google Ads & Meta Ads Agency in India — Flat Fee, No Markup' },
@@ -11,6 +12,28 @@ export const metadata: Metadata = {
     'Performance marketing agency in India running Google Ads and Meta ads on a flat fee with zero media markup. Beat your baseline in 90 days or the fee is free.',
   alternates: { canonical: '/performance' },
 };
+
+/* The fee-model argument. This is the one thing about paid media that costs a
+   client real money and that almost no agency will put in writing, so it is the
+   section this page exists to carry. */
+const FEE_MODEL: { q: string; a: string }[] = [
+  {
+    q: 'The standard deal pays your agency more when you spend more.',
+    a: 'A percentage-of-spend fee — usually 10 to 15% in India — means the one lever that reliably grows the agency\u2019s invoice is your budget. Nobody sets out to be corrupted by that. It just quietly shapes every recommendation you get for the next two years.',
+  },
+  {
+    q: 'What that costs at real numbers.',
+    a: 'At \u20b95,00,000 a month in spend, a 12% fee is \u20b960,000. Push you to \u20b98,00,000 and it becomes \u20b996,000 — a \u20b936,000 raise for a decision you were advised into. Our fee at that spend is flat and published on this page, so scaling your budget earns us nothing extra.',
+  },
+  {
+    q: 'Media markup is the version you cannot see.',
+    a: 'Some agencies buy media through their own account and invoice you a marked-up number. You never see the platform receipt, so you cannot audit the real CPM. Your spend goes straight from your card to Meta and Google. We never touch it.',
+  },
+  {
+    q: 'Which means the only way we grow the account is to make it work.',
+    a: 'If flat fees are so obviously better for you, ask any agency quoting a percentage why they prefer theirs. The answer is usually that spend is easier to grow than performance.',
+  },
+];
 
 const DIFF: { q: string; a: string }[] = [
   {
@@ -111,6 +134,28 @@ export default function PerformancePage(): JSX.Element {
         </div>
       </section>
 
+      {/* The fee-model argument — unique to this page */}
+      <section className="band-ink pad" aria-labelledby="fee-h">
+        <div className="wrap">
+          <p className="eyebrow eyebrow-red">Read this before you sign anywhere</p>
+          <h2 className="sec-h" id="fee-h">
+            Why we charge a flat fee instead of a cut of your spend.
+          </h2>
+          <p className="lede">
+            This is the single clause in a paid media contract that decides whose interests the work
+            actually serves, and it is the one most brands skim.
+          </p>
+          <div className="lies">
+            {FEE_MODEL.map((d, i) => (
+              <div className="lie" key={i}>
+                <p className="q">{d.q}</p>
+                <p className="a">{d.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Guarantee */}
       <section className="band-cream pad" aria-labelledby="pguar-h">
         <div className="wrap guar">
@@ -134,6 +179,20 @@ export default function PerformancePage(): JSX.Element {
         </div>
         <FaqList items={PERF_FAQ} />
       </section>
+
+      <ContentTeaser
+        eyebrow="No pitch, no gate, no email required"
+        title="What we've published on paid media."
+        band="band-ink"
+        prefer={[
+          { type: 'compare', slug: 'ppc-vs-seo' },
+          { type: 'compare', slug: 'google-ads-vs-seo' },
+          { type: 'journal', slug: 'why-indian-d2c-brands-overspend-on-ads' },
+          { type: 'compare', slug: 'cro-vs-seo' },
+          { type: 'services', slug: 'conversion-rate-optimisation-services' },
+          { type: 'compare', slug: 'organic-social-vs-paid-social' },
+        ]}
+      />
 
       <FinalCta
         eyebrow="Your account, our numbers"

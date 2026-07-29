@@ -4,6 +4,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { TierCard } from '@/components/TierCard';
 import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
+import { ContentTeaser } from '@/components/ContentTeaser';
 
 export const metadata: Metadata = {
   title: { absolute: 'Social Media Marketing Agency in India — From ₹30k/mo' },
@@ -11,6 +12,27 @@ export const metadata: Metadata = {
     'Social media marketing and content production from one Indian pipeline — reels, carousels and SEO blogs that grow your following and rankings. From ₹30,000/mo.',
   alternates: { canonical: '/social' },
 };
+
+/* The honest limits of the channel. Deliberately specific to organic social —
+   the paid page makes a different argument because it is a different business. */
+const LIMITS: { q: string; a: string }[] = [
+  {
+    q: 'It does not produce demand that was not already there.',
+    a: 'Social reaches people scrolling, not people searching. It is good at making a brand familiar and bad at catching someone who has already decided to buy. That second job belongs to search, which is why we wire the two together rather than selling them separately.',
+  },
+  {
+    q: 'A follower count is not a business metric.',
+    a: 'We report reach and follows because you will ask, but the number we optimise is conversations started — DMs and comments that turn into an enquiry. A brand with 2,000 followers who buy beats 50,000 who scroll past.',
+  },
+  {
+    q: 'Posts expire. The blog underneath them does not.',
+    a: 'A reel is worth the most in its first 48 hours and close to nothing after a week. The long-form piece it was cut from keeps earning search traffic for years. That asymmetry is the entire reason we make you commission both.',
+  },
+  {
+    q: 'Consistency beats brilliance, and consistency is the expensive part.',
+    a: 'Anyone can make one good reel. Producing sixteen a month, on brand, on schedule, while someone answers the comments, is the work — and it is the only thing that compounds.',
+  },
+];
 
 const DIFF: { q: string; a: string }[] = [
   {
@@ -89,6 +111,29 @@ export default function SocialPage(): JSX.Element {
         </div>
       </section>
 
+      {/* What social does and doesn't do — the argument only this page makes */}
+      <section className="band-cream pad" aria-labelledby="honest-h">
+        <div className="wrap">
+          <p className="eyebrow eyebrow-red">Before you brief anyone</p>
+          <h2 className="sec-h" id="honest-h">
+            What organic social actually does, and what it doesn&rsquo;t.
+          </h2>
+          <p className="lede">
+            Most social proposals are careful not to tell you this, because the honest version is
+            smaller than the pitch. It is still worth buying — it is just worth buying for the right
+            reason.
+          </p>
+          <div className="lies">
+            {LIMITS.map((d, i) => (
+              <div className="lie" key={i}>
+                <p className="q">{d.q}</p>
+                <p className="a">{d.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Packages */}
       <section className="band-red pad" aria-labelledby="tiers-h">
         <div className="wrap">
@@ -121,6 +166,20 @@ export default function SocialPage(): JSX.Element {
         </div>
         <FaqList items={SOCIAL_FAQ} />
       </section>
+
+      <ContentTeaser
+        eyebrow="No pitch, no gate, no email required"
+        title="What we've published on social and content."
+        band="band-ink"
+        prefer={[
+          { type: 'compare', slug: 'seo-vs-social-media' },
+          { type: 'compare', slug: 'organic-social-vs-paid-social' },
+          { type: 'answers', slug: 'how-to-do-seo-on-instagram' },
+          { type: 'services', slug: 'content-marketing-services' },
+          { type: 'cost', slug: 'content-writing-cost-india' },
+          { type: 'compare', slug: 'seo-vs-influencer-marketing' },
+        ]}
+      />
 
       <FinalCta
         title={
