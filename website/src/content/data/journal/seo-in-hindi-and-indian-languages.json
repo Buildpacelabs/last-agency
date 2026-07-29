@@ -14,13 +14,13 @@
   "h1": "Regional Language SEO in India Is Mostly Empty. That's the Opportunity.",
   "metaTitle": "Regional Language SEO in India: The Empty SERP",
   "metaDescription": "Regional language SEO in India faces thin competition and thinner content. Here's how to choose which languages to build, and the translation trap.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "answer": "Regional language SERPs in India are thin because almost nobody publishes properly in them — most in-language pages are machine translations of English ones, and they miss the phrases people actually type. Pick one language your category justifies, write in it natively rather than translating, and you can own a query set in weeks rather than quarters.",
   "takeaways": [
     "Thin competition can mean thin demand. The whole job is telling those two apart before you spend anything — and **in-language ads on the SERP** are the strongest signal that commercial demand exists.",
     "Speaker counts are not search demand. A large share of Hindi speakers search in English or in Roman-script Hinglish, and that changes what you should build.",
-    "**Machine-translating your English pages is the failure mode**, not the shortcut. Google's spam policies name automated translation without human review as scaled content abuse.",
+    "**Machine-translating your English pages is the failure mode**, not the shortcut. Google's spam policies name automated transformations like translating, used to generate many pages where little value is provided to users, as scaled content abuse.",
     "The single most common technical wipeout: canonicalising the Hindi page to the English one. You've just told Google the Hindi page shouldn't exist, and it will agree.",
     "One language done to 30 pages beats five languages done to six. Depth is what makes a corpus rank; breadth is what makes it look busy."
   ],
@@ -144,7 +144,7 @@
           "body": [
             "Run your English pages through a translation engine and you'll get grammatically fine Hindi that ranks for nothing, for one specific reason: translators pick the formal register, and people search in the spoken one.",
             "The classic example is loans. A translator will render \"home loan\" as गृह ऋण, which is correct, formal, and not what anyone types. People search होम लोन — the English term written in Devanagari — because that's how they say it. Multiply that across every commercial term in your category and your translated page is a page about a subject nobody searches for.",
-            "There's a policy problem on top of the keyword problem. Google's spam policies name creating pages using automated translation without human review or curation as an example of scaled content abuse. A hundred auto-translated pages isn't a shortcut into a thin market; it's a risk applied to the domain you already rank with."
+            "There's a policy problem on top of the keyword problem. Google's spam policies list scaled content abuse as generating many pages through automated transformations — the policy names synonymising and translating specifically — where little value is provided to users. A hundred auto-translated pages isn't a shortcut into a thin market; it's a risk applied to the domain you already rank with."
           ]
         },
         {
@@ -165,7 +165,7 @@
       ],
       "bullets": [
         "**Subfolders, not subdomains or parameters.** `/hi/`, `/ta/`, `/bn/`. You're one country with many languages, so a ccTLD split makes no sense, and subfolders inherit the authority your domain already has.",
-        "**A complete hreflang cluster.** Every version references every other version, including itself. Use `hi`, `ta`, `mr`, `bn` and so on if you don't split by country; add the region — `bn-BD`, `ta-LK` — only if you genuinely serve Bangladesh or Sri Lanka. Add `en-IN` and an `x-default`.",
+        "**A complete hreflang cluster.** [Every version references every other version, including itself](https://developers.google.com/search/docs/specialty/international/localized-versions). Use `hi`, `ta`, `mr`, `bn` and so on if you don't split by country; add the region — `bn-BD`, `ta-LK` — only if you genuinely serve Bangladesh or Sri Lanka. Add `en-IN` and an `x-default`.",
         "**Self-canonical every version.** This is the one that kills projects. A Hindi page whose canonical tag points at the English original is a Hindi page telling Google it is a duplicate. Google believes it. Six months of work never enters the index.",
         "**Never auto-redirect by IP.** Googlebot crawls predominantly from US addresses. Bounce it to `/en/` and your `/hi/` pages may never be crawled at all. Offer a banner or a language switcher and let people choose.",
         "**Set the page `lang` attribute to the right language** and keep each page single-language. English navigation wrapped around Hindi body copy confuses the classifier and reads as a translation exercise to the user, which it is.",
@@ -222,7 +222,7 @@
     },
     {
       "q": "Should I translate my English pages into Hindi?",
-      "a": "No. Translators pick the formal register and people search in the spoken one — होम लोन gets typed, गृह ऋण doesn't. On top of that, Google's spam policies name automated translation without human review as scaled content abuse. Do keyword research in the target language first, then write in it."
+      "a": "No. Translators pick the formal register and people search in the spoken one — होम लोन gets typed, गृह ऋण doesn't. On top of that, Google's spam policies name automated transformations like translating, used to generate many low-value pages, as scaled content abuse. Do keyword research in the target language first, then write in it."
     },
     {
       "q": "What hreflang code should I use for Hindi?",
@@ -239,6 +239,37 @@
     {
       "q": "Does AI search make regional language SEO pointless?",
       "a": "It makes translated pages more pointless and original in-language pages more valuable. If an assistant can translate your English page on demand, a Hindi copy adds nothing. But a page carrying state-specific rules, local pricing or questions your customers actually ask can't be produced by translating anything, and that's what gets cited."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Spam policies for Google web search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "date": "2026-05-15"
+    },
+    {
+      "title": "Managing multi-regional and multilingual sites",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Tell Google about localized versions of your page",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+      "date": "2025-12-22"
+    },
+    {
+      "title": "How to specify a canonical URL with rel=\"canonical\" and other methods",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "Performance report (Search results): Overview and basic setup",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7576553"
     }
   ],
   "related": [

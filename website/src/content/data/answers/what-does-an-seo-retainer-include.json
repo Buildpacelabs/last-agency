@@ -13,7 +13,7 @@
   "h1": "What sits inside a monthly SEO retainer",
   "metaTitle": "What Does an SEO Retainer Include?",
   "metaDescription": "What an SEO retainer includes at ₹40,000, ₹75,000 and ₹1,50,000 a month in India — the hours, the deliverables and the seniority each band actually buys.",
-  "updated": "2026-07-26",
+  "updated": "2026-07-29",
   "published": "2026-07-26",
   "answer": "An SEO retainer buys a fixed block of monthly capacity across four disciplines: technical, content, links and reporting. In India, ₹40,000 a month buys roughly 25–35 working hours and one discipline at a time. ₹75,000 buys 45–60 hours with all four running together. ₹1,50,000 buys a small dedicated team.",
   "takeaways": [
@@ -168,7 +168,7 @@
       "body": [
         "Most Indian SEO retainers come with a six or twelve-month minimum term, defended with the argument that SEO takes time. It does. That's an argument for you choosing to stay, not for you being unable to leave.",
         "A minimum term protects the agency's revenue during precisely the months when their work is hardest for you to verify. Remove it and the incentives invert: every month has to be worth renewing, which is a different standard than every month has to be delivered.",
-        "Ours runs month-to-month after the first quarter, on 30 days' notice, and you keep every asset — content, data, accounts, the lot. The first quarter isn't a lock-in so much as an admission that judging SEO in six weeks isn't possible. Alongside it sits the guarantee: we freeze your trailing-90-day qualified organic leads on day one, and if we haven't beaten that number in 90 days we keep working free until we do. We never guarantee a ranking position for a keyword — nobody controls Google's index. Details on [our SEO page](/seo)."
+        "Ours runs month-to-month after the first quarter, on 30 days' notice, and you keep every asset — content, data, accounts, the lot. The first quarter isn't a lock-in so much as an admission that judging SEO in six weeks isn't possible. Alongside it sits the guarantee: we freeze your trailing-90-day qualified organic leads on day one, and if we haven't beaten that number in 90 days we keep working free until we do. We [never guarantee a ranking position for a keyword](https://developers.google.com/search/docs/fundamentals/do-i-need-seo) — nobody controls Google's index. Details on [our SEO page](/seo)."
       ]
     }
   ],
@@ -192,6 +192,25 @@
     {
       "q": "What should be excluded from an SEO retainer?",
       "a": "Development time, design, ad spend, tool licences you buy directly, and any work outside search. Excluded doesn't mean unimportant — it means somebody needs to own it. The most common failure we see is a retainer that includes a technical fix list and a client with no developer to implement it."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Do you need an SEO?",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo",
+      "date": "2026-06-05"
+    },
+    {
+      "title": "Managing owners, users, and permissions",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7687615"
+    },
+    {
+      "title": "How to move a site",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+      "date": "2026-06-17"
     }
   ],
   "related": [
