@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
-import { SITE_URL, WA_HERO, CAL_LINK, ORG_NODE, breadcrumbNode } from '@/lib/site';
+import { SITE_URL, WA_HERO, CAL_LINK, EMAIL, ORG_NODE, breadcrumbNode } from '@/lib/site';
 import { JsonLd } from '@/components/JsonLd';
 import { PlainPage, type PlainSection } from '@/components/PlainPage';
 
 export const metadata: Metadata = {
   title: { absolute: 'Contact Last Agency — WhatsApp or Book a Strategy Call' },
   description:
-    'Talk to Last Agency about SEO, organic social or paid media. WhatsApp +91 93157 76817, or book a free 30-minute strategy call. No form, no gate, no email required.',
+    'Talk to Last Agency about SEO, organic social or paid media. Email info@lastagencyhere.com, WhatsApp +91 93157 76817, or book a free 30-minute strategy call.',
   alternates: { canonical: '/contact' },
 };
 
@@ -21,6 +21,13 @@ const SECTIONS: PlainSection[] = [
     body: [
       `The fastest way to reach us is WhatsApp on **${READABLE_PHONE}** — [open a chat](${WA_HERO}). Messages go to the team that would actually run your account, not to a reception desk.`,
       'Tell us your site, your category and the one number you want to move. That is enough for us to say something useful in the first reply.',
+    ],
+  },
+  {
+    h2: 'Email',
+    body: [
+      `**${EMAIL}** — [write to us](mailto:${EMAIL}). Best for anything with detail attached: a brief, a proposal you want a second opinion on, an audit you paid for and do not trust, or a press enquiry.`,
+      'We read it ourselves. There is no ticketing system and no first-line filter, which is the upside of being two people.',
     ],
   },
   {
@@ -49,7 +56,7 @@ const SECTIONS: PlainSection[] = [
   {
     h2: 'Press, partnerships and everything else',
     body: [
-      'Same WhatsApp number. We are a small team and it is genuinely the fastest route — there is no separate press inbox that gets checked more often than this one does.',
+      `Same inbox: **${EMAIL}**. We are a small team, so there is no separate press address that gets checked more often than this one does.`,
     ],
   },
 ];
@@ -80,7 +87,7 @@ export default function ContactPage(): JSX.Element {
       <PlainPage
         eyebrow="Contact"
         h1="Talk to the people who'd run the account"
-        lede={`WhatsApp **${READABLE_PHONE}**, or book a free 30-minute strategy call. No contact form, no gated PDF, no "someone will be in touch".`}
+        lede={`Email **${EMAIL}**, WhatsApp **${READABLE_PHONE}**, or book a free 30-minute strategy call. No contact form, no gated PDF, no "someone will be in touch".`}
         crumbs={[
           { name: 'Home', path: '/' },
           { name: 'Contact', path: '/contact' },

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { SITE_URL, WA_HERO, breadcrumbNode } from '@/lib/site';
+import { SITE_URL, WA_HERO, EMAIL, breadcrumbNode } from '@/lib/site';
 import { JsonLd } from '@/components/JsonLd';
 import { PlainPage, type PlainSection } from '@/components/PlainPage';
 
@@ -72,7 +72,7 @@ const SECTIONS: PlainSection[] = [
     h2: 'Governing law and changes',
     body: [
       'These terms are governed by the laws of India.',
-      `Last updated ${UPDATED}. If we change them we will update the date on this page. Questions: [message us on WhatsApp](${WA_HERO}).`,
+      `Last updated ${UPDATED}. If we change them we will update the date on this page. Questions: email **${EMAIL}** or [message us on WhatsApp](${WA_HERO}).`,
     ],
   },
 ];
