@@ -25,8 +25,23 @@ rationing on a three-week-old domain, not a defect.
 Nine URLs were pushed to the priority crawl queue today (daily quota exhausted):
 `/glossary` `/journal` `/pricing` `/seo` `/services` `/cost` `/seo-agency` `/seo-for`.
 
-**➡️ Do tomorrow (2 minutes):** request indexing on `/compare`, `/social`, `/performance`.
-Search Console → URL inspection → paste URL → REQUEST INDEXING.
+**Update, 29 July.** Indexation is moving. Confirmed indexed: `/`, `/compare`, `/social`,
+`/performance`, and four of the twelve Tier-1 buyer pages. All three sitemaps now Success and
+agreeing at 517.
+
+`/social` and `/performance` were briefly flagged *"Duplicate without user-selected canonical"*
+with Google picking an unrelated third-party domain as canonical. A live test proved both pages
+served a correct self-canonical, so it was a bad cluster assignment on a domain with almost no
+signal — not a fault in the pages. Both resolved to **indexed** after a re-index request and a
+substantive rewrite that made them structurally distinct from each other.
+
+`/performance` currently reports "Page is not served over HTTPS". Verified false: http redirects
+to https in one hop and HSTS is set with a two-year max-age. Same class of stale record; expect
+it to clear.
+
+**➡️ Recurring, 2 minutes a day:** request indexing on any Tier-1 URL still showing
+*Discovered – currently not indexed*. Search Console → URL inspection → paste → REQUEST INDEXING.
+Quota is roughly ten a day.
 
 ---
 
