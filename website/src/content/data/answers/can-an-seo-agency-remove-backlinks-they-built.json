@@ -1,0 +1,242 @@
+{
+  "slug": "can-an-seo-agency-remove-backlinks-they-built",
+  "type": "answers",
+  "primaryKeyword": "can an seo agency remove backlinks they built",
+  "secondaryKeywords": [
+    "do backlinks disappear when you leave an agency",
+    "agency threatening to remove links",
+    "rented links vs earned links",
+    "what happens to links after cancelling seo"
+  ],
+  "cluster": "agency-access",
+  "intent": "informational",
+  "h1": "Can an SEO agency remove the backlinks it built for you?",
+  "metaTitle": "Can an SEO Agency Remove Your Backlinks?",
+  "metaDescription": "Whether the links can be pulled tells you what you bought. An agency that can threaten removal has just confessed the links were rented, not earned.",
+  "updated": "2026-08-11",
+  "published": "2026-08-11",
+  "answer": "Some of them, and which ones is the whole answer. A genuine editorial link sits on a publisher's page that nobody involved can recall. A rented placement, a paid directory entry or a network post can vanish the month you stop paying. If your agency can credibly threaten removal, you were renting.",
+  "takeaways": [
+    "Reversibility is a **diagnostic**, not a contract problem. Links that can be switched off were placed; links that can't were earned.",
+    "The threat is the most honest thing a departing agency will ever tell you about its own work. Write it down.",
+    "No clause binds a third-party publisher. What a contract can give you is **disclosure** — a running list of placements you can check yourself.",
+    "Links that vanish were often doing very little anyway, because Google mostly devalues manipulative links rather than penalising you for them. Losing nothing still costs you the year you paid for it."
+  ],
+  "sections": [
+    {
+      "h2": "Which links can actually be pulled",
+      "body": [
+        "Every backlink lives on a page somebody else controls. The only question that matters is who that somebody is, and whether your ex-agency has a lever on them. Money is almost always the lever.",
+        "Work down this table with your own link list open. The right-hand column is the part worth reading twice — it tells you what the invoice was really for."
+      ],
+      "table": {
+        "caption": "Backlink types, who controls the host page, and whether an agency can take the link down.",
+        "head": [
+          "Link type",
+          "Who controls the page",
+          "Can it be removed",
+          "What that tells you"
+        ],
+        "rows": [
+          [
+            "Editorial mention from a journalist, researcher or customer",
+            "A third party with no relationship to your agency",
+            "No. Nobody involved has the access, and the publisher has no reason to act on a request from an ex-supplier.",
+            "You bought work, and the work outlived the contract."
+          ],
+          [
+            "Digital PR placement from a pitched story or data study",
+            "The publication's editor",
+            "Effectively no. Newsrooms do not unpublish because an agency asked.",
+            "Same. This is the category worth paying for."
+          ],
+          [
+            "Guest post the agency wrote and placed",
+            "The host site's editor",
+            "Sometimes — if the agency has a standing relationship, or paid for the slot.",
+            "Depends entirely on whether money moved. Ask."
+          ],
+          [
+            "Placement on a recurring monthly fee",
+            "Whoever collects the fee",
+            "Yes, and often automatically the month the payment stops.",
+            "You were renting. That wasn't a link profile, it was a subscription."
+          ],
+          [
+            "Private blog network post",
+            "The agency, or the network operator they buy from",
+            "Yes, instantly, across every URL at once.",
+            "You bought a liability that also happened to pass ranking signals."
+          ],
+          [
+            "Directory, listing or profile entry created in your name",
+            "Whoever holds the login — you, or them",
+            "Yes, unless you hold the credentials.",
+            "Fixable in an afternoon. Go and claim the logins."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The question that only gets a straight answer early",
+        "body": "Ask on day one, not at exit: **are any of our placements on a recurring payment, and what happens to them if we stop?** It costs nothing to ask before you sign and it is unanswerable at month fourteen without sounding evasive."
+      }
+    },
+    {
+      "h2": "Check your own link data before you give notice",
+      "body": [
+        "Do this while the relationship is still cordial. You want the picture from your own tools, not from a handover deck written by someone who knows they are being replaced.",
+        "An hour is enough for most sites. You are not auditing every link — you are sorting them into *can survive* and *cannot*."
+      ],
+      "numbered": [
+        "Open the **Links** report in Search Console and export the top linking sites. It is capped and incomplete, and it is still the only free list that comes from Google rather than from a crawler estimating.",
+        "Sort by **referring domain**, never by link count. One domain linking 400 times is one relationship, and it either survives or it doesn't as a unit. [Referring domains](/glossary/referring-domain) are the unit of analysis.",
+        "Open the top 30 to 50 host pages by hand and ask one question of each: **would this page exist if nobody had paid for it?** Real pages have authors, comments, unrelated recent posts and an audience. Placement pages have none of those.",
+        "Flag anything labelled sponsored, partnered or advertorial, anything in a footer block of unrelated links, and anything on a site publishing across ten industries at once.",
+        "Try to log in. Any directory, listing or profile page you can access yourself is a link nobody can take from you, and it takes ten minutes to secure.",
+        "Archive what you find — URL, date, anchor text, a screenshot. If links start disappearing in month two of the new agency, you will want a record of what was there in month zero."
+      ]
+    },
+    {
+      "h2": "What a removal threat actually discloses",
+      "body": [
+        "Read the threat as a confession rather than a risk, because that is what it is.",
+        "If an agency can pull a link, the agency controls the host page or controls the person who does. If it controls the host page, the link was placed rather than earned. And if placement changed hands for money without being qualified, it sat outside Google's guidelines the whole time — Google's spam policies list [buying or selling links for ranking purposes](https://developers.google.com/search/docs/essentials/spam-policies) as spam unless the link carries `rel=\"nofollow\"` or `rel=\"sponsored\"`, which a link bought for rankings never does.",
+        "So a threat to remove links resolves into three admissions at once, and none of them are about you."
+      ],
+      "bullets": [
+        "**The links were bought.** Not pitched, not earned, not the result of anything a journalist chose to publish.",
+        "**The spend was recurring.** Something in your retainer was paying rent on placements every single month, which is money that was never compounding.",
+        "**The risk was always yours.** The agency leaves; the link pattern stays attached to your domain until somebody cleans it up. If a manual action ever lands, it lands on your property."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Say it back to them in writing",
+        "body": "\"To confirm: you are able to remove these links because they are paid placements you control. Please send the full list with the monthly cost of each.\" Most of the time the threat quietly stops there. Either way you now have the disclosure in an email."
+      }
+    },
+    {
+      "h2": "Can you stop it in the contract",
+      "body": [
+        "Partly, and not in the way people expect. No clause you sign with an agency binds a publisher who never signed anything. A contract cannot make a third-party site keep a link live.",
+        "What it can do is bind the agency itself — a simple covenant not to request, procure or cause the removal of any placement made during the term, surviving termination. It is one sentence, nobody sensible objects to it, and it converts a vague threat into a breach with a name.",
+        "Be realistic about enforcement. Suing an agency over a link is not a proportionate response for most Indian SMEs, and the damages are hard to quantify. Treat the clause as a deterrent that costs you nothing, not as a remedy you plan to use.",
+        "These four things protect you far more than the covenant does, and all of them are easier to get on day one than on day four hundred. The rest of the agreement is covered in [what belongs in an SEO contract](/answers/what-should-be-in-an-seo-contract)."
+      ],
+      "bullets": [
+        "**A monthly disclosure schedule.** Every placement, with live URL, date, anchor text, and a yes-or-no column for whether money changed hands. This single artefact makes every other protection checkable.",
+        "**A warranty** that no paid links, private blog networks or reciprocal link schemes were used on your behalf. Watch the face when you ask for it.",
+        "**An indemnity** covering manual actions caused by the agency's own link activity, including the cost of cleanup.",
+        "**Credentials, in your name**, for every directory, listing, profile or account created during the engagement — listed by name in a schedule, not described as \"access will be provided\"."
+      ]
+    },
+    {
+      "h2": "What happens if the links do disappear",
+      "body": [
+        "Usually less than the threat implies, and for an unflattering reason: the links were probably not doing much. Google's link spam systems mostly **devalue** manipulative links rather than penalise the site receiving them. A network placement that was being ignored contributes nothing when it is removed, because it was contributing nothing while it was live.",
+        "Which produces the genuinely irritating outcome. You lose no rankings, and you also discover that a year of link spend bought you a number in a dashboard. The comparison in [paid links versus earned links](/compare/paid-links-vs-earned-links) is the arithmetic behind that.",
+        "Where removal does bite is the small number of paid placements on sites that are actually real — a genuine trade publication running sponsored posts, an industry body's members page. Those pass value because the page passes value, and losing them is a real loss. Expect a handful, not a hundred.",
+        "Do not reach for the disavow tool on reflex. Google's guidance is to disavow only when you have a considerable number of spammy or artificial links **and** a manual action has landed or is likely to, and it recommends trying to get links physically removed first. Disavowing a hundred URLs because your last agency annoyed you is busywork with a small downside and no upside."
+      ],
+      "numbered": [
+        "Re-export your links a week after exit and diff it against the archive you took. Now you know what actually went, rather than what was threatened.",
+        "Map anything lost against the pages it pointed at, and watch those pages specifically for four to six weeks. Site-wide averages will hide the effect either way.",
+        "Check the Manual Actions report in Search Console once. Clean is clean; if it isn't, that is a different and more urgent piece of work.",
+        "Do not replace the lost volume like for like. Replacing rented links with more rented links restarts the same subscription with a new landlord."
+      ]
+    },
+    {
+      "h2": "What we hand over, and why none of it comes back",
+      "body": [
+        "We should declare our position, because this page is uncomfortably close to our own sales pitch. We do not run a network, we do not place recurring-fee links, and we have nothing to switch off. That is not virtue, it is the consequence of a pricing model — we sell [SEO from ₹75,000/mo](/seo) against a lead baseline, so a link that stops working the day we leave is a link we would have to buy twice.",
+        "On exit you get the full placement log with dates and anchors, the content source files, the redirect map, the keyword map, raw Search Console and analytics exports, and top-level ownership of every property, which you held the whole time anyway. Month-to-month after the first quarter, 30 days' notice, and you keep every asset.",
+        "The backlinks are not on that list, and they cannot be. They live on other people's sites, they were never ours to transfer, and they are equally not ours to reclaim. That is the entire point of earning them. If you are working through a switch, [how to leave an SEO agency without losing your work](/answers/can-i-fire-my-seo-agency) covers the sequencing."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The one-line test",
+        "body": "If your agency leaving can reduce your backlink count, you were paying rent. If it can't, you were paying for work. The number of links is not the tell — reversibility is."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can an SEO agency legally remove backlinks it built for me?",
+      "a": "It can remove any link it controls or paid for, and no law stops it — the host site's owner decides what stays live, not you. What you can do is bind the agency itself, with a clause preventing it from requesting or procuring removal after termination. Genuinely earned editorial links are outside anyone's reach."
+    },
+    {
+      "q": "Will my rankings drop if my old agency removes its links?",
+      "a": "Often barely, because manipulative links are mostly devalued rather than counted, so removing them changes little. Real losses come from the small number of paid placements on genuinely authoritative sites. Watch the specific pages those links pointed at for four to six weeks rather than your site-wide average."
+    },
+    {
+      "q": "How do I tell whether my backlinks were rented or earned?",
+      "a": "Open the host pages. An earned link sits on a page with an author, an audience, comments and unrelated recent posts. A rented one sits on a site publishing across ten unrelated industries with no readership. Then ask the agency directly whether any placement carries a recurring fee."
+    },
+    {
+      "q": "Should I disavow links my old agency built?",
+      "a": "Only if you have a considerable number of clearly artificial links and a manual action has landed or looks likely. Google recommends attempting actual removal first, and the disavow file is not a general tidying tool. Most inherited link profiles need documenting, not disavowing."
+    },
+    {
+      "q": "What should be in my contract about backlinks?",
+      "a": "Four things: a monthly disclosure schedule listing every placement with URL, date, anchor and whether it was paid; a warranty that no paid links or blog networks were used; an indemnity for manual actions caused by the agency's link activity; and login credentials for anything created in your name."
+    },
+    {
+      "q": "Can I get removed backlinks back?",
+      "a": "Only by paying whoever pulled them, which restarts the rental. Nothing else works — the host site owes you nothing and your ex-agency has no obligation to restore a placement it stopped funding. Rebuild with links that do not depend on a monthly payment continuing."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Spam policies for Google web search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "date": "2026-05-15"
+    },
+    {
+      "title": "Qualify your outbound links to Google",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Disavow links to your site",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/2648487"
+    },
+    {
+      "title": "Manual Actions report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9044175"
+    }
+  ],
+  "related": [
+    {
+      "type": "compare",
+      "slug": "paid-links-vs-earned-links"
+    },
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "glossary",
+      "slug": "toxic-backlinks"
+    },
+    {
+      "type": "journal",
+      "slug": "the-real-cost-of-switching-seo-agencies"
+    },
+    {
+      "type": "cost",
+      "slug": "link-building-cost"
+    },
+    {
+      "type": "answers",
+      "slug": "can-i-fire-my-seo-agency"
+    },
+    {
+      "type": "services",
+      "slug": "link-building-services"
+    }
+  ]
+}

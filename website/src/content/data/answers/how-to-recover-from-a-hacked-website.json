@@ -1,0 +1,253 @@
+{
+  "slug": "how-to-recover-from-a-hacked-website",
+  "type": "answers",
+  "primaryKeyword": "how to recover from a hacked website seo",
+  "secondaryKeywords": [
+    "japanese keyword hack fix",
+    "pharma spam pages in google index",
+    "site hacked rankings dropped",
+    "remove injected urls from google"
+  ],
+  "cluster": "technical-launch",
+  "intent": "informational",
+  "h1": "How to recover a hacked site's search presence, in the right order",
+  "metaTitle": "How to Recover From a Hacked Website (SEO)",
+  "metaDescription": "Cleaning without de-indexing leaves thousands of spam URLs ranking for weeks. Contain, clean, de-index, then request review. Most people invert that order.",
+  "updated": "2026-09-15",
+  "published": "2026-09-15",
+  "answer": "Work in four stages, in this order: contain the breach and rotate every credential, clean the injected files and database rows, explicitly de-index the injected URLs, then request a review in Search Console. Skip the third stage and thousands of spam URLs keep ranking for weeks after the malware is long gone.",
+  "takeaways": [
+    "Security ends the incident. It does not end the search problem — the injected URLs are already indexed and they keep serving until something removes them.",
+    "Find the full extent before you clean anything. Cloaked pages look innocent in your browser and spammy to Googlebot, so inspect them the way Googlebot sees them.",
+    "**Check Search Console users and permissions.** Attackers frequently verify themselves as an owner so they keep visibility after you lock the site.",
+    "A `410` on injected URLs plus a temporary removal buys you speed. Neither is a substitute for the other.",
+    "On Indian shared hosting the root cause is nearly always the same two things: a nulled premium theme or plugin, and an unpatched CMS on a shared account."
+  ],
+  "sections": [
+    {
+      "h2": "The order that saves you a month",
+      "body": [
+        "Almost everyone treats this as a security job that finishes when the malware is gone. That instinct is correct for about the first six hours and wrong after that. Your developer restores a backup, the site loads clean, everyone exhales — and three weeks later you are still ranking for `cheap-tramadol` in Google's index, because nothing ever told Google those pages were gone.",
+        "Four stages. Do them in sequence, because each one depends on the last being finished."
+      ],
+      "numbered": [
+        "**Contain.** Take the site offline or behind maintenance mode if the malware is serving to users. Rotate everything: hosting panel, FTP and SFTP, database user, CMS admins, and every API key stored in a config file. Delete admin accounts you do not recognise. Then open Search Console and remove any verified owner you did not add.",
+        "**Clean.** Reinstall the CMS core and every plugin and theme from source rather than patching files by hand. Diff the uploads directory against a known-good backup. Search the database for injected rows — options tables and post content are the usual homes. Patch the vulnerability that let them in, or you are scheduling a repeat.",
+        "**De-index.** Enumerate every injected URL and serve it a `410` (or a `404`), then submit a temporary removal for the directories involved. This is the stage that gets skipped and it is the one that decides how long the damage lasts.",
+        "**Request review.** Only when the Security Issues or Manual Actions report in Search Console shows an issue, and only once stages one to three are genuinely complete across the whole site. A review requested too early is a fortnight lost."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Restoring a backup is not cleaning",
+        "body": "A backup taken after the compromise carries the compromise. A backup taken before it carries the vulnerability that caused it. Either way, restoring alone leaves the injected URLs sitting in Google's index, because a restore changes what your server returns and tells Google nothing about it."
+      }
+    },
+    {
+      "h2": "Finding the full extent, including the pages you cannot see",
+      "body": [
+        "You cannot de-index a list you do not have, and the list is always longer than the one your developer produces from the file system. Injected pages are frequently generated on the fly from a database table or a single PHP file, so there is no folder of spam to find.",
+        "Five sources, in the order they are useful:"
+      ],
+      "bullets": [
+        "**A `site:` query on your domain**, paged through properly rather than glanced at. Add likely spam terms — pharmaceutical names, gambling terms, replica goods, Japanese or Cyrillic characters — to surface clusters fast.",
+        "**The Pages report in Search Console.** Sort by newest indexed. A hacked site usually shows a step change in indexed URLs on a specific date, which also dates the breach for you.",
+        "**The Sitemaps report.** Attackers often submit their own sitemap to get thousands of URLs indexed within days. An unfamiliar sitemap file is both a finding and a ready-made list of everything to remove.",
+        "**Server access logs.** Filter Googlebot hits for 200 responses on paths that were never in your sitemap. This is the most complete list you will get, and it catches URLs no `site:` query surfaces.",
+        "**The URL Inspection tool, on a sample.** It shows the rendered page as Google fetched it, which is the only reliable way to see through cloaking."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Cloaking is why the site looks fine to you",
+        "body": "Injected pages commonly serve clean HTML to a normal browser and spam to a crawler, or only to visitors arriving from a search result. Google's own guidance on hacked content warns that spammy content is often hidden with cloaking. Fetch a suspect URL with a Googlebot user agent, or inspect it in Search Console, before concluding it is clean."
+      }
+    },
+    {
+      "h2": "Why the spam pages keep ranking after the malware is gone",
+      "body": [
+        "This is the part that surprises founders, and it is not complicated once you see it. Google's index is a copy. When your developer deletes the injected files at 2am, Google's copy of those 4,000 URLs does not change. It changes when Googlebot next crawls them and finds something different.",
+        "For a site Google visits often, that is days. For 4,000 URLs on a small business site it visits weekly, it can be a month or more — and crawl is spent in rough proportion to a page's perceived importance, so the spam URLs are frequently at the back of the queue. Meanwhile they keep collecting impressions, keep serving the warning label, and keep counting against you in the review Google eventually runs.",
+        "There is a second-order effect worth naming. A few thousand junk URLs indexed under your domain is [index bloat](/answers/how-to-fix-index-bloat) with a malicious origin: it spends crawl attention that should be going to your real pages, and it makes your site harder to characterise. Recovery of your own rankings often lags the cleanup by weeks for that reason alone.",
+        "So the job is not to delete the pages. It is to tell Google, as loudly and as quickly as the tooling permits, that they are gone."
+      ]
+    },
+    {
+      "h2": "De-indexing properly: 410, noindex, and what the removals tool is for",
+      "body": [
+        "Three mechanisms, three jobs, and they are not interchangeable. Getting the combination right is most of the recovery.",
+        "The one thing to avoid is blocking the injected paths in `robots.txt`. It feels decisive and it is exactly wrong: a blocked URL cannot be crawled, so Google never sees the 404, never sees the `noindex`, and the URL can persist in the index for far longer than if you had done nothing."
+      ],
+      "table": {
+        "caption": "What to serve, depending on what the URL is.",
+        "head": [
+          "The URL",
+          "Serve this",
+          "Why"
+        ],
+        "rows": [
+          [
+            "Injected page that never existed on your site",
+            "`410 Gone`",
+            "A deliberate removal signal. Tends to drop out of the index a little faster than a `404`, and both are far better than a redirect."
+          ],
+          [
+            "Thousands of injected URLs under one path",
+            "`410`, plus a temporary removal for the whole directory prefix",
+            "The removal hides them from results within about a day while the `410` does the permanent work."
+          ],
+          [
+            "A real page of yours with injected content in it",
+            "Clean it and leave it live",
+            "It has history and links. Removing it throws away the thing you are trying to recover."
+          ],
+          [
+            "A real page you cannot clean today",
+            "`noindex`, temporarily",
+            "See [noindex](/glossary/noindex). Keeps it out of results without discarding the URL."
+          ],
+          [
+            "An injected URL you are tempted to redirect home",
+            "Do not",
+            "An irrelevant redirect is commonly treated as a soft 404, so you gain nothing and you have told Google your homepage relates to the spam."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Temporary removals last about six months.** They are a blindfold, not a cure. If the `410` is not in place when the removal lapses, the URLs can come back.",
+        "**Remove the attacker's sitemap and resubmit your own.** A sitemap listing spam URLs is an invitation to recrawl them, which is occasionally useful and usually not.",
+        "**Do not bulk-disavow the links pointing at injected pages.** Those links point at URLs that no longer exist. Disavowing them solves nothing and complicates any later conversation about your [backlink profile](/glossary/backlink-profile)."
+      ]
+    },
+    {
+      "h2": "The review request that succeeds first time",
+      "body": [
+        "If Search Console shows a security issue or a manual action, you request a review from that report. Google states plainly that [most reconsideration reviews take several days or weeks](https://support.google.com/webmasters/answer/9044175), and that you should not resubmit while one is outstanding — so a rejected request is not a small setback. It is the difference between recovering this month and recovering next quarter.",
+        "Rejections almost always come from the same three causes: one infected file left behind on a subdomain nobody remembered, a staging copy that shares the hosting account, or a request submitted before the cleanup finished because someone wanted the warning gone before a sales meeting.",
+        "Write the request as a factual account, not an apology. Four things, in order:"
+      ],
+      "numbered": [
+        "**What the issue was**, in one sentence, in Google's own vocabulary — injected pages, injected content, malicious redirect.",
+        "**How they got in**, named specifically. \"An outdated file-manager plugin allowed arbitrary file upload\" is a real answer. \"We were hacked\" is not.",
+        "**What you did**, listed: core and plugins reinstalled from source, database rows removed, credentials rotated, unknown Search Console owners removed, 4,112 injected URLs now returning 410.",
+        "**How you verified it**, and what stops it recurring: a clean scan on a stated date, the vulnerability patched, automatic updates enabled, admin access reduced to two people."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Check every property, not just the one",
+        "body": "Subdomains, a language folder, a forgotten staging copy on the same account, and an old site on a parked domain sharing the hosting user. Reviews are refused over the one property nobody thought to check far more often than over anything technical."
+      }
+    },
+    {
+      "h2": "The Indian root cause nobody enjoys naming",
+      "body": [
+        "We have opened enough of these to say it plainly. On Indian shared hosting the cause is nearly always one of two things, and often both at once.",
+        "The first is nulled software: a premium theme or plugin downloaded free from a \"GPL\" reseller or a torrent, with a payload added. It is not a licensing argument, it is a supply-chain compromise, and it arrives already inside your admin folder with permission to write files. The second is an unpatched CMS on a shared cPanel account, where a compromise of any one site under the same user can reach the others.",
+        "Neither is exotic and neither is a reflection on your developer's ability. They are the predictable result of a market where hosting is sold at ₹200 a month and a ₹6,000 plugin licence feels avoidable. The maths does not survive one incident: a fortnight of lost rankings on a site that generates leads costs more than a decade of licences.",
+        "If you are rebuilding after this, the fixes are unglamorous — licensed plugins, a current PHP version, automatic core updates, a separate hosting account per site, two-factor on the admin, and file-integrity monitoring that emails someone who reads email. And when the site goes back up, treat it as a launch: our [pre-launch SEO checklist](/answers/seo-checklist-before-launching-a-website) covers what to verify before the crawler returns."
+      ]
+    },
+    {
+      "h2": "What recovery actually looks like on the chart",
+      "body": [
+        "Expect three phases, and expect the middle one to feel like failure.",
+        "First, impressions fall further after you de-index — that is the spam URLs leaving the index, and it is the intended outcome even though the graph disagrees. Second, a flat stretch of two to six weeks while Google recrawls your real pages and re-establishes what the site is about. Third, recovery towards the pre-incident baseline, which is usually gradual rather than a step back up.",
+        "Full recovery to previous levels is common but not guaranteed, and the honest reason is that nobody outside Google can separate the hack's residual effect from everything else that changed in the interim — a core update, a competitor's new page, seasonality. Anyone quoting you a certain timeline for a certain outcome is quoting a feeling.",
+        "One thing worth saying about who pays for this. If the breach traces to unlicensed software an agency installed, or to a hosting account they set up and never patched, that is a conversation about responsibility, not just about invoices — [who is liable if an agency gets you penalised](/answers/who-is-liable-if-an-agency-gets-you-penalised) sets out how we think that argument should run. And if you are unsure whether what you have is a hack, a manual action or an ordinary core update, diagnosing that correctly is the entire first hour of our [penalty recovery work](/services/penalty-recovery-services)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long does it take to recover rankings after a website hack?",
+      "a": "Cleanup takes days. Removal of the injected URLs from Google's index takes one to six weeks depending on how often Googlebot visits your site and how many URLs were created. Recovery of your own rankings usually trails that by another two to six weeks. Anyone promising a fixed date is guessing."
+    },
+    {
+      "q": "What is the Japanese keyword hack?",
+      "a": "A common attack that auto-generates thousands of Japanese-language spam pages at random paths on your domain, submits its own sitemap so they index quickly, and often verifies the attacker as a Search Console owner. The fix is the same four-stage sequence: contain, clean, de-index the generated URLs, then request review."
+    },
+    {
+      "q": "Should I block the hacked URLs in robots.txt?",
+      "a": "No, and this is the most common self-inflicted delay in the whole process. A blocked URL cannot be crawled, so Google never sees your 404 or your noindex and the URL can stay in the index far longer. Serve a 410 and let Googlebot reach it."
+    },
+    {
+      "q": "Do I need to request a review after cleaning a hacked site?",
+      "a": "Only if Search Console shows a security issue or a manual action. If neither report shows anything, there is nothing to review — you simply wait for recrawling. Requesting a review you do not need wastes nothing, but it also does nothing."
+    },
+    {
+      "q": "Will Google penalise my site permanently after a hack?",
+      "a": "No. Manual actions and security warnings are lifted once the issue is fixed and reviewed. What lingers is mechanical rather than punitive: thousands of junk URLs in the index, spent crawl attention, and the time it takes Google to re-establish what your site is about."
+    },
+    {
+      "q": "How do I stop it happening again?",
+      "a": "Licensed plugins and themes only, a supported PHP version, automatic core updates, one hosting account per site rather than a shared user, two-factor authentication on every admin, and file-integrity monitoring that alerts a human. The single biggest reduction in risk is removing nulled software entirely."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Security issues report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9044101"
+    },
+    {
+      "title": "Spam policies for Google web search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "date": "2026-05-15"
+    },
+    {
+      "title": "Manual actions report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9044175"
+    },
+    {
+      "title": "Remove a page hosted on your site from Google",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/remove-information",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Removals and SafeSearch reports tool",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9689846"
+    },
+    {
+      "title": "Debugging drops in Google Search traffic",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops",
+      "date": "2025-12-10"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "how-to-fix-index-bloat"
+    },
+    {
+      "type": "answers",
+      "slug": "staging-site-indexed-by-google"
+    },
+    {
+      "type": "services",
+      "slug": "penalty-recovery-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "noindex"
+    },
+    {
+      "type": "glossary",
+      "slug": "404-error"
+    },
+    {
+      "type": "answers",
+      "slug": "why-is-my-page-not-indexed-on-google"
+    },
+    {
+      "type": "compare",
+      "slug": "wordpress-vs-shopify-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "the-replatform-that-killed-your-traffic"
+    }
+  ]
+}

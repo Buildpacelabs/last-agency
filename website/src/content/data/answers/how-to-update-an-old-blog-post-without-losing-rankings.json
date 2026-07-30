@@ -1,0 +1,258 @@
+{
+  "slug": "how-to-update-an-old-blog-post-without-losing-rankings",
+  "type": "answers",
+  "primaryKeyword": "how to update an old blog post without losing rankings",
+  "secondaryKeywords": [
+    "should i change the url when updating a post",
+    "republish date seo effect",
+    "editing a ranking page safely",
+    "how long to wait after updating content"
+  ],
+  "cluster": "content-ops",
+  "intent": "informational",
+  "h1": "How to update an old post without losing its rankings",
+  "metaTitle": "Update an Old Post Without Losing Rankings",
+  "metaDescription": "Keep the URL, keep the query the page answers, change everything else. The rules on the H1, the date field and the slug, and how long to wait afterwards.",
+  "updated": "2026-10-01",
+  "published": "2026-10-01",
+  "answer": "Keep three things fixed — the URL, the primary query the page already ranks for, and the promise in the H1. Change everything else freely. Most rankings lost during a refresh are lost because the writer broadened the topic until the page stopped answering the question it won on. Then wait eight weeks before judging it.",
+  "takeaways": [
+    "The most common way to kill a ranking page is to improve it. Scope drift, not bad writing, is what does the damage.",
+    "**Pull the page's query list before you open the editor.** If you do not know what it ranks for, you cannot tell whether your edit helped.",
+    "Changing the date does nothing on its own, and Google explicitly names date manipulation as a sign of content built for rankings rather than readers.",
+    "A slug change costs a redirect, a recrawl and a wobble. It is worth it when the URL contradicts the page, and it is vandalism when the URL is merely untidy.",
+    "Judge at week eight. A refresh assessed at week two produces the wrong conclusion almost every time."
+  ],
+  "sections": [
+    {
+      "h2": "Before you open the editor: find out what the page already wins",
+      "body": [
+        "The decision about whether to update this page at all is a separate question, and we argued it out in [when to update old content instead of writing new](/journal/when-to-update-old-content-instead-of-writing-new). This page assumes you have decided, and covers the editing procedure — which is the part where the damage actually happens.",
+        "Ten minutes in Search Console first, because it is the only way to know what you are protecting. Open the Performance report, filter to the exact URL, set the range to the last six months, and open the Queries tab.",
+        "Write down four things and keep them beside you while you edit."
+      ],
+      "numbered": [
+        "**The query that sends the most clicks.** Not the one you meant to target — the one that actually pays. They are different on maybe a third of older pages.",
+        "**The next five to ten queries by impressions**, especially the ones sitting at positions 8 to 20. These are the ones an edit can genuinely move, because Google already associates them with this page.",
+        "**The current average position and click-through rate**, so you have a before to compare against.",
+        "**Anything ranking here that surprises you.** A page frequently earns its traffic from a sub-topic mentioned in one paragraph. Delete that paragraph in a tidy-up and you delete the traffic with it."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The paragraph you are about to cut",
+        "body": "Refreshes almost always involve removing dead weight, and that is correct. But check the query list before you cut anything specific — a section you consider off-topic is regularly the reason the page ranks for its second-best query. Cut with the report open."
+      }
+    },
+    {
+      "h2": "The three things that stay fixed",
+      "body": [
+        "Everything else on the page is fair game. These three are load-bearing, and the ranking is attached to them rather than to your prose.",
+        "**The URL.** Google has spent years associating this string with a topic, and every link pointing at your page points at this string. Keeping it costs you nothing and preserves all of it.",
+        "**The primary query.** The page won a specific question. It can answer that question better, at greater length, with a table and fresher numbers — but it must still, unmistakably, answer it. The failure mode is subtle: an article about \"GST on digital marketing services\" gets expanded into a general guide to GST for businesses, and it stops being the best result for the query that was sending the leads.",
+        "**The promise in the H1.** The heading is the clearest statement of what the page is for, to both readers and search engines. Rewriting it from a specific promise to a broader one is scope drift with a title on top. You can sharpen the wording; you should not widen the claim."
+      ],
+      "table": {
+        "caption": "Edits ranked by how much they put the ranking at risk.",
+        "head": [
+          "The edit",
+          "Risk",
+          "When it is right"
+        ],
+        "rows": [
+          [
+            "Adding sections for queries the page already ranks 8–20 for",
+            "Very low. This is the highest-return edit available.",
+            "Always. Search Console has already told you which ones."
+          ],
+          [
+            "Updating numbers, prices, dates and screenshots",
+            "Very low.",
+            "Always. This is the part readers actually notice."
+          ],
+          [
+            "Rewriting the title tag and meta description",
+            "Low, and reversible in a week.",
+            "When click-through rate is below what the position should earn."
+          ],
+          [
+            "Cutting sections",
+            "Moderate. Depends entirely on what those sections rank for.",
+            "After checking the query list, not before."
+          ],
+          [
+            "Rewriting the H1 to something broader",
+            "High. This is the most common cause of a post-refresh drop.",
+            "Rarely. Sharpen, do not widen."
+          ],
+          [
+            "Changing the URL",
+            "High, and it costs a recrawl on every inbound link.",
+            "Only when the URL actively contradicts the page. See below."
+          ],
+          [
+            "Merging the page into another one",
+            "High, and irreversible in practice.",
+            "When two URLs genuinely split one intent — a different job entirely."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "What the date field does, and what it does not",
+      "body": [
+        "Changing a published date does not improve rankings. It never has, and it is not a grey area: Google's guidance on people-first content asks directly whether you are [changing the date of pages to make them seem fresh when the content has not substantially changed](https://developers.google.com/search/docs/fundamentals/creating-helpful-content), and lists it among the signals of content built for search engines rather than readers.",
+        "What a date does do is set an expectation. A reader who sees \"Updated September 2026\" and then finds a screenshot of an interface that was retired in 2023 has learned something about you, and it is not the thing you wanted them to learn. On queries where currency matters — tax rates, statutory limits, platform features — that mismatch costs you the reader in about four seconds.",
+        "So the rule is ordinary honesty, not tactics."
+      ],
+      "bullets": [
+        "**Change the date when the content genuinely changed.** A rewritten section, new numbers, a removed chapter. Not a swapped adjective.",
+        "**Show both dates when the page has real history** — published, and last updated. It is more useful to a reader than either one alone.",
+        "**Keep your structured data and your visible date in agreement.** A `dateModified` that disagrees with what the page says is a small credibility problem and an easy one to avoid.",
+        "**Update `lastmod` in your XML sitemap honestly.** Google treats it as a hint, and it is worth more on sites whose dates have historically been accurate — which is an argument for never gaming it.",
+        "**Do not bulk-update dates across an archive.** It is visible, it is pointless, and it destroys the only signal you had about what was actually revised."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Republish is not a technical action",
+        "body": "On most CMSs, \"republish\" moves the page to the top of your blog listing and changes a date field. It does not resubmit anything to Google, it does not reset the URL's history, and it does not trigger a recrawl. The recrawl happens when Googlebot next visits, which you influence by other means."
+      }
+    },
+    {
+      "h2": "When a slug change is worth a redirect, and when it is vandalism",
+      "body": [
+        "The urge to tidy a slug is strong and usually wrong. A URL change means a [301 redirect](/glossary/301-redirect), a period where Google is re-evaluating which URL is canonical, every internal link needing an update, and every external link now arriving one hop late. In exchange you get a keyword in a URL, which stopped being worth much a long time ago.",
+        "There are three cases where the change earns its cost, and they are all cases where the URL is actively wrong rather than merely inelegant."
+      ],
+      "bullets": [
+        "**The URL contains a year that is now false** — `/seo-pricing-2019/` on a page about 2026 pricing. Readers see it in the result and skip you. This is the one clear-cut case.",
+        "**The URL describes a different product or a former company name.** A URL that says `acme-widgets` on a page about something you no longer sell confuses everyone, including you.",
+        "**The URL is machine junk** — `/?p=4187` or a 140-character path of category slugs. Genuinely worth fixing, once, as part of a broader tidy-up rather than one page at a time."
+      ],
+      "body2": [],
+      "numbered": [
+        "If you do change it: **301 the old URL to the new one**, permanently, and leave the redirect in place indefinitely rather than for a tidy 90 days.",
+        "**Update every internal link** that pointed at the old URL. Letting them hop through a redirect works and is sloppy; a search-and-replace takes minutes.",
+        "**Update the sitemap** so it lists the new URL and not the old one.",
+        "**Change one thing at a time.** A slug change on the same day as a rewrite means that when something moves, you will never know which change moved it."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Never change a slug on a page with real inbound links",
+        "body": "A 301 passes signals, but every hop is a small tax and some third-party links get rewritten badly or dropped entirely by the sites hosting them. If the page has referring domains worth having, the tidier URL is not worth the risk. Keep the URL, change the page."
+      }
+    },
+    {
+      "h2": "What to do in Search Console afterwards, and what to skip",
+      "body": [
+        "Short list, and shorter than most people expect. Two things are worth doing and several popular ones are theatre.",
+        "**Worth doing:** submit the URL through URL Inspection and request indexing. There is a daily quota, so spend it on pages that matter, and note that Google is explicit that a request does not guarantee anything. Then make sure your sitemap's `lastmod` for that URL is accurate.",
+        "**Not worth doing:** resubmitting your whole sitemap, requesting indexing three days running, pinging index services, or using the Removals tool to \"clear the cache\". None of these speed anything up, and the third one attracts the wrong sort of tooling.",
+        "Then set a calendar reminder for eight weeks out, on the same day you make the edit. That single habit is the difference between a refresh programme and a series of anxious Tuesdays."
+      ]
+    },
+    {
+      "h2": "How long to wait, and what a normal interim looks like",
+      "body": [
+        "Nothing can happen until Googlebot recrawls the page, which takes days on a site it visits often and several weeks on a page four clicks deep on a site it visits rarely. After that, position movement typically appears over the following four to ten weeks — the spread is wide because it depends on how competitive the query is, how much genuinely changed, and whether a core update lands in the middle of your window.",
+        "In the interim, expect noise that looks like a verdict and is not.",
+        "A short dip in the first week or two is common and is not evidence of a mistake; a re-evaluated page can move in both directions before it settles. Impressions frequently move before position does, as Google tests the page against adjacent queries. And a page that gains three new ranking queries at position 30 will show a worse average position while being unambiguously better off — which is [average position](/glossary/average-position) behaving exactly as designed.",
+        "Two rules keep this sane. Judge the batch, not the page: twenty refreshed pages compared against their own previous eight weeks survives seasonality and a core update in a way one page's chart never will. And if the primary query is genuinely worse at week eight, revert first and diagnose second — you kept the URL, so reverting is cheap. Then read the query list again and find out what you removed."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The eight-week rule",
+        "body": "Recrawl in days to weeks, then four to ten weeks for position to settle. Week two tells you about crawl timing and nothing about your edit. Set the review date when you make the change, and put it in the same document as the before numbers."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Will updating an old blog post hurt my rankings?",
+      "a": "Only if you change what the page is about. Keeping the URL, the primary query and the promise in the H1 makes a refresh close to risk-free. The drops we see almost always trace to scope drift — the page was broadened into a general guide and stopped being the best answer to the specific question it won on."
+    },
+    {
+      "q": "Should I change the URL when updating a post?",
+      "a": "Almost never. A slug change costs a 301, a re-evaluation period and an update to every internal and external link, in exchange for a keyword in a URL that barely matters now. Change it only when the URL is actively wrong — a false year, a discontinued product, or machine-generated junk."
+    },
+    {
+      "q": "Does changing the publish date improve SEO?",
+      "a": "No. Google's own guidance names date changes made without substantial content changes as a sign of content built for search engines rather than readers. Change the date when the content genuinely changed, at which point it is honest and useful to the reader. On its own it does nothing."
+    },
+    {
+      "q": "How long should I wait before checking if a content update worked?",
+      "a": "Eight weeks. Recrawling alone takes days to several weeks, and position movement usually appears over the four to ten weeks after that. A short dip in the first fortnight is common and is not a verdict. Review the whole batch of refreshed pages together rather than one page's chart."
+    },
+    {
+      "q": "Should I request indexing after updating a page?",
+      "a": "Yes, once, through URL Inspection — there is a daily quota, so spend it on pages that matter. Keep your sitemap's lastmod accurate too. Skip the rest: resubmitting the sitemap daily, repeat indexing requests and third-party ping services do not speed anything up."
+    },
+    {
+      "q": "What should I do if the update made things worse?",
+      "a": "Revert first, diagnose second. You kept the URL, so reverting is cheap and fast. Then compare the old and new versions against the query list you pulled before editing, and look specifically for a removed section or a widened H1. That is where the answer usually is."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Creating helpful, reliable, people-first content",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Influence your byline dates in Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/publication-dates",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Redirects and Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+      "date": "2026-04-14"
+    },
+    {
+      "title": "URL Inspection tool",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9012289"
+    },
+    {
+      "title": "What are impressions, position, and clicks?",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7042828"
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "when-to-update-old-content-instead-of-writing-new"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-merge-two-pages-competing-for-the-same-keyword"
+    },
+    {
+      "type": "glossary",
+      "slug": "content-decay"
+    },
+    {
+      "type": "glossary",
+      "slug": "301-redirect"
+    },
+    {
+      "type": "glossary",
+      "slug": "url-slug"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-run-a-content-audit"
+    },
+    {
+      "type": "services",
+      "slug": "content-marketing-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "average-position"
+    }
+  ]
+}

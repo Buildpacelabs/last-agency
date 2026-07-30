@@ -1,0 +1,264 @@
+{
+  "slug": "how-to-get-traffic-from-google-discover",
+  "type": "answers",
+  "primaryKeyword": "how to get traffic from google discover",
+  "secondaryKeywords": [
+    "why did discover traffic disappear",
+    "discover eligibility requirements",
+    "discover traffic india android",
+    "is discover traffic worth chasing"
+  ],
+  "cluster": "ai-surfaces",
+  "intent": "informational",
+  "h1": "How to get traffic from Google Discover — and why we exclude it from a guarantee",
+  "metaTitle": "How to Get Traffic From Google Discover",
+  "metaDescription": "Discover is disproportionately large on Android in India and volatile by construction. Worth having, not worth promising — so it sits outside our baseline.",
+  "updated": "2026-10-05",
+  "published": "2026-10-05",
+  "answer": "Discover is Google's interest feed — the cards below the search bar on Android, in the Google app and on Chrome's new tab. There is no query to target. Pages become eligible by being indexed and meeting Discover's content policies, and you influence selection with large images, honest headlines and topical consistency.",
+  "takeaways": [
+    "There is no keyword. Discover picks pages against a person's inferred interests, so the unit of optimisation is the **topic you are consistently known for**, not a query.",
+    "Eligibility needs nothing exotic: be indexed, meet the content policies, and allow `max-image-preview:large` so your image can run at full width.",
+    "It is much larger in India than most guidance assumes, because the feed sits on the home screen of a mostly Android phone base.",
+    "It is also volatile by construction — Google's own documentation calls Discover traffic **less predictable** than keyword-driven visits — which is exactly why we report it separately and keep it out of the guarantee baseline."
+  ],
+  "sections": [
+    {
+      "h2": "What Discover is, and what actually selects for it",
+      "body": [
+        "Discover is the feed of cards a person sees before they have typed anything: on the Android home screen, inside the Google app, and on Chrome's new-tab page on mobile. Google assembles it from what it believes that person is interested in — their search and browsing history, the topics they follow, their location, what they've tapped before.",
+        "That makes it the inverse of search. In search, a person declares intent and you compete for the declaration. In Discover, nobody declares anything and Google is guessing. You are not competing for a query; you are competing to be the thing Google guesses right with.",
+        "The eligibility rules are unusually plain. Google says content is automatically eligible if it is indexed and meets Discover's content policies, and that no special tags or structured data are required. There is no Discover markup, no feed to submit, no property to verify. There is also no guarantee: being eligible is not the same as appearing, and Google says so directly.",
+        "One structural detail matters for everything below. Discover reports separately in Search Console — it is its own performance report, not a slice of the Search results one. Discover clicks never enter your Search numbers, which is convenient, because it means you can look at organic search performance with Discover's noise removed whenever you want to."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The one-line difference",
+        "body": "Search rewards being the best answer to a question. Discover rewards being an interesting thing to a person who wasn't asking. Almost every piece of Discover advice that fails does so because it treats the second problem like the first."
+      }
+    },
+    {
+      "h2": "Why it is bigger in India than most guidance assumes",
+      "body": [
+        "Most writing about Discover is written for markets where iPhones are common and people reach the web through a browser they opened deliberately. India works differently, and the difference is not marginal.",
+        "The Indian smartphone base is overwhelmingly Android, and on Android the Discover feed is one swipe from the home screen — often the first screen of content a person sees in the morning, before any app is opened. Add a population that reads on the phone rather than the desktop, and a large share of casual reading is happening inside a feed nobody chose to visit.",
+        "The consequence for a publisher-shaped site is a traffic profile that looks strange until you know what you're looking at: months where a single article does more traffic than the rest of the site combined, sessions that arrive in a few hours rather than across a week, and bounce and dwell metrics that look poor because the reader was browsing, not researching.",
+        "The consequence for a B2B or local business is usually nothing at all, and that's worth saying plainly before anyone spends a rupee here. Feeds surface things people find interesting. A page about pricing for industrial gearboxes is not that, and no amount of image optimisation makes it that."
+      ]
+    },
+    {
+      "h2": "What is genuinely inside your control",
+      "body": [
+        "Short list, and it is short honestly rather than out of modesty. These are the things that either gate eligibility or plausibly influence selection. Everything else sold as Discover optimisation is guesswork wearing a checklist."
+      ],
+      "table": {
+        "caption": "What you can actually do, and what each item buys you.",
+        "head": [
+          "Lever",
+          "What to do",
+          "What it buys"
+        ],
+        "rows": [
+          [
+            "Image preview size",
+            "Allow `max-image-preview:large` in your robots meta tag so a full-width preview can be shown",
+            "Gating. Without it your card runs small or not at all, and the visual is most of what a card is"
+          ],
+          [
+            "Image quality",
+            "At least 1,200px wide, above 300,000 total pixels, and a compelling image that is genuinely about the article",
+            "Gating plus selection. Google states the width and pixel thresholds outright"
+          ],
+          [
+            "Headline honesty",
+            "Say what the page contains. Google's own quality guidance asks whether the title avoids being exaggerated or shocking",
+            "Both eligibility and durability. Clickbait can spike and it is also the fastest route to being dropped"
+          ],
+          [
+            "Content policies",
+            "Read them once. Medical, adult, violent, deceptive and misleading-preview content are all restricted",
+            "Eligibility. A policy breach can make a whole site ineligible, not just one page"
+          ],
+          [
+            "Topical consistency",
+            "Publish repeatedly and recognisably about the same subjects",
+            "Selection. A feed built on inferred interest has to be able to infer what you are about"
+          ],
+          [
+            "Timeliness",
+            "Publish while a topic is live, with a visible date and byline",
+            "Selection. Discover skews strongly towards the recent"
+          ],
+          [
+            "Mobile page speed",
+            "The card is tapped on a phone, often on a mediocre connection",
+            "Not eligibility — retention. A four-second load loses the reader you just won"
+          ]
+        ]
+      },
+      "bullets": [
+        "There is no structured data for Discover and nobody has a Discover schema. If a proposal contains one, the proposal is fiction.",
+        "Author bylines, clear dates and a real About page are cheap and they are the kind of transparency Google's Discover policies ask news-shaped sites for.",
+        "Everything on this list also helps ordinary search, which is the honest reason to do it. Nothing here is Discover-only work you would otherwise skip."
+      ]
+    },
+    {
+      "h2": "The shape of a Discover collapse, and how to tell it from a core update",
+      "body": [
+        "Discover traffic does not decline. It stops. One day a site is doing five figures of daily sessions from the feed and the next it is doing three, with no warning, no message and frequently no cause you can name.",
+        "The first question is always whether you have a Discover problem or a Google problem, and the two look identical on a total-sessions chart. They look nothing alike once you split the reports."
+      ],
+      "table": {
+        "caption": "Telling a Discover drop apart from a core update.",
+        "head": [
+          "Signal",
+          "Discover drop",
+          "Core update"
+        ],
+        "rows": [
+          [
+            "Onset",
+            "Overnight, often to near zero",
+            "Rolls out over days or weeks, partially"
+          ],
+          [
+            "Which report moves",
+            "Discover report only. Search performance unchanged",
+            "Search performance moves. Discover often follows later"
+          ],
+          [
+            "Spread",
+            "Every article at once, regardless of topic or age",
+            "Uneven — some queries and page types fall, others hold or rise"
+          ],
+          [
+            "Rankings",
+            "Unchanged. You still rank exactly where you did",
+            "Positions move for the affected queries"
+          ],
+          [
+            "Recovery",
+            "Can return as suddenly as it left, sometimes within weeks, sometimes never",
+            "Typically needs real change and the next update to read it"
+          ]
+        ]
+      },
+      "body2": [],
+      "bullets": [
+        "If Search is flat and only Discover fell, resist the urge to rewrite the site. You have lost a feed placement, not your rankings.",
+        "Check the content policies first, then anything that changed on the template — an image size change, a lost `max-image-preview` directive, a new interstitial, a slower page.",
+        "Compare against a [Google core update](/glossary/google-core-update) timeline before diagnosing anything. Half the Discover post-mortems we read are describing a core update, and the other half blame a core update for a feed change."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "There is no appeal and no support queue",
+        "body": "Unlike a manual action, a Discover disappearance produces no notification, no reason and no route to ask. If someone offers to escalate a Discover drop for you, they are describing a channel that does not exist."
+      }
+    },
+    {
+      "h2": "Why we keep Discover outside the baseline",
+      "body": [
+        "Here is the commercial position, which is the part this page exists for.",
+        "Our guarantee is measured against a client's own baseline: their trailing-90-day qualified leads from organic search, frozen on day one. Miss it in 90 days and we keep working free until we beat it. A commitment like that only works if the number underneath it is stable enough to be fair to both sides.",
+        "Discover is not that number. Google's own documentation says traffic from Discover is [less predictable or dependable than keyword-driven search visits](https://developers.google.com/search/docs/appearance/google-discover) and recommends treating it as supplemental. A month with one lucky feed placement makes a mediocre quarter look excellent. A month where the feed goes quiet makes a good quarter look like failure. Neither tells you whether the work was any good.",
+        "So we report it, in its own line, and we exclude it from the baseline and from the guarantee. That cuts both ways and it is meant to. We do not get credit for a Discover windfall we did not earn, and we do not get to blame a Discover collapse for missing a target. If you want the general version of this argument, [how to set an SEO baseline](/journal/how-to-set-an-seo-baseline) covers which numbers belong inside a commitment and which do not.",
+        "The same logic is why we're wary of anyone quoting Discover traffic in a case study without splitting it out. It is the easiest number in SEO to look good with and the hardest one to have caused."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "How we report it",
+        "body": "One chart, labelled, sitting beside organic search rather than inside it. Discover sessions, Discover clicks, and the articles that earned them. Useful for deciding what to publish next. Not admissible as evidence that the retainer worked."
+      }
+    },
+    {
+      "h2": "When Discover is worth chasing, and when it is not",
+      "body": [
+        "The deciding question is not whether you'd like the traffic. It's whether a reader who wasn't looking for you is worth anything to your business within a reasonable window.",
+        "Worth pursuing deliberately: media and publisher sites, D2C brands with a genuine editorial output, travel, food, health and fitness, personal finance, entertainment, anything where a casual reader can become an email subscriber or a first-time buyer in one visit. For these, Discover is real distribution and the work is mostly work you were doing anyway.",
+        "Not worth pursuing: B2B SaaS with a six-month sales cycle, local service businesses, industrial manufacturers, professional services. The feed will occasionally hand you a spike on a general-interest post, and the readers will not be your buyers. Chasing it means writing for an audience that cannot buy from you, which is a slow and expensive way to dilute a site's topic.",
+        "The middle case, and it's a large one in India: ecommerce brands with a content arm. Publish honestly about the category, size your images properly, and take the Discover traffic when it comes. Just don't rebuild the content plan around it, and don't let a good Discover month persuade you the [organic traffic](/glossary/organic-traffic) problem is solved. Check what the sessions did — if Discover visitors never return and never convert, you have an audience, not a market."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I get my site to appear in Google Discover?",
+      "a": "Be indexed, meet Discover's content policies, and allow large image previews with max-image-preview:large so your card can run at full width. Use images at least 1,200px wide, write headlines that describe the page honestly, and publish consistently about recognisable topics. No markup, no submission and no guarantee of appearing."
+    },
+    {
+      "q": "Why did my Google Discover traffic suddenly disappear?",
+      "a": "Discover placements end abruptly and without notification. First check whether Search performance also fell — if it didn't, you lost a feed placement rather than rankings. Then check the content policies, and anything that changed in the template: image sizes, a removed max-image-preview directive, a new interstitial, a slower page."
+    },
+    {
+      "q": "Is there a Discover report in Search Console?",
+      "a": "Yes, and it sits separately from the Search results performance report, appearing when your site has Discover data. That separation is useful: Discover clicks never contaminate your Search numbers, so you can judge organic search performance without a feed spike distorting the month."
+    },
+    {
+      "q": "Does structured data help with Google Discover?",
+      "a": "No. Google states that no special tags or structured data are required for Discover eligibility. Structured data earns you other things in Search, and it's worth having for those reasons, but there is no Discover schema and anyone selling one is selling something that doesn't exist."
+    },
+    {
+      "q": "Is Discover traffic worth anything commercially?",
+      "a": "It depends entirely on whether a reader who wasn't looking for you can become a customer in one visit. For media, D2C and consumer content, yes. For B2B and local services, mostly no — you get readers who cannot buy. Judge it on returning visitors and conversions, not on the session count."
+    },
+    {
+      "q": "Should an agency include Discover traffic in its results?",
+      "a": "Only as a separate line, never inside the headline number. Discover is volatile enough that a single placement can carry a bad quarter, which makes it the easiest metric in SEO to look competent with. We keep it out of the guarantee baseline for the same reason it should stay out of a case study."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Discover and your website",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/google-discover",
+      "date": "2026-03-09"
+    },
+    {
+      "title": "Discover content policies",
+      "publisher": "Google Search Help",
+      "url": "https://support.google.com/websearch/answer/9982767"
+    },
+    {
+      "title": "Robots meta tag, data-nosnippet, and X-Robots-Tag specifications",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag",
+      "date": "2026-03-24"
+    },
+    {
+      "title": "Creating helpful, reliable, people-first content",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "date": "2025-12-10"
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "google-core-update"
+    },
+    {
+      "type": "glossary",
+      "slug": "organic-traffic"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "journal",
+      "slug": "what-ai-overviews-did-to-your-organic-traffic"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-you-measure-seo-success"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "services",
+      "slug": "content-marketing-services"
+    }
+  ]
+}

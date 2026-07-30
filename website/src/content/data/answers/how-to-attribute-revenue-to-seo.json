@@ -1,0 +1,283 @@
+{
+  "slug": "how-to-attribute-revenue-to-seo",
+  "type": "answers",
+  "primaryKeyword": "how to attribute revenue to seo",
+  "secondaryKeywords": [
+    "how to prove which leads came from organic search",
+    "seo revenue reporting for a board",
+    "why ga4 under-reports organic revenue",
+    "connecting crm deals back to search"
+  ],
+  "cluster": "lead-measurement",
+  "intent": "informational",
+  "h1": "How to attribute revenue to SEO without lying in either direction",
+  "metaTitle": "How to Attribute Revenue to SEO",
+  "metaDescription": "GA4's default view under-credits organic search on any long sales cycle. The four records to join, and the arithmetic a published retainer price allows.",
+  "updated": "2026-08-07",
+  "published": "2026-08-07",
+  "answer": "Attribute revenue to SEO by joining four records: the source captured on the first visit, the lead created from it, the CRM stage it reached, and the money it closed. GA4 alone can't finish that chain — on a long sales cycle the earlier organic session is usually gone by the time the deal closes.",
+  "takeaways": [
+    "Attribution is a **join**, not a report setting. Four records have to connect, and in most Indian businesses the break is at the form, not the tag.",
+    "Last-click doesn't merely under-credit organic — it hands the credit to **Direct**, because the March session no longer exists when the June deal closes.",
+    "Write first-touch source into a **write-once** CRM field. A field a salesperson can edit is a field that will be edited.",
+    "At ₹75,000/mo and ₹50,000 of gross profit per deal, you need roughly eight qualified organic leads a month to break even. That's arithmetic you can do before the first call.",
+    "Two numbers we won't put in a report: **influenced pipeline** and **estimated traffic value**. Neither can be proved wrong, so neither is evidence."
+  ],
+  "sections": [
+    {
+      "h2": "The four records that have to join up",
+      "body": [
+        "Revenue attribution isn't a setting you switch on. It's a join across four separate records held in four different systems, and it breaks in a different place in almost every business we open up.",
+        "Here's the chain, in order. If one link is missing, everything downstream is a guess wearing a decimal point."
+      ],
+      "bullets": [
+        "**The lead record is where it usually breaks.** A form that posts a name, a number and a message — but not the landing page or the referrer — has destroyed the evidence before the lead exists.",
+        "**You don't need a warehouse for this.** A monthly CSV out of your CRM, with two extra columns filled at form submit, settles most of the argument a dashboard project was going to spend a quarter on.",
+        "**Phone and WhatsApp enquiries need the same treatment** or they sit permanently in the unattributed pile, which on Indian sites is frequently the biggest pile of the lot."
+      ],
+      "table": {
+        "caption": "The four records that have to connect before anyone can say SEO produced revenue.",
+        "head": [
+          "Link in the chain",
+          "Where it lives",
+          "What breaks it"
+        ],
+        "rows": [
+          [
+            "**Source capture**",
+            "The visitor's first session — referrer, landing page, date",
+            "Cookie expiry, an ignored consent banner, a phone-to-laptop switch, an in-app browser"
+          ],
+          [
+            "**Lead record**",
+            "The form, chat or call, written into your CRM",
+            "Hidden fields nobody added, so the CRM stores the source as blank"
+          ],
+          [
+            "**CRM stage**",
+            "The pipeline your sales team actually updates",
+            "A rep overwriting Lead Source with \"Referral\" because that's how the call felt"
+          ],
+          [
+            "**Closed revenue**",
+            "The invoice, and the gross margin on it",
+            "Nobody ever sends closed-won values back to whoever writes the marketing report"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Analytics cannot see a closed deal",
+        "body": "GA4 knows a form was submitted. It has no idea whether that form became ₹4 lakh of work or a student doing a college project. Any revenue figure that never touched your CRM is analytics guessing at your P&L, and it will be wrong in whichever direction flatters whoever built the report."
+      }
+    },
+    {
+      "h2": "Why last-click quietly hands organic's credit to Direct",
+      "body": [
+        "\"Last-click undercounts SEO\" is the standard complaint. The mechanism matters more than the complaint, because what you do about it depends entirely on which part is failing.",
+        "GA4 fixes a session's source at `session_start`, from the referrer, the gclid or the UTM parameters present on that visit. Someone lands from a Google result in March: that session is Organic Search. They come back in June by typing your name: that session is Direct.",
+        "GA4's models [exclude direct visits from receiving credit unless the entire path is direct](https://support.google.com/analytics/answer/10596866), which sounds like protection for organic — until you look at what counts as the entire path. GA4 can only include March if it still holds that person's identity in June.",
+        "Three ordinary things break that. Safari caps script-written storage at seven days without a return visit, so on an iPhone the March cookie is long gone. A phone-then-laptop switch splits one buyer into two users unless you're stitching on a logged-in ID. And a consent banner the visitor closed without accepting means March was never recorded at all.",
+        "Once the earlier session is missing, the path GA4 can see genuinely is entirely direct — so Direct takes the credit. That isn't a modelling opinion you can argue with. It's an absent row."
+      ],
+      "bullets": [
+        "**The longer the cycle, the worse it gets.** A four-day D2C purchase mostly survives. A 90-day B2B cycle with three research visits and a brand search at the end mostly doesn't.",
+        "**Check which scope you're reading.** Session default channel group answers \"what brought this visit\". First user default channel group answers \"what first brought this person\". The two disagree by design, and people quote whichever is kinder that month.",
+        "**Rising Direct is a symptom, not a channel.** Direct climbing while organic sessions stay flat usually means your measurement decayed, not that more people started memorising your URL.",
+        "**None of this makes first-touch honest either.** First-touch credits organic for a deal that closed because of a referral and two sales calls. Every model is a set of assumptions with a name on it. Pick one, write it down, don't switch mid-engagement."
+      ]
+    },
+    {
+      "h2": "Capture the source once, and stop anyone overwriting it",
+      "body": [
+        "The fix is unglamorous and it's usually two days of developer time. It's also the difference between a twelve-month review that ends in a decision and one that ends in an argument about GA4.",
+        "Do these five things in this order. The first two are where nearly all the value sits."
+      ],
+      "numbered": [
+        "**Write a first-touch record on the first visit.** Landing page, referrer and date, into a first-party cookie, set only if it isn't already set. Keep a last-touch record beside it, refreshed every visit. Two cookies, both yours.",
+        "**Put hidden fields on every form.** Website forms, landing pages, the chat widget, the click-to-WhatsApp handler, the click-to-call. First-touch landing page, first-touch referrer, last-touch source, GA4 client ID. If a form can't carry hidden fields, replace the form.",
+        "**Map those fields to write-once CRM properties.** Lead Source should lock the moment the record is created. Give the sales team a separate, editable field for their own read of where it came from — you want both, and you want to know when the two disagree.",
+        "**Add one self-reported question.** \"How did you hear about us?\", free text, optional, no dropdown. It's unscientific, it's the only signal that survives every cookie problem described above, and it's routinely the most useful column in the export.",
+        "**Send closed-won values back.** Once a month, export deals with first-touch source, close date and gross profit. That export is your revenue attribution. The GA4 report is a leading indicator you read in between."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Fix the form before you rebuild the tracking",
+        "body": "Every second proposal we see opens with a tracking rebuild. On most Indian sites the enquiry form is posting four fields to an inbox, sales are re-keying them into a sheet, and no amount of tag work upstream recovers what's being thrown away at that step. Fix the record first, the pipes second."
+      }
+    },
+    {
+      "h2": "The arithmetic a published price allows",
+      "body": [
+        "Our prices are on the site, so anyone can run this before they ever speak to us. SEO from ₹75,000 a month, smaller sites from ₹40,000, all ex-GST, ad spend billed separately with no media markup.",
+        "The question a retainer has to answer is narrow: how many qualified organic leads a month does it take to cover ₹75,000 of **gross profit**? Not revenue — revenue at a 12% margin isn't money, it's turnover.",
+        "Everything in the table is arithmetic, not a client result. Put in your own gross profit per closed deal and your own close rate, and read the row you land on. Watch the top row especially: at ₹25,000 of gross profit a deal and a one-in-ten close rate, ₹75,000 a month needs thirty qualified organic leads before it breaks even."
+      ],
+      "table": {
+        "caption": "What a ₹75,000 monthly retainer has to return in steady state, at different deal economics.",
+        "head": [
+          "Gross profit per closed deal",
+          "Closed deals needed per month",
+          "Qualified organic leads at a 20% close rate",
+          "At a 10% close rate"
+        ],
+        "rows": [
+          [
+            "₹25,000",
+            "3.0",
+            "15",
+            "30"
+          ],
+          [
+            "₹50,000",
+            "1.5",
+            "8",
+            "15"
+          ],
+          [
+            "₹1,00,000",
+            "0.75",
+            "4",
+            "8"
+          ],
+          [
+            "₹3,00,000",
+            "0.25",
+            "2",
+            "3"
+          ],
+          [
+            "₹10,00,000",
+            "0.08",
+            "1 a quarter",
+            "1 a month"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "A bar to clear, not a forecast",
+        "body": "The table says what has to be true for the retainer to pay for itself once the engine is running. It says nothing about whether your market contains that much search demand — check that separately, before you sign. And the cost is front-loaded while the return isn't, so expect to sit under the bar for two to three quarters and judge the twelve-month total instead of month four. For the full return calculation, including how to strip out branded and inherited traffic, see [how to calculate SEO ROI](/answers/what-is-the-roi-of-seo)."
+      }
+    },
+    {
+      "h2": "What to agree in writing before month one",
+      "body": [
+        "Every unsettleable month-twelve conversation traces back to something nobody wrote down in week one. Six lines in the scope document remove almost all of it."
+      ],
+      "numbered": [
+        "**The definition of a qualified lead**, in one sentence both sides can apply to a specific CRM record without discussion. [What counts as a qualified lead](/answers/what-counts-as-a-qualified-lead-from-seo) is an argument worth having now instead of in month eleven.",
+        "**The attribution model, named.** \"First-touch, non-branded organic, 90-day window, read from the CRM\" is a sentence you can hold someone to. \"We'll look at GA4\" is not.",
+        "**The baseline, frozen and dated.** Trailing ninety days of qualified organic leads, exported on day one, saved as a file both sides keep a copy of.",
+        "**Who fixes the tracking, and by when.** If the hidden fields land in month four, you've lost a third of the engagement's evidence and no one can get it back.",
+        "**The lag you'll both tolerate** — how many months in before closed revenue is read as a verdict rather than as noise.",
+        "**What happens if the number doesn't move.** This is the line most proposals leave blank, and the one that decides whether the other five matter."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "How we make it settleable",
+        "body": "We freeze your trailing-90-day qualified organic lead count on day one and hold ourselves to beating it inside 90 days — miss it and we keep working free until we do. We never promise a ranking position for a keyword, because nobody controls Google's index. [How the guarantee works](/seo), and [what it costs](/pricing)."
+      }
+    },
+    {
+      "h2": "The two numbers we refuse to report",
+      "body": [
+        "Both appear in agency decks constantly. Both share one property: no month can ever make them look bad. That's exactly why they're popular, and it's why we won't put either in front of your board.",
+        "Underneath them are the four numbers that go in the report instead — all four checkable by someone who doesn't trust us, which is the only test a reported number really has to pass."
+      ],
+      "bullets": [
+        "**SEO-influenced pipeline.** Every deal that touched any organic page at any point in its life. The number only ever rises, and your paid, email and social reports are each claiming the same deals in their own version of the slide. Four channels claiming the same ₹40 lakh isn't measurement, it's four people pointing at one invoice.",
+        "**Estimated traffic value in rupees.** The tool metric that multiplies your ranking positions by advertiser bid prices. It's the notional cost of clicks you aren't buying, on keywords you might not want, at a price you'd never actually pay. It moves when a competitor's ad budget moves. It has never once been money."
+      ],
+      "numbered": [
+        "**Qualified organic leads** against the frozen baseline, counted in the CRM, with the definition unchanged all year.",
+        "**Closed revenue and gross profit** from first-touch organic, exported monthly, with the close-date lag stated so nobody reads month three as a verdict.",
+        "**Non-branded impressions and clicks** from Search Console — the leading indicator that tells you whether the lead number is about to move.",
+        "**The unattributed pile, shown as a number.** If 30% of leads have no source, we print that rather than quietly spreading it across the channels. Reporting your own uncertainty is the cheapest credibility available, and it's usually what gets [flat leads on rising traffic](/answers/organic-traffic-up-but-leads-flat) diagnosed instead of argued about."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does GA4 show fewer organic conversions than my CRM?",
+      "a": "Because GA4 loses the earlier organic session. Safari deletes script-written storage after seven days without a return visit, device switches split one buyer into two users, and declined consent means the first visit was never recorded. With the earlier session missing, GA4 sees a path that is entirely direct and credits Direct. A CRM with a first-touch field doesn't have that problem."
+    },
+    {
+      "q": "What's the minimum setup to attribute revenue to SEO properly?",
+      "a": "Two cookies and four hidden fields. A first-touch record — landing page, referrer, date — set once, a last-touch record refreshed each visit, both posted with every form submission into write-once CRM fields. Add a free-text \"how did you hear about us\" question. Roughly two days of developer time, and it outperforms most attribution tooling."
+    },
+    {
+      "q": "Should I use first-touch or last-touch attribution for SEO?",
+      "a": "Report both and show the gap. First-touch flatters discovery channels like SEO; last-touch flatters closing channels like brand search and retargeting. The distance between the two numbers is roughly the size of the uncertainty you're working with. What matters is choosing before month one and never switching mid-engagement."
+    },
+    {
+      "q": "How do I attribute WhatsApp and phone enquiries to organic search?",
+      "a": "Pass the first-touch cookie values into the click-to-WhatsApp URL as parameters, and fire a distinct click-to-call event carrying the same values. Both then arrive with a source attached. Without that, phone and WhatsApp leads sit in the unattributed pile permanently — which on most Indian sites is where the majority of real enquiries live."
+    },
+    {
+      "q": "How long before organic revenue is worth reporting at all?",
+      "a": "Leading indicators move in four to eight weeks. Qualified leads follow in three to six months. Closed revenue lags by your sales cycle on top of that, so a 90-day cycle means month nine before the revenue line means much. Report it monthly from the start anyway — you want the lag visible, not discovered later."
+    },
+    {
+      "q": "Is a ₹75,000 retainer worth it if my deals are small?",
+      "a": "Do the arithmetic before the sales call. At ₹25,000 of gross profit per deal and a 10% close rate, ₹75,000 a month needs thirty qualified organic leads to break even. If your commercial queries don't carry that much monthly search demand nationally, the answer is no — and any agency should tell you so in the first meeting."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Get started with attribution",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/10596866"
+    },
+    {
+      "title": "Default channel group",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9756891"
+    },
+    {
+      "title": "About Analytics sessions",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9191807"
+    },
+    {
+      "title": "Full Third-Party Cookie Blocking and More",
+      "publisher": "WebKit",
+      "url": "https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/",
+      "date": "2020-03-24"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-counts-as-a-qualified-lead-from-seo"
+    },
+    {
+      "type": "answers",
+      "slug": "organic-traffic-up-but-leads-flat"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-the-roi-of-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-analytics-4"
+    },
+    {
+      "type": "glossary",
+      "slug": "utm-parameters"
+    },
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-read-an-seo-report"
+    },
+    {
+      "type": "services",
+      "slug": "seo-reporting-services"
+    }
+  ]
+}

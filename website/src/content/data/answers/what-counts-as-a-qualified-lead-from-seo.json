@@ -1,0 +1,238 @@
+{
+  "slug": "what-counts-as-a-qualified-lead-from-seo",
+  "type": "answers",
+  "primaryKeyword": "what counts as a qualified lead from seo",
+  "secondaryKeywords": [
+    "how to define a qualified lead in an agency contract",
+    "lead definition for an seo guarantee",
+    "spam form fills vs real leads",
+    "should existing customers count as leads"
+  ],
+  "cluster": "lead-measurement",
+  "intent": "informational",
+  "h1": "What counts as a qualified lead from SEO — write the definition before you sign",
+  "metaTitle": "What Counts as a Qualified Lead From SEO?",
+  "metaDescription": "An undefined lead is why agency relationships end in an argument in month nine. Here is the definition we freeze on day one, written out in full.",
+  "updated": "2026-08-04",
+  "published": "2026-08-04",
+  "answer": "A qualified lead is a contact from someone who could plausibly buy, arriving through organic search, that a human at your company would follow up. In practice: form fills minus spam and test entries, calls over sixty seconds, WhatsApp threads you replied to — excluding existing customers, job applicants and vendors.",
+  "takeaways": [
+    "Two honest people counting different things produce two different numbers. That's the whole problem, and a written definition is the whole fix.",
+    "The exclusions matter more than the inclusions. **Existing customers, recruiters, vendors and duplicates** are where every argument actually starts.",
+    "An arbitrary threshold beats no threshold. Both sides can reproduce a sixty-second rule from a call log; neither can reproduce \"a proper enquiry\".",
+    "Whoever spoke to the person decides — your sales team flags exclusions, not the agency, with a five-working-day window."
+  ],
+  "sections": [
+    {
+      "h2": "The argument you are actually preventing",
+      "body": [
+        "Month nine. The agency's report says forty leads. Your sales head says eleven. Both numbers were produced honestly, from the same site, in the same month.",
+        "The agency counted form submissions in GA4. Your sales head counted the people worth calling back. Between those two sits a recruiter who liked your careers page, three duplicate submissions from one anxious buyer, a Bengaluru enquiry from a company that only sells in Kerala, nine spam fills, and four existing customers asking about their current order.",
+        "Nobody lied. Nobody wrote the rule down either, and by month nine there is no neutral way to write it — whichever definition you propose now obviously favours one side, because you can both already see the answer it produces.",
+        "We had to solve this for a mercenary reason: our guarantee settles against a client's trailing-90-day qualified organic leads. If that phrase is vague, the guarantee is theatre. So we wrote the definition down, and this page publishes it."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The one-line version",
+        "body": "If the word \"lead\" appears in your contract and the definition of it doesn't, you have agreed to have this argument later — at the exact moment one of you wants out of the relationship."
+      }
+    },
+    {
+      "h2": "The definition, written as rules a dispute can be settled against",
+      "body": [
+        "Copy this, argue with it, change the numbers to fit your business. The only unacceptable option is not having one."
+      ],
+      "numbered": [
+        "**Source.** The session that produced the contact was attributed to organic search, *or* the person told you they found you on Google. We count both and label which is which, because analytics and self-reported answers disagree often enough that pretending otherwise is dishonest.",
+        "**Channel.** A lead arrives as one of four things: a form submission, a phone call, a WhatsApp conversation, or an email to an address published on the site. Anything else gets discussed before it counts.",
+        "**Form submission** counts when it carries a working contact method — a valid phone number or a deliverable email — is not a test entry from either team, and is not an obvious spam pattern: Cyrillic body text, a URL in the name field, three submissions from one IP inside a minute.",
+        "**Phone call** counts when it runs longer than sixty seconds. Under a minute is usually a misdial, a hangup, or somebody navigating an IVR.",
+        "**WhatsApp conversation** counts when the person sends a message with intent *and* someone at your company replies. A one-way \"hi\" that nobody answered is not a lead, it's a notification you ignored.",
+        "**Email** counts when it goes to a published address and asks about something you sell.",
+        "**Uniqueness.** One person is one lead in any ninety-day window, however many times they fill the form. Match on phone number first, then email, then name plus company.",
+        "**Human check.** Every excluded row is read by a person before it's excluded. No rule set survives contact with real enquiries unaided, and the ones that claim to are the ones quietly dropping the inconvenient rows."
+      ]
+    },
+    {
+      "h2": "The exclusions, and the edge case inside each one",
+      "body": [
+        "These eight rows are where the number actually moves. Agree them in writing and most of the month-nine argument evaporates before it starts."
+      ],
+      "table": {
+        "caption": "Standard exclusions from a qualified-lead count, and the exception worth naming in advance.",
+        "head": [
+          "Excluded",
+          "Why",
+          "The edge case to decide now"
+        ],
+        "rows": [
+          [
+            "Existing customers",
+            "They found you on Google because they already know your name. Counting them inflates the number and teaches nobody anything.",
+            "A current customer enquiring about a genuinely different product line does count — so write down which lines are different."
+          ],
+          [
+            "Job applicants",
+            "Your careers page ranks. That's a recruitment result, not a revenue one.",
+            "If you sell recruitment or staffing services, invert this row entirely."
+          ],
+          [
+            "Vendors and sales pitches",
+            "Everyone selling SEO services to an SEO agency understands why this row exists.",
+            "Genuine partnership enquiries sometimes do matter. Decide before, not after."
+          ],
+          [
+            "Students and researchers",
+            "\"I need information for my college project\" has never closed.",
+            "Education businesses should read this row twice — for them it may be the whole funnel."
+          ],
+          [
+            "Duplicates inside ninety days",
+            "One person, one lead, however many forms they submitted while deciding.",
+            "A genuinely new requirement from the same buyer after a closed deal is a new lead."
+          ],
+          [
+            "Test submissions",
+            "Both teams test forms. Both teams forget they did.",
+            "Tag test entries at source with a hidden field so nobody is guessing three months later."
+          ],
+          [
+            "Out-of-area enquiries",
+            "Only where geography genuinely disqualifies: a Kochi clinic cannot treat a walk-in from Kanpur.",
+            "Don't stretch this one to exclude leads you simply didn't enjoy receiving."
+          ],
+          [
+            "Spam and bot fills",
+            "Not a judgement call once the patterns are written down.",
+            "If spam runs past roughly a fifth of all fills, the fix is the form, not the definition."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Write the exclusions before the inclusions",
+        "body": "Every definition of a good lead sounds reasonable in a kickoff meeting. The exclusions are the part both sides will read carefully, because that's where the number they get paid on actually lives."
+      }
+    },
+    {
+      "h2": "Thresholds: why an arbitrary number beats no number",
+      "body": [
+        "The sixty-second call threshold gets challenged in roughly every kickoff. It is arbitrary. That is not an argument against it.",
+        "Google Ads has used exactly this device for years: [you set a minimum call length, and every call that lasts at least that long is counted as a conversion](https://support.google.com/google-ads/answer/6100664). Not because sixty seconds is the true boundary between a buyer and a wrong number, but because a written rule produces a number two parties can both reproduce from the same call log.",
+        "Pick a threshold that fits how your business actually sells, then leave it alone for a year. A dental clinic booking appointments by phone can defend forty-five seconds. A company whose first conversation is a five-minute discovery call can defend two minutes. What nobody can defend is changing the threshold in month eight because the number came out lower than hoped.",
+        "WhatsApp is where Indian lead measurement quietly falls apart, because the click leaves your site and the conversation happens somewhere your analytics cannot see. The workable rule is the one above: the thread counts when your side replied, and it is dated to your first reply. Imperfect, auditable, and reproducible by both parties — which is the only combination that survives a disagreement.",
+        "Forms fail in two opposite directions. They under-count when the thank-you page never fires, and over-count the moment a bot finds them. Check both before you argue about anything else — a broken key event has ended more agency relationships than bad content ever has."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The threshold is the point, not the number",
+        "body": "Both sides can reproduce a sixty-second rule from the same call log. Neither side can reproduce \"a serious enquiry\". Choose a number, write it into the agreement, and stop renegotiating it."
+      }
+    },
+    {
+      "h2": "Who adjudicates, and how often the list gets reviewed",
+      "body": [
+        "A definition without a referee is a definition that gets re-litigated every month. Six rules, and they take about fifteen minutes a month to run."
+      ],
+      "numbered": [
+        "**One shared list.** Every lead lands in one sheet or one CRM view both sides can open, with date, channel, source, and an include or exclude flag. Not a dashboard screenshot. A list.",
+        "**Your sales team flags exclusions, not the agency.** They spoke to the person, and they have the incentive to be strict — which is the right direction for the incentive to point, because it makes the agency's number harder to hit rather than easier.",
+        "**A five-working-day window.** Anything not flagged within five working days of arriving counts. Otherwise month nine becomes archaeology.",
+        "**A fifteen-minute monthly review.** Walk the disputed rows together. In a healthy month there are two of them.",
+        "**One named person on each side signs the month closed.** A person, not a tool.",
+        "**Nobody changes the definition mid-engagement.** If it turns out to be wrong, fix it at renewal and record the date the rules changed, so the before-and-after stays honest."
+      ],
+      "bullets": [
+        "Export the raw list monthly and keep your own copy. GA4 retains event-level data for either 2 or 14 months depending on a setting most people never open — a dispute in month fourteen can outlive the evidence.",
+        "Keep the call recordings or at least the call logs. Durations are the only part of this definition a machine can check for you.",
+        "Give the agency [delegated access rather than a shared login](/answers/what-access-to-give-an-seo-agency), so the change history keeps real names on it."
+      ]
+    },
+    {
+      "h2": "The version we sign, and what publishing it costs us",
+      "body": [
+        "We guarantee movement against your own trailing-90-day qualified organic leads. Miss it in ninety days and we keep working free until we beat it. That promise only means something if the phrase in the middle of it means something, so the definition above goes into the agreement before the first invoice, with your thresholds filled into it.",
+        "Publishing it costs us the wiggle room, which is the point. An agency that leaves the term vague can count a recruiter's email in month three when the real number is short. We can't, because the rules are on a public URL and you can hold it up in the meeting.",
+        "Two things we insist on, both of which make our own number harder to hit. Existing customers never count. And the baseline is measured with the identical rules — a baseline counted strictly against a result counted generously is how most \"we tripled their leads\" claims are actually built. [Setting the baseline properly](/journal/how-to-set-an-seo-baseline) is the other half of this page.",
+        "And one honest concession: attribution is imperfect and always will be. Some organic leads land in your reporting as direct, some paid leads look organic, and self-reported answers contradict the analytics regularly. We label those rows rather than quietly dropping the inconvenient ones. [Measuring SEO without lying to yourself](/answers/how-do-you-measure-seo-success) covers the wider version of that problem."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What counts as a qualified lead from SEO?",
+      "a": "A contact from someone who could plausibly buy, arriving via organic search, that your team would follow up. Practically: a form fill with a working contact method, a call over sixty seconds, or a WhatsApp thread you replied to — minus existing customers, recruiters, vendors, duplicates, tests and spam."
+    },
+    {
+      "q": "Should existing customers count as SEO leads?",
+      "a": "No. They searched your brand because they already know you, so counting them inflates the number without telling you anything about whether the SEO work is finding new buyers. The one exception worth writing down: a current customer enquiring about a genuinely different product line."
+    },
+    {
+      "q": "How do you count WhatsApp leads from SEO?",
+      "a": "Count the conversation when the person sends a message with intent and someone at your company replies, dated to your first reply. It's imperfect — the click leaves your site and the chat happens where analytics can't see it — but both sides can audit it from the same inbox."
+    },
+    {
+      "q": "What happens if the agency and I disagree about a lead?",
+      "a": "Whoever spoke to the person decides, which means your sales team flags exclusions. Set a five-working-day window for flagging, review the disputed rows for fifteen minutes each month, and have one named person on each side sign the month closed. In a healthy month there are about two disputes."
+    },
+    {
+      "q": "How long does a phone call need to be to count as a lead?",
+      "a": "Sixty seconds is a defensible default; anything under a minute is usually a misdial or an IVR. The right number depends on how you sell — forty-five seconds for appointment booking, two minutes where the first call is a discovery conversation. What matters is that it's written down before month one."
+    },
+    {
+      "q": "Can spam form fills be excluded from an SEO guarantee?",
+      "a": "Yes, and they must be, or the guarantee is meaningless. Write the patterns into the definition — no working contact method, Cyrillic body text, a link in the name field, repeated submissions from one IP. If spam is running past a fifth of all fills, fix the form rather than the definition."
+    }
+  ],
+  "sources": [
+    {
+      "title": "About phone call conversion tracking",
+      "publisher": "Google Ads Help",
+      "url": "https://support.google.com/google-ads/answer/6100664"
+    },
+    {
+      "title": "About key events",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9267568"
+    },
+    {
+      "title": "Data retention",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/7667196"
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-you-measure-seo-success"
+    },
+    {
+      "type": "answers",
+      "slug": "what-are-seo-kpis"
+    },
+    {
+      "type": "glossary",
+      "slug": "conversion-rate"
+    },
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-read-an-seo-report"
+    },
+    {
+      "type": "services",
+      "slug": "analytics-setup-services"
+    },
+    {
+      "type": "answers",
+      "slug": "what-access-to-give-an-seo-agency"
+    }
+  ]
+}

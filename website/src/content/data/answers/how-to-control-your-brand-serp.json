@@ -1,0 +1,284 @@
+{
+  "slug": "how-to-control-your-brand-serp",
+  "type": "answers",
+  "primaryKeyword": "how to control what shows when someone googles your brand",
+  "secondaryKeywords": [
+    "brand search results cleanup",
+    "sitelinks for brand name",
+    "competitor bidding on my brand name",
+    "old listings ranking for my company"
+  ],
+  "cluster": "local-operations",
+  "intent": "informational",
+  "h1": "How to control what appears when someone Googles your brand",
+  "metaTitle": "How to Control Your Brand Search Results",
+  "metaDescription": "The fastest visible win in any engagement and the one we do in week one. A sequence with a real time cost, and the parts nobody can control at all.",
+  "updated": "2026-09-25",
+  "published": "2026-09-25",
+  "answer": "You control roughly half of it. Your own pages, your Business Profile, your structured data and the profiles you still log into are fixable inside a week. Review sites, directories and abandoned accounts you can only influence. Sitelinks, the knowledge panel and a competitor's ad on your name are nobody's to control, including yours.",
+  "takeaways": [
+    "Your brand SERP is the page every prospect sees after a referral, a pitch and a proposal. It is also the cheapest thing to improve in the whole engagement, which is why we do it in week one.",
+    "Audit it logged out, in incognito, on a phone, from the city your buyers are in. What you see on your own laptop is not what anyone else sees.",
+    "Sitelinks are automated. You cannot specify them — you can only give Google a site structure worth summarising, or remove the page.",
+    "A competitor can legally bid on your brand name as a keyword. Google's trademark policy restricts the ad text, not the targeting."
+  ],
+  "sections": [
+    {
+      "h2": "Audit it properly before you change anything",
+      "body": [
+        "Almost every brand SERP audit we've inherited was done wrong, in the same way: someone typed the company name into their own browser, on a laptop, signed into a Google account that has visited the site four hundred times. That result is personalised, desktop-shaped and useless as a baseline.",
+        "Do it the way a stranger does it. Incognito window, signed out, on a phone, with the location set to where your buyers actually are — a Bangalore result and a Coimbatore result diverge more than most founders expect. Then screenshot the whole page by scrolling, because what matters is the composition, not the top three lines."
+      ],
+      "numbered": [
+        "Search your **brand name alone**. This is the one that matters most and gets checked least.",
+        "Search your **registered company name** — the one on the invoice, ending in Private Limited. In India this pulls a completely different page, usually dominated by company-registry mirrors carrying your MCA filings, directors and paid-up capital. Your customers see this when they run diligence.",
+        "Search **brand + reviews**, **brand + salary**, **brand + complaints**, and **brand + your main competitor**. These are the queries a buyer runs after the first meeting.",
+        "Record every distinct domain on page one, and mark each as: yours, a profile you can log into, a profile you cannot, or someone else's entirely. That four-way split is the whole strategy in one column."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What to capture, not just what to look at",
+        "body": "Save the screenshots with a date. Brand SERPs drift, and six months from now you'll want evidence of what changed rather than a memory of it. It also makes the improvement visible to whoever approved the budget, which is worth more than it sounds."
+      }
+    },
+    {
+      "h2": "What you actually control",
+      "body": [
+        "This bucket is smaller than people hope and larger than they act on. Everything here is yours, changeable this week, and none of it needs anyone's permission."
+      ],
+      "bullets": [
+        "**Your homepage title and description.** The first result is yours, and it is very often a title written in 2019 that reads as a keyword string. Say what the company does, for whom, in the words a customer would use.",
+        "**A real About page.** Not a mission statement. Founding year, city, what you sell, who runs it, how to reach you. This is the page Google and every AI assistant lean on to work out what kind of entity you are.",
+        "**Organization structured data on the homepage**, with `name`, `url`, `logo`, `address`, `contactPoint` and — the one that matters here — `sameAs` pointing at every official profile you own. Google recommends putting it on the home page or a single page that describes the organisation, not on every page.",
+        "**Your Google Business Profile**, if you have a real address or service area. Correct category, correct hours, real photos, and a name that matches your signage rather than your keyword list.",
+        "**The profiles you still log into.** LinkedIn company page, YouTube channel, Instagram, the app store listing. Same logo, same one-line description, same URL, everywhere. Consistency across independent sources is what builds the entity in the first place — the mechanics are in [the Knowledge Graph](/glossary/knowledge-graph)."
+      ]
+    },
+    {
+      "h2": "What you influence but do not own",
+      "body": [
+        "The middle bucket is where the work is. You can't edit these pages, but you can change what they say about you or how far down they sit.",
+        "Rank them by how far a buyer would have to scroll to reach them, and fix in that order. A one-star review at position four costs you more than a broken directory listing at position eleven."
+      ],
+      "bullets": [
+        "**Review platforms.** Google reviews, and depending on your category, Justdial, MouthShut, Practo, or Trustpilot. You can't remove a review; you can reply to every one of them, and you can change the mix by asking customers properly. That's a standing process rather than a week-one task — [review management](/services/review-management-services) is its own job.",
+        "**Employer review sites.** AmbitionBox and Glassdoor rank for brand queries far more often than founders realise, and they're read by prospects, not just candidates. You can claim the employer profile and respond. You cannot delete anything.",
+        "**Directory and citation entries with a wrong phone number.** Old Justdial, Sulekha and IndiaMART records outlive the office they were created for. Each needs claiming individually and it is dull, unavoidable work.",
+        "**Abandoned profiles.** A dormant X account from 2017, a Medium blog with three posts, a Facebook page nobody has posted to since the pandemic. These rank purely on brand-name match, and an empty profile at position five reads as a company that stopped existing. Reclaim it and redirect it, or delete it.",
+        "**Company-registry mirrors.** For a private limited, sites republishing MCA data often rank on your registered name. The data is public and won't come down, so the practical answer is to make sure your own About page ranks for the registered name too, by simply writing it there once."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Deleting your own page is not deletion",
+        "body": "If a page on your site is embarrassing, removing it and expecting Google to catch up quietly is optimistic. The Search Console removals tool only blocks a URL for about six months and doesn't stop crawling — it's one step, not the whole job. Serve a 404 or 410, or `noindex` it, and use the tool to buy time while that propagates."
+      }
+    },
+    {
+      "h2": "What nobody controls, stated plainly",
+      "body": [
+        "Every agency that has sold a brand-SERP project has been asked for at least one of these. All four answers are no, and it is better to hear it now than to pay for six months of someone trying.",
+        "Start with sitelinks, because it's the request that comes up hardest. Google is unambiguous: [sitelinks are automated](https://developers.google.com/search/docs/appearance/sitelinks), and the documented remedy for an unwanted one is to remove the page or apply `noindex` to it. Anyone selling sitelink optimisation as a deliverable is selling site structure with a better name on the invoice."
+      ],
+      "table": {
+        "caption": "The four brand SERP elements no amount of budget will control.",
+        "head": [
+          "Element",
+          "Why you can't control it",
+          "What you can do instead"
+        ],
+        "rows": [
+          [
+            "Sitelinks under your homepage",
+            "Google generates them from your link structure. There's no markup, no setting, no submission form.",
+            "Give it a clear structure and informative page titles. To lose a specific sitelink, `noindex` or remove that page."
+          ],
+          [
+            "A competitor's ad on your brand name",
+            "Google Ads permits trademarks as keywords. The trademark policy governs the ad text, not the targeting.",
+            "Complain about the ad copy if it uses your mark misleadingly. Otherwise, decide whether to bid on your own name."
+          ],
+          [
+            "The knowledge panel's contents",
+            "It's assembled from what independent sources agree on. Claiming it lets you suggest changes, not make them.",
+            "Verify the entity, then fix the underlying sources. Corrections land when the sources agree, not when you ask."
+          ],
+          [
+            "The AI Overview for your brand",
+            "Generated per query from whatever the systems find. No opt-in, no ranking slot to buy.",
+            "Make the facts about you consistent and easy to find. Then check it monthly, because it will change."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "On bidding for your own brand",
+        "body": "There's no universal right answer. If a competitor is running ads on your name and taking clicks from people who typed your brand, a defensive campaign is usually cheap because your quality score on your own name is high. If nobody is bidding, you are frequently paying for a click you'd have received free. Check the search terms report before you turn it on, and check it again after."
+      }
+    },
+    {
+      "h2": "The week-one sequence, and what it actually costs in hours",
+      "body": [
+        "We run this in the first week of every engagement, before any content or link work, for two reasons. It's the only part of SEO that produces a visible change within days, which buys patience for the parts that take six months. And it's where the entity is defined — the same consistency that fixes your brand SERP is what feeds [brand mentions](/glossary/brand-mentions) and AI citations later.",
+        "Times below are for a company with one location and a handful of profiles. Multiply by the number of locations, and add several hours if nobody can find the login for an old account."
+      ],
+      "table": {
+        "caption": "The week-one brand SERP sequence, in order, with realistic time.",
+        "head": [
+          "Step",
+          "What it involves",
+          "Hours"
+        ],
+        "rows": [
+          [
+            "1. Capture the baseline",
+            "Six queries, mobile and desktop, incognito, correct city. Screenshots dated and filed.",
+            "1"
+          ],
+          [
+            "2. Homepage and About",
+            "Rewrite the title and description. Write or fix the About page so it states the facts a stranger needs.",
+            "2–3"
+          ],
+          [
+            "3. Organization schema",
+            "`name`, `url`, `logo`, `address`, `contactPoint`, and `sameAs` for every profile you own. Validate it.",
+            "1–2"
+          ],
+          [
+            "4. Business Profile",
+            "Category, name, hours, service area, photos, and a description that isn't a keyword list.",
+            "1–2"
+          ],
+          [
+            "5. Profile inventory",
+            "List every profile on page one. Claim, update or kill each. This is the step that overruns.",
+            "2–4"
+          ],
+          [
+            "6. Reply to reviews",
+            "Every review visible on page one, including the good ones. Fifteen minutes each, done properly.",
+            "1–2"
+          ],
+          [
+            "7. Decide on brand ads",
+            "Check whether anyone is bidding on your name. Decide, don't default.",
+            "0.5"
+          ],
+          [
+            "8. Set up monitoring",
+            "Brand query filter saved in Search Console, plus an alert on the brand name.",
+            "0.5"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Nine to fifteen hours, once",
+        "body": "Then about thirty minutes a month to re-run the capture and see what moved. That's the whole job, and it's worth being honest that it is a job rather than a retainer line — anyone quoting a monthly fee for brand SERP management should be able to say what happens in month four."
+      }
+    },
+    {
+      "h2": "The two things that outlast week one",
+      "body": [
+        "Two items refuse to fit in a week, and both are worth starting on day one precisely because they take months.",
+        "**Reclaiming abandoned accounts.** Platforms are slow, support is thin, and the person who created the account left in 2021. Budget weeks of waiting rather than hours of work. Where deletion isn't possible, updating the profile so it points at your current site is usually enough — an accurate profile at position six is harmless, an abandoned one is not.",
+        "**Building enough consistent third-party sources that the entity settles.** Directories, an industry association listing, a press mention, a founder profile that names the company the same way. This is the slow input behind the knowledge panel and behind how AI assistants describe you, and there is no shortcut. It's also the point at which a brand SERP clean-up stops being cosmetic and starts affecting what shows up on the [wider search results page](/glossary/serp) for your category, not just your name."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The one number worth watching afterwards",
+        "body": "Brand query click-through rate in Search Console, filtered to queries containing your brand name. If people search your name and don't click, something above your result is answering them, taking them elsewhere, or worrying them. That's a measurable brand SERP problem — everything else on this page is how you fix it."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I choose the sitelinks under my homepage?",
+      "a": "No. Google generates sitelinks automatically from your site's link structure, and there's no markup or setting to specify them. You can improve the odds with a clear structure and informative page titles, and Google's documented way to remove a specific sitelink is to remove that page or apply `noindex` to it."
+    },
+    {
+      "q": "Can I stop a competitor bidding on my brand name?",
+      "a": "Generally no. Google Ads allows trademarks to be used as keywords; the trademark policy covers use in ad text, and complaints are handled there. If their ad copy uses your mark in a way that misleads, that's actionable. If they're simply targeting the keyword, your options are to outrank them organically or bid defensively."
+    },
+    {
+      "q": "How do I fix wrong information in my knowledge panel?",
+      "a": "Get verified as the entity's representative, then submit suggestions through the feedback option. Claiming lets you suggest changes and manage who else can — it doesn't give you edit rights. Corrections stick when the independent sources Google reads agree with you, so fix those in parallel."
+    },
+    {
+      "q": "An old directory listing has our previous phone number. What now?",
+      "a": "Claim the listing on that platform and correct it — each one individually, which is slow and unavoidable. Where the platform is unresponsive, make sure the correct number appears consistently on your own site, your Business Profile and every profile you do control, so the weight of agreement sits with the right number."
+    },
+    {
+      "q": "Should I delete an abandoned social profile or update it?",
+      "a": "Update it if you can, delete it if you can't be bothered to maintain it. An empty profile ranking on page one for your brand name reads as a company that has stopped operating. A profile with a current logo, one line of description and a link to your site is harmless even if you never post again."
+    },
+    {
+      "q": "How long does it take to see a brand SERP change?",
+      "a": "Your own pages can change within days once recrawled. Profiles you update move over a week or two. The knowledge panel and anything driven by third-party agreement take months, and some of it never moves. That gap between the fast half and the slow half is the honest expectation to set."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sitelinks",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/sitelinks",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Trademarks",
+      "publisher": "Google Ads Help",
+      "url": "https://support.google.com/adspolicy/answer/6118"
+    },
+    {
+      "title": "Organization (Organization) structured data",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/organization",
+      "date": "2026-04-15"
+    },
+    {
+      "title": "Get verified on Google",
+      "publisher": "Google Knowledge Panel Help",
+      "url": "https://support.google.com/knowledgepanel/answer/7534902"
+    },
+    {
+      "title": "Guidelines for representing your business on Google",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/3038177"
+    },
+    {
+      "title": "Removals and SafeSearch reports tool",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9689846"
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "knowledge-graph"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-business-profile"
+    },
+    {
+      "type": "services",
+      "slug": "review-management-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "brand-mentions"
+    },
+    {
+      "type": "compare",
+      "slug": "google-business-profile-vs-website"
+    },
+    {
+      "type": "glossary",
+      "slug": "serp"
+    },
+    {
+      "type": "journal",
+      "slug": "local-seo-in-tier-2-india"
+    }
+  ]
+}

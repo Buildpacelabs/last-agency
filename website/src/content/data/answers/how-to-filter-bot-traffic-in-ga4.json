@@ -1,0 +1,253 @@
+{
+  "slug": "how-to-filter-bot-traffic-in-ga4",
+  "type": "answers",
+  "primaryKeyword": "how to filter bot traffic in ga4",
+  "secondaryKeywords": [
+    "fake traffic spike in analytics",
+    "referral spam ga4",
+    "why did my sessions spike with no leads",
+    "ga4 bot filtering settings"
+  ],
+  "cluster": "analytics-setup",
+  "intent": "informational",
+  "h1": "How to filter bot and spam traffic out of your reports",
+  "metaTitle": "How to Filter Bot Traffic in GA4",
+  "metaDescription": "A traffic spike with no enquiries is usually not traffic. What a bot spike looks like in GA4 versus Search Console, and the filters that actually hold.",
+  "updated": "2026-08-26",
+  "published": "2026-08-26",
+  "answer": "GA4 already drops known bots automatically, and won't tell you how much it removed. What slips through has the same shape every time: one page, one country, engagement time near zero, and flat Search Console clicks over the same days. Diagnose with that cross-check first, because GA4 data filters are permanent and never retroactive.",
+  "takeaways": [
+    "Sessions up, Search Console clicks flat, enquiries flat: that combination is almost never a traffic story. Check it before you celebrate or panic.",
+    "GA4's built-in bot exclusion is automatic, invisible and can't be switched off. It catches **known** bots only — it is not a defence against a scraper running a real browser.",
+    "Data filters apply from the moment you create them and never backwards. Excluded data is gone permanently, including from a BigQuery export.",
+    "A meaningful share of the junk in most Indian accounts is self-inflicted: the office, the agency, the uptime monitor and the monthly site crawl."
+  ],
+  "sections": [
+    {
+      "h2": "The three-signal fingerprint",
+      "body": [
+        "Real traffic is messy. It arrives on a spread of pages, from a spread of places, and some of it hangs around. Automated traffic is tidy, and the tidiness is the tell.",
+        "Open the spike day in GA4 and check three dimensions. You are looking for concentration in all three at once — any one of them alone can happen legitimately."
+      ],
+      "bullets": [
+        "**One page, or two.** Real growth spreads across a template. A bot hits a single URL, or hits the homepage and one deep page it found in a sitemap. If 90% of the spike sits on one landing page that wasn't promoted, that's signal one.",
+        "**One country, one city, sometimes one hour.** A geographic cluster with no campaign behind it — and often a city that has never appeared in your reports — is signal two. Watch for the whole spike landing inside a two-hour window overnight.",
+        "**Engagement time at or near zero.** GA4 measures engagement as [time with your page in focus](https://support.google.com/analytics/answer/11109416), which automated traffic almost never accumulates. Average engagement time collapsing on the spike day while sessions triple is signal three, and it is the most reliable of the three."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Two supporting checks",
+        "body": "New users almost exactly equal to sessions means nobody came back — normal for a launch, odd for organic growth. And a browser or OS version that suddenly dominates, often an old Chrome build, is a common giveaway. Neither is conclusive alone; both raise confidence when the three main signals are already there."
+      }
+    },
+    {
+      "h2": "The cross-check that settles it in two minutes",
+      "body": [
+        "This is the fastest diagnosis in analytics and almost nobody runs it. GA4 counts sessions where your tag fired in a browser. Search Console counts clicks on Google results. Bot traffic that never came from a Google result can inflate the first without touching the second.",
+        "Pull the same date range in both, then read the pair rather than either number alone.",
+        "The two tools disagree by 10–30% as a matter of course even when everything is healthy, so read the **direction and the shape**, never the gap itself. We've written the full reconciliation in [GA4 versus Search Console](/compare/ga4-vs-search-console)."
+      ],
+      "table": {
+        "caption": "Reading a GA4 spike against Search Console clicks over the same days.",
+        "head": [
+          "GA4 sessions",
+          "Search Console clicks",
+          "What it means"
+        ],
+        "rows": [
+          [
+            "Up sharply",
+            "Flat",
+            "It didn't come from Google search. Bots, a referral, an email blast or a tracking change. Check the source dimension next."
+          ],
+          [
+            "Up sharply",
+            "Up, similar shape",
+            "Real organic growth. Now go and find out which query moved, and whether it's a query anyone buys from."
+          ],
+          [
+            "Flat",
+            "Up sharply",
+            "A measurement problem, not a traffic problem. Consent banner, ad blockers, a broken tag on a template, or clicks landing on a redirect."
+          ],
+          [
+            "Up sharply on one page",
+            "Up on a query you don't recognise",
+            "Usually real, usually worthless. An article picked up an off-target query. Check whether it converts before anyone rewrites the strategy."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "What GA4 already removes, and what it never will",
+      "body": [
+        "Before you build anything, know what's already happening. GA4 automatically excludes traffic from known bots and spiders using [a combination of Google research and the International Spiders and Bots List maintained by the IAB](https://support.google.com/analytics/answer/9888366). You cannot disable it, and — the part that frustrates people — you cannot see how much it removed.",
+        "That covers the well-behaved crawlers that identify themselves. It does not cover the interesting cases.",
+        "GA4's Measurement Protocol needs an API secret, which killed most of the classic ghost-referral spam that made Universal Analytics reports unreadable. What's left is mostly real: a headless browser executing your JavaScript, a scraper rendering pages, a competitor's monitoring tool, a security scanner, an SEO tool crawling your site on someone else's schedule. Those load your tag exactly like a person does, and no list will catch them."
+      ]
+    },
+    {
+      "h2": "Filters that hold, and filters that only hide the problem",
+      "body": [
+        "GA4 gives you three data filters and a handful of adjacent settings. They do genuinely different jobs, and one of them does much less than people assume."
+      ],
+      "table": {
+        "caption": "What each GA4 control actually does to bot and junk traffic.",
+        "head": [
+          "Control",
+          "What it does",
+          "Honest verdict"
+        ],
+        "rows": [
+          [
+            "Internal traffic filter",
+            "Tags events from IP ranges you define with a `traffic_type` parameter, then a data filter excludes them.",
+            "Works, and it's the highest-return setting in most accounts. Two steps — defining the traffic does nothing until you also create the filter."
+          ],
+          [
+            "Developer traffic filter",
+            "Excludes events sent in debug mode.",
+            "Worth switching on. Small volume, but it's the traffic your tag manager generates while someone tests."
+          ],
+          [
+            "Web hostname filter",
+            "Excludes events whose hostname isn't one of yours.",
+            "The one people skip. Catches your tag firing on staging, on a cached copy, or on someone else's page."
+          ],
+          [
+            "Unwanted referrals",
+            "Appends `ignore_referrer=true` so a domain stops being attributed as a referral source.",
+            "Relabels, doesn't remove. The sessions stay in your counts. Right tool for a payment gateway, wrong tool for a bot."
+          ],
+          [
+            "Report filters and comparisons",
+            "Hide rows in a specific report view.",
+            "Hides, doesn't filter. Useful for looking at a clean number without destroying data — which is often exactly what you want."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Data filters are permanent and not retroactive",
+        "body": "Google states it plainly: filters are evaluated from the point of creation forward, they don't touch historical data, and excluded data is never processed — it will never be available in GA4 or in a BigQuery export. So run every new filter in **testing** state for a fortnight and check what it would have removed. A filter set too wide silently deletes real customers, and there is no undo."
+      }
+    },
+    {
+      "h2": "The self-inflicted share",
+      "body": [
+        "Before blaming an anonymous scraper, count the traffic you're generating yourself. On a small B2B site this is routinely a bigger distortion than actual bots, and it's concentrated on exactly the pages you care about — because your own team keeps opening them.",
+        "Work through the list and add each one to the internal traffic definition or the hostname filter."
+      ],
+      "bullets": [
+        "**Your office IP.** Everyone who checks the site after a deploy. On a site doing 3,000 sessions a month, a fifteen-person office can be several percent of everything.",
+        "**Your agency.** We should be excluded, and we should have told you our IP ranges without being asked. If nobody has, ask — it's a thirty-second answer.",
+        "**Uptime and performance monitors.** Anything pinging your homepage every five minutes. Most don't run JavaScript; some do.",
+        "**Your own crawler.** A monthly technical crawl can generate more pageviews than a good month of organic. Run it with the analytics domain blocked, or from a filtered IP.",
+        "**Preview and screenshot tools.** Link unfurls in WhatsApp and Slack, and any tool that renders a page to make a thumbnail.",
+        "**Staging and preview URLs**, which the hostname filter handles in one setting."
+      ]
+    },
+    {
+      "h2": "What an agency should do when its own report has a spike it can't explain",
+      "body": [
+        "This is where the mechanics turn into a client relationship, and it's the part most agencies handle badly. A month with an unexplained 40% traffic rise is a very comfortable month to report on. The temptation is to put it in the summary, call it momentum, and hope nobody opens the source table.",
+        "Our position, and we'd hold any agency to it: an unexplained spike is the agency's problem to solve, not the client's problem to interpret. Sending a report with a number you can't account for and letting the client discover it is a failure of the report, not of the client's attention.",
+        "So the sequence is fixed. Flag it in the summary on the first page, not in a footnote. Restate the headline number both ways — with and without the suspect segment — so the underlying trend is visible. Say which of the three signals it matched, and say what you're doing about it. If you genuinely can't explain it within a working day, write that sentence down and give a date.",
+        "The reason this matters beyond good manners: a client who has been shown one inflated number they later worked out for themselves stops trusting every number after it. Which is roughly [how to read an SEO report](/journal/how-to-read-an-seo-report) in reverse — the checks a client runs exist because agencies didn't run them first. If you'd rather not have this argument every quarter, the fix is usually [an analytics setup that separates humans from everything else](/services/analytics-setup-services) before the reporting starts, not a better explanation afterwards."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The number to lead with instead",
+        "body": "Qualified enquiries from [organic traffic](/glossary/organic-traffic), counted in your CRM. Bots don't fill in forms, don't call, and don't message on WhatsApp. Any metric that a scraper can move is a metric worth demoting in the report."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why did my GA4 sessions spike with no increase in leads?",
+      "a": "Most often because the sessions weren't people. Check three things on the spike day: whether it landed on one or two pages, whether it came from one country or city, and whether average engagement time collapsed. Then compare Search Console clicks for the same days — flat clicks with a big session rise means it didn't come from Google."
+    },
+    {
+      "q": "Does GA4 filter bots automatically?",
+      "a": "Yes, for known bots and spiders, using Google's own research plus the IAB's International Spiders and Bots List. It runs by default, can't be turned off, and doesn't report how much it excluded. It won't catch a scraper or a monitoring tool running a real browser, because those look like ordinary visits."
+    },
+    {
+      "q": "Are GA4 data filters retroactive?",
+      "a": "No. Filters evaluate data from the moment you create them forward, and they never alter historical data. Worse, exclusion is permanent — filtered events are never processed and won't appear in GA4 or in a BigQuery export. Always run a new filter in testing state first and see what it would have caught."
+    },
+    {
+      "q": "Should I use referral exclusions to block spam domains?",
+      "a": "Only if the goal is attribution rather than removal. Unwanted referrals stop a domain being credited as a traffic source; the sessions still count. That's the right behaviour for a payment gateway sending users back to you, and the wrong tool for junk traffic you want out of the totals."
+    },
+    {
+      "q": "How much of my traffic is my own team?",
+      "a": "More than you'd guess on a low-traffic site. An office of fifteen people checking a site that does 3,000 sessions a month, plus an agency, an uptime monitor and a monthly crawl, can account for a noticeable share — and it concentrates on the pages you're actively watching, which is where it does the most damage to a decision."
+    },
+    {
+      "q": "Can bot traffic hurt my rankings?",
+      "a": "Not directly. Google ranks on its own crawl and its own click data, not on your analytics. The damage is decision-shaped: inflated numbers make a weak page look like a winner, so you commission more like it, and you find out two quarters later that none of it produced an enquiry."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Known bot-traffic exclusion",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9888366"
+    },
+    {
+      "title": "Data filters",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/10108813"
+    },
+    {
+      "title": "Filter out internal traffic",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/10104470"
+    },
+    {
+      "title": "Identify unwanted referrals",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/10327750"
+    },
+    {
+      "title": "User engagement",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/11109416"
+    },
+    {
+      "title": "Performance report (Search results): Overview and basic setup",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7576553"
+    }
+  ],
+  "related": [
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-analytics-4"
+    },
+    {
+      "type": "glossary",
+      "slug": "organic-traffic"
+    },
+    {
+      "type": "services",
+      "slug": "analytics-setup-services"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-read-an-seo-report"
+    },
+    {
+      "type": "glossary",
+      "slug": "engagement-rate"
+    },
+    {
+      "type": "answers",
+      "slug": "what-are-seo-kpis"
+    }
+  ]
+}

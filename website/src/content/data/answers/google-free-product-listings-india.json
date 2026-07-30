@@ -1,0 +1,251 @@
+{
+  "slug": "google-free-product-listings-india",
+  "type": "answers",
+  "primaryKeyword": "google free product listings india",
+  "secondaryKeywords": [
+    "merchant center free listings setup",
+    "product feed for organic shopping surfaces",
+    "shopping tab visibility without ads",
+    "feed quality issues india d2c"
+  ],
+  "cluster": "india-channels",
+  "intent": "informational",
+  "h1": "Google's free product listings: the cheapest unclaimed win for an Indian D2C brand",
+  "metaTitle": "Google Free Product Listings in India",
+  "metaDescription": "Your ecommerce SEO stops at the website. The product feed is a second free surface, and feed quality decides all of it. Plus the hours it takes us.",
+  "updated": "2026-09-11",
+  "published": "2026-09-11",
+  "answer": "Free product listings show your catalogue across Google Search, the Shopping tab, Images, Lens, YouTube, Maps and Gemini at no media cost. They are sourced from a Merchant Center product feed, not from your pages, which is why a brand with excellent site SEO can be entirely absent. Setup takes a day or two; feed quality decides everything after that.",
+  "takeaways": [
+    "The feed is a **second surface**, judged separately from your website. Good on-page SEO earns you nothing here if the feed is broken or absent.",
+    "Six attributes are non-negotiable for every product: `id`, `title`, `description`, `link`, `image_link`, `price` and `availability`. Brand is required for nearly all new products.",
+    "The disapprovals that hit Indian sellers hardest are **price and availability mismatches**, wrong GTINs, promotional overlays on images, and a missing return policy or contact route on the site.",
+    "Feed data and on-page structured data have to agree. Google says outright that supplying both maximises your eligibility.",
+    "It costs us roughly **8–12 hours to set up and 1–2 hours a month to maintain**, which is why it sits inside the technical hours of an existing retainer rather than being quoted as a separate service."
+  ],
+  "sections": [
+    {
+      "h2": "What free listings are, and what they are not",
+      "body": [
+        "Google Merchant Center started as the pipe that fed Shopping ads. Since free listings arrived it is also the pipe that feeds a set of unpaid product placements, and most Indian D2C brands we look at are either not using it or using it badly enough that half the catalogue is disapproved without anyone noticing.",
+        "Google's own documentation lists the surfaces: Search, including rich results and the Popular Products carousel, the Shopping tab, Images, Lens, YouTube, Maps, Business Profile and Gemini. In most accounts the feature is switched on by default once products are flowing.",
+        "It's worth being precise about what this is, because it gets oversold in both directions."
+      ],
+      "bullets": [
+        "**It is not advertising.** No bid, no budget, no media cost. The cost is entirely the hours to build and maintain the feed.",
+        "**It is not a ranking shortcut for your website.** Free listings and organic blue links are different pipelines. A product can appear in the Shopping tab while its product page ranks nowhere, and the reverse is just as common.",
+        "**It is not guaranteed placement.** Eligibility is what you earn. Which products actually show, and where, is Google's call and varies by query.",
+        "**It is not a substitute for [ecommerce SEO](/seo-for/ecommerce).** Category pages, buying guides and internal links still do the work of getting found by people who don't yet know what they want. The feed serves people who already do.",
+        "**It is not only for large catalogues.** A twelve-SKU brand can run this. Fewer products actually makes the feed easier to keep clean."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The two-minute check",
+        "body": "Open your Merchant Center account and look at the product count that is active versus submitted. If a third of your catalogue is disapproved or pending, you have found a real problem that costs nothing to fix and is invisible in every SEO report you receive."
+      }
+    },
+    {
+      "h2": "The feed decides whether a product appears at all",
+      "body": [
+        "The feed is a structured description of each product. Google's product data specification is the authority on what each attribute means, and the required set is short enough that there's no excuse for getting it wrong."
+      ],
+      "table": {
+        "caption": "The attributes that decide whether an Indian seller's product is eligible to show.",
+        "head": [
+          "Attribute",
+          "Requirement",
+          "Where Indian sellers go wrong"
+        ],
+        "rows": [
+          [
+            "`id`",
+            "Required, unique, max 50 characters",
+            "Regenerating IDs on every export, which resets each product's history."
+          ],
+          [
+            "`title`",
+            "Required, max 150 characters",
+            "Marketing names with no attributes. Front-load brand, product type, then colour and size — that's what people type."
+          ],
+          [
+            "`description`",
+            "Required, max 5,000 characters",
+            "Copy-pasted from the manufacturer for every variant, so nothing distinguishes them."
+          ],
+          [
+            "`link` and `image_link`",
+            "Required",
+            "Images under 500x500, or a hero shot with a festive-offer badge burned into it."
+          ],
+          [
+            "`price`",
+            "Required, ISO 4217 currency",
+            "Feed price excludes GST and the landing page includes it. Google requires the price to match the landing page, the structured data and checkout."
+          ],
+          [
+            "`availability`",
+            "Required",
+            "Nightly feed while stock moves hourly. The listing says in stock, the page says sold out."
+          ],
+          [
+            "`brand`",
+            "Required for almost all new products",
+            "Left blank by unbranded sellers. Use your own brand if you are the manufacturer."
+          ],
+          [
+            "`gtin` / `mpn`",
+            "GTIN strongly recommended where it exists; MPN required if there is no manufacturer GTIN",
+            "Inventing or reusing a GTIN. Google is explicit — only supply one if you're sure it's correct, because a wrong one gets the product disapproved."
+          ],
+          [
+            "`maximum_retail_price`",
+            "Optional, available for India",
+            "Submitting an MRP that doesn't match the one printed on the page. If you show MRP, it has to agree."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Shipping and returns are account-level, and they block everything",
+        "body": "Shipping has to be configured in settings or supplied per product, and return policy information has to be findable on your site. Miss either and it isn't one product that fails — it's the account. This is the single most common reason an Indian brand's entire feed sits idle for weeks."
+      }
+    },
+    {
+      "h2": "The disapprovals that hit Indian sellers hardest",
+      "body": [
+        "Item-level issues take a product out. Account-level issues take everything out. In roughly the order we find them:"
+      ],
+      "numbered": [
+        "**Price mismatch.** Almost always GST. Decide once whether your catalogue is inclusive or exclusive, make the feed, the page, the structured data and the checkout agree, and stop the argument permanently.",
+        "**Availability mismatch.** Fix the sync frequency, not the individual products. If your feed refreshes once a night and you sell out at 11am, you will keep failing this.",
+        "**Image rejections.** Google requires at least 500x500 and recommends 1500x1500 or above, and it prohibits promotional elements, calls to action, price stickers, watermarks and borders. Indian D2C creative is festival-driven and full of badges, so this bites hard around sale season. Keep one clean product shot for the feed and put the badges on the site.",
+        "**Bad or invented GTINs.** A borrowed barcode from a similar product will get caught. If you genuinely don't have one, say so with the identifier fields rather than guessing.",
+        "**Missing contact route or return policy.** Google's checkout requirements ask for a way to contact you — a form, an email, a phone number or a social profile — and for refund and return information that's easy to find during checkout. A contact page that's only a WhatsApp button embedded in an image doesn't read as a contact route.",
+        "**Insecure checkout.** A valid SSL certificate across the sign-up and checkout flow, not just the home page. Mixed-content warnings on a payment step will hold up the whole account."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "Fix templates, not products",
+        "body": "Disapprovals cluster by cause, not by SKU. Sort the issue list by count, take the top three causes, and you'll usually recover most of a stalled catalogue in an afternoon. Working product by product is how a feed project turns into a quarter."
+      }
+    },
+    {
+      "h2": "Feed data and on-page structured data have to agree",
+      "body": [
+        "There are two ways to tell Google about a product: the feed, and `Product` structured data on the page itself. They are not alternatives. Google's documentation says that [providing both maximises your eligibility](https://developers.google.com/search/docs/appearance/structured-data/product) to product experiences, and that some experiences combine the two — pricing can come from the feed when the page's markup doesn't carry it.",
+        "Which means the failure mode is disagreement, and disagreement is normal on Indian storefronts because the two systems are usually owned by different people. The feed comes out of an inventory export the ops team maintains. The structured data comes out of a theme or a plugin the developer installed in 2023. Nobody has compared them since.",
+        "The checks worth running once a quarter:"
+      ],
+      "bullets": [
+        "**Price** — feed, on-page markup, visible page price and checkout price all identical, including whether GST is inside or outside the number.",
+        "**Availability** — the markup says `InStock` when the page says in stock, and both change when the warehouse does.",
+        "**Currency** — `INR` everywhere, including on any international variant of the page.",
+        "**Identifiers** — the same GTIN or MPN in the feed and the markup, or absent from both.",
+        "**Canonical URL** — the feed's `link` points at the canonical product URL, not a filtered or session-parameter version. If you're unsure what that means, [canonical tags](/glossary/canonical-tag) covers it.",
+        "**Variants** — one entry per purchasable variant, each with its own image and price, rather than one parent row that hides six colours."
+      ]
+    },
+    {
+      "h2": "The hours it takes, and why we fold it into a retainer",
+      "body": [
+        "We publish our prices, so we can be blunt about this rather than quoting it as a separate line with an impressive-sounding name.",
+        "A first setup — account, website claim, shipping and returns configuration, feed source, an initial pass on disapprovals — is roughly **8 to 12 hours** for a catalogue in the tens to low hundreds of SKUs. A very large or badly structured catalogue takes longer, mostly because the export needs work upstream rather than because the feed does. After that, maintenance runs about **1 to 2 hours a month**: check the issues list, fix whatever the last theme update broke, review titles for the products that matter.",
+        "That fits inside the six technical hours a month in our ₹75,000/mo SEO plan, so we do it as part of the work rather than selling it. We're not being generous — it's the honest place for it. Charging ₹25,000 for a Merchant Center setup would be charging a day's work at agency day-rate for something that is a genuinely small task, and the ongoing hour or two a month is cheaper to absorb than to invoice. Our pricing is on the [pricing page](/pricing), and the smaller-site plan at ₹40,000/mo covers it too, at the cost of some content cadence.",
+        "The reason to do it at all is the ratio. Ten hours of setup against a surface your competitors are largely ignoring is unusual arithmetic in a channel where most gains cost a quarter. It will not carry a business on its own — free listings serve people who already know what they want, and the volume follows demand for your category rather than your effort. But it is the cheapest incremental visibility available to an Indian D2C brand right now, and most brands still haven't claimed it."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Do not let this become a paid Shopping pitch",
+        "body": "The same feed powers Shopping ads, so any agency setting it up has an obvious next slide. Free listings are worth doing whether or not you ever run paid Shopping. Decide the ad question separately, on its own numbers — [Google Ads versus SEO](/compare/google-ads-vs-seo) is the argument to have there."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are Google free product listings actually free in India?",
+      "a": "Yes — there's no media cost, no bid and no budget. What it costs is the work to build and maintain the feed, which for a normal Indian catalogue is roughly 8–12 hours of setup and an hour or two a month afterwards. There is no separate fee to Google."
+    },
+    {
+      "q": "Do I need Google Ads to get free listings?",
+      "a": "No. Free listings are available through Merchant Center on their own, and in most accounts the feature is on by default. The same product feed can power Shopping ads if you later decide to run them, but that is an independent decision with independent economics."
+    },
+    {
+      "q": "Why are my products disapproved in Merchant Center?",
+      "a": "Most often a price or availability mismatch between the feed and the landing page, an image with promotional text or a watermark, an incorrect GTIN, or an account-level failure such as missing shipping settings, a hard-to-find return policy or no contact route. Sort your issues list by count and fix causes, not products."
+    },
+    {
+      "q": "Do free listings help my website rank?",
+      "a": "Not directly. They're a separate surface fed by your product data rather than by your pages, so they don't move your organic rankings. What they do is add visibility your site wasn't getting, which is worth having on its own terms and shouldn't be confused with SEO progress in a report."
+    },
+    {
+      "q": "Does structured data replace the Merchant Center feed?",
+      "a": "No, and Google says supplying both maximises your eligibility. Some experiences combine the two — for example, pricing can be taken from your feed when your page markup doesn't include it. Where they disagree, you get unpredictable results, so treat matching feed and markup as a quarterly check."
+    },
+    {
+      "q": "How long before free listings show any traffic?",
+      "a": "Once products are approved, days rather than months — this is not the slow compounding curve of organic content. What varies wildly is volume, because it tracks existing demand for your category. A niche catalogue can be fully approved and still see modest numbers, and that's the feed working correctly."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Free listings for products",
+      "publisher": "Google Merchant Center Help",
+      "url": "https://support.google.com/merchants/answer/9199328"
+    },
+    {
+      "title": "Product data specification",
+      "publisher": "Google Merchant Center Help",
+      "url": "https://support.google.com/merchants/answer/7052112"
+    },
+    {
+      "title": "Image link [image_link]",
+      "publisher": "Google Merchant Center Help",
+      "url": "https://support.google.com/merchants/answer/6324350"
+    },
+    {
+      "title": "Checkout requirements and best practices",
+      "publisher": "Google Merchant Center Help",
+      "url": "https://support.google.com/merchants/answer/9158778"
+    },
+    {
+      "title": "Introduction to Product structured data",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/product",
+      "date": "2025-12-10"
+    }
+  ],
+  "related": [
+    {
+      "type": "seo-for",
+      "slug": "ecommerce"
+    },
+    {
+      "type": "services",
+      "slug": "ecommerce-seo-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "schema-markup"
+    },
+    {
+      "type": "cost",
+      "slug": "ecommerce-seo-cost"
+    },
+    {
+      "type": "compare",
+      "slug": "seo-vs-marketplace-selling"
+    },
+    {
+      "type": "journal",
+      "slug": "why-indian-d2c-brands-overspend-on-ads"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-do-seo-for-an-ecommerce-website"
+    },
+    {
+      "type": "seo-for",
+      "slug": "d2c-brands"
+    }
+  ]
+}

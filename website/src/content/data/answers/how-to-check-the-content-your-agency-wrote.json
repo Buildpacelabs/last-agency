@@ -1,0 +1,231 @@
+{
+  "slug": "how-to-check-the-content-your-agency-wrote",
+  "type": "answers",
+  "primaryKeyword": "how to check the content my agency wrote",
+  "secondaryKeywords": [
+    "is my agency reusing content across clients",
+    "how to tell if agency content is templated",
+    "checking agency articles for originality",
+    "content quality check for a marketing retainer"
+  ],
+  "cluster": "agency-diligence",
+  "intent": "informational",
+  "h1": "How to check the content your agency delivered",
+  "metaTitle": "How to Check the Content Your Agency Wrote",
+  "metaDescription": "Template reuse across an agency's client base is visible from outside if you know the two searches to run. Plus the line between a framework and a rewrite.",
+  "updated": "2026-08-21",
+  "published": "2026-08-21",
+  "answer": "Take a distinctive sentence from the article, search it inside quotes with `-site:yourdomain.com`, then search a structural phrase — a heading, a stock transition — the same way. The first search finds copied sentences. The second finds a copied skeleton sold to four other clients. Both take under ten minutes.",
+  "takeaways": [
+    "Two searches, ten minutes: an exact phrase from the body, and an exact phrase from a heading. Run both **outside** your own domain.",
+    "Reusing a research process, a brief template or a page structure is fine and normal. Reusing the sentences is not.",
+    "AI detectors are not evidence. They produce false positives on edited human writing and clean passes on edited machine writing, so don't build an accusation on one.",
+    "The test that matters isn't originality at all: could a competitor publish this article unchanged with their logo on it? If yes, you paid for filler regardless of who typed it."
+  ],
+  "sections": [
+    {
+      "h2": "The two searches that expose a shared back catalogue",
+      "body": [
+        "Agencies that resell the same article across clients are visible from outside. You don't need a tool, a login or their permission — Google indexed their other clients' sites, and Google supports [exact-phrase and site-scoped operators](https://support.google.com/websearch/answer/2466433) for free.",
+        "Do this with two articles from last month's delivery, not one. A single article can be an accident; two matching skeletons is a production line."
+      ],
+      "numbered": [
+        "**The sentence search.** Pick a sentence from the middle of the body — not the intro, which gets rewritten, and not a definition, which everyone phrases similarly. Something with an odd construction or a specific example in it. Paste it into Google inside double quotes, then add `-site:yourdomain.com` so your own page drops out of the results. An empty result set is the outcome you want.",
+        "**The skeleton search.** Take an H2 from the article — ideally one with a slightly unusual phrasing, the kind a writer reaches for on autopilot. Search it in quotes on its own. Then search it again with a second H2 from the same article, both in quotes. Two headings appearing together on a site that isn't yours means the outline was reused, even if every sentence underneath it was retyped."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The exact strings",
+        "body": "Search one: `\"a full sentence lifted from your article\" -site:yourdomain.com`. Search two: `\"your first h2 heading\" \"your third h2 heading\"`. Run both in an incognito window. If the agency publishes a client list, a third pass is worth it: `site:theirclient.com` plus a phrase from your article, one client at a time."
+      }
+    },
+    {
+      "h2": "What a hit actually means, and the four false positives",
+      "body": [
+        "A match is a question, not a verdict. Four things produce hits that mean nothing, and it's worth ruling them out before you send an email you can't take back."
+      ],
+      "bullets": [
+        "**Scraper sites.** Your own article, republished wholesale on a domain you've never heard of, usually with the internal links intact. That's theft from you, not by your agency — and it's common enough that it should be the first thing you check.",
+        "**Your own staging or dev subdomain.** `-site:yourdomain.com` doesn't exclude `staging.yourdomain.com`. If a hit is your own copy on a subdomain, you have an [indexing problem](/answers/why-is-my-page-not-indexed-on-google) rather than a plagiarism problem, and it's costing you.",
+        "**Genuinely shared source material.** A manufacturer's product specification, a statutory definition, a GST rate, a quote you both took from the same Google documentation. Identical because reality is identical.",
+        "**Syndicated PR.** If your press release went out on a wire, it exists verbatim on forty sites by design."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Don't lead with an AI detector",
+        "body": "Detector scores are the weakest evidence in this whole exercise. They flag clean, edited human prose as machine-written routinely, and a lightly rewritten machine draft passes them just as routinely. If you open the conversation with a screenshot of a 94% score, you've handed the agency an easy argument and lost the one that mattered. Lead with the exact-phrase match, which is a fact."
+      }
+    },
+    {
+      "h2": "Reuse that's legitimate, and reuse that isn't",
+      "body": [
+        "There is a version of this check that turns into a witch hunt, and it makes your agency worse rather than better. Every competent content team reuses something. A research method, a brief template, a way of laying out a comparison — those are the accumulated craft you're paying for, and demanding that each article be invented from nothing produces slower, sloppier work.",
+        "The line sits at the words and the specifics. Google's spam policies name [scaled content abuse](https://developers.google.com/search/docs/essentials/spam-policies) — many pages generated mainly to manipulate rankings rather than to help anyone — as a violation, and reselling one article to six clients with the nouns swapped sits squarely inside that definition for at least five of them."
+      ],
+      "table": {
+        "caption": "Where the line falls between a reusable framework and a resold article.",
+        "head": [
+          "Reused element",
+          "Fine, and why",
+          "Not fine, and why"
+        ],
+        "rows": [
+          [
+            "Research process",
+            "The SERP check, the interview questions, the source-quality bar. Craft, refined across accounts.",
+            "Nothing here is a problem. If they don't have one, that's the finding."
+          ],
+          [
+            "Page structure",
+            "A comparison page that always carries a table and a verdict is a house style, not laziness.",
+            "The same nine H2s in the same order across four clients in the same industry."
+          ],
+          [
+            "Examples and numbers",
+            "A public benchmark or a documented rule, cited, is the same everywhere.",
+            "A worked example about a Bangalore SaaS company in an article you bought for a Coimbatore textile mill."
+          ],
+          [
+            "Sentences",
+            "Boilerplate you supplied — your legal line, your product description.",
+            "Any body paragraph that appears on another company's website. There's no benign version of this."
+          ],
+          [
+            "The brief",
+            "A repeatable brief format speeds everything up and makes review easier.",
+            "A brief with no customer input, no SME name and no query research behind it."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Was it written for your buyer? Three questions any reader can apply",
+      "body": [
+        "Originality is the low bar. An article can be 100% unique and still be worthless, because uniqueness is trivially easy to manufacture and usefulness isn't. Google's own content self-assessment asks whether a page offers original information, reporting, research or analysis — not whether the string of words is new.",
+        "These three questions need no tool and no SEO knowledge. Anyone in your company who talks to customers can run them in five minutes per article."
+      ],
+      "numbered": [
+        "**The logo swap.** Cover your brand name and read it. Could your closest competitor publish this, unedited, with their logo on it? If yes, it isn't your content — it's category content, and it will be outranked by whoever has more links.",
+        "**The one thing only you know.** Find the sentence containing a fact that could only have come from your business: a real price, a lead time, a constraint, an objection your sales team hears every week, a reason you turn certain customers away. If there isn't one, no research happened. This is the single most reliable tell in the whole exercise.",
+        "**The buyer's own words.** Does it use the vocabulary your customers actually use, or the vocabulary of a keyword tool? For an Indian audience that includes the boring specifics: rupees rather than dollars, GST rather than sales tax, WhatsApp as a real channel, city names your customers would recognise."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "A cheap proxy for effort",
+        "body": "Count the proper nouns. Not brand names the writer could pull from a directory — product names, place names, regulations, tools, people. A genuinely researched 1,200-word article usually carries a dozen or more. A generic one carries two, both of them yours."
+      }
+    },
+    {
+      "h2": "The monthly check, in about twenty minutes",
+      "body": [
+        "Do this on the day the invoice arrives, on a sample rather than everything. The point is deterrence more than detection — an agency that knows two random articles get checked every month behaves differently from one that doesn't."
+      ],
+      "numbered": [
+        "Pick two articles at random from the month's delivery. Random matters; if you always check the first one, that's the one that gets written properly.",
+        "Run the sentence search and the skeleton search on both. Four searches, four minutes.",
+        "Apply the logo swap and hunt for the one thing only you know. Ten minutes.",
+        "Check the internal links. An article written by someone who read your site links to your service pages using anchor text that matches what you sell. An article written by someone who didn't links nowhere, or links to Wikipedia.",
+        "Check it's indexed. Search a phrase from it in quotes with `site:yourdomain.com`. Published and unindexed after three weeks is its own conversation, and it's usually [about the site rather than the writing](/journal/what-an-seo-audit-should-actually-find)."
+      ]
+    },
+    {
+      "h2": "You found something. What to do short of terminating",
+      "body": [
+        "Firing an agency is expensive, slow and frequently the wrong response to a fixable process failure. Unless you found verbatim reuse across clients — which is a trust problem, not a process problem — work the ladder before you work the notice period.",
+        "The whole exercise gets easier if the [contract said something about it upfront](/answers/what-should-be-in-an-seo-contract). Originality warranties, a named writer, and the right to a source list are three clauses that cost nothing to add and change the incentives entirely."
+      ],
+      "numbered": [
+        "**Ask for the brief and the source list** for that specific article. Not a template — the actual brief. A team doing the work has both in a folder. A team resurfacing an old draft has neither, and the delay in answering tells you more than the answer does.",
+        "**Ask who wrote it, by name, and ask to speak to them.** Reasonable request, ten-minute call. It also surfaces the [outsourcing question](/journal/is-your-agency-outsourcing-your-seo) without you having to accuse anyone of anything.",
+        "**Insist on a subject-matter interview per article.** Thirty minutes of your sales lead's time per piece is the cheapest quality fix available, and it makes the logo-swap test almost impossible to fail.",
+        "**Cut the volume and raise the depth.** Six shallow articles a month reliably lose to two researched ones. If the retainer is fixed, renegotiate what it buys rather than what it costs — and check the numbers against [what content actually costs to produce in India](/cost/content-writing-cost-india) so the trade is honest on both sides.",
+        "**Put a rewrite obligation in writing** for anything that fails the exact-phrase test, at their cost, within ten working days. Most agencies will agree to this because most agencies aren't doing it."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "When it is termination",
+        "body": "One case only: you find your paid article, near-verbatim, on a competitor's site — or theirs on yours. That isn't a quality issue or a process gap. It means your content budget bought a shared asset, your competitor's did too, and nobody told either of you."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How can I tell if my agency reused an article from another client?",
+      "a": "Search a distinctive sentence from your article in double quotes, with `-site:yourdomain.com` appended so your own copy drops out. Then search two of your H2 headings together in quotes. Copied sentences show in the first search; a copied outline shows in the second."
+    },
+    {
+      "q": "Is it a problem if my agency uses the same page structure for every client?",
+      "a": "Usually not. A consistent structure is a house style, and it makes review faster. It becomes a problem when the structure is the only thing being delivered — same nine headings, same order, same generic examples underneath, across several clients in the same industry."
+    },
+    {
+      "q": "Should I run agency content through an AI detector?",
+      "a": "You can, but don't treat the score as evidence. Detectors flag edited human writing as machine-written and pass edited machine writing as human, often in the same batch. An exact-phrase match on Google is a fact you can show someone; a detector percentage is an argument you will lose."
+    },
+    {
+      "q": "Does duplicate content get my site penalised?",
+      "a": "Ordinary duplication across the web isn't a penalty; Google generally picks a canonical version and moves on. The risk is different — a page that exists elsewhere has no reason to be chosen, so it quietly earns nothing. Mass-produced pages made mainly to rank are a separate and more serious matter under the spam policies."
+    },
+    {
+      "q": "What should I ask for so I can check content properly next time?",
+      "a": "Three things in the contract: an originality warranty covering reuse across the agency's other clients, the name of the writer on each deliverable, and the right to request the brief and source list for any piece. None of them costs the agency money if they're already doing the work."
+    },
+    {
+      "q": "How many articles should I actually check each month?",
+      "a": "Two, chosen at random, is enough. Checking everything is a job nobody will keep doing after month two, and checking the same slot every month just tells the agency which article to write properly. Random sampling changes behaviour across the whole batch."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Refine Google searches",
+      "publisher": "Google Search Help",
+      "url": "https://support.google.com/websearch/answer/2466433"
+    },
+    {
+      "title": "Spam policies for Google web search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "date": "2026-05-15"
+    },
+    {
+      "title": "Creating helpful, reliable, people-first content",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Google Search's guidance about AI-generated content",
+      "publisher": "Google Search Central Blog",
+      "url": "https://developers.google.com/search/blog/2023/02/google-search-and-ai-content"
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "is-your-agency-outsourcing-your-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "does-ai-written-content-still-rank"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-i-know-if-my-seo-agency-is-doing-a-good-job"
+    },
+    {
+      "type": "glossary",
+      "slug": "thin-content"
+    },
+    {
+      "type": "cost",
+      "slug": "content-writing-cost-india"
+    },
+    {
+      "type": "services",
+      "slug": "content-marketing-services"
+    },
+    {
+      "type": "journal",
+      "slug": "programmatic-seo-and-the-scaled-content-line"
+    }
+  ]
+}

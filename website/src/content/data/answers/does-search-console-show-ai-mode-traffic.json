@@ -1,0 +1,277 @@
+{
+  "slug": "does-search-console-show-ai-mode-traffic",
+  "type": "answers",
+  "primaryKeyword": "does search console show ai mode traffic",
+  "secondaryKeywords": [
+    "are ai overview clicks in search console",
+    "how to report ai search traffic",
+    "measuring visibility in ai answers",
+    "unattributed traffic from ai surfaces"
+  ],
+  "cluster": "ai-surfaces",
+  "intent": "informational",
+  "h1": "Does Search Console show AI Mode and AI Overview clicks?",
+  "metaTitle": "Does Search Console Show AI Mode Traffic?",
+  "metaDescription": "Since June 2026 Search Console separates AI impressions but still not AI clicks. What is measurable, what is not, and how to report the hole honestly.",
+  "updated": "2026-10-05",
+  "published": "2026-10-05",
+  "answer": "Half of it, and only since June 2026. Search Console's generative AI performance report separates impressions from AI Overviews and AI Mode, on the properties included in the rollout. Clicks are not in it. AI clicks stay merged inside the Web search type, so you can see where you appeared without knowing what it earned.",
+  "takeaways": [
+    "Impressions are now separable. **Clicks are not.** You have one side of a fraction and no way to compute the other.",
+    "Because AI clicks sit inside the Web total, an AI-driven click decline still arrives disguised as a general decline.",
+    "Impressions flat and clicks down has at least five other causes. Rule those out before you blame AI for it.",
+    "The correct reporting move is to name the unmeasured part as a line item, not to spread it across the causes you can measure."
+  ],
+  "sections": [
+    {
+      "h2": "What changed in June 2026, and what still hasn't",
+      "body": [
+        "For most of the AI-surface era there was nothing to look at. AI Overview and AI Mode activity was folded into the ordinary Web search type in Search Console, with no filter to isolate it — which is what our [AI Mode glossary entry](/glossary/google-ai-mode) says, because when we wrote it that was true.",
+        "It stopped being true on 3 June 2026, when Google launched generative AI performance reports in Search Console with dedicated views for Search and Discover. The reports were announced as rolling out to a subset of websites for testing, so not every property has them, and the data continues to be counted inside the overall performance report as well.",
+        "What you get is genuinely useful and conspicuously partial. The report shows [impressions only — clicks are not included as a metric](https://support.google.com/webmasters/answer/16984139), broken down by page, country, device and date, drawn from the Web search type and excluding Search Labs experiments. The ordinary limits apply, including the 1,000-row cap.",
+        "So the shape of the problem changed rather than went away. You can now answer *where did we show up*. You still cannot answer *what did showing up do for us*."
+      ],
+      "table": {
+        "caption": "What Search Console will and will not separate for AI surfaces.",
+        "head": [
+          "Data point",
+          "Where it lives",
+          "Separable"
+        ],
+        "rows": [
+          [
+            "Impressions in AI Overviews and AI Mode",
+            "Generative AI performance report, on properties in the rollout",
+            "Yes, since June 2026"
+          ],
+          [
+            "Which of your pages appeared in an AI feature",
+            "Same report, Pages dimension",
+            "Yes, within the usual row limit"
+          ],
+          [
+            "Country and device for those impressions",
+            "Same report",
+            "Yes"
+          ],
+          [
+            "Clicks from an AI Overview or AI Mode",
+            "Merged into the Web search type",
+            "No"
+          ],
+          [
+            "Click-through rate on an AI surface",
+            "Nowhere. You hold one side of the fraction",
+            "No"
+          ],
+          [
+            "Which queries triggered an AI feature",
+            "Not a dimension in the report",
+            "No"
+          ],
+          [
+            "Where you sat inside the generated answer",
+            "Not reported anywhere",
+            "No"
+          ],
+          [
+            "Visits from ChatGPT, Perplexity or Copilot",
+            "Never in Search Console. Referral data in analytics, where a referrer survives",
+            "Separately, and badly"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Why impressions without clicks is a strange half-measurement",
+      "body": [
+        "An impression has always been a weak unit. It tells you a link was displayed, not that anyone saw it, wanted it or acted on it. The whole reason impressions were tolerable in ordinary search reporting is that clicks sat next to them, and the ratio between the two carried the meaning.",
+        "Strip the clicks out and you are left with a number that can rise while your business shrinks. Appearing as a cited source in more generated answers is compatible with fewer people arriving on your site, which is precisely the pattern that made everyone anxious about AI surfaces in the first place. The [zero-click problem](/glossary/zero-click-search) is exactly this, with the measurement now half-lit rather than dark.",
+        "The second-order effect is the one that catches agencies out. Because AI clicks are still counted inside the Web search type, a real decline caused by AI surfaces does not announce itself. It arrives in your monthly report as a general drop in organic clicks, indistinguishable from a ranking slip, a seasonality dip or a competitor's new page — and it will get attributed to whichever of those the author finds easiest to explain.",
+        "That is the hole. Every agency traffic report written this year contains it. The only question is whether the report says so."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Do not divide AI impressions by Web clicks",
+        "body": "It is the obvious move and it produces a number that means nothing. The denominator includes every ordinary search impression; the numerator is a different surface with a different display logic. A ratio between two incompatible populations is a made-up metric with a decimal point on it."
+      }
+    },
+    {
+      "h2": "The signature, and the five other things that produce it",
+      "body": [
+        "Impressions flat or rising, clicks falling, average position roughly unchanged. That pattern is the reason most people arrive at this question, and it is genuinely consistent with AI surfaces absorbing clicks that used to reach you. It is also consistent with several duller explanations that cost nothing to rule out first.",
+        "Work down this list before you write the word *AI* in a report. For the size of the AI effect specifically, [what AI Overviews did to your organic traffic](/journal/what-ai-overviews-did-to-your-organic-traffic) has the published research and the query segmentation."
+      ],
+      "numbered": [
+        "**Your query mix moved.** Non-brand impressions grew on informational terms you were never going to convert, diluting the average while the queries that matter are untouched. Segment brand from non-brand before anything else.",
+        "**A title or meta description was rewritten** — by you, or by Google. Same position, same impressions, fewer clicks, and it is invisible unless you diff your titles.",
+        "**Position slipped inside page one.** Three to six barely registers in an average position chart and roughly halves the click-through rate.",
+        "**The result layout changed.** More ads, a bigger local pack, a video carousel, a competitor winning a rich result. All of these push you down the page without changing your reported position.",
+        "**Measurement changed underneath you.** A consent banner, a new analytics property, a bot filter, a tag that stopped firing. Check the [gap between Search Console and GA4](/compare/ga4-vs-search-console) — if only one of the two moved, the cause is not in the search results.",
+        "**Seasonality, honestly assessed.** Compare to the same month last year, not to last month, and be suspicious of any explanation that only works in one direction."
+      ]
+    },
+    {
+      "h2": "Proxies worth tracking, and how far to trust each",
+      "body": [
+        "Nothing in this list is a substitute for clicks. Each one narrows the uncertainty a little, and using several together is the only honest version of AI visibility reporting currently available."
+      ],
+      "table": {
+        "caption": "Proxy measures for AI-surface visibility, and what each is actually evidence of.",
+        "head": [
+          "Proxy",
+          "What it is evidence of",
+          "How far to trust it"
+        ],
+        "rows": [
+          [
+            "Generative AI impressions in Search Console",
+            "How often links to your pages were shown in an AI feature",
+            "High for direction. Useless for value, because there is no click to pair it with"
+          ],
+          [
+            "Branded search volume",
+            "Whether more people are looking you up by name after seeing you somewhere",
+            "Moderate. Slow, and confounded by every other thing you do"
+          ],
+          [
+            "Referral sessions from assistant hostnames",
+            "Visits that arrived with a referrer intact",
+            "Low volume, high intent, and it undercounts badly — copy-paste and in-app visits arrive as direct"
+          ],
+          [
+            "Direct traffic landing on deep URLs",
+            "Someone reached a specific inner page with no referrer",
+            "Weak on its own. It moves for six unrelated reasons"
+          ],
+          [
+            "Manual prompt sampling, 20 to 40 prompts monthly",
+            "Whether you are cited, and who is cited instead of you",
+            "The most informative and least scalable. Run each prompt twice — identical input gives different answers"
+          ],
+          [
+            "Log hits from AI crawler user agents",
+            "That you are being crawled",
+            "Evidence of access, not of citation. Reporting it as visibility is a category error"
+          ]
+        ]
+      },
+      "bullets": [
+        "The most useful column in a manual sampling sheet is **who got cited instead of you**. The competitor set on AI surfaces is frequently not your competitor set on the ordinary results page — see [how to get cited by AI assistants](/answers/how-do-i-get-my-brand-cited-in-chatgpt) for what to do about it.",
+        "Sample at least twenty prompts. Below that, month-to-month variance looks exactly like a trend."
+      ]
+    },
+    {
+      "h2": "How to report honestly when part of the surface is unmeasurable",
+      "body": [
+        "The temptation is to make the numbers add up. Total decline is 900 clicks, you can explain 600, so the remaining 300 gets folded into whichever explanation is nearest. That is not analysis, it is arithmetic tidying, and it destroys the credibility of the 600 you actually did explain.",
+        "The alternative takes one extra line in the report and is considerably more defensible."
+      ],
+      "numbered": [
+        "**Give the unattributed remainder its own row.** Label it *not separable in current reporting* and put the number in it. A named gap is information; a hidden one is a liability.",
+        "**Bound it with what you do have.** Generative AI impressions tell you whether AI features were showing your pages more or less over the same window. That does not size the click loss, but it distinguishes *plausible* from *unlikely*.",
+        "**Never move a number from the unattributed row into an explained one** without new evidence. If the evidence is a hunch, it belongs in commentary, not in the table.",
+        "**Move the headline metric off clicks entirely.** Qualified leads recorded in your CRM do not care which surface the person came through. Everything upstream of that is diagnostics, and diagnostics should not be the number the board reads.",
+        "**Date-stamp the methodology.** This page is its own example: the report described here did not exist in May 2026. Any measurement note about AI surfaces has a shelf life of about two quarters."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "One line, borrowed freely",
+        "body": "\"Organic clicks fell 12% this quarter. We can account for roughly two-thirds of that with a position change on four commercial pages. The remainder is not separable in current reporting, and AI-surface impressions rose over the same window — which is consistent with click absorption but is not proof of it.\""
+      }
+    },
+    {
+      "h2": "What we will not claim about AI visibility",
+      "body": [
+        "There is a whole product category being sold on the fact that nobody can check the numbers. Since we can't check them either, here is what we refuse to put in a report."
+      ],
+      "bullets": [
+        "**No AI share of voice percentage.** Any single figure is a model output built on a prompt list somebody chose. Choosing the prompts chooses the answer.",
+        "**No revenue attributed to AI surfaces.** There is no click, no query and no path. A rupee figure on that is invention with a chart behind it.",
+        "**No promise of a position in AI Mode.** There are no positions, the answer changes between runs on identical input, and nobody outside Google can see the retrieval logic.",
+        "**No credit claimed for an llms.txt file.** We are not against publishing one. We are against billing you for something no available data can connect to an outcome.",
+        "**No guarantee tied to AI visibility.** Ours is tied to your trailing-90-day qualified organic leads, frozen on day one, precisely because that number survives a surface changing shape underneath it. Miss it in 90 days and we keep working free until we beat it — see [how we work](/seo)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I see AI Mode traffic in Search Console?",
+      "a": "You can see impressions, not clicks. The generative AI performance report launched in June 2026 gives a dedicated view of impressions from AI Overviews and AI Mode, broken down by page, country, device and date. Clicks from those surfaces stay merged into the Web search type with no way to isolate them."
+    },
+    {
+      "q": "Why are my impressions up and clicks down?",
+      "a": "AI surfaces absorbing clicks is one explanation and rarely the only one. Rule out a shift in brand versus non-brand query mix, a rewritten title, a slip inside page one, a busier result layout, and a measurement change such as a consent banner. Then look at what's left."
+    },
+    {
+      "q": "Does Search Console separate AI Overviews from AI Mode?",
+      "a": "No. The generative AI performance report covers both surfaces together as generative AI features on Search, with a separate report for Discover. There is no filter that splits AI Overview impressions from AI Mode impressions, so treat the figure as one combined signal."
+    },
+    {
+      "q": "How do I measure traffic from ChatGPT or Perplexity?",
+      "a": "Not through Search Console — that only covers Google. Look for referral sessions from assistant hostnames in analytics, accept that it undercounts heavily because copy-paste and in-app visits arrive as direct, and pair it with monthly manual prompt sampling to see whether you are being cited at all."
+    },
+    {
+      "q": "Should I report AI visibility to my board?",
+      "a": "Report the impressions figure as a diagnostic and keep qualified leads as the headline. Boards make decisions on outcomes, and a metric with no click attached cannot be traded off against a budget. Name the unmeasured portion explicitly rather than folding it into a cause you can name."
+    },
+    {
+      "q": "Will Google add AI clicks to Search Console?",
+      "a": "Google has said it is working with site owners on which additional metrics would be most useful, which is a fair signal that more is coming and no commitment about what. Plan your reporting so it survives either outcome, and re-check the documentation each quarter rather than trusting a blog post."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Introducing Search Generative AI performance reports in Search Console",
+      "publisher": "Google Search Central Blog",
+      "url": "https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports",
+      "date": "2026-06-03"
+    },
+    {
+      "title": "Generative AI performance report (Search)",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/16984139"
+    },
+    {
+      "title": "AI features and your website",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Performance report (Search results): Overview and basic setup",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7576553"
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "google-ai-mode"
+    },
+    {
+      "type": "journal",
+      "slug": "what-ai-overviews-did-to-your-organic-traffic"
+    },
+    {
+      "type": "glossary",
+      "slug": "ai-visibility"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-i-get-my-brand-cited-in-chatgpt"
+    },
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "glossary",
+      "slug": "zero-click-search"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-read-an-seo-report"
+    }
+  ]
+}

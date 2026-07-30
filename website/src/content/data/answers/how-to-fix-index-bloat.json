@@ -1,0 +1,282 @@
+{
+  "slug": "how-to-fix-index-bloat",
+  "type": "answers",
+  "primaryKeyword": "how to fix index bloat",
+  "secondaryKeywords": [
+    "too many pages indexed google",
+    "wordpress tag archives indexed",
+    "crawled currently not indexed what to do",
+    "reduce indexed url count"
+  ],
+  "cluster": "technical-launch",
+  "intent": "informational",
+  "h1": "How to diagnose and fix index bloat",
+  "metaTitle": "How to Diagnose and Fix Index Bloat",
+  "metaDescription": "Read the Search Console Pages report in a fixed order — it tells you whether bloat is a template fault or a linking fault. Those need different fixes.",
+  "updated": "2026-09-14",
+  "published": "2026-09-14",
+  "answer": "Index bloat is Google holding far more of your URLs than you have real pages — usually tag archives, attachment pages, internal search results and filter parameters. Read the Search Console Pages report in a fixed order: Indexed, then Crawled – currently not indexed, then Duplicate without user-selected canonical. That order tells you the source before you change anything.",
+  "takeaways": [
+    "40,000 indexed URLs on a 400-page site is a **template** problem until proven otherwise. Templates generate URLs by the thousand; humans don't.",
+    "Read the report in one fixed order. **Indexed** tells you what Google kept, **Crawled – currently not indexed** tells you what it looked at and rejected, **Duplicate without user-selected canonical** tells you where your canonical signals are missing.",
+    "Pick the tool per source: `noindex` for pages that must stay reachable, a canonical for genuine duplicates, a 410 for pages that should not exist, robots.txt only after the URLs are already out.",
+    "Recovery is measured in weeks to months, not days, because Google has to recrawl every URL to notice each change."
+  ],
+  "sections": [
+    {
+      "h2": "What counts as bloat, and what is just a big site",
+      "body": [
+        "A large site is not a bloated one. An ecommerce catalogue with 60,000 genuine product pages is fine. Bloat is the gap between the number of URLs Google has indexed and the number of pages you would be happy for a stranger to land on from a search result.",
+        "The quickest read is a ratio. Count the pages you deliberately published — products, categories, articles, service pages, the handful of legal pages. Then look at the indexed count in the Pages report. If the indexed number is four or five times the deliberate number, something is generating URLs on your behalf, and it is almost never a person.",
+        "This matters for two reasons, and only one of them is the one people quote. The commonly cited reason is crawl efficiency: Google's own guidance on [crawl budget](/glossary/crawl-budget) warns that time spent on URLs it shouldn't be crawling is time not spent on the rest of your site. That's real, and on a site under a few thousand URLs it's usually not your bottleneck.",
+        "The reason that bites smaller sites is dilution and self-competition. A tag archive that lists three post excerpts is a thin page competing with the posts themselves. Twelve of them competing for the same phrase is a keyword-cannibalisation problem you never briefed. That's the damage, and it lands well before crawl budget does."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The two-minute version",
+        "body": "Run `site:yourdomain.com` in Google and read the URLs on pages two and three. Not the count — Google's count there is an estimate and always has been. The URLs. If you see `/tag/`, `/author/`, `?s=`, `?orderby=`, `/attachment/` or a date archive, you have the answer and you can stop reading the diagnosis section."
+      }
+    },
+    {
+      "h2": "Read the Pages report in this order, every time",
+      "body": [
+        "Search Console's Pages report groups URLs by what Google did with them. Read the groups in a fixed sequence, because the sequence is what separates a template fault from a linking fault, and those have different fixes.",
+        "Open the report, switch to All known pages, and work down this list."
+      ],
+      "numbered": [
+        "**Indexed.** Sort by URL and skim the patterns rather than the pages. You are looking for repeated path segments — `/tag/`, `/author/`, `/2019/07/`, `/?attachment_id=` — because a repeated segment means a template is producing them. One odd URL is an accident. Four hundred sharing a prefix is a setting.",
+        "**Crawled – currently not indexed.** Google's own definition is that it crawled the page and did not index it, and may or may not do so later. On a bloated site this bucket is usually enormous and usually correct. Google looked at your tag archives and declined. That is not a bug to fix; it's a verdict on the value of those URLs.",
+        "**Duplicate without user-selected canonical.** Google says this page duplicates another and you gave it no canonical preference, so Google picked one for you. Every URL in this bucket is a place where your site failed to declare which version it wanted, which is the single most fixable category in the report.",
+        "**Duplicate, Google chose a different canonical than user.** Rarer and more interesting: you declared a preference and Google overruled it. Usually a sign the declared canonical is weaker than the alternative — thinner, slower, or not internally linked.",
+        "**Excluded by 'noindex' tag** and **Blocked by robots.txt.** Check these last, and check them for surprises rather than for volume. A page you wanted indexed sitting in either bucket is a separate and more urgent problem — see [why Google will not index your page](/answers/why-is-my-page-not-indexed-on-google).",
+        "**Indexed, though blocked by robots.txt.** If this bucket has anything in it, read the robots.txt section below before you touch anything else. It is the specific failure mode this page exists to prevent."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What the sequence tells you",
+        "body": "A big Indexed bucket full of one URL pattern is a template fault: one setting is producing thousands of URLs. A big Duplicate bucket spread across many patterns is a canonical fault: your pages exist but they don't declare a preferred version. A big Crawled – currently not indexed bucket with your real articles in it is neither — that's a content quality problem wearing a technical costume."
+      }
+    },
+    {
+      "h2": "Where it comes from on WordPress and WooCommerce",
+      "body": [
+        "In India the majority of bloated sites we look at are WordPress, and the bloat is almost always shipped by defaults nobody changed. None of this is a plugin misbehaving. It is the CMS doing exactly what it was configured to do on install day.",
+        "The named sources, roughly in order of how often they turn up."
+      ],
+      "table": {
+        "caption": "Common URL generators on WordPress and WooCommerce, and what each one produces.",
+        "head": [
+          "Source",
+          "What it looks like",
+          "Why it multiplies"
+        ],
+        "rows": [
+          [
+            "Tag archives",
+            "`/tag/seo-tips/`, plus `/tag/seo-tips/page/2/`",
+            "One tag per idea, three tags per post, and each one paginates"
+          ],
+          [
+            "Author and date archives",
+            "`/author/admin/`, `/2021/08/`",
+            "Enabled by default on most themes even with one author and no reason to browse by month"
+          ],
+          [
+            "Attachment and media pages",
+            "`/product-shot-2/` or `/?attachment_id=4127`",
+            "WordPress creates a page per uploaded image unless the theme redirects it"
+          ],
+          [
+            "Internal search results",
+            "`/?s=running+shoes`",
+            "Crawlable the moment anything links to a search URL, and infinite by definition"
+          ],
+          [
+            "WooCommerce filters and sorting",
+            "`?orderby=price`, `?filter_size=9`, `?min_price=500`",
+            "Every combination of every filter is a distinct URL. Ten filters make thousands"
+          ],
+          [
+            "Cart, checkout and account URLs with parameters",
+            "`?add-to-cart=88`, `/my-account/orders/`",
+            "Session and action URLs that should never have been crawlable"
+          ],
+          [
+            "Feeds and comment pages",
+            "`/feed/`, `/comment-page-2/`",
+            "One per post, silently, forever"
+          ]
+        ]
+      },
+      "bullets": [
+        "Shopify's version of the same disease is `/collections/x/products/y` duplicating `/products/y`, and it is handled by the platform's canonical rather than by you. Different symptom, same category of problem.",
+        "Faceted navigation is the expensive one on any platform. If your filters build crawlable links rather than firing a request behind the scenes, the URL count is combinatorial and no amount of tidying keeps up.",
+        "Check for a second copy of the whole site while you're here — a staging subdomain, an old `www` variant, an `http` version that never redirected. That's not bloat, it's duplication, and it needs a redirect rather than a `noindex`."
+      ]
+    },
+    {
+      "h2": "Choosing the right removal method per source",
+      "body": [
+        "There are four tools and they are not interchangeable. Choosing by habit rather than by source is why sites get cleaned twice.",
+        "The question to ask per URL pattern: does a human ever need to reach this, and does an equivalent page already exist?"
+      ],
+      "table": {
+        "caption": "Which tool fits which source of bloat.",
+        "head": [
+          "Situation",
+          "Tool",
+          "Why"
+        ],
+        "rows": [
+          [
+            "A human might reach it, but it should never be a search result — internal search, filtered listings, thin tag archives you want to keep for navigation",
+            "`noindex` in the page's robots meta tag",
+            "Drops it from the index while leaving it usable and crawlable, so links on it still pass through"
+          ],
+          [
+            "It genuinely duplicates another URL — sort orders, tracking parameters, a print view",
+            "`rel=\"canonical\"` to the preferred URL",
+            "Consolidates the signals onto one version instead of throwing them away"
+          ],
+          [
+            "It should not exist at all — attachment pages, an abandoned category, spam URLs from an old hack",
+            "410 Gone, or 404 if 410 is awkward",
+            "The clearest possible statement that the URL is finished. Google treats it as a strong signal not to come back"
+          ],
+          [
+            "It has a real successor — a merged article, a discontinued product with a replacement",
+            "301 redirect, one to one",
+            "Moves the accumulated signals rather than dropping them. Never redirect a batch to the home page"
+          ],
+          [
+            "Vast machine-generated spaces you have already removed from the index — calendar pages, infinite filter combinations",
+            "robots.txt disallow, afterwards",
+            "Stops the crawling once the indexing question is already settled. See the next section for the order"
+          ]
+        ]
+      },
+      "bullets": [
+        "For WordPress specifically: turn off tag, author, date and attachment archives in your SEO plugin rather than editing templates. It's one screen, and it's reversible.",
+        "Google's Removals tool hides URLs for about six months. It is a fire extinguisher for something embarrassing that is live right now, not a fix — the underlying page has to change or it comes back.",
+        "If you are consolidating overlapping articles rather than deleting junk, that's a different job with a different risk profile: [how to merge two competing pages](/answers/how-to-merge-two-pages-competing-for-the-same-keyword) covers it."
+      ]
+    },
+    {
+      "h2": "Why robots.txt is usually the wrong tool here",
+      "body": [
+        "This is the mistake that turns a two-week cleanup into a six-month one, and it is made with complete confidence roughly every time.",
+        "robots.txt controls crawling, not indexing. Google's documentation is unusually blunt about it: robots.txt is [not a mechanism for keeping a web page out of Google](https://developers.google.com/search/docs/crawling-indexing/robots/intro), and a disallowed URL can still be indexed if something links to it. That's the whole meaning of the Indexed, though blocked by robots.txt status in your Pages report.",
+        "The failure is a sequencing failure. Add `noindex` to 8,000 tag archives and then block `/tag/` in robots.txt, and Google can no longer crawl those URLs — so it never sees the `noindex` you just added. The pages stay in the index, now with no description, and you have locked the door on the instruction that would have removed them.",
+        "So the order is: `noindex` first, wait for the index count to fall, then block in robots.txt if you also want to stop the crawling. Google's crawl-budget guidance does recommend robots.txt over `noindex` for genuinely unimportant pages at scale — and it is right, for pages that were never indexed in the first place. For pages already in the index, blocking is how you keep them there. See [canonical versus noindex](/compare/canonical-vs-noindex) for the equivalent trap on the duplicate side."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Never pair noindex with a robots.txt block on the same URLs",
+        "body": "The crawler has to fetch the page to read the rule. Block it and the rule is invisible, so the URL sits in the index indefinitely with a blank snippet. If you have already done both, remove the robots.txt line, let Google recrawl, and reinstate the block only once the URLs have dropped out."
+      }
+    },
+    {
+      "h2": "How long recovery takes, and what to watch while it happens",
+      "body": [
+        "Everything here is bounded by recrawl rate. Google has to visit each URL again to notice its new status, and low-value URLs are exactly the ones it visits least often — which is a mildly cruel design when the low-value URLs are the ones you're trying to remove.",
+        "Expect a visible trend within two to four weeks on a site with reasonable crawl frequency, and two to three months for the long tail on a large or slow-crawled one. A site with 40,000 junk URLs will not be clean by Friday, and anybody who tells you otherwise is about to run the Removals tool and call it done.",
+        "Help it along in the cheap ways: make sure your [XML sitemap](/glossary/xml-sitemap) lists only the canonical URLs you actually want indexed, remove the junk patterns from it, and resubmit. A sitemap is a weak signal, but it's a free one and it points the crawler at the right set.",
+        "One expectation to set before you start. Cleaning up bloat rarely produces a traffic jump on its own, because the URLs you removed were mostly earning nothing. What it produces is a site where the pages that matter are easier to find, easier to crawl and no longer competing with a tag archive. Treat a flat traffic line and a falling index count as success."
+      ],
+      "numbered": [
+        "**Indexed count in the Pages report**, weekly. It should fall steadily. A flat line after three weeks means the fix isn't being seen — check for a robots.txt block over the URLs you noindexed.",
+        "**The Duplicate without user-selected canonical bucket.** It should shrink as your canonicals get picked up. If it doesn't, the canonicals are probably pointing somewhere Google disagrees with.",
+        "**Crawl stats**, under Settings. Requests to the junk patterns should decline. This is the clearest proof the cleanup worked at the crawl level rather than only at the report level.",
+        "**Impressions for your real pages**, in the Performance report. Filter to the pages you care about. This is the number that says whether the cleanup bought you anything.",
+        "**Nothing at all, for the first ten days.** Checking daily is how people panic and revert half the changes before Google has recrawled anything."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many indexed pages is too many?",
+      "a": "There's no absolute number — it's a ratio. Compare the indexed count in Search Console with the number of pages you deliberately published. Within about 1.5 times is normal, because pagination and a few system pages always creep in. Four or five times means a template is generating URLs and you should go looking for the pattern."
+    },
+    {
+      "q": "Should I noindex or delete my tag archives?",
+      "a": "Noindex them and keep them, if anyone actually navigates by tag. Deleting removes an internal linking path for no gain, while noindex takes them out of search and leaves them working for humans. If nothing links to them and nobody uses them, disable tags in the CMS entirely — that's cleaner than either."
+    },
+    {
+      "q": "Is 'Crawled – currently not indexed' something I need to fix?",
+      "a": "Only if your real pages are in it. Google's definition is that it crawled the page and chose not to index it. For tag archives and filter URLs that's the correct outcome and no action is needed. For an article you published and want ranking, it's a quality or internal-linking verdict, and no technical tag fixes it."
+    },
+    {
+      "q": "Will fixing index bloat increase my traffic?",
+      "a": "Usually not directly, and be suspicious of anyone who promises it will. The removed URLs were earning close to nothing. What improves is crawl efficiency on large sites and self-competition on small ones — the second is where the visible gains live, when a thin archive was outranking the article it linked to."
+    },
+    {
+      "q": "Can I just block everything in robots.txt?",
+      "a": "No, and it's the most common way this gets worse. robots.txt stops crawling, not indexing, and Google says outright that it is not a mechanism for keeping a page out of search. Blocked URLs already in the index stay there, and the block prevents Google from ever seeing the noindex rule that would have removed them."
+    },
+    {
+      "q": "How long before the indexed count actually drops?",
+      "a": "Two to four weeks for the bulk on a site Google crawls often, two to three months for the tail on a large or infrequently crawled one. Low-value URLs are recrawled least often, which is exactly the wrong way round for this job. Watch the trend line weekly and resist re-editing anything for the first ten days."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Page indexing report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7440203"
+    },
+    {
+      "title": "Introduction to robots.txt",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Block Search indexing with noindex",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Optimize your crawl budget",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/large-site-managing-crawl-budget",
+      "date": "2026-07-22"
+    },
+    {
+      "title": "Remove a page hosted on your site from Google",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/remove-information",
+      "date": "2025-12-10"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "why-is-my-page-not-indexed-on-google"
+    },
+    {
+      "type": "glossary",
+      "slug": "crawl-budget"
+    },
+    {
+      "type": "glossary",
+      "slug": "robots-txt"
+    },
+    {
+      "type": "compare",
+      "slug": "canonical-vs-noindex"
+    },
+    {
+      "type": "glossary",
+      "slug": "thin-content"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-merge-two-pages-competing-for-the-same-keyword"
+    }
+  ]
+}

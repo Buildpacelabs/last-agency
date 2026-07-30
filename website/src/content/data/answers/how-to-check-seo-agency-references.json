@@ -1,0 +1,238 @@
+{
+  "slug": "how-to-check-seo-agency-references",
+  "type": "answers",
+  "primaryKeyword": "how to check seo agency references",
+  "secondaryKeywords": [
+    "questions to ask an agency's past clients",
+    "how to find an agency's former clients",
+    "are agency testimonials real",
+    "reference call questions for a marketing agency"
+  ],
+  "cluster": "agency-diligence",
+  "intent": "informational",
+  "h1": "How to run a reference check on an SEO agency",
+  "metaTitle": "How to Check an SEO Agency's References",
+  "metaDescription": "The reference an agency hands you is briefed and pre-warmed. How to find the ex-clients nobody nominated, and three questions that work in four minutes.",
+  "updated": "2026-08-12",
+  "published": "2026-08-12",
+  "answer": "Take the reference the agency offers, but spend four minutes on it. Then spend an hour finding two clients they didn't nominate — old portfolio pages in the Wayback Machine, repeated footer credits, overlapping LinkedIn tenures — and ask those two what happened after month six. That's where the useful answer is.",
+  "takeaways": [
+    "The offered reference is selected, briefed, and sometimes reciprocal. Not fraud — selection. It still tells you one thing: what the agency considers a good outcome.",
+    "The clients worth finding are the ones who **left**. They're findable from public sources in about an hour.",
+    "Ask about **month six onwards**. Almost every agency relationship is fine in month two.",
+    "Check the work, not only the story. Content quietly reverted or links quietly gone is the most common gap between a warm reference and reality.",
+    "If you can't find a single unnominated ex-client anywhere public, that's a finding in itself."
+  ],
+  "sections": [
+    {
+      "h2": "Why the offered reference tells you almost nothing",
+      "body": [
+        "Every buying guide says \"ask for references\". Almost none says what happens next: the agency picks the happiest client on the roster, calls them first, tells them roughly what to expect, and hands you the number. Nothing about that is dishonest. It's selection, and you'd do the same.",
+        "So treat the offered call as a low-yield formality with one genuinely useful output. Whoever they nominate is their idea of a success story. If their best case is a 40% traffic rise with no mention of leads, you've learned what they optimise for — and you've learned it in four minutes."
+      ],
+      "bullets": [
+        "**Reciprocal references are common.** Two agencies who refer work to each other, a client who is also a supplier, a friend from a founder group. Ask directly: \"do you have any commercial relationship with them beyond the retainer?\" It's a fair question and the pause is informative.",
+        "**Testimonials on a site aren't references.** They're quotes, sometimes years old, occasionally written by the agency and approved by email. A named person, a company, and a working phone number is a reference. A first name and a job title is decoration.",
+        "**Case studies aren't references either.** They're written by the party with the incentive. Read [why SEO case studies mislead](/journal/why-seo-case-studies-mislead) before you weigh one heavily.",
+        "**Logos on the homepage prove a transaction, not a result.** A ₹40,000 one-off audit two years ago earns a logo on most agency sites."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Ask for the one they don't want to give",
+        "body": "\"Give me a reference from a client who left.\" Every agency has some. The honest answer names one, explains what went wrong, and offers the contact. The evasive answer is a short speech about confidentiality. You are not entitled to the contact — but you are entitled to watch which answer arrives."
+      }
+    },
+    {
+      "h2": "Finding the clients they didn't nominate",
+      "body": [
+        "This is the part that takes an hour and changes the decision. You're looking for businesses that paid this agency and no longer do. Everything below uses public sources.",
+        "Work through it in order — the first two find most of what there is."
+      ],
+      "numbered": [
+        "**Pull their portfolio page out of the Wayback Machine.** Open `web.archive.org`, enter the agency's clients or work page, and open a capture from two and three years ago. Compare it to today. The logos that disappeared are your list. Nobody removes a happy client from a portfolio.",
+        "**Search for their footer credit as an exact phrase.** Agencies leave lines like \"SEO by [Agency]\" or \"Website by [Agency]\" in client footers. Search the exact phrase in quotes, then repeat with `site:` on any domain you already suspect. Google documents both operators; the exact-phrase form is what makes this work.",
+        "**Read their case study PDFs and decks.** Search the agency's domain for `filetype:pdf`. Decks that were never meant to be indexed name clients the website doesn't.",
+        "**Check LinkedIn tenure overlaps.** Find the agency's account managers, look at who they worked with, then look at marketing managers at those companies whose own tenure ended around the same time. The person who ran the account client-side is often the most candid source you'll find, and they no longer work there.",
+        "**Look at who they've published for.** Guest posts, webinar co-hosts, joint press releases, conference panels. A co-branded webinar from 2023 with a brand absent from today's portfolio is a lead.",
+        "**Check the linking footprint.** If the agency's own site is linked from a set of client footers, that set is close to a client list — and it's also a problem, because Google explicitly names [widely distributed links in the footers or templates of various sites](https://developers.google.com/search/docs/essentials/spam-policies) as link spam. The footprint that helps you research them is the same footprint that puts their clients at risk."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The archive has holes",
+        "body": "The Wayback Machine doesn't capture everything. Pages behind logins, pages built entirely by scripts, and sites that asked to be excluded may show nothing at all. An empty archive is not evidence of a clean history — it usually just means the crawler never got there."
+      }
+    },
+    {
+      "h2": "The four-minute call that gets a real answer",
+      "body": [
+        "Former clients will give you four minutes and will not give you forty. Cold-email or message the person directly, say you're evaluating the same agency, and ask for four minutes on the phone. The hit rate is better than you'd expect — people who had a bad experience are often keen to spare someone else one.",
+        "Three questions. Ask them in this order, and shut up after each one. The silence does more work than the question."
+      ],
+      "table": {
+        "caption": "Three questions, what each one is actually testing, and the answer shape that tells you nothing.",
+        "head": [
+          "Ask this",
+          "What it tests",
+          "The answer that means nothing"
+        ],
+        "rows": [
+          [
+            "\"What changed in the business between month six and month twelve?\"",
+            "Whether anything reached the P&L after the honeymoon ended",
+            "\"Our traffic went up a lot.\" Traffic is not a business change."
+          ],
+          [
+            "\"What did you have to do that you weren't expecting?\"",
+            "How much client-side work the engagement really needed, and whether they warned you",
+            "\"Nothing really, they handled everything.\" Nobody's SEO works that way."
+          ],
+          [
+            "\"Why did it end?\"",
+            "The one question the nominated reference can never be asked",
+            "\"We went in a different direction.\" Follow up once: \"which direction?\""
+          ]
+        ]
+      },
+      "bullets": [
+        "**Don't ask \"would you recommend them?\"** It's a yes/no about social risk, not about the work, and almost everyone says yes to a stranger.",
+        "**Don't ask about price.** You'll get a number without scope attached, and it'll anchor you wrongly. [Compare proposals](/answers/how-to-compare-seo-proposals) on scope instead.",
+        "**Do ask who did the work by name**, then check whether that person still works there. An agency that was good in 2024 with a team that has since turned over entirely is a different agency wearing the same logo."
+      ]
+    },
+    {
+      "h2": "Reading the hedge",
+      "body": [
+        "Most of the signal in a reference call is in phrasing, not content. People are reluctant to damage a supplier they may need again, so criticism arrives softened. Here's the usual translation.",
+        "One honest caveat before you over-read any of it. Some Indian agency contracts carry confidentiality or non-disparagement clauses, and some ex-clients are simply too busy. A short answer is sometimes just a short answer."
+      ],
+      "bullets": [
+        "**\"They were fine.\"** Reliable delivery, no result worth naming. The most common answer you'll get, and the most useful one to hear early.",
+        "**\"Great people.\"** Volunteered before any comment on outcomes, this is a compliment about the relationship standing in for one about the work.",
+        "**A long pause, then \"it depends what you need\".** They're deciding how much to tell you. Wait. Don't fill it.",
+        "**\"We brought it in-house.\"** Sometimes true and strategic, often the polite version of not renewing. Ask what the in-house person does differently now.",
+        "**\"I can't really get into it.\"** Information about the contract, not necessarily about the work. Ask instead whether they'd hire them again for the same brief — that's usually answerable.",
+        "**Instant, fluent enthusiasm with specific numbers ready.** Either a genuinely great outcome or a briefed call. Ask them something the brief wouldn't have covered — what the reporting looked like in month nine, say."
+      ]
+    },
+    {
+      "h2": "Check the work, not only the story",
+      "body": [
+        "A warm reference and a reverted site are entirely compatible. The client liked the team, the engagement ended, the next developer rebuilt the site, and none of the work survives. That's worth knowing before you buy the same thing.",
+        "Four checks on the ex-client's site, ten minutes each, no tools required."
+      ],
+      "numbered": [
+        "**Is the content still live?** Take a page the agency claims and open it. Then open the same URL in the Wayback Machine from the engagement period. A page that was 1,800 words and is now 400, or is now a 404, tells you the client didn't value it enough to keep.",
+        "**Is it still indexed?** Search a distinctive sentence from the page in quotes. If nothing comes back, the page exists but Google isn't holding it — which is a different and more interesting problem.",
+        "**Do the links still exist?** If the agency published link placements, open two or three. Bought placements come down when someone stops paying for the hosting. Earned coverage stays up for years.",
+        "**Did the site move?** A migration after the engagement ended explains most disappearances honestly. Check the archived version of the old domain before concluding anything sinister."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What this is really testing",
+        "body": "Not whether the agency was good. Whether the work was the kind that outlives a relationship. Technical fixes and genuinely useful pages survive an agency change; rented links and thin monthly filler don't. That distinction is most of the difference between a retainer that compounds and one that resets to zero the day you stop paying."
+      }
+    },
+    {
+      "h2": "How many references is enough, and when to stop",
+      "body": [
+        "Three conversations is usually the whole exercise: the one they offered, and two you found. Add a fourth only if the first three disagree with each other.",
+        "You're not building a case. You're testing one specific claim — that this agency has done this kind of work, for this kind of business, and that something measurable happened. Once two independent people describe the same pattern, more calls stop adding information."
+      ],
+      "bullets": [
+        "**Stop when the third call tells you nothing new.** Consistency across sources is the signal. A fourth call rarely changes a decision.",
+        "**Weight by similarity, not by fame.** An ex-client with your sales cycle and your budget is worth five enterprise logos in an unrelated sector.",
+        "**Zero findable ex-clients is itself a result.** Either the agency is very new — fine, ask directly and price the risk — or the portfolio doesn't reflect the roster. Both change how you'd write the contract.",
+        "**Convert what you learn into contract terms.** If two references say reporting went quiet after month six, put the reporting cadence and the named account lead in writing. [What to put in an SEO contract](/answers/what-should-be-in-an-seo-contract) covers the rest.",
+        "**Do this before you write the brief, not after.** What you hear should change what you ask for — see [how to write an SEO brief for agencies](/answers/how-to-write-an-seo-brief-for-agencies)."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Our own position on this",
+        "body": "We hand over references from clients who left, not only from clients who stayed, and we'll tell you why each one ended. We take three new clients a month, so the list is short and checkable rather than long and unverifiable. If any agency's client list is too large to sample, ask how many accounts each strategist runs before you ask anything else."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are SEO agency testimonials real?",
+      "a": "Usually real people, usually approved rather than written by them, and almost always selected. The common pattern is an agency drafting a quote and the client signing off by email. That's not fabrication, but it isn't independent evidence either. A named contact you can call is worth more than a page of quotes."
+    },
+    {
+      "q": "How do I find an agency's former clients?",
+      "a": "Open their portfolio page in the Wayback Machine from two or three years ago and compare it with today — removed logos are your list. Then search their footer credit line as an exact phrase, check LinkedIn for account managers and their client-side counterparts, and look for co-branded webinars and PDFs their site no longer links to."
+    },
+    {
+      "q": "What should I ask an agency's past client?",
+      "a": "Three questions. What changed in the business between month six and month twelve. What you had to do that you weren't expecting. Why it ended. Ask them in that order and stay quiet afterwards. Avoid \"would you recommend them\" — it tests politeness, not results."
+    },
+    {
+      "q": "Is it rude to contact clients the agency didn't nominate?",
+      "a": "No, provided you're straightforward about why you're calling. You're a prospective buyer doing diligence, which is normal in every other category of professional services. Don't imply the agency sent you, don't ask for anything confidential, and keep it to four minutes."
+    },
+    {
+      "q": "What if the agency refuses to give any references?",
+      "a": "For a new agency it can be legitimate — NDAs with a couple of clients, or a roster of two. Ask them to say so plainly and to offer something else instead: a live account walkthrough, a sample month's reporting with the name removed, or a paid trial. Refusal plus no alternative is the answer."
+    },
+    {
+      "q": "How many reference calls are enough?",
+      "a": "Three. The one they offered, plus two you found yourself. Stop when the third adds nothing new. Weight ex-clients whose business resembles yours far above bigger names in unrelated sectors — the question you're answering is whether this works for a company shaped like yours."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Using the Wayback Machine",
+      "publisher": "Internet Archive Help Center",
+      "url": "https://help.archive.org/help/using-the-wayback-machine/"
+    },
+    {
+      "title": "Wayback Machine General Information",
+      "publisher": "Internet Archive Help Center",
+      "url": "https://help.archive.org/help/wayback-machine-general-information/"
+    },
+    {
+      "title": "Refine Google searches",
+      "publisher": "Google Search Help",
+      "url": "https://support.google.com/websearch/answer/2466433"
+    },
+    {
+      "title": "Spam policies for Google web search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "date": "2026-05-15"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "how-to-choose-an-seo-agency"
+    },
+    {
+      "type": "answers",
+      "slug": "what-questions-should-i-ask-an-seo-agency"
+    },
+    {
+      "type": "answers",
+      "slug": "what-are-the-red-flags-of-a-bad-seo-agency"
+    },
+    {
+      "type": "journal",
+      "slug": "why-seo-case-studies-mislead"
+    },
+    {
+      "type": "journal",
+      "slug": "why-best-seo-agency-lists-are-paid"
+    },
+    {
+      "type": "compare",
+      "slug": "agency-vs-freelancer"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-write-an-seo-brief-for-agencies"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-agency-cost"
+    }
+  ]
+}

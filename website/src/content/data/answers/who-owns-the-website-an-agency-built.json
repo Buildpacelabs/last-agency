@@ -1,0 +1,229 @@
+{
+  "slug": "who-owns-the-website-an-agency-built",
+  "type": "answers",
+  "primaryKeyword": "who owns the website an agency built",
+  "secondaryKeywords": [
+    "agency registered my domain in their name",
+    "website ownership after leaving an agency",
+    "who owns the hosting account agency set up",
+    "theme and plugin licences when you switch agency"
+  ],
+  "cluster": "agency-access",
+  "intent": "informational",
+  "h1": "Who owns the website your agency built — and the three things that never transfer",
+  "metaTitle": "Who Owns the Website Your Agency Built?",
+  "metaDescription": "Three assets routinely fail to transfer when you leave: the domain registrar account, per-site plugin and theme licences, and a proprietary page builder.",
+  "updated": "2026-08-04",
+  "published": "2026-08-04",
+  "answer": "You own whatever the contract assigns you, and most contracts assign the content and the Google accounts and stop there. Three assets routinely stay behind: the domain registrar account, per-site theme and plugin licences keyed to the agency, and a proprietary page builder your site cannot run without. Fix all three before signing.",
+  "takeaways": [
+    "Paying the invoice does not make you the registrant. The **registrant contact** on the domain record is who the registrar takes instructions from, and that's a field somebody typed during setup three years ago.",
+    "Per-site plugin and theme licences are non-transferable on purpose. The code keeps running; the key that ships security patches belongs to whoever bought it.",
+    "A proprietary page builder is the expensive one. Everything else is an afternoon of admin. This one is a rebuild.",
+    "All four fixes cost nothing before work starts. Ask in the first email, not the exit email."
+  ],
+  "sections": [
+    {
+      "h2": "The ownership clause everyone signs covers the wrong assets",
+      "body": [
+        "Almost every web and SEO contract has an ownership clause, and almost every one covers the same two things: the content the agency wrote, and access to your Google properties — Search Console, Analytics, Tag Manager, the Business Profile. Both matter. Neither is what strands people.",
+        "The assets that strand you sit somewhere else, and they strand you precisely because nobody files them under *assets*. They were setup steps. Done in an hour, in somebody's account, before there was a contract to argue about. Get the access question right first — [what access to give an SEO agency](/answers/what-access-to-give-an-seo-agency) covers that half — then work through this list."
+      ],
+      "table": {
+        "caption": "Assets that routinely fail to transfer when an engagement ends.",
+        "head": [
+          "Asset",
+          "Who usually holds it",
+          "What recovering it actually costs"
+        ],
+        "rows": [
+          [
+            "Domain registration",
+            "The agency's registrar account, with an agency staffer named as registrant",
+            "Days if they cooperate. The domain if they don't."
+          ],
+          [
+            "Hosting account",
+            "One slot on the agency's reseller or master plan",
+            "A migration you pay for, plus a cutover window"
+          ],
+          [
+            "Theme, plugin and font licences",
+            "The agency's developer or unlimited-sites licence",
+            "One fresh annual licence per commercial product on the site"
+          ],
+          [
+            "Proprietary builder or CMS",
+            "The agency, deliberately",
+            "A rebuild — comfortably the largest number here"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "When this surfaces",
+        "body": "Never at the start. Nobody audits a registrant record while the relationship is good. You find out on the day you ask for the transfer code and get a reply beginning \"we'll need to check with our billing team\"."
+      }
+    },
+    {
+      "h2": "The domain: the registrant is the owner, and it may not be you",
+      "body": [
+        "Domains aren't bought, they're registered — a renewable right recorded against a **registrant** at a registrar. The registrar takes instructions from the registrant. Not from whoever paid the invoice, not from whoever the business belongs to.",
+        "When an agency registers the domain during setup, three things are usually true at once: the registrar account is theirs, the registrant contact is a name at their company, and the admin email is a shared inbox on their domain. Renewal notices, transfer approvals and any dispute all land with them.",
+        "Moving a domain between registrars needs a transfer authorisation code — the `authInfo` value in the registry protocol, still widely called an EPP or auth code. It exists so only the party holding the registration can authorise a move. That's exactly the protection you want, and exactly the wall you hit when the party isn't you. Registries also apply a lock after a fresh registration or a change of registrant, commonly 60 days on `.com` and similar, so even a cheerful handover has a waiting period baked into it."
+      ],
+      "bullets": [
+        "**Look yourself up today.** Run an RDAP or WHOIS lookup on your own domain. Privacy protection hides contact details, not the sponsoring registrar — and the registrar name alone tells you whose account it lives in.",
+        "**Ask for account access, not \"the domain\".** \"Please transfer the domain to us\" invites a project. \"Please add this email as an account contact and confirm the registrant record\" is a five-minute task nobody can reasonably refuse.",
+        "**Fix the admin email first.** If renewal notices go to an inbox you can't read, an expired domain is one holiday away.",
+        "**DNS follows the registrar, and email follows DNS.** Whoever holds the account controls your MX records. The same people who can take the site down can take your email with it, which is a bigger operational risk than the SEO one.",
+        "**It gates Search Console too.** A Domain property can only be verified by DNS record, so without registrar access you can't hold the property type that covers every subdomain and protocol."
+      ]
+    },
+    {
+      "h2": "Hosting: a transfer and a migration are two different asks",
+      "body": [
+        "There are two ways a hosting account changes hands, and agencies quote the cheap one while you picture the other.",
+        "A **transfer** moves the account itself — same server, same files, same database, new billing owner. Fast, clean, and only possible when the account was yours to begin with. It usually isn't, because your site is one of forty on a reseller plan and there's no account to hand over.",
+        "A **migration** copies the site somewhere else. That's a project: files, database, cron jobs, SSL, email routing, redirect rules, and a DNS cutover with a window where two copies exist. Google's own guidance on changing hosting is to drop your DNS TTL to a few hours at least a week beforehand, and to expect a temporary dip in Googlebot's crawl rate right after the switch that climbs back over the following days. Plan the week, not the evening."
+      ],
+      "bullets": [
+        "**The database is the part you can't reconstruct.** Page content can be recovered from a crawl. An order table, a form archive and a customer list cannot.",
+        "**Ask for a full backup annually, not at exit.** Files plus database plus config is a five-minute job for whoever has cPanel access and a fortnight of chasing for whoever doesn't.",
+        "**Certificates and CDN config are their own small ownership problem.** A Cloudflare account created by the agency holds your DNS, your redirects and sometimes your firewall rules.",
+        "**With the domain, none of this is fatal.** Hold the registrar account and you can repoint DNS to new hosting and rebuild from a crawl. Without it, you're negotiating rather than deciding."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The two-question hosting test",
+        "body": "Is our site on its own hosting account, and is that account in our company's name? Two yes answers and hosting is a non-issue at exit. One no and you have a migration to budget for on the day you leave — so budget for it now, while it's a line item rather than an emergency."
+      }
+    },
+    {
+      "h2": "Licences that are non-transferable by design",
+      "body": [
+        "This is the category founders find hardest to accept, because they paid for the site and reasonably assume they paid for everything in it.",
+        "A typical WordPress build runs a premium theme and anywhere from five to twenty-five plugins, several of them commercial. Agencies buy those on developer or unlimited-site licences because one licence across forty clients is far cheaper than forty licences. That licence sits in the agency's account, keyed to the agency's email.",
+        "The nuance matters, and both halves are true at once. WordPress is GPL, and [WordPress's own position is that plugins and themes are derivative work and inherit that licence](https://wordpress.org/about/license/) — so the code on your server stays yours to run, modify and keep. What the key buys is updates and support. Lose the key and everything keeps working, right up until the day a security patch ships and never reaches you.",
+        "The same logic applies to everything else on the page carrying a commercial licence: web fonts sold per domain or per pageview, stock photography licensed to a named end client, a premium booking or form product, and any API with a paid tier."
+      ],
+      "bullets": [
+        "**Ask for a licence inventory in month one** — product, vendor, licence holder, renewal date, annual cost. One table. It takes a day to produce and it's the single most useful document in this whole article.",
+        "**Re-buy the ones you're keeping before you leave, in your own account.** An overlap costs one renewal. Discovering the gap afterwards costs a scramble on a live site.",
+        "**Unpatched commercial plugins are how ordinary brochure sites get hacked.** The risk here isn't the licence fee. It's the update that stops arriving and nobody noticing for eleven months.",
+        "**Fonts are the quiet one.** A per-domain web font licence names a domain. When the agency stops paying, the licence covering your domain stops too, and neither side is likely to notice until somebody's compliance team does."
+      ]
+    },
+    {
+      "h2": "The proprietary builder, and the rebuild nobody budgets for",
+      "body": [
+        "Everything above is administration. This one is capital expenditure.",
+        "Some agencies build on their own platform — a bespoke CMS, a locked page builder, a theme framework that only renders inside their hosting, or a headless front end wired to a content account in their name. It isn't always predatory. Running one stack across forty clients is genuinely efficient and the sites are often very good. It just means leaving costs you the site.",
+        "The export you're handed is usually HTML with the styling inlined, or a database dump in a schema nobody outside the agency reads. Both are technically your data. Neither is a working website. What you'd be re-buying is the build: templates, components, schema markup, redirect logic, form handling, and three years of design decisions.",
+        "The tell is easy to find before you sign. Ask which open, widely used stack the site runs on. Then ask what the site looks like the day after the contract ends if you change nothing at all."
+      ],
+      "bullets": [
+        "**Ask for a demonstration, not a promise.** \"Show me an export from an existing client site running on standard hosting.\" A stack with a real exit path produces one in an afternoon.",
+        "**Prefer boring.** WordPress, Shopify, Webflow, a standard Next.js repository in your own GitHub organisation — each has a labour market, documentation and a migration path. A proprietary builder has one supplier.",
+        "**If you're already on one**, do the arithmetic while you're calm. A planned rebuild is a project; a rebuild triggered by a fee dispute is a crisis. Add a rebuild line to [the real cost of switching agencies](/journal/the-real-cost-of-switching-seo-agencies) before you decide.",
+        "**Keep the URLs whatever else changes.** A rebuild that also rewrites every URL is two problems that multiply rather than add, which is the entire reason [site migration work](/services/site-migration-seo) is scoped separately."
+      ]
+    },
+    {
+      "h2": "Four sentences to add before work starts",
+      "body": [
+        "None of this needs a lawyer or a negotiation. Four sentences, added before the first invoice, at the one moment when you have every reason to be pleasant about it and they have every reason to say yes."
+      ],
+      "numbered": [
+        "**\"All domains used for the Client's business shall be registered in the Client's name, in a registrar account owned by the Client, with Client staff named as registrant and administrative contacts.\"** The agency can hold access. It cannot hold the account.",
+        "**\"Hosting shall be contracted in the Client's name; failing that, the Agency shall provide on request, within seven days, a complete backup comprising files, database and server configuration.\"** Either arrangement is fine. Silence is not.",
+        "**\"The Agency shall maintain a current inventory of all third-party licences used on the Client's site, naming the licence holder in each case, and shall assist in re-registering them to the Client on termination.\"** The inventory is the valuable half; the assistance clause just makes it enforceable.",
+        "**\"The Site shall be delivered on a publicly available platform, and the Agency shall demonstrate on request a working export that runs without Agency infrastructure.\"** This is the sentence that saves a rebuild."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The clause to query before you initial it",
+        "body": "Watch for \"the Agency retains ownership of all frameworks, libraries and tooling developed during the engagement\". Read literally, that covers the templates your site is made of. Ask what it refers to specifically, get the answer in writing, and attach it. The rest of the document is covered in [what belongs in an SEO contract](/answers/what-should-be-in-an-seo-contract)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "My agency registered my domain. Do they own it?",
+      "a": "Whoever is named as registrant on the domain record is who the registrar takes instructions from, regardless of who paid. If that's an agency staffer, they control renewals, DNS and transfers. It's usually fixable in days by asking them to update the registrant record and add you to the account — the problem is that most people ask on the day the relationship ends."
+    },
+    {
+      "q": "Can my agency take my website offline if I stop paying?",
+      "a": "If they hold the hosting account or the registrar account, yes — practically, whatever the contract says. If you hold the domain, the worst case is losing the current server, and you can repoint DNS to new hosting and restore from a backup. Holding the registrar account is the single protection that matters most."
+    },
+    {
+      "q": "Do I own the plugins and theme on my site?",
+      "a": "You own the right to run the code — WordPress plugins and themes inherit the GPL. What you may not hold is the licence key, which is what delivers updates and support. If the key is in the agency's account, the site keeps working after you leave and stops receiving security patches, which is the part that eventually bites."
+    },
+    {
+      "q": "What is an EPP or auth code, and why do I need one?",
+      "a": "It's the authorisation string the registry checks before allowing a domain to move between registrars. Only the party holding the registration can produce it. Expect a lock period after a new registration or a registrant change — commonly 60 days on gTLDs — so start a planned transfer well before you need it done."
+    },
+    {
+      "q": "Should the website be built on my hosting or the agency's?",
+      "a": "Yours, in your company's name, with the agency given access. It costs the same, it removes an entire class of exit argument, and it means a backup is something you can take yourself at 11pm rather than something you have to request. If the agency insists on their own stack, get a working export demonstrated before you sign."
+    },
+    {
+      "q": "How do I check who controls my domain right now?",
+      "a": "Run an RDAP or WHOIS lookup on your domain. Note the sponsoring registrar, then try logging in to that registrar with your own credentials. If you don't have any, the account isn't yours — that's the whole test, and it takes about four minutes."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Verify your site ownership",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9008080"
+    },
+    {
+      "title": "Extensible Provisioning Protocol (EPP) Domain Name Mapping",
+      "publisher": "IETF RFC 5731",
+      "url": "https://datatracker.ietf.org/doc/html/rfc5731"
+    },
+    {
+      "title": "License",
+      "publisher": "WordPress.org",
+      "url": "https://wordpress.org/about/license/"
+    },
+    {
+      "title": "Changing your hosting",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-no-url-changes",
+      "date": "2025-12-10"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-access-to-give-an-seo-agency"
+    },
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "answers",
+      "slug": "can-i-fire-my-seo-agency"
+    },
+    {
+      "type": "journal",
+      "slug": "the-real-cost-of-switching-seo-agencies"
+    },
+    {
+      "type": "services",
+      "slug": "site-migration-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "compare",
+      "slug": "nextjs-vs-wordpress-seo"
+    }
+  ]
+}

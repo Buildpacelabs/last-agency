@@ -1,0 +1,230 @@
+{
+  "slug": "do-i-own-the-content-my-seo-agency-wrote",
+  "type": "answers",
+  "primaryKeyword": "do i own the content my seo agency wrote",
+  "secondaryKeywords": [
+    "copyright of agency written blog posts",
+    "ip assignment clause marketing agency",
+    "can an agency reuse my content for another client",
+    "what transfers when you leave an seo agency"
+  ],
+  "cluster": "agency-access",
+  "intent": "informational",
+  "h1": "Do you own the content your SEO agency wrote?",
+  "metaTitle": "Do You Own the Content Your Agency Wrote?",
+  "metaDescription": "Paying the invoice does not transfer copyright by default in India. What actually moves on exit, what an agency may reuse, and the clause that settles it.",
+  "updated": "2026-08-14",
+  "published": "2026-08-14",
+  "answer": "Not automatically. Under the Copyright Act 1957 the author is the first owner, and the exception for work made in the course of employment covers employees rather than agencies or contractors. Paying the invoice is not an assignment. Ownership passes through a written, signed assignment that names the work, the rights, the term and the territory.",
+  "takeaways": [
+    "The default is **author owns**. An agency is a contractor, so the employment exception does not reach it.",
+    "An assignment that forgets to state a period is deemed to run **five years**. One that forgets territory is presumed to cover **India only**.",
+    "An agency can legitimately reuse its process, templates and briefs forever. It cannot resell your sentences to the next client in your category.",
+    "The content is the part everybody argues about and the smallest part of what you lose at exit. The redirect map and the raw data cost more to rebuild."
+  ],
+  "sections": [
+    {
+      "h2": "The default in India is not what the invoice implies",
+      "body": [
+        "Start from the statute rather than from intuition, because intuition is wrong here. Indian law has no doctrine that hands copyright to whoever paid. The Copyright Act says [the author of a work shall be the first owner of the copyright therein](https://copyright.gov.in/documents/copyrightrules1957.pdf), subject to a short list of provisos.",
+        "One of those provisos does move ownership to the payer — the one covering work made in the course of the author's employment under a **contract of service**. That is the employment relationship. An agency you engage under a services agreement is on a *contract for* services, which is a different animal, and so is the freelance writer the agency subcontracted the piece to without telling you.",
+        "So the chain has two links, and both can break. The writer owns the article unless they assigned it to the agency. The agency owns nothing to give you unless that first assignment happened. A client who signed a solid assignment with an agency that never signed one with its writers has a clause pointing at a right nobody in the chain holds.",
+        "This is not a theoretical problem. It surfaces the day you want to move 80 articles to a new domain, syndicate them, feed them into a product, or simply stop a departing agency from recycling them."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "We are an SEO agency, not your lawyers",
+        "body": "Everything here is our working understanding of how these agreements behave in practice, written so you know which questions to ask. The clause itself is worth twenty minutes of a real IP lawyer's time — considerably less than the cost of discovering the gap at exit."
+      }
+    },
+    {
+      "h2": "The clause that settles it, and the four things it must say",
+      "body": [
+        "One sentence does most of the work: a **written, signed assignment** of all copyright in the deliverables, worldwide, perpetual and irrevocable, covering drafts and unpublished work, with a corresponding warranty that the agency has obtained the same from every contributor.",
+        "The details around it matter more than people expect, because the Act fills in defaults when a contract stays silent — and every default runs against the buyer."
+      ],
+      "table": {
+        "caption": "What the Copyright Act supplies when an assignment clause leaves something out.",
+        "head": [
+          "If the contract omits",
+          "What the Act supplies",
+          "What that costs you"
+        ],
+        "rows": [
+          [
+            "Writing and a signature",
+            "Section 19(1): an assignment is not valid unless it is in writing signed by the assignor",
+            "A verbal agreement plus a paid invoice assigns nothing at all"
+          ],
+          [
+            "The period of the assignment",
+            "Section 19(5): deemed to be five years from the date of assignment",
+            "The pillar page you commissioned in 2026 stops being yours in 2031"
+          ],
+          [
+            "The territorial extent",
+            "Section 19(6): presumed to extend within India",
+            "A brand selling into the Gulf or the US owns its copy in one market"
+          ],
+          [
+            "Identification of the work and the rights assigned",
+            "Section 19(2) requires the work, the rights, the duration and the territory to be specified",
+            "\"All content produced\" is far weaker than a schedule listing deliverables"
+          ],
+          [
+            "Anything about work not yet written",
+            "Section 18 permits assignment of future works, taking effect when the work comes into existence",
+            "Without it you re-paper the assignment every quarter"
+          ],
+          [
+            "A carve-out for unused rights",
+            "Section 19(4): rights not exercised within a year can be deemed lapsed unless the contract says otherwise",
+            "Commissioned pages that never went live are worth raising with counsel"
+          ]
+        ]
+      },
+      "bullets": [
+        "Ask for the assignment to cover **source files**, not just published pages — the working document, the outline, the research, the image files.",
+        "Ask for the **flow-down warranty**. \"The Agency warrants it has secured written assignment from every author, employee and subcontractor.\" One line, and it is the line that fixes the broken chain.",
+        "If the agency resists a perpetual worldwide assignment, ask why. A perpetual, worldwide **licence** is a reasonable negotiating position for some deliverables. Silence is not."
+      ]
+    },
+    {
+      "h2": "What an agency can legitimately reuse — and what it cannot",
+      "body": [
+        "This is where good-faith disagreements happen, because both sides are partly right. An agency that could never reuse anything would have to reinvent its own craft for every client, which nobody wants to pay for. An agency that reuses your actual pages is selling your money to your competitor.",
+        "The line sits at expression. Method, process and template are the agency's. The specific words, structure and argument produced for you are yours."
+      ],
+      "subs": [
+        {
+          "h3": "Reusable, and fairly so",
+          "bullets": [
+            "The audit checklist, the keyword-research method, the content brief template, the editorial standards and the internal linking framework.",
+            "Their own scripts, dashboards, crawl configurations and prompt libraries.",
+            "Generic craft knowledge sitting in a strategist's head. You cannot buy someone's ability to do the job.",
+            "Anonymised learnings — *\"we moved a D2C brand's non-brand traffic\"* — provided your confidentiality clause allows it and you are not identifiable from context."
+          ]
+        },
+        {
+          "h3": "Not reusable, whatever the pitch deck says",
+          "bullets": [
+            "The article, the landing page copy, the meta descriptions, the FAQ answers. The expression is the deliverable.",
+            "A **rewrite** that keeps your structure, argument order, examples and headings and swaps the nouns. That is a derivative work, not a new one.",
+            "Your data, your screenshots, your customer quotes, your pricing, your internal numbers.",
+            "Your name and results in a case study, if your contract requires consent. Most do; almost nobody checks."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "How to check rather than wonder",
+        "body": "Take three distinctive sentences from your best-performing pages and search them in quotes, six months after the relationship ends. It takes two minutes and it is the only evidence that ever settles this conversation."
+      }
+    },
+    {
+      "h2": "The right that survives the assignment",
+      "body": [
+        "Even a perfect assignment does not buy everything. Section 57 gives an author special rights that sit independently of copyright and continue after the copyright has been assigned: the right to claim authorship, and the right to restrain or claim damages for distortion, mutilation or modification of the work that would be prejudicial to their honour or reputation.",
+        "For most marketing content this is quiet. Nobody's reputation turns on a 1,200-word page about warehouse racking. It gets louder in two places, and both are common in Indian SEO work.",
+        "First, **bylines**. A ghost-written article published under your founder's name is a commercial arrangement your contract has to describe. The statute does not hand it to you by default. Second, **named experts** — the doctor, the CA, the lawyer whose credibility you are borrowing for E-E-A-T. If you commission a named contributor and then let a junior editor rewrite the substance, you have a professional problem long before you have a legal one."
+      ]
+    },
+    {
+      "h2": "What else transfers on exit, and what quietly does not",
+      "body": [
+        "The content argument absorbs all the attention and it is rarely the expensive part. Text can be rewritten. A sixteen-month Search Console history cannot.",
+        "This is the handover list we would want as a client, in rough order of what hurts most to lose. [How to leave an SEO agency without losing your work](/answers/can-i-fire-my-seo-agency) covers the sequencing; this is the inventory."
+      ],
+      "numbered": [
+        "**Top-level ownership of every property**, verified independently. In Search Console, being the verified owner via a DNS record at your own registrar is the only version that holds. Removing someone as an owner does not kill their verification token — if their token is still on your site, they can re-verify. Pull the token as well as the person.",
+        "**Raw exports before the last day.** Search Console has a rolling window, so anything you do not export is gone. Take the query and page data, the GA4 exports, and the rank-tracking history.",
+        "**The redirect map**, as a spreadsheet of old URL to new URL. Google's own guidance on moving a site is to build this mapping and keep the redirects for at least a year, and it is the single artefact most likely to live only on a departing consultant's laptop. See [301 redirects](/glossary/301-redirect) for what each row is doing.",
+        "**The keyword map** — which URL is meant to rank for what. Without it your next agency spends a month rediscovering decisions you already paid for, and [that rebuild cost](/journal/the-real-cost-of-switching-seo-agencies) is the real price of a switch.",
+        "**Content source files and image licences.** Stock photo licences are frequently held in the agency's account and are often non-transferable. Check before you inherit a site full of images you have no right to publish.",
+        "**Schema, templates and any custom CMS work**, plus the briefs and outlines for work commissioned but never published — which is exactly the material Section 19(4) makes worth naming explicitly."
+      ]
+    },
+    {
+      "h2": "Why the backlinks were never yours, and never theirs",
+      "body": [
+        "One thing on the handover list is impossible, and it is worth saying plainly so nobody negotiates for it. Nobody can assign you a backlink. It is a link on someone else's page, and that someone else is not a party to your contract.",
+        "What you can require is disclosure — a running log of every placement with URL, date and anchor text — and a warranty about how they were obtained. The links themselves stay where they are. Whether they can be switched off is a different and more revealing question, covered in [can an SEO agency remove the backlinks it built](/answers/can-an-seo-agency-remove-backlinks-they-built).",
+        "For what it is worth, we assign copyright in everything we write, worldwide and perpetual, and we hold the same assignment from every writer. That is not generosity. We sell [SEO from ₹75,000/mo](/seo) month-to-month after the first quarter with 30 days' notice, so a client who can leave cleanly is the only kind of client the model produces. An agency that keeps a hook in your content is telling you what it thinks of its own retention."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does paying for content mean I own the copyright?",
+      "a": "Not by itself in India. The author is the first owner unless the work was made under a contract of employment, and an agency or freelance writer is a contractor rather than an employee. Ownership moves only through a written, signed assignment — the invoice is evidence of payment, not of transfer."
+    },
+    {
+      "q": "What should an IP assignment clause say?",
+      "a": "That all copyright in the deliverables, including drafts and unpublished work, is assigned to you worldwide, in perpetuity and irrevocably, with the rights and the works identified. Add a warranty that the agency has secured the same assignment from every writer and subcontractor it used."
+    },
+    {
+      "q": "Can my SEO agency reuse my blog posts for another client?",
+      "a": "Not the words. It can reuse its own process, templates, briefs and checklists indefinitely, and it can describe anonymised results if your confidentiality clause permits. Republishing your article with the nouns swapped is a derivative work and is exactly what an assignment clause exists to prevent."
+    },
+    {
+      "q": "What happens to my content if I never signed an assignment?",
+      "a": "In practice you keep publishing it and nobody objects, because a dispute helps neither side. The risk shows up when you want to do something bigger — a migration, syndication, a sale of the business, or diligence for an investor. Fix it retrospectively with a short deed of assignment before it matters."
+    },
+    {
+      "q": "Do I own AI-assisted content my agency produced?",
+      "a": "Treat it exactly like anything else and assign it in writing. Authorship of machine-generated text is genuinely unsettled, so the practical protection is a contractual one: the agency warrants it holds and assigns whatever rights subsist, and indemnifies you if a third-party claim lands. Do not rely on the default."
+    },
+    {
+      "q": "What else should I get back besides the content?",
+      "a": "Verified ownership of every property, raw Search Console and analytics exports taken before the last day, the redirect map, the keyword map, content source files, image licences, and any custom schema or CMS work. The content is the easiest of these to replace."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Copyright Act, 1957 (14 of 1957)",
+      "publisher": "Copyright Office, Government of India",
+      "url": "https://copyright.gov.in/documents/copyrightrules1957.pdf"
+    },
+    {
+      "title": "Managing owners, users, and permissions",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7687615"
+    },
+    {
+      "title": "How to move a site",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+      "date": "2026-06-17"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "answers",
+      "slug": "can-an-seo-agency-remove-backlinks-they-built"
+    },
+    {
+      "type": "journal",
+      "slug": "the-real-cost-of-switching-seo-agencies"
+    },
+    {
+      "type": "glossary",
+      "slug": "301-redirect"
+    },
+    {
+      "type": "compare",
+      "slug": "agency-vs-in-house"
+    },
+    {
+      "type": "cost",
+      "slug": "content-writing-cost-india"
+    },
+    {
+      "type": "answers",
+      "slug": "can-i-fire-my-seo-agency"
+    }
+  ]
+}

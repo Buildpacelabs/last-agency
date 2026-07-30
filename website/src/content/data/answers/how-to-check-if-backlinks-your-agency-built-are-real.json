@@ -1,0 +1,275 @@
+{
+  "slug": "how-to-check-if-backlinks-your-agency-built-are-real",
+  "type": "answers",
+  "primaryKeyword": "how to check if backlinks my agency built are real",
+  "secondaryKeywords": [
+    "verify backlinks are indexed",
+    "how to spot fake link building reports",
+    "checking a link building invoice",
+    "are my paid links dofollow"
+  ],
+  "cluster": "agency-diligence",
+  "intent": "informational",
+  "h1": "How to check the backlinks your agency invoiced you for",
+  "metaTitle": "Are the Backlinks Your Agency Built Real?",
+  "metaDescription": "Six checks, ten minutes, no paid tools: live, indexed, followed, on a page that isn't orphaned, not a sitewide footer, and not resold to forty buyers.",
+  "updated": "2026-08-20",
+  "published": "2026-08-20",
+  "answer": "Ask for the exact URL of every link on the invoice, then run six checks on each: is the page live, is it indexed, is your link followed, is the page reachable from the site's own navigation, is one sitewide link being counted many times, and is the same slot sold to everyone else too.",
+  "takeaways": [
+    "Demand **exact URLs**, not domain names. \"Placement on techblog.in\" is not a deliverable you can check.",
+    "**Live and indexed are different things.** A live page Google isn't holding passes no signal at all, and it's the most common padding in a link report.",
+    "One footer link across 4,000 pages is **one** endorsement. Reported as 4,000 backlinks, it's the single biggest source of inflation.",
+    "A properly marked paid link is honest and worth nothing for ranking. That's the trade — check which one you bought.",
+    "Divide the link budget by the link count. Under about ₹5,000 a link, nobody is doing outreach."
+  ],
+  "sections": [
+    {
+      "h2": "An invoice check is not a backlink audit",
+      "body": [
+        "Analysing your backlink profile asks a broad question: what shape is this, and is any of it dangerous? That's a different job, and [how to analyse a backlink profile](/answers/what-is-a-backlink-profile) covers it.",
+        "This page asks a narrow one: did I receive the specific thing I paid for last month? It's reconciliation, the way you'd reconcile any other invoice, and it needs the agency to hand over four fields per link before you can start."
+      ],
+      "bullets": [
+        "**The exact URL of the page carrying the link** — not the domain. \"Placement secured on a DA 45 site\" is not a deliverable, it's a claim.",
+        "**The date it went live.** Links reported in March that first appeared in November were somebody else's work, or nobody's.",
+        "**Whether it was paid**, and how. You're entitled to know if the line item you funded was outreach or a rate card.",
+        "**The anchor text used.** If the agency chose exact-match commercial anchors across twenty domains, that's a footprint, and it's yours now, not theirs.",
+        "Anyone doing real outreach has this in a sheet already, because they needed it to run the campaign. The delay in producing it is itself the answer."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Total backlinks is the wrong unit",
+        "body": "Reports that lead with \"backlinks acquired\" are counting URLs, not endorsements. One site linking to you ninety times is one site's opinion. Insist the number is **referring domains**, and everything below gets easier to check."
+      }
+    },
+    {
+      "h2": "The six checks, in order",
+      "body": [
+        "Each check kills one specific way a link report gets padded, and they're ordered so the cheapest kill comes first. Ten links takes about ten minutes. Sample rather than doing all forty — if four out of ten fail, you don't need the other thirty."
+      ],
+      "table": {
+        "caption": "Six checks against a link invoice, in the order that finds problems fastest.",
+        "head": [
+          "Check",
+          "How, in under a minute",
+          "What it kills"
+        ],
+        "rows": [
+          [
+            "**1. Live**",
+            "Open the URL. Then Ctrl-F your domain name in the page source, not just on screen.",
+            "Dead URLs, and links removed after the report was screenshotted."
+          ],
+          [
+            "**2. Indexed**",
+            "Paste the exact URL after `site:` in Google.",
+            "Pages Google isn't holding — no index, no signal, no value."
+          ],
+          [
+            "**3. Followed**",
+            "In the page source, look at your link's `rel` attribute.",
+            "`nofollow`, `sponsored` and `ugc` placements counted as endorsements."
+          ],
+          [
+            "**4. Not orphaned**",
+            "Can you reach the page from the site's own menu, category or archive?",
+            "Pages built only to hold links, which nothing on the site links to."
+          ],
+          [
+            "**5. Counted once**",
+            "Open the site's homepage and any other article. Is your link on both?",
+            "One sitewide footer or sidebar link reported as thousands."
+          ],
+          [
+            "**6. Not resold**",
+            "Search a distinctive sentence from the article in quotes.",
+            "Networks selling the same slot and the same article to everyone."
+          ]
+        ]
+      },
+      "bullets": [
+        "Do them in this order. Half of what fails, fails at check two, and there's no point examining the `rel` attribute on a page Google has never indexed.",
+        "Pick the ten links at random, not the ten the agency put at the top of the list. The order in a report is never accidental."
+      ]
+    },
+    {
+      "h2": "Live is not indexed, and indexed is the one that matters",
+      "body": [
+        "This is the check most founders skip, and it's the one that most often changes the picture. A page can load perfectly in your browser and be entirely absent from Google's index — in which case the link on it does nothing for you whatsoever.",
+        "The test takes ten seconds. Paste the full URL into Google after `site:` — the operator Google documents for restricting results to a site or page. One result means it's indexed. Nothing means it isn't, and you should ask why."
+      ],
+      "bullets": [
+        "**A `noindex` tag on the article.** Some link sellers publish the piece, take the money, and keep the page out of the index deliberately so the footprint never accumulates. You paid for a page nobody counts.",
+        "**A section blocked in `robots.txt`.** Whole `/guest-posts/` directories get blocked, sometimes by accident, sometimes not.",
+        "**A domain Google has mostly dropped.** Try `site:` on the bare domain. If a site claiming 40,000 pages returns a handful, the domain is in trouble and your link is on a sinking one.",
+        "**A brand-new page.** Give it two to three weeks before concluding anything. Then check again — and hold the agency to re-checking, because that's the job you're paying for."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Recheck at 90 days, not just at delivery",
+        "body": "Bought placements decay. The seller cleans up, the site changes hands, hosting lapses, or a new editor deletes the sponsored archive. Earned coverage tends to sit there for years. Re-running check one on last quarter's list is the cheapest signal you'll get about which kind you've been buying."
+      }
+    },
+    {
+      "h2": "Followed, sponsored, and the honest link that's worth nothing",
+      "body": [
+        "Open the page source and find your link. What sits in its `rel` attribute decides whether it does anything for rankings at all.",
+        "Google's guidance is that paid placements should carry [`rel=\"sponsored\"`, with `nofollow` still acceptable](https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links). So a publisher who marks your paid link correctly is behaving well — and passing you nothing. That's the trade nobody explains when the line item is labelled \"off-page\": either the link is marked and inert, or it's unmarked and both parties are outside Google's guidelines.",
+        "Neither outcome is what the invoice implied. Which is the point of checking."
+      ],
+      "bullets": [
+        "**Check the link, then check the page.** A page-level `<meta name=\"robots\" content=\"nofollow\">` quietly neutralises every link on it, including yours.",
+        "**Check whether the link exists in the raw HTML.** If it only appears after scripts run — inside a widget or a related-posts carousel — treat it as far less reliable than an anchor in the article body.",
+        "**A nofollowed link isn't worthless in general.** Coverage on a site real buyers read sends real people. It's worthless as the thing you were invoiced for, if the invoice was about rankings.",
+        "**Anchor text is the other half.** Exact-match commercial anchors repeated across unrelated domains is the clearest footprint of a purchase — and see [paid links versus earned links](/compare/paid-links-vs-earned-links) for what that pattern costs later."
+      ]
+    },
+    {
+      "h2": "The two ways a link count gets inflated",
+      "body": [
+        "Assume the links are live, indexed and followed. The count on the invoice can still be several times the number of endorsements you actually received, in two specific ways.",
+        "Both are easy to spot once you know the shape, and both are common enough that we check them before anything else on an inherited profile."
+      ],
+      "bullets": [
+        "**Sitewide placements counted per page.** A link in a footer, sidebar, blogroll or theme template appears on every URL of that site. One deal, one endorsement — reported as 4,000 backlinks. Google names widely distributed footer and template links as link spam in its own policies, so this one is worse than merely misleading: you're paying for something that carries risk.",
+        "**Several links from one article.** Three mentions inside one guest post is one referring domain. It arrives in reports as three.",
+        "**The same article, syndicated.** Copy a distinctive sentence from the placed piece and search it inside quotes. If it appears on six sites, you bought one piece of content distributed across a network, not six placements.",
+        "**The same slot sold repeatedly.** Open the linking site's own outbound links. If a \"resources\" or \"partners\" page carries thirty unrelated commercial links, you've rented a spot in a queue, and every neighbour in that queue is a footprint you now share.",
+        "**The tell that settles it:** does the site publish anything an actual reader would come back for? Open five recent posts. Twelve unrelated industries in one blog category is an order form with a theme on top."
+      ]
+    },
+    {
+      "h2": "Reconcile the count against the price",
+      "body": [
+        "The final check is arithmetic, and it's the one that predicts the other five. Take the link portion of the retainer and divide it by the number of links delivered.",
+        "On a ₹75,000 monthly retainer, link work is realistically ₹15,000–₹22,000 of it once technical and content work is funded. Call it ₹20,000. Now read the row your invoice lands on."
+      ],
+      "table": {
+        "caption": "What the invoice implies per link, at roughly ₹20,000 of monthly link budget.",
+        "head": [
+          "Links on the invoice",
+          "Implied price per link",
+          "What that money buys in India"
+        ],
+        "rows": [
+          [
+            "2",
+            "₹10,000",
+            "Plausible. Research, a pitch, follow-ups, an editor who said yes."
+          ],
+          [
+            "5",
+            "₹4,000",
+            "Borderline. Mostly paid placements presented as guest posts."
+          ],
+          [
+            "15",
+            "₹1,333",
+            "A rate card. Nobody runs outreach at this price."
+          ],
+          [
+            "40",
+            "₹500",
+            "A network. The same slots are being sold to everyone else too."
+          ]
+        ]
+      },
+      "bullets": [
+        "A mid-size Indian retainer produces a handful of new referring domains in a good month and none in a month when a campaign didn't land. [How agencies actually get backlinks](/answers/how-do-seo-agencies-get-backlinks) works the number out from the hours.",
+        "Volume that doesn't move with effort is the tell. Exactly ten links every month, month after month, is a subscription to a supplier, not a campaign.",
+        "For what individual links genuinely cost at each tier, see [link building cost in India](/cost/link-building-cost).",
+        "If the arithmetic looks wrong, run the same diligence you'd run before hiring — [checking an agency's references](/answers/how-to-check-seo-agency-references) usually surfaces whether this is a pattern or a bad quarter."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where we stand on this",
+        "body": "We name every site before it's approached, hand over the full outreach log including the pitches that failed, and report referring domains rather than backlinks. We also cap link spend as a share of the retainer, because on most Indian sites the first ₹1,00,000 spent on technical fixes and internal linking beats the first ₹1,00,000 spent on links."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I know if a backlink is indexed?",
+      "a": "Paste the full URL of the linking page into Google after the `site:` operator. One result means Google is holding that page; nothing means it isn't, and the link passes no signal. Give brand-new pages two to three weeks before you judge, then check again rather than assuming."
+    },
+    {
+      "q": "Is a nofollow backlink worthless?",
+      "a": "Not in general — coverage on a site your buyers read sends real people, and that's worth money. It's worthless as the thing you were invoiced for if the invoice was about rankings. Google asks publishers to mark paid links as sponsored or nofollow, so a correctly marked paid link is an honest link that passes nothing."
+    },
+    {
+      "q": "Why does my report show 3,000 backlinks from one site?",
+      "a": "Almost always a sitewide placement — a footer, sidebar or template link that appears on every page of that site. It is one endorsement, not three thousand. Google's own spam policies name widely distributed footer and template links as link spam, so it carries risk as well as inflating the count."
+    },
+    {
+      "q": "How many links should a ₹75,000 retainer produce a month?",
+      "a": "A handful of new referring domains in a good month, sometimes none while a campaign is being built. Link work is roughly ₹15,000–₹22,000 of that retainer once technical and content work is paid for, and genuine outreach costs thousands of rupees per placement. Consistent double digits every month is a supplier, not a campaign."
+    },
+    {
+      "q": "Can I check my agency's links without a paid tool?",
+      "a": "Yes, for the checks that matter. Live, indexed, followed, orphaned, sitewide and resold all need only a browser, view-source and Google. Paid tools help you see history and referring-domain totals, but they can't tell you whether a page is worth linking from — that still needs you to open it."
+    },
+    {
+      "q": "What should I do if the links turn out to be bought?",
+      "a": "Check Search Console for a manual action first, because that changes everything. With no manual action, stop buying, keep the invoice trail, and let the placements decay while you publish and earn coverage. Don't rush into a disavow — it's the reflex that most often makes things worse."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qualify your outbound links to Google",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Spam policies for Google web search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "date": "2026-05-15"
+    },
+    {
+      "title": "Links report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9049606"
+    },
+    {
+      "title": "Refine Google searches",
+      "publisher": "Google Search Help",
+      "url": "https://support.google.com/websearch/answer/2466433"
+    }
+  ],
+  "related": [
+    {
+      "type": "compare",
+      "slug": "paid-links-vs-earned-links"
+    },
+    {
+      "type": "cost",
+      "slug": "link-building-cost"
+    },
+    {
+      "type": "glossary",
+      "slug": "referring-domain"
+    },
+    {
+      "type": "glossary",
+      "slug": "toxic-backlinks"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-seo-agencies-get-backlinks"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-check-seo-agency-references"
+    },
+    {
+      "type": "services",
+      "slug": "link-building-services"
+    },
+    {
+      "type": "answers",
+      "slug": "can-an-seo-agency-remove-backlinks-they-built"
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "slug": "dpdp-clauses-for-marketing-agencies",
+  "type": "answers",
+  "primaryKeyword": "dpdp act compliance for marketing agencies",
+  "secondaryKeywords": [
+    "data processor clause marketing contract india",
+    "what data does an agency hold about my customers",
+    "deletion on exit clause agency",
+    "nda and data terms with a marketing agency"
+  ],
+  "cluster": "privacy-and-consent",
+  "intent": "commercial",
+  "h1": "DPDP and your agency: the data clauses to put in the contract",
+  "metaTitle": "DPDP Clauses to Put in Your Agency Contract",
+  "metaDescription": "Your agency holds your customers' analytics, lead exports and CRM access. The processor clause, retention cap and deletion-on-exit terms to demand.",
+  "updated": "2026-08-27",
+  "published": "2026-08-27",
+  "answer": "Under India's DPDP Act you are the Data Fiduciary and your marketing agency is a Data Processor, so it may process your customers' data only under a valid contract — and the liability stays with you regardless of what that contract says. Demand purpose limitation, sub-processor disclosure, breach notification, a retention cap and verifiable deletion on exit.",
+  "takeaways": [
+    "Section 8(1) makes you responsible for processing done on your behalf **irrespective of any agreement to the contrary**. A strong contract shifts commercial risk, never statutory liability.",
+    "Section 8(2) allows you to engage a processor **only under a valid contract**. A purchase order and a WhatsApp thread is not one.",
+    "Your customers can ask you to name every processor their data reached. You cannot answer that unless your agency discloses its sub-processors — so make disclosure a term.",
+    "Deletion on exit has to name **backups, exports, shared drives, spreadsheets and phones** or it deletes nothing that matters.",
+    "This is our operating position as an agency that handles this data daily, not legal advice. Get an Indian data-protection lawyer to draft the actual clauses."
+  ],
+  "sections": [
+    {
+      "h2": "What your agency actually ends up holding",
+      "body": [
+        "Most founders picture the agency's data footprint as a login to Google Analytics. It is considerably wider than that, and the first useful exercise is writing the real list down — because you cannot draft a retention clause for data you have not enumerated.",
+        "Here is the honest inventory for a typical Indian SEO and performance engagement. Not every item applies to every agency, but every item applies to somebody's."
+      ],
+      "bullets": [
+        "**Analytics and Search Console access** — GA4 property access, event and conversion data, and in most setups a user identifier tied to a cookie. Search Console is query-level and mostly aggregate, but the linked GA4 property rarely is.",
+        "**Ad platform accounts** — Google Ads and Meta, including customer match lists you uploaded, offline conversion imports, and remarketing audiences built from your site traffic.",
+        "**Lead records** — form submissions forwarded to a shared inbox, CSV exports pulled for reporting, and the spreadsheet somebody built to reconcile CRM data with ad spend. This is the item that goes wrong most often.",
+        "**CRM access** — read access granted in month one for attribution work and never reviewed again.",
+        "**Call and WhatsApp data** — call-tracking recordings, number-pool mappings, and click-to-WhatsApp conversation exports. Recordings are the highest-sensitivity item on this list and the one nobody remembers.",
+        "**Session recordings and heatmaps** — if a CRO tool is running, someone can watch a real person type into your checkout.",
+        "**Google Business Profile** — reviews, messages, and the Q&A queue, all of which contain named individuals.",
+        "**Credentials and shared drives** — the folder of exports, screenshots and audit files that quietly accumulates for two years and gets forgotten at the end of the engagement."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Do this before you draft anything",
+        "body": "Ask your agency for a written list of every system they can access and every export they hold, with locations. It takes an organised agency an hour. The length of the pause is itself a finding, and the list is what every clause below has to bite on."
+      }
+    },
+    {
+      "h2": "You are the Data Fiduciary, and that does not move",
+      "body": [
+        "The Digital Personal Data Protection Act, 2023 uses two roles that matter here. A **Data Fiduciary** is whoever determines the purpose and means of processing — that is you, the business collecting the leads. A **Data Processor** is anyone who processes personal data on the fiduciary's behalf. Your agency is the second one.",
+        "The consequential part is section 8(1), which makes a Data Fiduciary responsible for complying with the Act in respect of any processing undertaken by it or on its behalf by a Data Processor, [irrespective of any agreement to the contrary](https://prsindia.org/files/bills_acts/bills_parliament/2023/Digital_Personal_Data_Protection_Act,_2023.pdf). Read that clause twice before you negotiate anything. It means a beautifully drafted indemnity can recover money from your agency after a bad day. It cannot make the Data Protection Board treat the breach as somebody else's.",
+        "Section 8(2) is the other half: you may engage a processor to handle personal data on your behalf for activities related to offering goods or services **only under a valid contract**. So the contract is not paperwork hygiene. It is the thing that makes the arrangement lawful in the first place — which is worth knowing if your current agency relationship runs on a scope email and a monthly invoice.",
+        "The Act's Schedule sets the ceiling for what this is worth getting right: penalties may extend to ₹250 crore for failing to take reasonable security safeguards, and ₹200 crore for failing to notify the Board and affected individuals of a breach. Those are maximums, they attach to the fiduciary's obligations, and no Indian business should plan around the assumption that they'll never be applied."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Indemnities are commercial, not statutory",
+        "body": "An indemnity is a promise to pay you back. It is not a transfer of the obligation, and it is only worth what the agency is worth — which for a twelve-person shop is not ₹250 crore. Negotiate the indemnity anyway. Do not mistake it for protection."
+      }
+    },
+    {
+      "h2": "The processor clause, term by term",
+      "body": [
+        "Six terms do the actual work. Everything else in a data annexure tends to be decoration around these."
+      ],
+      "table": {
+        "caption": "The six terms that make a marketing agency's data clause real, and how each one fails.",
+        "head": [
+          "Term",
+          "What it must say",
+          "The weak version to reject"
+        ],
+        "rows": [
+          [
+            "Purpose limitation",
+            "Personal data may be processed **only** to deliver the services in this agreement, on your documented instruction, and for no other purpose.",
+            "\"For the purposes of providing services and improving them.\" The second clause is a licence to train, benchmark and resell."
+          ],
+          [
+            "No secondary use",
+            "No aggregation into benchmarks, case studies, lookalike seeds or model training without separate written consent, named per use.",
+            "Silence. Silence defaults to whatever the agency already does."
+          ],
+          [
+            "Sub-processor disclosure",
+            "A named, current list of every third party touching the data — freelancers, offshore teams, tools — plus notice before adding one.",
+            "\"Trusted partners.\" You cannot answer a customer's access request with the phrase trusted partners."
+          ],
+          [
+            "Security measures",
+            "Named controls: MFA on every account, individual named logins, no shared passwords, encrypted storage, access removed within 48 hours of a leaver.",
+            "\"Industry-standard security measures.\" Unmeasurable, unfalsifiable, unenforceable."
+          ],
+          [
+            "Breach notification",
+            "Notify **you** without undue delay and in any case within 24 hours of becoming aware, with enough detail to let you notify the Board and affected individuals.",
+            "\"Promptly.\" You have a statutory notification to make; you need a clock, not an adverb."
+          ],
+          [
+            "Deletion on exit",
+            "Return or delete within a stated window, itemised by system, with written confirmation. See the next section.",
+            "\"Will delete client data upon termination.\" Which data, from where, by when, confirmed how?"
+          ]
+        ]
+      },
+      "bullets": [
+        "Add an **audit right**: you may ask, once a year and on notice, for evidence that the controls above are in place. Most clients never use it. Its value is in what the agency does before you ask.",
+        "Add **assistance with data-principal requests**. When a customer asks you what you hold and who you shared it with, your agency has part of the answer and a deadline is running.",
+        "Keep the data annexure separate from the NDA. An NDA protects your commercial secrets; this protects other people's personal data. They are different documents with different beneficiaries, and merging them is how the second one gets ignored.",
+        "If you are also negotiating scope and notice periods, [what should be in an SEO contract](/answers/what-should-be-in-an-seo-contract) covers the commercial half of the same document."
+      ]
+    },
+    {
+      "h2": "Retention, deletion on exit, and what deletion means for backups",
+      "body": [
+        "Section 8(7) requires a Data Fiduciary to erase personal data once consent is withdrawn or as soon as it's reasonable to assume the specified purpose is no longer being served — whichever comes first — and to cause its Data Processor to erase any personal data it was given. So retention is not a preference you can negotiate freely. It is an obligation you are pushing down the chain, and it only works if the clause is specific.",
+        "The clause that fails is the one-liner: \"the Agency shall delete all Client data upon termination.\" It fails because the data is not in one place. It is in a GA4 property you own, a Google Drive folder they own, an inbox, three laptops, a Slack export, an offboarded freelancer's Downloads folder and a backup snapshot with a 90-day rotation.",
+        "Write the clause against systems, not against the word data."
+      ],
+      "numbered": [
+        "**Live access revoked within 24 hours** of the last working day — GA4, Search Console, Ads, Business Profile, CRM, tag manager, hosting. Named individuals removed, not just the agency's shared account.",
+        "**Working files and exports deleted within 30 days**, itemised: shared drives, project management tools, spreadsheets, screenshots, call recordings.",
+        "**Backups purged on the stated rotation.** Backups cannot be selectively edited without breaking their integrity, so the honest term is: no restoration of your data from backup for any purpose, and full expiry within the stated backup cycle, with that cycle written into the contract.",
+        "**Written confirmation** signed by a named person, listing what was deleted and when. This is the deliverable. Without it you have a promise; with it you have evidence for your own file.",
+        "**A short exception list you accept in advance** — invoices, the contract, and the correspondence needed to defend a claim. These have statutory and legal-record reasons to survive, and an agency that claims to delete every trace of you is describing something it will not actually do."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The offboarding gap nobody closes",
+        "body": "The most common real-world leak is not a hacker. It is a freelance writer who left the agency eight months ago and still has a shared-drive link to your lead export. Ask specifically what happens to access when one of their people leaves, and how long it takes. Forty-eight hours is a reasonable answer. \"We'd handle it\" is not."
+      }
+    },
+    {
+      "h2": "The obligations you cannot contract away",
+      "body": [
+        "Some duties sit on the Data Fiduciary by definition, and no clause moves them. Knowing which is what stops you from over-negotiating one document and under-building the process behind it.",
+        "These stay yours, whatever your agency signs:"
+      ],
+      "bullets": [
+        "**Notice and consent.** The Act requires a notice before or alongside a consent request, telling the individual what data you're processing and why, and consent that is free, specific, informed, unconditional and unambiguous. Your agency can build the banner and the form. The obligation is yours.",
+        "**Breach notification to the Board and to affected individuals.** Section 8(6) puts that on the fiduciary. Your agency's job is to tell you fast enough that you can meet it.",
+        "**Grievance redressal.** Section 8(10) requires you to run an effective mechanism, and section 8(9) requires you to publish contact details for a person who can answer questions about how you process personal data. A shared inbox nobody reads does not qualify.",
+        "**Answering access requests.** Individuals can ask for a summary of what you hold and the identities of the fiduciaries and processors you shared it with. That is precisely why the sub-processor list in the previous section is not a nicety.",
+        "**Children's data.** The Act bars tracking, behavioural monitoring and targeted advertising directed at children. If your product touches under-18s, this constrains your remarketing setup, not your agency's paperwork.",
+        "**Deciding what you collect at all.** The cheapest compliance win in marketing is to stop collecting fields you never use. Nobody's contract will do that for you."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The delegated detail",
+        "body": "The Act says \"as may be prescribed\" in most of the operational places — the exact form of a breach notification, retention periods for specific classes of fiduciary, consent-manager registration. Those live in rules made under the Act, and they change. Anyone quoting you a fixed number should be able to show you the rule it comes from."
+      }
+    },
+    {
+      "h2": "What we delete when a client leaves, and what we keep",
+      "body": [
+        "It would be easy to end this page with a checklist and never say what we do. So, plainly, because we hold this data every day and we only take three clients a month, which makes offboarding a real event rather than a queue.",
+        "Within 24 hours of the last working day we remove our named users from your GA4, Search Console, Google Ads, Business Profile, tag manager and CRM. We do not hold accounts in our own name on your behalf — everything is created under your ownership from day one, so there is nothing for us to hand back, which is the point. Within 30 days we delete lead exports, CRM pulls, call recordings if any, and the working folder, and we send a written confirmation naming what went and when.",
+        "What we keep: invoices and the signed contract, for statutory and tax reasons. Our own aggregate performance record — traffic and lead movement by month, with no personal data and no client name attached — because we quote our own numbers publicly and we have to be able to stand behind them. And the correspondence we would need if a dispute ever arose. That is the whole list.",
+        "What we never do: use one client's lead data to build audiences for another, add your customers to any list of ours, or keep a copy \"in case you come back\". If that reads as unremarkable, good — it should be the floor. It frequently isn't, which is why [switching agencies costs more than the new retainer](/journal/the-real-cost-of-switching-seo-agencies) and why the data clause is worth an hour of your lawyer's time before you sign, not after."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "This page is not legal advice",
+        "body": "We are an agency, not a law firm. Everything here is what we've learned handling client data under Indian rules and what we put in our own contracts. For the actual clause language, and for anything involving sensitive categories, children's data or cross-border transfer, brief an Indian data-protection lawyer. It is a small bill against a ₹250 crore ceiling."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is my marketing agency a data processor under the DPDP Act?",
+      "a": "Almost certainly. The Act defines a Data Processor as anyone who processes personal data on behalf of a Data Fiduciary, and an agency running your analytics, ads and lead reporting is doing exactly that. You remain the Data Fiduciary because you decide the purpose and means."
+    },
+    {
+      "q": "Do I need a separate data processing agreement with my agency?",
+      "a": "You need the terms; whether they sit in a separate annexure or inside the master agreement is a drafting choice. Section 8(2) permits engaging a processor only under a valid contract, so the terms have to exist somewhere signed. A separate annexure is easier to update when tools change."
+    },
+    {
+      "q": "Can I hold my agency liable for a data breach?",
+      "a": "Commercially, yes — through indemnity, liability caps and insurance requirements you negotiate. Statutorily, no. Section 8(1) makes the Data Fiduciary responsible for processing carried out on its behalf irrespective of any agreement to the contrary, so regulatory exposure stays with you."
+    },
+    {
+      "q": "What should a deletion-on-exit clause actually say?",
+      "a": "Name systems and clocks: access revoked within 24 hours, working files and exports deleted within 30 days, backups expiring on a stated rotation with no restoration of your data, written confirmation signed by a named person, and a short pre-agreed exception list for invoices and contracts."
+    },
+    {
+      "q": "Does my agency need to tell me who its subcontractors are?",
+      "a": "It should, and you should make it a term. Individuals can ask you to identify the fiduciaries and processors their data was shared with, and you cannot answer that if your agency describes its freelancers and offshore team as trusted partners. Require a named list plus notice before additions."
+    },
+    {
+      "q": "What data should I simply stop giving my agency?",
+      "a": "Anything they don't need to do the work. Full CRM exports when a lead-count report would do. Raw call recordings when a transcript summary would do. Customer phone numbers when hashed match lists would do. Minimising what leaves your systems is faster and cheaper than any clause."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Digital Personal Data Protection Act, 2023 (No. 22 of 2023)",
+      "publisher": "The Gazette of India, Ministry of Law and Justice",
+      "url": "https://prsindia.org/files/bills_acts/bills_parliament/2023/Digital_Personal_Data_Protection_Act,_2023.pdf",
+      "date": "2023-08-11"
+    },
+    {
+      "title": "The Digital Personal Data Protection Bill, 2023",
+      "publisher": "PRS Legislative Research",
+      "url": "https://prsindia.org/billtrack/digital-personal-data-protection-bill-2023"
+    },
+    {
+      "title": "Access and data-restriction management",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9305587"
+    },
+    {
+      "title": "Data retention",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/7667196"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "journal",
+      "slug": "the-real-cost-of-switching-seo-agencies"
+    },
+    {
+      "type": "answers",
+      "slug": "can-i-fire-my-seo-agency"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-analytics-4"
+    },
+    {
+      "type": "services",
+      "slug": "analytics-setup-services"
+    },
+    {
+      "type": "answers",
+      "slug": "what-questions-should-i-ask-an-seo-agency"
+    },
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "journal",
+      "slug": "what-a-bad-seo-agency-actually-costs-you"
+    }
+  ]
+}

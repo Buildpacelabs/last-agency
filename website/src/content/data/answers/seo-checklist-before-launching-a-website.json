@@ -1,0 +1,281 @@
+{
+  "slug": "seo-checklist-before-launching-a-website",
+  "type": "answers",
+  "primaryKeyword": "seo checklist before launching a website",
+  "secondaryKeywords": [
+    "pre launch seo checks",
+    "staging to production seo handover",
+    "what to check before a website goes live",
+    "launch day seo qa"
+  ],
+  "cluster": "technical-launch",
+  "intent": "informational",
+  "h1": "The SEO checklist to run before a website goes live",
+  "metaTitle": "SEO Checklist Before Launching a Website",
+  "metaDescription": "Sorted by what's unrecoverable after go-live versus what's a Tuesday fix. Four checks account for nearly every launch disaster we've been called in to fix.",
+  "updated": "2026-09-14",
+  "published": "2026-09-14",
+  "answer": "Sort the checklist by recoverability. A missing meta description is a Tuesday fix; analytics that never fired on launch day is data you can never get back. Four checks catch most disasters: the robots directive, the canonical host, sitemap-to-navigation agreement, and analytics firing on the real domain.",
+  "takeaways": [
+    "The only genuinely **unrecoverable** launch mistakes are the data ones — analytics not firing, no frozen baseline, the old site never crawled and saved.",
+    "Everything technical is recoverable. It just costs weeks you'd rather not spend, on Google's schedule instead of yours.",
+    "Four checks, roughly ten minutes: `robots.txt`, the response headers, the canonical hostname, and a live conversion test. They catch most of what actually goes wrong.",
+    "Decide the canonical host and the trailing-slash rule **before** launch. Changing either afterwards means another round of redirects and another consolidation delay."
+  ],
+  "sections": [
+    {
+      "h2": "Sort the list by recoverability, not by importance",
+      "body": [
+        "Every pre-launch SEO checklist you can find online is sorted by category — technical, on-page, content, analytics. That's a useful way to write a checklist and a useless way to run a launch week, because it gives a missing alt tag the same visual weight as a `Disallow: /` that will cost you a month of indexing.",
+        "Sort by recoverability instead. Ask one question of every item: if we ship this wrong and notice in two weeks, can we get back to where we'd have been? For most of the list the answer is yes. For a small handful it's a flat no, and those are the ones that deserve a named owner before the launch date is set."
+      ],
+      "table": {
+        "caption": "Launch mistakes ranked by whether you can undo them.",
+        "head": [
+          "What ships wrong",
+          "Recoverable?",
+          "What it costs if you notice late"
+        ],
+        "rows": [
+          [
+            "Analytics not firing on the live domain",
+            "No — the data never existed",
+            "You can't reconstruct launch-week behaviour, ever. The only truly permanent loss on this list"
+          ],
+          [
+            "No frozen baseline of the old site's numbers",
+            "No",
+            "Every later argument about whether the launch hurt you is unwinnable, in both directions"
+          ],
+          [
+            "The old site's URLs and titles never exported",
+            "No, once the old build is gone",
+            "You can't diff what you never recorded, so you can't find what broke"
+          ],
+          [
+            "`Disallow: /` shipped to production",
+            "Yes",
+            "Two to four weeks of lost crawling, recovered on Google's schedule rather than yours"
+          ],
+          [
+            "Site-wide `noindex` inherited from staging",
+            "Yes, but slower",
+            "Worse than the robots.txt version — pages already indexed get removed, then have to be re-earned"
+          ],
+          [
+            "Both www and non-www returning 200",
+            "Yes",
+            "Signals split across two hosts and months of muddled consolidation"
+          ],
+          [
+            "Redirects from the old URLs missing",
+            "Yes, decreasingly",
+            "Every week they're absent, more external links point at 404s and more rankings decay"
+          ],
+          [
+            "Meta descriptions, alt text, image compression",
+            "Yes, trivially",
+            "A Tuesday. Genuinely — ship without them rather than delaying a launch"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The list most teams get backwards",
+        "body": "Launch week gets spent writing meta descriptions, and nobody is assigned the ninety seconds it takes to load `/robots.txt` on the live domain. One of those is a permanent, silent, month-long tax. The other is a form field."
+      }
+    },
+    {
+      "h2": "The four checks that catch most launch disasters",
+      "body": [
+        "Run these on the production domain in the first hour after deployment, before anyone announces anything. Between them they cover the overwhelming majority of launches we've been called in to rescue."
+      ],
+      "subs": [
+        {
+          "h3": "One — the robots directive, in all three places",
+          "body": [
+            "It can block you from three different files, and teams usually check one. Load `/robots.txt` on the live host. Run `curl -sI` against three URLs and read the headers for `X-Robots-Tag`. Then view source on three different templates and check the `<meta name=\"robots\">` tag.",
+            "The reason staging's file ends up in production is structural: [robots.txt rules live at the top-level path of each host](https://www.rfc-editor.org/rfc/rfc9309.html), so staging and production have genuinely separate files that a deploy pipeline is happy to copy over each other.",
+            "One nasty interaction worth knowing: if you block a URL in robots.txt *and* set `noindex` on it, Google never sees the noindex, because it can't crawl the page to find it. Blocked pages can still be indexed from external links. If you need something out of the index, let it be crawled. The full mechanics are on our [robots.txt page](/glossary/robots-txt)."
+          ]
+        },
+        {
+          "h3": "Two — the canonical host resolves once",
+          "body": [
+            "Request all four variants: `http://` and `https://`, with and without `www`. Three of them should return a single 301 to the fourth. If two of them return 200, you've launched two websites.",
+            "Then check the `rel=canonical` hostname on three templates. Hardcoded staging hostnames in canonical tags are quietly one of the most damaging launch bugs there is — every page tells Google the real version lives on a domain Google can't reach, and view-source looks fine unless you're specifically reading the hostname."
+          ]
+        },
+        {
+          "h3": "Three — the sitemap and the navigation agree",
+          "body": [
+            "Take the XML sitemap and assert four things about every URL in it: it returns 200, it isn't noindexed, its canonical points at itself, and a crawler can reach it from the homepage in three clicks or fewer.",
+            "Then check the reverse. Anything commercially important that appears in the sitemap but nowhere in the navigation is an orphan, and a sitemap entry is a weak substitute for an internal link. Disagreement between the two is the commonest sign that a new template silently dropped a link block."
+          ]
+        },
+        {
+          "h3": "Four — analytics fires on the real domain",
+          "body": [
+            "This is the unrecoverable one, so it gets tested rather than assumed. Confirm the measurement ID on production isn't the staging property. Confirm the tag fires on every template, including the thank-you page nobody remembers exists. Then submit a real enquiry through a live form and watch it appear.",
+            "Verify Search Console on the production property before launch, not after — verification takes minutes and the data only starts when you do it. And export your trailing-90-day organic sessions, conversions and enquiries to a spreadsheet stored outside the analytics platform, because if you end up arguing about the size of a drop, you don't want to be arguing inside a tool whose tagging also changed on launch day."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Canonical host and trailing slash: decide before, not after",
+      "body": [
+        "These two get treated as details and they're actually decisions, because reversing either one after launch means a second round of redirects and a second consolidation delay.",
+        "Pick `https` and one hostname, and be boring about it. Every internal link, every canonical tag, every sitemap entry and every hreflang reference should use that exact form. Google does prefer HTTPS pages over the equivalent HTTP page as canonical, but you shouldn't be relying on a preference when a 301 is available."
+      ],
+      "bullets": [
+        "**Trailing slash.** `/pricing` and `/pricing/` are two different URLs as far as any crawler is concerned. Pick one, make the server 301 the other, and make your framework's setting agree — Next.js, most static hosts and most CDNs each have their own default and they don't always match.",
+        "**The failure isn't dramatic, it's corrosive.** Get it wrong and you ship a site where every internal link takes an extra hop, the sitemap disagrees with the navigation, and every report is split across two rows of the same page.",
+        "**Lowercase everything.** `/Pricing` and `/pricing` are also different URLs, and case sensitivity depends on the server. Enforce lowercase at the routing layer rather than hoping.",
+        "**Decide what happens to query parameters** — filters, tracking, session IDs — before the first crawl, not after 40,000 parameter URLs are in the index. The [canonical tag](/glossary/canonical-tag) is the instrument, but the decision is a product one.",
+        "**Write the rule down.** One paragraph in the repo saying \"https, non-www, no trailing slash, lowercase\" prevents more launch bugs than any tool, because the next developer inherits the decision instead of guessing at it."
+      ]
+    },
+    {
+      "h2": "Redirects from the old site: what must exist on day one",
+      "body": [
+        "If you're replacing an existing site rather than launching a first one, this is the section that decides whether the launch is a wobble or a hole. The full method is in [the anatomy of a replatform that wiped 60% off organic traffic](/journal/the-replatform-that-killed-your-traffic); here's what has to be live on day one.",
+        "Every old URL that earned a click or an impression in Search Console, every URL with a referring domain pointing at it, every URL in the old sitemap and every URL in a crawl of the old site — deduplicated into one list. Export the Search Console history before you launch; it's a rolling window and it doesn't wait for you."
+      ],
+      "bullets": [
+        "Map each one to its closest equivalent. Bulk-redirecting everything to the homepage is worse than a 404 — Google generally treats those as soft 404s and you lose the signal anyway, plus the user.",
+        "Use server-side permanent redirects, one hop, no chains. Google's migration guidance recommends HTTP permanent redirects such as 301 or 308, and advises redirecting straight to the final destination rather than chaining.",
+        "**Keep them.** Google's own documentation on site moves says to keep redirects in place for as long as possible, generally at least a year, so the signals have time to move across. The temptation to clean up the redirect map in month three is how people lose a launch twice.",
+        "Test the whole map against staging before go-live: feed the old URL list at the staging host and assert a 301 landing on a 200 in a single hop. If you're doing this on more than a few thousand URLs, it's [a migration project rather than a launch task](/services/site-migration-seo).",
+        "Brand-new domain with no history? This section is one line: make sure a \"coming soon\" placeholder or a developer's parked page isn't already indexed on the same URLs."
+      ]
+    },
+    {
+      "h2": "The 48-hour watch list, and what a normal dip looks like",
+      "body": [
+        "Launches don't fail loudly. They fail as a chart that looks slightly wrong for three weeks and then obviously wrong in the quarterly review. Watch these in order."
+      ],
+      "numbered": [
+        "**Hour one.** The four checks above. Plus one URL Inspection in Search Console on a commercially important page, which tells you what Google actually sees rather than what your browser renders.",
+        "**Hours 2–24.** Submit the new sitemap. Watch server logs or Search Console crawl stats for 5xx responses — a new build under first-crawl load is where hosting limits surface. Check your 404 volume; a spike means the redirect map has holes.",
+        "**Day two.** Spot-check twenty old URLs by hand and confirm each returns a single 301 to a live page. Check the index coverage report for anything newly excluded.",
+        "**Days 3–14.** Nothing else changes. Resist every temptation to also update copy, re-theme templates or re-do the navigation in the same fortnight. If three things change at once, nothing that follows can be attributed to any of them."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What a normal dip looks like",
+        "body": "Any launch that changes URLs produces a wobble while Google re-crawls and re-consolidates — typically noisy for one to three weeks, recovering over roughly four to eight on a well-executed move. That's normal. What isn't normal is a near-vertical drop inside 72 hours. That shape has a cause, it's almost always robots, `noindex` or a broken redirect map, and it's on this page."
+      }
+    },
+    {
+      "h2": "What genuinely can wait until Tuesday",
+      "body": [
+        "The other half of a useful checklist is permission to launch. These are real improvements and none of them is worth delaying a date for, because every one can be fixed after go-live at exactly the same cost as before it."
+      ],
+      "bullets": [
+        "Meta descriptions. They don't affect ranking and Google rewrites them constantly anyway. Write them in week two.",
+        "Alt text on decorative images. Do it for accessibility, which is the better reason. It isn't a launch blocker.",
+        "Schema beyond the basics. Get `Organization` and `BreadcrumbList` in if they're cheap; `FAQPage`, `Product` and the rest can follow.",
+        "Image compression below the fold, and most Core Web Vitals work. Fix the largest contentful element on your two most important templates and leave the rest for a proper pass.",
+        "Blog taxonomy, category structure and tag pages. These almost always get rebuilt once you have real data on what people actually search for.",
+        "Hreflang, if you only publish in one language. Adding it wrongly is considerably worse than not having it."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "One thing that isn't on the wait list",
+        "body": "Title tags on your commercial templates. They're cheap, they're the first thing a searcher sees, and a launch that ships \"Home | Untitled\" on the pages that make money is a bad first impression on the one week you're most likely to be looked at."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What should I check before a website goes live?",
+      "a": "Four things, in the first hour on the production domain: the robots directive in all three places (robots.txt, meta robots, X-Robots-Tag), that only one host variant returns 200, that every sitemap URL is live and reachable from the navigation, and that analytics fires on the real domain including a live form submission."
+    },
+    {
+      "q": "What's the most common SEO mistake at launch?",
+      "a": "Staging's robots.txt shipping to production with Disallow: / in it. It's the most dramatic and among the least durable — usually caught within a week, costing two to four weeks of crawling. The most expensive one is quieter: analytics that never fired, because that data can't be reconstructed."
+    },
+    {
+      "q": "How long does it take to recover from a bad launch?",
+      "a": "It depends on what shipped. A robots.txt block caught in days recovers over a few weeks on Google's re-crawl schedule. A missing redirect map decays continuously until it's fixed. Lost analytics data never comes back, which is why it belongs at the top of the checklist rather than the bottom."
+    },
+    {
+      "q": "Should I use a trailing slash in my URLs?",
+      "a": "Either is fine — consistency is the whole point. /pricing and /pricing/ are different URLs to a crawler, so pick one, 301 the other, and make your framework, CDN, internal links, sitemap and canonical tags all agree. Deciding after launch means a second round of redirects."
+    },
+    {
+      "q": "Is a traffic drop after launching a new website normal?",
+      "a": "A wobble is normal on any launch that changes URLs — noisy for one to three weeks while Google re-crawls, recovering over roughly four to eight on a clean move. A near-vertical drop within 72 hours is not normal. That has a specific cause and it's usually robots, noindex or redirects."
+    },
+    {
+      "q": "Do I need to keep old redirects forever?",
+      "a": "Not forever, but far longer than most teams do. Google's site-move guidance says to keep them for as long as possible, generally at least a year, so signals have time to move to the new URLs. Cleaning up the redirect map in month three is how sites lose the same launch twice."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Introduction to robots.txt",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Robots meta tag, data-nosnippet, and X-Robots-Tag specifications",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag",
+      "date": "2026-03-24"
+    },
+    {
+      "title": "How to specify a canonical URL with rel=\"canonical\" and other methods",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "Site Moves and Migrations",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+      "date": "2026-06-17"
+    },
+    {
+      "title": "RFC 9309: Robots Exclusion Protocol",
+      "publisher": "IETF",
+      "url": "https://www.rfc-editor.org/rfc/rfc9309.html"
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "robots-txt"
+    },
+    {
+      "type": "glossary",
+      "slug": "canonical-tag"
+    },
+    {
+      "type": "journal",
+      "slug": "the-replatform-that-killed-your-traffic"
+    },
+    {
+      "type": "services",
+      "slug": "site-migration-seo"
+    },
+    {
+      "type": "compare",
+      "slug": "301-vs-302-redirect"
+    },
+    {
+      "type": "glossary",
+      "slug": "xml-sitemap"
+    },
+    {
+      "type": "answers",
+      "slug": "why-is-my-page-not-indexed-on-google"
+    },
+    {
+      "type": "answers",
+      "slug": "staging-site-indexed-by-google"
+    }
+  ]
+}

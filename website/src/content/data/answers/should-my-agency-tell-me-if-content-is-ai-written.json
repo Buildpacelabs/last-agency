@@ -1,0 +1,246 @@
+{
+  "slug": "should-my-agency-tell-me-if-content-is-ai-written",
+  "type": "answers",
+  "primaryKeyword": "should my agency tell me if content is ai written",
+  "secondaryKeywords": [
+    "ai disclosure clause marketing contract",
+    "is my agency using chatgpt for my blog",
+    "should ai written content cost less",
+    "how to tell if agency content was generated"
+  ],
+  "cluster": "agency-risk",
+  "intent": "informational",
+  "h1": "Should your agency tell you if your content is AI-written?",
+  "metaTitle": "Should Your Agency Disclose AI-Written Content?",
+  "metaDescription": "The ranking question is settled and boring. The commercial one isn't: if a deliverable took twenty minutes, disclosure is really a pricing conversation.",
+  "updated": "2026-09-02",
+  "published": "2026-09-02",
+  "answer": "Yes, at the process level: you should know which parts of the workflow are automated. The ranking question is settled — Google judges quality, not authorship. The open question is commercial. If a deliverable took twenty minutes instead of six hours, you are having a pricing conversation, not an ethics one.",
+  "takeaways": [
+    "Two arguments get had as one. \"Will this rank\" was answered in 2023. \"Am I being billed a writing rate for an editing job\" has not been.",
+    "Ask for **process-level** disclosure, not a per-article label. Which steps use tools, who reviews, and whose name is on it.",
+    "The honest saving on AI-assisted content is a margin improvement, not a different business model. Anyone quoting a 90% cut has deleted the verification step.",
+    "Per-word pricing is the thing that actually breaks. Move to per published page, or to a monthly capacity fee, and the argument mostly disappears."
+  ],
+  "sections": [
+    {
+      "h2": "The question is about the invoice, not the algorithm",
+      "body": [
+        "When a founder asks us this, they've almost always just read a blog post their agency delivered and felt something off about it. What follows is usually two questions tangled into one, and they have completely different answers.",
+        "The first is: does this hurt my rankings? That one is settled and slightly boring by now. Google's position has been authorship-neutral since 2023 — the systems reward helpful, original content regardless of how it was produced, and the spam policy targets scaled content abuse rather than automation as such. We've written the long version of that argument in [why AI-written content ranks and still gets sites killed](/journal/does-ai-written-content-still-rank), and the shorter version at [does AI content hurt SEO](/answers/does-ai-content-hurt-seo).",
+        "The second question is the one nobody answers: does your agency owe you the disclosure, and what should it do to the price? That's not an algorithm question. It's a question about what you thought you were buying."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Two different rooms",
+        "body": "The ranking argument belongs to Google and it has been decided. The billing argument belongs to you and your agency, and no search engine has an opinion on it. Keep them separate in the meeting or you'll spend an hour debating a settled point and never reach the live one."
+      }
+    },
+    {
+      "h2": "Does an agency owe you the disclosure?",
+      "body": [
+        "Our position: yes, at the level of process, and no, not per paragraph.",
+        "Per-article labelling doesn't survive contact with reality. Almost every content workflow in 2026 has a machine somewhere in it — clustering queries, drafting an outline, checking a draft for internal contradictions. A label saying \"AI-assisted\" on every deliverable would be simultaneously true, useless, and impossible to audit.",
+        "Process-level disclosure is different and entirely reasonable. You are entitled to know which steps are automated, who reviews the output, whose name is accountable, and whether every specific in the piece was checked against a source. That is a question about the service you bought, and an agency that gets defensive about it is telling you something.",
+        "There is also a reader-facing dimension, which is separate from your commercial one. Google's guidance on people-first content asks creators to consider whether [the use of automation, including AI-generation, is self-evident to visitors through disclosures or in other ways](https://developers.google.com/search/docs/fundamentals/creating-helpful-content), and to explain why automation was useful — adding those \"when it would be reasonably expected\". For a technical explainer, nobody expects it. For a first-person clinical or legal opinion, the expectation is real, and the risk of getting it wrong isn't a ranking risk. It's a credibility one."
+      ]
+    },
+    {
+      "h2": "Where we use these tools, and where we don't",
+      "body": [
+        "Since we're arguing you should demand this, here's ours, stated plainly enough to hold us to.",
+        "We use models for query clustering, competitive reading, outlines, schema, first-pass drafts in Hindi and regional languages, and adversarial QA — feeding a finished draft back in and asking what a hostile expert would attack. We don't police whether a draft was typed or generated, because policing that is theatre and the tell isn't in the prose.",
+        "What we do police is what happens after. Every number, date, price, policy name and quotation gets checked against a primary source or it comes out — deleted, not softened. A senior editor reads for position: is this what we'd say on a client call, and is there a sentence here a competitor wouldn't dare publish. And a person's name goes on it, not an \"editorial team\", because nobody signs off filler with their own name attached.",
+        "The reason we can publish that without flinching is that it doesn't change the price. Our SEO retainers start at ₹75,000/mo, or ₹40,000 for smaller sites; content and organic social runs at ₹30,000, ₹50,000 or ₹70,000 a month. Those numbers were set against verification hours, not drafting hours — which is why the arrival of cheap drafting didn't move them much."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "Where the hours went",
+        "body": "Drafting used to be expensive and checking used to be cheap. That has inverted. A human writer who invents a statistic gets fired; a model that invents one gets complimented on its fluency. Invisible errors cost more to catch than clumsy ones, which is why the realistic net saving on a properly staffed page is roughly 20–40% and not the 90% that sold the idea."
+      }
+    },
+    {
+      "h2": "The disclosure clause, written out",
+      "body": [
+        "Add this to the next contract or the next renewal. It commits an agency to nothing about tooling and everything about review, which is the part you actually care about. Adapt the wording with your own lawyer; the shape is what matters."
+      ],
+      "bullets": [
+        "**Disclosure.** The Agency will maintain, and provide to the Client on request, a written statement of where generative AI tools are used in producing deliverables under this agreement — covering at minimum research and clustering, outlining, drafting, translation, and quality assurance.",
+        "**Human review.** Every deliverable is reviewed and edited by a named individual before publication. The Agency will identify that individual for any deliverable on request.",
+        "**Verification.** Every statistic, date, price, quotation, regulation and policy reference in a deliverable is verified against a primary source before publication, and the source is recorded.",
+        "**Attribution.** Where a deliverable is published under a named author or expert, that person has read and approved it. No deliverable will be attributed to a person who has not seen it.",
+        "**Tooling is not restricted.** Nothing in this clause limits the Agency's choice of tools. It governs disclosure, review and accountability only.",
+        "**Pricing basis.** Fees are charged per published deliverable and per month of capacity, not per word."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The clause that does the real work is the fourth one",
+        "body": "Ghost-attribution is the version of this that actually creates liability. A page carrying a doctor's, lawyer's or CA's name that the named person never read is a professional problem long before it's an SEO problem — and in regulated categories in India it can be a licensing one."
+      }
+    },
+    {
+      "h2": "What should change about the price, and what shouldn't",
+      "body": [
+        "Here is the honest accounting. Some line items genuinely collapsed. Most didn't, and the ones that didn't are the expensive ones."
+      ],
+      "table": {
+        "caption": "Which parts of a content deliverable actually got cheaper, and what to do about each.",
+        "head": [
+          "Line item",
+          "Did generation make it cheaper?",
+          "What to ask for"
+        ],
+        "rows": [
+          [
+            "First draft",
+            "Yes, dramatically",
+            "More output at the same fee, or the same output for less. Pick one and ask for it explicitly"
+          ],
+          [
+            "Query research and page selection",
+            "Somewhat — clustering is now a script",
+            "Nothing on price. Ask instead why each page exists"
+          ],
+          [
+            "Verifying every specific",
+            "No. Harder than before",
+            "Nothing. This is where the hours moved, and it's what you're paying for"
+          ],
+          [
+            "Senior edit for position and argument",
+            "No",
+            "Nothing. A draft that reads like the average of page one is worth very little"
+          ],
+          [
+            "Original input — your pricing, your data, your opinion",
+            "No. Nothing can generate this for you",
+            "Nothing. Give them more of it; it's the only real moat in the deliverable"
+          ],
+          [
+            "Carrying the risk if a page is wrong",
+            "No",
+            "Nothing. Same liability, same insurance, same phone call"
+          ]
+        ]
+      },
+      "bullets": [
+        "The one thing that should change structurally is **per-word pricing**. A rate card of ₹3 a word is now a rate card for the cheapest step in the process, and it prices exactly the wrong thing. Move to a fee per published page or a monthly capacity fee. [What content actually costs in India](/cost/content-writing-cost-india) covers the arithmetic.",
+        "If an agency's costs fell and neither the fee nor the output moved, that's a fair thing to raise at renewal. Ask for it as more work rather than a discount — the discount is smaller than you think and the extra output compounds.",
+        "Be careful what you wish for on the discount. Every rupee taken out of a content retainer comes out of editing first, because drafting is already near zero. Cheap content is downstream of a pricing decision, not a tooling one."
+      ]
+    },
+    {
+      "h2": "The tells that a retainer's content is generated and unedited",
+      "body": [
+        "Detection tools don't work reliably and you shouldn't rely on them — they produce false positives on careful human writing and false negatives on lightly edited output. What does work is reading four articles in a row and looking at the shape rather than the sentences."
+      ],
+      "bullets": [
+        "**Identical architecture across every piece.** Intro, a line about what the article covers, five H2s of three paragraphs each, a summary. Human writers vary; a template doesn't.",
+        "**No specifics that could only come from your business.** No pricing, no client situation, no number anyone in your office would recognise. This is the strongest single tell and it's also the biggest lost opportunity.",
+        "**Numbers with no source, or a source that doesn't say it.** Check three. If a statistic is attributed to a study, find the study. This is where unedited output fails hardest and where it costs you most.",
+        "**Internal links that are missing, generic, or point at pages you don't have.** A person who has read your site links to your site.",
+        "**Hedging density.** \"It's important to note\", \"in the ever-changing world of\", \"whether you're a small business or a large enterprise\". Sentences that survive because nobody was willing to be wrong in public.",
+        "**No named author, or an author with no trace.** Ask who wrote it. The question is not aggressive and the pause tells you a lot.",
+        "**Publishing bursts.** Eleven pages in a day, then nothing for three weeks. Cadence follows capacity when humans are involved.",
+        "**The vocabulary folklore is unreliable.** The circulating lists of giveaway words and punctuation catch plenty of good human writers, and any competent editor strips them anyway. Judge by specificity and verifiability, not by word choice."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The check that beats all of them",
+        "body": "Pick one published article and ask your agency for the sources behind three specific claims in it. A verified page produces them in ten minutes because somebody recorded them. An unverified one produces a delay, then a plausible link that doesn't say what the sentence said."
+      }
+    },
+    {
+      "h2": "What to do if you find it",
+      "body": [
+        "Assume it's a process failure rather than fraud, because it usually is, and open accordingly. \"Walk me through how these pages are produced and who reviews them\" gets you further than an accusation, and it's the same question you'd ask about anything else on the invoice.",
+        "Then fix it in three moves. Add the disclosure clause at renewal. Change the pricing basis away from per-word. And audit what's already published — pull every page from the last two quarters, check three specifics on each, and delete or rewrite anything that fails, because a confidently wrong page keeps costing you long after the retainer ends.",
+        "If the answer is that nobody reviews anything and the volume is the product, that's not an AI problem. That's an agency that priced its offer on a saving that only exists if you skip the checking. The tooling is incidental — the same shop was shipping unedited freelance copy in 2019."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is my agency obliged to tell me if content is AI-written?",
+      "a": "Not by law in India that we're aware of, and not by any Google rule. Contractually, only if you asked for it. Our position is that process-level disclosure is a reasonable expectation of any content service — which steps are automated, who reviews, and whose name is accountable — and it belongs in the agreement."
+    },
+    {
+      "q": "Should AI-written content cost less?",
+      "a": "Somewhat, and less than you'd expect. Drafting collapsed to near zero, but verification got harder and now takes most of the hours. A realistic net saving on properly staffed content is around 20–40%. The bigger change is structural: per-word pricing now prices the cheapest step and should be replaced."
+    },
+    {
+      "q": "How can I tell if my agency used ChatGPT for my blog?",
+      "a": "Don't use a detector — they're unreliable in both directions. Read four articles in a row and look for identical structure, no specifics from your business, unsourced numbers, missing internal links and no named author. Then ask for the sources behind three claims. That request settles it faster than any tool."
+    },
+    {
+      "q": "Does Google penalise AI-generated content?",
+      "a": "Not for being AI-generated. Google's guidance has been authorship-neutral since 2023, and the March 2024 policy update shifted the focus to content created at scale primarily to rank, regardless of whether humans or machines produced it. What gets sites hit is volume without editing, not the tool."
+    },
+    {
+      "q": "What should an AI disclosure clause say?",
+      "a": "Four things: where generative tools are used across the workflow, that a named person reviews and edits every deliverable, that every specific is verified against a primary source, and that nothing is published under an expert's name unless that expert has read it. Add a line moving pricing off per-word."
+    },
+    {
+      "q": "Should the AI use be disclosed to readers on the page?",
+      "a": "Depends on the page. Google's guidance suggests adding disclosures where a reader would reasonably expect them. For a technical explainer, nobody expects it. For first-person expertise — a clinician's opinion, a lawyer's view, a case narrative — publishing it unread under a real name is the actual risk."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Creating Helpful, Reliable, People-First Content",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Spam Policies for Google Web Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "date": "2026-05-15"
+    },
+    {
+      "title": "Google Search's guidance about AI-generated content",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/blog/2023/02/google-search-and-ai-content"
+    },
+    {
+      "title": "What web creators should know about our March 2024 core update and new spam policies",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/blog/2024/03/core-update-spam-policies"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "does-ai-content-hurt-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "does-ai-written-content-still-rank"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-check-the-content-your-agency-wrote"
+    },
+    {
+      "type": "answers",
+      "slug": "do-i-own-the-content-my-seo-agency-wrote"
+    },
+    {
+      "type": "cost",
+      "slug": "content-writing-cost-india"
+    },
+    {
+      "type": "journal",
+      "slug": "is-your-agency-outsourcing-your-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "thin-content"
+    },
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    }
+  ]
+}

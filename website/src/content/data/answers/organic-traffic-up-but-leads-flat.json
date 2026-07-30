@@ -1,0 +1,258 @@
+{
+  "slug": "organic-traffic-up-but-leads-flat",
+  "type": "answers",
+  "primaryKeyword": "organic traffic is up but leads are flat",
+  "secondaryKeywords": [
+    "seo traffic increasing but no enquiries",
+    "why is seo not generating leads",
+    "traffic growth with no revenue seo",
+    "month six seo review no results"
+  ],
+  "cluster": "lead-measurement",
+  "intent": "informational",
+  "h1": "Organic traffic is up but leads are flat: the five causes, in order",
+  "metaTitle": "Organic Traffic Up But Leads Flat: 5 Causes",
+  "metaDescription": "The most common month-six conversation there is. Five causes in a fixed diagnostic order, and two of them are measurement faults rather than SEO faults.",
+  "updated": "2026-08-05",
+  "published": "2026-08-05",
+  "answer": "Five things cause it, and two of them aren't SEO problems at all. In rough order of frequency: the new traffic is informational, the leads are arriving but being recorded as Direct, the page never asks for the business, the form breaks on a real phone, or nobody is buying. Check them in that order.",
+  "takeaways": [
+    "Rule out the two **measurement** faults before you have the argument. Your agency can be doing decent work and your report can be wrong at the same time.",
+    "The fifteen-minute version: take the twenty queries that gained the most clicks this quarter and label each one buy, compare, learn or brand. If fifteen say *learn*, you have an intent problem, not a conversion problem.",
+    "Count enquiries in your CRM against organic conversions in analytics. If the CRM number is **higher**, stop debugging SEO and start debugging tracking.",
+    "Order matters because the checks get more expensive as you go down. Cause one costs fifteen minutes. Cause five costs a week of sales calls."
+  ],
+  "sections": [
+    {
+      "h2": "The five causes, ranked by how often they're the real one",
+      "body": [
+        "Sessions from organic are up 40%, the report is full of green arrows, and sales hasn't noticed anything. Both sides are usually telling the truth, which is why the meeting goes badly.",
+        "There are five explanations. They are not equally likely, and — more useful — they are not equally expensive to rule out. Work through them in this order and you'll spend an afternoon instead of a quarter."
+      ],
+      "table": {
+        "caption": "The five causes, in the order worth checking them.",
+        "head": [
+          "#",
+          "Cause",
+          "How often it's the answer",
+          "Time to rule out"
+        ],
+        "rows": [
+          [
+            "1",
+            "The clicks grew on queries that were never going to buy",
+            "Most common, by a distance",
+            "15 minutes in Search Console"
+          ],
+          [
+            "2",
+            "The leads arrived and got filed under Direct or Unassigned",
+            "Common, and usually nobody's fault",
+            "30 minutes across analytics and the CRM"
+          ],
+          [
+            "3",
+            "The page answers the question and never asks for the business",
+            "Common on blog-led growth",
+            "An hour reading your ten biggest landing pages"
+          ],
+          [
+            "4",
+            "The form or the phone link fails on a real handset",
+            "Less common, disproportionately damaging",
+            "20 minutes on your own phone, on mobile data"
+          ],
+          [
+            "5",
+            "The demand isn't there at your price",
+            "Least common, most expensive to fix",
+            "A week of honest sales conversations"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Two of these are not SEO problems",
+        "body": "Causes two and four can both be **measurement** faults: enquiries genuinely arriving and never landing in the number you're judging the agency on. Clear those two first. Firing an agency over a broken `tel:` link is an expensive way to keep the same problem."
+      }
+    },
+    {
+      "h2": "Cause one: the traffic is real and the intent is wrong",
+      "body": [
+        "This is the answer more often than the other four combined. Somebody optimised for volume, the volume arrived, and none of it was ever in the market.",
+        "You can settle it in fifteen minutes without a single tool licence."
+      ],
+      "numbered": [
+        "Open the Search Console performance report. Compare the last three months against the previous three, and sort by click difference so the biggest gainers sit at the top.",
+        "Take the top twenty gaining queries and label each one by hand: **buy**, **compare**, **learn**, or **brand**. Rough labelling is fine — you are looking for a shape, not a score.",
+        "If fifteen or more land in *learn*, you have your answer. That traffic was never going to fill in a form this quarter, and no amount of button colour will change it.",
+        "Now filter the same report to queries containing your commercial modifiers — `price`, `cost`, `near me`, `services`, `company`, `vs`, your product noun. Did that subset grow at all? If it's flat while overall clicks doubled, the campaign grew the wrong half of the site.",
+        "Finally, check the landing pages behind the gaining queries. Traffic landing on the blog while the service pages sit still is the same finding, viewed from the other end."
+      ],
+      "bullets": [
+        "Informational traffic is not worthless — it's just slow. It feeds remarketing, brand recall and eventually [topical authority](/glossary/topical-authority). It does not feed this quarter's pipeline, and it should never have been sold as if it would.",
+        "The fix is boring: point the next two months at the middle and bottom of the funnel, and set an explicit split — say 70% commercial, 30% informational — so nobody has this argument again in month nine.",
+        "If your agency can't tell you the commercial share of the clicks they added, they've been optimising a number nobody asked for. That is different from [rankings versus traffic](/compare/keyword-rankings-vs-organic-traffic), which is the argument one level up."
+      ]
+    },
+    {
+      "h2": "Cause two: the leads arrived and the report lost them",
+      "body": [
+        "Here's the check that separates *no leads* from *leads not recorded*, and it takes half an hour.",
+        "Pull every enquiry your business received in the last 90 days from the CRM, the shared inbox and the phone log. Count them. Now pull organic conversions in analytics for the same window. If the business-side number is materially bigger, you do not have an SEO problem. You have an attribution problem, and everything you decide in the next meeting will be wrong."
+      ],
+      "bullets": [
+        "**A payment gateway or booking widget on another domain.** The visitor leaves your host and comes back, the session restarts, and the sale is credited to a referral or to Direct. Google's own documentation on cross-domain measurement is explicit that without it, one person across two root domains is counted as two users and two sessions.",
+        "**A thank-you page that isn't tagged**, or a form that posts to a subdomain running a different cookie configuration. Self-referrals appear and the original organic source is lost.",
+        "**Phone and WhatsApp.** A large share of enquiries to Indian service businesses never touch a form at all. If calls aren't tracked, the entire lead channel is invisible to the tool you're using to judge the channel.",
+        "**Internal links carrying UTM parameters.** Somebody tagged a link in the site's own navigation, and every visitor who touches it gets their session re-attributed to a campaign that doesn't exist.",
+        "**Consent banners set to deny by default.** Nothing fires until a click that a lot of people never make. Traffic reported through one system and leads through another will disagree permanently."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Unassigned is a symptom, not a channel",
+        "body": "In GA4, [Unassigned is what Analytics uses when no channel rule matches the event data](https://support.google.com/analytics/answer/9756891) — and Direct is where sessions land when the source is empty. Both growing in step with organic is the classic signature of lost attribution rather than lost demand."
+      }
+    },
+    {
+      "h2": "Cause three: the page answers the question and never asks for the business",
+      "body": [
+        "The reader arrived, got exactly what they came for, and left satisfied. That's a good page and a bad asset.",
+        "This shows up as strong engagement on the article and nothing downstream: time on page fine, scroll depth fine, zero movement toward anything that costs money. It's the natural failure state of blog-led SEO, and it is genuinely the agency's fault when nobody flagged it."
+      ],
+      "bullets": [
+        "Every informational page needs **one specific next step tied to its own topic**, not a site-wide contact link in the footer. A page about GST on agency invoices should offer a GST-ready quote, not \"talk to us\".",
+        "Name the thing you want them to do and what happens next. \"Get a fixed quote in two working days\" outperforms \"Learn more\" because it removes the question the reader was actually stuck on.",
+        "Judge these pages on assisted conversions, not last click. An article that never converts directly but appears in half your winning paths is doing its job — you just have to look for it.",
+        "Check the internal links out of the article. If the only route to a service page is the top navigation, the article is a cul-de-sac wearing a headline."
+      ]
+    },
+    {
+      "h2": "Cause four: the form works fine on your laptop",
+      "body": [
+        "Rarer than the first three, and far more damaging when it happens, because it produces a perfect-looking traffic chart and a silence.",
+        "Test it yourself, on your own handset, on mobile data rather than office wifi, in the browser your customers actually use. Submit a real enquiry with a real phone number and confirm two things separately: that it reaches the inbox, and that it reaches the CRM. Those are different systems and they fail independently."
+      ],
+      "bullets": [
+        "Phone validation that rejects a `+91` prefix, or a ten-digit number with a space in it. Silent, ordinary, and it quietly kills a third of submissions.",
+        "A bot-protection widget that fails closed on older Android browsers. The user taps submit, nothing visible happens, and they leave.",
+        "A phone number rendered as text rather than a `tel:` link, so tapping it does nothing on the one device where tapping it was the whole point.",
+        "A WhatsApp link built for desktop that opens the web client on a phone and asks the visitor to scan a QR code with the phone they are holding.",
+        "The form works and nothing records it. This is the half of cause four that belongs to cause two — you can't tell them apart until call and chat enquiries are being counted."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Put a date on it",
+        "body": "Somebody in your business should submit a test enquiry through every live form, every month, and confirm it arrives in both places. It takes ten minutes. We have watched a client lose a full quarter of enquiries to a plugin update nobody was assigned to notice."
+      }
+    },
+    {
+      "h2": "Cause five: nobody is buying at your price",
+      "body": [
+        "Sometimes the queries are right, the tracking is right, the pages ask properly, the forms work — and the leads still aren't there. That's the expensive answer, because the fix isn't SEO.",
+        "The signature is specific: commercial queries are ranking and getting clicks, visitors reach the pricing page, and they stop. Sales confirms the enquiries that do arrive are real people with real problems and no budget. The channel is working; the offer isn't landing with the segment the channel brings.",
+        "Two honest sub-cases. Either the market is smaller than the keyword tool implied — search volume counts curiosity, not wallets — or your price is correct and your page hasn't justified it. The first is a strategy conversation. The second is a copy and proof problem, and it is fixable.",
+        "Either way, this is the point where a competent agency should tell you to slow the content spend rather than doubling it. If they never raise cause five, ask why not."
+      ]
+    },
+    {
+      "h2": "What to ask at the month-six review, and what a good answer sounds like",
+      "body": [
+        "Four questions. Ask them in this order and the meeting stops being about vibes."
+      ],
+      "numbered": [
+        "**\"Of the clicks we gained this quarter, what share came from commercial-intent queries?\"** A good answer is a number and the query list behind it. A bad answer is \"traffic is up\" — that's the thing you already knew.",
+        "**\"How many enquiries did the CRM record from organic, and how many did analytics?\"** A good answer gives both numbers and explains the gap. Nobody should be surprised by the question at month six.",
+        "**\"Which specific pages produced the enquiries we did get?\"** A good answer names three or four URLs and what they have in common. If the answer is a channel total, no one has looked.",
+        "**\"What number are we being measured against, and what was it on day one?\"** If this can't be answered from a document written before work started, the last six months have no scoreboard and this meeting has no verdict."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Why our guarantee settles on leads and not sessions",
+        "body": "We freeze your trailing-90-day qualified leads from organic search on day one, and if we haven't beaten that number in 90 days we keep working free until we do. Sessions would be an easier promise and a worse one — it is trivial to grow sessions with traffic that will never buy, which is cause one on this page. Tying the guarantee to leads makes causes one through four our problem instead of yours. [How the engagement runs](/seo)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is my organic traffic increasing but not converting?",
+      "a": "Usually because the new clicks are informational. Take the twenty queries that gained the most clicks this quarter and label each buy, compare, learn or brand. If most say learn, the traffic was never in the market. Before concluding that, check whether leads are arriving and being recorded as Direct."
+    },
+    {
+      "q": "How do I know if leads are being tracked properly?",
+      "a": "Count every enquiry the business received in the last 90 days — CRM, shared inbox, phone log — and compare it against organic conversions in analytics for the same window. If the business number is bigger, it's an attribution fault. Usual culprits: an off-domain payment or booking step, untracked calls, and consent settings."
+    },
+    {
+      "q": "How long should I wait before deciding SEO isn't working?",
+      "a": "Six months on a competitive keyword set, and only if the leading indicators are also flat. Impressions and average position for your target commercial queries should be moving by month three. Flat commercial impressions at month six is a real verdict; flat leads with rising commercial impressions usually is not."
+    },
+    {
+      "q": "Should I ask my agency to change keywords if leads are flat?",
+      "a": "Only after you've ruled out the measurement faults. If the commercial subset of your queries genuinely isn't growing, then yes — ask for an explicit split between commercial and informational targets for the next quarter, written down, so the same argument doesn't recur in month nine."
+    },
+    {
+      "q": "Is informational traffic useless for lead generation?",
+      "a": "No, it's just slow and it should never be sold as fast. It builds topical coverage, brand recall and remarketing pools, and it often appears in winning paths without ever converting on last click. The mistake is funding it exclusively and then judging it on this quarter's pipeline."
+    },
+    {
+      "q": "What's a reasonable conversion rate from organic traffic?",
+      "a": "It varies far too much by industry and query mix for a single benchmark to be useful. The comparison that matters is your own site, segmented: commercial-intent landing pages against informational ones. If both are near zero, look at the form. If only the informational pages are, that's expected."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Performance report (Search results): Overview and basic setup",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7576553"
+    },
+    {
+      "title": "[GA4] Default channel group",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9756891"
+    },
+    {
+      "title": "[GA4] Set up cross-domain measurement",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/10071811"
+    },
+    {
+      "title": "URL builders: Collect campaign data with custom URLs",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/10917952"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-counts-as-a-qualified-lead-from-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "search-intent"
+    },
+    {
+      "type": "compare",
+      "slug": "keyword-rankings-vs-organic-traffic"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-read-an-seo-report"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-a-good-organic-traffic-growth-rate"
+    },
+    {
+      "type": "services",
+      "slug": "conversion-rate-optimisation-services"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-you-measure-seo-success"
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "slug": "what-access-to-give-an-seo-agency",
+  "type": "answers",
+  "primaryKeyword": "what access should i give my seo agency",
+  "secondaryKeywords": [
+    "seo agency permissions checklist",
+    "what logins does an seo agency need",
+    "should i give my agency admin access",
+    "delegated access vs sharing passwords"
+  ],
+  "cluster": "agency-access",
+  "intent": "informational",
+  "h1": "What access should you give an SEO agency — property by property",
+  "metaTitle": "What Access Should You Give an SEO Agency?",
+  "metaDescription": "Every hostage situation at exit traces back to one decision on day three. The permission level to grant for each property, and the two you never hand over.",
+  "updated": "2026-08-03",
+  "published": "2026-08-03",
+  "answer": "Give delegated access, never credentials, and stay the owner of every account. In practice: Search Console full user, GA4 editor, Google Business Profile manager, Google Ads through a manager-account link, CMS editor. Never hand over your domain registrar or your hosting root — no legitimate SEO job needs either.",
+  "takeaways": [
+    "One rule generates the whole list: **you stay the owner, the agency gets a named seat inside your account.**",
+    "The two you never grant, to anyone in marketing: **domain registrar** and **hosting root**. Everything else on this page is recoverable in days. Those two aren't.",
+    "Delegated access protects you, not them. It's the only version you can revoke by yourself, in under a minute, without changing a password.",
+    "Get this right on day three and offboarding is a twenty-minute job. Get it wrong and it's a negotiation with someone who has stopped replying."
+  ],
+  "sections": [
+    {
+      "h2": "The rule that generates the whole list",
+      "body": [
+        "There is one rule, and every row of the table below falls out of it: **you own the account, the agency gets a named seat inside it.** Not your login. Not a password in a shared vault. A seat granted to their work email, at the lowest role that lets them do the job, which you can remove yourself in about ten seconds.",
+        "Almost every access mess we get called into traces back to a decision made on day three, when nobody wanted to slow the kickoff down. Someone said \"just make me admin, it's faster\", and it was faster, and eight months later the Business Profile that produces most of the phone calls sits in an account nobody at the company can open.",
+        "This is not a trust judgement about the agency you're hiring. It's a continuity decision. People leave agencies, agencies fold, and the account has to outlive both."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The ten-second test",
+        "body": "Before you grant anything, ask one question: if this relationship ended tomorrow morning, could I remove this person myself, from a screen I can log into, without needing anything from them? If the answer is no, you're about to grant the wrong thing."
+      }
+    },
+    {
+      "h2": "Property by property: the permission to grant",
+      "body": [
+        "Here is the whole list with the correct answer for each. Two things to notice: nothing here needs a shared password, and nothing here needs the agency to own anything.",
+        "The Google Business Profile row is the one people get wrong most often and the most expensive one to get wrong. A manager can edit the listing, post, reply to reviews and read the insights — everything the day-to-day work needs. What a manager cannot do is [add or remove users, or delete the profile](https://support.google.com/business/answer/3403100). That is exactly the pair of powers that turns an ordinary breakup into a month of unanswered emails."
+      ],
+      "table": {
+        "caption": "The correct permission level for each property an SEO agency touches.",
+        "head": [
+          "Property",
+          "Grant this",
+          "Not this",
+          "Why"
+        ],
+        "rows": [
+          [
+            "Google Search Console",
+            "Full user",
+            "Delegated owner",
+            "Full users see every report and can act on it. Owners can add and remove other users — that job stays with you."
+          ],
+          [
+            "Google Analytics 4",
+            "Editor",
+            "Administrator",
+            "Editor is full control of property settings. Administrator adds user management, which is the one power worth keeping."
+          ],
+          [
+            "Google Business Profile",
+            "Manager",
+            "Owner",
+            "Managers do everything operational. Owners control who else is in the profile and whether it continues to exist."
+          ],
+          [
+            "Google Ads",
+            "A link from their manager account to yours",
+            "Your login, or admin on your account",
+            "The link is requested against your customer ID and accepted by you, and you can unlink it from Access and security."
+          ],
+          [
+            "Meta — Facebook and Instagram",
+            "Partner access to named assets in your Business Manager",
+            "Admin on your Business Manager",
+            "The Page and the ad account stay in your business. Their business gets scoped access to the assets you list."
+          ],
+          [
+            "CMS — WordPress or similar",
+            "Editor",
+            "Administrator",
+            "Editor publishes and edits everything, including other people's posts. Administrator installs plugins and creates users."
+          ],
+          [
+            "Hosting and server",
+            "Nothing by default",
+            "Root, SSH, cPanel, database",
+            "Route server changes through whoever owns the server. If a scoped account is genuinely needed, close it when the task ships."
+          ],
+          [
+            "Domain registrar and DNS",
+            "Nothing, ever",
+            "Anything at all",
+            "This is the company. Read the DNS record out to them if they need one added — don't hand over the keys."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Agency-owned accounts are a red flag, not a convenience",
+        "body": "If an agency offers to create the GA4 property, the Ads account or the Business Profile under their own organisation \"to keep things simple\", the simplicity is theirs. Ask for it created under your Google account with you as the owner, then them added. Same ten minutes on day one, and it removes the entire class of problem."
+      }
+    },
+    {
+      "h2": "Why delegated access beats a shared password — for you, not for them",
+      "body": [
+        "Agencies like delegated access because it's tidy. You should like it for harder reasons than tidiness."
+      ],
+      "bullets": [
+        "**You can revoke it alone.** Removing a user is a screen you control. Changing a shared password means changing it everywhere it was reused, and you will not remember everywhere.",
+        "**Two-factor stops working properly.** A shared login needs a shared second factor, which in practice means somebody turned 2FA off or pointed it at a phone number belonging to a person who has since left.",
+        "**You lose the audit trail.** When four people use one login, every change log entry says one name. You cannot answer \"who switched the conversion tracking off on the 14th\" — and that question does come up.",
+        "**Google's recovery flows start working against you.** Account recovery goes to the recovery email and phone on file. If those are the agency's, the account is functionally theirs no matter who pays the invoice.",
+        "**It undercuts your own data commitments.** If the account holds customer personal data, \"we share one login with a vendor\" is a sentence you don't want to say out loud to a client, an auditor or an enterprise buyer's security questionnaire."
+      ]
+    },
+    {
+      "h2": "The two we won't take, and what to do if someone already has them",
+      "body": [
+        "Two accesses no marketing agency should hold: your **domain registrar** and your **hosting root**.",
+        "The registrar is the company. Whoever controls it controls the nameservers, and whoever controls the nameservers controls the website, the email, and your ability to prove to Google that any of it is yours — a Search Console domain property is verified by a DNS record, so DNS control and search ownership move together. There is no support ticket that fixes a registrar you cannot log into and cannot prove is yours.",
+        "Hosting root is the same problem with a shorter fuse. Root gets you the database, every customer record in it, and the ability to take the site down at 2am. An SEO team needs to change titles, add schema, edit robots.txt and ship redirects. None of that requires root — it requires a scoped account, or a developer who takes the ticket.",
+        "If an agency already holds either one, don't announce the fix. Do it, then tell them."
+      ],
+      "numbered": [
+        "**Registrar first.** Log in, change the password, change the recovery email and phone to yours, enable 2FA on your own device, then remove every other contact. Do this before anything else on the list.",
+        "**If the domain is registered in the agency's name** rather than your company's, this is a transfer, not a password change. Ask for the auth code in writing, expect it to take days, and stay polite while it does — you need their cooperation exactly once.",
+        "**Hosting.** Rotate root credentials and SSH keys, then re-issue scoped accounts only to people who genuinely need them.",
+        "**Google Business Profile.** If the agency is the verified owner, you request ownership through the profile. The current owner is notified by email and gets three days to respond; if nobody responds you may be able to claim it. Slow, but it works.",
+        "**Then write down who holds what**, in one document, with dates. If that document doesn't exist, the access problem is yours rather than the agency's."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Do the registrar this week",
+        "body": "Everything else on this page is recoverable in days. A domain you cannot prove is yours can take months, and occasionally never comes back. If you read one row of one table today, read the last one."
+      }
+    },
+    {
+      "h2": "What we ask for on day one, and what we decline",
+      "body": [
+        "Our own list, published so you can hold us to it. This is all of it."
+      ],
+      "numbered": [
+        "**Search Console** — full user on the domain property. If the property doesn't exist yet, we tell you which DNS record to add; you add it, and the verification stays with you.",
+        "**GA4** — editor. We build the key events and the reports; you keep the ability to remove us.",
+        "**Google Business Profile** — manager, on the profiles in scope. Never owner.",
+        "**CMS** — editor, or whatever scoped role your setup has. If your team would rather we file pull requests than touch the CMS at all, that's better, not worse.",
+        "**Google Ads**, only if we're running it — a link from our manager account to yours, requested by us and accepted by you.",
+        "**Everything else read-only** — past reports, crawl exports, backlink exports, the old agency's deliverable log. Sent as files, not as logins."
+      ],
+      "bullets": [
+        "**Registrar and DNS** — declined. Tell us the record you need and we'll give you the exact string to paste, once.",
+        "**Hosting root, SSH, cPanel, database** — declined. Server-side changes go to whoever owns the server, as a written ticket with a diff.",
+        "**Your personal Google account password** — declined, and if any agency asks for it, that's the meeting over.",
+        "**Payment methods on ad accounts** — your card, your billing profile. [Ad spend is billed to you directly with no media markup](/performance), which only works if the account is yours."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where this belongs in writing",
+        "body": "Access sits next to ownership in the contract, not in a kickoff email. [What belongs in an SEO contract](/answers/what-should-be-in-an-seo-contract) covers the clause; this page covers the settings the clause is describing."
+      }
+    },
+    {
+      "h2": "Why day three decides how bad exit day is",
+      "body": [
+        "Offboarding an agency that only ever held delegated access is a twenty-minute job. You open five screens, remove one user from each, and you're done. Nothing breaks, no data moves, no history is lost, because nothing was ever theirs to begin with.",
+        "Offboarding an agency that holds ownership is a negotiation — and the party holding the account sets the pace of it. Ask anyone who has priced [the real cost of switching SEO agencies](/journal/the-real-cost-of-switching-seo-agencies): the notice period is rarely the expensive part.",
+        "So run the access audit twice a year, and again on the day anyone leaves either side. Open each property, read the user list out loud, and remove every name you can't account for. Fifteen minutes."
+      ],
+      "bullets": [
+        "Search Console → Settings → Users and permissions",
+        "GA4 → Admin → Property access management",
+        "Google Business Profile → the profile → Managers",
+        "Google Ads → Admin → Access and security, then the Managers tab for linked manager accounts",
+        "Meta Business Manager → Settings → Partners",
+        "Your CMS user list, your registrar's contacts, your hosting accounts"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I give my SEO agency admin access?",
+      "a": "No, and they don't need it. Search Console full user, GA4 editor, Google Business Profile manager and CMS editor cover every task an SEO team actually performs. Admin roles differ from those mainly by the power to add and remove other users, which is the one thing you keep."
+    },
+    {
+      "q": "Is it safe to share my Google account password with an agency?",
+      "a": "No. You lose the audit trail, two-factor authentication stops working properly, and account recovery starts pointing at whoever set it up. Every Google product an agency needs supports named, revocable access — there is no task that requires your password."
+    },
+    {
+      "q": "What access does an SEO agency actually need?",
+      "a": "Search Console (full user), GA4 (editor), the CMS (editor), and Google Business Profile (manager) if local search is in scope. Google Ads only if they run ads, and via a manager-account link. Everything else — analytics history, crawls, backlink data — can be shared as exports."
+    },
+    {
+      "q": "My agency created my Google Business Profile. Can I get it back?",
+      "a": "Usually. Request ownership through the profile: the current owner is notified by email and has three days to respond. If they don't, you may be able to claim it. Ask them nicely first — a transfer they agree to takes minutes, and the formal route takes weeks."
+    },
+    {
+      "q": "Should I give an agency access to my hosting or domain registrar?",
+      "a": "No to both. Registrar control is control of the website, the email and your ability to verify ownership in Search Console. Hosting root is the database and every customer record in it. If a server change is needed, it goes to whoever owns the server as a written ticket."
+    },
+    {
+      "q": "How quickly can I remove an agency's access?",
+      "a": "Minutes, if you granted delegated access — one screen per property, one click each. If you shared credentials or let them own the accounts, budget days for the passwords and weeks for anything where you have to prove ownership to a support team."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Managing owners, users, and permissions",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7687615"
+    },
+    {
+      "title": "Manage your Business Profile owners & managers",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/3403100"
+    },
+    {
+      "title": "Request ownership of a Business Profile",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/4566671"
+    },
+    {
+      "title": "Access and data-restriction management",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9305587"
+    },
+    {
+      "title": "Manager Accounts: Link accounts to your manager accounts",
+      "publisher": "Google Ads Help",
+      "url": "https://support.google.com/google-ads/answer/7459601"
+    },
+    {
+      "title": "Roles and Capabilities",
+      "publisher": "WordPress.org Documentation",
+      "url": "https://wordpress.org/documentation/article/roles-and-capabilities/",
+      "date": "2024-09-20"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "journal",
+      "slug": "the-real-cost-of-switching-seo-agencies"
+    },
+    {
+      "type": "answers",
+      "slug": "can-an-seo-agency-hurt-your-website"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-business-profile"
+    },
+    {
+      "type": "services",
+      "slug": "analytics-setup-services"
+    },
+    {
+      "type": "answers",
+      "slug": "can-i-fire-my-seo-agency"
+    },
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    }
+  ]
+}

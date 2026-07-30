@@ -1,0 +1,236 @@
+{
+  "slug": "how-to-get-your-google-ads-account-back-from-an-agency",
+  "type": "answers",
+  "primaryKeyword": "how to get my google ads account back from an agency",
+  "secondaryKeywords": [
+    "agency created my google business profile how to get ownership",
+    "agency owns my ga4 property",
+    "unresponsive agency account recovery google",
+    "how to transfer a google ads account out of an mcc"
+  ],
+  "cluster": "agency-access",
+  "intent": "informational",
+  "h1": "How to reclaim accounts an agency created and controls",
+  "metaTitle": "Get Your Google Ads Account Back From an Agency",
+  "metaDescription": "Each Google asset has its own recovery path and its own failure mode. The order to work in, and the honest note on the one you may simply lose.",
+  "updated": "2026-08-11",
+  "published": "2026-08-11",
+  "answer": "Work outward from what you already control: domain and DNS first, then Search Console, then GA4, then Google Ads, then the Business Profile. Search Console you can take back yourself in an afternoon if you control DNS. The Business Profile has a formal ownership-request flow. GA4 is the one people lose.",
+  "takeaways": [
+    "There are two versions of this problem. **The agency has access to an account you own** is an afternoon. **The agency created the account under its own login** is this page.",
+    "Do the assets you can take unilaterally first. Every one you recover makes the next conversation shorter, and none of them need the agency's permission.",
+    "Google Ads unlinks cleanly from a manager account — **once you have admin on the client account**. Getting that admin seat is the actual problem.",
+    "A Business Profile has a published ownership-request route with a **three-day** window for the current owner. GA4 has no equivalent, which is why historical analytics is the asset that usually doesn't come back."
+  ],
+  "sections": [
+    {
+      "h2": "Access and ownership are two different problems",
+      "body": [
+        "In the easy version, the accounts are yours and the agency holds a user seat on them. You remove the seat, rotate the recovery email, and the whole thing takes twenty minutes. Nobody writes to us about that version.",
+        "In the hard version, the agency created the asset under its own Google account during onboarding, nobody at your company was ever added as an owner, and the person who set it up has left or stopped replying. That's the version below.",
+        "The thing that decides how bad it gets is not who paid the invoices. It's whose Google account the asset sits under, and — for anything tied to your website — who controls the domain's DNS records. Invoices are evidence in a contractual argument. They are not a login."
+      ],
+      "table": {
+        "caption": "What each Google asset takes to recover when the agency created it.",
+        "head": [
+          "Asset",
+          "What you can do alone",
+          "What needs Google or the agency",
+          "Realistic outcome"
+        ],
+        "rows": [
+          [
+            "Search Console",
+            "Verify a Domain property yourself with a DNS record",
+            "Nothing, if you control DNS",
+            "Recoverable the same day"
+          ],
+          [
+            "Google Ads account",
+            "Nothing without a user seat on it",
+            "One admin has to add you once, or unlink it from the manager account",
+            "Recoverable if anyone co-operates once. Otherwise a rebuild"
+          ],
+          [
+            "Manager account (MCC)",
+            "Nothing — it is the agency's own account",
+            "Not yours and never will be. Only the link to your account matters",
+            "Not applicable — you want the unlink, not the MCC"
+          ],
+          [
+            "Google Business Profile",
+            "File a request for ownership through Google's flow",
+            "Google adjudicates after the current owner's response window",
+            "Usually recoverable, slowly"
+          ],
+          [
+            "GA4 property",
+            "Nothing without an Administrator on it",
+            "An Administrator must add you. There is no ownership-request flow",
+            "Often lost. History cannot be moved into a new property"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The email address was the whole decision",
+        "body": "Almost all of this traces to one choice made in week one: whose Google account the agency used. A single address you control — a shared `marketing@` on your own domain — set as owner on every asset removes this page from your life entirely. Set one up before the next agency starts, and put it in the contract. See [what should be in an SEO contract](/answers/what-should-be-in-an-seo-contract)."
+      }
+    },
+    {
+      "h2": "The order to work in, and why the order changes the outcome",
+      "body": [
+        "Recovery goes outward from what you already hold. Each step either gives you standing for the next one or costs nothing when it fails, and doing them out of sequence is how founders end up begging an unresponsive agency for something they could have taken themselves an hour earlier.",
+        "There's a second reason for the order. The moment you escalate formally — a lawyer's letter, a dispute, a public complaint — informal co-operation ends. Take everything that doesn't need co-operation first."
+      ],
+      "numbered": [
+        "**Domain and DNS.** Log into your registrar. If you can't, fix that first — everything downstream depends on it, and a domain registered in an agency's name is a far worse problem than a missing Ads seat.",
+        "**Search Console.** Verify a Domain property with a DNS TXT record. You do not need the agency, and you do not need to remove anyone to start collecting your own data.",
+        "**Export everything you can still see.** If anyone at your company has any level of access to GA4 or Ads, pull the reports now, before anything escalates.",
+        "**GA4.** Ask, politely and in writing, for Administrator access on the property. This is the request most likely to be ignored, which is why it goes before the ones that annoy people.",
+        "**Google Ads.** Ask for admin access on the account. With admin you can unlink from the manager account yourself, at any time, without further help.",
+        "**Google Business Profile.** File the ownership request. It runs on Google's clock rather than the agency's, so start it early and let it tick while you do the rest.",
+        "**Everything outside Google.** Meta Business Manager, the ad accounts inside it, LinkedIn Campaign Manager, the CRM, the email tool, the rank tracker. Same principle: ownership, not access."
+      ]
+    },
+    {
+      "h2": "Google Ads: the unlink, and what the billing profile does not carry",
+      "body": [
+        "A manager account — an MCC — is not a container that owns your account. It's a link between two accounts. Your Google Ads account is a separate entity with its own ID, its own history and its own user list, and the manager account has permissions on it rather than possession of it.",
+        "That distinction is the good news. Google's own documentation says a client account's admins [can end the relationship and unlink from a manager account at any time](https://support.google.com/google-ads/answer/6139186). You do not need the agency's approval for the unlink itself.",
+        "The bad news is the precondition. You need admin access on the client account to do it, and if the agency created the account and only ever gave you read-only — or gave you nothing at all — you need exactly one person there to grant admin exactly once. That single request is the whole negotiation. Ask for it in writing, ask for admin specifically, and name the account ID so there's no ambiguity about which account you mean."
+      ],
+      "bullets": [
+        "**Ask for admin, not standard.** Standard access can run campaigns but cannot add users or change the manager-account link. Half the failed recoveries we see stalled because someone accepted standard and thought the job was done.",
+        "**Unlinking removes the manager's access, not your campaigns.** Structure, history and conversion data stay with the account, because they always belonged to the account.",
+        "**Check billing separately.** The payments profile attached to the account may be the agency's, and moving billing onto your own payments profile is a distinct change from unlinking. Do it in the same week or you'll find campaigns paused over a card you don't hold.",
+        "**A new account is the fallback, and it is not free.** You keep none of the conversion history, so automated bidding starts learning again from nothing. That cost shows up as a worse cost per lead for several weeks, not as an invoice."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Ask for the account ID first",
+        "body": "Before any of this, ask for the ten-digit Google Ads customer ID and the GA4 property ID in writing. Agencies that intend to co-operate send them in a minute. Agencies that intend to stall discover the request is complicated. It is the cheapest test available and it costs you one email."
+      }
+    },
+    {
+      "h2": "Google Business Profile: request ownership, then wait three days",
+      "body": [
+        "This one has a published route, which makes it the most predictable of the set even though it's the slowest. You search for the business on Google, request access, and Google notifies the current owner by email. The current owner then has three days to respond, and if they don't, you may be given the option to claim the profile outright.",
+        "Two things make Indian recoveries messier than that sounds. The notification goes to whichever address the agency used, which is frequently a staff account nobody has read since the person left — so the three days expire in silence, which is usually the outcome you want anyway. And the profile is often verified against a phone number or an address that belongs to the agency, so re-verification comes back to you rather than to them.",
+        "If the profile is also suspended, deal with the suspension first. Ownership of an invisible profile is worth nothing, and an ownership dispute filed on top of an open appeal muddies both. That's a different procedure — see [Google Business Profile optimisation](/services/google-business-profile-optimisation) for how the defence work runs."
+      ],
+      "bullets": [
+        "Request from an email you actually own, on your own domain. The profile you win is only as safe as the account you win it into.",
+        "Have proof of the business ready — signage photos, a utility bill, a registration certificate. Not always asked for, and painful to assemble under a deadline.",
+        "Do not create a second profile for the same location while a request is open. Duplicates get merged or removed, and the one that dies is rarely the one you'd choose.",
+        "If access is denied, the flow allows an appeal. One appeal with new evidence beats four identical resubmissions."
+      ]
+    },
+    {
+      "h2": "Search Console and GA4: one you can take, one you can't",
+      "body": [
+        "Search Console is the friendliest asset in this whole list, and almost nobody starts here. If you can add a TXT record to your domain's DNS, you can verify a Domain property today. Verifying the root domain covers its subdomains, a verified owner holds the highest permission level in the product, and a verified owner can remove other owners. You don't ask for Search Console back. You take it.",
+        "It is also not a full substitute for what you lost. Search Console holds around sixteen months of query data and it starts from the property, not from the agency's version — so verify now, even if you are still negotiating, because the clock on your own history starts the day you verify.",
+        "GA4 is the opposite. There is no published ownership-request flow. Access is granted by an Administrator on the account or property, and that is the only route in. If the property was created under the agency's Google account and nobody at your company was ever made an Administrator, Google support will not adjudicate it for you the way it will for a Business Profile.",
+        "So the GA4 question is not really how to recover the property. It's how much of the data you can pull out before the door closes, and whether anyone still inside will click one button. If someone at your company has even Viewer access, export the reports that matter this week — sessions and conversions by channel, landing-page performance, month-by-month — and keep the CSVs. See [GA4 versus Search Console](/compare/ga4-vs-search-console) for what each one can and can't tell you afterwards."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Export before you escalate",
+        "body": "The day you send a formal letter is the last day of informal access. Whatever you can still see — GA4 reports, Ads change history, conversion counts, the keyword list — export it first. Nobody has ever regretted having the CSVs and plenty of people have regretted the order they did this in."
+      }
+    },
+    {
+      "h2": "The asset you may not get back, and what a rebuild actually costs",
+      "body": [
+        "Say it plainly: the thing you most often lose is historical analytics data. GA4 data cannot be backfilled into a new property. If you create a fresh property today, its history begins today, and there is no mechanism — paid, technical or diplomatic — that moves the previous three years across.",
+        "The practical consequence isn't sentimental. It's that your year-on-year comparison is twelve months away, your seasonality read is gone, and the baseline anyone wants to measure the next agency against has to be rebuilt from what survives: Search Console query data, your CRM, your billing system, and any reports the old agency emailed you as PDFs. Those PDFs are suddenly worth keeping.",
+        "The second-order loss is the Google Ads account's own history. Account age, conversion history and the learning behind automated bidding sit with the account, not with you, so a rebuild starts cold. Expect several weeks of worse efficiency while it re-learns — a real cost, and one no invoice line ever shows.",
+        "What we do when we take over an account with pieces missing: verify Search Console on day one, stand up a clean GA4 property with conversions defined properly, and freeze a baseline from whatever data genuinely exists rather than from a number someone remembers. If the analytics history is gone, we say so in writing before the engagement starts, because a guarantee measured against a made-up baseline isn't a guarantee. See [how our analytics setup works](/services/analytics-setup-services)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can an agency legally refuse to hand over my Google Ads account?",
+      "a": "It can refuse, and Google will not settle a commercial dispute for you. What decides it is your contract and the platform's own mechanisms — an admin can unlink from a manager account at any time, and a Business Profile has a published ownership-request route. If your contract says assets transfer on termination, that's a matter for a lawyer, not for Google support."
+    },
+    {
+      "q": "My agency created my GA4 property. Can Google give me access?",
+      "a": "No. Analytics access is granted by an Administrator on the account or property, and there is no ownership-request flow equivalent to the Business Profile one. If nobody at your company was ever an Administrator and the agency won't respond, the realistic move is a new property and an honest note that history restarts."
+    },
+    {
+      "q": "How long does a Business Profile ownership request take?",
+      "a": "The current owner is notified by email and has three days to respond. If they don't, you may get the option to claim the profile. Add review time and re-verification on top, so plan for a couple of weeks rather than a couple of days — and longer if the profile is suspended, which you should fix first."
+    },
+    {
+      "q": "Should I just start a new Google Ads account instead?",
+      "a": "Sometimes yes, if the old one is small, young or badly built. You lose conversion history, so automated bidding relearns from scratch and efficiency dips for a few weeks. If the account has years of conversion data and meaningful spend behind it, one more attempt at getting admin access is worth a fortnight of patience."
+    },
+    {
+      "q": "Does paying the invoices prove I own the account?",
+      "a": "It proves you paid, which matters in a contractual argument and not at all at the login screen. Access is decided by who is listed on the account and who controls the domain. Keep the invoices — they're useful evidence — but don't expect them to open anything."
+    },
+    {
+      "q": "What should we set up so this never happens again?",
+      "a": "One Google account on your own domain, owned by you, listed as owner or Administrator on every asset before any agency touches it. Agencies get user seats on your accounts, never the reverse. Write it into the contract with a named handover list, and re-check the user list on each account once a quarter."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Manager Accounts (MCC): About Google Ads manager accounts",
+      "publisher": "Google Ads Help",
+      "url": "https://support.google.com/google-ads/answer/6139186"
+    },
+    {
+      "title": "Request ownership of a Business Profile",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/4566671"
+    },
+    {
+      "title": "Managing owners, users, and permissions",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7687615"
+    },
+    {
+      "title": "Verify your site ownership",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9008080"
+    },
+    {
+      "title": "Access and data-restriction management",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9305587"
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "the-real-cost-of-switching-seo-agencies"
+    },
+    {
+      "type": "answers",
+      "slug": "can-i-fire-my-seo-agency"
+    },
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-business-profile"
+    },
+    {
+      "type": "services",
+      "slug": "analytics-setup-services"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-get-a-suspended-google-business-profile-reinstated"
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "slug": "how-to-set-up-rank-tracking-properly",
+  "type": "answers",
+  "primaryKeyword": "how to set up rank tracking properly",
+  "secondaryKeywords": [
+    "rank tracker location and device settings",
+    "how many keywords to track",
+    "local pack tracking setup",
+    "reporting clicks alongside rankings"
+  ],
+  "cluster": "analytics-setup",
+  "intent": "informational",
+  "h1": "How to set up rank tracking that is not lying to you",
+  "metaTitle": "How to Set Up Rank Tracking Properly",
+  "metaDescription": "Device, location and personalisation settings decide the number before any SEO happens. A tracker is a measuring instrument and it needs calibrating.",
+  "updated": "2026-09-22",
+  "published": "2026-09-22",
+  "answer": "Set the tracker's location to the city you sell in rather than the country, track mobile and desktop as separate series, run logged-out and un-personalised, and decide up front whether map results count. Then track around 40 keywords chosen by revenue relevance, and never publish a position without its click count beside it.",
+  "takeaways": [
+    "Configuration moves the reported number more than a quarter of SEO work does. Two trackers pointed at the same site will disagree by ten positions if the location settings differ.",
+    "**Track 40 keywords by revenue relevance, not 400 by volume.** The extra 360 add noise, cost money and make the report unreadable.",
+    "Mobile and desktop are different result pages. Averaging them produces a number that describes neither.",
+    "Local pack results follow different rules and belong in a separate report, or in none at all.",
+    "A position with no click count beside it is decoration. The pair is what tells you whether anything happened."
+  ],
+  "sections": [
+    {
+      "h2": "The settings decide the number before your SEO does",
+      "body": [
+        "A rank tracker is not a window onto reality. It is a robot that runs a search from a configured location on a configured device and writes down what it saw. Change the configuration and the number changes, with nothing about your site having moved at all.",
+        "Google itself is explicit that results vary by time, location, language, device and personalisation. Two people searching the same phrase minutes apart in the same city can see different pages. Your tracker picks one point in that space and reports it as though it were the position — which is fine, as long as you chose the point deliberately.",
+        "These are the settings that matter, roughly in order of how much damage the wrong choice does."
+      ],
+      "table": {
+        "caption": "Tracker settings and how badly each one moves the number.",
+        "head": [
+          "Setting",
+          "What goes wrong at the default",
+          "What to set"
+        ],
+        "rows": [
+          [
+            "Location granularity",
+            "Country-level tracking for a business that sells in one city. Commercial queries in India vary heavily between Bengaluru and Patna, so the national number describes nobody.",
+            "City level, for every city you actually sell in. One national series only if you genuinely sell nationally."
+          ],
+          [
+            "Device",
+            "Desktop-only tracking on a market that is overwhelmingly mobile. The two result pages differ in layout, in how much is above the fold, and often in which pages rank.",
+            "Mobile as the primary series. Desktop as a second series, not an average of the two."
+          ],
+          [
+            "Language and country domain",
+            "Tracking `google.com` in English for a business whose buyers search on `google.co.in`, sometimes in Hinglish or a transliterated term.",
+            "The country domain and interface language your buyers use. Track regional-language variants as their own keywords."
+          ],
+          [
+            "Personalisation and login state",
+            "A logged-in or history-carrying session flatters you, because Google has learned you keep clicking your own site.",
+            "Logged-out, un-personalised. Any credible tracker does this; verify it rather than assuming."
+          ],
+          [
+            "SERP features counted",
+            "Some tools count the local pack, an [AI Overview](/glossary/ai-overviews) or a video carousel as a position; some do not. Switch tools and every number shifts.",
+            "Organic-only as the headline series, with features tracked as presence or absence."
+          ],
+          [
+            "Check frequency",
+            "Daily checks on a low-volume keyword set produce a chart made almost entirely of noise.",
+            "Weekly for most sites. Daily only where the query is volatile and the money is large."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Freeze the configuration and write it down",
+        "body": "Change a location or a device mid-campaign and the whole series before that date becomes incomparable with everything after it. Record the settings in the same document as the keyword list, and treat a change to them as a deliberate reset with a note on the chart, not a tweak."
+      }
+    },
+    {
+      "h2": "The uncomfortable bit about how the data is collected",
+      "body": [
+        "Worth knowing before you buy anything. Rank trackers work by issuing automated queries against Google at scale, and Google's own spam policies class [scraping results for rank-checking purposes as machine-generated traffic](https://developers.google.com/search/docs/essentials/spam-policies) conducted without permission.",
+        "In practice this is a rule Google does not enforce against the buyer of a tracking tool, and an entire industry runs on it. But it explains a few things that otherwise look like bugs: why tools occasionally miss days, why results can differ between two tools on the same morning, and why nobody can promise you a complete or authoritative dataset.",
+        "It also explains why Search Console is the more defensible number. It comes from Google, it covers every query your real audience searched rather than a list you guessed at, and it is free. Its weakness is that it reports a period average across all locations rather than a moment in one — which is exactly the weakness a tracker fixes. Use both, and understand which is which; [average position](/glossary/average-position) explains why the Search Console figure behaves the way it does."
+      ]
+    },
+    {
+      "h2": "Forty keywords chosen by revenue, not four hundred chosen by volume",
+      "body": [
+        "The default instinct is to track everything, because the tool prices by keyword and 500 feels thorough. It is the opposite of thorough. A 500-row report cannot be read, so it does not get read, so it becomes a monthly attachment nobody opens.",
+        "Our working number is around 40 for most businesses, and it is chosen on a different axis entirely."
+      ],
+      "numbered": [
+        "**Start from revenue, not from a keyword tool.** List the five to eight things you sell that actually pay salaries. Every tracked keyword has to belong to one of them or it does not go on the list.",
+        "**Take the two or three queries a buyer types when they are ready.** These are usually unglamorous, medium-volume and specific. They convert, which is the only property that matters here.",
+        "**Add the queries you already rank 5–20 for**, from Search Console. These are the movable ones. A keyword you rank 90th for tells you nothing weekly for the next six months.",
+        "**Add three or four brand queries**, tracked separately and never mixed into the average. Brand positions move for reasons unrelated to your SEO work and they will flatter every report you put them in.",
+        "**Add up to five you are deliberately chasing** and cannot currently win. Label them as ambitions in the report so nobody mistakes a flat line for failure.",
+        "**Stop.** If the list runs past 60, you are tracking a keyword research exercise rather than a business."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The city multiplier",
+        "body": "A local business selling in four cities needs the same 40 keywords tracked four times, which is 160 rows and a real cost. That is a genuine reason to run a bigger list. Adding 300 national keywords to a business that serves one pin code is not."
+      }
+    },
+    {
+      "h2": "Map results are a different instrument",
+      "body": [
+        "If your buyers search \"dentist near me\", the thing you care about is the map pack, and a standard rank tracker handles it badly or not at all.",
+        "The reason is that local results are ranked on relevance, distance and prominence, and distance is measured from wherever the searcher is standing. There is no single position. A clinic can sit first for someone two streets away and be absent for someone four kilometres north, at the same instant. A tracker configured to \"Pune\" resolves that to one coordinate — usually the city centroid — and reports a number that only describes people standing there.",
+        "Three honest options, in ascending order of cost:"
+      ],
+      "bullets": [
+        "**Track it as presence, not position.** In the pack or not, for each target query, from your own location. Crude, free, and enough for most single-location businesses.",
+        "**Grid tracking.** Tools that check the pack from a lattice of coordinates around your address and return a heat map. This is the correct instrument, and it is the only one that shows how far your visibility actually reaches.",
+        "**Track it not at all**, and report Google Business Profile calls, direction requests and website clicks instead. For a business with one location and a phone that rings, this is often the most honest choice available.",
+        "**Never mix pack positions into your organic average.** They are separate result sets with separate rules, and combining them produces a number with no meaning at all."
+      ]
+    },
+    {
+      "h2": "Never report a position without its clicks",
+      "body": [
+        "Position is an input. Clicks are the outcome. Reported alone, position invites exactly the wrong conclusion about half the time, because the result page keeps changing shape underneath it — an AI Overview appears, a shopping row lands, four ads push you below the fold while your reported position stays at 4.",
+        "Put the two side by side and every combination tells you something specific."
+      ],
+      "table": {
+        "caption": "Reading position and clicks together, over a 28-day comparison.",
+        "head": [
+          "Position",
+          "Clicks",
+          "What it usually means"
+        ],
+        "rows": [
+          [
+            "Improving",
+            "Rising",
+            "The work is landing. Nothing to investigate."
+          ],
+          [
+            "Improving",
+            "Flat or falling",
+            "The result page changed shape, or the query lost demand. Open it in an incognito window before you touch the page."
+          ],
+          [
+            "Flat",
+            "Rising",
+            "Usually a title or snippet improvement, or you have started ranking for more long-tail variants of the same theme."
+          ],
+          [
+            "Falling",
+            "Flat",
+            "Often a competitor entering above you on a query that was never the one sending your clicks. Check which query moved before reacting."
+          ],
+          [
+            "Falling",
+            "Falling",
+            "The only combination that is unambiguously bad, and the only one worth an emergency."
+          ]
+        ]
+      },
+      "bullets": [
+        "Pull the clicks from Search Console, filtered to the same query and the same country as the tracked row. Anything else is comparing two different populations.",
+        "Show the 28-day comparison, not the single week. Weekly noise on a medium-volume keyword routinely swings three positions with nothing behind it.",
+        "If the two disagree for two consecutive months, believe the clicks. See [keyword rankings vs organic traffic](/compare/keyword-rankings-vs-organic-traffic) for why they diverge more often than they used to."
+      ]
+    },
+    {
+      "h2": "The reports we refuse to send",
+      "body": [
+        "Rank tracking is easy to weaponise, which is why so much agency reporting is built on it. These are the four we will not produce, and the reason in each case is the same: they are technically accurate and designed to mislead.",
+        "None of it is fraud. It is selection, which is harder to argue with and does more damage."
+      ],
+      "bullets": [
+        "**The 500-keyword table with the green arrows.** Track enough keywords and some always improve. A report that shows only the movers is a report engineered to be positive in every possible month.",
+        "**Sitewide average position as a headline.** It gets worse when a site starts ranking for more things, which is to say it gets worse when the work is going well. It belongs in no summary.",
+        "**Positions with no baseline date.** \"Ranking 4th for kitchen interiors Bangalore\" means nothing without what it was in January and what it was measured on.",
+        "**Brand keywords folded into the average.** You already rank first for your own name. Including it lifts the average and reports nothing about the work you are paying for.",
+        "**Rankings without a lead count anywhere in the document.** Positions are a leading indicator. The number the invoice should be argued against is enquiries, which is why our own guarantee is written against a client's frozen trailing-90-day organic lead baseline rather than any position at all."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "What our reports actually lead with",
+        "body": "Qualified leads from organic, then clicks, then position on the named target list, then the leading indicators. Position is on page two and it always has its click count next to it. More on the shape of that in [how to read an SEO report](/journal/how-to-read-an-seo-report)."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many keywords should I track?",
+      "a": "Around 40 for a single-location or single-market business, chosen by revenue relevance rather than search volume. Multiply by the number of cities you genuinely sell in. Past about 60 rows per market the report stops being read, which makes every additional keyword worth less than nothing."
+    },
+    {
+      "q": "Why does my rank tracker show a different position from Search Console?",
+      "a": "They measure different things. A tracker records what a robot saw from one configured location, on one device, at one moment. Search Console reports the average position across every real impression, all locations, over a period. In India, city-level variation alone explains most of the gap."
+    },
+    {
+      "q": "Should I track mobile or desktop rankings?",
+      "a": "Mobile as your primary series, since that is where most Indian search happens and it is what Google indexes. Keep desktop as a separate series if you sell to office buyers. Do not average them — they are different result pages, and the average describes neither one."
+    },
+    {
+      "q": "How often should rank tracking run?",
+      "a": "Weekly for most sites. Daily checking creates a chart made mostly of noise, and it tempts everyone into reacting to a three-position wobble that means nothing. Daily is justified when a single query is worth a lot of money and the result page is genuinely volatile."
+    },
+    {
+      "q": "Can I track local pack rankings with a normal rank tracker?",
+      "a": "Poorly. Map results are ranked partly on distance from the searcher, so there is no single position — you can be first two streets away and absent four kilometres north. Either use a grid-based local tool or report Google Business Profile calls and direction requests instead."
+    },
+    {
+      "q": "Is rank tracking still worth doing?",
+      "a": "Yes, as a leading indicator on a named, small list. It moves before traffic does and it tells you which competitor took your place. What it is not is a measure of whether the engagement is working — that is leads, and no position report substitutes for one."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Why your Google Search results differ from others",
+      "publisher": "Google Search Help",
+      "url": "https://support.google.com/websearch/answer/12412910"
+    },
+    {
+      "title": "What are impressions, position, and clicks?",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7042828"
+    },
+    {
+      "title": "Spam policies for Google web search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "date": "2026-05-15"
+    },
+    {
+      "title": "Tips to improve your local ranking on Google",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/7091"
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "average-position"
+    },
+    {
+      "type": "compare",
+      "slug": "keyword-rankings-vs-organic-traffic"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-read-an-seo-report"
+    },
+    {
+      "type": "services",
+      "slug": "seo-reporting-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "compare",
+      "slug": "local-seo-vs-national-seo"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-you-measure-seo-success"
+    },
+    {
+      "type": "journal",
+      "slug": "local-seo-in-tier-2-india"
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "slug": "my-seo-agency-has-stopped-responding",
+  "type": "answers",
+  "primaryKeyword": "my seo agency has stopped responding",
+  "secondaryKeywords": [
+    "agency not sending reports",
+    "how to escalate with a marketing agency",
+    "agency went quiet what to do",
+    "paper trail before firing an agency"
+  ],
+  "cluster": "agency-risk",
+  "intent": "informational",
+  "h1": "Your SEO agency has gone quiet: a 14-day escalation ladder",
+  "metaTitle": "SEO Agency Not Responding? A 14-Day Ladder",
+  "metaDescription": "Step one is not an angry email. It's confirming your own access still works. Fourteen days of steps that either restore the relationship or build a trail.",
+  "updated": "2026-08-14",
+  "published": "2026-08-14",
+  "answer": "Don't send the angry email first. Spend days one and two confirming you still hold admin on every property and exporting your data. Days three to seven are one written escalation to a named person with a deadline. Days eight to fourteen are notice mechanics. That order protects your leverage; reversing it destroys it.",
+  "takeaways": [
+    "Anything that reads like termination before you've confirmed access hands the other side the only real power they have.",
+    "Escalate **in writing**, to a named individual, with a specific list and a date. \"Can we catch up?\" is not an escalation and creates no record.",
+    "Missed reports are bad service. Missed contractual deliverables, or refusing to return your accounts, are a different category — and the difference decides what you can withhold.",
+    "Two weeks is the right length. Long enough to be fair, short enough that you're not funding another billing cycle of silence."
+  ],
+  "sections": [
+    {
+      "h2": "Why the first email matters more than the angry one",
+      "body": [
+        "An agency goes quiet for a small number of reasons, and most of them are duller than the story you're currently telling yourself. The person running your account resigned and nobody reallocated it. The agency's own cash flow broke and the team shrank overnight. Your account became unprofitable after a scope creep nobody logged. Or the results are bad and avoidance felt easier than the call.",
+        "Only the last one is malice, and even that's usually just cowardice. Which matters, because roughly half of these are recoverable in a week — and the way you open determines whether you find out.",
+        "There's also a colder reason for the sequencing. The moment an agency believes it's being fired, its incentives change. Access requests slow down, the handover gets \"scheduled\", and the final invoice arrives with the work-in-progress attached to it. Everything in the first 48 hours below is designed to be completely unremarkable if someone reads it — because someone might."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Not legal advice",
+        "body": "This is how we'd run it commercially, from having sat on both sides of it. Contract terms, notice periods and what counts as breach are governed by what you actually signed. For anything involving money you intend to withhold, get your own lawyer to read the agreement first."
+      }
+    },
+    {
+      "h2": "Days 1–2: confirm you still own what you own",
+      "body": [
+        "Before you write anything, check that you can log in. Not that the agency says you can — that you personally can, from your own account, right now.",
+        "Do this quietly and do it first. It takes an hour and it is the entire basis of every decision that follows."
+      ],
+      "numbered": [
+        "**Search Console.** Confirm you're listed as an owner, not a full or restricted user. Only owners can add and remove other owners; a full user has view rights and some actions but can't manage people. If you're not an owner, verify the property yourself using a DNS TXT record — that route can't be revoked by anyone else's dashboard.",
+        "**Analytics.** Confirm you hold Administrator at the account level, which is the only role that can manage users. Editor is not enough; it controls settings but explicitly can't add or remove people.",
+        "**Google Business Profile.** Confirm you're a primary owner rather than a manager. If somebody else holds it, start the ownership request now — [the current owner is notified and has three days to respond](https://support.google.com/business/answer/4566671), and three days is exactly the kind of clock you want running in the background.",
+        "**Domain registrar, DNS and hosting.** The ones nobody checks until they matter. Confirm the registrar account is in your company's name and that you can receive the transfer authorisation email.",
+        "**CMS and ad accounts.** Admin on the CMS, and on Google Ads confirm your own Google account has admin access to the customer ID rather than access granted through the agency's manager account.",
+        "**Export everything you'd miss.** Search Console performance data at query and page level, an analytics export of the last 24 months, the full backlink export from whichever tool they use, every content draft, and the reports you've already been sent. Store it outside any shared drive they control."
+      ],
+      "bullets": [
+        "Do not remove their access in this window. That's a termination signal, it's premature, and it makes days three to seven impossible.",
+        "If you discover you're a user rather than an owner on something important, that discovery is now the most useful line in your escalation email. [What access an agency should have had in the first place](/answers/what-should-be-in-an-seo-contract) is a contract question, and it's usually the clause nobody read.",
+        "If you're already certain the relationship is over, the [full handover sequence for leaving an agency](/answers/can-i-fire-my-seo-agency) covers what to reclaim and in what order."
+      ]
+    },
+    {
+      "h2": "Days 3–7: one written escalation, to a named person",
+      "body": [
+        "Now you write. One email, not four. Sent to the account manager and copied to a director or founder — on a small Indian agency that's usually a name on the website; on a larger one it's whoever signed your contract.",
+        "The tone is deliberately flat. You are not expressing disappointment; you are establishing a record that a neutral third party could read in six months and understand immediately."
+      ],
+      "numbered": [
+        "**State the facts with dates.** \"The July report was due on 7 August and hasn't arrived. My emails of 2, 6 and 9 August are unanswered. Our last call was 24 June.\" Dates make an email a record.",
+        "**List what you're asking for, specifically.** The outstanding reports. A list of work completed since the last report, with live URLs. The current status of anything in progress. Confirmation of who is running the account today.",
+        "**Give a deadline that's short and reasonable.** Five working days. Name the date rather than saying \"by end of week\".",
+        "**Say what happens if the deadline passes** — one line, no drama. \"If I haven't heard from anyone by 19 August I'll assume the account is unstaffed and act accordingly.\" That sentence is doing a lot of work and none of it is threatening.",
+        "**Ask one question that requires a human.** \"Who specifically is working on this account this month, and for how many hours?\" A generated status update can't answer it. Nothing sorts a busy agency from an absent one faster."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Move the conversation to email even if they call",
+        "body": "If a phone call resolves it, excellent — then send a two-line summary of what was agreed and by when. \"Just confirming what we discussed\" is the single most useful habit in any agency relationship, and it costs nothing when things are going well."
+      }
+    },
+    {
+      "h2": "Days 8–14: notice mechanics and what you can hold back",
+      "body": [
+        "If the deadline passed in silence, the question stops being \"will they come back\" and becomes \"what does leaving cost me\". Read the contract before you write anything else. Four clauses decide everything.",
+        "Notice period and how notice must be served. Thirty days is common in India; some agreements require written notice by post or to a specific address, and an email to your account manager doesn't satisfy that. Auto-renewal, which is the clause that quietly buys them another quarter if your window has passed. The deliverables clause, which tells you what was actually promised as opposed to what was described in the pitch. And the ownership clause covering accounts, content and anything built during the term."
+      ],
+      "bullets": [
+        "**Serve notice the way the contract says**, even if it feels absurdly formal. A notice served incorrectly is a notice not served, and you'll discover that on the invoice.",
+        "**Withholding payment is a contract decision, not a mood.** Payment for work delivered is generally owed even when the relationship has collapsed. Payment for a month with no deliverables at all is a genuinely different argument. Get advice before you decide, and put the reasoning in writing either way.",
+        "**Ask for the handover in the same email as the notice**, with a list: account ownership, content drafts, the link and outreach log, keyword and tracking files, and anything hosted on their infrastructure. Give a date.",
+        "**Keep paying for anything in your own name** — hosting, tools, the domain — regardless of the dispute. The unrecoverable losses in agency breakups are almost always an expired domain or a lapsed hosting bill, not the retainer.",
+        "**Expect an overlap.** If you're moving to someone else, a two-to-four-week overlap costs less than a gap. [The real cost of switching agencies](/journal/the-real-cost-of-switching-seo-agencies) is mostly the lost quarter, not the fees."
+      ]
+    },
+    {
+      "h2": "Material breach, or just bad service?",
+      "body": [
+        "This distinction decides whether you have a commercial complaint or a contractual position. Founders routinely conflate them, then discover in a dispute that the thing they were furious about wasn't in the agreement at all."
+      ],
+      "table": {
+        "caption": "How the same silence reads depending on what was contracted.",
+        "head": [
+          "What happened",
+          "Usually just bad service",
+          "Usually a stronger position"
+        ],
+        "rows": [
+          [
+            "Reports stopped arriving",
+            "If the contract never specified a reporting frequency",
+            "If a monthly report by a stated date is a named deliverable"
+          ],
+          [
+            "Nobody replies for three weeks",
+            "If no response time was agreed anywhere",
+            "If an SLA or a named account contact is written into the agreement"
+          ],
+          [
+            "No work shipped this month",
+            "If the scope is described in vague terms like \"ongoing optimisation\"",
+            "If the scope specifies counts — articles, pages, audits — and none exist"
+          ],
+          [
+            "You've been refused account access",
+            "Rarely just bad service",
+            "Almost always serious, and worse for them if the contract assigns ownership to you"
+          ],
+          [
+            "Rankings and traffic fell",
+            "Nearly always. Outcomes aren't usually contracted",
+            "Only where a specific measurable commitment was written down"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The asymmetry worth knowing",
+        "body": "Bad results are almost never a breach — an ordinary retainer buys capacity, not outcomes. Withheld access, unreturned assets and missing named deliverables are a different matter entirely. Which is why the two-week ladder is built around access and deliverables rather than around performance."
+      }
+    },
+    {
+      "h2": "The three things to have in writing before you send a termination email",
+      "body": [
+        "Send nothing until all three exist. Each takes minutes and each one is worth a great deal if this gets uncomfortable."
+      ],
+      "numbered": [
+        "**Written confirmation of your own access**, or written evidence that you asked for it and were refused or ignored. A screenshot of the permissions screen with the date visible, plus the email thread. This is the single most valuable artefact in any agency dispute.",
+        "**A dated record of the gap.** The escalation email, the deadline, and the silence. One thread, chronological, from your own address — not a WhatsApp group where messages can vanish and nobody can prove the order.",
+        "**A copy of everything you'd need to keep working without them.** Exports, drafts, credentials, invoices, the original proposal and scope. Once notice is served, cooperation becomes optional in practice even where it isn't in principle."
+      ],
+      "body2": [],
+      "bullets": [
+        "Then write the termination email in the same flat register as the escalation: the clause you're relying on, the effective date, the handover list, and the final invoice position. No history, no grievance.",
+        "One last honest check before you send it. If the work was genuinely happening and only the communication broke, you may be about to pay a switching cost to solve a calendar problem. That doesn't excuse the silence — it's just worth knowing which problem you're buying your way out of.",
+        "And if you're replacing them, ask the next agency in the pitch what their escalation path is and who you call when the account manager goes quiet. The good ones have an answer ready, because they've been on this end of it too. Here's [how we run an engagement](/seo), including the part where you get a name and a number."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What should I do first if my SEO agency stops replying?",
+      "a": "Check your own access before you write anything. Confirm you're an owner in Search Console, an Administrator in Analytics, a primary owner on Google Business Profile, and that the domain registrar is in your company's name. Export your data. Only then escalate. Reversing that order costs you your position."
+    },
+    {
+      "q": "How long should I wait before escalating?",
+      "a": "Around a week of unanswered emails is enough. Send one written escalation to the account manager copying a director, with dated facts, a specific list of what you want, and a five-working-day deadline. Fourteen days total is fair without funding another billing cycle of silence."
+    },
+    {
+      "q": "Can I stop paying an agency that isn't responding?",
+      "a": "Not automatically, and not safely without advice. Payment for work actually delivered is generally owed regardless of how the relationship feels. A month with no deliverables at all is a different argument. Read the contract, get your own lawyer to read it too, and put your reasoning in writing."
+    },
+    {
+      "q": "Is an unresponsive agency a breach of contract?",
+      "a": "Only if responsiveness was contracted. Silence alone is usually bad service. Missing a named deliverable — a monthly report by a stated date, a specified number of articles — or refusing to return accounts you own is a materially stronger position. The distinction is decided by what you signed."
+    },
+    {
+      "q": "Should I remove their access straight away?",
+      "a": "No. Confirm your own access first and leave theirs alone until you've served notice. Revoking access early reads as termination, ends any chance of recovering the relationship, and makes the handover you still need considerably harder to get."
+    },
+    {
+      "q": "What if they won't hand back my Google Business Profile?",
+      "a": "Submit an ownership request through Google. The current owner is notified by email and has three days to respond; if they don't, you may be able to claim the profile yourself. Start that clock early — it runs in the background while the rest of the escalation proceeds."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Managing owners, users, and permissions",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7687615"
+    },
+    {
+      "title": "Request ownership of a Business Profile",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/4566671"
+    },
+    {
+      "title": "Access and data-restriction management",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9305587"
+    },
+    {
+      "title": "Do you need an SEO?",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "can-i-fire-my-seo-agency"
+    },
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "journal",
+      "slug": "the-real-cost-of-switching-seo-agencies"
+    },
+    {
+      "type": "answers",
+      "slug": "what-access-to-give-an-seo-agency"
+    },
+    {
+      "type": "journal",
+      "slug": "why-clients-fire-their-seo-agency-in-month-four"
+    },
+    {
+      "type": "answers",
+      "slug": "what-are-the-red-flags-of-a-bad-seo-agency"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-i-know-if-my-seo-agency-is-doing-a-good-job"
+    },
+    {
+      "type": "compare",
+      "slug": "agency-vs-freelancer"
+    }
+  ]
+}

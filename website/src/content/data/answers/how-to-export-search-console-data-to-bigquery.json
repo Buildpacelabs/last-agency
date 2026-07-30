@@ -1,0 +1,256 @@
+{
+  "slug": "how-to-export-search-console-data-to-bigquery",
+  "type": "answers",
+  "primaryKeyword": "how to export search console data to bigquery",
+  "secondaryKeywords": [
+    "gsc bulk export setup",
+    "search console 1000 row limit workaround",
+    "bigquery cost for search console data",
+    "unsampled query data search console"
+  ],
+  "cluster": "analytics-setup",
+  "intent": "informational",
+  "h1": "How to get unsampled Search Console data out via BigQuery",
+  "metaTitle": "Export Search Console Data to BigQuery",
+  "metaDescription": "Twenty minutes to set up. The honest part is the running cost: what a mid-size Indian site pays per month, and the traffic level below which to skip it.",
+  "updated": "2026-09-22",
+  "published": "2026-09-22",
+  "answer": "Search Console's bulk data export writes your performance data to BigQuery every day, with no 1,000-row table cap and no 16-month cut-off from the day you switch it on. Setup takes about twenty minutes. The step that trips almost everyone is granting the export service account two roles on the project, not one.",
+  "takeaways": [
+    "The export carries everything Search Console has for your property except anonymised queries — one row per URL, query, country, device and search appearance, per day.",
+    "There is no backfill. The clock starts the day you configure it, which is the single best argument for switching it on before you need it.",
+    "Set a partition expiration during setup. Without one the tables grow forever, and storage is the only line on the bill that compounds.",
+    "Below roughly a thousand clicks a month the export answers questions you don't have. The interface isn't hiding anything from you yet."
+  ],
+  "sections": [
+    {
+      "h2": "What the export gives you that the interface can't",
+      "body": [
+        "The Search Console performance report is a good tool wearing a small window. The table view stops at 1,000 rows, the query and page dimensions can't be crossed with each other in the interface, and everything older than sixteen months is gone.",
+        "The bulk export removes all three constraints at once. It contains all the performance data available to Search Console for your property, [with the exception of anonymised queries](https://support.google.com/webmasters/answer/12918484) — the rare-query rows Google withholds for privacy, which arrive flagged rather than absent, so you can at least see how much you're missing.",
+        "You get three tables, partitioned by date."
+      ],
+      "table": {
+        "caption": "The three tables the bulk data export creates in your BigQuery dataset.",
+        "head": [
+          "Table",
+          "One row per",
+          "What you use it for"
+        ],
+        "rows": [
+          [
+            "`searchdata_site_impression`",
+            "Query, country, device, search type, per day — aggregated across the whole property",
+            "Site-level query trends and brand versus non-brand splits. Smaller, cheaper to scan."
+          ],
+          [
+            "`searchdata_url_impression`",
+            "URL and query, plus country, device and search-appearance flags, per day",
+            "Everything interesting: cannibalisation, page-level decay, the long tail. Also the big one."
+          ],
+          [
+            "`ExportLog`",
+            "Successful export event",
+            "Checking the pipeline actually ran. The first thing to look at when a dashboard goes flat."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "There is no backfill",
+        "body": "The export starts producing data after you configure it — the first run lands within 48 hours — and it will never fill in the past. Anything before that day has to come out of the Search Console API, in 25,000-row chunks, before the sixteen-month window rolls past it. This is the reason to set it up on a quiet Tuesday rather than the day someone asks for a two-year query trend."
+      }
+    },
+    {
+      "h2": "The setup, step by step",
+      "body": [
+        "You need to be an owner on the Search Console property and have permission to create resources in a Google Cloud project. Budget twenty minutes if both are true and a week if you have to ask someone in IT for the second one."
+      ],
+      "numbered": [
+        "In Google Cloud, create a project or pick an existing one. Note the **project ID**, not the project name — they're different, and using the name is the second most common failure here.",
+        "Enable the **BigQuery API** and the **BigQuery Storage API** on that project.",
+        "In IAM, add the service account `search-console-data-export@system.gserviceaccount.com` as a principal.",
+        "Grant it [both BigQuery Job User and BigQuery Data Editor](https://support.google.com/webmasters/answer/12917675), at the **project** level. This is the step everyone gets wrong: people grant one role, or grant them on a dataset that doesn't exist yet. Two roles, on the project.",
+        "In Search Console, open Settings, then Bulk data export. Enter the project ID and a dataset name.",
+        "Choose the dataset location. Pick the region you'll actually query from and pick it carefully — you can't move a dataset afterwards without recreating the whole export.",
+        "Save, and wait up to 48 hours for the first export. Check `ExportLog` to confirm it ran rather than assuming.",
+        "Set a **partition expiration** on both `searchdata_` tables. The minimum is 14 days; most sites want somewhere between 18 and 36 months. Skip this and the tables accumulate forever."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Don't touch the schema",
+        "body": "Adding a column to an exported table breaks the next export. If you want derived fields — a brand flag, a page-type label, a cleaned query — build them in a separate table or a view that reads from the export. Never in the export tables themselves."
+      }
+    },
+    {
+      "h2": "What it costs, in rupees",
+      "body": [
+        "This is the part the setup guides skip, and it's the only part with a recurring number attached. Two lines drive it: how much data you keep, and how much data your queries read.",
+        "Google's free tier covers [1 TiB of querying and 10 GiB of storage per month](https://docs.cloud.google.com/free/docs/free-cloud-features), which is more generous than it sounds. Most Indian sites we see never leave it. The rupee figures below are our estimates from that arithmetic, not a quote — per-unit prices are published by Google and they change, and a single careless query can cost more than a year of storage."
+      ],
+      "table": {
+        "caption": "Estimated monthly BigQuery cost for a Search Console export, by site size. Estimates, not quotes.",
+        "head": [
+          "Site size",
+          "What the export produces",
+          "Realistic monthly cost"
+        ],
+        "rows": [
+          [
+            "Under ~2,000 clicks/mo, a few hundred URLs",
+            "Well inside 10 GiB even after two years. Queries scan megabytes.",
+            "**₹0.** You will not leave the free tier, and honestly you may not need the export at all."
+          ],
+          [
+            "~20,000–50,000 clicks/mo, a few thousand URLs",
+            "Storage passes 10 GiB somewhere in year one or two if you never expire partitions. Query volume stays small if you filter by date.",
+            "**₹0–₹300.** Set an 18-month partition expiry and it usually stays at zero."
+          ],
+          [
+            "100,000+ clicks/mo, ecommerce or marketplace scale",
+            "The URL-impression table fans out fast — every URL × query × country × device combination is a row. Tens of GiB a year.",
+            "**₹500–₹5,000.** The spread is entirely about query discipline, not about your traffic."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Storage is predictable. Queries are not.** A `SELECT *` across every partition of a large `searchdata_url_impression` table, run by someone building a dashboard, can burn a meaningful share of a month's free allowance in one afternoon.",
+        "**Always filter on `data_date` first.** The tables are partitioned by it, so a date filter is what stops BigQuery reading years of data to answer a question about last month.",
+        "**Materialise the things you look at weekly.** A scheduled query that writes a small summary table once a day is cheaper than a Looker Studio dashboard that re-queries the raw table every time someone opens it — which is the single most common way an SEO team generates a surprise bill.",
+        "**Use the byte estimate.** The BigQuery editor tells you how much a query will scan before you run it. Look at it once and the habit sticks."
+      ]
+    },
+    {
+      "h2": "The traffic level below which this isn't worth doing",
+      "body": [
+        "We'll say the unhelpful-to-us thing: most sites that ask us to set this up don't need it. The export solves a truncation problem, and you have to be big enough to be truncated.",
+        "Three tests, and you need at least two to clear the bar:"
+      ],
+      "numbered": [
+        "**Does your query table hit 1,000 rows in the last three months?** Open the performance report, set the range to 90 days, and look at the query list. If it comfortably fits, nothing is being hidden from you and the export changes nothing.",
+        "**Do you have more than a few hundred URLs earning impressions?** Page-level decay analysis is the strongest reason to do this, and it needs a long tail to be worth analysing. Forty pages you can read one by one.",
+        "**Will anyone actually write SQL against it?** This is the real filter. An export nobody queries is a dataset with a storage bill. If your team's analysis ceiling is a spreadsheet export, spend the twenty minutes somewhere else."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The rough threshold",
+        "body": "Around 10,000 clicks a month, or a thousand-plus URLs earning impressions, is where the interface starts hiding things that change decisions. Between 1,000 and 10,000 it's a judgement call — switch it on anyway if you expect to grow, because the missing backfill is the one thing you can never buy back."
+      }
+    },
+    {
+      "h2": "The three analyses that pay for it",
+      "body": [
+        "Everything below is impossible or painful in the interface, and straightforward once the data is in a table. These are the three we run first on any new account with an export."
+      ],
+      "subs": [
+        {
+          "h3": "Query-level cannibalisation",
+          "body": [
+            "Group `searchdata_url_impression` by query, count distinct URLs receiving impressions, and keep the queries where that count is above two and the click share is split rather than dominated by one page. That list is your [keyword cannibalisation](/glossary/keyword-cannibalization) backlog, ranked by how much traffic is actually at stake — which is the ranking the interface can't give you, because it won't cross query and page.",
+            "Shape: `SELECT query, COUNT(DISTINCT url) AS urls, SUM(clicks) FROM searchdata_url_impression WHERE data_date >= ... GROUP BY query HAVING urls > 2 ORDER BY 3 DESC`."
+          ]
+        },
+        {
+          "h3": "Brand versus non-brand, at full precision",
+          "body": [
+            "Brand queries flatter every report. In the interface you can filter them out with a regex and get an approximation capped at 1,000 rows. In BigQuery you classify every row, including the tail, and you can hold the split constant month over month.",
+            "Shape: a `CASE WHEN REGEXP_CONTAINS(query, r'(?i)yourbrand|your brand|yourbrnad')` flag, aggregated by month. Include the misspellings — they're brand traffic too, and on Indian brand names there are usually four or five worth catching."
+          ]
+        },
+        {
+          "h3": "Page-level decay across the long tail",
+          "body": [
+            "Sum clicks per URL for the trailing 28 days and the same 28 days ninety days earlier, then rank by absolute decline. This surfaces the fifty pages each losing a little — which together outweigh the one page everybody noticed losing a lot. It's the only reliable input to a rewrite queue, and it's the analysis that most often changes what a content team does next month.",
+            "Pair it with average position over the same windows. A page losing clicks at a stable position lost the SERP, not the ranking, and needs a different fix from a page that simply slipped."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "What this does not fix",
+      "body": [
+        "Worth saying, because BigQuery has a way of becoming the answer to questions it can't answer.",
+        "It doesn't add data Search Console never had. Anonymised queries stay anonymised, [impressions](/glossary/impressions) still count the same way, and average position is still an average with all the distortions that implies. Nor does it reconcile anything with analytics — Search Console and GA4 [count different events on opposite sides of the click](/compare/ga4-vs-search-console), and putting one of them in a warehouse doesn't change that.",
+        "And it doesn't make anyone read the numbers. We've seen exports running for two years in accounts where nobody has opened the dataset. The setup is the easy twenty minutes; the standing weekly habit of querying it is the part that actually produces a decision."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does the Search Console BigQuery export include historical data?",
+      "a": "No. It starts collecting from the day you configure it and never backfills. If you need the previous months, pull them from the Search Console API before they fall out of the sixteen-month window — the interface and the export both lose them at the same point."
+    },
+    {
+      "q": "What permission does the bulk data export need?",
+      "a": "Add `search-console-data-export@system.gserviceaccount.com` as a principal on your Cloud project and give it two roles: BigQuery Job User and BigQuery Data Editor. Granting only one, or granting at dataset level instead of project level, is the usual reason a first export silently never appears."
+    },
+    {
+      "q": "How much does it cost to keep Search Console data in BigQuery?",
+      "a": "For most Indian sites, nothing — Google's free tier covers 1 TiB of querying and 10 GiB of storage a month. Larger ecommerce properties can run to a few hundred or a few thousand rupees, and the variable is query discipline rather than traffic. Set a partition expiry and filter on `data_date`."
+    },
+    {
+      "q": "Does the export include the queries Search Console hides?",
+      "a": "No. Anonymised queries — the rare ones Google withholds for user privacy — remain withheld, but they arrive flagged in the export, so you can quantify how much of your impression volume sits behind them. That visibility is itself useful; the interface just leaves the gap unexplained."
+    },
+    {
+      "q": "Can I add my own columns to the exported tables?",
+      "a": "Don't. Changing the schema of the export tables causes the next export to fail. Build derived fields — brand flags, page-type labels, cleaned queries — in a separate table or a view that reads from the export, and leave the originals exactly as Google writes them."
+    },
+    {
+      "q": "Is this better than a rank tracker?",
+      "a": "Different job. A rank tracker measures a keyword list you chose, on a schedule, from a fixed location. The export measures everything you actually appeared for, including the queries you'd never have thought to track. Most teams need both, and the export is the one that finds new demand."
+    }
+  ],
+  "sources": [
+    {
+      "title": "About bulk data export of Search Console data to BigQuery",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/12918484"
+    },
+    {
+      "title": "Start a new bulk data export",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/12917675"
+    },
+    {
+      "title": "Table guidelines and reference",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/12917991"
+    },
+    {
+      "title": "Free Google Cloud features and trial offer",
+      "publisher": "Google Cloud",
+      "url": "https://docs.cloud.google.com/free/docs/free-cloud-features"
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "glossary",
+      "slug": "impressions"
+    },
+    {
+      "type": "glossary",
+      "slug": "keyword-cannibalization"
+    },
+    {
+      "type": "journal",
+      "slug": "a-post-mortem-on-keyword-cannibalization"
+    },
+    {
+      "type": "services",
+      "slug": "seo-reporting-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "content-decay"
+    }
+  ]
+}

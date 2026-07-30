@@ -1,0 +1,257 @@
+{
+  "slug": "how-to-write-an-seo-brief-for-agencies",
+  "type": "answers",
+  "primaryKeyword": "how to write an seo brief for agencies",
+  "secondaryKeywords": [
+    "seo rfp template india",
+    "what to send agencies before asking for a quote",
+    "why agency quotes are not comparable",
+    "scope of work for an seo engagement"
+  ],
+  "cluster": "agency-diligence",
+  "intent": "informational",
+  "h1": "How to write an SEO brief so the quotes come back comparable",
+  "metaTitle": "How to Write an SEO Brief for Agencies",
+  "metaDescription": "Quotes differ because briefs differ. Six inputs turn four unlike proposals into four comparable ones — and refusing to share them is why you get guesswork.",
+  "updated": "2026-08-10",
+  "published": "2026-08-10",
+  "answer": "An SEO brief needs six inputs: your current organic baseline, your development release cadence, your approval chain, your existing page count, your target geography and language, and who controls the CMS. Everything else is optional. Those six are what agencies silently guess at, and guessing is why four quotes for one site arrive four times apart.",
+  "takeaways": [
+    "The spread between quotes is mostly a spread between assumptions. Six numbers remove the assumptions.",
+    "Write the **baseline** into the brief before anyone quotes. A guarantee written after the fact is a negotiation; a guarantee written against a number you published first is a commitment.",
+    "Leave out the keyword list, the desired ranking position and the fixed deliverable count. All three cause worse proposals, and we explain why below.",
+    "Ask every agency for the same three numbers and the comparison becomes a spreadsheet instead of a feeling."
+  ],
+  "sections": [
+    {
+      "h2": "Why four quotes for one site come back four times apart",
+      "body": [
+        "A founder sends the same three-line email to four agencies. \"We're a D2C brand doing about ₹4 crore, our SEO is weak, what would you charge?\" The quotes arrive at ₹22,000, ₹65,000, ₹1,10,000 and ₹2,40,000 a month, and the obvious conclusion is that three of them are lying.",
+        "Usually none of them is. They're quoting four different jobs, because the email described no job at all. The cheap one assumed a WordPress site with 40 pages, no dev dependency and monthly reporting. The expensive one assumed a headless build where every change needs a sprint, a legal review on every claim, and 6,000 product URLs.",
+        "There is [an established way to normalise proposals after they arrive](/answers/how-to-compare-seo-proposals) — convert everything to hours, put them on one sheet. That works, and it's the wrong place to solve this. Fixing it at the brief costs you ninety minutes and removes most of the spread before a single agency starts guessing."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "This is not an RFP",
+        "body": "A brief is one page and six numbers. A 14-page RFP with a scoring matrix mostly filters for agencies with a bid team, which correlates with size and not with the quality of the person who'll do your work."
+      }
+    },
+    {
+      "h2": "The six inputs, and what each one changes in the price",
+      "body": [
+        "Each of these moves the number, and each of them gets guessed at conservatively — meaning expensively — when it's missing."
+      ],
+      "table": {
+        "caption": "What each input in the brief actually changes about the quote.",
+        "head": [
+          "Input",
+          "What to write",
+          "What it changes in the price"
+        ],
+        "rows": [
+          [
+            "Current organic baseline",
+            "Trailing-90-day organic sessions, non-brand clicks, and enquiries the business attributes to organic",
+            "Decides whether this is a recovery job or a build from zero. Recovery is faster and cheaper and everyone should know which one you are"
+          ],
+          [
+            "Dev release cadence",
+            "\"We ship fortnightly\", or \"changes go through an external agency with a four-week queue\"",
+            "The single biggest swing. A four-week queue can double the calendar time for the same work, and calendar time is what a retainer bills"
+          ],
+          [
+            "Approval chain",
+            "Who signs off on published copy, how many people, and the typical turnaround",
+            "Three approvers with a legal review turns four articles a month into two. Say so and the quote reflects two"
+          ],
+          [
+            "Existing content volume",
+            "Total indexable URLs, roughly how many are blog versus commercial, and how many you'd call thin",
+            "Decides the split between fixing what exists and writing new. Fixing is usually cheaper per unit of traffic and rarely gets quoted because nobody knew the count"
+          ],
+          [
+            "Target geography and language",
+            "Cities or countries that matter, and whether Hindi or regional-language pages are in scope",
+            "Local, national and multi-country are three different jobs. Regional-language content needs editors, not translators, and that is a real line item"
+          ],
+          [
+            "Who owns the CMS",
+            "Platform, who holds admin, and whether an agency can publish directly or must hand files to someone",
+            "Publishing access removes a whole coordination layer. No access means every deliverable carries handover overhead"
+          ]
+        ]
+      },
+      "bullets": [
+        "Add two lines of context if you have them: your rough commercial goal for the year, and any past penalty, migration or agency relationship that ended badly. Both change the plan and neither is embarrassing.",
+        "You do not need to share revenue. You do need to share the baseline — see the next section — and it's worth stating up front what access an agency will eventually get, rather than discovering the gap at contract stage. [The questions worth asking before you sign](/answers/what-questions-should-i-ask-an-seo-agency) covers the other side of that conversation."
+      ]
+    },
+    {
+      "h2": "The baseline section, written out so you can copy it",
+      "body": [
+        "This is the part of the brief that changes what an agency can promise you. Put it in before anyone quotes, because a number agreed after the proposal is a number both sides can argue about.",
+        "Paste this block, fill in the figures, and send it to everyone unchanged."
+      ],
+      "numbered": [
+        "**Window:** the 90 days ending `<date>`. Named explicitly, so nobody picks a flattering quarter later.",
+        "**Organic sessions:** `<n>`, from `<GA4 property ID>`, default channel group Organic Search.",
+        "**Non-brand organic clicks:** `<n>`, from Search Console, with these brand terms excluded: `<list them>`.",
+        "**Enquiries the business attributes to organic:** `<n>`, counted in `<CRM name>`, defined as `<your definition — a form, a call over 60 seconds, a WhatsApp thread that reached a human>`.",
+        "**Indexed pages:** `<n>`, from the Search Console index coverage report on `<date>`.",
+        "**Referring domains:** `<n>`, from `<tool>`, on `<date>`.",
+        "**Seasonality note:** anything that will distort a comparison — festive peak, exam cycle, financial year end, a campaign that ran inside the window."
+      ],
+      "body2": [],
+      "callout": {
+        "kind": "warn",
+        "title": "The number that matters is the fourth one",
+        "body": "Sessions and clicks are easy and cheap to move. Enquiries are neither. An agency that reads your brief and immediately talks about the fourth line is thinking about your business; one that only quotes against the first is thinking about a report. Our own guarantee is written against exactly that fourth number — frozen on day one, beaten in 90 days, or we keep working free until we do. That is only possible because the client wrote it down before we quoted. [The method for setting one](/journal/how-to-set-an-seo-baseline) takes an afternoon."
+      }
+    },
+    {
+      "h2": "Three things to leave out, and why they make proposals worse",
+      "body": [
+        "Most bad briefs are bad because of what they add, not what they miss."
+      ],
+      "subs": [
+        {
+          "h3": "A keyword list",
+          "body": [
+            "Sending 300 keywords you generated in a free tool tells the agency what you already believe. The useful part of the first month is the agency disagreeing with you — finding the queries your buyers actually type, which are usually longer, less obvious and lower volume than the list you'd assemble yourself.",
+            "Send the list as an appendix labelled \"what we think today\" if you must. Don't send it as scope. A proposal priced against your list is priced against your blind spots."
+          ]
+        },
+        {
+          "h3": "A desired ranking position",
+          "body": [
+            "\"We want to be #1 for SEO services India\" filters your responses in exactly the wrong direction. The agencies willing to write that into a proposal are the ones least equipped to deliver anything, because nobody controls Google's index — [Google's own guidance on hiring an SEO](https://developers.google.com/search/docs/fundamentals/do-i-need-seo) names a guaranteed #1 ranking as a warning sign, alongside claims of a special relationship with Google.",
+            "State the commercial outcome instead. \"We need 40 qualified enquiries a month from organic by Q3\" is a harder brief and it gets you better answers."
+          ]
+        },
+        {
+          "h3": "A fixed deliverable count",
+          "body": [
+            "\"Eight blogs and 20 backlinks a month\" converts the brief into a procurement exercise, and the winner will be whoever is cheapest per unit of the thing you specified. That is a race you don't want to win.",
+            "It also removes the agency's ability to tell you the truth. If your site's problem is 200 thin pages and no internal linking, the right first quarter has almost no new articles in it — and no agency will propose that against a brief demanding eight."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Ask everyone for the same three numbers",
+      "body": [
+        "This is what makes a spreadsheet possible. Add these three requests at the bottom of the brief, and ask for them in the proposal rather than on a call."
+      ],
+      "numbered": [
+        "**Hours per month, split by discipline.** Technical, content, links and PR, reporting and strategy. Not a total — the split. Divide the fee by the total to get an implied hourly rate, and you can finally compare a ₹40,000 quote against a ₹1,50,000 one on the same axis.",
+        "**Names and seniority of the people who will work on the account**, and how much of their week it gets. Not the pitch team. This is the single most common gap between what was sold and what arrives.",
+        "**What happens if the number in our baseline hasn't moved in 90 days.** The answer separates the field faster than any other question in the process. \"SEO takes time\" is an answer. It's just not a commitment, and you should price it as one."
+      ],
+      "bullets": [
+        "Give every agency the same deadline and the same word limit. Ten pages of a template beats nothing, but three pages written for you beats both.",
+        "Ask for the first 90 days specifically, not a 12-month roadmap. Twelve-month roadmaps are written by people who haven't crawled your site yet and are revised in week three anyway."
+      ]
+    },
+    {
+      "h2": "The briefs we decline, and why that's useful information",
+      "body": [
+        "We take three new clients a month, so declining is normal here rather than dramatic. These are the ones we say no to, and every reason is worth knowing whoever you end up hiring — because an agency that says yes to all of them is telling you something about how it makes money."
+      ],
+      "bullets": [
+        "**No baseline, and no willingness to build one.** If nobody will count the trailing-90-day enquiries, our guarantee has nothing to attach to and every future review becomes a debate about a moving number.",
+        "**A required ranking position in the scope.** We don't sell it because nobody can honestly deliver it, and a brief that insists is going to end badly with whoever accepts it.",
+        "**Dev capacity of zero, indefinitely.** Technical fixes that can't ship aren't recommendations, they're a document. If the queue is four weeks, fine — say so and we plan around it. If the answer is \"never\", we'd be billing you to write a wish list.",
+        "**Under ₹40,000 a month against a national competitive keyword set.** The arithmetic doesn't work and we'd rather say so than take a quarter of your money to prove it. Our SEO starts at ₹75,000/mo, with smaller sites from ₹40,000 — [the full pricing is public](/pricing).",
+        "**Two agencies already working on the same domain.** Nobody can be accountable for a number two teams are both editing. We'll happily do [an independent review](/answers/how-do-i-know-if-my-seo-agency-is-doing-a-good-job) instead.",
+        "**A brief that asks for a strategy as part of the pitch.** Free audits are sales pitches with a deliverable attached. We'll tell you what we'd look at; we won't do the work for free, and neither should anyone you're considering."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "A brief that gets declined is still a good brief",
+        "body": "Three clear noes and one considered yes is a better outcome than four polite yeses. If nobody declines your brief, it probably didn't say enough for anyone to disagree with."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What should an SEO brief include?",
+      "a": "Six inputs: your trailing-90-day organic baseline, your development release cadence, your approval chain for published copy, your existing indexable page count, your target geography and language, and who controls the CMS. Add a one-line commercial goal and any history of penalties or migrations. One page is enough."
+    },
+    {
+      "q": "Should I send agencies a keyword list?",
+      "a": "Only as an appendix marked \"what we think today\". Sent as scope, it prices the proposal against your existing assumptions and removes the most valuable thing the first month buys — an agency disagreeing with your keyword set after actually looking at demand and at what already ranks."
+    },
+    {
+      "q": "How do I compare SEO quotes that use different units?",
+      "a": "Ask every agency for the same three things in the proposal: monthly hours split by discipline, the names and weekly time of the people doing the work, and what happens if your baseline number hasn't moved in 90 days. Divide fee by hours for an implied rate and the quotes become comparable."
+    },
+    {
+      "q": "Do I have to share my revenue with an agency?",
+      "a": "No. You do have to share the baseline — organic sessions, non-brand clicks and enquiries attributed to organic over a named 90-day window. Revenue helps an agency size the opportunity, but the baseline is what any honest commitment gets written against."
+    },
+    {
+      "q": "Is a formal RFP better than a one-page brief?",
+      "a": "Rarely, below enterprise scale. A long RFP with a scoring matrix mostly selects for agencies with a dedicated bid team, which tracks with headcount rather than with the quality of the person assigned to your account. Six clear numbers and a deadline get you better proposals."
+    },
+    {
+      "q": "How long should agencies get to respond?",
+      "a": "Seven to ten working days, with the same deadline for everyone. Shorter and you get a template. Much longer and the proposal gets padded with roadmap slides written before anyone has crawled your site. Ask for the first 90 days in detail rather than a twelve-month plan."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Do you need an SEO?",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo"
+    },
+    {
+      "title": "Managing owners, users, and permissions",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7687615"
+    },
+    {
+      "title": "Performance report (Search results): Overview and basic setup",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7576553"
+    },
+    {
+      "title": "[GA4] Default channel group",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9756891"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "how-to-compare-seo-proposals"
+    },
+    {
+      "type": "answers",
+      "slug": "what-access-to-give-an-seo-agency"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-pricing-factors"
+    },
+    {
+      "type": "compare",
+      "slug": "retainer-vs-project"
+    },
+    {
+      "type": "services",
+      "slug": "seo-audit-services"
+    },
+    {
+      "type": "answers",
+      "slug": "what-questions-should-i-ask-an-seo-agency"
+    }
+  ]
+}

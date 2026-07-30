@@ -1,0 +1,253 @@
+{
+  "slug": "how-to-do-a-serp-analysis-before-writing",
+  "type": "answers",
+  "primaryKeyword": "how to do a serp analysis before writing a page",
+  "secondaryKeywords": [
+    "reading the serp to choose content format",
+    "should i write this page at all",
+    "serp shapes that mean do not write",
+    "what the serp tells you about intent"
+  ],
+  "cluster": "content-ops",
+  "intent": "informational",
+  "h1": "How to read a SERP before you write anything",
+  "metaTitle": "How to Do a SERP Analysis Before Writing",
+  "metaDescription": "The SERP tells you format, depth and whether to walk away. Five things to record in ten minutes, and two shapes where we say do not write the page.",
+  "updated": "2026-09-29",
+  "published": "2026-09-29",
+  "answer": "Ten minutes, five records: the feature stack, the dominant format across the top ten, the depth of the top three, which kinds of publisher are there, and the questions Google surfaces. The output is a brief — or a decision not to write. Two SERP shapes mean the right answer is walk away.",
+  "takeaways": [
+    "This happens **before** the brief, not after the draft. Ten minutes here saves the two days spent rewriting a page that was the wrong format from the start.",
+    "The single most useful output is sometimes a page you don't write. We sell content, and we'd still rather kill three briefs a quarter than bill for pages that were never going to land.",
+    "Depth is a count of sub-questions the top results answer, not a word count borrowed from a tool.",
+    "Re-run it before any rewrite. A page that lost traffic at a stable position usually lost the page layout, not the ranking."
+  ],
+  "sections": [
+    {
+      "h2": "Five things to record, and where each one lands",
+      "body": [
+        "Open the query in incognito, signed out, with the location set to your target market — a Delhi result and a Chennai result are different pages, and a laptop result is different again. Scroll the whole thing before you form an opinion about the top three.",
+        "Then record five things. Not ten, not a spreadsheet with thirty columns nobody fills in after week two. Five, each of which changes something specific downstream."
+      ],
+      "table": {
+        "caption": "The five records, where to look, and what each one decides.",
+        "head": [
+          "Record",
+          "What you're looking at",
+          "What it changes"
+        ],
+        "rows": [
+          [
+            "The feature stack",
+            "Ads, AI Overview, local pack, snippet, People Also Ask, video, images — and where the first organic result begins on a phone.",
+            "Whether the page is worth its production cost at all. This is the go/no-go input."
+          ],
+          [
+            "Dominant format",
+            "Across the top ten: guides, product or category pages, comparisons, directories, forums, tools, videos.",
+            "The format of your page. Not negotiable against internal preference."
+          ],
+          [
+            "Depth of the top three",
+            "How many distinct sub-questions each answers. Whether any has a table, a calculator, original data, or images that aren't stock.",
+            "The brief's required sections, and the one asset you'll have that none of them do."
+          ],
+          [
+            "Publisher type",
+            "Marketplaces, directories, national media, brands your size, government, forums, or a mix.",
+            "Whether you can realistically compete, and how long it'll take."
+          ],
+          [
+            "The questions Google shows",
+            "People Also Ask, related searches at the foot, and the sub-headings inside any AI Overview.",
+            "H2s, FAQ entries, and often two or three adjacent pages worth planning."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "If you record only one thing",
+        "body": "Record where the first organic result starts on a mid-range Android in incognito. That single observation reorders a content plan faster than any keyword volume number, because it tells you what a top-three ranking is actually worth on this query — which on a commercial Indian query is frequently much less than the volume implies."
+      }
+    },
+    {
+      "h2": "Format is read off the page, not chosen in advance",
+      "body": [
+        "Most content plans decide the format in a spreadsheet — \"we'll write a blog post\" — and then discover six weeks later that Google has never ranked a blog post for that query. The SERP already contains the answer, and it costs nothing to look.",
+        "What ranks tells you what Google has concluded the query wants. You can disagree, but you'll be disagreeing with a system that has watched a few million people either click or come straight back."
+      ],
+      "bullets": [
+        "**Category and product pages in the top ten** means transactional intent. An article will get impressions and no clicks. Write or fix the commercial page instead.",
+        "**Tools, calculators and templates** means the query wants something to use, not something to read. A 2,000-word explainer of the thing loses to a working version of the thing.",
+        "**Forum threads and Reddit near the top** means Google decided the query wants lived experience. A corporate page written in the third person bounces off this SERP. Either bring genuine first-hand specifics or don't enter.",
+        "**Video carousel above the fold** means the click is happening on YouTube. Consider whether the page is the wrong deliverable entirely.",
+        "**A directory or marketplace majority** is the strongest signal of all, and we'll come back to it — it usually means don't write.",
+        "**A genuine mix of formats** is the friendliest SERP there is. Mixed results mean Google isn't sure, and an unsure SERP is an opening. Pick the format that suits your evidence and go."
+      ],
+      "body2": []
+    },
+    {
+      "h2": "Depth comes from what ranks, not from a word-count tool",
+      "body": [
+        "Word-count targets are the most persistent bad habit in content briefs. The number is an average across a set of pages that rank for reasons the tool can't see — domain strength, age, links, brand. Matching the average length of the top ten gets you a page with the same length and none of the reasons.",
+        "Do this instead, and it takes about four minutes for three pages."
+      ],
+      "numbered": [
+        "**Count the distinct sub-questions** each of the top three actually answers. Read their H2s and ignore the padding. You'll usually find six to ten real ones, and considerable overlap between them.",
+        "**Take the union**, not the average. If page one covers eight sub-questions, page two covers seven, and only five are shared, your brief has ten. That's what completeness means here.",
+        "**Find what none of them has.** A price in rupees. A worked example. A table nobody built. A named source. One first-hand observation. This is the only part of the brief that creates a reason to choose your page over the incumbent, and it's the part most briefs omit entirely.",
+        "**Then check whether you can actually supply it.** If the differentiator needs a customer interview and nobody will do the interview, the brief is fiction and the page will be another summary of the top three."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Length falls out of this",
+        "body": "Ten sub-questions answered properly, plus one thing nobody else has, lands somewhere between 1,100 and 1,800 words on most topics. You didn't target that number — it's a consequence. Which is the right direction of travel, because a brief that specifies 2,400 words and eight sub-questions is a brief specifying 900 words of padding."
+      }
+    },
+    {
+      "h2": "The two shapes where the right call is not to write",
+      "body": [
+        "This is the part that makes the rest of the exercise credible. We bill for content. Recommending against a page costs us money in the short run and is the reason clients believe the recommendations that do involve writing.",
+        "Two SERP shapes mean the budget belongs somewhere else."
+      ],
+      "subs": [
+        {
+          "h3": "Shape one — the answer is fully resolved above the fold",
+          "body": [
+            "A definitional or single-fact query where an AI Overview, a featured snippet and a People Also Ask block sit stacked before any organic result, and there is no commercial follow-on. Someone searching \"what is the GST rate on X\" gets the number without scrolling and has no further need.",
+            "You can't engineer your way into these slots on demand. Google is explicit that you can't mark a page up to win a featured snippet — [its systems decide whether a page would make a good one](https://developers.google.com/search/docs/appearance/featured-snippets) — and there are no special requirements or optimisations for AI Overviews either. So the realistic outcome is a page that earns impressions, no clicks, and a monthly line in a report explaining why impressions are up.",
+            "The exception worth naming: if the query is a genuine entry point to something you sell, a thin page can still be worth having for the internal link and the entity association. Write 400 words, not 1,600, and be honest in the brief about why."
+          ]
+        },
+        {
+          "h3": "Shape two — page one is structurally closed",
+          "body": [
+            "Every organic result is a marketplace, a directory, an aggregator or a government portal. IndiaMART and TradeIndia on a B2B product query. Justdial and Sulekha on a local service. Practo on a symptom. A ministry site on a compliance question. Amazon and Flipkart on a product name.",
+            "This isn't a strong-competitor problem you solve with better writing. Google has concluded the query wants inventory or an authority, and a single brand's article is the wrong kind of result. A ten-page site does not displace a marketplace with two million pages and fifteen years of links by writing a better introduction.",
+            "The productive response is to go around it: target the specific long-tail queries the marketplaces answer badly, get listed on the platform that's ranking, or spend the budget on the query one step further down the funnel where brands do appear. That last check takes thirty seconds and is the most useful thing you'll do all week — see [how to do keyword research](/answers/how-to-do-keyword-research) for finding the adjacent query worth taking."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Two shapes that look like a no and aren't",
+        "body": "A SERP full of national media doesn't mean walk away — media pages are frequently shallow and out of date, and a specialist beats a generalist on depth. And a SERP full of competitors your size is the best news you can get: it means the query is winnable by someone exactly like you."
+      }
+    },
+    {
+      "h2": "How the notes become a brief",
+      "body": [
+        "The point of recording five things is that each one writes a field in the brief. If your SERP notes live in a document nobody opens while writing, you've done research theatre.",
+        "Map it directly, in this order:"
+      ],
+      "bullets": [
+        "**Kill flag** — from the feature stack and publisher type. If either shape above applies, the brief stops here with a one-line reason. Log the reason; you'll want it when someone asks in six months why the page was never written.",
+        "**Format** — from the dominant format. Stated as an instruction, not a preference: comparison page with a table, or category page, or guide.",
+        "**Required sections** — the union of sub-questions from the top three, listed as H2s.",
+        "**The differentiator** — the one thing nobody has, plus who inside the business has to supply it and by when. If this field is empty, the brief isn't finished.",
+        "**FAQ block** — straight from People Also Ask and related searches, in the phrasing Google showed you rather than the phrasing you'd have chosen.",
+        "**Intent note** — informational, commercial or transactional, evidenced by what ranks rather than asserted. The mechanics are in [search intent](/glossary/search-intent), and the mismatch it prevents is the most expensive one in content.",
+        "**Realistic ceiling** — a sentence on what a good outcome looks like given the feature stack. On a SERP with a large AI Overview, that number is lower than the volume suggests, which is worth writing down before anyone builds a forecast on it."
+      ]
+    },
+    {
+      "h2": "When to re-run it",
+      "body": [
+        "SERPs change shape more often than pages change quality, and the two get confused constantly. A page can sit at position four all year and lose half its clicks because an AI Overview arrived above it, or a local pack did, or a product carousel did.",
+        "So: re-run the check before any rewrite, always. If the page is stable in position and down in clicks, the page probably isn't the problem — the layout around it is, and rewriting the introduction won't recover anything. That's a [zero-click](/glossary/zero-click-search) shift rather than a content failure, and the honest response is often to accept the lower ceiling and move the effort to a query with a friendlier layout.",
+        "Beyond rewrites, re-check the twenty queries you care most about once a quarter, on a phone. It takes half an hour, it catches layout changes no rank report will ever show you, and it is the cheapest early warning available. [What AI Overviews did to organic traffic](/journal/what-ai-overviews-did-to-your-organic-traffic) arrived that way for most sites — visible in the layout months before it was visible in the revenue."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The habit that makes this stick",
+        "body": "Paste the SERP screenshot into the brief itself. Not a link, not a note — the image. Writers who can see the page they're competing against write differently from writers working off a keyword and a word count, and it's the cheapest quality improvement we've ever made to a content process."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long should a SERP analysis take?",
+      "a": "About ten minutes per query, before the brief is written. Anything longer and it stops happening after the second week. Five records — feature stack, dominant format, depth of the top three, publisher type, and the questions Google surfaces — is genuinely enough to write a good brief from."
+    },
+    {
+      "q": "How do I know what format to write?",
+      "a": "Count the formats in the top ten and follow the majority. Category pages mean transactional intent and an article will earn impressions without clicks. Tools mean build a tool. Forum threads mean the query wants first-hand experience. A mixed SERP means Google is unsure, which is the easiest kind to enter."
+    },
+    {
+      "q": "Should I match the word count of the pages that rank?",
+      "a": "No. Average length across the top ten is an artefact of pages that rank for reasons a word-count tool can't see. Count the distinct sub-questions the top three answer, take the union rather than the average, and add one thing none of them has. Length falls out of that."
+    },
+    {
+      "q": "When should I decide not to write a page at all?",
+      "a": "Two shapes. When an AI Overview, a snippet and People Also Ask fully resolve a single-fact query with no commercial follow-on. And when page one is entirely marketplaces, directories or government portals — Google has decided that query wants inventory, and one brand's article isn't a competing result."
+    },
+    {
+      "q": "Does a SERP full of big brands mean I should give up?",
+      "a": "Not necessarily, and this is where people over-read the signal. National media pages are often shallow and stale, and a specialist can out-depth them. The genuine walk-away signal is structural — marketplaces and directories — not merely well-known names with more links than you."
+    },
+    {
+      "q": "How often should I re-check a SERP for a page I already have?",
+      "a": "Before every rewrite, and once a quarter for your twenty most valuable queries. A page holding its position while losing clicks has almost always lost the layout rather than the ranking, and no amount of editing the page fixes a new feature sitting above it."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Featured snippets and your website",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/featured-snippets",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "AI features and your website",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Creating helpful, reliable, people-first content",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Google Search Essentials",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials",
+      "date": "2025-12-10"
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "serp"
+    },
+    {
+      "type": "glossary",
+      "slug": "search-intent"
+    },
+    {
+      "type": "glossary",
+      "slug": "zero-click-search"
+    },
+    {
+      "type": "glossary",
+      "slug": "featured-snippet"
+    },
+    {
+      "type": "journal",
+      "slug": "what-ai-overviews-did-to-your-organic-traffic"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-do-keyword-research"
+    },
+    {
+      "type": "services",
+      "slug": "content-marketing-services"
+    },
+    {
+      "type": "journal",
+      "slug": "how-many-blog-posts-you-actually-need"
+    }
+  ]
+}

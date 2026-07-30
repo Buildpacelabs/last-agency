@@ -1,0 +1,256 @@
+{
+  "slug": "who-is-responsible-if-a-migration-ruins-seo",
+  "type": "answers",
+  "primaryKeyword": "who is responsible if a website migration ruins seo results",
+  "secondaryKeywords": [
+    "client side replatform mid contract seo",
+    "does a rebrand reset an seo baseline",
+    "who pays when a redesign kills organic traffic",
+    "agency targets after a site migration"
+  ],
+  "cluster": "agency-risk",
+  "intent": "informational",
+  "h1": "Who carries the cost when a client-side migration wrecks SEO results?",
+  "metaTitle": "Who Pays When a Migration Ruins SEO Results?",
+  "metaDescription": "A migration is the case that breaks a baseline guarantee arithmetically. How the baseline resets, who signs it off, and who funds the ramp back to parity.",
+  "updated": "2026-08-18",
+  "published": "2026-08-18",
+  "answer": "Responsibility follows the decision, not the invoice. If your agency planned and ran the migration, recovery is their obligation and it's unbilled. If you replatformed and told them afterwards, the target resets and cleanup is new work. Either way the frozen baseline is void the moment the URL set changes — so reset it in writing, before launch.",
+  "takeaways": [
+    "A frozen baseline compares one site with itself. Change the URL set and the comparison stops being a comparison. That's arithmetic, not a negotiating position.",
+    "Three cases, three different commercial answers: the agency ran it, the agency advised and you decided, or the agency found out from the traffic chart.",
+    "Google's own position is that ranking fluctuation during a move is normal, and that a medium-sized site takes a few weeks for most pages to shift in the index. That period is the **ramp**, and somebody has to fund it.",
+    "One signed page before launch ends this argument permanently. Almost nobody writes it, because writing it means saying out loud that traffic might fall."
+  ],
+  "sections": [
+    {
+      "h2": "Responsibility follows the decision, not the invoice",
+      "body": [
+        "This gets asked as a blame question and it should be asked as three separate ones. Whose fault was it, whose target changes, and whose bill is the cleanup? Only the last two decide anything, and they have different answers depending on who was in the room when the platform was chosen.",
+        "Start from the honest structural fact: SEO agencies rarely control replatform decisions. A new CMO arrives, a board approves a rebrand, the Shopify contract renews, the design refresh has been signed off for eight months. These are often correct decisions made for reasons that have nothing to do with search. The agency's plan then rests on a website that no longer exists, and the retainer keeps invoicing on the old assumptions.",
+        "So the useful move isn't to assign blame. It's to decide, before the launch date, what the target becomes and who pays for the months it takes to get back."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Three questions, asked separately",
+        "body": "Whose fault — usually unresolvable and rarely worth the meeting. Whose target — always answerable, and must be answered in writing. Whose bill — answerable too, and the one that decides whether the relationship survives month five."
+      }
+    },
+    {
+      "h2": "Why a frozen baseline goes void rather than merely awkward",
+      "body": [
+        "Our version of an SEO guarantee freezes one number on day one: your trailing-90-day qualified leads from organic search. Everything after that is measured against it. That works because it compares a site with an earlier version of the same site.",
+        "A migration replaces the measured object halfway through the measurement. From that point, comparing month four to the frozen baseline tells you about the migration, not about the SEO work — the two are inseparable in the same number. Nobody is being difficult when they say the baseline no longer holds; the number has genuinely stopped meaning what it meant.",
+        "The timescale isn't a week, either. Google's guidance on site moves says visibility [may fluctuate temporarily during the move and that a medium-sized site can take a few weeks for most pages to shift in the index](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes), with larger sites taking longer. If the domain changed, the Change of Address tool forwards signals for 180 days and then stops recognising any relationship between the old and new sites. That's the window you're budgeting for."
+      ],
+      "bullets": [
+        "**Any URL change.** The set of pages earning the leads is now a different set. Redirects preserve most of the equity; they don't preserve the comparison.",
+        "**A domain change or rebrand.** The hardest case, because branded query volume resets too — people search the old name for a year, and a chunk of what you counted as organic performance was brand recall you just discarded.",
+        "**A template change with the URLs intact.** Less obvious and frequently worse: copy shortened to suit the new design, internal links dropped by the new nav, schema silently removed.",
+        "**A hosting, CDN or rendering change.** Expect a temporary dip in crawl rate straight after the switch. It recovers, but it moves the indexing timeline right.",
+        "**A re-tagged analytics or consent implementation shipped in the same release.** This is the one that ruins arbitration. Now the measurement changed as well as the site, and neither side can prove anything about either."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Attribution lag makes month four lie",
+        "body": "Leads closing in month four came from sessions in month two — on the old site, in some cases. On a long sales cycle the damage shows up two quarters after the launch, long after everyone has agreed the migration went fine."
+      }
+    },
+    {
+      "h2": "Three cases, and the commercial answer each one deserves",
+      "body": [
+        "Almost every dispute we're asked about resolves into one of these. The fourth row is the one most companies are actually in."
+      ],
+      "table": {
+        "caption": "Who decided, what happens to the target, and who pays for the recovery.",
+        "head": [
+          "Case",
+          "Who made the call",
+          "What happens to the target",
+          "What happens to the fee"
+        ],
+        "rows": [
+          [
+            "The agency planned and ran the migration",
+            "The agency, with your sign-off",
+            "Unchanged. The pre-launch baseline stands.",
+            "No new invoice. Recovery sits inside the existing scope until parity."
+          ],
+          [
+            "The agency advised, signed the pre-launch checklist, and you launched",
+            "You, on advice",
+            "Reset on a date agreed before launch, with a declared ramp window.",
+            "Retainer continues. The migration itself is scoped and priced as a project."
+          ],
+          [
+            "The agency was told after launch",
+            "You, alone",
+            "Void. A new baseline is set from the post-ramp period.",
+            "Cleanup is new work at project rates. The guarantee restarts rather than carrying over."
+          ],
+          [
+            "Nobody wrote anything down",
+            "Contested, loudly, in month five",
+            "Whichever version the more confident party asserts",
+            "The relationship, usually"
+          ]
+        ]
+      },
+      "body_extra": [],
+      "subs": [
+        {
+          "h3": "The middle case is the common one, and the one people get wrong",
+          "body": [
+            "Advice is not insurance. An agency that reviewed the plan, produced a redirect map and signed a pre-launch checklist has done its job even if traffic still falls — migrations carry irreducible risk, and a good one loses less rather than nothing.",
+            "What that agency owes you is the artefacts: the map, the checklist, launch-day verification, and a rapid fix list. What you owe them is a target that acknowledges the site changed. Holding a supplier to a number generated by a website you deleted isn't a tough negotiation, it's just a wrong number.",
+            "The exception worth naming: if the agency warned you in writing and you launched anyway against that advice, they've earned the reset. If they *didn't* warn you and the failure was the ordinary, foreseeable kind — a redirect map built from the XML sitemap alone, [the four decisions that wipe traffic off a replatform](/journal/the-replatform-that-killed-your-traffic) — then it's their case to answer, consulted or not."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The reset, in five steps and one signature",
+      "body": [
+        "This takes an afternoon and it has to happen before the launch, because three of the five steps are impossible afterwards."
+      ],
+      "numbered": [
+        "**Freeze the old baseline before launch.** Trailing 90 days of qualified organic leads, plus organic sessions, indexed page count, and ranked positions for the tracked keyword set. Export everything — a domain change means a new Search Console property, and the old property's history does not follow you across.",
+        "**Declare the ramp window in advance.** We use 90 days from launch, or crawl parity, whichever arrives first. Naming it beforehand removes the month-three argument about whether it's over.",
+        "**Define crawl parity as a checkable test, not a feeling.** Indexed page count and non-branded impressions back inside a stated band of pre-launch levels, compared like-for-like on day of week. Write the band down. \"Roughly back to normal\" is not a test.",
+        "**Set the new baseline from the post-ramp trailing 90 days**, never from launch week. Launch week is the worst data anybody will collect all year, and a baseline set there flatters everyone into a false recovery.",
+        "**Sign one page, both sides, before the launch date.** Six lines is enough. The next section is the six."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The step that gets skipped",
+        "body": "Exporting the old data. Everyone assumes it will still be there, and on a domain move it won't be in the place they'll look. Pull the Search Console performance export, the rank tracker history and the analytics extract the week before launch, and put them somewhere neither agency owns. This is also the moment to check [how to set an SEO baseline](/journal/how-to-set-an-seo-baseline) properly."
+      }
+    },
+    {
+      "h2": "Fees during the ramp, and what a fair answer sounds like",
+      "body": [
+        "The principle: nobody pays twice for the same work, and nobody works free on a decision they were kept out of. Three arrangements meet that test.",
+        "Migration work should be a fixed-fee project rather than retainer hours or an hourly rate. Hourly billing on a migration pays the agency more when the launch goes badly, which is an odd thing to write into a contract deliberately. We scope [site migration work](/services/site-migration-seo) as a fixed project from ₹75,000, ex-GST, priced before the platform is chosen rather than after the launch date is set."
+      ],
+      "bullets": [
+        "**Retainer continues, guarantee suspended and restated.** Monthly work doesn't stop during the ramp — it's the period when the work matters most. The promise attached to it pauses, and gets rewritten against the new baseline when the ramp closes.",
+        "**Recovery unbilled where the agency ran the migration.** This is the case where free is the right answer, and an agency that argues otherwise is telling you something about the next problem too.",
+        "**Cleanup at project rates where the agency was excluded.** Fair, provided the scope is written down first. An open-ended \"we'll fix it, we'll talk about the bill later\" is how a ₹75,000 relationship becomes a ₹4,00,000 argument.",
+        "**What isn't fair:** a quiet retainer increase to clean up a decision the agency wasn't part of, with no scope change on paper. Or a guarantee that formally survives the migration and is then never mentioned again by either side."
+      ],
+      "subs": [
+        {
+          "h3": "Change what you report on during the ramp",
+          "body": [
+            "Leads lag by the length of your sales cycle, so a lead-based report during the ramp is a report about the past. For those 90 days, switch the monthly to leading indicators: crawl stats, indexed pages against the pre-launch count, redirect coverage and 404 volume, non-branded impressions, and average position for the tracked set.",
+            "Then switch back. A ramp report that becomes the permanent report is how an agency stops being measured on anything that pays salaries — and it's a close relative of [the liability question when an agency gets you penalised](/answers/who-is-liable-if-an-agency-gets-you-penalised), which turns on the same failure to write anything down."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The pre-migration memo, in six lines",
+      "body": [
+        "One page, circulated when the launch date is set and signed by whoever holds the budget on each side. It is the cheapest document in this entire relationship."
+      ],
+      "numbered": [
+        "**The launch date, and the date the old baseline is frozen and exported.** Name the person doing the export.",
+        "**The four numbers being frozen**, and where the files live — somewhere neither party controls alone.",
+        "**Who builds the redirect map, who reviews it, and who signs it off.** One name per role, not \"the team\".",
+        "**The ramp window**: its length, and the parity test that can end it early.",
+        "**What happens to the target and the fee during the ramp.** One sentence each. If you cannot write those two sentences, you do not yet have an agreement, you have a mood.",
+        "**Who declares the ramp failed, on what date, and what happens next.** Usually: a joint review, a rescope, or an exit without notice fee."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Why this never gets written",
+        "body": "Because writing it means saying out loud, in a launch meeting, that organic traffic may fall. The agency avoids the sentence because it sounds like an excuse being prepared in advance. The client avoids it because the redesign has already been sold internally. So both sides skip it, and pay for it in month four."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "My agency's targets were based on the old site. Do they still apply after a replatform?",
+      "a": "No, and holding them to it isn't a tough negotiation — it's a wrong number. A baseline measures one site against an earlier version of itself. Reset it against a post-ramp window, agreed in writing before launch if possible and immediately afterwards if not."
+    },
+    {
+      "q": "We redesigned without telling our SEO agency. Is the traffic drop their fault?",
+      "a": "No. It's your decision and your ramp to fund. What they still owe you is fast diagnosis and a fix list. What you owe them is a reset target and a scoped, priced brief for the cleanup — not a demand that the existing retainer absorb work it was never sized for."
+    },
+    {
+      "q": "How long should the ramp period be after a migration?",
+      "a": "Plan for 90 days from launch, or until crawl parity if that comes sooner. Google says a medium-sized site takes a few weeks for most pages to move in the index and larger sites longer, and a domain change carries a 180-day forwarding window through the Change of Address tool. Beyond 90 days without recovery, it's a diagnosis problem rather than a patience problem."
+    },
+    {
+      "q": "Should the agency work free until traffic recovers?",
+      "a": "Only if they planned and ran the migration. Then yes, unbilled, until parity. If they advised and you overruled them, or if they found out from the traffic chart, recovery is new work — scoped and priced before it starts, so nobody discovers the number afterwards."
+    },
+    {
+      "q": "Does a rebrand reset the SEO baseline too?",
+      "a": "More thoroughly than a replatform does. A new domain resets branded search volume as well as the URL set, and people keep searching the old name for a year or more. Split branded from non-branded before and after, or you'll read brand decay as an SEO failure and fire the wrong supplier."
+    },
+    {
+      "q": "What should we write down before a migration?",
+      "a": "Six lines: launch and freeze dates, the numbers being frozen and where they're stored, who owns and signs off the redirect map, the ramp window and its parity test, what happens to the target and the fee during the ramp, and who declares it failed. One page, signed by both budget holders."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Site Moves and Migrations",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+      "date": "2026-06-17"
+    },
+    {
+      "title": "Change of Address tool",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9370220"
+    },
+    {
+      "title": "Redirects and Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+      "date": "2026-04-14"
+    },
+    {
+      "title": "Changing your hosting",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-no-url-changes",
+      "date": "2025-12-10"
+    }
+  ],
+  "related": [
+    {
+      "type": "services",
+      "slug": "site-migration-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "the-replatform-that-killed-your-traffic"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "answers",
+      "slug": "who-is-liable-if-an-agency-gets-you-penalised"
+    },
+    {
+      "type": "compare",
+      "slug": "301-vs-302-redirect"
+    },
+    {
+      "type": "answers",
+      "slug": "why-did-my-rankings-drop"
+    },
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "glossary",
+      "slug": "301-redirect"
+    }
+  ]
+}
