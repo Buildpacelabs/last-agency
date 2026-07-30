@@ -1,0 +1,299 @@
+{
+  "slug": "nextjs-app-router-seo-setup",
+  "type": "journal",
+  "primaryKeyword": "next.js app router seo setup",
+  "secondaryKeywords": [
+    "metadata api canonical next js",
+    "sitemap route app router",
+    "dynamic metadata error states next js",
+    "trailing slash canonical drift"
+  ],
+  "cluster": "technical-launch",
+  "intent": "informational",
+  "h1": "Next.js App Router SEO: the configuration we actually ship",
+  "metaTitle": "Next.js App Router SEO Setup: Our Real Config",
+  "metaDescription": "This site runs Next.js App Router, so here is our own metadata, sitemap and canonical setup — plus the two things that break without warning you.",
+  "updated": "2026-09-17",
+  "published": "2026-09-17",
+  "answer": "Next.js App Router handles SEO through four things: the metadata export, `sitemap.ts`, `robots.ts`, and your host's redirect rules. Set `metadataBase` once, emit a self-referencing canonical, pick one trailing-slash rule. Two failures are silent: nested metadata objects replace rather than merge, and not-found responses can return HTTP 200.",
+  "takeaways": [
+    "`metadataBase` in the root layout, then relative paths everywhere. A relative URL field without it is a build error; an absolute one ignores it.",
+    "Metadata merges **shallowly**. Declaring `twitter` on a route wipes the parent's `card`, and nobody notices until a link preview looks wrong.",
+    "`lastmod` should come from the content's own date, never a build timestamp. Google only uses it if it's verifiably accurate.",
+    "Test the 404 with `curl -sI`, not with your eyes. A not-found page that returns 200 is a soft 404 that renders perfectly."
+  ],
+  "sections": [
+    {
+      "h2": "What this domain actually runs",
+      "body": [
+        "Every Next.js SEO tutorial is written against a hypothetical blog. This one is written against the site you're reading it on, which is the only reason it's worth publishing: we can show the configuration rather than describe a reasonable-sounding one.",
+        "The stack is deliberately dull. Next.js 14 on the App Router, TypeScript, every page statically generated at build time from JSON files in the repo, hosted on Vercel. There is no database and no CMS. Just over five hundred content pages exist today, all rendered by one component, which is the single decision that has saved the most time — a change to canonical handling, breadcrumbs or schema lands on every page at once instead of on whichever templates someone remembered."
+      ],
+      "table": {
+        "caption": "The files that carry the SEO surface on this site, and what each one is responsible for.",
+        "head": [
+          "File",
+          "What it does",
+          "The thing worth getting right"
+        ],
+        "rows": [
+          [
+            "`app/layout.tsx`",
+            "Root metadata: `metadataBase`, title template, default description, Open Graph defaults, verification token.",
+            "Set `metadataBase` here and nowhere else. Everything below can then use paths."
+          ],
+          [
+            "`app/<type>/[slug]/page.tsx`",
+            "`generateStaticParams` for the URL space, `generateMetadata` per page.",
+            "`dynamicParams = false`, so a URL that isn't in the content directory is a real 404."
+          ],
+          [
+            "`app/sitemap.ts`",
+            "The complete sitemap, built from the same loader that renders the pages.",
+            "`lastModified` comes from each page's own `updated` field, not from `new Date()`."
+          ],
+          [
+            "`app/robots.ts`",
+            "Robots rules and the sitemap references.",
+            "One canonical host, declared once, imported from the same constant everything else uses."
+          ],
+          [
+            "`next.config.mjs`",
+            "Host-level redirects — in our case `www` to apex.",
+            "This is where the framework and the CDN can disagree with each other."
+          ],
+          [
+            "`app/not-found.tsx`",
+            "The 404 page, with its own title and `robots: noindex`.",
+            "Without its own metadata it inherits the layout's, and every dead URL claims to be your homepage."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Version boundaries matter here",
+        "body": "App Router SEO behaviour has changed across releases. Streaming metadata arrived in 15.2, `global-not-found.js` in 15.4 as an experiment. We're on 14.2, so a few of the notes below say \"in your version, check\" rather than stating a single answer. Run the checks on your own build; don't trust a blog post about a different minor."
+      }
+    },
+    {
+      "h2": "Metadata: one function, every page",
+      "body": [
+        "The App Router gives you two ways to set head tags. A static `metadata` object for routes that never change, and an async `generateMetadata` function for routes that depend on params or data. You can export one or the other from a segment, never both.",
+        "Our content routes export `generateMetadata`, which reads the page's JSON and returns title, description, canonical, Open Graph and Twitter fields. About twenty lines of code serve every content URL on the site.",
+        "The template mechanic is worth understanding before you use it. A `title.template` in the root layout — ours was `'%s — Last Agency'` — appends a suffix to every child route's title. That's genuinely useful on marketing pages and actively harmful on programmatic ones."
+      ],
+      "subs": [
+        {
+          "h3": "The suffix that broke 168 titles",
+          "body": [
+            "Every `metaTitle` on this site is written to a 60-character budget, because that's roughly where Google starts truncating in the results. Then the layout's 14-character suffix was appended to all of them, and 168 of 500 titles went over the limit — losing the end of the sentence, which on most of these pages is the part carrying the hook.",
+            "The fix is `title: { absolute: page.metaTitle }` on the detail route, which opts that page out of the parent template entirely. If you write your own titles to a length budget, use `absolute` and never think about the template again. If you don't, use the template and write shorter titles. Choosing neither is how you end up with 168 truncated pages you can't see from inside the codebase."
+          ]
+        },
+        {
+          "h3": "Keep the URL space finite",
+          "body": [
+            "`export const dynamicParams = false` alongside `generateStaticParams` means any slug not in the content directory returns a genuine 404 rather than rendering an empty shell. On a programmatic site this is not optional. A route that happily renders `/answers/anything-at-all` is a crawlable infinity, and the cleanup afterwards is [an index bloat problem](/answers/how-to-fix-index-bloat) rather than a config problem."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The merge rule that quietly costs you your social cards",
+      "body": [
+        "This is the first of the two silent failures, and it cost us every link preview on the site for a fortnight before anyone spotted it.",
+        "Metadata objects from parent segments and child segments are merged **shallowly**. Duplicate keys are replaced, not combined. The Next.js documentation is explicit that nested fields such as `openGraph` and `robots` defined in an earlier segment are overwritten by the last segment that defines them.",
+        "So our root layout set `twitter: { card: 'summary_large_image' }`, and our detail route set `twitter: { title, description }` — reasonably, since the title differs per page. The child object replaced the parent's entirely. `card` disappeared. Every content page silently downgraded to a small summary card and threw away the 1200×630 image the build was already generating for it.",
+        "Nothing in the build output mentions this. The page renders, the tags are present, the tags are just wrong. You find it by pasting a URL into a preview debugger, or by never finding it at all."
+      ],
+      "bullets": [
+        "**Re-declare every field of a nested object you touch.** If a route sets `twitter`, that route now owns `card` too.",
+        "**Or pull shared nested fields into a constant** and spread them into each route's object. One place to change, no inheritance to reason about.",
+        "**The same trap applies to `openGraph` and `robots`.** A route that sets `robots: { index: true }` drops the parent's `googleBot` block, including `max-image-preview: large`.",
+        "**Check the rendered HTML, not the source.** `curl -s <url> | grep -i 'twitter:\\|og:'` takes five seconds and answers the question the code review couldn't."
+      ]
+    },
+    {
+      "h2": "The sitemap route, and keeping it honest",
+      "body": [
+        "`app/sitemap.ts` exports a function returning an array of URL objects; Next.js serves the XML at `/sitemap.xml`. The API is fine. The interesting decisions are about what you put in it.",
+        "Ours builds from the same loader the pages render from, which means the sitemap cannot list a URL that doesn't exist — the two share a source of truth rather than agreeing by convention. If you generate the sitemap from a separate query, they will drift, and the drift shows up as coverage errors months later.",
+        "The field that matters is `lastModified`. Google [uses `lastmod` only when it is consistently and verifiably accurate](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap), and it ignores `priority` and `changefreq` outright. So we set `lastModified` from each page's own `updated` field, never from `new Date()`. A build does not modify content; claiming it did on every URL is the fastest way to have Google stop believing the file at all.",
+        "We also serve per-section sitemaps at `/sitemaps/<family>.xml` with an index at `/sitemaps/index.xml`, because Search Console reports coverage per submitted sitemap. \"How much of the glossary is indexed?\" becomes a number on a screen instead of a spreadsheet exercise. Both files are listed in `robots.ts`; overlapping sitemaps are valid under the protocol."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The limits are on the file, not the site",
+        "body": "A single sitemap caps at 50,000 URLs and 50MB uncompressed. Past that you need `generateSitemaps` or nested `sitemap.ts` files under route segments. Also: every URL in a sitemap must be on the same host as the sitemap, which quietly rules out the shared-sitemap pattern people reach for when they run a blog on a subdomain. The [XML sitemap](/glossary/xml-sitemap) page covers the rest of the protocol."
+      }
+    },
+    {
+      "h2": "Canonical drift between the framework and the host",
+      "body": [
+        "The second silent failure, and the one that survives longest, because the page looks perfect while it happens.",
+        "`alternates: { canonical: path }` emits whatever string you hand it, resolved against `metadataBase`. It has no idea what your server actually serves at that URL. So the canonical says `/journal/example` while the host serves a 301 from `/journal/example` to `/journal/example/`, and you've told Google to consolidate on a URL that immediately moves. Google's guidance is blunt about the general version of this: don't specify one URL as canonical through one method and a different URL through another.",
+        "Next.js redirects trailing-slash URLs to the non-slash form by default — `/about/` becomes `/about` — and `trailingSlash: true` inverts it. That's the framework's opinion. Your CDN, your host's edge rules and any legacy nginx config each have their own, and they are applied at a different layer. When they disagree you get a redirect on every internal navigation and a canonical that points at a hop.",
+        "We settled it by declaring the canonical host once, in a `SITE_URL` constant that `metadataBase`, `robots.ts`, the sitemap and the schema graph all import. The `www` to apex redirect lives in `next.config.mjs` as a `has: [{ type: 'host' }]` rule. One string, one rule, and nothing downstream gets to have a different opinion."
+      ],
+      "numbered": [
+        "Decide the form: protocol, host, trailing slash, case. Write it in the repo README as one sentence so the next developer inherits a decision rather than guessing.",
+        "Put the host in one exported constant. Import it everywhere. If your codebase contains the domain as a literal string in more than one file, that's the bug.",
+        "`curl -sI https://yourdomain.com/some/page/` and check for a `location` header. Then do it without the slash. Exactly one of the two should redirect.",
+        "`curl -s https://yourdomain.com/some/page | grep canonical` and confirm the URL inside it is the one that returns 200 directly, with no hop.",
+        "Repeat both on the `www` host and on `http://`. Four combinations, one target, all resolved in a single redirect."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Decide it before launch, not after",
+        "body": "Reversing a trailing-slash or host decision after launch means a second round of redirects and a second consolidation delay. Our [pre-launch checklist](/answers/seo-checklist-before-launching-a-website) treats this as a decision rather than a detail, which is the right way round."
+      }
+    },
+    {
+      "h2": "Error and not-found: where dynamic metadata goes quiet",
+      "body": [
+        "Two adjacent problems that most App Router sites ship with, because neither one produces a warning.",
+        "First, titles. `not-found.tsx` is a Server Component and can export its own `metadata`. If it doesn't, it inherits whatever the nearest layout resolved — which on most sites is the site-wide default. Every dead URL then reports itself in analytics and in any crawl as your homepage title, and you lose the ability to count 404s by simply grouping on page title. Ours sets its own title and `robots: { index: false, follow: false }`, which takes four lines.",
+        "`error.tsx` is a different matter. Error boundaries must be Client Components, and the metadata exports are supported only in Server Components — so an error boundary cannot declare metadata at all. Whatever the route resolved before it threw is what ships. If you need a distinct title on an error state, React's own `<title>` component is the documented way in; the Metadata API isn't available to you there.",
+        "Second, and more expensive: the status code. The Next.js documentation states that a `not-found` render returns 404 for non-streamed responses and 200 for streamed ones. A 200 with \"page not found\" on it is the textbook soft 404 — Google fetches it, sees a successful response, and has to decide for itself whether the content is real. On a site with many dynamic routes that's a slow, ugly indexing problem that no amount of visual QA will reveal."
+      ],
+      "bullets": [
+        "**Test with `curl -sI`, always.** `curl -sI https://yourdomain.com/this-does-not-exist | head -1` must say `404`. Your browser will happily render a beautiful 200.",
+        "**Test a dynamic route that calls `notFound()`**, not just an unmatched URL. They can take different paths through the framework.",
+        "**Check after every framework upgrade.** This behaviour has moved across releases and it will move again.",
+        "**Don't fix a soft 404 with a redirect to the homepage.** That's a different problem wearing better clothes; it just moves the confusion into your canonical selection."
+      ]
+    },
+    {
+      "h2": "Publishing on a schedule inside a static build",
+      "body": [
+        "One thing here isn't a framework feature, and it's the piece we get asked about most. Every content file carries a `published` date. The loader filters out anything dated in the future before the pages are ever generated.",
+        "A page dated next month is written, committed and reviewed — and it does not render, does not enter `generateStaticParams`, does not appear in the sitemap, and returns a hard 404 until its date arrives. There is no partial state and no page to accidentally link to. On its date, a scheduled build picks it up and it exists.",
+        "The reason is honesty about how a young domain looks. Five hundred URLs appearing on one day reads as bulk generation, because it is. The same five hundred appearing over months reads as a publication, because that's also what it is. The `datePublished` in the schema says the day the page actually appeared either way, which is the part that has to stay true.",
+        "The cost is that a statically generated site needs a build on or after the date for the page to exist. A daily workflow runs one only when something is genuinely due. A `PUBLISH_ALL=1` environment variable renders everything regardless, for previews. That's the whole mechanism — about fifteen lines in the loader — and it does more for how this domain reads than any metadata field on this page."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The trap in scheduling",
+        "body": "A page that hasn't published yet cannot be linked to. An in-body link from a live page to a scheduled one is a 404 for every reader and every crawler until the date lands. Our content validator fails the build on it. If you build anything like this, write that check on day one — it is the failure mode, and it is invisible in review."
+      }
+    },
+    {
+      "h2": "What we'd do differently on the next build",
+      "body": [
+        "Publishing a configuration means publishing what's wrong with it too, otherwise it's a brochure."
+      ],
+      "bullets": [
+        "**The Open Graph images are generated per route family at build time.** It works and it's the slowest part of the build. On the next one we'd generate them on first request and cache, or accept one static image per family.",
+        "**No internationalisation, and the URL structure assumes there never will be.** We serve one language to one market, so `hreflang` and locale routing are absent by choice. If that changes it's a migration, not a config flag, and we knew that when we chose it.",
+        "**The schema graph ships site-wide from the root layout.** It keeps `@id` references resolvable, at the cost of a few hundred bytes on every page. Correct, slightly wasteful, and we'd make the same call again.",
+        "**We validate content with a Python script rather than a type system.** Word counts, banned phrases, near-duplicate detection and forward-dated links all live outside TypeScript. It should probably be a build plugin. It is a `pre-push` habit, and habits decay.",
+        "**Nothing here is a substitute for having something worth indexing.** The [rendering argument between Next.js and WordPress](/compare/nextjs-vs-wordpress-seo) is real, and it is also smaller than the argument about whether your pages answer a question anybody asked."
+      ],
+      "subs": [
+        {
+          "h3": "If you're handing this to a developer",
+          "body": [
+            "Everything above is a set of decisions, not a set of tickets. Turning it into work that actually merges is a separate skill, and one most SEO handovers skip — we wrote up [the ticket format we use](/journal/how-to-write-seo-requirements-for-developers) for exactly this reason. Name the file, paste the expected output, and give the reviewer a command they can run."
+          ]
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need generateMetadata, or is the static metadata object enough?",
+      "a": "Use the static object wherever the values don't depend on route params or fetched data — it's simpler and always ends up in the initial HTML. Use `generateMetadata` for dynamic routes. You can't export both from the same segment, and both are Server Component only."
+    },
+    {
+      "q": "How do I set a canonical URL in the Next.js App Router?",
+      "a": "Set `metadataBase: new URL('https://yourdomain.com')` in the root layout, then `alternates: { canonical: '/your/path' }` on each route. Next resolves the relative path against the base. A relative URL field with no `metadataBase` configured is a build error; an absolute one ignores the base entirely."
+    },
+    {
+      "q": "Why does my 404 page return a 200 status code?",
+      "a": "Because the response streamed. Next.js documents that a not-found render returns 404 for non-streamed responses and 200 for streamed ones, and a 200 on a \"not found\" page is a soft 404 to Google. Check it with `curl -sI`, on a dynamic route that calls `notFound()` as well as an unmatched URL."
+    },
+    {
+      "q": "Should I use trailingSlash: true?",
+      "a": "It genuinely doesn't matter which you pick, only that one form redirects to the other and everything agrees. Next defaults to redirecting `/about/` to `/about`. What breaks sites is the framework saying one thing while a CDN rule or legacy server config says the other."
+    },
+    {
+      "q": "Why did my Open Graph or Twitter tags stop working after adding page-level metadata?",
+      "a": "Metadata merges shallowly. A nested object defined on a child route replaces the parent's version rather than merging into it, so setting `twitter: { title }` on a page drops the layout's `card`. Re-declare every field you need, or spread a shared constant into each route."
+    },
+    {
+      "q": "Does the App Router help SEO compared with the Pages Router?",
+      "a": "Marginally, and not in the way people expect. The Metadata API is easier to get right than manually managing head tags, which prevents a class of mistakes. But both routers can render identical HTML to a crawler. What decides the outcome is whether the content ships server-rendered, not which router produced it."
+    }
+  ],
+  "sources": [
+    {
+      "title": "generateMetadata",
+      "publisher": "Next.js",
+      "url": "https://nextjs.org/docs/app/api-reference/functions/generate-metadata",
+      "date": "2026-03-03"
+    },
+    {
+      "title": "not-found.js",
+      "publisher": "Next.js",
+      "url": "https://nextjs.org/docs/app/api-reference/file-conventions/not-found",
+      "date": "2026-07-22"
+    },
+    {
+      "title": "trailingSlash",
+      "publisher": "Next.js",
+      "url": "https://nextjs.org/docs/app/api-reference/config/next-config-js/trailingSlash",
+      "date": "2025-06-16"
+    },
+    {
+      "title": "Build and submit a sitemap",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+      "date": "2026-07-08"
+    },
+    {
+      "title": "How to Specify a Canonical with rel=\"canonical\" and Other Methods",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "sitemaps.org - Protocol",
+      "publisher": "sitemaps.org",
+      "url": "https://www.sitemaps.org/protocol.html"
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "how-to-write-seo-requirements-for-developers"
+    },
+    {
+      "type": "compare",
+      "slug": "nextjs-vs-wordpress-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "javascript-seo"
+    },
+    {
+      "type": "answers",
+      "slug": "seo-checklist-before-launching-a-website"
+    },
+    {
+      "type": "glossary",
+      "slug": "xml-sitemap"
+    },
+    {
+      "type": "glossary",
+      "slug": "canonical-tag"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-fix-index-bloat"
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "slug": "how-to-crawl-your-own-site-for-an-seo-audit",
+  "type": "journal",
+  "primaryKeyword": "how to crawl your own site for an seo audit",
+  "secondaryKeywords": [
+    "crawler settings for first audit",
+    "javascript rendering on or off crawl",
+    "ignore robots txt crawl setting",
+    "which crawl reports to open first"
+  ],
+  "cluster": "analytics-setup",
+  "intent": "informational",
+  "h1": "How to configure your first crawl so the output is actually usable",
+  "metaTitle": "How to Crawl Your Own Site for an SEO Audit",
+  "metaDescription": "Tool-neutral and settings-first. JavaScript rendering on or off changes everything, and ignoring robots.txt shows you what you accidentally blocked.",
+  "updated": "2026-09-21",
+  "published": "2026-09-21",
+  "answer": "A crawler's defaults answer a different question from the one you have. Decide four things before the first run: whether JavaScript rendering is on, whether robots.txt is obeyed or deliberately ignored, which user agent you send, and where the crawl limits sit. Everything in the export follows from those four.",
+  "takeaways": [
+    "Run the crawl twice on purpose. Rendering off tells you what Google gets in the HTML response; rendering on tells you what exists after JavaScript. **The difference between them is the finding.**",
+    "Respecting `robots.txt` hides the exact URLs you most need to see, because a blocked URL simply never appears in the export and absence is invisible.",
+    "Two false positives are near-guaranteed behind an Indian CDN: a wall of 403s from bot protection, and a geo redirect no real visitor experiences.",
+    "A crawl knows structure and nothing about money. Join the URL list to a Search Console export before you prioritise anything."
+  ],
+  "sections": [
+    {
+      "h2": "A crawl is an instrument, and the defaults are somebody else's calibration",
+      "body": [
+        "Most first crawls go the same way. Install the tool, type in the domain, press start, and forty minutes later there are 4,000 rows sorted by a severity colour, an alarming number of red cells, and no sense of which ones matter. Then the file gets emailed to a developer, who ignores it, correctly.",
+        "That is not a tool problem. It is a configuration problem, and it happened before the crawl started. A crawler is a measuring instrument; the settings are its calibration; and the defaults are calibrated for a generic site that is not yours. Two of them change the output so completely that a badly-set crawl does not give you a worse answer — it gives you a confident answer to a question you did not ask.",
+        "This page is deliberately tool-neutral. Screaming Frog, Sitebulb, JetOctopus, the site audits inside Ahrefs and Semrush, and the open-source options all expose the same four decisions under different names and in different menus. Learn the decisions and the choice of tool stops being interesting.",
+        "What happens afterwards — turning an export into something a developer will actually ship — is [a separate discipline and the reason most audits fail](/journal/what-an-seo-audit-should-actually-find). This is the part that comes before it, and getting it wrong makes that part impossible."
+      ]
+    },
+    {
+      "h2": "The four settings that decide the answer",
+      "body": [
+        "Everything else in the configuration screen is preference. These four are load-bearing."
+      ],
+      "table": {
+        "caption": "The four crawler settings that change the output, and what to set them to for a first audit.",
+        "head": [
+          "Setting",
+          "Usual default",
+          "Set it to",
+          "What goes wrong otherwise"
+        ],
+        "rows": [
+          [
+            "JavaScript rendering",
+            "Off — HTML source only",
+            "Off for run one, on for run two, then diff them",
+            "On a client-rendered site, a text-only crawl returns near-empty pages and you spend a day rewriting content that already exists"
+          ],
+          [
+            "robots.txt",
+            "Respect it",
+            "Respect for run one, ignore for run two",
+            "A respectful crawl silently omits every blocked URL, so the directory you accidentally disallowed is invisible rather than flagged"
+          ],
+          [
+            "User agent",
+            "The tool's own string",
+            "The tool's own string, with your IP allowlisted at the firewall",
+            "Bot protection challenges an unfamiliar crawler and every URL comes back 403 — see below before you reach for a Googlebot string"
+          ],
+          [
+            "Limits — depth, URL cap, speed",
+            "A URL cap and a conservative request rate",
+            "Cap well above your known URL count; keep the rate low on shared hosting",
+            "The crawl truncates without saying so and you conclude the site has 5,000 URLs when it has 40,000"
+          ]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "Rendering decides whether the crawl means anything at all",
+          "body": [
+            "Googlebot processes a JavaScript page in three phases — crawling, rendering, indexing — and the middle one is queued rather than immediate. Google's documentation is direct about it: [pages returning a 200 are queued for rendering, and a page may stay on that queue longer than a few seconds](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics).",
+            "That is why the two crawls answer genuinely different questions. Rendering off shows what sits in the HTML response — what Google can use immediately and reliably, on the first pass, without waiting for anything. Rendering on shows what exists once JavaScript has executed — what Google will probably get to, eventually, if nothing goes wrong.",
+            "So the diff is the deliverable. Internal links, canonical tags, titles, hreflang annotations, structured data and body copy that appear only in the rendered crawl all depend on a deferred step. That is not automatically a fault, but it is a risk, and on a JavaScript-heavy site it is the single most useful thing a first crawl can tell you.",
+            "The cost is time. Rendering each page in a headless browser is dramatically slower than parsing HTML — on a laptop it is the difference between a crawl that finishes over lunch and one that finishes overnight. On a large site, render a sample of URLs per template rather than the whole thing. You are testing templates, not pages."
+          ]
+        },
+        {
+          "h3": "Ignore robots.txt on purpose, for one run",
+          "body": [
+            "A respectful crawl shows you the site as a well-behaved bot sees it. An unrestricted crawl shows you what is behind the wall. You need both, and the second one is where the surprises live.",
+            "The most common finding by a distance is a `Disallow` rule written years ago for a staging environment, a search results path or a directory that has since become commercially important. In a respectful crawl those URLs do not appear as errors. They do not appear at all — and nobody notices an absence in a spreadsheet.",
+            "It is also worth being precise about what a block does, because the misunderstanding is expensive. Google's specification says it cannot index the content of a disallowed page but may still index the URL and show it in results without a snippet. Blocked is not removed, which is why `robots.txt` is the wrong instrument for cleaning up [index bloat](/answers/how-to-fix-index-bloat) and the right one for saving crawl.",
+            "Most crawlers will flag which URLs would have been blocked while still fetching them. Turn that column on. It is the finding."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "One crawl per question, not one crawl for everything",
+      "body": [
+        "The instinct is to configure a single perfect crawl that answers everything. Resist it. A crawl is cheap and a wrong conclusion is not, and three narrow crawls take less wall-clock time than one exhaustive one because two of them are fast.",
+        "Run them in this order. Each one changes what the next is for."
+      ],
+      "numbered": [
+        "**The discovery crawl.** Seed the homepage, follow internal links only, respect `robots.txt`, rendering off, skip images and external links. Question: what can a crawler reach from the front door, and how deep does it have to go? Fastest of the three and the one that produces most of the structural findings.",
+        "**The render diff.** Same seed, rendering on, capped to a sample of URLs per template. Question: what only exists after JavaScript runs? You are comparing two lists, not reading one.",
+        "**The list crawl.** Feed the tool a URL list instead of a seed — your XML sitemap, a Search Console pages export, your CMS's list of published URLs, and last month's crawl file. Question: what exists that the discovery crawl never reached?"
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The set difference is the whole point",
+        "body": "Anything in the list crawl and absent from the discovery crawl has no internal path from your homepage. That is an orphan page list, and it is not obtainable from a single crawl at any setting — because a crawler starting at your homepage finds exactly the links Google finds, which is precisely the blind spot you are trying to see around. [Server logs answer the same question from the other end](/journal/how-to-do-log-file-analysis): not what a crawler could reach, but what Google actually requested."
+      }
+    },
+    {
+      "h2": "The four reports to open first",
+      "body": [
+        "A modern crawler produces forty-odd tabs. Four of them carry nearly everything worth finding on a first pass, and they go in this order because each one changes how you read the next. A canonical fault, for instance, means something entirely different once you know the URL returns a 301."
+      ],
+      "table": {
+        "caption": "The four crawl reports to read first, what healthy looks like, and the failure each one usually surfaces.",
+        "head": [
+          "Report",
+          "The question it answers",
+          "Healthy looks like",
+          "The usual failure"
+        ],
+        "rows": [
+          [
+            "Response codes",
+            "Is anything internally broken or redirecting?",
+            "Almost everything 200, and internal links pointing at final URLs",
+            "Internal links pointing at 301s, and redirect chains two or three hops long"
+          ],
+          [
+            "Indexability and canonicals",
+            "Which URLs is the site telling Google to ignore, and did anyone mean to?",
+            "Every commercial page indexable and self-canonical",
+            "A `noindex` that survived a staging deploy, or a whole template canonicalised to the homepage"
+          ],
+          [
+            "Duplicate titles and H1s",
+            "Are two pages claiming the same job?",
+            "Duplicates cluster only where you expect them — pagination, filters",
+            "Twenty product pages sharing one title, which is a template bug rather than a copywriting one"
+          ],
+          [
+            "Crawl depth",
+            "How many clicks from the homepage to the pages that make money?",
+            "Revenue pages within three clicks of the homepage",
+            "Money pages sitting at depth six because pagination is the only route to them"
+          ]
+        ]
+      },
+      "bullets": [
+        "**Read every one at template level.** Four thousand rows are rarely four thousand problems; they are usually six template faults wearing different URLs.",
+        "**Sort by count of affected URLs, then check the template.** A fault touching 900 URLs and a fault touching two get the same severity colour and deserve very different amounts of your attention.",
+        "**Note what is missing as carefully as what is red.** A template with no structured data, or a page type with no internal links pointing to it, produces no error row at all."
+      ]
+    },
+    {
+      "h2": "The two false positives a CDN or bot layer always produces",
+      "body": [
+        "Before you send anyone the findings, rule these two out. We have watched more than one audit lose all credibility in the first thirty seconds because the summary opened with a fault the client knew was not real."
+      ],
+      "subs": [
+        {
+          "h3": "One — the 403 and 429 wall",
+          "body": [
+            "Bot protection — Cloudflare, AWS WAF, Sucuri, Imperva, or a security plugin on WordPress — sees a fast sequential requester with an unfamiliar user agent and issues a challenge. Your crawler cannot solve a JavaScript challenge, so it records a 403 or a 429 and moves on. At speed, the entire site comes back broken.",
+            "The tell is consistent: Search Console reports nothing wrong, every page loads fine in a browser, and the errors begin a few hundred URLs in rather than at row one. Genuine site-wide breakage does not wait for you to warm up.",
+            "Fix it in order. Slow the crawl right down first, because rate is usually the whole trigger. Then allowlist your own IP at the firewall, which takes one message to whoever manages it. Only then consider changing the user agent — and understand what you are doing when you do."
+          ],
+          "bullets": [
+            "**Claiming to be Googlebot can make things worse.** Firewalls increasingly verify a claimed Googlebot by reverse DNS, exactly as Google documents, and a request announcing itself as Googlebot from a Jio or Airtel address fails that check and gets treated far more harshly than an honest crawler would have been.",
+            "**Verify at the source instead.** Google publishes its crawler IP ranges in JSON, which is how a WAF decides whether to believe you. If your firewall is blocking real Googlebot, that is a genuine and much more serious finding — check it against Search Console's crawl data before you assume it is not."
+          ]
+        },
+        {
+          "h3": "Two — the geo redirect nobody in your market experiences",
+          "body": [
+            "Country-based redirection at the edge is common on anything international, and your crawler may exit from a datacentre outside India. It gets served a different locale, records a wall of 302s or a set of hreflang mismatches, and reports a structural fault that no Indian visitor has ever encountered.",
+            "It happens in the other direction too. Crawl an international site from an Indian IP when the edge sends Indian traffic to `/in/`, and every seeded URL returns a redirect. The tell in both cases is that every redirect points at the same locale prefix.",
+            "Crawl from the market you sell in, and then check the finding from Google's side rather than your own: the URL Inspection tool's live test shows the rendered page, the page resources and any that failed to load, as Google fetched them. If Google sees the page and your crawler sees a redirect, the crawler is the one that is wrong."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Never ship an audit that opens with a false positive",
+        "body": "An audit whose headline finding is \"your entire site returns 403\" gets dismissed in one sentence by anyone who has loaded the site in a browser, and everything genuine underneath it goes with it. Rule both of these out before you write a word."
+      }
+    },
+    {
+      "h2": "Staging versus production, and the credentials problem",
+      "body": [
+        "Crawling staging is useful for exactly one thing: catching a template fault before it ships. It cannot tell you anything about indexation, rankings or duplicate content in the index, because staging is not in the index — and the point at which it is, you have a much bigger problem.",
+        "The practical obstacle is authentication. Most crawlers handle HTTP basic auth directly and it is a two-field job. Form-based logins need a stored session cookie or a scripted login, and a rendered form login is fiddly enough that we budget half an hour for it and are occasionally wrong. Ask for basic auth on staging if you get a say in it; it makes every future crawl trivial.",
+        "The genuine risk here runs the other way. Environment-level protections are exactly what survives a rushed release: a blanket `Disallow: /` in staging's `robots.txt`, or an `X-Robots-Tag: noindex` applied at the server level, copied to production by a deploy script. That is the single most expensive five-line mistake in technical SEO, and it is closely related to the reverse failure — [a staging site that got itself indexed](/answers/staging-site-indexed-by-google) because nobody protected it at all."
+      ],
+      "bullets": [
+        "**Crawl staging with rendering on.** Staging is where a JavaScript build regression is cheap to catch and cheap to fix.",
+        "**Crawl production with rendering off first.** Production is where you need to know what Google receives in the HTML response today.",
+        "**Diff staging against production before a release, not after.** URLs that exist in one and not the other are a redirect map you would otherwise reconstruct from memory at 11pm.",
+        "**Do not point a crawler at production at full speed during business hours** on shared hosting. You will take the site down, and it will be your fault rather than the host's."
+      ]
+    },
+    {
+      "h2": "Turning four thousand rows into something worth shipping",
+      "body": [
+        "A crawl knows structure and nothing whatsoever about money. It cannot tell a page that earns half your revenue from a tag archive nobody has ever visited, so left alone it sorts both by severity colour and gives you no way to choose.",
+        "So join it to something that does know. Export your pages from Search Console with clicks and impressions, export landing pages from GA4 with key events if the setup is trustworthy, and join both onto the crawl's URL column. Every row now carries a demand column, and sorting by that does the prioritisation that no crawler setting can.",
+        "Two habits make the second crawl worth more than the first. Keep the file, with its date and its settings written down, because a month-on-month diff detects regressions that no single crawl can see. And write down which configuration produced it — a crawl compared against one run at different settings is not a comparison, it is two unrelated numbers.",
+        "Expect two or three genuinely useful findings from a first crawl on a healthy site, not thirty. That is a good outcome, not a disappointing one. If you want the version with the joins, the diffs and the prioritisation already done, that is what an [SEO audit](/services/seo-audit-services) is buying you — but there is nothing here you cannot run yourself in an afternoon."
+      ],
+      "numbered": [
+        "Set the four settings deliberately. Write down what you chose.",
+        "Run the discovery crawl: internal links only, robots.txt respected, rendering off.",
+        "Run it again ignoring robots.txt, and list every URL that would have been blocked.",
+        "Run a rendered crawl on a sample per template and diff the two for links, canonicals, titles and body copy.",
+        "Run a list crawl from your sitemap and Search Console export, and take the set difference against the discovery crawl.",
+        "Rule out the 403 wall and the geo redirect before reading anything as a fault.",
+        "Join the URL list to Search Console clicks, group by template, and pick the handful you will actually fix."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I crawl with JavaScript rendering on or off?",
+      "a": "Both, in that order. Rendering off shows what Google gets in the HTML response immediately; rendering on shows what exists after JavaScript executes, which Google reaches later via a queue. The difference between the two crawls is the actual finding. Rendering is far slower, so sample by template on large sites."
+    },
+    {
+      "q": "Why does my crawler get 403 on every page when the site loads fine in a browser?",
+      "a": "Bot protection is challenging it. Your crawler cannot solve a JavaScript challenge, so it logs a 403 or 429. Slow the crawl down first, then allowlist your IP at the firewall. Don't reach for a Googlebot user agent — many firewalls verify that claim by reverse DNS and block harder when it fails."
+    },
+    {
+      "q": "Should I set my crawler's user agent to Googlebot?",
+      "a": "Only when you're specifically testing whether the server treats Googlebot differently, and only from an allowlisted IP. As a default it makes bot-protection problems worse, and it hides the very cloaking-style differences you might have wanted to find. Crawl as yourself and compare against the URL Inspection tool."
+    },
+    {
+      "q": "Why don't the URLs in my sitemap show up in my crawl?",
+      "a": "Because a crawl that starts at your homepage finds only what your internal links point at. A sitemap URL that never appears has no internal path to it — that's an orphan page, and the set difference between a sitemap list crawl and a discovery crawl is the only clean way to produce that list."
+    },
+    {
+      "q": "How often should I re-crawl my own site?",
+      "a": "Monthly on anything that changes weekly, quarterly on a stable site, and always in the days before and after a release. The value is in the diff rather than the crawl, so keep every export with its date and its settings recorded — a comparison against a differently-configured crawl is meaningless."
+    },
+    {
+      "q": "Can I crawl a site that sits behind a login?",
+      "a": "Yes. HTTP basic auth is supported directly by most crawlers and takes two fields. Form-based logins need a stored session cookie or a scripted sign-in and take longer to get right, especially with rendering on. If you have any say in how staging is protected, ask for basic auth."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Understand JavaScript SEO basics",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics",
+      "date": "2026-03-04"
+    },
+    {
+      "title": "How Google Interprets the robots.txt Specification",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt",
+      "date": "2026-07-08"
+    },
+    {
+      "title": "Overview of Google crawlers and fetchers (user agents)",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers",
+      "date": "2026-06-12"
+    },
+    {
+      "title": "List of Google's common crawlers",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers",
+      "date": "2026-07-14"
+    },
+    {
+      "title": "URL Inspection tool",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9012289"
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "what-an-seo-audit-should-actually-find"
+    },
+    {
+      "type": "services",
+      "slug": "seo-audit-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "javascript-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "robots-txt"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-do-log-file-analysis"
+    },
+    {
+      "type": "answers",
+      "slug": "staging-site-indexed-by-google"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-build-an-seo-dashboard-in-looker-studio"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    }
+  ]
+}

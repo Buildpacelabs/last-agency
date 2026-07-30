@@ -1,0 +1,343 @@
+{
+  "slug": "how-to-write-seo-requirements-for-developers",
+  "type": "journal",
+  "primaryKeyword": "how to write seo requirements for developers",
+  "secondaryKeywords": [
+    "seo ticket template",
+    "acceptance criteria for technical seo",
+    "why seo fixes never ship",
+    "seo work in a sprint backlog"
+  ],
+  "cluster": "technical-launch",
+  "intent": "informational",
+  "h1": "How to write SEO requirements a developer will actually ship",
+  "metaTitle": "How to Write SEO Requirements for Developers",
+  "metaDescription": "\"Add schema markup\" as a ticket title is why nothing ships. Here is the ticket template we file weekly, and acceptance criteria that survive review.",
+  "updated": "2026-09-16",
+  "published": "2026-09-16",
+  "answer": "Write the change, not the finding. Every SEO ticket needs a file or template named, the exact output expected, and acceptance criteria a reviewer can verify without knowing SEO. A ticket titled \"add schema markup\" sits in a backlog for months. A ticket titled \"add Organization JSON-LD to the root layout\" gets merged.",
+  "takeaways": [
+    "A finding describes a state of the world. A ticket describes a change to a file. Most backlogs are full of findings.",
+    "Name the file. `app/layout.tsx`, not \"the site header\". If you can't name one, you haven't finished the research yet.",
+    "Acceptance criteria must be checkable by someone who has never heard of a canonical tag. A `curl` command with expected output is a criterion. \"SEO improves\" is not.",
+    "Size against release cadence, not effort. A two-line fix behind a six-week release train is a six-week fix, and pretending otherwise wrecks the plan."
+  ],
+  "sections": [
+    {
+      "h2": "A finding is a complaint. A ticket is a change.",
+      "body": [
+        "Most SEO recommendations reach engineering as findings. \"Canonical tags are inconsistent.\" \"Schema markup is missing.\" \"Page speed needs improvement.\" Every one of those can be true, and none of them is work. A developer reading them has to redo the research the SEO already did, guess at the intent, and carry the risk of guessing wrong.",
+        "So they don't. The ticket gets a label, moves to the backlog, and stays there. Six months later the agency's slide says \"blocked by dev\" and the client's engineering lead says \"they never told us what they wanted\". Both are describing the same document.",
+        "We write these tickets every week, because our technical retainer is defined as ending in a merged pull request rather than a PDF. That means we also get them wrong in public, in front of people who review code for a living. What follows is the format we settled on. It isn't clever. It's just finished.",
+        "The distinction doing all the work: a finding describes a state of the world; a ticket describes a change to a named thing. If your ticket doesn't name a file, a template or a config key, it's still a finding wearing a ticket's clothes."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "This is the step after the audit",
+        "body": "A [five-finding audit](/journal/what-an-seo-audit-should-actually-find) is worth nothing if all five arrive as findings. The audit decides what matters. The ticket decides whether it happens. Different documents, different readers, and the second one is the one nobody writes."
+      }
+    },
+    {
+      "h2": "Why findings-shaped tickets rot in a backlog",
+      "body": [
+        "It helps to be precise about the failure, because \"developers deprioritise SEO\" is the wrong diagnosis and leads to the wrong fix — usually escalation, which makes it worse. A findings-shaped ticket fails four separate process gates before anyone gets to decide whether they care about it."
+      ],
+      "bullets": [
+        "**It can't be estimated.** \"Add schema markup\" is forty minutes or three weeks depending on how many types, which templates, and whether the underlying data even exists in the CMS. A ticket nobody can size doesn't go into a sprint, because sprints are built out of sized things.",
+        "**It can't be assigned.** Frontend, backend or content? An ambiguous ticket has no obvious owner, and unowned tickets are precisely the ones that survive every round of backlog grooming untouched.",
+        "**It can't be reviewed.** The person approving the pull request has no way to judge whether the change is right. Faced with a diff they can't evaluate, most reviewers stall rather than approve — which is correct behaviour, and fatal to your timeline.",
+        "**It can't be closed.** Nobody closes a ticket that might come back. \"Improve internal linking\" has no terminal state, so it stays open, and after a while people stop reading the column it lives in."
+      ],
+      "subs": [
+        {
+          "h3": "None of this is resistance",
+          "body": [
+            "We've had this argument with engineering leads who wanted the fixes more than we did, and who were visibly annoyed that they couldn't act on them. The blocker was a document that asked a question instead of describing a change. Rewrite the same recommendation as eight fields and the same team ships it in the next sprint, with no change in enthusiasm on either side."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The template, field by field",
+      "body": [
+        "Eight fields. A properly written one takes about fifteen minutes, which is the real cost of this method and the reason people skip it. Fifteen minutes against a ticket that would otherwise sit for a quarter is not a hard trade to make."
+      ],
+      "table": {
+        "caption": "The eight fields, and what specifically breaks when each one is missing.",
+        "head": [
+          "Field",
+          "What goes in it",
+          "What breaks without it"
+        ],
+        "rows": [
+          [
+            "Title",
+            "The change, in the imperative, naming the thing changed. \"Emit a self-referencing canonical on all `/products/*` pages.\"",
+            "Triage happens on titles alone. Yours reads as a research task and gets sorted like one."
+          ],
+          [
+            "Why now",
+            "Two sentences of business consequence, with a number if you have one. Not the SEO theory.",
+            "It loses every prioritisation call against a bug with a customer's name attached."
+          ],
+          [
+            "Files or templates",
+            "Actual paths. `app/products/[slug]/page.tsx`, `snippets/head.liquid`. A labelled guess is fine.",
+            "The developer redoes your research, or edits a different file and fixes a different page."
+          ],
+          [
+            "The change",
+            "The exact output. The literal tag, header, or redirect rule. Paste it, don't describe it.",
+            "You get an interpretation of your intent, and interpretations are where the second ticket comes from."
+          ],
+          [
+            "Acceptance criteria",
+            "Checkable statements in the reviewer's language, not yours. Two to four of them.",
+            "Nobody can approve the pull request, so it waits for you — and you're asleep."
+          ],
+          [
+            "Out of scope",
+            "The adjacent things you are explicitly not asking for in this ticket.",
+            "Scope creeps, the estimate triples, and the whole thing moves to next quarter."
+          ],
+          [
+            "Verification after deploy",
+            "What you'll run against production once it's live, and what output counts as pass.",
+            "\"Done\" comes to mean merged, and merged is not live."
+          ],
+          [
+            "Owner and blast radius",
+            "Who reviews it, and what else renders from that file.",
+            "A one-line template change ships to 400 pages that nobody thought to check."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "A worked example: the canonical that quietly 301s",
+      "body": [
+        "Here is the same problem written both ways. The first is what an audit export produces. The second is what went into a sprint the day it was filed."
+      ],
+      "subs": [
+        {
+          "h3": "The finding we started with",
+          "body": [
+            "\"Canonical tags on product pages point at URLs that redirect.\" That's accurate, it's the correct diagnosis, and it's unshippable. Which product pages? Redirect to what? Is the canonical wrong, or is the redirect wrong? A developer has three plausible fixes and no way to choose between them, and picking the wrong one is worse than doing nothing."
+          ]
+        },
+        {
+          "h3": "The ticket we actually filed",
+          "bullets": [
+            "**Title.** Emit the canonical URL without a trailing slash on `/products/*`.",
+            "**Why now.** Every product page currently declares a canonical that returns a 301 to the same URL minus the slash. We're telling Google to consolidate on a URL that immediately moves, across the 2,300 pages that carry the catalogue.",
+            "**Files.** `app/products/[slug]/page.tsx` — the `alternates.canonical` value. Possibly also `app/sitemap.ts`, if it builds URLs with the same helper. Guessing on the second one.",
+            "**The change.** The canonical must render as `https://example.com/products/<slug>` — absolute, https, apex host, no trailing slash. Byte-identical to what the sitemap emits for the same page.",
+            "**Acceptance criteria.** For any three product URLs: `curl -s <url> | grep 'rel=\"canonical\"'` returns exactly one line, and fetching the URL inside it returns `HTTP/2 200`, not `301`.",
+            "**Out of scope.** Category pages, the host-level trailing-slash rule, and the sitemap's `lastmod` values. Three separate tickets, filed, linked, not blocking this one.",
+            "**Verification after deploy.** The same `curl` against production, then one live URL Inspection to confirm the user-declared canonical matches what we intended.",
+            "**Owner and blast radius.** Frontend. That file renders every product page, so a mistake here is a 2,300-page mistake rather than a one-page mistake — worth a second reviewer."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Longer to write, shorter to argue about",
+        "body": "The second version contains everything a sprint planner needs: a size, an owner, a definition of done, and a reason that survives contact with a product roadmap. None of it required the developer to trust our judgement about SEO, which is the point."
+      }
+    },
+    {
+      "h2": "Acceptance criteria a reviewer can check without knowing SEO",
+      "body": [
+        "This is the field people get wrong, and it decides whether the pull request is approved this week or next month. The reviewer is a developer. They don't know what a canonical does, and they shouldn't have to.",
+        "The rule: every criterion must be a statement someone can make true or false with a command, a diff, or a browser tab they already have open. If checking it needs a paid tool or an opinion, it isn't a criterion — it's a request for a favour."
+      ],
+      "table": {
+        "caption": "The same requirement written as a finding, then as something a reviewer can verify.",
+        "head": [
+          "Written as a finding",
+          "Written as a criterion"
+        ],
+        "rows": [
+          [
+            "Schema markup should be valid.",
+            "`https://validator.schema.org` reports zero errors against the rendered HTML of any `/services/*` page, and the `name` on the `Service` node is the same string as the visible `<h1>`."
+          ],
+          [
+            "Pages shouldn't be blocked from indexing.",
+            "`curl -sI <url> | grep -i x-robots-tag` returns nothing, and the rendered HTML contains no `<meta name=\"robots\" content=\"noindex\">`."
+          ],
+          [
+            "Improve internal linking on articles.",
+            "Every `/journal/*` page renders between 4 and 8 links to other `/journal/*` or `/answers/*` URLs, sourced from the `related` array in its data file."
+          ],
+          [
+            "Redirects should be implemented correctly.",
+            "Each of the 47 rows in `redirects.csv` returns a single `301` whose `location` header is the mapped target. `curl -sIL` shows exactly two status lines, not three."
+          ],
+          [
+            "Site speed needs improvement.",
+            "The `/products/*` template ships no render-blocking script over 20KB, and on a throttled mobile profile the LCP element on three sample URLs is the product image rather than a late-injected banner."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Numbers, not adjectives.** \"Between 4 and 8\" is checkable. \"Enough\" is a meeting.",
+        "**One command per criterion.** A reviewer will run three commands. They will not work through a checklist of twelve, and you shouldn't ask them to.",
+        "**Say what must not change.** \"No change to the rendered `<h1>` text\" prevents the well-meant refactor that costs you the page you were protecting.",
+        "**Paste the expected output, not just the command.** `HTTP/2 301` followed by `location: https://…` tells a reviewer what pass looks like without them having to ask."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The criterion people write backwards",
+        "body": "\"Add `noindex` to staging URLs\" combined with \"block staging in robots.txt\" cancels itself out. Google's specification is explicit that [indexing rules on a page blocked in robots.txt are never read](https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag), because the crawler never fetches the page to find them. If one ticket contains both instructions, one of them is wrong. Decide which before it ships, not in November when the URLs are still in the index."
+      }
+    },
+    {
+      "h2": "What \"done\" means when nothing changes on screen",
+      "body": [
+        "Most SEO changes are invisible. A canonical tag, a redirect rule, a JSON-LD block, an `hreflang` cluster — none of it moves a pixel. That breaks the ordinary definition of done, which on most teams is some version of \"QA looked at it and it looked right\".",
+        "So define done as three gates, and put all three in the ticket rather than in your head."
+      ],
+      "numbered": [
+        "**Merged.** The diff does what the ticket said. This is the only gate the developer owns, and it's where most SEO tickets stop — which is why so many fixes are reported as delivered and aren't live anywhere.",
+        "**Live and correct in production.** Run the acceptance criteria against the production URL, not staging. Staging and production differ on exactly the things this work touches: hostname, protocol, CDN rules, redirect config, header injection.",
+        "**Re-crawled and re-read.** The change exists for users the moment it deploys, and exists for search when Google fetches the page again. For a handful of URLs, a live test in Search Console's URL Inspection tool shows what Google gets today, including a screenshot of the rendered page. For a template change across thousands of pages you're watching the coverage reports over the following weeks — realistically two to six, depending on how often that template gets crawled."
+      ],
+      "subs": [
+        {
+          "h3": "Ask for the deployment date in writing",
+          "body": [
+            "Without it, the reporting cycle and the release cycle drift apart, and by month three nobody can say which change caused which movement. A dated list of what went live and when is the cheapest attribution instrument in technical SEO, and almost nobody keeps one.",
+            "It's also why we run a re-check list rather than a completed list. Technical fixes revert: a cache layer serves the old header, a plugin update overwrites a template, a later refactor restores the helper you replaced. We've watched all three happen. Nothing catches it except checking again, so verification becomes a monthly job rather than a one-off tick."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Sizing and sequencing against a cadence you don't control",
+      "body": [
+        "The other half of getting this work shipped has nothing to do with how the ticket reads. It's arithmetic, and it's the part agencies quietly skip when they build a plan.",
+        "If a team releases every six weeks, a 90-day engagement contains roughly two deployments of technical work. Not two tickets — two windows. So the sequencing question isn't \"what matters most\", it's \"what fits in window one, given that window two lands in October\"."
+      ],
+      "bullets": [
+        "**Batch by file, not by SEO category.** Four tickets that all touch the root layout should be one pull request. Engineering resistance is usually about interruption cost rather than effort, and one review is far cheaper than four.",
+        "**Front-load everything that doesn't need a release.** Content, internal links, metadata held in the CMS, redirects in host config, Business Profile work. Clear all of it out of the queue first so the release windows carry only what genuinely needs code. [The half of SEO an agency can't do for you](/journal/what-clients-have-to-do-for-seo-to-work) covers the rest of that division of labour.",
+        "**Ask what the emergency path is.** Every team has one — a hotfix branch, a config flag, an edge rule — and it exists for incidents. A canonical pointing at a dead URL across the whole catalogue is an incident. Say so, in those words, and it may not have to wait six weeks.",
+        "**Size in the developer's units.** \"Small: one file, no new dependency, no data migration\" gets planned. \"Medium effort, high impact\" gets ignored, because it's your estimate of your own importance.",
+        "**Sequence by dependency, not severity.** Redirects before canonicals before sitemaps before schema. Get the order wrong and you ship a [sitemap](/glossary/xml-sitemap) full of URLs that are about to move, then spend the next window undoing it."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The question we ask before quoting technical work",
+        "body": "\"How does a change reach production, and who approves it?\" The answer predicts the outcome of a technical engagement better than the audit does. Behind a six-week release train with a change-advisory board, we say so before signing rather than after — it's the same reason we're careful about what [our technical retainer](/services/technical-seo-services) promises to deliver in 90 days."
+      }
+    },
+    {
+      "h2": "The tickets we've stopped writing",
+      "body": [
+        "A format this strict makes you notice how many recommendations don't survive it. If we can't write a checkable criterion and a plausible file path, the finding usually wasn't worth a sprint slot in the first place. That's a useful filter, and it has quietly shortened our backlogs."
+      ],
+      "bullets": [
+        "**\"Improve topical authority.\"** No file, no criterion, no reviewer. It's a content plan, and content plans don't belong in an engineering backlog.",
+        "**Blanket \"add schema to everything\".** We write one ticket per type per template, naming the required properties, because Google's guidelines are specific about which properties a type needs and about markup describing content that's actually visible on the page. A generic instruction reliably produces markup for content nobody can see, which is worse than shipping none.",
+        "**Micro-optimisations behind a release train.** Shaving 40ms off a script is a real improvement and a bad use of the only deployment window you get this quarter.",
+        "**Anything whose acceptance criterion is a third-party score.** \"Get the audit tool to green\" optimises for the tool. We've watched a team spend most of a sprint adding alt text to spacer images to clear a warning column that no search engine has ever read.",
+        "**\"Please advise.\"** If the ticket asks the developer a question, it isn't finished. Go and answer it."
+      ],
+      "subs": [
+        {
+          "h3": "The whole method, compressed",
+          "body": [
+            "The deliverable isn't the recommendation. It's a document somebody can close without asking you anything. If a developer has to message you to start work, the ticket is unfinished — and unfinished tickets are how a technical SEO budget turns into a year of screenshots.",
+            "Everything else here is detail. Name the file, paste the output, write two criteria a stranger can check, and say what happens after deploy. That's the job."
+          ]
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Who should write SEO tickets — the agency or the developer?",
+      "a": "The agency writes the required change and the acceptance criteria; the developer owns the implementation. That split works because the SEO knows what output is needed and the developer knows which file produces it. What fails is an agency dictating implementation, or a developer being asked to work out what output is required."
+    },
+    {
+      "q": "What if I don't know which file to name?",
+      "a": "Name your best guess and label it a guess. \"Probably the head partial — correct me if not\" costs a developer thirty seconds and saves them the entire research step. A wrong pointer is far better than no pointer, and it shows you did the work rather than forwarding a tool export."
+    },
+    {
+      "q": "How detailed should acceptance criteria be?",
+      "a": "Detailed enough that a reviewer who has never heard of a canonical tag can mark each one true or false. In practice two to four statements, each verifiable with a single command or a single look at the diff. Past five, people stop reading them and start approving on trust."
+    },
+    {
+      "q": "How do I stop SEO tickets being deprioritised every sprint?",
+      "a": "Two things. Write the \"why now\" as business consequence rather than SEO theory, so it competes properly against other work. And ask for a standing slot instead of ad-hoc slots — four hours a fortnight that actually happens beats twenty hours promised each quarter and delivered once."
+    },
+    {
+      "q": "Should SEO changes go through the normal QA process?",
+      "a": "Yes, but normal QA can't see most of them. Add the acceptance criteria to the QA checklist as literal commands with their expected output. If your QA team can copy, paste and compare two strings, an invisible change gets tested exactly like a visible one."
+    },
+    {
+      "q": "What's a reasonable turnaround for a technical SEO ticket?",
+      "a": "It depends on release cadence, not on the ticket. On a team deploying daily, a well-written single-file change often ships the same week. Behind a six-week release train the same change is a six-week change. Ask about cadence before agreeing any timeline, including ours."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Robots meta tag, data-nosnippet, and X-Robots-Tag specifications",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag",
+      "date": "2026-03-24"
+    },
+    {
+      "title": "General structured data guidelines",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/sd-policies",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "Redirects and Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+      "date": "2026-04-14"
+    },
+    {
+      "title": "URL Inspection tool",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9012289"
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "what-an-seo-audit-should-actually-find"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "journal",
+      "slug": "what-clients-have-to-do-for-seo-to-work"
+    },
+    {
+      "type": "answers",
+      "slug": "seo-checklist-before-launching-a-website"
+    },
+    {
+      "type": "journal",
+      "slug": "nextjs-app-router-seo-setup"
+    },
+    {
+      "type": "glossary",
+      "slug": "schema-markup"
+    },
+    {
+      "type": "compare",
+      "slug": "technical-seo-vs-content-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-do-log-file-analysis"
+    }
+  ]
+}

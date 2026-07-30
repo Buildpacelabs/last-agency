@@ -1,0 +1,309 @@
+{
+  "slug": "tds-on-marketing-agency-payments",
+  "type": "cost",
+  "primaryKeyword": "tds on digital marketing agency payments",
+  "secondaryKeywords": [
+    "tds section for advertising agency payment",
+    "tds rate on seo services india",
+    "form 16a from marketing agency",
+    "why did my agency get paid less than invoiced"
+  ],
+  "cluster": "agency-money",
+  "intent": "informational",
+  "h1": "TDS on payments to a marketing agency: what your accounts team deducts and why",
+  "metaTitle": "TDS on Marketing Agency Payments in India",
+  "metaDescription": "Your accounts team deducts TDS before paying us. Which section applies, why it doesn't change the price, and what the Form 16A trail should show.",
+  "updated": "2026-08-03",
+  "published": "2026-08-03",
+  "answer": "TDS is tax your company deducts from our invoice and deposits with the government against our PAN. On a marketing retainer most Indian buyers apply Section 194C at 1–2% or Section 194J at 10%. It changes what leaves your bank, never what the work costs — we still book the full invoice value.",
+  "takeaways": [
+    "TDS is **not a discount and not a cost**. It's our tax, paid early, by you, on our behalf — and we claim it back.",
+    "194C or 194J is a judgement call your CA makes, not a rule you can look up. Either way the retainer is the same number.",
+    "**GST is added on top; TDS comes off the service value.** Two different bases on the same invoice, which is where the arithmetic usually goes wrong.",
+    "An agency quoting a fee \"net of TDS\" is quietly asking for a 2–11% price rise. Ask for the gross number instead.",
+    "The certificate you owe us is **Form 16A**, quarterly. If it never arrives, your vendor is carrying a receivable they can't prove."
+  ],
+  "sections": [
+    {
+      "h2": "What your accounts team is actually doing",
+      "body": [
+        "Every month our invoice goes to your finance team, and every month a slightly smaller number lands in our bank. Nothing has gone wrong. Under Indian income tax law your company is a **deductor**: on certain payments the payer collects a slice of the tax at source and hands it to the government against the payee's PAN.",
+        "So the deduction is not a fee, a haircut or a negotiation you won. It is our tax, paid early, by you, on our behalf, and we set it off against our own liability when we file. The only two things it changes are the size of your bank transfer and the timing of our cash.",
+        "Founders buying their first retainer usually meet this properly for the first time with an agency, which is why it reliably produces one confused email in month one. Here is the whole mechanism, described from the side that receives it."
+      ],
+      "numbered": [
+        "**You deduct** at the time of payment or of credit to our account, whichever happens first — so a bill accrued in March is deducted in March even if it's paid in April.",
+        "**You deposit** what you deducted with the government, by the 7th of the following month in the ordinary case.",
+        "**You file** a quarterly statement listing every vendor, every PAN and every rupee deducted.",
+        "**You issue** us a certificate — Form 16A — showing what was deducted and what was actually deposited.",
+        "**We claim** the credit, because the same figures surface in our Form 26AS and Annual Information Statement."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "This is how we get paid, not tax advice",
+        "body": "We are on the receiving end of these deductions every month, so we can describe the mechanics accurately. We are not your chartered accountant and this page is not a substitute for one. Section choice, current-year rates and your own exposure are your CA's call."
+      }
+    },
+    {
+      "h2": "Which section your CA will pick, and why it's arguable",
+      "body": [
+        "Two sections do almost all the work here, and choosing between them is a genuine judgement rather than a lookup. A marketing retainer sits awkwardly between a contract for work and a fee for professional services, because in practice it's usually both — a content calendar is closer to the first, a technical audit closer to the second.",
+        "We have been paid under both sections, by companies of similar size, in the same quarter. We don't argue about it. It's your deduction, your return and your exposure if the department later disagrees, so it's your decision to make with your CA."
+      ],
+      "table": {
+        "caption": "The sections Indian buyers typically apply to a marketing retainer, and the rates we see in practice.",
+        "head": [
+          "Section",
+          "What it covers",
+          "Rate we typically see",
+          "When it shows up on a retainer"
+        ],
+        "rows": [
+          [
+            "**194C**",
+            "Payments under a contract for carrying out work, which expressly includes advertising",
+            "1% to an individual or HUF, 2% to a company, firm or LLP",
+            "The common treatment. Content, campaigns, production, media work"
+          ],
+          [
+            "**194J**",
+            "Fees for professional or technical services",
+            "10% for professional fees, 2% for technical services",
+            "When your CA reads strategy, consulting or audit work as a professional fee"
+          ],
+          [
+            "**194H**",
+            "Commission or brokerage",
+            "2%",
+            "Rare on a flat retainer. Appears when an agency takes a cut of media spend"
+          ]
+        ]
+      },
+      "bullets": [
+        "Thresholds barely matter here. Any retainer worth signing clears the single-payment limit on the first invoice, so the question is which section applies, not whether to deduct at all.",
+        "If we can't give you a valid PAN, the rate jumps to 20% under Section 206AA. Every agency you should consider working with can give you one in ten seconds.",
+        "An agency with a lower or nil deduction certificate under Section 197 will send you a copy with the invoice. It's uncommon at our size and it isn't a red flag either way.",
+        "The section that gets applied doesn't change our price, our scope or our margin — only your deduction and our cash timing."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Rates change with every Finance Act",
+        "body": "The figures above are the rates we see applied to our own invoices, not a citation. Something in this part of the Act moves most years. Confirm the current-year position with your CA before you set up a vendor master, and don't take a rate off a marketing site — including ours."
+      }
+    },
+    {
+      "h2": "A ₹75,000 retainer, from invoice to bank",
+      "body": [
+        "This is the arithmetic that confuses people, and it confuses them for a good reason: GST is added on top of the fee, while TDS is taken off it. Two different bases on one piece of paper.",
+        "TDS is computed on the service value, not on the GST-inclusive total, provided the GST is shown as a separate line on the invoice. Every accounts team we deal with follows that convention, and it's the main reason we itemise rather than quoting one number."
+      ],
+      "table": {
+        "caption": "One month of a ₹75,000 SEO retainer, ex-GST, shown under both common sections.",
+        "head": [
+          "Line",
+          "Under 194C at 2%",
+          "Under 194J at 10%"
+        ],
+        "rows": [
+          [
+            "Retainer — service value",
+            "₹75,000",
+            "₹75,000"
+          ],
+          [
+            "GST at 18%, added",
+            "₹13,500",
+            "₹13,500"
+          ],
+          [
+            "Invoice total",
+            "₹88,500",
+            "₹88,500"
+          ],
+          [
+            "TDS on the service value, deducted",
+            "− ₹1,500",
+            "− ₹7,500"
+          ],
+          [
+            "**What actually leaves your bank**",
+            "**₹87,000**",
+            "**₹81,000**"
+          ],
+          [
+            "GST we then owe the government",
+            "₹13,500",
+            "₹13,500"
+          ],
+          [
+            "Cash we keep from the month",
+            "₹73,500",
+            "₹67,500"
+          ],
+          [
+            "Revenue we book, either way",
+            "₹75,000",
+            "₹75,000"
+          ]
+        ]
+      },
+      "bullets": [
+        "Your **net cost is ₹75,000** in both columns. The ₹13,500 of GST is input credit you claim back, and the TDS was never yours.",
+        "Our **revenue is ₹75,000** in both columns. The ₹1,500 or ₹7,500 comes back to us as tax credit, just later.",
+        "The only real difference between the two columns is working capital — ours. At 10% we're financing ₹7,500 a month of your tax compliance until we file."
+      ]
+    },
+    {
+      "h2": "Why TDS never changes the price, and what \"net of TDS\" means",
+      "body": [
+        "Occasionally a buyer reads the smaller bank transfer as a negotiated saving, and occasionally an agency quotes a fee \"net of TDS\" hoping the buyer won't do the division. Both are the same misunderstanding pointed in opposite directions.",
+        "\"₹75,000 net of TDS\" means the agency wants ₹75,000 to land in its account. At 2% that makes the invoice ₹76,531 before GST. At 10% it makes it ₹83,333. That's a 2% to 11% price increase hiding inside three words, and it's worse than it looks — the agency gets the credit for tax it never bore.",
+        "The correct way to quote is gross: a number, ex-GST, before any deduction. Ours is ₹75,000/mo for SEO, ₹40,000/mo for smaller sites — [the full price list is here](/pricing), and every figure on it is the invoice value, not the bank transfer."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Three words worth arguing about",
+        "body": "If a proposal says \"net of TDS\", \"TDS to be borne by the client\" or \"plus applicable taxes and deductions\", ask for a single gross monthly figure in writing before you sign. An agency that can't state its price as one number is telling you something about how the rest of the contract will read. [What should be in an SEO contract](/answers/what-should-be-in-an-seo-contract) covers the rest of that list."
+      }
+    },
+    {
+      "h2": "The paper trail, and the quarter it should appear in",
+      "body": [
+        "Deducting is the easy half. The half that gets forgotten is the reporting, and it's the half your vendor depends on — until the deduction is filed against our PAN, we have a smaller bank balance and no evidence.",
+        "The deduction reaches us through a quarterly statement: [Form 26Q is the return for non-salary payments](https://tinpan.proteantech.in/services/etds-etcs/etds-steps.html), prepared, validated and filed by you or your CA. The certificate follows roughly a fortnight later, and the credit shows up in our 26AS and AIS at about the same time."
+      ],
+      "table": {
+        "caption": "The quarterly TDS calendar as we chase it. Confirm current-year due dates with your CA.",
+        "head": [
+          "Quarter",
+          "Payments covered",
+          "Statement due",
+          "Form 16A should reach us by"
+        ],
+        "rows": [
+          [
+            "Q1",
+            "April to June",
+            "31 July",
+            "Mid-August"
+          ],
+          [
+            "Q2",
+            "July to September",
+            "31 October",
+            "Mid-November"
+          ],
+          [
+            "Q3",
+            "October to December",
+            "31 January",
+            "Mid-February"
+          ],
+          [
+            "Q4",
+            "January to March",
+            "31 May",
+            "Mid-June"
+          ]
+        ]
+      },
+      "bullets": [
+        "**Deducted but not deposited** is the failure that hurts. We show a shortfall, you show a liability, and neither of us can fix it from the invoice. Ask your finance team for the challan reference if a quarter goes quiet.",
+        "**Wrong PAN** puts the credit against somebody else. It's fixed with a revised statement, and it's easier to catch in month two than in March.",
+        "**Deducted under the wrong section** is your correction to make, not ours. We still book ₹75,000 either way.",
+        "**Nothing at all** — no statement, no 16A — usually means the deduction was made and forgotten. It is the single most common reason an agency chases a client's accountant."
+      ]
+    },
+    {
+      "h2": "What we do at our end, and what we won't do",
+      "body": [
+        "Our side of this is small and boring, which is how it should be. We invoice on the 1st, ex-GST, with the service value and GST on separate lines and our PAN and GSTIN on the face of the invoice. We accept deduction under whichever section your CA applies without argument. We reconcile 26AS quarterly and chase the certificate when it's late, once, politely.",
+        "What we won't do is quote net of TDS, adjust a retainer because a deduction moved from 2% to 10%, or tell you which section to apply. The first is a price rise in disguise, the second is us asking you to fund our tax timing, and the third is your CA's job and carries your risk, not ours.",
+        "None of this changes what the money buys, which is the part actually worth your attention — [where a retainer's money goes](/journal/where-your-seo-retainer-money-actually-goes) is a more useful argument to have with us than the deduction rate."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "One line for your vendor master",
+        "body": "Marketing retainer, deducted under the section your CA nominates, on the service value excluding GST, certificate issued quarterly. Set it once in month one and the question never comes up again."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is TDS deducted on the GST amount as well?",
+      "a": "No, not where GST is shown as a separate line on the invoice — the deduction is computed on the service value. On a ₹75,000 retainer with ₹13,500 of GST, TDS applies to ₹75,000, not ₹88,500. That's the convention every accounts team we invoice follows; your CA will confirm it for your own filings."
+    },
+    {
+      "q": "What TDS rate applies to SEO or digital marketing services?",
+      "a": "In practice, either 1–2% under Section 194C, which expressly covers advertising contracts, or 10% under Section 194J if your CA treats the work as professional fees. Both are common. The rate changes what leaves your bank, not what the retainer costs you, because the deduction is our tax rather than our fee."
+    },
+    {
+      "q": "Does TDS mean my agency is paid less than we agreed?",
+      "a": "They receive less cash that month and book the full invoice value as revenue. The deducted amount sits with the government against their PAN and comes back as credit when they file. Your net cost is unchanged. Nobody has given a discount and nobody should be asking for a top-up."
+    },
+    {
+      "q": "When do I have to give my agency a Form 16A?",
+      "a": "After you file the quarterly statement covering that payment — so roughly mid-August, mid-November, mid-February and mid-June for the four quarters. Late certificates are the most common friction between a client's finance team and a vendor, and they cost you nothing to fix."
+    },
+    {
+      "q": "What if my agency quotes a fee \"net of TDS\"?",
+      "a": "Ask for the gross figure instead. Net-of-TDS means grossing the invoice up so the agency's bank balance hits the headline number: ₹75,000 net becomes ₹76,531 at 2% and ₹83,333 at 10%, before GST. It's a price increase of 2–11% written as a payment term."
+    },
+    {
+      "q": "Is GST TDS the same thing as income-tax TDS?",
+      "a": "No, and mixing them up is common. Income-tax TDS is what almost every buyer deducts from a marketing invoice. TDS under GST applies only to specified deductors such as government departments, local authorities and certain public sector bodies. If you're an ordinary private company, that second one isn't you."
+    }
+  ],
+  "sources": [
+    {
+      "title": "5 Steps to e-TDS/e-TCS Return",
+      "publisher": "Tax Information Network, Protean eGov Technologies",
+      "url": "https://tinpan.proteantech.in/services/etds-etcs/etds-steps.html"
+    },
+    {
+      "title": "Goods and Services Tax Government of India, States and Union Territories",
+      "publisher": "Goods and Services Tax Network",
+      "url": "https://www.gst.gov.in/"
+    },
+    {
+      "title": "Goods & Service Tax, CBIC, Government of India :: Sectoral FAQs",
+      "publisher": "Central Board of Indirect Taxes and Customs",
+      "url": "https://cbic-gst.gov.in/sectoral-faq.html"
+    },
+    {
+      "title": "MSME SAMADHAAN - Delayed Payment Monitoring System",
+      "publisher": "Ministry of Micro, Small and Medium Enterprises",
+      "url": "https://samadhaan.msme.gov.in/"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-agency-fees-breakdown"
+    },
+    {
+      "type": "journal",
+      "slug": "where-your-seo-retainer-money-actually-goes"
+    },
+    {
+      "type": "services",
+      "slug": "seo-retainer-plans"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-seo-agencies-price-their-work"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-cost-in-india"
+    },
+    {
+      "type": "answers",
+      "slug": "what-access-to-give-an-seo-agency"
+    }
+  ]
+}

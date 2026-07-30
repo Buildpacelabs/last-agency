@@ -1,0 +1,349 @@
+{
+  "slug": "how-to-get-seo-budget-approved",
+  "type": "journal",
+  "primaryKeyword": "how to get seo budget approved",
+  "secondaryKeywords": [
+    "business case for seo spend",
+    "how to justify seo to a cfo",
+    "convincing a founder to invest in seo",
+    "seo budget approval document"
+  ],
+  "cluster": "internal-stakeholders",
+  "intent": "informational",
+  "h1": "How to get an SEO budget approved by someone who only asks about payback",
+  "metaTitle": "How to Get an SEO Budget Approved",
+  "metaDescription": "The arithmetic finance accepts on one page: retainer, deal value, close rate, payback month, plus the three promises to refuse on the agency's behalf.",
+  "updated": "2026-08-24",
+  "published": "2026-08-24",
+  "answer": "Build one page: the monthly retainer, the months before the first organic lead, your gross profit per deal, your close rate on organic leads, and the month the two cumulative lines cross. Finance approves payback arithmetic, not SEO arguments. Then add the part marketers skip — what you stop doing if it misses.",
+  "takeaways": [
+    "Finance isn't evaluating SEO. It's evaluating a **payback month** and a **stop rule**. Give it both and the meeting is twenty minutes.",
+    "Every input except two comes out of your own CRM. The two that don't — months to first lead, and the positions you can realistically reach — are the only lines allowed to carry a range.",
+    "Refuse three promises on the agency's behalf: a ranking position, a traffic number, and a date. Each one gets you fired in month five.",
+    "The concession that actually gets it signed is the one nobody offers: write down, in advance, what you stop spending if month N misses.",
+    "A published agency price ends the three-quotes round before it starts, because you can put the real figure in the document on day one."
+  ],
+  "sections": [
+    {
+      "h2": "Finance is not evaluating SEO. It is evaluating a payback month.",
+      "body": [
+        "Most internal SEO business cases fail for a reason that has nothing to do with SEO. They're written as an argument about a channel, addressed to someone who isn't arguing about the channel.",
+        "The person holding the budget has a fixed set of questions. How much leaves the bank each month. When does it come back. What happens if it doesn't. How would we know before it's too late. Nothing on that list is answered by a slide about how most buying decisions now start with a search box, and everyone in the room can feel the deck stalling.",
+        "This is the whole reframe. You are not selling SEO. You are submitting a capital request with a payback period and an exit condition, and it happens to be about organic search. Written that way, the same spend that got refused in March gets approved in April by the same person.",
+        "The other thing worth knowing before you start: the CFO's real fear is not that SEO fails. Marketing spend fails all the time and finance is used to it. The fear is that it fails **quietly and forever** — that in eighteen months there's still a ₹75,000 line item nobody can defend and nobody can kill, because there was never a number attached to killing it."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "One page, not a deck",
+        "body": "Fourteen slides reads as advocacy. One page with seven lines and a stop rule reads as a decision that's already been thought through. If the meeting needs a deck, keep the page and put the deck behind it as an appendix nobody opens."
+      }
+    },
+    {
+      "h2": "The one page, line by line",
+      "body": [
+        "Seven lines. Each one has a source, and each one has a precision it's permitted. The precision column is what separates a business case from a pitch, and it's the column most marketers never write."
+      ],
+      "table": {
+        "caption": "The seven lines of an SEO budget request, with where each number comes from.",
+        "head": [
+          "Line",
+          "Where the number comes from",
+          "Precision you're allowed"
+        ],
+        "rows": [
+          [
+            "Monthly retainer, ex-GST",
+            "The agency's published price, or their proposal. If neither exists yet, you're not ready to write this page.",
+            "Exact. No range, no 'approximately'."
+          ],
+          [
+            "Months to first organic lead",
+            "The agency's own written answer, sanity-checked against [how long SEO actually takes](/answers/how-long-does-it-take-for-seo-to-work).",
+            "A range. Three to six months is the honest one."
+          ],
+          [
+            "Gross profit per closed deal",
+            "Your CRM and your finance system, trailing twelve months. Gross profit, not revenue — finance will convert it anyway, in front of you.",
+            "Exact. This is the number they already know."
+          ],
+          [
+            "Close rate on organic-sourced leads",
+            "Your CRM, filtered to opportunities whose first touch was organic search.",
+            "Exact if you can filter. Named as an assumption if you can't."
+          ],
+          [
+            "Leads per month at steady state",
+            "An output of the demand model, not an input you choose. Search demand × achievable click share × your own conversion rate.",
+            "Low, base and high. Always three."
+          ],
+          [
+            "Payback month",
+            "The first month cumulative gross profit from organic exceeds cumulative spend.",
+            "One number, with the assumption it rests on written directly underneath it."
+          ],
+          [
+            "Stop rule",
+            "You. Written before the money is approved, not after it's questioned.",
+            "Exact. A month, a threshold, and a named decision."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Gross profit, never revenue.** A ₹4,00,000 deal at 22% margin is ₹88,000 of actual money. Present revenue and you'll be corrected in the room, and everything else on your page inherits the doubt.",
+        "**Organic close rate, not blended.** Inbound organic leads usually close differently from outbound and from paid. If your CRM can't separate them, say the word 'assumption' out loud before someone else says it.",
+        "**Ex-GST throughout, and say so.** Finance will ask how GST is being treated. That's a question for your accountant, not a line you should guess at in a marketing deck."
+      ]
+    },
+    {
+      "h2": "The arithmetic, worked",
+      "body": [
+        "Illustrative numbers, plausible for a mid-sized Indian B2B services company. Not a client and not a result — run it with your own figures, which is the entire point of the format.",
+        "Assume a ₹75,000/month retainer. Gross profit per closed deal of ₹1,20,000. A 20% close rate on organic-sourced leads, which makes each organic lead worth ₹24,000 in gross profit. No leads in the first quarter, then a ramp: one lead in month four, two in month five, three in month six, climbing to seven a month by the end of year one."
+      ],
+      "table": {
+        "caption": "Cumulative position at four checkpoints. Illustrative arithmetic, not a case study.",
+        "head": [
+          "Checkpoint",
+          "Cumulative organic leads",
+          "Cumulative gross profit",
+          "Cumulative spend",
+          "Net"
+        ],
+        "rows": [
+          [
+            "End of month 3",
+            "0",
+            "₹0",
+            "₹2,25,000",
+            "−₹2,25,000"
+          ],
+          [
+            "End of month 6",
+            "6",
+            "₹1,44,000",
+            "₹4,50,000",
+            "−₹3,06,000"
+          ],
+          [
+            "End of month 9",
+            "21",
+            "₹5,04,000",
+            "₹6,75,000",
+            "−₹1,71,000"
+          ],
+          [
+            "End of month 12",
+            "41",
+            "₹9,84,000",
+            "₹9,00,000",
+            "**+₹84,000**"
+          ],
+          [
+            "End of month 18",
+            "95",
+            "₹22,80,000",
+            "₹13,50,000",
+            "+₹9,30,000"
+          ]
+        ]
+      },
+      "numbered": [
+        "**Payback lands in month 12.** Say that sentence first, before anything else on the page. It is the only sentence finance is waiting for.",
+        "**The worst month is month six, not month one.** Cumulative net is at its lowest — down ₹3,06,000 — right around the point where the first results appear and the temptation to declare victory or defeat is strongest. Flag it in advance and it stops being a surprise. It is also, not coincidentally, the month in which most engagements quietly die.",
+        "**Year two is where the case is really won**, and you should show it. Month 18 nets ₹9,30,000 on the same spend, because the content and links you paid for in year one keep working. Don't hide that in a footnote to look conservative.",
+        "**Show the low case on the same page.** Halve the ramp and payback moves to somewhere past month 20. If your page doesn't contain that sentence, it's a pitch, and experienced finance people can smell the difference from across the table."
+      ]
+    },
+    {
+      "h2": "Where the model is allowed to be uncertain, and where it must not be",
+      "body": [
+        "There's a line running down the middle of this page. On your side of it, every number is knowable and must be exact. On the agency's side, every number is a genuine estimate and must be stated as a range.",
+        "Marketers get this exactly backwards. They pull a confident-looking traffic projection out of a tool and then wave a hand at their own close rate. That combination — precise about the thing you can't know, vague about the thing sitting in your own database — is the single fastest way to lose a budget meeting, because it tells the person opposite you that you haven't checked your own homework."
+      ],
+      "bullets": [
+        "**Must be exact — it lives in your systems.** Retainer. Gross profit per deal. Close rate. Sales cycle length. Internal time cost, if anyone on your team is doing content review. Anything finance can look up independently, they will.",
+        "**Must be a range — it lives in Google's.** Months to first lead. Positions reachable in twelve months. Click share at those positions. Steady-state lead volume.",
+        "**Must be an assumption, labelled.** Anything you'd like to include but can't source. Write 'assumption' next to it in the same font size. A labelled assumption survives scrutiny; an unlabelled one taints the page."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The number that quietly ruins the page",
+        "body": "Sales cycle. If your average deal takes four months to close, a lead generated in month four doesn't become revenue until month eight, and your payback month is wrong by a full quarter. Model leads and closed revenue on separate lines, or a CFO who knows the cycle will find the gap in ninety seconds."
+      }
+    },
+    {
+      "h2": "The three promises to refuse to make on the agency's behalf",
+      "body": [
+        "Here's the part that's genuinely about you rather than about the agency. Under pressure in a budget meeting, marketers make commitments no agency ever made to them. It always feels like decisiveness in the moment. It is the thing that gets you fired in month five, when the commitment comes back with a date attached and a screenshot of the slide you said it on.",
+        "Three of them, in the order they're usually offered."
+      ],
+      "subs": [
+        {
+          "h3": "A ranking position",
+          "body": [
+            "\"We'll be number one for our main keyword by Q3.\" Nobody controls Google's index, and [Google's own guidance for hiring an SEO says plainly that no one can guarantee a #1 ranking](https://developers.google.com/search/docs/fundamentals/do-i-need-seo) — it lists guaranteed rankings alongside claims of a special relationship with Google as a warning sign.",
+            "What to say instead: \"We expect to reach the first page for this cluster within nine to twelve months, and we'll show you movement in average position every month before that.\""
+          ]
+        },
+        {
+          "h3": "A traffic number",
+          "body": [
+            "\"Organic traffic will double.\" Traffic is the easiest metric on the page to hit dishonestly — a hundred thin pages about queries no buyer types will double a session count without producing a single lead. Promise it and you've just aligned your own incentives with the worst version of the work.",
+            "What to say instead: name the lead number and let traffic be diagnostic. If the budget genuinely rests on sessions, you have a different problem — read [what a qualified lead from organic actually is](/answers/what-counts-as-a-qualified-lead-from-seo) before you promise anything at all."
+          ]
+        },
+        {
+          "h3": "A date",
+          "body": [
+            "\"We'll be seeing results by March.\" You don't control the crawl schedule, the core update calendar, or what your three largest competitors ship next quarter. Google's own starter guide is candid that some changes take effect in hours and others take months.",
+            "What to say instead: give a review month rather than a results month. \"We review against the frozen baseline at the end of month six\" is a commitment you can keep, and it does the same work in the meeting."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The concession that actually gets it signed",
+      "body": [
+        "Everything above is table stakes. This is the part that changes the answer.",
+        "Write the stop rule yourself, before anyone asks for it, and put it on the same page as the ask. The format is one sentence: **if by month N we have not reached X, we do Y.**",
+        "It works because of what it does to the shape of the risk. An open-ended monthly retainer is, from finance's point of view, an unbounded liability with a soft edge. A retainer with a written stop rule is a bounded experiment with a known maximum loss. Those are different products, and only one of them gets approved quickly.",
+        "It also does something for you. It takes the month-eight conversation — the one where somebody asks why this is still running — and moves it to a date you chose, with a threshold you set, while you still had credibility to spend."
+      ],
+      "numbered": [
+        "**Pick N honestly.** Not month three; nothing has happened by month three and you'll kill something that was working. Month six for a short sales cycle, month nine for anything B2B with a long one.",
+        "**Pick X as a leading indicator, not revenue.** Revenue at month six is noise. Use qualified organic leads against the frozen baseline, or non-brand impressions and average position for the target cluster if the sales cycle is long enough that leads haven't landed yet.",
+        "**Pick Y as a real decision, and write all three options.** Drop to a smaller retainer tier. Move the budget to paid for two quarters. Stop entirely and keep the assets. Naming which one, in advance, is what makes the rest of the page believable.",
+        "**Name an owner and a calendar date.** \"Reviewed by [name] on 12 February\" beats \"reviewed at month six\", because the second one never happens."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Don't set the threshold on traffic",
+        "body": "A stop rule measured in sessions rewards exactly the behaviour that wastes your budget. If the trigger is traffic, the rational response to a bad month six is to publish volume, and you'll pass the test with nothing to show for it."
+      }
+    },
+    {
+      "h2": "The baseline is what makes the stop rule mean anything",
+      "body": [
+        "A threshold needs a starting point, and this is where most internal business cases quietly fall apart. \"Qualified organic leads must reach 15 a month by month six\" is meaningless if nobody wrote down that it was 9 in the trailing quarter — and it's actively dangerous if it was 14, because you've just committed a year's budget to a single extra lead.",
+        "Freeze the number before the work starts. Trailing 90 days, qualified organic leads counted the same way both parties will count them at review, seasonality noted, both sides signing the figure. The [full method for freezing an SEO baseline](/journal/how-to-set-an-seo-baseline) takes an afternoon.",
+        "Do it before the budget request, not after approval. A baseline in the appendix of your business case is the thing that makes finance believe the stop rule is real rather than decorative — it's the only evidence on the page that you plan to be measured.",
+        "One practical note: measure it in your CRM, not in analytics. Analytics counts form submissions; your CRM counts the ones sales agreed to call. Name the exact event you're counting — on most lead-gen sites that's GA4's recommended `generate_lead` event — and name the attribution model behind any organic figure you quote. GA4 offers data-driven attribution plus two last-click models, and they will not agree with each other. Pick one, write it into the document, and don't change it halfway through the year."
+      ]
+    },
+    {
+      "h2": "How a published price removes a whole round of internal argument",
+      "body": [
+        "Here's an unglamorous reason budgets stall. You can't put a number on the page, because the number requires a discovery call, and the discovery call requires internal approval to have, and the approval requires a number. Two weeks disappear into that loop before anyone has discussed the actual work.",
+        "Published pricing collapses it. You write the real figure into the business case on day one, finance evaluates a concrete request, and the procurement round about comparing three quotes happens after the principle is agreed rather than instead of it.",
+        "Ours is public for exactly that reason. SEO from **₹75,000/month**, smaller sites from **₹40,000/month**. Bundled with organic social it's ₹99,000/month; all three services together, ₹1,75,000/month. All ex-GST, ad spend billed separately with zero media markup, month-to-month after the first quarter with 30 days' notice, and you keep every asset. That's the whole thing, on [the pricing page](/pricing), without a call.",
+        "Two things this buys you internally. First, the floor is visible — you can show that below roughly ₹40,000/month you're funding part-time attention rather than a team, which pre-empts the inevitable \"can we do it for twenty?\" Second, the commercial terms are already in your favour when procurement arrives: month-to-month with 30 days' notice is a much easier document to get signed than a twelve-month lock-in, and it makes your stop rule executable rather than theoretical."
+      ]
+    },
+    {
+      "h2": "The four questions you'll be asked, and the answer that loses the room",
+      "body": [
+        "Prepare these four. They come up in almost every version of this meeting, in roughly this order."
+      ],
+      "numbered": [
+        "**\"What happens if it doesn't work?\"** Point at the stop rule. This is why you wrote it. Any hesitation here undoes the previous twenty minutes.",
+        "**\"Why not just put it into ads?\"** Don't argue the channels are the same, because they aren't. Ads buy traffic that stops the day you stop paying; organic builds an asset that decays slowly. The honest answer is usually 'both, in this ratio, for this reason' — and if your payback horizon is under six months, paid genuinely is the better answer and you should say so.",
+        "**\"Can we start smaller?\"** Yes, and name what gets cut. Fewer clusters, not fewer disciplines. A half-budget engagement that still does technical, content and links on one cluster works; one that drops links entirely to afford more articles does not.",
+        "**\"What do we own if this ends?\"** Everything: the content, the site changes, the accounts, the data. Say it plainly, and check your contract actually says it before you do."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The sentence to delete",
+        "body": "\"SEO is a long-term investment.\" It's true, it's useless, and to a CFO it parses as \"I would like an unbounded commitment with no review date.\" Replace it with the payback month and the stop rule — which is the same claim, made in a currency they can act on."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What should an SEO business case actually contain?",
+      "a": "Seven lines on one page: monthly retainer, months to first lead, gross profit per deal, close rate on organic leads, steady-state leads at low/base/high, payback month, and a written stop rule. Everything else — competitor screenshots, keyword lists, tool dashboards — belongs in an appendix nobody will open."
+    },
+    {
+      "q": "How do I justify SEO spend to a CFO who wants immediate ROI?",
+      "a": "Give them a payback month and a maximum loss. Cumulative gross profit against cumulative spend, with the crossover month named, plus a stop rule that caps the downside at a known figure. If the honest payback is past month 18 and the business needs cash this quarter, say so — paid search is the better answer and admitting it buys you the next budget."
+    },
+    {
+      "q": "What's a reasonable payback period for SEO in India?",
+      "a": "For a business with a short sales cycle and a decent gross margin, twelve to eighteen months on a ₹75,000/month retainer is a defensible base case. Under twelve months usually means unusually high deal value or existing domain strength. Past 24 months means the category demand probably can't support the spend, whatever the deck says."
+    },
+    {
+      "q": "Should I promise a traffic number to get the budget approved?",
+      "a": "No. Traffic is trivially easy to grow with pages nobody searching for your product will ever read, so promising it aligns your agency's incentives with the least valuable work available. Commit to qualified leads against a frozen baseline instead, and treat traffic as a diagnostic you report but aren't measured on."
+    },
+    {
+      "q": "What if my company won't approve any SEO budget at all?",
+      "a": "Ask for a bounded first phase rather than a retainer — an audit, a baseline and a keyword map, priced as a project, with a decision point at the end. It's a smaller number, it produces a document finance can read, and it converts the next conversation from 'should we do SEO' into 'should we continue', which is a much easier meeting."
+    },
+    {
+      "q": "How do I set the stop-rule threshold without setting myself up to fail?",
+      "a": "Use a leading indicator on a realistic month. Non-brand impressions and average position for your target cluster move within six to eight weeks and are hard to fake; qualified leads take longer. Set the threshold against the frozen baseline, not against an absolute number somebody liked the sound of."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Do you need an SEO? Tips for Hiring an SEO",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo",
+      "date": "2026-06-05"
+    },
+    {
+      "title": "SEO Starter Guide: The Basics",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "[GA4] Recommended events",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9267735"
+    },
+    {
+      "title": "Get started with attribution",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/10596866"
+    },
+    {
+      "title": "What are impressions, position, and clicks?",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7042828"
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-the-roi-of-seo"
+    },
+    {
+      "type": "cost",
+      "slug": "is-seo-worth-the-money"
+    },
+    {
+      "type": "answers",
+      "slug": "what-counts-as-a-qualified-lead-from-seo"
+    },
+    {
+      "type": "compare",
+      "slug": "google-ads-vs-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-forecast-seo-traffic"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-a-good-seo-budget-for-a-small-business"
+    },
+    {
+      "type": "services",
+      "slug": "seo-retainer-plans"
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "slug": "how-to-run-an-seo-ab-test",
+  "type": "journal",
+  "primaryKeyword": "how to run an seo a/b test",
+  "secondaryKeywords": [
+    "title tag test on a group of pages",
+    "proving an seo change caused an improvement",
+    "seo testing methodology",
+    "how long to run an seo test"
+  ],
+  "cluster": "content-ops",
+  "intent": "informational",
+  "h1": "How to run a valid SEO split test",
+  "metaTitle": "How to Run an SEO A/B Test",
+  "metaDescription": "You can't test SEO on one page, only on a matched group, and the metric is clicks not position. Most sites lack the comparable URLs to test at all.",
+  "answer": "Split a set of comparable URLs into a test group and a control group, change one thing on the test group only, and compare the change in clicks between the two over a period you declared in advance. You need roughly 50 similar URLs per group. Below that, testing isn't available to you.",
+  "updated": "2026-10-02",
+  "published": "2026-10-02",
+  "takeaways": [
+    "**The unit of randomisation in SEO is the URL, not the user.** That single fact rules out page-level A/B testing and rules in group-level testing.",
+    "The metric is **clicks**. Average position is an average over impressions, and any change that shifts the query mix moves position without anything improving.",
+    "Declare the groups, the metric and the end date **before** the change ships. A duration chosen after you've seen the chart isn't a test, it's a search for a good week.",
+    "Read it as a difference-in-differences: what the test group did minus what the control group did. A before-and-after chart with no control proves nothing.",
+    "**Below roughly 50 comparable URLs per group you cannot test.** Say so. Shipping the change everywhere and monitoring honestly beats a test that can't detect anything."
+  ],
+  "sections": [
+    {
+      "h2": "The chart that proves nothing",
+      "body": [
+        "Ask most SEOs to prove a change worked and you'll get the same artefact: a Search Console line chart with a vertical annotation labelled \"title tags updated\" and an upward slope after it.",
+        "It proves nothing, and everyone involved half knows it. In the eight weeks either side of that line, a core update rolled out, three competitors relaunched, your dev team shipped four releases, a seasonal peak arrived, and somebody in content refreshed eleven pages without mentioning it. The chart shows that the site changed. It's silent on which of the fourteen simultaneous causes did it.",
+        "This is a single-arm study — one group, observed before and after, with no comparison. Medicine abandoned that design for good reasons. SEO reporting still runs on it because it's the only design available when nobody has set up a control, and because the slope is usually upward if you pick the window kindly.",
+        "A real test needs three things the chart doesn't have: a group that didn't get the change, a metric that isn't a moving average, and a duration fixed before anyone looked."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The window is the tell",
+        "body": "If the comparison period was chosen after the data arrived, the result is not evidence. Ask when the end date was set. If the answer is \"we looked when it started moving\", you're reading a selected window, and a selected window can be found in almost any noisy series."
+      }
+    },
+    {
+      "h2": "Why you cannot A/B test a single page",
+      "body": [
+        "Conversion testing splits **users**: half see A, half see B, the same URL serves both, and randomisation handles everything you didn't think of. SEO cannot do this, and the reason is structural rather than technical.",
+        "Ranking is assigned to a URL, not to a visitor. Googlebot is one crawler fetching one version of a page. There is no mechanism by which half of Google's evaluation sees variant A and half sees variant B — and if you build one, by serving crawlers a different page from the one users get, you have built cloaking. Google's guidance on running website tests is explicit about the boundary: [don't show one set of URLs to Googlebot and a different set to humans](https://developers.google.com/search/docs/crawling-indexing/website-testing), use `rel=\"canonical\"` pointing at the original when a test spans multiple URLs, use a 302 rather than a 301 for any test redirect so the original stays indexed, and take the test apparatus down as soon as the test ends.",
+        "That guidance is about not damaging your rankings while running a CRO test. It is not a method for testing SEO changes, because it deliberately tells Google to ignore the variants.",
+        "So the smallest thing you can honestly test in SEO is not a page. It's a **group of pages**. You randomise which URLs receive the change, and the group becomes your unit of observation. That constraint is what makes SEO testing available to some sites and genuinely unavailable to others, which is the honest part of this whole subject and the part usually left out."
+      ]
+    },
+    {
+      "h2": "Building matched groups",
+      "body": [
+        "Everything rests on the two groups behaving identically before you change anything. If they don't, you're measuring the difference between the groups rather than the effect of the change.",
+        "Match on these, in descending order of how much they matter:"
+      ],
+      "numbered": [
+        "**Same template.** Product pages with product pages, category with category, blog with blog. Different templates have different title patterns, different internal link volumes, different crawl frequency. This is the single largest source of contamination and it is not fixable by having more URLs.",
+        "**Same query type.** Branded and non-branded queries behave nothing alike. So do transactional and informational. A group mixing them will move for reasons unrelated to your change.",
+        "**Similar traffic magnitude.** Within an order of magnitude. One URL with 4,000 monthly clicks in a group of forty URLs averaging 40 will decide the result on its own, and it'll be the one that had a good month.",
+        "**Similar position band.** Pages at position 3 and pages at position 30 respond to a title change very differently, because one is being read and the other isn't being seen.",
+        "**Similar age.** A URL published last month is still settling. Exclude anything under six months from both groups."
+      ],
+      "subs": [
+        {
+          "h3": "Assign by stratified pairing, not by category",
+          "body": [
+            "The tempting split is by section — test on /shoes, control on /bags. Don't. Categories differ in demand, seasonality and competition, and you've confounded the thing you're testing with the thing that distinguishes the categories.",
+            "Do this instead: sort your eligible URLs by trailing 12-week clicks, take them two at a time down the list, and flip a coin within each pair to decide which one goes to test and which to control. Five minutes in a spreadsheet, and it produces two groups matched on the variable that matters most, without you choosing anything."
+          ]
+        },
+        {
+          "h3": "Then check the pre-period before you touch anything",
+          "body": [
+            "Plot both groups' weekly clicks for the eight to twelve weeks before the change. The two lines should rise and fall together — the absolute levels don't need to match, the shape does.",
+            "If they don't track each other, stop. Your matching failed, and no amount of post-period analysis will rescue it. Re-pair, or accept that this site can't be tested and read the last section of this page."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The metric is clicks, and position invalidates the test",
+      "body": [
+        "The instinct is to measure average position, because that's what a ranking change sounds like it should move. It's the fastest way to get a wrong answer.",
+        "Average position in Search Console is an average across every search that produced an impression for your URL. Change a title and you change which queries the page surfaces for — usually widening it. New long-tail impressions arrive at position 40, the average slides down, and the page is doing better while the number gets worse. Or the reverse: a narrowed title drops the tail, the average leaps four places, and clicks are flat. Our [average position](/glossary/average-position) page has the arithmetic; for a test, the conclusion is simply that a metric whose denominator moves when you apply the treatment cannot measure the treatment.",
+        "Rank trackers don't fix this. They sample one location, one device and one moment, and personalisation and location variation mean the sample isn't the population. Clicks, by contrast, are counted — every one, from everyone, in a number nobody had to model.",
+        "So:"
+      ],
+      "bullets": [
+        "**Primary metric: clicks**, summed across the group, weekly.",
+        "**Secondary: impressions**, to see whether the change altered visibility or only the click decision. Useful for explaining a result, never for declaring one.",
+        "**Diagnostic only: CTR.** Its denominator moves for the same reason position does, so it explains rather than proves.",
+        "**Not the metric: average position.** Record it, ignore it, and don't put it in the summary — someone will quote it back at you.",
+        "**Pull the data properly.** For groups of any size the interface's row limits get in the way; the Search Console API or a [BigQuery bulk export](/answers/how-to-export-search-console-data-to-bigquery) gives you the full set to aggregate."
+      ]
+    },
+    {
+      "h2": "Declare the duration before you start",
+      "body": [
+        "Write the end date down before the change ships, along with the two group definitions and the metric. Email it to yourself if that's what it takes. A test whose duration is decided after the data arrives is a search for a favourable window dressed up as an experiment.",
+        "The duration has a floor set by crawling, not by statistics. Nothing can happen until Google recrawls the changed pages, which takes days on a frequently-visited site and several weeks on a deep page of a rarely-crawled one. Then the effect has to appear in enough weeks of data to be readable against normal variation.",
+        "Our defaults: **eight weeks of post-period, against an equal eight-week pre-period**, with the first two post weeks excluded from the analysis as the recrawl window. Twelve weeks on a slow-crawled site. Shorter than six and you are mostly reading the recrawl.",
+        "What invalidates a run mid-flight, and what doesn't:"
+      ],
+      "table": {
+        "caption": "Events during a test run, and whether they end it.",
+        "head": [
+          "What happened",
+          "Verdict",
+          "Why"
+        ],
+        "rows": [
+          [
+            "A core update rolls out inside the window",
+            "**Stop and restart**",
+            "It hits both groups, but rarely evenly — it re-scores pages by quality, and your groups aren't matched on quality. See [Google core update](/glossary/google-core-update)."
+          ],
+          [
+            "A migration, replatform or sitewide template change",
+            "**Stop**",
+            "Everything moved. There's no clean control left."
+          ],
+          [
+            "Someone edits pages in the control group",
+            "**Stop**",
+            "The control is the whole experiment. A control that received treatment is not a control."
+          ],
+          [
+            "The change gets applied to only part of the test group",
+            "**Stop**",
+            "The most common way a run dies quietly. Half-treated groups measure nothing."
+          ],
+          [
+            "A seasonal peak — festive season, exam results, year-end",
+            "**Continue**",
+            "It lifts both groups. That's precisely what the control absorbs, and why you have one."
+          ],
+          [
+            "A competitor relaunches and takes traffic",
+            "**Continue**",
+            "Same reasoning, as long as it isn't concentrated on one group's queries."
+          ],
+          [
+            "The result looks good at week three",
+            "**Continue**",
+            "Stopping on a favourable read is how noise becomes a case study. You declared eight weeks."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "One change, one test",
+        "body": "Update titles and internal links and schema on the test group at once and a positive result tells you that one of three things worked, or that two helped and one hurt. It's the most common corruption of an otherwise decent test, and it usually happens because shipping three changes is barely more work than shipping one."
+      }
+    },
+    {
+      "h2": "Reading the result without fooling yourself",
+      "body": [
+        "The comparison is a difference-in-differences: what the test group did, minus what the control group did over the same weeks. Illustrative arithmetic, with round numbers:",
+        "Test group: 4,000 clicks in the pre-period, 4,800 in the post-period — up 20%. Control group: 3,800 pre, 4,180 post — up 10%. The change is credited with the gap: roughly 10 percentage points, or about 380 clicks. Not the 800 the test group gained, which is what a chart without a control would have claimed, and what most case studies do claim.",
+        "Now the part that keeps you honest. With forty URLs a side you are not doing statistics, you're doing a structured sanity check with a control. Weekly click totals on a group that size swing 10–15% on nothing at all, so a 10-point difference is suggestive and a 3-point difference is noise wearing a decimal point. Treat anything under about 10 percentage points on a small group as unproven and say so.",
+        "Formal methods exist for exactly this problem. The Bayesian structural time-series approach behind the CausalImpact method builds a synthetic control out of correlated series and estimates what would have happened had no intervention taken place. It's a better instrument than a spreadsheet, and it wants long, clean, well-correlated histories that most sites don't have. Knowing it exists is useful mainly for recognising when your own evidence falls a long way short of it.",
+        "Two rules we hold to when writing up a result: report the control group's movement in the same sentence as the test group's, and state the pre-declared end date. A write-up that omits either is a marketing document."
+      ]
+    },
+    {
+      "h2": "The number of URLs below which you cannot test",
+      "body": [
+        "Here's the plain version, because the honest admission is the useful part of this page.",
+        "You need roughly **50 comparable URLs per group — 100 in total** — on the same template, each with a real click history, and group-level weekly clicks in the hundreds rather than the tens. Below that, ordinary week-to-week variation is larger than any effect a title rewrite is likely to produce, and the test cannot detect what it's looking for. Running it anyway doesn't give you a weak answer; it gives you a confident wrong one, roughly half the time.",
+        "This is the same arithmetic that governs conversion testing — sample size, baseline variability, and the size of the effect you're hoping to see — worked out in more detail on [how much traffic you need before an A/B test means anything](/answers/how-much-traffic-do-you-need-for-an-ab-test). The SEO version is harsher, because your sample is URLs and you cannot buy more of them this month.",
+        "Which sites can test, and which can't:"
+      ],
+      "table": {
+        "caption": "Whether SEO split testing is available to you, by site shape.",
+        "head": [
+          "Site shape",
+          "Testable?",
+          "Notes"
+        ],
+        "rows": [
+          [
+            "Ecommerce with hundreds of category or product pages",
+            "Yes",
+            "The best case. Templated, comparable, plenty of URLs with click history."
+          ],
+          [
+            "Marketplaces, listings, job and property portals",
+            "Yes",
+            "Large templated sets, though watch for inventory churn changing the group under you."
+          ],
+          [
+            "Publishers with a deep, consistent archive",
+            "Usually",
+            "Match on age and section carefully; evergreen and news pages behave differently."
+          ],
+          [
+            "Programmatic page sets",
+            "Yes, with care",
+            "Comparable by construction — see [programmatic SEO and the scaled content line](/journal/programmatic-seo-and-the-scaled-content-line) for the risks that come with the volume."
+          ],
+          [
+            "B2B or services site with 30–80 pages",
+            "No",
+            "Not enough comparable URLs, and each one is bespoke. This is most Indian SMB sites."
+          ],
+          [
+            "Local business, single location",
+            "No",
+            "Nothing to split, and the map pack dominates the outcome anyway."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Saying no to a test is a service",
+        "body": "\"We can't test that here, and here's the number of URLs we'd need\" is a more useful sentence than any result a 12-URL test could produce. It's also the sentence that loses the pitch to whoever is willing to run the test anyway, which is roughly why you don't hear it often."
+      }
+    },
+    {
+      "h2": "What to do when you can't test",
+      "body": [
+        "Most sites can't. That's not a reason to stop making changes — it's a reason to stop claiming proof you don't have.",
+        "Ship the change everywhere at once. One change per fortnight, so the site's own timeline stays readable. Annotate every deploy with a date and a description, because a change log is the closest thing to a control you'll have. Then report it as it is: \"we changed X on the 14th, clicks on those pages are up 18% over the following eight weeks, and we can't rule out that some of that is seasonal.\" That sentence is honest, useful, and takes no longer to say than the dishonest version.",
+        "Prefer changes whose mechanism you understand over changes you hope work. If a page's title omits the query and the CTR is half what its position band earns, you don't need a test to justify fixing it. Testing earns its cost on changes that are expensive, sitewide and genuinely uncertain — a template redesign, a URL structure change, an internal linking pattern across thousands of pages. On a 40-page site, none of those apply, and a testing tool is a subscription that buys you a spreadsheet.",
+        "And set the [baseline](/journal/how-to-set-an-seo-baseline) properly before any of this, because the alternative to a controlled test isn't a better chart — it's an agreed number, frozen on day one, that both sides can read the same way six months later.",
+        "That's the instrument we sell instead of tests. Not a ranking position for a keyword, which nobody can honestly promise, but movement against your own frozen baseline — trailing-90-day qualified leads from organic search. Miss it in 90 days and we keep working free until we beat it. Our SEO retainer starts at ₹75,000/mo, with smaller sites from ₹40,000/mo."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can you A/B test SEO on a single page?",
+      "a": "No. Ranking is assigned to a URL rather than to a visitor, so there's no way to show Google two versions of one page and have both evaluated. Serving crawlers something different from users is cloaking. The smallest testable unit in SEO is a matched group of comparable URLs."
+    },
+    {
+      "q": "How long should an SEO test run?",
+      "a": "Eight weeks post-change against an equal eight-week pre-period, with the first two weeks after the change excluded as the recrawl window. Twelve weeks on a site Google crawls slowly. Declare the end date before you ship the change, or you're choosing a window after seeing the data."
+    },
+    {
+      "q": "Should I measure rankings or clicks in an SEO test?",
+      "a": "Clicks. Average position is an average across every search that produced an impression, so any change that widens or narrows the queries a page surfaces for moves position without anything improving. Clicks are counted rather than modelled, which is the only property that matters here."
+    },
+    {
+      "q": "How many pages do you need to run an SEO split test?",
+      "a": "Roughly 50 comparable URLs per group — about 100 in total — on the same template, with real click history and weekly group clicks in the hundreds. Below that, normal variation exceeds the effect you're looking for, and the test returns a confident answer that's wrong about half the time."
+    },
+    {
+      "q": "Does a core update invalidate an SEO test?",
+      "a": "Usually yes. It hits both groups but rarely evenly, because it re-scores pages on quality and your groups were matched on template and traffic rather than quality. Stop the run, wait for the rollout to finish, and start again with a clean pre-period."
+    },
+    {
+      "q": "What can I do instead if my site is too small to test?",
+      "a": "Ship one change at a time, annotate every deploy, and report the result with its uncertainty attached rather than as proof. Prefer changes whose mechanism you already understand. And agree a frozen baseline up front, so the six-month conversation is about an agreed number instead of a chart."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Minimize A/B testing impact in Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/website-testing",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "What are impressions, position, and clicks?",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7042828"
+    },
+    {
+      "title": "About bulk data export of Search Console data to BigQuery",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/12918484"
+    },
+    {
+      "title": "Inferring causal impact using Bayesian structural time-series models",
+      "publisher": "arXiv",
+      "url": "https://arxiv.org/abs/1506.00356",
+      "date": "2015-06-01"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "how-much-traffic-do-you-need-for-an-ab-test"
+    },
+    {
+      "type": "glossary",
+      "slug": "average-position"
+    },
+    {
+      "type": "glossary",
+      "slug": "click-through-rate"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-run-a-content-audit"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-export-search-console-data-to-bigquery"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-core-update"
+    }
+  ]
+}

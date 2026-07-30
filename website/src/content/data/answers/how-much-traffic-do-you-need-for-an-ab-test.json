@@ -1,0 +1,223 @@
+{
+  "slug": "how-much-traffic-do-you-need-for-an-ab-test",
+  "type": "answers",
+  "primaryKeyword": "how much traffic do you need for a b test",
+  "secondaryKeywords": [
+    "cro sample size calculator explained",
+    "minimum conversions for a valid test",
+    "is my website big enough for cro",
+    "why small sites cannot run conversion tests"
+  ],
+  "cluster": "content-ops",
+  "intent": "informational",
+  "h1": "How much traffic do you need before an A/B test means anything?",
+  "metaTitle": "How Much Traffic Do You Need for an A/B Test?",
+  "metaDescription": "Most Indian sites we quote for cannot run a valid test. Here is the number, and why we sequence SEO first as arithmetic rather than as a preference.",
+  "updated": "2026-10-02",
+  "published": "2026-10-02",
+  "answer": "Count conversions, not sessions. Detecting a 20% relative improvement at 95% confidence and 80% power takes roughly 400 conversions per variant — about 800 in total, at almost any baseline rate. At a 2% conversion rate that's 40,000 sessions. Most Indian sites we quote for collect that in a year, not a month.",
+  "takeaways": [
+    "**Count conversions, not sessions.** A +20% test needs roughly 400 conversions per variant whatever your conversion rate. Sessions are just that number divided by the rate.",
+    "Three inputs decide everything: your baseline conversion rate on that specific template, the smallest lift you'd act on, and how long you'll wait.",
+    "**Halving the effect you want to detect roughly quadruples the sample.** That one fact is why \"we just want to know if it's better\" is an unanswerable request.",
+    "A higher conversion rate doesn't reduce the conversions you need. It reduces the sessions it takes to collect them.",
+    "If the arithmetic says no, stop calling the work a test. Don't run one anyway and read the dashboard."
+  ],
+  "sections": [
+    {
+      "h2": "Three inputs decide it, and traffic is the output",
+      "body": [
+        "An A/B test is a statistical procedure with a fixed appetite. Feed it less than it needs and it doesn't return a smaller answer — it returns an unreliable one, which is worse, because on screen an unreliable answer looks exactly like a reliable one.",
+        "Two of the four inputs are conventions you shouldn't be negotiating: 95% two-sided significance, meaning a 5% chance of calling a difference that isn't there, and 80% power, meaning a 20% chance of missing one that is. The other two are yours, and the second is where most requests fall apart."
+      ],
+      "bullets": [
+        "**Your baseline conversion rate on the specific page or template you'd test** — not the site average. A blog post converting at 0.3% and a pricing page at 6% are different experiments with wildly different appetites.",
+        "**The minimum detectable effect**: the smallest improvement you'd actually act on, stated as a relative lift. \"Any improvement\" implies an infinite sample. Somebody has to name a number, and it should be the person who'd have to justify the change.",
+        "**How long you'll let it run.** Weekly traffic times weeks is the entire budget. Two weeks minimum so you capture a full weekly cycle, and rarely beyond six before seasonality starts contaminating the comparison."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where the numbers on this page come from",
+        "body": "The standard two-proportion sample-size formula — [baseline rate, detectable difference, and the two error rates](https://www.itl.nist.gov/div898/handbook/prc/section2/prc242.htm) — run at 95% two-sided significance and 80% power, with an even split. Every figure below is that calculation, rounded. No client data, no benchmarks, nothing you can't reproduce."
+      }
+    },
+    {
+      "h2": "The number that matters is conversions, not sessions",
+      "body": [
+        "Almost every discussion of this starts with traffic, which is why it stays confusing. Start with conversions instead and the arithmetic gets memorable."
+      ],
+      "table": {
+        "caption": "Sample required per variant at 95% two-sided significance and 80% power.",
+        "head": [
+          "Relative lift you want to detect",
+          "Conversions per variant",
+          "Sessions per variant at 2%",
+          "Total sessions for the test"
+        ],
+        "rows": [
+          ["+5%", "about 6,200", "about 315,000", "about 630,000"],
+          ["+10%", "about 1,600", "about 81,000", "about 161,000"],
+          ["+20%", "about 415", "about 21,000", "about 42,000"],
+          ["+30%", "about 190", "about 9,800", "about 20,000"],
+          ["+50%", "about 75", "about 3,800", "about 7,600"]
+        ]
+      },
+      "bullets": [
+        "**The conversions column barely moves with your conversion rate.** Run it at 1% or at 6% and the figure stays within a few percent of what's above. A better-converting page doesn't need fewer conversions — it collects them from fewer sessions. That's the whole reason to hold conversions in your head instead of traffic.",
+        "**Sample scales with the square of the effect.** Detecting +10% instead of +20% doesn't double the requirement, it roughly quadruples it. This is the most expensive decision in the exercise and it usually gets made in passing.",
+        "**Most conversion improvements that survive contact with reality land between 5% and 20% relative.** Read the top three rows again with that in mind."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Decide the denominator before you start",
+        "body": "Sessions or users, and never both. A GA4 session ends after 30 minutes of inactivity, so one buyer deciding across three evenings is three sessions — and if you split traffic by session, that person can land in both variants and see two different pages. Split on user, count on user."
+      }
+    },
+    {
+      "h2": "Four ordinary setups, run through the same formula",
+      "body": [
+        "The businesses below are illustrative, not clients. The arithmetic is real, and the pattern in it is the point of the page."
+      ],
+      "table": {
+        "caption": "Time to complete a test detecting a 20% relative lift, at realistic Indian traffic levels.",
+        "head": [
+          "Setup",
+          "Baseline",
+          "Monthly sessions on that template",
+          "Sessions needed in total",
+          "Time to finish"
+        ],
+        "rows": [
+          ["D2C skincare brand, product page", "1.2%", "6,000", "about 71,000", "about 12 months"],
+          ["Interior design studio, enquiry form", "2.5%", "2,000", "about 34,000", "about 17 months"],
+          ["B2B software, pricing page", "6%", "4,000", "about 13,000", "about 3 months"],
+          ["The same D2C brand, four years later", "1.2%", "60,000", "about 71,000", "about 5 weeks"]
+        ]
+      },
+      "numbered": [
+        "**Rows one and two: don't test.** Not \"test carefully\" or \"test for longer\" — don't. A twelve-month experiment isn't an experiment, because the site, the market and the traffic mix all change underneath it.",
+        "**Row three is the surprise.** It has the second-smallest traffic figure in the table and it's the only mid-size site that can test, because a 6% baseline collects the required conversions from far fewer sessions. High-intent B2B pages can start testing much earlier than blog traffic can.",
+        "**Row four is the argument.** Same business, same page, same conversion rate, ten times the traffic — twelve months becomes five weeks. Nothing about the test changed. Only the input that SEO produces."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "You have one traffic budget",
+        "body": "Running three tests at once on the same template either splits the sample three ways or contaminates all three. One at a time, in a queue, with the order decided by expected value rather than by whoever asked most recently."
+      }
+    },
+    {
+      "h2": "What calling it early actually does",
+      "body": [
+        "Every testing platform shows a leading variant and a confidence figure from around day three. The arithmetic is correct and the conclusion is worthless, because the 5% error rate you signed up for assumes you looked once, at the end.",
+        "Check daily for a fortnight and you've taken fourteen chances to catch a 5% event. Your real false-positive rate is no longer 5%. How far above depends on how often you look and how quickly you stop, and it is not a small correction — it's the entire reason the sequential-testing literature exists, and why researchers built always-valid p-values for people who can't stop watching.",
+        "The failure mode has a recognisable shape. A test is stopped on day four with the variant 18% ahead. It ships. The metric drifts back to where it started over the following six weeks and nobody notices, because there's a new test running and the comparison window has closed. Worse, the phantom win hardens into a belief — \"our audience responds to urgency\" — and the next three tests get built on top of it."
+      ],
+      "numbered": [
+        "**Write the required sample and the end date down before launch,** in the same document as the hypothesis. If it isn't written before, it will be negotiated after.",
+        "**Run whole weeks.** Stopping mid-week weights the sample towards whichever days happened to be included, and weekday and weekend buyers behave differently on almost every Indian site we've looked at.",
+        "**Name one primary metric in advance.** Reading five and reporting the one that moved is peeking with extra steps.",
+        "**If you genuinely must monitor continuously,** use a platform doing sequential or always-valid inference, and accept that it asks for more sample in exchange for letting you look."
+      ]
+    },
+    {
+      "h2": "What to do when the arithmetic says no",
+      "body": [
+        "The wrong response is to run the test anyway and describe the outcome as directional. There's no such thing as a directional result from an underpowered test — there's a number, and it's roughly as likely to point the wrong way as the right one.",
+        "The right response is to stop using the word test and go and get information some other way. None of the following produces evidence in the statistical sense, and all of it produces better decisions than noise does."
+      ],
+      "numbered": [
+        "**Five customer calls.** People who bought last month, fifteen minutes each. Ask what nearly stopped them. Two of the five will say the same thing, and that's your next change.",
+        "**The objection log your sales team keeps in their heads.** Write it down for a fortnight. The top three objections belong on the page, answered in the customer's words.",
+        "**Session replay on abandonment only.** Watch twenty sessions that reached the form and left. You're hunting breakage, not inspiration.",
+        "**Internal site search queries.** People typing into your search box are telling you exactly what the navigation failed to show them — [how to read that data](/answers/how-to-use-internal-site-search-data-for-seo) is a page of its own.",
+        "**One exit question.** \"What stopped you today?\", free text. Fifty answers is plenty and it takes a week.",
+        "**Open the site on a cheap Android over mobile data.** Roughly half of what a test would have found is visible in ninety seconds this way."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The fix that changes the maths itself",
+        "body": "On Indian service sites most enquiries arrive as calls and WhatsApp messages, and only form fills get counted — so the measured conversion rate understates reality, sometimes by half. Correcting that doesn't only make the reporting honest. A higher true rate lowers the sessions any future test needs. Start with [tracking WhatsApp and phone leads properly](/answers/how-to-track-whatsapp-and-phone-leads-in-ga4)."
+      }
+    },
+    {
+      "h2": "Why the sequencing is arithmetic, not a sales preference",
+      "body": [
+        "We sell SEO, so \"do SEO first\" from us deserves suspicion. Here's the version that doesn't require trusting us.",
+        "The required sample is set by the formula and you can't argue it down. That leaves exactly three ways to reach it. Raise the conversion rate — which is the thing you wanted to test in the first place. Accept a far larger detectable effect, which in practice means redesign-scale changes rather than copy and layout. Or increase traffic. At the volumes most Indian sites actually run at, only the third is something anyone can sell you honestly.",
+        "That's the whole of it. Not a philosophy about channels, not a claim that conversion work doesn't matter — a constraint that falls out of the same equation whoever runs it. It also sets what we won't invoice for: we don't sell a monthly testing retainer to a site that can't reach a sample inside a quarter, because we'd be charging for a procedure that cannot return a result. The threshold version of this argument, with budget splits, is in [CRO vs SEO](/compare/cro-vs-seo), and what we actually do below the floor is on the [conversion rate optimisation](/services/conversion-rate-optimisation-services) page.",
+        "One clarification, because the vocabulary collides. An SEO split test — changing titles across half a template's URLs and comparing clicks in Search Console — is a different procedure with a different unit of analysis and its own sample calculation. Low traffic hurts it too, but everything on this page is about conversion tests measured on users.",
+        "And the number we're accountable for was never a conversion rate. It's your trailing-90-day qualified leads from organic search, frozen the day we start. Miss it in 90 days and we keep working free until we beat it. That's a commitment we can only make because we picked the input we can actually move."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many conversions do I need per variant for an A/B test?",
+      "a": "Roughly 400 to detect a 20% relative lift, about 1,600 for a 10% lift, and about 190 for a 30% lift — at 95% confidence and 80% power. That figure stays nearly constant across baseline conversion rates, which is why conversions are a more useful unit than sessions."
+    },
+    {
+      "q": "Can I run a valid A/B test with 1,000 visitors a month?",
+      "a": "Not for anything realistic. At 1,000 sessions and a 2% conversion rate you collect 20 conversions a month, and a 20% lift needs roughly 840 across both variants — about three and a half years. The only effects detectable at that volume are so large you'd ship them without testing."
+    },
+    {
+      "q": "Does a higher conversion rate mean I need less traffic?",
+      "a": "Yes, and roughly in proportion — doubling your conversion rate halves the sessions required. It does not reduce the number of conversions you need, which is why a high-intent B2B page on 4,000 monthly sessions can test while a blog on 20,000 cannot."
+    },
+    {
+      "q": "Can I just run the test for longer instead?",
+      "a": "Up to a point. Below two weeks you haven't seen a full weekly cycle. Beyond about six, seasonality, cookie churn and every other change you shipped meanwhile start contaminating it, and you're comparing two different periods rather than two variants."
+    },
+    {
+      "q": "Are 95% confidence and 80% power negotiable?",
+      "a": "Technically yes, practically no. Dropping to 90% confidence and 70% power cuts the sample by around 40%, doubles your false-positive rate to 10%, and raises the chance of missing a real win from 20% to 30%. You've bought speed by making the result mean less."
+    }
+  ],
+  "sources": [
+    {
+      "title": "7.2.4.2. Sample sizes required",
+      "publisher": "NIST/SEMATECH e-Handbook of Statistical Methods",
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc242.htm"
+    },
+    {
+      "title": "Always Valid Inference: Bringing Sequential Analysis to A/B Testing",
+      "publisher": "arXiv",
+      "url": "https://arxiv.org/abs/1512.04922",
+      "date": "2015-12-15"
+    },
+    {
+      "title": "About Analytics sessions",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9191807"
+    }
+  ],
+  "related": [
+    {
+      "type": "compare",
+      "slug": "cro-vs-seo"
+    },
+    {
+      "type": "services",
+      "slug": "conversion-rate-optimisation-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "conversion-rate"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-track-whatsapp-and-phone-leads-in-ga4"
+    },
+    {
+      "type": "answers",
+      "slug": "organic-traffic-up-but-leads-flat"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-run-an-seo-ab-test"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    }
+  ]
+}

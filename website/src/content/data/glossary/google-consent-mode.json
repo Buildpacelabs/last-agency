@@ -1,0 +1,201 @@
+{
+  "slug": "google-consent-mode",
+  "type": "glossary",
+  "primaryKeyword": "google consent mode",
+  "secondaryKeywords": [
+    "consent mode v2 meaning",
+    "what are modelled conversions",
+    "basic vs advanced consent mode",
+    "does consent mode affect reporting"
+  ],
+  "cluster": "privacy-and-consent",
+  "intent": "informational",
+  "h1": "Google Consent Mode",
+  "metaTitle": "Google Consent Mode: What It Does to Your Reporting",
+  "metaDescription": "Google Consent Mode signals consent to Google's tags. Switch it on and part of your conversion count becomes a modelled estimate, not a counted event.",
+  "updated": "2026-09-01",
+  "published": "2026-09-01",
+  "term": "Google Consent Mode",
+  "definition": "Google Consent Mode is a signalling layer that tells Google's tags whether a visitor consented to cookies and ad personalisation, and once it is running a share of the conversions in your reports are modelled estimates rather than events anyone counted.",
+  "answer": "Google Consent Mode is a set of flags your site sends Google's tags saying whether a visitor consented to cookies and ad personalisation. It doesn't collect consent — your banner does that. Its real effect is on reporting: refused visits get filled in with modelled estimates that no CRM record can be matched against.",
+  "takeaways": [
+    "Consent Mode is the **signal**, not the banner. Your consent platform captures the choice; Consent Mode passes it to Google's tags.",
+    "**Basic** blocks Google tags until the visitor chooses. **Advanced** loads them with consent defaulted to denied and sends cookieless measurements, so a refusal still leaves something to model from.",
+    "Modelled conversions land in the same column as counted ones, at the same granularity. The standard report doesn't tell you which is which.",
+    "A modelled conversion has no person behind it, no click ID and no row in your CRM. Useful for reading a trend, useless for settling an argument about a specific lead."
+  ],
+  "sections": [
+    {
+      "h2": "What it signals, and what it never collects",
+      "body": [
+        "Consent Mode is four flags. Your site sets them before any Google tag fires, then updates them the moment the visitor chooses. That's the whole mechanism — a signalling layer, not a compliance product."
+      ],
+      "bullets": [
+        "`ad_storage` — may advertising cookies and device identifiers be written.",
+        "`analytics_storage` — may analytics storage be written, including the identifiers GA4 stitches a session from.",
+        "`ad_user_data` — may data go to Google for advertising purposes at all.",
+        "`ad_personalization` — may that data then be used to personalise ads."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The v2 part",
+        "body": "The last two flags are the pair everyone means by **v2**. A container still setting only `ad_storage` and `analytics_storage` is running an incomplete configuration — check that before arguing about anything downstream."
+      }
+    },
+    {
+      "h2": "Why it is not the same thing as your cookie banner",
+      "body": [
+        "Google's setup guide is explicit that consent mode doesn't save consent choices. Something else — a consent platform, or a banner your developer wrote — has to ask the visitor, store the answer and call the update. Consent Mode only carries the message.",
+        "The conflation costs money in both directions. A banner with no Consent Mode wiring blocks nothing on Google's side — the visitor clicks reject and the tag fires anyway. Consent Mode with defaults denied and no working update call does the opposite: it switches measurement off for everyone, including the people who said yes.",
+        "Whether you need a banner at all is a separate question with a different answer in India than in Europe. [What the DPDP Act actually asks of your analytics](/answers/does-the-dpdp-act-apply-to-website-analytics) is the place to settle that first."
+      ]
+    },
+    {
+      "h2": "Basic and advanced, and what each keeps",
+      "body": [
+        "One decision, and it sets how much survives a refusal."
+      ],
+      "table": {
+        "caption": "The two Consent Mode implementations, compared on what happens when a visitor refuses.",
+        "head": [
+          "Behaviour",
+          "Basic mode",
+          "Advanced mode"
+        ],
+        "rows": [
+          [
+            "When Google tags load",
+            "Only after the visitor interacts with the banner",
+            "Immediately, with consent defaulted to denied"
+          ],
+          [
+            "What a refusal sends",
+            "Nothing at all — not even the consent state",
+            "The consent state plus measurements without cookies"
+          ],
+          [
+            "Modelling it supports",
+            "General modelling, built from patterns across advertisers",
+            "Advertiser-specific modelling, built from your own consenting traffic"
+          ],
+          [
+            "Who it suits",
+            "Counsel wants the least possible collection before a choice",
+            "You need bidding signals and have volume to model from"
+          ]
+        ]
+      },
+      "bullets": [
+        "Advanced is what every measurement vendor recommends and it's usually right — but it does mean Google tags load on every visit, including for the visitor two seconds from refusing.",
+        "Basic matches a strict reading of \"nothing loads before consent\". You accept the blindness rather than pretending it isn't there."
+      ]
+    },
+    {
+      "h2": "Modelled conversions, and what they are not",
+      "body": [
+        "When consent is denied, the hole gets filled with estimate. Google Ads looks at the relationship between clicks and conversions among traffic it can observe, then applies that relationship to the paths it can't. [Modelled conversions then appear in campaign reports with the same granularity as observed ones](https://support.google.com/google-ads/answer/10548233) — same Conversions column, same campaign rows, no asterisk.",
+        "GA4 does its own version under the name behavioural modelling, and at least marks affected reports with a data-quality icon. It also has volume thresholds — roughly a thousand denied events a day and a thousand consenting users a day, sustained over weeks. Most Indian SMB properties clear neither, so their refused traffic isn't modelled at all. It's simply missing. The [precise thresholds and what a banner costs in measured conversions](/answers/do-indian-websites-need-a-cookie-consent-banner) are worth reading before you sign for a consent platform.",
+        "The two sorts of number in that column differ in kind, not just in confidence."
+      ],
+      "bullets": [
+        "There's no person behind a modelled conversion. You can't open it, name it or match it to a row in your CRM.",
+        "There's no click ID, so it can't be reconciled against an offline conversion import or a call log without double counting.",
+        "It's a population estimate wearing an integer. \"47 conversions\" implies a precision the underlying figure doesn't have."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The failure nobody tests for",
+        "body": "Set defaults to `denied` and let the update call miss — banner on another page, or a page transition before the update lands — and every visit stays unconsented. Conversions don't fall by your refusal rate, they collapse. Test it on a real phone the day it ships, not in preview mode."
+      }
+    },
+    {
+      "h2": "Why we won't settle a guarantee against a modelled number",
+      "body": [
+        "Our SEO work is judged against one figure: the client's trailing-90-day count of qualified leads from organic search, frozen on day one. Miss it in 90 days and we keep working free until we beat it. That only means anything if both sides can audit the number, so it has to be a count of individual people someone can point at — which is why [what counts as a qualified lead](/answers/what-counts-as-a-qualified-lead-from-seo) is agreed in writing first.",
+        "A modelled conversion can't take part in that. It's an estimate of a population, produced by a model neither party can inspect, and it moves when Google changes the model. Useful for reading a trend; hopeless as the thing an invoice turns on.",
+        "So on any account running Consent Mode we report two numbers side by side: the platform figure including modelling, and the CRM count. Where they disagree, the CRM count is what the [guarantee](/seo) settles against. It's the less flattering of the two almost always, which is rather the point."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Google Consent Mode the same as a cookie banner?",
+      "a": "No. The banner, or the consent platform behind it, asks the visitor and records the answer. Consent Mode is the wiring that passes that answer to Google's tags; it doesn't save the choice itself. Run one without the other and you're either not honouring consent or not measuring anything."
+    },
+    {
+      "q": "What's the difference between basic and advanced Consent Mode?",
+      "a": "In basic mode Google tags don't load until the visitor interacts with the banner, and a refusal sends nothing at all. In advanced mode tags load with consent defaulted to denied and send measurements without cookies, so a refusal still leaves a signal to model from. Advanced keeps more data; basic collects less by design."
+    },
+    {
+      "q": "Are modelled conversions real conversions?",
+      "a": "The sales are real; the numbers are estimates. Modelling infers how many conversions happened among visitors it couldn't observe, from the relationship it sees among visitors it could. Fine for reading a trend, useless for reconciliation — there's no individual record behind a modelled conversion to check."
+    },
+    {
+      "q": "How do I tell which of my conversions are modelled?",
+      "a": "In GA4, reports containing modelled data carry a data-quality icon that says so. In Google Ads there's no split — modelled conversions sit in the same Conversions column at the same granularity as observed ones. In practice you compare the platform number against your CRM and treat the gap as modelling plus whatever else is broken."
+    },
+    {
+      "q": "Does Consent Mode affect SEO or rankings?",
+      "a": "No. It touches tags, not crawling, indexing or ranking, and Google Search doesn't read your consent state. What changes is what you can see: your organic conversion count gets harder to trust, which makes an SEO engagement harder to judge even though the SEO is untouched."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Consent mode overview",
+      "publisher": "Google for Developers — Tag Platform",
+      "url": "https://developers.google.com/tag-platform/security/concepts/consent-mode",
+      "date": "2026-04-17"
+    },
+    {
+      "title": "Set up consent mode on websites",
+      "publisher": "Google for Developers — Tag Platform",
+      "url": "https://developers.google.com/tag-platform/security/guides/consent",
+      "date": "2026-05-06"
+    },
+    {
+      "title": "About consent mode modeling",
+      "publisher": "Google Ads Help",
+      "url": "https://support.google.com/google-ads/answer/10548233"
+    },
+    {
+      "title": "[GA4] Behavioral modeling for consent mode",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/11161109"
+    },
+    {
+      "title": "EU user consent policy",
+      "publisher": "Google",
+      "url": "https://www.google.com/about/company/user-consent-policy/"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "do-indian-websites-need-a-cookie-consent-banner"
+    },
+    {
+      "type": "answers",
+      "slug": "does-the-dpdp-act-apply-to-website-analytics"
+    },
+    {
+      "type": "answers",
+      "slug": "dpdp-clauses-for-marketing-agencies"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-analytics-4"
+    },
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "services",
+      "slug": "analytics-setup-services"
+    },
+    {
+      "type": "answers",
+      "slug": "what-counts-as-a-qualified-lead-from-seo"
+    }
+  ]
+}

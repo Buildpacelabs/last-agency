@@ -1,0 +1,289 @@
+{
+  "slug": "how-to-build-a-redirect-map",
+  "type": "journal",
+  "primaryKeyword": "how to build a redirect map for a site migration",
+  "secondaryKeywords": [
+    "redirect map spreadsheet columns",
+    "one to many redirect decision",
+    "testing redirects against staging",
+    "url inventory before a migration"
+  ],
+  "cluster": "technical-launch",
+  "intent": "informational",
+  "h1": "How to build a redirect map before a migration",
+  "metaTitle": "How to Build a Redirect Map for a Migration",
+  "metaDescription": "A redirect map is built from three URL sources, not one, and two get forgotten. It isn't finished until every row has been tested against staging.",
+  "updated": "2026-09-16",
+  "published": "2026-09-16",
+  "answer": "Build the URL inventory from three sources — a full crawl, Search Console's indexed and impression-bearing pages, and the server logs — then give every old URL a destination, a status code and a one-line reason. The map isn't finished when the destinations are filled in. It's finished when every row has been tested against staging.",
+  "takeaways": [
+    "The crawl finds URLs your site links to. The logs and Search Console find the ones it forgot but Google still fetches, and those are where the rankings are hiding.",
+    "One old URL cannot redirect to three new ones. Pick the majority-intent page, or send it to a hub that genuinely answers the old query — and if nothing does, return **410** rather than 301 to the homepage.",
+    "A row is tested when you know its first status code, its hop count, its final URL and its final status code. Anything less is a guess with a tick next to it.",
+    "Flatten every chain at the source. Stacking this migration's rules on the last one's is how a two-hop redirect becomes a five-hop redirect three replatforms later."
+  ],
+  "sections": [
+    {
+      "h2": "A redirect map is a decision list, not a URL list",
+      "body": [
+        "We've written before about [what a badly redirected replatform costs](/journal/the-replatform-that-killed-your-traffic) — the traffic drop, the fortnight of panic, the eight-to-sixteen-week recovery. This is the other half of that: how the map itself gets built, row by row, so the drop doesn't happen.",
+        "The distinction that matters is between an inventory and a map. An inventory is every URL that ever existed. A map is a decision about each one: where it goes, what status code it returns, why, and whether anyone has proved that it works. A spreadsheet with two columns and four thousand rows is an inventory somebody stopped filling in.",
+        "It's also the deliverable, not a working file. If you're paying an agency for [a migration](/services/site-migration-seo), the map is the artefact you own afterwards, and it should still be readable in two years when someone asks why `/services/seo-audit/` points where it does."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Build it before the platform is chosen, not after the launch date",
+        "body": "The map has to exist while the new URL structure is still negotiable. Built afterwards, it stops being a mapping exercise and becomes damage limitation against a structure somebody else already shipped."
+      }
+    },
+    {
+      "h2": "Three sources, and why the crawl alone is never enough",
+      "body": [
+        "Almost every incomplete map we've inherited was built from one source. Usually the XML sitemap, occasionally a crawl. Both describe the site somebody believes they have.",
+        "A crawl finds what the site links to. That's a real and necessary list, and it is systematically blind to orphans — pages with no internal link left pointing at them, which is exactly what old campaign landing pages, retired product URLs and pre-redesign blog posts become. They're invisible to a crawler and perfectly visible to Google, which has them indexed and is still sending people there.",
+        "So you need two more sources, and both of them are records of behaviour rather than intention."
+      ],
+      "table": {
+        "caption": "The three sources of an old-URL inventory, what each one uniquely contributes, and its blind spot.",
+        "head": [
+          "Source",
+          "What only this one gives you",
+          "Blind spot"
+        ],
+        "rows": [
+          [
+            "Full crawl of the live old site",
+            "Structure, templates, internal link graph, the current canonical and status of every linked URL.",
+            "Orphans. If nothing links to it, the crawler never sees it."
+          ],
+          [
+            "Search Console Pages export, 16 months",
+            "Every URL that earned an impression or a click, orphan or not — plus the clicks that justify hand-mapping it.",
+            "URLs that never ranked, and anything older than the 16-month window."
+          ],
+          [
+            "Server access logs, 90 days minimum",
+            "Every URL Googlebot still requests, including ones already returning 404 from a previous migration.",
+            "URLs Google has already given up on. Bot verification is on you."
+          ]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "The logs are the source everybody skips",
+          "body": [
+            "Server logs are the only record of what Google actually fetches, as opposed to what it indexed or what you published. Pull ninety days minimum, filter to verified Googlebot, and extract distinct paths with their request counts and response codes.",
+            "Two things fall out immediately. First, URLs that already return 404 and are still being crawled weekly — leftovers from an earlier migration, often holding links, and free to recover in this one. Second, the parameter and file URLs nobody writes down: PDFs, spec sheets, feeds, old pagination, `?print=1` variants.",
+            "If you've never pulled logs before, the extraction is a short exercise: one command to filter the bot, one to count distinct paths by status code."
+          ]
+        },
+        {
+          "h3": "Deduplicate, then enrich",
+          "body": [
+            "Union the three lists on the absolute URL, keeping a `source` column so you can see which found it. Then add a backlink export and an analytics landing-page export — not as sources of URLs, but as evidence columns that decide how hard you work on each row. A URL with twelve referring domains gets hand-mapped. A URL with nothing gets a pattern rule.",
+            "The XML sitemap goes in last and counts for nothing on its own. It's a statement of what someone wanted indexed, and on an old site it's usually years out of date."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The columns, written out",
+      "body": [
+        "This is the layout we use. It's boring on purpose — a map that needs explaining is a map that gets ignored under launch pressure.",
+        "Ten columns, and the last four are the ones that separate a map from a wish list."
+      ],
+      "bullets": [
+        "**`old_url`** — absolute, with protocol and host, exactly as the source recorded it. Never relative. Case-sensitive.",
+        "**`source`** — crawl, gsc, logs, or a combination. Tells you instantly how much of the list came from the crawl alone.",
+        "**`evidence`** — 16-month clicks, impressions, referring domains, log hits. This column decides every tie and every 1:many argument later.",
+        "**`template`** — product, category, blog, PDF, paginated, parameter, legal. What makes pattern rules possible at all.",
+        "**`new_url`** — absolute. Blank is a valid state early and an unshippable state at the end.",
+        "**`rule`** — `pattern` or `manual`. Pattern rows get tested as a family; manual rows get tested individually and reviewed by a human.",
+        "**`status`** — `301`, `410`, or `keep` where the URL is unchanged. Three values. Anything else is a conversation, not a cell.",
+        "**`reason`** — one line, plain English. *Closest match by intent.* *Content merged into hub.* *Discontinued, no equivalent.* The column most maps omit and the only one that makes the map auditable a year later.",
+        "**`owner`** — a name. Unowned rows are the ones still blank at 2am on launch night.",
+        "**`tested`** — the result, not a tick. First status code, hop count, final URL, final status code, date. Covered below, because it's the column the whole thing turns on."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "One row per URL, including the ones you're keeping",
+        "body": "URLs that don't change still belong in the map with `status: keep`. Leaving them out means nobody notices when the new platform quietly appends a trailing slash to all of them and turns four hundred unchanged URLs into four hundred redirects."
+      }
+    },
+    {
+      "h2": "When one-to-many collapses to one-to-one, and when it becomes a 410",
+      "body": [
+        "This is where most maps go wrong, and it's a content decision wearing a technical costume.",
+        "An old page gets split into three new ones. Someone writes all three into the destination cell, or picks the first alphabetically, or sends it to the category page because that feels safe. A redirect has exactly one destination, so the decision is being made regardless — the only question is whether a person makes it or a spreadsheet does.",
+        "Our rule, in order:"
+      ],
+      "numbered": [
+        "**Majority intent wins.** Open the Search Console query list for that old URL. Whichever new page answers most of those queries is the destination, even if it holds less of the old wordcount. You're redirecting demand, not paragraphs.",
+        "**No majority? Redirect to a hub that genuinely answers the query** — a category page with the sub-pages, real copy and a working internal link structure. Not a bare list of links, which behaves like a dead end for the user and gets treated as a soft 404.",
+        "**Nothing equivalent exists? Return 410.** Google's guidance for permanently removed pages is a 404 or 410 status code, and a 410 says it deliberately. A 301 to an unrelated page earns you nothing and produces a report full of URLs that look mapped and aren't.",
+        "**Many-to-one is fine.** Consolidating six near-duplicate old URLs onto one new page is a legitimate merge and often the point of the migration — provided the survivor genuinely covers all six."
+      ],
+      "subs": [
+        {
+          "h3": "Where the threshold sits, and why we say it out loud",
+          "body": [
+            "Hand-mapping four thousand URLs is not a good use of anyone's month. Our working line: any URL with a click in the last 16 months, more than roughly 50 impressions, or a single referring domain gets a human decision. Everything else gets a pattern rule and a spot check.",
+            "That's a judgement call, not a law, and it moves with the site — on a 300-page brochure site we hand-map everything, and on a 200,000-URL catalogue the threshold has to be higher or the migration never ships. State your threshold in the map's first tab so nobody has to reverse-engineer it later."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Three defects to sweep for before anybody tests anything",
+      "body": [
+        "Run these three checks over the finished map. Each has a specific failure mode and each is cheap to catch on a spreadsheet and expensive to catch in production."
+      ],
+      "subs": [
+        {
+          "h3": "Chains",
+          "body": [
+            "A chain is a redirect to a URL that itself redirects. They accumulate because each migration stacks its rules on the last one's, and long chains are explicitly named as bad for crawling in Google's crawl budget guidance.",
+            "The fix is arithmetic, not opinion: join your map's `new_url` column back against the existing redirect table, and wherever a destination is itself a source somewhere, rewrite the destination to the final target. Flatten at the source so every old URL reaches its final home in one hop."
+          ]
+        },
+        {
+          "h3": "Loops",
+          "body": [
+            "A loop is a chain that closes. They almost never come from the map itself; they come from the map's rules colliding with the platform's own rules — a trailing-slash normaliser fighting a lowercase normaliser, or a language redirect fighting a country redirect.",
+            "You cannot spot these in a spreadsheet, which is the point of the test pass. A loop shows up as a redirect-limit error and nothing else, so if your test script reports one, treat it as a launch blocker rather than a row to revisit."
+          ]
+        },
+        {
+          "h3": "Parameter variants",
+          "body": [
+            "Uppercase, trailing slash, `www` and non-`www`, `http` and `https`, `?page=2`, `?sort=price`, session IDs, and every tracking parameter your campaigns have ever used. Each is a distinct URL to a crawler and there can be tens of thousands of them.",
+            "Write a policy per parameter family as a single rule row — preserve, strip, or leave alone — rather than enumerating variants. And check one thing specifically: that your redirect rules **preserve the query string**. A rule that drops it silently kills attribution on every campaign link, WhatsApp share and email in circulation on launch day, and the symptom shows up as a mysterious spike in direct traffic rather than as a redirect fault."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The sweep that catches the fourth defect",
+        "body": "Sort the map by `new_url` and look for destinations receiving hundreds of unrelated old URLs. That's usually a fallback rule someone added to make the blanks go away, and it converts a mapping problem into thin, over-consolidated pages on the new site."
+      }
+    },
+    {
+      "h2": "Testing every row against staging, and what 'tested' means",
+      "body": [
+        "A map with a tick in the tested column and no data behind it is worse than an untested map, because it stops anyone looking.",
+        "A row is tested when four facts are recorded against it: the first status code returned, the number of hops to reach a terminal response, the final URL, and the final status code. A row passes only if the first code is 301 (or 410 where that's the intent), hops equal one, the final URL matches `new_url` character for character, and the final code is 200.",
+        "Google's own site-move guidance says to test the redirects, using the URL Inspection tool for individual URLs and command-line tools or scripts for large numbers of them. Take the second half of that seriously. Test the whole map, not a sample — the sample proves your pattern rules work, and every failure you care about lives in the exceptions."
+      ],
+      "bullets": [
+        "**Test each row four ways**: as written, with and without a trailing slash, in mixed case, and with a query string attached. Four requests per row is cheap; four hundred angry emails is not.",
+        "**Watch for staging lying to you.** Basic auth returning 401 before your rule ever runs, a staging server that 302s everything by default, a CDN or WAF sitting in front of production but not in front of staging — all three produce a green test and a red launch.",
+        "**Record the date.** A test result from three sprints ago describes a codebase that no longer exists.",
+        "**Re-run the entire map against production within an hour of launch**, then again at 24 hours, then weekly for a month. It's also the moment to confirm the staging site itself hasn't been indexed by accident."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Permanent means permanent, so test the code as well as the target",
+        "body": "A row that lands on the right URL via a 302 has failed. Temporary redirects tell Google to keep the old URL in the index, and the [difference between 301 and 302](/compare/301-vs-302-redirect) is the difference between moving your rankings and cloning your pages."
+      }
+    },
+    {
+      "h2": "What happens to the map after launch",
+      "body": [
+        "It stops being a launch document and becomes a permanent record, which is the part almost everybody skips.",
+        "Redirects are not temporary scaffolding. Google's site-move documentation says to [keep the redirects for as long as possible, generally at least 1 year](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes), and since a rule costs nothing to keep, we keep them indefinitely unless there's a specific reason not to. The moment somebody 'tidies up' the redirect config is the moment a three-year-old link starts returning 404.",
+        "Two follow-up jobs, both due in the first fortnight. Rewrite internal links to point at final destinations rather than at redirects — the redirect exists for external links and old bookmarks, not as a substitute for correct navigation. And watch the Page indexing report in Search Console, where `Page with redirect` and `Not found (404)` will tell you what the test pass missed.",
+        "Then file the map with the rest of the [pre-launch checklist](/answers/seo-checklist-before-launching-a-website). In two years, when the next replatform starts, this file is the reason that migration begins with a complete inventory instead of an XML sitemap and an optimistic afternoon."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What columns should a redirect map have?",
+      "a": "Ten: old URL, source, evidence, template, new URL, rule type, status code, a one-line reason, an owner, and the test result. The reason and the test result are the two most often missing, and they're what make the map reviewable rather than merely complete."
+    },
+    {
+      "q": "Can one URL redirect to multiple URLs?",
+      "a": "No. A redirect has exactly one destination. When old content splits across several new pages, pick the page that answers most of the old URL's Search Console queries, or send it to a hub that genuinely covers the topic. If nothing does, return a 410 rather than pointing it at the homepage."
+    },
+    {
+      "q": "Do I need server logs to build a redirect map?",
+      "a": "Not strictly, but they're the only source that shows what Googlebot still fetches — including URLs already 404ing from an earlier migration that are still holding links. On any site older than about three years, the logs find URLs neither the crawl nor Search Console will."
+    },
+    {
+      "q": "How long should redirects stay in place after a migration?",
+      "a": "Google's guidance is at least a year, and there's rarely a good reason to remove them after that. A redirect rule costs nothing to keep and removing one turns every old external link and bookmark pointing at that URL into a 404."
+    },
+    {
+      "q": "Should I redirect old URLs to the homepage if there's no equivalent?",
+      "a": "No. A bulk redirect to the homepage is treated as a soft 404 and passes nothing, while filling your reports with rows that look handled. Return 410 for content that's genuinely gone, or map it to a category page that actually answers the query it used to rank for."
+    },
+    {
+      "q": "How many URLs should I test before launch?",
+      "a": "All of them. Sampling verifies that your pattern rules behave, and pattern rules are the part that rarely breaks. The failures live in hand-mapped exceptions, parameter variants and case sensitivity, and a script can test a 40,000-row map in minutes."
+    }
+  ],
+  "sources": [
+    {
+      "title": "How to move a site",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+      "date": "2026-06-17"
+    },
+    {
+      "title": "Redirects and Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+      "date": "2026-04-14"
+    },
+    {
+      "title": "Optimize your crawl budget",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/large-site-managing-crawl-budget",
+      "date": "2026-07-22"
+    },
+    {
+      "title": "URL Inspection tool",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9012289"
+    },
+    {
+      "title": "Page indexing report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7440203"
+    }
+  ],
+  "related": [
+    {
+      "type": "services",
+      "slug": "site-migration-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "the-replatform-that-killed-your-traffic"
+    },
+    {
+      "type": "compare",
+      "slug": "301-vs-302-redirect"
+    },
+    {
+      "type": "glossary",
+      "slug": "301-redirect"
+    },
+    {
+      "type": "answers",
+      "slug": "who-is-responsible-if-a-migration-ruins-seo"
+    },
+    {
+      "type": "answers",
+      "slug": "seo-checklist-before-launching-a-website"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-build-a-keyword-map"
+    },
+    {
+      "type": "glossary",
+      "slug": "xml-sitemap"
+    }
+  ]
+}

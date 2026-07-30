@@ -1,0 +1,286 @@
+{
+  "slug": "how-to-merge-two-pages-competing-for-the-same-keyword",
+  "type": "answers",
+  "primaryKeyword": "how to merge two pages that compete for the same keyword",
+  "secondaryKeywords": [
+    "which page to keep when consolidating",
+    "301 or canonical when merging pages",
+    "consolidating duplicate blog posts",
+    "traffic dip after merging pages"
+  ],
+  "cluster": "content-ops",
+  "intent": "informational",
+  "h1": "How to merge two pages that compete for the same query",
+  "metaTitle": "How to Merge Two Pages Competing for One Keyword",
+  "metaDescription": "Pick the survivor by impression history and inbound internal links, not by age or preference. What to port, 301 or canonical, and the two-week dip.",
+  "updated": "2026-09-29",
+  "published": "2026-09-29",
+  "answer": "Keep the URL with the impression history and the inbound internal links — usually not the better-written page. Move the useful content onto it, 301 the loser one-to-one, rewrite every internal link, and update the sitemap. Expect traffic to dip for about a fortnight before it recovers.",
+  "takeaways": [
+    "The survivor is chosen on evidence, not preference: impression history for the target query, then inbound internal links. If either URL has referring domains, that outranks both.",
+    "Fold the content across **before** you redirect. Redirect first and Google recrawls a destination that doesn't yet answer the query it just inherited.",
+    "A `rel=canonical` is right when both URLs must stay reachable for humans. When they don't, it's a way of avoiding the decision.",
+    "Traffic usually dips for about two weeks. Reverting inside that window is the most common way a merge fails."
+  ],
+  "sections": [
+    {
+      "h2": "First, check it's really a merge and not a mirage",
+      "body": [
+        "Two of your URLs showing up for one query is not automatically a problem. It's only cannibalisation when both pages would satisfy the same searcher — same question, same expected answer. If one is obviously the right result and the other obviously isn't, you have a keyword mention and nothing to fix. [How to detect cannibalisation properly](/answers/what-is-keyword-cannibalization) covers the diagnosis; this page is what you do after it."
+      ],
+      "bullets": [
+        "**Don't merge a category page and a product page** that both surface for a head term. That's normal and frequently what you want.",
+        "**Don't merge a definition and a comparison.** Different intents, different SERP formats, different buyers.",
+        "**Don't merge location pages** that genuinely serve different cities, even when the copy rhymes.",
+        "**Do merge** when three months of Search Console data shows both URLs earning real impressions for the same query and the position flipping between them."
+      ]
+    },
+    {
+      "h2": "Which URL survives — the decision rule",
+      "body": [
+        "Almost every team gets this wrong in the same direction. They keep the page they'd rather keep: the newer one, the one with the tidier design, the one somebody currently employed wrote. Then they spend a quarter trying to talk Google into agreeing.",
+        "Google has already told you which URL it trusts. Open the Performance report, filter to the query, switch to the Pages tab, set the widest date range Search Console will give you, and look at which URL has carried the impressions. Impressions, not clicks. Impressions are the record of Google repeatedly choosing to show that URL for that query. Clicks are downstream of a title tag you could rewrite this afternoon."
+      ],
+      "table": {
+        "caption": "Ranking the evidence when two of your URLs compete for one query.",
+        "head": [
+          "Signal",
+          "Where to read it",
+          "How much it should decide"
+        ],
+        "rows": [
+          [
+            "Referring domains to the URL",
+            "Search Console → Links → Top linked pages, or any backlink tool",
+            "Decisive when the gap is real. Links are the only thing here you can't rebuild in an afternoon."
+          ],
+          [
+            "Impression history for the target query",
+            "Performance → filter the query → Pages tab, widest date range",
+            "The primary rule when neither URL has links — which covers most blog merges."
+          ],
+          [
+            "Inbound internal links",
+            "Crawl your own site and count links per destination URL",
+            "Strong. It's also the signal you're about to rewrite, so count it before you touch it."
+          ],
+          [
+            "URL fit",
+            "Read the slug out loud",
+            "Tie-breaker. `/blog/guide-2024-updated-v2` is a bad permanent home for a commercial query."
+          ],
+          [
+            "Page-level conversion",
+            "Analytics, if you track it per page",
+            "Tie-breaker, and the only one your finance director will ask about."
+          ],
+          [
+            "Which page is better written",
+            "Your own opinion",
+            "Last. Content moves in an afternoon; an impression history doesn't move at all."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The uncomfortable case",
+        "body": "The URL with the history is often the worse page — an old post with a dated screenshot and a table that broke in a theme update, sitting on three years of impressions. Keep that URL anyway and paste the better page into it. You're choosing a URL, not choosing an article."
+      }
+    },
+    {
+      "h2": "What to port across, and what to deliberately leave behind",
+      "body": [
+        "A merge is not a copy-paste of one page into the bottom of another. Roughly a third of what's on the losing page shouldn't travel, and shipping all of it is how a consolidation produces a bloated page that ranks worse than either original did."
+      ],
+      "table": {
+        "caption": "What moves onto the surviving URL, and what stays behind.",
+        "head": [
+          "Element",
+          "Verdict",
+          "Why"
+        ],
+        "rows": [
+          [
+            "Sections the survivor genuinely lacks",
+            "Port",
+            "This is the actual point of the exercise: one URL that answers the query completely."
+          ],
+          [
+            "FAQs not already answered",
+            "Port, then de-duplicate",
+            "Two near-identical FAQ entries on one page is a schema problem as well as a reading problem."
+          ],
+          [
+            "Images, diagrams and tables",
+            "Port, with the alt text",
+            "Fix the file paths too — a merged page pointing at assets under a retired URL's directory is fragile."
+          ],
+          [
+            "The second introduction",
+            "Leave",
+            "You need one opening. Two stitched-together intros is the most obvious tell that a page was assembled rather than written."
+          ],
+          [
+            "Restated definitions",
+            "Leave",
+            "If both pages define the same term, keep the better sentence and delete the other one."
+          ],
+          [
+            "Dated framing — \"in 2024\", \"this year\"",
+            "Rewrite, don't port",
+            "The survivor is now a long-lived URL. One stray year ages the whole page."
+          ],
+          [
+            "Old CTAs, campaign banners, expired offers",
+            "Leave",
+            "Nobody audits these and they outlive the campaign by years."
+          ],
+          [
+            "Tags and categories from the losing page",
+            "Leave",
+            "Merging the content and then merging its taxonomy recreates the duplicate archive pages you were escaping."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "301 or canonical",
+      "body": [
+        "Both consolidate. They consolidate different things and they carry different risks, and the difference that matters is what happens to the human being.",
+        "A 301 moves them to the survivor and tells Google [the redirect target is what should appear in search results](https://developers.google.com/search/docs/crawling-indexing/301-redirects) — a temporary redirect keeps the source page listed instead, which is the opposite of what a merge wants. A `rel=canonical` leaves the visitor where they landed and speaks only to the crawler."
+      ],
+      "bullets": [
+        "**Use a 301 when the losing page has no reason to exist.** That's most merges. One-to-one, loser to survivor, at the server rather than through a chain of plugin rules.",
+        "**Use a canonical when both URLs must stay reachable** — a print version, a syndicated copy on a partner site, a landing page a live ad campaign is still pointing budget at.",
+        "**A canonical becomes a cop-out** when you're using it to avoid making the call. Keep a URL nobody needs and it still gets crawled, still splits your internal links, and can still be overruled — Google treats the tag as a hint, not an instruction.",
+        "**Never point a merged cluster at the homepage.** Google can treat an irrelevant redirect target as a soft 404, and then none of the consolidation you wanted actually happens.",
+        "**Don't `noindex` the loser instead.** That removes the page without passing anything to the survivor. [Canonical versus noindex](/compare/canonical-vs-noindex) has the decision table."
+      ]
+    },
+    {
+      "h2": "Make the signal unambiguous",
+      "body": [
+        "The redirect is one statement about which URL owns the query. Everything else on your site is still making the opposite statement until you go and fix it, and contradictory signals are how a merge half-works — which is the worst outcome available, because you take the disruption and keep the ambiguity."
+      ],
+      "numbered": [
+        "**Publish the merged content first** and let it sit for three to seven days, so the survivor is already the better page by the time it inherits anything.",
+        "**Then apply the 301**, one-to-one.",
+        "**Rewrite every internal link** that pointed at the loser. Crawl the site, filter for internal links resolving 3xx, and fix them at source — navigation, related-post blocks, hardcoded links inside components, and the inline links in old posts nobody has opened since 2024.",
+        "**Update the sitemap.** Drop the redirected URL, keep the survivor, and set `lastmod` to the date you actually changed the content rather than the date you ran the script. A sitemap still listing dead URLs slows the recrawl you're waiting on.",
+        "**Fix what you control off-site** — the link in the email footer, the guest-post byline, the Google Business Profile link, the PDF somebody sent to 400 people.",
+        "**Request indexing on the survivor**, once. It's a nudge, not a lever, and the quota is small."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The one thing not to do",
+        "body": "Don't delete the losing page. A 404 discards whatever it had earned — impressions, links, and the internal links you haven't found yet. The redirect costs nothing to keep, and it's the only thing standing between an old inbound link and a dead end."
+      }
+    },
+    {
+      "h2": "The dip, and the rule against reverting",
+      "body": [
+        "Here's the part that never makes it into the deck. Merges usually look worse before they look better, and the shape is consistent enough to plan around.",
+        "Roughly: the redirected URL leaves the index within days, and the survivor does not immediately inherit its position. For a week or two you have one URL where you used to have two, ranking somewhere between where the pair of them sat. Combined impressions for the query fall. Somebody in a Monday meeting notices. Somebody suggests putting it back.",
+        "Don't. Reverting inside that window is the most reliable way to make a merge fail. You take the disruption twice, you demonstrate that neither URL is stable, and you end up maintaining a redirect pointing at a page that no longer exists in the form it was redirected to.",
+        "Give it four to eight weeks, and judge it on the right number: impressions and average position for the target query on the surviving URL. Not sitewide sessions, which will move for a dozen unrelated reasons in any four-week window."
+      ],
+      "bullets": [
+        "**Normal:** the survivor's impressions for the query fall, then climb past the previous combined total somewhere between weeks three and eight.",
+        "**Normal:** average position gets worse before it gets better, because Google is re-evaluating a page that just changed substantially.",
+        "**Not normal:** the redirected URL is still indexed at week four. Check the redirect returns 301 rather than 302, and that it isn't chaining through two hops.",
+        "**Not normal:** Search Console reports the survivor as \"Duplicate, Google chose different canonical\" and names a third URL you'd forgotten about. That's a cluster, not a pair — go back and find the rest of it.",
+        "**Not a merge failure:** impressions never recover and the query now shows a result format yours isn't in. The SERP changed and your merge happened to coincide with it. [Rankings drop for a dozen reasons](/answers/why-did-my-rankings-drop), and \"we changed something last week\" is the least diagnostic of them."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Two weeks is not a verdict",
+        "body": "If you're going to panic, schedule the panic for week eight. Anything earlier is you watching a recrawl in progress and calling it a result. Write the review date into the ticket before you ship the redirect, because the pressure to revert arrives on day nine and it is always from somebody who wasn't in the decision."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should I keep the newer page or the older page?",
+      "a": "Neither, as a rule. Keep the URL with the evidence behind it: referring domains first, then impression history for the target query, then inbound internal links. Age only matters because older URLs tend to have accumulated those things — it isn't the criterion itself."
+    },
+    {
+      "q": "301 or canonical when merging two pages?",
+      "a": "301 when the losing page has no reason to stay reachable, which is most merges. Canonical when a human still needs to land on that URL — a print version, a syndicated copy, a live ad landing page. Using canonical to avoid deciding leaves you with the split you were fixing."
+    },
+    {
+      "q": "How long does traffic take to recover after merging pages?",
+      "a": "Expect a dip for roughly two weeks while Google recrawls the redirect and re-evaluates the survivor, then recovery over the following month. Judge it at four to eight weeks on impressions and average position for the target query, not on sitewide sessions."
+    },
+    {
+      "q": "Can I just delete the duplicate page instead?",
+      "a": "You can, and you'll throw away everything it earned. A 404 passes nothing to the survivor and breaks any inbound link you didn't know about. Deletion only makes sense for a page with no impressions, no links and no internal links pointing at it — which is rarer than it sounds."
+    },
+    {
+      "q": "What if both pages have backlinks?",
+      "a": "Then the link profiles merge anyway once the 301 is in place, so pick the URL with more referring domains or the better-quality ones and redirect the other into it. The redirect is what carries them across, which is exactly why deleting is the wrong instinct."
+    },
+    {
+      "q": "Does merging always improve rankings?",
+      "a": "No. It removes the instability of Google swapping between two URLs, which usually helps, but it can't make a page relevant that wasn't. If both pages were thin, merging produces one thin page. The merge is a signal fix, not a content fix — sometimes you need both."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Redirects and Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+      "date": "2026-04-14"
+    },
+    {
+      "title": "What is URL canonicalization",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/canonicalization",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "Build and submit a sitemap",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+      "date": "2026-07-08"
+    },
+    {
+      "title": "Performance report (Search results): Overview and basic setup",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7576553"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "what-is-keyword-cannibalization"
+    },
+    {
+      "type": "glossary",
+      "slug": "keyword-cannibalization"
+    },
+    {
+      "type": "journal",
+      "slug": "a-post-mortem-on-keyword-cannibalization"
+    },
+    {
+      "type": "compare",
+      "slug": "canonical-vs-noindex"
+    },
+    {
+      "type": "compare",
+      "slug": "301-vs-302-redirect"
+    },
+    {
+      "type": "glossary",
+      "slug": "301-redirect"
+    },
+    {
+      "type": "journal",
+      "slug": "internal-linking-beats-link-building"
+    },
+    {
+      "type": "services",
+      "slug": "seo-audit-services"
+    }
+  ]
+}

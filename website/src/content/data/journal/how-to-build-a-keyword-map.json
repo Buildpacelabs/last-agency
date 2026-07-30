@@ -1,0 +1,251 @@
+{
+  "slug": "how-to-build-a-keyword-map",
+  "type": "journal",
+  "primaryKeyword": "how to build a keyword map for a website",
+  "secondaryKeywords": [
+    "one primary keyword per url rule",
+    "keyword to url mapping spreadsheet",
+    "new page or existing page decision seo",
+    "keyword map as a cannibalisation check"
+  ],
+  "cluster": "content-ops",
+  "intent": "informational",
+  "h1": "How to build a keyword map — the deliverable that survives an agency change",
+  "metaTitle": "How to Build a Keyword Map for a Website",
+  "metaDescription": "One primary keyword per URL, enforced. That single rule turns the map into a cannibalisation detector, and it's why the map outlives your agency.",
+  "updated": "2026-09-28",
+  "published": "2026-09-28",
+  "answer": "A keyword map is a table with one row per URL, not one row per keyword. Each row carries exactly one primary keyword, the cluster it owns, the URL Google currently returns for that query, and a decision: new page, existing page, merge or retire. The one-primary rule is what makes duplicates visible before they cost you anything.",
+  "takeaways": [
+    "Invert the spreadsheet. A keyword list has one row per query; a map has **one row per URL**. That single change forces every unassigned keyword into a decision.",
+    "One primary keyword per URL, enforced by a duplicate check in the sheet. A repeat in that column is cannibalisation you can fix this week rather than diagnose next quarter.",
+    "The column most maps omit is the URL Google *currently* ranks for the query. Without it you can't tell a new page from a rewrite.",
+    "It's the one deliverable worth demanding on the way out of an agency relationship. It carries the reasoning, and reasoning is the expensive part."
+  ],
+  "sections": [
+    {
+      "h2": "The map starts where the keyword list stops",
+      "body": [
+        "[Keyword research](/answers/how-to-do-keyword-research) ends with a validated list of queries grouped by intent. That's a genuine deliverable and it is not a plan. Nothing in a list tells you which page is supposed to rank, whether that page exists, or what happens when a writer picks the same topic again in March.",
+        "The map is the artefact that answers all three, and the trick is a change of shape that sounds trivial and isn't. A keyword list has one row per keyword. A keyword map has **one row per URL**. Every keyword either lands in a row or it doesn't have a home yet, and rows with no home are the backlog.",
+        "That inversion is the whole design. It makes the URL the primary key, and once the URL is the primary key, the spreadsheet can enforce rules about it — starting with the only rule that actually matters."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "One file, one owner, no second copy",
+        "body": "The map lives in one shared sheet that both the agency and the client can open. The moment it exists as a PDF in a monthly report and a working copy on somebody's laptop, the two diverge within a quarter and the PDF becomes fiction."
+      }
+    },
+    {
+      "h2": "The columns, and the one most maps leave out",
+      "body": [
+        "Nine columns. Fewer than that and it stops answering questions; more and nobody maintains it.",
+        "Most published templates carry the first five. The sixth is the one almost everybody omits, and it's the column that makes the rest of the map decidable rather than debatable."
+      ],
+      "bullets": [
+        "**`url`** — absolute, and the primary key. One row per URL, always. Pages you haven't built yet get their intended URL here, in a different fill, so the shape of the site is visible before it exists. It's also where structure gets decided, so be deliberate: descriptive words rather than IDs, and topically similar pages grouped into directories, both of which Google's starter guide recommends.",
+        "**`page_type`** — service, product, category, blog, comparison, glossary, location. Determines the template, the internal link pattern and who writes it.",
+        "**`primary_keyword`** — exactly one. Never two. Never a comma.",
+        "**`cluster`** — the secondary terms this URL is also meant to serve, comma-separated. Usually five to twenty; occasionally one.",
+        "**`intent`** — informational, commercial, transactional, navigational. Copied from the research, not re-litigated here.",
+        "**`current_ranking_url`** — the URL of yours that Search Console shows receiving impressions for the primary keyword today. **This is the column most maps omit.** It's the difference between planning in the dark and planning against what Google has already decided about your site.",
+        "**`decision`** — `new`, `update`, `merge` or `retire`. Four values, and every row must carry one before anything gets written.",
+        "**`status`** — planned, briefed, drafting, published, needs-refresh. This is what makes the map a work queue instead of a document.",
+        "**`owner` and `date`** — a human name and the date the row last changed. Rows nobody owns are the rows still sitting in `planned` at the end of the contract."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Resist the twenty-column version",
+        "body": "Volume, difficulty score, CPC, SERP features, competitor URLs — all interesting, none of it a decision. Keep those in the research file and link to it. A map that takes twenty minutes to update is a map that gets updated once."
+      }
+    },
+    {
+      "h2": "One primary keyword per URL, and why it's enforced rather than encouraged",
+      "body": [
+        "The rule is easy to state and almost never enforced: no keyword may appear as the `primary_keyword` of more than one URL, and no URL may have more than one primary keyword.",
+        "Enforced means a formula, not a good intention. A conditional-format rule that turns the `primary_keyword` column red on any duplicate takes thirty seconds to add and does the work of a quarterly audit. If your map lives in a database or a CMS field instead of a sheet, make it a unique constraint and let the write fail.",
+        "That's the entire cannibalisation mechanism. Two pages chasing the same intent don't announce themselves — they show up months later as [rankings that flip between URLs](/journal/a-post-mortem-on-keyword-cannibalization) while clicks drift down and nothing looks broken. In a map with an enforced unique key, the collision happens at the moment someone types it, in a spreadsheet cell, before a word is written.",
+        "It matters because the alternative isn't neutral. Where several of your URLs are close enough to read as duplicates, [Google decides which one to show if you haven't](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls), and its choice is made on its own evidence, not on which page you'd rather sell from."
+      ],
+      "subs": [
+        {
+          "h3": "What to do when two rows genuinely want the same keyword",
+          "body": [
+            "The duplicate flag isn't a veto, it's a prompt. Three legitimate outcomes, and picking one takes minutes rather than a meeting.",
+            "Either the two pages serve different intents and one of them has the wrong primary — a commercial page and an informational page can both be about **SEO pricing** without competing, provided their primaries reflect that. Or they serve the same intent, in which case one of them changes to `merge` and folds into the other. Or the keyword is genuinely broad enough that neither should own it, and it belongs in both clusters as a secondary with no primary owner at all. That third case is rarer than people hope."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Mapping a cluster without breaking the rule",
+      "body": [
+        "The obvious objection: a page ranks for hundreds of queries, so one primary keyword per URL looks like an artificial constraint invented by spreadsheets.",
+        "It isn't, because the primary isn't a claim about what the page will rank for. It's a claim about **what the page is for** — the single query whose searcher, if they landed here, should feel the page was written for them. Everything else the page serves goes in `cluster`, and a healthy cluster column has fifteen entries in it.",
+        "So the question is only ever which terms belong in one URL's cluster and which need their own row. The test is SERP overlap, not wording: if the top results for two queries are largely the same pages, Google is treating them as one need and one URL should serve both. If the results diverge, they're two needs, two rows, two primaries — however similar the words look.",
+        "Two failure modes sit either side of this. Splitting produces a dozen thin near-duplicates that split their own signal, and Google's guidance on people-first content asks directly whether you're producing lots of content on many topics hoping some of it performs. Over-merging produces one enormous page trying to answer a buying question and a definition question at once, satisfying neither."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Long-tail terms don't each need a row",
+        "body": "A question like *what does an SEO retainer include* usually belongs in the cluster of a page about retainers, not on a URL of its own. Give it a row only when the SERP for it is genuinely different — different result types, different competitors, different intent."
+      }
+    },
+    {
+      "h2": "New URL or existing URL — the decision, applied the same way every time",
+      "body": [
+        "This is the decision the map exists to force, and left informal it defaults to 'new page', because writing a new page is more fun than fixing an old one and easier to invoice.",
+        "The default should be the opposite. An existing URL carries internal links, age, and whatever authority it has accumulated. A new URL starts at zero and has to earn all three again. So: update unless there's a reason not to, and write the reason in the row.",
+        "Fill `current_ranking_url` first, from the Search Console performance report — filter to the primary keyword, switch to the Pages view, and record whichever URL of yours receives the impressions. Then read the decision off the table below."
+      ],
+      "table": {
+        "caption": "The new-versus-existing decision, applied consistently across every row in the map.",
+        "head": [
+          "What Search Console shows",
+          "Decision",
+          "Why"
+        ],
+        "rows": [
+          [
+            "One of your URLs already ranks, and it's about this topic",
+            "`update`",
+            "The signal exists. Rewriting to intent beats starting again at zero."
+          ],
+          [
+            "One of your URLs ranks, but it's the wrong page for the intent",
+            "`update` the right page, adjust the wrong one's primary",
+            "Google has picked a page you didn't intend. Fix the mismatch rather than adding a third."
+          ],
+          [
+            "Two or more of your URLs trade positions for it",
+            "`merge`",
+            "Cannibalisation, already live. Pick a survivor, fold the rest in, redirect."
+          ],
+          [
+            "Impressions exist but no URL of yours is topically about it",
+            "`new`",
+            "Genuine gap. The site is being shown for something it doesn't cover properly."
+          ],
+          [
+            "Nothing — no impressions, no relevant page",
+            "`new`, and check the demand is real first",
+            "The commonest reason a page never ranks is that nobody was searching."
+          ]
+        ]
+      },
+      "bullets": [
+        "**A new URL also needs an internal linking plan in the same row.** A page with no links pointing at it from your existing site is a page you've published into a cupboard.",
+        "**`retire` is a real option.** Pages that rank for nothing, serve no intent and duplicate a better page should be merged and redirected, not left to dilute the site.",
+        "**Record the reason, not just the verdict.** *Updating: /seo-audit already ranks 14 for this.* Six months on, that sentence is why nobody re-argues the decision."
+      ]
+    },
+    {
+      "h2": "The map as an early-warning system",
+      "body": [
+        "Once the map is enforced, it starts telling you things Search Console won't for another quarter.",
+        "The first is duplication before publication. A writer proposes a piece, someone checks the primary against the map, the cell turns red, and the conversation happens while it costs an email. Compare that with the alternative: the page ships, both URLs oscillate for four months, and the fix becomes a merge, a redirect and a rewrite of every internal link pointing at the loser.",
+        "The second is drift. Add a quarterly pass where you refresh `current_ranking_url` for every row from Search Console and compare it against `url`. Rows where the two disagree are pages Google has quietly reassigned — usually because a newer post is now a better match for the query the original page was built for. That mismatch is the earliest reliable signal of cannibalisation, and it appears in a spreadsheet column long before it appears in a traffic chart.",
+        "The third is honest capacity. A map with 240 rows in `planned` and four published a month is not a plan, it's a wish, and the map makes the arithmetic impossible to avoid in a status call."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The map only works if nothing gets published outside it",
+        "body": "One exception a quarter is fine. A standing habit of writing first and mapping later turns the map into a record of what happened rather than a control on what happens next, and at that point it's documentation, not a plan."
+      }
+    },
+    {
+      "h2": "Why this is the file to demand when you change agency",
+      "body": [
+        "Most agency handovers transfer assets: logins, drafts, a backlink list, a folder of reports. All useful, none of it explains anything. Six months later the new agency is redoing keyword research you already paid for, because nothing on the old drive records why the previous team made the choices they made.",
+        "The keyword map is the exception. It carries the reasoning — which URL owns which query, what was merged into what, which pages were deliberately retired, and what's still unassigned. That's the expensive part of the work, and it's the part that's cheapest to lose.",
+        "So ask for it in the contract, in a portable format, updated monthly — alongside [the other access and assets you should hold from day one](/answers/what-access-to-give-an-seo-agency). If an agency can't produce a keyword map on request, one of two things is true: the work isn't planned, or it's planned somewhere you'll never see. Neither is a good answer, and both are easier to discover in month two than in month fourteen.",
+        "For our part, the map is built inside the first ten working days of an engagement and shared as a live sheet the client owns, not as an export. It's the same document behind our [keyword research work](/services/keyword-research-services), and clients keep it whether they stay or leave — which is, admittedly, a slightly uncomfortable commercial position and exactly the point."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a keyword map?",
+      "a": "A table with one row per URL, recording the single primary keyword that URL is built for, the cluster of secondary terms it also serves, the intent, and whether the page needs creating, updating, merging or retiring. It turns a keyword list into a publishing and rewriting plan with owners against it."
+    },
+    {
+      "q": "Should each page target only one keyword?",
+      "a": "One primary keyword, yes. A good page ranks for dozens or hundreds of related queries, and those live in the cluster column. The primary isn't a prediction of what will rank — it's a statement of what the page is for, which is what stops two pages being built for the same thing."
+    },
+    {
+      "q": "How do I decide between updating a page and writing a new one?",
+      "a": "Filter the Search Console performance report to the keyword, switch to Pages, and see which URL of yours already gets impressions. If a topically relevant page is there, update it. Write a new page only when nothing on your site genuinely covers the intent."
+    },
+    {
+      "q": "How does a keyword map prevent cannibalisation?",
+      "a": "By making the primary keyword column unique and enforcing it with a duplicate check. Two pages built for the same intent collide in a spreadsheet cell at planning time rather than in Search Console three months later, when the fix costs a merge, a redirect and an internal link rewrite."
+    },
+    {
+      "q": "How often should a keyword map be updated?",
+      "a": "Row status changes as work ships, so weekly in practice. Add a quarterly pass that refreshes the current-ranking-URL column for every row and flags any that no longer match the URL the row is about — that comparison is where drift shows up first."
+    },
+    {
+      "q": "What format should a keyword map be in?",
+      "a": "Something the client can open and keep. A shared spreadsheet is fine and usually best. What matters is that there's one copy, both sides can see it, and it exports cleanly — a map that only exists inside an agency's own tooling isn't a deliverable, it's a demo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "How to specify a canonical URL with rel=\"canonical\" and other methods",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "date": "2026-07-10"
+    },
+    {
+      "title": "Search Engine Optimization (SEO) Starter Guide",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Creating Helpful, Reliable, People-First Content",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Performance report (Search results): Overview and basic setup",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7576553"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "how-to-do-keyword-research"
+    },
+    {
+      "type": "services",
+      "slug": "keyword-research-services"
+    },
+    {
+      "type": "journal",
+      "slug": "a-post-mortem-on-keyword-cannibalization"
+    },
+    {
+      "type": "glossary",
+      "slug": "keyword-cannibalization"
+    },
+    {
+      "type": "answers",
+      "slug": "how-many-keywords-should-an-seo-campaign-target"
+    },
+    {
+      "type": "glossary",
+      "slug": "search-intent"
+    },
+    {
+      "type": "glossary",
+      "slug": "internal-linking"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-keyword-cannibalization"
+    }
+  ]
+}

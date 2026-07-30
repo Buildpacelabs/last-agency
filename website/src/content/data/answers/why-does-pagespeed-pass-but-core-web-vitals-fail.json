@@ -1,0 +1,245 @@
+{
+  "slug": "why-does-pagespeed-pass-but-core-web-vitals-fail",
+  "type": "answers",
+  "primaryKeyword": "why does pagespeed pass but core web vitals fail",
+  "secondaryKeywords": [
+    "crux 28 day window explained",
+    "p75 core web vitals meaning",
+    "lighthouse green but search console red",
+    "inp failing on android india"
+  ],
+  "cluster": "technical-launch",
+  "intent": "informational",
+  "h1": "Your PageSpeed score is green and Search Console still says you fail. Here's why",
+  "metaTitle": "Why PageSpeed Passes but Core Web Vitals Fail",
+  "metaDescription": "PageSpeed runs one lab load; Search Console reports 28 days of real visits at the 75th percentile. Why they disagree, and when your fix will show up.",
+  "updated": "2026-09-18",
+  "published": "2026-09-18",
+  "answer": "PageSpeed's score is a single simulated load on one throttled device. Search Console reports the 75th percentile of real Chrome visits over a rolling 28 days. They measure different things, so they disagree routinely — and a fix you shipped last week cannot fully appear in the field report for about four weeks.",
+  "takeaways": [
+    "The score and the report are not the same measurement. One is a single simulated load; the other is the 75th percentile of every real visit in the last 28 days.",
+    "Because the field window rolls, a fix deployed today is nearly invisible for a week and only fully counted after four. Judging it at day seven means reading data that is three-quarters pre-fix.",
+    "You are almost never your own 75th-percentile visitor. Newer phone, office wifi, warm cache — you sit near the fast end of your own distribution.",
+    "**INP is not in the PageSpeed score at all.** The score substitutes Total Blocking Time, measured without anyone tapping anything.",
+    "Diagnose from field data, reproduce in the lab, then fix. The other order is how teams spend a quarter optimising a metric that was already passing."
+  ],
+  "sections": [
+    {
+      "h2": "Two measurements, one shade of green",
+      "body": [
+        "Open PageSpeed Insights and you get two blocks of information that look related and aren't. The big coloured number is Lighthouse — a lab test. The panel above it, labelled with your URL or your origin, is field data from the Chrome User Experience Report. Only the second one decides whether you pass.",
+        "This isn't a bug in either tool. They answer different questions. The lab test asks what happens if I load this page once, on a throttled mid-tier device, from a data centre. The field report asks what actually happened to real people on their own phones over the last four weeks. A page can be genuinely fast in the first sense and genuinely slow in the second.",
+        "Side by side, the disagreement stops being mysterious."
+      ],
+      "table": {
+        "caption": "What each number in PageSpeed Insights is actually made of.",
+        "head": [
+          "Question",
+          "The PageSpeed score",
+          "The field report"
+        ],
+        "rows": [
+          [
+            "Where the number comes from",
+            "One simulated load on a fixed, throttled device profile",
+            "Real Chrome visits to your site, aggregated"
+          ],
+          [
+            "How many visits it represents",
+            "Exactly one",
+            "Every eligible visit in the last 28 days"
+          ],
+          [
+            "Which value gets reported",
+            "The result of that single run",
+            "The 75th percentile of the distribution"
+          ],
+          [
+            "Does it include INP",
+            "No. Total Blocking Time stands in for it",
+            "Yes — INP is one of the three assessed metrics"
+          ],
+          [
+            "What it is good for",
+            "Reproducing and debugging a specific problem",
+            "Deciding whether you pass"
+          ]
+        ]
+      },
+      "bullets": [
+        "The Lighthouse performance score is built from First Contentful Paint, Speed Index, Largest Contentful Paint, Total Blocking Time and Cumulative Layout Shift, with Total Blocking Time carrying the heaviest single weight. **INP is not in it.** If your failure is INP, that green number was never going to warn you — see [what INP actually measures](/glossary/interaction-to-next-paint)."
+      ]
+    },
+    {
+      "h2": "The 28-day window, and why your fix looks like it failed",
+      "body": [
+        "This is the mechanism behind most of the confusion. PageSpeed Insights [reports real users' experiences over the previous 28-day collection period](https://developers.google.com/speed/docs/insights/v5/about), and the Core Web Vitals report in Search Console uses the same trailing window. It rolls forward a day at a time. It does not reset when you deploy.",
+        "So the arithmetic of a fix goes like this."
+      ],
+      "numbered": [
+        "**Day 0.** You ship. Every visit from this moment is fast. The report still holds 28 days of visits, all of which happened before the fix.",
+        "**Day 7.** A quarter of the window is post-fix. Three-quarters is still the old page, and since the reported value sits at the 75th percentile, it may not have moved at all.",
+        "**Day 14.** Half and half. You should now see the number bending. If it hasn't bent by here, the fix probably didn't do what you thought it did.",
+        "**Day 28.** The window is entirely post-fix. This is the first honest read.",
+        "**Day 28 onwards.** Add a few days for Search Console's own processing lag before the report agrees with PageSpeed Insights."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The re-fix loop",
+        "body": "The expensive failure isn't the slow page. It's shipping a good fix, checking on day five, seeing red, assuming it failed, and shipping a second change that partly undoes the first. We have picked up sites that had been round that loop three times. Put the deploy date on the ticket and don't reopen it before day 14."
+      }
+    },
+    {
+      "h2": "The 75th percentile means your slowest quarter decides",
+      "body": [
+        "Core Web Vitals aren't scored on an average. Google assesses the 75th percentile of page loads, segmented across mobile and desktop — the value three-quarters of visits came in under. The thresholds themselves are on our [Core Web Vitals page](/glossary/core-web-vitals); it's the arithmetic underneath them that catches people out.",
+        "Three consequences, and all three cost money."
+      ],
+      "bullets": [
+        "**A healthy median tells you nothing.** Suppose half your visits render the main content in 1.4 seconds and a quarter take over 3.5. The mean looks fine, the median looks excellent, and the page fails LCP — because the number Google reads lives inside that slow quarter.",
+        "**Making fast visits faster doesn't help.** Shaving 300ms off already-quick desktop traffic moves the median and leaves p75 exactly where it was. Speed work has to be aimed at the tail or it is unpaid engineering.",
+        "**You are not in the sample that matters.** Newer phone than your median visitor, office wifi, assets cached from the twenty times you loaded the page this week. You sit near the fast end of your own distribution, which is exactly why your device can't be the test."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Mobile and desktop are separate verdicts",
+        "body": "The two are assessed independently, and nearly every failure we're asked to look at is mobile-only. If you've been testing on a laptop and reading the desktop tab, you've been watching a metric that was never the problem."
+      }
+    },
+    {
+      "h2": "Same day, still disagreeing: URL groups and missing data",
+      "body": [
+        "Timing explains most of the gap. The rest is that the two tools often aren't describing the same page at all."
+      ],
+      "bullets": [
+        "**Search Console groups URLs.** The report bundles URLs with a similar experience into groups and reports the group. One slow template can put hundreds of otherwise fine URLs in the red, and fixing a single URL changes nothing until the template changes.",
+        "**Low-traffic URLs fall back to the origin.** CrUX needs enough visits to report a URL on its own. Below that, the field panel shows origin-level data — the aggregate of your whole site. Your page can be flawless and still show red because the rest of the domain isn't.",
+        "**\"No data available\" is not a pass.** It means there wasn't enough traffic to report that URL, so you're judged on the origin instead. It is not permission to stop looking.",
+        "**The lab runs cold, from a data centre.** Your real visitors arrive with a warm cache and DNS already resolved; a chunk of them are faster than the lab. The ones who decide your score are slower, and the lab never simulates them."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where to look first",
+        "body": "Open the Core Web Vitals report in [Search Console](/glossary/google-search-console), not PageSpeed Insights. It is the only place that shows which *group* of URLs fails, split by mobile and desktop. One diagnosis per template beats one per page."
+      }
+    },
+    {
+      "h2": "The correct order: field first, lab second",
+      "body": [
+        "Most teams run this backwards. They open PageSpeed Insights, chase whatever the opportunities list flags, and wonder why the report stays red. Field data tells you what to fix. Lab tools tell you why. In that order, every time."
+      ],
+      "numbered": [
+        "**Start in the Core Web Vitals report.** Which metric fails, on which device type, for which URL group. Write those three things down. If nothing is failing there, you don't have a Core Web Vitals problem, whatever your score says.",
+        "**Pick one representative URL from the failing group** — the template that's actually red, not the homepage by reflex.",
+        "**Run PageSpeed Insights on that URL and read the field panel, not the score.** The p75 numbers for that specific URL, when it has enough traffic to report, are your target.",
+        "**Now use the lab deliberately.** Reproduce the one failing metric under the same throttling, and only then read the opportunities. You're hunting the cause of a named metric, not collecting a to-do list.",
+        "**For INP, add an interaction.** Many lab tools never report INP, because they only observe the page loading and nobody taps anything. You have to open the page and use it — menu, filter, add to cart — while recording.",
+        "**Fix, deploy, log the date, and set a reminder for day 14.** Not day three."
+      ]
+    },
+    {
+      "h2": "The real test bench is a mid-range Android on mobile data",
+      "body": [
+        "For an Indian audience this is where the field number turns, and it is usually INP rather than LCP.",
+        "INP measures how long the page takes to visibly respond to a tap, and response time is bounded by the main thread, which is bounded by the CPU. A three-year-old mid-range Android will chew through the same JavaScript several times slower than the founder's current iPhone — identical code, identical network, opposite verdict. If your traffic is heavily mobile and weighted towards tier-2 and tier-3 cities, that handset is your 75th percentile. Nobody on the team owns one, which is why nobody on the team can reproduce the failure.",
+        "What to do about it, cheapest first: throttle CPU in DevTools before declaring anything fixed; keep one genuinely mid-range Android in the office and test on mobile data rather than office wifi; and if the site earns enough to justify it, run real-user monitoring so you watch your own field distribution daily instead of waiting 28 days for Google's version.",
+        "None of this moves the ranking maths much — Core Web Vitals are a modest input, and a fast page about the wrong thing still loses to a slow page about the right one. It moves the commercial maths, which is the honest reason to do the work: people abandon pages that don't respond, and on a mobile checkout that loss compounds at every step. If an entire template is red and you'd rather not run this loop in-house, that's [what our Core Web Vitals work covers](/services/core-web-vitals-optimisation), and the thresholds we commit to are the field ones at p75, not the lab score."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The honest timeline for a speed fix",
+        "body": "About a day to diagnose from field data, one to three weeks of engineering depending on whether the cause is assets or JavaScript, then 28 days before the report agrees with you. Budget six weeks from ticket to green and don't promise anyone faster."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is my PageSpeed score 95 but Search Console says Core Web Vitals fail?",
+      "a": "Because the score is lab data — one simulated load — and Search Console reports field data from real Chrome users at the 75th percentile over 28 days. The score also excludes INP entirely, so an INP failure can sit behind a green 95 indefinitely. Trust the field panel, not the number."
+    },
+    {
+      "q": "How long after a fix do Core Web Vitals update in Search Console?",
+      "a": "About four weeks to fully reflect it, because the field window is a trailing 28 days that rolls forward daily rather than resetting on deploy. You should see the value bending by day 14. Judging a fix at day five means reading data that is roughly 80% pre-fix."
+    },
+    {
+      "q": "Does the PageSpeed Insights score affect rankings?",
+      "a": "No. The 0–100 Lighthouse score is a diagnostic convenience and Google doesn't use it for ranking. What feeds page experience is the field assessment of LCP, INP and CLS at the 75th percentile. Optimising the score without moving the field data is work you can't bill honestly."
+    },
+    {
+      "q": "Why does PageSpeed say \"no data available\" for my URL?",
+      "a": "That URL didn't get enough Chrome visits in the 28-day window to be reported on its own, so you're shown origin-level data instead. It isn't a pass. It means you're judged on the aggregate of every other page, and a slow template elsewhere drags this URL along with it."
+    },
+    {
+      "q": "Why does my page pass on desktop and fail on mobile?",
+      "a": "The two are assessed separately, and mobile visits arrive on slower CPUs and less reliable networks. Mobile is also what gets indexed. If your reporting shows desktop green and mobile red, you have a mobile problem — the desktop tab is not partial credit."
+    },
+    {
+      "q": "Can I speed up the 28-day wait?",
+      "a": "Not for Google's number. You can shorten your own feedback loop by installing real-user monitoring, which shows your live p75 within days of a deploy instead of a month. It won't change what Search Console reports; it will stop you re-fixing something that already worked."
+    }
+  ],
+  "sources": [
+    {
+      "title": "About PageSpeed Insights",
+      "publisher": "Google for Developers",
+      "url": "https://developers.google.com/speed/docs/insights/v5/about",
+      "date": "2024-10-21"
+    },
+    {
+      "title": "Core Web Vitals report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9205520"
+    },
+    {
+      "title": "Web Vitals",
+      "publisher": "web.dev",
+      "url": "https://web.dev/articles/vitals",
+      "date": "2024-10-31"
+    },
+    {
+      "title": "Interaction to Next Paint (INP)",
+      "publisher": "web.dev",
+      "url": "https://web.dev/articles/inp",
+      "date": "2025-09-02"
+    },
+    {
+      "title": "Lighthouse performance scoring",
+      "publisher": "Chrome for Developers",
+      "url": "https://developer.chrome.com/docs/lighthouse/performance/performance-scoring"
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "core-web-vitals"
+    },
+    {
+      "type": "glossary",
+      "slug": "interaction-to-next-paint"
+    },
+    {
+      "type": "glossary",
+      "slug": "largest-contentful-paint"
+    },
+    {
+      "type": "glossary",
+      "slug": "cumulative-layout-shift"
+    },
+    {
+      "type": "services",
+      "slug": "core-web-vitals-optimisation"
+    },
+    {
+      "type": "answers",
+      "slug": "seo-checklist-before-launching-a-website"
+    },
+    {
+      "type": "compare",
+      "slug": "nextjs-vs-wordpress-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "what-an-seo-audit-should-actually-find"
+    }
+  ]
+}

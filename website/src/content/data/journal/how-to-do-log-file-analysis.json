@@ -1,0 +1,316 @@
+{
+  "slug": "how-to-do-log-file-analysis",
+  "type": "journal",
+  "primaryKeyword": "how to do log file analysis for seo",
+  "secondaryKeywords": [
+    "get raw access logs from cpanel",
+    "verify googlebot reverse dns",
+    "cloudflare hiding real ip logs",
+    "crawl waste patterns to fix"
+  ],
+  "cluster": "technical-launch",
+  "intent": "informational",
+  "h1": "How to run a log file analysis without giving up at step one",
+  "metaTitle": "How to Do Log File Analysis for SEO",
+  "metaDescription": "Most Indian sites sit on cPanel shared hosting where logs rotate inside 24 hours and Cloudflare hides the requester IP. The file to pull on each stack.",
+  "updated": "2026-09-16",
+  "published": "2026-09-16",
+  "answer": "Log file analysis has two halves and people quit during the first. Get the raw access log off your stack before rotation deletes it, fix the CDN setting that stamped the proxy's IP on every row, discard rows that only claim to be Googlebot, then look for three crawl-waste patterns.",
+  "takeaways": [
+    "Budget an afternoon for the analysis and up to a fortnight for the extraction. The fortnight is mostly waiting for a hosting ticket.",
+    "If a CDN sits in front of your origin, every line in your log records the CDN's IP until you change the log format. The file looks completely normal and is completely useless.",
+    "Rotation is the deadline nobody notices. Raise retention **before** the migration, not during the incident — the change is never retroactive.",
+    "Three findings are worth a ticket: a parameter set eating the crawl, a large share of fetches landing on redirects and errors, and sitemap URLs Google has never requested at all."
+  ],
+  "sections": [
+    {
+      "h2": "The half of this that nobody writes about",
+      "body": [
+        "Every guide to log file analysis opens with a sample log line and a pivot table. That is the easy half. The hard half is that on the day you decide to do this, the file you need either does not exist yet, was deleted at 04:00 this morning, or contains a Cloudflare IP address on every single row.",
+        "We run this often enough on client sites to have a rule of thumb: budget one afternoon for the analysis and up to a fortnight for the extraction. The fortnight is not work. It is waiting — for a support ticket to be answered by someone who has never been asked this before, for a `logrotate` change to accumulate seven days of data, for the one person with root access to come back from leave.",
+        "So this page runs in the order the job actually runs. Where the file lives, how long you have before it is gone, what a CDN does to it, which rows to throw away, and only then what to look for. The definition and the anatomy of a log line already sit on the [log file analysis glossary page](/glossary/log-file-analysis) — this is the procedure that comes after it."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The five minutes that matter most",
+        "body": "If you read nothing else here, go and check how many days of logs your server currently keeps, then raise it. That change costs five minutes today and is worth more than everything else on this page combined, because it is the only step you cannot do retrospectively."
+      }
+    },
+    {
+      "h2": "Where the file actually is, by stack",
+      "body": [
+        "Almost every Indian site we look at sits on one of six arrangements. Find yours, run the move in the third column, and you will know within ten minutes whether this project is a download or a procurement conversation."
+      ],
+      "table": {
+        "caption": "Where the raw access log lives, and the first move that proves it exists.",
+        "head": [
+          "Stack",
+          "Where the file is",
+          "First move"
+        ],
+        "rows": [
+          [
+            "Shared cPanel — Hostinger, BigRock, GoDaddy India, Bluehost",
+            "Metrics, then Raw Access Logs. One gzipped file per domain.",
+            "Tick both archive checkboxes now. Without them the account usually holds the current day only."
+          ],
+          [
+            "Nginx on a VPS",
+            "`/var/log/nginx/access.log`, plus rotated `access.log.1` and `access.log.*.gz`.",
+            "`ls -la /var/log/nginx/` shows how many days you really hold. Then read `/etc/logrotate.d/nginx`."
+          ],
+          [
+            "Apache on a VPS",
+            "`/var/log/apache2/access.log` on Debian and Ubuntu, `/var/log/httpd/access_log` on RHEL and Alma.",
+            "Confirm the format is `combined`, not `common`. `common` omits the user-agent, which makes the file useless here."
+          ],
+          [
+            "Managed WordPress — Cloudways, Kinsta, WP Engine",
+            "A `logs/` directory over SFTP, or a download button in the panel.",
+            "Ask support for the retention window in writing. It varies by plan and is rarely published."
+          ],
+          [
+            "Cloudflare or another CDN in front of any of the above",
+            "Logpush to R2, S3 or a log platform — an Enterprise plan feature.",
+            "On lower plans, stop looking at the CDN and go and fix the origin log format instead."
+          ],
+          [
+            "Shopify, Wix, Squarespace",
+            "There isn't one. No raw log access exists.",
+            "Use the Crawl Stats report in Search Console and accept that it is aggregated and incomplete."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Ask for one domain, one date range, in one email.** Hosting support answers \"please send the raw access logs for example.com from 1 to 14 September, gzipped\" far more reliably than a description of what you are trying to achieve.",
+        "**Check the file size before you celebrate.** A 2 KB file for a fortnight means the format is wrong, the wrong vhost was exported, or the site is being served entirely from cache.",
+        "**Get the error log too if it is offered.** It costs nothing and it is where 5xx responses explain themselves."
+      ]
+    },
+    {
+      "h2": "Rotation: you have less time than you think",
+      "body": [
+        "A log is not an archive. It is a rolling buffer that a scheduled job empties, and on most Indian shared hosting the default is that yesterday has already gone.",
+        "The mechanism is the same everywhere. Apache's own documentation recommends piping `CustomLog` through `rotatelogs` on a fixed cycle — commonly 86400 seconds, so one file per day — or handing the job to `logrotate` with a graceful restart. Nginx on Debian and Ubuntu ships a `logrotate` config that runs daily and keeps a fixed number of generations. Hosts then edit that number downwards, because disk costs money and nobody complains about missing logs until the week they need them.",
+        "Two consequences follow. The first is scheduling: a log analysis is not something you decide on Tuesday and finish on Tuesday. The second is worse. The fortnight in which logs are worth most is the fortnight after a migration, a replatform or a hack — and that is precisely the period nobody thought to prepare for."
+      ],
+      "numbered": [
+        "**Find out what you hold today.** On cPanel that is whether archiving is switched on. On a VPS it is `ls -la` in the log directory, then the `rotate` and `daily` values in the relevant `logrotate` config.",
+        "**Raise it to at least 30 days, and 90 if the disk allows.** An access log line runs a few hundred bytes before compression and roughly a tenth of that after, so three months is usually a small fraction of storage you already pay for. Measure your own file sizes rather than trusting that estimate.",
+        "**Fix the IP field in the same change window** if a CDN sits in front of you. Ninety days of logs that all say the request came from `172.68.x.x` are ninety days of nothing.",
+        "**Write the retention number into your runbook**, and re-check it after any server rebuild. A fresh image silently resets it to the distribution default."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The fortnight you will wish you had",
+        "body": "After a migration, logs are the only record of which old URLs Google is still requesting and what it received. After a compromise they are the only record of what was served to whom, which is why [recovering from a hacked website](/answers/how-to-recover-from-a-hacked-website) is so much harder without them. Both are situations where you cannot go back and turn retention up."
+      }
+    },
+    {
+      "h2": "Your CDN writes its own IP on every line",
+      "body": [
+        "This is the fault that costs the most time, because the file arrives, opens, and looks entirely normal. Every row has an address, a timestamp, a path, a status code and a user-agent. The addresses are simply all wrong.",
+        "A reverse proxy terminates the connection. Your origin server sees the proxy, not the visitor, so the first field on every line in Apache's combined format records a CDN edge IP. Every row, including Googlebot's. You can still read paths and status codes, but you cannot verify a single crawler, which means you cannot trust a single attribution.",
+        "The proxy passes the real address in a header instead. [Cloudflare's CF-Connecting-IP header carries the client IP that connected to Cloudflare](https://developers.cloudflare.com/fundamentals/reference/http-headers/), and Cloudflare's own guidance is to read that rather than `X-Forwarded-For`, which can contain a comma-separated list of addresses. So the fix is a log format change on the origin, not a plugin."
+      ],
+      "bullets": [
+        "**Apache** — add `%{CF-Connecting-IP}i` to your `LogFormat`, or enable `mod_remoteip` with `RemoteIPHeader CF-Connecting-IP` and log `%a` instead of `%h`.",
+        "**Nginx** — add `$http_cf_connecting_ip` to your `log_format`, or configure the real-IP module with `real_ip_header CF-Connecting-IP` and Cloudflare's published ranges in `set_real_ip_from`.",
+        "**Add the ray ID while you are in there** — `%{CF-Ray}i` or `$http_cf_ray`. Cloudflare recommends putting it in origin logs so a row can be matched against a request Cloudflare saw.",
+        "**Then wait.** The change applies going forward only. Everything already written stays wrong, and no amount of processing recovers it."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The same job on every other proxy",
+        "body": "CloudFront, Fastly, Akamai, Bunny and a reverse proxy your own team wrote all do this. The generic header is `X-Forwarded-For`; the work is identical. If you are not sure whether you sit behind one, check whether the first field of your log matches the address ranges of a CDN rather than of Indian consumer ISPs."
+      },
+      "subs": [
+        {
+          "h3": "The cached requests that never reach you at all",
+          "body": [
+            "There is a second problem here and it has no fix at the origin. A response served from the CDN's cache never touches your server, so it never appears in your origin log. On a site with aggressive edge caching you will conclude that Googlebot has ignored your category pages when it has in fact been fetching them all week.",
+            "If that gap matters to the question you are asking, you need logs at the CDN layer, and on Cloudflare that means Logpush on an Enterprise plan. If it does not — and for most crawl-waste questions it does not, because the URL patterns you are hunting are usually uncached — carry on with origin logs and write the limitation into your findings."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Throw away the rows that are lying to you",
+      "body": [
+        "The user-agent string is text the client chooses. Anyone can send `Googlebot/2.1`, and plenty of scrapers do, precisely because sites and firewalls treat that string generously.",
+        "Google's documented check is two lookups in a fixed order, and one on its own is not enough — a reverse DNS record can be set by whoever controls the address block, so a forged hostname is trivial. The forward lookup is what makes the check hold."
+      ],
+      "numbered": [
+        "`host <ip>` — the hostname returned must end in `googlebot.com`, `google.com` or `googleusercontent.com`. Anything else is not Google, whatever the user-agent claims.",
+        "`host <that hostname>` — it must resolve back to the address you started with. If it does not, the reverse record is forged and the row goes.",
+        "For a file with millions of rows, do not do this per line. Google publishes its crawler IP ranges as JSON in CIDR form; match the address column against those in one pass and you get the same answer without a DNS query per request."
+      ],
+      "bullets": [
+        "**Run the filter before you count anything.** Otherwise a scraper in Frankfurt becomes an afternoon's worry about crawl budget, and a genuine finding stays buried underneath it.",
+        "**Keep the discarded rows in a separate file.** Fake-Googlebot volume is its own signal, and it is the honest answer when someone asks why bandwidth is high.",
+        "**Split verified Googlebot by user-agent.** Smartphone and desktop are separate strings, and under mobile-first indexing the smartphone crawler is the one whose behaviour matters.",
+        "**Expect to remove something.** We won't put a percentage on it, because it varies enormously with how attractive your site is to scrapers. What we can say is that we have never run this check and found nothing to discard."
+      ]
+    },
+    {
+      "h2": "The three crawl-waste patterns worth acting on",
+      "body": [
+        "Once the file is clean, you can find dozens of things. Three of them earn a ticket. The rest are interesting, and interesting is not the same as worth a developer's week."
+      ],
+      "subs": [
+        {
+          "h3": "One — a parameter set eating the budget",
+          "body": [
+            "Collapse the query string and group requests by path pattern. If a large share of verified Googlebot fetches land on `?sort=`, `?colour=` and `?size=` variants of a handful of collection pages, faceted navigation is consuming the crawl your product pages needed.",
+            "Google's own guidance on faceted navigation is blunt about the mechanism: parameter combinations generate near-infinite URL spaces, which slows the discovery of genuinely new content and burns server resources. The fixes are ordered — disallow the parameter patterns in `robots.txt`, or move filtering to URL fragments, which Google generally does not crawl at all."
+          ]
+        },
+        {
+          "h3": "Two — fetches landing on redirects and errors",
+          "body": [
+            "Count status codes by **share of requests**, not by number of unique URLs. That distinction is the whole point of using logs: one 301 on a heavily-requested URL costs far more crawl than fifty 301s nobody asks for.",
+            "A steady share of 404s on URLs that stopped existing a year ago means something is still pointing at them — very often your own sitemap or an internal link in a template nobody has opened since. A steady share of 301s usually means an old redirect map is still doing work that should have been resolved in the links themselves. Both are cheap to fix and both feed straight into [clearing out index bloat](/answers/how-to-fix-index-bloat)."
+          ]
+        },
+        {
+          "h3": "Three — the sitemap URLs Google has never requested",
+          "body": [
+            "Take the distinct URL list from the logs and diff it against your XML sitemap. Anything present in the sitemap and absent from the log has never been fetched in the window you pulled.",
+            "That is almost always an internal linking problem rather than a content one, and it is an [orphan page](/glossary/orphan-page) list you cannot build any other way — a crawler starting from your homepage will find the same links Google found, which is exactly the blind spot you are trying to see around."
+          ]
+        }
+      ],
+      "bullets": [
+        "**Noise: image, CSS and JavaScript requests.** They are most of the file by row count and almost never the finding. Filter them out first unless you are specifically chasing a rendering problem.",
+        "**Noise: a single day's spike.** Crawl rate is bursty. One heavy Tuesday is not a pattern. A fortnight is.",
+        "**Noise: AI crawlers, unless bandwidth is the question.** GPTBot, ClaudeBot and PerplexityBot are visible in the file and genuinely interesting, and they tell you nothing whatsoever about how Google crawls you. Whether to block them is a separate decision on a separate timescale.",
+        "**Noise: low crawl frequency on a small site.** Google's own crawl budget guidance starts at roughly 10,000 pages with daily changes, or a million pages overall. Below that, crawl budget is not your constraint and the logs will not tell you anything your rankings haven't."
+      ]
+    },
+    {
+      "h2": "What to change, and how to prove the change worked",
+      "body": [
+        "A log analysis that ends in a document is a document. The output should be three or four tickets with owners and dates, and a stated expectation of what the next pull will look like.",
+        "The proof step is the one people skip, and it is the reason log analysis has a reputation for being an expensive way to feel technical. Pull a second window after the fix, the same length as the first, verified the same way and grouped the same way. Then compare **shares**, not absolute counts — Google's overall crawl volume on your site moves for reasons that have nothing to do with anything you did, so an absolute drop in requests to parameter URLs proves nothing on its own.",
+        "Give it four weeks. A `robots.txt` change takes effect once Google re-reads the file, which it caches for up to 24 hours, but the redistribution of attention across a large site takes considerably longer than that."
+      ],
+      "numbered": [
+        "Pull at least 14 days, ideally 30, from the stack you identified above.",
+        "Confirm the first field is the real requester and not your CDN. If it isn't, fix the format and come back in a fortnight.",
+        "Verify Googlebot by reverse and forward DNS, or against the published CIDR ranges, and separate the rows that fail.",
+        "Drop static assets, then group by path pattern with query strings collapsed, and by status code.",
+        "Diff the distinct URL list against your sitemap in both directions.",
+        "Write three or four tickets. Name the pattern, the share of crawl it accounts for, the fix, and who ships it.",
+        "Pull the same window length four weeks later, compare shares, and cross-check the direction against the Crawl Stats report in Search Console."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Crawl Stats will not reconcile with your logs",
+        "body": "Search Console's Crawl Stats report covers 90 days, is only available for root-level properties, and Google states plainly that it reports most crawl requests but some may not be counted. Use it to confirm a direction of travel. Anyone presenting it as a reconciliation of your server logs has not read the documentation."
+      }
+    },
+    {
+      "h2": "When this is worth doing, and when it is not",
+      "body": [
+        "We turn this work down more often than we sell it, which is unusual enough to be worth explaining.",
+        "Below a few thousand URLs, Google fetches everything it wants to. Crawl budget is not the constraint; content and links are. Running a log analysis on a 300-page site produces a tidy report, an invoice, and no change in outcome — and we would rather say that than take the money.",
+        "Above that, three situations justify it every time. A large catalogue with faceted navigation, where the parameter question is genuinely unanswerable any other way. The fortnight after a migration or a replatform, at any size, because logs are the only record of what Google is still asking for. And a site where a meaningful share of published pages have never been indexed, where the sitemap diff answers in an afternoon what six months of guessing has not.",
+        "It belongs inside [technical SEO work](/services/technical-seo-services) rather than sold as a standalone deliverable, because the findings are worth nothing until somebody ships the fix. If an agency offers you a log file analysis as a product with a price and no accompanying development, ask who is doing the second half."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does my access log show a Cloudflare IP on every request?",
+      "a": "Because Cloudflare terminates the connection and your origin only ever sees the proxy. The real address arrives in the `CF-Connecting-IP` header, so you have to add that header to your Apache `LogFormat` or Nginx `log_format` — or use the real-IP module — before the log becomes usable. The change is not retroactive."
+    },
+    {
+      "q": "How do I stop my server deleting logs before I can read them?",
+      "a": "On cPanel, switch on both raw-log archive options. On a VPS, raise the `rotate` count in the relevant `logrotate` config to at least 30 days. Do it now rather than when you need it, because rotation has already deleted everything before today and nothing brings it back."
+    },
+    {
+      "q": "Do I need a log analysis tool or will a spreadsheet do?",
+      "a": "A spreadsheet handles a small site's week comfortably. Above a few hundred thousand rows it stops being pleasant, and a dedicated log analyser — or `grep`, `awk` and `sort` if you're comfortable at a terminal — is faster. The tool is not the hard part; getting a clean, verified file is."
+    },
+    {
+      "q": "How soon after a fix should the logs change?",
+      "a": "Give it four weeks before you judge. Google re-reads `robots.txt` within about a day, so blocked patterns stop being fetched quickly, but redistributing crawl attention across a large site is gradual. Compare shares of total requests rather than absolute counts, because overall crawl volume drifts on its own."
+    },
+    {
+      "q": "Is a log analysis worth it on a 300-page site?",
+      "a": "Almost never. Google's own crawl budget guidance starts at roughly 10,000 pages changing daily, or a million pages overall. Below that it crawls everything it wants to and your constraint is content and links. The one exception is the fortnight after a migration, where size doesn't matter."
+    },
+    {
+      "q": "What do logs show that Search Console's Crawl Stats doesn't?",
+      "a": "Individual URLs. Crawl Stats gives you totals by response code, file type and purpose over 90 days with sample URLs, which tells you something is wrong without telling you where. Logs give you every request, so you can group by path pattern and diff against your sitemap."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Verify requests from Google crawlers and fetchers",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/verifying-googlebot",
+      "date": "2026-03-20"
+    },
+    {
+      "title": "Cloudflare HTTP headers",
+      "publisher": "Cloudflare Docs",
+      "url": "https://developers.cloudflare.com/fundamentals/reference/http-headers/"
+    },
+    {
+      "title": "Logpush",
+      "publisher": "Cloudflare Logs Docs",
+      "url": "https://developers.cloudflare.com/logs/about/"
+    },
+    {
+      "title": "Log Files",
+      "publisher": "Apache HTTP Server Documentation",
+      "url": "https://httpd.apache.org/docs/current/logs.html"
+    },
+    {
+      "title": "Optimize your crawl budget",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/large-site-managing-crawl-budget",
+      "date": "2026-07-22"
+    },
+    {
+      "title": "Crawl Stats report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9679690"
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "log-file-analysis"
+    },
+    {
+      "type": "glossary",
+      "slug": "crawl-budget"
+    },
+    {
+      "type": "glossary",
+      "slug": "orphan-page"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-fix-index-bloat"
+    },
+    {
+      "type": "journal",
+      "slug": "what-an-seo-audit-should-actually-find"
+    },
+    {
+      "type": "answers",
+      "slug": "staging-site-indexed-by-google"
+    },
+    {
+      "type": "glossary",
+      "slug": "robots-txt"
+    }
+  ]
+}

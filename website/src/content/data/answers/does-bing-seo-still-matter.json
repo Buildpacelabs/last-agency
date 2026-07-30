@@ -1,0 +1,262 @@
+{
+  "slug": "does-bing-seo-still-matter",
+  "type": "answers",
+  "primaryKeyword": "does bing seo still matter",
+  "secondaryKeywords": [
+    "bing webmaster tools worth it",
+    "does chatgpt search use bing",
+    "bing market share india",
+    "indexnow submission worth doing"
+  ],
+  "cluster": "ai-surfaces",
+  "intent": "informational",
+  "h1": "Does Bing SEO still matter?",
+  "metaTitle": "Does Bing SEO Still Matter in 2026?",
+  "metaDescription": "Bing is about 1% of Indian search, but Copilot and DuckDuckGo read its index. The honest ratio, the twenty-minute action list, and where to stop.",
+  "updated": "2026-10-06",
+  "published": "2026-10-06",
+  "answer": "Barely, on its own — Bing holds a little over 1% of Indian search. It matters slightly more than that because Microsoft Copilot reads Bing's index and DuckDuckGo largely sources its links from it. So the honest scope is twenty minutes in Bing Webmaster Tools, once. Not a workstream, and not a second invoice.",
+  "takeaways": [
+    "Bing is around **1% of Indian search** on StatCounter's numbers. On its own, that justifies twenty minutes — not a line item.",
+    "The reason to bother at all is downstream: **Copilot runs on Bing's index, and DuckDuckGo says it largely sources its link results from Bing.**",
+    "**ChatGPT is not the argument.** OpenAI documents its own crawlers and names no third-party index. The \"ChatGPT runs on Bing\" line is out of date.",
+    "IndexNow submissions are shared across Bing, Yandex, Naver, Seznam and Yep. **Google doesn't participate**, so nobody should sell it to you as a Google indexing fix.",
+    "If a proposal has a Bing line with a monthly fee attached, ask what recurring work it covers. There isn't any."
+  ],
+  "sections": [
+    {
+      "h2": "The share number, and what it alone would justify",
+      "body": [
+        "We should start by admitting the awkward bit. There are twenty-odd pages on this site about getting cited by AI assistants, and until now not one of them named the index that several of those assistants read from. That's the gap this page fills — proportionately, which means the answer is smaller than the topic sounds.",
+        "In India, Bing is [a little over 1% of search](https://gs.statcounter.com/search-engine-market-share/all/india) on StatCounter's June 2026 estimate, against Google's 97.85%. That is not a rounding error you can build a service around. It is a rounding error."
+      ],
+      "table": {
+        "caption": "StatCounter's estimated search engine share by market, June 2026.",
+        "head": [
+          "Market",
+          "Google",
+          "Bing",
+          "What the share alone justifies"
+        ],
+        "rows": [
+          [
+            "India",
+            "97.85%",
+            "1.15%",
+            "Twenty minutes, once. Nothing recurring."
+          ],
+          [
+            "Worldwide",
+            "91.27%",
+            "4.68%",
+            "Still not a workstream, but worth knowing."
+          ],
+          [
+            "United States",
+            "86.67%",
+            "8.73%",
+            "A real conversation if American revenue matters to you."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Read these as estimates that move",
+        "body": "StatCounter infers share from tracked page views, not from the engines' own reporting, and the figure shifts a few tenths every month. The conclusion is robust to that — nothing plausible moves Indian Bing share into territory where it earns a retainer."
+      }
+    },
+    {
+      "h2": "Which assistants actually read Bing's index",
+      "body": [
+        "This is where the answer stops being about 1% of search traffic and starts being about who else is reading. It also has more wrong answers circulating than any other question in this cluster, mostly because the arrangements changed and the talking points didn't."
+      ],
+      "table": {
+        "caption": "Where each surface gets its results, and whether Bing indexation touches it.",
+        "head": [
+          "Surface",
+          "Where its results come from",
+          "Does Bing indexation help?"
+        ],
+        "rows": [
+          [
+            "Microsoft Copilot",
+            "Bing's index, plus Bing's own AI summaries",
+            "Yes, directly. Bing Webmaster Tools now reports your citations across Copilot and Bing AI answers."
+          ],
+          [
+            "DuckDuckGo",
+            "Its own crawler and several partners, but it states plainly that it largely sources from Bing",
+            "Yes, for the ordinary link results."
+          ],
+          [
+            "ChatGPT search",
+            "OpenAI's own crawlers — `OAI-SearchBot` surfaces sites in ChatGPT search, `ChatGPT-User` handles live user-initiated fetches",
+            "Not in any documented way. OpenAI's crawler docs name no third-party index."
+          ],
+          [
+            "Perplexity",
+            "Its own crawl and index, fetched by `PerplexityBot`",
+            "No."
+          ],
+          [
+            "Google AI Overviews and AI Mode",
+            "Google's index",
+            "No."
+          ]
+        ]
+      },
+      "bullets": [
+        "**The Copilot dependency is the real one.** It's Microsoft's assistant sitting on Microsoft's index, and Bing shipped a report in February 2026 that tells you when you've been cited there. That's a closed loop you can actually check.",
+        "**The ChatGPT claim is stale.** It comes from the 2023 browsing arrangement and gets repeated in pitch decks three years later. Read OpenAI's current crawler documentation and you'll find its own agents and no named search partner.",
+        "**None of this changes what you do to the page.** The work that gets you cited anywhere — crawlable HTML, a claim only you can make, corroboration off your own domain — is the same work. It's laid out in [how pages get picked up by AI assistants](/journal/how-to-get-cited-by-ai-assistants)."
+      ]
+    },
+    {
+      "h2": "The twenty-minute list, and the instruction to stop",
+      "body": [
+        "Here is the entire defensible scope of Bing work for an Indian business. Do it once, this week, and then genuinely stop."
+      ],
+      "numbered": [
+        "**Verify the site.** In Bing Webmaster Tools, import the property straight from Google Search Console. It carries verification and sitemaps across, and it's the reason this takes twenty minutes rather than an afternoon.",
+        "**Submit the sitemap you already have.** The same `sitemap.xml` Google gets. There is no Bing-specific format and no reason to maintain a second file.",
+        "**Read the crawl and index errors once.** Bing's crawler is a free second opinion on your `robots.txt`, your redirects and your server responses. It occasionally catches something Googlebot has been quietly forgiving.",
+        "**Turn on IndexNow only if your CMS or CDN does it in one toggle.** WordPress SEO plugins and Cloudflare do. One submission is shared with every participating engine, which currently means Bing, Yandex, Naver, Seznam and Yep. Google isn't among them.",
+        "**Glance at the AI Performance report.** It shows citations across Copilot and Bing's AI summaries, with the URLs and the queries that grounded them. It's the closest thing to a free citation counter anyone ships.",
+        "**Stop.** Close the tab, put a six-month reminder in the calendar, and go back to the engine behind roughly 98% of Indian search."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "What gets sold after that list",
+        "body": "Every priced \"Bing SEO service\" we've been shown starts with these six steps and then re-sells ordinary technical and content SEO with a different logo on the deck. That work may well be worth buying. It is not worth buying twice, and it is not Bing-specific."
+      }
+    },
+    {
+      "h2": "What is genuinely different about Bing",
+      "body": [
+        "Short section, because the list is short and most of it doesn't change your behaviour."
+      ],
+      "bullets": [
+        "**Discovery is push, not pull.** Google finds your new page by crawling and you nudge it. Bing would rather you told it, which is what IndexNow is for — the protocol exists to let sites signal changes so engines can stop exploratory crawling. It's Microsoft's design preference showing.",
+        "**`data-nosnippet` covers AI answers too.** Bing added support in October 2025: marked content stays indexed and eligible to rank, but is kept out of snippets and AI summaries. Useful if there's a paragraph you'd rather nobody quoted verbatim.",
+        "**You get a second set of query data for free.** The sample is small because the traffic is small, but it costs nothing and it occasionally shows a phrase you hadn't seen in Search Console. Treat it as a hint, never as a rank report.",
+        "**Ranking behaviour — what we notice, and can't prove.** On the sites we watch, Bing reacts more slowly to changes and reads title tags more literally. Microsoft publishes no weights and we've run no controlled test, so that's an observation and not advice. It has never once changed what we'd do to a page."
+      ]
+    },
+    {
+      "h2": "When Bing deserves more than twenty minutes",
+      "body": [
+        "There's a decision rule and it takes two minutes. Open GA4, go to traffic acquisition, look at `bing / organic` over the last twelve months as a share of your organic sessions. Under about 2%, you're finished — the twenty-minute list is the whole answer. Above it, read on.",
+        "Four situations genuinely change the maths, and only one of them is common in India."
+      ],
+      "bullets": [
+        "**A meaningful share of revenue from the US or Europe.** Bing is roughly 8.7% of American search. For an Indian agency, SaaS company or services exporter selling westward, that stops being noise.",
+        "**Enterprise IT and government buyers on managed Windows fleets,** where Edge ships as the default browser with Bing as its default search and nobody in procurement has permission to change it.",
+        "**Publishers and reference sites,** because Copilot and Bing's AI summaries cite constantly and the AI Performance report gives you a rare measurable read on it. Most Indian service businesses are not this.",
+        "**A site that Google is handling oddly** — indexing inconsistently, or reporting something you can't reproduce. Bing's crawl diagnostics are a useful independent instrument, though what you find there is a clue about your site, not about Bing."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The measurement caveat, once",
+        "body": "Assistant traffic is hard to attribute wherever it comes from, and Bing's is no exception. The same limits we describe in [what Search Console shows for AI surfaces](/answers/does-search-console-show-ai-mode-traffic) apply here — you can often see that you appeared without knowing what it earned."
+      }
+    },
+    {
+      "h2": "Why we do not sell this as a service line",
+      "body": [
+        "Because you cannot honestly build a monthly fee on twenty minutes of one-time setup, and we've watched several agencies try. The pattern is always the same: a Bing line item at ₹10,000–₹20,000 a month, a monthly report showing three-digit impression counts, and no work happening that wasn't already happening for Google.",
+        "There's a cleaner test than our opinion. Ask what recurring activity the Bing fee buys and what number it moves. If the answer is \"submitting URLs\" — that's IndexNow, it's automated and free. If the answer is \"optimising for Bing's algorithm\" — ask which page changes are Bing-specific, and watch the answer arrive slowly.",
+        "The number we're accountable for on an SEO engagement is your trailing-90-day qualified leads from organic search, frozen the day we start. Miss it in 90 days and we keep working free until we beat it. A channel carrying about 1% of Indian search cannot move that number, so charging you for it would be charging you for something we know won't count. What we do instead is run the six steps above during onboarding, at no extra cost, and never mention it again unless your own analytics says otherwise. That's the whole policy, and the rest of how we price [SEO](/seo) is on the [pricing page](/pricing)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Bing Webmaster Tools worth setting up?",
+      "a": "Yes, once, because it costs twenty minutes and imports straight from Google Search Console. You get crawl diagnostics, a small second set of query data, and the AI Performance report showing Copilot citations. What isn't worth it is checking it monthly or paying anyone to."
+    },
+    {
+      "q": "Does ChatGPT search use Bing?",
+      "a": "Not in any way OpenAI currently documents. Its crawler documentation describes its own agents — OAI-SearchBot for surfacing sites in ChatGPT search, ChatGPT-User for live fetches — and names no third-party index. The claim comes from the 2023 browsing feature and has outlived the arrangement it described."
+    },
+    {
+      "q": "What is Bing's market share in India?",
+      "a": "About 1.15% as of StatCounter's June 2026 estimate, against 97.85% for Google. Worldwide Bing sits near 4.7% and in the United States near 8.7%, which is why advice written for American audiences treats it as more important than an India-first site should."
+    },
+    {
+      "q": "Is IndexNow worth doing?",
+      "a": "If your CMS or CDN enables it with one toggle, yes — it's free and it speeds discovery on the engines that participate: Bing, Yandex, Naver, Seznam and Yep. If it needs custom development, no. Google doesn't participate, so it will not help your Google indexing."
+    },
+    {
+      "q": "Should I pay an agency for Bing SEO?",
+      "a": "Not as a separate line item for an India-focused site. Ask what recurring work the fee covers and which page changes are Bing-specific. The honest answers are \"very little\" and \"almost none\" — the work that helps on Bing is the technical and content work you're already buying for Google."
+    },
+    {
+      "q": "Does ranking on Bing help my AI visibility?",
+      "a": "For Microsoft Copilot, yes, since it reads Bing's index, and for DuckDuckGo's link results too. For ChatGPT, Perplexity and Google's AI surfaces, no — each retrieves from its own crawl or index. So it's one input to one assistant, not a route to AI visibility in general."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Search Engine Market Share India",
+      "publisher": "Statcounter Global Stats",
+      "url": "https://gs.statcounter.com/search-engine-market-share/all/india"
+    },
+    {
+      "title": "Where do DuckDuckGo search results come from?",
+      "publisher": "DuckDuckGo Help Pages",
+      "url": "https://duckduckgo.com/duckduckgo-help-pages/results/sources/"
+    },
+    {
+      "title": "Introducing AI Performance in Bing Webmaster Tools Public Preview",
+      "publisher": "Bing Webmaster Blog",
+      "url": "https://blogs.bing.com/webmaster/february-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview",
+      "date": "2026-02-10"
+    },
+    {
+      "title": "Start Using Bing Webmaster Tools to Improve Your Site Visibility",
+      "publisher": "Bing Webmaster Blog",
+      "url": "https://blogs.bing.com/webmaster/june-2025/Start-Using-Bing-Webmaster-Tools-to-Improve-Your-Site-Visibility",
+      "date": "2025-06-17"
+    },
+    {
+      "title": "Documentation | IndexNow.org",
+      "publisher": "IndexNow",
+      "url": "https://www.indexnow.org/documentation"
+    },
+    {
+      "title": "Overview of OpenAI Crawlers",
+      "publisher": "OpenAI",
+      "url": "https://developers.openai.com/api/docs/bots"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "does-search-console-show-ai-mode-traffic"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-i-get-my-brand-cited-in-chatgpt"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-get-cited-by-ai-assistants"
+    },
+    {
+      "type": "journal",
+      "slug": "should-you-block-ai-crawlers"
+    },
+    {
+      "type": "glossary",
+      "slug": "ai-visibility"
+    },
+    {
+      "type": "glossary",
+      "slug": "xml-sitemap"
+    },
+    {
+      "type": "services",
+      "slug": "ai-search-optimisation-services"
+    }
+  ]
+}

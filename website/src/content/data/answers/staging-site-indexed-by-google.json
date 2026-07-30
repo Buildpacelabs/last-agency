@@ -1,0 +1,224 @@
+{
+  "slug": "staging-site-indexed-by-google",
+  "type": "answers",
+  "primaryKeyword": "staging site indexed by google how to fix",
+  "secondaryKeywords": [
+    "dev site showing in google search",
+    "remove staging urls from google index",
+    "http auth vs noindex staging",
+    "how to stop google indexing a test site"
+  ],
+  "cluster": "technical-launch",
+  "intent": "informational",
+  "h1": "Your staging site got indexed. Do these things, in this order",
+  "metaTitle": "Staging Site Indexed by Google: How to Fix It",
+  "metaDescription": "The instinct is a robots.txt Disallow, and it is the one action that keeps the URLs in Google. Here is the order that actually removes a staging host.",
+  "updated": "2026-09-14",
+  "published": "2026-09-14",
+  "answer": "Don't start with robots.txt. Blocking the staging host stops Google re-crawling it, so it can never read the noindex that would remove the URLs — they stay listed, stripped of their descriptions. Serve a noindex on pages Google can still fetch, use the Removals tool as a stopgap, and block the host only after the URLs are gone.",
+  "takeaways": [
+    "`robots.txt` controls crawling, not indexing. A URL Google has already indexed doesn't leave when you block it — it freezes there, because the crawler can't come back to read your `noindex`.",
+    "The order is the answer: **crawlable noindex first**, the Removals tool as temporary suppression, `Disallow` last or never.",
+    "The Removals tool buys about six months. It hides the listing; it doesn't remove the page.",
+    "Fix it at the environment level — a header your deploy sets — not in a file somebody has to remember to edit."
+  ],
+  "sections": [
+    {
+      "h2": "Why the obvious fix is the one that makes it permanent",
+      "body": [
+        "The reflex is understandable. You find `staging.yoursite.com` sitting in Google, you want it gone today, and the fastest-looking lever is `Disallow: /` in the staging robots.txt. It feels decisive. It is the single action that guarantees those URLs stay listed.",
+        "The mechanic is simple once you separate the two things most people merge in their heads. `robots.txt` governs **crawling** — which URLs a bot may fetch. `noindex` governs **indexing** — whether a fetched page may appear in results. And the `noindex` lives inside the page. Block the fetch and Google never reads it.",
+        "So a URL Google already indexed doesn't vanish when you block it. It sits there with no title it can refresh and no description it can generate, usually showing a bare URL and a line saying no information is available. Google's own removal guidance is blunt about this: [don't use robots.txt as a way to block your page](https://developers.google.com/search/docs/crawling-indexing/remove-information).",
+        "Search Console even names the state for you. Indexing → Pages, status **Indexed, though blocked by robots.txt**. Every URL in that list is a page Google indexed without being allowed to look at it."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Why this is worth doing today",
+        "body": "A staging host is usually a near-exact copy of production. While both are in the index, Google is picking between two hosts serving the same content, and it does not reliably pick yours. Everything else on this page is tidiness; that part costs money."
+      }
+    },
+    {
+      "h2": "The order that works",
+      "body": [
+        "Six steps. The sequence is the whole answer — each one is defensible in isolation, and three of them do damage if you run them first."
+      ],
+      "numbered": [
+        "**Find every host, not just the one you noticed.** Run `site:staging.yoursite.com` in Google, then repeat it for `dev.`, `uat.`, `new.`, `test.` and whatever preview subdomain an agency spun up in 2023 and never took down. Add each host to Search Console as its own property — the Removals tool only works on properties you've verified.",
+        "**Decide whether the content is sensitive.** Unreleased pricing, real customer records, an unshipped product page: that changes the next step. A staging copy of your ordinary marketing site does not.",
+        "**Serve `noindex` on every response from that host**, as an `X-Robots-Tag: noindex` HTTP header rather than a meta tag. Then leave the host crawlable while it does its work. That is the counter-intuitive bit and it's the bit that matters.",
+        "**Suppress the listings people can actually see** with the Removals tool. It's the only lever here that acts without waiting for a recrawl. It does not remove the page and it lasts about six months — it's a bandage while the noindex does the surgery.",
+        "**Wait for the URLs to genuinely drop.** Watch the Page Indexing report on the staging property rather than refreshing a `site:` search. When the indexed count on that host reaches zero, the noindex has finished.",
+        "**Only now think about `robots.txt`** — and mostly, don't. Once the host is out of the index and behind authentication, a `Disallow` adds nothing except one more file that can be copied onto production by accident."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Why a header rather than a meta tag",
+        "body": "Meta robots only works in HTML. Your staging host is also serving sitemaps, JSON endpoints, uploaded PDFs and images, and Google indexes those too. `X-Robots-Tag: noindex` set once at the server or CDN covers all of it, and it can't be missed by a template nobody remembered. More on the directive itself in [noindex](/glossary/noindex)."
+      }
+    },
+    {
+      "h2": "Authentication and noindex fight each other — pick deliberately",
+      "body": [
+        "Here's the step most checklists skip. HTTP authentication is the correct long-term state for a staging environment: it keeps out crawlers, scrapers, competitors and the client's nephew. But a 401 is opaque. Googlebot can't read a `noindex` behind a password, so switching auth on today means the existing URLs come out of the index the slow way — Google eventually drops what it can no longer fetch, and nobody can tell you when.",
+        "You can't have both on day one. So choose on purpose, based on what's actually on the box."
+      ],
+      "subs": [
+        {
+          "h3": "If the staging content is sensitive",
+          "body": [
+            "Auth goes on now, and you accept slower de-indexing. Cover the visible listings with the Removals tool and renew the request before it lapses. Exposure is a bigger problem than an untidy index — a suppressed listing over an unreachable page beats a readable page with a neat removal timeline.",
+            "Google lists password protection as one of the three permanent removal methods, alongside deleting the content and serving a noindex. It works. It just works quietly."
+          ]
+        },
+        {
+          "h3": "If it's a copy of your ordinary marketing site",
+          "body": [
+            "Leave the host fetchable for one to three weeks with the noindex header live, let Google recrawl and drop the URLs, then put authentication on and keep it on forever. This is the common case, and it's the one where the ordering in the previous section pays for itself.",
+            "Don't try to serve a noindex to Googlebot and a password to everyone else. User-agent detection is trivially spoofable, and by the time you've built proper reverse-DNS verification to do it safely, the two-week wait would have finished on its own."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "How long it takes, and what the interim looks like",
+      "body": [
+        "Nobody can give you a date, and anyone who does is guessing at a crawl schedule they don't control. What can be said honestly is the shape of it.",
+        "In the meantime, the listings you haven't suppressed will look degraded rather than absent: bare URLs, missing descriptions, cached titles that no longer match the page. That's what a URL mid-removal looks like, and it isn't a second problem to go and solve."
+      ],
+      "bullets": [
+        "**Removals tool:** effective without waiting for a crawl, and it lasts about six months. After that the URL can return if the underlying cause is still there.",
+        "**The staging homepage and a handful of top-level URLs:** usually days. These get crawled most often.",
+        "**Deep URLs — a paginated archive, an old product page on the dev copy:** weeks. Crawl frequency on a staging host is low precisely because nobody links to it.",
+        "**The whole host clean:** plan for a month and be pleasantly surprised at a fortnight."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "One legitimate use of Request Indexing",
+        "body": "Once the noindex header is live, running URL Inspection → Request Indexing on your worst-offending staging URLs forces a recrawl, and the recrawl is what reads the directive. The daily quota is small, so spend it on the URLs that are actually showing up in search rather than the whole host."
+      }
+    },
+    {
+      "h2": "Stopping the recurrence: guard the environment, not the file",
+      "body": [
+        "Every repeat of this has the same root cause. The protection lived somewhere a human had to remember — a file in the repo, a checkbox in a CMS, a line in a config that a deploy overwrote or a database restore carried across in the wrong direction.",
+        "Move it to the layer that can't forget."
+      ],
+      "bullets": [
+        "**Set it from the environment, not the repo.** One variable — `APP_ENV=staging` — and the server appends `X-Robots-Tag: noindex` to every response. Nothing to edit, nothing to forget, and it can't ship to production, because production isn't staging.",
+        "**Put authentication in the same place.** Edge or reverse-proxy auth applied by rule to any host that isn't production. New preview environment, protected by default, no ticket required.",
+        "**Never copy `robots.txt` between environments.** It's the file most likely to travel with a database restore, and a `Disallow: /` landing on production is a far worse week than this one — see [robots.txt](/glossary/robots-txt) for what that file can and can't do.",
+        "**Add two lines to the launch checklist.** Fetch the production homepage and confirm there's no `noindex` in the headers or the head; fetch the staging homepage and confirm there is. Two `curl` commands, and both have to be true.",
+        "**Keep a Search Console property on each non-production host.** Not to optimise it — to be emailed the day it starts getting indexed again."
+      ]
+    },
+    {
+      "h2": "The damage to check for once the URLs are gone",
+      "body": [
+        "De-indexing the host is the fix. It isn't the whole clean-up, because an indexed staging copy leaves fingerprints on production, and those outlive it."
+      ],
+      "numbered": [
+        "**Canonical tags pointing at the staging host.** The classic: a live page whose `rel=canonical` still names `staging.`. You've told Google your production page is a duplicate of a page that no longer exists. Crawl production and check the canonical on every template, not every page.",
+        "**Absolute internal links and hardcoded asset URLs.** Search the rendered HTML of production for the staging hostname. Menus, sitemap entries, hero images, Open Graph URLs and structured-data `@id` values are the usual offenders.",
+        "**A sitemap sitting on the staging host.** If it lists staging URLs and was ever submitted anywhere, it's a standing invitation to recrawl the thing you just removed. Take it down.",
+        "**Backlinks pointing at staging.** Rare but real — somebody shared a preview link in a public forum. If a staging URL has referring domains, 301 it to its production equivalent instead of killing it, so the link isn't thrown away.",
+        "**Which host Google picked as canonical** for the pages that matter. Run URL Inspection on production and read the Google-selected canonical. If it names the staging host anywhere, that page is being suppressed and the redirect in the previous point is now the urgent job. [Canonical versus noindex](/compare/canonical-vs-noindex) covers which tool belongs to which situation."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "What this actually costs you",
+        "body": "Usually less than the panic suggests. An indexed staging host is not a penalty and it will not trigger a manual action. The measurable cost is the stretch where Google served the wrong hostname to someone searching your brand, plus whatever a competitor read on an unshipped page. Fix it properly, then stop re-checking it daily."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Will adding a robots.txt Disallow remove my staging site from Google?",
+      "a": "No — it prevents removal. Google needs to crawl a URL to read the `noindex` that drops it. Block the crawl and any URL already indexed stays indexed, usually with no description, sometimes for months. Add the block after the URLs have gone, if at all."
+    },
+    {
+      "q": "How long does it take for a staging site to drop out of Google?",
+      "a": "Days for the homepage and top-level URLs, weeks for deep ones, because a staging host is crawled infrequently. Plan for about a month for the whole host. The Removals tool hides the visible listings immediately while the noindex works through the rest."
+    },
+    {
+      "q": "Is HTTP authentication or noindex better for staging?",
+      "a": "Authentication is the better end state — it stops people as well as crawlers. But Googlebot can't read a noindex behind a 401, so if URLs are already indexed, run the crawlable noindex first for a week or two, then switch authentication on and leave it on."
+    },
+    {
+      "q": "Does an indexed staging site hurt my production rankings?",
+      "a": "It isn't a penalty. The real risk is canonical confusion: two hosts serving the same content, and Google occasionally choosing the wrong one. Check the Google-selected canonical on your key production pages in URL Inspection — that tells you whether it cost you anything."
+    },
+    {
+      "q": "Can I just delete the staging site instead?",
+      "a": "Yes, and returning 404 or 410 on every staging URL is a clean permanent removal. It's only the right call if you genuinely don't need the environment. Most teams do, which is why the noindex-then-authenticate route exists."
+    },
+    {
+      "q": "How do I stop this happening on the next project?",
+      "a": "Make it structural. The `noindex` header is set by an environment variable rather than a file, authentication is applied by rule to every non-production host, and the launch checklist has two `curl` checks on it. Anything that depends on somebody remembering will eventually not be remembered."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Block Search indexing with noindex",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Introduction to robots.txt",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Remove Your Site Info from Google",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/remove-information",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Removals and SafeSearch reports tool",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9689846"
+    },
+    {
+      "title": "What is URL canonicalization",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/canonicalization",
+      "date": "2026-07-10"
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "noindex"
+    },
+    {
+      "type": "glossary",
+      "slug": "robots-txt"
+    },
+    {
+      "type": "compare",
+      "slug": "canonical-vs-noindex"
+    },
+    {
+      "type": "glossary",
+      "slug": "indexing"
+    },
+    {
+      "type": "answers",
+      "slug": "why-is-my-page-not-indexed-on-google"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "journal",
+      "slug": "what-an-seo-audit-should-actually-find"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-fix-index-bloat"
+    }
+  ]
+}

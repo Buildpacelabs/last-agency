@@ -1,0 +1,358 @@
+{
+  "slug": "how-to-forecast-seo-traffic",
+  "type": "journal",
+  "primaryKeyword": "how to forecast seo traffic",
+  "secondaryKeywords": [
+    "can you predict seo results",
+    "seo traffic projection model",
+    "ctr by position for forecasting",
+    "why seo forecasts are wrong"
+  ],
+  "cluster": "content-ops",
+  "intent": "informational",
+  "h1": "How to forecast organic traffic without inventing a hockey stick",
+  "metaTitle": "How to Forecast SEO Traffic Honestly",
+  "metaDescription": "The three-input organic forecast, worked in rupees, and the three places every SEO projection is systematically wrong — plus how to state a range.",
+  "updated": "2026-10-01",
+  "published": "2026-10-01",
+  "answer": "A defensible organic forecast has three inputs: demand for the queries you can realistically win, a click-share band for the positions you can reach, and the conversion rate from your own analytics rather than a benchmark. Everything else is decoration. Publish the output as a low, base and high case, never as one line.",
+  "takeaways": [
+    "Three inputs, and only three: **cluster demand**, an **achievable click-share band**, and **your own conversion rate**. Anything else in the spreadsheet is there to look impressive.",
+    "A single CTR curve is the first lie. Click share at position 3 differs by a factor of several depending on what else occupies the result page, so the model needs a band, not a number.",
+    "Industry conversion benchmarks are the second-largest source of error after position. Your own non-brand organic rate is sitting in GA4 and takes ten minutes to pull.",
+    "Every forecast is systematically wrong in the same three places: the volume data, the assumed position, and the assumption that the result page holds still.",
+    "A forecast with no consequence attached is marketing. We [sell against a frozen baseline](/journal/how-to-set-an-seo-baseline) instead — which is a stronger instrument, and a much narrower one."
+  ],
+  "sections": [
+    {
+      "h2": "Two kinds of bad forecast, and both of them get signed",
+      "body": [
+        "Ask ten agencies for an organic forecast and you'll get two answers.",
+        "The first is a refusal. \"SEO can't be forecast — there are too many variables.\" It sounds like integrity and it's mostly abdication. The client still has to put a number in a budget, so they invent one, usually optimistic, usually without telling anyone. You haven't avoided a forecast. You've avoided being accountable for the one that ends up in the spreadsheet.",
+        "The second is worse and more common: a curve that bends upward at exactly the point the contract renews. Nobody in the room believes it. Everyone signs it, because it's the only number on the table.",
+        "We have an unusually direct interest in getting this right. Our commercial model is a commitment against the client's own trailing-90-day baseline — miss it and we keep working free — so a forecast we can't defend is a cost we absorb personally. What follows is the model we actually use, the places it's wrong, and the honest way to present it."
+      ]
+    },
+    {
+      "h2": "Three inputs. Everything else is decoration.",
+      "body": [
+        "Strip a good forecast back and there are three numbers doing all the work.",
+        "Most forecast spreadsheets you'll be shown are enormous — four hundred keywords, difficulty scores, a competitor column, monthly tabs. The size is the sales pitch. Underneath it, there are still only three inputs, and two of them are guesses being presented as arithmetic."
+      ],
+      "numbered": [
+        "**Demand.** How many people search for the things you can plausibly rank for, per month, in your market, excluding your own brand name.",
+        "**Achievable click share.** What fraction of those searches turn into a visit, at the positions you can realistically reach within the forecast window — not at position one.",
+        "**Your conversion rate.** What fraction of those visits become a lead or an order, measured on your own site, on non-brand organic traffic, not borrowed from an industry average."
+      ],
+      "bullets": [
+        "Multiply the three and you have monthly leads at steady state. Everything else in the file is presentation.",
+        "The fourth input people add — a monthly growth rate, compounding — is where hockey sticks come from. Growth is an **output** of the ramp curve, not something you get to type in.",
+        "Three wide-ish guesses multiply into an output spanning a factor of five, which is why the last section of this page is about presenting a range rather than a line."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Forecast clusters, not keywords",
+        "body": "Model at the level of a topic cluster — twelve related queries that one set of pages will serve — not keyword by keyword. Keyword-level forecasts imply a precision that doesn't survive contact with how Google actually matches queries to pages, and they take four times as long to build."
+      }
+    },
+    {
+      "h2": "Input one: demand, and what that volume number actually is",
+      "body": [
+        "Everyone starts here and almost nobody reads the definition of the number they've pasted in.",
+        "Google's own documentation is clear that the average monthly searches figure in Keyword Planner is [an average across a month range, for the keyword and its close variants](https://support.google.com/google-ads/answer/3022575), based on the locations and network settings you selected — and that the volume statistics are rounded, which is why totals across locations don't add up the way you'd expect. Read that sentence twice, because four consequences fall out of it.",
+        "First, it's an average, usually over twelve months. A term that spikes for six weeks around admissions season and sits near zero the rest of the year reports as a flat mid-sized number, and your forecast will be wrong in both directions at different times of the year. Second, it's bucketed and rounded — you are being handed a range wearing the costume of a point estimate. Third, close variants are grouped, so one row can be several genuinely different intents merged together. Fourth, it counts searches, not people; one buyer researching for a fortnight is many searches.",
+        "Where you already rank for something, there's a better source sitting in your own account. Search Console impressions tell you how often a link to your site was actually shown for a query, in your actual market, on your actual result pages. For any cluster where you have even weak visibility, impressions beat third-party volume estimates, because they're measurement rather than modelling.",
+        "Two adjustments before the number goes in the model. Strip brand queries out entirely — they were coming anyway, and including them is the most common way an organic forecast overstates itself. Then discount for the queries in your cluster you have no realistic path to, which on a young domain is most of the head terms."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The seasonality trap in Indian categories",
+        "body": "A twelve-month average badly misrepresents anything tied to the Indian festive calendar, admissions cycles, the financial year end, or the monsoon. If your category has a season, forecast month by month against last year's Search Console shape, not against a flat annual average — otherwise you will report a catastrophic miss in a quiet month and a fake triumph in a busy one."
+      }
+    },
+    {
+      "h2": "Input two: a click-share band, not a CTR curve",
+      "body": [
+        "This is the first place almost every forecast lies, and it lies confidently.",
+        "The standard move is to import a CTR-by-position table — position one gets X%, position two gets Y% — and multiply it by volume. The table looks authoritative. It is an average across millions of result pages that have nothing in common with yours, and the variance underneath it is enormous.",
+        "There's a second problem, specific to how you'll check your own work. Search Console's position metric is defined as [the topmost position occupied by a link to your property, averaged across all queries](https://support.google.com/webmasters/answer/7042828). An average position of 3.0 does not mean you sit at position three. It can mean position one on half your queries and position five on the other half, which produce completely different click volumes. Feeding an average position into a CTR curve compounds one average with another.",
+        "So we use bands, and we make them uncomfortably wide on purpose."
+      ],
+      "table": {
+        "caption": "Working placeholder bands. Replace them with your own measured Search Console numbers within a month.",
+        "head": [
+          "Position band",
+          "What usually sits above it",
+          "Band we model",
+          "When to throw the band away"
+        ],
+        "rows": [
+          [
+            "1",
+            "Ads, an AI Overview, a local pack — or, on a plain informational query, nothing at all.",
+            "20–40%",
+            "Any query carrying an AI Overview. Model it far lower."
+          ],
+          [
+            "2–3",
+            "The result above you, plus everything in the row above it.",
+            "8–18%",
+            "Queries where result one has sitelinks. It takes more than its share."
+          ],
+          [
+            "4–6",
+            "Half the viewport. On mobile, most sessions never scroll this far.",
+            "3–8%",
+            "Long-tail queries with exact intent, where users scan the whole page."
+          ],
+          [
+            "7–10",
+            "The rest of page one, plus a People Also Ask block and often a video carousel.",
+            "1–3%",
+            "Rarely worth modelling separately from the band above."
+          ],
+          [
+            "11+",
+            "Page two.",
+            "Under 1%",
+            "Model as zero and be pleasantly surprised."
+          ]
+        ]
+      },
+      "bullets": [
+        "**These are our working placeholders, not measurements.** They're what we put in a model on day one when a client has no visibility of their own. They are not a study, we're not citing them as one, and anyone quoting a two-decimal CTR figure at you is quoting somebody's average as though it were your data.",
+        "**Build your own inside a month.** Export twelve months of query data from Search Console, bucket every query by its average position, and compute clicks ÷ impressions per bucket. That's your curve, on your result pages, for your audience. It takes an afternoon and it is worth more than any published table.",
+        "**Do it separately for brand and non-brand.** Brand queries convert at CTRs that will flatter your model into uselessness — the split matters enough that [brand versus non-brand organic traffic](/compare/branded-vs-non-branded-organic-traffic) has a page of its own.",
+        "**Be honest about the position you'll reach.** Most forecasts quietly assume position three on every term in the cluster within twelve months. On a domain with modest authority, in a competitive category, positions four to eight on the mid-tail and page two on the head terms is the realistic year-one outcome."
+      ]
+    },
+    {
+      "h2": "Input three: your conversion rate, not the benchmark's",
+      "body": [
+        "The third input is the easiest to get right and the one most often borrowed from a blog post. \"B2B SaaS converts at 2.3%\" is not a fact about your website. It's an average of an unknown sample, and using it is how a forecast ends up wrong by a factor of three in the least visible way.",
+        "Your own number is available and specific. In GA4, take non-brand organic sessions landing on the page types the forecast covers, over the last 90 days, and divide the relevant key event — for a lead-gen site, Google's recommended `generate_lead` event — by those sessions. If the volume is too small to be stable, widen the window rather than substituting a benchmark.",
+        "Two rates, not one. Visitor-to-lead comes from analytics. Lead-to-customer comes from your CRM, and it's the one nobody pulls, which is how forecasts end up expressed in leads and budgets end up expressed in revenue with nothing joining them.",
+        "Three warnings about the number you get. Non-brand organic converts materially worse than brand organic, so a site-wide blended rate will overstate you. Informational pages convert far worse than commercial ones, so if your forecast is mostly blog content you cannot use your pricing page's rate. And if your leads arrive by phone or WhatsApp — which in India they very often do — your analytics conversion rate is understating reality, and you should say so on the page rather than quietly fixing it with a multiplier."
+      ]
+    },
+    {
+      "h2": "The model, worked end to end",
+      "body": [
+        "Illustrative arithmetic with plausible inputs. Not a client, not a result, and the specific numbers matter far less than the shape of the output.",
+        "A mid-sized Indian B2B services company. One cluster of twelve related non-brand queries, combined volume around 14,000 searches a month in India. Realistic year-one outcome: positions four to eight on most terms, two to three on a couple of long-tail ones. Their own non-brand organic visitor-to-lead rate, pulled from GA4 over 90 days, is 1.8%. Their CRM says organic leads close at 20%, at ₹1,20,000 gross profit per deal."
+      ],
+      "table": {
+        "caption": "One cluster, three cases. Illustrative arithmetic, not a case study or a promise.",
+        "head": [
+          "Line",
+          "Low",
+          "Base",
+          "High"
+        ],
+        "rows": [
+          [
+            "Non-brand cluster demand, monthly",
+            "14,000",
+            "14,000",
+            "14,000"
+          ],
+          [
+            "Blended click share at achievable positions",
+            "2%",
+            "4%",
+            "7%"
+          ],
+          [
+            "Organic clicks per month",
+            "280",
+            "560",
+            "980"
+          ],
+          [
+            "Visitor-to-lead rate, from their own GA4",
+            "1.8%",
+            "1.8%",
+            "1.8%"
+          ],
+          [
+            "Leads per month at steady state",
+            "5",
+            "10",
+            "17"
+          ],
+          [
+            "Closed customers per month at a 20% close rate",
+            "1",
+            "2",
+            "3.4"
+          ],
+          [
+            "Gross profit per month, at ₹1,20,000 a deal",
+            "₹1,20,000",
+            "₹2,40,000",
+            "₹4,08,000"
+          ]
+        ]
+      },
+      "bullets": [
+        "**The spread is the finding.** Against a ₹75,000/month retainer, the low case is marginal, the base case pays for itself roughly twice over, and the high case is a good business. Presenting only the middle column would be dishonest, and presenting only the right-hand one is what most proposals do.",
+        "**Steady state is not month three.** Every figure above describes where the cluster settles once the pages rank, which is somewhere between month twelve and month eighteen. The ramp to get there is a separate curve, and quoting a steady-state number as a month-six number is the most common way a proposal misleads without saying anything false.",
+        "**Sanity-check against the ceiling.** If your base case implies capturing a click share the category has never given anyone, the model is wrong somewhere upstream. [Sizing the ceiling first](/journal/how-much-can-seo-really-grow-a-business) takes an afternoon and catches this before a client does.",
+        "**One cluster, not the whole site.** Build the model for one cluster, show your working, then repeat it. A single spreadsheet claiming to forecast an entire site is a spreadsheet nobody has checked."
+      ]
+    },
+    {
+      "h2": "The three places every forecast is systematically wrong",
+      "body": [
+        "Not randomly wrong — systematically, in the same three directions, every time. Naming them in the document is what separates a forecast from a projection nobody will own in nine months."
+      ],
+      "subs": [
+        {
+          "h3": "The volume data is modelled, not measured",
+          "body": [
+            "Rounded, bucketed, averaged across twelve months, and grouping close variants together. For a stable category the error is tolerable. For a seasonal one it is enormous, and it points in opposite directions at different times of the year.",
+            "How to state it: give the demand input as a range too, not just the output. \"Between 11,000 and 17,000 monthly non-brand searches, depending on how close variants are grouped\" is a more honest opening line than a confident 14,000."
+          ]
+        },
+        {
+          "h3": "The assumed position is an assumption, not a plan",
+          "body": [
+            "Every forecast contains a hidden clause: **given that we reach these positions**. Nobody can promise that clause — Google's own guidance for hiring an SEO says outright that no one can guarantee a #1 ranking, and lists agencies that do among the warning signs.",
+            "How to state it: put the assumed position band in the document, visibly, next to the output. If the reader disagrees with position four to eight, they're disagreeing with an assumption you named rather than with your competence."
+          ]
+        },
+        {
+          "h3": "The result page does not hold still",
+          "body": [
+            "This is the one that has aged worst. A forecast built in January assumes the same ten blue links in December. Meanwhile AI Overviews and AI Mode change what a click is worth on a query, ads expand, packs appear, and three competitors publish something better than your page.",
+            "Google's documentation notes that traffic from AI features is folded into overall search traffic in Search Console rather than reported as a separate channel, which means the composition of the result page can shift under a query without your reporting showing you a clean before-and-after.",
+            "How to state it: attach a review date to the forecast, not a defence of it. \"This is rebuilt every quarter against actual Search Console data\" is a promise you can keep. \"This is what will happen\" is not."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The fourth one, which is your fault not Google's",
+        "body": "Every forecast assumes the content ships on schedule. Most don't. Two months of legal review, a founder who wants to rewrite every post, a developer sprint that slips — and the ramp shifts right by a quarter while the model still says month twelve. Put the publishing cadence the forecast depends on in the document, in writing, as a client obligation."
+      }
+    },
+    {
+      "h2": "How to present it: a range with its assumptions attached",
+      "body": [
+        "The presentation is not cosmetic. A forecast presented as a single line will be quoted back to you as a commitment, and a range presented without its assumptions will be read as the top of the range by everyone in the room.",
+        "So: three columns, and directly under each one, the sentence that has to be true for it to happen. Low assumes you reach page one on the mid-tail and nothing else. Base assumes positions four to eight across the cluster and the publishing cadence holds. High assumes two or three terms land in the top three and no AI Overview appears on them. Written that way, an argument about the forecast becomes an argument about an assumption, which is a much more productive meeting.",
+        "Then add the two lines that make it usable. What we'll measure monthly to know whether we're tracking — non-brand impressions and average position for the cluster, which move within six to eight weeks, long before leads do. And when we rebuild it — every quarter, against real data, with the old version kept so both sides can see how wrong the last one was."
+      ],
+      "bullets": [
+        "Date the forecast and version it. An undated projection gets quoted forever.",
+        "Never show a monthly traffic line chart without an error band. It's the most misleading object in SEO reporting.",
+        "Forecast leads, not sessions. Sessions are trivially easy to hit with pages that produce nothing.",
+        "Keep the superseded versions. Showing a client your last forecast was 30% high, and why, buys more credibility than an accurate one ever will."
+      ]
+    },
+    {
+      "h2": "Why we commit to a baseline instead — and what that can't do",
+      "body": [
+        "A forecast is a prediction with no consequence attached. However carefully it's built, if it's wrong the agency is mildly embarrassed and the client is out a year's budget. That asymmetry is the whole problem, and no amount of methodological rigour fixes it.",
+        "So we sell a different instrument. We freeze the client's trailing-90-day qualified organic leads on day one, both sides sign the figure, and if we haven't beaten it in 90 days we keep working free until we do. It's the reason we only take three clients a month — you can't carry that risk at volume, and any agency offering it to everyone is either not honouring it or has defined the metric so loosely it can't be missed. The mechanics are on [our SEO page](/seo).",
+        "It's a stronger instrument than a forecast because there's money behind it. It's also a much narrower one, and it's worth being precise about what it doesn't do.",
+        "It doesn't size the opportunity. A baseline commitment tells you the floor is rising; it says nothing about the ceiling, and if you need a number for a board deck you still have to build the demand model above. It doesn't work in categories with no search demand — we'll say so in the first call rather than sell a guarantee against a number that can't move. And it deliberately measures a short window, so it proves an engagement is working long before it proves the engagement was worth it.",
+        "Use both, for different jobs. The forecast to decide whether to spend the money; the baseline to decide whether the spending is working. An agency offering only the first is asking you to carry all the risk of it being wrong."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can SEO traffic actually be forecast?",
+      "a": "Yes, within a wide band. Demand, achievable click share and your own conversion rate give a defensible steady-state range, usually spanning a factor of three from low to high. What can't be forecast is the timing of any individual keyword or the composition of the result page in twelve months, which is why the output should be a range with a quarterly rebuild date, not a line."
+    },
+    {
+      "q": "What CTR should I use for position 1 in an SEO forecast?",
+      "a": "Use a band, not a number — we start at 20–40% and replace it with the client's own data within a month. Click share at any position swings enormously depending on whether the query carries ads, an AI Overview, a local pack or sitelinks on the result above. Export your Search Console queries, bucket them by average position, and compute clicks ÷ impressions yourself."
+    },
+    {
+      "q": "Is Keyword Planner search volume accurate?",
+      "a": "It's an average over a month range, rounded, and grouped with close variants — Google says so in its own documentation. Treat it as a bucket rather than a measurement. Where you already have any visibility for a query, Search Console impressions are a better input, because they're measured on your actual result pages in your actual market."
+    },
+    {
+      "q": "Why do SEO forecasts always turn out to be wrong?",
+      "a": "Three systematic reasons and one avoidable one. The volume data is modelled rather than measured; the assumed ranking position is an assumption nobody can guarantee; and the result page changes composition underneath the query. The avoidable one is that the content rarely ships on the cadence the model assumed, which shifts the whole ramp right by a quarter."
+    },
+    {
+      "q": "Should I use an industry conversion rate benchmark in my model?",
+      "a": "No. It's the second-largest source of error after position, and your own figure is ten minutes away in GA4. Segment to non-brand organic sessions on the page types the forecast covers, over 90 days. If your leads arrive by phone or WhatsApp, say so in the document rather than silently applying a correction factor."
+    },
+    {
+      "q": "How often should an SEO forecast be rebuilt?",
+      "a": "Quarterly, against actual Search Console data, with the superseded version kept alongside it. Anything more frequent is noise — rankings and impressions move week to week for reasons unrelated to your work. Anything less frequent and the forecast becomes a document people quote at each other rather than a model anyone is using."
+    }
+  ],
+  "sources": [
+    {
+      "title": "About Keyword Planner forecasts",
+      "publisher": "Google Ads Help",
+      "url": "https://support.google.com/google-ads/answer/3022575"
+    },
+    {
+      "title": "What are impressions, position, and clicks?",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7042828"
+    },
+    {
+      "title": "Performance report (Search results): Overview and basic setup",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7576553"
+    },
+    {
+      "title": "AI features and your website",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Do you need an SEO? Tips for Hiring an SEO",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo",
+      "date": "2026-06-05"
+    },
+    {
+      "title": "[GA4] Recommended events",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9267735"
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "how-much-can-seo-really-grow-a-business"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "glossary",
+      "slug": "average-position"
+    },
+    {
+      "type": "compare",
+      "slug": "keyword-rankings-vs-organic-traffic"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-get-seo-budget-approved"
+    },
+    {
+      "type": "compare",
+      "slug": "branded-vs-non-branded-organic-traffic"
+    },
+    {
+      "type": "glossary",
+      "slug": "click-through-rate"
+    },
+    {
+      "type": "journal",
+      "slug": "what-a-realistic-best-case-seo-outcome-looks-like"
+    }
+  ]
+}

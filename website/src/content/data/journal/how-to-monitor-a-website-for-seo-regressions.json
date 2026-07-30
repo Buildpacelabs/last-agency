@@ -1,0 +1,275 @@
+{
+  "slug": "how-to-monitor-a-website-for-seo-regressions",
+  "type": "journal",
+  "primaryKeyword": "how to monitor a website for seo regressions",
+  "secondaryKeywords": [
+    "robots txt change alert",
+    "indexed page count monitoring",
+    "sitemap url count alert",
+    "catching seo breakage before traffic drops"
+  ],
+  "cluster": "analytics-setup",
+  "intent": "informational",
+  "h1": "How to catch self-inflicted SEO damage before the traffic chart shows it",
+  "metaTitle": "Monitoring a Website for SEO Regressions",
+  "metaDescription": "Four cheap alerts catch most of the damage a team does to itself. Each is free to wire, and each fires days before a traffic chart would move at all.",
+  "updated": "2026-09-21",
+  "published": "2026-09-21",
+  "answer": "Monitor four signals rather than rankings: a robots.txt diff, the URL count in your sitemap, indexed pages in Search Console, and your 5xx rate. Each is free to wire, and each fires within a day of a bad deploy — often weeks before a traffic chart would show that anything was wrong.",
+  "takeaways": [
+    "Most traffic loss we get called in for was shipped by the client's own team, was visible in the site's own files that day, and nobody was looking.",
+    "The four worth alerting on: **robots.txt contents**, **sitemap URL count**, **indexed page count**, **5xx rate**. A cron job and a webhook covers all of them.",
+    "Rank-drop alerts aren't monitoring. By the time a tracker notices, the recrawl, the reindex and the reranking have already happened.",
+    "Send the alert to whoever can revert the deploy, not to the SEO, who will forward it to them and add an hour."
+  ],
+  "sections": [
+    {
+      "h2": "Almost none of this damage was Google's idea",
+      "body": [
+        "We get the same email a few times a year. Organic traffic has fallen off a shelf, the founder wants to know whether it was a core update, and the attached chart covers 28 days. Within the first hour we find a line in `robots.txt`, a `noindex` on a template, or a firewall rule refusing Googlebot — live for five weeks.",
+        "Diagnosing that afterwards is a solved problem: [the order to rule causes out in](/answers/why-did-my-rankings-drop) is well understood. The unsolved part is everything before it. A mistake shipped on the 3rd surfaces in the chart around the 20th, by which point the deploy is three sprints back and nobody connects them. Reverting on the 3rd costs ten minutes; on the 20th it costs the recovery period too.",
+        "So the useful question isn't \"how do we find out faster that traffic fell\". It's \"what changed on our own site, and did we mean it\" — cheap to answer, because the evidence lives in files you own."
+      ],
+      "table": {
+        "caption": "Common self-inflicted regressions, how long they typically hide, and the signal that catches them on day one.",
+        "head": [
+          "What shipped",
+          "When the traffic chart shows it",
+          "What catches it immediately"
+        ],
+        "rows": [
+          [
+            "`Disallow: /` in production `robots.txt`",
+            "Crawling stalls within a day; the decline follows over one to three weeks",
+            "A byte-level diff of the live file"
+          ],
+          [
+            "A `noindex` left on a template after a redesign",
+            "Two to six weeks, one recrawl at a time — a slow bleed, not a break",
+            "Indexed page count for that URL pattern"
+          ],
+          [
+            "A sitemap that regenerates with a tenth of its URLs",
+            "Often never as a cliff. New pages just stop being discovered",
+            "Sitemap URL count, checked nightly"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Ranges, not promises",
+        "body": "The middle column is our own observed range across client sites, not a published figure. Recrawl frequency varies enormously — a news site is revisited many times a day, a fifty-page brochure site sometimes weekly. Treat it as an order of magnitude, then measure your own."
+      }
+    },
+    {
+      "h2": "Alert one — the robots.txt diff",
+      "body": [
+        "The highest-consequence file on your site is four lines long, and it gets edited by people who aren't thinking about search: a developer blocking a crawler that was hammering staging, a migration writing a default file, a security vendor adding a rule.",
+        "Google generally caches `robots.txt` for up to 24 hours, and if the file becomes unreachable it stops crawling for twelve hours while retrying, then falls back to the last good copy for around thirty days. That's your window — caught inside a day, the mistake usually costs nothing. The check is trivial: fetch, hash, compare with yesterday, alert on any difference. No threshold, because every edit to a four-line file deserves a human glance."
+      ],
+      "bullets": [
+        "**Wiring it free:** a scheduled GitHub Action, a cron job, or a Google Apps Script on a time trigger. Fetch, hash, compare, post to Slack. Put both versions in the message and it gets a verdict from a phone.",
+        "**Watch the response code, not just the body.** A `robots.txt` returning 503 is a temporary failure and pauses crawling; one returning 404 is treated as no file at all. Opposite outcomes from the same outage.",
+        "**Check every host you own** — staging, the help centre, `www` and non-`www`. The one nobody remembers is the one that breaks.",
+        "If the mechanics are new to you, start with [what robots.txt actually controls](/glossary/robots-txt): it stops crawling, which is not the same as stopping indexing."
+      ]
+    },
+    {
+      "h2": "Alert two — the sitemap URL count",
+      "body": [
+        "Your sitemap is generated by your CMS, so it changes whenever anyone touches a content type, a taxonomy, a publish status or a plugin. It's the closest thing most sites have to a machine-readable inventory of what they think they publish.",
+        "Count the `<loc>` entries nightly and alert when the number moves past a threshold you set deliberately. Both directions matter: a collapse means pages have stopped being offered to Google, while a spike usually means a filter or parameter set is generating URLs nobody intended, which is [how index bloat begins](/answers/how-to-fix-index-bloat). Google's documentation is blunt that a sitemap is a hint, not an instruction, and that one file is capped at 50,000 URLs or 50MB uncompressed."
+      ],
+      "numbered": [
+        "**Store per-child counts, not just the total.** Knowing the blog sitemap halved is far more useful than knowing the total moved.",
+        "**Set the threshold from your own publishing rate.** A site adding four pages a week should alert on a 2% move; a large catalogue with daily stock changes might need 10%. Pick the number that would have fired on your last incident and not on the fifty days before it.",
+        "**Alert on staleness too.** A sitemap whose `lastmod` values stopped moving three weeks ago is telling you the generator broke, even though the count looks perfect."
+      ]
+    },
+    {
+      "h2": "Alert three — indexed page count",
+      "body": [
+        "The first two alerts watch what you publish. This one watches what Google accepted, and it's the only signal here that comes from outside your own infrastructure.",
+        "The Page indexing report splits your known URLs into indexed and not indexed, with a reason on each excluded group — blocked by `robots.txt`, marked `noindex`, soft 404, crawled but not indexed. It lags a few days, so treat it as a trend instrument. Track indexed pages as a ratio of sitemap URLs, plus the weekly change in each reason. A `noindex` bucket that grows by 300 in a week means a template changed."
+      ],
+      "bullets": [
+        "**Export it weekly and append to a sheet.** There is no Search Console API for this report — the API covers search analytics, sitemaps and URL inspection, not index coverage. So it's an export button and a calendar reminder.",
+        "**For a scripted version, sample with the URL Inspection API**, which reports the state of individual URLs at 2,000 queries per day per property.",
+        "**Alert on the reason buckets, not the total**, which moves for boring reasons constantly.",
+        "This is also where a leaked staging environment appears, as a rising count of URLs you don't recognise — and the recovery order for that is [genuinely counterintuitive](/answers/staging-site-indexed-by-google)."
+      ]
+    },
+    {
+      "h2": "Alert four — the 5xx rate, split by crawler",
+      "body": [
+        "Server errors are the regression most often misdiagnosed as an algorithm event, because from the outside the two look identical: traffic falls, nothing appears wrong, and the site loads perfectly for everyone in the office.",
+        "The mechanism isn't ambiguous. Google says 5xx and 429 responses cause its crawlers to slow down, and that its [indexing pipeline removes URLs that persistently return a server error](https://developers.google.com/search/docs/crawling-indexing/http-network-errors). A bot rule that throttles Googlebot doesn't just pause crawling — sustained long enough it removes pages. Which is why uptime monitoring isn't enough: a firewall serving a challenge page to unfamiliar user agents can score 100% availability while returning errors to every search engine on earth."
+      ],
+      "numbered": [
+        "**Segment error rate by user agent** and alert on the crawler slice at a much lower threshold than the human slice. Alert on rate, not count, and include 429 — Google treats it as a server error, and rate limiters produce it far more often than crashes do.",
+        "**Verify Googlebot rather than trusting the user-agent string.** Headers are trivially forged, and a rule written against a forged one eventually blocks the real thing. Google publishes a reverse DNS method and downloadable JSON lists of its crawler IP ranges.",
+        "**Use Search Console's Crawl stats report for the retrospective view** — host status, response codes, and the throttling that follows a rising error rate — but alert from your own logs, which arrive in minutes rather than days."
+      ]
+    },
+    {
+      "h2": "Why a rank-drop alert never prevents anything",
+      "body": [
+        "Every rank tracker sells alerting, and it feels like the obvious thing to monitor. The reason it isn't is arithmetic. For a rank alert to fire, this chain has to complete: you ship the change, Google recrawls, the index updates, the ranking recalculates, your tracker's next check lands, and its moving average clears its own smoothing window. Every step has its own lag and they add. By the time the alert arrives the change isn't preventable, only diagnosable — with weeks of unrelated deploys between cause and symptom.",
+        "There's a second problem: rank alerts fire constantly for reasons nothing to do with you — a competitor's new page, an AI Overview appearing on a query that never had one. A signal that's right one time in ten trains people to close it unread. Keep rank tracking; it's the right instrument for judging a strategy over a quarter, and [rankings and traffic answer different questions](/compare/keyword-rankings-vs-organic-traffic). It's the wrong instrument for catching a mistake."
+      ]
+    },
+    {
+      "h2": "Annotate the deploys, or the alerts are noise with timestamps",
+      "body": [
+        "An alert tells you something changed. A change log tells you why. Without the second you spend the first hour of every incident reconstructing what shipped, from memory, from three people, badly.",
+        "This doesn't need a tool. A shared sheet with four columns — date, what changed, who shipped it, which URLs it touched — outperforms every dedicated product we've watched clients buy, because it's the only one people fill in. One row per deploy, written at deploy time, in language a non-engineer can read six weeks later. \"Release 4.18\" is not a row. \"Category template rebuilt; canonical logic changed on filtered URLs\" is."
+      ],
+      "bullets": [
+        "**Log non-code changes too** — a CDN rule, a DNS switch, a consent banner, a plugin update, a security vendor switched on. These cause as many regressions as code and are recorded nowhere. Log the marketing side as well; it explains the upward anomalies.",
+        "**Put every alert in the same sheet**, so one view shows changes and consequences on a single timeline. Chart annotations in your analytics tool are for the meeting; the sheet is for the investigation.",
+        "The same log keeps a later analytics rebuild honest — see [auditing a GA4 setup](/journal/how-to-audit-a-ga4-setup) for what happens when a measurement change and a real change land in the same week with no record of either."
+      ]
+    },
+    {
+      "h2": "Thresholds, routing, and not training people to ignore you",
+      "body": [
+        "Every monitoring system dies the same death. It fires too often, someone mutes the channel, and six months later a real alert arrives in a room nobody is in. Thresholds aren't a technical detail — they're the whole design.",
+        "Tune each one against your own history: set the number so it would have fired on the last six months' incidents and stayed silent otherwise. Then separate the pager from the digest, because only two of these four deserve to interrupt anyone. Routing is where most teams get it backwards — the alert goes to the SEO, who reads it and forwards it to whoever can revert the deploy, adding an hour on a good day and a weekend on a bad one."
+      ],
+      "table": {
+        "caption": "Suggested routing and cadence for the four signals.",
+        "head": [
+          "Signal",
+          "Cadence",
+          "Route to"
+        ],
+        "rows": [
+          [
+            "robots.txt diff",
+            "Hourly check, interrupt on any change",
+            "Whoever is on call for the site, plus the SEO channel"
+          ],
+          [
+            "5xx and 429 rate for crawlers",
+            "Continuous, interrupt above threshold",
+            "The existing on-call rotation, same as any outage"
+          ],
+          [
+            "Sitemap URL count and staleness",
+            "Nightly digest",
+            "The SEO channel; escalate manually if it's large"
+          ],
+          [
+            "Indexed pages and exclusion reasons",
+            "Weekly digest",
+            "The SEO channel and whoever owns the content plan"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Send it to the person with the revert button",
+        "body": "The two urgent signals are infrastructure failures that happen to have search consequences. They belong in the same channel as any other production incident, owned by the same rotation, with the SEO copied for context. An alert routed to someone who cannot act on it is a notification with extra steps."
+      }
+    },
+    {
+      "h2": "What it costs, and where we'd start on a site with none of it",
+      "body": [
+        "All four are free in software terms — a scheduler you already have, an export button, a saved log query. The real cost is about a day to build and half a day a quarter to keep tuned. With a day and nothing in place: robots.txt diff first, crawler 5xx alerting second, sitemap count third, indexed pages last.",
+        "We build this in the first fortnight of every engagement and hand it over as the client's own. Our commitment is measured against a frozen baseline of the client's trailing-90-day qualified organic leads, and a baseline is meaningless if the site can quietly break for five weeks. So ask your agency what they're alerted on. If the answer is a rank tracker and a monthly report, nobody is watching the site — they're watching its consequences, weeks late, in a document written after the fact."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What should I monitor to catch SEO problems early?",
+      "a": "Four things: the contents of `robots.txt`, the URL count in your sitemap, indexed pages and exclusion reasons in Search Console, and your 5xx and 429 rate segmented by user agent. Three of the four come from your own infrastructure and update in minutes."
+    },
+    {
+      "q": "How quickly does a robots.txt mistake affect Google?",
+      "a": "Google generally caches robots.txt for up to 24 hours, so a bad `Disallow` starts biting within a day. If the file becomes unreachable, Google pauses crawling for about twelve hours, then falls back to the last good copy for roughly thirty days. Caught same-day, it usually costs nothing."
+    },
+    {
+      "q": "Are rank tracking alerts useful for monitoring?",
+      "a": "Not for catching your own mistakes. A rank alert can only fire after a recrawl, a reindex and a rerank have all completed — weeks after the deploy that caused the problem. They also fire constantly for competitor and SERP-layout reasons."
+    },
+    {
+      "q": "How do I monitor indexed page count without a paid tool?",
+      "a": "Export the Page indexing report weekly into a spreadsheet — there is no API for it — and track indexed pages as a ratio of sitemap URLs, plus the change in each exclusion reason. For a scripted version, sample key URLs with the URL Inspection API."
+    },
+    {
+      "q": "Who should receive SEO monitoring alerts?",
+      "a": "The person who can revert the change. For robots.txt and server errors that's your existing on-call rotation, with the SEO copied for context. Routing an urgent alert to a marketer who then has to find an engineer adds hours to every incident."
+    },
+    {
+      "q": "How do I avoid alert fatigue on a site that changes weekly?",
+      "a": "Tune each threshold against your own last six months so it would have fired on real incidents and stayed quiet otherwise, and split interrupting alerts from digests. Only robots.txt changes and crawler-facing server errors should wake anyone."
+    }
+  ],
+  "sources": [
+    {
+      "title": "How Google Interprets the robots.txt Specification",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt"
+    },
+    {
+      "title": "How HTTP status codes affect Google's crawlers",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/http-network-errors"
+    },
+    {
+      "title": "Build and submit a sitemap",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap"
+    },
+    {
+      "title": "Verify requests from Google crawlers and fetchers",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/verifying-googlebot"
+    },
+    {
+      "title": "Crawl Stats report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9679690"
+    },
+    {
+      "title": "Page indexing report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7440203"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "why-did-my-rankings-drop"
+    },
+    {
+      "type": "glossary",
+      "slug": "robots-txt"
+    },
+    {
+      "type": "glossary",
+      "slug": "xml-sitemap"
+    },
+    {
+      "type": "journal",
+      "slug": "the-replatform-that-killed-your-traffic"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-fix-index-bloat"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-audit-a-ga4-setup"
+    },
+    {
+      "type": "answers",
+      "slug": "staging-site-indexed-by-google"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-prioritise-an-seo-backlog"
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "slug": "self-reported-attribution-vs-analytics",
+  "type": "compare",
+  "primaryKeyword": "self reported attribution vs google analytics",
+  "secondaryKeywords": [
+    "how did you hear about us survey",
+    "intake question for lead source",
+    "attribution when tracking is broken",
+    "free text lead source field"
+  ],
+  "cluster": "metrics-and-tools",
+  "intent": "informational",
+  "h1": "Self-reported attribution vs analytics: one free-text field beats a server-side rebuild",
+  "metaTitle": "Self-Reported Attribution vs Analytics: Who's Right?",
+  "metaDescription": "Consent loss and assistant referrals have degraded platform attribution. Below a certain enquiry volume, asking the customer is more accurate and free.",
+  "updated": "2026-08-27",
+  "published": "2026-08-27",
+  "answer": "Neither is accurate; they're wrong in different directions. Analytics loses enquiries it never saw — declined consent, an expired cookie, a chat that started on a phone. A \"how did you hear about us\" field keeps them all and loses precision instead. Under roughly 500 enquiries a month, the field is the better instrument.",
+  "takeaways": [
+    "Both are biased. **Self-reported bias runs in directions you can name**; platform bias runs in directions that change when a browser ships an update.",
+    "Ask it as **free text**. A dropdown of your own marketing channels manufactures the answer it gets back.",
+    "The answer analytics can never produce: **\"my accountant told me about you.\"** Referral has no channel in your dashboard.",
+    "Google models the visitors you lost only once you're big — **1,000 denied-consent events a day**. Below that, the gap is a hole, not an estimate.",
+    "Reconcile, don't choose. The number that matters is **the ratio between the two counts**, and the month it changes."
+  ],
+  "sections": [
+    {
+      "h2": "Two instruments, two different kinds of wrong",
+      "body": [
+        "Most people frame this as data against anecdote. On a business under a few hundred enquiries a month it is the other way round.",
+        "The free-text field is the census. Every enquiry produces a row, because the field sits on the record itself. What it holds is a memory, filtered through whatever the customer thinks you want to hear.",
+        "Platform analytics is the sample. What it holds is exact — a referrer is a fact, not a recollection — but it only holds the enquiries whose sessions it managed to see, and it will not tell you what share of the total that is. Both are wrong. The only useful question is which kind of wrong you can work with."
+      ],
+      "table": {
+        "caption": "Where each instrument fails, and in which direction.",
+        "head": [
+          "Failure mode",
+          "Self-reported field",
+          "Platform analytics"
+        ],
+        "rows": [
+          [
+            "Misses the enquiry entirely",
+            "Almost never. The field lives on the record, so every enquiry has a row.",
+            "Routinely. Declined consent, a blocked script, an expired cookie, an in-app browser, a phone call."
+          ],
+          [
+            "Wrong about the channel",
+            "Often. \"Google\" covers organic, an ad, Maps and a Business Profile at once.",
+            "Rarely, when it saw the session at all. A click ID is not a memory."
+          ],
+          [
+            "Direction of the error",
+            "Predictable. Over-credits brand, word of mouth, and whatever happened most recently.",
+            "Predictable in mechanism, unpredictable in size. It moves when a browser or a banner changes."
+          ],
+          [
+            "Sees referral and offline",
+            "Yes. It is the only instrument that does.",
+            "No. A recommendation from a client's accountant has no channel to land in."
+          ],
+          [
+            "Cost to run",
+            "One form field, plus someone reading the raw text once a month.",
+            "Tag work, consent plumbing, and a rebuild every time a platform changes."
+          ],
+          [
+            "Degrades over time",
+            "No. It works the same in 2020 and in 2030.",
+            "Yes, steadily, and not in your control."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The line worth keeping",
+        "body": "A precise number from an unknown fraction of your enquiries is worth less than a vague answer from all of them. That stops being true somewhere north of 500 enquiries a month."
+      }
+    },
+    {
+      "h2": "What analytics loses, and why the losses keep growing",
+      "body": [
+        "None of this is GA4 being badly built. Each loss has a boring, specific cause, and each one has grown since 2020.",
+        "**Consent.** A visitor who declines, or who leaves before choosing, was never recorded — there is no row to model from. Google's consent-mode modelling fills part of that hole, but only for properties large enough to qualify, which most Indian sites are not.",
+        "**Cookie lifetime.** Safari deletes script-written storage after seven days without a return visit, so a March research session is gone by the time the June enquiry arrives. Analytics then sees a path that genuinely is entirely direct and credits Direct — not a modelling opinion, an absent row. The mechanics are in [how to attribute revenue to SEO](/answers/how-to-attribute-revenue-to-seo).",
+        "**Surfaces.** A buyer researches on a phone, asks a colleague, then messages you on WhatsApp. Two of those three happen where no tag runs at all — see [tracking WhatsApp and phone enquiries](/answers/how-to-track-whatsapp-and-phone-leads-in-ga4).",
+        "**Assistants.** Someone reads an AI answer that names you, then types your brand into the address bar. That session is Direct, and nothing anywhere in your analytics records the assistant. The customer, asked, will tell you plainly."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Direct is not a channel",
+        "body": "Direct is the bin analytics uses for sessions whose origin it could not work out. When it grows while organic sessions stay flat, the cause is usually measurement decay rather than an outbreak of people memorising your URL."
+      }
+    },
+    {
+      "h2": "Where the customer's answer is wrong, and in which direction",
+      "body": [
+        "This is the half self-reported enthusiasts skip, and it's what makes the method defensible: the biases are documented and correctable rather than mysterious. Five findings from survey methodology land straight on your enquiry form."
+      ],
+      "bullets": [
+        "**Offering a list manufactures the answer.** In Pew Research Center's split-sample testing, [58% named the economy as the most important issue when it was offered as an option, against 35% who volunteered it unprompted](https://www.pewresearch.org/writing-survey-questions/). A dropdown of your channels does that to your lead source data.",
+        "**Open questions surface what you didn't think to ask.** In the same testing, 43% of people given the open-ended version gave an answer that appeared nowhere on the closed list. Those are the ones worth paying for.",
+        "**Social desirability shifts answers predictably.** People understate what feels unflattering. On a lead form the pressure is mild, but it's why almost nobody types \"I clicked an ad\".",
+        "**Memory credits the most recent touch.** The customer names the last thing they can recall, which after a long consideration period is usually a brand search or a colleague. Both instruments fail in the same direction here.",
+        "**\"Google\" means four things.** Organic, an ad, Maps and your Business Profile all get typed as Google. This is the ambiguity that most deserves a follow-up on the call."
+      ]
+    },
+    {
+      "h2": "How to ask it so the answer is usable",
+      "body": [
+        "The field is cheap to add and easy to ruin. Six decisions, and the first two do most of the work."
+      ],
+      "numbered": [
+        "**Free text, one line, no dropdown.** You want the customer's string, not a click on your own assumptions.",
+        "**Last field, and optional.** Put it after the contact details so an abandoned form still leaves you a lead. A mandatory source field buys you a column of full stops and a worse completion rate.",
+        "**Ask again on the call, store both answers.** The typed version and the version a human gets are different, and the second usually has a name in it.",
+        "**Code it monthly, keep the raw string forever.** Buckets go in the report. The raw text is where you find the podcast episode or the industry WhatsApp group you had no idea existed.",
+        "**One field that locks, one sales can write.** Nobody overwrites the customer's own words, and any disagreement between the two fields is a finding rather than an error.",
+        "**Ask \"how did you hear about us\", not \"where did you find us\".** How invites a person or an event. Where invites a place — and you get \"Google\" typed by people whose accountant told them."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Ask at the enquiry, not at the sale",
+        "body": "Asked three weeks later by a salesperson closing a deal, the question collects the customer's most recent memory of you rather than the thing that started it — and it never gets asked at all of the enquiries that didn't close, which are half of what you needed to learn."
+      }
+    },
+    {
+      "h2": "Reconcile them, rather than picking one",
+      "body": [
+        "The output that matters is neither number on its own. It's the ratio between them, and the month that ratio changes.",
+        "Build one sheet, monthly, one row per enquiry: the CRM record, the channel analytics assigned to that same record, and the customer's typed answer. Matching per record rather than per month is the whole trick, and it needs first-touch hidden fields on your forms to be possible at all. Then read the disagreements instead of averaging them."
+      ],
+      "bullets": [
+        "**Field says Google, analytics says Direct.** The organic session happened and then expired. Count it as organic in the CRM and stop arguing with the dashboard.",
+        "**Field says Google, analytics says Paid.** Trust the platform. A click ID is a fact, and customers cannot reliably tell an ad from a result.",
+        "**Field names a person or a company.** Referral. Analytics has no channel for this and never will, and on an established Indian business it is frequently the largest single bucket.",
+        "**Field is blank on most records.** The question is mandatory, badly placed, or being asked after the sale. Fix the form, not the report.",
+        "**The ratio jumps in one month.** Check the deploy log and the consent banner version before reading it as a marketing result — [GA4 and Search Console never matching](/compare/ga4-vs-search-console) is the same lesson in another pair of tools."
+      ]
+    },
+    {
+      "h2": "The volume where a real measurement build starts to pay",
+      "body": [
+        "Both instruments cost something, and the costs scale in opposite directions. The field costs one form field plus somebody reading free text once a month, which gets worse as you grow. A build costs mostly a fixed sum up front, which gets cheaper per enquiry as you grow. The crossover sits lower than most agencies suggest and higher than most founders expect."
+      ],
+      "table": {
+        "caption": "What to run at each enquiry volume, and why.",
+        "head": [
+          "Monthly enquiries",
+          "What to run",
+          "Why"
+        ],
+        "rows": [
+          [
+            "Under 50",
+            "The field alone. Read the answers; don't chart them.",
+            "Any percentage off this base is noise, and analytics withholds rows outright when the counts are too small to aggregate safely."
+          ],
+          [
+            "50–200",
+            "The field, plus first-touch hidden fields on every form.",
+            "Two days of developer time, no recurring cost, and it is what makes reconciliation possible at all."
+          ],
+          [
+            "200–500",
+            "Both, reconciled monthly, with the ratio printed in the report.",
+            "Enough volume for shares to be stable. Nowhere near enough for the platforms to model your gaps."
+          ],
+          [
+            "Above 500",
+            "A real measurement build — and keep the field anyway.",
+            "Free text stops being readable by hand, and the platform data is finally large enough to be worth repairing."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "Nobody is going to model your missing sessions",
+        "body": "Google's consent-mode modelling only switches on above a documented floor: at least 1,000 events a day with analytics storage denied, sustained for seven days, alongside 1,000 daily users with consent granted on seven of the previous 28. A business taking 300 enquiries a month is orders of magnitude away. You are going to ask, or you are going to guess."
+      }
+    },
+    {
+      "h2": "What our own field returns, and the number we won't print",
+      "body": [
+        "We run this question on our own enquiries and hold both the typed answer and the analytics channel for the same record. So we can describe the disagreement — and there is a number we won't publish.",
+        "We take three clients a month. A percentage drawn from that base would be exactly the fake precision this page argues against: a share computed from a few dozen records moves several points when two people change their minds, and you would have no way to audit it. A number you can't check isn't evidence.",
+        "What we can say is structural. Enquiries that name a specific page or a specific person are the ones analytics files under Direct, because the session that did the work expired weeks earlier. Enquiries that name another human being — a former client, an accountant, a founder in the same industry group — have no channel at all. Neither is a measurement error you can tune away.",
+        "It also decides what we agree to be judged on. Our guarantee runs against your trailing-90-day count of qualified leads from organic search, frozen on day one and counted in your CRM rather than in analytics, precisely because a CRM count doesn't fall when a tag stops firing. [What counts as a qualified lead](/answers/what-counts-as-a-qualified-lead-from-seo) is worth settling before that number is frozen; [how the guarantee works](/seo) is the rest of it."
+      ],
+      "bullets": [
+        "**More accurate on a small business?** The field, comfortably. It's the only one that sees every enquiry.",
+        "**More accurate about ad versus organic?** The platform, always. Customers can't tell those apart and a click ID can.",
+        "**Which do you actually run?** Both, with the ratio printed in the report — until your volume makes the free text unreadable, and then both with a build underneath."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is \"how did you hear about us\" data reliable?",
+      "a": "Reliable in coverage, unreliable in precision — the opposite of your analytics. Every enquiry produces an answer, including phone calls and referrals no tag can see. The answers then skew toward brand, word of mouth and recent memory. Both those biases have a known direction, so you can correct for them."
+    },
+    {
+      "q": "Should the lead source question be a dropdown or free text?",
+      "a": "Free text. Survey testing consistently shows that offering a list pulls answers toward the listed options and hides everything you didn't anticipate. A dropdown of your own marketing channels returns your own assumptions with a percentage attached. The raw string is the useful artefact, and it takes minutes to code monthly."
+    },
+    {
+      "q": "Why does my analytics say Direct when customers say Google?",
+      "a": "Because the organic session that did the work has expired. Safari deletes script-written storage after seven days without a return visit, and device switches split one buyer into two users. With the earlier session gone, the path analytics can see genuinely is entirely direct, so Direct takes the credit. The customer's memory is right and the tool isn't lying either."
+    },
+    {
+      "q": "Should the lead source field be mandatory?",
+      "a": "No. A required field on an enquiry form costs you completions and fills the column with full stops and single characters. Make it optional and put it last, after the contact details, so an abandoned form still leaves you a contactable lead. A partly filled honest field beats a fully filled dishonest one."
+    },
+    {
+      "q": "At what enquiry volume do I need proper attribution tracking?",
+      "a": "Roughly 500 enquiries a month is where free text stops being readable by hand and the platform data becomes large enough to be worth repairing. Below 200 a month, hidden first-touch fields on your forms plus the intake question cover almost everything a build would give you, for two days of developer time and no monthly bill."
+    },
+    {
+      "q": "Which number do I report to the board when the two disagree?",
+      "a": "The CRM count, with the self-reported channel attached, and the analytics figure alongside it as a cross-check. Then print the gap between them as a number rather than resolving it quietly. Reporting your own uncertainty is the cheapest credibility available, and it stops the argument recurring every quarter."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Writing Survey Questions",
+      "publisher": "Pew Research Center",
+      "url": "https://www.pewresearch.org/writing-survey-questions/"
+    },
+    {
+      "title": "[GA4] Behavioral modeling for consent mode",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/11161109"
+    },
+    {
+      "title": "[GA4] Data thresholds",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9383630"
+    },
+    {
+      "title": "Scopes of traffic-source dimensions",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/11080067"
+    },
+    {
+      "title": "Full Third-Party Cookie Blocking and More",
+      "publisher": "WebKit",
+      "url": "https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/",
+      "date": "2020-03-24"
+    }
+  ],
+  "versus": {
+    "a": "Self-reported attribution",
+    "b": "Platform analytics",
+    "verdict": "Under roughly 500 enquiries a month, run the free-text intake question and treat analytics as the supporting document; above it, build the measurement properly and keep the field anyway, because it is the only instrument that ever sees a referral."
+  },
+  "related": [
+    {
+      "type": "answers",
+      "slug": "how-to-attribute-revenue-to-seo"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-track-whatsapp-and-phone-leads-in-ga4"
+    },
+    {
+      "type": "compare",
+      "slug": "server-side-vs-client-side-tracking"
+    },
+    {
+      "type": "answers",
+      "slug": "what-counts-as-a-qualified-lead-from-seo"
+    },
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-analytics-4"
+    },
+    {
+      "type": "services",
+      "slug": "analytics-setup-services"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    }
+  ]
+}

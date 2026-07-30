@@ -1,0 +1,301 @@
+{
+  "slug": "how-to-present-seo-results-to-leadership",
+  "type": "journal",
+  "primaryKeyword": "how to present seo results to leadership",
+  "secondaryKeywords": [
+    "seo board deck",
+    "reporting seo to a founder",
+    "what to say in a quarterly seo review",
+    "seo numbers that survive scrutiny"
+  ],
+  "cluster": "internal-stakeholders",
+  "intent": "informational",
+  "h1": "How to present SEO results to a founder or board in fifteen minutes",
+  "metaTitle": "How to Present SEO Results to Leadership",
+  "metaDescription": "Three slides, one number, and the bad news you volunteer first. Plus the CFO question most in-house SEOs cannot answer, and how to prepare for it.",
+  "updated": "2026-08-25",
+  "published": "2026-08-25",
+  "answer": "Use three slides: the one number against its frozen baseline, what shipped and what it did, and what happens next with what it costs. Lead with the business metric your model runs on, volunteer the bad news in the first two minutes, and cut every chart that invites a question you can't answer.",
+  "takeaways": [
+    "A founder isn't evaluating SEO. They're comparing a budget line against three others, with fifteen minutes and no patience for a metric they've never had to defend.",
+    "Volunteering the bad news first is economics, not humility. It costs ninety seconds and buys the credibility to be believed about the good news.",
+    "**\"What would have happened if we'd spent nothing?\"** is the question that ends these meetings badly. It's answerable, but only if you set the control group up months earlier.",
+    "Average position, impressions and domain authority each invite a question you cannot win in that room."
+  ],
+  "sections": [
+    {
+      "h2": "You are not presenting SEO. You are defending a line item.",
+      "body": [
+        "We sit on the other side of this meeting most months. A client's marketing lead takes our report, repackages it, and presents it upward — and we get asked to help with the repackaging often enough to have seen what survives contact and what doesn't.",
+        "The audience isn't evaluating your channel on its merits. They're allocating a fixed amount across marketing, product and hiring, and your fifteen minutes sit between someone who wants two more engineers and someone who wants to double paid spend. Both speak in rupees closed. Speak in impressions and you've lost the comparison before you've made an argument.",
+        "That reframing decides almost everything. You stop explaining how search works, stop showing effort, and stop hedging, because hedging in that room reads as not knowing. This is the opposite exercise from [reading a report your agency wrote](/journal/how-to-read-an-seo-report), where the job is to find what's hidden. Here you're the author, and the job is to be believed."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Fifteen minutes is the realistic budget",
+        "body": "Assume ten minutes of talking and five of questions, and assume the questions are where the decision gets made. Build the deck so finishing early is fine and being interrupted at minute four doesn't destroy the structure."
+      }
+    },
+    {
+      "h2": "Three slides, and exactly what goes on each",
+      "body": [
+        "Three isn't an aesthetic preference. It's roughly the number of distinct claims a non-specialist audience holds at once, and each answers a question the room is already asking silently. Everything else goes in an appendix that exists to be opened if someone asks."
+      ],
+      "table": {
+        "caption": "The three-slide structure, and the question each slide answers before it is asked.",
+        "head": [
+          "Slide",
+          "What is on it",
+          "The unspoken question it answers"
+        ],
+        "rows": [
+          [
+            "1. The number",
+            "One business metric, this period, against the frozen baseline and the same period last year. Absolute values, not percentages alone.",
+            "Is this working, yes or no?"
+          ],
+          [
+            "2. What we did and what it did",
+            "Shipped this period, beside the observed effect of what shipped last period. Three items, not thirty.",
+            "Are we getting what we pay for?"
+          ],
+          [
+            "3. Next period",
+            "The three things happening next, what they cost, and the one thing that would stop them.",
+            "What am I being asked to approve?"
+          ]
+        ]
+      },
+      "bullets": [
+        "**Put the frozen baseline on slide one, every time.** If the number your work is judged against isn't visible, someone will quietly re-pick the comparison window in their head, and it won't be a flattering one.",
+        "**Print absolute numbers beside every percentage.** \"+64%\" invites a follow-up; \"+64% — 39 leads, up from 24\" answers it first. A board that has to ask for the raw number stops trusting the percentage.",
+        "**Slide two is where credibility is built.** Three specific shipped items with a measured outcome beat any chart, because they're checkable.",
+        "**Slide three is the ask.** If there's no decision on it, you've spent fifteen minutes of the company's most expensive attention on a status update."
+      ]
+    },
+    {
+      "h2": "The one number to lead with, chosen by business model",
+      "body": [
+        "There's a correct answer to which number goes on slide one, and it depends on how the business makes money. The test: could the CFO find it, or something close, in a system that isn't yours? A number that exists only inside your analytics is one you're asking to be trusted on. A number that reconciles with the CRM or the payments dashboard is one you're being trusted with."
+      ],
+      "table": {
+        "caption": "The lead metric by business model, and the reason it survives scrutiny.",
+        "head": [
+          "Business model",
+          "Lead with",
+          "Why it holds up"
+        ],
+        "rows": [
+          [
+            "Ecommerce / D2C",
+            "Organic revenue and orders, reconciled against the payments dashboard",
+            "Lives in a system finance already trusts"
+          ],
+          [
+            "B2B / lead generation",
+            "Qualified organic leads in the CRM, as a trailing three-month average",
+            "Sales agreed the definition, so it can't be renegotiated mid-meeting"
+          ],
+          [
+            "SaaS / self-serve",
+            "Organic-sourced signups that reached activation",
+            "Signups from search are easy to inflate; activation isn't"
+          ],
+          [
+            "Local services / clinics",
+            "Calls, WhatsApp enquiries and direction requests from organic and the map pack",
+            "Matches what the front desk experiences, which is what the founder hears"
+          ]
+        ]
+      },
+      "bullets": [
+        "**Strip your brand out of whatever you lead with.** Brand search rises when PR lands, when a founder's post does well, when your ads run — see [why the branded and non-branded split decides everything](/compare/branded-vs-non-branded-organic-traffic).",
+        "**Agree the definition before the quarter, not in the meeting.** [What counts as a qualified lead](/answers/what-counts-as-a-qualified-lead-from-seo) is a conversation with sales, held in advance and written down.",
+        "**One number, not a dashboard.** A second lead metric halves the weight of the first and doubles the surface area for questions.",
+        "**Show it monthly, not daily.** Search Console's most recent days are explicitly preliminary and can still change."
+      ]
+    },
+    {
+      "h2": "Volunteer the bad news in the first two minutes",
+      "body": [
+        "This is the highest-return habit in the whole exercise and almost nobody does it, because every instinct says lead with the win and hope the bad thing doesn't come up.",
+        "It comes up. Founders are pattern-matchers with good memories and a habit of asking the one question you skipped. A problem you raise is one you're managing; the identical problem surfaced by someone else is one you were hiding. Same facts, opposite conclusion about you — and an SEO who has volunteered bad news twice gets believed the next time they claim something worked. Four sentences, in this order, then move on."
+      ],
+      "numbered": [
+        "**What happened, plainly.** \"Our three highest-converting service pages dropped out of the top ten in June.\"",
+        "**What it cost, in the lead metric.** \"Roughly eleven qualified leads a month, against a run rate of forty.\"",
+        "**What you did, with the date.** \"Found the cause on the 12th — a template change removed the internal links into those pages — and shipped the fix on the 14th.\"",
+        "**When you'll know, and what happens if it didn't work.** \"Recovery by late September. If not, we rewrite all three, about three weeks of work.\""
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Never present a bad quarter without a diagnosis",
+        "body": "\"Traffic is down and we're investigating\" is the sentence that costs people their budgets. If you genuinely don't know yet, say what you've ruled out, name the date you'll have an answer, and hold that date. An open-ended one isn't credible."
+      }
+    },
+    {
+      "h2": "\"What would have happened if we'd spent nothing?\"",
+      "body": [
+        "This is the question that ends these meetings badly, and it usually comes from whoever owns the P&L. It's fair, and most in-house SEOs have never been asked it and can't answer on the spot.",
+        "The honest starting position: SEO has no clean counterfactual. You can't run your own site with and without the work at once. Even the machine-learning attribution in GA4 works by comparing converting and non-converting paths rather than observing a genuine control. But \"we can't know exactly\" is a terrible answer to give a CFO, and it isn't the best one available. There are four approximations, and each has to be set up in month one, not in the meeting."
+      ],
+      "subs": [
+        {
+          "h3": "The four things that stand in for a control group",
+          "bullets": [
+            "**The untouched cohort.** Pick 20–30 pages at the start of the year you commit to not working on, matched for age and topic to the ones you will. Their trajectory usually drifts gently downward, and that drift is your honest answer to \"what if we stopped\".",
+            "**The pre-engagement trend line.** Twenty-four months of monthly organic leads before work started, extended forward as a naive projection. Crude, and more defensible than nothing — shown as a range, with what it ignores said out loud.",
+            "**Year-on-year, for seasonal businesses.** For anything with a festive cycle — most Indian consumer categories — the same month last year removes the calendar in a way no rolling window can.",
+            "**The paid equivalent, quoted carefully.** What the same non-brand clicks would have cost at your own current cost-per-click. Defensible only with real account data, and only as a floor — never as \"traffic value\" from a third-party tool."
+          ]
+        },
+        {
+          "h3": "How to actually say it",
+          "body": [
+            "Answer in three parts, in about forty seconds. The frame: there's no true control group for organic search, so here's the closest available. The numbers: the untouched cohort declined 14% while the worked cohort grew 60%, and the pre-engagement trend projected roughly this against the actual figure. The boundary: here's what it doesn't prove — a brand campaign ran in the same window and some of the lift belongs to it. That third part is what makes the first two believable, and it pre-empts the follow-up the most sceptical person in the room was about to ask."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Three charts to never put in front of a founder",
+      "body": [
+        "These aren't banned for being meaningless — two are genuinely useful internally. They're banned because each invites a specific follow-up you can't answer well in a board meeting, and the meeting then ends on that question rather than on your ask."
+      ],
+      "table": {
+        "caption": "The three charts that reliably cost you the room, and what to show instead.",
+        "head": [
+          "The chart",
+          "The question it invites",
+          "Show instead"
+        ],
+        "rows": [
+          [
+            "Average position",
+            "\"So we're at 8.4. Why aren't we at 1?\" Now you're explaining an averaging method, not a result.",
+            "Count of non-brand queries in the top 10 that send clicks"
+          ],
+          [
+            "Impressions",
+            "\"Impressions doubled but leads didn't. What happened?\" A question you answer correctly and still lose.",
+            "Non-brand clicks, and the lead metric they produced"
+          ],
+          [
+            "Domain authority",
+            "\"Whose score is this?\" Once the room learns it's a third-party estimate, the whole slide is downgraded.",
+            "Referring domains gained this quarter, with three named sites"
+          ]
+        ]
+      },
+      "bullets": [
+        "**Average position is the worst of the three**, because it's so easily misread as a rank. Search Console defines it as [the topmost position of your link, averaged across all queries](https://support.google.com/webmasters/answer/7042828) — so it gets worse when you start ranking at position 40 for a hundred new queries, which is progress. Worth understanding, [somewhere other than this deck](/glossary/average-position).",
+        "**Impressions are a leading indicator, not a result.** They belong in your monthly tracking, not in a room where the next question is about revenue.",
+        "**Domain authority is a third-party estimate**, recalculated whenever the vendor changes its model — see [why it's a vanity metric](/journal/domain-authority-is-a-vanity-metric).",
+        "**The rule:** if a chart needs you to explain the metric before the result, it belongs in the appendix."
+      ]
+    },
+    {
+      "h2": "The four questions to have rehearsed answers for",
+      "body": [
+        "The questions are almost always the same, which makes preparing a finite job you do once and refresh each quarter. Three of the four are about risk rather than performance — that's what the room is buying."
+      ],
+      "numbered": [
+        "**\"How does this compare to the same money in paid?\"** Give both time horizons rather than picking a side. Paid delivers this month and stops when the card does; organic compounds and takes two quarters to start.",
+        "**\"Can we pause it for a quarter?\"** Yes, and the cost is asymmetric: rankings decay slowly at first, and the restart costs more than the pause saved.",
+        "**\"Why is our competitor beating us?\"** Have a specific, checkable answer about one competitor and one query set. Vagueness reads as not having looked.",
+        "**\"What's the one thing that would make this fail?\"** Usually a dependency you don't control: developer time, content approvals, an unscheduled migration. Saying it here is how it gets fixed."
+      ]
+    },
+    {
+      "h2": "What we put in front of a founder, and what we refuse to",
+      "body": [
+        "Our own quarterly review is built the same way, under the same constraint: we take three clients a month, so there's nobody to hide behind and no volume to average a bad quarter into.",
+        "Slide one is the frozen baseline — the client's trailing-90-day qualified organic leads, captured before we did anything — beside the current figure. That's what our commitment is measured against: if we haven't beaten the baseline in ninety days, we keep working free until we do.",
+        "What we won't put on a slide: a promised ranking position — Google's own guidance to businesses hiring an SEO says plainly that nobody can guarantee a number one ranking — a rupee \"traffic value\" derived from ad costs, a domain authority chart, or a percentage without its absolute number underneath.",
+        "Building this deck for the first time: agree the lead metric with finance, freeze the baseline, pick your untouched cohort, then open the slide template. Most bad SEO board decks are bad because the measurement was designed after the work — the reason [setting the baseline on day one](/journal/how-to-set-an-seo-baseline) matters more than any reporting tool."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What should be on an SEO slide for a board meeting?",
+      "a": "Three slides. One: the lead business metric against its frozen baseline and the same period last year, with absolute numbers. Two: what shipped and the measured effect of what shipped last period. Three: what's next, what it costs and what could stop it."
+    },
+    {
+      "q": "Which SEO metric should I report to a founder?",
+      "a": "The one closest to money for your model — organic revenue for ecommerce, qualified organic leads in the CRM for B2B, activated signups for self-serve, calls and enquiries for local services. Strip brand search out, and pick a number that reconciles with a system finance trusts."
+    },
+    {
+      "q": "How do I answer 'what would have happened if we did nothing'?",
+      "a": "Say plainly that organic search has no true control group, then give four approximations: a cohort of pages you deliberately didn't work on, the pre-engagement trend projected forward, year-on-year for seasonal businesses, and the paid cost of the same non-brand clicks in your own account."
+    },
+    {
+      "q": "Should I show keyword rankings to leadership?",
+      "a": "Not as average position, which measures the topmost position of your link averaged across all queries and gets worse when you start ranking for more things. Show the count of non-brand queries in the top ten that actually send clicks, behind the lead metric."
+    },
+    {
+      "q": "How do I present a bad SEO quarter?",
+      "a": "In the opening two minutes, in four sentences: what happened, what it cost in the lead metric, what you did and on what date, and when you'll know whether the fix worked. A problem you raise is one you're managing; the same problem raised by someone else is one you were hiding."
+    },
+    {
+      "q": "How long should an SEO update to leadership be?",
+      "a": "Ten minutes of talking and five of questions. Build it so being interrupted at minute four doesn't break it, and so finishing early is a good outcome. Length reads as effort to the writer and as padding to everyone else."
+    }
+  ],
+  "sources": [
+    {
+      "title": "What are impressions, position, and clicks?",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7042828"
+    },
+    {
+      "title": "Performance report (Search results): Overview and basic setup",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7576553"
+    },
+    {
+      "title": "Get started with attribution",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/10596866"
+    },
+    {
+      "title": "Do you need an SEO?",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo"
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "how-to-read-an-seo-report"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "compare",
+      "slug": "branded-vs-non-branded-organic-traffic"
+    },
+    {
+      "type": "answers",
+      "slug": "what-counts-as-a-qualified-lead-from-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "average-position"
+    },
+    {
+      "type": "journal",
+      "slug": "domain-authority-is-a-vanity-metric"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-attribute-revenue-to-seo"
+    },
+    {
+      "type": "services",
+      "slug": "seo-reporting-services"
+    }
+  ]
+}

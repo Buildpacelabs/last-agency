@@ -1,0 +1,296 @@
+{
+  "slug": "how-to-interview-an-seo-candidate",
+  "type": "journal",
+  "primaryKeyword": "how to interview an seo candidate",
+  "secondaryKeywords": [
+    "practical task for an seo hire",
+    "hiring your first in house seo",
+    "how to test seo skills in an interview",
+    "seo candidate red flags hiring manager"
+  ],
+  "cluster": "internal-stakeholders",
+  "intent": "informational",
+  "h1": "How to interview and test an SEO candidate when you cannot judge the answers",
+  "metaTitle": "How to Interview an SEO Candidate",
+  "metaDescription": "Questions can't separate a good SEO from a well-read one. A 45-minute practical on your own Search Console can. Here's the task and how to grade it.",
+  "updated": "2026-10-12",
+  "published": "2026-10-12",
+  "answer": "You can't grade answers to questions you don't know the answers to. Set a 45-minute practical instead: read-only Search Console access to your real site, and one brief — the three things you'd do first, in order, what each is worth, and how you'd know it worked.",
+  "takeaways": [
+    "The SEO answer key is public and free. A capable reader can recite Core Web Vitals thresholds after a weekend. Questions test reading.",
+    "A **45-minute practical on your own Search Console property** separates people who have shipped changes from people who have read about them, and it's the only test a non-SEO can grade.",
+    "Grade the reasoning, not the vocabulary: did they ask about the business before the site, name a constraint, sequence the work, and say how they'd know it worked?",
+    "Three answers end the interview — a list with **no order, no owner and no effort estimate**; no story of anything ever being reverted; and results described with no baseline date and no lag window.",
+    "If nobody in your company can grade the answers, hiring isn't your first problem. Managing is. Borrow a reviewer for an hour before you make an offer."
+  ],
+  "sections": [
+    {
+      "h2": "The answer key is public, which is why questions don't work",
+      "body": [
+        "Hiring managers ask SEO candidates questions, because that is what an interview is. The problem is peculiar to this field: the entire body of knowledge is published, free, and written in plain English by the company that runs the search engine. Search Essentials, the crawling documentation, the Core Web Vitals thresholds, the spam policies. A capable reader absorbs enough over a weekend to answer every question on a standard SEO interview list.",
+        "So the well-read candidate and the practised one give near-identical answers to \"what does a canonical tag do\" and \"how would you diagnose a traffic drop\". The gap between them isn't knowledge. It's what happens when a recommendation meets a release train, a theme update, a merchandiser who wants the H1 to say something else, and a developer with four higher-priority tickets.",
+        "You can't detect that with a question, because the practised candidate's advantage lives in the parts of a story a reader wouldn't know to invent.",
+        "There's a second problem, and it's yours rather than theirs. If you're a founder hiring your first SEO, you can't grade a technical answer even when it's wrong. A confident wrong answer about crawl budget beats a hedged correct one every single time, and you'll never find out. The fix isn't better questions. It's changing what you're grading."
+      ]
+    },
+    {
+      "h2": "The 45-minute practical, specified so you can set it without knowing SEO",
+      "body": [
+        "Here's the whole thing. Roughly twenty minutes of preparation on your side, and it replaces most of what a second interview was going to be.",
+        "Five things to set up before the call."
+      ],
+      "numbered": [
+        "Add the candidate to your Search Console property as a **Restricted user**. That's Google's read-only role: they can see performance data, links and blocked URLs, and they cannot submit sitemaps, disavow links, change settings or add anyone else. Settings, then Users and permissions, then Add user.",
+        "Send them the property, your live site URL, and two sentences about the business — what you sell and who to. Two sentences, not a brief. Part of what you're testing is what they ask for next.",
+        "Send the task verbatim: *\"Spend up to 45 minutes in the Search Console property. Come to the call with the three things you'd do first, in order. For each: why it's first, roughly what it's worth, who has to do it, and how we'd know in eight weeks whether it worked. No deck.\"*",
+        "Give at least 24 hours, and say explicitly that the call is a conversation rather than a presentation. Candidates who think they're presenting will build slides, and you'll learn less from slides.",
+        "Remove the access the same day as the call. Every time, including for the person you hire — they get it back properly, with the right role, on day one."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "On paying for the task",
+        "body": "Forty-five minutes of thinking about a live property is a fair ask, and strong candidates generally enjoy it. Anything beyond an hour — a written audit, a content plan, a technical spec — is work, and should be paid at the candidate's rate whether or not you hire them. The people most worth hiring are the ones who decline an unpaid three-day audit, so a policy that filters them out is filtering in the wrong direction."
+      },
+      "subs": [
+        {
+          "h3": "On the call — the four questions you ask",
+          "body": [
+            "Forty-five minutes. You ask four things and otherwise stay quiet, which is harder than it sounds."
+          ],
+          "bullets": [
+            "\"Walk me through the three, in order.\" Then don't interrupt for ten minutes, even when you want to.",
+            "\"What did you look at that turned out not to matter?\" This is the best question on the list. It's unanswerable by anyone who didn't actually open the property.",
+            "\"Which of these can you do yourself, and which needs someone else?\"",
+            "\"What would change the order?\""
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "What a good answer sounds like",
+      "body": [
+        "You are not grading the three items. You're grading the reasoning wrapped around them, and that part you can grade with no SEO knowledge whatsoever.",
+        "Six things to listen for, and what it means when each is missing."
+      ],
+      "table": {
+        "caption": "Grading an SEO practical when you are not an SEO.",
+        "head": [
+          "Listen for",
+          "What it sounds like",
+          "What its absence means"
+        ],
+        "rows": [
+          [
+            "They asked about the business before the site",
+            "\"Before I answer — is the ₹40,000 order or the ₹4,000 order the one you want more of? It changes all three.\"",
+            "They optimised for traffic, because traffic is the number the tool puts on the screen."
+          ],
+          [
+            "A named constraint",
+            "\"You're on WordPress with a page builder, so template-level fixes are cheap here and anything per-page is expensive.\"",
+            "They've worked in documents, not in a codebase, and their estimates will be fiction."
+          ],
+          [
+            "Sizing before choosing",
+            "\"These 40 pages take 60% of your impressions and sit between position 8 and 14. That's why they're first and new content is third.\"",
+            "The order is arbitrary and will rearrange itself the first time someone senior has an opinion."
+          ],
+          [
+            "A clean split between what they ship and what they request",
+            "\"One and three I can do myself. Two is a developer, about a day, and it'll wait for your next release.\"",
+            "They've handed recommendations over a wall and never watched what happened on the other side."
+          ],
+          [
+            "A measurement with a lag attached",
+            "\"Impressions on those queries should move in four to six weeks, clicks after that. Revenue is a quarter out and I wouldn't judge it earlier.\"",
+            "They'll claim credit for whatever moves, you'll accept it, and neither of you will learn anything."
+          ],
+          [
+            "Something they'd stop doing",
+            "\"I'd pause the blog for six weeks. It isn't what's holding you back and it's eating the entire content budget.\"",
+            "They add work forever and never subtract it, which is how a function gets expensive without getting better."
+          ]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "What to weight, and what to ignore",
+          "bullets": [
+            "Weight it heavily when a candidate pushes back on the brief itself — says two of the three are the same underlying problem, or that they can't rank the third without seeing your CRM. The format is deliberately loose enough to allow that, and taking the opening is the reflex you're hiring.",
+            "Ignore how polished it sounds. Some very good practitioners present badly, and this format is designed so presentation isn't the variable being measured.",
+            "Ignore tool fluency too. Which crawler they prefer tells you where they last worked, not how well they think. Every one of those tools is learnable in a fortnight; judgement isn't."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Three answers that mean they've never shipped to production",
+      "body": [
+        "These are fast, and you don't need to understand SEO to catch them. Any one of them is enough to end the process."
+      ],
+      "subs": [
+        {
+          "h3": "1. A list with no order, no owner and no effort estimate",
+          "body": [
+            "\"Fix your title tags, improve site speed, build quality backlinks, publish more content.\" Four true statements carrying zero information.",
+            "Someone who has actually shipped SEO changes inside a company can't produce a list like that any more, because they've spent years being asked *which one first* and *how long will it take*. The sequencing reflex is scar tissue. Its absence means the recommendations have never had to survive contact with a sprint plan.",
+            "The tell isn't the items. It's that the candidate is untroubled when you ask which two they'd drop if they only got one."
+          ]
+        },
+        {
+          "h3": "2. Nothing has ever broken",
+          "body": [
+            "Ask directly: \"tell me about a change you shipped that got reverted, or that made something worse.\" Everyone who has worked on a live site has one — a redirect chain that looped, a canonical pointing at the wrong template, a `noindex` that shipped to the entire blog, a theme update that silently removed the internal links.",
+            "A candidate with no such story either never had write access or is managing you. Both are disqualifying here, and the second is the worse of the two.",
+            "What you actually want isn't the disaster. It's the next hour: how they found it, who they told before anyone asked, and what they changed about the process so it couldn't recur."
+          ]
+        },
+        {
+          "h3": "3. Results with no baseline date and no lag window",
+          "body": [
+            "\"We saw a big lift in organic traffic.\" Ask two questions: from what number, and starting when. A practitioner answers instantly, because they wrote it down on day one and got asked about it every month afterwards. Someone who has only read about SEO has never had to defend a number to a finance director.",
+            "The adjacent version is treating the PageSpeed Insights score as the target. Anyone who has run a real Core Web Vitals project knows the score is a lab simulation and the ranking input is field data from real Chrome users, and that the two disagree routinely. Someone working from a checklist thinks 100 is the goal.",
+            "The client-side version of this argument is [what an SEO baseline actually is](/journal/how-to-set-an-seo-baseline). Same test, pointed at agencies instead of candidates, which is a fair hint about how much it matters."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The questions still worth asking",
+      "body": [
+        "Four of them, after the practical rather than instead of it. Each is hard to prepare for and easy for you to grade."
+      ],
+      "numbered": [
+        "**\"What's the last thing you were wrong about?\"** The specificity of the answer is the answer. Vague self-criticism is a rehearsed line; a real one arrives with a date and a consequence.",
+        "**\"What would you need from us in the first month?\"** A good hire names access, developer capacity and a decision-maker. A weak one says \"just point me at the site\", which means they haven't yet learned that access is the bottleneck. [What access an SEO actually needs](/answers/what-access-to-give-an-seo-agency) is the same list we send clients.",
+        "**\"How would you spend ₹5 lakh over six months if you couldn't hire anyone?\"** You're testing whether they attach a price to anything. Candidates who have never held a budget answer this entirely in adjectives.",
+        "**\"What in SEO do you think is overrated?\"** The safe answers are safe for a reason. Anyone with real opinions holds at least one that will mildly annoy you, and mild annoyance is the point."
+      ],
+      "subs": [
+        {
+          "h3": "Google's own list, and the one line worth borrowing",
+          "body": [
+            "Google publishes a short list of questions for people hiring an SEO, and it's worth reading precisely because it's so unambitious: examples of previous work, expected results and timeframe, industry experience, and how changes will be communicated back to you. That's the floor, not the bar.",
+            "The same page says flatly that [no one can guarantee a #1 ranking on Google](https://developers.google.com/search/docs/fundamentals/do-i-need-seo), and warns you off anyone claiming a special relationship with Google or a priority submission. A candidate who offers a ranking guarantee in an interview has answered every remaining question you had.",
+            "Its access advice transfers to the practical too: grant read access first, write access later, and never for a test task."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "How to grade it when nobody in the building can",
+      "body": [
+        "Here's the uncomfortable part, and it applies to most first SEO hires. If you can't distinguish a good answer from a confident one, hiring isn't your first problem — managing is. You'll be equally unable to tell in month four whether the work is going well, which is the same failure that has founders firing agencies at exactly the point the work starts compounding.",
+        "Three ways out, in the order we'd try them."
+      ],
+      "bullets": [
+        "**Borrow a reviewer for one hour.** An SEO lead at a non-competing company, an advisor, or your current agency if the relationship is honest enough to survive it. They sit in on the practical and score the reasoning. It costs one hour of somebody else's time and it's the highest-return hour in the whole process.",
+        "**Hire an owner, not an executor.** A senior person who sets the plan and can be held to a number is gradeable by outcome even when their methods aren't gradeable by you. An executor needs supervision you can't supply. [When to bring SEO in-house](/journal/when-to-bring-seo-in-house) makes the longer case; the short version is that the first hire should be the person who decides, not the person who does.",
+        "**Don't hire yet.** If the work is intermittent, if you can't guarantee developer capacity, or if there's nobody to review the hire's judgement, retain instead and hire when the volume justifies it. [SEO agency versus in-house](/compare/agency-vs-in-house) runs the salary arithmetic, and the honest finding is that in-house is the expensive option that buys context — not the cheap one."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Our conflict of interest, stated first",
+        "body": "If you're a client of ours and you're hiring, ask us to sit on the panel — we'll do it. Weigh our opinion accordingly, because a good in-house hire usually shrinks our scope and we know it. We do it anyway, on the grounds that a client who hired badly and blames the channel costs us more than the scope does."
+      }
+    },
+    {
+      "h2": "The reference call is one question",
+      "body": [
+        "Two references, ten minutes each. Skip the character questions — nobody nominates a referee who'll say something unkind — and ask one thing: **what did they ship, and did anyone push back on it?**",
+        "You're checking two claims at once. That the work reached production, and that the person could hold a position while someone disagreed with them. SEO recommendations get argued with structurally: they touch design, copy, engineering and merchandising, all of which have owners who didn't ask for anyone's opinion. Someone who never had anything pushed back on probably never proposed anything that mattered.",
+        "The follow-up, if there's time: \"what would you not put them in charge of?\" A referee who genuinely worked with the person answers immediately, because everyone has a shape. A referee who barely worked with them gives you a compliment instead, and the compliment is the finding.",
+        "Then decide quickly. Good SEO candidates in India are interviewing in three places at once, and a process that takes five weeks selects for the people nobody else wanted."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What should I ask an SEO candidate in an interview?",
+      "a": "Ask less and set a practical. Give read-only Search Console access to your real site and ask for the three things they'd do first, in order, with what each is worth and how you'd both know in eight weeks. Then ask what they looked at that turned out not to matter — that one can't be prepared."
+    },
+    {
+      "q": "Should I give an SEO candidate a test task?",
+      "a": "Yes, but a short one on a real property rather than a hypothetical. Forty-five minutes is fair and unpaid. Anything longer — a written audit, a content plan — is work and should be paid at their rate. Long unpaid tasks screen out the strongest candidates, who have other offers and no reason to accept."
+    },
+    {
+      "q": "Is it safe to give a job candidate Search Console access?",
+      "a": "Use the Restricted user role, which is read-only: they can view performance data, links and blocked URLs but cannot submit sitemaps, disavow links, change settings or add users. Remove the access the same day as the call. Never grant write access, and never grant analytics or CMS access for a test task."
+    },
+    {
+      "q": "How do I interview an SEO if I don't know SEO myself?",
+      "a": "Grade the reasoning rather than the technical content: did they ask about the business first, name a real constraint, size the opportunity before ranking it, separate what they'd ship from what they'd request, and attach a lag window to the measurement. All five are legible without knowing any SEO."
+    },
+    {
+      "q": "What are the red flags when hiring an SEO?",
+      "a": "A recommendation list with no order, owner or effort estimate. No story about anything ever being reverted or breaking. Results described without a baseline date. Treating the PageSpeed score as the goal. And any ranking guarantee — Google's own guidance says nobody can promise a #1 position."
+    },
+    {
+      "q": "Should my first SEO hire be a specialist or a manager?",
+      "a": "An owner, meaning someone senior enough to set the plan and be held to a number. A specialist executes work somebody else scoped, and if you can't scope it, you'll spend a year paying for output nobody chose. Buy execution capacity outside and keep the deciding inside."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Do you need an SEO?",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo",
+      "date": "2026-06-05"
+    },
+    {
+      "title": "Managing owners, users, and permissions",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7687615"
+    },
+    {
+      "title": "Performance report (Search results): Overview and basic setup",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7576553"
+    },
+    {
+      "title": "URL Inspection tool",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9012289"
+    },
+    {
+      "title": "Google Search Essentials",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials",
+      "date": "2025-12-10"
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "when-to-bring-seo-in-house"
+    },
+    {
+      "type": "compare",
+      "slug": "agency-vs-in-house"
+    },
+    {
+      "type": "journal",
+      "slug": "what-it-costs-to-hire-seo-talent-in-india"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-answer-have-you-worked-on-seo-in-an-interview"
+    },
+    {
+      "type": "answers",
+      "slug": "what-does-an-seo-manager-do"
+    },
+    {
+      "type": "answers",
+      "slug": "what-access-to-give-an-seo-agency"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "answers",
+      "slug": "who-is-responsible-for-seo-in-a-company"
+    }
+  ]
+}

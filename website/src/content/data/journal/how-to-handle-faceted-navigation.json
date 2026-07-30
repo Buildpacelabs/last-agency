@@ -1,0 +1,297 @@
+{
+  "slug": "how-to-handle-faceted-navigation",
+  "type": "journal",
+  "primaryKeyword": "how to handle faceted navigation seo",
+  "secondaryKeywords": [
+    "which filter urls should be indexable",
+    "ecommerce filter crawl waste",
+    "parameter handling for facets",
+    "facet demand threshold indexing"
+  ],
+  "cluster": "technical-launch",
+  "intent": "informational",
+  "h1": "Which faceted URLs deserve to exist: a demand-based decision table",
+  "metaTitle": "How to Handle Faceted Navigation SEO",
+  "metaDescription": "The rule is demand, not tidiness. A filter combination earns an indexable URL only if someone searches it. Here's the threshold and decision table.",
+  "updated": "2026-09-17",
+  "published": "2026-09-17",
+  "answer": "Index a faceted URL only when the filter combination is something buyers actually search for and the page has enough stock to be worth landing on. Everything else gets a canonical, a noindex, or — last, not first — a crawl block. Demand decides this, not tidiness.",
+  "takeaways": [
+    "A facet earns an indexable URL when a buyer would type the phrase and there is stock behind it. Our floor is roughly **50–100 searches a month** and **ten products**, and both have to hold through a normal stock cycle.",
+    "Four treatments, not two: **index**, **canonicalise**, **`noindex, follow`**, **block at crawl**. Most sites reach for the fourth first.",
+    "`Disallow` stops crawling, not indexing — and a crawler that can't fetch the URL never reads the `noindex` you put on it. That's why it goes last.",
+    "An indexable facet with no crawlable link pointing at it is a page you built for nobody. Filters that exist only as JavaScript click handlers don't count as links.",
+    "Measure the waste before you touch anything: the share of Googlebot's HTML requests hitting filter parameters. Otherwise you can't prove the change did anything."
+  ],
+  "sections": [
+    {
+      "h2": "The tag argument is downstream of the URL argument",
+      "body": [
+        "Most faceted navigation advice opens with the tag. Canonical or noindex, `nofollow` the filter links or don't. That argument is real and we've written [the canonical versus noindex decision](/compare/canonical-vs-noindex) out separately. It is also the second question.",
+        "The first is which of these URLs should exist as an indexable page at all. Get that wrong and the tag choice is decoration on a decision already made badly.",
+        "A modest catalogue does the arithmetic for you. Take one clothing category with five filter groups — size with 8 values, colour with 12, brand with 20, price band with 6, material with 5. The number of combinations the front end will cheerfully generate is 8 × 12 × 20 × 6 × 5 = 57,600 URLs, before sort order and pagination multiply it again. The category holds maybe 400 products.",
+        "Nobody decided to publish 57,600 pages. The front end did it, because filters compose and URLs are free. That is the actual problem here: an information architecture nobody authored, inherited by a team that now has to work out which parts of it were meant."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Sort order is never a page",
+        "body": "`?sort=price_asc` returns the same products in a different order. There is no query behind it and no reason for it to be crawlable. Sort, view toggles, items-per-page, availability and session parameters should never generate an indexable URL — on any site, at any size. If you only fix one thing, fix that."
+      }
+    },
+    {
+      "h2": "The demand test, and the threshold we use",
+      "body": [
+        "The rule is demand. A filter combination earns an indexable URL when someone searches for it in roughly those words, and when the page they land on is worth the click.",
+        "Three conditions, all of them, before we index a facet."
+      ],
+      "numbered": [
+        "**Somebody types the phrase.** Our floor is roughly **50–100 searches a month** in India for the head phrasing plus its close variants. The range is wide on purpose: keyword tools disagree by a factor of two or three at low volumes, and Indian volumes are systematically understated because a chunk of the demand arrives in transliterated or mixed-language phrasing that gets bucketed elsewhere. Below that floor you're building a page for a handful of clicks a month and paying for it in crawl, template maintenance and internal links you had to spend somewhere.",
+        "**There is stock behind it.** At least ten products, and it has to stay above ten through a normal stock cycle. A facet page that empties out is a thin page that used to rank. [Google's own guidance is to return a 404 when a filter combination has no results](https://developers.google.com/search/docs/crawling-indexing/crawling-managing-faceted-navigation), which tells you plainly what it thinks of the empty-shell alternative.",
+        "**A customer would say it out loud in one phrase.** \"Cotton kurta sets\" passes. \"Cotton kurta sets under ₹1,499 in green, size M, newest first\" does not. If you can't say it without a comma, it isn't a search."
+      ],
+      "subs": [
+        {
+          "h3": "How deep to go, and where the rule bends",
+          "body": [
+            "The third condition does most of the work, and it has one practical consequence worth stating as a rule."
+          ],
+          "bullets": [
+            "**Index single-facet URLs, and two-facet combinations only where buyers name both attributes together** — category plus material, category plus brand, category plus city on a marketplace. Three facets deep, demand stops existing.",
+            "Size, price band, availability, rating and sort almost never clear the bar alone. They're refinements a buyer applies *after* arriving, not queries they arrive with.",
+            "The threshold genuinely bends for location facets. \"2 BHK flats in Kondapur\" is a real query with real volume, and a property or classifieds site with thousands of those has a legitimate case for indexing thousands of pages. The test hasn't changed — the demand is simply there.",
+            "It bends the other way for a catalogue with high churn. If half your SKUs turn over each season, a two-facet page that qualifies in March is a 404 in July, and you'll spend more on maintaining the set than the set earns."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The decision table",
+      "body": [
+        "Four treatments. Each does a different job, and the trigger for each is a property of the URL rather than a preference about tags."
+      ],
+      "table": {
+        "caption": "Facet treatments, the trigger for each, and what each one does not do.",
+        "head": [
+          "Treatment",
+          "Trigger",
+          "What it does",
+          "What it does not do"
+        ],
+        "rows": [
+          [
+            "Index",
+            "Clears all three demand conditions, and has its own title, H1 and a paragraph of copy that isn't category boilerplate.",
+            "Competes for a real query with a page that answers it.",
+            "Anything at all, if nothing on the site links to it with a crawlable anchor."
+          ],
+          [
+            "Canonical to the parent",
+            "A near-duplicate of a page that is already indexed — same products in a different order, or a refinement with no separate demand.",
+            "Merges signals into the canonical URL and, over time, reduces how often Google recrawls the variants.",
+            "Guarantee the outcome. `rel=canonical` is a strong signal, not a directive, and Google picks its own canonical when the signals disagree."
+          ],
+          [
+            "`noindex, follow`",
+            "Junk that is **already indexed**, or a facet space you're actively cleaning up. Also facets that must stay crawlable because links pass through them.",
+            "Drops the URL out of search on the next crawl, while Googlebot keeps following links out of the page.",
+            "Save crawl. Google still has to request the page to read the rule — that request is the price of the rule working."
+          ],
+          [
+            "`Disallow` in robots.txt",
+            "A facet space that has **never** been indexed and never should be — sort, session, tracking, view parameters — on a site large enough for crawl to be a real constraint.",
+            "Stops the requests before they happen, which is the only thing that genuinely saves crawl.",
+            "Remove anything already indexed. It also hides every canonical and `noindex` you placed on those URLs."
+          ]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "Two options that look useful and mostly aren't",
+          "bullets": [
+            "`rel=nofollow` on filter links is a fifth treatment and a weak one. Google says it may help, with a condition that usually kills it in practice: **every** anchor pointing at that URL has to carry the attribute, including ones on your other pages and ones a partner site published. Miss a single link and the URL is crawlable again.",
+            "URL fragments — `#colour=black` — are neutral. Google doesn't crawl or index fragments, so a fragment-based filter neither helps nor hurts. If your filters are already fragment-based and you have no indexable facets, you don't have this problem and shouldn't buy a project to fix it."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Why the crawl block is the last step, not the first",
+      "body": [
+        "Almost every site we look at reached for `Disallow: /*?*filter=` first. One line, free, and it feels like it deletes the problem.",
+        "Google does recommend robots.txt for facets — but as **prevention**, on a facet space you've decided will never need indexing. Applied as **cleanup** to a facet space Google already holds, it fails in three specific ways, and all three are mechanical rather than debatable."
+      ],
+      "numbered": [
+        "**It doesn't remove anything.** `Disallow` controls crawling, not indexing. Google's documentation is blunt about it: robots.txt \"is not a mechanism for keeping a web page out of Google\", and a disallowed URL can still be indexed if something links to it. In Search Console these surface as **Indexed, though blocked by robots.txt** — a warning about a state you created, not a fix.",
+        "**It freezes the junk in place.** For `noindex` to work, Googlebot has to fetch the page and read the rule. Block the URL and the crawler never sees it, so URLs already in the index stay there — indefinitely, because nothing will recrawl them to learn otherwise. This is the failure that catches teams out: both changes ship in the same sprint and cancel each other.",
+        "**The pattern is blunter than the decision.** A disallow pattern matches strings, not intent. `Disallow: /*?*colour=` catches the 400 junk combinations and also catches `?colour=black`, which was the one facet that cleared your demand threshold. Now the page you wanted is uncrawlable and the ones you didn't are still indexed."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The two-line mistake",
+        "body": "Adding `noindex` to your facet URLs and a `Disallow` for the same pattern in the same release is the most common version of this. The `noindex` will never be read. If you've inherited a site where the junk URLs refuse to go away, check for exactly that pair before you change anything else — it's usually the whole answer."
+      },
+      "subs": [
+        {
+          "h3": "The order that actually works, and how long it takes",
+          "body": [
+            "Reverse of what feels natural: `noindex, follow` first, wait for Google to recrawl and drop the URLs, confirm it in the Page indexing report, and only then — if the facet space is large enough that crawl is genuinely a constraint — add the disallow to stop the requests coming back.",
+            "The waiting is the unglamorous part. Google recrawls on its own schedule, and its documentation is explicit that revisiting an unimportant page can take months. Facet URLs are unimportant by definition. Expect eight to sixteen weeks for the bulk of a large facet space to clear, longer for the tail, and don't judge the change at week four."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "An indexable facet nobody can reach is not a page",
+      "body": [
+        "This is the half that gets cut when the sprint runs long. Deciding a facet URL deserves to be indexed is a decision about a URL. Making it worth anything is a decision about links.",
+        "Most filter interfaces don't produce links at all. They produce click handlers that rewrite the address bar and repaint the product grid. There's no `<a href>` for a crawler to follow, so the URL you carefully chose to index is an orphan: it exists, it may sit in a sitemap, and nothing on your site points at it."
+      ],
+      "bullets": [
+        "**Real anchors for the ones that matter.** The indexable combinations need actual markup links — `/kurtas/cotton`, in the HTML — not a widget that mutates the URL on click. The junk combinations can stay JavaScript-only. That isn't a compromise, it's the design.",
+        "**A curated module, not the whole filter set.** A short block on the category page listing the eight to fifteen facet URLs that cleared the demand test. That is the entire internal linking plan, and it's an afternoon of developer time.",
+        "**Its own title, H1 and a real paragraph.** If the only difference between `/kurtas` and `/kurtas/cotton` is which products the grid returns, you built a duplicate and Google will file it as one. Two or three sentences of genuine copy about the subcategory is the floor, not the aspiration.",
+        "**Sitemap entries only for the indexable set.** A sitemap full of URLs you have noindexed is a signal you don't want to send. And the anchors matter more than the sitemap entry — see [how internal linking distributes value](/glossary/internal-linking) for why.",
+        "**Breadcrumbs that go up.** The facet page should link back to its category, not sideways into forty sibling filters. Sideways links are how you rebuild the maze you just dismantled."
+      ]
+    },
+    {
+      "h2": "Sizing the crawl waste so the change is provable",
+      "body": [
+        "Do this before you touch anything, because afterwards nobody will believe the number.",
+        "Start with the honest caveat: crawl budget is a genuine constraint on a small minority of sites. Google's rough classification is sites over a million pages that change weekly, or over ten thousand pages that change daily. If you run a 600-SKU D2C brand, faceted navigation is still worth fixing — but the reason is index quality and where your internal links go, not crawl. [Crawl budget](/glossary/crawl-budget) covers why that distinction gets sold dishonestly."
+      ],
+      "numbered": [
+        "**Crawl Stats, in Search Console.** Settings, then Crawling, then Crawl stats. Ninety days of requests broken down by response, file type, purpose — discovery versus refresh — and Googlebot type. It's available only on a root-level property, a domain property or a URL-prefix property at the root, which is the first thing people trip over.",
+        "**The one number worth writing down.** The share of Googlebot's HTML requests hitting a URL that contains a filter parameter. Crawl Stats won't slice it that way, so read it from server logs if you can get them — a single week is enough for the ratio. Record it with the date beside it.",
+        "**Index bloat, from the Page indexing report.** Count the URLs sitting in **Crawled — currently not indexed** and **Duplicate without user-selected canonical**. On a site with an open facet space, those two buckets are usually where the tens of thousands live.",
+        "**Re-measure at four weeks and eight weeks.** What you want is the crawl mix shifting toward product and category URLs, and those two Page indexing buckets shrinking. Traffic is not the first thing to move, and pretending it will be sets you up for a false failure at week three."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "What a good outcome actually looks like",
+        "body": "Fewer indexed URLs, fewer crawl requests going nowhere, and organic traffic flat or better. If your indexed page count halves while traffic holds, the change worked — you deleted pages nobody was arriving on. Say that out loud before you start, or the month-two report reads as a disaster to everyone who wasn't in the room."
+      }
+    },
+    {
+      "h2": "The order we run this in",
+      "body": [
+        "Sequence matters more than any individual choice here, because two of these steps undo each other when they land in the wrong order."
+      ],
+      "numbered": [
+        "Crawl the site and export every URL the front end can generate. Group by parameter and count the URLs in each group. This is the map nobody has.",
+        "Pull demand data for the combinations that look plausible — usually thirty to sixty candidates. Most will fail the threshold. That's the expected result, not a sign you researched it badly.",
+        "Write the list of facet URLs that will be indexable. On a typical Indian D2C catalogue it lands somewhere between eight and forty, not four hundred.",
+        "Ship the template work for that list: title, H1, intro copy, breadcrumb, self-referencing canonical.",
+        "Ship the internal links — the curated module on each category page, with real anchors in the markup.",
+        "Apply `noindex, follow` to everything outside the list that is currently indexable, and confirm nothing in robots.txt is blocking those URLs. If something is, remove the block first and wait for a recrawl.",
+        "Wait, and watch the Page indexing report. Eight to sixteen weeks for the bulk of a large facet space to clear.",
+        "Only then, and only if crawl is genuinely a constraint at your scale, add the `Disallow` patterns — written narrowly enough that they cannot match anything on the indexable list."
+      ],
+      "subs": [
+        {
+          "h3": "The two steps that always get cut",
+          "body": [
+            "Four and five. They're template and front-end work, they sit behind a developer, and they're the first things dropped when the sprint overruns. Cutting them turns the whole exercise into page deletion, which is the cheap half and the half nobody thanks you for.",
+            "The eight to forty pages you decided deserve to exist are the reason to do any of this. If you're running it alongside the rest of an [ecommerce SEO](/answers/how-to-do-seo-for-an-ecommerce-website) programme, they're also the part that eventually shows up in revenue rather than in a crawl chart."
+          ]
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should faceted navigation URLs be indexed?",
+      "a": "A few should, most shouldn't. Index a filter combination when buyers search for it in those words, when at least ten products sit behind it, and when it can be described in one phrase without a comma. On a typical catalogue that's eight to forty URLs, not the thousands the front end generates."
+    },
+    {
+      "q": "Is robots.txt the right way to handle faceted navigation?",
+      "a": "As prevention, yes — Google recommends it for facet spaces you never intend to index. As cleanup, no. `Disallow` stops crawling, not indexing, so URLs already in the index stay there, and blocking a URL means Googlebot can never read the `noindex` you added. Noindex first, block later."
+    },
+    {
+      "q": "Will noindexing my filter URLs reduce how much Google crawls them?",
+      "a": "Eventually and indirectly, not immediately. Google has to fetch each URL to see the `noindex`, so requests continue while it works through them. Over months the crawl rate on dropped URLs falls. If you need the requests to stop now, a robots.txt disallow does that — after the noindex has finished its job."
+    },
+    {
+      "q": "How should I handle sort order and pagination parameters?",
+      "a": "Sort, view toggle, items-per-page and session parameters should never produce an indexable URL — there's no query behind them. Pagination is different: page two of a category is a real, distinct page and should be crawlable and self-canonical, not canonicalised back to page one."
+    },
+    {
+      "q": "How long before the junk facet URLs drop out of Google?",
+      "a": "Expect eight to sixteen weeks for the bulk of a large facet space, and longer for the tail. Google recrawls low-importance URLs infrequently and facet URLs are low-importance by definition. Judging the change at four weeks will make a working fix look like a failed one."
+    },
+    {
+      "q": "Do I need to worry about this if my site only has a few hundred products?",
+      "a": "Less than the tooling implies. Crawl budget is a real constraint mainly above ten thousand frequently-changing pages. On a small catalogue the argument for facet control is index quality and internal link distribution — you still don't want four hundred near-duplicates competing with the category you actually want ranking."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Managing crawling of faceted navigation URLs",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/crawling-managing-faceted-navigation",
+      "date": "2025-12-18"
+    },
+    {
+      "title": "Introduction to robots.txt",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Block Search indexing with noindex",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Optimize your crawl budget",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/large-site-managing-crawl-budget",
+      "date": "2026-07-22"
+    },
+    {
+      "title": "Page indexing report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7440203"
+    },
+    {
+      "title": "Crawl Stats report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9679690"
+    }
+  ],
+  "related": [
+    {
+      "type": "compare",
+      "slug": "canonical-vs-noindex"
+    },
+    {
+      "type": "glossary",
+      "slug": "crawl-budget"
+    },
+    {
+      "type": "glossary",
+      "slug": "robots-txt"
+    },
+    {
+      "type": "glossary",
+      "slug": "noindex"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-fix-index-bloat"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-do-seo-for-an-ecommerce-website"
+    },
+    {
+      "type": "services",
+      "slug": "ecommerce-seo-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "log-file-analysis"
+    }
+  ]
+}

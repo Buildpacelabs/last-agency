@@ -1,0 +1,234 @@
+{
+  "slug": "pharmaceutical-companies",
+  "type": "seo-for",
+  "primaryKeyword": "seo for pharmaceutical companies in india",
+  "secondaryKeywords": [
+    "cdmo lead generation seo",
+    "api manufacturer search visibility",
+    "doctor facing vs patient facing pharma content",
+    "ucpmp compliant marketing content"
+  ],
+  "cluster": "healthcare-and-clinics",
+  "intent": "commercial",
+  "industry": "Pharmaceutical manufacturers, API producers and CDMOs",
+  "h1": "SEO for pharmaceutical formulation, API and CDMO businesses",
+  "metaTitle": "SEO for Pharmaceutical Companies in India",
+  "metaDescription": "Dossier and filing status as a page-level asset, the doctor-versus-patient content split, and a review workflow that survives regulatory affairs.",
+  "updated": "2026-09-07",
+  "published": "2026-09-07",
+  "answer": "Pharma sites fail in search for a governance reason, not a technical one: nothing gets published because nobody agrees who signs it off. Fix that first. Then the asset that wins CDMO and API shortlists is filing status — DMF, CEP, ASMF, market and facility — published per molecule as an indexable page rather than gated behind a contact form.",
+  "takeaways": [
+    "**A pharma site has two audiences and one of them must not see the other's content.** `medicalAudience` exists to state which is which, and the split has to be built into the URL structure, not applied as a disclaimer.",
+    "The CDMO shortlist is decided on filings, facility and inspection history. Publish those as pages. Almost every Indian site buries them in a PDF or behind a form, which is why the category is winnable.",
+    "The review workflow fails on **latency**, not rigour. If regulatory affairs takes six weeks per page, the site publishes nothing. Pre-approve a claim library instead of reviewing each page from scratch.",
+    "The Drugs and Magic Remedies Act deletes most of what a marketing team would naturally write about a condition. Find that out before the copy is written, not after legal reads it.",
+    "This page is deliberately not the CAS-number playbook — that's on [our Ahmedabad page](/seo-agency/ahmedabad). Lead with dossiers here."
+  ],
+  "sections": [
+    {
+      "h2": "Three businesses wearing one website",
+      "body": [
+        "\"Pharmaceutical company\" covers at least three businesses that share almost no search behaviour. Most Indian pharma sites are built as though it were one, which is why they rank for the company name and nothing else.",
+        "The **formulations** business sells branded generics through prescribers, distributors and trade. Its searchers are doctors, chemists, stockists and — whether you want them or not — patients who read a strip of tablets and typed the name in.",
+        "The **API and intermediates** business sells to procurement teams who search molecules, grades, CAS numbers and specifications. We've written that playbook at length for Gujarat chemical exporters and won't restate it here; if that's your business, start with the product-page approach on [our Ahmedabad page](/seo-agency/ahmedabad) and [SEO for manufacturing companies](/seo-for/manufacturing).",
+        "The **CDMO** business sells development and manufacturing capacity to other pharma companies. Its buyers are business development and technical evaluation teams building a shortlist, and they filter on things no keyword tool will show you: dossier coverage, regulated-market filings, facility approvals, inspection history.",
+        "The first decision on a pharma site is which of the three it's actually for. A homepage greeting all three at once greets none of them, and the internal politics of that decision are usually the real reason the project stalls."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where the money usually is",
+        "body": "For most mid-size Indian pharma companies the CDMO side has the highest deal value and by far the least search competition, because everyone assumes the business is won at CPHI and through relationships. Some of it is. The shortlist that precedes the meeting is increasingly built from a browser."
+      }
+    },
+    {
+      "h2": "Doctor-facing and patient-facing, and the line the code draws",
+      "body": [
+        "In most regulated markets, and in practice in India too, information written for a prescriber is not information you may put in front of the public. Efficacy data, dosing, comparative claims and full prescribing information belong to one audience. A patient looking up a tablet name belongs to another, and what they may lawfully be shown is much narrower.",
+        "Nearly every Indian pharma site handles this with a disclaimer nobody reads. That's not a structure, it's a hope. The split has to exist in the site itself, and it changes how the pages get indexed.",
+        "Schema.org gives you the vocabulary: `MedicalWebPage` accepts a `medicalAudience` property, with `Patient` as a defined subtype of `MedicalAudience`, so a page can state in machine-readable form who it was written for. Small on its own, useful when a machine is deciding what to summarise."
+      ],
+      "numbered": [
+        "**Separate the sections by path**, not by modal. `/hcp/...` for prescriber material, everything else public. A URL prefix is auditable; a JavaScript interstitial is not.",
+        "**Decide the indexing rule per section, deliberately.** A fully gated prescriber section earns nothing in search. What works is an indexable landing page per product carrying the non-promotional facts — molecule, form, strengths, indication as approved — with the detailed prescribing material behind the gate.",
+        "**If you `noindex` the gated pages, do not also block them in `robots.txt`.** Google's documentation is explicit that [a page blocked from crawling can still be indexed](https://developers.google.com/search/docs/crawling-indexing/block-indexing), because the crawler never sees the noindex rule. This is the single most common technical mistake on regulated sites and it produces exactly the wrong outcome: gated URLs listed in search results with no description.",
+        "**Never gate the safety information.** Whatever the commercial preference, adverse-event reporting routes and safety warnings should be reachable without a login by anyone, including a search engine.",
+        "**Handle the patient who searched a brand name.** They will arrive. Give them a short factual page — what the product is, consult your prescriber, here's the adverse-event route — rather than prescriber material or a 404."
+      ]
+    },
+    {
+      "h2": "Dossier and filing status as an indexable page-level asset",
+      "body": [
+        "This is the section we'd build first for a CDMO or API business, and it barely exists anywhere in the Indian category.",
+        "A sourcing manager evaluating suppliers isn't asking whether you're a quality-focused partner. They're asking factual questions about a specific molecule: is there a filing, in which jurisdiction, from which site, commercial or development stage, and when was that site last inspected. Today they answer those by emailing you and waiting three days. Every one of them is a page.",
+        "The objection is always that this is commercially sensitive. Some of it genuinely is, and customer names under confidentiality stay off the site. But the existence of a filing and the approval status of a facility are typically matters of public record already. Publishing them organises information a buyer can find anyway, in a form that arrives before your competitor's email does."
+      ],
+      "table": {
+        "caption": "What a CDMO or API shortlist is actually filtering on, and what the page has to state.",
+        "head": [
+          "Credential",
+          "What the buyer is really asking",
+          "What the page must state"
+        ],
+        "rows": [
+          [
+            "US DMF",
+            "Can I file an ANDA in the US referencing your material without a surprise?",
+            "That a DMF exists for the molecule, its type, and the manufacturing site it covers."
+          ],
+          [
+            "CEP / EDQM",
+            "Can I use this in Europe without a full ASMF review?",
+            "Whether a certificate is held for the molecule and which site it names."
+          ],
+          [
+            "ASMF / EU filings",
+            "What is the European route and who supports it?",
+            "Filing status by market, and who at your end handles regulatory queries."
+          ],
+          [
+            "Facility approvals",
+            "Which regulators have actually walked this plant?",
+            "Site by site: which authorities have inspected it and what it is approved to make."
+          ],
+          [
+            "Inspection history",
+            "Is there an open compliance problem I'll inherit?",
+            "Only what you can substantiate. Silence is better than a claim you cannot evidence."
+          ],
+          [
+            "Capability and scale",
+            "Can you make it at the volume I need, in the form I need?",
+            "Reactor or line capacity, dosage forms, containment class, batch sizes, development versus commercial."
+          ]
+        ]
+      },
+      "bullets": [
+        "**One page per molecule, not per therapeutic area.** The buyer searches the molecule. A category page cannot rank for two hundred of them.",
+        "**Put a review date on every filing page.** Filing status changes, and a stale page is a credibility problem in exactly the audience you least want to lose.",
+        "**Do not imply an approval you don't hold.** \"Facility designed to US FDA standards\" and \"facility inspected by US FDA\" are different sentences and a technical buyer knows it.",
+        "**Keep customer names off the site** unless you hold written permission. It's rarely given, and assuming it is the fastest way to lose an account."
+      ]
+    },
+    {
+      "h2": "A review workflow that survives regulatory affairs",
+      "body": [
+        "Ask why a pharma site hasn't published anything in fourteen months and the answer is never the CMS. It's that a draft went to regulatory affairs, medical affairs and legal in parallel, came back with contradictory comments, and died.",
+        "The fix isn't lighter review. It's routing by risk and moving the expensive judgement upstream, so individual pages are checked against decisions already made rather than argued from scratch. Two lanes, and everything gets assigned to one before it's written."
+      ],
+      "subs": [
+        {
+          "h3": "Lane A — corporate, technical and capability content",
+          "body": [
+            "Facility pages, capability pages, filing status, quality systems, careers, ESG. No claim about a product's efficacy or safety, so no medical or pharmacovigilance dependency. Reviewer: regulatory affairs plus the relevant site head, five working days. Most of a CDMO site lives here, which is exactly why the CDMO site is the one that can actually get built."
+          ]
+        },
+        {
+          "h3": "Lane B — anything naming a molecule's effect on a person",
+          "body": [
+            "Indication, efficacy, dosing, comparative claims, patient-facing condition content. Reviewer: medical affairs and pharmacovigilance, then regulatory affairs, then legal. Longer turnaround, and it should be.",
+            "PV sits in this lane for a practical reason, not a bureaucratic one: a public page inviting people to describe their experience of a product can generate a reportable adverse event. A comment field or an ungoverned enquiry form on a Lane B page is a pharmacovigilance obligation nobody signed up for. Decide before launch, not after the first email arrives."
+          ]
+        }
+      ],
+      "bullets": [
+        "**Build a pre-approved claim library.** Every approved sentence about every product, with its source and approval date, in one document. Writers draw from it; reviewers check the draw rather than re-litigating the claim. This is the change that takes a pharma content calendar from theoretical to real.",
+        "**Name the reviewer on the page and date it.** `MedicalWebPage` carries `reviewedBy` and `lastReviewed` for precisely this, and it's the record you'll want the day someone asks who approved a sentence.",
+        "**Version-control the copy, not just the site.** When a claim changes you need to know every page that carried the old one. A claim-to-URL map is ten minutes per claim and saves a week during a recall.",
+        "**Set a review SLA in writing and report against it.** \"Regulatory review, five working days\" is a commitment somebody owns. \"When they get to it\" is how the project dies quietly.",
+        "**Brief writers against the constraints up front.** On a pharma brief the banned-claim list belongs at the top of the page, above the keyword and the outline — not discovered in a reviewer's comment on the third draft."
+      ]
+    },
+    {
+      "h2": "What the Drugs and Magic Remedies Act takes out of your copy",
+      "body": [
+        "The Drugs and Magic Remedies (Objectionable Advertisements) Act, 1954 restricts advertising of drugs and remedies for a schedule of listed conditions, and prohibits advertisements that mislead about a drug's true character or make false claims about curing or preventing disease. It sits alongside the Drugs and Cosmetics Rules, which restrict promotion of prescription-only medicines to the public, and the Uniform Code for Pharmaceutical Marketing Practices, which governs promotional conduct towards healthcare professionals.",
+        "That's our working understanding of the framework, not legal advice, and UCPMP's applicability and enforcement have been actively revised in recent years — have your regulatory affairs team confirm the current position before a word is published. What we can say confidently is what it does to a website, because we've watched it happen to drafts: a marketing team's instinctive first draft is mostly unpublishable, and finding that out at legal review rather than at brief stage is what makes pharma content expensive."
+      ],
+      "bullets": [
+        "**\"Cure\", \"guaranteed\", \"permanent relief\", \"no side effects\"** — gone, in every form, including inside a testimonial where a third party says it.",
+        "**Patient testimonials and before-and-after imagery** for anything prescription-only. The strongest conversion asset in most industries is unavailable in this one.",
+        "**Condition content that ends in a product recommendation.** Disease-awareness material and promotion stay visibly separate, and a page walking a patient from symptoms to your brand name is promotion whatever the header says.",
+        "**Comparative claims against a named competitor product**, published where the public can read them, without the data to support them.",
+        "**Anything implying diagnosis.** A symptom checker on a pharma domain is a different regulated object from one on a hospital domain."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The disease-awareness trap",
+        "body": "Disease-awareness pages are legitimate, useful and rank well. They stop being disease-awareness the moment they route the reader to a branded product page, and a helpful internal link is exactly how a compliant page becomes a non-compliant one six months after approval. Freeze the internal linking rules for Lane B pages and audit them quarterly."
+      }
+    },
+    {
+      "h2": "What we'd sequence first, and what we commit to",
+      "body": [
+        "On a pharma engagement we spend the first three weeks on governance rather than keywords, which is not what anyone wants to hear at kickoff. Agree the two review lanes, name the reviewers, set the SLA, start the claim library. Nothing else on this page is deliverable until that exists.",
+        "Then filing and facility pages for the molecules with live commercial interest, because they're fastest to rank and closest to revenue. Then the audience split and the technical work behind it. Then Lane B content, last, because it costs most to produce and clears slowest. The general [healthcare SEO approach](/seo-for/healthcare) — named clinical authorship, the evidence bar Google applies to medical content — still applies on top of all of it.",
+        "Our SEO runs from ₹75,000/mo, with smaller sites from ₹40,000/mo, ex-GST, month-to-month after the first quarter, and you keep every asset including the claim library. We don't promise a ranking position and we won't pretend to have influence over how fast your regulatory team signs. What we freeze on day one is your trailing-90-day count of qualified enquiries from organic search. Miss it in 90 days and we keep working free until we beat it. We take three clients a month, which is why that's a commitment rather than a line in a deck."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The honest timeline in this category",
+        "body": "Filing and capability pages often rank inside eight to sixteen weeks, because the competition is a PDF. Molecule pages take three to six months. Lane B content runs on a nine-to-twelve-month horizon, most of it review rather than writing — and any agency quoting a pharma content calendar without asking who signs off is quoting one that won't survive month two."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Should pharmaceutical filing and dossier information be published on the website?",
+      "a": "The existence of a filing and a facility's approval status are usually matters of public record already, and a CDMO or API buyer filters on exactly those facts. Publishing them per molecule, with a review date, answers the shortlist question before your competitor's email does. Customer names and anything under confidentiality stay off."
+    },
+    {
+      "q": "How do you separate doctor-facing and patient-facing pharma content?",
+      "a": "By URL path, not by disclaimer — a prescriber prefix such as /hcp/ is auditable, a JavaScript modal isn't. Publish an indexable, non-promotional landing page per product for the public, keep detailed prescribing material behind the gate, and never gate the safety information or the adverse-event reporting route."
+    },
+    {
+      "q": "Can a pharma company publish patient testimonials in India?",
+      "a": "Not for prescription-only products. The Drugs and Magic Remedies Act restricts advertising for listed conditions and prohibits misleading claims about curing or preventing disease, and a testimonial making a claim you couldn't make yourself doesn't become permissible because a patient said it. Confirm the current position with your regulatory affairs team."
+    },
+    {
+      "q": "Why does pharma content take so long to publish?",
+      "a": "Because the draft goes to regulatory, medical and legal in parallel and comes back with contradictory comments. Route by risk instead: corporate and capability content to regulatory plus the site head on a five-day SLA, anything touching a molecule's effect on a person to medical affairs and PV first. Then build a claim library."
+    },
+    {
+      "q": "Does noindex work if the page is blocked in robots.txt?",
+      "a": "No, and this catches regulated sites constantly. If a URL is disallowed in robots.txt, the crawler never fetches the page and never sees the noindex rule, so the URL can still be listed — typically with no description. Allow crawling and use noindex, or use proper authentication."
+    },
+    {
+      "q": "Is SEO worth it for a CDMO when business comes from relationships and trade shows?",
+      "a": "Both are true at once. The meeting is still won on relationships; the shortlist that precedes it is increasingly assembled in a browser by an analyst checking filings and facility approvals. If your molecule pages don't exist, you're not in the set being compared, and nobody tells you that you were excluded."
+    }
+  ],
+  "sources": [
+    {
+      "title": "MedicalWebPage",
+      "publisher": "Schema.org",
+      "url": "https://schema.org/MedicalWebPage"
+    },
+    {
+      "title": "MedicalAudience",
+      "publisher": "Schema.org",
+      "url": "https://schema.org/MedicalAudience"
+    },
+    {
+      "title": "Block Search indexing with noindex",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Creating helpful, reliable, people-first content",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "date": "2025-12-10"
+    }
+  ],
+  "related": [
+    { "type": "seo-for", "slug": "healthcare" },
+    { "type": "seo-for", "slug": "mental-health-clinics" },
+    { "type": "seo-for", "slug": "manufacturing" },
+    { "type": "seo-for", "slug": "it-services-companies" },
+    { "type": "seo-agency", "slug": "ahmedabad" },
+    { "type": "glossary", "slug": "noindex" },
+    { "type": "services", "slug": "schema-markup-services" },
+    { "type": "answers", "slug": "why-is-my-page-not-indexed-on-google" }
+  ]
+}

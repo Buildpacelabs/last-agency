@@ -1,0 +1,229 @@
+{
+  "slug": "independent-review-of-your-current-seo-agency",
+  "type": "services",
+  "primaryKeyword": "independent review of my seo agency's work",
+  "secondaryKeywords": [
+    "second opinion on seo work",
+    "third party audit of an agency's deliverables",
+    "is my agency actually doing anything",
+    "arms length seo review service"
+  ],
+  "cluster": "engagement-models",
+  "intent": "transactional",
+  "h1": "An independent review of your current agency's work — with no retainer pitch attached",
+  "metaTitle": "Independent Review of Your SEO Agency's Work",
+  "metaDescription": "A ₹25,000 review of your SEO agency's deliverables, invoices and reporting, in five working days. It ends in a written verdict, not a sales pitch.",
+  "updated": "2026-08-20",
+  "published": "2026-08-20",
+  "priceFrom": "₹25,000 fixed · five working days · no retainer credit",
+  "answer": "An independent review checks what your agency actually delivered against what it invoiced, claimed and reported. The subject is their work, not your website. Ours is ₹25,000 ex-GST in five working days, ending in a one-page written verdict. The fee isn't credited against anything, because a credit would give us a reason to recommend replacing them.",
+  "takeaways": [
+    "The subject is the deliverable list, the invoices, the link report, the briefs and the monthly deck. A site audit asks what's wrong with your website; this asks whether you got what you paid for.",
+    "**₹25,000 ex-GST, five working days.** Deliberately not credited against a retainer with us.",
+    "Three possible verdicts, and one of them is **keep them**. We write that one more often than is commercially convenient.",
+    "We cap intake at three new clients a month and are frequently full, which is the only thing that makes a no-pitch promise worth reading."
+  ],
+  "sections": [
+    {
+      "h2": "This reviews the work, not the website",
+      "body": [
+        "An [SEO audit](/services/seo-audit-services) points a crawler at your domain and asks what's technically wrong with it. That's a useful question and it is not the one you're asking. You're not lying awake about canonical tags. You're lying awake about whether ₹75,000 a month for eleven months bought anything at all.",
+        "So the subject here is the paper trail. The scope clause in the contract, the monthly invoices, the deliverable lists, the link report, the content briefs and the drafts they came from, and the reporting deck — each one reconciled against the system the claim originally came from. Your website only enters the review where it evidences a claim: a fix that was invoiced and never shipped, a page that was billed and was never published.",
+        "This is a different job from choosing an agency in the first place. If you haven't signed yet, the format that answers your question is [a paid pilot rather than a review](/services/seo-trial-before-signing-a-retainer)."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Why the incentive problem here is real",
+        "body": "Ask any agency to grade your incumbent and you're asking a competitor to mark a rival's homework while holding a proposal. Most will find a catastrophe. Some of them will be right. From the outside you cannot tell which, and the document will look identical either way."
+      }
+    },
+    {
+      "h2": "The four reconciliations",
+      "body": [
+        "Every claim gets checked against the system it came from rather than against the report that summarised it. That's the whole method, and it's why five days is enough for one domain and not enough for four.",
+        "Links are the section people expect to be hardest and it's mostly arithmetic. Search Console's Links report is the obvious place to start and the wrong place to stop: Google states that it [shows a sample rather than a comprehensive list of every link](https://support.google.com/webmasters/answer/9049606), and its tables cap at 1,000 rows. So we reconcile against the agency's own URL list, one link at a time, using the checks in [verifying the backlinks your agency invoiced you for](/answers/how-to-check-if-backlinks-your-agency-built-are-real). A link that isn't live, isn't indexed, or carries a sponsored or nofollow attribute is not the thing the invoice described.",
+        "Reporting is where the honest gaps show up. If the engagement started eighteen months ago, some of it genuinely can't be reconstructed — GA4 keeps event data for two or fourteen months depending on how the property was configured, and explorations can't reach past that setting. Where the source data has expired, we write that down as unverifiable rather than filling the space with an opinion."
+      ],
+      "table": {
+        "caption": "What gets checked, against what, and what a gap usually means.",
+        "head": [
+          "The claim",
+          "Reconciled against",
+          "What a gap usually means"
+        ],
+        "rows": [
+          [
+            "Deliverables — pages, fixes and reports promised in the scope",
+            "The signed scope clause and twelve months of invoices, line by line",
+            "Scope drift. Usually gradual, often not deliberate, and worth about a month's fee a quarter if nobody is counting"
+          ],
+          [
+            "Links built",
+            "Every URL on the list: live, indexed, followed, and reachable from the host site's own navigation",
+            "Either a counting problem or a paid-placement problem. The second one is a risk that sits on your domain, not theirs"
+          ],
+          [
+            "Content shipped",
+            "The briefs it was written to, the drafts, and the live URLs",
+            "Briefs reverse-engineered after publication, or pages live in a blog nothing internally links to"
+          ],
+          [
+            "Reporting",
+            "Search Console and GA4 directly, through our own read-only access",
+            "A date range that starts at a convenient trough, branded traffic counted as a win, or a metric that quietly changed definition in month five"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The verdict, and the three things it can say",
+      "body": [
+        "One page. A verdict sentence at the top, the evidence beneath it, and the reconciliation sheet attached as a spreadsheet you can check row by row. There are three conclusions available and we'll tell you on the scoping call that all three are genuinely on the table."
+      ],
+      "numbered": [
+        "**The work is being done and it's worth the fee.** Deliverables reconcile, the links are real, the content was briefed properly, the reporting matches source. Keep them, and stop paying for second opinions. We write this verdict often enough that it's worth pointing out we have no financial reason to.",
+        "**The work is being done and it's the wrong work — or too much money for it.** The most common outcome by some distance. Nobody is lying; the retainer is simply buying activity that doesn't touch the constraint, or buying it at a price the site doesn't justify. The remedy is a scope conversation, not a termination, and the verdict is written so you can hand it to your agency directly.",
+        "**The work is not being done as invoiced.** The rarest and the easiest to evidence: links that don't exist or were never indexed, pages billed and never published, a report whose numbers don't reconcile to Search Console. This is the verdict you can act on contractually, and it's written in dates, URLs and figures so your lawyer can use it without translation."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "What a verdict is not",
+        "body": "It isn't a legal opinion and it isn't a valuation of what you lost. It's an evidenced read on whether the work happened and whether it was worth the money. If you're heading towards a dispute, the part your lawyer wants is the reconciliation sheet, not our adjectives."
+      }
+    },
+    {
+      "h2": "The no-pitch commitment, and why our intake cap makes it credible",
+      "body": [
+        "The commitment is narrow and absolute. No proposal, no quote, no pricing conversation attached to the review, no follow-up sequence afterwards. The document ends at the verdict. If you want a number from us later, you ask for it in writing after the verdict has landed, and we won't raise it first.",
+        "Promises like that cost nothing to make, so here's the structure underneath it. We take three new clients a month. That cap is driven by our guarantee rather than by scarcity marketing — miss a client's 90-day baseline and we work free until we beat it, and free months are real months of a senior team's time. [The arithmetic behind the cap](/journal/why-we-only-take-three-clients-a-month) means the marginal review-turned-client is worth considerably less to us than it would be to an agency carrying a sales target.",
+        "The fee is also not credited against a retainer, and that's the part we'd change first if this were a growth product. Our standalone audit is credited, because there your interest and ours point the same way — you want a diagnosis, we want the work that follows. Here they don't point the same way at all. A credit would pay us to find your incumbent wanting, so there isn't one.",
+        "You should still discount what we write. We're an SEO agency assessing another SEO agency, and structure reduces that problem rather than removing it. The part to trust is the reconciliation sheet: it's URLs, dates and numbers, and every row is something you can check yourself in an afternoon without taking our word for any of it."
+      ]
+    },
+    {
+      "h2": "₹25,000, five working days, and what we need from you",
+      "body": [
+        "Read access, not admin. Search Console has a restricted user role that grants view rights on most data and cannot change anything, which is exactly the level we want; the GA4 equivalent is viewer. We don't ask for CMS access, ad accounts or anything with a write permission on it, and if your incumbent still controls those properties that is itself a finding.",
+        "From you we need six things: the contract or scope document, twelve months of invoices, the monthly reports, the link list with URLs, the content list with live URLs, and the briefs if any exist. Getting the link list out of an incumbent is the usual source of delay, which is why the clock starts when the documents arrive rather than when you engage us.",
+        "You don't have to tell your agency this is happening. We'd usually suggest you do. A review conducted in the open tends to end in a better conversation than one that arrives as an ambush, and an agency that reacts badly to being asked for its own deliverable list has answered part of the question already."
+      ],
+      "table": {
+        "caption": "Independent agency review — scope, price and turnaround.",
+        "head": [
+          "Item",
+          "Included",
+          "Not included"
+        ],
+        "rows": [
+          [
+            "Price",
+            "₹25,000 flat, ex-GST, invoiced when we start",
+            "Hourly overruns. The scope in this table is what you get"
+          ],
+          [
+            "Turnaround",
+            "Five working days from the day the documents and read access are with us",
+            "Five days from the day you ask. Waiting on an incumbent for a link list is the usual delay"
+          ],
+          [
+            "Period reviewed",
+            "Up to twelve months of deliverables and invoices, on one domain, in one market",
+            "Multi-domain or multi-market engagements — quoted separately, and honestly they cost more than one review"
+          ],
+          [
+            "Deliverable",
+            "A one-page verdict, the reconciliation sheet, and a 45-minute recorded call",
+            "A remediation plan, a rankings forecast, or a proposal of any kind"
+          ],
+          [
+            "Website diagnosis",
+            "Only where it evidences a claim — an invoiced fix that never shipped, a billed page that was never published",
+            "A full technical audit. That's a separate fixed-scope project"
+          ],
+          [
+            "Representation",
+            "Written findings you can forward to your agency or your lawyer without editing",
+            "Speaking to your agency on your behalf, or negotiating the exit for you"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "When this is a waste of ₹25,000",
+      "body": [
+        "Five situations where the answer is already available to you and you should keep the money. We'll say so on the scoping call, which is free and takes about twenty minutes."
+      ],
+      "numbered": [
+        "**Your retainer is under ₹25,000 a month.** The review costs more than the month it's reviewing. Pull the link list, check twenty URLs by hand against the invoice, and read one monthly report against Search Console yourself. Two hours gets you most of the way.",
+        "**They've stopped replying.** That's a control problem, not a quality problem, and it has a different sequence — get your admin access back first, using something like [a 14-day escalation ladder](/answers/my-seo-agency-has-stopped-responding). A verdict on work quality is worth nothing if you can't get into your own Search Console.",
+        "**You've already decided to leave.** A review that confirms a decision you've made is an expensive receipt. Spend the money on a clean handover instead, and make sure you hold every login before you serve notice.",
+        "**No baseline was ever agreed.** If nobody wrote down where you started, there's nothing for the reporting to be reconciled against, and the review collapses to \"did the deliverables ship\". Sometimes that's still worth ₹25,000. Often it isn't, and we'll tell you which on the call.",
+        "**The contract ends inside a month.** Five working days plus your reading time plus a scope conversation doesn't fit, and you'll be making the renewal decision on instinct anyway. Wait, don't renew, and review the next agency's work at month six when there's something to reconcile."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "We'd rather lose the fee than write a thin review",
+        "body": "If one of the five above applies, we'll say so before an invoice exists. A review that tells you something you already knew is the worst thing we could sell, because it costs you ₹25,000 and buys you an argument you were going to have regardless."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the difference between this and an SEO audit?",
+      "a": "An audit examines your website and asks what's technically wrong with it. This examines your agency's work and asks whether you received what you paid for — deliverables against invoices, links against the claimed list, content against its briefs, reporting against Search Console and GA4. The site only appears where it evidences a claim."
+    },
+    {
+      "q": "How much does an independent SEO agency review cost?",
+      "a": "Ours is ₹25,000 flat, ex-GST, for up to twelve months of deliverables on one domain, delivered in five working days from the point we have the documents and read-only access. There's no hourly overrun and the fee is deliberately not credited against a retainer with us."
+    },
+    {
+      "q": "Will you pitch to replace my current agency?",
+      "a": "No. No proposal, no quote, no pricing conversation, no follow-up sequence — the document ends at the verdict. If you want a number afterwards you ask in writing and we respond then. We take three new clients a month and are frequently full, which is what makes that promise survivable rather than noble."
+    },
+    {
+      "q": "What access do you need, and does my agency have to know?",
+      "a": "Read-only: a restricted user on Search Console and a viewer on GA4. No CMS, no ad accounts, nothing with write permissions. Your agency doesn't have to be told, though we'd usually suggest telling them — a review in the open ends better than one that arrives as an ambush."
+    },
+    {
+      "q": "What if the review says my agency is doing fine?",
+      "a": "Then that's what it says, and it's a genuinely common outcome. The most frequent verdict isn't fraud, it's that the work is real but aimed at the wrong constraint — which is a scope conversation with your existing agency rather than a reason to start over with someone new."
+    },
+    {
+      "q": "Can I use the findings in a contract dispute?",
+      "a": "The reconciliation sheet is built for that: dates, URLs, invoice line references and figures, with unverifiable items marked as unverifiable rather than argued. It isn't a legal opinion and we don't represent you. Your lawyer will want the evidence, not our characterisation of it."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Links report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9049606"
+    },
+    {
+      "title": "Qualify your outbound links to Google",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Managing owners, users, and permissions",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7687615"
+    },
+    {
+      "title": "Data retention",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/7667196"
+    }
+  ],
+  "related": [
+    { "type": "answers", "slug": "how-to-check-if-backlinks-your-agency-built-are-real" },
+    { "type": "answers", "slug": "how-to-check-seo-agency-references" },
+    { "type": "services", "slug": "seo-trial-before-signing-a-retainer" },
+    { "type": "services", "slug": "seo-audit-services" },
+    { "type": "journal", "slug": "why-free-seo-audits-are-sales-pitches" },
+    { "type": "answers", "slug": "can-i-fire-my-seo-agency" },
+    { "type": "cost", "slug": "seo-agency-wants-to-increase-the-retainer" },
+    { "type": "compare", "slug": "retainer-vs-project" }
+  ]
+}

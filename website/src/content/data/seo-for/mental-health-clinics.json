@@ -1,0 +1,217 @@
+{
+  "slug": "mental-health-clinics",
+  "type": "seo-for",
+  "primaryKeyword": "seo for mental health clinics",
+  "secondaryKeywords": [
+    "therapy practice seo india",
+    "psychiatry clinic marketing search",
+    "de-addiction centre seo",
+    "counselling website search visibility"
+  ],
+  "cluster": "healthcare-and-clinics",
+  "intent": "commercial",
+  "industry": "Mental health clinics",
+  "h1": "SEO for mental health clinics, therapists and psychiatry practices",
+  "metaTitle": "SEO for Mental Health Clinics in India",
+  "metaDescription": "The one healthcare vertical where review velocity is unusable. Authority comes from named, registered clinicians and dated clinical review instead.",
+  "updated": "2026-09-02",
+  "published": "2026-09-02",
+  "answer": "Mental health clinics cannot run the review programme that drives dental and diagnostics SEO, because a public review identifies the patient. Authority has to come from named, registered clinicians and dated clinical review instead. The highest-intent cluster almost nobody has written is insurance — cover for mental illness, and how a family actually claims it.",
+  "takeaways": [
+    "**Review velocity is off the table here.** Asking a patient to publicly attach their name to a psychiatric consultation is asking them to disclose it, and your reply to that review discloses it again.",
+    "What replaces it is authorship: a real page per clinician, with the register they sit on and the number they're registered under. Psychiatrists and clinical psychologists sit on **different registers**, and conflating them is the mistake that gets a clinic written up.",
+    "Crisis queries belong on a page with no booking button and no tracking. We exclude them from the target keyword list deliberately, and we'd argue you should too.",
+    "**Insurance is the unwritten cluster.** Cover for mental illness is no longer optional in India, almost no clinic has written the page explaining it, and cost is the biggest single reason a first appointment doesn't get booked.",
+    "Assume the visitor won't call, won't give a real name, and doesn't want your message arriving on a phone the family shares."
+  ],
+  "sections": [
+    {
+      "h2": "The lever that works everywhere else in healthcare doesn't work here",
+      "body": [
+        "Nearly every local healthcare SEO plan we've seen sold in India runs on the same engine: complete the Google profile, then build a steady habit of asking patients for reviews. It works. For a dental clinic or a diagnostics lab it is the single most productive thing a small practice can do.",
+        "For a mental health clinic it collapses on contact with reality. A public review carries the reviewer's name and usually their face. Posting one is a disclosure — to an employer, a landlord, a marriage prospect, a family WhatsApp group. Most patients will not make it, and the ones who would should probably be talked out of it rather than prompted with a QR code at reception.",
+        "The reply is worse than the review. A merchant response is public, permanent and attributed to your clinic. \"Thank you, glad the sessions helped\" confirms that a named person was your patient. [Google's own Maps content policy prohibits posting someone's personal information without consent](https://support.google.com/contributionpolicy/answer/7400114), and the exception it carves out is for professionals operating publicly under their own names — the clinician, not the patient.",
+        "So: keep the profile immaculate, reply in a way that never confirms a clinical relationship, and stop treating review count as your growth number. Then put the effort somewhere it can compound."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The reply that costs you more than the review",
+        "body": "A one-star from a patient's relative is annoying. A warm, specific, grateful reply to a five-star is a data breach with a public URL. Write one standard response — neutral, non-clinical, no names, no reference to treatment — and use it every time, including on the good ones."
+      }
+    },
+    {
+      "h2": "Named clinicians and dated review, because there's nothing else",
+      "body": [
+        "With the review channel closed, the whole trust signal has to be carried on the site by the people who do the work. Most Indian mental health practices publish a team grid of first names and one line of qualifications, which carries nothing.",
+        "Google's guidance on this is unusually direct for a health topic: it asks whether bylines lead somewhere with real background on the author, and says it gives more weight to strong expertise signals on subjects that could affect someone's health or safety. A page written by \"Team\" is answering that question badly."
+      ],
+      "bullets": [
+        "**A page per clinician, not a row in a grid.** Full name, the degree, where it was taken, years in practice, the presentations they treat, the modalities they work in, languages, and the sessions they don't take.",
+        "**The right register, stated correctly.** A psychiatrist holds an MD or DNB in psychiatry and registers with a State Medical Council under the National Medical Commission. A clinical psychologist registers with the Rehabilitation Council of India and holds an RCI number. Counsellors and psychotherapists may hold neither. Publish the number for those who have one.",
+        "**Do not put \"Dr\" in front of a psychologist's name** unless the doctorate is real and the page says what it's in. It reads as a medical qualification to every patient in India, it's the complaint that lands hardest, and \"PhD (Clinical Psychology)\" costs you nothing.",
+        "**Dated clinical review on every content page.** Reviewed by, name, qualification, date — then re-reviewed annually. A review line from 2023 is a claim that nobody has looked since 2023.",
+        "**Mark it up.** `MedicalWebPage` carries `reviewedBy` and `lastReviewed` properties for exactly this, and `medicalAudience` lets you state whether a page is written for a patient or for a referring clinician."
+      ],
+      "subs": [
+        {
+          "h3": "The referral page most clinics forget",
+          "body": [
+            "A meaningful share of psychiatric volume in India arrives by referral — from a physician, a paediatrician, a corporate EAP — not from a patient's search. Referrers search differently: who takes adult ADHD assessments, who runs an inpatient unit, what the intake process is, how fast they can get someone seen.",
+            "One page addressed to them — scope, turnaround, how to send a case, what you send back — is usually the highest-value page on a psychiatry site and almost nobody writes it. It also gives you somewhere legitimate to publish clinical depth that would be inappropriate on a patient page."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Crisis queries: we leave them out of the target list on purpose",
+      "body": [
+        "Any keyword tool pointed at this category returns queries typed by people in acute distress. They have volume. They are also the one part of the map we refuse to build a marketing page for, and we'll say why plainly rather than dress it up as a technical decision.",
+        "Commercially they don't work. The searcher isn't choosing a clinic, they're national rather than local, they're often searching at 2am when your line is closed, and the search engines already put helpline panels above the organic results. Ethically it's simpler still: competing for a query typed by someone in crisis in order to route them into an enquiry pipeline is not something we're willing to sell.",
+        "What we build instead is one page, treated differently from everything else on the site."
+      ],
+      "numbered": [
+        "**Current helpline numbers, verified against the issuing authority's own listing**, not copied from another clinic's site. Re-check them every quarter and date the page. A dead helpline number published in good faith is the worst possible outcome here.",
+        "**No booking CTA, no form, no chat widget, no exit-intent popup.** The page has one job.",
+        "**No advertising or remarketing tags on that URL**, and exclude it from every audience you build. Following someone around the internet because of what they searched at 2am is indefensible.",
+        "**Link it from the header, not from the blog.** People in crisis do not navigate to `/resources`.",
+        "**Leave it out of the rank-tracking sheet.** It is not a performance page and treating it as one will eventually push somebody to optimise it."
+      ]
+    },
+    {
+      "h2": "The insurance cluster nobody in this category has written",
+      "body": [
+        "Ask any clinic administrator what kills a first appointment and the answer is cost — a course of therapy or a psychiatric admission is a real number nobody has budgeted for. Then look at what clinics publish about it: a fees page, sometimes, and nothing else.",
+        "Meanwhile the regulatory position has moved. Our reading of the Mental Healthcare Act, 2017 and the insurance regulator's subsequent directions is that cover for mental illness has to be offered on the same basis as cover for physical illness, and that insurers can no longer write it out of a policy. Verify the current position with your insurer and your legal adviser before publishing. But the demand is already there, and page one is currently written by aggregators who have never treated anyone.",
+        "This is the cluster we'd build first, ahead of any condition explainer: high-intent, commercially unclaimed, and genuinely useful."
+      ],
+      "table": {
+        "caption": "The insurance pages a mental health practice can own, and why each one converts.",
+        "head": [
+          "Page",
+          "What it has to answer",
+          "Why it books an appointment"
+        ],
+        "rows": [
+          [
+            "Is therapy covered by health insurance in India",
+            "OPD versus in-patient, what a typical policy does and does not include, and what changed after 2017.",
+            "It's the question that stops the enquiry. Answering it removes the reason to postpone."
+          ],
+          [
+            "Psychiatric hospitalisation and day-care cover",
+            "Minimum stay clauses, day-care procedure lists, sub-limits, waiting periods for pre-existing conditions.",
+            "The family is deciding under pressure and needs the mechanics, not reassurance."
+          ],
+          [
+            "Cashless versus reimbursement here",
+            "Whether you're empanelled, with which insurers, what the TPA needs, realistic approval time.",
+            "Highest intent on the site. The searcher has chosen a clinic type and is checking one thing."
+          ],
+          [
+            "What documentation a claim needs",
+            "Discharge summary, prescription, diagnosis coding, the forms, who signs, how fast you issue them.",
+            "It converts on competence. A clinic that documents this well will handle the claim."
+          ],
+          [
+            "Fees, without insurance",
+            "Session fee, assessment fee, admission per-day band, and what moves each number.",
+            "Half the audience pays out of pocket. The band pre-qualifies every enquiry that follows."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Date it, and say who checked it",
+        "body": "Insurance content ages badly and it's regulated territory. Put a visible last-reviewed date on every page in this cluster, name the person who checked it, and re-check annually. An out-of-date claims page does more damage in this category than no page at all."
+      }
+    },
+    {
+      "h2": "The searcher who will never call you",
+      "body": [
+        "The conversion problem here isn't weak copy. It's that a large share of the audience is deliberately anonymous — searching incognito, on a phone somebody else in the house might pick up, and not willing to ring a receptionist and say the words out loud.",
+        "Everything a normal local business does to capture a lead works against that person. A click-to-call button assumes they can speak freely. A WhatsApp-only enquiry route puts your clinic's name in a chat list on a shared device. A form asking for full name and reason for visit demands a disclosure before any trust exists. So the flow has to be rebuilt for privacy rather than for capture rate.",
+        "It also changes what you measure. Calls will look low forever; first appointments attended is the number. If you're wiring up channel tracking, the mechanics are in [tracking WhatsApp and phone leads in GA4](/answers/how-to-track-whatsapp-and-phone-leads-in-ga4), and the consent questions in [whether the DPDP Act applies to your analytics](/answers/does-the-dpdp-act-apply-to-website-analytics) bite harder here than anywhere else on the web."
+      ],
+      "bullets": [
+        "**Self-serve booking that needs a first name and one contact method, nothing else.** Collect history at intake, with a clinician, not on a public form.",
+        "**Offer a silent channel.** Email, or an in-page booking that sends no WhatsApp message unless asked. Say on the page which channel you'll reply on.",
+        "**Publish the fee band before the form.** Cost anxiety is the largest single drop-off, and hiding the number doesn't reduce it.",
+        "**Write \"what the first session is actually like\"** — how long, who's in the room, whether they have to talk about anything specific, what happens to their notes. Highest-converting page on most therapy sites, and it takes an afternoon.",
+        "**Don't retarget this audience.** Suppress the whole domain from remarketing, and say plainly on the booking page who sees the form and how long it's kept. There is no version of an ad for a de-addiction centre following someone onto a shared laptop that ends well."
+      ]
+    },
+    {
+      "h2": "What we'd do first, and what we actually commit to",
+      "body": [
+        "The sequence here is deliberately different from the one we'd run on a dental group. Profile and locality work still happens — proximity decides `psychiatrist near me` and you cannot out-write geography — but it stops being the growth engine after month one.",
+        "First: clinician pages with registers and numbers, plus the dated review line. Second: the insurance cluster, in the order in the table above. Third: the referrer page and the first-session page. Condition explainers come fourth, because everyone writes those and they're the least differentiated thing on the site. Set that against the general [healthcare SEO approach](/seo-for/healthcare) — the constraint changes the sequence, not the principles.",
+        "A single-location practice sits at the ₹40,000/mo end of our SEO pricing; a multi-city group or a de-addiction network with in-patient facilities is ₹75,000/mo and up, ex-GST, month-to-month after the first quarter.",
+        "We don't promise a ranking position, and in this category we won't promise a lead volume either — demand is seasonal and the audience is small. What we freeze on day one is your trailing-90-day count of qualified enquiries from organic search. If we haven't beaten it in 90 days, we keep working free until we do. We take three clients a month, which is the only reason that promise is worth anything."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "A realistic curve",
+        "body": "Profile and locality work can move within four to eight weeks. The insurance cluster typically takes three to five months to rank, because it competes with aggregator domains rather than with other clinics. Clinician pages rarely rank for much on their own — they raise the ceiling on everything else, which is a harder thing to put in a report and a real thing nonetheless."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can a mental health clinic ask patients for Google reviews?",
+      "a": "You can ask, and asking isn't against Google's policy. We'd argue against building a programme around it. A public review names the reviewer and your reply is public too, so a warm, specific response confirms a named person was a patient. Keep replies neutral, and don't make review count your growth metric."
+    },
+    {
+      "q": "What should a therapist's website page actually contain?",
+      "a": "Full name, the qualification and where it was taken, the register they're on with the registration number, presentations they treat, modalities, languages, session length and fee, and what they don't take. Then a dated review line. That's the whole trust argument on a site where patients can't vouch for you publicly."
+    },
+    {
+      "q": "Should a mental health clinic target crisis or suicide-related keywords?",
+      "a": "No. They're national rather than local, the search engines put helpline panels above the organic results anyway, and the person searching is not choosing a provider. Publish one crisis page with verified current helpline numbers, no booking CTA and no tracking, link it from the header, and keep it out of the performance reporting."
+    },
+    {
+      "q": "Why is insurance content worth writing for a psychiatry practice?",
+      "a": "Because cost is the reason first appointments don't get booked, cover for mental illness is now required to be offered on the same footing as physical illness, and almost no clinic has written the page. The queries are high-intent and currently answered by aggregators. Verify the position with your insurer, then date the page."
+    },
+    {
+      "q": "How do you generate leads when patients won't call or give their name?",
+      "a": "Reduce what the first step costs them. Ask for a first name and one contact method, publish the fee band before the form, offer a reply channel that isn't WhatsApp, and write plainly what the first session involves and what happens to their data. Then measure first appointments attended rather than calls."
+    },
+    {
+      "q": "Is local SEO still relevant for a therapy practice?",
+      "a": "Yes for the profile itself — proximity decides near-me searches and a complete listing is table stakes. What changes is that reviews can't be the engine. The profile gets you found; clinician pages, insurance content and the first-session page do the converting."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Creating helpful, reliable, people-first content",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Prohibited and restricted content",
+      "publisher": "Google Maps User Contributed Content Policy Help",
+      "url": "https://support.google.com/contributionpolicy/answer/7400114"
+    },
+    {
+      "title": "MedicalWebPage",
+      "publisher": "Schema.org",
+      "url": "https://schema.org/MedicalWebPage"
+    },
+    {
+      "title": "Guidelines for representing your business on Google",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/3038177"
+    }
+  ],
+  "related": [
+    { "type": "seo-for", "slug": "healthcare" },
+    { "type": "seo-for", "slug": "hospitals" },
+    { "type": "seo-for", "slug": "pharmaceutical-companies" },
+    { "type": "glossary", "slug": "e-e-a-t" },
+    { "type": "services", "slug": "google-business-profile-optimisation" },
+    { "type": "compare", "slug": "local-seo-vs-national-seo" },
+    { "type": "cost", "slug": "local-seo-cost" },
+    { "type": "answers", "slug": "does-the-dpdp-act-apply-to-website-analytics" }
+  ]
+}

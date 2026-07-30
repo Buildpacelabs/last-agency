@@ -1,0 +1,253 @@
+{
+  "slug": "site-reputation-abuse-and-paid-placements",
+  "type": "journal",
+  "primaryKeyword": "site reputation abuse google policy",
+  "secondaryKeywords": [
+    "parasite seo india news sites",
+    "sponsored section placement risk",
+    "buying placements on news domains",
+    "third party content on a strong domain"
+  ],
+  "cluster": "ai-surfaces",
+  "intent": "informational",
+  "h1": "The paid placement on a news site, and what site reputation abuse cost the buyers",
+  "metaTitle": "Site Reputation Abuse and Paid Placements",
+  "metaDescription": "The feature on a national news site is a rented subfolder. What Google's policy targets, what enforcement did to the buyers, and how to check yours.",
+  "updated": "2026-10-08",
+  "published": "2026-10-08",
+  "answer": "Site reputation abuse is Google's policy against third-party content published on a host site mainly to borrow that host's ranking signals. The manual action lands on the publisher, not the buyer — but the documented fixes are noindex, nofollow, relocation or deletion, so the ₹80,000 feature you bought stops existing.",
+  "takeaways": [
+    "The policy is about **why** third-party content is on a domain, not what the content says. Borrowed ranking signals are the offence.",
+    "It's a named entry in Google's spam policies and a named manual action type in Search Console — meaning a human at Google can apply it to a specific set of pages.",
+    "The buyer usually isn't penalised. The buyer just loses the asset, the link and the money, quietly, with no notification.",
+    "Google's own carve-outs are the best test you have: wire copy, syndicated news, user-generated content, editorial columns and merchant-sourced coupons are explicitly **not** the target.",
+    "If a placement is sold by an ad rate card and priced by the domain's authority score rather than its readership, you're buying rankings, not distribution."
+  ],
+  "sections": [
+    {
+      "h2": "What the policy targets, in mechanical terms",
+      "body": [
+        "Strip the nickname away — everyone calls it parasite SEO — and the mechanism is simple. A domain accumulates ranking signals over years by publishing its own work. Those signals attach to the domain, not only to the individual page. So a brand-new page on that domain starts life with an advantage that a brand-new page on your domain does not have.",
+        "That advantage is rentable. Somebody with a page that could never rank on its own pays to have it published on the strong domain instead, and it ranks — not because it deserves to, but because of where it sits.",
+        "Google's definition names exactly that. [Site reputation abuse is third-party content published on a host site mainly because of that host's already-established ranking signals](https://developers.google.com/search/docs/essentials/spam-policies), which the host earned primarily from its own first-party content. The test is the *reason the content is there*, not the quality of the writing. A well-written casino review on a medical domain is still the thing the policy describes.",
+        "The examples Google publishes are unusually blunt for a policy document: an educational institution hosting sponsored loan reviews written by an outside party, a medical site publishing third-party casino pages, a movie review site carrying unrelated pages about buying social media followers or essay-writing services, a news outlet running white-label coupon pages. If those sound like a description of the Indian publisher-placement market, that's because the market didn't invent anything new — it just scaled a pattern Google had already named."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "This is not the link spam policy",
+        "body": "Buying a link is a link problem, handled by Google's link spam systems, which mostly devalue the link. Site reputation abuse is a hosting problem, handled by a manual action against the host's pages. The same transaction can be both, which is why untangling who lost what takes a minute."
+      }
+    },
+    {
+      "h2": "How the offer arrives, and why it looks legitimate",
+      "body": [
+        "Nobody pitches this as a link buy. That's the whole design.",
+        "What lands in an Indian founder's inbox is a media opportunity. A feature on a national business daily. An interview in a technology publication you've actually read. Inclusion in an industry roundup on a domain your investors will recognise. It comes with a media kit, a rate card, monthly reach figures and a GST invoice, and it is sold by someone with the word *partnerships* in their title. Everything about the transaction is designed to feel like advertising, because in every commercial respect it is.",
+        "The tell is structural rather than moral. Look at where the content will live. Brand desks, partner content hubs, sponsored sections, press-release subfolders and white-label subdomains all sit on the strong domain and inherit its signals, while sitting outside the newsroom that earned them. The publisher gets revenue for shelf space. The agency reselling it gets a margin. You get a page that ranks for a while.",
+        "The prices we see quoted in India run from roughly **₹25,000 to ₹3,00,000 for a single placement**, and the spread is that wide for a reason worth noticing: it tracks the domain's authority score and its position in the SERP, not its readership or its editorial standards. A publication with genuine readers and a paywalled newsroom is priced against a content-farm subdomain purely on what a third-party tool says the domain is worth. When a media price is set by a link metric, you are not buying media."
+      ],
+      "bullets": [
+        "**\"Guaranteed publication.\"** No newsroom guarantees publication. An advertising department does.",
+        "**A rate card by domain rating.** Editorial coverage is priced by audience. Rented shelf space is priced by authority score.",
+        "**A dofollow link written into the deliverables.** The moment the link attribute is a contractual term, the product is the link.",
+        "**A dedicated subfolder or subdomain.** `/brand-post/`, `/partner/`, `/press-release/`, `promotions.example.com`. Sectioned off precisely so the newsroom isn't responsible for it.",
+        "**Volume.** The same seller can place you on eleven outlets this month. Eleven newsrooms did not independently decide you were interesting."
+      ]
+    },
+    {
+      "h2": "Enforcement lands on the host, which is why buyers never see it coming",
+      "body": [
+        "Site reputation abuse is a documented manual action type in Search Console. The report that describes it tells the *site owner* that a portion of their site violates the policy, and lists the ways out: relocate the third-party content to a separate domain with nofollow links, apply `noindex`, convert it into genuine first-party content, or remove it. Then file a reconsideration request.",
+        "Read that remedy list from the buyer's chair, because every option on it destroys what the buyer paid for."
+      ],
+      "table": {
+        "caption": "The documented remedies available to a penalised host, and what each one does to a placement someone paid for.",
+        "head": [
+          "What the host does",
+          "What happens to your page",
+          "What happens to your link"
+        ],
+        "rows": [
+          [
+            "Moves the section to a separate domain",
+            "It survives, on a domain with none of the ranking signals you were paying for.",
+            "Nofollowed as part of the fix. Value gone."
+          ],
+          [
+            "Applies `noindex`",
+            "Still live, still invoiced, invisible to search.",
+            "Nothing passes from a page Google won't index."
+          ],
+          [
+            "Rewrites it as first-party editorial",
+            "Becomes the publisher's article about you, on the publisher's terms.",
+            "Usually stripped or marked `nofollow` in the clean-up."
+          ],
+          [
+            "Deletes it",
+            "404. Occasionally without an email.",
+            "Gone, along with the referring domain."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "You will not be told",
+        "body": "Manual actions are reported in the host's Search Console, not yours. A publisher cleaning up a policy problem is not going to write to eighty former advertisers explaining why. The first signal most buyers get is a ranking that quietly stops, months later, with no event to attach it to."
+      }
+    },
+    {
+      "h2": "So what did it actually cost the buyers?",
+      "body": [
+        "Less than the panic suggested, and more than the sellers admit. Here is the honest accounting.",
+        "**Buyers were mostly not penalised.** The manual action is against the host's pages. We have not seen a case where a business took a site-wide penalty for having appeared in someone else's sponsored section, and the policy as written doesn't describe one. If your own domain is fine, that's not luck — that's the policy working as documented.",
+        "**Buyers lost the asset, entirely.** Whatever ranked, stopped ranking. The referring domain vanished from the backlink profile. The screenshot in the board deck now points at a 404 or an unindexed page. Money spent on a rented position buys nothing durable, which was always true and became visible all at once.",
+        "**Some buyers inherited a separate link problem.** If a paid placement's link was never marked, Google's guidance is unambiguous: links that are advertisements or paid placements should carry `rel=\"sponsored\"`. An unmarked paid link is a link scheme regardless of how the invoice was described. Google's systems mostly devalue those rather than penalising the buyer — which sounds like relief and is closer to the worst outcome, because nothing happens, no alarm goes off, and you keep paying.",
+        "**Agencies lost the deniability.** Plenty of Indian retainers had a line reading *authority building* or *PR placements* that resolved, in practice, to reselling these slots at a markup. That line is now much harder to defend in a review, which is a good outcome and a slow one."
+      ]
+    },
+    {
+      "h2": "Telling a genuine editorial placement from a rented subfolder",
+      "body": [
+        "Real editorial coverage on a strong domain is one of the best things that can happen to a business, and none of this argues against pursuing it. The distinction is checkable in about ten minutes, and Google's own carve-outs are the most useful starting point: wire services, syndicated news, user-generated content platforms, editorial columns, properly-attributed affiliate content and coupons sourced directly from merchants are all explicitly outside the policy. The pattern is that each of those has a legitimate reason to be on that domain that isn't the domain's rankings."
+      ],
+      "numbered": [
+        "**Who decided it would run?** If the answer involves an editor with a byline and the right to refuse, it's editorial. If it involves a rate card, it's inventory.",
+        "**Where does it live?** Check the URL path and the navigation. Content in the newsroom is the newsroom's. Content in `/partner-content/` is shelf space, and the publisher sectioned it off deliberately.",
+        "**How is it labelled?** A visible sponsorship label plus `rel=\"sponsored\"` on the links is a publisher behaving correctly. That combination also removes almost all of the SEO value, which tells you what the value was.",
+        "**Could you have been refused?** A pitch that can be rejected is PR. A slot that clears on payment is advertising with a byline.",
+        "**Does the outlet's audience overlap yours?** A genuine placement sends readers who might buy. If nobody in that audience is a plausible customer, the only thing being purchased is the domain."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The one-question version",
+        "body": "Would you still want this placement if the link were `nofollow` and the page carried a sponsorship label? If yes, it's marketing and you should probably buy it. If no, you were buying rankings on somebody else's domain, and the price of those went to zero."
+      }
+    },
+    {
+      "h2": "What to do if you already bought them",
+      "body": [
+        "Most of the businesses we talk to about this bought them years ago, on an agency's recommendation, and have no list. Start by building one — this is the same audit as [checking whether the backlinks your agency built are real](/answers/how-to-check-if-backlinks-your-agency-built-are-real), pointed at a narrower question."
+      ],
+      "numbered": [
+        "**List every placement you paid for.** Invoices, agency reports, Search Console's links report, a backlink tool for anything older. Note the date, the price and the exact URL.",
+        "**Check each URL is still indexed.** Search the exact URL in Google. Nothing returned means it's noindexed or gone, and the money is spent.",
+        "**Check the link attribute.** View source and look for `rel=\"sponsored\"` or `rel=\"nofollow\"`. Unmarked paid links are the ones with residual risk.",
+        "**Don't rush to disavow.** Disavowing is for a manual action against your own site or a real history of bought links at volume, and most sites should never touch the tool. A handful of publisher placements is not that.",
+        "**Fix the buying process, not the backlink profile.** The recurring cost here isn't the links; it's the budget line that keeps commissioning them. Cancel that first.",
+        "**If your own site has a manual action**, remedy it properly and file a reconsideration request. If it doesn't, you don't have a penalty problem — you have a wasted-spend problem, and those are fixed by different people."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Before you pay anyone to fix this",
+        "body": "Check the Manual actions report in Search Console yourself. It takes thirty seconds and it's the single fact that decides whether you need [penalty recovery](/services/penalty-recovery-services) or just a better media plan. Most sites sent to us for recovery have never had a manual action."
+      }
+    },
+    {
+      "h2": "The offer keeps coming back in new clothes",
+      "body": [
+        "This does not end, because the economics don't change. A publisher with declining ad revenue has a valuable domain and empty inventory. Someone will always want to rent it.",
+        "The shapes we see now: AI-generated third-party sections dropped onto trusted domains at volume; coupon and deals subfolders white-labelled onto media brands; \"expert contributor\" programmes on association and education domains; and the oldest one in India, the press-release portal that is technically a newsroom and functionally a link market. It's the same trade as [buying links outright](/compare/paid-links-vs-earned-links), routed through a media invoice, and it's a cousin of [the paid agency ranking lists](/journal/why-best-seo-agency-lists-are-paid) that sell position on the same logic.",
+        "It also matters more than it used to, for a reason nobody selling placements will mention. Assistants and AI answers lean on corroboration across sources. A page that gets noindexed, nofollowed or deleted contributes nothing to that, and a mention on a domain whose third-party sections are known to be for sale is a weak corroborating signal at best. Rented reputation was always a poor asset. It's now a poor asset in two systems instead of one."
+      ]
+    },
+    {
+      "h2": "Why we don't sell this, and how you can check",
+      "body": [
+        "We don't buy placements on news domains and we don't resell them. That's easy to say and hard to prove, so we've made it checkable: our [link building deliverables](/services/link-building-services) are published, including what we won't do and what one real placement costs in labour rather than in payment to a publisher. If we started quietly reselling brand-desk slots, that page would have to change, and it's public.",
+        "The reason isn't purity. It's that we sell a guarantee against your own frozen trailing-90-day organic lead baseline, and rented rankings are a terrible way to carry that risk. A placement that can be noindexed by someone else's compliance decision is not something to build a 90-day commitment on. The incentive and the ethics happen to point the same way, which is the only kind of ethics worth trusting in an agency.",
+        "If somebody has already sold you a package of these, the useful next step isn't outrage. It's the audit above, an honest read of what's still indexed, and a conversation about where that budget goes instead. In our experience that money buys considerably more as original data, a competent PR pitch, or simply pages on your own domain that answer questions your buyers are actually asking."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is site reputation abuse in simple terms?",
+      "a": "Publishing third-party content on someone else's strong domain mainly to borrow that domain's ranking signals. Google's spam policies name it directly. The test is why the content is there — not whether it's well written, and not whether money changed hands. A sponsored casino page on a hospital's domain is the textbook case."
+    },
+    {
+      "q": "Will I get penalised for buying a placement on a news site?",
+      "a": "Usually not directly. The site reputation abuse manual action is issued against the host's pages, not the advertiser's. What you lose is the placement itself, once the publisher noindexes, nofollows, relocates or deletes it. Separately, an unmarked paid link is a link scheme, and those are typically devalued rather than penalised."
+    },
+    {
+      "q": "How do I know if a paid placement is risky?",
+      "a": "Check where it lives and how it's priced. Content in a `/partner-content/` or `/brand-post/` subfolder, sold by a rate card keyed to domain authority rather than readership, with a dofollow link written into the deliverables, is rented shelf space. Editorial coverage you could have been refused, on a page an editor owns, isn't."
+    },
+    {
+      "q": "Is sponsored content allowed by Google at all?",
+      "a": "Yes. Sponsored and advertising content is fine when it's labelled and its links carry `rel=\"sponsored\"`. Google's carve-outs also explicitly exclude wire copy, syndicated news, user-generated content, editorial columns and merchant-sourced coupons. What the policy targets is third-party content placed on a domain mainly to use that domain's rankings."
+    },
+    {
+      "q": "Should I disavow links from placements I bought?",
+      "a": "Almost certainly not. Google's guidance is that most sites should never use the disavow tool. It's for a manual action against your own site, or a genuine history of bought links at scale. A handful of publisher placements doesn't qualify, and disavowing them changes nothing except your confidence that you did something."
+    },
+    {
+      "q": "How do I check whether my site has a manual action?",
+      "a": "Open the Manual actions report in Google Search Console for your property. If it says no issues detected, you don't have a manual action — whatever a cold-email agency has told you about your backlink profile. If it names site reputation abuse, that applies to third-party content you're hosting, not to placements you bought elsewhere."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Spam policies for Google web search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "date": "2026-05-15"
+    },
+    {
+      "title": "Manual actions report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9044175"
+    },
+    {
+      "title": "Qualify your outbound links to Google",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Reconsideration requests",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/35843"
+    },
+    {
+      "title": "Google Search Essentials",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials",
+      "date": "2025-12-10"
+    }
+  ],
+  "related": [
+    {
+      "type": "compare",
+      "slug": "paid-links-vs-earned-links"
+    },
+    {
+      "type": "glossary",
+      "slug": "toxic-backlinks"
+    },
+    {
+      "type": "services",
+      "slug": "link-building-services"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-check-if-backlinks-your-agency-built-are-real"
+    },
+    {
+      "type": "journal",
+      "slug": "should-you-charge-ai-crawlers"
+    },
+    {
+      "type": "compare",
+      "slug": "guest-posting-vs-digital-pr"
+    },
+    {
+      "type": "services",
+      "slug": "penalty-recovery-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "guest-posting"
+    }
+  ]
+}

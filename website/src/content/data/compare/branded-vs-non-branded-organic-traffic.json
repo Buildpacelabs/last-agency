@@ -1,0 +1,255 @@
+{
+  "slug": "branded-vs-non-branded-organic-traffic",
+  "type": "compare",
+  "primaryKeyword": "branded vs non branded organic traffic",
+  "secondaryKeywords": [
+    "search console regex for brand queries",
+    "how much of my organic traffic is brand",
+    "is my agency counting brand search as growth",
+    "healthy brand to non brand ratio"
+  ],
+  "cluster": "metrics-and-tools",
+  "intent": "informational",
+  "h1": "Branded vs non-branded organic traffic: the split that decides whether SEO did anything",
+  "metaTitle": "Branded vs Non-Branded Organic Traffic Split",
+  "metaDescription": "Brand search rises with every offline campaign and makes any agency look good. The Search Console split, two misspelling traps, and the ratio to expect.",
+  "updated": "2026-08-24",
+  "published": "2026-08-24",
+  "versus": {
+    "a": "Branded organic traffic",
+    "b": "Non-branded organic traffic",
+    "verdict": "Branded clicks measure demand you already created somewhere else, so they belong in the report as context and nowhere near the baseline; hold every SEO engagement to non-branded clicks and the qualified leads that follow them, split with a regex you wrote yourself and can audit."
+  },
+  "answer": "Branded organic traffic is people searching your company name; non-branded is people searching the problem you solve. Only the second one is evidence that SEO worked, because brand search rises with every ad, podcast and trade show. Split them with a custom regex filter in Search Console — Google Analytics alone cannot do it.",
+  "takeaways": [
+    "Brand queries respond to advertising, PR and word of mouth. Counting them as SEO growth means an agency can be paid for a campaign someone else ran.",
+    "Search Console's query filter accepts a custom regex, matching is case-insensitive by default, and that one filter is the whole method.",
+    "Two things break the split every time: brand names made of ordinary words, and Hindi or phonetic spellings of the brand.",
+    "GA4 has no query dimension of its own. Without a Search Console link there is no split, which is why so many reports quietly skip it."
+  ],
+  "sections": [
+    {
+      "h2": "Two buckets, and only one of them is evidence",
+      "body": [
+        "A branded query contains your company name or something close enough to it: `last agency`, `lastagencyhere`, `last agency pricing`, `last agency reviews`. A non-branded query doesn't: `seo agency in bangalore`, `how much does seo cost in india`, `what is a canonical tag`.",
+        "The distinction matters because the two buckets are fed by completely different machines. Brand search is demand that already exists — someone heard of you at a trade show, saw a Meta ad, read a founder's LinkedIn post, was referred by a customer, or watched thirty seconds of a podcast. They then use Google as a very expensive address bar.",
+        "Non-brand search is demand you didn't create. Somebody had a problem, described it to Google, and your page was the answer. That's the only bucket SEO can honestly claim, and it's the one that scales past the people who already know you exist.",
+        "Which sets up the conflict. Run a television campaign, hire a PR firm, put the founder on a popular podcast, or simply have a good quarter, and branded search rises. If your agency reports total organic clicks, it just got paid for all of it."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The report to be suspicious of",
+        "body": "\"Organic traffic up 41% this quarter.\" Ask which share of the increase was queries containing your brand name. If the agency can't produce that number in the same meeting, they either haven't looked or they'd rather you didn't."
+      }
+    },
+    {
+      "h2": "The regex, written out",
+      "body": [
+        "Search Console does this natively and free. Open the Performance report, add a Query filter, and choose Custom (regex) rather than Contains. [The RE2 syntax is used, and matching is not case-sensitive by default](https://support.google.com/webmasters/answer/17011165) — which saves you writing every capitalisation variant.",
+        "Then run the same regex twice: once with **Matches regex** to get your branded numbers, once with **Doesn't match regex** to get non-branded. Two exports, one subtraction, done in about four minutes."
+      ],
+      "numbered": [
+        "Start with the brand itself, spaced and unspaced: `last\\s*agency`.",
+        "Add the domain and any name you trade under: `lastagencyhere|last agency here`.",
+        "Add the misspellings people actually type. Get them from Search Console itself: filter queries by **Contains** on a three-letter stem of your brand and read what comes back. Real ones, not imagined ones.",
+        "Add anything a phone keyboard autocorrects your name into. If your brand is a normal word, this list is long.",
+        "Join every alternative with the pipe character and check the total click count still looks sane: `last\\s*agency|lastagency|lastagencyhere|lasagency|lastagancy`.",
+        "Save it somewhere the whole team uses — the contract, the reporting doc, the dashboard config. A regex that changes between months makes the trend line meaningless."
+      ],
+      "bullets": [
+        "Escape any dot, plus, brackets or hyphen in your brand with a backslash. `a\\.b\\.c` and `a.b.c` are different expressions; the second matches almost anything.",
+        "Include your product names and your founders' names if people search those to reach you. They're brand demand, not category demand.",
+        "Prepend `(?-i)` only if you genuinely need case-sensitive matching. Almost nobody does.",
+        "Search Console's [Performance report](/glossary/google-search-console) holds 16 months, so build the split once and you get a year-over-year comparison immediately."
+      ]
+    },
+    {
+      "h2": "The two traps that quietly break the split",
+      "body": [
+        "Both of these are common in India specifically, and both make the branded bucket look far smaller than it is — which flatters the agency."
+      ],
+      "subs": [
+        {
+          "h3": "Trap one: a brand made of ordinary words",
+          "body": [
+            "Plenty of Indian companies are named things like Precision Engineering, Sunrise Industries, National Traders or Metro Tubes. Match on `precision engineering` and you sweep in every person searching for precision engineering as a category — genuine non-brand demand — and file it as brand.",
+            "The fix is a second condition rather than a broader one. Require the brand phrase plus a brand-shaped tail: `\\b(precision engineering)\\b.*(pvt|ltd|limited|reviews|contact|address|careers|price list|catalogue)` and, separately, `\\bprecision engineering\\b` on its own only if the click-through rate on those queries is obviously brand-like — 30%+ with you in position one.",
+            "If you genuinely can't separate the two, say so in the report rather than picking whichever reading suits you. An honest \"14% of queries are ambiguous, here's the range\" is worth more than a false clean number."
+          ]
+        },
+        {
+          "h3": "Trap two: Hindi, Devanagari and phonetic spellings",
+          "body": [
+            "This one is missed almost universally. Indian buyers search brand names in Devanagari, in Roman transliteration, and in whatever spelling their keyboard suggested. A brand called Rajdhani gets searched as `rajdhani`, `राजधानी`, `rajdhaani`, `raajdhani` and `rajdani`, and only the first is in most agencies' regex.",
+            "The same applies to Tamil, Telugu, Bengali, Gujarati and Marathi scripts if you sell into those markets. Search Console reports the query as typed, so the Devanagari string is sitting right there in your export.",
+            "Practical method: export twelve months of queries, sort by clicks, and read the top 300 by hand once. It takes twenty minutes and you'll find spellings you'd never have guessed. Then add them to the regex and never do it again for a year."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Don't forget the support queries",
+        "body": "`brand login`, `brand customer care`, `brand tracking`, `brand careers`, `brand app download` are all brand demand. For consumer businesses they can be the majority of organic clicks, and leaving them in the non-brand bucket makes a flat year look like a good one."
+      }
+    },
+    {
+      "h2": "What a healthy non-brand share actually looks like",
+      "body": [
+        "There is no published benchmark worth quoting here, and anyone who gives you one to two decimal places is making it up. What follows is what we see across Indian accounts we've audited, stated as ranges with the reasoning attached. Treat it as a sanity check, not a target."
+      ],
+      "table": {
+        "caption": "Rough non-branded share of organic clicks by company stage, from accounts we have audited.",
+        "head": [
+          "Stage",
+          "Non-brand share",
+          "What it usually means"
+        ],
+        "rows": [
+          [
+            "Pre-launch or brand-new site",
+            "10–30%",
+            "Almost everything is people who already know you. Normal, and not a failure."
+          ],
+          [
+            "SMB, 1–3 years of content",
+            "40–65%",
+            "The healthy working range. SEO is contributing new demand."
+          ],
+          [
+            "Established brand with heavy ATL or PR",
+            "20–40%",
+            "Not a problem on its own. Brand search is large because the brand is large."
+          ],
+          [
+            "Ecommerce or D2C at scale",
+            "30–55%",
+            "Category and product queries carry the non-brand side; brand rises with every ad flight."
+          ],
+          [
+            "Publisher or content-led business",
+            "70–90%",
+            "Almost all demand is discovered, not remembered. A falling share signals a traffic problem."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Direction beats level.** A non-brand share moving from 38% to 47% over two quarters is good news at any absolute level. A share that never moves means content isn't reaching new people.",
+        "**Watch the absolute number too.** Non-brand share can rise because brand search collapsed. Always read the two counts, not just the ratio.",
+        "**Seasonality is real.** Manufacturing and B2B categories in India move with the financial year and with festival shutdowns. Compare like months, not consecutive ones."
+      ]
+    },
+    {
+      "h2": "Why GA4 can't produce this split on its own",
+      "body": [
+        "This is the reason the split goes missing from so many reports, and it isn't always dishonesty. It's a tooling limit.",
+        "Google Analytics has no search-query dimension for organic Google traffic. The query never reaches the browser, so no tag can capture it. GA4 can tell you a session came from `google / organic`, and nothing about what the person searched to get there. Grouping by landing page is a poor substitute, because one page serves brand and non-brand queries at once.",
+        "You can link a Search Console property to an Analytics web data stream, which surfaces query data inside two Analytics reports. Even then the queries only pair with a handful of dimensions — landing page, device, country — and they don't join to your key events. So you still cannot say \"non-brand organic produced 11 qualified leads last month\" from GA4 alone.",
+        "The workable arrangement is boring and it works: take clicks and queries from Search Console, take leads and revenue from your CRM, and join them on landing page and date. Analytics sits in the middle as the behavioural layer, not as the source of truth. There's more on [why the two tools never agree](/compare/ga4-vs-search-console) if the discrepancy is what's bothering you."
+      ]
+    },
+    {
+      "h2": "How we report it, and why our guarantee depends on it",
+      "body": [
+        "We freeze one number on day one: your trailing-90-day qualified leads from organic search. Not traffic, not rankings, and specifically not branded organic. If we haven't beaten that number in 90 days, we keep working free until we do.",
+        "That commitment only means something if brand search is excluded, and the reason is uncomfortable for us. Suppose you appear on a well-watched podcast in month two. Brand search doubles. Total organic leads jump. If our baseline counted brand, we'd have won a guarantee we did nothing to earn, and you'd have paid a bonus to the wrong team.",
+        "So the regex goes into the engagement document before work starts, alongside the frozen number. You can read it, argue with it, and audit it in your own Search Console at any point. If we want to change it mid-engagement, we have to ask, and the old version stays in the report as a comparison.",
+        "Every monthly report we send carries four lines above everything else: non-brand clicks, brand clicks, qualified leads from organic, and the baseline. Charts come after. The [full reporting standard](/services/seo-reporting-services) covers the rest, and [how to set a baseline](/journal/how-to-set-an-seo-baseline) covers the day-one exercise."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The one question worth asking your current agency",
+        "body": "\"Send me last month's organic clicks split into brand and non-brand, with the regex you used.\" A team that already reports it replies in an hour. A team that doesn't will send you a chart of total sessions instead, and that answer is the finding."
+      }
+    },
+    {
+      "h2": "The verdict",
+      "body": [
+        "Branded organic traffic belongs in your report as context — it tells you whether the market is thinking about you at all, and a sudden fall is an early warning worth having. It does not belong in an SEO baseline, an agency bonus calculation, or any sentence beginning \"organic is up\".",
+        "Non-branded organic clicks, and the qualified leads that follow them, are the number to hold an engagement to. They're harder to move, slower to move, and impossible to inflate with someone else's campaign, which is exactly what makes them worth measuring.",
+        "Build the regex once, put it in writing, and re-read the top queries every twelve months. It's the cheapest piece of honesty available in SEO reporting, and it takes an afternoon."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I separate branded and non-branded traffic in Search Console?",
+      "a": "Open the Performance report, add a Query filter and choose Custom (regex). Enter a pattern covering your brand name, its unspaced form, your domain and the common misspellings. Run it once with Matches regex for branded, once with Doesn't match regex for non-branded, and export both."
+    },
+    {
+      "q": "Can GA4 show branded vs non-branded organic traffic?",
+      "a": "Not on its own. Google organic search queries never reach the browser, so GA4 has no query dimension for them. Linking a Search Console property surfaces query data in two Analytics reports, but those queries pair with only a few dimensions and don't join to your key events."
+    },
+    {
+      "q": "What is a good ratio of branded to non-branded traffic?",
+      "a": "There's no universal number. Across Indian accounts we've audited, 40–65% non-brand is a healthy working range for an SMB with a couple of years of content, while publishers sit at 70–90% and heavily advertised consumer brands sit lower. Direction over two quarters matters more than the level."
+    },
+    {
+      "q": "Should branded traffic be part of an SEO agency's KPIs?",
+      "a": "As a reported figure, yes — a falling brand-search trend is worth catching early. As the number the contract is judged on, no. Brand search moves with advertising, PR and word of mouth, so paying an SEO team for it means paying them for someone else's work."
+    },
+    {
+      "q": "My brand name is a common word. How do I split the traffic?",
+      "a": "Match the brand phrase together with brand-shaped tails — pvt, ltd, reviews, contact, careers, price list — rather than widening the pattern. Where queries stay genuinely ambiguous, report them as a third bucket with its size stated. An honest range beats a clean number that's wrong."
+    },
+    {
+      "q": "Does this matter for a business that gets almost no brand search?",
+      "a": "It matters more, not less. With little brand search, total organic and non-brand organic are nearly the same figure today — but the first campaign, funding announcement or press mention changes that overnight. Set the split up before that happens, so the baseline stays comparable."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Performance report (Search results): Advanced filtering and comparison",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/17011165"
+    },
+    {
+      "title": "Performance report (Search results): Overview and basic setup",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7576553"
+    },
+    {
+      "title": "Connect Search Console to Google Analytics",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/10737381"
+    },
+    {
+      "title": "Syntax",
+      "publisher": "RE2 (google/re2 wiki)",
+      "url": "https://github.com/google/re2/wiki/Syntax"
+    }
+  ],
+  "related": [
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "compare",
+      "slug": "keyword-rankings-vs-organic-traffic"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    },
+    {
+      "type": "glossary",
+      "slug": "impressions"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-read-an-seo-report"
+    },
+    {
+      "type": "services",
+      "slug": "seo-reporting-services"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-you-measure-seo-success"
+    }
+  ]
+}

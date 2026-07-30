@@ -1,0 +1,335 @@
+{
+  "slug": "how-to-write-a-content-brief",
+  "type": "journal",
+  "primaryKeyword": "how to write a content brief for seo",
+  "secondaryKeywords": [
+    "seo brief for a freelance writer",
+    "what to put in a content brief",
+    "serp derived depth not word count",
+    "answer paragraph for a writer"
+  ],
+  "cluster": "content-ops",
+  "intent": "informational",
+  "h1": "How to write a content brief a writer can actually work from",
+  "metaTitle": "How to Write a Content Brief for SEO",
+  "metaDescription": "SEO happens in the brief, not the edit. The fields we hand a ₹2–₹4 per word writer so the draft comes back usable instead of needing a full rewrite.",
+  "updated": "2026-09-28",
+  "published": "2026-09-28",
+  "answer": "A usable brief names one query, one reader, the sub-questions the ranking pages already cover, the entities that must appear, the exact internal links with their anchor text, and a 40–60 word answer paragraph written for the writer rather than left to them. It takes about forty minutes and prevents a rewrite that costs a day.",
+  "takeaways": [
+    "SEO happens in the brief. By the edit you're paying twice to fix a frame you chose badly, and the writer gets blamed for a decision they never made.",
+    "**Depth comes off the SERP, not off a tool's word-count target.** Give the writer the sub-questions to cover. The word count is whatever covering them takes.",
+    "Entities are non-negotiable; word count isn't. Reverse that and you get 2,000 padded words that never mention the four things the query is actually about.",
+    "**Write the answer paragraph yourself**, and give internal links as a URL plus the anchor. \"Link internally where relevant\" reliably produces three links to the homepage."
+  ],
+  "sections": [
+    {
+      "h2": "What a bad brief costs, in rupees",
+      "body": [
+        "A 1,500-word article from a competent SEO writer costs ₹3,000 to ₹6,000 in drafting at the ₹2–₹4 per word band, and around ₹11,000 all in once you've paid for research, an edit, images and publishing — the full arithmetic is on our page about [what content writing costs in India](/cost/content-writing-cost-india). The brief inside that number is about ₹1,500 and forty minutes of a strategist's time.",
+        "A draft that comes back wrong costs the drafting fee again, plus the editor's day, plus two weeks of calendar. The brief is the cheapest line in the operation and the only one that decides whether the other lines were worth paying.",
+        "Here's the part worth sitting with: in our experience the drafts that come back unusable are almost never a writing problem. The prose is fine. The piece is about the wrong thing, at the wrong depth, aimed at the wrong reader — three failures that were all available to catch before anyone opened a document. That's a briefing failure wearing a writer's name, and it repeats, because the fix everyone reaches for is a better writer rather than a better brief."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The three ways a draft comes back wrong",
+        "body": "Wrong format — you wanted a comparison table and got an essay. Wrong depth — 900 words against three ranking pages that all run 2,500 with original screenshots. Wrong reader — written for a marketer when the query is typed by a founder who has never heard of a canonical tag. All three are brief fields, not writing skills."
+      }
+    },
+    {
+      "h2": "The template, field by field",
+      "body": [
+        "This is the document we hand over. Twelve fields, one page, no attachments except the SERP screenshots.",
+        "The right-hand column is the one to read. Every blank field has a predictable failure mode, and after a few hundred briefs you can tell which field somebody skipped just by reading the draft."
+      ],
+      "table": {
+        "caption": "The twelve fields, and what goes wrong when each one is left blank.",
+        "head": [
+          "Field",
+          "What goes in it",
+          "What happens when it's blank"
+        ],
+        "rows": [
+          [
+            "Primary query",
+            "One query, in the words a person types. Not a theme, not a topic, not five variants.",
+            "The writer covers a topic. Topics don't rank; pages that answer a question do."
+          ],
+          [
+            "The reader",
+            "One person, one sentence. \"A founder of a 20-person services firm, burned by an agency once already.\"",
+            "The draft addresses \"businesses\" and lands nowhere. The field that most changes the prose."
+          ],
+          [
+            "The job of the page",
+            "Rank, convert, or support something else that ranks. Pick one.",
+            "A page that sells in the middle of an explanation and ranks for nothing."
+          ],
+          [
+            "Format",
+            "The shape the SERP is already rewarding: comparison table, step-by-step, definition-first, opinion.",
+            "The writer picks the format they enjoy writing. It's usually an essay."
+          ],
+          [
+            "The answer paragraph",
+            "40–60 words, written by you, verbatim. See below.",
+            "The writer guesses the frame, and every section after it inherits the guess."
+          ],
+          [
+            "Sub-questions to cover",
+            "The H2 list, derived from what ranks. Six to nine items, phrased as questions.",
+            "Depth becomes a word count, and word counts get padded."
+          ],
+          [
+            "Entities that must appear",
+            "The named things the page cannot credibly omit. Non-negotiable.",
+            "A long page that never mentions the four nouns the query is about."
+          ],
+          [
+            "Internal links",
+            "Exact URL, exact anchor, roughly where it belongs.",
+            "Three links to the homepage and one to a page deleted last year."
+          ],
+          [
+            "Evidence rules",
+            "Which sources are allowed, and whether a number needs a citation.",
+            "Confident, plausible, unsourced claims — the most expensive kind to catch late."
+          ],
+          [
+            "What not to say",
+            "Claims legal won't sign, competitor names, guarantees you can't honour, banned house words.",
+            "An edit round about tone that should have been a line in the brief."
+          ],
+          [
+            "Word range, as an output",
+            "\"Probably 1,400–1,800, given the sub-questions above.\" A consequence, not a target.",
+            "Padding, if it's a floor. Amputation, if it's a ceiling."
+          ],
+          [
+            "Deadline and review contract",
+            "The date, who reviews, how many rounds are included, and what counts as done.",
+            "Four rounds of drift, and a freelancer who quietly deprioritises you."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "One query per brief",
+        "body": "The most common thing we're asked to fix is a brief carrying four queries \"since they're all related\". They're related to you. To a search engine they are four pages or one page with a confused primary — and a confused primary is how a site ends up competing with itself six months later."
+      }
+    },
+    {
+      "h2": "Depth is read off the SERP, not off a word-count tool",
+      "body": [
+        "Most content tools hand you a suggested word count — usually the mean length of the top ten results, sometimes with a helpful instruction to beat it. It's the most damaging number in content operations, because it converts a judgement about coverage into a target about volume, and volume is easy to hit dishonestly.",
+        "Google is unusually direct about this. Its guidance on people-first content asks, in a list of things that indicate content made for search engines rather than people, whether [you are writing to a particular word count because you've heard Google has a preferred one](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) — and answers, in brackets, that it doesn't.",
+        "So the brief carries no word count as an instruction. It carries the sub-question list, and that list comes from reading what currently ranks: open the top five results, note every distinct question each one answers, keep the ones appearing more than once, and add the ones you can answer better than any of them. Ten minutes, and the output goes into the brief unedited:"
+      ],
+      "bullets": [
+        "**Cover, because all three ranking pages do:** what the thing is, what it costs, how long it takes, who it's for.",
+        "**Cover, because two of three do and the omission is visible:** what goes wrong, and how to tell early.",
+        "**Cover, because nobody does and we can:** the actual numbers from our own engagements, and the case for not doing it at all.",
+        "**Deliberately skip, because the SERP has moved on:** the history section every 2021 page still opens with.",
+        "**Count the sub-questions, not the H2s.** Google's starter guide is equally unbothered about heading counts — there is no ideal number — so let the writer collapse two questions into one section if the argument runs better that way."
+      ],
+      "subs": [
+        {
+          "h3": "Then state the range as a consequence",
+          "body": [
+            "\"Nine sub-questions, three of which need a worked example. Probably 1,600–2,000 words. If you can do it in 1,300 without dropping one, do it in 1,300 and we'll pay the same fee.\"",
+            "That last clause matters more than it looks. Pay per piece, not per word, the moment you're briefing to coverage — otherwise you've handed a writer a financial reason to argue with your brief."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The entity list, and how to build it without a paid tool",
+      "body": [
+        "An [entity](/glossary/entity-seo) is a thing rather than a string — a company, a product, a law, a metric, a place, a person. For briefing purposes the practical version is simple: there's a set of named things a credible page on this query cannot omit, and a writer who has never done the job will omit half of them. A page about Indian invoicing that never mentions GSTIN, the IRP or an e-invoice threshold reads as written by somebody who has never raised an invoice in India, because it was.",
+        "You don't need a subscription to build the list. Twenty minutes and four free sources:"
+      ],
+      "numbered": [
+        "**The ranking pages.** Open the top five and write down every proper noun, statute, metric, tool, threshold and price appearing in more than one of them. Repetition across independent pages is the signal.",
+        "**People Also Ask and Related searches.** Expand every PAA and record the nouns inside the questions rather than the questions themselves — the questions are your sub-question list, the nouns are your entity list.",
+        "**Autocomplete.** Type the query and step through the alphabet a letter at a time. Slow, free, and it surfaces the qualifiers real people attach: city names, brands, years, price points.",
+        "**The client's own vocabulary.** Ten minutes of a sales call recording, or the objection-handling slides. This is where the entities live that competitors haven't published — the only part of the list that's genuinely yours.",
+        "**Then cut it.** Forty mandatory entities is a keyword-density instruction in a better costume. Twelve to eighteen is a list a writer can honour naturally; beyond that they start bolting nouns onto sentences and you can hear it."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Mandatory means mandatory, and that's the point",
+        "body": "Word count is negotiable in both directions. The entity list isn't. If the writer can't work one in without forcing it, that's a real finding — either the entity doesn't belong on this page, or the page is angled wrong. Either way it's a two-minute conversation before drafting, not a rewrite after."
+      }
+    },
+    {
+      "h2": "Write the answer paragraph yourself. It's the field that saves the most time.",
+      "body": [
+        "Every page we publish opens with a 40 to 60 word answer to the query. Whoever did the SERP reading writes it — not the writer, and not the editor afterwards.",
+        "The reasoning is about information, not seniority. By the time you've read five ranking pages you know what the query wants and which claim the top result leads with. The writer has read a brief. Asking them to open with the sharpest possible answer to a SERP they haven't seen is asking them to guess, and a wrong guess in the first paragraph poisons every section after it, because writers — reasonably — write the rest of the piece to support the opening they were given.",
+        "Sixty words takes four minutes and removes the most expensive class of revision there is: the one where the draft is well-written, structurally sound, and arguing for the wrong thing.",
+        "It also does the on-page work. A direct, self-contained answer near the top is what a [featured snippet](/glossary/featured-snippet) or an AI answer lifts. You can't mark a page up to earn one — Google's documentation says its systems decide — but you can make the answer trivially liftable, and that costs nothing.",
+        "Three rules for the paragraph:"
+      ],
+      "bullets": [
+        "**Answer in the first sentence.** No scene-setting, no \"there are several factors\". If the honest answer is a range, open with the range.",
+        "**Make it self-contained.** It has to make sense with nothing above it and nothing below it, because that's how it will be read.",
+        "**Put a number or a named thing in it.** \"It depends on your goals\" is not an answer, it's an invoice waiting to happen."
+      ]
+    },
+    {
+      "h2": "Internal links go in as URLs and anchors, not as a suggestion",
+      "body": [
+        "\"Add internal links where relevant\" is the most ignored line in content briefing, and when it isn't ignored it produces worse results than ignoring it: three links to the homepage, one to a category page, and one to an article that was consolidated away in March.",
+        "The writer isn't the right person to make this call, and it isn't their job to be. They can't see your Search Console, they don't know which page you're strengthening this quarter, and they have no view of what already links where. So the brief carries the finished instruction — exact URL, exact anchor text, and roughly where it belongs.",
+        "Anchor text is the part worth specifying precisely. Google's link guidance is explicit that good link text is descriptive and relevant to the page it points at, and that generic text like \"click here\" tells nobody anything. Leave the anchor to the writer and you get \"this article\" — a link carrying no meaning to a skimming reader or to anything parsing the page."
+      ],
+      "table": {
+        "caption": "How internal links appear in our briefs — three columns, no ambiguity.",
+        "head": [
+          "Anchor text",
+          "Target",
+          "Where it goes"
+        ],
+        "rows": [
+          [
+            "what content writing costs in India",
+            "`/cost/content-writing-cost-india`",
+            "First section, where the rate bands come up."
+          ],
+          [
+            "entity",
+            "`/glossary/entity-seo`",
+            "First mention of entities. Definitional link, keep it short."
+          ],
+          [
+            "internal linking beats link building",
+            "`/journal/internal-linking-beats-link-building`",
+            "Anywhere the argument for internal links is made. Once only."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Two to four internal links in a 1,500-word piece**, and vary the anchor across pages — five pages pointing at one target with an identical anchor reads as a pattern, because it is one. The argument for why internal links matter this much is in [internal linking beats link building](/journal/internal-linking-beats-link-building).",
+        "**Name the outbound sources too.** If a claim needs a citation, say which document, or you'll get a link to whichever blog ranked first that morning."
+      ]
+    },
+    {
+      "h2": "What to leave out of the brief",
+      "body": [
+        "A brief can fail by being too thin. It can also fail by being so complete that the writer becomes a typist, at which point you're paying ₹4 a word for transcription and you'd get a better page writing it yourself.",
+        "These are the fields we've removed over time, each because it made drafts worse:"
+      ],
+      "bullets": [
+        "**Keyword frequency or density targets.** There is no target. The instruction produces sentences that a human can hear being optimised, and it has produced nothing else for a decade.",
+        "**A list of \"LSI keywords\" from a tool.** Semantically-related terms are an output of writing well about a subject, not an input you sprinkle in. The entity list already does this job honestly.",
+        "**Verbatim H2 wording.** Give the sub-question; let the writer phrase the heading. A writer who can't phrase a heading can't write the section under it either, and you want to find that out.",
+        "**The competitor article, attached.** Attach it and you'll get a paraphrase of it. Give your own notes on what it covers and where it's weak.",
+        "**A tone paragraph full of adjectives.** \"Authoritative yet approachable\" means nothing. Two links to pieces you liked, and one line on why, beats any adjective list."
+      ]
+    },
+    {
+      "h2": "A ₹2 brief and a ₹6 brief are different documents",
+      "body": [
+        "Same template, filled to a different depth. The rate band decides how much of the thinking you're buying rather than supplying, and briefing both writers identically wastes money in one direction or quality in the other.",
+        "At ₹1.50 to ₹3 a word you're buying drafting. Supply the structure, the answer paragraph, the entities, the links and the sources. The writer's job is turning a specification into readable English, and a good one does that very well.",
+        "At ₹5 to ₹8 — a subject-matter specialist, a CA writing tax pages, a doctor writing clinical ones — you're buying knowledge you cannot brief into anyone. Over-specify and you flatten the only thing you're paying for. Give them the query, the reader, the constraints and the internal links, then get out of the way; the entity list becomes a checklist you run after the draft rather than a rule they write against. The expensive middle failure is paying specialist rates and handing over a generalist's brief. The draft arrives correct, generic, and worth about ₹2 a word."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "Judge the brief, not the writer",
+        "body": "Track how much of each draft survives the edit. If more than roughly a third is being rewritten, and it's happening across several writers, the brief is the variable — not the people. Swapping writers at that point is an expensive way to keep the same problem."
+      }
+    },
+    {
+      "h2": "How we know a brief worked",
+      "body": [
+        "Two checks, one immediate and one slow.",
+        "The immediate one is the edit ratio. A well-briefed draft comes back needing a real edit — tightening, a cut, a better example — not a re-argument. When the editorial conversation is about sentences, the brief did its job. When it's about what the page is for, it didn't.",
+        "The slow one is at week eight, and it's a smaller claim than most people make for it: did the page get indexed, does it appear for the primary query at all, and are the impressions arriving on that query rather than a stray one. Position at week eight tells you little. Presence tells you whether the page is about what you said it was about, which is the only thing a brief could ever have controlled. And judge the template, not the page — one brief is noise, thirty run to the same template over two quarters is a process you can fix in an afternoon.",
+        "This work sits inside our SEO retainer, from ₹75,000/mo, with smaller sites from ₹40,000/mo. The commitment attached to it is the same one attached to everything else we do: not a ranking position for a keyword, which nobody can honestly promise, but movement against your own frozen baseline — trailing-90-day qualified leads from organic search. Miss it in 90 days and we keep working free until we beat it."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What should a content brief include?",
+      "a": "One primary query, one named reader, the job of the page, the format the SERP is rewarding, a 40–60 word answer paragraph written by you, the sub-questions to cover, the entities that must appear, exact internal links with anchor text, the evidence rules, what not to say, a word range stated as an output, and the review contract."
+    },
+    {
+      "q": "How long should a content brief be?",
+      "a": "One page, and about forty minutes to write. If it's running longer, you're either writing the article yourself or you've put four queries in one brief. The exception is a page with legal or clinical constraints, where the \"what not to say\" field earns its own length."
+    },
+    {
+      "q": "Should a content brief specify a word count?",
+      "a": "Not as a target. Give the sub-questions the page must cover and state a range as the likely consequence — \"probably 1,600–2,000 given these nine questions\". Google's own guidance says it has no preferred word count, and a floor written into a brief is an instruction to pad."
+    },
+    {
+      "q": "Who should write the answer paragraph — the strategist or the writer?",
+      "a": "Whoever read the SERP. They know what the query wants and which claim the top result leads with; the writer is working from a brief and has to guess. Sixty words takes four minutes and prevents the expensive failure where a well-written draft argues for the wrong thing."
+    },
+    {
+      "q": "How do you find the entities a page must mention without a paid tool?",
+      "a": "Four free sources: proper nouns that repeat across the top five ranking pages, the nouns inside People Also Ask questions, autocomplete stepped through a letter at a time, and the client's own sales calls. Then cut the list to twelve to eighteen, or the writer starts bolting nouns onto sentences."
+    },
+    {
+      "q": "How many internal links should a brief specify?",
+      "a": "Two to four in a 1,500-word piece, each given as an exact URL plus the anchor text you want. Google's link guidance is clear that anchor text should describe the page it points at, and a writer left to choose will produce \"this article\" or a third link to your homepage."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Creating helpful, reliable, people-first content",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Link best practices for Google",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Featured snippets and your website",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/featured-snippets",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Search Engine Optimization (SEO) Starter Guide",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "date": "2025-12-10"
+    }
+  ],
+  "related": [
+    {
+      "type": "cost",
+      "slug": "content-writing-cost-india"
+    },
+    {
+      "type": "glossary",
+      "slug": "entity-seo"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-check-the-content-your-agency-wrote"
+    },
+    {
+      "type": "journal",
+      "slug": "how-many-blog-posts-you-actually-need"
+    },
+    {
+      "type": "glossary",
+      "slug": "search-intent"
+    },
+    {
+      "type": "services",
+      "slug": "content-marketing-services"
+    },
+    {
+      "type": "journal",
+      "slug": "when-to-update-old-content-instead-of-writing-new"
+    }
+  ]
+}

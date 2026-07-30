@@ -1,0 +1,263 @@
+{
+  "slug": "should-you-charge-ai-crawlers",
+  "type": "journal",
+  "primaryKeyword": "should i charge ai crawlers to access my site",
+  "secondaryKeywords": [
+    "pay per crawl worth it",
+    "content licensing for ai training",
+    "ai crawler monetisation threshold",
+    "blocking vs licensing ai bots"
+  ],
+  "cluster": "ai-surfaces",
+  "intent": "informational",
+  "h1": "Should you charge AI crawlers for access to your site?",
+  "metaTitle": "Should You Charge AI Crawlers for Access?",
+  "metaDescription": "Charging AI crawlers is a real setting now, not a thought experiment. Here is the arithmetic, and the crawl volume below which it earns you nothing.",
+  "updated": "2026-10-07",
+  "published": "2026-10-07",
+  "answer": "Charging AI crawlers is a real setting now: your CDN answers with HTTP 402 and a price instead of the page. For most Indian businesses the arithmetic kills it. Below roughly fifty thousand crawler requests a month the gross is a rounding error, and a crawler that declines to pay is simply a crawler you blocked.",
+  "takeaways": [
+    "\"Charge\" is **block, with a way out**. If nobody in your category pays your price, you have blocked them and called it revenue.",
+    "The maths is requests × price × the share that actually pay. Your logs give you the first number, you set the second, and nobody can quote you the third.",
+    "Rough threshold: under about **50,000 AI-crawler requests a month** — a site of roughly 2,000 URLs — the gross is a few thousand rupees at any price a crawler would plausibly accept.",
+    "It does nothing about Google. AI Overviews and AI Mode run on the ordinary Search index, and there's no paid tier for Googlebot."
+  ],
+  "sections": [
+    {
+      "h2": "Charging is blocking with an invoice attached",
+      "body": [
+        "The toggle is real. Since mid-2025 a CDN sitting in front of your site can answer an AI crawler with `HTTP 402 Payment Required` and a price, rather than with your page. Two years ago this was a panel discussion. Now it's a setting in a dashboard.",
+        "Which makes it worth being precise about what the setting does, because the marketing around it is doing a lot of work. A crawler that pays gets the page. A crawler that doesn't pay gets nothing. \"Charge\" isn't a third option next to allow and block — it's **block, with a way out**. Whether it behaves like a paywall or like a wall depends entirely on whether anyone on the other side thinks your content is worth the money.",
+        "For a national newspaper with twenty years of archive, some of them will. For a 42-page site selling industrial pumps in Coimbatore, none of them will, and the outcome is identical to blocking — except you spent an afternoon feeling like a media business. But \"it probably isn't worth it\" is what someone would say if they hadn't checked, so here's how to check."
+      ]
+    },
+    {
+      "h2": "The mechanic, stripped of the framing",
+      "body": [
+        "Underneath the branding it's a small, tidy piece of HTTP, worth knowing whichever vendor you use.",
+        "The crawler requests a page. Instead of the page it gets a `402` with a `crawler-price` header stating what access costs. It can retry with a `crawler-exact-price` header to accept, or declare a `crawler-max-price` up front and be served immediately if your price sits under its ceiling. A paid fetch comes back `200` with a `crawler-charged` header. Identity is established cryptographically through Web Bot Auth signature headers, so a scraper can't simply claim to be a bot you trust — which is the genuinely new part, since robots.txt has never been able to tell the difference.",
+        "Two constraints matter commercially. The price is **flat and per-request across your whole site** — you can't charge more for a deep archive than for your contact page. And the CDN is merchant of record, so crawl revenue is a line item on someone else's platform rather than a contract you negotiated."
+      ],
+      "table": {
+        "caption": "The three settings, and what each one actually produces.",
+        "head": [
+          "Setting",
+          "What the crawler gets",
+          "What you get"
+        ],
+        "rows": [
+          [
+            "Allow",
+            "Your page, free, as always.",
+            "Whatever citation and referral the crawler's product hands back. Usually small, occasionally the whole enquiry."
+          ],
+          [
+            "Charge",
+            "A `402` and a price. It pays, or it leaves.",
+            "Either per-request revenue, or exactly the same outcome as Block. You don't choose which."
+          ],
+          [
+            "Block",
+            "A refusal.",
+            "No revenue, no citation, no argument to have later. Clean, and occasionally correct."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "The default may already have been set for you",
+        "body": "Cloudflare announced in July 2025 that it was changing the default to block AI crawlers on new domains unless they pay. If you registered a domain since then, your crawler policy may be a vendor default nobody at your company chose. Check the dashboard first — we've found teams arguing about whether to block bots that were already blocked."
+      }
+    },
+    {
+      "h2": "The arithmetic, using your logs rather than a pitch deck",
+      "body": [
+        "Crawl revenue is three numbers multiplied: requests × price × the share of crawlers that actually pay. Your logs give you the requests. You set the price. Nobody can tell you the third, because it depends on whether an AI company values your corpus more than it values not paying for it. Treat any projection that skips that third term as marketing."
+      ],
+      "numbered": [
+        "**Pull thirty days of server or CDN logs.** Not GA4 — analytics never sees a crawler, because crawlers don't run your JavaScript.",
+        "**Filter to the AI crawler tokens** you'd consider charging, counted per operator. The distribution is usually lopsided.",
+        "**Multiply by two candidate prices** — one you'd be delighted with, one a crawler might genuinely accept. The gap between them is the entire commercial question.",
+        "**Halve the result twice**, once for the operators who decline and once for those who crawl less because you now cost money. Compare what's left to an hour of your own time."
+      ],
+      "table": {
+        "caption": "Monthly gross at two illustrative per-request prices, before anyone declines to pay. The prices are yours to set; these are round numbers for arithmetic, not a market rate.",
+        "head": [
+          "AI-crawler requests / month",
+          "Roughly what size of site that is",
+          "At ₹1 / request",
+          "At ₹5 / request"
+        ],
+        "rows": [
+          [
+            "2,000",
+            "A 75-page services or SaaS site",
+            "₹2,000",
+            "₹10,000"
+          ],
+          [
+            "7,700",
+            "A 300-page site, fully recrawled weekly by six operators",
+            "₹7,700",
+            "₹38,500"
+          ],
+          [
+            "50,000",
+            "Around 2,000 URLs on the same recrawl assumption",
+            "₹50,000",
+            "₹2,50,000"
+          ],
+          [
+            "500,000",
+            "A publisher or marketplace with a deep, frequently-updated archive",
+            "₹5,00,000",
+            "₹25,00,000"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "stat",
+        "title": "Where the threshold sits",
+        "body": "Below roughly 50,000 AI-crawler requests a month, the gross before declines is a few thousand rupees and the figure after them is near zero. That's the number we'd use to decide whether this is a conversation or a distraction. Above about half a million requests a month, with a corpus available nowhere else, it becomes a revenue line worth staffing."
+      }
+    },
+    {
+      "h2": "Volume alone isn't the qualifier — replaceability is",
+      "body": [
+        "The threshold above is necessary and not sufficient. A crawler pays for content it can't get free somewhere else, so the second test is whether your pages exist, near-verbatim, on other domains. This is where plenty of Indian sites fail despite having the volume. If your product listings are also on a marketplace, if your press releases went out over a wire and landed on forty portals, if your listing data is aggregated by three directories — the crawler already has it, from a source that isn't charging. Scarcity is the asset; page count is just page count.",
+        "Where it genuinely qualifies in our market:"
+      ],
+      "bullets": [
+        "**News publishers with real archives.** Decades of original reporting, updated daily, not syndicated in full. The clearest case, and the one the mechanism was built for.",
+        "**Data businesses.** Price histories, tender records, court judgments, corporate filings, mandi rates, drug formularies. The corpus is the product — negotiate a licence rather than collecting per-request pennies.",
+        "**Marketplaces and classifieds at scale.** Millions of unique listing URLs that change hourly: enormous crawl volume, genuinely proprietary in aggregate.",
+        "**Not on this list:** SaaS, D2C, clinics, B2B manufacturers, professional services, agencies. Nobody will pay for five hundred pages describing what you sell, and you wouldn't want them to — you want them to repeat it."
+      ]
+    },
+    {
+      "h2": "What charging costs you, which is the part the toggle doesn't show",
+      "body": [
+        "\"AI crawler\" covers three different jobs — training collection, search indexing, and live retrieval when a person asks a question right now. We laid out the distinction and the tokens in [our position on blocking AI crawlers](/journal/should-you-block-ai-crawlers), and it applies here with more force, because a flat site-wide price hits all three the same way.",
+        "Put a price on a training collector and you've lost nothing you can measure. Put it on a search indexer and you're absent from the index behind an assistant's answer. Put it on an on-demand fetcher and you've returned a payment demand to a bot acting for a person who was, at that moment, asking a question about your company. That last one isn't a lost pageview. It's a lost enquiry, and you never find out it happened.",
+        "Then there's the surface that ignores the whole debate. Google's AI Overviews and AI Mode are generated from the ordinary Search index, and Google's documentation is explicit that [robots.txt directives for Googlebot are the control for site owners](https://developers.google.com/search/docs/appearance/ai-features) — no separate AI crawler to bill, no paid tier to opt into. On the largest AI answer surface in India your options remain be indexed or be absent. Worth knowing before you present crawl monetisation as an AI strategy; to see what that surface already sends you, start with [what Search Console reports about AI Mode traffic](/answers/does-search-console-show-ai-mode-traffic)."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The comparison that ends most of these conversations",
+        "body": "One assistant citation that produces one qualified enquiry is worth more to a services business or a B2B SaaS company than every rupee of crawl revenue it could bill in a year. Run that comparison honestly and the toggle stops being interesting."
+      }
+    },
+    {
+      "h2": "The 750× number, and whose interest it serves",
+      "body": [
+        "You'll meet a statistic in every article on this subject. Cloudflare has published crawl-to-refer ratios arguing that earning a visit from these systems has become roughly 750 times harder via OpenAI, and around 30,000 times harder via Anthropic, than the older search bargain. The numbers are real and measured across a large slice of the web. They're also published by the company selling the meter. Both are true at once, and neither is a reason to dismiss the figure — it fairly describes the asymmetry facing anyone whose revenue is priced per pageview.",
+        "The trap is applying it to a business that was never paid per pageview. If you sell a ₹4,00,000 annual SaaS contract, a 750:1 crawl-to-refer ratio describes nothing you care about. You don't need 750 visits. You need one buyer to be told your name by an assistant, and the ratio that matters to you is enquiries per citation — a number that appears in nobody's crawler statistics. Read the figure as evidence about publishing economics. Don't read it as evidence about yours."
+      ]
+    },
+    {
+      "h2": "The standard nobody has finished writing",
+      "body": [
+        "It helps to understand why this ended up at the CDN rather than in a text file. robots.txt was never enforcement. RFC 9309, which wrote the protocol down in 2022 after twenty-five years of convention, describes rules crawlers are *requested* to honour and states plainly that they are not a form of access authorisation. Charging is different in kind: it happens in the request path, with cryptographic identity, at a layer that can actually refuse. That's the real argument for the CDN approach, whatever you think of the pricing.",
+        "Meanwhile the IETF's AI Preferences working group is chartered to standardise a vocabulary for expressing preferences about AI use of content, mechanisms for attaching it to content, and a way to reconcile conflicting expressions. Its charter explicitly excludes enforcement, crawler authentication, registries and auditing. Read that scope: the standard will give you a machine-readable way to state what you want. Making it stick stays a contract or an edge rule.",
+        "So don't build a policy you'd be embarrassed to unwind. Write the reason next to the rule, keep thirty days of log baseline so you can tell what the change did, and give a marketing site and a proprietary data application separate policies."
+      ]
+    },
+    {
+      "h2": "What we actually do, and what we tell clients",
+      "body": [
+        "On this site we allow everything and charge nothing. Our archive is a few hundred pages about SEO in India; no AI company is going to pay for it, and we'd rather be quoted — accurately, ideally — than be a `402`. We publish our prices in plain text so an assistant asked what an Indian SEO agency costs has something true to repeat.",
+        "For clients the recommendation splits cleanly. If you're not a publisher, a data business or a marketplace at scale, skip crawl monetisation and spend the hour on [being the source worth citing](/journal/how-to-get-cited-by-ai-assistants) — clear factual pages, stated prices, consistent entity details, corroboration on sites you don't own. That work pays in both search and assistants, and needs no vendor.",
+        "If you are one of those businesses, the toggle is still the wrong starting point. Start with the log file, so you know your real crawl volume per operator. Then start a licensing conversation: one negotiated agreement with a buyer who wants your corpus beats per-request pennies from everyone, and it carries terms, attribution and a renewal that a flat site-wide price never will. Pay per crawl is a fallback for publishers too small to get that meeting — an honest thing to be, and not what it's sold as.",
+        "And if what you're really feeling is that the arrangement is unfair, that's a reasonable reaction and a poor basis for a configuration change. Charging a price nobody pays doesn't fix the asymmetry; it removes you from the answer while the model keeps the version of your industry it already learned. For nearly everyone reading this, [should you block AI crawlers](/journal/should-you-block-ai-crawlers) is still the page that matters. If you'd like the question checked against your own logs, it's part of [how we run an SEO engagement](/seo) — from ₹75,000/mo, or ₹40,000 for smaller sites."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How does charging AI crawlers actually work?",
+      "a": "Your CDN answers the crawler with `HTTP 402 Payment Required` and a `crawler-price` header instead of the page. The crawler accepts by retrying with a `crawler-exact-price` header, or pre-declares a `crawler-max-price` it will pay. Identity is verified with cryptographic signature headers, and the CDN handles billing."
+    },
+    {
+      "q": "How much can a small site earn from pay per crawl?",
+      "a": "Effectively nothing. A 300-page site recrawled weekly by six operators generates roughly 7,700 requests a month; at a price a crawler might plausibly accept that's a few thousand rupees gross, and after declines it rounds to zero. The floor for this being worth staffing is hundreds of thousands of requests monthly."
+    },
+    {
+      "q": "Does charging AI crawlers affect my Google rankings?",
+      "a": "Not directly, but be careful what the rule points at. AI Overviews and AI Mode are built from the ordinary Search index, and Google documents robots.txt directives for Googlebot as the control — there's no AI-specific Google crawler to charge. If a blanket rule catches Googlebot you lose Search itself."
+    },
+    {
+      "q": "Is it better to block AI crawlers or charge them?",
+      "a": "For most businesses, neither — allow them, because a citation is free distribution you didn't pay for. If you've decided the content shouldn't be taken for free, charging and blocking produce the same result unless a buyer genuinely wants your corpus. Charging only differs from blocking when somebody would pay."
+    },
+    {
+      "q": "Should I license my content to AI companies instead?",
+      "a": "If your content is the product — a data business, a deep archive, a specialist publisher — yes. A negotiated licence carries terms, attribution and a renewal; a flat site-wide price gives you none of those. For everyone else there's nothing to license, which is the answer nobody enjoys."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Introducing pay per crawl: Enabling content owners to charge AI crawlers for access",
+      "publisher": "The Cloudflare Blog",
+      "url": "https://blog.cloudflare.com/introducing-pay-per-crawl/",
+      "date": "2025-07-01"
+    },
+    {
+      "title": "Content Independence Day: no AI crawl without compensation!",
+      "publisher": "The Cloudflare Blog",
+      "url": "https://blog.cloudflare.com/content-independence-day-no-ai-crawl-without-compensation/",
+      "date": "2025-07-01"
+    },
+    {
+      "title": "AI features and your website",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "List of Google's common crawlers",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers",
+      "date": "2026-07-14"
+    },
+    {
+      "title": "RFC 9309: Robots Exclusion Protocol",
+      "publisher": "IETF",
+      "url": "https://www.rfc-editor.org/rfc/rfc9309.html"
+    },
+    {
+      "title": "AI Preferences (aipref) Working Group Charter",
+      "publisher": "IETF Datatracker",
+      "url": "https://datatracker.ietf.org/wg/aipref/about/"
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "should-you-block-ai-crawlers"
+    },
+    {
+      "type": "journal",
+      "slug": "site-reputation-abuse-and-paid-placements"
+    },
+    {
+      "type": "glossary",
+      "slug": "llms-txt"
+    },
+    {
+      "type": "answers",
+      "slug": "does-search-console-show-ai-mode-traffic"
+    },
+    {
+      "type": "glossary",
+      "slug": "robots-txt"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-get-cited-by-ai-assistants"
+    },
+    {
+      "type": "services",
+      "slug": "ai-search-optimisation-services"
+    }
+  ]
+}

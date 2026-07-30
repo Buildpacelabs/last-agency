@@ -1,0 +1,321 @@
+{
+  "slug": "how-to-build-an-seo-dashboard-in-looker-studio",
+  "type": "journal",
+  "primaryKeyword": "how to build an seo dashboard in looker studio",
+  "secondaryKeywords": [
+    "gsc and ga4 blended report",
+    "seo report without a paid tool",
+    "charts to remove from an seo dashboard",
+    "double counting sessions and clicks"
+  ],
+  "cluster": "analytics-setup",
+  "intent": "informational",
+  "h1": "How to build an SEO dashboard that survives a leadership meeting",
+  "metaTitle": "How to Build an SEO Dashboard in Looker Studio",
+  "metaDescription": "Six charts survive scrutiny and four invite a question you cannot answer. Both sets named, plus the Search Console to GA4 blend that double-counts.",
+  "updated": "2026-09-23",
+  "published": "2026-09-23",
+  "answer": "Build it from six charts, delete the four that invite a question you cannot answer, and blend Search Console to GA4 on date and landing page only. Adding a dimension that exists on one side and not the other fans the rows out and multiplies every metric on the other side.",
+  "takeaways": [
+    "Design subtractively. A dashboard fails on what you put in it, not on what you leave out — and four of the offending charts ship in almost every downloadable template.",
+    "Looker Studio blends pre-aggregate each table before joining. Put a Search Console dimension next to a GA4 metric and the GA4 number multiplies, silently.",
+    "Filter brand queries with a regex on the **data source**, not in a spreadsheet on the last Monday of the month. Then publish the regex so the definition is arguable in five seconds.",
+    "Search Console's most recent days are incomplete, so the default date range should end three days ago. A founder who opens the dashboard and sees a cliff stops trusting all of it."
+  ],
+  "sections": [
+    {
+      "h2": "A dashboard is an argument, not a display",
+      "body": [
+        "A dashboard is not somewhere to put data. It is a single argument, made once, that has to hold up when a founder points at a line and asks why it did that.",
+        "We sit on both sides of that meeting. We build these for clients, and we have also sat in the room while somebody else's dashboard was taken apart in ninety seconds. The pattern is consistent and slightly counter-intuitive: dashboards fail on what they include, not on what they omit. Four charts do most of the damage, and all four ship in nearly every template you can download for free.",
+        "So the design rule is subtractive. Start with six charts. Add nothing until somebody asks a question the six cannot answer, and then add the chart that answers that question rather than the chart that looks like it might.",
+        "Everything below runs on the free Search Console and GA4 connectors. That is deliberate: a reporting layer that depends on a subscription somebody else pays for stops working the month that subscription lapses, and it is usually the agency who owns the subscription."
+      ]
+    },
+    {
+      "h2": "The six charts that survive",
+      "body": [
+        "Each one exists because it answers a question a founder genuinely asks. If you cannot state the question in a single sentence, the chart is decoration and it will cost you time you needed elsewhere."
+      ],
+      "table": {
+        "caption": "Six charts, the question each one answers, and where the data comes from.",
+        "head": [
+          "Chart",
+          "The question it answers",
+          "Source"
+        ],
+        "rows": [
+          [
+            "Non-brand organic clicks, weekly, last 13 weeks",
+            "Is demand from people who didn't already know us going up?",
+            "Search Console, brand queries excluded by regex"
+          ],
+          [
+            "Organic key events against the frozen baseline, monthly",
+            "Are we getting more of the thing that pays salaries than on day one?",
+            "GA4, organic search channel"
+          ],
+          [
+            "Clicks by page group, this period against the same period last year",
+            "Which part of the site is growing, and which part is quietly decaying?",
+            "Search Console URL impression, grouped by URL pattern"
+          ],
+          [
+            "Count of URLs earning at least one click, weekly",
+            "Is the share of the site that works getting bigger?",
+            "Search Console URL impression"
+          ],
+          [
+            "Landing pages by key events, with clicks and conversion rate alongside",
+            "Which pages deserve next month's work?",
+            "A blend — see the join below"
+          ],
+          [
+            "Clicks from queries that earned none in the previous period",
+            "Are we reaching demand we couldn't reach before?",
+            "Search Console site impression, period over period"
+          ]
+        ]
+      },
+      "bullets": [
+        "**Put a comparison on every single one.** A number with no prior period is a decoration. The date-range comparison is one checkbox, and it is the difference between \"4,120 clicks\" and \"4,120 clicks, up 18% on the previous 13 weeks\".",
+        "**One page.** If it scrolls past the fold twice, nobody reads the lower half — and the lower half is where the uncomfortable chart ends up.",
+        "**Weekly, not daily.** Daily search data is noise plus a weekend. It makes a flat month look eventful in both directions and invites questions about Tuesdays.",
+        "**Annotate the deploys.** A text box listing what shipped and on what date turns every step in a line into an explanation rather than an argument."
+      ]
+    },
+    {
+      "h2": "The four to remove, and the question each one invites",
+      "body": [
+        "None of these are wrong. They are all real measurements of real things, and three of the four are genuinely useful diagnostically. The problem is narrower than that: each one invites a follow-up you cannot answer in a meeting, and a chart you have to defend costs you the ten minutes you needed for the chart that mattered."
+      ],
+      "table": {
+        "caption": "Four charts to take off the dashboard, the follow-up each invites, and what belongs there instead.",
+        "head": [
+          "Chart",
+          "The follow-up it invites",
+          "Put this there instead"
+        ],
+        "rows": [
+          [
+            "Average position, sitewide",
+            "Which keyword? And why did it improve in the month traffic fell?",
+            "Clicks for the query set you actually chose to target"
+          ],
+          [
+            "Total impressions",
+            "So what? Did anyone click?",
+            "Non-brand clicks, with impressions demoted to a tooltip"
+          ],
+          [
+            "Keywords ranking in the top 3, 10 or 100",
+            "Whose data is that, and are those our keywords or somebody's volume list?",
+            "Count of URLs earning at least one click"
+          ],
+          [
+            "Domain authority or domain rating over time",
+            "Is that a Google number?",
+            "Referring domains from a source you can name, if links are this month's argument"
+          ]
+        ]
+      },
+      "subs": [
+        {
+          "h3": "Why average position in particular",
+          "body": [
+            "The arithmetic actively works against you. Search Console reports the average position of your topmost result across impressions, and it aggregates differently depending on what you group by: Google documents that data grouped by queries, countries, devices or dates is aggregated by property, while data grouped by pages or search appearance is aggregated by page. Two charts of \"average position\" on the same dashboard can therefore disagree, and both are correct.",
+            "Worse, the number moves opposite to progress in exactly the months where progress is happening. Rank for a hundred new queries at position 30 and your average worsens. Stop appearing for a thousand irrelevant ones and it improves. A founder who has been shown this chart for six months will eventually notice that it improved in a month when clicks fell, and at that point every other number on the page is suspect too.",
+            "We do not put average position on a client dashboard at all. Not because it is meaningless — at query level, inside a tool, it is a useful diagnostic — but because it cannot survive being pointed at. Diagnostic instruments and reporting instruments are different tools, and [rank tracking belongs firmly in the first category](/answers/how-to-set-up-rank-tracking-properly)."
+          ]
+        },
+        {
+          "h3": "The test for anything you want to add back",
+          "bullets": [
+            "Can you say what decision changes if the line moves? If nothing changes, it is not a metric, it is a mood.",
+            "Can you say where the number comes from in one sentence, without saying \"the tool\"?",
+            "If it moves the wrong way, do you have an explanation or only an excuse?",
+            "Would you show it to a founder in a month where it looks bad? If not, taking it off now is cheaper than taking it off then."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The blend that double-counts, and the join that doesn't",
+      "body": [
+        "This is the part that ships broken in most templates, and it is genuinely hard to spot, because the resulting dashboard looks entirely plausible. The sessions column is simply too big, and nobody knows what the right number was.",
+        "The cause is that a Looker Studio blend is not a SQL join. [Before joining, it pre-groups and aggregates the rows in each table according to the dimensions in use](https://docs.cloud.google.com/looker/docs/studio/how-blends-work-in-looker-studio), then joins the aggregated results — which is also why Google's documentation warns that identical rows get collapsed when there is no unique identifier, and that metrics from the underlying sources arrive in a blend as unaggregated numeric dimensions.",
+        "The failure runs like this. You blend a Search Console URL-impression table with a GA4 landing-page table, joined on the page. So far so good. Then somebody adds Query to the chart, because Query is useful. Query exists only on the Search Console side, so each GA4 row is now repeated once for every query that page ranked for, and the Sessions figure reports the same sessions forty times over. The chart still renders. Nobody queries it, because the number was never checkable."
+      ],
+      "bullets": [
+        "**Join on date and landing page. Nothing else.** Two keys, both present on both sides, both genuinely identifying a row after pre-aggregation.",
+        "**Never place a dimension from one table beside a metric from the other.** That is the entire rule, and it is the one that gets broken. Clicks by query is a Search Console chart. Sessions by source is a GA4 chart. They sit next to each other; they are not one table.",
+        "**Normalise the URL on both sides before joining.** Search Console returns a full URL with scheme and host; GA4 returns a path. Build a calculated field that strips the origin, drops the trailing slash and removes query strings. An unnormalised join matches nothing and produces a table of nulls, which people read as zero traffic.",
+        "**Use a left outer join with Search Console on the left** when the question is how much search demand converted. You want every URL that earned a click, including the ones GA4 recorded no session for — that gap is itself a finding, and an inner join hides it.",
+        "**Join on week or month, not day.** Search Console cuts its days in Pacific time; GA4 uses the property's time zone. On an Indian site a day-level join is misaligned at both ends — invisible monthly, obvious daily, and impossible to explain either way.",
+        "**A blend takes at most five tables.** If you want a sixth, the answer is a second report page rather than a cleverer blend."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Clicks and sessions will never reconcile, and that is correct",
+        "body": "They measure different events on opposite sides of the click, and GA4 estimates session counts using a probabilistic algorithm rather than counting them exactly. So even a perfectly built join leaves a residual gap. Put both numbers on the dashboard, label them plainly, and settle the argument once with [why the two tools disagree](/compare/ga4-vs-search-console) rather than every month."
+      }
+    },
+    {
+      "h2": "Build the non-brand filter into the data source, not into your Monday",
+      "body": [
+        "Nearly every dashboard we inherit does this by hand. Somebody exports the query report, deletes the brand rows in a spreadsheet, and pastes a number into a slide. Twenty minutes a month, done slightly differently by whoever is covering for whoever is on leave, and the resulting number cannot be reproduced by anyone including its author.",
+        "Do it once as a filter on the data source and it applies to every chart on every page, permanently. In the Search Console connector that is a filter on the Query dimension set to exclude a regular expression — one pattern, maintained in one place, versioned by the fact that changing it changes every chart at once.",
+        "What belongs in the pattern is more than the brand name. The domain. The brand with and without spaces. The obvious misspellings, which for most Indian brands are several. Product names that only your customers use. Founder or director names, if you rank for them. And the part that catches people out here: transliterations. If a meaningful share of your audience types your brand in Devanagari, or in Hinglish, or in a Roman spelling nobody in the office would use, those are brand queries too, and a Latin-script regex written by the marketing team will miss every one of them.",
+        "There is one structural constraint worth planning around. The Search Console connector offers two table types and a single data source can only use one of them. The site-impression table is the one carrying Query; the URL-impression table is the one carrying landing page. Query-level brand filtering and page-level reporting therefore come from two different data sources in the same report. That is not something to work around — it is the reason a serious dashboard has two Search Console connections rather than one."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Publish the regex on the dashboard",
+        "body": "\"Non-brand\" is a judgement call, and an unstated judgement call is an argument waiting to happen. Put the pattern in a text box on the report. The moment the definition is visible, the question of whether [non-brand traffic is really growing](/compare/branded-vs-non-branded-organic-traffic) becomes a five-second conversation instead of a twenty-minute one."
+      }
+    },
+    {
+      "h2": "Refresh, lag, and the date range that stops it showing zero",
+      "body": [
+        "Two separate delays sit between reality and the chart, and confusing them wastes an astonishing amount of time.",
+        "The first is Looker Studio's cache. Google documents the Search Console connector and the other Google marketing connectors as refreshing every 12 hours with no adjustable option; GA4 offers 1, 4 or 12 hours with 12 as the default; BigQuery goes down to minutes. A report editor can force a refresh from the More options menu, and viewers can too if the editor switches on viewer data refresh — with a one-minute cooldown between attempts.",
+        "The second delay is at the source and it is bigger. Search Console's most recent days are incomplete: the API distinguishes finalised data from fresh data that may still be partial, and it returns only finalised data unless you ask otherwise. So a chart with a date range ending yesterday shows a cliff that does not exist. A founder who opens the dashboard on the 1st of the month, sees two days of near-zero, and mentions it to somebody has just spent your credibility on a rendering artefact.",
+        "The fix is a default date range that ends three days back, plus one line of text saying why. \"Last 28 days, ending three days ago\" is not a compromise or a hedge. It is the honest window, and stating it costs nothing."
+      ],
+      "bullets": [
+        "**Set the default date range on the report, not on each chart.** Then add a date-range control at the top so anyone can widen it themselves.",
+        "**Put the data-freshness note next to the date control**, not in a footer. It answers the question at the moment it gets asked.",
+        "**Don't schedule an email delivery for the 1st.** Schedule it for the 4th, when the month it describes is actually complete.",
+        "**Compare like windows.** A 31-day month against a 28-day month is a 10% swing before anything happened. Use the same-period-last-year comparison rather than previous period on anything seasonal, which in India means anything touching a festival calendar."
+      ]
+    },
+    {
+      "h2": "Sharing, and the version the founder actually gets",
+      "body": [
+        "The dashboard a founder should be given is a read-only link they can open on a phone, at any hour, without asking anybody for anything. That is the whole specification, and it rules out most of what gets done instead.",
+        "Share it with view access and switch on viewer data refresh, so somebody checking a number at 11pm can pull fresh data rather than emailing to ask whether it is current. Nothing about that requires them to have a Looker Studio account or to learn the tool.",
+        "What it rules out is the monthly PDF. A PDF is a snapshot the recipient cannot interrogate, it arrives after the month it describes, and it quietly makes the agency the only party able to check the working. We publish ours read-only from day one, before there is anything good on it, because a report you have to ask for is not reporting — it is a favour.",
+        "Then split the audience. Page one is the six charts, the date control, the freshness note and a text box. Page two is everything the person doing the work needs: query tables, page-level detail, index coverage, the diagnostics. Same data, two readers, and the founder never has to scroll past the working version to reach the summary."
+      ],
+      "numbered": [
+        "Connect two Search Console data sources — site impression for queries, URL impression for pages — and one GA4 source.",
+        "Put the brand-exclusion regex on the query-level source as a data source filter, and paste the pattern into a text box on the report.",
+        "Build the six charts on page one, each with a period comparison switched on.",
+        "Build the blend last, joined on date and landing page only, and check the sessions total against an unblended GA4 chart before you trust it.",
+        "Set the report's default date range to end three days back and add a date-range control.",
+        "Move every diagnostic chart to page two, then delete the four charts from the section above wherever they reappear.",
+        "Share the link with view access and viewer data refresh on, and write the three-line note. Update the note monthly; the charts update themselves."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The three lines that buy you the room",
+        "body": "One text box, rewritten monthly: what moved, what we shipped, and what we got wrong. The third line is the one that matters. Volunteering a mistake before anyone finds it is the cheapest credibility available to an agency, and it is the reason a bad month reported honestly costs less than a good month reported vaguely."
+      }
+    },
+    {
+      "h2": "What a dashboard doesn't replace",
+      "body": [
+        "Four things, and pretending otherwise is how a good dashboard turns into a bad argument.",
+        "It does not replace rank tracking. Search Console's position figure is an average over impressions in a specific aggregation, not a rank check, and the two answer different questions on different days.",
+        "It does not give you unsampled query data. The interface and the API both cap what you can pull — the Search Console API allows a maximum of 25,000 rows per query and defaults to 1,000 — which is exactly why anyone doing serious query analysis ends up [exporting to BigQuery](/answers/how-to-export-search-console-data-to-bigquery) instead.",
+        "It does not replace the written note. A dashboard says what happened. Only a person says why, what was tried, and what happens next month, and the absence of that paragraph is what makes a beautiful report feel evasive.",
+        "And it does not replace a baseline. A dashboard with no frozen starting number is a dashboard whose story can be improved by choosing a different start date, which is a trick every agency knows and most have used. We freeze the client's trailing-90-day qualified leads from organic search on day one, put that number on the dashboard as a line, and if we have not beaten it in 90 days we keep working free until we do. The chart is only worth building because that number sits underneath it."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I build a proper SEO dashboard in Looker Studio for free?",
+      "a": "Yes. Looker Studio, the Search Console connector and the GA4 connector cost nothing, and they cover every chart described here. Paid tools add rank data and backlink data, which are useful and are separate instruments. A reporting layer that depends on somebody's subscription stops the month the subscription does."
+    },
+    {
+      "q": "Why did my sessions number multiply after I added a query dimension?",
+      "a": "Because Query exists only on the Search Console side of the blend. Looker Studio pre-aggregates each table on the dimensions in use before joining, so every GA4 row gets repeated once per query and the metric fans out. Keep dimensions and metrics from the same table in the same chart."
+    },
+    {
+      "q": "What should I join Search Console and GA4 on?",
+      "a": "Date and landing page, and nothing else — with the URL normalised on both sides, because Search Console returns full URLs and GA4 returns paths. Join on week or month rather than day, since Search Console cuts days in Pacific time and GA4 uses your property's time zone."
+    },
+    {
+      "q": "How often does Looker Studio refresh Search Console data?",
+      "a": "Every 12 hours, and that interval isn't adjustable for the Search Console connector. GA4 can be set to 1, 4 or 12 hours. Editors can force a refresh manually, and viewers can too if viewer data refresh is enabled, with a one-minute cooldown between refreshes."
+    },
+    {
+      "q": "Why does my dashboard show almost nothing for the last two days?",
+      "a": "Search Console's most recent days aren't finalised yet, and the connector returns finalised data. It isn't a bug and it isn't a traffic collapse. Set the report's default date range to end about three days back and put a one-line note beside the date control saying so."
+    },
+    {
+      "q": "How do I filter brand searches out automatically?",
+      "a": "Add a filter on the Query dimension of your Search Console data source set to exclude a regular expression, then maintain one pattern covering the brand, the domain, common misspellings, product names and transliterations. Publish the pattern on the dashboard so the definition is visible rather than assumed."
+    }
+  ],
+  "sources": [
+    {
+      "title": "How blends work in Data Studio",
+      "publisher": "Looker Studio documentation",
+      "url": "https://docs.cloud.google.com/looker/docs/studio/how-blends-work-in-looker-studio",
+      "date": "2026-07-17"
+    },
+    {
+      "title": "Connect to Search Console",
+      "publisher": "Looker Studio documentation",
+      "url": "https://docs.cloud.google.com/looker/docs/studio/connect-to-search-console",
+      "date": "2026-07-17"
+    },
+    {
+      "title": "Manage data freshness",
+      "publisher": "Looker Studio documentation",
+      "url": "https://docs.cloud.google.com/looker/docs/studio/manage-data-freshness",
+      "date": "2026-07-17"
+    },
+    {
+      "title": "Search Analytics: query",
+      "publisher": "Google Search Console API",
+      "url": "https://developers.google.com/webmaster-tools/v1/searchanalytics/query"
+    },
+    {
+      "title": "Performance report (Search results): Overview and basic setup",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/6155685"
+    },
+    {
+      "title": "About Analytics sessions",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9191807"
+    }
+  ],
+  "related": [
+    {
+      "type": "services",
+      "slug": "seo-reporting-services"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-read-an-seo-report"
+    },
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-crawl-your-own-site-for-an-seo-audit"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-export-search-console-data-to-bigquery"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-set-up-rank-tracking-properly"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-audit-a-ga4-setup"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-search-console"
+    }
+  ]
+}

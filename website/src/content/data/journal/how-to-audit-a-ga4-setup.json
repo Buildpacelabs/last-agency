@@ -1,0 +1,280 @@
+{
+  "slug": "how-to-audit-a-ga4-setup",
+  "type": "journal",
+  "primaryKeyword": "how to audit a ga4 setup",
+  "secondaryKeywords": [
+    "ga4 setup validation checklist",
+    "duplicate ga4 tags how to find",
+    "payment gateway self referral ga4",
+    "internal traffic filter ga4"
+  ],
+  "cluster": "analytics-setup",
+  "intent": "informational",
+  "h1": "How to audit a GA4 setup before you trust a single number in it",
+  "metaTitle": "How to Audit a GA4 Setup in Seven Checks",
+  "metaDescription": "Seven checks we run in week one on every new client. We won't agree a baseline against numbers that fail them — here's what each failure looks like.",
+  "updated": "2026-08-25",
+  "published": "2026-08-25",
+  "answer": "Auditing a GA4 property means proving seven things before you quote a number from it: the tag fires once, internal traffic is excluded, no undocumented filter is deleting data, the payment gateway isn't logged as a referrer, subdomains share a session, key events aren't page views, and retention wasn't left at two months.",
+  "takeaways": [
+    "Inheriting a GA4 property means inheriting somebody else's assumptions, and nobody writes those down. Seven faults account for almost every wrong number we find.",
+    "The India-specific one is the payment gateway. Razorpay, PayU, CCAvenue and BillDesk all hand the buyer back as a **referral**, quietly moving the sale away from organic search.",
+    "A GA4 data filter is permanent and never retroactive. Getting one wrong deletes data you can't get back.",
+    "We won't freeze a baseline against numbers that fail checks one, four or six. Guaranteeing a lift against a broken denominator isn't a guarantee, it's a coin toss."
+  ],
+  "sections": [
+    {
+      "h2": "Every inherited property is somebody else's assumptions",
+      "body": [
+        "Week one with a new client runs the same way. They send GA4 access, we open the property, and within about forty minutes we're explaining that a number in last quarter's board deck was wrong.",
+        "That's rarely incompetence. A property accumulates decisions. Someone added a tag in 2023. A plugin added a second. A developer excluded an office IP that changed six months later. A marketer marked an event as a key event to fill a gap in a dashboard. None of it was documented, all of it still runs, and GA4 reports confidently either way.",
+        "So we audit first, in the order below, because each check changes how you read the ones after it. There's no point arguing about attribution while the tag fires twice. If you're starting from nothing instead, that's an [analytics setup project](/services/analytics-setup-services), not this."
+      ],
+      "table": {
+        "caption": "The seven checks, in the order we run them, with what a failure looks like in the reports.",
+        "head": [
+          "Check",
+          "What a failure looks like",
+          "Time"
+        ],
+        "rows": [
+          [
+            "1. One tag, firing once",
+            "Two `page_view` events per load in DebugView. Views double, sessions don't.",
+            "10 min"
+          ],
+          [
+            "2. Internal and agency traffic excluded",
+            "No internal traffic rule, or one pinned to an IP the office gave up last year.",
+            "10 min"
+          ],
+          [
+            "3. No undocumented filter or event rule",
+            "An active data filter nobody can date. A `Modify event` rule renaming events silently.",
+            "15 min"
+          ],
+          [
+            "4. Payment gateway not counted as a referrer",
+            "`razorpay.com` among your top sources. Organic conversions look thin.",
+            "5 min"
+          ],
+          [
+            "5. Subdomains share a session",
+            "Your own `book.` or `shop.` host appearing as a referral. Sources scrambled.",
+            "15 min"
+          ],
+          [
+            "6. Key events measure actions",
+            "A key event count that rises when a thank-you page is refreshed.",
+            "20 min"
+          ],
+          [
+            "7. Retention long enough for a year",
+            "Explorations return nothing past about eight weeks.",
+            "2 min"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Do this before the baseline, not after",
+        "body": "Every number in a signed baseline comes out of this property. Fixing it afterwards means renegotiating the baseline, and that conversation gets much harder once an invoice has been raised. Audit first, then [set the baseline](/journal/how-to-set-an-seo-baseline)."
+      }
+    },
+    {
+      "h2": "Check one — the tag that fires twice",
+      "body": [
+        "The most common fault we find, and the most destructive, because it corrupts everything downstream rather than one report.",
+        "A developer hardcodes the Google tag into the template. Later someone installs Tag Manager and adds a GA4 configuration tag. Later still a plugin gets installed that asks for a measurement ID. Now the same ID loads from three places and every page load sends three `page_view` events.",
+        "Open DebugView, load one page, count. It exists to show the events Analytics collects in real time while you check your tags, and two identical `page_view` events milliseconds apart is your answer in ninety seconds. If debug mode won't run, search the page source for `gtag/js?id=` and `googletagmanager.com/gtm.js`. Two different measurement IDs is a different problem from the same ID twice: the first is two properties, the second is double-counting."
+      ],
+      "subs": [
+        {
+          "h3": "What it does to the numbers you actually quote",
+          "bullets": [
+            "**Views double, sessions mostly don't.** Both tags share a session, so pages-per-session doubles and the site looks far more engaging than it is.",
+            "**Engagement and bounce rates move**, because the extra events add no engagement time. A site with a real problem can look healthy.",
+            "**Any key event built on a duplicated event doubles too.** If your lead count came from a thank-you page view, your conversion rate has been double the truth for as long as the second tag existed.",
+            "**Find the deploy date.** Tagging doesn't affect Search Console, so if GA4 views step up on a date where Search Console didn't move, that's when the second tag shipped."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Checks two and three — who's in the data, and what's quietly leaving it",
+      "body": [
+        "Almost every property we inherit is measuring its own staff. On a consumer site doing a hundred thousand sessions that's noise. On a B2B site doing four hundred, it's the difference between a trend and an office.",
+        "GA4 handles this by letting you define internal traffic by IP, then apply a data filter that drops it. Two things go wrong in India. Most offices are on dynamic IPs, so the rule was correct the day it was written and stopped matching within months. And half the team is on 4G, which never had the office IP anyway. Use the IP rule where you have a static address, then add a `traffic_type` parameter on internal builds and an opt-out for staff devices.",
+        "Then ask the question nobody asks: is the agency excluded? Our team opens client sites daily — checking a deploy, reading a competitor's page, screenshotting a SERP. On a low-traffic site that's a measurable share of sessions, and it's our own homework showing up as demand.",
+        "Check three is the mirror image: what else is being removed that nobody mentioned? When GA4 traffic steps down in one month with no ranking change and no matching Search Console drop, the cause is often a filter switched from Testing to Active, doing what it was configured to do to a larger slice of traffic than intended. Screenshot all of this on day one, with the date visible."
+      ],
+      "bullets": [
+        "**Data filters**, every one, with its state. Testing removes nothing; Active removes permanently.",
+        "**Modify event and Create event rules.** A renamed event breaks every comparison against the old name.",
+        "**Enhanced measurement toggles** per data stream. Someone switching off outbound click tracking a year ago explains a lot.",
+        "**Session timeout**, which defaults to 30 minutes and occasionally doesn't. A shortened one inflates sessions and ruins any earlier comparison.",
+        "**Data streams, plural.** Two streams on one property, or a second property collecting the same site, is common and usually accidental."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Read the docs before you click Active",
+        "body": "Applying a GA4 data filter is [permanent — excluded data is never processed and never becomes available in Analytics or BigQuery](https://support.google.com/analytics/answer/10104470). A wrong condition doesn't hide data, it destroys it, and no support ticket brings it back."
+      }
+    },
+    {
+      "h2": "Check four — the payment gateway is listed as a traffic source",
+      "body": [
+        "The India-specific staple, and the fault we find most often on ecommerce and D2C properties here.",
+        "A buyer arrives from Google, browses, hits checkout, and is handed to Razorpay, PayU, CCAvenue, Cashfree, BillDesk or Paytm. If a card is involved, the bank's 3-D Secure page sits in there too. When the gateway returns them to your confirmation page, the browser reports the gateway's domain as the referrer. GA4 sees a new source mid-visit, and the purchase can end up credited to `razorpay.com` rather than the organic session that produced it.",
+        "That's quietly ruinous for anyone judging channels. Organic shows traffic and few sales, a payment processor appears in your acquisition report as though it were marketing, and every argument about whether SEO pays for itself starts from a number with its best conversions taken away.",
+        "The fix is a configuration list, not code. It lives under Admin, in the data stream's tagging settings, and Google describes it as building [a set of conditions identifying domains whose traffic you don't want treated as referrals](https://support.google.com/analytics/answer/10327750). Build the list from data, not memory: run Traffic acquisition by Session source over twelve months and add everything that isn't a search engine, a social platform, a publisher or a genuine partner. Over-inclusion is cheap — nothing is deleted. Re-check after a fortnight, because a checkout redesign can add a gateway domain without telling marketing."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "This one isn't retroactive either",
+        "body": "Configuring unwanted referrals fixes attribution from that day forward. Every sale already credited to a gateway stays credited to it. If you're setting a baseline, either exclude the affected months or state in the document that pre-fix and post-fix source data aren't comparable."
+      }
+    },
+    {
+      "h2": "Check five — your own subdomain counted as somebody else's site",
+      "body": [
+        "The pattern is a business that grew in pieces. Marketing site on WordPress at `www`. Store on Shopify at `shop.`. Booking on a third-party engine at `book.`, or on a different domain entirely. Each added by a different team in a different year.",
+        "GA4 copes with subdomains on one root domain by default, because they share a cookie domain. It does nothing about a genuinely different domain unless told. Google is explicit that without cross-domain measurement, one person visiting two root domains on one device is [identified separately — two users and two sessions instead of one](https://support.google.com/analytics/answer/10071811), and that mismatched cookie domains between subdomains produce self-referrals.",
+        "The diagnosis is check four's: look for your own hostnames in the referral report. If `book.example.com` is a top traffic source, you're measuring two websites badly, and the second is credited with conversions the first earned. Configure cross-domain measurement across the path the customer actually takes, then confirm the `_gl` parameter survives the hop. It often doesn't, because the link between the sites is a form post, a JavaScript redirect or a button the vendor renders. Test it on a real phone."
+      ]
+    },
+    {
+      "h2": "Check six — key events that fire on a page view",
+      "body": [
+        "GA4 lets you mark any event you already collect as a key event — the setting it used to call a conversion. That flexibility is the problem: Google's documentation says plainly that any event you collect can become a key event, and nothing stops you marking `page_view`.",
+        "People do, because it's the fastest way to get a number into a dashboard. Someone creates an event that fires when the URL contains `/thank-you`, marks it as a key event, and moves on. It works, roughly, on the day it's built. Then it starts lying. A thank-you page counts a conversion every time it loads: on a refresh, on the back button, when the customer forwards the link, when an email client prefetches it, when a bot crawls it. If check one also failed, each of those counts twice.",
+        "The tell is a key event count that never matches your CRM. Compare a single month of GA4 key events against actual enquiries. If GA4 runs 20-40% higher, this is usually why. If your leads arrive by phone and WhatsApp the gap runs the other way, and you have a [different tracking problem](/answers/how-to-track-whatsapp-and-phone-leads-in-ga4) on top of this one."
+      ],
+      "bullets": [
+        "**Fire on the action, not the destination.** A submit-handler event, ideally confirmed by the server's success response, beats a page view of a confirmation URL.",
+        "**Deduplicate what you can't move.** Stuck with a thank-you URL? Pass the enquiry ID as a parameter and count distinct IDs rather than events.",
+        "**Audit the whole key event list**, not the one you were asked about. Eight or nine marked — including scrolls, outbound clicks and `session_start` — is routine. If everything is a conversion, nothing is."
+      ]
+    },
+    {
+      "h2": "Check seven — the retention setting that ate your history",
+      "body": [
+        "Two minutes, and there's no fix, which is why it goes last and why it stings.",
+        "Under Admin, Data settings, Data retention, a standard GA4 property offers two choices for event-level data: two months or fourteen. Plenty sit on the shorter one because nobody changed it and nothing complains. The setting doesn't affect standard aggregated reports, which is exactly why nobody notices — sessions and users still show two years. It affects explorations and funnels, which are what you reach for when you need a cohort, a path analysis, or a like-for-like read against last Diwali.",
+        "Set it to fourteen months today. That fixes the future and does nothing for the past. If you needed last year's data for this quarter's board pack, it's gone, and the honest move is to say so."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Fourteen months, not thirteen, for a reason",
+        "body": "Fourteen lets you compare a month against the same month last year with a fortnight of margin. Two lets you compare a month against the one before it, which on any Indian retail or education calendar compares two different businesses."
+      }
+    },
+    {
+      "h2": "Why we won't sign a guarantee against numbers that fail these",
+      "body": [
+        "Our contract freezes the client's trailing-90-day qualified leads from organic search on day one, and if we haven't beaten that number in 90 days we keep working free until we do. That's only meaningful if the number is real.",
+        "Say checks one and six both fail — the tag fires twice and the key event is a thank-you page view. The frozen baseline is roughly four times the true lead count. We'd spend ninety days chasing an impossible target, then work free for months to clear a number that never existed.",
+        "Now flip it. Suppose we run the audit, fix both, and the baseline lands at a quarter of the reported figure. Our target just got dramatically easier, and we proposed the change. That is exactly the incentive a client should be suspicious of. It's why every finding goes into the baseline document with dates and screenshots, and why both sides sign it: the client can see what changed, when, and how much of it moved the number in our favour.",
+        "So the rule is simple, and we apply it before money changes hands. Fail check one, four or six and we fix it, then set the baseline. If the client would rather not touch the property, we'll still take the work — but the guarantee comes off, because a guarantee against a number nobody can defend is a bet where only one side has read the odds."
+      ],
+      "bullets": [
+        "**Checks one, four and six are blocking.** They change the size of the number, not just its labels.",
+        "**Checks two, three, five and seven are recorded, not blocking.** A dated note is usually enough.",
+        "**The audit takes about a day**, is included in the first month of any retainer, and uses nothing proprietary — every check is a documented setting in a Google product."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Two habits that separate an audit from a look around",
+        "body": "Screenshot every settings screen with the date visible, and log every fix with its ship date. That log is the only reliable explanation for the discontinuities somebody will ask about at the next board meeting."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I know if GA4 is double-counting my traffic?",
+      "a": "Open DebugView, load a single page, and count the `page_view` events. Two identical events milliseconds apart means two tags. The reporting symptom is pages-per-session roughly doubling on a date where Search Console clicks didn't move."
+    },
+    {
+      "q": "Why is Razorpay showing up as a traffic source in GA4?",
+      "a": "Because the gateway hands the buyer back to your confirmation page and the browser reports the gateway's domain as the referrer. GA4 treats that as a new source mid-visit and can credit the sale to it. Add every gateway, bank and OTP domain to the unwanted referrals list."
+    },
+    {
+      "q": "Can I fix GA4 data retroactively after correcting the setup?",
+      "a": "No. Data filters, unwanted referrals and cross-domain settings all apply going forward only, and data an exclude filter removed is never processed and never recoverable. That's why the audit runs before the baseline, and why every fix gets dated in writing."
+    },
+    {
+      "q": "Is filtering internal traffic by IP enough in India?",
+      "a": "Rarely. Most offices are on dynamic IPs, so a rule that was correct when written stops matching within months, and staff on 4G were never covered. Use the IP rule where you have a static address, and add a traffic-type parameter plus an opt-out for staff devices."
+    },
+    {
+      "q": "Should I keep the old property if I rebuild the setup?",
+      "a": "Yes, and delete nothing. Keep the flawed property collecting alongside the corrected one for at least a quarter so you can quantify the difference. That overlap is what lets you explain the discontinuity later instead of arguing about it."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Filter out internal traffic",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/10104470"
+    },
+    {
+      "title": "Identify unwanted referrals",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/10327750"
+    },
+    {
+      "title": "[GA4] Set up cross-domain measurement",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/10071811"
+    },
+    {
+      "title": "About key events",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9267568"
+    },
+    {
+      "title": "Data retention",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/7667196"
+    },
+    {
+      "title": "Monitor events in DebugView",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/7201382"
+    }
+  ],
+  "related": [
+    {
+      "type": "services",
+      "slug": "analytics-setup-services"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-analytics-4"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-track-whatsapp-and-phone-leads-in-ga4"
+    },
+    {
+      "type": "answers",
+      "slug": "organic-traffic-up-but-leads-flat"
+    },
+    {
+      "type": "answers",
+      "slug": "what-counts-as-a-qualified-lead-from-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-read-an-seo-report"
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "slug": "how-to-prioritise-an-seo-backlog",
+  "type": "journal",
+  "primaryKeyword": "how to prioritise an seo backlog",
+  "secondaryKeywords": [
+    "60 audit findings which to fix first",
+    "seo scoring model impact effort",
+    "developer dependent seo tasks queue",
+    "seo roadmap for a quarter"
+  ],
+  "cluster": "content-ops",
+  "intent": "informational",
+  "h1": "How to prioritise an SEO backlog when you can only do four things this month",
+  "metaTitle": "How to Prioritise an SEO Backlog",
+  "metaDescription": "We take three clients a month because capacity binds, so prioritisation is the product. The scoring we use, and why effort is the only honest input.",
+  "updated": "2026-09-30",
+  "published": "2026-09-30",
+  "answer": "Score effort, not impact. Effort is the only input you can estimate honestly, so put it in four bands, express impact as one of three categories rather than a number, and order by ascending effort within the top category. Anything needing a developer goes in a separate queue on a separate cadence.",
+  "takeaways": [
+    "Impact scores get reverse-engineered. Nobody can estimate the traffic gain from a schema fix, so the number gets fitted to the answer someone already picked.",
+    "Effort you can estimate, because you've done the work before and you find out within a month whether you were wrong.",
+    "**Direct, Enabling, Hygiene** — three categories do the job a ten-point impact score pretends to do, and they can't be quietly nudged.",
+    "Developer-dependent work belongs in a different queue on a different cadence. Mixing the two produces a roadmap where nothing on it is yours to ship."
+  ],
+  "sections": [
+    {
+      "h2": "Sixty findings, capacity for four",
+      "body": [
+        "Every engagement starts the same way. An audit produces between forty and three hundred findings, each with a severity colour attached, and the client's marketing lead asks the reasonable question: which of these do we do first?",
+        "The honest answer is that they will do about four things a month, forever. That's not pessimism about anyone's work ethic — it's what a team with one SEO, a writer and a share of a developer ships once meetings, approvals and the two urgent things that arrive every week are accounted for. On a ₹75,000/month retainer with us the number is similar.",
+        "So a backlog isn't a to-do list. It's a queue permanently longer than the year, which makes the ordering decision worth more than any item on it. Most of the harm is done by the audit's own severity colouring, which is a crawler's opinion about standards compliance and has no view about your revenue. We've argued that [a good audit ends with five findings, not three hundred](/journal/what-an-seo-audit-should-actually-find). If yours didn't, prioritisation is the work of turning three hundred back into five."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The findings that should simply be deleted",
+        "body": "Some of any audit is true but irrelevant to your site at your size. Google's [crawl budget guidance](/glossary/crawl-budget) says outright that if your pages seem to be crawled the same day they're published, you don't need to read it — which retires most crawl-efficiency findings on any site under roughly ten thousand URLs."
+      }
+    },
+    {
+      "h2": "Why impact scores get reverse-engineered",
+      "body": [
+        "Every framework you'll be handed — ICE, RICE, PIE, whatever the current initialism is — asks for an impact estimate on a numeric scale, and they all break in the same place, because nobody can honestly produce that number for an SEO task.",
+        "Try it on a real item. What is the impact, on a scale of one to ten, of adding FAQ schema to your twelve service pages? You don't know and you can't. It depends on whether Google shows the enhancement, on what competitors do in the same window, on whether those pages rank well enough for a rich result to matter. Google's own starter guide says plainly that [not all changes you make to your website will result in noticeable impact in search results](https://developers.google.com/search/docs/fundamentals/seo-starter-guide).",
+        "What happens next is predictable and almost never deliberate. Someone has already decided, on judgement, which item should be first, then fills in scores that produce that ordering. The framework runs, the chosen item comes out on top, and the spreadsheet gets presented as analysis. It's a judgement call wearing a number, now harder to argue with — a judgement stated plainly invites \"why do you think that?\", which improves the decision, while a scoring model invites an argument about weights, which never has."
+      ],
+      "bullets": [
+        "**The tell that a model is fitted:** the top three items are the ones the person who built it wanted to do, their scores are all 8 or 9, and everything else clusters at 4.",
+        "**Reach isn't much better.** \"How many users does this affect\" gets proxied by current traffic, which demotes every page with no traffic yet — including all the ones you're trying to create.",
+        "**Confidence multipliers hide the problem.** An invented number times another invented number gives you a decimal point and no new information.",
+        "**None of this makes judgement bad.** Judgement is the whole job. It just has to be argued in words, then constrained by the one input you can measure."
+      ]
+    },
+    {
+      "h2": "The model we actually use",
+      "body": [
+        "Two fields, one flag, one rule. It fits in a spreadsheet and takes about ninety seconds per item once you've done twenty of them.",
+        "**Effort** goes in four bands, not hours. **Impact** goes in one of three named categories, not a score. A **dependency flag** marks anything needing someone outside marketing. The rule: take the highest category, sort by ascending effort, work down."
+      ],
+      "subs": [
+        {
+          "h3": "The three impact categories, written out",
+          "bullets": [
+            "**Direct** — there is a named page, it already earns impressions or ranks in the top thirty for a query with commercial intent, and this change plausibly moves it. You can say \"this affects `/services/x`, which gets 900 impressions a month for queries we care about\" without hedging. [Merging two pages that split their own signal](/answers/how-to-merge-two-pages-competing-for-the-same-keyword) is Direct; so is rewriting a page that ranks eleventh.",
+            "**Enabling** — moves nothing alone, and something Direct is impossible or unmeasurable without it. Fixing tracking so leads are attributed correctly. Building the redirect map before a migration. Changing a template that fifty future pages inherit. These get deferred forever, which is how the same problem reappears in every quarter's audit.",
+            "**Hygiene** — true, tidy, correct, with no mechanism to revenue you can state in a sentence. Alt text on decorative images. Compressing images on a page with forty visits a year. Not worthless, just never worth one of this month's four slots.",
+            "**The forcing question:** which page, and what does the person who lands on it do differently? If you can't name the page, it isn't Direct. If you can't name what it makes possible, it isn't Enabling."
+          ]
+        },
+        {
+          "h3": "Effort in four bands",
+          "bullets": [
+            "**S — under two hours.** One person, one sitting, no approvals. Title and meta rewrites, a canonical fix, internal links added to three pages.",
+            "**M — half a day to two days.** Needs focus, maybe one approval. A page rewrite, a small internal-linking cluster, a schema block on a template you control.",
+            "**L — up to a week.** Multiple people or multiple approvals. A pillar page and its first two supporting articles, a category restructure in the CMS.",
+            "**XL — more than a week, or unbounded.** A migration, a template rebuild. XL never enters the monthly queue; it gets broken down or scheduled as a project."
+          ]
+        }
+      ],
+      "table": {
+        "caption": "The ordering rule applied. Direct beats Enabling beats Hygiene; within a category, cheapest first.",
+        "head": [
+          "Item",
+          "Category",
+          "Effort",
+          "Where it lands"
+        ],
+        "rows": [
+          [
+            "Two pages competing for one commercial query",
+            "Direct",
+            "M",
+            "This month — named page, known mechanism"
+          ],
+          [
+            "Rewrite the service page sitting at position 11",
+            "Direct",
+            "M",
+            "This month"
+          ],
+          [
+            "Lead source overwritten on form submission",
+            "Enabling",
+            "S",
+            "This month — nothing is measurable until it's fixed"
+          ],
+          [
+            "Faceted URLs generating thousands of thin pages",
+            "Enabling",
+            "XL",
+            "Developer queue, scoped as a project"
+          ],
+          [
+            "Missing alt text on 400 blog images",
+            "Hygiene",
+            "L",
+            "Quarterly batch, or delete the finding"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Why ascending effort inside a category",
+        "body": "Because finishing things is itself a signal you need. Four completed items in a month tells you your estimates are calibrated and your process works. One unfinished L item tells you nothing except that it's still going."
+      }
+    },
+    {
+      "h2": "Developer-dependent work needs its own queue",
+      "body": [
+        "This is the change that makes the biggest practical difference, and it's structural rather than clever. Anything requiring a developer comes out of your monthly list entirely and goes into a second queue with its own cadence, format and owner.",
+        "The two kinds of work have nothing in common operationally. You control the first: start an item Tuesday, finish it Wednesday. The second you don't control — you petition it. It moves at sprint speed, competes with product items that have revenue attached and a PM defending them, and its lead time is weeks regardless of how small the request is.",
+        "Mixing them produces a recognisable failure. The roadmap looks full, three of five items are blocked on engineering, none move, and at the quarterly review the SEO has shipped two things and can't explain why. The work wasn't badly prioritised — it was prioritised into a queue that was never theirs."
+      ],
+      "numbered": [
+        "**Write it as a ticket, not a finding.** Problem, affected URLs with examples, testable acceptance criteria, and why it matters in a sentence a developer can repeat to their PM. \"Fix canonicals\" is not a ticket. \"Filtered URLs under `/shop/` must emit a canonical to the unfiltered category URL; see these three examples\" is.",
+        "**Put exactly one SEO item in per sprint.** A queue of nine requests gets triaged to zero. One well-written request with a plausible revenue mechanism gets done — and the next gets done more easily because the first worked.",
+        "**Attach it to work already scheduled.** The cheapest engineering time in the year is the sprint where they're already touching that template.",
+        "**Track lead time and use it.** Once you know your average SEO ticket takes five weeks to production, anything you need live in eight weeks has to be requested now.",
+        "**Escalate on evidence, not urgency.** \"These four pages produce 30% of our organic leads and this bug is why they aren't indexed\" gets scheduled. \"This is important for SEO\" doesn't."
+      ]
+    },
+    {
+      "h2": "Four a month: what the constraint forces you to refuse",
+      "body": [
+        "Once you accept that four is the real number, the backlog becomes a series of refusals rather than a series of plans. The same five categories lose every time, and all five are things people feel guilty about cutting.",
+        "This is the arithmetic behind our own [three-clients-a-month limit](/journal/why-we-only-take-three-clients-a-month). You can't carry a real commitment to an outcome and also take on more work than you can do; one of the two gives, and in most agencies it's quietly the commitment."
+      ],
+      "bullets": [
+        "**Anything on a page with no commercial path.** The 2021 blog post that gets 200 visits a month and links to nothing.",
+        "**Broad technical cleanup on a healthy site.** If the Page indexing report shows your pages indexed and new ones appearing within days of publishing, crawl-efficiency work is Hygiene however satisfying it would be.",
+        "**Competitor-driven items.** \"They have a glossary, we should have a glossary\" is not a mechanism. It becomes one when you can name the queries and the intent.",
+        "**Anything that can't be finished this month.** An L item started on the 25th is next month's item pretending to be this month's.",
+        "**Second and third versions of something you haven't measured.** Ship the first cluster, wait for the read, then decide."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "The four-slot budget we'd actually spend",
+        "body": "A typical month: two Direct items on pages that already earn impressions, one Enabling item that removes a measurement or template blocker, and one slot left deliberately for the thing that arrives on the 9th and can't wait. The fourth slot isn't slack — it's the reason the other three finish."
+      }
+    },
+    {
+      "h2": "Re-scoring: what should change, and what shouldn't",
+      "body": [
+        "A backlog re-ordered every week produces nothing, because nothing in SEO completes and reports back inside a week. A backlog never re-ordered becomes a document from a world that no longer exists.",
+        "The governing fact is measurement lag. Google's guidance is that changes can take anywhere from a few hours to several months to be reflected, and that you should generally wait a few weeks before assessing whether work helped. Any rhythm faster than that is re-scoring against noise."
+      ],
+      "numbered": [
+        "**Monthly, re-score only the top ten.** Twenty minutes. Has anything shipped? Did it move? Has a new Direct item appeared in last month's Search Console data? Re-scoring items you won't reach for six months is theatre.",
+        "**Quarterly, re-score everything and delete aggressively.** Anything that has sat two quarters without reaching the top ten gets deleted rather than carried. If it mattered, it would have surfaced.",
+        "**Out of cycle, for four events only:** a migration, a confirmed core update that moved you, a page that starts earning impressions it never had, and a regression you caused.",
+        "**Never re-score in the meeting where results are presented.** That's how a flat month produces a brand new roadmap that gets abandoned six weeks later.",
+        "**Re-calibrate the effort bands quarterly, not the categories.** If your M items consistently take four days, your M band is wrong and every plan built on it is wrong by the same factor."
+      ]
+    },
+    {
+      "h2": "The backlog document itself",
+      "body": [
+        "One sheet. Not a project tool with a custom workflow, not a slide, not the PDF from an audit — a sheet someone can sort, filter and argue with in a meeting.",
+        "Columns: item, the page or template it affects, category, effort band, dependency flag, the one-sentence mechanism, date added, date shipped, and what happened. That last one is the column everybody omits and the only one that makes you better at this. Three months of \"what happened\" teaches you that your rewrites work and your schema work doesn't, on your site, in your market.",
+        "Two ownership rules keep it usable: one named person owns the order, and anyone can add a row. A backlog people can't contribute to becomes a second, informal backlog in someone's notes app.",
+        "Working from an audit you've already paid for: delete everything that fails the mechanism question, tag what's left with a category, band the effort, split out anything needing a developer, then take the four cheapest Direct items and start on Monday. That's an afternoon, and it's the difference between a document and a plan."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I decide which SEO issues to fix first?",
+      "a": "Sort into three categories — Direct (a named page that already earns impressions and this change plausibly moves it), Enabling (makes a Direct item possible or measurable) and Hygiene (true but with no path to revenue) — then take the cheapest Direct items first. Developer work goes in a separate queue."
+    },
+    {
+      "q": "Is ICE or RICE scoring good for SEO?",
+      "a": "The structure is fine; the impact input isn't. Nobody can honestly estimate the traffic gain from a specific SEO change, so the score gets fitted backwards to justify a decision already made. Keep effort as a real estimate and replace the impact number with a category."
+    },
+    {
+      "q": "How many SEO tasks can a team realistically do in a month?",
+      "a": "Four to six substantial items for a small in-house team or a mid-size retainer, plus small work that gets absorbed. Approvals, meetings and unplanned work take the rest. Planning for ten and shipping four is worse than planning for four and finishing."
+    },
+    {
+      "q": "Why should developer-dependent SEO tasks be in a separate queue?",
+      "a": "Because you don't control that queue — you petition it. It runs on sprint cadence, competes with product work, and has a lead time of weeks whatever the size of the request. Mixing it into your monthly list produces a roadmap where most items are blocked and nothing ships."
+    },
+    {
+      "q": "How often should an SEO backlog be re-prioritised?",
+      "a": "Re-score the top ten monthly and the whole list quarterly, deleting anything that has sat two quarters without surfacing. Out of cycle only for a migration, a confirmed core update, a page that starts earning new impressions, or a regression you caused."
+    },
+    {
+      "q": "Should I fix everything in my SEO audit?",
+      "a": "No, and deleting findings is a legitimate outcome. Much of any audit is standards-compliance detail with no mechanism connecting it to revenue — Google's own crawl budget guidance says most sites don't need to read it at all. If you can't name the page and what changes for the person on it, delete the row."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Search Engine Optimization (SEO) Starter Guide",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Optimize your crawl budget",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/large-site-managing-crawl-budget"
+    },
+    {
+      "title": "Page indexing report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7440203"
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "what-an-seo-audit-should-actually-find"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-merge-two-pages-competing-for-the-same-keyword"
+    },
+    {
+      "type": "glossary",
+      "slug": "crawl-budget"
+    },
+    {
+      "type": "answers",
+      "slug": "how-many-keywords-should-an-seo-campaign-target"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-monitor-a-website-for-seo-regressions"
+    },
+    {
+      "type": "services",
+      "slug": "seo-audit-services"
+    },
+    {
+      "type": "journal",
+      "slug": "why-we-only-take-three-clients-a-month"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-present-seo-results-to-leadership"
+    }
+  ]
+}

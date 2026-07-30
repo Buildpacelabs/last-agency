@@ -1,0 +1,227 @@
+{
+  "slug": "paying-an-indian-agency-from-abroad",
+  "type": "cost",
+  "primaryKeyword": "how to pay an indian marketing agency from abroad",
+  "secondaryKeywords": [
+    "do indian agencies charge gst to foreign clients",
+    "firc for export of services india",
+    "wire transfer cost to indian agency",
+    "lut export of services marketing"
+  ],
+  "cluster": "agency-money",
+  "intent": "informational",
+  "h1": "Paying an Indian marketing agency from abroad: tax, paperwork and what the wire really costs",
+  "metaTitle": "Paying an Indian Marketing Agency From Abroad",
+  "metaDescription": "Export of services is zero-rated, so your invoice carries no Indian GST. Most overseas buyers budget 18% they will never be billed. How money moves.",
+  "updated": "2026-08-05",
+  "published": "2026-08-05",
+  "answer": "An Indian agency's invoice to an overseas client carries no Indian GST, because an export of services is zero-rated. You pay the fee by bank transfer in your own currency or in rupees. The only thing your agency needs back from you is enough remittance detail for its bank to close the file.",
+  "takeaways": [
+    "**No Indian GST on your invoice.** Overseas buyers routinely budget 18% they will never be billed.",
+    "The LUT is the agency's paperwork, not yours. It's why the invoice says \"without payment of integrated tax\" instead of showing a tax line.",
+    "Your agency will chase you for the remittance reference. It needs an **FIRC or eBRC** to prove the export was realised in foreign exchange.",
+    "The India saving leaks through **FX spread and wire fees**, not tax. On a ₹1,75,000 monthly fee, a 2% spread is ₹42,000 a year."
+  ],
+  "sections": [
+    {
+      "h2": "Your invoice will not have Indian GST on it",
+      "body": [
+        "This is the first thing overseas finance teams get wrong, and they get it wrong expensively — they budget an extra 18% that never appears.",
+        "Under GST, an export is a zero-rated supply, and services exported out of India count. The supplier can either export under a bond or Letter of Undertaking without paying integrated tax and claim back its unused input credit, or pay the tax and claim a refund of it. Either route, the tax is not passed to you. Your invoice shows a fee and nothing else.",
+        "What you should see instead of a tax line is a declaration on the face of the invoice — some version of \"supply meant for export of services under LUT without payment of integrated tax\". If an Indian agency is adding 18% to a foreign client's invoice, ask why. There are edge cases where a supply to a foreign buyer doesn't qualify as an export of services, but they're narrow, and \"we always charge it\" isn't one of them.",
+        "A domestic Indian client on the same retainer does pay the 18%, and reclaims it as input credit. We've written that arithmetic out in [GST on digital marketing services](/cost/gst-on-digital-marketing-services). You skip the step entirely."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The LUT is our paperwork, not yours",
+        "body": "A Letter of Undertaking is filed by the exporter with the Indian tax authority, once a financial year. It costs you nothing, requires nothing from you, and changes only how the agency handles its own tax. If an agency doesn't have one, it pays the tax up front and chases the refund — its cash-flow problem, not your line item."
+      }
+    },
+    {
+      "h2": "FIRC, eBRC, and why your agency will chase your bank reference",
+      "body": [
+        "Here's the part that surprises new overseas clients: three weeks after you pay, someone from the agency emails asking for the SWIFT reference or the remittance advice. It reads like bureaucracy. It isn't optional.",
+        "India tracks the foreign exchange it earns, and the reporting sits under FEMA — which is why your bank is asked for a purpose code and why the agency's bank has to match your payment to an invoice. An Indian exporter of services has [nine months from the date of export to realise and repatriate](https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10395) the proceeds, and its bank issues an electronic Bank Realisation Certificate once the money lands and is matched to the invoice. A Foreign Inward Remittance Certificate does the same job for a single inward payment. Between them they are the agency's evidence that the export happened and was paid for in foreign currency — which is what the zero-rating rests on.",
+        "Services are easier than goods here: exporters of services can export without filing a declaration up front, but they remain liable to realise the money. The reconciliation happens after the fact, which is precisely why the agency needs your reference number to point at.",
+        "The practical version for you: pay from the entity named on the contract, quote the invoice number in the wire, and forward the remittance advice the same day. Do that and nobody asks you again."
+      ]
+    },
+    {
+      "h2": "What your own finance team will ask for",
+      "body": [
+        "Five documents cover almost every onboarding we've been through. Most of them already exist; the last one only matters if your jurisdiction withholds."
+      ],
+      "table": {
+        "caption": "The paperwork on a cross-border marketing retainer, and who produces each piece.",
+        "head": [
+          "Document",
+          "Who produces it",
+          "What it is for"
+        ],
+        "rows": [
+          [
+            "Tax invoice, marked as an export of services",
+            "The agency",
+            "Your accounts payable file, and the agency's GST return."
+          ],
+          [
+            "Master agreement or signed SOW",
+            "Both of you",
+            "Your finance team's evidence that the service is real and the price is agreed."
+          ],
+          [
+            "Purpose code on the outward remittance",
+            "Your bank, from your instruction",
+            "Tells the Indian banking system what the payment is for. Get it wrong and the money sits in a queue."
+          ],
+          [
+            "FIRC or eBRC",
+            "The agency's bank, after the money lands",
+            "Proof the export was realised in foreign exchange. Never yours to produce, often yours to enable."
+          ],
+          [
+            "Indian tax residency certificate, plus a W-8BEN-E for US payers",
+            "The agency, on request",
+            "Only needed where your own country requires it before applying a treaty rate."
+          ]
+        ]
+      },
+      "bullets": [
+        "Nothing on that list is unusual, and none of it should take an agency more than a day. If it does, you've learned something about how they run.",
+        "Ask for all of it in the first week, not in month four when your auditor asks."
+      ]
+    },
+    {
+      "h2": "What the wire actually costs — and where the India saving shrinks",
+      "body": [
+        "The reason to hire in India is a real cost difference, covered honestly in [why SEO costs less in India](/journal/why-seo-costs-less-in-india). The reason that difference is smaller than your spreadsheet says is almost never tax. It's the two costs nobody quotes.",
+        "The first is the FX spread. Your bank converts at a rate that is not the interbank mid-rate, and the gap is inside the rate rather than on a line. You will not see it on any statement. The second is fees — your outward wire charge, plus whatever a correspondent bank deducts in transit, which usually arrives as the agency's invoice being paid short by twenty dollars and someone having to reconcile it.",
+        "We can't tell you your bank's spread, and anyone who quotes you a universal figure is guessing. What we can do is show you what a given spread costs on our published fees, so you can price your own bank's answer."
+      ],
+      "table": {
+        "caption": "What an FX spread costs annually on Last Agency's published monthly fees. Wire fees are on top.",
+        "head": [
+          "Monthly fee",
+          "Annual fee",
+          "At a 1% spread",
+          "At a 2% spread"
+        ],
+        "rows": [
+          [
+            "₹75,000 — SEO, standard",
+            "₹9,00,000",
+            "₹9,000",
+            "₹18,000"
+          ],
+          [
+            "₹99,000 — Organic Growth Engine",
+            "₹11,88,000",
+            "₹11,880",
+            "₹23,760"
+          ],
+          [
+            "₹1,75,000 — Own Everything Stack",
+            "₹21,00,000",
+            "₹21,000",
+            "₹42,000"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Ask for the rate, then check it",
+        "body": "Request the exact rate your bank will apply, then compare it to the interbank mid-rate for that day. The difference is your real conversion cost, and it is negotiable at volume in a way that most finance teams never test. Quarterly payment instead of monthly cuts the flat wire fees by two-thirds; it does nothing for the spread."
+      }
+    },
+    {
+      "h2": "Withholding is your jurisdiction's question, not the agency's",
+      "body": [
+        "Some countries require a payer to withhold tax on payments to a foreign service provider. Some don't. Some apply a lower treaty rate if the recipient produces a tax residency certificate. India has tax treaties with most of the countries our overseas clients sit in, but which rate applies to you is determined by your law, not ours.",
+        "So the honest answer is: ask your own accountant before the first invoice, not after. What you should not accept is an agency that shrugs at the question, and what you should not do is withhold silently and pay short. An Indian agency that receives 85% of an invoice with no explanation will assume it's a bank deduction and chase you for the rest.",
+        "Settle it in the contract: state whether the fee is gross or net of withholding, and who supplies which certificate. Two sentences at signing prevents a quarter of awkward emails. [What should be in an SEO contract](/answers/what-should-be-in-an-seo-contract) covers the clauses either side of it."
+      ]
+    },
+    {
+      "h2": "How we invoice overseas clients",
+      "body": [
+        "Same published prices as everyone else — SEO from ₹75,000/mo, smaller sites from ₹40,000, the Organic Growth Engine bundle at ₹99,000, the full stack at ₹1,75,000. Quoted in rupees, invoiced in rupees, with no Indian GST because the supply is an export.",
+        "Ad spend is separate, at cost, with no media markup, and we'd rather the ad accounts sat in your name and on your card — which for an overseas client also removes a currency conversion from the loop.",
+        "Month to month after the first quarter, thirty days' notice, and you keep every asset. That last part matters more across a border than it does across a city: the further away the agency is, the more the exit terms are the only leverage you have. More on that in [Indian agencies serving global clients](/journal/indian-agencies-serving-global-clients)."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do Indian agencies charge GST to foreign clients?",
+      "a": "No. An export of services is zero-rated under GST, so the invoice to an overseas client carries no Indian tax. The agency either exports under a Letter of Undertaking without paying integrated tax, or pays it and claims a refund. Either way it isn't added to your invoice."
+    },
+    {
+      "q": "What is an FIRC and why does my agency want one?",
+      "a": "A Foreign Inward Remittance Certificate is issued by the Indian bank that receives your payment, confirming money arrived from abroad. Along with the electronic Bank Realisation Certificate, it's how the agency proves the export was realised in foreign exchange. It needs your remittance reference to match the payment to the invoice."
+    },
+    {
+      "q": "Should I pay in rupees or in my own currency?",
+      "a": "Whoever converts, someone pays the spread. Paying in rupees means your bank converts and the cost is visible in the rate you're quoted. Paying in your currency means the agency's bank converts and the cost is invisible to you but real. Ask for the rate either way."
+    },
+    {
+      "q": "Do I need to withhold tax on payments to an Indian agency?",
+      "a": "That's determined by your own country's rules, not India's. Many jurisdictions require withholding on payments to foreign service providers, often at a reduced treaty rate if the recipient supplies a tax residency certificate. Ask your accountant before the first invoice and write the answer into the contract."
+    },
+    {
+      "q": "How much does a wire transfer to India actually cost?",
+      "a": "Two components: a flat outward fee from your bank plus anything a correspondent bank deducts in transit, and the FX spread hidden inside the conversion rate. The flat fee barely matters on a large retainer. The spread does — 2% on a ₹1,75,000 monthly fee is ₹42,000 a year."
+    },
+    {
+      "q": "Can I pay an Indian agency by card or through a payment platform?",
+      "a": "Often yes, and it's simpler for small amounts. It's rarely cheaper at retainer size — platform fees plus conversion usually beat a bank wire only below roughly ₹1,00,000 a month. Whichever you use, make sure the payment is traceable to the invoice, or the agency's reconciliation becomes your problem."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Guidance Note for Importers and Exporters",
+      "publisher": "Central Board of Indirect Taxes and Customs",
+      "url": "https://cbic-gst.gov.in/pdf/Guidance-Note-for-Importers-Exporters-v2.pdf"
+    },
+    {
+      "title": "Master Direction – Export of Goods and Services",
+      "publisher": "Reserve Bank of India",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10395"
+    },
+    {
+      "title": "Master Direction – Reporting under Foreign Exchange Management Act, 1999",
+      "publisher": "Reserve Bank of India",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10202"
+    },
+    {
+      "title": "Schedule of GST Rates for Services as approved by GST Council",
+      "publisher": "Central Board of Indirect Taxes and Customs",
+      "url": "https://cbic-gst.gov.in/pdf/Schedule%20of%20GST%20rates%20for%20services.pdf"
+    }
+  ],
+  "related": [
+    {
+      "type": "cost",
+      "slug": "gst-on-digital-marketing-services"
+    },
+    {
+      "type": "journal",
+      "slug": "indian-agencies-serving-global-clients"
+    },
+    {
+      "type": "journal",
+      "slug": "why-seo-costs-less-in-india"
+    },
+    {
+      "type": "compare",
+      "slug": "indian-seo-agency-vs-international-agency"
+    },
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "cost",
+      "slug": "digital-marketing-agency-cost-india"
+    }
+  ]
+}

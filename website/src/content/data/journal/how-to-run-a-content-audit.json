@@ -1,0 +1,292 @@
+{
+  "slug": "how-to-run-a-content-audit",
+  "type": "journal",
+  "primaryKeyword": "how to run a content audit",
+  "secondaryKeywords": [
+    "keep update merge delete decision",
+    "what to do with 300 old blog posts",
+    "content audit thresholds clicks impressions",
+    "should i delete old blog posts"
+  ],
+  "cluster": "content-ops",
+  "intent": "informational",
+  "h1": "How to run a content audit with a keep, update, merge or delete decision",
+  "metaTitle": "How to Run a Content Audit: The Four-Way Decision",
+  "metaDescription": "A four-way decision matrix with real thresholds, run from a single Search Console export. The unpopular finding: deleting is often the best move.",
+  "updated": "2026-09-29",
+  "published": "2026-09-29",
+  "answer": "Export twelve months of Search Console page data, join it against a full URL list so the zero-impression pages appear, then run four tests in a fixed order: protect the winners, merge the duplicates, delete the dead, update what's left. On most Indian blogs built for volume, delete is the largest bucket.",
+  "takeaways": [
+    "**Search Console only lists URLs that earned an impression.** Audit from that export alone and the worst pages on your site are invisible, because they never appear in it.",
+    "Four decisions, run **in order**: keep, merge, delete, update. Order matters — a page can qualify for three of them, and the first test that fires wins.",
+    "Deletion is usually the highest-return action, for a reason nobody selling content wants to say out loud: it costs five minutes and an update costs four hours.",
+    "**Impressions with no clicks is the biggest bucket**, and it splits four ways. Three of the four are not title-tag problems, whatever the tooling suggests.",
+    "After a large deletion, total impressions should fall and clicks should not. Tell the client that before you start, not while they're looking at the chart."
+  ],
+  "sections": [
+    {
+      "h2": "One export, and the list it silently leaves out",
+      "body": [
+        "A content audit is a spreadsheet, and everything downstream of it depends on that spreadsheet being complete. Most aren't.",
+        "The base export is Search Console: **Search results**, date range set to the last 12 months, **Pages** tab, export to Sheets or CSV. Twelve months rather than three, because you're looking for the shape of a year, and three months on a seasonal Indian business is a rounding error. Sixteen months is available if you want the full window.",
+        "Now the part that decides whether the audit is worth running. Search Console reports on URLs that appeared in search results — a URL's [position is only recorded once it has had an impression](https://support.google.com/webmasters/answer/7042828). A page that earned zero impressions in twelve months does not appear in your export at all. It isn't shown as a zero. It's absent.",
+        "Which means the pages in the worst condition on your site — never indexed, indexed and never surfaced, published into a category nobody searches — are exactly the ones an audit run from the Search Console export alone will never see. On a 400-page blog we routinely find 80 to 150 URLs in this state, and it's the finding that changes the client's mind about the whole exercise."
+      ],
+      "numbered": [
+        "**Export twelve months of page-level data** from Search Console: URL, clicks, impressions, CTR, average position.",
+        "**Get a complete URL list separately** — from your XML sitemap, your CMS's published-posts export, or a crawl. Any of the three; a crawl is the most honest because it also catches URLs missing from the sitemap.",
+        "**Join them on URL**, left-joining from the complete list. Every row without Search Console data is a zero-impression URL. Sort those to the top; they're your first bucket.",
+        "**Add three columns Search Console can't give you**: published date, whether the URL has referring domains, and whether it has ever been credited with a conversion or an enquiry.",
+        "**Add a fourth by hand — the page's job.** Contact, thank-you, pricing, T&Cs, careers. These are not content and they don't enter the audit; they get excluded now, not argued about later."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Don't run this from GA4",
+        "body": "Analytics tells you what happened to sessions, which mixes email, social, direct and referral traffic into the number you're trying to read. Search Console tells you what happened in the search results. If the sheet is going to drive deletions, it has to be built from the search data — see [Google Search Console](/glossary/google-search-console) for the difference."
+      }
+    },
+    {
+      "h2": "The four decisions, and why the order is the whole method",
+      "body": [
+        "Most audit templates present a matrix and let you look up each URL in it. That fails on real sites, because a genuine page frequently satisfies two or three conditions at once: it's a duplicate of another page, it's below the traffic floor, and it has a link pointing at it. Look it up in a matrix and you get whichever answer you happened to read first.",
+        "So run it as four ordered tests instead. Every URL goes through test one, then two, then three, then four, and the first test that fires assigns the decision. No URL gets two verdicts, and the sheet finishes with one column of four values."
+      ],
+      "table": {
+        "caption": "The four tests, in the order they must be applied, with our default thresholds over a trailing twelve months.",
+        "head": [
+          "Order",
+          "Test",
+          "Condition",
+          "Decision"
+        ],
+        "rows": [
+          [
+            "0",
+            "Too young to judge",
+            "Published under six months ago",
+            "**Exempt.** No decision. It hasn't had time to be wrong."
+          ],
+          [
+            "1",
+            "Protect the winners",
+            "Average position 1–3 with clicks, **or** any page with referring domains, **or** any page credited with a conversion",
+            "**Keep**, and lock it. No edits during the audit."
+          ],
+          [
+            "2",
+            "Duplicate intent",
+            "Two or more URLs surfacing for the same primary query, trading places month to month",
+            "**Merge** into one surviving URL."
+          ],
+          [
+            "3",
+            "Below the floor",
+            "Under ~50 impressions a month averaged over twelve months, zero clicks, no links, no conversions, over six months old — plus every zero-impression URL from the join",
+            "**Delete**, by the method its history warrants."
+          ],
+          [
+            "4",
+            "Everything remaining",
+            "Has impressions, isn't a duplicate, isn't a winner",
+            "**Update**, ranked by impressions × distance from page one."
+          ]
+        ]
+      },
+      "bullets": [
+        "**Test 1 runs first because audits damage winners.** The most reliable way to lose a ranking is to improve a page that was already winning. Locking those URLs at the start removes the temptation and takes the argument off the table.",
+        "**Test 2 runs before test 3** because merging changes the numbers. A page that looks dead on its own is often half of a pair, and its impressions belong to the survivor. Delete it first and you throw away history you were about to inherit.",
+        "**Test 3 runs before test 4** because otherwise you spend four hours refreshing a page that should not exist. The delete pass is what makes the update pass affordable.",
+        "**The 50-impressions floor scales with the site.** On a 40,000-URL catalogue, 50 a month is noise and the floor belongs an order of magnitude higher. On a 60-page services site, use 20. It's a starting shape, not a law."
+      ]
+    },
+    {
+      "h2": "Why deletion is usually the highest-return decision",
+      "body": [
+        "This is the finding clients dislike and content agencies don't volunteer, so here it is with the reasoning attached.",
+        "The constraint on any audit is hours, not URLs. A delete decision costs about five minutes: check the links column, pick the removal method, record it. An update costs two to four hours of a writer's time, plus a brief, plus an edit. On a 300-page blog with 40 hours of budget, you can clear 200 dead URLs and refresh eight pages, or refresh eleven pages and leave the rest. The first option changes what the site is; the second changes eleven pages.",
+        "The second reason is that a large volume of pages nobody visits and nothing links to makes it harder for a search engine to characterise what your site is about. Among the warning signs in Google's own guidance on people-first content is a blunt self-assessment question — is the content primarily made to attract visits from search engines? Most Indian blogs built to a monthly-volume retainer answer that badly, page after page, and the archive is the evidence.",
+        "And the third reason is the commercial one. Nobody paid per article recommends producing fewer articles, and nobody paid a retainer for content production opens the quarter by proposing to delete 40% of the archive. That doesn't make deletion right — it explains why it's under-recommended, which is a different and more useful thing to know."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Deleting does not make the rest rank",
+        "body": "Pruning is a clarity and cost decision, not a growth lever. Anyone selling you a traffic lift from deletion is selling. What you get is a site a search engine can characterise, a crawl budget spent on pages that matter, and an archive small enough to maintain honestly. If the remaining pages were weak, they're still weak."
+      },
+      "bullets": [
+        "**Referring domains, no traffic:** 301 to the closest genuinely relevant page. Never delete a linked URL outright — Google's redirect guidance is that a permanent redirect shows the new target in search results in the old URL's place, which is the whole point of using one here.",
+        "**Nothing pointing at it, no close relative:** let it 404, or return 410. Both are fine; 410 states the removal was deliberate.",
+        "**Useful to customers, useless to search:** keep the page and add `noindex`. Removal from the index isn't removal from the site.",
+        "**Export before you delete.** URL, content and its Search Console history. Reversing a bad call without a record is miserable, and you will make one or two."
+      ]
+    },
+    {
+      "h2": "The biggest bucket: impressions but no clicks",
+      "body": [
+        "On every audit we've run, the largest group of surviving URLs is the same one — pages picking up impressions and converting almost none of them into clicks. It's also the group most often mis-diagnosed, because the tooling nudges you towards a single explanation: rewrite the title tag.",
+        "Sometimes it is the title. Usually it isn't. Average position is an average across every search that produced an impression, so before touching anything, filter the page to its own queries and look at where those impressions are actually coming from. Four patterns, four different responses."
+      ],
+      "table": {
+        "caption": "Impressions without clicks — four causes and what each one actually needs.",
+        "head": [
+          "What the page's query data shows",
+          "What it means",
+          "What to do"
+        ],
+        "rows": [
+          [
+            "Average position 30+, impressions spread across many long-tail queries",
+            "Google is filing you in the tail. Nobody is scrolling that far. This is not a click-through problem.",
+            "Nothing at the title level. Either re-target the page at a query it can win, or let it fall to the delete pass next quarter."
+          ],
+          [
+            "Position 5–15, CTR well below what that band normally earns",
+            "The genuine title-and-snippet case. The result is visible and unappealing.",
+            "Rewrite the title and description. An hour, and the cheapest work on the site."
+          ],
+          [
+            "Position 1–5, impressions high, clicks near zero",
+            "The SERP took the click — an AI Overview, a pack, a snippet you don't hold, or a question fully answered above the results.",
+            "Nothing on the page fixes this. Re-target at a query with a click left in it, or accept the page as a visibility asset and stop measuring it in clicks."
+          ],
+          [
+            "Impressions arriving on queries the page isn't about",
+            "Google has filed the page under something you didn't intend, usually because the page hedges across two topics.",
+            "Decide which query you want, then cut the page down to it. Half the time this reveals a merge you missed at test 2."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "Check the second URL before you rewrite",
+        "body": "If the impressions look split and inconsistent, you may be looking at half of a cannibalised pair rather than a weak page. Filter the query in the Pages view and see whether a second URL of yours appears against it — the procedure is in [how to merge two pages competing for the same query](/answers/how-to-merge-two-pages-competing-for-the-same-keyword)."
+      }
+    },
+    {
+      "h2": "How much to change at once",
+      "body": [
+        "The audit produces a list. The temptation is to execute the whole list in a fortnight, because it finally feels like progress. Resist it, for a reason that has nothing to do with risk and everything to do with reading the result afterwards.",
+        "Change 200 URLs and refresh 30 pages in the same two weeks and you have permanently lost the ability to say which of those did anything. You'll have a chart with one inflection point and four explanations, and every subsequent argument about content budget will be an argument about that chart.",
+        "So sequence it, and write the dates down."
+      ],
+      "numbered": [
+        "**Deletions first, in one batch, on one date.** They're cheap, they're reversible from your export, and they finish. Do the whole delete list at once so it registers as a single event rather than a slow drift.",
+        "**Wait four weeks.** Not because anything bad happens, but because you want a clean read on what removal alone did before the next change lands.",
+        "**Merges second**, one date, and fix the internal links and the sitemap in the same pass so the signal isn't ambiguous.",
+        "**Updates third and continuously**, at whatever cadence the retainer supports — typically four to eight pages a month, prioritised by impressions rather than by which page somebody is fond of.",
+        "**Never during a migration or a core update.** Two changes at once and you will never know which one caused what. If a core update lands mid-audit, stop, wait for it to finish rolling out, then resume with a note in the log."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Keep a change log, not a memory",
+        "body": "One row per batch: date, what changed, how many URLs, who did it. It takes two minutes and it's the difference between diagnosing next quarter's traffic movement in ten minutes and arguing about it for a month. Every annotation you skip is a future meeting you've scheduled."
+      }
+    },
+    {
+      "h2": "What to measure afterwards, and what it will look like",
+      "body": [
+        "Set the review date when you do the work. Week eight for merges and updates; week four is enough for a pure deletion pass, because you're checking a removal took effect rather than waiting for rankings to move.",
+        "Three numbers, in this order:",
+        "**Total clicks**, site-wide, against the equivalent period before. This is the one that matters and the only one that pays anybody.",
+        "**Total impressions**, which will fall — and that's the pass condition, not the failure. You removed pages that were surfacing for queries they never won a click from. Impressions down, clicks flat or up, is exactly the shape of a successful pruning pass. It also looks like a catastrophe on a dashboard, which is why this sentence belongs in the kickoff email and not in the week-eight review.",
+        "**Indexed page count**, which should fall towards the number of URLs you actually kept. If it doesn't, your removals aren't being picked up — check the method rather than the theory.",
+        "One honest caveat to close on. A content audit isn't a controlled experiment. Your competitors kept publishing, the SERP kept changing, and a core update may well have landed inside your window. Nobody, including us, can separate those effects cleanly on a single site. Report it as \"here's what we changed, here's what happened, here's what we think that means\" — and if somebody hands you a chart claiming a content audit caused a precise percentage, they've written the conclusion first."
+      ]
+    },
+    {
+      "h2": "What it costs, and who should be running it",
+      "body": [
+        "For a 300-page site: roughly half a day to build and join the sheet, a day to run the four tests and record the decisions, then the execution — a day for the deletions and merges, and the updates spread across the following quarter.",
+        "Two and a half days of thinking, in other words, against a content programme that has often been running for three years without one. It's the highest-return two days available on most established Indian sites, and it's cheaper than the two articles it displaces.",
+        "The uncomfortable governance point: the agency that produced the archive is rarely the right party to judge it. Not because they're dishonest, but because \"delete 40% of what we sold you\" is a difficult sentence to say to a client you're renewing next month. If your content has been produced by one team for years, have someone else run the audit — the answer will be different, and the difference is the useful part.",
+        "For context on when a page deserves an update rather than a deletion, [our argument for working the archive before the calendar](/journal/when-to-update-old-content-instead-of-writing-new) covers the refresh side in more depth, and [content decay](/glossary/content-decay) explains what you're seeing when a page slides without anybody touching it.",
+        "This work sits inside our SEO retainer, from ₹75,000/mo, with smaller sites from ₹40,000/mo. The commitment attached to it is the same one attached to everything else: not a ranking position for a keyword, which nobody can honestly promise, but movement against your own frozen baseline — trailing-90-day qualified leads from organic search. Miss it in 90 days and we keep working free until we beat it."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do you run a content audit?",
+      "a": "Export twelve months of page-level Search Console data, join it against a complete URL list so zero-impression pages appear, add columns for publish date, links and conversions, then run four ordered tests: protect winners, merge duplicates, delete what's below the floor, update everything left. Execute deletions first, in one dated batch."
+    },
+    {
+      "q": "Should I delete old blog posts that get no traffic?",
+      "a": "If a page is over six months old, under roughly 50 impressions a month, has no referring domains, no conversions and no topical role — yes. Check the links column first: anything with referring domains gets a 301 to the closest relevant page rather than a deletion, because you're keeping the link value."
+    },
+    {
+      "q": "What thresholds should a content audit use?",
+      "a": "Ours, over a trailing twelve months: exempt anything under six months old; keep positions 1–3 with clicks, plus anything with links or conversions; merge URLs competing for one query; delete below ~50 impressions a month with no links or conversions. Scale the impression floor with site size — higher on a large catalogue, lower on a 60-page site."
+    },
+    {
+      "q": "Why doesn't Search Console show all my pages?",
+      "a": "Because it reports URLs that appeared in search results. A page that earned zero impressions in the period simply isn't in the export — it's absent rather than shown as zero. That's why an audit has to join the export against a sitemap or crawl, or the worst pages on the site stay invisible."
+    },
+    {
+      "q": "What do I do with pages that get impressions but no clicks?",
+      "a": "Diagnose before rewriting. Position 30+ isn't a title problem, it's a relevance problem. Position 5–15 with poor CTR is the real title case. Position 1–5 with no clicks usually means the SERP absorbed the click. Impressions on unrelated queries means the page hedges across two topics and needs cutting down to one."
+    },
+    {
+      "q": "How long after a content audit should I expect results?",
+      "a": "Four weeks to confirm deletions took effect, eight weeks to read merges and updates. Expect total impressions to fall while clicks hold or rise — that's a successful prune, not a problem, and it's worth saying so before anyone opens the dashboard."
+    }
+  ],
+  "sources": [
+    {
+      "title": "What are impressions, position, and clicks?",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7042828"
+    },
+    {
+      "title": "Performance report (Search results): Overview and basic setup",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7576553"
+    },
+    {
+      "title": "Remove a page hosted on your site from Google",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/remove-information",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Redirects and Google Search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+      "date": "2026-04-14"
+    },
+    {
+      "title": "Creating helpful, reliable, people-first content",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "date": "2025-12-10"
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "content-decay"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-merge-two-pages-competing-for-the-same-keyword"
+    },
+    {
+      "type": "journal",
+      "slug": "when-to-update-old-content-instead-of-writing-new"
+    },
+    {
+      "type": "glossary",
+      "slug": "thin-content"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-export-search-console-data-to-bigquery"
+    },
+    {
+      "type": "services",
+      "slug": "content-marketing-services"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-write-a-content-brief"
+    }
+  ]
+}
