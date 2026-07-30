@@ -44,7 +44,11 @@
       ],
       "table": {
         "caption": "The same word means five different things depending on where your site is.",
-        "head": ["Your situation", "What \"best\" means here", "What you're really buying"],
+        "head": [
+          "Your situation",
+          "What \"best\" means here",
+          "What you're really buying"
+        ],
         "rows": [
           [
             "New site, under 12 months old, few links",
@@ -82,7 +86,11 @@
       ],
       "table": {
         "caption": "Nine weighted criteria. Weights total 100. Score each 1–5.",
-        "head": ["Criterion", "Weight", "What a 5 looks like"],
+        "head": [
+          "Criterion",
+          "Weight",
+          "What a 5 looks like"
+        ],
         "rows": [
           [
             "Fit with your stage and site type",
@@ -215,11 +223,33 @@
     }
   ],
   "related": [
-    { "type": "answers", "slug": "how-to-choose-an-seo-agency" },
-    { "type": "journal", "slug": "why-best-seo-agency-lists-are-paid" },
-    { "type": "compare", "slug": "seo-consultant-vs-seo-agency" },
-    { "type": "cost", "slug": "seo-agency-cost" },
-    { "type": "glossary", "slug": "domain-authority" },
-    { "type": "services", "slug": "seo-retainer-plans" }
+    {
+      "type": "answers",
+      "slug": "how-to-choose-an-seo-agency"
+    },
+    {
+      "type": "journal",
+      "slug": "why-best-seo-agency-lists-are-paid"
+    },
+    {
+      "type": "compare",
+      "slug": "seo-consultant-vs-seo-agency"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-agency-cost"
+    },
+    {
+      "type": "glossary",
+      "slug": "domain-authority"
+    },
+    {
+      "type": "services",
+      "slug": "seo-retainer-plans"
+    },
+    {
+      "type": "journal",
+      "slug": "should-an-seo-agency-rank-for-its-own-keywords"
+    }
   ]
 }

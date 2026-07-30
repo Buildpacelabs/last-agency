@@ -1,0 +1,247 @@
+{
+  "slug": "who-is-liable-if-an-agency-gets-you-penalised",
+  "type": "answers",
+  "primaryKeyword": "who is liable if an seo agency gets my site penalised",
+  "secondaryKeywords": [
+    "can i sue my seo agency for a google penalty",
+    "seo contract indemnity clause",
+    "agency liability cap marketing contract",
+    "who pays for link cleanup after an agency"
+  ],
+  "cluster": "agency-risk",
+  "intent": "informational",
+  "h1": "Who is liable if an SEO agency gets your site penalised?",
+  "metaTitle": "Who Is Liable If Your SEO Agency Penalises You?",
+  "metaDescription": "Nearly every Indian agency contract caps liability at fees paid, which is less than the cleanup costs. The wording that changes that, and our own cap.",
+  "updated": "2026-08-06",
+  "published": "2026-08-06",
+  "answer": "Contractually, you are. Almost every Indian agency contract caps the agency's liability at the fees you've paid it — commonly three months, so ₹1,50,000 on a ₹50,000 retainer — while cleaning up bought links and replacing the lost revenue costs several times that. Only an indemnity sitting outside the cap changes the answer.",
+  "takeaways": [
+    "**The cap is the whole argument.** \"Liability limited to fees paid in the preceding three months\" is the market default, and it is agreed in week zero when nobody imagines a penalty.",
+    "**Only a manual action gives you a document.** Search Console names it, dates it and describes the scope. An algorithmic decline gives you a graph and an opinion.",
+    "**Causation is proved with month-one records**, not month-eighteen anger. A backlink export from day one, monthly link reports with live URLs, and written approvals.",
+    "**Ask for a carve-out, not a bigger cap.** A breach of the \"we will follow search engine guidelines\" warranty should sit outside the limitation clause. That one sentence beats doubling the number."
+  ],
+  "sections": [
+    {
+      "h2": "The clause that decides this, and what it is worth in rupees",
+      "body": [
+        "Open your agency contract and find the paragraph headed *Limitation of Liability*. It usually runs to four lines, sits near the end next to the governing-law boilerplate, and it is the only part of the document that matters on the day something goes wrong.",
+        "The standard wording caps the agency's total liability at the fees you have paid — often only in the preceding three or six months — and separately excludes indirect and consequential loss. **Your lost revenue is consequential loss.** So the clause does two things at once: it sets a small ceiling on what you can recover, and it removes the category the real damage falls into."
+      ],
+      "table": {
+        "caption": "What a standard liability cap is actually worth on an Indian SEO retainer.",
+        "head": [
+          "Cap wording",
+          "On a ₹50,000/mo retainer",
+          "On a ₹1,50,000/mo retainer"
+        ],
+        "rows": [
+          [
+            "Fees paid in the preceding 3 months",
+            "₹1,50,000",
+            "₹4,50,000"
+          ],
+          [
+            "Fees paid in the preceding 6 months",
+            "₹3,00,000",
+            "₹9,00,000"
+          ],
+          [
+            "Total fees paid under the agreement",
+            "₹6,00,000 after a year",
+            "₹18,00,000 after a year"
+          ],
+          [
+            "Any of the above, plus \"excluding indirect and consequential loss\"",
+            "Same ceiling, minus the lost-revenue claim entirely",
+            "Same ceiling, minus the lost-revenue claim entirely"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "You agree the ceiling before anyone knows the number",
+        "body": "Look at the third row. *Total fees paid under this agreement* is far better than *the last three months*, and it costs the agency nothing to accept at signature — because at signature it is zero. It is the easiest amendment you will ever win, and the only moment you have any bargaining power is while the contract is unsigned."
+      }
+    },
+    {
+      "h2": "What the cleanup actually costs, so you can see the gap",
+      "body": [
+        "Nobody publishes a rate card for penalty cleanup, so here is the shape of the bill rather than a made-up total. Every line below is work somebody has to do after the damage lands, and under a standard contract every line is yours."
+      ],
+      "bullets": [
+        "**Finding the links.** A full backlink export, deduplicated across two tools, then a human read of every referring domain to sort bought from earned. On a profile with a few thousand referring domains that is days of work, not hours.",
+        "**Getting them taken down.** Google asks you to try removal before disavowing, which means writing to sites that were paid to publish the link and have no reason to answer for free. Some will quote you a price to remove it.",
+        "**The disavow file, then the waiting.** Disavowing is a slow signal, not a switch, and it is explicitly an advanced tool rather than a routine one.",
+        "**The reconsideration cycle.** Reviews are done by people and take days to weeks. A rejected request means another full pass and another wait.",
+        "**Diagnosis, if you do not yet know which of the three things happened.** Ours is a fixed ₹99,000, and most sites sent to us for [penalty recovery](/services/penalty-recovery-services) turn out not to be penalised at all.",
+        "**The months of lost revenue** while all of that happens — the largest line by a distance, and the one the contract already excluded."
+      ]
+    },
+    {
+      "h2": "Manual action or algorithmic decline: only one of them is arguable",
+      "body": [
+        "This is the fork the whole liability question turns on, and it is why most \"the agency destroyed my rankings\" claims go nowhere.",
+        "A **manual action** is a document. A human reviewer at Google has decided pages on your site breach the spam policies, and [the Manual Actions report in Search Console names it, dates it and describes the affected scope](https://support.google.com/webmasters/answer/9044175). *Unnatural links to your site* is one of the named types. That is evidence with a timestamp, and the timestamp usually falls inside somebody's engagement.",
+        "An **algorithmic decline** is a graph. Google's guidance on core updates is explicit that a drop does not mean your pages did something wrong — the updates are broad, they do not target individual sites, and other pages simply moved ahead of yours. You cannot build a breach claim on that. Not because the agency was necessarily blameless, but because there is no finding to point at and no date to attach it to.",
+        "So check the report before you instruct a lawyer. An empty Manual Actions report plus a slide that started the week of a core update means your argument is about competence, not liability — a cheaper conversation, and usually a reason to [leave without losing your accounts](/answers/can-i-fire-my-seo-agency) rather than to sue."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The third possibility, which is the most common of the three",
+        "body": "Rankings also collapse because a redirect broke, a `noindex` shipped to production, or a firewall started blocking Googlebot. Those are the easiest of all to attribute — the deploy has a date and an author — and the fastest to reverse. Rule them out before you assume a penalty, because the fix might be a fifteen-minute one."
+      }
+    },
+    {
+      "h2": "Proving causation: what you need logged from month one",
+      "body": [
+        "Liability arguments are won on records that existed before anyone was angry. Every item below is free to collect while the relationship is good and impossible to reconstruct afterwards."
+      ],
+      "numbered": [
+        "**A backlink export from day one**, before the agency touches anything. Without it you cannot show which links are theirs, and their entire defence is that the profile already looked like that.",
+        "**Monthly link reports with live URLs**, not counts. \"Built 14 links this month\" proves nothing. Fourteen URLs on fourteen named domains is an exhibit.",
+        "**Written approvals for whatever you signed off.** The strongest agency defence is that you approved the tactic. If you approved a guest-posting programme and they bought placements on a link network, that distinction has to exist somewhere in writing.",
+        "**The Search Console message centre, untouched.** The penalty notification is dated and it is Google's record, not yours or theirs. Nobody should be deleting it.",
+        "**Who held which account, and when.** If [the agency held admin on your properties](/answers/what-access-to-give-an-seo-agency) it cuts both ways: it strengthens attribution, and it weakens any claim that you were supervising the work.",
+        "**Invoices and scope documents.** An invoice line reading *link building — 20 placements* is what ties the fees you paid to the act that caused the problem."
+      ]
+    },
+    {
+      "h2": "The wording that actually shifts the risk, and why agencies fight it",
+      "body": [
+        "Two sentences do more than any amount of haggling over the cap. Neither is exotic and both are easier to add before signature than to argue after."
+      ],
+      "bullets": [
+        "**A warranty.** *The Agency warrants that it will not acquire links in exchange for payment, goods or services, participate in link schemes, or publish content on the Client's behalf in breach of Google's published spam policies.*",
+        "**A carve-out.** *The limitation of liability shall not apply to a breach of the clause above, in respect of which the Agency shall bear the reasonable cost of remediation, including third-party fees, for twelve months following termination.*"
+      ],
+      "subs": [
+        {
+          "h3": "What the carve-out deliberately does not say",
+          "body": [
+            "It does not make the agency liable for your lost revenue. That is the version no agency will ever sign, and honestly should not: no marketing shop billing ₹50,000 a month can carry an unbounded claim, and none of them hold insurance that would answer it.",
+            "What it does say is that whoever made the mess pays to clear the mess. That is bounded, arguable and insurable, and a serious agency will discuss it. The ones that refuse the warranty outright usually know exactly what is in their link inventory."
+          ]
+        },
+        {
+          "h3": "Expect the fight to be about survival, not principle",
+          "body": [
+            "Most agencies will accept the warranty and then push back on the twelve months after termination. That is the part worth holding, because a manual action can land long after the relationship ends: the links were built in month six and the report appears in month twenty, by which time the contract has expired and so, without survival wording, has your claim."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The sentence that quietly removes everything you just negotiated",
+        "body": "Watch for \"the Client acknowledges that the Agency has no control over search engine algorithms and shall not be liable for any change in rankings or traffic.\" Read literally, that swallows the penalty case too. Add \"save where such change results from the Agency's breach of the warranty above\" or the carve-out you fought for does nothing at all."
+      }
+    },
+    {
+      "h2": "What our own contract caps, stated plainly",
+      "body": [
+        "A page arguing for carve-outs should show its own. Ours, without the hedging:"
+      ],
+      "bullets": [
+        "**We do not buy links.** No paid placements, no link networks, no \"our publisher relationships\". It sits in the engagement letter as a warranty, not as a claim on a website.",
+        "**Our cap is the fees you have paid us in the preceding twelve months**, not three.",
+        "**A breach of that warranty sits outside the cap.** If we ever build a link that earns you a manual action, we do the removal outreach, the disavow file and the reconsideration requests at our cost, and you do not pay a retainer for the months it takes.",
+        "**We do not take on your lost revenue**, and you should be wary of anyone who says they will on ₹75,000 a month. That promise is either unread or unmeant.",
+        "**Month to month after the first quarter, 30 days' notice, and you keep every asset** — including, for the avoidance of any doubt, the accounts themselves."
+      ],
+      "subs": [
+        {
+          "h3": "None of this makes us unusual by intention",
+          "body": [
+            "It makes us unusual by market conditions, which is a worse comment on the industry than a compliment to us. The whole clause list — scope, baseline, ownership, notice, handover — belongs in [what should be in an SEO contract](/answers/what-should-be-in-an-seo-contract), and the liability paragraph is the one founders skip and lawyers read first."
+          ]
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I sue my SEO agency for a Google penalty?",
+      "a": "In principle yes, as a breach of contract, if you can show the agency did something the agreement prohibited and the penalty followed. In practice the limitation-of-liability clause caps recovery at a few months' fees and excludes lost revenue, so the arithmetic rarely justifies litigation. A manual action naming unnatural links is the one pattern worth taking advice on."
+    },
+    {
+      "q": "Who pays for link cleanup after an agency builds bad links?",
+      "a": "You do, unless the contract says otherwise. Standard agency terms leave remediation as your cost and cap the agency's exposure at fees paid. The wording that changes it is a remediation clause: the agency bears the reasonable cost of removal, disavow and reconsideration for twelve months after termination."
+    },
+    {
+      "q": "Is a ranking drop after a core update the agency's fault?",
+      "a": "Contractually, usually nobody's. Google says core updates are broad and do not target individual sites, so a drop is not a finding against you and there is nothing to attribute. That makes it a performance conversation rather than a liability one. Check the Manual Actions report first — a real penalty only ever appears there."
+    },
+    {
+      "q": "What is a reasonable liability cap for an Indian marketing agency?",
+      "a": "Total fees paid under the agreement rather than the last three months, plus a carve-out for breach of the search-guidelines warranty. That is proportionate for a retainer anywhere between ₹40,000 and ₹3,00,000 a month. Uncapped liability is not reasonable, and asking for it usually ends the negotiation on the spot."
+    },
+    {
+      "q": "Will an agency indemnify me against a penalty?",
+      "a": "Some will, for remediation costs. Almost none will for lost revenue, and an eager yes is a warning sign rather than a reassurance — an agency promising to cover consequential loss on a small retainer has either not read the clause or has no intention of honouring it."
+    },
+    {
+      "q": "Does a disavow file fix a manual action on its own?",
+      "a": "No. Google treats disavowing as an advanced tool and asks you to try getting the links removed first. After that, a manual action only lifts when you file a reconsideration request and a reviewer accepts it — a process measured in days to weeks, and one that can come back rejected."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Spam policies for Google web search",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "date": "2026-05-15"
+    },
+    {
+      "title": "Manual actions report",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9044175"
+    },
+    {
+      "title": "Disavow links to your site",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/2648487"
+    },
+    {
+      "title": "Reconsideration requests",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/35843"
+    },
+    {
+      "title": "Google Search's core updates and your website",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/updates/core-updates",
+      "date": "2025-12-10"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "can-an-seo-agency-hurt-your-website"
+    },
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "services",
+      "slug": "penalty-recovery-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "toxic-backlinks"
+    },
+    {
+      "type": "journal",
+      "slug": "what-a-bad-seo-agency-actually-costs-you"
+    },
+    {
+      "type": "answers",
+      "slug": "what-happens-if-my-marketing-agency-shuts-down"
+    },
+    {
+      "type": "answers",
+      "slug": "will-an-seo-agency-work-with-my-competitors"
+    }
+  ]
+}

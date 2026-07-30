@@ -1,0 +1,275 @@
+{
+  "slug": "how-long-before-a-new-domain-can-rank",
+  "type": "journal",
+  "primaryKeyword": "how long before a new domain can rank",
+  "secondaryKeywords": [
+    "is there a google sandbox",
+    "seo for a brand new website timeline",
+    "what to do in the first six months of a new site",
+    "new domain local pack chances"
+  ],
+  "cluster": "content-ops",
+  "intent": "informational",
+  "h1": "How long before a brand-new domain can rank?",
+  "metaTitle": "How Long Before a New Domain Can Rank?",
+  "metaDescription": "Our own domain is the worked example, including the finding that stopped us building city pages: a new site cannot buy into a local pack with content.",
+  "updated": "2026-10-08",
+  "published": "2026-10-08",
+  "answer": "A brand-new domain usually collects its first Search Console impressions within two to six weeks of being indexed, non-branded clicks on long-tail queries around months two to four, and anything commercially competitive from month six onwards. What it cannot buy at any speed is a place in the local pack — that takes an address.",
+  "takeaways": [
+    "The first six months are mostly about being **crawled, indexed and believed**. Ranking is what happens after all three, not instead of them.",
+    "There is no documented sandbox. What you're feeling is **no links, no crawl demand, no query history and no entity** — four ordinary shortages that look like one filter.",
+    "A new domain can win **specific**. It cannot win **competitive**, and it cannot win **local** — the map pack is gated on a verified address, not on content.",
+    "This site launched with 500 pages carrying a single publish date. That was the mistake we'd undo first, and it's why every page since has its own date.",
+    "If your business is pre-launch, a full SEO retainer in month one is usually the wrong purchase. **Buy the tracking, the product pages and some demand instead.**"
+  ],
+  "sections": [
+    {
+      "h2": "Zero is a different starting line, not a slower one",
+      "body": [
+        "Most timeline advice — including [our own honest answer on how long SEO takes](/answers/how-long-does-it-take-for-seo-to-work) — is written for a site that already exists. It has a few hundred pages, some accidental links, a year of Search Console history and a brand a few thousand people have typed. Those sites are slow because change propagates slowly.",
+        "A domain registered last Tuesday is not a slower version of that. It is a different problem, because four things are missing at once and each one gates the next.",
+        "Google will find you without help. Its own starter guide is blunt about it: you usually don't need to do anything except publish your site on the web, because the vast majority of sites in the results are found automatically as Google crawls. Discovery is genuinely the easy part, and the number of new-site checklists that begin with \"submit your URL to Google\" is a reasonable proxy for how much of this advice was written in 2009.",
+        "What you don't get automatically is crawl demand. Google's crawl documentation says plainly that URLs which are more popular on the internet tend to be crawled more often, to keep them fresher. A domain nobody links to and nobody searches for is, by that definition, not popular — so it gets visited politely and infrequently, and every subsequent change you make takes longer to register than the same change would on an established site. The gap widens before it closes."
+      ],
+      "bullets": [
+        "**No links.** Nothing points at you, so nothing vouches for you and nothing routes crawlers to you.",
+        "**No crawl demand.** Being crawlable and being crawled often are separate things, and the second one follows attention.",
+        "**No query history.** Google has never served your pages to anyone, so it has no behavioural read on whether they satisfy anything.",
+        "**No entity.** Nobody has written your business name anywhere. There is no knowledge-graph reconciliation to do, because there's nothing to reconcile."
+      ]
+    },
+    {
+      "h2": "Is there a sandbox? Not one anybody can point at",
+      "body": [
+        "The sandbox theory says Google holds new domains back for a fixed probationary period regardless of quality. It has been circulating since roughly 2004, Google has never documented it, and no version of it survives contact with the counter-examples — new domains do occasionally rank fast, usually because a real audience arrived at the same time.",
+        "The effect people are describing, though, is completely real. Pages get indexed. They rank for nothing. Search Console shows impressions on queries you never targeted and none on the ones you did. That goes on for weeks, and then it doesn't.",
+        "You don't need a filter to explain it. Every mechanism in the previous section is quietly running at once, and Google's own guidance adds one more: after a site improves, it may take months before its systems determine that the site is producing helpful content in the long term. That sentence is written about recovery, but the logic is identical for a domain that has never been assessed at all. Judgment about a site is accumulated, not instant.",
+        "Which matters practically, because the two responses to a believed sandbox are both destructive. One is to buy links to escape it, which converts a waiting problem into a manual-action problem. The other is to keep republishing and rewriting everything monthly on the theory that something is wrong, which resets whatever assessment was quietly forming. The correct response to a slow start on a new domain is to keep shipping and stop touching what you already shipped."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The tell that it is not a filter",
+        "body": "If a sandbox existed as a blanket hold, a new domain would rank for nothing at all. In practice new domains rank almost immediately for queries with no competition — their own brand name, a genuinely unusual long-tail phrase, a product code. Selective early ranking is what a competitive scoring system looks like from the bottom. It is not what a probation period looks like."
+      }
+    },
+    {
+      "h2": "Month by month on a domain with no history",
+      "body": [
+        "Here is the shape we plan against. Treat it as a floor to sanity-check an agency's promises with, not a forecast — the variance between two new domains in the same market is enormous, and mostly driven by whether anyone outside the company has ever heard of the business."
+      ],
+      "table": {
+        "caption": "What a domain with no history realistically produces, window by window.",
+        "head": [
+          "Window",
+          "What is actually happening",
+          "What to look at",
+          "What it does not mean"
+        ],
+        "rows": [
+          [
+            "Weeks 0–2",
+            "Discovery and first crawl. Some pages indexed, many sitting in Discovered — currently not indexed.",
+            "Page indexing report. Indexed count versus published count.",
+            "A low indexed count this early is normal, not a technical fault."
+          ],
+          [
+            "Weeks 2–8",
+            "First impressions appear, mostly on queries you never targeted. Almost no clicks.",
+            "Impressions by query. Which pages Google chose to show, and for what.",
+            "Impressions are not demand. They're Google testing where you belong."
+          ],
+          [
+            "Months 2–4",
+            "Long-tail clicks start. Positions are unstable and swing by twenty places week to week.",
+            "Non-branded clicks. Number of distinct queries with any impression.",
+            "A page at position 12 is not \"nearly there\". Page two is not a stage."
+          ],
+          [
+            "Months 4–6",
+            "The better pages settle. A first few links arrive if anything you published was worth citing.",
+            "Referring domains. Which pages earned them, and why.",
+            "Traffic at this point rarely predicts revenue. The mix is still wrong."
+          ],
+          [
+            "Months 6–12",
+            "Competitive terms become winnable if the topic set is coherent and links kept arriving.",
+            "Qualified leads in the CRM, against the baseline you froze on day one.",
+            "Twelve months of nothing is a verdict on the plan, not on SEO."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The queries a new domain can win, and the ones it cannot buy into",
+      "body": [
+        "The useful frame isn't time, it's competition. A new domain has no accumulated advantage, so it can only win where accumulated advantage isn't required. That set is smaller than founders expect and larger than agencies admit."
+      ],
+      "subs": [
+        {
+          "h3": "Winnable in the first quarter",
+          "bullets": [
+            "**Your own brand name**, once the site is indexed and the name isn't a common word. If you're not first for your own name by week four, something is broken.",
+            "**Queries with no dedicated page anywhere.** Very specific comparisons, error messages, compatibility questions, regulatory specifics. If the current results are all forum threads and PDFs, a decent page wins on merit.",
+            "**First-hand information nobody else has.** Your own pricing, your own process, a number you can publish that competitors won't. This is the only category where a new domain has a structural advantage over an old one.",
+            "**Long-tail in a language the incumbents ignore.** Hindi, Marathi and Tamil commercial queries frequently have nothing well-made competing for them at all."
+          ]
+        },
+        {
+          "h3": "Not available at any budget in year one",
+          "bullets": [
+            "**Head commercial terms.** \"SEO agency\", \"CRM software\", \"personal loan\" — a decade of links each, held by sites with an entire team defending them.",
+            "**\"Best X in India\" listicles.** These are held by directories and publishers whose whole business is holding them. You are not outranking them with a better listicle.",
+            "**Anything YMYL.** Medical, legal and financial queries are scored hardest on credentials and reputation, both of which a new domain has none of by construction.",
+            "**The local pack.** Not a difficulty problem. A different mechanism entirely, and the next section is about why."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The local pack is not a content problem",
+      "body": [
+        "This is the finding that changed what we sell, so it gets the space.",
+        "The three-result map block at the top of a local search doesn't rank web pages. It ranks Business Profiles. Google says the block is ordered on relevance, distance and prominence — how well a profile matches the query, how far the business is from the searcher, and how well-known it is, with reviews and ratings feeding that last one.",
+        "Two of those three are simply unavailable to a page. Distance is computed from a physical location. Prominence accrues to a verified entity over time. And eligibility itself is gated: Google's rules say [you can create a Business Profile if your business has a physical location customers can visit, or travels to customers where they are](https://support.google.com/business/answer/3038177), with PO boxes and remote mailboxes explicitly not acceptable, and a rented mailing address you don't operate out of — a virtual office — not eligible either. A co-working desk qualifies only with clear signage, staffing during business hours and customers actually received there.",
+        "Read that back and the conclusion is unavoidable. A page titled \"SEO Agency in Pune\", published by a company with no presence in Pune, cannot enter the Pune map pack. It has no address to compute distance from and no profile to accrue prominence to. The best it can do is compete in the ordinary blue links underneath the pack — against directories, against genuinely local firms who also have the pack slot, and for a query where the pack has already absorbed most of the clicks.",
+        "So we stopped. This site carries city pages for around sixty markets, published in the first batch. The second batch of a hundred pages contains none, and won't. The existing ones earn their place only where we can say something true and specific about how business actually works in that city — and where we can't, we'd rather have fewer pages. That's also why we won't sell a client a set of city landing pages for cities they don't operate in. It's a page count, not a plan."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The pin-drop pitch",
+        "body": "If an agency proposes twenty city pages for a business with one office, ask which of the twenty will appear in a map pack. The honest answer is one — the city the office is in — and that one needs [a verified Business Profile](/services/google-business-profile-optimisation), consistent citations and reviews far more than it needs a landing page. The other nineteen are competing for the leftovers under someone else's pack."
+      }
+    },
+    {
+      "h2": "What actually shortens the clock",
+      "body": [
+        "Given that crawl attention follows popularity, the fastest lever on a new domain isn't publishing volume. It's being mentioned somewhere that already has attention.",
+        "This is unglamorous and mostly not SEO work. A launch covered by a trade publication, a founder writing somewhere with an existing audience, a partner listing you, a genuinely useful tool or dataset that people link to because it saves them work. Five links from places Google crawls daily do more for a new domain's crawl rate and initial assessment than fifty pages do — and [getting the first backlinks to a new website](/answers/how-to-get-backlinks-for-a-new-website) is a different job from the link work an established site does.",
+        "The second lever is coherence. A new domain publishing forty pages across six unrelated topics is asking Google to work out what it is from evidence that says nothing. Forty pages that all circle one subject at least present a legible claim. This is the whole argument behind topic clusters, and it matters far more at zero than it does at year five.",
+        "The third is simply not breaking anything, which sounds trivial until you count how many new sites launch with a staging robots.txt still blocking everything, a noindex left on the template, or a canonical pointing at the dev domain. Half the \"sandbox\" cases we've been asked to look at were a `Disallow: /` nobody removed. Run [the pre-launch checklist](/answers/seo-checklist-before-launching-a-website) before you conclude Google is holding you back."
+      ]
+    },
+    {
+      "h2": "This domain, as the worked example",
+      "body": [
+        "It would be dishonest to write this page without applying it to ourselves, since this domain is new and we are, at the time of writing, living in exactly the window described above.",
+        "We launched with roughly 500 pages, all carrying one publish date. In isolation each page was written and checked. Collectively, 500 pages appearing on a single day on a domain with no history is precisely the pattern that reads as bulk generation — the thing Google's scaled-content guidance is aimed at, and a signal we handed over for free. That's the decision we'd undo first, and it's why every page written since carries its own date and goes live on it. We've written up where the line sits in [programmatic SEO and the scaled content line](/journal/programmatic-seo-and-the-scaled-content-line); we ended up on the wrong side of our own argument for about a week.",
+        "Three other things changed as a direct result of looking at our own Search Console rather than our opinions. Every page written since carries a sources array with primary documentation we actually opened, because on a domain with no reputation the citations are doing work the domain can't. The people who run this company are named on the site with real profiles attached, because a business quoting six-figure retainers with nobody's name on it is asking for trust it hasn't offered. And the city pages stopped, for the reason set out two sections up.",
+        "What we are not doing is publishing a traffic chart. Not because it's embarrassing — because at this stage it wouldn't mean anything. Month-two numbers off a new domain are noise with a trend line drawn through them, and an agency showing you its own early growth curve as evidence is doing the thing this site exists to argue against. Ask us again at month twelve, when the number can be wrong in a way you could catch."
+      ],
+      "callout": {
+        "kind": "stat",
+        "title": "What we froze on day one",
+        "body": "The same thing we make every client freeze: a baseline. Trailing-90-day qualified leads from organic search, dated, saved as a file. On a brand-new domain that number is zero, which makes it a trivially easy baseline to beat and an honest one to publish. Every later argument about whether this worked is settled against that file."
+      }
+    },
+    {
+      "h2": "What we decline on a new site, and where the money should go",
+      "body": [
+        "We take three clients a month, which means saying no often enough to have a standard list. On a pre-launch or newly launched business, four requests get declined regardless of budget.",
+        "City pages for cities you don't operate in. Any engagement whose stated goal is a specific ranking position by a specific month, because nobody controls Google's index and a position promise on a new domain is a promise about a stranger's algorithm. Link buying, at any price, to accelerate the first six months. And a full content retainer for a business that hasn't yet sold the thing manually — if you don't know which objection loses you the deal, you don't know what the pages should say, and we'd be charging you to guess.",
+        "Here's where that money does more in the first two quarters."
+      ],
+      "numbered": [
+        "**Tracking that survives contact with reality.** First-touch source in a write-once CRM field, hidden fields on every form, WhatsApp and call enquiries captured. Two days of developer time, and without it month nine has no evidence to read.",
+        "**The five pages that describe what you sell.** Product, pricing, process, proof, contact. On a new domain these are the pages that convert the trickle you do get, and the trickle is all you have for a while.",
+        "**One piece of genuinely first-hand content.** A number, a dataset, a teardown, a price nobody else publishes. It's the only category where being new isn't a disadvantage, and it's how the first real links arrive.",
+        "**Your Google Business Profile, if you're eligible.** For a business with a real address this outperforms everything else on this list in the first ninety days, and it costs nothing but the verification.",
+        "**Paid, deliberately and small, to buy demand while SEO compounds.** We run performance marketing from ₹40,000/mo and SEO from ₹75,000/mo, smaller sites from ₹40,000. On a new domain, splitting rather than going all-in on organic is usually the right shape."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The honest sequencing answer",
+        "body": "If you have twelve months of runway and no revenue yet, SEO is the wrong first purchase — it pays back on a curve that starts after your runway ends. If you have eighteen months and existing sales, starting SEO at month one is one of the better decisions available, because the compounding starts as early as it can. We'll tell you which one you are on the first call, including when the answer is not yet."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long before a new domain ranks on Google?",
+      "a": "First impressions within two to six weeks of indexing, long-tail clicks around months two to four, and competitive terms from month six onwards if links keep arriving. The variance is enormous and depends mostly on whether anyone outside your company has heard of the business, not on how many pages you publish."
+    },
+    {
+      "q": "Is the Google sandbox real?",
+      "a": "There is no documented sandbox, and no fixed probation period anybody can point at. The slow start is real, but it's explained by having no links, no crawl demand, no query history and no established entity — four ordinary shortages happening at once. Treating it as a filter leads people to buy links, which turns waiting into a penalty."
+    },
+    {
+      "q": "Can a new website rank in the local pack?",
+      "a": "Not through the website. The map pack ranks Business Profiles on relevance, distance and prominence, and eligibility requires a physical location customers can visit or a business that travels to them. PO boxes and virtual offices are not acceptable. With a real address you can compete quickly; without one, no amount of content buys entry."
+    },
+    {
+      "q": "Should I buy an aged domain instead of registering a new one?",
+      "a": "Usually no. You inherit the previous owner's link profile, penalties, spam history and topical mismatch, none of which you can fully audit before buying. The cases where it works are narrow — a genuinely related business you're acquiring anyway. Buying age as a shortcut is how people acquire someone else's manual action."
+    },
+    {
+      "q": "How many pages should a new site launch with?",
+      "a": "Enough to make a legible claim about one subject, and no more than you can keep updating. Coherence beats volume at zero — forty pages circling one topic present evidence, forty across six topics present none. Publishing several hundred at once on a domain with no history reads as bulk generation, which we know because we did it."
+    },
+    {
+      "q": "Is it worth hiring an SEO agency for a brand-new website?",
+      "a": "Only if the business is already selling something and has more than about eighteen months of runway. Below that, the payback curve starts after your money ends. Spend the first quarter on tracking, the pages that describe what you sell, and a Business Profile if you're eligible — then start the retainer with evidence to point at."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Search Engine Optimization (SEO) Starter Guide",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+    },
+    {
+      "title": "Guidelines for representing your business on Google",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/3038177"
+    },
+    {
+      "title": "Tips to improve your local ranking on Google",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/7091"
+    },
+    {
+      "title": "Optimize your crawl budget",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/large-site-managing-crawl-budget"
+    },
+    {
+      "title": "Debugging drops in Google Search traffic",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "how-long-does-it-take-for-seo-to-work"
+    },
+    {
+      "type": "journal",
+      "slug": "what-actually-happens-in-the-first-90-days"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-get-backlinks-for-a-new-website"
+    },
+    {
+      "type": "answers",
+      "slug": "seo-checklist-before-launching-a-website"
+    },
+    {
+      "type": "compare",
+      "slug": "local-seo-vs-national-seo"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-business-profile"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-cost-in-india"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-forecast-seo-traffic"
+    }
+  ]
+}

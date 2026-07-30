@@ -1,0 +1,243 @@
+{
+  "slug": "what-happens-if-my-marketing-agency-shuts-down",
+  "type": "answers",
+  "primaryKeyword": "what happens if my marketing agency shuts down",
+  "secondaryKeywords": [
+    "risk of hiring a small marketing agency",
+    "key person risk agency",
+    "what if my agency's founder leaves",
+    "how to make an agency relationship survivable"
+  ],
+  "cluster": "agency-risk",
+  "intent": "informational",
+  "h1": "What happens if your marketing agency shuts down?",
+  "metaTitle": "What If Your Marketing Agency Shuts Down?",
+  "metaDescription": "Two people run this agency, so the objection is fair. What a small shop can genuinely promise, and what a large agency's continuity claim is really worth.",
+  "updated": "2026-08-19",
+  "published": "2026-08-19",
+  "answer": "You keep working — if the setup was right. Continuity comes from ownership, not headcount: every Google account verified in your name, files in your Drive, nothing built in tooling only they can open. Get those right and replacing any agency takes about a fortnight, whether it had two people or two hundred.",
+  "takeaways": [
+    "**Two people run Last Agency**, so this is a fair question to put to us. \"We won't shut down\" is not an answer, because nobody can promise it.",
+    "**What you lose is rarely the work — it's the access.** Rankings don't fall because an agency closed. They fall because nobody could get into the Business Profile for six weeks.",
+    "**Primary ownership of your Google Business Profile is the worst thing to leave with an agency.** A newly added owner then waits 7 days before they can transfer it on, so fix it while everyone is still speaking.",
+    "**Size buys cover, not continuity.** A large agency survives its own staff churn. The person who actually knew your account still leaves — and your profile is just as stuck if they hold it."
+  ],
+  "sections": [
+    {
+      "h2": "What actually breaks, in order of pain",
+      "body": [
+        "An agency disappearing is not one problem. It is five, they arrive at different speeds, and only one of them is about talent."
+      ],
+      "table": {
+        "caption": "What you lose when an agency vanishes, and how long each takes to reverse.",
+        "head": [
+          "What you lose",
+          "Why it hurts",
+          "If you prepared",
+          "If you didn't"
+        ],
+        "rows": [
+          [
+            "Account access and ownership",
+            "Nothing can be published, measured or corrected until it's resolved",
+            "Nothing to fix — it was already yours",
+            "Days to months; Business Profile recovery is the worst of it"
+          ],
+          [
+            "The account knowledge",
+            "Why that redirect exists, why two pages were merged, which links are real",
+            "An afternoon reading the documentation",
+            "Re-audited from scratch, at your cost"
+          ],
+          [
+            "Work in progress",
+            "Drafts, half-built pages, outreach threads that were about to land",
+            "Whatever sits in your Drive is yours",
+            "Gone, and nobody will admit how much there was"
+          ],
+          [
+            "Money already paid",
+            "Prepaid retainer, plus ad spend sitting on the agency's card",
+            "One month of exposure at most",
+            "An unsecured claim against a closing company"
+          ],
+          [
+            "Momentum",
+            "Publishing stops, link acquisition stops, the graph flattens",
+            "Two to four weeks",
+            "A quarter, sometimes two"
+          ]
+        ]
+      },
+      "bullets": [
+        "Four of those five are administrative rather than strategic — which is the good news, because administration is something you can settle in one afternoon **before** anything goes wrong.",
+        "The one that isn't administrative, the account knowledge, is also the one every agency claims to document and very few actually do. Ask to see it in month two, not month twenty."
+      ]
+    },
+    {
+      "h2": "The four setup decisions that make any agency replaceable in a fortnight",
+      "body": [
+        "None of these are about picking a better agency. They are about arranging the relationship so that the question of who runs your marketing stops being an existential one."
+      ],
+      "numbered": [
+        "**You hold verified ownership of every property; the agency holds a delegated or manager role.** In Search Console the distinction is real and enforced: a verified owner proved ownership with a token, a delegated owner was simply granted the status, and only verified owners can add or remove other verified owners. Verify the domain property yourself on a DNS record you control. In GA4 you need Administrator at account level to manage users at all, so that seat has to be yours. And on [Google Business Profile, hold primary ownership yourself](https://support.google.com/business/answer/3403100) — a profile can have many owners but exactly one primary owner, and that person cannot be removed until they transfer it.",
+        "**Nothing lives in tooling only they can open.** The site in a repository you control, analytics in your account, the keyword map and content calendar in ordinary files. An agency dashboard is fine as a view onto your data. It is not a place to store the data.",
+        "**Every deliverable lands in your Drive, not theirs, and not in an email thread with one employee.** One shared folder you own, one subfolder per month, raw exports rather than screenshots of exports. This single habit is the difference between a handover and an excavation.",
+        "**Billing stays month to month, and ad spend sits on your card.** Prepay a quarter and you have made an unsecured loan to a business whose books you cannot see. Ad spend on an agency card means a wind-down switches off your paid traffic overnight, and the refund becomes a claim rather than a button. [What access to give an agency](/answers/what-access-to-give-an-seo-agency) covers the permission levels in detail."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The seven-day rule nobody plans around",
+        "body": "When someone becomes an owner or manager of a Business Profile, Google makes them wait 7 days before they can remove other owners or transfer primary ownership. So the fix you make in a panic is a week slower than you expect. If the profile is already gone, requesting ownership notifies the current owner and gives them 3 days to respond — and if nobody is reading that inbox any more, you are into the slow route."
+      }
+    },
+    {
+      "h2": "What a large agency's continuity claim is genuinely worth",
+      "body": [
+        "The pitch is \"we have a bench\". It is a real thing and it is worth something — just not what it gets sold as.",
+        "**What size genuinely buys you:** cover when one person is ill, somebody who answers the phone in week one of a crisis, and a business that survives its own staff turnover. If your account lead resigns at a 200-person agency, the account continues. If one of two people is out for a month at a two-person agency, it doesn't. That is a real difference and pretending otherwise would be dishonest.",
+        "**What size does not buy you:** the knowledge. The person who knew why your category pages are built the way they are leaves either way — resignations are more common than closures at every agency size. The large firm replaces them with someone new to your account and calls that continuity. Internal handovers are not automatically better than handovers between agencies, because nobody writes a proper handover document for a colleague sitting ten feet away.",
+        "**And the ownership problem is size-blind.** A 200-person agency holding primary ownership of your Business Profile and verification on your Search Console property is *less* survivable than a two-person shop that never asked for either. Centralised access is tidier for a large operations team, which is exactly why they ask for it.",
+        "There is also a failure mode nobody calls a shutdown: the agency quietly stops caring about the smallest accounts after a bad quarter. Calls get shorter, reports get later, and one day nobody replies. If that is what you are actually living through, [an agency that has stopped responding](/answers/my-seo-agency-has-stopped-responding) is the same problem with better manners, and the same fix applies."
+      ]
+    },
+    {
+      "h2": "Wind-down etiquette: what a decent exit looks like",
+      "body": [
+        "Agencies close for ordinary reasons — a founder takes a job, a key client leaves, two people decide they would rather build something else. What separates a decent closure from a bad one is entirely sequence. This is a fair standard to hold anyone to, including us."
+      ],
+      "numbered": [
+        "**Written notice with a date, before it becomes public.** Not a LinkedIn post you find out from at the same time as your competitors.",
+        "**Access transfers first, while people still care.** Primary ownership moved, delegated owners removed, admin returned — before the final invoice, not after it.",
+        "**Prepaid fees returned pro-rata.** Any month billed and not worked, refunded to the day. If the agency is genuinely insolvent this is where you get told to queue, which is the whole argument against prepaying.",
+        "**Work in progress handed over in source format.** Drafts as editable documents, the crawl as a file, the link prospect list as a sheet, dashboards copied into your own account rather than screenshotted.",
+        "**A named human reachable for 30 days afterwards**, for the questions your next agency will inevitably ask in week two.",
+        "**Introductions.** A closing agency's most useful remaining asset is its address book. A good one spends it on you rather than on itself."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The refund line is the one to test early",
+        "body": "Ask during the pitch: \"what happens to prepaid fees if you close?\" You are not really testing the answer, you are testing whether anyone has thought about it. An agency that has an immediate, unembarrassed reply has considered its own failure, which is a better sign than a bigger office."
+      }
+    },
+    {
+      "h2": "Testing key-person risk at any agency size",
+      "body": [
+        "Key-person risk is the chance that one person leaving removes most of what you were buying. At a two-person agency it is obvious. At a 200-person one it hides behind the logo, which makes it harder to price rather than smaller. Five questions surface it either way."
+      ],
+      "bullets": [
+        "**\"Which Google properties will you hold, and in what role?\"** The right answer names manager or delegated access and asks *you* to hold the verification. An agency that wants primary ownership should have an unusually good reason.",
+        "**\"If I emailed today asking for everything, what would arrive, and how long would it take?\"** A vague answer means it is not documented, which means it does not exist.",
+        "**\"Who else here could run this account next week?\"** At a small agency the honest answer might be \"nobody, but here is exactly what you would be handed\". That beats a fictional bench.",
+        "**\"Show me last month's deliverables in the folder I own.\"** If they have to email them across, they were never in your folder.",
+        "**\"What is the notice period, and is there an exit fee?\"** Long lock-ins with long notice periods are the clearest signal that an agency has planned for its own revenue rather than your continuity."
+      ]
+    },
+    {
+      "h2": "What we would hand over, and how long it would take",
+      "body": [
+        "Two people run Last Agency: Aryan Singh on the commercial side and Priyanshu Semwal on the technical side. That is the whole org chart, and hiding it would be a strange way to run a site whose entire argument is that the industry hides things. So here is a commitment rather than a reassurance.",
+        "**Five working days, no fee, no exit clause to invoke** — whether we are winding down, or you are leaving on an ordinary Tuesday because you would rather work with someone else. What arrives:"
+      ],
+      "bullets": [
+        "Every access transfer completed: Search Console verified ownership, GA4 Administrator, Google Ads, Business Profile primary ownership, Tag Manager, and any tool seat bought in your name.",
+        "The account document — decisions, dates and reasons. Why a page was merged, why a redirect exists, which experiment failed and what it cost to find out.",
+        "The keyword map, the content calendar and every draft in progress, as editable files.",
+        "The link record: every placement with its live URL and how it was earned.",
+        "Raw exports from Search Console, GA4 and the last crawl, so your next agency is not rebuilding a baseline you already paid for once.",
+        "A pro-rata refund of anything billed and not worked."
+      ],
+      "subs": [
+        {
+          "h3": "Why none of that is generous",
+          "body": [
+            "It is just what \"you already own it\" means in practice. We would be moving files, because we never held anything that wasn't yours to begin with. We are also month to month after the first quarter with 30 days' notice, which caps the cost of us being wrong about ourselves at one month's fee.",
+            "The uncomfortable half of the same argument: there is no bench here, which is why we cap intake at three new clients a month. [Why we only take three clients a month](/journal/why-we-only-take-three-clients-a-month) is the long version, and it is this page read from the other end. If you would rather buy the bench, buy the bench — just check who holds your Business Profile before you sign, because that is the part that actually decides how survivable the relationship is. The [real cost of switching agencies](/journal/the-real-cost-of-switching-seo-agencies) is roughly ten weeks when you start cold, and under two when you don't."
+          ]
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What happens to my SEO if my agency shuts down?",
+      "a": "The work already done stays done — published pages keep ranking and existing links stay live. What stops is everything new: no publishing, no technical fixes, no link acquisition. Rankings drift rather than crash. The real damage is the weeks lost regaining access to accounts you should have owned from day one."
+    },
+    {
+      "q": "Is it risky to hire a small marketing agency?",
+      "a": "It is a different risk, not a bigger one. A small agency can close or lose a key person; a large one loses your account lead just as often and replaces them with a stranger. The variable that decides your exposure is whether you own the accounts, the files and the data — get that right and either failure costs you a fortnight."
+    },
+    {
+      "q": "How do I get my Google Business Profile back if the agency has disappeared?",
+      "a": "Request ownership through the profile. Google notifies the current owner, who has 3 days to respond. If nobody is reading that inbox you move into a slower claim process with no guaranteed timeline — which is precisely why holding primary ownership yourself from the start is worth the ten minutes it takes."
+    },
+    {
+      "q": "Should I ask for prepaid fees back if my agency closes?",
+      "a": "Yes, in writing, pro-rata to the day, and immediately. Whether you receive them depends entirely on solvency, because an unsecured refund claim against a closing company rarely pays out. That is the real argument against prepaying quarters and against the discount usually offered for annual payment."
+    },
+    {
+      "q": "What is key-person risk at an agency?",
+      "a": "The chance that one person's departure removes most of the value you were buying. It exists at every size — obvious at a two-person shop, hidden behind the brand at a large one. Test it by asking who else could run your account next week and what they would have to read to do it."
+    },
+    {
+      "q": "How long does it take to replace a marketing agency?",
+      "a": "About ten weeks from a cold start: notice served, selection run, then ramp-up and re-auditing. Under two weeks if you already hold every account, your files sit in your own Drive, and there is a written account document for the next team to read. That gap is entirely a setup question, not a luck one."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Manage your Business Profile owners & managers",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/3403100"
+    },
+    {
+      "title": "Request ownership of a Business Profile",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/4566671"
+    },
+    {
+      "title": "Managing owners, users, and permissions",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7687615"
+    },
+    {
+      "title": "Access and data-restriction management",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9305587"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "can-i-fire-my-seo-agency"
+    },
+    {
+      "type": "answers",
+      "slug": "what-access-to-give-an-seo-agency"
+    },
+    {
+      "type": "answers",
+      "slug": "who-owns-the-website-an-agency-built"
+    },
+    {
+      "type": "journal",
+      "slug": "the-real-cost-of-switching-seo-agencies"
+    },
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "cost",
+      "slug": "should-i-pay-an-seo-agency-in-advance"
+    },
+    {
+      "type": "journal",
+      "slug": "why-we-only-take-three-clients-a-month"
+    },
+    {
+      "type": "answers",
+      "slug": "should-my-agency-tell-me-if-content-is-ai-written"
+    }
+  ]
+}

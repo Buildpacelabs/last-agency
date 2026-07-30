@@ -33,7 +33,12 @@
       ],
       "table": {
         "caption": "The three numbers that appear in SEO reports, and what each one hides.",
-        "head": ["Metric", "What it tells you", "What it hides", "Use it for"],
+        "head": [
+          "Metric",
+          "What it tells you",
+          "What it hides",
+          "Use it for"
+        ],
         "rows": [
           [
             "Keyword rankings",
@@ -110,12 +115,37 @@
       ],
       "table": {
         "caption": "Sort the keyword plan by intent before you sort it by difficulty.",
-        "head": ["Intent", "Example", "What it's worth", "Report it as"],
+        "head": [
+          "Intent",
+          "Example",
+          "What it's worth",
+          "Report it as"
+        ],
         "rows": [
-          ["Transactional", "'seo agency pricing india'", "Highest. Short path to a conversation.", "Leads"],
-          ["Commercial comparison", "'ahrefs vs semrush'", "High. Buyer is shortlisting.", "Leads, with a lag"],
-          ["Problem-aware", "'why did my organic traffic drop'", "Medium. Builds the list, converts later.", "Assisted conversions"],
-          ["Definitional", "'what is a canonical tag'", "Low, and shrinking as AI answers absorb it.", "Impressions, and be honest about it"]
+          [
+            "Transactional",
+            "'seo agency pricing india'",
+            "Highest. Short path to a conversation.",
+            "Leads"
+          ],
+          [
+            "Commercial comparison",
+            "'ahrefs vs semrush'",
+            "High. Buyer is shortlisting.",
+            "Leads, with a lag"
+          ],
+          [
+            "Problem-aware",
+            "'why did my organic traffic drop'",
+            "Medium. Builds the list, converts later.",
+            "Assisted conversions"
+          ],
+          [
+            "Definitional",
+            "'what is a canonical tag'",
+            "Low, and shrinking as AI answers absorb it.",
+            "Impressions, and be honest about it"
+          ]
         ]
       },
       "callout": {
@@ -195,11 +225,37 @@
     }
   ],
   "related": [
-    { "type": "glossary", "slug": "average-position" },
-    { "type": "glossary", "slug": "ai-overviews" },
-    { "type": "compare", "slug": "ga4-vs-search-console" },
-    { "type": "journal", "slug": "how-to-set-an-seo-baseline" },
-    { "type": "journal", "slug": "what-ai-overviews-did-to-your-organic-traffic" },
-    { "type": "services", "slug": "seo-reporting-services" }
+    {
+      "type": "glossary",
+      "slug": "average-position"
+    },
+    {
+      "type": "glossary",
+      "slug": "ai-overviews"
+    },
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "journal",
+      "slug": "what-ai-overviews-did-to-your-organic-traffic"
+    },
+    {
+      "type": "services",
+      "slug": "seo-reporting-services"
+    },
+    {
+      "type": "journal",
+      "slug": "when-your-boss-wants-a-vanity-keyword"
+    },
+    {
+      "type": "compare",
+      "slug": "last-click-vs-data-driven-attribution"
+    }
   ]
 }

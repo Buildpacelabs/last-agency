@@ -1,0 +1,246 @@
+{
+  "slug": "how-to-check-if-google-can-render-your-javascript",
+  "type": "answers",
+  "primaryKeyword": "how to check if google can render your javascript",
+  "secondaryKeywords": [
+    "url inspection live test rendered html",
+    "view source vs rendered dom seo",
+    "javascript content not indexed",
+    "react site missing from google"
+  ],
+  "cluster": "technical-launch",
+  "intent": "informational",
+  "h1": "How to check what Google actually renders on your pages",
+  "metaTitle": "Can Google Render Your JavaScript? How to Check",
+  "metaDescription": "Three checks in a fixed order, because each one rules out a different cause. Plus the failures that only show up somewhere other than your own desk.",
+  "updated": "2026-09-15",
+  "published": "2026-09-15",
+  "answer": "Three checks, in this order: view source to see what the server sent, DevTools Elements to see what your browser built, then Search Console's URL Inspection live test to see what Google's renderer produced. Each rules out a different cause, and running them out of order is how teams misdiagnose this for weeks.",
+  "takeaways": [
+    "Run them in order. If your content is already in **view source**, you don't have a rendering problem and everything below is wasted effort.",
+    "Your own browser is not evidence. It has your cookies, your cache, your city and a fast line. Google's renderer has none of those.",
+    "The live test's **More Info** tab names the cause most of the time — blocked resources and console errors, listed for you. Almost nobody opens it.",
+    "A page that renders in the live test is not a page that will be indexed. The test proves the renderer worked, not that the page earned a place."
+  ],
+  "sections": [
+    {
+      "h2": "The three checks, and what each one rules out",
+      "body": [
+        "Every JavaScript indexing problem is one of three failures, and they need completely different fixes. The reason to run the checks in a fixed order is that each one eliminates an entire category before you spend an afternoon on the next.",
+        "Pick a probe string first — six or eight words of body copy that appear nowhere else on the site. Not your H1, which usually sits in the title tag and the Open Graph markup too, so it turns up in the raw HTML whether or not the visible page rendered. A sentence from the middle of the page is a far better probe."
+      ],
+      "table": {
+        "caption": "The three checks in order, and the cause each one eliminates.",
+        "head": [
+          "Check",
+          "What it shows",
+          "What it tells you"
+        ],
+        "rows": [
+          [
+            "1. View source, or `curl`",
+            "The HTML the server sent, before a single script ran.",
+            "Probe string present: your content is server-rendered and JavaScript isn't the problem. Stop here."
+          ],
+          [
+            "2. DevTools → Elements",
+            "The DOM your own browser built after running the page's JavaScript.",
+            "Still missing: the page is broken for humans as well as crawlers. That's a bug report, not an SEO ticket."
+          ],
+          [
+            "3. URL Inspection → Test live URL",
+            "The DOM Google's renderer produced, on Google's machines, with Google's constraints.",
+            "Present at step 2, missing at step 3: something about Google's environment stops the render. This is the interesting case."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "One string, three windows",
+        "body": "Use the same probe string for all three checks. Changing what you search for between steps produces three results that can't be compared, and it happens on almost every call where somebody says \"but it looks fine on my machine\"."
+      }
+    },
+    {
+      "h2": "Check one — what the server actually sent",
+      "body": [
+        "In Chrome, `view-source:https://yoursite.com/page` shows the response body before any script executed. `Ctrl+U` does the same thing. What it deliberately does not show is anything your JavaScript added afterwards, which is the entire point of looking.",
+        "On the command line it's one instruction, and it takes your browser out of the argument:"
+      ],
+      "bullets": [
+        "`curl -s https://yoursite.com/page | grep -c \"your probe string\"` — a zero means the string is not in the server's response.",
+        "Run it again with `-A \"Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)\"`. If the two responses differ, your stack is serving different HTML by user agent — usually an accident involving a caching layer or a bot-protection rule, and a separate conversation.",
+        "While the raw response is open, check five things: the probe string, the `<title>`, the canonical tag, the meta description, and whether your navigation contains real `<a href>` elements. Anything missing here is missing for every crawler that doesn't render, which is most of them.",
+        "If your framework ships a `__NEXT_DATA__` or similar JSON blob, don't count it. Content sitting in a script tag as data is not content in the HTML — it still needs the render to become a page."
+      ],
+      "subs": [
+        {
+          "h3": "If the probe string is there, stop",
+          "body": [
+            "You have server-rendered content. Whatever is wrong with the page is a content, linking or indexing problem rather than a rendering one, and [why Google will not index a page](/answers/why-is-my-page-not-indexed-on-google) is the better place to start. Carrying on with steps two and three from here is how a week disappears."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Check two — the rendered DOM, and how to diff it properly",
+      "body": [
+        "Open DevTools, go to Elements, right-click the `<html>` node and choose Copy → Copy outerHTML. That's the DOM after your JavaScript ran. Paste it into a file and you can compare the two versions instead of squinting at them in separate tabs."
+      ],
+      "numbered": [
+        "Save the raw response: `curl -s https://yoursite.com/page > raw.html`.",
+        "Save the copied DOM from the Elements panel as `rendered.html`.",
+        "`grep -c \"your probe string\" raw.html rendered.html` tells you in one line which of the two holds your content.",
+        "For the shape of the gap, `diff <(sort raw.html) <(sort rendered.html)` is crude but readable — it shows roughly how much of the page exists only after hydration."
+      ],
+      "subs": [
+        {
+          "h3": "Why a pass here proves less than it looks",
+          "body": [
+            "Your browser is a generous environment. It has your cookies, a warm cache, a live session, your city, your language and a connection that resolves an API call in 200 milliseconds. Google's renderer has none of that. It starts with no stored state — local storage, session storage and cookies are cleared between page loads — so content that depends on a saved city, an accepted cookie banner or a logged-in session exists in your browser and nowhere else.",
+            "A pass at step two proves exactly one thing: the code works. It does not predict step three, and the gap between the two is where nearly every real diagnosis lives."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Test the mobile page, not the desktop one",
+        "body": "Google indexes the mobile version of your site, so run all three checks against what a phone gets. On a responsive site that's the same HTML and you've lost nothing. On a separate mobile template, a conditional component or a page with an app interstitial, it isn't — see [mobile-first indexing](/glossary/mobile-first-indexing)."
+      }
+    },
+    {
+      "h2": "Check three — the live test, and the four things it does not prove",
+      "body": [
+        "Search Console → URL Inspection → paste the URL → Test live URL → View tested page. Three tabs matter: HTML, Screenshot and More Info.",
+        "HTML is the DOM Google's renderer produced; search it for the probe string. Screenshot is what the renderer painted, and it's worth opening even when the HTML passes, because a page can contain your text and still render it behind a modal, off-screen, or white on white. More Info lists the page resources that couldn't be loaded and the JavaScript console messages from the render — which is where the cause is usually written down in plain English.",
+        "This is a live fetch, separate from the indexed version on the same screen. It reflects a fix you deployed ten minutes ago; the indexed side can be weeks old. Both are useful, and they answer different questions."
+      ],
+      "bullets": [
+        "**It doesn't prove the page will be indexed.** Google says a successful live test is not a guarantee — the test doesn't evaluate quality, manual actions or content removals. Rendering is a prerequisite for indexing, not a substitute for deserving it.",
+        "**It doesn't tell you what's in the index right now.** For that, read the indexed-version panel and its crawled HTML. People routinely run a live test, see green, and conclude that the version Google is currently serving is fine.",
+        "**It doesn't reproduce the queue.** Google renders JavaScript pages in a second pass that waits in a queue after crawling. The live test jumps that queue entirely, so it says nothing about how long your content takes to appear after you publish it.",
+        "**It doesn't reproduce an Indian mobile network.** Google renders from its own infrastructure, not from a mid-range Android in Nashik on a busy cell. A page can pass the live test and still take nine seconds to assemble for the customer you're trying to reach."
+      ]
+    },
+    {
+      "h2": "The failures that only appear somewhere other than your desk",
+      "body": [
+        "Once you've narrowed the failure to step three, these are the causes worth checking, in this order. The first accounts for more of them than everything below it combined."
+      ],
+      "bullets": [
+        "**A robots.txt rule sitting over your own JavaScript.** Block `/_next/static/`, `/assets/js/`, `/dist/` or a CDN subdomain and Google [won't render JavaScript from blocked files](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics) — it takes the shell and leaves. This is almost always inherited from a template robots.txt somebody copied years ago, and it surfaces in the More Info tab as a resource that couldn't be loaded.",
+        "**A client-side fetch that never returns.** Content pulled from an internal API, a third-party review widget or a PIN-code availability service. If that endpoint is slow, geo-restricted, or rate-limits the IP ranges Google renders from, the render completes without your content and nothing anywhere else reports an error.",
+        "**Content behind an interaction.** Google Search does not interact with your page — no clicks, no scrolling. A tab or accordion whose contents are already in the DOM is fine. One that fires a request on click does not exist for a crawler, and nor does anything below an infinite-scroll trigger.",
+        "**A permission prompt.** Googlebot declines permission requests such as camera and geolocation. A store locator that waits for the browser's location before rendering anything renders nothing at all.",
+        "**Stale cached bundles.** Google caches resources aggressively and may ignore your caching headers, so a freshly deployed script isn't guaranteed to be picked up on the timetable you assumed. Fingerprinted filenames remove the question."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The slow-mobile version is a different problem with the same symptom",
+        "body": "Google's renderer isn't on an Indian mobile network; your customer is. A page assembled from four sequential requests can render perfectly for Google and still be blank for eleven seconds on a three-year-old Android — which costs you the sale rather than the ranking. Reproduce that one in DevTools instead: Network tab, throttle to a slow 4G profile, disable cache, incognito window so there's no stored state."
+      }
+    },
+    {
+      "h2": "What to hand a developer",
+      "body": [
+        "A developer can fix any of this in an afternoon, and will spend a week on it if the ticket says \"Google can't see our content\". The artefacts you now have turn it into a fifteen-minute job."
+      ],
+      "numbered": [
+        "**The URL and the probe string.** One URL, one exact sentence that should be in the HTML and isn't.",
+        "**The three files.** `raw.html` from curl, `rendered.html` from the Elements panel, and the HTML tab from the live test saved beside them. Which two match is the entire diagnosis.",
+        "**The More Info list.** Copy the blocked resources and console errors verbatim. That's the part that names the file.",
+        "**The ask, in their language.** Not \"fix SEO\". Either: render this component's HTML on the server, or emit the title, canonical and meta description server-side, or delete this line from robots.txt, or replace this click handler with a real anchor.",
+        "**The verification step.** Re-run the live test after deploy, confirm the probe string is in the HTML tab, then request indexing on that one URL and watch the indexed version catch up over the following days."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Where the fix usually lands",
+        "body": "Nine times out of ten it's one of three lines: a `Disallow` in robots.txt, an `ssr: false` on a component that happens to carry the page's actual content, or a metadata call inside a `useEffect`. None of those are architectural. If the honest answer is \"the whole site is client-rendered\", that's a build decision rather than a ticket — see what [technical SEO work](/services/technical-seo-services) covers, and read [JavaScript SEO](/glossary/javascript-seo) for the mechanics behind all of this."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the fastest way to check whether my content is server-rendered?",
+      "a": "Pick a distinctive sentence from the middle of the page and run `curl -s https://yoursite.com/page | grep -c \"that sentence\"`. A number above zero means the server sent it and you're fine. Zero means the content only exists after JavaScript runs, which is when the rest of this matters."
+    },
+    {
+      "q": "Why does my page look fine in DevTools but fail in Search Console?",
+      "a": "Because your browser has state Google's renderer doesn't. Cookies, local storage and sessions are cleared between page loads for Google, permission prompts are declined, and blocked resources never load. Open the More Info tab on the live test — the missing resource or the console error is almost always listed there by name."
+    },
+    {
+      "q": "Does a successful URL Inspection live test mean my page will be indexed?",
+      "a": "No. Google states plainly that a positive live test isn't a guarantee of indexing — it doesn't assess content quality, manual actions or removal requests. It answers one question well: can Google's renderer build your page. Deserving the index is a separate argument you still have to win."
+    },
+    {
+      "q": "Should I look at the crawled version or the live test?",
+      "a": "Both, for different questions. The crawled version shows what Google currently holds, which can be weeks old and is what your search result reflects today. The live test shows the URL as it is right now, which is what you want immediately after a deploy. Confusing the two is the commonest reporting error here."
+    },
+    {
+      "q": "What if I don't have Search Console access for the site?",
+      "a": "The Rich Results Test renders any public URL and shows the rendered DOM, loaded resources and JavaScript console output, so it works as a substitute for step three. It's less informative than URL Inspection and it can't show you the indexed version. Getting verified access is the real fix, and it takes one DNS record."
+    },
+    {
+      "q": "My content is in the rendered HTML but the page still isn't indexed. Now what?",
+      "a": "Then rendering isn't your problem and you've saved yourself a pointless refactor. Check the indexed-version panel for the actual status, then look at internal links to the page, whether it's in your sitemap, whether a canonical points elsewhere, and whether the page says anything a searcher couldn't get from ten other results."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Understand the JavaScript SEO basics",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics",
+      "date": "2026-03-04"
+    },
+    {
+      "title": "Fix Search-related JavaScript problems",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/fix-search-javascript",
+      "date": "2025-12-18"
+    },
+    {
+      "title": "URL Inspection tool",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9012289"
+    },
+    {
+      "title": "Fix lazy-loaded content",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/lazy-loading",
+      "date": "2025-12-10"
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "javascript-seo"
+    },
+    {
+      "type": "answers",
+      "slug": "why-is-my-page-not-indexed-on-google"
+    },
+    {
+      "type": "glossary",
+      "slug": "mobile-first-indexing"
+    },
+    {
+      "type": "compare",
+      "slug": "nextjs-vs-wordpress-seo"
+    },
+    {
+      "type": "services",
+      "slug": "technical-seo-services"
+    },
+    {
+      "type": "answers",
+      "slug": "staging-site-indexed-by-google"
+    },
+    {
+      "type": "glossary",
+      "slug": "indexing"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-recover-from-a-hacked-website"
+    }
+  ]
+}

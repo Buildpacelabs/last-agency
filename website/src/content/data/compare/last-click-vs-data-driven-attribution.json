@@ -1,0 +1,279 @@
+{
+  "slug": "last-click-vs-data-driven-attribution",
+  "type": "compare",
+  "primaryKeyword": "last click vs data driven attribution",
+  "secondaryKeywords": [
+    "why does paid get all the credit",
+    "attribution model for seo and ads together",
+    "assisted conversions organic search",
+    "which attribution model to use in ga4"
+  ],
+  "cluster": "metrics-and-tools",
+  "intent": "informational",
+  "h1": "Last-click vs data-driven attribution: why the dashboard says paid is winning",
+  "metaTitle": "Last-Click vs Data-Driven Attribution",
+  "metaDescription": "We sell SEO, paid and social from one two-person shop, so we cannot rig the model. The one we set up on day one, and the one we refuse to run for clients.",
+  "updated": "2026-08-27",
+  "published": "2026-08-27",
+  "versus": {
+    "a": "Last-click attribution",
+    "b": "Data-driven attribution",
+    "verdict": "Data-driven for reading channels inside GA4, first-touch in the CRM for the number the invoice is judged against, and last-click only when the path is genuinely one click long."
+  },
+  "answer": "Last-click hands 100% of the credit to the final channel clicked. Data-driven splits it across the path, weighted by Google's model of which touches changed the outcome. On a discover-in-organic-then-click-a-branded-ad path, last-click credits the ad for demand search created — which makes the model a commercial decision, not a settings one.",
+  "takeaways": [
+    "Last-click doesn't measure channels. It measures **which channel was standing nearest the door**, and discovery channels are never standing there.",
+    "GA4 retired first-click, linear, time-decay and position-based in November 2023. You now choose between **data-driven** and two flavours of last click — that's the whole menu.",
+    "Changing the reporting model in GA4 **rewrites your history**: it applies to past data as well as future. A mid-engagement switch makes every earlier month unreadable.",
+    "Any agency selling both SEO and ads has a live incentive in this choice. **The model belongs in the scope document**, named, before the first invoice.",
+    "Data-driven is not a truth machine either. It's a model you cannot inspect, reproduce in a spreadsheet, or argue with."
+  ],
+  "sections": [
+    {
+      "h2": "One path, two scores",
+      "body": [
+        "Take an ordinary Indian B2B path over about six weeks. A buyer searches a problem, finds a comparison article, comes back a fortnight later on a phone, sees a remarketing ad, eventually searches your brand name, clicks the ad sitting above your own organic result, and fills in the form.",
+        "One conversion. Six touches. Here is what each model does with it — the arithmetic is illustrative, not a client result."
+      ],
+      "table": {
+        "caption": "One six-touch path, scored under each model.",
+        "head": [
+          "Touch",
+          "Channel",
+          "Last-click credit",
+          "Data-driven credit"
+        ],
+        "rows": [
+          [
+            "1 — non-branded query, reads a comparison page",
+            "Organic Search",
+            "0%",
+            "Eligible; weight set by the model"
+          ],
+          [
+            "2 — returns two weeks later, types the URL",
+            "Direct",
+            "0%",
+            "None. Direct is excluded unless the whole path is direct"
+          ],
+          [
+            "3 — sees a remarketing creative, no click",
+            "Display impression",
+            "0%",
+            "None in GA4; visible inside Google Ads only"
+          ],
+          [
+            "4 — reads two more pages from a search",
+            "Organic Search",
+            "0%",
+            "Eligible; weight set by the model"
+          ],
+          [
+            "5 — searches your brand name, clicks the ad",
+            "Paid Search (branded)",
+            "**100%**",
+            "Eligible, and usually the largest single share"
+          ],
+          [
+            "6 — submits the enquiry form",
+            "Conversion recorded",
+            "Filed entirely under touch 5",
+            "Split across touches 1, 4 and 5"
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Touch 2 is the one that costs SEO its case",
+        "body": "All GA4 attribution models exclude direct visits from receiving credit unless the entire path is direct. That rule is sensible in isolation. It is brutal for SEO, because a person who found you in organic search and came back by typing your name is the exact behaviour good content produces — and it lands in the one bucket no model will pay out on."
+      }
+    },
+    {
+      "h2": "Why last-click always favours whatever closes",
+      "body": [
+        "This isn't a bug in the model. Last-click does precisely what it says. The problem is that its answer is structurally predetermined.",
+        "The final click before a purchase is, almost by definition, the one closest to intent — a brand search, a retargeting click, an email the buyer opened because they'd already decided. Discovery sits earlier in the path because that is what discovery means. A model scoring only the last touch will report, month after month, that the closing channels work and the discovery channels don't.",
+        "Branded paid search is where this gets expensive. Bid on your own company name and you'll buy clicks from people who were coming anyway, many of whom arrived at your name through organic content they read a month earlier. Under last-click, every one of those conversions files under Paid Search. The ad account posts a spectacular ROAS. The SEO report shows flat conversions and rising impressions, and gets cut in the next budget round — which then quietly starves the thing feeding the branded searches.",
+        "The mechanics of how the earlier organic session goes missing entirely — cookie expiry, device switches, a closed consent banner — are a separate problem worth understanding on their own; we've set them out in [how to attribute revenue to SEO](/answers/how-to-attribute-revenue-to-seo). What matters here is that the model and the missing data compound. Losing the March session makes the June path look shorter, and a shorter path is exactly what flatters last-click."
+      ],
+      "bullets": [
+        "**Split branded and non-branded before you argue about models.** If your paid search line is mostly your own brand name, you're measuring cannibalisation, not acquisition. [Branded vs non-branded organic traffic](/compare/branded-vs-non-branded-organic-traffic) is the same split on the other side of the fence.",
+        "**Run the brand-bid pause test.** Turn branded paid search off for two weeks and watch total conversions, not paid conversions. If the total barely moves, last-click has been billing you for traffic you already had.",
+        "**Assisted conversions are a starting point, not an answer.** GA4's path reports show organic appearing earlier in converting paths. That tells you the touch existed. It doesn't tell you it mattered."
+      ]
+    },
+    {
+      "h2": "The three models GA4 will actually give you",
+      "body": [
+        "The menu got much shorter in 2023, which most reporting templates still haven't caught up with. If a deck shows you a position-based or time-decay model out of GA4, it was built somewhere else."
+      ],
+      "table": {
+        "caption": "Attribution models available in GA4, and what each one quietly argues for.",
+        "head": [
+          "Model",
+          "What it does",
+          "Who it flatters",
+          "When it's the honest choice"
+        ],
+        "rows": [
+          [
+            "Data-driven",
+            "Splits credit across the path using Google's model of converting versus non-converting paths, including timing, device and order.",
+            "Nobody consistently — which is the point. In practice it moves credit back towards discovery.",
+            "Default. Any account with more than one channel and reasonable conversion volume."
+          ],
+          [
+            "Paid and organic last click",
+            "100% to the last channel the customer clicked, direct excluded unless the path is entirely direct.",
+            "Brand search, retargeting, email, and any channel that sits near the transaction.",
+            "One-channel businesses, and paths that genuinely are one click long."
+          ],
+          [
+            "Google paid channels last click",
+            "100% to the last Google Ads channel clicked. Organic and non-Google paid receive nothing.",
+            "Google Ads, absolutely and by design.",
+            "Reconciling GA4 against the Ads interface. Never as a cross-channel scoreboard."
+          ],
+          [
+            "First click, linear, time decay, position-based",
+            "Retired in November 2023. Not available in GA4 reporting.",
+            "Whoever built the template.",
+            "Never — if you're seeing them, check where the numbers came from."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "The declaration an agency owes you before month one",
+      "body": [
+        "Here's the uncomfortable part, and it applies to us as much as to anyone pitching you.",
+        "An agency that sells only paid media has an interest in last-click. An agency that sells only SEO has an interest in data-driven, or better still a first-touch CRM field. An agency selling both has an interest in whichever channel it wants to grow inside your account next quarter. Nobody announces this. The model just appears in the reporting setup in week two, chosen by whoever had GA4 access, and it silently decides which line item looks like it's working for the next three years.",
+        "There's a sharper version of the problem. In GA4, [changing the reporting attribution model applies to historical and future data](https://support.google.com/analytics/answer/10597962) — the past is recomputed, not preserved. So a switch in month seven doesn't just change month seven. It rewrites months one to six, and every earlier screenshot in your folder now disagrees with the live report. We've watched that single fact turn a routine renewal conversation into an accusation.",
+        "Four things belong in the scope document, in writing, before any work starts."
+      ],
+      "numbered": [
+        "**The reporting model, named.** \"Data-driven, GA4, cross-channel\" is a sentence you can hold someone to. \"We'll look at the dashboard\" is not.",
+        "**The lookback window.** GA4 defaults to 90 days for most key events, with 30 and 60 available, and 30 days for acquisition events. On a six-month Indian B2B cycle, a 30-day window discards most of your evidence before anyone reads it.",
+        "**Which number the invoice is judged against**, and where it lives. Ours is a CRM field, not a GA4 report — see [what a split budget across SEO, paid and social should look like](/cost/marketing-budget-split-between-seo-paid-and-social) for how that changes the allocation argument.",
+        "**A no-switching clause.** If the model changes mid-engagement, both sides sign off and the old exports stay on file. Otherwise the history goes with it."
+      ]
+    },
+    {
+      "h2": "What we set up on day one, and what we won't run",
+      "body": [
+        "We sell SEO, paid and organic social out of a two-person shop. That means we can't hide behind a channel specialism — if we pick the model that makes our own paid work look good, we're doing it to our own SEO work. So the default is fixed before the account opens, and it's the same default for every client.",
+        "Data-driven is the reporting model in GA4. Non-branded organic is reported separately from branded. First-touch source is written into a write-once CRM field on the first visit, and that CRM count — not the GA4 report — is the number the guarantee is measured against. All of it goes in the scope document before the first invoice."
+      ],
+      "bullets": [
+        "**We won't run last click as the sole scoreboard for a client paying us for both search channels.** It hands us a way to make the ad line look excellent by bidding on the client's own brand name while the SEO line reads flat. We'd rather not own that button.",
+        "**We won't report the same conversion twice.** If a deal appears in the SEO number it doesn't also appear in the paid number. Two teams claiming one invoice isn't measurement, it's arithmetic nobody checked.",
+        "**We won't switch models mid-engagement to make a quarter look better.** If the model was wrong, we say so, change it once, keep both sets of exports and show you the gap.",
+        "**We won't pretend data-driven is objective.** It's a model you can't inspect. What it does have going for it is that its bias doesn't line up neatly with anybody's invoice — which, for a shop selling three channels, is the property worth buying."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The one field that outlasts every model",
+        "body": "A free-text \"how did you hear about us\" question on the enquiry form survives cookie deletion, device switches, declined consent and every attribution model Google ships next. Under a few hundred enquiries a month it's a better instrument than the dashboard — the full argument is in [self-reported attribution vs analytics](/compare/self-reported-attribution-vs-analytics)."
+      }
+    },
+    {
+      "h2": "When last-click is genuinely the right answer",
+      "body": [
+        "There's a version of this article that says last-click is always wrong. It isn't, and pretending otherwise is how SEO agencies lose credibility with finance teams who can do arithmetic.",
+        "Last-click is the better instrument in four situations, and all four are common in Indian businesses."
+      ],
+      "bullets": [
+        "**Your volume is too low for a model to learn anything.** Google's own guidance for data-driven attribution recommends at least 200 conversions and 2,000 ad interactions inside a 30-day period. Below that the model still runs, but you're reading a confident-looking number built on very little.",
+        "**You genuinely run one channel.** If 90% of enquiries arrive from a single source, a multi-touch model is expensive theatre. Spend the effort on the enquiry form instead.",
+        "**The consideration window is hours, not weeks.** A ₹700 D2C impulse purchase off one Instagram ad really is a one-touch path. Modelling it adds nothing.",
+        "**You need a rule two teams can audit.** Last-click's saving grace is that it's reproducible. Anyone can check it in a spreadsheet; nobody can check data-driven, including us. When two departments are fighting over a budget, a dumb rule both sides can verify sometimes beats a smart one neither can."
+      ]
+    },
+    {
+      "h2": "The verdict",
+      "body": [
+        "Use data-driven as the reporting model in GA4, because on any path longer than one click last-click is answering a question you didn't ask. Use last-click deliberately and in the open when the path is short, the volume is small, or you need a number both sides can recompute.",
+        "But don't settle the argument inside analytics at all. The scoreboard that decides whether a retainer stays is a CRM export with a first-touch source field on it, reconciled once a month against a free-text question on your enquiry form. Attribution models are for allocating next month's budget between channels. They are not evidence of revenue, and any agency handing you a GA4 screenshot as proof of return is showing you a model output, not money.",
+        "And whichever you choose: write it down before month one, keep it for the length of the engagement, and be suspicious of anyone who wants to change it in the same week the numbers went soft. [How our own guarantee is measured](/seo) is a CRM count, for exactly this reason."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Which attribution model should I use in GA4?",
+      "a": "Data-driven, unless you have a specific reason not to. It's the default, it uses your own account's converting and non-converting paths, and it doesn't systematically hand credit to whichever channel sits nearest the transaction. Switch to last click only if your conversion volume is very low or you genuinely run one channel."
+    },
+    {
+      "q": "Why does paid get all the credit in my reports?",
+      "a": "Usually two things at once. Last-click awards 100% to the final clicked channel, and the final click before a purchase is very often a branded paid search click. On top of that, direct visits are excluded from credit, so a person who discovered you in organic and returned by typing your name contributes nothing to the organic line."
+    },
+    {
+      "q": "Does data-driven attribution favour SEO?",
+      "a": "It doesn't favour anything by design, but in practice it moves credit backwards along the path, and discovery channels sit at the back. Expect organic's share to rise relative to last click. Expect branded paid search to fall. That's the model recognising touches last click was throwing away, not a thumb on the scale."
+    },
+    {
+      "q": "Will changing the attribution model change my past reports?",
+      "a": "Yes. In GA4 the reporting attribution model applies to historical as well as future data, so a switch recomputes every earlier month. Any screenshot taken before the change will disagree with the live report. Agree the model before month one and don't move it mid-engagement without both sides signing off."
+    },
+    {
+      "q": "What is an assisted conversion in organic search?",
+      "a": "A conversion where an organic session appeared somewhere in the path but wasn't the last click. Path reports show these, which is useful for proving the touch existed. It isn't proof the touch mattered — that's what a multi-touch model is trying to estimate, and why the estimate is contestable."
+    },
+    {
+      "q": "How do I stop my SEO and paid reports double-counting the same lead?",
+      "a": "Pick one field as the arbiter and make it write-once — first-touch source in the CRM, set on the first visit, not editable by sales. Every closed deal then belongs to exactly one channel in the reporting, whatever the in-platform dashboards each claim. Anything else lets two teams invoice against one deal."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Get started with attribution",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/10596866"
+    },
+    {
+      "title": "Select attribution settings",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/10597962"
+    },
+    {
+      "title": "About data-driven attribution",
+      "publisher": "Google Ads Help",
+      "url": "https://support.google.com/google-ads/answer/6394265"
+    },
+    {
+      "title": "Default channel group",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9756891"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "how-to-attribute-revenue-to-seo"
+    },
+    {
+      "type": "compare",
+      "slug": "self-reported-attribution-vs-analytics"
+    },
+    {
+      "type": "compare",
+      "slug": "ga4-vs-search-console"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-analytics-4"
+    },
+    {
+      "type": "cost",
+      "slug": "marketing-budget-split-between-seo-paid-and-social"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-read-an-seo-report"
+    },
+    {
+      "type": "services",
+      "slug": "analytics-setup-services"
+    }
+  ]
+}

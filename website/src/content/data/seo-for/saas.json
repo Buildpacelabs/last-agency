@@ -45,7 +45,11 @@
       ],
       "table": {
         "caption": "Bottom-funnel page templates every SaaS site should own.",
-        "head": ["Page type", "Query pattern", "What it must contain to rank"],
+        "head": [
+          "Page type",
+          "Query pattern",
+          "What it must contain to rank"
+        ],
         "rows": [
           [
             "Head-to-head",
@@ -162,11 +166,33 @@
     }
   ],
   "related": [
-    { "type": "services", "slug": "saas-seo-services" },
-    { "type": "cost", "slug": "saas-seo-cost" },
-    { "type": "compare", "slug": "b2b-seo-vs-b2c-seo" },
-    { "type": "journal", "slug": "programmatic-seo-and-the-scaled-content-line" },
-    { "type": "seo-for", "slug": "b2b" },
-    { "type": "answers", "slug": "how-to-do-keyword-research" }
+    {
+      "type": "services",
+      "slug": "saas-seo-services"
+    },
+    {
+      "type": "cost",
+      "slug": "saas-seo-cost"
+    },
+    {
+      "type": "compare",
+      "slug": "b2b-seo-vs-b2c-seo"
+    },
+    {
+      "type": "journal",
+      "slug": "programmatic-seo-and-the-scaled-content-line"
+    },
+    {
+      "type": "seo-for",
+      "slug": "b2b"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-do-keyword-research"
+    },
+    {
+      "type": "seo-for",
+      "slug": "cybersecurity-companies"
+    }
   ]
 }

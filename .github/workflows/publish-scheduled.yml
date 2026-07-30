@@ -28,7 +28,7 @@ jobs:
       - name: Is anything due today?
         id: due
         run: |
-          if python3 website/scripts/due-today.py; then
+          if python3 website/scripts/due-today.py | tee /tmp/due.txt; then
             echo "due=true" >> "$GITHUB_OUTPUT"
           else
             echo "due=false" >> "$GITHUB_OUTPUT"
@@ -41,6 +41,20 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit --allow-empty -m "Publish pages scheduled for $(date -u +%Y-%m-%d)"
           git push
+
+      # Vercel needs a moment to build and serve the new URLs; IndexNow rejects
+      # anything it cannot fetch, so telling it too early wastes the submission.
+      - name: Wait for the deploy to land
+        if: steps.due.outputs.due == 'true'
+        run: sleep 240
+
+      - name: Tell IndexNow about the pages that just went live
+        if: steps.due.outputs.due == 'true'
+        run: |
+          sed -n 's|^  \([a-z0-9-]*/[a-z0-9-]*\)$|/\1|p' /tmp/due.txt > /tmp/urls.txt
+          echo "Submitting:"; cat /tmp/urls.txt
+          cd website && ./scripts/submit-indexnow.sh /tmp/urls.txt || \
+            echo "IndexNow submission failed; the sitemap still covers discovery."
 
       - name: Nothing to do
         if: steps.due.outputs.due == 'false' && !inputs.force

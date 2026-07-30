@@ -38,7 +38,7 @@
       "callout": {
         "kind": "note",
         "title": "Where the numbers on this page come from",
-        "body": "The standard two-proportion sample-size formula — [baseline rate, detectable difference, and the two error rates](https://www.itl.nist.gov/div898/handbook/prc/section2/prc242.htm) — run at 95% two-sided significance and 80% power, with an even split. Every figure below is that calculation, rounded. No client data, no benchmarks, nothing you can't reproduce."
+        "body": "The standard two-proportion sample-size formula — baseline rate, detectable difference, and the two error rates — run at 95% two-sided significance and 80% power, with an even split. Every figure below is that calculation, rounded. No client data, no benchmarks, nothing you can't reproduce."
       }
     },
     {
@@ -55,11 +55,36 @@
           "Total sessions for the test"
         ],
         "rows": [
-          ["+5%", "about 6,200", "about 315,000", "about 630,000"],
-          ["+10%", "about 1,600", "about 81,000", "about 161,000"],
-          ["+20%", "about 415", "about 21,000", "about 42,000"],
-          ["+30%", "about 190", "about 9,800", "about 20,000"],
-          ["+50%", "about 75", "about 3,800", "about 7,600"]
+          [
+            "+5%",
+            "about 6,200",
+            "about 315,000",
+            "about 630,000"
+          ],
+          [
+            "+10%",
+            "about 1,600",
+            "about 81,000",
+            "about 161,000"
+          ],
+          [
+            "+20%",
+            "about 415",
+            "about 21,000",
+            "about 42,000"
+          ],
+          [
+            "+30%",
+            "about 190",
+            "about 9,800",
+            "about 20,000"
+          ],
+          [
+            "+50%",
+            "about 75",
+            "about 3,800",
+            "about 7,600"
+          ]
         ]
       },
       "bullets": [
@@ -88,10 +113,34 @@
           "Time to finish"
         ],
         "rows": [
-          ["D2C skincare brand, product page", "1.2%", "6,000", "about 71,000", "about 12 months"],
-          ["Interior design studio, enquiry form", "2.5%", "2,000", "about 34,000", "about 17 months"],
-          ["B2B software, pricing page", "6%", "4,000", "about 13,000", "about 3 months"],
-          ["The same D2C brand, four years later", "1.2%", "60,000", "about 71,000", "about 5 weeks"]
+          [
+            "D2C skincare brand, product page",
+            "1.2%",
+            "6,000",
+            "about 71,000",
+            "about 12 months"
+          ],
+          [
+            "Interior design studio, enquiry form",
+            "2.5%",
+            "2,000",
+            "about 34,000",
+            "about 17 months"
+          ],
+          [
+            "B2B software, pricing page",
+            "6%",
+            "4,000",
+            "about 13,000",
+            "about 3 months"
+          ],
+          [
+            "The same D2C brand, four years later",
+            "1.2%",
+            "60,000",
+            "about 71,000",
+            "about 5 weeks"
+          ]
         ]
       },
       "numbered": [
@@ -174,11 +223,6 @@
   ],
   "sources": [
     {
-      "title": "7.2.4.2. Sample sizes required",
-      "publisher": "NIST/SEMATECH e-Handbook of Statistical Methods",
-      "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc242.htm"
-    },
-    {
       "title": "Always Valid Inference: Bringing Sequential Analysis to A/B Testing",
       "publisher": "arXiv",
       "url": "https://arxiv.org/abs/1512.04922",
@@ -218,6 +262,10 @@
     {
       "type": "journal",
       "slug": "how-to-set-an-seo-baseline"
+    },
+    {
+      "type": "journal",
+      "slug": "how-long-before-a-new-domain-can-rank"
     }
   ]
 }

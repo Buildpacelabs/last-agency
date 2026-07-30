@@ -1,0 +1,312 @@
+{
+  "slug": "how-to-build-local-citations-in-india",
+  "type": "answers",
+  "primaryKeyword": "how to build local citations in india",
+  "secondaryKeywords": [
+    "indian business directories worth listing on",
+    "nap consistency india phone format",
+    "are paid directory listings worth it india",
+    "citation audit for a local business"
+  ],
+  "cluster": "local-operations",
+  "intent": "informational",
+  "h1": "How to build local citations in India that are worth the time",
+  "metaTitle": "How to Build Local Citations in India",
+  "metaDescription": "Decide the NAP format once and never deviate. That one decision beats the next fifty listings, and most Indian directories are lead-gen in disguise.",
+  "updated": "2026-09-25",
+  "published": "2026-09-25",
+  "answer": "Decide one exact version of your name, address and phone before you create a single listing, then use it everywhere without variation. Audit what already exists first — most Indian businesses have forgotten listings holding an old address. Ten to fifteen accurate records on sites your buyers actually use is the whole job.",
+  "takeaways": [
+    "Write the record down before the first form. It costs an hour and every listing afterwards inherits the decision, for better or worse.",
+    "The phone number is the field that breaks. `+91`, then the STD code **without** the leading zero, everywhere. India's trunk prefix is why nobody agrees on the format.",
+    "Audit before you build. The listing carrying your 2019 address does more damage than the twelve you haven't created yet.",
+    "A directory that exists to resell your enquiry is an advertising decision, not an SEO one. Judge it on cost per enquiry and stop calling it a ranking factor."
+  ],
+  "sections": [
+    {
+      "h2": "Write the record down before you create a single listing",
+      "body": [
+        "Citation building goes wrong at the first form, not the fiftieth. Somebody types the business name slightly differently, picks whichever mobile they happen to know, and every listing created afterwards inherits a decision nobody made on purpose.",
+        "So make it on purpose. One document, one row per field, agreed before anything is submitted anywhere. It takes an hour and it's the only part of this work with compounding returns."
+      ],
+      "table": {
+        "caption": "The record to agree on before the first listing.",
+        "head": [
+          "Field",
+          "The decision",
+          "The mistake it prevents"
+        ],
+        "rows": [
+          [
+            "Business name",
+            "Exactly what's on your signboard and your invoices. No city, no category, no tagline.",
+            "\"Verma Interiors — Best Modular Kitchens in Pune\", which breaks Google's naming rule and can be reported by any competitor in about forty seconds."
+          ],
+          [
+            "Address",
+            "One fixed order and one fixed spelling: unit, building, road, locality, city, state, PIN. Decide `Rd` or `Road` now and never revisit it.",
+            "Four listings with four spellings of the same locality, which is what turns a ninety-minute audit into a full day."
+          ],
+          [
+            "Phone",
+            "One number, written `+91 20 4000 1234`. See the next section — this is the field that actually breaks.",
+            "A mobile on Google, a landline on the website, and a tracking number on a directory."
+          ],
+          [
+            "Website URL",
+            "One canonical form: `www` or not, always `https`, and the specific location page for a multi-branch business rather than the home page.",
+            "Half your listings pointing at a URL that redirects. It works, and it throws away the directness for no reason."
+          ],
+          [
+            "Primary category",
+            "The one you'd defend to a customer. Secondaries only where they're genuinely true.",
+            "Eleven categories because the form allowed eleven, diluting what Google thinks you do."
+          ],
+          [
+            "Owner of the record",
+            "A shared company email and an entry in a password manager.",
+            "The listing you can't edit because verification went to an ex-employee's personal Gmail."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "note",
+        "title": "The last row is the one everybody skips",
+        "body": "Most stuck citation audits have the same root cause: verification went to somebody's personal email or personal mobile, and that person left. Create listings from an address like `marketing@yourdomain.com` that survives staff changes, and store the recovery details with everything else you'd be lost without."
+      }
+    },
+    {
+      "h2": "The phone number, and why India makes it worse",
+      "body": [
+        "Phone formatting is the most common defect on Indian business listings, and it isn't carelessness. It's that India's numbering plan makes three different formats all look correct.",
+        "The leading zero on an STD code — the `0` in `022`, `011`, `080`, `040` — is a trunk prefix. You dial it to reach another city from inside India. It is not part of the number. So `022 4000 1234` is a dialling instruction and `+91 22 4000 1234` is the number, and both get printed on business cards in the same year by the same company.",
+        "Now add the mobile that's actually answered, a landline ringing at a reception desk nobody sits at, a WhatsApp Business number that may be a third line, and a call-tracking number an ad agency added in 2022. One business, four numbers, a dozen listings, no agreement."
+      ],
+      "bullets": [
+        "**Pick one number** — the one a customer enquiring about your service should reach. Write it `+91 20 4000 1234`: country code, STD code without the leading zero, then the subscriber number. Google's structured data guidance asks for the country code and area code in the `telephone` property, and this satisfies it.",
+        "**Use it everywhere.** Website footer, contact page, `LocalBusiness` schema, Google Business Profile, every directory. Where a form rejects the `+` or the spaces, enter digits only and move on — the punctuation matters far less than it being the same number.",
+        "**Be careful with call tracking.** Google's guidelines require a number that connects to your individual location and is under the business's direct control, and say not to [provide numbers that redirect or refer users elsewhere](https://support.google.com/business/answer/3038177). A tracking number on your own site is your business. A tracking number on your Business Profile is a policy risk on the one listing you can least afford to lose.",
+        "**Keep the old line alive during a cleanup.** Directory verification usually calls or texts whatever number is already on file. Disconnect it before you've finished claiming and you lose access to every listing carrying it, permanently."
+      ]
+    },
+    {
+      "h2": "Audit what already exists before you create anything new",
+      "body": [
+        "Almost every Indian business over three years old already has citations it doesn't know about — created by a former agency, a franchise partner, an intern, or an aggregator that scraped a trade listing in 2017. Creating fresh listings on top of that doesn't fix anything. It adds a second version of the truth.",
+        "Five searches, one spreadsheet, about ninety minutes."
+      ],
+      "numbered": [
+        "Search your **exact business name** in quotes. Then again with the previous name if you've ever rebranded or changed the legal entity.",
+        "Search the **phone number** as a bare string of digits, then again with `+91`. This surfaces listings whose name spelling you'd never have guessed to search for.",
+        "Search the **owner's personal mobile**. On small businesses that's the number on half the old listings, and it's the search nobody thinks to run.",
+        "Search your **previous address**. If you've moved, this is where the real damage is, and it will still be live on aggregators that repopulate themselves from stale data.",
+        "Search `site:justdial.com \"your business name\"`, and the same for the two or three vertical platforms in your category."
+      ],
+      "subs": [
+        {
+          "h3": "Seven columns, and no scoring system",
+          "body": [
+            "Record the URL, the name as shown, the address as shown, the phone as shown, whether it's claimable, who holds the login, and the action. Nothing else.",
+            "The temptation is to build a scoring model with authority metrics in it. Resist it, because there are only four decisions available — correct it, claim it, report it, ignore it — and a score doesn't help you pick between them."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Which listings earn the twenty minutes",
+      "body": [
+        "The useful split isn't high-authority versus low-authority. It's whether the site has readers, and what happens to an enquiry submitted on it. Three questions settle it, and the third is the one nobody asks."
+      ],
+      "numbered": [
+        "Would a customer of yours ever open this site without being sent there by you?",
+        "Does the listing hold your details in real fields, or just your name inside a paragraph of scraped text?",
+        "When someone submits an enquiry through your listing, does it reach you — or does it reach you and five competitors?"
+      ],
+      "table": {
+        "caption": "What each kind of Indian listing actually is, and whether it's worth your time.",
+        "head": [
+          "Listing",
+          "What it actually is",
+          "Worth the time?"
+        ],
+        "rows": [
+          [
+            "Google Business Profile",
+            "The record every other listing gets checked against, and the one that appears in the map pack.",
+            "Non-negotiable. Everything else here is downstream of it."
+          ],
+          [
+            "Bing Places, Apple Business Connect",
+            "Map data for the two platforms Google doesn't own. Ten minutes each, then permanent.",
+            "Yes. Low effort, no downside, and increasingly relevant as assistants read from them."
+          ],
+          [
+            "JustDial, Sulekha",
+            "Real consumer traffic sitting on top of a lead-resale business. The free listing is a citation; the paid tier is media.",
+            "Claim and correct the free listing. Buy the paid tier only on cost per qualified enquiry."
+          ],
+          [
+            "IndiaMART, TradeIndia",
+            "B2B marketplaces where a buyer enquiry is distributed to several suppliers by design, not by accident.",
+            "Worth it for B2B as a channel. Don't book it as an SEO win."
+          ],
+          [
+            "Practo, Zomato, 99acres, Urban Company and their peers",
+            "Vertical platforms where the decision genuinely happens, and which routinely outrank your own site for your own category.",
+            "The most valuable listing you'll make — and it isn't really a citation."
+          ],
+          [
+            "Trade associations, chambers of commerce, supplier dealer locators",
+            "No traffic, permanent, and awkward for a competitor to replicate quickly.",
+            "Yes. Unglamorous and genuinely corroborating."
+          ],
+          [
+            "₹2,999-for-300-listings packages",
+            "Submissions to sites with no readers, frequently with a slightly different business name than the one you just agreed.",
+            "No. It adds conflicts to the record you spent an hour standardising."
+          ]
+        ]
+      },
+      "bullets": [
+        "Most directory links are nofollowed, so any pitch built on the link value of directories is a tell. The value is corroboration, and on the good ones, actual customers.",
+        "Google's own local ranking guidance names relevance, distance and prominence, and puts links and reviews under prominence. Nothing in it mentions a number of directory listings. Worth remembering when somebody quotes a citation count at you as though it were a scoreboard."
+      ]
+    },
+    {
+      "h2": "Correcting, claiming and reporting — in ascending order of pain",
+      "body": [
+        "Three actions, three levels of difficulty. Knowing which one you're in before you start saves a lot of clicking."
+      ],
+      "subs": [
+        {
+          "h3": "Correcting a listing you control",
+          "body": [
+            "Minutes each. Log in, paste the agreed record, save. Do your own website first — footer, contact page and `LocalBusiness` schema should all state one version, because that's the source everything else is compared against. Fixing directories while your own footer disagrees with your own contact page is painting over damp."
+          ]
+        },
+        {
+          "h3": "Claiming a listing you've lost access to",
+          "body": [
+            "Verification usually goes to the phone number or postal address already on the listing, which is exactly why the old number stays live until this is finished. On Google, where somebody else holds a verified profile for your business, you can request access from the current owner; they have three days to respond, and there's an appeal route if they decline or ignore it."
+          ]
+        },
+        {
+          "h3": "Reporting a duplicate you don't control",
+          "body": [
+            "Google is direct about this: multiple profiles for one business are against its policies and duplicates don't show in Search or Maps. Report the duplicate as a suggestion on Maps rather than creating a third listing to compete with the first two. Merge requests are reviewed, and when profiles merge the reviews combine — but replies to reviews can be lost, so save any replies you care about before you file.",
+            "If the profile isn't duplicated but missing entirely, that's a different problem with a different route: [getting a suspended Business Profile reinstated](/answers/how-to-get-a-suspended-google-business-profile-reinstated)."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "The tell in any citation pitch",
+        "body": "Ask what happens to the listings if you stop paying. On a legitimate cleanup the answer is \"nothing, they're yours and they're correct\". On a package, the listings often live on the vendor's account and quietly revert to the vendor's version of your details. Get the logins in writing before the first invoice, not after the third."
+      }
+    },
+    {
+      "h2": "When to stop, and what to do with the hours instead",
+      "body": [
+        "Citations have a ceiling and it arrives early. Stopping isn't laziness — it's that the hour you'd spend on listing number fifty could go to a review request or a location page, and those keep paying."
+      ],
+      "bullets": [
+        "**Stop when the record is identical across Google, Bing, Apple, your own site and the five to ten places your buyers genuinely use.** That's the job. There is no version of this where listing 300 does something listing 15 didn't.",
+        "**Stop when a search for your business name returns your own properties and nothing wrong.** Your site, your profile, your vertical platform, your association listing — if that's page one and every detail matches, the corroboration is finished.",
+        "**Stop when you've never heard of the next directory on the list.** That's the moment you've left the part of the internet where your customers are.",
+        "**Don't stop the maintenance.** Twice a year, re-run the five searches from the audit. Listings drift back, particularly on aggregators that repopulate from old data, and a single stale address undoes a lot of tidying."
+      ],
+      "subs": [
+        {
+          "h3": "Where the next hour is better spent",
+          "body": [
+            "Roughly in order of return: ask for reviews and reply to every one, write a real page on your own site for each location rather than a template with the city swapped, get current photos onto the profile, and go after the two or three local mentions that aren't directories at all — the association newsletter, the local paper, the supplier who publishes a dealer list.",
+            "Those are the ones a competitor can't buy in a package, and they're the ones that separate a business that shows up locally from one that merely exists in a database. What that work costs is on the [local SEO pricing page](/cost/local-seo-cost); the underlying definition sits in [local citations](/glossary/local-citations), and the wider routine is in [how to do local SEO](/answers/how-to-do-local-seo)."
+          ]
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What's the correct phone format for an Indian business listing?",
+      "a": "`+91`, then the STD code with the leading zero dropped, then the number — `+91 22 4000 1234`. The leading zero is a domestic trunk prefix, not part of the number, which is why the same landline appears five different ways across five listings. Where a form rejects the `+`, enter digits only and move on."
+    },
+    {
+      "q": "Does the address have to match down to the punctuation?",
+      "a": "No, and anyone selling you a punctuation cleanup is selling the cheapest part of the work. Matching engines handle `Rd` versus `Road` reasonably well. What genuinely conflicts is a different building, a different locality spelling that maps somewhere else, an old address, or a PIN code that doesn't match the street."
+    },
+    {
+      "q": "Is a paid JustDial or Sulekha listing an SEO investment?",
+      "a": "It's an advertising one. Claiming and correcting the free listing is the SEO part and it's free. The paid tier buys placement and enquiry volume on their platform, which may well be worth it — judge it against your other channels on cost per qualified enquiry, and don't accept that it improves your Google ranking."
+    },
+    {
+      "q": "How do I find listings I don't remember creating?",
+      "a": "Search five things: your exact business name in quotes, the phone number as bare digits, the owner's personal mobile, your previous address, and your previous business name. The personal mobile and the old address are the two that surface listings nobody at the company knew existed."
+    },
+    {
+      "q": "Can I use a call-tracking number on my Google Business Profile?",
+      "a": "It's a risk we'd avoid. Google's guidelines require a number under the direct control of the business that connects to the actual location, and warn against numbers that redirect or refer users elsewhere. Track calls from your website and your ads where you like — leave the Business Profile pointing at the real line."
+    },
+    {
+      "q": "What do I do about a wrong listing on a site with no contact route?",
+      "a": "Try the claim flow first even if it isn't advertised — many aggregators have one buried in the footer. Failing that, check whether the site pulls from an upstream data source and fix it there instead. If neither works, leave it: one stale record on a site nobody reads is not worth a month of emails."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Guidelines for representing your business on Google",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/3038177"
+    },
+    {
+      "title": "Tips to improve your local ranking on Google",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/7091"
+    },
+    {
+      "title": "Local business (LocalBusiness) structured data",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/local-business",
+      "date": "2025-12-10"
+    },
+    {
+      "title": "Resolve duplicate profiles & ownership issues",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/12756178"
+    }
+  ],
+  "related": [
+    {
+      "type": "glossary",
+      "slug": "local-citations"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-business-profile"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-do-local-seo"
+    },
+    {
+      "type": "services",
+      "slug": "local-seo-services"
+    },
+    {
+      "type": "cost",
+      "slug": "local-seo-cost"
+    },
+    {
+      "type": "compare",
+      "slug": "google-business-profile-vs-website"
+    },
+    {
+      "type": "journal",
+      "slug": "local-seo-in-tier-2-india"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-manage-multiple-google-business-profiles"
+    }
+  ]
+}

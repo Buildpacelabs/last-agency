@@ -1,0 +1,331 @@
+{
+  "slug": "how-to-manage-multiple-google-business-profiles",
+  "type": "journal",
+  "primaryKeyword": "how to manage multiple google business profiles",
+  "secondaryKeywords": [
+    "duplicate google business profiles merge",
+    "bulk upload locations gbp",
+    "location page to profile mapping",
+    "chain missing from map pack"
+  ],
+  "cluster": "local-operations",
+  "intent": "informational",
+  "h1": "How to manage a Google Business Profile estate without breaking it",
+  "metaTitle": "Managing Multiple Google Business Profiles",
+  "metaDescription": "Duplicate and abandoned profiles, not weak optimisation, are the usual reason a location is missing from the map pack. Fix the estate before optimising.",
+  "updated": "2026-09-25",
+  "published": "2026-09-25",
+  "answer": "Start with an inventory, not an optimisation plan. List every profile that exists for your brand — including ones a former manager or franchisee created — map each to one real door and one location page, then fix duplicates and access before you touch categories, photos or posts.",
+  "takeaways": [
+    "The usual reason one location is missing from the map pack isn't weak optimisation. It's a duplicate, an unverified profile, or one nobody in the building can edit.",
+    "Google's bulk tools start at **ten locations**. Below that the spreadsheet costs more time than it saves, and you should edit by hand.",
+    "**Store code** is the join key between your spreadsheet, your location pages and Google. Assign it once and never reuse it.",
+    "An estate decays in about two quarters unless one named person owns it. Governance here is a quarterly export and a diff, not a policy document."
+  ],
+  "sections": [
+    {
+      "h2": "The estate you have is not the estate you think you have",
+      "body": [
+        "Every multi-location client arrives with a number. Twenty-two clinics. Fourteen showrooms. Eight branches and two that opened last month. Then we go looking, and the number is wrong in both directions — some doors have no profile at all, and some doors have three.",
+        "This is the part nobody budgets for, and it is the part that decides whether the rest of the work is worth doing. Optimising a profile you don't control is not slow progress. It is no progress.",
+        "Profiles arrive from more places than most operators realise:"
+      ],
+      "bullets": [
+        "Google generated it. Maps builds places from aggregator data, user submissions and edits, so a listing can exist for your branch with a wrong phone number and nobody at your company ever typed a word of it.",
+        "Your previous agency created it, under a Gmail account belonging to someone who left that agency in 2023.",
+        "A branch manager created it because they asked head office for access twice, got nothing, and needed to be on Maps by Diwali.",
+        "A franchisee created it, correctly by their reasoning, with their own name in the title and their own phone number.",
+        "It's yours, verified, and **suspended** — which is invisible on Maps and easy to miss in a dashboard listing forty locations.",
+        "It's the address you left in 2021, still verified, still ranking, still taking calls into a line nobody answers."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Do the inventory from Maps, not from your dashboard",
+        "body": "Your dashboard only shows profiles your account can already see. The profiles costing you money are precisely the ones it can't. Search the brand name in Maps city by city, search each street address, and search the former trading name. Then ask every branch manager which email address they used — that question alone usually finds two or three."
+      }
+    },
+    {
+      "h2": "One row per door: the mapping that has to exist first",
+      "body": [
+        "Before any editing, build the sheet. One row per real, physical, trading door — not one row per profile, because part of the job is deciding which profiles shouldn't exist.",
+        "The sheet is the thing you actually manage. Google's interface is where changes land; the sheet is where you know what is true. It also survives staff turnover, which the tribal knowledge in a regional manager's head does not.",
+        "Store code deserves a paragraph of its own. It is a short identifier you assign — `BLR-INDIRANAGAR-01`, not `Store 4` — and it is what ties a row in your spreadsheet to a profile in Google to a page on your website. Bulk uploads use it to apply edits to the right location, and Google's own upload statuses will tell you to assign one when two of your locations share an address, which happens constantly in India: two clinics in the same medical complex, three counters in the same mall."
+      ],
+      "table": {
+        "caption": "The minimum column set for a Business Profile estate sheet.",
+        "head": [
+          "Column",
+          "Where it comes from",
+          "Why it earns its place"
+        ],
+        "rows": [
+          [
+            "Store code",
+            "You assign it, once",
+            "The join key across your sheet, Google and your CMS. Without it, bulk edits land on the wrong branch."
+          ],
+          [
+            "Maps URL",
+            "Copy the share link from the live listing",
+            "Proves the profile you're describing is the one the public sees, including the ones you don't own yet."
+          ],
+          [
+            "Owning account",
+            "Your export, or the request-access screen",
+            "Turns \"we can't edit it\" into a named person to email. Half your duplicates die here."
+          ],
+          [
+            "Status",
+            "Google Business Profile",
+            "Verified, unverified, pending, suspended, disabled. Each needs a different action and only one of them needs optimisation."
+          ],
+          [
+            "Location page URL",
+            "Your website",
+            "The profile's website field should point here, not at your homepage. This is the mapping the section below is about."
+          ],
+          [
+            "Primary category",
+            "Google Business Profile",
+            "The single biggest ranking input you control, and the field most likely to differ across branches for no reason."
+          ],
+          [
+            "Public phone",
+            "Whatever is printed on the door",
+            "Must match your citations and your location page. Call-tracking numbers belong in the secondary slot, not the primary."
+          ],
+          [
+            "Review count today",
+            "The live listing",
+            "Tells you what a duplicate is holding hostage — and what you'd be walking away from if you closed the wrong one."
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Bulk upload versus editing by hand",
+      "body": [
+        "There is a real threshold here and it is published. Google's bulk management tools — the spreadsheet download, the bulk upload, bulk verification — [require ten or more locations](https://support.google.com/business/answer/3217744). Under ten, you don't get the option, and you don't want it: eight profiles edited by hand takes an afternoon, and the spreadsheet round trip takes longer than that before you've fixed a single field.",
+        "Between roughly ten and fifty locations, the spreadsheet earns its place for anything that repeats — hours across a festival week, a category correction, appending a UTM to every website field. Keep doing photos, posts, review replies and Q&A by hand, because those are per-location judgement calls and a spreadsheet flattens judgement.",
+        "Above about fifty, the sheet starts to creak and the API becomes the honest answer, along with business groups so access is granted per region rather than per person. That is a developer conversation, not a marketing one, and it is worth having before somebody spends a quarter of their life in a CSV.",
+        "The first upload is not an edit. It is a diagnostic. Upload your sheet and Google returns a status per row, and those statuses are the most useful map of your estate you will ever get."
+      ],
+      "table": {
+        "caption": "Statuses a bulk upload returns, and what each one is really telling you.",
+        "head": [
+          "Status",
+          "What it means",
+          "What it costs you to fix"
+        ],
+        "rows": [
+          [
+            "Duplicate locations",
+            "The location you uploaded already exists as a verified profile.",
+            "Ten minutes, if the verified one is yours. Weeks, if it isn't."
+          ],
+          [
+            "Duplicate addresses",
+            "Two rows share one address — the mall counter, the medical complex, the shared office floor.",
+            "Assign distinct store codes. Genuinely distinct businesses at one address are allowed; two profiles for one business are not."
+          ],
+          [
+            "Access needed",
+            "Another verified owner exists. A location gets exactly one verified owner.",
+            "A request for ownership, and then patience. This is the queue that decides your timeline."
+          ],
+          [
+            "Missing store codes",
+            "You skipped the join key.",
+            "Nothing, if you fix it now. A lot, if you fix it after two rounds of edits have landed on the wrong branches."
+          ],
+          [
+            "Errors",
+            "The row itself is malformed — a category that doesn't exist, an address Google can't place.",
+            "Usually the address. Indian addresses with landmarks and no postcode fail here more than anything else."
+          ],
+          [
+            "Suspended or disabled",
+            "The profile violated a guideline and is off Maps.",
+            "An appeal with evidence, not a re-upload. Uploading over a suspension does nothing."
+          ]
+        ]
+      },
+      "callout": {
+        "kind": "warn",
+        "title": "Do not bulk-edit your way out of a suspension",
+        "body": "A suspended profile ignores your upload. Pull those rows out, deal with them separately, and read [how a reinstatement actually works](/answers/how-to-get-a-suspended-google-business-profile-reinstated) before you file anything — an appeal against the wrong cause burns a clean attempt."
+      }
+    },
+    {
+      "h2": "Duplicates, sorted by who created them",
+      "body": [
+        "\"Merge\" is the word everyone uses and it is slightly wrong. There is no button that fuses two listings and adds up the reviews. What actually happens is that one listing wins, one is retired, and what carries over depends on how the retirement is done. Sort your duplicates by origin, because each origin has a different exit."
+      ],
+      "subs": [
+        {
+          "h3": "The one Google made",
+          "body": [
+            "Unclaimed, thin, often with a slightly mangled address and a phone number from an old directory. This is the easy one: claim it, verify it, and the estate gets one row shorter. If it's a genuine duplicate of a profile you already run, report it as a duplicate rather than maintaining two."
+          ]
+        },
+        {
+          "h3": "The one your ex-agency or ex-manager made",
+          "body": [
+            "Verified, controlled by an account you can't reach, occasionally with three hundred reviews on it. Request ownership from the profile itself. [Google notifies the current owner, who has three days to respond](https://support.google.com/business/answer/4566671) — if they don't, you may get the option to claim it, though that path isn't always offered.",
+            "Send a parallel email to whoever you think holds the account, in plain language, on the same day you file. A former agency that ignores a Google notification will often answer an invoice-adjacent email from a client's finance address. This is a people problem wearing a software costume."
+          ]
+        },
+        {
+          "h3": "The one that isn't a duplicate",
+          "body": [
+            "Two entries at one address are legitimate more often than franchise operators assume — a separate department with its own entrance and staff, a distinct brand under the same roof, a practitioner who can hold a profile alongside the practice. Google's guidelines allow the real cases and are explicit that there should only be one profile per business location otherwise.",
+            "The test is whether a customer standing in the doorway would agree they are two businesses. If your answer needs a paragraph of explanation, it is one business and you are about to earn a suspension."
+          ]
+        }
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Removing a profile from your account is not removing it from Maps",
+        "body": "It only stops you managing it. The listing stays, the reviews stay, the wrong phone number stays, and now nobody is watching it. And never mark a trading branch permanently closed to tidy up an estate — closed is a state customers see."
+      }
+    },
+    {
+      "h2": "The website field, where estates leak quietly",
+      "body": [
+        "Once access is sorted, the highest-return field in the whole estate is the one most chains fill in identically: the website URL. Forty profiles all pointing at the homepage is forty profiles handing their traffic to a page that can't tell a visitor whether that branch is open, where to park, or which doctor is in on Tuesday.",
+        "Each profile points at its own location page. That page carries the same NAP string as the profile, the branch's own hours, its own staff, its own photos, and a map embed of that pin. This is the mapping that makes the estate a system rather than forty things.",
+        "Then tag it. Append a UTM to the website field per location so the click arrives in analytics identified — otherwise every branch's profile traffic pools into one anonymous organic blob and you can't tell Kochi from Kolkata. Calls and direction requests still won't reach your analytics as sessions, so read those in the profile's own performance data and in your call log. If you take a meaningful share of enquiries on WhatsApp, wire that up properly too: [tracking WhatsApp and phone leads in GA4](/answers/how-to-track-whatsapp-and-phone-leads-in-ga4) is a separate job and worth doing before you argue about which branch is underperforming.",
+        "One caution on call tracking. A tracking number in the primary phone field breaks the consistency between your profile and every citation carrying your real number. Put the tracking number in a secondary slot and leave the printed-on-the-door number primary."
+      ]
+    },
+    {
+      "h2": "Governance, or you do all of this again in March",
+      "body": [
+        "The uncomfortable finding from doing this work repeatedly: an estate that has been cleaned decays back to roughly its old state in two to three quarters unless somebody owns it. Not a policy. A person, with a recurring calendar entry.",
+        "The decay is not mysterious. Staff change, Google applies updates from users and its own sources, a new branch opens and somebody claims it the fast way, a franchisee adds their name to the title because a consultant told them it helps."
+      ],
+      "numbered": [
+        "**Name the owner.** One person, in-house, with edit rights across the estate. An agency can operate it; an agency cannot own it, because the agency will change before the estate does.",
+        "**Use business groups, not shared logins.** Access granted per group and per person, so offboarding is one removal rather than a password rotation nobody documents.",
+        "**Export quarterly and diff it.** Download the estate to a spreadsheet and compare it to last quarter's file. Google's export flags fields it has updated or removed itself, which is the cheapest change-detection you will ever get.",
+        "**Watch suggested edits.** Anyone signed in can propose a change to your listing, and plausible edits get applied. Hours and phone numbers are the ones that get quietly wrong.",
+        "**Put it in the franchise agreement.** New outlets do not create their own profile. Head office creates it and grants access. Write it down before the tenth franchisee, not after.",
+        "**Re-run the Maps search twice a year.** The inventory step from section one, repeated. It takes an afternoon and it is the only way to find the profiles created outside your process."
+      ]
+    },
+    {
+      "h2": "A 30-day sequence for eight to eighty locations",
+      "body": [
+        "Order matters more than speed here, because access requests run on Google's clock and nothing downstream can start without them."
+      ],
+      "numbered": [
+        "**Days 1–5: inventory.** Maps searches per city, per address, per old trading name. Every profile found goes in the sheet with its Maps URL and status, owned or not.",
+        "**Days 5–10: mapping and access.** Assign store codes, attach each row to a location page, and file every request for ownership on the same day so the three-day clocks run in parallel rather than in series.",
+        "**Days 10–20: duplicates and suspensions.** Claim the unclaimed, report the true duplicates, and handle suspensions in their own workstream with an evidence pack per profile.",
+        "**Days 20–25: the first real edit.** Categories, hours, services, website field with UTMs, primary phone. Bulk if you're over ten locations, by hand if you're not.",
+        "**Days 25–30: governance.** Business groups, access review, the quarterly diff in someone's calendar, and the franchise clause drafted.",
+        "**Only then: optimisation.** Photos, posts, review replies, Q&A, geo-grid tracking. Doing this in month one on an estate you don't fully control is how agencies produce activity reports with no map movement behind them."
+      ]
+    },
+    {
+      "h2": "What the cleanup is worth before you spend anything on ranking",
+      "body": [
+        "This work does not add a boost. It removes a cap — which is a less satisfying sentence and a more accurate one. A branch that was invisible because a duplicate outranked it becomes visible. A branch that was already fine stays fine.",
+        "That's why we won't quote estate work as a ranking project. What we can say honestly is which branches are currently unreachable and why, and that fixing an unreachable branch is worth more than another photo upload on a branch already sitting in the pack. If you want the mechanics of the ranking side afterwards, [local SEO step by step](/answers/how-to-do-local-seo) covers what actually moves relevance, distance and prominence.",
+        "Our own [local SEO work](/services/local-seo-services) starts at ₹40,000 a month for a single outlet, ex-GST, and multi-outlet programmes are quoted per band after scoping — because outlet count isn't what drives the cost, the state of the estate is. Eighty clean profiles are cheaper to run than twelve contested ones. The guarantee runs against your own frozen baseline, per outlet, never against a promised position."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "The one number to pull before you start",
+        "body": "For each branch, the count of calls and direction requests over the last 90 days, straight from the profile. Branches at or near zero are the ones with an estate problem, not an optimisation problem — and that list is your work order for the month."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How many Google Business Profiles should one business have?",
+      "a": "One per location with a real, staffed door, plus service-area profiles where you travel to the customer. Google's guidelines are explicit that there should only be one profile per business location, in a single account or across several. Departments with their own entrance and staff are a documented exception, not a workaround."
+    },
+    {
+      "q": "How do I merge two Google Business Profiles?",
+      "a": "You don't merge them in the sense of adding two listings together. You establish which one is the real location, claim or take ownership of it, and report the other as a duplicate so it retires. Reviews sit with the place Google keeps, which is why the order of operations matters."
+    },
+    {
+      "q": "Do I need bulk upload for twelve locations?",
+      "a": "You qualify for it at ten, but qualifying isn't the same as needing it. Twelve profiles are comfortably editable by hand for photos, posts and replies. Use the spreadsheet for anything repetitive across all twelve — a category correction, festival hours, UTM tagging — and stay manual for everything that needs judgement."
+    },
+    {
+      "q": "How do I get a profile back from an agency that has stopped replying?",
+      "a": "File a request for ownership from the listing itself. The current owner is notified and has three days to respond; if nothing comes back, you may be offered the option to claim it, though that isn't guaranteed. Email the agency's billing contact the same day — that address answers more reliably than the account holder."
+    },
+    {
+      "q": "Will fixing duplicates improve our map pack rankings?",
+      "a": "It removes an obstacle rather than adding a signal. A branch losing to its own duplicate becomes reachable, which usually shows up in calls and direction requests within weeks. A branch with no duplicate sees nothing from this work, and any agency promising otherwise is charging you for tidying."
+    },
+    {
+      "q": "Should each location have its own page on our website?",
+      "a": "Yes, and the profile's website field should point at it rather than your homepage. The page needs genuinely local content — that branch's hours, staff, parking, photos and NAP string. Templated locality pages with the city name swapped are the doorway pattern Google names in its guidelines, so write fewer, better ones."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bulk location management overview",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/3217744"
+    },
+    {
+      "title": "Understand your Business Profile status for bulk uploads",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/3480862"
+    },
+    {
+      "title": "Guidelines for representing your business on Google",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/3038177"
+    },
+    {
+      "title": "Request ownership of a Business Profile",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/4566671"
+    },
+    {
+      "title": "Download your Business Profiles to a spreadsheet",
+      "publisher": "Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/3478406"
+    }
+  ],
+  "related": [
+    {
+      "type": "answers",
+      "slug": "how-to-get-a-suspended-google-business-profile-reinstated"
+    },
+    {
+      "type": "glossary",
+      "slug": "google-business-profile"
+    },
+    {
+      "type": "services",
+      "slug": "local-seo-services"
+    },
+    {
+      "type": "compare",
+      "slug": "google-business-profile-vs-website"
+    },
+    {
+      "type": "glossary",
+      "slug": "local-citations"
+    },
+    {
+      "type": "cost",
+      "slug": "local-seo-cost"
+    },
+    {
+      "type": "journal",
+      "slug": "local-seo-in-tier-2-india"
+    },
+    {
+      "type": "journal",
+      "slug": "how-to-get-visible-on-reddit-without-getting-banned"
+    }
+  ]
+}

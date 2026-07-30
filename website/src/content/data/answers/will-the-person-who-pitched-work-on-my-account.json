@@ -1,0 +1,226 @@
+{
+  "slug": "will-the-person-who-pitched-work-on-my-account",
+  "type": "answers",
+  "primaryKeyword": "will the person who pitched me work on my account",
+  "secondaryKeywords": [
+    "who actually does the work at an seo agency",
+    "seo agency bait and switch senior staff",
+    "named team members in an agency contract",
+    "how to stop an agency swapping your team"
+  ],
+  "cluster": "agency-risk",
+  "intent": "informational",
+  "h1": "Will the person who pitched you actually work on your account?",
+  "metaTitle": "Will the Person Who Pitched You Do the Work?",
+  "metaDescription": "The seniority swap after signature is not white-labelling. The clause that fixes it: named individuals, minimum hours, notice before any substitution.",
+  "updated": "2026-08-13",
+  "published": "2026-08-13",
+  "answer": "Often not, and the swap is structural rather than dishonest. The senior who runs the pitch is the agency's scarcest input, so they move to the next pitch and a junior inherits your account. Fix it in the contract: name the individuals, set minimum monthly hours for each, and require notice before any substitution.",
+  "takeaways": [
+    "This is not outsourcing. Everyone stays in-house — the **seniority** changes, which is harder to spot and just as expensive.",
+    "The pitch is a sales function at any real scale. Expecting the closer to also run delivery misunderstands how the business works.",
+    "Ask for names in the **statement of work**, not the deck. A deck binds nobody.",
+    "Nobody can promise the same people forever. A fair agency promises notice, an overlap, and a like-for-like replacement you get to meet.",
+    "You can check who's actually on the account yourself: the user list on your own Search Console and GA4 properties."
+  ],
+  "sections": [
+    {
+      "h2": "Why the pitch team and the delivery team are different people by design",
+      "body": [
+        "Picture the arithmetic from the agency's side. A shop with forty clients has perhaps three people who can hold a room, read a business in twenty minutes and answer a hostile question without hedging. Those three are also the only people who can win new business. Every hour they spend writing a keyword map is an hour not spent closing.",
+        "So the strategist runs the pitch, wins it, hands over, and appears at the quarterly review. That isn't a con — it's the only way the model works at scale. The problem is that nobody says it out loud during the pitch, because the pitch is the one moment where saying it costs money.",
+        "Two things then vary enormously between agencies. First, how far down the seniority ladder your account actually lands. Second, whether the handover included any of what the strategist understood about your business, or just a folder. The second one is what you actually feel in month three."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "It's not the same problem as outsourcing",
+        "body": "A subcontracted account leaves the building; a swapped account stays inside and changes hands. The tells are different, and so are the fixes — see [how to tell if your agency is quietly outsourcing](/journal/is-your-agency-outsourcing-your-seo) for the other version of this."
+      }
+    },
+    {
+      "h2": "How the swap shows up, usually around week six",
+      "body": [
+        "It rarely arrives as an announcement. It arrives as a slow change in who answers, how fast, and how well.",
+        "None of these on their own proves anything. Three of them together, in the same month, generally means your account moved down a rung."
+      ],
+      "bullets": [
+        "**The strategist moves to cc.** Replies come from someone whose name you first saw in a calendar invite.",
+        "**Answers get slower and more literal.** A question that used to get an opinion now gets a screenshot of a tool, because the new owner is still learning your business.",
+        "**The recommendations lose their edges.** The pitch had a point of view about your category. Month three has a list of tasks completed.",
+        "**Nobody can explain a decision made before they arrived.** Ask why a page was rewritten in month one and you get an answer about the ticket rather than the reasoning.",
+        "**The reporting call becomes a reading of the report.** If nothing is said that isn't already on the slide, you're paying retainer rates for narration."
+      ],
+      "subs": [
+        {
+          "h3": "The check you can run from your own account",
+          "body": [
+            "You don't need the agency's cooperation for this one. Your Search Console property lists [every user with access and their permission level](https://support.google.com/webmasters/answer/7687615), and it keeps an ownership history. GA4 has the same list under access management.",
+            "Open both. Compare the names against the people you were introduced to. An account with two unfamiliar email addresses added in week five is not proof of anything sinister — people join teams. It is a completely fair thing to ask about, and the answer tells you how the agency staffs in practice rather than in the deck."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Three questions in the pitch, and what a real answer sounds like",
+      "body": [
+        "Google's own guidance on hiring an SEO tells you to ask how you can [expect to communicate](https://developers.google.com/search/docs/fundamentals/do-i-need-seo) with whoever you hire. That's the right instinct and it stops one step short. Ask who, by name, and for how long."
+      ],
+      "numbered": [
+        "**\"Which of the people in this room will be on my account in month four, and doing what?\"** A good answer is specific and slightly uncomfortable: *\"I'll be on the monthly review and every strategy reset. Day-to-day is our senior consultant, who you'll meet next week and who carries three other accounts.\"* A bad answer is a role chart with no names on it.",
+        "**\"How many accounts does that person carry?\"** The number matters more than the title. Someone holding twelve accounts is a coordinator no matter what the signature says. Nobody volunteers this figure; almost everyone answers it when asked directly.",
+        "**\"Who wrote the audit you just presented?\"** If the person presenting it can't explain a finding without opening the file, they didn't do the analysis — and you've just learned what the delivery layer looks like."
+      ],
+      "callout": {
+        "kind": "warn",
+        "title": "Watch the ten seconds, not the sentence",
+        "body": "Every agency has a rehearsed answer to the first question. The unrehearsed part is the pause and the glance between the two people opposite you. If they've thought about staffing, it takes them a few seconds. If they haven't, you get a paragraph about their process."
+      }
+    },
+    {
+      "h2": "The clause that makes substitution visible",
+      "body": [
+        "You cannot contractually prevent a person leaving a job. What you can do is make a change visible, deliberate and costly enough that nobody does it casually. Five lines in the statement of work do most of the work — see [what belongs in an SEO contract](/answers/what-should-be-in-an-seo-contract) for the rest of the document.",
+        "This is our drafting position, not legal advice — have your own counsel look at the wording before it goes into a signed agreement."
+      ],
+      "table": {
+        "caption": "Five clauses covering named staffing, and the pushback each one reasonably attracts.",
+        "head": [
+          "Clause",
+          "What to write",
+          "Fair pushback to accept"
+        ],
+        "rows": [
+          [
+            "Named individuals",
+            "Name each person in the SOW with their role. \"Key Personnel\" is the standard term if your counsel prefers it.",
+            "They'll want to name two or three, not the whole pod. That's reasonable — name the ones whose absence you'd notice."
+          ],
+          [
+            "Minimum monthly hours",
+            "A floor per named person per month, reported alongside the invoice.",
+            "A range rather than a fixed number, and averaging across a quarter. Both are fair."
+          ],
+          [
+            "Notice before substitution",
+            "Written notice a set number of days before any named person comes off the account.",
+            "An exception for resignation, illness and leave, where notice is immediate rather than advance."
+          ],
+          [
+            "Like-for-like replacement",
+            "Any replacement matches the seniority and scope of the person leaving, and you get an introduction call.",
+            "They may not accept a veto. Accept an introduction and an escalation route instead."
+          ],
+          [
+            "Handover overlap",
+            "The outgoing person stays on the account for a defined overlap — two weeks is normal.",
+            "Shorter overlap if the replacement was already on the account. That's a genuinely better outcome anyway."
+          ]
+        ]
+      },
+      "bullets": [
+        "Put the names in the **SOW or an annexure**, not the master services agreement — you want to be able to update them without re-signing everything.",
+        "Tie one consequence to it. A right to terminate without penalty if a named person is replaced without notice costs the agency nothing when they behave and everything when they don't.",
+        "Ask for the same names on the reporting call each month. Attendance is the cheapest audit there is."
+      ]
+    },
+    {
+      "h2": "What a reasonable answer looks like, because nobody can promise nothing changes",
+      "body": [
+        "Be careful what you demand here. An agency that promises the same three people for two years is either lying or is about to have a staffing problem it can't tell you about. People resign, take leave, get promoted, and occasionally turn out to be wrong for your account — and you want the agency free to fix that last one quickly.",
+        "The honest version sounds like this: *the strategist stays on the account monthly and on every planning reset; the day-to-day owner is named and carries no more than four accounts; if either changes you hear about it before it happens, you meet the replacement, and the outgoing person overlaps for a fortnight.* That's a commitment somebody can actually keep.",
+        "One more thing worth calibrating: a junior on your account is not automatically bad news. Most execution work is better done by someone with time than by someone senior doing it at 11pm between pitches. What you're paying senior rates for is judgement — what to do next, and what to stop doing. Make sure that specific thing has a name against it, and check the [references of the agency](/answers/how-to-check-seo-agency-references) for whether it survived past month six on their other accounts."
+      ]
+    },
+    {
+      "h2": "Who does what here, named",
+      "body": [
+        "We're two people, so this is a short section and there's nowhere to hide in it. Aryan Singh runs the commercial side. Priyanshu Semwal owns the technical side. One of us is on the call you book, and the same one is on your account afterwards — there is no third person to hand you to.",
+        "That's also the reason we take three clients a month rather than thirty. The cap isn't a scarcity tactic; it's the number at which two people can still do the work they sold without a delivery layer underneath them. Push past it and we'd have to hire, and then this page would need a staffing clause of its own.",
+        "The [guarantee](/seo) forces the same discipline from the other end. We freeze your trailing-90-day qualified leads from organic search on day one and keep working free if we haven't beaten it in 90 days. You cannot carry that risk at volume, and you certainly cannot carry it while handing accounts to whoever is free this month."
+      ],
+      "callout": {
+        "kind": "note",
+        "title": "Ask us the same three questions",
+        "body": "They work on us too, and the answers are short. Both names are on the site, both of us are on the pitch, and if either of us is unavailable for a fortnight you'll hear it from us before you notice it in the work."
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is it normal for the person who pitched to not work on my account?",
+      "a": "At most agencies above about ten people, yes. New business needs the strongest communicators and delivery needs their time elsewhere, so the pitch lead hands over after signature. The problem isn't the handover — it's when the handover is never mentioned and the seniority drops two rungs without notice."
+    },
+    {
+      "q": "Can I insist on named people in an SEO contract?",
+      "a": "You can, and most agencies will agree to name two or three key people in the statement of work with minimum monthly hours. Expect resistance to naming a whole team and to any absolute veto over replacements. Notice, an introduction to the replacement, and a handover overlap are all normally negotiable."
+    },
+    {
+      "q": "What happens if the named person leaves the agency?",
+      "a": "Nothing you can prevent, which is why the clause should govern the response rather than forbid the event. Immediate notification, a replacement of matching seniority, an introduction call, and an overlap where practical. If the agency simply reassigns the account and tells you at the next review, that's the breach worth acting on."
+    },
+    {
+      "q": "Is having a junior on my account a bad sign?",
+      "a": "Not by itself. Execution done carefully by someone with time beats execution squeezed in by someone senior between pitches. What matters is whether the judgement layer — what to do next and what to stop — has a named owner who knows your business and turns up every month."
+    },
+    {
+      "q": "How can I check who is actually working on my account?",
+      "a": "Look at the user list on your own Search Console and GA4 properties, and compare it against the people you were introduced to. Also check who sends the work: document authors, ticket owners, the names on the reporting call. Unfamiliar names aren't proof of anything, but they're a fair question."
+    },
+    {
+      "q": "Should I pay more to keep senior people on the account?",
+      "a": "Sometimes that's the honest deal — a higher retainer for a named senior's guaranteed hours. Ask for the hours in writing if you're paying for them. What you should refuse is paying a senior rate card while the work is done a level or two below it with nobody saying so."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Do You Need an SEO? Tips for Hiring an SEO",
+      "publisher": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/do-i-need-seo",
+      "date": "2026-06-05"
+    },
+    {
+      "title": "Managing owners, users, and permissions",
+      "publisher": "Google Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/7687615"
+    },
+    {
+      "title": "Access and data-restriction management",
+      "publisher": "Google Analytics Help",
+      "url": "https://support.google.com/analytics/answer/9305587"
+    }
+  ],
+  "related": [
+    {
+      "type": "journal",
+      "slug": "is-your-agency-outsourcing-your-seo"
+    },
+    {
+      "type": "answers",
+      "slug": "what-should-be-in-an-seo-contract"
+    },
+    {
+      "type": "answers",
+      "slug": "how-to-check-seo-agency-references"
+    },
+    {
+      "type": "compare",
+      "slug": "agency-vs-freelancer"
+    },
+    {
+      "type": "compare",
+      "slug": "agency-vs-in-house"
+    },
+    {
+      "type": "cost",
+      "slug": "seo-cost-in-india"
+    },
+    {
+      "type": "journal",
+      "slug": "why-free-seo-audits-are-sales-pitches"
+    },
+    {
+      "type": "answers",
+      "slug": "how-do-seo-agencies-work"
+    }
+  ]
+}

@@ -63,14 +63,42 @@
       ],
       "table": {
         "caption": "The review workflow we run on medical content.",
-        "head": ["Stage", "Owner", "Output"],
+        "head": [
+          "Stage",
+          "Owner",
+          "Output"
+        ],
         "rows": [
-          ["Brief", "SEO lead with the clinician", "Query, intent, scope, and an explicit list of claims the page will and won't make"],
-          ["Draft", "Medical writer", "Copy with sources cited inline — clinical guidelines, journals, government advisories"],
-          ["Clinical review", "Named registered practitioner", "Corrections plus sign-off on every clinical claim in the piece"],
-          ["Compliance pass", "Marketing lead", "Claims checked against advertising rules; testimonials and outcome promises removed"],
-          ["Publish", "Web team", "Visible 'Written by' and 'Medically reviewed by [name, registration no.] on [date]'"],
-          ["Re-review", "Clinician", "Scheduled at 12 months, sooner whenever guidance changes"]
+          [
+            "Brief",
+            "SEO lead with the clinician",
+            "Query, intent, scope, and an explicit list of claims the page will and won't make"
+          ],
+          [
+            "Draft",
+            "Medical writer",
+            "Copy with sources cited inline — clinical guidelines, journals, government advisories"
+          ],
+          [
+            "Clinical review",
+            "Named registered practitioner",
+            "Corrections plus sign-off on every clinical claim in the piece"
+          ],
+          [
+            "Compliance pass",
+            "Marketing lead",
+            "Claims checked against advertising rules; testimonials and outcome promises removed"
+          ],
+          [
+            "Publish",
+            "Web team",
+            "Visible 'Written by' and 'Medically reviewed by [name, registration no.] on [date]'"
+          ],
+          [
+            "Re-review",
+            "Clinician",
+            "Scheduled at 12 months, sooner whenever guidance changes"
+          ]
         ]
       },
       "bullets": [
@@ -156,11 +184,33 @@
     }
   ],
   "related": [
-    { "type": "seo-for", "slug": "hospitals" },
-    { "type": "seo-for", "slug": "dental-clinics" },
-    { "type": "glossary", "slug": "e-e-a-t" },
-    { "type": "services", "slug": "local-seo-services" },
-    { "type": "glossary", "slug": "schema-markup" },
-    { "type": "answers", "slug": "what-is-local-seo" }
+    {
+      "type": "seo-for",
+      "slug": "hospitals"
+    },
+    {
+      "type": "seo-for",
+      "slug": "dental-clinics"
+    },
+    {
+      "type": "glossary",
+      "slug": "e-e-a-t"
+    },
+    {
+      "type": "services",
+      "slug": "local-seo-services"
+    },
+    {
+      "type": "glossary",
+      "slug": "schema-markup"
+    },
+    {
+      "type": "answers",
+      "slug": "what-is-local-seo"
+    },
+    {
+      "type": "seo-for",
+      "slug": "home-healthcare"
+    }
   ]
 }
