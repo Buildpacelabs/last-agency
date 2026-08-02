@@ -8,7 +8,7 @@ export function TierCard({ t, cta }: { t: Tier; cta: string }): JSX.Element {
       <p className="tagline">{t.tagline}</p>
       <div className="price">
         <span className="amt num">{t.price}</span>
-        <span className="per">/ month</span>
+        <span className="per">for a custom quote</span>
       </div>
       {t.bracket ? <div className="bracket">{t.bracket}</div> : null}
       <div className="lbl">What you get</div>

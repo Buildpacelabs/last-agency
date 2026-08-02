@@ -91,7 +91,7 @@ export default function SeoPage(): JSX.Element {
               WhatsApp us instead
             </a>
           </div>
-          <p className="trust">Every price published · No contracts · No jargon</p>
+          <p className="trust">One straight quote · No contracts · No jargon</p>
         </div>
       </header>
 
@@ -126,17 +126,17 @@ export default function SeoPage(): JSX.Element {
                 <span className="strike num">₹5,40,000 / mo</span>
               </div>
               <div className="price-big">
-                <span>You pay from</span>
+                <span>You pay</span>
                 <span>
-                  <span className="p num">₹75,000</span> /mo
+                  <span className="p">Contact us</span>
                 </span>
               </div>
             </div>
           </div>
 
           <p className="offer-foot">
-            + performance bonus only when the leads land. GST extra · plans from ₹40k for smaller
-            sites.
+            + performance bonus only when the leads land. GST extra · scoped and quoted on the call,
+            with smaller plans for smaller sites.
           </p>
         </div>
       </section>

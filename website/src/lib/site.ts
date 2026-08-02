@@ -39,7 +39,7 @@ export const SOCIAL_TIERS: Tier[] = [
     badge: 'Starter',
     name: 'Content Starter',
     tagline: 'Show up consistently on the channels that matter — without ever touching a camera.',
-    price: '₹30,000',
+    price: 'Contact us',
     get: [
       'A consistent, on-brand presence on your 2 most important channels',
       'Every reel shot-scripted and edited by us — you never supply footage',
@@ -62,7 +62,7 @@ export const SOCIAL_TIERS: Tier[] = [
     featured: true,
     name: 'Growth Engine',
     tagline: 'One production line that grows followers AND organic search at the same time.',
-    price: '₹50,000',
+    price: 'Contact us',
     get: [
       'A content engine that compounds followers and Google traffic together',
       'Art-directed, trend-led creative — not recycled templates',
@@ -84,7 +84,7 @@ export const SOCIAL_TIERS: Tier[] = [
     badgeClass: 'full',
     name: 'Brand Studio',
     tagline: 'A dedicated creative pod that runs your brand like an in-house studio.',
-    price: '₹70,000',
+    price: 'Contact us',
     get: [
       "A dedicated pod that runs your brand like in-house — for a fraction of a boutique agency's cost",
       'High-velocity produced video: concept, shoot direction and edit handled',
@@ -108,7 +108,7 @@ export const PERF_TIERS: Tier[] = [
     badge: 'Entry',
     name: 'Ignite',
     tagline: 'Both Meta and Google, run by a senior buyer — not a set-and-forget script.',
-    price: '₹40,000',
+    price: 'Contact us',
     bracket: 'Manages up to ₹2L / mo ad spend',
     get: [
       'Your ads live on both Meta and Google from day one — not just one channel',
@@ -131,7 +131,7 @@ export const PERF_TIERS: Tier[] = [
     featured: true,
     name: 'Scale',
     tagline: 'Full-funnel Meta + Google, a real creative pipeline, and tracking you can trust.',
-    price: '₹75,000',
+    price: 'Contact us',
     bracket: 'Manages ₹2L–₹8L / mo ad spend',
     get: [
       'Full-funnel Meta + Google run by a dedicated buyer who owns your numbers',
@@ -153,7 +153,7 @@ export const PERF_TIERS: Tier[] = [
     badgeClass: 'full',
     name: 'Dominate',
     tagline: 'A cross-functional pod run like your in-house growth team, with attribution you can trust.',
-    price: '₹1,50,000',
+    price: 'Contact us',
     bracket: 'Manages ₹8L–₹25L / mo ad spend',
     get: [
       'A cross-functional pod: senior buyer + creative team + analyst',
@@ -166,7 +166,7 @@ export const PERF_TIERS: Tier[] = [
       'Full-funnel across Meta, Google, YouTube + programmatic as needed',
       '40–60 creative variants / month from a dedicated creative team',
       'Advanced attribution: server-side tracking, incrementality + media-mix testing',
-      'Flat ₹1.5L floor OR floor + 8–10% of spend (whichever is higher)',
+      'Flat management fee OR fee + a share of spend (whichever is higher) — quoted on the call',
       'Real-time dashboards, weekly reviews + monthly strategy sessions',
     ],
   },
@@ -176,8 +176,6 @@ export type Bundle = {
   combines: string[];
   name: string;
   price: string;
-  was: string;
-  save: string;
   body: string;
   best?: boolean;
 };
@@ -186,25 +184,19 @@ export const BUNDLES: Bundle[] = [
   {
     combines: ['SEO', 'Social'],
     name: 'Organic Growth Engine',
-    price: '₹99,000',
-    was: '₹1,25,000 à la carte',
-    save: 'Save ₹26,000 / mo · ~21% off',
+    price: 'Contact us',
     body: 'Own organic: rank on Google and build a branded feed from one shared content pipeline. The blogs and social are produced once and distributed across both — so it costs less to run, and we pass the saving on.',
   },
   {
     combines: ['Social', 'Performance'],
     name: 'Full-Funnel Starter',
-    price: '₹75,000',
-    was: '₹90,000 à la carte',
-    save: 'Save ₹15,000 / mo · ~17% off',
+    price: 'Contact us',
     body: "Demand now. Produced organic content plus dual-channel paid ads for D2C and lead-gen brands that aren't ready for full SEO yet. Your organic creative doubles as ad creative, cutting production cost.",
   },
   {
     combines: ['SEO', 'Social', 'Performance'],
     name: 'Own Everything Stack',
-    price: '₹1,75,000',
-    was: '₹2,20,000 à la carte',
-    save: 'Save ₹45,000 / mo · ~20% off',
+    price: 'Contact us',
     best: true,
     body: 'One team owns search, social and paid end-to-end: a single content pipeline feeds all three, and attribution is unified across organic and paid. Every service keeps its own guarantee — SEO works free until it beats your baseline, paid waives a month’s fee if it misses — and one partner is accountable for the whole number, instead of three vendors pointing fingers.',
   },
@@ -227,7 +219,7 @@ export const SERVICE_CARDS: ServiceCard[] = [
     href: '/seo',
     name: 'SEO',
     one: 'The six-engine growth system that ranks you — or works free until it does.',
-    from: 'From ₹75,000 / mo',
+    from: 'Custom pricing — contact us',
     points: [
       'Technical, content, digital PR & programmatic SEO',
       'AEO / GEO so AI answers cite you too',
@@ -240,7 +232,7 @@ export const SERVICE_CARDS: ServiceCard[] = [
     href: '/social',
     name: 'Organic Social & Content',
     one: 'Produced reels and blogs from one line — content that grows a feed and ranks on Google.',
-    from: 'From ₹30,000 / mo',
+    from: 'Custom pricing — contact us',
     points: [
       'Reels shot & edited by us, end-to-end',
       'Write once, distribute across search + social',
@@ -253,7 +245,7 @@ export const SERVICE_CARDS: ServiceCard[] = [
     href: '/performance',
     name: 'Performance Marketing',
     one: "Full-funnel Meta + Google run like it's our own money — flat fee, no media markup.",
-    from: 'From ₹40,000 / mo',
+    from: 'Custom pricing — contact us',
     points: [
       'Dual-channel from day one',
       'Server-side tracking & CRO ownership',
@@ -285,7 +277,7 @@ export const SEO_FAQ: Faq[] = [
   },
   {
     q: 'What determines my price?',
-    a: 'Site size, competition, and how aggressive you want to go. Smaller sites start around ₹40k/mo; the full six-engine system is from ₹75k/mo, GST extra. We quote you straight on the call — no "packages" you have to decode.',
+    a: 'Site size, competition, and how aggressive you want to go. We scope it on the strategy call and quote you straight — one number, GST extra, no "packages" you have to decode. Contact us and we\'ll price it against your actual site, not a template.',
   },
   {
     q: 'How do you measure my "baseline"?',
@@ -341,12 +333,12 @@ export const PERF_FAQ: Faq[] = [
 
 export const PRICING_FAQ: Faq[] = [
   {
-    q: 'Are these prices all-in?',
-    a: 'Management fees are per month, ex-GST. For performance marketing, ad spend is billed separately and paid straight to the platforms — no markup. Everything else is exactly the sticker price.',
+    q: 'Why is there no price on the site?',
+    a: "Because a real quote depends on your site, your market and how fast you want to move — and we'd rather give you a straight number than a padded package. Contact us and you get one fee, per month, ex-GST. Ad spend for performance marketing is billed separately and paid straight to the platforms, with no markup.",
   },
   {
     q: 'Can I mix and match?',
-    a: "Yes. Start with one service and add another when you're ready, or take a bundle and save up to ~21%. Any single service can be cancelled with 30 days' notice — bundles just re-rate to à la carte.",
+    a: "Yes. Start with one service and add another when you're ready, or take a bundle — bundles always come in under buying the same services à la carte. Any single service can be cancelled with 30 days' notice; bundles just re-rate to à la carte.",
   },
   {
     q: 'Which should I start with?',
@@ -478,27 +470,16 @@ export function serviceNode(opts: {
   serviceType: string;
   description: string;
   path: string;
-  offer: { low: string; high?: string; count?: number };
 }): Record<string, unknown> {
-  // Always AggregateOffer with lowPrice. These are monthly retainers quoted as a
-  // floor ("from ₹75,000/mo"); a bare `price` asserts an exact one-off charge,
-  // which is both a different number and a different billing model to what the
-  // page says. UnitPriceSpecification carries the "per month" that `price` cannot.
+  // No price of any kind. These are monthly retainers quoted per client on the
+  // strategy call, and the pages no longer publish a figure — so lowPrice or a
+  // UnitPriceSpecification here would assert a number the site doesn't stand
+  // behind. The offer carries availability and where to ask for a quote.
   const offers = {
-    '@type': 'AggregateOffer',
+    '@type': 'Offer',
     priceCurrency: 'INR',
-    lowPrice: opts.offer.low,
-    ...(opts.offer.high ? { highPrice: opts.offer.high } : {}),
-    offerCount: opts.offer.count ?? 3,
+    availability: 'https://schema.org/InStock',
     url: `${SITE_URL}${opts.path}`,
-    priceSpecification: {
-      '@type': 'UnitPriceSpecification',
-      priceCurrency: 'INR',
-      price: opts.offer.low,
-      unitCode: 'MON',
-      unitText: 'month',
-      valueAddedTaxIncluded: false,
-    },
   };
   return {
     '@type': 'Service',
@@ -543,9 +524,6 @@ export const SEO_SERVICE = serviceNode({
   description:
     'Six SEO engines — technical, content, digital PR, programmatic SEO, AEO/GEO and live reporting — stacked into one performance-guaranteed system.',
   path: '/seo',
-  // The page states two figures: ₹75k/mo for the full six-engine system and
-  // "plans from ₹40k for smaller sites". lowPrice is the floor, so it's ₹40k.
-  offer: { low: '40000', high: '75000' },
 });
 
 export const SOCIAL_SERVICE = serviceNode({
@@ -555,7 +533,6 @@ export const SOCIAL_SERVICE = serviceNode({
   description:
     'End-to-end produced social content — reels, carousels and SEO blogs from one pipeline — that grows followers and organic search together.',
   path: '/social',
-  offer: { low: '30000', high: '70000' },
 });
 
 export const PERF_SERVICE = serviceNode({
@@ -565,5 +542,4 @@ export const PERF_SERVICE = serviceNode({
   description:
     "Full-funnel Meta and Google paid media — creative, server-side tracking, CRO and a beat-your-baseline-or-it's-free guarantee. Flat fee, no media markup.",
   path: '/performance',
-  offer: { low: '40000', high: '150000' },
 });

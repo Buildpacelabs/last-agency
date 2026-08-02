@@ -78,7 +78,7 @@ export default function PerformancePage(): JSX.Element {
           </h1>
           <p className="sub">
             We don't push buttons and bill you. We architect the funnel, produce the creative, own the
-            tracking and the landing page — a flat rupee fee from ₹40,000 a month, zero media markup —
+            tracking and the landing page — a flat rupee fee, quoted to your spend, zero media markup —
             and put our money on the result: <span className="y">beat baseline or the fee's free.</span>
           </p>
           <div className="cta-row">
@@ -119,7 +119,7 @@ export default function PerformancePage(): JSX.Element {
             Plans that scale with your ad budget.
           </h2>
           <p className="lede">
-            Flat management fee, priced by the ad spend we run for you. Dual-channel from day one,
+            Flat management fee, scoped to the ad spend we run for you. Dual-channel from day one,
             produced creative, server-side tracking and a guarantee — for less than most serious
             agencies charge.
           </p>

@@ -17,9 +17,9 @@ import { FinalCta } from '@/components/FinalCta';
 import { ContentTeaser } from '@/components/ContentTeaser';
 
 export const metadata: Metadata = {
-  title: { absolute: 'SEO & Digital Marketing Pricing in India — ₹30k–₹1.75L/mo' },
+  title: { absolute: 'SEO & Digital Marketing Pricing in India — Custom Quote' },
   description:
-    'Transparent monthly pricing for SEO, organic social and paid media — ex-GST, no lock-in. Bundle two or three services and save up to 21% off.',
+    'SEO, organic social and paid media, quoted to your scope — ex-GST, month-to-month, no lock-in. Bundle two or three services and pay less than à la carte. Contact us for a quote.',
   alternates: { canonical: '/pricing' },
 };
 
@@ -44,12 +44,13 @@ export default function PricingPage(): JSX.Element {
         <div className="wrap">
           <span className="sticker">⚡ Pricing + bundles</span>
           <h1>
-            SEO and digital marketing pricing, <span className="u">published in full.</span>
+            SEO and digital marketing pricing, <span className="u">quoted straight.</span>
           </h1>
           <p className="sub">
-            Every service is month-to-month, ex-GST, no lock-in — ₹30,000 to ₹1,75,000 a month
-            depending on scope. Run more than one and the bundle beats buying à la carte, because one
-            shared pipeline <span className="y">costs us less to deliver.</span>
+            Every service is month-to-month, ex-GST, no lock-in — priced to your scope rather than
+            sold as a package you have to decode. Run more than one and the bundle beats buying à la
+            carte, because one shared pipeline{' '}
+            <span className="y">costs us less to deliver.</span>
           </p>
           <div className="cta-row">
             <a className="btn btn-lg btn-red" href="#book">
@@ -88,10 +89,9 @@ export default function PricingPage(): JSX.Element {
                 <h3>{b.name}</h3>
                 <div className="price">
                   <span className="amt num">{b.price}</span>
-                  <span className="per">/ month</span>
+                  <span className="per">for a custom quote</span>
                 </div>
-                <div className="strike num">{b.was}</div>
-                <span className="save">{b.save}</span>
+                <span className="save">Cheaper than à la carte</span>
                 <p>{b.body}</p>
                 <div className="bundle-cta">
                   <a className="btn btn-cream" href="#book">
@@ -102,8 +102,8 @@ export default function PricingPage(): JSX.Element {
             ))}
           </div>
           <p className="svc-note">
-            Bundle prices per month, ex-GST. Ad spend billed separately. Cancel any single service
-            with 30 days' notice.
+            Bundles are quoted per month, ex-GST. Ad spend billed separately. Cancel any single
+            service with 30 days' notice.
           </p>
         </div>
       </section>

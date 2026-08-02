@@ -90,7 +90,7 @@ export default function HomePage(): JSX.Element {
               WhatsApp us instead
             </a>
           </div>
-          <p className="trust">Every price published · No contracts · No jargon</p>
+          <p className="trust">One straight quote · No contracts · No jargon</p>
         </div>
       </header>
 

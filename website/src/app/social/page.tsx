@@ -7,9 +7,9 @@ import { FinalCta } from '@/components/FinalCta';
 import { ContentTeaser } from '@/components/ContentTeaser';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Social Media Marketing Agency in India — From ₹30k/mo' },
+  title: { absolute: 'Social Media Marketing Agency in India — Last Agency' },
   description:
-    'Social media marketing and content production from one Indian pipeline — reels, carousels and SEO blogs that grow your following and rankings. From ₹30,000/mo.',
+    'Social media marketing and content production from one Indian pipeline — reels, carousels and SEO blogs that grow your following and rankings. Contact us for a custom quote.',
   alternates: { canonical: '/social' },
 };
 
@@ -79,7 +79,7 @@ export default function SocialPage(): JSX.Element {
             Most social agencies make you supply the video and post into the void. We produce every
             reel ourselves and wire each piece to double as a search asset — so followers and Google
             traffic <span className="y">compound together.</span> Produced in India, priced in rupees,
-            from ₹30,000 a month.
+            quoted to your scope.
           </p>
           <div className="cta-row">
             <a className="btn btn-lg btn-red" href="#book">
@@ -151,7 +151,7 @@ export default function SocialPage(): JSX.Element {
             ))}
           </div>
           <p className="svc-note">
-            All prices per month, ex-GST. Month-to-month after the first quarter. Reels produced by us
+            Every tier is quoted per month, ex-GST. Month-to-month after the first quarter. Reels produced by us
             — you never supply footage.
           </p>
         </div>
